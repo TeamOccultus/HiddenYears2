@@ -3,7 +3,7 @@ import * as lantern from "project-lantern";
 import * as hyData from "../data/data.js";
 import * as mcui from "@minecraft/server-ui";
 import * as quests from "../data/quests.js";
-import { QuestBook } from "project-lantern";
+import { quest } from "project-lantern";
 
 /**
  * 为物品消耗耐久值
@@ -61,13 +61,13 @@ function applyImitationDamage(entity: mc.Entity): void {
  * 注册任务书
  */
 export function questRegister() {
-  const QUEST_BOOK1 = new QuestBook(
+  const QUEST_BOOK1 = new quest.QuestBook(
     "hy:quest_book1",
     { translate: "hy.quest.title2" },
     { translate: "hy.quest.body2" },
     [quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE],
   );
-  const QUEST_BOOK = new QuestBook(
+  const QUEST_BOOK = new quest.QuestBook(
     "hy:quest_book",
     { translate: "hy.quest.title1" },
     { translate: "hy.quest.body1" },
@@ -103,7 +103,7 @@ export function questRegister() {
       quests.NETHER_STAR,
     ],
   );
-  const LETTER_0 = new QuestBook(
+  const LETTER_0 = new quest.QuestBook(
     `hy:letter_0`,
     hyData.HyLetterTitle[0],
     hyData.HyLetterBody[0],

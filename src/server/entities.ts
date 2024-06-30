@@ -50,7 +50,7 @@ export function entityEventsMonitor(): void {
       case "hy:ruby_boardsword":
         /** 红宝石阔剑会给予玩家经验值 */
         if (ATTACKER instanceof mc.Player)
-          ATTACKER.addExperience(lantern.rand(4, 0));
+          ATTACKER.addExperience(lantern.randomInteger(4, 0));
         break;
       case "hy:suffering_sword":
         TARGET.addEffect("poison", 100);

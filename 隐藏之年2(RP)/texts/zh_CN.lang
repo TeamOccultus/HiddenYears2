@@ -615,4 +615,10 @@ hy.item.suffering_sword=痛苦之剑
 hy.item.sprite_history=精灵史摘要
 hy.item.soul_letter.sprite=凝魂信笺·风灵
 
-message.quest_finished=你完成了任务
+api.unexpected_error.quest=任务系统出现未知错误
+quest.finished=你完成了 %%1 任务！
+quest.done=任务已完成
+quest.check=尝试提交任务
+quest.not_enough.item=材料不足，你需要 %%1 个 %%2 才能完成这个任务
+quest.not_enough.level=你需要 %%1 级才能完成这个任务
+quest.not_enough.xp=你需要 %%1 经验才能完成这个任务
