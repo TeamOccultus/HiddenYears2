@@ -2,7 +2,6 @@
   "name": "hy2",
   "version": "2.2.1",
   "description": "A Minecraft addon",
-  "private": true,
   "scripts": {
     "build": "esbuild src/index.ts --bundle --format=esm --external:@minecraft/server --external:@minecraft/server-ui --minify-syntax \"--outfile=./隐藏之年2(BP)/scripts/index.js\"",
     "buildSrc": "prettier --write src&&tsc",
@@ -16,8 +15,8 @@
     "@minecraft/server": "^1.12.0-beta.1.21.0-stable",
     "@minecraft/server-ui": "^1.2.0-beta.1.21.0-stable",
     "@minecraft/vanilla-data": "1.21.0",
+    "esbuild": "^0.20.2",
     "project-lantern": "1.1.0-beta",
-    "typescript": "^5.4.5",
-    "esbuild": "^0.20.2"
+    "typescript": "^5.4.5"
   }
 }

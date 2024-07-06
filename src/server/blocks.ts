@@ -1,13 +1,14 @@
-import * as mc from "@minecraft/server";
-import * as lantern from "project-lantern";
+import { world } from "@minecraft/server";
+import { utils } from "project-lantern";
+
 
 /** 监听方块事件 */
 export function blockMonitor() {
-  mc.world.afterEvents.playerBreakBlock.subscribe((event) => {
+  world.afterEvents.playerBreakBlock.subscribe((event) => {
     const [BLOCK, PLAYER, ITEM] = [
       event.brokenBlockPermutation,
       event.player,
-      lantern.getEquipmentItem(event.player),
+      utils.getEquipmentItem(event.player),
     ];
     if (BLOCK.hasTag("hy:experience_ores")) {
       PLAYER.dimension.spawnEntity("xp_orb", PLAYER.location);
@@ -24,7 +25,7 @@ export function blockMonitor() {
       BLOCK.hasTag("hy:suspicious_ores") &&
       ITEM.hasTag("minecraft:is_pickaxe")
     ) {
-      if (lantern.getRandomChance() <= 8) {
+      if (utils.randomInteger(10) <= 8) {
         PLAYER.dimension.spawnEntity("silverfish", PLAYER.location);
         PLAYER.dimension.spawnEntity("silverfish", PLAYER.location);
       } else {
