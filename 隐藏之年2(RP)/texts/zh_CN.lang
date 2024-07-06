@@ -514,9 +514,9 @@ hy.message.need_crowbar=此矿石需要撬棍挖掘！
 hy.message.condition.item_not_enough=物品不足
 hy.message.unexpected_error=出现了意外错误
 
-hy.quest.title1=主线任务§b「第一辑·初入三界」§r
+hy.quest.title1=主线任务§d「第一辑·初入三界」§r
 hy.quest.body1=书页间跃动的不仅仅是文字，还有一路上的冒险之旅
-hy.quest.title2=主线任务§b「间幕·与风同行」§r
+hy.quest.title2=主线任务§d「间幕·与风同行」§r
 hy.quest.body2=这是一本任务书，大概是吧
 
 hy.quest.stick.title=§d[序幕]§r 一切的开始

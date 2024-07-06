@@ -99,6 +99,7 @@ export function questRegister() {
           quests.STEEL_INGOT,
           quests.TOTEM,
         ],
+        iconPath: "textures/items/book_writable"
       },
       {
         title: { translate: "hy.quest.chapter2.title" },
@@ -109,6 +110,7 @@ export function questRegister() {
           quests.RUBY_BAG,
           quests.RUBY_RUNES,
         ],
+        iconPath: "textures/items/materials/ruby"
       },
       {
         title: { translate: "hy.quest.chapter3.title" },
@@ -126,6 +128,7 @@ export function questRegister() {
           quests.RESPAWN_ANCHOR,
           quests.NETHER_STAR,
         ],
+        iconPath: "textures/items/ender_eye"
       },
     ]
   );
