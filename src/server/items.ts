@@ -9,13 +9,9 @@ import {
   EntityQueryOptions,
   system,
 } from "@minecraft/server";
-import {
-  HyCorrosionMap,
-  HyLetterTitle,
-  HyLetterBody,
-  HyRewardTypes,
-} from "../data/data.js";
-import * as quests from "../data/quests.js";
+import { HyCorrosionMap, HyRewardTypes } from "../data/data";
+import { HyLetterTitle, HyLetterBody } from "../data/lang";
+import * as quests from "../data/quest";
 
 /**
  * 为物品消耗耐久值
@@ -79,43 +75,59 @@ export function questRegister() {
     { translate: "hy.quest.body2" },
     { quests: [quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE] }
   );
-  const QUEST_BOOK = new quest.QuestBook(
+  const QUEST_BOOK = new quest.ChapterQuestBook(
     "hy:quest_book",
     { translate: "hy.quest.title1" },
     { translate: "hy.quest.body1" },
-    {
-      quests: [
-        quests.BEGGING,
-        quests.OVER_METAL_INGOT,
-        quests.IRON_INGOT,
-        quests.COPPER_INGOT,
-        quests.IRON_HAMMER,
-        quests.IRON_CROWBAR,
-        quests.IRON_KNIFE,
-        quests.IRON_DAGGER,
-        quests.IRON_SWORD,
-        quests.FUEL_METAL,
-        quests.NIGHTMARE_FUEL_METAL,
-        quests.SUFFERING_SWORD,
-        quests.STEEL_INGOT,
-        quests.TOTEM,
-        quests.RUBY,
-        quests.RUBY_CHESTPLATE,
-        quests.RUBY_BAG,
-        quests.RUBY_RUNES,
-        quests.OBSIDIAN,
-        quests.GOLD_INGOT,
-        quests.GHAST_TEAR,
-        quests.NETHERITE_SCRAP,
-        quests.BLAZE_ROD,
-        quests.ENDER_PEARL,
-        quests.DRAGON_BREATH,
-        quests.DRAGON_EGG,
-        quests.LODESTONE,
-        quests.RESPAWN_ANCHOR,
-        quests.NETHER_STAR,
-      ],
-    }
+    [
+      {
+        title: { translate: "hy.quest.chapter1.title" },
+        body: { translate: "hy.quest.chapter1.body" },
+        quests: [
+          quests.BEGGING,
+          quests.OVER_METAL_INGOT,
+          quests.IRON_INGOT,
+          quests.COPPER_INGOT,
+          quests.IRON_HAMMER,
+          quests.IRON_CROWBAR,
+          quests.IRON_KNIFE,
+          quests.IRON_DAGGER,
+          quests.IRON_SWORD,
+          quests.FUEL_METAL,
+          quests.NIGHTMARE_FUEL_METAL,
+          quests.SUFFERING_SWORD,
+          quests.STEEL_INGOT,
+          quests.TOTEM,
+        ],
+      },
+      {
+        title: { translate: "hy.quest.chapter2.title" },
+        body: { translate: "hy.quest.chapter2.body" },
+        quests: [
+          quests.RUBY,
+          quests.RUBY_CHESTPLATE,
+          quests.RUBY_BAG,
+          quests.RUBY_RUNES,
+        ],
+      },
+      {
+        title: { translate: "hy.quest.chapter3.title" },
+        body: { translate: "hy.quest.chapter3.body" },
+        quests: [
+          quests.OBSIDIAN,
+          quests.GOLD_INGOT,
+          quests.GHAST_TEAR,
+          quests.NETHERITE_SCRAP,
+          quests.BLAZE_ROD,
+          quests.ENDER_PEARL,
+          quests.DRAGON_BREATH,
+          quests.DRAGON_EGG,
+          quests.LODESTONE,
+          quests.RESPAWN_ANCHOR,
+          quests.NETHER_STAR,
+        ],
+      },
+    ]
   );
   const LETTER_0 = new quest.QuestBook(
     `hy:letter_0`,
@@ -131,8 +143,7 @@ export function questRegister() {
  */
 export function itemDurabilityMonitor() {
   world.afterEvents.playerBreakBlock.subscribe((event) => {
-    const ENTITY = event.player;
-    let ITEM = utils.getEquipmentItem(ENTITY);
+    const [ENTITY, ITEM] = [event.player, utils.getEquipmentItem(event.player)];
     if (ITEM?.hasTag("hy:custom_tools")) {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, ENTITY);
       ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
@@ -151,8 +162,10 @@ export function itemDurabilityMonitor() {
     }
   });
   world.afterEvents.entityHitEntity.subscribe((event) => {
-    const ENTITY = event.damagingEntity;
-    let ITEM = utils.getEquipmentItem(event.damagingEntity);
+    const [ENTITY, ITEM] = [
+      event.damagingEntity,
+      utils.getEquipmentItem(event.damagingEntity),
+    ];
     if (ITEM?.hasTag("hy:custom_weapons")) {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 1);
       ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
@@ -179,8 +192,7 @@ export function itemDurabilityMonitor() {
 export function itemUseMonitor() {
   /** 范围伤害 */
   world.afterEvents.itemUse.subscribe((event) => {
-    const PLAYER = event.source;
-    const ITEM = event.itemStack;
+    const [PLAYER, ITEM] = [event.source, event.itemStack];
     /** 破伤风伤害 */
     if (ITEM.hasTag("hy:tetanus_item")) {
       PLAYER.addTag("hy.tetanus_attacker");
@@ -205,6 +217,7 @@ export function itemUseMonitor() {
      * 法术精通与爆发同时进行 需要玩家有1级经验
      * 每次爆发消耗1耐久、15经验 并且有类型为`hy.magic_explode`的5秒冷却
      * 爆发开始后5秒内玩家不受任何原因的爆发伤害
+     * @todo 添加冷却
      */
     if (
       ITEM.hasTag("hy:magic_explode") &&
@@ -330,8 +343,7 @@ export function itemUseMonitor() {
   /** 道具相关
    * 为物品添加`hy:single_use`设置为只能使用一次的物品 */
   world.afterEvents.itemUse.subscribe((event) => {
-    const ITEM: ItemStack = event.itemStack;
-    const PLAYER: Player = event.source;
+    const [PLAYER, ITEM] = [event.source, event.itemStack];
     if (ITEM.hasTag("hy:single_use")) {
       PLAYER?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
@@ -404,8 +416,7 @@ export function itemUseMonitor() {
   /** 道具相关
    * 为物品添加`hy:durability_use`设置为由耐久值控制使用次数的物品 */
   world.afterEvents.itemUse.subscribe((event) => {
-    const ITEM: ItemStack = event.itemStack;
-    const PLAYER: Player = event.source;
+    const [PLAYER, ITEM] = [event.source, event.itemStack];
     if (ITEM.hasTag("hy:durability_use")) {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, PLAYER);
       PLAYER?.getComponent("minecraft:equippable")?.setEquipment(
@@ -468,8 +479,7 @@ export function itemUseMonitor() {
   });
   /** 监听食物的食用 */
   world.afterEvents.itemCompleteUse.subscribe((event) => {
-    const ITEM: ItemStack = event.itemStack;
-    const PLAYER: Player = event.source;
+    const [PLAYER, ITEM] = [event.source, event.itemStack];
     /** 用`hy:copper_foods`来标记一个物品为铜食物，并统计其食用次数
      * 铜食物食用12次后会中毒
      */
@@ -505,7 +515,7 @@ export function itemUseMonitor() {
         PLAYER.addLevels(2);
         break;
       case "hy:marshmallow":
-        if (utils.getRandomChance() > 5) {
+        if (utils.randomInteger(10) > 5) {
           PLAYER.addEffect("levitation", 100);
         }
         break;

@@ -7,7 +7,7 @@
     "buildSrc": "prettier --write src&&tsc",
     "debug": "tsc --noEmit&&prettier --write .",
     "prettier": "prettier --write .",
-    "test": "tsc --noEmit"
+    "test": "tsc"
   },
   "author": "FangLimao",
   "license": "BSD-3-Clause",
@@ -16,7 +16,7 @@
     "@minecraft/server-ui": "^1.2.0-beta.1.21.0-stable",
     "@minecraft/vanilla-data": "1.21.0",
     "esbuild": "^0.20.2",
-    "project-lantern": "1.1.0-beta",
+    "project-lantern": "1.1.0-beta.3",
     "typescript": "^5.4.5"
   }
 }

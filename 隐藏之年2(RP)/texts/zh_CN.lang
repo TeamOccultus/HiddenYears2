@@ -597,10 +597,17 @@ hy.quest.ruby_chestplate.body=用这来之不易的宝石打造一套甲胄吧
 hy.quest.ruby_bag.body=你可以在红宝石地牢内击败红宝石怪物来获得这种袋子，当红宝石块与其相结合时，将会迸发出巨大的力量
 hy.quest.end3.body0=「让我们回溯到遥远的过去。」
 hy.quest.end3.body1=​经过一番战斗，你击败了「红宝石之王」，真相之旅迈出了可喜可贺的第一步。
-hy.quest.end3.body2=​可这远不是终点，在漫长的历史中，浩如烟海的强大存在被「迷失军团」封印于袋中，红宝石之王是其最古老的存在，阅读他们身上的信纸，一步步探求真相把。
+hy.quest.end3.body2=​可这远不是终点，在漫长的历史中，浩如烟海的强大存在被「迷失军团」封印于袋中，红宝石之王是其最古老的存在，阅读他们身上的信纸，一步步探求真相吧。
 hy.quest.readings1.body=获得隐藏的故事
 hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
 hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
+
+hy.quest.chapter1.title=§d[序章]§r 在启程之前
+hy.quest.chapter2.title=§d[第一章]§r 经验与鲜血之歌
+hy.quest.chapter3.title=§d[第二章]§r 另外两个世界
+hy.quest.chapter1.body=在旅途启程之前，先完成这些事情吧......
+hy.quest.chapter2.body=千年之前，一位术士献出鲜血，故事就此开始。
+hy.quest.chapter3.body=足迹踏遍三个世界，或一个星球。
 
 hy.story.hs.title1=一切的开始？
 hy.story.hs.title2=诞生于毁灭的新生
@@ -616,9 +623,14 @@ hy.item.sprite_history=精灵史摘要
 hy.item.soul_letter.sprite=凝魂信笺·风灵
 
 api.unexpected_error.quest=任务系统出现未知错误
-quest.finished=你完成了 %%1 任务！
+quest.finished=你完成了一个任务！
 quest.done=任务已完成
 quest.check=尝试提交任务
-quest.not_enough.item=材料不足，你需要 %%1 个 %%2 才能完成这个任务
-quest.not_enough.level=你需要 %%1 级才能完成这个任务
-quest.not_enough.xp=你需要 %%1 经验才能完成这个任务
+quest.not_enough.item=材料不足，你需要 %1 个 %2 才能完成这个任务
+quest.not_enough.level=你需要 %1 级经验才能完成这个任务
+quest.not_enough.xp=你需要 %1 点经验才能完成这个任务
+quest.condition=§e完成条件§r：
+quest.award=§e完成奖励§r：
+quest.item=%1 个 %2;
+quest.xp=%1 点经验
+quest.level=%1 级经验

@@ -5,9 +5,14 @@ import {
   itemUseMonitor,
   itemDurabilityMonitor,
 } from "./server/items";
-import { bookRegister } from "./server/readings";
+import { articleRegister } from "./server/article";
 import { systemMonitor } from "./server/system";
+import { initializeMod } from "project-lantern";
 
+initializeMod("hy", "HiddenYears", {
+  questNameSpace: "hy-q",
+  watchdogDisabled: true,
+});
 systemMonitor();
 blockMonitor();
 entityEventsMonitor();
@@ -15,4 +20,4 @@ playerSpawnMonitor();
 itemDurabilityMonitor();
 itemUseMonitor();
 questRegister();
-bookRegister();
+articleRegister();
