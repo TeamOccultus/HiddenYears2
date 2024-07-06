@@ -376,7 +376,7 @@ export function itemUseMonitor() {
           PLAYER.dimension.spawnEntity("hy:king_of_ruby", PLAYER.location);
           break;
         case "hy:ruby_runes":
-          PLAYER.addLevels(utils.getRandomChance());
+          PLAYER.addLevels(utils.randomInteger(4));
           PLAYER.playSound("random.orb");
           PLAYER.addEffect("fire_resistance", 1200);
           PLAYER.addEffect("resistance", 1200);
