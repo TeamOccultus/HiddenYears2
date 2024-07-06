@@ -20,4 +20,3 @@ pnpm-lock.yaml
 *.rar
 *.7z
 src/dependencies/hy2Jobs.ts
-src/dependencies/hy2Jobs.ts
