@@ -622,6 +622,9 @@ hy.item.suffering_sword=痛苦之剑
 hy.item.sprite_history=精灵史摘要
 hy.item.soul_letter.sprite=凝魂信笺·风灵
 
+hy.collection.title=文章收藏集
+hy.collection.body=这里会显示你所有阅读过的文章
+
 api.unexpected_error.quest=任务系统出现未知错误
 quest.finished=你完成了一个任务！
 quest.done=任务已完成
@@ -634,3 +637,5 @@ quest.award=§e完成奖励§r：
 quest.item=%1 个 %2;
 quest.xp=%1 点经验
 quest.level=%1 级经验
+article.nothing.title=无解锁文章
+article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
