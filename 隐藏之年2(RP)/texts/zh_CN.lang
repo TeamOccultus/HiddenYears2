@@ -530,9 +530,10 @@ hy.quest.iron_dagger.title=§d[序幕]§r 致命一击
 hy.quest.iron_sword.title=§d[序幕]§r 赶尽杀绝
 hy.quest.fuel_metal.title=§d[序幕]§r 燃料与食物
 hy.quest.nightmare_fuel_metal.title=§d[序幕]§r 「不洁」的结晶
-hy.quest.suffering_sword.title=[序幕]善良的与邪恶的
+hy.quest.suffering_sword.title=§d[序幕]§r 善良的与邪恶的
 hy.quest.steel_ingot.title=§d[序幕]§r 百炼成钢
 hy.quest.end0.title=§d[序幕 最终任务]§r 终将于白纸间盛开的菡萏之花
+
 hy.quest.obsidian.title=§d[最初的家园]§r 水火交融
 hy.quest.gold_ingot.title=§d[最初的家园]§r 金光闪闪
 hy.quest.ghast_tear.title=§d[最初的家园]§r 晶莹的泪滴
@@ -544,17 +545,19 @@ hy.quest.end1.title=§d[最初的家园 最终任务]§r 人偶术的巅峰
 hy.quest.ender_pearl.title=§d[空中群岛]§r 隔墙有眼
 hy.quest.dragon_breath.title=§d[空中群岛]§r 你需要来点薄荷糖
 hy.quest.end2.title=§d[空中群岛 最终任务]§r 起点抑或是终点
+
 hy.quest.ruby.title=§d[淬血的刚玉]§r 沾满鲜血的宝石
 hy.quest.ruby_chestplate.title=§d[淬血的刚玉]§r 瑰丽的甲胄
 hy.quest.ruby_bag.title=§d[淬血的刚玉]§r 经验之袋
 hy.quest.end3.title=§d[淬血的刚玉 最终任务]§r 力量与鲜血之歌
+
 hy.quest.readings1.title=§d[书海无涯] §r故事的起点
 hy.quest.readings2.title=§d[书海无涯] §r千里之行始于足下
 hy.quest.readings3.title=§d[书海无涯] §r大历史学家
 
 hy.quest.copper_apple.title=§d[超级美食家]§r 重金属超标
 hy.quest.metal_star.title=§d[策划大失败]§r 半吊子引雷士
-hy.quest.copper_essence.title=§d[策划大失败]§r 飞·雾冬溪
+hy.quest.copper_essence.title=§d[策划大失败]§r 没用的东西
 
 hy.quest.copper_apple.body=将铜锭与苹果捏合到一起，就会有神奇的事情发生……不过听说吃多了会中毒哦～
 hy.quest.metal_star.body=这个东西理论上可以引雷，啊嘞，怎么引不了了……
@@ -567,7 +570,7 @@ hy.quest.copper_ingot.body=大量存在于世界的金属，可以合成工具�
 hy.quest.iron_hammer.body=挖掘石头最高效的工具，需要特殊的「木柄」才可以合成，但是挖掘矿石的话可能会有一点小困难……
 hy.quest.iron_crowbar.body=盗贼常用的工具，经常被用来撬走金属方块，不过一些特殊矿石需要撬棍才可以撬下来
 hy.quest.iron_knife.body=用这把小刀给你的朋友一些惊喜吧§o(没有朋友的除外awa)§r
-hy.quest.iron_dagger.body=燧石使刀更为锋利的同时也更加脆弱，人也是这样的吗？
+hy.quest.iron_dagger.body=用燧石把刀更为锋利、更加脆弱吧
 hy.quest.iron_sword.body=最稳定、最可靠的武器，凭借其威力降妖除魔吧
 hy.quest.fuel_metal.body=这是一种神奇的物质，既可以加工为棒状的燃料、也可以加工直接用来食用
 hy.quest.nightmare_fuel_metal.body=一种奇怪的结晶，黑乎乎的外表下，蕴含着巨大的作用§o(试着吃个燃金罢)§r
@@ -588,7 +591,7 @@ hy.quest.end1.body0=「让我们回退一点。」
 hy.quest.end1.body1=​你可听说过人偶术？这是一种精妙的技术，那些人偶师们费尽心思将这些没有生命的拙劣作品灌注智慧，让这些小玩意成为了战争机器
 hy.quest.end1.body2=凋零何尝不是人偶术的造物呢？从威力上讲，这恐怕就是人偶术的巅峰了吧……
 hy.quest.ender_pearl.body=苍穹之上、星海之下有着什么呢……
-hy.quest.dragon_breath.body=浓痰……能干啥呢……
+hy.quest.dragon_breath.body=末影龙吐下的浓痰，在炼药师手中有妙用
 hy.quest.end2.body0=「在你深陷游戏之梦时，便选择以这种方式想象出形形色色的事物。」
 hy.quest.end2.body1=​你击败了末影龙，这是普通冒险家冒险生涯的终点，可也是你冒险的真正起点；经过战斗，你已经足够强大，可以探索隐藏于这个世界的秘密了。
 hy.quest.end2.body2=向着真相进发吧！
