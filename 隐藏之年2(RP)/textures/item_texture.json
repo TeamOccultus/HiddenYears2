@@ -831,7 +831,7 @@
       "textures": "textures/items/tools/axes/imitations/iron"
     },
     "hy.imitation_gold_axe": {
-      "textures": "textures/items/tools/axes/imitations/gold"
+      "textures": "textures/items/tools/axes/imitations/golden"
     },
     "hy.imitation_amethyst_axe": {
       "textures": "textures/items/tools/axes/imitations/amethyst"
@@ -843,7 +843,7 @@
       "textures": "textures/items/tools/hammers/imitations/iron"
     },
     "hy.imitation_gold_hammer": {
-      "textures": "textures/items/tools/hammers/imitations/gold"
+      "textures": "textures/items/tools/hammers/imitations/golden"
     },
     "hy.imitation_amethyst_hammer": {
       "textures": "textures/items/tools/hammers/imitations/amethyst"
@@ -855,7 +855,7 @@
       "textures": "textures/items/tools/hoes/imitations/iron"
     },
     "hy.imitation_gold_hoe": {
-      "textures": "textures/items/tools/hoes/imitations/gold"
+      "textures": "textures/items/tools/hoes/imitations/golden"
     },
     "hy.imitation_amethyst_hoe": {
       "textures": "textures/items/tools/hoes/imitations/amethyst"
@@ -867,7 +867,7 @@
       "textures": "textures/items/tools/pickaxes/imitations/iron"
     },
     "hy.imitation_gold_pickaxe": {
-      "textures": "textures/items/tools/pickaxes/imitations/gold"
+      "textures": "textures/items/tools/pickaxes/imitations/golden"
     },
     "hy.imitation_amethyst_pickaxe": {
       "textures": "textures/items/tools/pickaxes/imitations/amethyst"
@@ -879,22 +879,22 @@
       "textures": "textures/items/tools/shovels/imitations/iron"
     },
     "hy.imitation_gold_shovel": {
-      "textures": "textures/items/tools/shovels/imitations/gold"
+      "textures": "textures/items/tools/shovels/imitations/golden"
     },
     "hy.imitation_amethyst_shovel": {
       "textures": "textures/items/tools/shovels/imitations/amethyst"
     },
     "hy.imitation_diamond_sword": {
-      "textures": "textures/items/tools/swords/imitations/diamond"
+      "textures": "textures/items/tools/weapons/swords/imitations/diamond"
     },
     "hy.imitation_iron_sword": {
-      "textures": "textures/items/tools/swords/imitations/iron"
+      "textures": "textures/items/tools/weapons/swords/imitations/iron"
     },
     "hy.imitation_gold_sword": {
-      "textures": "textures/items/tools/swords/imitations/gold"
+      "textures": "textures/items/tools/weapons/swords/imitations/golden"
     },
-    "hy.imitation_amethyst_sword": {
-      "textures": "textures/items/tools/swords/imitations/amethyst"
+    "hy.imitation_amethyst_boardsword": {
+      "textures": "textures/items/tools/weapons/swords/imitations/amethyst"
     }
   }
 }

@@ -1,6 +1,5 @@
 import { system, world } from "@minecraft/server";
 
-
 /**
  * 监听系统事件
  */

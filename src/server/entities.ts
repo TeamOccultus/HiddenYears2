@@ -11,17 +11,11 @@ export function playerSpawnMonitor(): void {
     if (!PLAYER.hasTag("hy:get_quest_book")) {
       HyRewardTypes.questBook1st.keepOnDeath = true;
       HyRewardTypes.questBook1st.lockMode = ItemLockMode.inventory;
-      PLAYER.dimension.spawnItem(
-        HyRewardTypes.questBook1st,
-        PLAYER.location,
-      );
+      PLAYER.dimension.spawnItem(HyRewardTypes.questBook1st, PLAYER.location);
       PLAYER.addTag("hy:get_quest_book");
     }
     if (!PLAYER.hasTag("hy:get_first_letter")) {
-      PLAYER.dimension.spawnItem(
-        HyRewardTypes.letter1st,
-        PLAYER.location,
-      );
+      PLAYER.dimension.spawnItem(HyRewardTypes.letter1st, PLAYER.location);
       PLAYER.addTag("hy:get_first_letter");
     }
   });

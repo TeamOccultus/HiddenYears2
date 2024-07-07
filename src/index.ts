@@ -7,6 +7,7 @@ import {
 } from "./server/items";
 import { articleRegister } from "./server/article";
 import { systemMonitor } from "./server/system";
+import { musicRegister } from "./server/music";
 import { initializeMod } from "project-lantern";
 
 initializeMod("hy", "HiddenYears", {
@@ -21,3 +22,4 @@ itemDurabilityMonitor();
 itemUseMonitor();
 questRegister();
 articleRegister();
+musicRegister();

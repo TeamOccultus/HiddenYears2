@@ -13,7 +13,7 @@ export const COPPER_APPLE = new quest.Quest(
     condition: HyQuestCondition.copperApple,
     award: HyQuestAward.goldenApple3,
     iconPath: "textures/items/food_and_drinks/copper_foods/copper_apple",
-  }
+  },
 );
 export const METAL_STAR = new quest.Quest(
   "metal_star",
@@ -23,7 +23,7 @@ export const METAL_STAR = new quest.Quest(
     condition: HyQuestCondition.metalStar,
     award: HyQuestAward.diamondCoin9,
     iconPath: "textures/items/treasures/stars/metal_star",
-  }
+  },
 );
 export const COPPER_ESSENCE = new quest.Quest(
   "copper_essence",
@@ -33,7 +33,7 @@ export const COPPER_ESSENCE = new quest.Quest(
     condition: HyQuestCondition.copperEssence,
     award: HyQuestAward.dirt12,
     iconPath: "textures/items/essences/copper_essence",
-  }
+  },
 );
 
 export const BEGGING = new quest.Quest(
@@ -44,7 +44,7 @@ export const BEGGING = new quest.Quest(
     condition: HyQuestCondition.stick,
     award: HyQuestAward.goldCoin5,
     iconPath: "textures/items/stick",
-  }
+  },
 );
 
 export const OVER_METAL_INGOT = new quest.Quest(
@@ -56,7 +56,7 @@ export const OVER_METAL_INGOT = new quest.Quest(
     award: HyQuestAward.goldCoin6,
     iconPath:
       "textures/items/materials/ingots/stone_metal_ingots/over_metal_ingot",
-  }
+  },
 );
 
 export const IRON_INGOT = new quest.Quest(
@@ -67,7 +67,7 @@ export const IRON_INGOT = new quest.Quest(
     condition: HyQuestCondition.ironIngot,
     award: HyQuestAward.goldCoin10,
     iconPath: "textures/items/iron_ingot",
-  }
+  },
 );
 
 export const COPPER_INGOT = new quest.Quest(
@@ -78,7 +78,7 @@ export const COPPER_INGOT = new quest.Quest(
     condition: HyQuestCondition.copperIngot,
     award: HyQuestAward.questBook1,
     iconPath: "textures/items/copper_ingot",
-  }
+  },
 );
 
 export const IRON_HAMMER = new quest.Quest(
@@ -89,7 +89,7 @@ export const IRON_HAMMER = new quest.Quest(
     condition: HyQuestCondition.ironHammer,
     award: HyQuestAward.goldCoin12,
     iconPath: "textures/items/tools/hammers/metal_hammers/iron_hammer",
-  }
+  },
 );
 
 export const IRON_CROWBAR = new quest.Quest(
@@ -100,7 +100,7 @@ export const IRON_CROWBAR = new quest.Quest(
     condition: HyQuestCondition.ironCrowbar,
     award: HyQuestAward.goldCoin16,
     iconPath: "textures/items/tools/crowbars/iron_crowbar",
-  }
+  },
 );
 
 export const IRON_KNIFE = new quest.Quest(
@@ -111,7 +111,7 @@ export const IRON_KNIFE = new quest.Quest(
     condition: HyQuestCondition.ironKnife,
     award: HyQuestAward.goldCoin18,
     iconPath: "textures/items/tools/weapons/knifes/iron_knife",
-  }
+  },
 );
 
 export const IRON_DAGGER = new quest.Quest(
@@ -122,7 +122,7 @@ export const IRON_DAGGER = new quest.Quest(
     condition: HyQuestCondition.ironDagger,
     award: HyQuestAward.goldCoin20,
     iconPath: "textures/items/tools/weapons/daggers/iron_dagger",
-  }
+  },
 );
 
 export const IRON_SWORD = new quest.Quest(
@@ -133,7 +133,7 @@ export const IRON_SWORD = new quest.Quest(
     condition: HyQuestCondition.ironSword,
     award: HyQuestAward.goldenApple3,
     iconPath: "textures/items/iron_sword",
-  }
+  },
 );
 
 export const FUEL_METAL = new quest.Quest(
@@ -144,7 +144,7 @@ export const FUEL_METAL = new quest.Quest(
     condition: HyQuestCondition.fuelMetal,
     award: HyQuestAward.enchantedGoldenApple3,
     iconPath: "textures/items/materials/fuel_metals/fuel",
-  }
+  },
 );
 
 export const NIGHTMARE_FUEL_METAL = new quest.Quest(
@@ -155,7 +155,7 @@ export const NIGHTMARE_FUEL_METAL = new quest.Quest(
     condition: HyQuestCondition.nightmareFuelMetal,
     award: HyQuestAward.labTable,
     iconPath: "textures/items/materials/fuel_metals/fuel",
-  }
+  },
 );
 
 export const SUFFERING_SWORD = new quest.Quest(
@@ -166,7 +166,7 @@ export const SUFFERING_SWORD = new quest.Quest(
     condition: HyQuestCondition.sufferingSword,
     award: HyQuestAward.diamond5,
     iconPath: "textures/items/tools/weapons/swords/suffering_sword",
-  }
+  },
 );
 
 export const STEEL_INGOT = new quest.Quest(
@@ -177,7 +177,7 @@ export const STEEL_INGOT = new quest.Quest(
     condition: HyQuestCondition.steelIngot,
     award: HyQuestAward.goldCoin20,
     iconPath: "textures/items/materials/ingots/steel_ingot",
-  }
+  },
 );
 
 export const TOTEM = new quest.Quest(
@@ -188,7 +188,7 @@ export const TOTEM = new quest.Quest(
     condition: HyQuestCondition.totem,
     award: HyQuestAward.storyBook,
     iconPath: "textures/items/totem",
-  }
+  },
 );
 
 export const OBSIDIAN = new quest.Quest(
@@ -199,7 +199,7 @@ export const OBSIDIAN = new quest.Quest(
     condition: HyQuestCondition.obsidian,
     award: HyQuestAward.diamondCoin3,
     iconPath: "textures/ui/quest/obsidian",
-  }
+  },
 );
 
 export const GOLD_INGOT = new quest.Quest(
@@ -210,7 +210,7 @@ export const GOLD_INGOT = new quest.Quest(
     condition: HyQuestCondition.goldIngot,
     award: HyQuestAward.goldCoin12,
     iconPath: "textures/items/gold_ingot",
-  }
+  },
 );
 
 export const GHAST_TEAR = new quest.Quest(
@@ -221,7 +221,7 @@ export const GHAST_TEAR = new quest.Quest(
     condition: HyQuestCondition.ghastTear,
     award: HyQuestAward.goldenApple5,
     iconPath: "textures/items/ghast_tear",
-  }
+  },
 );
 
 export const NETHERITE_SCRAP = new quest.Quest(
@@ -232,7 +232,7 @@ export const NETHERITE_SCRAP = new quest.Quest(
     condition: HyQuestCondition.netheriteScrap,
     award: HyQuestAward.netheriteTemplate,
     iconPath: "textures/items/netherite_scrap",
-  }
+  },
 );
 
 export const LODESTONE = new quest.Quest(
@@ -243,7 +243,7 @@ export const LODESTONE = new quest.Quest(
     condition: HyQuestCondition.lodestone,
     award: HyQuestAward.goldCoin30,
     iconPath: "textures/ui/quest/lodestone",
-  }
+  },
 );
 
 export const RESPAWN_ANCHOR = new quest.Quest(
@@ -254,7 +254,7 @@ export const RESPAWN_ANCHOR = new quest.Quest(
     condition: HyQuestCondition.respawnAnchor,
     award: HyQuestAward.copperBadge,
     iconPath: "textures/ui/quest/respawn_anchor",
-  }
+  },
 );
 
 export const BLAZE_ROD = new quest.Quest(
@@ -265,7 +265,7 @@ export const BLAZE_ROD = new quest.Quest(
     condition: HyQuestCondition.blazeRod,
     award: HyQuestAward.goldenBadge,
     iconPath: "textures/items/blaze_rod",
-  }
+  },
 );
 
 export const NETHER_STAR = new quest.Quest(
@@ -276,7 +276,7 @@ export const NETHER_STAR = new quest.Quest(
     condition: HyQuestCondition.netherStar,
     award: HyQuestAward.diamondBlock6,
     iconPath: "textures/items/nether_star",
-  }
+  },
 );
 
 export const ENDER_PEARL = new quest.Quest(
@@ -287,7 +287,7 @@ export const ENDER_PEARL = new quest.Quest(
     condition: HyQuestCondition.enderPearl,
     award: HyQuestAward.enderEye4,
     iconPath: "textures/items/ender_pearl",
-  }
+  },
 );
 
 export const DRAGON_BREATH = new quest.Quest(
@@ -298,7 +298,7 @@ export const DRAGON_BREATH = new quest.Quest(
     condition: HyQuestCondition.dragonBreath,
     award: HyQuestAward.diamondBadge,
     iconPath: "textures/items/dragons_breath",
-  }
+  },
 );
 
 export const DRAGON_EGG = new quest.Quest(
@@ -309,7 +309,7 @@ export const DRAGON_EGG = new quest.Quest(
     condition: HyQuestCondition.dragonEgg,
     award: HyQuestAward.netheriteBlock6,
     iconPath: "textures/ui/quest/dragon_head",
-  }
+  },
 );
 
 export const RUBY = new quest.Quest(
@@ -320,7 +320,7 @@ export const RUBY = new quest.Quest(
     condition: HyQuestCondition.ruby,
     award: HyQuestAward.diamond2,
     iconPath: "textures/items/materials/ruby",
-  }
+  },
 );
 
 export const RUBY_CHESTPLATE = new quest.Quest(
@@ -331,7 +331,7 @@ export const RUBY_CHESTPLATE = new quest.Quest(
     condition: HyQuestCondition.rubyChestplate,
     award: HyQuestAward.diamond4,
     iconPath: "textures/items/armors/ruby_armors/ruby_chestplate",
-  }
+  },
 );
 
 export const RUBY_BAG = new quest.Quest(
@@ -342,7 +342,7 @@ export const RUBY_BAG = new quest.Quest(
     condition: HyQuestCondition.rubyBag,
     award: HyQuestAward.diamond6,
     iconPath: "textures/items/treasures/bags/calamity_bag",
-  }
+  },
 );
 
 export const RUBY_RUNES = new quest.Quest(
@@ -353,7 +353,7 @@ export const RUBY_RUNES = new quest.Quest(
     condition: HyQuestCondition.rubyRunes,
     award: HyQuestAward.netheriteIngot3,
     iconPath: "textures/items/treasures/runes/ruby_runes",
-  }
+  },
 );
 
 export const STORY_BOOK = new quest.Quest(
@@ -364,7 +364,7 @@ export const STORY_BOOK = new quest.Quest(
     condition: HyQuestCondition.storyBook,
     award: HyQuestAward.diamond1,
     iconPath: "textures/items/treasures/story_book",
-  }
+  },
 );
 
 export const LETTER_0 = new quest.Quest(
@@ -375,7 +375,7 @@ export const LETTER_0 = new quest.Quest(
     condition: HyQuestCondition.letter0,
     award: HyQuestAward.diamond2,
     iconPath: "textures/items/treasures/lost_letter",
-  }
+  },
 );
 
 export const LETTER_11 = new quest.Quest(
@@ -386,5 +386,5 @@ export const LETTER_11 = new quest.Quest(
     condition: HyQuestCondition.letter11,
     award: HyQuestAward.diamond2,
     iconPath: "textures/items/treasures/lost_letter",
-  }
+  },
 );

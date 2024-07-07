@@ -23,7 +23,7 @@ import * as quests from "../data/quest";
 function consumeDurabilityMixed(
   itemStack: ItemStack,
   value: number,
-  entity?: Entity
+  entity?: Entity,
 ): ItemStack | undefined {
   let durability = itemStack.getComponent("minecraft:durability");
   if (durability === undefined) return itemStack;
@@ -73,7 +73,7 @@ export function questRegister() {
     "hy:quest_book1",
     { translate: "hy.quest.title2" },
     { translate: "hy.quest.body2" },
-    { quests: [quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE] }
+    { quests: [quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE] },
   );
   const QUEST_BOOK = new quest.ChapterQuestBook(
     "hy:quest_book",
@@ -99,7 +99,7 @@ export function questRegister() {
           quests.STEEL_INGOT,
           quests.TOTEM,
         ],
-        iconPath: "textures/items/book_writable"
+        iconPath: "textures/items/book_writable",
       },
       {
         title: { translate: "hy.quest.chapter2.title" },
@@ -110,7 +110,7 @@ export function questRegister() {
           quests.RUBY_BAG,
           quests.RUBY_RUNES,
         ],
-        iconPath: "textures/items/materials/ruby"
+        iconPath: "textures/items/materials/ruby",
       },
       {
         title: { translate: "hy.quest.chapter3.title" },
@@ -128,15 +128,15 @@ export function questRegister() {
           quests.RESPAWN_ANCHOR,
           quests.NETHER_STAR,
         ],
-        iconPath: "textures/items/ender_eye"
+        iconPath: "textures/items/ender_eye",
       },
-    ]
+    ],
   );
   const LETTER_0 = new quest.QuestBook(
     `hy:letter_0`,
     HyLetterTitle[0],
     HyLetterBody[0],
-    { quests: [quests.STORY_BOOK, quests.LETTER_0, quests.LETTER_11] }
+    { quests: [quests.STORY_BOOK, quests.LETTER_0, quests.LETTER_11] },
   );
 }
 
@@ -151,13 +151,13 @@ export function itemDurabilityMonitor() {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, ENTITY);
       ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
-        NEW_ITEM
+        NEW_ITEM,
       );
     } else if (ITEM?.hasTag("hy:custom_weapons")) {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 2, ENTITY);
       ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
-        NEW_ITEM
+        NEW_ITEM,
       );
     }
     if (ITEM?.hasTag("hy:imitation_tools")) {
@@ -173,14 +173,14 @@ export function itemDurabilityMonitor() {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 1);
       ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
-        NEW_ITEM
+        NEW_ITEM,
       );
     }
     if (ITEM?.hasTag("hy:custom_tools")) {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 2);
       ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
-        NEW_ITEM
+        NEW_ITEM,
       );
     }
     if (ITEM?.hasTag("hy:imitation_tools")) {
@@ -231,7 +231,7 @@ export function itemUseMonitor() {
         const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, PLAYER);
         PLAYER.getComponent("minecraft:equippable")?.setEquipment(
           EquipmentSlot.Mainhand,
-          NEW_ITEM
+          NEW_ITEM,
         );
         PLAYER.addLevels(-1);
         const ALL_OPTION: EntityQueryOptions = {
@@ -255,7 +255,7 @@ export function itemUseMonitor() {
               PLAYER.dimension,
               SKELETON_OPINION,
               "weakness",
-              300
+              300,
             );
             break;
           case "hy:flash_metal_boardsword":
@@ -273,7 +273,7 @@ export function itemUseMonitor() {
               PLAYER.dimension,
               UNDEAD_OPINION,
               "weakness",
-              300
+              300,
             );
             break;
           case "hy:emerald_boardsword":
@@ -287,7 +287,7 @@ export function itemUseMonitor() {
               PLAYER.dimension,
               ILLAGER_OPINION,
               "weakness",
-              300
+              300,
             );
             break;
           case "hy:flash_copper_boardsword":
@@ -301,7 +301,7 @@ export function itemUseMonitor() {
               PLAYER.dimension,
               ARTHROPOD_OPINION,
               "weakness",
-              300
+              300,
             );
             break;
           case "hy:amethyst_boardsword":
@@ -315,7 +315,7 @@ export function itemUseMonitor() {
               PLAYER.dimension,
               POULTRY_OPINION,
               "weakness",
-              300
+              300,
             );
             break;
           case "hy:ruby_boardsword":
@@ -329,7 +329,7 @@ export function itemUseMonitor() {
               PLAYER.dimension,
               RUBY_OPINION,
               "weakness",
-              300
+              300,
             );
             break;
           default:
@@ -350,7 +350,7 @@ export function itemUseMonitor() {
     if (ITEM.hasTag("hy:single_use")) {
       PLAYER?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
-        undefined
+        undefined,
       );
       /** 在这下面添加物品的使用效果 */
       switch (ITEM.typeId) {
@@ -363,7 +363,7 @@ export function itemUseMonitor() {
             case 2:
               PLAYER.dimension.spawnItem(
                 HyRewardTypes.diamondBlock,
-                PLAYER.location
+                PLAYER.location,
               );
               break;
             case 3:
@@ -371,7 +371,7 @@ export function itemUseMonitor() {
             case 5:
               PLAYER.dimension.spawnItem(
                 HyRewardTypes.goldBlock,
-                PLAYER.location
+                PLAYER.location,
               );
               break;
             case 6:
@@ -380,7 +380,7 @@ export function itemUseMonitor() {
             case 7:
               PLAYER.dimension.spawnItem(
                 HyRewardTypes.template,
-                PLAYER.location
+                PLAYER.location,
               );
               break;
             default:
@@ -424,7 +424,7 @@ export function itemUseMonitor() {
       const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, PLAYER);
       PLAYER?.getComponent("minecraft:equippable")?.setEquipment(
         EquipmentSlot.Mainhand,
-        NEW_ITEM
+        NEW_ITEM,
       );
       /** 在这下面添加物品的使用效果 */
       switch (ITEM.typeId) {
@@ -458,7 +458,7 @@ export function itemUseMonitor() {
               300,
               {
                 amplifier: 2,
-              }
+              },
             );
             PLAYER.removeEffect("slowness");
             PLAYER.addEffect("speed", 300, {
@@ -609,7 +609,7 @@ export function itemUseMonitor() {
       case "hy:mineral_fuel_metal":
         PLAYER.dimension.spawnItem(
           HyRewardTypes.nightmareFuel,
-          PLAYER.location
+          PLAYER.location,
         );
         PLAYER.addEffect("fatal_poison", 800, {
           amplifier: 1,

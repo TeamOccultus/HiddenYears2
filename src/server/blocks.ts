@@ -1,7 +1,6 @@
 import { world } from "@minecraft/server";
 import { utils } from "project-lantern";
 
-
 /** 监听方块事件 */
 export function blockMonitor() {
   world.afterEvents.playerBreakBlock.subscribe((event) => {
