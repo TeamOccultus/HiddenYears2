@@ -12,7 +12,7 @@ export const COPPER_APPLE = new quest.Quest(
   {
     condition: HyQuestCondition.copperApple,
     award: HyQuestAward.goldenApple3,
-    iconPath: "textures/items/food_and_drinks/copper_foods/copper_apple",
+    iconPath: "textures/items/foods_and_drinks/copper_foods/copper_apple",
   },
 );
 export const METAL_STAR = new quest.Quest(
@@ -32,7 +32,7 @@ export const COPPER_ESSENCE = new quest.Quest(
   {
     condition: HyQuestCondition.copperEssence,
     award: HyQuestAward.dirt12,
-    iconPath: "textures/items/essences/copper_essence",
+    iconPath: "textures/items/treasures/essences/copper_essence",
   },
 );
 
