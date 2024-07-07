@@ -102,13 +102,13 @@ export const HyQuestAward = {
   },
   diamondCoin3: {
     item: {
-      name: "三枚钻石币",
+      name: "钻石币",
       item: new mc.ItemStack("hy:diamond_coin", 3),
     },
   },
   diamondCoin9: {
     item: {
-      name: "九枚钻石币",
+      name: "钻石币",
       item: new mc.ItemStack("hy:diamond_coin", 9),
     },
   },
@@ -120,61 +120,61 @@ export const HyQuestAward = {
   },
   goldCoin5: {
     item: {
-      name: "五枚金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 5),
     },
   },
   goldCoin6: {
     item: {
-      name: "六枚金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 6),
     },
   },
   goldCoin10: {
     item: {
-      name: "一串金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 10),
     },
   },
   questBook1: {
     item: {
-      name: "一本奇怪的书",
+      name: "奇怪的书",
       item: new mc.ItemStack("hy:quest_book1"),
     },
   },
   goldCoin12: {
     item: {
-      name: "十二枚金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 12),
     },
   },
   goldCoin16: {
     item: {
-      name: "十六枚金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 16),
     },
   },
   goldCoin18: {
     item: {
-      name: "十八枚金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 18),
     },
   },
   goldCoin20: {
     item: {
-      name: "两串金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 20),
     },
   },
   goldCoin25: {
     item: {
-      name: "二十五枚金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 25),
     },
   },
   goldCoin30: {
     item: {
-      name: "三串金币",
+      name: "金币",
       item: new mc.ItemStack("hy:gold_coin", 30),
     },
   },
@@ -186,7 +186,7 @@ export const HyQuestAward = {
   },
   storyBook: {
     item: {
-      name: "一本旧书",
+      name: "旧书",
       item: new mc.ItemStack("hy:story_book"),
     },
   },
@@ -216,7 +216,7 @@ export const HyQuestAward = {
   },
   enderEye4: {
     item: {
-      name: "四颗末影珍珠",
+      name: "末影珍珠",
       item: new mc.ItemStack("ender_eye", 4),
     },
   },
