@@ -1,9 +1,13 @@
 import { ArticleAPI as article } from "project-lantern";
-import { HyLetterTitle, HyLetterBody, HyStoryBody } from "../data/lang";
+import {
+  HyLetterTitle,
+  HyLetterBody,
+  HiddenStoryBody,
+  HiddenStoryTitle,
+} from "../data/lang";
 
 /**
  * 注册书籍
- * @todo 书籍支持本地化
  */
 export function articleRegister() {
   const LETTER_1 = new article.Article(
@@ -78,16 +82,16 @@ export function articleRegister() {
     { translate: "hy.story.hs.body" },
     [
       {
-        title: { translate: "hy.story.hs.title1" },
-        body: HyStoryBody.section0,
+        title: HiddenStoryTitle[0],
+        body: HiddenStoryBody[0],
       },
       {
-        title: { translate: "hy.story.hs.title2" },
-        body: HyStoryBody.section1,
+        title: HiddenStoryTitle[1],
+        body: HiddenStoryBody[1],
       },
       {
-        title: { translate: "hy.story.hs.title3" },
-        body: HyStoryBody.section2,
+        title: HiddenStoryTitle[2],
+        body: HiddenStoryBody[2],
       },
     ],
     "textures/items/treasures/story_book"
@@ -110,6 +114,6 @@ export function articleRegister() {
       LETTER_9,
       LETTER_10,
       LETTER_11,
-    ],
+    ]
   );
 }

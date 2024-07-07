@@ -142,7 +142,6 @@ export function questRegister() {
 
 /**
  * 监听物品耐久事件
- * @todo 用PLT框架实现这个功能
  */
 export function itemDurabilityMonitor() {
   world.afterEvents.playerBreakBlock.subscribe((event) => {
