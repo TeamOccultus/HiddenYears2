@@ -25,14 +25,6 @@ export function playerSpawnMonitor(): void {
  * 监听实体事件
  */
 export function entityEventsMonitor(): void {
-  world.afterEvents.entityDie.subscribe((event) => {
-    const ENTITY = event.deadEntity;
-    /** 红宝石之王死亡时的事件 */
-    if (ENTITY.typeId === "hy:king_of_ruby") {
-      world.stopMusic();
-      world.sendMessage([{ translate: "hy.bossdead.ruby" }]);
-    }
-  });
   /** 实体击打实体时的事件 */
   world.afterEvents.entityHitEntity.subscribe((event) => {
     const [ATTACKER, TARGET, ITEM] = [
