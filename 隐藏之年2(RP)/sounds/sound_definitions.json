@@ -12,6 +12,12 @@
       "max_distance": null,
       "min_distance": null,
       "sounds": ["sounds/item/copper_horn/walk"]
+    },
+    "boss_skill.ruby": {
+      "category": "master",
+      "max_distance": 15,
+      "min_distance": 0,
+      "sounds": ["sounds/boss_skill/ruby"]
     }
   }
 }

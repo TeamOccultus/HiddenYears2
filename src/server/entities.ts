@@ -76,6 +76,7 @@ export function bossSkillRegister() {
           })
           .forEach((entity) => {
             if (entity instanceof Player) {
+              entity.playSound("boss_skill.ruby");
               entity.sendMessage({ translate: "hy.boosSkill.ruby.exp" });
               entity.addLevels(-9999);
             }
@@ -89,10 +90,12 @@ export function bossSkillRegister() {
             maxDistance: 15,
           })
           .forEach((entity) => {
-            if (entity instanceof Player)
+            if (entity instanceof Player) {
+              entity.playSound("boss_skill.ruby");
               entity.sendMessage({
                 translate: "hy.boosSkill.ruby.guardian",
               });
+            }
           });
         KING.dimension.spawnEntity("hy:ruby_guardian", {
           x: KING.location.x + 1,
@@ -124,6 +127,7 @@ export function bossSkillRegister() {
           })
           .forEach((entity) => {
             if (entity instanceof Player) {
+              entity.playSound("boss_skill.ruby");
               entity.sendMessage({
                 translate: "hy.boosSkill.ruby.lightning",
               });
@@ -131,12 +135,14 @@ export function bossSkillRegister() {
             entity.dimension.spawnEntity("lightning_bolt", entity.location);
           });
       }, 1600);
-      if (KING.getComponent("health").currentValue < 40) {
-        
-        system.clearRun(num1);
-        system.clearRun(num2);
-        system.clearRun(num3);
-      }
+      world.afterEvents.entityDie.subscribe((event) => {
+        if (event.deadEntity.id === KING.id) {
+          console.warn("Clear all skills.");
+          system.clearRun(num1);
+          system.clearRun(num2);
+          system.clearRun(num3);
+        }
+      });
     }
   });
 }
