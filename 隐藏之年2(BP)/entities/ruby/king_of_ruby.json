@@ -20,7 +20,7 @@
         "filters": { "test": "is_difficulty", "value": "peaceful" }
       },
       "minecraft:boss": {
-        "should_darken_sky": false,
+        "should_darken_sky": true,
         "hud_range": 125,
         "name": "entity.hy:king_of_ruby.name"
       },

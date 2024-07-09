@@ -1,13 +1,11 @@
 {
   "include": ["src/*"],
   "compilerOptions": {
-    "suppressImplicitAnyIndexErrors": true,
-    "ignoreDeprecations": "5.0",
     "target": "es2022",
     "module": "ES2022",
     "moduleResolution": "node10",
     //"declaration": true,
-    "outDir": "./隐藏之年2(BP)/scripts",
+    "outDir": ".gitee/ISSUE_TEMPLATE/隐藏之年2(BP)/scripts",
     "noEmit": true,
     "removeComments": true,
     "esModuleInterop": true,

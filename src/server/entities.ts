@@ -1,5 +1,11 @@
-import { world, ItemLockMode, Player } from "@minecraft/server";
-import { utils } from "project-lantern";
+import {
+  world,
+  ItemLockMode,
+  Player,
+  Dimension,
+  system,
+} from "@minecraft/server";
+import { types, utils } from "project-lantern";
 import { HyRewardTypes } from "../data/data";
 
 /**
@@ -53,6 +59,84 @@ export function entityEventsMonitor(): void {
         break;
       default:
         break;
+    }
+  });
+}
+
+export function bossSkillRegister() {
+  world.afterEvents.entitySpawn.subscribe((event) => {
+    if (event.entity.typeId === "hy:king_of_ruby") {
+      const KING = event.entity;
+      let num1 = system.runInterval(() => {
+        KING.dimension
+          .getEntities({
+            location: KING.location,
+            minDistance: 0,
+            maxDistance: 15,
+          })
+          .forEach((entity) => {
+            if (entity instanceof Player) {
+              entity.sendMessage({ translate: "hy.boosSkill.ruby.exp" });
+              entity.addLevels(-9999);
+            }
+          });
+      }, 600);
+      let num2 = system.runInterval(() => {
+        KING.dimension
+          .getEntities({
+            location: KING.location,
+            minDistance: 0,
+            maxDistance: 15,
+          })
+          .forEach((entity) => {
+            if (entity instanceof Player)
+              entity.sendMessage({
+                translate: "hy.boosSkill.ruby.guardian",
+              });
+          });
+        KING.dimension.spawnEntity("hy:ruby_guardian", {
+          x: KING.location.x + 1,
+          y: KING.location.y,
+          z: KING.location.z,
+        });
+        KING.dimension.spawnEntity("hy:ruby_guardian", {
+          x: KING.location.x - 1,
+          y: KING.location.y,
+          z: KING.location.z,
+        });
+        KING.dimension.spawnEntity("hy:ruby_guardian", {
+          x: KING.location.x,
+          y: KING.location.y,
+          z: KING.location.z + 1,
+        });
+        KING.dimension.spawnEntity("hy:ruby_guardian", {
+          x: KING.location.x,
+          y: KING.location.y,
+          z: KING.location.z - 1,
+        });
+      }, 1000);
+      let num3 = system.runInterval(() => {
+        KING.dimension
+          .getEntities({
+            location: KING.location,
+            minDistance: 0,
+            maxDistance: 8,
+          })
+          .forEach((entity) => {
+            if (entity instanceof Player) {
+              entity.sendMessage({
+                translate: "hy.boosSkill.ruby.lightning",
+              });
+            }
+            entity.dimension.spawnEntity("lightning_bolt", entity.location);
+          });
+      }, 1600);
+      if (KING.getComponent("health").currentValue < 40) {
+        
+        system.clearRun(num1);
+        system.clearRun(num2);
+        system.clearRun(num3);
+      }
     }
   });
 }

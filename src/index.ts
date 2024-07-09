@@ -1,5 +1,5 @@
 import { blockMonitor } from "./server/blocks";
-import { entityEventsMonitor, playerSpawnMonitor } from "./server/entities";
+import { bossSkillRegister, entityEventsMonitor, playerSpawnMonitor } from "./server/entities";
 import {
   questRegister,
   itemUseMonitor,
@@ -23,3 +23,4 @@ itemUseMonitor();
 questRegister();
 articleRegister();
 musicRegister();
+bossSkillRegister();
