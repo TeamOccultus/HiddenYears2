@@ -231,7 +231,7 @@
       "textures": "textures/items/amethyst_dagger"
     },
     "hy.copper_dagger": {
-      "textures": "textures/items/copper_daggers/copper_dagger"
+      "textures": "textures/items/copper_dagger"
     },
     "hy.iron_dagger": {
       "textures": "textures/items/iron_dagger"
@@ -306,7 +306,7 @@
       "textures": "textures/items/over_metal_axe"
     },
     "hy.over_metal_hammer": {
-      "textures": "textures/items/stone_over_metal_hammer"
+      "textures": "textures/items/over_metal_hammer"
     },
     "hy.over_metal_hoe": {
       "textures": "textures/items/over_metal_hoe"
@@ -330,7 +330,7 @@
       "textures": "textures/items/nether_metal_axe"
     },
     "hy.nether_metal_hammer": {
-      "textures": "textures/items/stone_nether_metal_hammer"
+      "textures": "textures/items/nether_metal_hammer"
     },
     "hy.nether_metal_hoe": {
       "textures": "textures/items/nether_metal_hoe"
@@ -597,7 +597,7 @@
       "textures": "textures/items/fuel_metal_stick"
     },
     "hy.bark": {
-      "textures": "textures/items/materials/bark"
+      "textures": "textures/items/bark"
     },
     "hy.copper_badge": {
       "textures": "textures/items/copper_badge"
@@ -759,7 +759,7 @@
       "textures": "textures/items/amethyst_marshallow"
     },
     "hy.ruby": {
-      "textures": "textures/items/materials/ruby"
+      "textures": "textures/items/ruby"
     },
     "hy.story_book": {
       "textures": "textures/items/story_book"
@@ -834,7 +834,7 @@
       "textures": "textures/items/imitation_golden_axe"
     },
     "hy.imitation_amethyst_axe": {
-      "textures": "textures/items/imitation_amethystaxe"
+      "textures": "textures/items/imitation_amethyst_axe"
     },
     "hy.imitation_diamond_hammer": {
       "textures": "textures/items/imitation_diamond_hammer"
@@ -870,7 +870,7 @@
       "textures": "textures/items/imitation_golden_pickaxe"
     },
     "hy.imitation_amethyst_pickaxe": {
-      "textures": "textures/items/imitation_amethystpickaxe"
+      "textures": "textures/items/imitation_amethyst_pickaxe"
     },
     "hy.imitation_diamond_shovel": {
       "textures": "textures/items/imitation_diamond_shovel"

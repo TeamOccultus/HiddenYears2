@@ -105,7 +105,7 @@ export class Article {
       { translate: "hy.collection.title" },
       { translate: "hy.collection.body" },
       {
-        commmand: "!books",
+        command: ["!books", "!文章"],
         itemStack: new ItemStack("hy:collection_book"),
       },
       [
