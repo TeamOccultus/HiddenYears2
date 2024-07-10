@@ -11,7 +11,7 @@
         "value": "hy.item.mineral_charcoals"
       },
       "minecraft:fuel": {
-        "duration": 400
+        "duration": 800
       },
       "minecraft:icon": {
         "texture": "charcoal"
