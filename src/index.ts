@@ -4,6 +4,7 @@ import { Item, Quest } from "./server/items";
 import { Article } from "./server/article";
 import { System } from "./server/system";
 import { Music } from "./server/music";
+import { Debug } from "./server/debug";
 
 System.initialize();
 export const MOD_LOGGER = System.startLogger();
@@ -18,3 +19,4 @@ Item.durabilityMonitor();
 Quest.register();
 Article.register();
 Music.register();
+Debug.monitorLogger();

@@ -5,6 +5,9 @@ import {
   HiddenStoryBody,
   HiddenStoryTitle,
 } from "../data/lang";
+import { MOD_LOGGER } from "..";
+import { ItemStack, world } from "@minecraft/server";
+import { giveItem } from "project-lantern/src/utils";
 
 export class Article {
   /**
@@ -101,7 +104,10 @@ export class Article {
       "hy:article_collection",
       { translate: "hy.collection.title" },
       { translate: "hy.collection.body" },
-      { commmand: "&collection" },
+      {
+        commmand: "!books",
+        itemStack: new ItemStack("hy:collection_book"),
+      },
       [
         HIDDEN_STORIES,
         LETTER_1,
@@ -117,5 +123,11 @@ export class Article {
         LETTER_11,
       ]
     );
+    world.afterEvents.playerSpawn.subscribe((event) => {
+      if (event.player.hasTag("hy:get_collection")) {
+        giveItem([event.player], new ItemStack("hy:collection_book"));
+      }
+    });
+    MOD_LOGGER.info("Articles registired successfully.");
   }
 }

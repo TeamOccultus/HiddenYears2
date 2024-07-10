@@ -674,7 +674,7 @@ hy.item.suffering_sword=痛苦之剑
 hy.item.sprite_history=精灵史摘要
 hy.item.soul_letter.sprite=凝魂信笺·风灵
 
-hy.collection.title=文章收藏集
+hy.collection.title=记忆文库
 hy.collection.body=这里会显示你所有阅读过的文章
 
 api.unexpected_error.quest=任务系统出现未知错误
