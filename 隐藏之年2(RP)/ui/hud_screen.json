@@ -1,0 +1,45 @@
+{
+  "namespace": "hud",
+
+//-------------------
+// BOSS 血条 类
+//-------------------
+	
+//BOSS 血条面板
+  "boss_health_panel": {
+    "type": "panel",
+    "size": [ 188, 26 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$progress_bar_collection": "boss_bars",
+    "controls": [
+      { "ruby@boss.ruby": { "offset": [ 0, 6 ], "layer": 5 } },
+      { "progress_bar_for_collections@common.progress_bar_for_collections": { "layer": 1,"offset": [ 0, 16 ] } },
+     // 名称
+      {
+      	"boss_name@hud.boss_name_panel": {
+      		"layer": 50,
+      		"offset": [ 0, -2 ]
+      	}
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "#bar_visible",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  
+ //BOSS 名称 面板
+  "boss_name_panel": {
+    "layer": 5
+  },
+  
+ //BOSS 堆叠 面板
+  "boss_health_grid": {
+    "size": [ 188, "30%" ]
+  }
+}

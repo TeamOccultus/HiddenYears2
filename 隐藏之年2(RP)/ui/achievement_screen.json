@@ -1,0 +1,10 @@
+
+{
+  "namespace": "achievement",
+  "empty_progress_bar_icon": {
+  	"size": [ 182, 6 ]
+  },
+  "full_progress_bar_icon_base": {
+	  "size": [ 182, 6 ]
+  }
+}
