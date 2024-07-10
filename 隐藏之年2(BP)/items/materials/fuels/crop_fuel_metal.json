@@ -14,7 +14,7 @@
         "movement_modifier": 0.5
       },
       "minecraft:fuel": {
-        "duration": 300
+        "duration": 150
       },
       "minecraft:display_name": {
         "value": "hy.item.crop_fuel_metal"
