@@ -573,22 +573,22 @@
       "textures": "textures/items/corrosion_ingot"
     },
     "hy.exposed_copper_dust": {
-      "textures": "textures/items/corrosion_dusts/exposed_copper_dust"
+      "textures": "textures/items/exposed_copper_dust"
     },
     "hy.weathered_copper_dust": {
-      "textures": "textures/items/corrosion_dusts/weathered_copper_dust"
+      "textures": "textures/items/weathered_copper_dust"
     },
     "hy.oxidized_copper_dust": {
-      "textures": "textures/items/corrosion_dusts/oxidized_copper_dust"
+      "textures": "textures/items/oxidized_copper_dust"
     },
     "hy.iron_crowbar": {
-      "textures": "textures/items/tools/crowbars/iron_crowbar"
+      "textures": "textures/items/iron_crowbar"
     },
     "hy.gold_crowbar": {
-      "textures": "textures/items/tools/crowbars/gold_crowbar"
+      "textures": "textures/items/gold_crowbar"
     },
     "hy.diamond_crowbar": {
-      "textures": "textures/items/tools/crowbars/diamond_crowbar"
+      "textures": "textures/items/diamond_crowbar"
     },
     "sc.stone_nugget": {
       "textures": "textures/items/stone_nugget"
@@ -600,64 +600,64 @@
       "textures": "textures/items/materials/bark"
     },
     "hy.copper_badge": {
-      "textures": "textures/items/treasures/badges/copper_badge"
+      "textures": "textures/items/copper_badge"
     },
     "hy.diamond_badge": {
-      "textures": "textures/items/treasures/badges/diamond_badge"
+      "textures": "textures/items/diamond_badge"
     },
     "hy.golden_badge": {
-      "textures": "textures/items/treasures/badges/golden_badge"
+      "textures": "textures/items/golden_badge"
     },
     "hy.disc_fragment": {
-      "textures": "textures/items/treasures/disc_fragment"
+      "textures": "textures/items/disc_fragment"
     },
     "hy.copper_horn": {
-      "textures": "textures/items/treasures/copper_horn"
+      "textures": "textures/items/copper_horn"
     },
     "hy.copper_helmet": {
-      "textures": "textures/items/armors/copper_armors/copper_helmet"
+      "textures": "textures/items/copper_helmet"
     },
     "hy.copper_chestplate": {
-      "textures": "textures/items/armors/copper_armors/copper_chestplate"
+      "textures": "textures/items/copper_chestplate"
     },
     "hy.copper_leggings": {
-      "textures": "textures/items/armors/copper_armors/copper_leggings"
+      "textures": "textures/items/copper_leggings"
     },
     "hy.copper_boots": {
-      "textures": "textures/items/armors/copper_armors/copper_boots"
+      "textures": "textures/items/copper_boots"
     },
     "hy.amethyst_boardsword": {
-      "textures": "textures/items/tools/weapons/boardswords/amethyst_boardsword"
+      "textures": "textures/items/amethyst_boardsword"
     },
     "hy.flash_metal_boardsword": {
-      "textures": "textures/items/tools/weapons/boardswords/flash_metal_boardsword"
+      "textures": "textures/items/flash_metal_boardsword"
     },
     "hy.flash_copper_boardsword": {
-      "textures": "textures/items/tools/weapons/boardswords/flash_copper_boardsword"
+      "textures": "textures/items/flash_copper_boardsword"
     },
     "hy.diamond_bone": {
-      "textures": "textures/items/tools/weapons/boardswords/diamond_bone"
+      "textures": "textures/items/diamond_bone"
     },
     "hy.gold_bone": {
-      "textures": "textures/items/tools/weapons/boardswords/gold_bone"
+      "textures": "textures/items/gold_bone"
     },
     "hy.iron_bone": {
-      "textures": "textures/items/tools/weapons/boardswords/iron_bone"
+      "textures": "textures/items/iron_bone"
     },
     "hy.emerald_boardsword": {
-      "textures": "textures/items/tools/weapons/boardswords/emerald_boardsword"
+      "textures": "textures/items/emerald_boardsword"
     },
     "hy.flash_copper_helmet": {
-      "textures": "textures/items/armors/flash_copper_armors/flash_copper_helmet"
+      "textures": "textures/items/flash_copper_helmet"
     },
     "hy.flash_copper_chestplate": {
-      "textures": "textures/items/armors/flash_copper_armors/flash_copper_chestplate"
+      "textures": "textures/items/flash_copper_chestplate"
     },
     "hy.flash_copper_leggings": {
-      "textures": "textures/items/armors/flash_copper_armors/flash_copper_leggings"
+      "textures": "textures/items/flash_copper_leggings"
     },
     "hy.flash_copper_boots": {
-      "textures": "textures/items/armors/flash_copper_armors/flash_copper_boots"
+      "textures": "textures/items/flash_copper_boots"
     },
     "hy.medicines.1": {
       "textures": "textures/items/medicine_1"
@@ -702,111 +702,111 @@
       "textures": "textures/items/medicine_14"
     },
     "hy.copper_apple": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_apple"
+      "textures": "textures/items/copper_apple"
     },
     "hy.copper_bread": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_bread"
+      "textures": "textures/items/copper_bread"
     },
     "hy.copper_carrot": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_carrot"
+      "textures": "textures/items/copper_carrot"
     },
     "hy.copper_hodgepodge": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_hodgepodge"
+      "textures": "textures/items/copper_hodgepodge"
     },
     "hy.copper_kelp": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_kelp"
+      "textures": "textures/items/copper_kelp"
     },
     "hy.copper_melon_slice": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_melon_slice"
+      "textures": "textures/items/copper_melon_slice"
     },
     "hy.copper_potato": {
-      "textures": "textures/items/foods_and_drinks/copper_foods/copper_potato"
+      "textures": "textures/items/copper_potato"
     },
     "hy.lost_letter": {
-      "textures": "textures/items/treasures/lost_letter"
+      "textures": "textures/items/lost_letter"
     },
     "mc.potion": {
       "textures": "textures/items/potion_bottle_drinkable"
     },
     "hy.honey_candy": {
-      "textures": "textures/items/foods_and_drinks/candies/honey_candy"
+      "textures": "textures/items/honey_candy"
     },
     "hy.chocolate_paste": {
-      "textures": "textures/items/foods_and_drinks/candies/chocolate_paste"
+      "textures": "textures/items/chocolate_paste"
     },
     "hy.chocolate_bar": {
-      "textures": "textures/items/foods_and_drinks/candies/chocolate_bar"
+      "textures": "textures/items/chocolate_bar"
     },
     "hy.chocolate": {
-      "textures": "textures/items/foods_and_drinks/candies/chocolate"
+      "textures": "textures/items/chocolate"
     },
     "hy.milk_chocolate": {
-      "textures": "textures/items/foods_and_drinks/candies/milk_chocolate"
+      "textures": "textures/items/milk_chocolate"
     },
     "hy.sweet_berry_chocolate": {
-      "textures": "textures/items/foods_and_drinks/candies/sweet_berry_chocolate"
+      "textures": "textures/items/sweet_berry_chocolate"
     },
     "hy.amethyst_chocolate": {
-      "textures": "textures/items/foods_and_drinks/candies/amethyst_chocolate"
+      "textures": "textures/items/amethyst_chocolate"
     },
     "hy.marshallow": {
-      "textures": "textures/items/foods_and_drinks/candies/marshallow"
+      "textures": "textures/items/marshallow"
     },
     "hy.sweet_berry_marshallow": {
-      "textures": "textures/items/foods_and_drinks/candies/sweet_berry_marshallow"
+      "textures": "textures/items/sweet_berry_marshallow"
     },
     "hy.amethyst_marshallow": {
-      "textures": "textures/items/foods_and_drinks/candies/amethyst_marshallow"
+      "textures": "textures/items/amethyst_marshallow"
     },
     "hy.ruby": {
       "textures": "textures/items/materials/ruby"
     },
     "hy.story_book": {
-      "textures": "textures/items/treasures/story_book"
+      "textures": "textures/items/story_book"
     },
     "hy.ruby_helmet": {
-      "textures": "textures/items/armors/ruby_armors/ruby_helmet"
+      "textures": "textures/items/ruby_helmet"
     },
     "hy.ruby_chestplate": {
-      "textures": "textures/items/armors/ruby_armors/ruby_chestplate"
+      "textures": "textures/items/ruby_chestplate"
     },
     "hy.ruby_leggings": {
-      "textures": "textures/items/armors/ruby_armors/ruby_leggings"
+      "textures": "textures/items/ruby_leggings"
     },
     "hy.ruby_boots": {
-      "textures": "textures/items/armors/ruby_armors/ruby_boots"
+      "textures": "textures/items/ruby_boots"
     },
     "hy.ruby_apple": {
-      "textures": "textures/items/foods_and_drinks/ruby_apple"
+      "textures": "textures/items/ruby_apple"
     },
     "hy.ruby_boardsword": {
-      "textures": "textures/items/tools/weapons/boardswords/ruby_boardsword"
+      "textures": "textures/items/ruby_boardsword"
     },
     "hy.ruby_runes": {
-      "textures": "textures/items/treasures/runes/ruby_runes"
+      "textures": "textures/items/ruby_runes"
     },
     "hy.ruby_bag": {
-      "textures": "textures/items/treasures/bags/ruby_bag"
+      "textures": "textures/items/ruby_bag"
     },
     "hy.calamity_bag": {
-      "textures": "textures/items/treasures/bags/calamity_bag"
+      "textures": "textures/items/calamity_bag"
     },
     "hy.quest_book.0": {
-      "textures": "textures/items/treasures/books/0"
+      "textures": "textures/items/quest_book0"
     },
     "hy.quest_book.1": {
-      "textures": "textures/items/treasures/books/1"
+      "textures": "textures/items/quest_book1"
     },
     "hy.spawn_eggs": {
       "textures": [
-        "textures/items/spawn_eggs/egg_king_of_ruby",
-        "textures/items/spawn_eggs/egg_ruby_guardian",
-        "textures/items/spawn_eggs/egg_ruby_zombie",
-        "textures/items/spawn_eggs/egg_ruby_skeleton",
-        "textures/items/spawn_eggs/egg_gemstone_trader",
-        "textures/items/spawn_eggs/egg_hidden_trader",
-        "textures/items/spawn_eggs/egg_sprite",
-        "textures/items/spawn_eggs/egg_ferocious_sprite"
+        "textures/items/egg_king_of_ruby",
+        "textures/items/egg_ruby_guardian",
+        "textures/items/egg_ruby_zombie",
+        "textures/items/egg_ruby_skeleton",
+        "textures/items/egg_gemstone_trader",
+        "textures/items/egg_hidden_trader",
+        "textures/items/egg_sprite",
+        "textures/items/egg_ferocious_sprite"
       ]
     },
     "hy.imitation_diamond": {

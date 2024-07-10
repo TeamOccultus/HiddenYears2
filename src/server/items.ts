@@ -113,7 +113,7 @@ export class Quest {
             quests.RUBY_BAG,
             quests.RUBY_RUNES,
           ],
-          iconPath: "textures/items/materials/ruby",
+          iconPath: "textures/items/ruby",
         },
         {
           title: { translate: "hy.quest.chapter3.title" },
