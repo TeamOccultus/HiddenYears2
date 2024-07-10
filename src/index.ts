@@ -1,26 +1,20 @@
-import { blockMonitor } from "./server/blocks";
-import { bossSkillRegister, entityEventsMonitor, playerSpawnMonitor } from "./server/entities";
-import {
-  questRegister,
-  itemUseMonitor,
-  itemDurabilityMonitor,
-} from "./server/items";
-import { articleRegister } from "./server/article";
-import { systemMonitor } from "./server/system";
-import { musicRegister } from "./server/music";
-import { initializeMod } from "project-lantern";
+import { Block } from "./server/blocks";
+import { Entity } from "./server/entities";
+import { Item, Quest } from "./server/items";
+import { Article } from "./server/article";
+import { System } from "./server/system";
+import { Music } from "./server/music";
 
-initializeMod("hy", "HiddenYears", {
-  questNameSpace: "hy-q",
-  watchdogDisabled: true,
-});
-systemMonitor();
-blockMonitor();
-entityEventsMonitor();
-playerSpawnMonitor();
-itemDurabilityMonitor();
-itemUseMonitor();
-questRegister();
-articleRegister();
-musicRegister();
-bossSkillRegister();
+System.initialize();
+export const MOD_LOGGER = System.startLogger();
+System.eventMonitor();
+Block.eventMonitor();
+Entity.eventsMonitor();
+Entity.spawnMonitor();
+Entity.skillRegister();
+Item.foodMonitor();
+Item.useMonitor();
+Item.durabilityMonitor();
+Quest.register();
+Article.register();
+Music.register();

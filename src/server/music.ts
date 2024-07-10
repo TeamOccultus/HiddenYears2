@@ -1,24 +1,32 @@
-import { world, ItemStack } from "@minecraft/server";
+import { Player, world } from "@minecraft/server";
+import { MOD_LOGGER } from "..";
 
-export function musicRegister(){
-world.afterEvents.itemUse.subscribe((event) => {
-  switch (event.itemStack.typeId) {
-    /** 播放红宝石之王BOSS战音乐 */
-    case "hy:experience_calamity_bag":
-     world.playMusic("music.boss.ruby", {
-      loop: true
-     });
-    break;
-    default:
-      break;
+export class Music {
+  static register() {
+    world.afterEvents.entitySpawn.subscribe((event) => {
+      if (event.entity.typeId === "hy:king_of_ruby") {
+        const KING = event.entity;
+        KING.dimension
+          .getEntities({
+            location: KING.location,
+            minDistance: 0,
+            maxDistance: 20,
+          })
+          .forEach((entity) => {
+            if (entity instanceof Player) {
+              entity.playMusic("music.boss.ruby", {
+                loop: true,
+              });
+            }
+            world.afterEvents.entityDie.subscribe((event) => {
+              if (event.deadEntity.id === KING.id) {
+                world.stopMusic();
+                world.sendMessage([{ translate: "hy.bossdead.ruby" }]);
+              }
+            });
+          });
+      }
+    });
+    MOD_LOGGER.info("Music registried successfully.")
   }
-});
-world.afterEvents.entityDie.subscribe((event) => {
-    const ENTITY = event.deadEntity;
-    /** 红宝石之王死亡时结束所有音乐 */
-    if (ENTITY.typeId === "hy:king_of_ruby") {
-      world.stopMusic();
-      world.sendMessage([{ translate: "hy.bossdead.ruby" }]);
-    }
-  });
 }
