@@ -12,8 +12,7 @@
           "name": "minecraft:book",
           "weight": 10,
           "functions": [
-            { "function": "enchant_randomly" },
-            { "function": "set_count", "count": { "min": 2, "max": 3 } }
+            { "function": "enchant_randomly" }
           ]
         }
       ]
