@@ -124,8 +124,9 @@ export class Article {
       ]
     );
     world.afterEvents.playerSpawn.subscribe((event) => {
-      if (event.player.hasTag("hy:get_collection")) {
+      if (!event.player.hasTag("hy:get_collection")) {
         giveItem([event.player], new ItemStack("hy:collection_book"));
+        event.player.addTag("hy:get_collection");
       }
     });
     MOD_LOGGER.info("Articles registired successfully.");
