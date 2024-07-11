@@ -14,7 +14,7 @@
         "track_target": true
       },
       "minecraft:attack": {
-        "damage": 20
+        "damage": 5
       },
       "minecraft:despawn": {
         "filters": { "test": "is_difficulty", "value": "peaceful" }
@@ -51,8 +51,8 @@
         "table": "loot_tables/entities/king_of_ruby.json"
       },
       "minecraft:health": {
-        "value": 250,
-        "max": 250
+        "value": 400,
+        "max": 400
       },
       "minecraft:damage_sensor": {
         "triggers": {
