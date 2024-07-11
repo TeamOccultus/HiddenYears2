@@ -59,7 +59,7 @@ export class Entity {
    * 注册实体技能
    */
   static skillRegister() {
-    world.afterEvents.entitySpawn.subscribe((event) => {
+    world.afterEvents.entityLoad.subscribe((event) => {
       if (event.entity.typeId === "hy:king_of_ruby") {
         const KING = event.entity;
         let num1 = system.runInterval(() => {

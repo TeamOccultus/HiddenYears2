@@ -3,7 +3,7 @@ import { MOD_LOGGER } from "..";
 
 export class Music {
   static register() {
-    world.afterEvents.entitySpawn.subscribe((event) => {
+    world.afterEvents.entityLoad.subscribe((event) => {
       if (event.entity.typeId === "hy:king_of_ruby") {
         const KING = event.entity;
         KING.dimension

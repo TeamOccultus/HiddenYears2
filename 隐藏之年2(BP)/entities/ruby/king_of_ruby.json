@@ -16,9 +16,6 @@
       "minecraft:attack": {
         "damage": 5
       },
-      "minecraft:despawn": {
-        "filters": { "test": "is_difficulty", "value": "peaceful" }
-      },
       "minecraft:boss": {
         "should_darken_sky": true,
         "hud_range": 125,
@@ -92,13 +89,6 @@
       "minecraft:can_climb": {},
       "minecraft:behavior.float": {
         "priority": 0
-      },
-      "minecraft:spawn_entity": {
-        "min_wait_time": 25.0,
-        "max_wait_time": 45.0,
-        "num_to_spawn": 4,
-        "single_use": true,
-        "spawn_entity": "hy:ruby_guardian"
       },
       "minecraft:behavior.random_stroll": {
         "priority": 2,
