@@ -46,7 +46,6 @@ export class Entity {
       const PLAYER = event.player;
       if (!PLAYER.hasTag("hy:get_quest_book")) {
         HyRewardTypes.questBook1st.keepOnDeath = true;
-        HyRewardTypes.questBook1st.lockMode = ItemLockMode.inventory;
         PLAYER.dimension.spawnItem(HyRewardTypes.questBook1st, PLAYER.location);
         PLAYER.addTag("hy:get_quest_book");
       }
