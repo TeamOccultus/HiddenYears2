@@ -76,7 +76,7 @@ export class Entity {
                 entity.addLevels(-9999);
               }
             });
-        }, 600);
+        }, 300);
         let num2 = system.runInterval(() => {
           KING.dimension
             .getEntities({
@@ -112,13 +112,13 @@ export class Entity {
             y: KING.location.y,
             z: KING.location.z - 1,
           });
-        }, 1000);
+        }, 500);
         let num3 = system.runInterval(() => {
           KING.dimension
             .getEntities({
               location: KING.location,
               minDistance: 0,
-              maxDistance: 8,
+              maxDistance: 15,
             })
             .forEach((entity) => {
               if (entity instanceof Player) {
@@ -127,9 +127,11 @@ export class Entity {
                   translate: "hy.boosSkill.ruby.lightning",
                 });
               }
-              entity.dimension.spawnEntity("lightning_bolt", entity.location);
+              if(!entity.matches({ families: ["ruby"] })){
+                entity.dimension.spawnEntity("lightning_bolt", entity.location);
+              }
             });
-        }, 1600);
+        }, 800);
         world.afterEvents.entityDie.subscribe((event) => {
           if (event.deadEntity.id === KING.id) {
             console.warn("Clear all skills.");
