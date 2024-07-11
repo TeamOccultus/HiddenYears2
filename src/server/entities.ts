@@ -1,6 +1,7 @@
 import { world, ItemLockMode, Player, system } from "@minecraft/server";
 import { utils } from "project-lantern";
 import { HyRewardTypes } from "../data/data";
+import { rubyKingSkill } from "./entitySkills";
 
 export class Entity {
   /**
@@ -61,85 +62,12 @@ export class Entity {
   static skillRegister() {
     world.afterEvents.entityLoad.subscribe((event) => {
       if (event.entity.typeId === "hy:king_of_ruby") {
-        const KING = event.entity;
-        let num1 = system.runInterval(() => {
-          KING.dimension
-            .getEntities({
-              location: KING.location,
-              minDistance: 0,
-              maxDistance: 15,
-            })
-            .forEach((entity) => {
-              if (entity instanceof Player) {
-                entity.playSound("boss_skill.ruby");
-                entity.sendMessage({ translate: "hy.boosSkill.ruby.exp" });
-                entity.addLevels(-9999);
-              }
-            });
-        }, 300);
-        let num2 = system.runInterval(() => {
-          KING.dimension
-            .getEntities({
-              location: KING.location,
-              minDistance: 0,
-              maxDistance: 15,
-            })
-            .forEach((entity) => {
-              if (entity instanceof Player) {
-                entity.playSound("boss_skill.ruby");
-                entity.sendMessage({
-                  translate: "hy.boosSkill.ruby.guardian",
-                });
-              }
-            });
-          KING.dimension.spawnEntity("hy:ruby_guardian", {
-            x: KING.location.x + 1,
-            y: KING.location.y,
-            z: KING.location.z,
-          });
-          KING.dimension.spawnEntity("hy:ruby_guardian", {
-            x: KING.location.x - 1,
-            y: KING.location.y,
-            z: KING.location.z,
-          });
-          KING.dimension.spawnEntity("hy:ruby_guardian", {
-            x: KING.location.x,
-            y: KING.location.y,
-            z: KING.location.z + 1,
-          });
-          KING.dimension.spawnEntity("hy:ruby_guardian", {
-            x: KING.location.x,
-            y: KING.location.y,
-            z: KING.location.z - 1,
-          });
-        }, 500);
-        let num3 = system.runInterval(() => {
-          KING.dimension
-            .getEntities({
-              location: KING.location,
-              minDistance: 0,
-              maxDistance: 15,
-            })
-            .forEach((entity) => {
-              if (entity instanceof Player) {
-                entity.playSound("boss_skill.ruby");
-                entity.sendMessage({
-                  translate: "hy.boosSkill.ruby.lightning",
-                });
-              }
-              if(!entity.matches({ families: ["ruby"] })){
-                entity.dimension.spawnEntity("lightning_bolt", entity.location);
-              }
-            });
-        }, 800);
-        world.afterEvents.entityDie.subscribe((event) => {
-          if (event.deadEntity.id === KING.id) {
-            console.warn("Clear all skills.");
-            system.clearRun(num1);
-            system.clearRun(num2);
-            system.clearRun(num3);
-          }
-        });
+        rubyKingSkill(event.entity);
+      }
+    });
+    world.afterEvents.entitySpawn.subscribe((event) => {
+      if (event.entity.typeId === "hy:king_of_ruby") {
+        rubyKingSkill(event.entity);
       }
     });
   }

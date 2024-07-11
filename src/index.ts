@@ -3,7 +3,6 @@ import { Entity } from "./server/entities";
 import { Item, Quest } from "./server/items";
 import { Article } from "./server/article";
 import { System } from "./server/system";
-import { Music } from "./server/music";
 import { Debug } from "./server/debug";
 
 System.initialize();
@@ -18,5 +17,4 @@ Item.useMonitor();
 Item.durabilityMonitor();
 Quest.register();
 Article.register();
-Music.register();
-Debug.monitorLogger();
+Debug.chatTrigger();
