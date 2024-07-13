@@ -689,6 +689,9 @@ quest.award=§e完成奖励§r：
 quest.item=%1 个 %2;
 quest.xp=%1 点经验
 quest.level=%1 级经验
+quest.reward.none=无奖励
+quest.condition.none=无条件
+quest.tips=§4特殊提示§r：
 article.nothing.title=无解锁文章
 article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
 
@@ -790,3 +793,5 @@ hy.boosSkill.ruby.exp=红宝石之王即将发动战技§d「经验窃取」§r�
 hy.boosSkill.ruby.guardian=红宝石之王即将发动战技§d「力量的仆从」§r！
 hy.boosSkill.ruby.lightning=红宝石之王即将发动战技§4「往日之雷光」§r！
 hy.message.low_health.ruby=红宝石之王陷入虚弱状态，暂时无法释放战技！
+
+hy.tips.fuel_metal=燃金有剧毒，非必要情况下不要食用！
