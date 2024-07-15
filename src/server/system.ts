@@ -21,9 +21,8 @@ export class System {
   static eventMonitor(): void {
     /** 清除铜食物食用次数 */
     system.runInterval(() => {
-      const PLAYERS = world.getPlayers();
-      PLAYERS.forEach((players) => {
-        players.setDynamicProperty("hy:copper_foods", 0);
+      world.getPlayers().forEach((player) => {
+        player.setDynamicProperty("hy:copper_foods", 0);
         MOD_LOGGER.info("Dynamic Property of copper food eating counts has reset to zero.");
       });
     }, 18000);

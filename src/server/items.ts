@@ -162,7 +162,7 @@ export class Item {
           PLAYER.setDynamicProperty("hy:copper_foods", 0);
         PLAYER.setDynamicProperty("hy:copper_foods", eatFrequency++);
         if (eatFrequency > 12) {
-          PLAYER.addEffect("poison", 100);
+          PLAYER.addEffect("poison", 100);// 5s
           PLAYER.setDynamicProperty("hy:copper_foods", 0);
         }
       }
