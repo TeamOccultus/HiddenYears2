@@ -140,6 +140,9 @@ export const FUEL_METAL = new quest.Quest(
     condition: HyQuestCondition.fuelMetal,
     award: HyQuestAward.enchantedGoldenApple3,
     iconPath: "textures/items/fuel",
+    tips: {
+      translate: "hy.tips.fuel_metal"
+    }
   }
 );
 
