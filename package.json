@@ -9,7 +9,7 @@
     "prettier": "prettier --write .",
     "test": "tsc"
   },
-  "author": "FangLimao",
+  "author": "CTN/Hidden Years Devs",
   "license": "BSD-3-Clause",
   "dependencies": {
     "@minecraft/server": "^1.12.0-beta.1.21.1-stable",

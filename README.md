@@ -1,85 +1,80 @@
-[![pi8qiwV.png](https://s11.ax1x.com/2023/11/11/pi8qiwV.png)](https://imgse.com/i/pi8qiwV)
+[![pFGrHiQ.png](https://s11.ax1x.com/2024/02/16/pFGrHiQ.png)](https://imgse.com/i/pFGrHiQ)
 
-[![pFprESe.jpg](https://s11.ax1x.com/2024/01/09/pFprESe.jpg)](https://imgse.com/i/pFprESe)
+# 隐藏之年²
+> 「在风起之前
+>
+> 「月落之后
+>
+> 「探索这未知的世间吧」
 
-## 概述
+欢迎使用隐藏之年²——一款仍在不断完善中的 Minecraft 冒险模组！
 
-欢迎使用隐藏之年²，一款Minecraft冒险模组！其按照 `BSD-3`开源协议提供，目前在不断地更新下，已经成为一款可玩性极高的附加包。
+本模组将从内至外地改变世界，初入你可能并未发现与原版游戏的不同，但随着探索的深入，潜藏在世界深处的秘密将逐渐被揭开……
 
-本模组将从内至外地改变世界，初入你可能并未发现与原版的不同，但是随着游戏的深入，你将逐渐挖掘潜藏于世界深处的秘密……
+本模组将持续更新，如想要了解更多关于新版本的资讯，请关注[「苦力怕论坛｜闲聊讨论板块」](https://klpbbs.com/forum-41-1.html)。
 
-本附加包/模组仍处于快速迭代期，更新极快且周期不甚稳定。如想要了解更多关于新版本的信息，请关注[『苦力怕论坛｜闲聊交流板块』](https://klpbbs.com/forum-41-1.html)。
+## 内容亮点
 
-## 内容介绍
+- 任务系统：经过精心编排过的任务系统，让你在游玩过程中不再迷失方向！
+- 文章和书籍：模组内置许许多多有趣的阅读物，阅读的过程中即可了解整个世界的逻辑
+- 更多材料：更多的、更新的材料，为你的冒险之旅保驾护航
+- 更多货币：模组添加了三种新的货币，它们与原版的绿宝石等效，但获取更为方便
+- 精巧道具：模组添加了许多奇妙的小玩意，让你的冒险之旅增添几分不一样的乐趣！
+- 原版亦不同：随机的生物血量计算方式、更丰厚的战利品——即使是原版内容也不一样！
+- 持续更新：仍在持续完善模组，使其早日成为内容丰富的冒险模组
+- 更多等待你的发现……
 
-- 原版的材料太少？本附加包/模组添加了不同定位的五种普通材料，它们可以像原版材料一样合成工具、武器，它们分别是：
-  - 闪铜
-  - 钢
-  - 紫水晶
-  - 铜
-  - 岩金
-- 新的武器类型：法器，可以对特定生物造成大范围杀伤，但是玩家自身也会因此收到一些“惩罚”
-- 新的矿物：地心/浅层矿石，它们生成在世界的浅层或深处，需要用一种特殊的工具——撬棍来挖掘
-- 新的货币：铜币、金币、钻石币，它们与原版的绿宝石等效，但不同的是它们获取更为方便
-- 新的工具：撬棍、锤子、小刀
-  - 撬棍可以快速挖掘矿物块及铁门，给你喜欢炫富的朋友迎面一击！
-  - 小刀、匕首，一击致命，耐久低、伤害高
-  - 锤子挖掘速度快，美中不足的是无法挖掘矿石
-- 新的生物血量计算方式：其血量将为随机值，不再固定，类似于原版的马/驴/骡
-- 还有更多等待发现……
+## 快速上手
+### 下载
+- [基岩版下载](https://pan.huang1111.cn/s/N6m8H1)
 
-## 图片展示
+### 安装
+请在加载前保证你的设上安装了最新的 Minecraft 基岩版或模组要求的 Java 版版本，然后进行如下操作：
 
-[![pF9JqyV.jpg](https://s11.ax1x.com/2024/01/10/pF9JqyV.jpg)](https://imgse.com/i/pF9JqyV)
+1. 将下载到的.mcaddon文件导入Minecraft中，并在世界中加载
+2. 开启世界的假日创作者功能、自定义生物群系、测试版API实验性玩法
+3. 大功告成！
 
-[![pF9JLLT.jpg](https://s11.ax1x.com/2024/01/10/pF9JLLT.jpg)](https://imgse.com/i/pF9JLLT)
+## 冒险掠影
 
-[![pF9JbQ0.jpg](https://s11.ax1x.com/2024/01/10/pF9JbQ0.jpg)](https://imgse.com/i/pF9JbQ0)
+## 幕后工作者
+### 隐藏之年开发组
+隐藏之年开发组隶属于星屹工作室，承担隐藏之年²的策划、开发、宣传事宜：
 
-[![pF9J7zq.jpg](https://s11.ax1x.com/2024/01/10/pF9J7zq.jpg)](https://imgse.com/i/pF9J7zq)
-
-[![pF9JTWn.jpg](https://s11.ax1x.com/2024/01/10/pF9JTWn.jpg)](https://imgse.com/i/pF9JTWn)
-
-[![pF9JoJs.jpg](https://s11.ax1x.com/2024/01/10/pF9JoJs.jpg)](https://imgse.com/i/pF9JoJs)
-
-## 下载及版本要求
-
-本模组使用了Script API，因此请在加载前保证：
-
-- 游戏版本在1.20.60以上
-- 开启了假日创作者、自定义生物群系、测试版API实验性玩法
-
-你可以通过云盘下载本模组：https://pan.huang1111.cn/s/N6m8H1
-
-## 相关链接
-
-- 苦力怕论坛：https://klpbbs.com/thread-85797-1-1.html
-- Minebbs：https://www.minebbs.com/resources/6182/
-- 苦力怕论坛反馈：https://klpbbs.com/thread-109005-1-1.html
-- MC百科：https://www.mcmod.cn/class/12453.html
-- Gitee：https://gitee.com/FangLimao/HiddenYears2
-- 官方QQ群：499251252
-- 【推荐模组】石头工艺：https://klpbbs.com/thread-28013-1-1.html
-
-## 开发团队
-
-- 星屹工作室：开发团队
-- 方漓猫：所有者/策划/程序/美术
+- 留璃：负责人/策划/程序
 - 大队长\_Captain：美术
-- KuLou_D：美术
-- 3xFRC：英文本地化/音乐
 - RawDiamondMC：程序
+- 小尽：策划
+- KuLou_D：美术
+- 3xFRC：音乐
+- StoneNugget：本地化
 - oldb：吉祥物
+
+### 贡献者
+同时，感谢所有对隐藏之年²作出贡献的人：
+
+- 吴仁辶：功能建议/剧情建议
+- 痴人心心念念：功能建议
+- portedboar44215：纹理建议
+- 毅轩氵帖 ：功能建议
+- Kastname：协助投稿到MCMod
+- 皮皮虾：漏洞反馈
+- 以及所有玩过隐藏之年²的你们！
 
 ## 版权声明
 
-本模组版权由方漓猫及星屹工作室共同持有，按照BSD-3协议提供，可自由地使用、转载、二次开发，只需附上以下许可证并标明原作者：
+本模组按照 BSD 3-Clause 协议提供，根据此协议，你拥有：
+
+- 自由地使用隐藏之年²的权利
+- 自由地转载隐藏之年²到其他平台的权利
+- 自由地对隐藏之年²进行二次开发的权利
+
+如果要进行转载或二次分发，你必须附上以下许可证并标明原作者：
 
 ```
 BSD 3-Clause License
 
-Copyright (c) 2023-2024, 方漓猫＆星屹工作室
-All rights reserved.
+Copyright (c) 2023-2024, 隐藏之年开发组
 
 Redistribution and use in source and binary forms, with or without
 modification, are permitted provided that the following conditions are met:
@@ -107,9 +102,20 @@ OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
-## 写在最后
+## 相关链接
+- 苦力怕论坛：https://klpbbs.com/thread-85797-1-1.html
+- Minebbs：https://www.minebbs.com/resources/6182/
+- 苦力怕论坛反馈：https://klpbbs.com/thread-109005-1-1.html
+- Minefourm：https://www.mineforum.cn/resources/10/
+- MC百科：https://www.mcmod.cn/class/12453.html
+- Gitee：https://gitee.com/hiddeny-devs/hy2
+- 官方QQ群：499251252
+- 【推荐模组】石头工艺：https://klpbbs.com/thread-28013-1-1.html
 
-做模组/附加包不容易，如果可以，请到[苦力怕论他](https://klpbbs.com/space-uid-855752.html)支持一下我～
+## 写在最后
+愿所有看到这里的冒险家能够在隐藏之年的世界中获得不一样的乐趣！
+
+愿你我的旅途，不论在游戏世界或者现实中，一路顺风无阻，处处生花！
 
 [![pFpP1nU.jpg](https://s11.ax1x.com/2024/01/08/pFpP1nU.jpg)](https://imgse.com/i/pFpP1nU)
 _本作品系星屹工作室出品_
