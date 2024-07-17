@@ -1,9 +1,9 @@
-import { Block } from "./server/blocks";
-import { Entity } from "./server/entities";
-import { Item, Quest } from "./server/items";
-import { Article } from "./server/article";
-import { System } from "./server/system";
-import { Debug } from "./server/debug";
+import { Block } from "./server/blocks.js";
+import { Entity } from "./server/entities.js";
+import { Item, Quest } from "./server/items.js";
+import { Article } from "./server/article.js";
+import { System } from "./server/system.js";
+import { Debug } from "./server/debug.js";
 
 System.initialize();
 export const MOD_LOGGER = System.startLogger();
