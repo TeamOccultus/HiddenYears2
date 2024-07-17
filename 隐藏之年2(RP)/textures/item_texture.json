@@ -893,8 +893,35 @@
     "hy.imitation_gold_sword": {
       "textures": "textures/items/imitation_golden_sword"
     },
-    "hy.imitation_amethyst_boardsword": {
-      "textures": "textures/items/imitation_amethyst_sword"
+    "hy.bone_piece_axe": {
+      "textures": "textures/items/bone_piece_axe"
+    },
+    "hy.bone_piece_hammer": {
+      "textures": "textures/items/bone_piece_hammer"
+    },
+    "hy.bone_piece_hoe": {
+      "textures": "textures/items/bone_piece_hoe"
+    },
+    "hy.bone_piece_pickaxe": {
+      "textures": "textures/items/bone_piece_pickaxe"
+    },
+    "hy.bone_piece_shovel": {
+      "textures": "textures/items/bone_piece_shovel"
+    },
+    "hy.bone_piece": {
+      "textures": "textures/items/bone_piece"
+    },
+    "hy.bone_piece_helmet": {
+      "textures": "textures/items/bone_piece_helmet"
+    },
+    "hy.bone_piece_chestplate": {
+      "textures": "textures/items/bone_piece_chestplate"
+    },
+    "hy.bone_piece_leggings": {
+      "textures": "textures/items/bone_piece_leggings"
+    },
+    "hy.bone_piece_boots": {
+      "textures": "textures/items/bone_piece_boots"
     }
   }
 }

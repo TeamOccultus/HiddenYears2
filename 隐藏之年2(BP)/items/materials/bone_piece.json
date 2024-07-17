@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:bone_piece",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.bone_piece",
+      "minecraft:display_name": {
+        "value": "hy.item.bone_piece"
+      }
+    }
+  }
+}

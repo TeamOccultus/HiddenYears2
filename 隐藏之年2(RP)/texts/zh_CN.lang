@@ -795,3 +795,14 @@ hy.boosSkill.ruby.lightning=红宝石之王即将发动战技§4「往日之雷�
 hy.message.low_health.ruby=红宝石之王陷入虚弱状态，暂时无法释放战技！
 
 hy.tips.fuel_metal=燃金有剧毒，非必要情况下不要食用！
+
+hy.item.bone_piece=骨片
+hy.item.bone_piece_axe=骨片斧
+hy.item.bone_piece_hammer=骨片锤
+hy.item.bone_piece_hoe=骨片锄
+hy.item.bone_piece_pickaxe=骨片镐
+hy.item.bone_piece_shovel=骨片锹
+hy.item.bone_piece_helmet=骨片头盔
+hy.item.bone_piece_chestplate=骨片胸甲
+hy.item.bone_piece_leggings=骨片护腿
+hy.item.bone_piece_boots=骨片靴子
