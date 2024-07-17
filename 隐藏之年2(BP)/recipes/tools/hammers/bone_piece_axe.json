@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "bone_piece_hammer"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "#": {
+        "tag": "hy:is_handle"
+      },
+      "X": {
+        "item": "hy:bone_piece"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:bone_piece"
+      },
+      {
+        "tag": "hy:is_handle"
+      }
+    ],
+    "pattern": ["###", "###", " X "],
+    "result": {
+      "item": "hy:bone_piece_hammer"
+    }
+  }
+}

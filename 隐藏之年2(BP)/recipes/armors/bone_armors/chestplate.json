@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "bone_piece_chestplate"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X X", "XXX", "XXX"],
+    "key": {
+      "X": {
+        "item": "hy:bone_piece"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:bone_piece"
+      }
+    ],
+    "result": {
+      "item": "hy:bone_piece_chestplate"
+    }
+  }
+}
