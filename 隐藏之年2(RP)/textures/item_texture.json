@@ -922,6 +922,9 @@
     },
     "hy.bone_piece_boots": {
       "textures": "textures/items/bone_piece_boots"
+    },
+    "hy.smaragdus": {
+      "textures": "textures/items/smaragdus"
     }
   }
 }
