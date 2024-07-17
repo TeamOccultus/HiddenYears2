@@ -6,7 +6,6 @@ import { System } from "./server/system.js";
 import { Debug } from "./server/debug.js";
 
 System.initialize();
-export const MOD_LOGGER = System.startLogger();
 System.eventMonitor();
 Block.eventMonitor();
 Entity.eventsMonitor();

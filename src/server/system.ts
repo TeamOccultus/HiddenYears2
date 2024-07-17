@@ -1,6 +1,5 @@
 import { system, world } from "@minecraft/server";
 import { initializeMod, LoggerAPI } from "project-lantern";
-import { MOD_LOGGER } from "..";
 
 export class System {
   /**
@@ -24,7 +23,7 @@ export class System {
       const PLAYERS = world.getPlayers();
       PLAYERS.forEach((players) => {
         players.setDynamicProperty("hy:copper_foods", 0);
-        MOD_LOGGER.info("Dynamic Property of copper food eating counts has reset to zero.");
+        console.warn("Dynamic Property of copper food eating counts has reset to zero.");
       });
     }, 18000);
   }

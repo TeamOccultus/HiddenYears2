@@ -5,7 +5,6 @@ import {
   HiddenStoryBody,
   HiddenStoryTitle,
 } from "../data/lang";
-import { MOD_LOGGER } from "..";
 import { ItemStack, world } from "@minecraft/server";
 import { giveItem } from "project-lantern/src/utils";
 
@@ -129,6 +128,5 @@ export class Article {
         event.player.addTag("hy:get_collection");
       }
     });
-    MOD_LOGGER.info("Articles registired successfully.");
   }
 }

@@ -1,4 +1,4 @@
-import { ItemStack, Dimension, world } from "@minecraft/server";
+import { ItemStack } from "@minecraft/server";
 
 /**
  * 隐藏之年 物品锈蚀 的对应表
