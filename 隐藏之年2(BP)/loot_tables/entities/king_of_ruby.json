@@ -35,6 +35,16 @@
       "entries": [
         {
           "type": "item",
+          "name": "hy:ruby_helmet",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
           "name": "hy:ruby_bag",
           "weight": 1,
           "functions": [
