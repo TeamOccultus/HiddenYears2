@@ -19,11 +19,11 @@
         "slot": "armor_torso"
       },
       "minecraft:durability": {
-        "max_durability": 500
+        "max_durability": 400
       },
       "minecraft:wearable": {
         "slot": "slot.armor.chest",
-        "protection": 8
+        "protection": 7
       },
       "minecraft:repairable": {
         "repair_items": [

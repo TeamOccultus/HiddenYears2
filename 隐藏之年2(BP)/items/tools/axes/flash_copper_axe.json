@@ -12,7 +12,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 300
+        "max_durability": 450
       },
       "minecraft:damage": 6,
       "minecraft:enchantable": {
