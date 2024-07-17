@@ -13,10 +13,10 @@
         "texture": "hy.copper_awl"
       },
       "minecraft:durability": {
-        "max_durability": 350
+        "max_durability": 40
       },
       "minecraft:max_stack_size": 1,
-      "minecraft:damage": 9,
+      "minecraft:damage": 3,
       "minecraft:weapon": {},
       "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {
