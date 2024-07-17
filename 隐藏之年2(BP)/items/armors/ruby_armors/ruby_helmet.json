@@ -19,11 +19,11 @@
         "slot": "armor_head"
       },
       "minecraft:durability": {
-        "max_durability": 400
+        "max_durability": 420
       },
       "minecraft:wearable": {
         "slot": "slot.armor.head",
-        "protection": 3
+        "protection": 7
       },
       "minecraft:repairable": {
         "repair_items": [
