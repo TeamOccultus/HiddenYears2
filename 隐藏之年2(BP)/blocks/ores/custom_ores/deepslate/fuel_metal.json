@@ -20,10 +20,9 @@
       "minecraft:map_color": "#565656",
       "minecraft:on_player_destroyed": {
         "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'hy:is_crowbar')"
+        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
       },
       "tag:hy:custom_ores": {},
-      "tag:hy:need_crowbar": {},
       "tag:minecraft:stone_pick_diggable": {}
     },
     "events": {
