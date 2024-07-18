@@ -10,7 +10,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 30,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],
@@ -26,23 +26,18 @@
           "trades": [
             {
               "wants": [
-                { "item": "paper", "quantity": 22, "price_multiplier": 0.05 }
+                { "item": "paper", "quantity": 8, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 2 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 3 }],
               "trader_exp": 2,
               "max_uses": 16,
               "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
+            },
             {
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 3,
+                  "quantity": 5,
                   "price_multiplier": 0.2
                 }
               ],
@@ -147,7 +142,7 @@
       "total_exp_required": 10,
       "groups": [
         {
-          "num_to_select": 1,
+          "num_to_select": 3,
           "trades": [
             {
               "wants": [
@@ -157,12 +152,20 @@
               "trader_exp": 10,
               "max_uses": 12,
               "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "lantern", "quantity": 5 }],
+              "trader_exp": 5,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
               "wants": [
                 { "item": "ink_sac", "quantity": 10, "price_multiplier": 0.05 }
@@ -171,12 +174,7 @@
               "trader_exp": 2,
               "max_uses": 16,
               "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
+            },
             {
               "wants": [
                 { "item": "feather", "quantity": 22, "price_multiplier": 0.05 }
@@ -191,19 +189,6 @@
         {
           "num_to_select": 1,
           "trades": [
-            {
-              "wants": [
-                {
-                  "item": "hy:copper_coin",
-                  "quantity": 1,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "lantern", "quantity": 15 }],
-              "trader_exp": 5,
-              "max_uses": 12,
-              "reward_exp": true
-            },
             {
               "wants": [
                 {
@@ -239,7 +224,7 @@
       "total_exp_required": 70,
       "groups": [
         {
-          "num_to_select": 1,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -362,7 +347,7 @@
           ]
         },
         {
-          "num_to_select": 1,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
