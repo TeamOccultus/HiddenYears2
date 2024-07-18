@@ -2,590 +2,627 @@
   "tiers": [
     {
       "total_exp_required": 0,
-      "trades": [
+      "groups": [
         {
-          "wants": [
-            { "item": "clay_ball", "quantity": 25, "price_multiplier": 0.05 }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 3 }],
-          "trader_exp": 2,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+          "num_to_select": 4,
+          "trades": [
             {
-              "item": "red_sandstone",
-              "quantity": 32,
-              "price_multiplier": 0.05,
-              "functions": [{ "function": "set_data", "data": 0 }]
-            }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 18 }],
-          "trader_exp": 2,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "clay_ball",
+                  "quantity": 25,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "sandstone",
-              "quantity": 32,
-              "price_multiplier": 0.05,
-              "functions": [{ "function": "set_data", "data": 0 }]
-            }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 18 }],
-          "trader_exp": 2,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            { "item": "deepslate", "quantity": 36, "price_multiplier": 0.05 }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 10 }],
-          "trader_exp": 2,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "red_sandstone",
+                  "quantity": 32,
+                  "price_multiplier": 0.05,
+                  "functions": [{ "function": "set_data", "data": 0 }]
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 18 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 7,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "chiseled_deepslate", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "sandstone",
+                  "quantity": 32,
+                  "price_multiplier": 0.05,
+                  "functions": [{ "function": "set_data", "data": 0 }]
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 18 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 8,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "polished_deepslate", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "deepslate",
+                  "quantity": 36,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 10 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 3,
-              "price_multiplier": 0.05
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "chiseled_deepslate", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "polished_deepslate", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "brick", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
             }
-          ],
-          "gives": [{ "item": "brick", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
+          ]
         }
       ]
     },
     {
       "total_exp_required": 10,
-      "trades": [
+      "groups": [
         {
-          "wants": [
+          "num_to_select": 3,
+          "trades": [
             {
-              "item": "stone",
-              "quantity": 20,
-              "price_multiplier": 0.05,
-              "functions": [{ "function": "set_data", "data": 0 }]
-            }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
-          "trader_exp": 10,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "stone",
+                  "quantity": 20,
+                  "price_multiplier": 0.05,
+                  "functions": [{ "function": "set_data", "data": 0 }]
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
+              "trader_exp": 10,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 7,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "deepslate_bricks", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "deepslate_bricks", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 2,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "cracked_deepslate_bricks", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "cracked_deepslate_bricks", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 7,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "deepslate_tiles", "quantity": 35 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "deepslate_tiles", "quantity": 35 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 7,
-              "price_multiplier": 0.05
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "cracked_deepslate_tiles", "quantity": 55 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
             }
-          ],
-          "gives": [{ "item": "cracked_deepslate_tiles", "quantity": 55 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
+          ]
         }
       ]
     },
     {
       "total_exp_required": 70,
-      "trades": [
+      "groups": [
         {
-          "wants": [
+          "num_to_select": 4,
+          "trades": [
             {
-              "item": "hy:stack_of_copper_coin",
-              "quantity": 5,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "obsidian", "quantity": 2 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:stack_of_copper_coin",
-              "quantity": 5,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "crying_obsidian", "quantity": 4 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "choice": [
+              "wants": [
                 {
-                  "item": "stone",
-                  "quantity": 16,
-                  "price_multiplier": 0.05,
-                  "functions": [{ "function": "set_data", "data": 1 }]
-                },
-                {
-                  "item": "stone",
-                  "quantity": 16,
-                  "price_multiplier": 0.05,
-                  "functions": [{ "function": "set_data", "data": 3 }]
-                },
-                {
-                  "item": "stone",
-                  "quantity": 16,
-                  "price_multiplier": 0.05,
-                  "functions": [{ "function": "set_data", "data": 5 }]
+                  "item": "hy:stack_of_copper_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
                 }
-              ]
-            }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 30 }],
-          "trader_exp": 20,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              ],
+              "gives": [{ "item": "obsidian", "quantity": 2 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 50,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "gilded_blackstone", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 50,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "blackstone", "quantity": 40 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 10,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "polished_blackstone", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 15,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "chiseled_polished_blackstone", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 15,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "item": "polished_blackstone_bricks", "quantity": 30 }],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 8,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
-            { "item": "cracked_polished_blackstone_bricks", "quantity": 30 }
-          ],
-          "trader_exp": 1,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 3,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
-            {
-              "choice": [
+              "wants": [
                 {
-                  "item": "stone",
-                  "quantity": 4,
-                  "functions": [{ "function": "set_data", "data": 2 }]
-                },
+                  "item": "hy:stack_of_copper_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "crying_obsidian", "quantity": 4 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
                 {
-                  "item": "stone",
-                  "quantity": 4,
-                  "functions": [{ "function": "set_data", "data": 4 }]
-                },
+                  "choice": [
+                    {
+                      "item": "stone",
+                      "quantity": 16,
+                      "price_multiplier": 0.05,
+                      "functions": [{ "function": "set_data", "data": 1 }]
+                    },
+                    {
+                      "item": "stone",
+                      "quantity": 16,
+                      "price_multiplier": 0.05,
+                      "functions": [{ "function": "set_data", "data": 3 }]
+                    },
+                    {
+                      "item": "stone",
+                      "quantity": 16,
+                      "price_multiplier": 0.05,
+                      "functions": [{ "function": "set_data", "data": 5 }]
+                    }
+                  ]
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 30 }],
+              "trader_exp": 20,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
                 {
-                  "item": "stone",
-                  "quantity": 4,
-                  "functions": [{ "function": "set_data", "data": 6 }]
-                },
-                { "item": "dripstone_block", "quantity": 4 }
-              ]
+                  "item": "hy:copper_coin",
+                  "quantity": 50,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "gilded_blackstone", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 50,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "blackstone", "quantity": 40 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 10,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "polished_blackstone", "quantity": 30 }],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                { "item": "chiseled_polished_blackstone", "quantity": 30 }
+              ],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                { "item": "polished_blackstone_bricks", "quantity": 30 }
+              ],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                { "item": "cracked_polished_blackstone_bricks", "quantity": 30 }
+              ],
+              "trader_exp": 1,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    {
+                      "item": "stone",
+                      "quantity": 4,
+                      "functions": [{ "function": "set_data", "data": 2 }]
+                    },
+                    {
+                      "item": "stone",
+                      "quantity": 4,
+                      "functions": [{ "function": "set_data", "data": 4 }]
+                    },
+                    {
+                      "item": "stone",
+                      "quantity": 4,
+                      "functions": [{ "function": "set_data", "data": 6 }]
+                    },
+                    { "item": "dripstone_block", "quantity": 4 }
+                  ]
+                }
+              ],
+              "trader_exp": 10,
+              "max_uses": 16,
+              "reward_exp": true
             }
-          ],
-          "trader_exp": 10,
-          "max_uses": 16,
-          "reward_exp": true
+          ]
         }
       ]
     },
     {
       "total_exp_required": 150,
-      "trades": [
+      "groups": [
         {
-          "wants": [
-            { "item": "quartz", "quantity": 12, "price_multiplier": 0.05 }
-          ],
-          "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+          "num_to_select": 3,
+          "trades": [
             {
-              "item": "hy:copper_coin",
-              "quantity": 15,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
+              "wants": [
+                { "item": "quartz", "quantity": 12, "price_multiplier": 0.05 }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
-              "item": "stonebrick",
-              "quantity": 50,
-              "functions": [{ "function": "set_data", "data": 0 }]
-            }
-          ],
-          "trader_exp": 5,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "stonebrick",
+                  "quantity": 50,
+                  "functions": [{ "function": "set_data", "data": 0 }]
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 8,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "stonebrick",
+                  "quantity": 50,
+                  "functions": [{ "function": "set_data", "data": 1 }]
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "stonebrick",
-              "quantity": 50,
-              "functions": [{ "function": "set_data", "data": 1 }]
-            }
-          ],
-          "trader_exp": 5,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 12,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "stonebrick",
+                  "quantity": 50,
+                  "functions": [{ "function": "set_data", "data": 2 }]
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 12,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "stonebrick",
+                  "quantity": 35,
+                  "functions": [{ "function": "set_data", "data": 3 }]
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
-              "item": "stonebrick",
-              "quantity": 50,
-              "functions": [{ "function": "set_data", "data": 2 }]
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "choice": [
+                    { "item": "stained_hardened_clay:0" },
+                    { "item": "stained_hardened_clay:1" },
+                    { "item": "stained_hardened_clay:2" },
+                    { "item": "stained_hardened_clay:3" },
+                    { "item": "stained_hardened_clay:4" },
+                    { "item": "stained_hardened_clay:5" },
+                    { "item": "stained_hardened_clay:6" },
+                    { "item": "stained_hardened_clay:7" },
+                    { "item": "stained_hardened_clay:8" },
+                    { "item": "stained_hardened_clay:9" },
+                    { "item": "stained_hardened_clay:10" },
+                    { "item": "stained_hardened_clay:11" },
+                    { "item": "stained_hardened_clay:12" },
+                    { "item": "stained_hardened_clay:13" },
+                    { "item": "stained_hardened_clay:14" },
+                    { "item": "stained_hardened_clay:15" },
+                    { "item": "black_glazed_terracotta" },
+                    { "item": "blue_glazed_terracotta" },
+                    { "item": "brown_glazed_terracotta" },
+                    { "item": "cyan_glazed_terracotta" },
+                    { "item": "gray_glazed_terracotta" },
+                    { "item": "green_glazed_terracotta" },
+                    { "item": "light_blue_glazed_terracotta" },
+                    { "item": "lime_glazed_terracotta" },
+                    { "item": "magenta_glazed_terracotta" },
+                    { "item": "orange_glazed_terracotta" },
+                    { "item": "pink_glazed_terracotta" },
+                    { "item": "purple_glazed_terracotta" },
+                    { "item": "red_glazed_terracotta" },
+                    { "item": "silver_glazed_terracotta" },
+                    { "item": "white_glazed_terracotta" },
+                    { "item": "yellow_glazed_terracotta" }
+                  ]
+                }
+              ],
+              "trader_exp": 15,
+              "max_uses": 12,
+              "reward_exp": true
             }
-          ],
-          "trader_exp": 5,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 15,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
-            {
-              "item": "stonebrick",
-              "quantity": 35,
-              "functions": [{ "function": "set_data", "data": 3 }]
-            }
-          ],
-          "trader_exp": 5,
-          "max_uses": 16,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 3,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
-            {
-              "choice": [
-                { "item": "stained_hardened_clay:0" },
-                { "item": "stained_hardened_clay:1" },
-                { "item": "stained_hardened_clay:2" },
-                { "item": "stained_hardened_clay:3" },
-                { "item": "stained_hardened_clay:4" },
-                { "item": "stained_hardened_clay:5" },
-                { "item": "stained_hardened_clay:6" },
-                { "item": "stained_hardened_clay:7" },
-                { "item": "stained_hardened_clay:8" },
-                { "item": "stained_hardened_clay:9" },
-                { "item": "stained_hardened_clay:10" },
-                { "item": "stained_hardened_clay:11" },
-                { "item": "stained_hardened_clay:12" },
-                { "item": "stained_hardened_clay:13" },
-                { "item": "stained_hardened_clay:14" },
-                { "item": "stained_hardened_clay:15" },
-                { "item": "black_glazed_terracotta" },
-                { "item": "blue_glazed_terracotta" },
-                { "item": "brown_glazed_terracotta" },
-                { "item": "cyan_glazed_terracotta" },
-                { "item": "gray_glazed_terracotta" },
-                { "item": "green_glazed_terracotta" },
-                { "item": "light_blue_glazed_terracotta" },
-                { "item": "lime_glazed_terracotta" },
-                { "item": "magenta_glazed_terracotta" },
-                { "item": "orange_glazed_terracotta" },
-                { "item": "pink_glazed_terracotta" },
-                { "item": "purple_glazed_terracotta" },
-                { "item": "red_glazed_terracotta" },
-                { "item": "silver_glazed_terracotta" },
-                { "item": "white_glazed_terracotta" },
-                { "item": "yellow_glazed_terracotta" }
-              ]
-            }
-          ],
-          "trader_exp": 15,
-          "max_uses": 12,
-          "reward_exp": true
+          ]
         }
       ]
     },
     {
       "total_exp_required": 250,
-      "trades": [
+      "groups": [
         {
-          "wants": [
+          "num_to_select": 4,
+          "trades": [
             {
-              "item": "hy:copper_coin",
-              "quantity": 3,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "quantity": 15,
+                  "item": "quartz_block",
+                  "functions": [{ "function": "set_data", "data": 0 }]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
-              "quantity": 15,
-              "item": "quartz_block",
-              "functions": [{ "function": "set_data", "data": 0 }]
-            }
-          ],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "quantity": 15, "item": "quartz_bricks" }],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 5,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [{ "quantity": 15, "item": "quartz_bricks" }],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "quantity": 20,
+                  "item": "sandstone",
+                  "functions": [{ "function": "set_data", "data": 1 }]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 5,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "quantity": 20,
+                  "item": "red_sandstone",
+                  "functions": [{ "function": "set_data", "data": 1 }]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
-              "quantity": 20,
-              "item": "sandstone",
-              "functions": [{ "function": "set_data", "data": 1 }]
-            }
-          ],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
-        },
-        {
-          "wants": [
+              "wants": [
+                {
+                  "item": "hy:copper_coin",
+                  "quantity": 4,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "quantity": 15,
+                  "item": "quartz_block",
+                  "functions": [{ "function": "set_data", "data": 3 }]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
             {
-              "item": "hy:copper_coin",
-              "quantity": 5,
-              "price_multiplier": 0.05
+              "wants": [
+                {
+                  "item": "hy:stack_of_copper_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "quantity": 15,
+                  "item": "purpur_block",
+                  "functions": [{ "function": "set_data", "data": 0 }]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
             }
-          ],
-          "gives": [
-            {
-              "quantity": 20,
-              "item": "red_sandstone",
-              "functions": [{ "function": "set_data", "data": 1 }]
-            }
-          ],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:copper_coin",
-              "quantity": 4,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
-            {
-              "quantity": 15,
-              "item": "quartz_block",
-              "functions": [{ "function": "set_data", "data": 3 }]
-            }
-          ],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
-        },
-        {
-          "wants": [
-            {
-              "item": "hy:stack_of_copper_coin",
-              "quantity": 7,
-              "price_multiplier": 0.05
-            }
-          ],
-          "gives": [
-            {
-              "quantity": 15,
-              "item": "purpur_block",
-              "functions": [{ "function": "set_data", "data": 0 }]
-            }
-          ],
-          "trader_exp": 30,
-          "max_uses": 12,
-          "reward_exp": true
+          ]
         }
       ]
     }
