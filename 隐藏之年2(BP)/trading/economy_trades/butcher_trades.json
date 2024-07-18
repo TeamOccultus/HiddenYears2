@@ -4,7 +4,7 @@
       "total_exp_required": 0,
       "groups": [
         {
-          "num_to_select": 8,
+          "num_to_select": 4,
           "trades": [
             {
               "wants": [
@@ -89,20 +89,7 @@
               "trader_exp": 3,
               "max_uses": 16,
               "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "hy:copper_coin",
-                  "quantity": 40,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "porkchop", "quantity": 2 }],
-              "trader_exp": 3,
-              "max_uses": 16,
-              "reward_exp": true
-            },
+            },          
             {
               "wants": [
                 {
@@ -124,7 +111,7 @@
       "total_exp_required": 10,
       "groups": [
         {
-          "num_to_select": 8,
+          "num_to_select": 4,
           "trades": [
             {
               "wants": [
@@ -295,7 +282,7 @@
           ]
         },
         {
-          "num_to_select": 3,
+          "num_to_select": 1,
           "trades": [
             {
               "wants": [
@@ -318,32 +305,6 @@
               "trader_exp": 20,
               "max_uses": 16,
               "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "hy:copper_coin",
-                  "quantity": 6,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "bone", "quantity": 2 }],
-              "trader_exp": 20,
-              "max_uses": 16,
-              "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "hy:copper_coin",
-                  "quantity": 30,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "bone_block", "quantity": 1 }],
-              "trader_exp": 20,
-              "max_uses": 16,
-              "reward_exp": true
             }
           ]
         }
@@ -353,7 +314,7 @@
       "total_exp_required": 150,
       "groups": [
         {
-          "num_to_select": 3,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -371,38 +332,25 @@
             {
               "wants": [
                 {
+                  "item": "hy:copper_coin",
+                  "quantity": 40,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "porkchop", "quantity": 2 }],
+              "trader_exp": 3,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
                   "item": "dried_kelp_block",
                   "quantity": 1,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [{ "item": "hy:copper_coin", "quantity": 27 }],
-              "trader_exp": 30,
-              "max_uses": 12,
-              "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "hy:copper_coin",
-                  "quantity": 30,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "dried_kelp", "quantity": 10 }],
-              "trader_exp": 30,
-              "max_uses": 12,
-              "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "hy:copper_coin",
-                  "quantity": 30,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "dried_kelp_block", "quantity": 1 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -415,7 +363,7 @@
       "total_exp_required": 250,
       "groups": [
         {
-          "num_to_select": 3,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -425,7 +373,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 50 }],
+              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 3 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -434,7 +382,7 @@
               "wants": [
                 { "item": "coal", "quantity": 1, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 32 }],
+              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 6 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -447,7 +395,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 64 }],
+              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 8 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
