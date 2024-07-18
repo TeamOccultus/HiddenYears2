@@ -12,22 +12,22 @@
                   "choice": [
                     {
                       "item": "wool:0",
-                      "quantity": 18,
+                      "quantity": 12,
                       "price_multiplier": 0.05
                     },
                     {
                       "item": "wool:7",
-                      "quantity": 18,
+                      "quantity": 12,
                       "price_multiplier": 0.05
                     },
                     {
                       "item": "wool:12",
-                      "quantity": 18,
+                      "quantity": 12,
                       "price_multiplier": 0.05
                     },
                     {
                       "item": "wool:15",
-                      "quantity": 18,
+                      "quantity": 12,
                       "price_multiplier": 0.05
                     }
                   ]
@@ -140,7 +140,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 6,
+                  "quantity": 2,
                   "price_multiplier": 0.05
                 }
               ],
@@ -312,7 +312,7 @@
               "gives": [
                 {
                   "item": "banner",
-                  "quantity": 7,
+                  "quantity": 4,
                   "functions": [
                     {
                       "function": "random_aux_value",
