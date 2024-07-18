@@ -31,7 +31,7 @@
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 1,
           "trades": [
             {
               "wants": [
@@ -88,7 +88,7 @@
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -154,17 +154,30 @@
           "trades": [
             {
               "wants": [
-                { "item": "flint", "quantity": 12, "price_multiplier": 0.05 }
+                { "item": "hy:raw_large_leather", "quantity": 2, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 3 }],
-              "trader_exp": 10,
-              "max_uses": 12,
+              "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hy:raw_small_leather",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 6 }],
+              "trader_exp": 2,
+              "max_uses": 16,
               "reward_exp": true
             }
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -221,7 +234,7 @@
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -307,13 +320,13 @@
       "total_exp_required": 70,
       "groups": [
         {
-          "num_to_select": 2,
+          "num_to_select": 1,
           "trades": [
             {
               "wants": [
                 { "item": "wheat", "quantity": 12, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 9 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 4 }],
               "trader_exp": 10,
               "max_uses": 12,
               "reward_exp": true
@@ -334,7 +347,7 @@
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -391,7 +404,7 @@
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -511,11 +524,11 @@
               "wants": [
                 {
                   "item": "turtle_shell_piece",
-                  "quantity": 15,
+                  "quantity": 1,
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 1 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 4 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -523,7 +536,7 @@
           ]
         },
         {
-          "num_to_select": 4,
+          "num_to_select": 2,
           "trades": [
             {
               "wants": [
@@ -613,9 +626,9 @@
           "trades": [
             {
               "wants": [
-                { "item": "cauldron", "quantity": 12, "price_multiplier": 0.05 }
+                { "item": "cauldron", "quantity": 1, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 32 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 7 }],
               "trader_exp": 10,
               "max_uses": 12,
               "reward_exp": true
@@ -633,7 +646,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "phantom_membrane", "quantity": 6 }],
+              "gives": [{ "item": "phantom_membrane", "quantity": 2 }],
               "trader_exp": 10,
               "max_uses": 12,
               "reward_exp": true
