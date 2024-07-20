@@ -1,4 +1,4 @@
-import { ArticleAPI as article } from "project-lantern";
+import { Article as article } from "project-lantern";
 import {
   HyLetterTitle,
   HyLetterBody,

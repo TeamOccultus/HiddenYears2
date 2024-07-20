@@ -1,5 +1,5 @@
 import { system, world } from "@minecraft/server";
-import { initializeMod, LoggerAPI } from "project-lantern";
+import { initializeMod, Logger } from "project-lantern";
 
 export class System {
   /**
@@ -12,7 +12,7 @@ export class System {
     });
   }
   static startLogger(){
-    return LoggerAPI.Logger.getLogger("hy:logger");
+    return Logger.getLogger("hy:logger");
   }
   /**
    * 监听系统事件

@@ -1,5 +1,3 @@
-import { Player, world } from "@minecraft/server";
-
 export class Music {
   /**
    * 注册音乐

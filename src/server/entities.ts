@@ -1,4 +1,4 @@
-import { world, ItemLockMode, Player, system } from "@minecraft/server";
+import { world, Player } from "@minecraft/server";
 import { utils } from "project-lantern";
 import { HyRewardTypes } from "../data/data";
 import { rubyKingSkill } from "./entitySkills";

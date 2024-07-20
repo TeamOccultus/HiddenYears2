@@ -1,5 +1,4 @@
 import { world } from "@minecraft/server";
-import { LoggerAPI } from "project-lantern";
 
 export class Debug {
   static chatTrigger() {
