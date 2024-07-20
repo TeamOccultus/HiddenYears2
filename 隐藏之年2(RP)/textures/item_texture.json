@@ -925,6 +925,33 @@
     },
     "hy.smaragdus": {
       "textures": "textures/items/smaragdus"
+    },
+    "hy.smaragdus_axe": {
+      "textures": "textures/items/smaragdus_axe"
+    },
+    "hy.smaragdus_hammer": {
+      "textures": "textures/items/smaragdus_hammer"
+    },
+    "hy.smaragdus_hoe": {
+      "textures": "textures/items/smaragdus_hoe"
+    },
+    "hy.smaragdus_pickaxe": {
+      "textures": "textures/items/smaragdus_pickaxe"
+    },
+    "hy.smaragdus_shovel": {
+      "textures": "textures/items/smaragdus_shovel"
+    },
+    "hy.smaragdus_helmet": {
+      "textures": "textures/items/smaragdus_helmet"
+    },
+    "hy.smaragdus_chestplate": {
+      "textures": "textures/items/smaragdus_chestplate"
+    },
+    "hy.smaragdus_leggings": {
+      "textures": "textures/items/smaragdus_leggings"
+    },
+    "hy.smaragdus_boots": {
+      "textures": "textures/items/smaragdus_boots"
     }
   }
 }
