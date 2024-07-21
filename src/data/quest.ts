@@ -1,4 +1,5 @@
 import { ItemStack } from "@minecraft/server";
+import { MinecraftItemTypes } from "@minecraft/vanilla-data";
 import { transform } from "esbuild";
 import { ClassicQuest as quest } from "project-lantern";
 
@@ -645,8 +646,6 @@ export const TOTEM = new quest.Quest(
   { translate: "hy.quest.totem.title" },
   {
     rawtext: [
-      { translate: "hy.quest.totem.body0" },
-      { text: "\n\n" },
       { translate: "hy.quest.totem.body1" },
       { text: "\n\n" },
       { translate: "hy.quest.totem.body2" },
@@ -791,6 +790,275 @@ export const RUBY_RUNES = new quest.Quest(
       playerXpPoint: 35,
     },
     iconPath: "textures/items/ruby_helmet",
+  }
+);
+
+export const GOLD_INGOT = new quest.Quest(
+  "gold_ingot",
+  { translate: "hy.quest.gold_ingot.title" },
+  { translate: "hy.quest.gold_ingot.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("gold_ingot"),
+        name: {
+          translate: "item.gold_ingot.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        item: new ItemStack("hy:gold_coin", 15),
+      },
+    },
+    iconPath: "textures/items/gold_ingot",
+  }
+);
+
+export const OBSIDIAN = new quest.Quest(
+  "obsidian",
+  { translate: "hy.quest.obsidian.title" },
+  { translate: "hy.quest.obsidian.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("obsidian"),
+        name: {
+          translate: "tile.obsidian.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.golden_apple.name",
+        },
+        item: new ItemStack("golden_apple", 3),
+      },
+    },
+    iconPath: "textures/ui/quest/obsidian",
+  }
+);
+
+export const GHAST_TEAR = new quest.Quest(
+  "ghast_tear",
+  { translate: "hy.quest.ghast_tear.title" },
+  { translate: "hy.quest.ghast_tear.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("ghast_tear"),
+        name: {
+          translate: "item.ghast_tear.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.golden_apple.name",
+        },
+        item: new ItemStack("golden_apple", 5),
+      },
+    },
+    iconPath: "textures/items/ghast_tear",
+  }
+);
+
+export const LODESTONE = new quest.Quest(
+  "lodestone",
+  { translate: "hy.quest.lodestone.title" },
+  { translate: "hy.quest.lodestone.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("lodestone"),
+        name: {
+          translate: "tile.lodestone.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.appleEnchanted.name",
+        },
+        item: new ItemStack("enchanted_golden_apple", 3),
+      },
+    },
+    iconPath: "textures/ui/quest/lodestone",
+  }
+);
+
+export const RESPAWN_ANCHOR = new quest.Quest(
+  "respawn_anchor",
+  { translate: "hy.quest.respawn_anchor.title" },
+  { translate: "hy.quest.respawn_anchor.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("respawn_anchor"),
+        name: {
+          translate: "tile.respawn_anchor.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        item: new ItemStack("hy:copper_badge"),
+        name: {
+          translate: "hy.item.copper_badge",
+        },
+      },
+    },
+    iconPath: "textures/ui/quest/respawn_anchor",
+  }
+);
+
+export const BLAZE_ROD = new quest.Quest(
+  "blaze_rod",
+  { translate: "hy.quest.blaze_rod.title" },
+  { translate: "hy.quest.blaze_rod.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("blaze_rod"),
+        name: {
+          translate: "item.blaze_rod.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        item: new ItemStack("hy:golden_badge"),
+        name: {
+          translate: "hy.item.golden_badge",
+        },
+      },
+    },
+    iconPath: "textures/items/blaze_rod",
+  }
+);
+
+export const NETHER_STAR = new quest.Quest(
+  "nether_star",
+  { translate: "hy.quest.nether_star.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.nether_star.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.nether_star.body2" },
+      { text: "\n\n" },
+      { translate: "hy.quest.nether_star.body3" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("nether_star"),
+        name: {
+          translate: "item.nether_star.name",
+        },
+      },
+      playerXpLevel: 25,
+    },
+    award: {
+      item: {
+        item: new ItemStack("netherite_ingot", 5),
+        name: {
+          translate: "item.netherite_ingot.name",
+        },
+      },
+    },
+    iconPath: "textures/items/nether_star",
+  }
+);
+
+export const ENDER_PEARL = new quest.Quest(
+  "ender_pearl",
+  { translate: "hy.quest.ender_pearl.title" },
+  { translate: "hy.quest.ender_pearl.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("ender_pearl"),
+        name: {
+          translate: "item.ender_pearl.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        item: new ItemStack("hy:stack_of_diamond_coin", 3),
+        name: {
+          translate: "hy.item.stack_of_diamond_coin",
+        },
+      },
+    },
+    iconPath: "textures/items/ender_pearl",
+  }
+);
+
+export const DRAGON_BREATH = new quest.Quest(
+  "dragon_breath",
+  { translate: "hy.quest.dragon_breath.title" },
+  { translate: "hy.quest.dragon_breath.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("dragon_breath"),
+        name: { translate: "item.dragon_breath.name" },
+      },
+    },
+    award: {
+      item: {
+        item: new ItemStack("hy:diamond_badge"),
+        name: {
+          translate: "hy.item.diamond_badge",
+        },
+      },
+    },
+    iconPath: "textures/items/dragons_breath",
+  }
+);
+
+export const DRAGON_EGG = new quest.Quest(
+  "dragon_egg",
+  { translate: "hy.quest.dragon_egg.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.dragon_egg.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.dragon_egg.body2" },
+      { text: "\n\n" },
+      { translate: "hy.quest.dragon_egg.body3" },
+      { text: "\n\n" },
+      { translate: "hy.quest.dragon_egg.body4" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("dragon_egg"),
+        name: {
+          translate: "tile.dragon_egg.name",
+        },
+      },
+      playerXpLevel: 25,
+    },
+    award: {
+      item: {
+        item: new ItemStack("netherite_ingot", 10),
+        name: {
+          translate: "item.netherite_ingot.name",
+        },
+      },
+      playerXpLevel: 5,
+    },
+    iconPath: "textures/ui/quest/dragon_head",
   }
 );
 
@@ -941,234 +1209,3 @@ export const COPPER_ESSENCE = new quest.Quest(
     iconPath: "textures/items/copper_essence",
   }
 );
-/**
-
-export const OVER_METAL_INGOT = new quest.Quest(
-  "over_metal_ingot",
-  { translate: "hy.quest.over_metal_ingot.title" },
-  { translate: "hy.quest.over_metal_ingot.body" },
-  {
-    condition: HyQuestCondition.overMetalIngot,
-    award: HyQuestAward.goldCoin6,
-    iconPath:
-      "textures/items/over_metal_ingot",
-  }
-);
-
-export const IRON_INGOT = new quest.Quest(
-  "iron_ingot",
-  { translate: "hy.quest.iron_ingot.title" },
-  { translate: "hy.quest.iron_ingot.body" },
-  {
-    condition: HyQuestCondition.ironIngot,
-    award: HyQuestAward.goldCoin10,
-    iconPath: "textures/items/iron_ingot",
-  }
-);
-
-export const COPPER_INGOT = new quest.Quest(
-  "copper_ingot",
-  { translate: "hy.quest.copper_ingot.title" },
-  { translate: "hy.quest.copper_ingot.body" },
-  {
-    condition: HyQuestCondition.copperIngot,
-    award: HyQuestAward.questBook1,
-    iconPath: "textures/items/copper_ingot",
-  }
-);
-
-export const IRON_HAMMER = new quest.Quest(
-  "iron_hammer",
-  { translate: "hy.quest.iron_hammer.title" },
-  { translate: "hy.quest.iron_hammer.body" },
-  {
-    condition: HyQuestCondition.ironHammer,
-    award: HyQuestAward.goldCoin12,
-    iconPath: "textures/items/iron_hammer",
-  }
-);
-
-export const IRON_CROWBAR = new quest.Quest(
-  "iron_crowbar",
-  { translate: "hy.quest.iron_crowbar.title" },
-  { translate: "hy.quest.iron_crowbar.body" },
-  {
-    condition: HyQuestCondition.ironCrowbar,
-    award: HyQuestAward.goldCoin16,
-    iconPath: "textures/items/iron_crowbar",
-  }
-);
-
-export const IRON_KNIFE = new quest.Quest(
-  "iron_knife",
-  { translate: "hy.quest.iron_knife.title" },
-  { translate: "hy.quest.iron_knife.body" },
-  {
-    condition: HyQuestCondition.ironKnife,
-    award: HyQuestAward.goldCoin18,
-    iconPath: "textures/items/iron_knife",
-  }
-);
-
-export const IRON_DAGGER = new quest.Quest(
-  "iron_dagger",
-  { translate: "hy.quest.iron_dagger.title" },
-  { translate: "hy.quest.iron_dagger.body" },
-  {
-    condition: HyQuestCondition.ironDagger,
-    award: HyQuestAward.goldCoin20,
-    iconPath: "textures/items/iron_dagger",
-  }
-);
-
-export const IRON_SWORD = new quest.Quest(
-  "iron_sword",
-  { translate: "hy.quest.iron_sword.title" },
-  { translate: "hy.quest.iron_sword.body" },
-  {
-    condition: HyQuestCondition.ironSword,
-    award: HyQuestAward.goldenApple3,
-    iconPath: "textures/items/iron_sword",
-  }
-);
-
-
-
-export const NIGHTMARE_FUEL_METAL = new quest.Quest(
-  "nightmare_fuel_metal",
-  { translate: "hy.quest.nightmare_fuel_metal.title" },
-  { translate: "hy.quest.nightmare_fuel_metal.body" },
-  {
-    condition: HyQuestCondition.nightmareFuelMetal,
-    award: HyQuestAward.labTable,
-    iconPath: "textures/items/fuel",
-  }
-);
-
-
-export const OBSIDIAN = new quest.Quest(
-  "obsidian",
-  { translate: "hy.quest.obsidian.title" },
-  { translate: "hy.quest.obsidian.body" },
-  {
-    condition: HyQuestCondition.obsidian,
-    award: HyQuestAward.diamondCoin3,
-    iconPath: "textures/ui/quest/obsidian",
-  }
-);
-
-export const GOLD_INGOT = new quest.Quest(
-  "gold_ingot",
-  { translate: "hy.quest.gold_ingot.title" },
-  { translate: "hy.quest.gold_ingot.body" },
-  {
-    condition: HyQuestCondition.goldIngot,
-    award: HyQuestAward.goldCoin12,
-    iconPath: "textures/items/gold_ingot",
-  }
-);
-
-export const GHAST_TEAR = new quest.Quest(
-  "ghast_tear",
-  { translate: "hy.quest.ghast_tear.title" },
-  { translate: "hy.quest.ghast_tear.body" },
-  {
-    condition: HyQuestCondition.ghastTear,
-    award: HyQuestAward.goldenApple5,
-    iconPath: "textures/items/ghast_tear",
-  }
-);
-
-export const LODESTONE = new quest.Quest(
-  "lodestone",
-  { translate: "hy.quest.lodestone.title" },
-  { translate: "hy.quest.lodestone.body" },
-  {
-    condition: HyQuestCondition.lodestone,
-    award: HyQuestAward.goldCoin30,
-    iconPath: "textures/ui/quest/lodestone",
-  }
-);
-
-export const RESPAWN_ANCHOR = new quest.Quest(
-  "respawn_anchor",
-  { translate: "hy.quest.respawn_anchor.title" },
-  { translate: "hy.quest.respawn_anchor.body" },
-  {
-    condition: HyQuestCondition.respawnAnchor,
-    award: HyQuestAward.copperBadge,
-    iconPath: "textures/ui/quest/respawn_anchor",
-  }
-);
-
-export const BLAZE_ROD = new quest.Quest(
-  "blaze_rod",
-  { translate: "hy.quest.blaze_rod.title" },
-  { translate: "hy.quest.blaze_rod.body" },
-  {
-    condition: HyQuestCondition.blazeRod,
-    award: HyQuestAward.goldenBadge,
-    iconPath: "textures/items/blaze_rod",
-  }
-);
-
-export const NETHER_STAR = new quest.Quest(
-  "nether_star",
-  { translate: "hy.quest.end1.title" },
-  {
-    rawtext: [
-      { translate: "hy.quest.end1.body0" },
-      { text: "\n\n" },
-      { translate: "hy.quest.end1.body1" },
-      { text: "\n\n" },
-      { translate: "hy.quest.end1.body2" },
-    ],
-  },
-  {
-    condition: HyQuestCondition.netherStar,
-    award: HyQuestAward.diamondBlock6,
-    iconPath: "textures/items/nether_star",
-  }
-);
-
-export const ENDER_PEARL = new quest.Quest(
-  "ender_pearl",
-  { translate: "hy.quest.ender_pearl.title" },
-  { translate: "hy.quest.ender_pearl.body" },
-  {
-    condition: HyQuestCondition.enderPearl,
-    award: HyQuestAward.enderEye4,
-    iconPath: "textures/items/ender_pearl",
-  }
-);
-
-export const DRAGON_BREATH = new quest.Quest(
-  "dragon_breath",
-  { translate: "hy.quest.dragon_breath.title" },
-  { translate: "hy.quest.dragon_breath.body" },
-  {
-    condition: HyQuestCondition.dragonBreath,
-    award: HyQuestAward.diamondBadge,
-    iconPath: "textures/items/dragons_breath",
-  }
-);
-
-export const DRAGON_EGG = new quest.Quest(
-  "dragon_egg",
-  { translate: "hy.quest.end2.title" },
-  {
-    rawtext: [
-      { translate: "hy.quest.end2.body0" },
-      { text: "\n\n" },
-      { translate: "hy.quest.end2.body1" },
-      { text: "\n\n" },
-      { translate: "hy.quest.end2.body2" },
-    ],
-  },
-  {
-    condition: HyQuestCondition.dragonEgg,
-    award: HyQuestAward.netheriteBlock6,
-    iconPath: "textures/ui/quest/dragon_head",
-  }
-);
-*/

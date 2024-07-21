@@ -127,7 +127,18 @@ export class Quest {
         {
           title: { translate: "hy.quest.chapter3.title" },
           body: { translate: "hy.quest.chapter3.body" },
-          quests: [],
+          quests: [
+            quests.GOLD_INGOT,
+            quests.OBSIDIAN,
+            quests.GHAST_TEAR,
+            quests.LODESTONE,
+            quests.RESPAWN_ANCHOR,
+            quests.BLAZE_ROD,
+            quests.NETHER_STAR,
+            quests.ENDER_PEARL,
+            quests.DRAGON_BREATH,
+            quests.DRAGON_EGG
+          ],
           iconPath: "textures/items/ender_eye",
         },
       ]
