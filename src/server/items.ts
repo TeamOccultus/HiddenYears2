@@ -116,7 +116,12 @@ export class Quest {
         {
           title: { translate: "hy.quest.chapter2.title" },
           body: { translate: "hy.quest.chapter2.body" },
-          quests: [],
+          quests: [
+            quests.RUBY,
+            quests.RUBY_CHESTPLATE,
+            quests.RUBY_BAG,
+            quests.RUBY_RUNES
+          ],
           iconPath: "textures/items/ruby",
         },
         {

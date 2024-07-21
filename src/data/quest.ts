@@ -679,14 +679,217 @@ export const TOTEM = new quest.Quest(
   }
 );
 
-/**
+export const RUBY = new quest.Quest(
+  "ruby",
+  { translate: "hy.quest.ruby.title" },
+  { translate: "hy.quest.ruby.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:ruby"),
+        name: {
+          translate: "hy.item.ruby",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 3),
+      },
+    },
+    iconPath: "textures/items/ruby",
+  }
+);
+
+export const RUBY_CHESTPLATE = new quest.Quest(
+  "ruby_chestplate",
+  { translate: "hy.quest.ruby_chestplate.title" },
+  { translate: "hy.quest.ruby_chestplate.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:ruby_chestplate"),
+        name: {
+          translate: "hy.item.ruby_chestplate",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 5),
+      },
+    },
+    iconPath: "textures/items/ruby_chestplate",
+  }
+);
+
+export const RUBY_BAG = new quest.Quest(
+  "ruby_bag",
+  { translate: "hy.quest.ruby_bag.title" },
+  { translate: "hy.quest.ruby_bag.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:ruby_bag"),
+        name: {
+          translate: "hy.item.ruby_bag",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 8),
+      },
+    },
+    iconPath: "textures/items/calamity_bag",
+    tips: {
+      translate: "hy.quest.ruby_bag.tips",
+    },
+  }
+);
+
+export const RUBY_RUNES = new quest.Quest(
+  "ruby_runes",
+  { translate: "hy.quest.ruby_runes.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.ruby_runes.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.ruby_runes.body2" },
+      { text: "\n\n" },
+      { translate: "hy.quest.ruby_runes.body3" },
+      { text: "\n\n" },
+      { translate: "hy.quest.ruby_runes.body4" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:ruby_runes"),
+        name: {
+          translate: "hy.item.ruby_runes",
+        },
+      },
+      playerXpLevel: 20,
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.netherite_scrap.name",
+        },
+        item: new ItemStack("netherite_scrap", 5),
+      },
+      playerXpPoint: 35,
+    },
+    iconPath: "textures/items/ruby_helmet",
+  }
+);
+
+export const STORY_BOOK = new quest.Quest(
+  "story_book",
+  { translate: "hy.quest.readings1.title" },
+  { translate: "hy.quest.readings1.body" },
+  {
+    condition: {
+      item: {
+        name: {
+          translate: "hy.item.story_book",
+        },
+        item: new ItemStack("hy:story_book"),
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 2),
+      },
+    },
+    iconPath: "textures/items/story_book",
+  }
+);
+
+export const LETTER_0 = new quest.Quest(
+  "letter_0",
+  { translate: "hy.quest.readings2.title" },
+  { translate: "hy.quest.readings2.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:letter_0"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 2),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+export const LETTER_11 = new quest.Quest(
+  "letter_11",
+  { translate: "hy.quest.readings3.title" },
+  { translate: "hy.quest.readings3.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:letter_11"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 2),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
 export const COPPER_APPLE = new quest.Quest(
   "copper_apple",
   { translate: "hy.quest.copper_apple.title" },
   { translate: "hy.quest.copper_apple.body" },
   {
-    condition: HyQuestCondition.copperApple,
-    award: HyQuestAward.goldenApple3,
+    condition: {
+      item: {
+        item: new ItemStack("hy:copper_apple"),
+        name: {
+          translate: "hy.item.copper_apple",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.bread.name",
+        },
+        item: new ItemStack("bread", 5),
+      },
+    },
     iconPath: "textures/items/copper_apple",
   }
 );
@@ -695,8 +898,22 @@ export const METAL_STAR = new quest.Quest(
   { translate: "hy.quest.metal_star.title" },
   { translate: "hy.quest.metal_star.body" },
   {
-    condition: HyQuestCondition.metalStar,
-    award: HyQuestAward.diamondCoin9,
+    condition: {
+      item: {
+        item: new ItemStack("hy:metal_star"),
+        name: {
+          translate: "hy.item.metal_star",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.diamond_coin",
+        },
+        item: new ItemStack("hy:diamond_coin", 5),
+      },
+    },
     iconPath: "textures/items/metal_star",
   }
 );
@@ -705,11 +922,26 @@ export const COPPER_ESSENCE = new quest.Quest(
   { translate: "hy.quest.copper_essence.title" },
   { translate: "hy.quest.copper_essence.body" },
   {
-    condition: HyQuestCondition.copperEssence,
-    award: HyQuestAward.dirt12,
+    condition: {
+      item: {
+        item: new ItemStack("hy:copper_essence"),
+        name: {
+          translate: "hy.item.copper_essence",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.diamond_coin",
+        },
+        item: new ItemStack("hy:diamond_coin", 6),
+      },
+    },
     iconPath: "textures/items/copper_essence",
   }
 );
+/**
 
 export const OVER_METAL_INGOT = new quest.Quest(
   "over_metal_ingot",
@@ -937,91 +1169,6 @@ export const DRAGON_EGG = new quest.Quest(
     condition: HyQuestCondition.dragonEgg,
     award: HyQuestAward.netheriteBlock6,
     iconPath: "textures/ui/quest/dragon_head",
-  }
-);
-
-export const RUBY = new quest.Quest(
-  "ruby",
-  { translate: "hy.quest.ruby.title" },
-  { translate: "hy.quest.ruby.body" },
-  {
-    condition: HyQuestCondition.ruby,
-    award: HyQuestAward.diamond2,
-    iconPath: "textures/items/ruby",
-  }
-);
-
-export const RUBY_CHESTPLATE = new quest.Quest(
-  "ruby_chestplate",
-  { translate: "hy.quest.ruby_chestplate.title" },
-  { translate: "hy.quest.ruby_chestplate.body" },
-  {
-    condition: HyQuestCondition.rubyChestplate,
-    award: HyQuestAward.diamond4,
-    iconPath: "textures/items/ruby_chestplate",
-  }
-);
-
-export const RUBY_BAG = new quest.Quest(
-  "ruby_bag",
-  { translate: "hy.quest.ruby_bag.title" },
-  { translate: "hy.quest.ruby_bag.body" },
-  {
-    condition: HyQuestCondition.rubyBag,
-    award: HyQuestAward.diamond6,
-    iconPath: "textures/items/calamity_bag",
-  }
-);
-
-export const RUBY_RUNES = new quest.Quest(
-  "ruby_runes",
-  { translate: "hy.quest.end3.title" },
-  {
-    rawtext: [
-      { translate: "hy.quest.end3.body0" },
-      { text: "\n\n" },
-      { translate: "hy.quest.end3.body1" },
-      { text: "\n\n" },
-      { translate: "hy.quest.end3.body2" },
-    ],
-  },
-  {
-    condition: HyQuestCondition.rubyRunes,
-    award: HyQuestAward.netheriteIngot3,
-    iconPath: "textures/items/ruby_runes",
-  }
-);
-
-export const STORY_BOOK = new quest.Quest(
-  "story_book",
-  { translate: "hy.quest.readings1.title" },
-  { translate: "hy.quest.readings1.body" },
-  {
-    condition: HyQuestCondition.storyBook,
-    award: HyQuestAward.diamond1,
-    iconPath: "textures/items/story_book",
-  }
-);
-
-export const LETTER_0 = new quest.Quest(
-  "letter_0",
-  { translate: "hy.quest.readings2.title" },
-  { translate: "hy.quest.readings2.body" },
-  {
-    condition: HyQuestCondition.letter0,
-    award: HyQuestAward.diamond2,
-    iconPath: "textures/items/lost_letter",
-  }
-);
-
-export const LETTER_11 = new quest.Quest(
-  "letter_11",
-  { translate: "hy.quest.readings3.title" },
-  { translate: "hy.quest.readings3.body" },
-  {
-    condition: HyQuestCondition.letter11,
-    award: HyQuestAward.diamond2,
-    iconPath: "textures/items/lost_letter",
   }
 );
 */
