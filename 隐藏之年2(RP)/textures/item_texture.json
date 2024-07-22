@@ -952,6 +952,18 @@
     },
     "hy.smaragdus_boots": {
       "textures": "textures/items/smaragdus_boots"
+    },
+    "hy.amethyst_helmet": {
+      "textures": "textures/items/amethyst_helmet"
+    },
+    "hy.amethyst_chestplate": {
+      "textures": "textures/items/amethyst_chestplate"
+    },
+    "hy.amethyst_leggings": {
+      "textures": "textures/items/amethyst_leggings"
+    },
+    "hy.amethyst_boots": {
+      "textures": "textures/items/amethyst_boots"
     }
   }
 }

@@ -68,6 +68,10 @@ hy.item.amethyst_hoe=紫水晶锄
 hy.item.amethyst_pickaxe=紫水晶镐
 hy.item.amethyst_shovel=紫水晶锹
 hy.item.amethyst_sword=紫水晶剑
+hy.item.amethyst_helmet=紫水晶头盔
+hy.item.amethyst_chestplate=紫水晶胸甲
+hy.item.amethyst_leggings=紫水晶护腿
+hy.item.amethyst_boots=紫水晶靴子
 
 hy.item.amethyst_nugget=紫水晶粒
 hy.item.coal_nugget=煤粒
