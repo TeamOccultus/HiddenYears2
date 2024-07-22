@@ -13,10 +13,10 @@
         "texture": "hy.wooden_awl"
       },
       "minecraft:durability": {
-        "max_durability": 150
+        "max_durability": 15
       },
       "minecraft:max_stack_size": 1,
-      "minecraft:damage": 4,
+      "minecraft:damage": 2,
       "minecraft:weapon": {},
       "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {

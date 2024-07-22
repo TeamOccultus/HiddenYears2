@@ -13,11 +13,11 @@
         "texture": "hy.netherite_awl"
       },
       "minecraft:durability": {
-        "max_durability": 800
+        "max_durability": 507
       },
       "minecraft:max_stack_size": 1,
 
-      "minecraft:damage": 10,
+      "minecraft:damage": 6,
       "minecraft:weapon": {},
       "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {
