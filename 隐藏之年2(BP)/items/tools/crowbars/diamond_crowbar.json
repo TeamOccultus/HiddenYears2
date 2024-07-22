@@ -15,7 +15,7 @@
       "minecraft:durability": {
         "max_durability": 780
       },
-      "minecraft:damage": 12,
+      "minecraft:damage": 9,
       "minecraft:icon": {
         "texture": "hy.diamond_crowbar"
       },
