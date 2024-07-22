@@ -13,9 +13,9 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 100
+        "max_durability": 780
       },
-      "minecraft:damage": 10,
+      "minecraft:damage": 12,
       "minecraft:icon": {
         "texture": "hy.diamond_crowbar"
       },
@@ -30,39 +30,39 @@
             "block": {
               "tags": "query.any_tag('metal')"
             },
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "lapis_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "coal_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "diamond_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "emerald_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "netherite_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "raw_gold_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "raw_iron_block",
-            "speed": 50
+            "speed": 40
           },
           {
             "block": "raw_copper_block",
-            "speed": 50
+            "speed": 40
           }
         ]
       },

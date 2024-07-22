@@ -13,9 +13,9 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 30
+        "max_durability": 16
       },
-      "minecraft:damage": 4,
+      "minecraft:damage": 9,
       "minecraft:icon": {
         "texture": "hy.gold_crowbar"
       },
