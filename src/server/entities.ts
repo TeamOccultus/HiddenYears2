@@ -1,4 +1,4 @@
-import { world, Player } from "@minecraft/server";
+import { world, Player, system } from "@minecraft/server";
 import { utils } from "project-lantern";
 import { HyRewardTypes } from "../data/data";
 import { rubyKingSkill } from "./entitySkills";
@@ -53,6 +53,19 @@ export class Entity {
       if (!PLAYER.hasTag("hy:get_first_letter")) {
         PLAYER.dimension.spawnItem(HyRewardTypes.letter1st, PLAYER.location);
         PLAYER.addTag("hy:get_first_letter");
+      }
+    });
+    /**
+     * 监听生物生成事件
+     */
+    world.afterEvents.entitySpawn.subscribe((event) => {
+      const [ENTITY, CAUSE] = [event.entity, event.cause];
+      if (ENTITY.typeId === "hy:ruby_guardian") {
+        system.runTimeout(() => {
+          system.runInterval(() => {
+            ENTITY.applyDamage(2);
+          }, 20);
+        }, 600);
       }
     });
   }
