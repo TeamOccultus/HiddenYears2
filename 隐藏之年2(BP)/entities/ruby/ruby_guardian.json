@@ -17,7 +17,7 @@
         "track_target": true
       },
       "minecraft:attack": {
-        "damage": 8
+        "damage": 2
       },
       "minecraft:behavior.move_to_random_block": {
         "priority": 6,
@@ -40,8 +40,8 @@
         "suffocate_time": 0
       },
       "minecraft:health": {
-        "value": 75,
-        "max": 75
+        "value": 15,
+        "max": 15
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
