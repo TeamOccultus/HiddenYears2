@@ -15,12 +15,12 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 200
+        "max_durability": 400
       },
       "minecraft:icon": {
         "texture": "hy.nether_metal_hammer"
       },
-      "minecraft:damage": 7,
+      "minecraft:damage": 4,
       "minecraft:weapon": {},
       "minecraft:digger": {
         "use_efficiency": false,

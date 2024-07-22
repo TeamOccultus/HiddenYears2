@@ -14,9 +14,9 @@
         "parent": "itemGroup.name.sword"
       },
       "minecraft:durability": {
-        "max_durability": 50
+        "max_durability": 20
       },
-      "minecraft:damage": 7,
+      "minecraft:damage": 11,
       "minecraft:enchantable": {
         "value": 10,
         "slot": "sword"

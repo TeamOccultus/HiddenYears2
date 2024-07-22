@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 200
       },
-      "minecraft:damage": 7,
+      "minecraft:damage": 6,
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
