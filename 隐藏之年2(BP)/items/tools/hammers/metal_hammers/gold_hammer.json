@@ -15,13 +15,13 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 400
+        "max_durability": 64
       },
       "minecraft:icon": {
         "texture": "hy.gold_hammer"
       },
       "minecraft:mining_speed": 1,
-      "minecraft:damage": 7,
+      "minecraft:damage": 3,
       "minecraft:weapon": {},
       "minecraft:digger": {
         "use_efficiency": false,
