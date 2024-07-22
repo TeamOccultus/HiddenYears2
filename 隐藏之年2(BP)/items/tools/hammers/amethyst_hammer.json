@@ -15,7 +15,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 250
+        "max_durability": 400
       },
       "minecraft:icon": {
         "texture": "hy.amethyst_hammer"
@@ -24,7 +24,7 @@
         "value": 57257,
         "slot": "pickaxe"
       },
-      "minecraft:damage": 7,
+      "minecraft:damage": 4,
       "minecraft:weapon": {},
       "minecraft:digger": {
         "use_efficiency": false,
