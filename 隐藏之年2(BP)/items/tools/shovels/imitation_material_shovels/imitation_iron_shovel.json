@@ -14,7 +14,7 @@
       "minecraft:durability": {
         "max_durability": 250
       },
-      "minecraft:mining_speed": 1,
+      
       "minecraft:damage": 4,
       "minecraft:hover_text_color": "gold",
       "minecraft:enchantable": {

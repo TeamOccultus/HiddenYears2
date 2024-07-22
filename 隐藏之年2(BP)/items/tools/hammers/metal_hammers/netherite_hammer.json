@@ -20,7 +20,7 @@
       "minecraft:icon": {
         "texture": "hy.netherite_hammer"
       },
-      "minecraft:mining_speed": 1,
+      
       "minecraft:damage": 7,
       "minecraft:weapon": {},
       "minecraft:digger": {

@@ -21,7 +21,7 @@
       "minecraft:icon": {
         "texture": "hy.imitation_iron_hammer"
       },
-      "minecraft:mining_speed": 1,
+      
       "minecraft:damage": 9,
       "minecraft:weapon": {},
       "minecraft:digger": {

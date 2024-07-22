@@ -20,7 +20,7 @@
       "minecraft:icon": {
         "texture": "hy.gold_hammer"
       },
-      "minecraft:mining_speed": 1,
+      
       "minecraft:damage": 3,
       "minecraft:weapon": {},
       "minecraft:digger": {
