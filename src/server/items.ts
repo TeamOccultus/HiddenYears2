@@ -326,33 +326,25 @@ export class Item {
       }
       /** 法器相关
        * 通过`hy:magic_explode`来使一个物品可以进行法术爆发/精通
-       * 法术爆发/精通的实现
-       * 法术爆发是指在限定范围内(12格)对所有生物造成限定伤害(10点)
-       * 法术精通是指在更远的范围内(20格)对精通的生物造成限定伤害(8点) 并给予其虚弱15s
-       * 法术精通与爆发同时进行 需要玩家有1级经验
-       * 每次爆发消耗1耐久、15经验 并且有类型为`hy.magic_explode`的5秒冷却
-       * 爆发开始后5秒内玩家不受任何原因的爆发伤害
-       * @todo 添加冷却
        */
       if (
         ITEM.hasTag("hy:magic_explode") &&
         ITEM?.getComponent("cooldown").cooldownTicks !== 0
       ) {
-        if (PLAYER.level > 1) {
+        if (PLAYER.level > 5) {
           PLAYER.addTag("hy.magic_explode");
-          const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, PLAYER);
           PLAYER.getComponent("minecraft:equippable")?.setEquipment(
             EquipmentSlot.Mainhand,
-            NEW_ITEM
+            consumeDurabilityMixed(ITEM, 2, PLAYER)
           );
-          PLAYER.addLevels(-1);
+          PLAYER.addExperience(-10);
           const ALL_OPTION: EntityQueryOptions = {
             location: PLAYER.location,
             maxDistance: 10,
             excludeTags: ["hy.magic_explode"],
             excludeFamilies: ["noaoe"],
           };
-          utils.damageEntities(PLAYER.dimension, ALL_OPTION, 10);
+          utils.damageEntities(PLAYER.dimension, ALL_OPTION, 6);
           switch (ITEM.typeId) {
             case "hy:diamond_bone":
             case "hy:gold_bone":
