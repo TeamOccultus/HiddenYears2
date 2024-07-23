@@ -14,6 +14,8 @@ Entity.skillRegister();
 Item.foodMonitor();
 Item.useMonitor();
 Item.durabilityMonitor();
+Item.skillRegister();
 Quest.register();
 Article.register();
 Debug.chatTrigger();
+System.secondEventRegister();

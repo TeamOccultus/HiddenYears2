@@ -824,6 +824,18 @@ hy.boosSkill.ruby.guardian=红宝石之王即将发动战技§d「力量的仆�
 hy.boosSkill.ruby.lightning=红宝石之王即将发动战技§4「往日之雷光」§r！
 hy.message.low_health.ruby=红宝石之王陷入虚弱状态，暂时无法释放战技！
 
+hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！
+hy.itemSkill.hammer.2=「矿工的愤怒」触发，额外给予敌人2点伤害与虚弱！
+hy.itemSkill.crowbar.1=「当头一棍」触发，额外给予敌人3点伤害！
+hy.itemSkill.crowbar.2=「终结的一击」触发，额外给予敌人5点伤害与缓慢！
+hy.itemSkill.awl.1=「工匠的悲哀」触发，额外给予敌人1点伤害与中毒！
+hy.itemSkill.awl.2=「终将化作利器」触发，额外给予敌人2点伤害与中毒！
+hy.itemSkill.knife.1=「淬血的小刀」触发，敌人将获得流血I！
+hy.itemSkill.knife.2=「失血过多」触发，敌人将获得流血II！
+hy.itemSkill.boardsword.1=「错误示范」触发，你将回复10点经验！
+hy.itemSkill.boardsword.2=「摧枯拉朽」触发，你将回复1级经验！
+
+
 hy.item.bone_piece=骨片
 hy.item.bone_piece_axe=骨片斧
 hy.item.bone_piece_hammer=骨片锤

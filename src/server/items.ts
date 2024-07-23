@@ -11,6 +11,13 @@ import {
 } from "@minecraft/server";
 import { HyCorrosionMap, HyRewardTypes } from "../data/data";
 import { HyLetterTitle, HyLetterBody } from "../data/lang";
+import {
+  awlSkill,
+  boardswordSkill,
+  crowbarSkill,
+  hammerSkill,
+  knifeSkill,
+} from "../core/itemSkills";
 import * as quests from "../data/quest";
 
 /**
@@ -109,7 +116,7 @@ export class Quest {
             quests.FUEL_METAL,
             quests.SUFFERING_SWORD,
             quests.SMARAGDUS,
-            quests.TOTEM
+            quests.TOTEM,
           ],
           iconPath: "textures/items/book_writable",
         },
@@ -120,7 +127,7 @@ export class Quest {
             quests.RUBY,
             quests.RUBY_CHESTPLATE,
             quests.RUBY_BAG,
-            quests.RUBY_RUNES
+            quests.RUBY_RUNES,
           ],
           iconPath: "textures/items/ruby",
         },
@@ -137,7 +144,7 @@ export class Quest {
             quests.NETHER_STAR,
             quests.ENDER_PEARL,
             quests.DRAGON_BREATH,
-            quests.DRAGON_EGG
+            quests.DRAGON_EGG,
           ],
           iconPath: "textures/items/ender_eye",
         },
@@ -153,6 +160,48 @@ export class Quest {
 }
 
 export class Item {
+  static skillRegister() {
+    world.afterEvents.entityHitEntity.subscribe((event) => {
+      const [ATTACKER, ENTITY, ITEM] = [
+        event.damagingEntity,
+        event.hitEntity,
+        utils.getEquipmentItem(event.damagingEntity),
+      ];
+      /**
+       * @tag hy:is_hammer-判断攻击物品是否为锤子
+       */
+      if (ITEM.hasTag("hy:is_hammer")) {
+        hammerSkill(ENTITY, ATTACKER instanceof Player ? ATTACKER : undefined);
+      }
+      /**
+       * @tag hy:is_corwbar-判断攻击物品是否为撬棍
+       */
+      if (ITEM.hasTag("hy:is_crowbar")) {
+        crowbarSkill(ENTITY, ATTACKER instanceof Player ? ATTACKER : undefined);
+      }
+      /**
+       * @tag hy:is_awl-判断攻击物品是否为锥
+       */
+      if (ITEM.hasTag("hy:is_awl")) {
+        awlSkill(ENTITY, ATTACKER instanceof Player ? ATTACKER : undefined);
+      }
+      /**
+       * @tag hy:is_knife-判断攻击物品是否为小刀
+       */
+      if (ITEM.hasTag("hy:is_knife")) {
+        knifeSkill(ENTITY, ATTACKER instanceof Player ? ATTACKER : undefined);
+      }
+      /**
+       * @tag hy:magic_explode-判断物品是否可以进行法术爆发
+       */
+      if (ITEM.hasTag("hy:magic_explode")) {
+        boardswordSkill(
+          ENTITY,
+          ATTACKER instanceof Player ? ATTACKER : undefined
+        );
+      }
+    });
+  }
   /**
    * 监听食物的食用
    */
@@ -547,6 +596,7 @@ export class Item {
             PLAYER.addEffect("regeneration", 1200);
             PLAYER.addEffect("resistance", 600);
             PLAYER.addEffect("instant_health", 5);
+            PLAYER.removeTag("hy:bleed_lv1");
             PLAYER.playSound("use.cloth");
             break;
           case "hy:medicine_pack":
@@ -554,6 +604,8 @@ export class Item {
             PLAYER.addEffect("resistance", 600);
             PLAYER.addEffect("fire_resistance", 600);
             PLAYER.addEffect("instant_health", 10);
+            PLAYER.removeTag("hy:bleed_lv1");
+            PLAYER.removeTag("hy:bleed_lv2");
             PLAYER.playSound("use.cloth");
             break;
           case "hy:copper_horn":

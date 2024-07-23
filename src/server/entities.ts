@@ -1,7 +1,7 @@
 import { world, Player, system } from "@minecraft/server";
 import { utils } from "project-lantern";
 import { HyRewardTypes } from "../data/data";
-import { rubyKingSkill } from "./entitySkills";
+import { rubyKingSkill } from "../core/entitySkills";
 
 export class Entity {
   /**

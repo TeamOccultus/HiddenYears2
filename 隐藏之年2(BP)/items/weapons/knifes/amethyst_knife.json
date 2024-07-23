@@ -102,6 +102,7 @@
         }
       },
       "tag:minecraft:is_tool": {},
+      "tag:hy:is_knife": {},
       "tag:hy:custom_weapons": {}
     }
   }

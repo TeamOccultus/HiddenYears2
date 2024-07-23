@@ -103,6 +103,7 @@
       },
       "minecraft:weapon": {},
       "tag:minecraft:is_tool": {},
+      "tag:hy:is_knife": {},
       "tag:hy:custom_weapons": {},
       "tag:hy:oxidized_item": {},
       "tag:hy:tetanus_item": {}
