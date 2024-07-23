@@ -20,12 +20,12 @@
       "minecraft:icon": {
         "texture": "hy.amethyst_hammer"
       },
-      "minecraft:enchantable": {
-        "value": 57257,
-        "slot": "pickaxe"
-      },
       "minecraft:damage": 4,
       "minecraft:weapon": {},
+      "minecraft:enchantable": {
+        "value": 1,
+        "slot": "pickaxe"
+      },
       "minecraft:digger": {
         "use_efficiency": false,
         "destroy_speeds": [
