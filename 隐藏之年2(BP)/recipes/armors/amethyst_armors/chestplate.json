@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "amethyst_chestplate"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X X", "XXX", "XXX"],
+    "key": {
+      "X": {
+        "item": "hy:amethyst_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:amethyst_ingot"
+      }
+    ],
+    "result": {
+      "item": "hy:amethyst_chestplate"
+    }
+  }
+}

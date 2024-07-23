@@ -1,0 +1,42 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:amethyst_boots",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.boots"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.amethyst_boots"
+      },
+      "minecraft:icon": "hy.amethyst_boots",
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "armor_feet"
+      },
+      "minecraft:durability": {
+        "max_durability": 180
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.feet",
+        "protection": 2
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hy:amethyst_ingot"],
+            "repair_amount": 50
+          },
+          {
+            "items": ["hy:amethyst_boots"],
+            "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+          }
+        ]
+      }
+    }
+  }
+}
