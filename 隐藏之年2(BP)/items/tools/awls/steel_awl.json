@@ -22,6 +22,10 @@
       "minecraft:creative_category": {
         "parent": "items"
       },
+      "minecraft:enchantable": {
+        "value": 1,
+        "slot": "sword"
+      },
       "tag:hy:is_awl": {},
       "tag:hy:custom_tools": {}
     }
