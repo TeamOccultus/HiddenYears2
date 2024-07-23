@@ -884,6 +884,9 @@
     "hy.imitation_amethyst_shovel": {
       "textures": "textures/items/imitation_amethyst_shovel"
     },
+    "hy.imitation_amethyst_sword": {
+      "textures": "textures/items/imitation_amethyst_sword"
+    },
     "hy.imitation_diamond_sword": {
       "textures": "textures/items/imitation_diamond_sword"
     },

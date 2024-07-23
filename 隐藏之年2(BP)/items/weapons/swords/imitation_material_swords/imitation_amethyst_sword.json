@@ -89,7 +89,7 @@
       },
       "minecraft:hand_equipped": true,
       "minecraft:icon": {
-        "texture": "hy.imitation_amethyst_boardsword"
+        "texture": "hy.imitation_amethyst_sword"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
