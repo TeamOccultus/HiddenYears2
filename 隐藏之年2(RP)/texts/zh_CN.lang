@@ -384,8 +384,7 @@ hy.item.enchanted_bone=附魔骨头
 hy.item.raw_large_leather=大块生皮革
 hy.item.raw_small_leather=小块生皮革
 
-hy.message.imitation_damage.1=这东西的质量貌似不太好……
-hy.message.imitation_damage.2=这东西仿制的质量太差以至于伤着了自己的主人
+hy.message.imitation_damage=这东西仿制的质量太差以至于伤着了自己的主人
 
 hy.message.sus_ore.1=这个矿石里面藏着虫子！
 hy.message.sus_ore.2=§c§l这个矿石里面埋了核弹！！！

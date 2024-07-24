@@ -54,21 +54,12 @@ function consumeDurabilityMixed(
  * @param entity 使用了仿制工具的实体
  */
 function applyImitationDamage(entity: Entity): void {
-  switch (utils.randomInteger(10)) {
-    case 1:
-      entity?.applyDamage(2);
-      if (entity instanceof Player) {
-        entity?.sendMessage([{ translate: "hy.message.imitation_damage.1" }]);
-      }
-      break;
-    case 2:
-      entity?.applyDamage(8);
-      if (entity instanceof Player) {
-        entity?.sendMessage([{ translate: "hy.message.imitation_damage.2" }]);
-      }
-      break;
-    default:
-      break;
+  const CHANCE = utils.randomInteger(100, 1);
+  console.warn(`Random chance is ${CHANCE}`);
+  if (CHANCE > 95) {
+    entity.applyDamage(2);
+    if (entity instanceof Player)
+      entity.sendMessage({ translate: "hy.message.imitation_damage" });
   }
 }
 
