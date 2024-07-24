@@ -14,9 +14,9 @@
         "parent": "itemGroup.name.sword"
       },
       "minecraft:durability": {
-        "max_durability": 150
+        "max_durability": 100
       },
-      "minecraft:damage": 5,
+      "minecraft:damage": 4,
       "minecraft:hover_text_color": "gold",
       "minecraft:digger": {
         "use_efficiency": true,
@@ -84,7 +84,7 @@
         ]
       },
       "minecraft:enchantable": {
-        "value": 57257,
+        "value": 1,
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,

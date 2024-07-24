@@ -16,17 +16,17 @@
       "minecraft:hover_text_color": "gold",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 300
+        "max_durability": 200
       },
       "minecraft:icon": {
         "texture": "hy.imitation_amethyst_hammer"
       },
       "minecraft:enchantable": {
-        "value": 28763,
+        "value": 1,
         "slot": "pickaxe"
       },
       
-      "minecraft:damage": 9,
+      "minecraft:damage": 2,
       "minecraft:weapon": {},
       "minecraft:enchantable": {
         "value": 1,
