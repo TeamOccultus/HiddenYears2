@@ -117,6 +117,7 @@
       "minecraft:weapon": {},
       "tag:hy:custom_weapons": {},
       "tag:hy:magic_explode": {},
+      "tag:hy:corrosion_weapon": {},
       "tag:minecraft:is_sword": {},
       "tag:minecraft:is_tool": {}
     }

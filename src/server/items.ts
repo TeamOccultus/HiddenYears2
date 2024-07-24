@@ -191,6 +191,17 @@ export class Item {
           ATTACKER instanceof Player ? ATTACKER : undefined
         );
       }
+      /**
+       * @tag hy:corrosion_weapon-判断物品是否可以进行腐蚀攻击
+       */
+      if (ITEM.hasTag("hy:corrosion_weapon")) {
+        let num = system.runInterval(() => {
+          ENTITY.applyDamage(2);
+        }, 40);
+        system.runTimeout(() => {
+          system.clearRun(num);
+        }, 200);
+      }
     });
   }
   /**
