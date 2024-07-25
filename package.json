@@ -1,6 +1,6 @@
 {
   "name": "hy2",
-  "version": "2.2.4",
+  "version": "2.3.0-alpha.1",
   "description": "A Minecraft addon",
   "scripts": {
     "build": "esbuild src/index.ts --bundle --format=esm --external:@minecraft/server --external:@minecraft/server-ui --minify-syntax \"--outfile=./隐藏之年2(BP)/scripts/index.js\"",
@@ -12,11 +12,11 @@
   "author": "CTN/Hidden Years Devs",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@minecraft/server": "^1.12.0-beta.1.21.1-stable",
-    "@minecraft/server-ui": "^1.2.0-beta.1.21.1-stable",
+    "@minecraft/server": "1.12.0-beta.1.21.1-stable",
+    "@minecraft/server-ui": "1.2.0-beta.1.21.1-stable",
     "@minecraft/vanilla-data": "1.21.1",
     "esbuild": "^0.23.0",
-    "project-lantern": "^1.4.0",
+    "project-lantern": "1.4.4",
     "typescript": "^5.5.3"
   },
   "devDependencies": {
