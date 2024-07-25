@@ -13,12 +13,12 @@
       "minecraft:hover_text_color": "gold",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 32
+        "max_durability": 16
       },
       
-      "minecraft:damage": 4,
+      "minecraft:damage": 2,
       "minecraft:enchantable": {
-        "value": 4,
+        "value": 1,
         "slot": "axe"
       },
       "minecraft:repairable": {

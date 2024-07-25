@@ -16,7 +16,7 @@
       "minecraft:hover_text_color": "gold",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 150
+        "max_durability": 100
       },
       "minecraft:icon": {
         "texture": "hy.imitation_amethyst_pickaxe"
@@ -34,9 +34,9 @@
         ]
       },
       
-      "minecraft:damage": 1,
+      "minecraft:damage": 2,
       "minecraft:enchantable": {
-        "value": 57257,
+        "value": 1,
         "slot": "pickaxe"
       },
       "minecraft:digger": {

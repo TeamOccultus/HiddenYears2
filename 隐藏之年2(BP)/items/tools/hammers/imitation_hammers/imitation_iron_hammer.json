@@ -16,13 +16,13 @@
       "minecraft:hover_text_color": "gold",
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 500
+        "max_durability": 250
       },
       "minecraft:icon": {
         "texture": "hy.imitation_iron_hammer"
       },
       
-      "minecraft:damage": 9,
+      "minecraft:damage": 3,
       "minecraft:weapon": {},
       "minecraft:enchantable": {
         "value": 1,

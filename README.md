@@ -116,6 +116,3 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 愿所有看到这里的冒险家能够在隐藏之年的世界中获得不一样的乐趣！
 
 愿你我的旅途，不论在游戏世界或者现实中，一路顺风无阻，处处生花！
-
-[![pFpP1nU.jpg](https://s11.ax1x.com/2024/01/08/pFpP1nU.jpg)](https://imgse.com/i/pFpP1nU)
-_本作品系星屹工作室出品_
