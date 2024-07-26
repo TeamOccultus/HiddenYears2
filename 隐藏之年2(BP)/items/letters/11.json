@@ -13,7 +13,7 @@
       "minecraft:display_name": {
         "value": "hy.item.sprite_history"
       },
-      "minecraft:hover_text_color": "light_purple"
+      "minecraft:hover_text_color": "yellow"
     }
   }
 }
