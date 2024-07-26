@@ -9,6 +9,7 @@
       }
     },
     "components": {
+      "minecraft:hover_text_color": "light_purple",
       "minecraft:display_name": {
         "value": "hy.item.amethyst_helmet"
       },
