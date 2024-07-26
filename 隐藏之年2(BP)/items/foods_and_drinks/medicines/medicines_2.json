@@ -4,7 +4,8 @@
     "description": {
       "identifier": "hy:medicine_2",
       "menu_category": {
-        "category": "equipment"
+        "category": "equipment",
+        "group": "itemGroup.name.potion"
       }
     },
     "components": {
