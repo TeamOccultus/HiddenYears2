@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "steel_helmet"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X"],
+    "key": {
+      "X": {
+        "item": "hy:steel_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:steel_ingot"
+      }
+    ],
+    "result": {
+      "item": "hy:steel_helmet"
+    }
+  }
+}
