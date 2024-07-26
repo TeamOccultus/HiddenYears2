@@ -7,7 +7,7 @@
     },
     "components": {
       "minecraft:creative_category": {
-        "parent": "equipment"
+        "parent": "itemGroup.name.pickaxe"
       },
       "minecraft:display_name": {
         "value": "hy.item.flash_copper_hammer"
