@@ -32,6 +32,34 @@ export const BEGINNING: quest.Quest = new quest.Quest(
 );
 
 /**
+ * 任务-这是工作台
+ */
+export const CRAFTING_TABLE: quest.Quest = new quest.Quest(
+  "crafting_table",
+  { translate: "hy.quest.crafting_table.title" },
+  { translate: "hy.quest.crafting_table.body" },
+  {
+    iconPath: "textures/ui/quest/crafting_table",
+    condition: {
+      item: {
+        name: {
+          translate: "tile.crafting_table.name",
+        },
+        item: new ItemStack("crafting_table"),
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.bread.name",
+        },
+        item: new ItemStack("bread", 5),
+      },
+    },
+  }
+);
+
+/**
  * 任务-石头工艺
  */
 export const OLDB: quest.Quest = new quest.Quest(
@@ -82,9 +110,9 @@ export const BONE_PIECE: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "item.apple.name",
+          translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("apple", 5),
+        item: new ItemStack("hy:copper_coin", 3),
       },
     },
     tips: {
@@ -142,7 +170,12 @@ export const TIN_INGOT: quest.Quest = new quest.Quest(
       },
     },
     award: {
-      playerXpPoint: 10,
+      item: {
+        name: {
+          translate: "hy.item.copper_coin",
+        },
+        item: new ItemStack("hy:copper_coin", 10),
+      },
     },
   }
 );
@@ -169,7 +202,7 @@ export const AMETHYST_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 10),
+        item: new ItemStack("hy:copper_coin", 12),
       },
     },
     tips: {
@@ -210,7 +243,7 @@ export const OVER_METAL_INGOT: quest.Quest = new quest.Quest(
 );
 
 /**
- * 任务-陨星之结晶
+ * 任务-陨星的结晶
  */
 export const IRON_INGOT: quest.Quest = new quest.Quest(
   "iron_ingot",
@@ -260,9 +293,9 @@ export const IRON_CROWBAR: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.gold_coin",
+          translate: "item.sweet_berries.name",
         },
-        item: new ItemStack("hy:gold_coin", 3),
+        item: new ItemStack("sweet_berries", 16),
       },
     },
     tips: {
@@ -291,9 +324,9 @@ export const IRON_HAMMER: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.gold_coin",
+          translate: "item.cooked_beef.name",
         },
-        item: new ItemStack("hy:gold_coin", 4),
+        item: new ItemStack("cooked_beef", 2),
       },
     },
     tips: {
@@ -322,9 +355,9 @@ export const IRON_AWL: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.gold_coin",
+          translate: "item.muttonCooked.name",
         },
-        item: new ItemStack("hy:gold_coin", 5),
+        item: new ItemStack("cooked_mutton", 4),
       },
     },
   }
@@ -350,9 +383,9 @@ export const IRON_KNIFE: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.gold_coin",
+          translate: "item.cooked_porkchop.name",
         },
-        item: new ItemStack("hy:gold_coin", 7),
+        item: new ItemStack("cooked_porkchop", 6),
       },
     },
     tips: {
@@ -383,7 +416,7 @@ export const IRON_DAGGER: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_apple",
         },
-        item: new ItemStack("hy:copper_apple", 3),
+        item: new ItemStack("hy:copper_apple", 6),
       },
     },
     tips: {
@@ -412,9 +445,9 @@ export const IRON_SWORD: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "item.golden_apple.name",
+          translate: "hy.item.enchanted_copper_apple",
         },
-        item: new ItemStack("golden_apple", 3),
+        item: new ItemStack("hy:enchanted_copper_apple", 3),
       },
     },
     tips: {
@@ -445,7 +478,7 @@ export const FLASH_METAL_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "item.golden_apple.name",
         },
-        item: new ItemStack("golden_apple", 5),
+        item: new ItemStack("golden_apple", 3),
       },
     },
     tips: {
@@ -502,9 +535,9 @@ export const DIAMOND: quest.Quest = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.diamond_coin",
+          translate: "item.appleEnchanted.name",
         },
-        item: new ItemStack("hy:diamond_coin", 5),
+        item: new ItemStack("enchanted_golden_apple", 5),
       },
     },
   }
@@ -526,9 +559,9 @@ export const STEEL_INGOT = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("enchanted_golden_apple"),
+        item: new ItemStack("golden_carrot", 5),
         name: {
-          translate: "item.appleEnchanted.name",
+          translate: "item.golden_carrot.name",
         },
       },
     },
@@ -579,9 +612,9 @@ export const FUEL_METAL = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.diamond_coin",
+          translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:diamond_coin", 8),
+        item: new ItemStack("hy:gold_coin", 5),
       },
     },
     iconPath: "textures/items/fuel",
@@ -604,9 +637,9 @@ export const SUFFERING_SWORD = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.diamond_coin",
+          translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:diamond_coin", 12),
+        item: new ItemStack("hy:gold_coin", 10),
       },
     },
     iconPath: "textures/items/suffering_sword",
@@ -632,9 +665,9 @@ export const SMARAGDUS = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.diamond_coin",
+          translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:diamond_coin", 25),
+        item: new ItemStack("hy:gold_coin", 25),
       },
     },
     iconPath: "textures/items/smaragdus",
@@ -696,7 +729,7 @@ export const RUBY = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 3),
+        item: new ItemStack("diamond", 2),
       },
     },
     iconPath: "textures/items/ruby",
@@ -785,7 +818,7 @@ export const RUBY_RUNES = new quest.Quest(
         name: {
           translate: "item.netherite_scrap.name",
         },
-        item: new ItemStack("netherite_scrap", 5),
+        item: new ItemStack("netherite_scrap", 3),
       },
       playerXpPoint: 35,
     },
@@ -811,7 +844,7 @@ export const GOLD_INGOT = new quest.Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:gold_coin", 15),
+        item: new ItemStack("hy:gold_coin", 5),
       },
     },
     iconPath: "textures/items/gold_ingot",
@@ -834,9 +867,9 @@ export const OBSIDIAN = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "item.golden_apple.name",
+          translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("golden_apple", 3),
+        item: new ItemStack("hy:gold_coin", 10),
       },
     },
     iconPath: "textures/ui/quest/obsidian",
@@ -859,9 +892,9 @@ export const GHAST_TEAR = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "item.golden_apple.name",
+          translate: "item.nether_wart.name",
         },
-        item: new ItemStack("golden_apple", 5),
+        item: new ItemStack("nether_wart", 5),
       },
     },
     iconPath: "textures/items/ghast_tear",
@@ -884,9 +917,9 @@ export const LODESTONE = new quest.Quest(
     award: {
       item: {
         name: {
-          translate: "item.appleEnchanted.name",
+          translate: "item.compass.name",
         },
-        item: new ItemStack("enchanted_golden_apple", 3),
+        item: new ItemStack("compass"),
       },
     },
     iconPath: "textures/ui/quest/lodestone",
@@ -908,9 +941,9 @@ export const RESPAWN_ANCHOR = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("hy:copper_badge"),
+        item: new ItemStack("glowstone_dust"),
         name: {
-          translate: "hy.item.copper_badge",
+          translate: "item.glowstone_dust.name",
         },
       },
     },

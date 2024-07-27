@@ -68,14 +68,6 @@ function applyImitationDamage(entity: Entity): void {
  */
 export class Quest {
   static register() {
-    const QUEST_BOOK1 = new quest.QuestBook(
-      "hy:quest_book1",
-      { translate: "hy.quest.title2" },
-      { translate: "hy.quest.body2" },
-      {
-        quests: [quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE],
-      }
-    );
     const QUEST_BOOK = new quest.ChapterQuestBook(
       "hy:quest_book",
       { translate: "hy.quest.title1" },
@@ -86,6 +78,7 @@ export class Quest {
           body: { translate: "hy.quest.chapter1.body" },
           quests: [
             quests.BEGINNING,
+            quests.CRAFTING_TABLE,
             quests.OLDB,
             quests.BONE_PIECE,
             quests.COPPER_INGOT,
@@ -110,6 +103,13 @@ export class Quest {
             quests.TOTEM,
           ],
           iconPath: "textures/items/book_writable",
+        },
+        {
+          title: { translate: "hy.quest.interlude.title"},
+          body: {translate: "hy.quest.interlude.body"},
+          quests: [
+            quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE
+          ]
         },
         {
           title: { translate: "hy.quest.chapter2.title" },
