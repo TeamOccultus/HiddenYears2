@@ -7,23 +7,23 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hy:raw_flash_metal_ingot"
+        "item": "gold_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:tin_ingot",
+        "count": 2
       }
     ],
     "unlock": [
       {
-        "item": "hy:raw_flash_metal_ingot"
+        "item": "gold_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:tin_ingot"
       }
     ],
     "result": {
-      "item": "hy:flash_metal_ingot",
-      "count": 2
+      "item": "hy:flash_metal_ingot"
     }
   }
 }

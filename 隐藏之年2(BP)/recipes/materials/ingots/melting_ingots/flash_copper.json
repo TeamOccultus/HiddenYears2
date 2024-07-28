@@ -7,23 +7,23 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hy:raw_flash_copper_ingot"
+        "item": "copper_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:tin_ingot",
+        "count": 2
       }
     ],
     "unlock": [
       {
-        "item": "hy:raw_flash_copper_ingot"
+        "item": "copper_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:tin_ingot"
       }
     ],
     "result": {
-      "item": "hy:flash_copper_ingot",
-      "count": 2
+      "item": "hy:flash_copper_ingot"
     }
   }
 }
