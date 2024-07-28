@@ -210,14 +210,15 @@ export class Item {
   static foodMonitor() {
     world.afterEvents.itemCompleteUse.subscribe((event) => {
       const [PLAYER, ITEM] = [event.source, event.itemStack];
-      /** 用`hy:copper_foods`来标记一个物品为铜食物，并统计其食用次数
+      /**
+       * @tag hy:copper_foods——标记一个物品为铜食物，并统计其食用次数
        * 铜食物食用12次后会中毒
        */
       if (ITEM.hasTag("hy:copper_foods")) {
         let eatFrequency = PLAYER.getDynamicProperty(
           "hy:copper_foods"
         ) as number;
-        if (eatFrequency === undefined)
+        if (!eatFrequency)
           PLAYER.setDynamicProperty("hy:copper_foods", 0);
         PLAYER.setDynamicProperty("hy:copper_foods", eatFrequency++);
         if (eatFrequency > 12) {
