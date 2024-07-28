@@ -25,7 +25,7 @@
       "minecraft:damage": 6,
       "minecraft:foil": true,
       "minecraft:enchantable": {
-        "value": 45,
+        "value": 10,
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
