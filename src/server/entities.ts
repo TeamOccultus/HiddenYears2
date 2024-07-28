@@ -1,5 +1,5 @@
-import { world, Player, system } from "@minecraft/server";
-import { utils } from "project-lantern";
+import { world, Player, system, ItemStack } from "@minecraft/server";
+import { replaceItemStack, utils } from "project-lantern";
 import { HyRewardTypes } from "../data/data";
 import { rubyKingSkill } from "../core/entitySkills";
 

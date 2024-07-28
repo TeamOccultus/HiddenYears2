@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:raw_flash_metal_ingot",
-      "category": "items"
+      "category": "none"
     },
     "components": {
       "minecraft:icon": {

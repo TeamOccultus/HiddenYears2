@@ -1,5 +1,5 @@
-import { system, world } from "@minecraft/server";
-import { initializeMod, Logger } from "project-lantern";
+import { ItemStack, system, world } from "@minecraft/server";
+import { initializeMod, Logger, replaceItemStack } from "project-lantern";
 import { bleedEffectMonitor } from "../core/effects";
 
 export class System {
@@ -37,5 +37,23 @@ export class System {
     system.runInterval(() => {
       bleedEffectMonitor();
     }, 20);
+  }
+  /**
+   * 兼容性测试
+   */
+  static compatibleTest() {
+    world.afterEvents.playerSpawn.subscribe((event) => {
+      const PLAYER = event.player;
+      replaceItemStack(
+        new ItemStack("hy:raw_flash_copper_ingot"),
+        new ItemStack("hy:flash_copper_ingot"),
+        PLAYER.getComponent("inventory").container
+      );
+      replaceItemStack(
+        new ItemStack("hy:raw_flash_metal_ingot"),
+        new ItemStack("hy:flash_metal_ingot"),
+        PLAYER.getComponent("inventory").container
+      );
+    });
   }
 }

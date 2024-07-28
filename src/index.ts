@@ -19,3 +19,4 @@ Quest.register();
 Article.register();
 Debug.chatTrigger();
 System.secondEventRegister();
+System.compatibleTest();
