@@ -200,7 +200,7 @@ export class Item {
         }, 40);
         system.runTimeout(() => {
           system.clearRun(num);
-        }, 200);
+        }, 240);
       }
     });
   }
