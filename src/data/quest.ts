@@ -274,6 +274,34 @@ export const IRON_INGOT: quest.Quest = new quest.Quest(
 );
 
 /**
+ * 任务-腐蚀之锭
+ */
+export const CORROSION_INGOT: quest.Quest = new quest.Quest(
+  "corrosion_ingot",
+  { translate: "hy.quest.corrosion_ingot.title" },
+  { translate: "hy.quest.corrosion_ingot.body" },
+  {
+    iconPath: "textures/items/corrosion_ingot",
+    condition: {
+      item: {
+        name: {
+          translate: "hy.item.corrosion_ingot",
+        },
+        item: new ItemStack("hy:corrosion_ingot"),
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.copper_coin",
+        },
+        item: new ItemStack("hy:copper_coin", 18),
+      },
+    },
+  }
+);
+
+/**
  * 任务-撬棍撬撬撬
  */
 export const IRON_CROWBAR: quest.Quest = new quest.Quest(
@@ -452,6 +480,62 @@ export const IRON_SWORD: quest.Quest = new quest.Quest(
     },
     tips: {
       translate: "hy.quest.iron_sword.tips",
+    },
+  }
+);
+
+/**
+ * 任务-扣下悬刀
+ */
+export const CROSSBOW: quest.Quest = new quest.Quest(
+  "crossbow",
+  { translate: "hy.quest.crossbow.title" },
+  { translate: "hy.quest.crossbow.body" },
+  {
+    iconPath: "textures/items/crossbow",
+    condition: {
+      item: {
+        name: {
+          translate: "item.crossbow.name",
+        },
+        item: new ItemStack("crossbow"),
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.enchanted_copper_apple",
+        },
+        item: new ItemStack("hy:enchanted_copper_apple", 5),
+      },
+    },
+  }
+);
+
+/**
+ * 任务-扣下悬刀
+ */
+export const SHIELD: quest.Quest = new quest.Quest(
+  "shield",
+  { translate: "hy.quest.shield.title" },
+  { translate: "hy.quest.shield.body" },
+  {
+    iconPath: "textures/ui/quest/shield",
+    condition: {
+      item: {
+        name: {
+          translate: "item.shield.name",
+        },
+        item: new ItemStack("shield"),
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.enchanted_copper_apple",
+        },
+        item: new ItemStack("hy:enchanted_copper_apple", 7),
+      },
     },
   }
 );
@@ -1170,30 +1254,6 @@ export const LETTER_11 = new quest.Quest(
   }
 );
 
-export const COPPER_APPLE = new quest.Quest(
-  "copper_apple",
-  { translate: "hy.quest.copper_apple.title" },
-  { translate: "hy.quest.copper_apple.body" },
-  {
-    condition: {
-      item: {
-        item: new ItemStack("hy:copper_apple"),
-        name: {
-          translate: "hy.item.copper_apple",
-        },
-      },
-    },
-    award: {
-      item: {
-        name: {
-          translate: "item.bread.name",
-        },
-        item: new ItemStack("bread", 5),
-      },
-    },
-    iconPath: "textures/items/copper_apple",
-  }
-);
 export const METAL_STAR = new quest.Quest(
   "metal_star",
   { translate: "hy.quest.metal_star.title" },
@@ -1218,6 +1278,7 @@ export const METAL_STAR = new quest.Quest(
     iconPath: "textures/items/metal_star",
   }
 );
+
 export const COPPER_ESSENCE = new quest.Quest(
   "copper_essence",
   { translate: "hy.quest.copper_essence.title" },
@@ -1240,5 +1301,364 @@ export const COPPER_ESSENCE = new quest.Quest(
       },
     },
     iconPath: "textures/items/copper_essence",
+  }
+);
+
+/**
+ * 任务-开垦荒地
+ */
+export const WHEAT = new quest.Quest(
+  "wheat",
+  { translate: "hy.quest.wheat.title" },
+  { translate: "hy.quest.wheat.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("wheat"),
+        name: {
+          translate: "item.wheat.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.amethyst_ingot",
+        },
+        item: new ItemStack("hy:amethyst_ingot", 2),
+      },
+    },
+    iconPath: "textures/items/wheat",
+  }
+);
+
+/**
+ * 任务-炎炎夏日
+ */
+export const MELON_SLICE = new quest.Quest(
+  "melon_slice",
+  { translate: "hy.quest.melon_slice.title" },
+  { translate: "hy.quest.melon_slice.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("melon_slice"),
+        name: {
+          translate: "item.melon.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.amethyst_ingot",
+        },
+        item: new ItemStack("hy:amethyst_ingot", 2),
+      },
+    },
+    iconPath: "textures/items/wheat",
+  }
+);
+
+/**
+ * 任务-重金属超标
+ */
+export const COPPER_APPLE = new quest.Quest(
+  "copper_apple",
+  { translate: "hy.quest.copper_apple.title" },
+  { translate: "hy.quest.copper_apple.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:copper_apple"),
+        name: {
+          translate: "hy.item.copper_apple",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.amethyst_ingot",
+        },
+        item: new ItemStack("hy:amethyst_ingot", 3),
+      },
+    },
+    iconPath: "textures/items/copper_apple",
+  }
+);
+
+/**
+ * 任务-不太好吃
+ */
+export const ROTTEN_FLESH = new quest.Quest(
+  "rotten_flesh",
+  { translate: "hy.quest.rotten_flesh.title" },
+  { translate: "hy.quest.rotten_flesh.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("rotten_flesh"),
+        name: {
+          translate: "item.rotten_flesh.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.iron_ingot.name",
+        },
+        item: new ItemStack("iron_ingot"),
+      },
+    },
+    iconPath: "textures/items/rotten_flesh",
+  }
+);
+
+/**
+ * 任务-与蜂共舞
+ */
+export const HONEY_BOTTLE = new quest.Quest(
+  "honey_bottle",
+  { translate: "hy.quest.honey_bottle.title" },
+  { translate: "hy.quest.honey_bottle.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("honey_bottle"),
+        name: {
+          translate: "item.honey_bottle.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.iron_ingot.name",
+        },
+        item: new ItemStack("iron_ingot", 2),
+      },
+    },
+    iconPath: "textures/items/honey_bottle",
+  }
+);
+
+/**
+ * 任务-巧克力！
+ */
+export const CHOCOLATE = new quest.Quest(
+  "chocolate",
+  { translate: "hy.quest.chocolate.title" },
+  { translate: "hy.quest.chocolate.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:chocolate"),
+        name: {
+          translate: "hy.item.chocolate",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.iron_ingot.name",
+        },
+        item: new ItemStack("iron_ingot", 2),
+      },
+    },
+    iconPath: "textures/items/chocolate",
+  }
+);
+
+/**
+ * 任务-轻飘飘的
+ */
+export const MARSHALLOW = new quest.Quest(
+  "marshallow",
+  { translate: "hy.quest.marshallow.title" },
+  { translate: "hy.quest.marshallow.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hy:marshallow"),
+        name: {
+          translate: "hy.item.marshallow",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.iron_ingot.name",
+        },
+        item: new ItemStack("iron_ingot", 2),
+      },
+    },
+    iconPath: "textures/items/marshallow",
+  }
+);
+
+/**
+ * 任务-良药甜口
+ */
+export const MILK_BUCKET = new quest.Quest(
+  "milk_bucket",
+  { translate: "hy.quest.milk_bucket.title" },
+  { translate: "hy.quest.milk_bucket.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("milk_bucket"),
+        name: {
+          translate: "item.milk.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.iron_ingot.name",
+        },
+        item: new ItemStack("iron_ingot", 3),
+      },
+    },
+    iconPath: "textures/items/milk_bucket",
+  }
+);
+
+/**
+ * 任务-祝你生日快乐
+ */
+export const CAKE = new quest.Quest(
+  "cake",
+  { translate: "hy.quest.cake.title" },
+  { translate: "hy.quest.cake.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("cake"),
+        name: {
+          translate: "item.cake.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.iron_ingot.name",
+        },
+        item: new ItemStack("iron_ingot", 4),
+      },
+    },
+    iconPath: "textures/items/cake",
+  }
+);
+
+/**
+ * 任务-祝你生日快乐
+ */
+export const HAY_BLOCK = new quest.Quest(
+  "hay_block",
+  { translate: "hy.quest.hay_block.title" },
+  { translate: "hy.quest.hay_block.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("hay_block", 45),
+        name: {
+          translate: "tile.hay_block.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 8),
+      },
+    },
+    iconPath: "textures/ui/quest/hay_bale",
+  }
+);
+
+/**
+ * 任务-知识就是力量
+ */
+export const CHISELED_BOOKSHELF = new quest.Quest(
+  "chiseled_bookshelf",
+  { translate: "hy.quest.chiseled_bookshelf.title" },
+  { translate: "hy.quest.chiseled_bookshelf.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("chiseled_bookshelf"),
+        name: {
+          translate: "tile.chiseled_bookshelf.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        item: new ItemStack("diamond", 2),
+      },
+    },
+    iconPath: "textures/ui/quest/chiseled_bookshelf",
+  }
+);
+
+/**
+ * 任务-刨根问底
+ */
+export const BRUSH = new quest.Quest(
+  "brush",
+  { translate: "hy.quest.brush.title" },
+  { translate: "hy.quest.brush.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("brush"),
+        name: {
+          translate: "item.brush.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.diamond_coin",
+        },
+        item: new ItemStack("hy:diamond_coin", 4),
+      },
+    },
+    iconPath: "textures/item/brush",
+  }
+);
+
+/**
+ * 任务-天空即为极限
+ */
+export const ELYTRA = new quest.Quest(
+  "elytra",
+  { translate: "hy.quest.elytra.title" },
+  { translate: "hy.quest.elytra.body" },
+  {
+    condition: {
+      item: {
+        item: new ItemStack("elytra"),
+        name: {
+          translate: "item.elytra.name",
+        },
+      },
+    },
+    award: {
+      playerXpPoint: 120
+    },
+    iconPath: "textures/item/elytra",
   }
 );

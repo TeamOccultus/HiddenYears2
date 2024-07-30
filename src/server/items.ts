@@ -86,12 +86,15 @@ export class Quest {
             quests.AMETHYST_INGOT,
             quests.OVER_METAL_INGOT,
             quests.IRON_INGOT,
+            quests.CORROSION_INGOT,
             quests.IRON_CROWBAR,
             quests.IRON_HAMMER,
             quests.IRON_AWL,
             quests.IRON_KNIFE,
             quests.IRON_DAGGER,
             quests.IRON_SWORD,
+            quests.CROSSBOW,
+            quests.SHIELD,
             quests.FLASH_METAL_INGOT,
             quests.FLASH_COPPER_INGOT,
             quests.DIAMOND,
@@ -105,11 +108,21 @@ export class Quest {
           iconPath: "textures/items/book_writable",
         },
         {
-          title: { translate: "hy.quest.interlude.title"},
-          body: {translate: "hy.quest.interlude.body"},
+          title: { translate: "hy.quest.interlude_food.title" },
+          body: { translate: "hy.quest.interlude.body" },
           quests: [
-            quests.COPPER_APPLE, quests.METAL_STAR, quests.COPPER_ESSENCE
-          ]
+            quests.WHEAT,
+            quests.MELON_SLICE,
+            quests.COPPER_APPLE,
+            quests.ROTTEN_FLESH,
+            quests.HONEY_BOTTLE,
+            quests.CHOCOLATE,
+            quests.MARSHALLOW,
+            quests.MILK_BUCKET,
+            quests.CAKE,
+            quests.HAY_BLOCK,
+          ],
+          iconPath: "textures/items/wheat",
         },
         {
           title: { translate: "hy.quest.chapter2.title" },
@@ -121,6 +134,17 @@ export class Quest {
             quests.RUBY_RUNES,
           ],
           iconPath: "textures/items/ruby",
+        },
+        {
+          title: { translate: "hy.quest.interlude.title" },
+          body: { translate: "hy.quest.interlude.body" },
+          quests: [
+            quests.CHISELED_BOOKSHELF,
+            quests.BRUSH,
+            quests.METAL_STAR,
+            quests.COPPER_ESSENCE,
+          ],
+          iconPath: "textures/items/brush",
         },
         {
           title: { translate: "hy.quest.chapter3.title" },
@@ -135,6 +159,7 @@ export class Quest {
             quests.NETHER_STAR,
             quests.ENDER_PEARL,
             quests.DRAGON_BREATH,
+            quests.ELYTRA,
             quests.DRAGON_EGG,
           ],
           iconPath: "textures/items/ender_eye",
@@ -218,8 +243,7 @@ export class Item {
         let eatFrequency = PLAYER.getDynamicProperty(
           "hy:copper_foods"
         ) as number;
-        if (!eatFrequency)
-          PLAYER.setDynamicProperty("hy:copper_foods", 0);
+        if (!eatFrequency) PLAYER.setDynamicProperty("hy:copper_foods", 0);
         PLAYER.setDynamicProperty("hy:copper_foods", eatFrequency++);
         if (eatFrequency > 12) {
           PLAYER.addEffect("poison", 100);

@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:quest_book1",
-      "category": "equipment"
+      "category": "none"
     },
     "components": {
       "minecraft:icon": {
