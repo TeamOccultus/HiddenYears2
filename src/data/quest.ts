@@ -492,7 +492,7 @@ export const CROSSBOW: quest.Quest = new quest.Quest(
   { translate: "hy.quest.crossbow.title" },
   { translate: "hy.quest.crossbow.body" },
   {
-    iconPath: "textures/items/crossbow",
+    iconPath: "textures/items/crossbow_standby",
     condition: {
       item: {
         name: {
@@ -513,7 +513,7 @@ export const CROSSBOW: quest.Quest = new quest.Quest(
 );
 
 /**
- * 任务-扣下悬刀
+ * 任务-不吃这套，谢谢
  */
 export const SHIELD: quest.Quest = new quest.Quest(
   "shield",
@@ -1356,7 +1356,7 @@ export const MELON_SLICE = new quest.Quest(
         item: new ItemStack("hy:amethyst_ingot", 2),
       },
     },
-    iconPath: "textures/items/wheat",
+    iconPath: "textures/items/melon",
   }
 );
 
@@ -1524,7 +1524,7 @@ export const MILK_BUCKET = new quest.Quest(
         item: new ItemStack("iron_ingot", 3),
       },
     },
-    iconPath: "textures/items/milk_bucket",
+    iconPath: "textures/items/bucket_milk",
   }
 );
 
@@ -1636,7 +1636,7 @@ export const BRUSH = new quest.Quest(
         item: new ItemStack("hy:diamond_coin", 4),
       },
     },
-    iconPath: "textures/item/brush",
+    iconPath: "textures/items/brush",
   }
 );
 
@@ -1659,6 +1659,6 @@ export const ELYTRA = new quest.Quest(
     award: {
       playerXpPoint: 120
     },
-    iconPath: "textures/item/elytra",
+    iconPath: "textures/items/elytra",
   }
 );
