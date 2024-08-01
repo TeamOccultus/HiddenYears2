@@ -967,6 +967,9 @@
     },
     "hy.amethyst_boots": {
       "textures": "textures/items/amethyst_boots"
+    },
+    "hy.ancient_extracts": {
+      "textures": "textures/items/ancient_extracts"
     }
   }
 }

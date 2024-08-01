@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "smaragdus_leggings"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X", "X X"],
+    "key": {
+      "X": {
+        "item": "hy:smaragdus"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:smaragdus"
+      }
+    ],
+    "result": {
+      "item": "hy:smaragdus_leggings"
+    }
+  }
+}

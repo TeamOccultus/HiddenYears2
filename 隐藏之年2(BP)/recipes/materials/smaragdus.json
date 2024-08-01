@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "smaragdus"
+    },
+    "tags": ["lab_table"],
+    "pattern": ["OXO", "X#X", "OXO"],
+    "key": {
+      "#": {
+        "item": "emerald"
+      },
+      "X": {
+        "item": "diamond"
+      },
+      "O": {
+       "item": "hy:ancient_extracts"
+      }
+    },
+    "unlock": [
+      {
+        "item": "emerald"
+      },
+      {
+        "item": "diamond"
+      },
+      {
+        "item": "hy:ancient_extracts"
+      }
+    ],
+    "result": {
+      "item": "hy:smaragdus"
+    }
+  }
+}
