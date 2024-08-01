@@ -7,7 +7,7 @@
         "default": "snowball"
       },
       "textures": {
-        "default": "textures/items/materials/nuggets/stone_nugget"
+        "default": "textures/items/stone_nugget"
       },
       "geometry": {
         "default": "geometry.item_sprite"
