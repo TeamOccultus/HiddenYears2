@@ -1,0 +1,36 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:extracts_ore",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.ore"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "hy.block.extracts_ore",
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.8
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:map_color": "#565656",
+      "minecraft:on_player_destroyed": {
+        "event": "hy.spawn_loot",
+        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
+      },
+      "tag:hy:custom_ores": {},
+      "tag:minecraft:stone_pick_diggable": {}
+    },
+    "events": {
+      "hy.spawn_loot": {
+        "spawn_loot": {
+          "table": "loot_tables/blocks/extracts_ore.json"
+        }
+      }
+    }
+  }
+}

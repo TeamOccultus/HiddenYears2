@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hy:custom_ores/extracts"
+    },
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": "hy:extracts_ore",
+        "may_replace": ["deepslate"]
+      }
+    ]
+  }
+}

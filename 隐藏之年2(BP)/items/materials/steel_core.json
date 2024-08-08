@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:steel_core",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.steel_core",
+      "minecraft:display_name": {
+        "value": "hy.item.steel_core"
+      },
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

@@ -628,7 +628,7 @@ hy.quest.suffering_sword.title=§d[探索这世间]§r 痛苦的铸剑
 hy.quest.suffering_sword.body=这些生物原本是「精灵」一族的侍卫，却最终被灾厄之族驯化成了战争机器——正因如此，他们手中的剑不再锐利，而是充盈着被屠杀者的痛苦……
 hy.quest.suffering_sword.tips=击败黑森林内的恶灵获得痛苦之剑
 hy.quest.smaragdus.title=§d[材料升级·终]§r 翠绿的宝石
-hy.quest.smaragdus.body=这个世界被允许的最强悍的材料，由绿宝石、钻石和在下界的远古萃华在炼金台上合成而来
+hy.quest.smaragdus.body=这个世界被允许的最强悍的材料，由绿宝石、钻石和在主世界底层的远古萃华在炼金台上合成而来
 hy.quest.totem.title=§d[序章·终]§r 「不死」的凝结
 hy.quest.totem.body1=「文字编织出一种美妙的界面，非常灵活，并且胜过凝视这屏幕后的可怕现实。」
 hy.quest.totem.body2=不知多少个千年之前，天边的一颗星星无故突然闪烁起来，接着那天外的来客降临到这片大陆之上。
@@ -890,3 +890,7 @@ hy.item.smaragdus_helmet=翠珏头盔
 hy.item.smaragdus_chestplate=翠珏胸甲
 hy.item.smaragdus_leggings=翠珏护腿
 hy.item.smaragdus_boots=翠珏靴子
+
+hy.block.extracts_ore=萃华矿石
+hy.block.steel_core_ore=钢芯矿石
+hy.item.steel_core=钢芯

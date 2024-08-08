@@ -970,6 +970,9 @@
     },
     "hy.ancient_extracts": {
       "textures": "textures/items/ancient_extracts"
+    },
+    "hy.steel_core": {
+      "textures": "textures/items/steel_core"
     }
   }
 }

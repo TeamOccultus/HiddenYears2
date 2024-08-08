@@ -4,7 +4,7 @@
     "description": {
       "identifier": "flash_copper_ingot"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
         "item": "copper_ingot"
