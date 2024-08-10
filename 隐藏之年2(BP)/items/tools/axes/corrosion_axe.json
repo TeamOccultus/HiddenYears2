@@ -1,0 +1,140 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:corrosion_axe",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.corrosion_axe"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 300
+      },
+      "minecraft:damage": 6,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "axe"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hy:corrosion_ingot"],
+            "repair_amount": 50
+          },
+          {
+            "items": ["hy:corrosion_axe"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag('wood', 'pumpkin', 'plant')"
+            },
+            "speed": 5
+          },
+          {
+            "block": "crafting_table",
+            "speed": 5
+          },
+          {
+            "block": "chest",
+            "speed": 5
+          },
+          {
+            "block": "trapped_chest",
+            "speed": 5
+          },
+          {
+            "block": "lectern",
+            "speed": 5
+          },
+          {
+            "block": "loom",
+            "speed": 5
+          },
+          {
+            "block": "cartography_table",
+            "speed": 5
+          },
+          {
+            "block": "barrel",
+            "speed": 5
+          },
+          {
+            "block": "jukebox",
+            "speed": 5
+          },
+          {
+            "block": "campfire",
+            "speed": 5
+          },
+          {
+            "block": "soul_campfire",
+            "speed": 5
+          },
+          {
+            "block": "bookshelf",
+            "speed": 5
+          },
+          {
+            "block": "chiseled_bookshelf",
+            "speed": 5
+          },
+          {
+            "block": "noteblock",
+            "speed": 5
+          },
+          {
+            "block": "beehive",
+            "speed": 5
+          },
+          {
+            "block": "bee_nest",
+            "speed": 5
+          },
+          {
+            "block": "bed",
+            "speed": 5
+          },
+          {
+            "block": "daylight_detector",
+            "speed": 5
+          },
+          {
+            "block": "melon_block",
+            "speed": 5
+          }
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "hy.corrosion_axe"
+      },
+      "minecraft:creative_category": {
+        "category": "equipment",
+        "parent": "itemGroup.name.axe"
+      },
+      "minecraft:weapon": {},
+      "tag:minecraft:is_axe": {},
+      "tag:hy:custom_tools": {}
+    },
+    "events": {
+      "on_tool_used": {
+        "damage": {
+          "type": "magic",
+          "amount": 1
+        },
+        "run_command": {
+          "command": ["playsound use.wood @a ~ ~ ~ 1.0 1.0"]
+        }
+      }
+    }
+  }
+}

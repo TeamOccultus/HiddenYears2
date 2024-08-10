@@ -1,0 +1,140 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:flash_metal_axe",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.flash_metal_axe"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 200
+      },
+      "minecraft:damage": 4,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "axe"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hy:flash_metal_ingot"],
+            "repair_amount": 50
+          },
+          {
+            "items": ["hy:flash_metal_axe"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag('wood', 'pumpkin', 'plant')"
+            },
+            "speed": 15
+          },
+          {
+            "block": "crafting_table",
+            "speed": 15
+          },
+          {
+            "block": "chest",
+            "speed": 15
+          },
+          {
+            "block": "trapped_chest",
+            "speed": 15
+          },
+          {
+            "block": "lectern",
+            "speed": 15
+          },
+          {
+            "block": "loom",
+            "speed": 15
+          },
+          {
+            "block": "cartography_table",
+            "speed": 15
+          },
+          {
+            "block": "barrel",
+            "speed": 15
+          },
+          {
+            "block": "jukebox",
+            "speed": 15
+          },
+          {
+            "block": "campfire",
+            "speed": 15
+          },
+          {
+            "block": "soul_campfire",
+            "speed": 15
+          },
+          {
+            "block": "bookshelf",
+            "speed": 15
+          },
+          {
+            "block": "chiseled_bookshelf",
+            "speed": 15
+          },
+          {
+            "block": "noteblock",
+            "speed": 15
+          },
+          {
+            "block": "beehive",
+            "speed": 15
+          },
+          {
+            "block": "bee_nest",
+            "speed": 15
+          },
+          {
+            "block": "bed",
+            "speed": 15
+          },
+          {
+            "block": "daylight_detector",
+            "speed": 15
+          },
+          {
+            "block": "melon_block",
+            "speed": 15
+          }
+        ]
+      },
+      "minecraft:icon": {
+        "texture": "hy.flash_metal_axe"
+      },
+      "minecraft:creative_category": {
+        "category": "equipment",
+        "parent": "itemGroup.name.axe"
+      },
+      "minecraft:weapon": {},
+      "tag:minecraft:is_axe": {},
+      "tag:hy:custom_tools": {}
+    },
+    "events": {
+      "on_tool_used": {
+        "damage": {
+          "type": "magic",
+          "amount": 1
+        },
+        "run_command": {
+          "command": ["playsound use.wood @a ~ ~ ~ 1.0 1.0"]
+        }
+      }
+    }
+  }
+}
