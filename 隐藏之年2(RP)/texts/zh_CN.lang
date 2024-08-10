@@ -898,3 +898,13 @@ hy.item.smaragdus_boots=翠珏靴子
 hy.block.extracts_ore=萃华矿石
 hy.block.steel_core_ore=钢芯矿石
 hy.item.steel_core=钢芯
+
+hy.item.corrosion_axe=腐蚀之斧
+hy.item.corrosion_hammer=腐蚀之锤
+hy.item.corrosion_hoe=腐蚀之锄
+hy.item.corrosion_pickaxe=腐蚀之镐
+hy.item.corrosion_shovel=腐蚀之锹
+hy.item.corrosion_dagger=腐蚀匕首
+hy.item.corrosion_knife=腐蚀小刀
+hy.item.corrosion_awl=腐蚀之锥
+hy.item.corrosion_sword=腐蚀之剑
