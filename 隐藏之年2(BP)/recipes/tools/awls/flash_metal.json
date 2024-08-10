@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "flash_metal_awl"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["#", "#"],
+    "key": {
+      "#": {
+        "item": "hy:flash_metal_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:flash_metal_nugget"
+      }
+    ],
+    "result": {
+      "item": "hy:flash_metal_awl"
+    }
+  }
+}

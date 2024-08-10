@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "fuel_metal_axe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", "X#", " #"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hy:fuel_metal_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:fuel_metal_ingot"
+      }
+    ],
+    "result": {
+      "item": "hy:fuel_metal_axe"
+    }
+  }
+}

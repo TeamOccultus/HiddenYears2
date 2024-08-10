@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "flash_metal_hoe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", " #", " #"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hy:flash_metal_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:flash_metal_ingot"
+      }
+    ],
+    "result": {
+      "item": "hy:flash_metal_hoe"
+    }
+  }
+}

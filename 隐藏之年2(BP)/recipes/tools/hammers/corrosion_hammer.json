@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corrosion_hammer"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "#": {
+        "item": "hy:corrosion_ingot"
+      },
+      "X": {
+        "tag": "hy:is_handle"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:corrosion_ingot"
+      },
+      {
+        "tag": "hy:is_handle"
+      }
+    ],
+    "pattern": ["###", "###", " X "],
+    "result": {
+      "item": "hy:corrosion_hammer"
+    }
+  }
+}

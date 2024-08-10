@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corrosion_axe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", "X#", " #"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hy:corrosion_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:corrosion_ingot"
+      }
+    ],
+    "result": {
+      "item": "hy:corrosion_axe"
+    }
+  }
+}

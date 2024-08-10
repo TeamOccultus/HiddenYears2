@@ -1,0 +1,26 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "smaragdus_pickaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", " # ", " # "],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hy:smaragdus"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:smaragdus"
+      }
+    ],
+    "result": {
+      "item": "hy:smaragdus_pickaxe"
+    }
+  }
+}

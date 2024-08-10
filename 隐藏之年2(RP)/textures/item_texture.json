@@ -944,6 +944,18 @@
     "hy.smaragdus_shovel": {
       "textures": "textures/items/smaragdus_shovel"
     },
+     "hy.smaragdus_awl": {
+      "textures": "textures/items/smaragdus_awl"
+    },
+     "hy.smaragdus_dagger": {
+      "textures": "textures/items/smaragdus_dagger"
+    },
+     "hy.smaragdus_knife": {
+      "textures": "textures/items/smaragdus_knife"
+    },
+     "hy.smaragdus_sword": {
+      "textures": "textures/items/smaragdus_sword"
+    },
     "hy.smaragdus_helmet": {
       "textures": "textures/items/smaragdus_helmet"
     },

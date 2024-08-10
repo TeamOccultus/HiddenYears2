@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "corrosion_awl"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["#", "#"],
+    "key": {
+      "#": {
+        "item": "hy:corrosion_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:corrosion_nugget"
+      }
+    ],
+    "result": {
+      "item": "hy:corrosion_awl"
+    }
+  }
+}

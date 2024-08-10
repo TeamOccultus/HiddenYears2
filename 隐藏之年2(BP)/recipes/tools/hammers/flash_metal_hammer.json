@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "flash_metal_hammer"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "#": {
+        "item": "hy:flash_metal_ingot"
+      },
+      "X": {
+        "tag": "hy:is_handle"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:flash_metal_ingot"
+      },
+      {
+        "tag": "hy:is_handle"
+      }
+    ],
+    "pattern": ["###", "###", " X "],
+    "result": {
+      "item": "hy:flash_metal_hammer"
+    }
+  }
+}

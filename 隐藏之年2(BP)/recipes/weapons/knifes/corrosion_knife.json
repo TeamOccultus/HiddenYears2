@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "corrosion_knife"
+    },
+    "tags": ["crafting_table"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "hy:corrosion_awl"
+      },
+      {
+        "item": "stick"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hy:corrosion_awl"
+      },
+      {
+        "item": "stick"
+      }
+    ],
+    "result": {
+      "item": "hy:corrosion_knife"
+    }
+  }
+}
