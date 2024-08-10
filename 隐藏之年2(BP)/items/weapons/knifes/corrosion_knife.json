@@ -81,7 +81,7 @@
       },
       "minecraft:hand_equipped": true,
       "minecraft:icon": {
-        "texture": "hy.corrosion_knife"
+        "texture": "hy.exposed_copper_knife"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {

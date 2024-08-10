@@ -985,6 +985,12 @@
     },
     "hy.steel_core": {
       "textures": "textures/items/steel_core"
+    },
+    "hy.exposed_copper_awl": {
+      "textures": "textures/items/exposed_copper_awl"
+    },
+    "hy.exposed_copper_dagger": {
+      "textures": "textures/items/exposed_copper_dagger"
     }
   }
 }

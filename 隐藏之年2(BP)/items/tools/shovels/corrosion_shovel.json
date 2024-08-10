@@ -51,7 +51,7 @@
         ]
       },
       "minecraft:icon": {
-        "texture": "hy.corrosion_shovel"
+        "texture": "hy.exposed_copper_shovel"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.shovel"

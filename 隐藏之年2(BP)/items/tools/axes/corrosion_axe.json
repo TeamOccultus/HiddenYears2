@@ -115,7 +115,7 @@
         ]
       },
       "minecraft:icon": {
-        "texture": "hy.corrosion_axe"
+        "texture": "hy.exposed_copper_axe"
       },
       "minecraft:creative_category": {
         "category": "equipment",

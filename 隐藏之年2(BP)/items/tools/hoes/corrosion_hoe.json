@@ -32,7 +32,7 @@
         ]
       },
       "minecraft:icon": {
-        "texture": "hy.corrosion_hoe"
+        "texture": "hy.exposed_copper_hoe"
       },
       "minecraft:creative_category": {
         "parent": "itemGroup.name.hoe"
