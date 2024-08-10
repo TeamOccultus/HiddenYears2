@@ -5,15 +5,15 @@
       "identifier": "iron_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "iron_nugget"
+        "item": "iron_ingot"
       }
     },
     "unlock": [
       {
-        "item": "iron_nugget"
+        "item": "iron_ingot"
       }
     ],
     "result": {

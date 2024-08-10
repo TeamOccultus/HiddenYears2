@@ -5,15 +5,15 @@
       "identifier": "steel_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:steel_nugget"
+        "item": "hy:steel_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:steel_nugget"
+        "item": "hy:steel_ingot"
       }
     ],
     "result": {

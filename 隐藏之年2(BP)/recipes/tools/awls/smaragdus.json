@@ -5,15 +5,15 @@
       "identifier": "smaragdus_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:smaragdus_nugget"
+        "item": "hy:smaragdus"
       }
     },
     "unlock": [
       {
-        "item": "hy:smaragdus_nugget"
+        "item": "hy:smaragdus"
       }
     ],
     "result": {

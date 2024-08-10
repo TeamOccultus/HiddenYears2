@@ -5,15 +5,15 @@
       "identifier": "copper_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:copper_nugget"
+        "item": "hy:copper_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:copper_nugget"
+        "item": "hy:copper_ingot"
       }
     ],
     "result": {

@@ -5,15 +5,15 @@
       "identifier": "over_metal_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:over_metal_nugget"
+        "item": "hy:over_metal_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:over_metal_nugget"
+        "item": "hy:over_metal_ingot"
       }
     ],
     "result": {

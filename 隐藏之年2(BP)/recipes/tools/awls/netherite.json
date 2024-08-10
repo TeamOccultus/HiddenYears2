@@ -5,15 +5,15 @@
       "identifier": "netherite_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:netherite_nugget"
+        "item": "netherite_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:netherite_nugget"
+        "item": "netherite_ingot"
       }
     ],
     "result": {

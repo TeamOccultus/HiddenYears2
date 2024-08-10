@@ -5,15 +5,15 @@
       "identifier": "corrosion_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:corrosion_nugget"
+        "item": "hy:corrosion_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:corrosion_nugget"
+        "item": "hy:corrosion_ingot"
       }
     ],
     "result": {

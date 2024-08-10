@@ -5,7 +5,7 @@
       "identifier": "wooden_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
         "item": "wooden_button"

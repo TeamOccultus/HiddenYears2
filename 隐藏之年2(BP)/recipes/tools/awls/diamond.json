@@ -5,15 +5,15 @@
       "identifier": "diamond_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:diamond_nugget"
+        "item": "diamond"
       }
     },
     "unlock": [
       {
-        "item": "hy:diamond_nugget"
+        "item": "diamond"
       }
     ],
     "result": {

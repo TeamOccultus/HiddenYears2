@@ -5,15 +5,15 @@
       "identifier": "gold_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "gold_nugget"
+        "item": "gold_ingot"
       }
     },
     "unlock": [
       {
-        "item": "gold_nugget"
+        "item": "gold_ingot"
       }
     ],
     "result": {

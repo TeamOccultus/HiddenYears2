@@ -5,7 +5,7 @@
       "identifier": "stone_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
         "item": "stone_button"

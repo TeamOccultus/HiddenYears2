@@ -5,15 +5,15 @@
       "identifier": "flash_copper_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:flash_copper_nugget"
+        "item": "hy:flash_copper_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:flash_copper_nugget"
+        "item": "hy:flash_copper_ingot"
       }
     ],
     "result": {

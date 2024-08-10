@@ -5,15 +5,15 @@
       "identifier": "amethyst_awl"
     },
     "tags": ["crafting_table"],
-    "pattern": ["#", "#"],
+    "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:amethyst_nugget"
+        "item": "hy:amethyst_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:amethyst_nugget"
+        "item": "hy:amethyst_ingot"
       }
     ],
     "result": {
