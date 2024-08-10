@@ -226,5 +226,13 @@
   "hy:ruby_stone_bricks": {
     "sound": "amethyst_block",
     "textures": "hy.ruby_stone_bricks"
+  },
+  "hy:extracts_ore": {
+    "sound": "deepslate",
+    "textures": "hy.extracts_ore"
+  },
+  "hy:steel_core_ore": {
+    "sound": "deepslate",
+    "textures": "hy.steel_core_ore"
   }
 }

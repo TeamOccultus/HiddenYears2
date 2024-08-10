@@ -4,13 +4,13 @@
     "description": {
       "identifier": "steel_ingot"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
         "item": "hy:raw_steel_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:steel_core"
       }
     ],
     "unlock": [
@@ -18,12 +18,11 @@
         "item": "hy:raw_steel_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:steel_core"
       }
     ],
     "result": {
-      "item": "hy:steel_ingot",
-      "count": 2
+      "item": "hy:steel_ingot"
     }
   }
 }

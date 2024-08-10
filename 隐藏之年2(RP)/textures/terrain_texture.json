@@ -123,6 +123,12 @@
     },
     "hy.ruby_stone_bricks": {
       "textures": "textures/blocks/ruby_stone_bricks"
+    },
+    "hy.steel_core_ore": {
+      "textures": "textures/blocks/steel_core_ore"
+    },
+    "hy.extracts_ore": {
+      "textures": "textures/blocks/extracts_ore"
     }
   }
 }

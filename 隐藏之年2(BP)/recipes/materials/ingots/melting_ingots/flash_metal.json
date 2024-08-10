@@ -4,7 +4,7 @@
     "description": {
       "identifier": "flash_metal_ingot"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
         "item": "gold_ingot"

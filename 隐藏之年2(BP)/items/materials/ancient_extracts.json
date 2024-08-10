@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:ancient_extracts",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.ancient_extracts",
+      "minecraft:display_name": {
+        "value": "hy.item.ancient_extracts"
+      },
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}
