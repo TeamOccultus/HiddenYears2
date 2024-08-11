@@ -115,6 +115,7 @@
         ]
       },
       "minecraft:weapon": {},
+      "tag:hy:corrosion_weapon": {},
       "tag:minecraft:is_hoe": {},
       "tag:hy:custom_tools": {}
     },

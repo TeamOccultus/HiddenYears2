@@ -57,6 +57,7 @@
         "parent": "itemGroup.name.shovel"
       },
       "minecraft:weapon": {},
+      "tag:hy:corrosion_weapon": {},
       "tag:minecraft:is_shovel": {},
       "tag:hy:custom_tools": {}
     },
