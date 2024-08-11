@@ -1,0 +1,42 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:flash_metal_boots",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.boots"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.flash_metal_boots"
+      },
+      "minecraft:icon": "hy.flash_metal_boots",
+      "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "armor_feet"
+      },
+      "minecraft:durability": {
+        "max_durability": 160
+      },
+      "minecraft:wearable": {
+        "slot": "slot.armor.feet",
+        "protection": 1
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hy:flash_metal_ingot"],
+            "repair_amount": 50
+          },
+          {
+            "items": ["hy:flash_metal_boots"],
+            "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
+          }
+        ]
+      }
+    }
+  }
+}
