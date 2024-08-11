@@ -991,6 +991,18 @@
     },
     "hy.exposed_copper_dagger": {
       "textures": "textures/items/exposed_copper_dagger"
+    },
+    "hy.flash_metal_helmet": {
+      "textures": "textures/items/flash_metal_helmet"
+    },
+    "hy.flash_metal_chestplate": {
+      "textures": "textures/items/flash_metal_chestplate"
+    },
+    "hy.flash_metal_leggings": {
+      "textures": "textures/items/flash_metal_leggings"
+    },
+    "hy.flash_metal_boots": {
+      "textures": "textures/items/flash_metal_boots"
     }
   }
 }

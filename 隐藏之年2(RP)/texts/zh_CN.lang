@@ -1,5 +1,5 @@
 pack.name=隐藏之年²
-pack.description=「探索未知的世间」 ｜ 正式版2.3.0-alpha.4 [§l本包需要基岩版1.21.X并开启§6假日创造者功能、自定义生物群系、测试版API§r实验性玩法]
+pack.description=「探索未知的世间」 ｜ §l本包需要基岩版1.21.X并开启§6假日创造者功能、自定义生物群系、测试版API§r实验性玩法
 
 gui.check=提交任务
 gui.about=关于
@@ -270,6 +270,10 @@ hy.item.flash_metal_dagger=闪金匕首
 hy.item.flash_metal_knife=闪金小刀
 hy.item.flash_metal_awl=闪金锥
 hy.item.flash_metal_sword=闪金剑
+hy.item.flash_metal_helmet=闪金头盔
+hy.item.flash_metal_chestplate=闪金胸甲
+hy.item.flash_metal_leggings=闪金护腿
+hy.item.flash_metal_boots=闪金靴子
 hy.block.flash_metal_block=闪金块
 
 hy.block.lab_table=炼金台
