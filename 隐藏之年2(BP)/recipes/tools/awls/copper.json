@@ -8,12 +8,12 @@
     "pattern": ["#  ", " # ", "  #"],
     "key": {
       "#": {
-        "item": "hy:copper_ingot"
+        "item": "copper_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:copper_ingot"
+        "item": "copper_ingot"
       }
     ],
     "result": {
