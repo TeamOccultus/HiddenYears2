@@ -2,7 +2,7 @@
   "format_version": "1.20.11",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "fuel_metal_axe"
+      "identifier": "flash_metal_axe"
     },
     "tags": ["crafting_table"],
     "pattern": ["XX", "X#", " #"],
@@ -11,16 +11,16 @@
         "item": "stick"
       },
       "X": {
-        "item": "hy:fuel_metal_ingot"
+        "item": "hy:flash_metal_ingot"
       }
     },
     "unlock": [
       {
-        "item": "hy:fuel_metal_ingot"
+        "item": "hy:flash_metal_ingot"
       }
     ],
     "result": {
-      "item": "hy:fuel_metal_axe"
+      "item": "hy:flash_metal_axe"
     }
   }
 }
