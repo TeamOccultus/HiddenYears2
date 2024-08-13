@@ -565,7 +565,7 @@ hy.quest.interlude.title=§d[间章]§r 进度与成就
 hy.quest.chapter1.body=在旅途启程之前，先完成这些事情吧......
 hy.quest.chapter2.body=千年之前，一位术士献出鲜血，故事就此开始
 hy.quest.chapter3.body=足迹踏遍三个世界或一个星球
-hy.quest.interlude.title=在冒险的间隙也休息一下吧
+hy.quest.interlude.body=在冒险的间隙也休息一下吧
 
 hy.quest.beginning.title=§d[一切的开始]§r 新生的枝桠
 hy.quest.beginning.body=这是树上新生的枝桠，亦是你旅途的开始……
