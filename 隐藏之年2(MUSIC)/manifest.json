@@ -10,14 +10,14 @@
     "description": "pack.description",
     "min_engine_version": [1, 20, 0],
     "uuid": "968d44e4-69b3-457f-9a11-93fb60306566",
-    "version": "3.1.2",
+    "version": "3.1.3",
     "pack_scope": "world"
   },
   "modules": [
     {
       "type": "resources",
       "uuid": "3ea73701-718a-4109-99a3-e0ec70c39d41",
-      "version": "3.1.2"
+      "version": "3.1.3"
     }
   ],
   "dependencies": [
