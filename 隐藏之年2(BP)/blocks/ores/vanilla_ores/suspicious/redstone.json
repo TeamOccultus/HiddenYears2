@@ -24,14 +24,6 @@
       "tag:hy:custom_ores": {},
       "tag:minecraft:stone_pick_diggable": {},
       "tag:hy:suspicious_ores": {}
-    },
-    "permutations": [
-      {
-        "condition": "query.block_property('hy:lit') == true",
-        "components": {
-          "minecraft:light_emission": 9
-        }
-      }
-    ]
+    }
   }
 }
