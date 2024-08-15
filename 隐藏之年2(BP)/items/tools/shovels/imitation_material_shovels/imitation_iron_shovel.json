@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_iron_shovel",
