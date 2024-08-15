@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:lab_table",
@@ -9,7 +9,7 @@
     },
     "components": {
       "minecraft:flammable": false,
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/lab_table.json",
       "minecraft:display_name": "hy.block.lab_table",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1.9
@@ -22,18 +22,7 @@
         "explosion_resistance": 2.5
       },
       "minecraft:map_color": "#999999",
-      "minecraft:on_player_destroyed": {
-        "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-      },
       "tag:metal": {}
-    },
-    "events": {
-      "hy.spawn_loot": {
-        "spawn_loot": {
-          "table": "loot_tables/blocks/machines/lab_table.json"
-        }
-      }
     }
   }
 }

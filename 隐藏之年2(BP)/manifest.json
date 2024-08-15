@@ -1,7 +1,7 @@
 {
   "format_version": 2,
   "metadata": {
-    "authors": ["星屹工作室", "方漓猫", "大队长_Captain", "KuLou_D", "oldb"],
+    "authors": ["星屹工作室", "方琉璃", "大队长_Captain", "KuLou_D", "oldb"],
     "license": "BSD-3",
     "url": "https://klpbbs.com/thread-85797-1-1.html"
   },
@@ -23,7 +23,7 @@
     {
       "type": "script",
       "uuid": "8182c0e7-0013-1234-852e-95dec34c1145",
-      "version": "1.0.0-alpha.1",
+      "version": "2.3.0",
       "entry": "scripts/index.js"
     }
   ],
@@ -60,11 +60,11 @@
     },
     {
       "module_name": "@minecraft/server",
-      "version": "1.12.0-beta"
+      "version": "1.14.0-beta"
     },
     {
       "module_name": "@minecraft/server-ui",
-      "version": "1.2.0-beta"
+      "version": "1.3.0-beta"
     }
   ]
 }

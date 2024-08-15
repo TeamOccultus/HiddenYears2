@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:geocentric_copper_ore",
@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/geocentric_ores/copper.json",
       "minecraft:display_name": "hy.block.geocentric_copper_ore",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.8
@@ -18,19 +18,8 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#565656",
-      "minecraft:on_player_destroyed": {
-        "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-      },
       "tag:hy:custom_ores": {},
       "tag:minecraft:stone_pick_diggable": {}
-    },
-    "events": {
-      "hy.spawn_loot": {
-        "spawn_loot": {
-          "table": "loot_tables/blocks/geocentric_ores/copper.json"
-        }
-      }
     }
   }
 }

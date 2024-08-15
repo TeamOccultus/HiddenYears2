@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:shallow_coal_ore",
@@ -17,20 +17,9 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#707070",
-      "minecraft:loot": "loot_tables/empty.json",
-      "minecraft:on_player_destroyed": {
-        "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-      },
+      "minecraft:loot": "loot_tables/blocks/shallow_ores/coal.json",
       "tag:hy:custom_ores": {},
       "tag:minecraft:stone_pick_diggable": {}
-    },
-    "events": {
-      "hy.spawn_loot": {
-        "spawn_loot": {
-          "table": "loot_tables/blocks/shallow_ores/coal.json"
-        }
-      }
     }
   }
 }

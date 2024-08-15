@@ -2,16 +2,25 @@
   "pools": [
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": {
+            "tags": "q.any_tag('minecraft:is_pickaxe')"
+          },
+          "count": 1
+        }
+      ],
       "entries": [
         {
           "type": "item",
-          "name": "hy:raw_flash_copper_ingot",
+          "name": "hy:copper_essence",
           "functions": [
             {
               "function": "set_count",
               "count": {
                 "min": 2,
-                "max": 5
+                "max": 6
               }
             }
           ]

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:suspicious_redstone_ore",
@@ -12,21 +12,7 @@
       }
     },
     "components": {
-      "minecraft:random_ticking": {
-        "on_tick": {
-          "event": "hy.litless"
-        }
-      },
-      "minecraft:on_fall_on": {
-        "event": "hy.lit"
-      },
-      "minecraft:on_interact": {
-        "event": "hy.lit"
-      },
-      "minecraft:on_step_on": {
-        "event": "hy.lit"
-      },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/geocentric_ores/redstone.json",
       "minecraft:display_name": "hy.block.geocentric_redstone_ore",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.8
@@ -35,10 +21,6 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#565656",
-      "minecraft:on_player_destroyed": {
-        "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-      },
       "tag:hy:custom_ores": {},
       "tag:minecraft:stone_pick_diggable": {},
       "tag:hy:suspicious_ores": {}
@@ -50,23 +32,6 @@
           "minecraft:light_emission": 9
         }
       }
-    ],
-    "events": {
-      "hy.litless": {
-        "set_block_property": {
-          "hy:lit": false
-        }
-      },
-      "hy.lit": {
-        "set_block_property": {
-          "hy:lit": true
-        }
-      },
-      "hy.spawn_loot": {
-        "spawn_loot": {
-          "table": "loot_tables/blocks/geocentric_ores/redstone.json"
-        }
-      }
-    }
+    ]
   }
 }

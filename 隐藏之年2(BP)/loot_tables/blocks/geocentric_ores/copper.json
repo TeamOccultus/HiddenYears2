@@ -2,6 +2,15 @@
   "pools": [
     {
       "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "item": {
+            "tags": "q.any_tag('minecraft:is_pickaxe')"
+          },
+          "count": 1
+        }
+      ],
       "entries": [
         {
           "weight": 1,

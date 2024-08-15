@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:chocolate_block",
@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ingot_blocks/chocolate_block.json",
       "minecraft:display_name": "hy.block.chocolate_block",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1.9
@@ -17,18 +17,7 @@
         "explosion_resistance": 6.0
       },
       "minecraft:map_color": "#A7A7A7",
-      "minecraft:on_player_destroyed": {
-        "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-      },
       "tag:metal": {}
-    },
-    "events": {
-      "hy.spawn_loot": {
-        "spawn_loot": {
-          "table": "loot_tables/blocks/metal_blocks/chocolate_block.json"
-        }
-      }
     }
   }
 }

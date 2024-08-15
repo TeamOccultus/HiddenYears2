@@ -14,19 +14,8 @@
       "entries": [
         {
           "type": "item",
-          "weight": 1,
-          "name": "hy:redstone_nugget",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 2,
-                "max": 5
-              }
-            }
-          ]
-        },
-        { "type": "empty", "weight": 1 }
+          "name": "hy:lab_table"
+        }
       ]
     }
   ]

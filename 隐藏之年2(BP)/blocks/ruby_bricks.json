@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:ruby_stone_bricks",
@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ruby_stone_bricks.json",
       "minecraft:display_name": "hy.block.ruby_stone_bricks",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 8.0

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.0",
+  "format_version": "1.21.20",
   "minecraft:block": {
     "description": {
       "identifier": "hy:granite_metal_stone",
@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ingot_blocks/over_metal_stone.json",
       "minecraft:display_name": "hy.block.granite_metal_stone",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.6
@@ -17,18 +17,7 @@
         "explosion_resistance": 6.0
       },
       "minecraft:map_color": "#976D4D",
-      "minecraft:on_player_destroyed": {
-        "event": "hy.spawn_loot",
-        "condition": "query.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe')"
-      },
       "tag:stone": {}
-    },
-    "events": {
-      "hy.spawn_loot": {
-        "spawn_loot": {
-          "table": "loot_tables/blocks/metal_blocks/stone_metal_blocks/granite.json"
-        }
-      }
     }
   }
 }
