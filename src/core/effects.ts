@@ -1,11 +1,11 @@
 import { system } from "@minecraft/server";
-import { types } from "project-lantern";
+import { vanillaDimensions } from "lazuli-mc";
 
 /**
  * The bleed effect.
  */
 export function bleedEffectMonitor() {
-  types.vanillaDimensions.forEach((dimension) => {
+  vanillaDimensions.forEach((dimension) => {
     dimension.getEntities({ tags: ["hy:bleed_lv1"] }).forEach((entity) => {
       system.runInterval(() => {
         entity.applyDamage(1);

@@ -1,5 +1,5 @@
-import { world, Player, system, ItemStack } from "@minecraft/server";
-import { replaceItemStack, utils } from "project-lantern";
+import { world, Player, system } from "@minecraft/server";
+import { getEquipmentItem, randomInteger } from "lazuli-mc";
 import { HyRewardTypes } from "../data/data";
 import { rubyKingSkill } from "../core/entitySkills";
 
@@ -13,13 +13,13 @@ export class Entity {
       const [ATTACKER, TARGET, ITEM] = [
         event.damagingEntity,
         event.hitEntity,
-        utils.getEquipmentItem(event.damagingEntity),
+        getEquipmentItem(event.damagingEntity),
       ];
       switch (ITEM?.typeId) {
         case "hy:ruby_boardsword":
           /** 红宝石阔剑会给予玩家经验值 */
           if (ATTACKER instanceof Player)
-            ATTACKER.addExperience(utils.randomInteger(4, 0));
+            ATTACKER.addExperience(randomInteger(4, 0));
           break;
         case "hy:suffering_sword":
           TARGET.addEffect("poison", 100);
@@ -59,7 +59,7 @@ export class Entity {
      * 监听生物生成事件
      */
     world.afterEvents.entitySpawn.subscribe((event) => {
-      const [ENTITY, CAUSE] = [event.entity, event.cause];
+      const ENTITY = event.entity;
       if (ENTITY.typeId === "hy:ruby_guardian") {
         system.runTimeout(() => {
           system.runInterval(() => {

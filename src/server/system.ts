@@ -1,5 +1,5 @@
 import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod, Logger, replaceItemStack } from "project-lantern";
+import { initializeMod, LoggerManager, replaceItemStack } from "lazuli-mc";
 import { bleedEffectMonitor } from "../core/effects";
 
 export class System {
@@ -7,13 +7,13 @@ export class System {
    * 初始化模组
    */
   static initialize(): void {
-    initializeMod("hy", "HiddenYears", {
+    initializeMod("hy", {name: "HiddenYears"}, {
       questNameSpace: "hy-q",
       watchdogDisabled: true,
     });
   }
   static startLogger() {
-    return Logger.getLogger("hy:logger");
+    return LoggerManager.getLogger("hy:logger");
   }
   /**
    * 监听系统事件

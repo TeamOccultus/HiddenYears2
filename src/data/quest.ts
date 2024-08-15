@@ -1,12 +1,10 @@
 import { ItemStack } from "@minecraft/server";
-import { MinecraftItemTypes } from "@minecraft/vanilla-data";
-import { transform } from "esbuild";
-import { ClassicQuest as quest } from "project-lantern";
+import { Quest } from "lazuli-mc";
 
 /**
  * 任务-树上新生枝桠
  */
-export const BEGINNING: quest.Quest = new quest.Quest(
+export const BEGINNING: Quest = new Quest(
   "stick",
   { translate: "hy.quest.beginning.title" },
   { translate: "hy.quest.beginning.body" },
@@ -17,7 +15,7 @@ export const BEGINNING: quest.Quest = new quest.Quest(
         name: {
           translate: "item.stick.name",
         },
-        item: new ItemStack("stick"),
+        itemStack: new ItemStack("stick"),
       },
     },
     award: {
@@ -25,7 +23,7 @@ export const BEGINNING: quest.Quest = new quest.Quest(
         name: {
           translate: "item.bread.name",
         },
-        item: new ItemStack("bread", 3),
+        itemStack: new ItemStack("bread", 3),
       },
     },
   }
@@ -34,7 +32,7 @@ export const BEGINNING: quest.Quest = new quest.Quest(
 /**
  * 任务-这是工作台
  */
-export const CRAFTING_TABLE: quest.Quest = new quest.Quest(
+export const CRAFTING_TABLE: Quest = new Quest(
   "crafting_table",
   { translate: "hy.quest.crafting_table.title" },
   { translate: "hy.quest.crafting_table.body" },
@@ -45,7 +43,7 @@ export const CRAFTING_TABLE: quest.Quest = new quest.Quest(
         name: {
           translate: "tile.crafting_table.name",
         },
-        item: new ItemStack("crafting_table"),
+        itemStack: new ItemStack("crafting_table"),
       },
     },
     award: {
@@ -53,7 +51,7 @@ export const CRAFTING_TABLE: quest.Quest = new quest.Quest(
         name: {
           translate: "item.bread.name",
         },
-        item: new ItemStack("bread", 5),
+        itemStack: new ItemStack("bread", 5),
       },
     },
   }
@@ -62,7 +60,7 @@ export const CRAFTING_TABLE: quest.Quest = new quest.Quest(
 /**
  * 任务-石头工艺
  */
-export const OLDB: quest.Quest = new quest.Quest(
+export const OLDB: Quest = new Quest(
   "bakabee",
   { translate: "hy.quest.oldb.title" },
   { translate: "hy.quest.oldb.body" },
@@ -73,7 +71,7 @@ export const OLDB: quest.Quest = new quest.Quest(
         name: {
           translate: "tile.cobblestone.name",
         },
-        item: new ItemStack("cobblestone"),
+        itemStack: new ItemStack("cobblestone"),
       },
     },
     award: {
@@ -81,7 +79,7 @@ export const OLDB: quest.Quest = new quest.Quest(
         name: {
           translate: "item.torch.name",
         },
-        item: new ItemStack("torch", 5),
+        itemStack: new ItemStack("torch", 5),
       },
     },
     tips: {
@@ -93,7 +91,7 @@ export const OLDB: quest.Quest = new quest.Quest(
 /**
  * 任务-甲骨器
  */
-export const BONE_PIECE: quest.Quest = new quest.Quest(
+export const BONE_PIECE: Quest = new Quest(
   "bone_piece",
   { translate: "hy.quest.bone_piece.title" },
   { translate: "hy.quest.bone-PIECE.body" },
@@ -104,7 +102,7 @@ export const BONE_PIECE: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.bone_piece",
         },
-        item: new ItemStack("hy:bone_piece"),
+        itemStack: new ItemStack("hy:bone_piece"),
       },
     },
     award: {
@@ -112,7 +110,7 @@ export const BONE_PIECE: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 3),
+        itemStack: new ItemStack("hy:copper_coin", 3),
       },
     },
     tips: {
@@ -124,7 +122,7 @@ export const BONE_PIECE: quest.Quest = new quest.Quest(
 /**
  * 任务-红橙的光泽
  */
-export const COPPER_INGOT: quest.Quest = new quest.Quest(
+export const COPPER_INGOT: Quest = new Quest(
   "copper_ingot",
   { translate: "hy.quest.copper_ingot.title" },
   { translate: "hy.quest.copper_ingot.body" },
@@ -135,7 +133,7 @@ export const COPPER_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "item.copper_ingot.name",
         },
-        item: new ItemStack("copper_ingot"),
+        itemStack: new ItemStack("copper_ingot"),
       },
     },
     award: {
@@ -143,7 +141,7 @@ export const COPPER_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 5),
+        itemStack: new ItemStack("hy:copper_coin", 5),
       },
     },
     tips: {
@@ -155,7 +153,7 @@ export const COPPER_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-万能磨合剂
  */
-export const TIN_INGOT: quest.Quest = new quest.Quest(
+export const TIN_INGOT: Quest = new Quest(
   "tin_ingot",
   { translate: "hy.quest.tin_ingot.title" },
   { translate: "hy.quest.tin_ingot.body" },
@@ -166,7 +164,7 @@ export const TIN_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.tin_ingot",
         },
-        item: new ItemStack("hy:tin_ingot"),
+        itemStack: new ItemStack("hy:tin_ingot"),
       },
     },
     award: {
@@ -174,7 +172,7 @@ export const TIN_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 10),
+        itemStack: new ItemStack("hy:copper_coin", 10),
       },
     },
   }
@@ -183,7 +181,7 @@ export const TIN_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-水晶般晶莹
  */
-export const AMETHYST_INGOT: quest.Quest = new quest.Quest(
+export const AMETHYST_INGOT: Quest = new Quest(
   "amethyst_ingot",
   { translate: "hy.quest.amethyst_ingot.title" },
   { translate: "hy.quest.amethyst_ingot.body" },
@@ -194,7 +192,7 @@ export const AMETHYST_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.amethyst_ingot",
         },
-        item: new ItemStack("hy:amethyst_ingot"),
+        itemStack: new ItemStack("hy:amethyst_ingot"),
       },
     },
     award: {
@@ -202,7 +200,7 @@ export const AMETHYST_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 12),
+        itemStack: new ItemStack("hy:copper_coin", 12),
       },
     },
     tips: {
@@ -214,7 +212,7 @@ export const AMETHYST_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-金属的代替品
  */
-export const OVER_METAL_INGOT: quest.Quest = new quest.Quest(
+export const OVER_METAL_INGOT: Quest = new Quest(
   "over_metal_ingot",
   { translate: "hy.quest.over_metal_ingot.title" },
   { translate: "hy.quest.over_metal_ingot.body" },
@@ -225,7 +223,7 @@ export const OVER_METAL_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.over_metal_ingot",
         },
-        item: new ItemStack("hy:over_metal_ingot"),
+        itemStack: new ItemStack("hy:over_metal_ingot"),
       },
     },
     award: {
@@ -233,7 +231,7 @@ export const OVER_METAL_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 15),
+        itemStack: new ItemStack("hy:copper_coin", 15),
       },
     },
     tips: {
@@ -245,7 +243,7 @@ export const OVER_METAL_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-陨星的结晶
  */
-export const IRON_INGOT: quest.Quest = new quest.Quest(
+export const IRON_INGOT: Quest = new Quest(
   "iron_ingot",
   { translate: "hy.quest.iron_ingot.title" },
   { translate: "hy.quest.iron_ingot.body" },
@@ -256,7 +254,7 @@ export const IRON_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot"),
+        itemStack: new ItemStack("iron_ingot"),
       },
     },
     award: {
@@ -264,7 +262,7 @@ export const IRON_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.block.lab_table",
         },
-        item: new ItemStack("hy:lab_table"),
+        itemStack: new ItemStack("hy:lab_table"),
       },
     },
     tips: {
@@ -276,7 +274,7 @@ export const IRON_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-腐蚀之锭
  */
-export const CORROSION_INGOT: quest.Quest = new quest.Quest(
+export const CORROSION_INGOT: Quest = new Quest(
   "corrosion_ingot",
   { translate: "hy.quest.corrosion_ingot.title" },
   { translate: "hy.quest.corrosion_ingot.body" },
@@ -287,7 +285,7 @@ export const CORROSION_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.corrosion_ingot",
         },
-        item: new ItemStack("hy:corrosion_ingot"),
+        itemStack: new ItemStack("hy:corrosion_ingot"),
       },
     },
     award: {
@@ -295,7 +293,7 @@ export const CORROSION_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_coin",
         },
-        item: new ItemStack("hy:copper_coin", 18),
+        itemStack: new ItemStack("hy:copper_coin", 18),
       },
     },
   }
@@ -304,7 +302,7 @@ export const CORROSION_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-撬棍撬撬撬
  */
-export const IRON_CROWBAR: quest.Quest = new quest.Quest(
+export const IRON_CROWBAR: Quest = new Quest(
   "iron_crowbar",
   { translate: "hy.quest.iron_crowbar.title" },
   { translate: "hy.quest.iron_crowbar.body" },
@@ -315,7 +313,7 @@ export const IRON_CROWBAR: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.iron_crowbar",
         },
-        item: new ItemStack("hy:iron_crowbar"),
+        itemStack: new ItemStack("hy:iron_crowbar"),
       },
     },
     award: {
@@ -323,7 +321,7 @@ export const IRON_CROWBAR: quest.Quest = new quest.Quest(
         name: {
           translate: "item.sweet_berries.name",
         },
-        item: new ItemStack("sweet_berries", 16),
+        itemStack: new ItemStack("sweet_berries", 16),
       },
     },
     tips: {
@@ -335,7 +333,7 @@ export const IRON_CROWBAR: quest.Quest = new quest.Quest(
 /**
  * 任务-最高效的工具
  */
-export const IRON_HAMMER: quest.Quest = new quest.Quest(
+export const IRON_HAMMER: Quest = new Quest(
   "iron_hammer",
   { translate: "hy.quest.iron_hammer.title" },
   { translate: "hy.quest.iron_hammer.body" },
@@ -346,7 +344,7 @@ export const IRON_HAMMER: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.iron_hammer",
         },
-        item: new ItemStack("hy:iron_hammer"),
+        itemStack: new ItemStack("hy:iron_hammer"),
       },
     },
     award: {
@@ -354,7 +352,7 @@ export const IRON_HAMMER: quest.Quest = new quest.Quest(
         name: {
           translate: "item.cooked_beef.name",
         },
-        item: new ItemStack("cooked_beef", 2),
+        itemStack: new ItemStack("cooked_beef", 2),
       },
     },
     tips: {
@@ -366,7 +364,7 @@ export const IRON_HAMMER: quest.Quest = new quest.Quest(
 /**
  * 任务-刻锥求剑
  */
-export const IRON_AWL: quest.Quest = new quest.Quest(
+export const IRON_AWL: Quest = new Quest(
   "iron_awl",
   { translate: "hy.quest.iron_awl.title" },
   { translate: "hy.quest.iron_awl.body" },
@@ -377,7 +375,7 @@ export const IRON_AWL: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.iron_awl",
         },
-        item: new ItemStack("hy:iron_awl"),
+        itemStack: new ItemStack("hy:iron_awl"),
       },
     },
     award: {
@@ -385,7 +383,7 @@ export const IRON_AWL: quest.Quest = new quest.Quest(
         name: {
           translate: "item.muttonCooked.name",
         },
-        item: new ItemStack("cooked_mutton", 4),
+        itemStack: new ItemStack("cooked_mutton", 4),
       },
     },
   }
@@ -394,7 +392,7 @@ export const IRON_AWL: quest.Quest = new quest.Quest(
 /**
  * 任务-出其不意
  */
-export const IRON_KNIFE: quest.Quest = new quest.Quest(
+export const IRON_KNIFE: Quest = new Quest(
   "iron_knife",
   { translate: "hy.quest.iron_knife.title" },
   { translate: "hy.quest.iron_knife.body" },
@@ -405,7 +403,7 @@ export const IRON_KNIFE: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.iron_knife",
         },
-        item: new ItemStack("hy:iron_knife"),
+        itemStack: new ItemStack("hy:iron_knife"),
       },
     },
     award: {
@@ -413,7 +411,7 @@ export const IRON_KNIFE: quest.Quest = new quest.Quest(
         name: {
           translate: "item.cooked_porkchop.name",
         },
-        item: new ItemStack("cooked_porkchop", 6),
+        itemStack: new ItemStack("cooked_porkchop", 6),
       },
     },
     tips: {
@@ -425,7 +423,7 @@ export const IRON_KNIFE: quest.Quest = new quest.Quest(
 /**
  * 任务-致命一击
  */
-export const IRON_DAGGER: quest.Quest = new quest.Quest(
+export const IRON_DAGGER: Quest = new Quest(
   "iron_dagger",
   { translate: "hy.quest.iron_dagger.title" },
   { translate: "hy.quest.iron_dagger.body" },
@@ -436,7 +434,7 @@ export const IRON_DAGGER: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.iron_dagger",
         },
-        item: new ItemStack("hy:iron_dagger"),
+        itemStack: new ItemStack("hy:iron_dagger"),
       },
     },
     award: {
@@ -444,7 +442,7 @@ export const IRON_DAGGER: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.copper_apple",
         },
-        item: new ItemStack("hy:copper_apple", 6),
+        itemStack: new ItemStack("hy:copper_apple", 6),
       },
     },
     tips: {
@@ -456,7 +454,7 @@ export const IRON_DAGGER: quest.Quest = new quest.Quest(
 /**
  * 任务-赶尽杀绝
  */
-export const IRON_SWORD: quest.Quest = new quest.Quest(
+export const IRON_SWORD: Quest = new Quest(
   "iron_sword",
   { translate: "hy.quest.iron_sword.title" },
   { translate: "hy.quest.iron_sword.body" },
@@ -467,7 +465,7 @@ export const IRON_SWORD: quest.Quest = new quest.Quest(
         name: {
           translate: "item.iron_sword.name",
         },
-        item: new ItemStack("iron_sword"),
+        itemStack: new ItemStack("iron_sword"),
       },
     },
     award: {
@@ -475,7 +473,7 @@ export const IRON_SWORD: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.enchanted_copper_apple",
         },
-        item: new ItemStack("hy:enchanted_copper_apple", 3),
+        itemStack: new ItemStack("hy:enchanted_copper_apple", 3),
       },
     },
     tips: {
@@ -487,7 +485,7 @@ export const IRON_SWORD: quest.Quest = new quest.Quest(
 /**
  * 任务-扣下悬刀
  */
-export const CROSSBOW: quest.Quest = new quest.Quest(
+export const CROSSBOW: Quest = new Quest(
   "crossbow",
   { translate: "hy.quest.crossbow.title" },
   { translate: "hy.quest.crossbow.body" },
@@ -498,7 +496,7 @@ export const CROSSBOW: quest.Quest = new quest.Quest(
         name: {
           translate: "item.crossbow.name",
         },
-        item: new ItemStack("crossbow"),
+        itemStack: new ItemStack("crossbow"),
       },
     },
     award: {
@@ -506,7 +504,7 @@ export const CROSSBOW: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.enchanted_copper_apple",
         },
-        item: new ItemStack("hy:enchanted_copper_apple", 5),
+        itemStack: new ItemStack("hy:enchanted_copper_apple", 5),
       },
     },
   }
@@ -515,7 +513,7 @@ export const CROSSBOW: quest.Quest = new quest.Quest(
 /**
  * 任务-不吃这套，谢谢
  */
-export const SHIELD: quest.Quest = new quest.Quest(
+export const SHIELD: Quest = new Quest(
   "shield",
   { translate: "hy.quest.shield.title" },
   { translate: "hy.quest.shield.body" },
@@ -526,7 +524,7 @@ export const SHIELD: quest.Quest = new quest.Quest(
         name: {
           translate: "item.shield.name",
         },
-        item: new ItemStack("shield"),
+        itemStack: new ItemStack("shield"),
       },
     },
     award: {
@@ -534,7 +532,7 @@ export const SHIELD: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.enchanted_copper_apple",
         },
-        item: new ItemStack("hy:enchanted_copper_apple", 7),
+        itemStack: new ItemStack("hy:enchanted_copper_apple", 7),
       },
     },
   }
@@ -543,7 +541,7 @@ export const SHIELD: quest.Quest = new quest.Quest(
 /**
  * 任务-闪闪发光的金子
  */
-export const FLASH_METAL_INGOT: quest.Quest = new quest.Quest(
+export const FLASH_METAL_INGOT: Quest = new Quest(
   "flash_metal_ingot",
   { translate: "hy.quest.flash_metal_ingot.title" },
   { translate: "hy.quest.flash_metal_ingot.body" },
@@ -554,7 +552,7 @@ export const FLASH_METAL_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.flash_metal_ingot",
         },
-        item: new ItemStack("hy:flash_metal_ingot"),
+        itemStack: new ItemStack("hy:flash_metal_ingot"),
       },
     },
     award: {
@@ -562,7 +560,7 @@ export const FLASH_METAL_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "item.golden_apple.name",
         },
-        item: new ItemStack("golden_apple", 3),
+        itemStack: new ItemStack("golden_apple", 3),
       },
     },
     tips: {
@@ -574,7 +572,7 @@ export const FLASH_METAL_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-闪耀的铜锭
  */
-export const FLASH_COPPER_INGOT: quest.Quest = new quest.Quest(
+export const FLASH_COPPER_INGOT: Quest = new Quest(
   "flash_copper_ingot",
   { translate: "hy.quest.flash_copper_ingot.title" },
   { translate: "hy.quest.flash_copper_ingot.body" },
@@ -585,7 +583,7 @@ export const FLASH_COPPER_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "hy.item.flash_copper_ingot",
         },
-        item: new ItemStack("hy:flash_metal_ingot"),
+        itemStack: new ItemStack("hy:flash_metal_ingot"),
       },
     },
     award: {
@@ -593,7 +591,7 @@ export const FLASH_COPPER_INGOT: quest.Quest = new quest.Quest(
         name: {
           translate: "item.golden_apple.name",
         },
-        item: new ItemStack("golden_apple", 5),
+        itemStack: new ItemStack("golden_apple", 5),
       },
     },
   }
@@ -602,7 +600,7 @@ export const FLASH_COPPER_INGOT: quest.Quest = new quest.Quest(
 /**
  * 任务-这是？钻石！
  */
-export const DIAMOND: quest.Quest = new quest.Quest(
+export const DIAMOND: Quest = new Quest(
   "diamond",
   { translate: "hy.quest.diamond.title" },
   { translate: "hy.quest.diamond.body" },
@@ -613,7 +611,7 @@ export const DIAMOND: quest.Quest = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond"),
+        itemStack: new ItemStack("diamond"),
       },
     },
     award: {
@@ -621,13 +619,13 @@ export const DIAMOND: quest.Quest = new quest.Quest(
         name: {
           translate: "item.appleEnchanted.name",
         },
-        item: new ItemStack("enchanted_golden_apple", 5),
+        itemStack: new ItemStack("enchanted_golden_apple", 5),
       },
     },
   }
 );
 
-export const STEEL_INGOT = new quest.Quest(
+export const STEEL_INGOT = new Quest(
   "steel_ingot",
   { translate: "hy.quest.steel_ingot.title" },
   { translate: "hy.quest.steel_ingot.body" },
@@ -638,12 +636,12 @@ export const STEEL_INGOT = new quest.Quest(
         name: {
           translate: "hy.item.steel_ingot",
         },
-        item: new ItemStack("hy:steel_ingot"),
+        itemStack: new ItemStack("hy:steel_ingot"),
       },
     },
     award: {
       item: {
-        item: new ItemStack("golden_carrot", 5),
+        itemStack: new ItemStack("golden_carrot", 5),
         name: {
           translate: "item.golden_carrot.name",
         },
@@ -655,7 +653,7 @@ export const STEEL_INGOT = new quest.Quest(
   }
 );
 
-export const NETHERITE_SCRAP = new quest.Quest(
+export const NETHERITE_SCRAP = new Quest(
   "netherite_scrap",
   { translate: "hy.quest.netherite_scrap.title" },
   { translate: "hy.quest.netherite_scrap.body" },
@@ -665,7 +663,7 @@ export const NETHERITE_SCRAP = new quest.Quest(
         name: {
           translate: "item.netherite_scrap.name",
         },
-        item: new ItemStack("netherite_scrap"),
+        itemStack: new ItemStack("netherite_scrap"),
       },
     },
     award: {
@@ -673,21 +671,21 @@ export const NETHERITE_SCRAP = new quest.Quest(
         name: {
           translate: "item.netherite_upgrade_smithing_template.name",
         },
-        item: new ItemStack("netherite_upgrade_smithing_template"),
+        itemStack: new ItemStack("netherite_upgrade_smithing_template"),
       },
     },
     iconPath: "textures/items/netherite_scrap",
   }
 );
 
-export const FUEL_METAL = new quest.Quest(
+export const FUEL_METAL = new Quest(
   "fuel_metal",
   { translate: "hy.quest.fuel_metal.title" },
   { translate: "hy.quest.fuel_metal.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:fuel_metal"),
+        itemStack: new ItemStack("hy:fuel_metal"),
         name: {
           translate: "hy.item.fuel_metal",
         },
@@ -698,21 +696,21 @@ export const FUEL_METAL = new quest.Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:gold_coin", 5),
+        itemStack: new ItemStack("hy:gold_coin", 5),
       },
     },
     iconPath: "textures/items/fuel",
   }
 );
 
-export const SUFFERING_SWORD = new quest.Quest(
+export const SUFFERING_SWORD = new Quest(
   "suffering_sword",
   { translate: "hy.quest.suffering_sword.title" },
   { translate: "hy.quest.suffering_sword.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:suffering_sword"),
+        itemStack: new ItemStack("hy:suffering_sword"),
         name: {
           translate: "hy.item.suffering_sword",
         },
@@ -723,7 +721,7 @@ export const SUFFERING_SWORD = new quest.Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:gold_coin", 10),
+        itemStack: new ItemStack("hy:gold_coin", 10),
       },
     },
     iconPath: "textures/items/suffering_sword",
@@ -733,14 +731,14 @@ export const SUFFERING_SWORD = new quest.Quest(
   }
 );
 
-export const SMARAGDUS = new quest.Quest(
+export const SMARAGDUS = new Quest(
   "smaragdus",
   { translate: "hy.quest.smaragdus.title" },
   { translate: "hy.quest.smaragdus.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:smaragdus"),
+        itemStack: new ItemStack("hy:smaragdus"),
         name: {
           translate: "hy.item.smaragdus",
         },
@@ -751,14 +749,14 @@ export const SMARAGDUS = new quest.Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:gold_coin", 25),
+        itemStack: new ItemStack("hy:gold_coin", 25),
       },
     },
     iconPath: "textures/items/smaragdus",
   }
 );
 
-export const TOTEM = new quest.Quest(
+export const TOTEM = new Quest(
   "totem",
   { translate: "hy.quest.totem.title" },
   {
@@ -779,30 +777,30 @@ export const TOTEM = new quest.Quest(
         name: {
           translate: "item.totem.name",
         },
-        item: new ItemStack("totem_of_undying"),
+        itemStack: new ItemStack("totem_of_undying"),
       },
     },
     award: {
-      playerXpPoint: 30,
+      exp: 30,
       item: {
         name: {
           translate: "hy.item.story_book",
         },
-        item: new ItemStack("hy:story_book"),
+        itemStack: new ItemStack("hy:story_book"),
       },
     },
     iconPath: "textures/items/totem",
   }
 );
 
-export const RUBY = new quest.Quest(
+export const RUBY = new Quest(
   "ruby",
   { translate: "hy.quest.ruby.title" },
   { translate: "hy.quest.ruby.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:ruby"),
+        itemStack: new ItemStack("hy:ruby"),
         name: {
           translate: "hy.item.ruby",
         },
@@ -813,21 +811,21 @@ export const RUBY = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 2),
+        itemStack: new ItemStack("diamond", 2),
       },
     },
     iconPath: "textures/items/ruby",
   }
 );
 
-export const RUBY_CHESTPLATE = new quest.Quest(
+export const RUBY_CHESTPLATE = new Quest(
   "ruby_chestplate",
   { translate: "hy.quest.ruby_chestplate.title" },
   { translate: "hy.quest.ruby_chestplate.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:ruby_chestplate"),
+        itemStack: new ItemStack("hy:ruby_chestplate"),
         name: {
           translate: "hy.item.ruby_chestplate",
         },
@@ -838,21 +836,21 @@ export const RUBY_CHESTPLATE = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 5),
+        itemStack: new ItemStack("diamond", 5),
       },
     },
     iconPath: "textures/items/ruby_chestplate",
   }
 );
 
-export const RUBY_BAG = new quest.Quest(
+export const RUBY_BAG = new Quest(
   "ruby_bag",
   { translate: "hy.quest.ruby_bag.title" },
   { translate: "hy.quest.ruby_bag.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:ruby_bag"),
+        itemStack: new ItemStack("hy:ruby_bag"),
         name: {
           translate: "hy.item.ruby_bag",
         },
@@ -863,7 +861,7 @@ export const RUBY_BAG = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 8),
+        itemStack: new ItemStack("diamond", 8),
       },
     },
     iconPath: "textures/items/calamity_bag",
@@ -873,7 +871,7 @@ export const RUBY_BAG = new quest.Quest(
   }
 );
 
-export const RUBY_RUNES = new quest.Quest(
+export const RUBY_RUNES = new Quest(
   "ruby_runes",
   { translate: "hy.quest.ruby_runes.title" },
   {
@@ -890,7 +888,7 @@ export const RUBY_RUNES = new quest.Quest(
   {
     condition: {
       item: {
-        item: new ItemStack("hy:ruby_runes"),
+        itemStack: new ItemStack("hy:ruby_runes"),
         name: {
           translate: "hy.item.ruby_runes",
         },
@@ -902,22 +900,22 @@ export const RUBY_RUNES = new quest.Quest(
         name: {
           translate: "item.netherite_scrap.name",
         },
-        item: new ItemStack("netherite_scrap", 3),
+        itemStack: new ItemStack("netherite_scrap", 3),
       },
-      playerXpPoint: 35,
+      exp: 35,
     },
     iconPath: "textures/items/ruby_helmet",
   }
 );
 
-export const GOLD_INGOT = new quest.Quest(
+export const GOLD_INGOT = new Quest(
   "gold_ingot",
   { translate: "hy.quest.gold_ingot.title" },
   { translate: "hy.quest.gold_ingot.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("gold_ingot"),
+        itemStack: new ItemStack("gold_ingot"),
         name: {
           translate: "item.gold_ingot.name",
         },
@@ -928,21 +926,21 @@ export const GOLD_INGOT = new quest.Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:gold_coin", 5),
+        itemStack: new ItemStack("hy:gold_coin", 5),
       },
     },
     iconPath: "textures/items/gold_ingot",
   }
 );
 
-export const OBSIDIAN = new quest.Quest(
+export const OBSIDIAN = new Quest(
   "obsidian",
   { translate: "hy.quest.obsidian.title" },
   { translate: "hy.quest.obsidian.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("obsidian"),
+        itemStack: new ItemStack("obsidian"),
         name: {
           translate: "tile.obsidian.name",
         },
@@ -953,21 +951,21 @@ export const OBSIDIAN = new quest.Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-        item: new ItemStack("hy:gold_coin", 10),
+        itemStack: new ItemStack("hy:gold_coin", 10),
       },
     },
     iconPath: "textures/ui/quest/obsidian",
   }
 );
 
-export const GHAST_TEAR = new quest.Quest(
+export const GHAST_TEAR = new Quest(
   "ghast_tear",
   { translate: "hy.quest.ghast_tear.title" },
   { translate: "hy.quest.ghast_tear.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("ghast_tear"),
+        itemStack: new ItemStack("ghast_tear"),
         name: {
           translate: "item.ghast_tear.name",
         },
@@ -978,21 +976,21 @@ export const GHAST_TEAR = new quest.Quest(
         name: {
           translate: "item.nether_wart.name",
         },
-        item: new ItemStack("nether_wart", 5),
+        itemStack: new ItemStack("nether_wart", 5),
       },
     },
     iconPath: "textures/items/ghast_tear",
   }
 );
 
-export const LODESTONE = new quest.Quest(
+export const LODESTONE = new Quest(
   "lodestone",
   { translate: "hy.quest.lodestone.title" },
   { translate: "hy.quest.lodestone.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("lodestone"),
+        itemStack: new ItemStack("lodestone"),
         name: {
           translate: "tile.lodestone.name",
         },
@@ -1003,21 +1001,21 @@ export const LODESTONE = new quest.Quest(
         name: {
           translate: "item.compass.name",
         },
-        item: new ItemStack("compass"),
+        itemStack: new ItemStack("compass"),
       },
     },
     iconPath: "textures/ui/quest/lodestone",
   }
 );
 
-export const RESPAWN_ANCHOR = new quest.Quest(
+export const RESPAWN_ANCHOR = new Quest(
   "respawn_anchor",
   { translate: "hy.quest.respawn_anchor.title" },
   { translate: "hy.quest.respawn_anchor.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("respawn_anchor"),
+        itemStack: new ItemStack("respawn_anchor"),
         name: {
           translate: "tile.respawn_anchor.name",
         },
@@ -1025,7 +1023,7 @@ export const RESPAWN_ANCHOR = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("glowstone_dust"),
+        itemStack: new ItemStack("glowstone_dust"),
         name: {
           translate: "item.glowstone_dust.name",
         },
@@ -1035,14 +1033,14 @@ export const RESPAWN_ANCHOR = new quest.Quest(
   }
 );
 
-export const BLAZE_ROD = new quest.Quest(
+export const BLAZE_ROD = new Quest(
   "blaze_rod",
   { translate: "hy.quest.blaze_rod.title" },
   { translate: "hy.quest.blaze_rod.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("blaze_rod"),
+        itemStack: new ItemStack("blaze_rod"),
         name: {
           translate: "item.blaze_rod.name",
         },
@@ -1050,7 +1048,7 @@ export const BLAZE_ROD = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("hy:golden_badge"),
+        itemStack: new ItemStack("hy:golden_badge"),
         name: {
           translate: "hy.item.golden_badge",
         },
@@ -1060,7 +1058,7 @@ export const BLAZE_ROD = new quest.Quest(
   }
 );
 
-export const NETHER_STAR = new quest.Quest(
+export const NETHER_STAR = new Quest(
   "nether_star",
   { translate: "hy.quest.nether_star.title" },
   {
@@ -1075,7 +1073,7 @@ export const NETHER_STAR = new quest.Quest(
   {
     condition: {
       item: {
-        item: new ItemStack("nether_star"),
+        itemStack: new ItemStack("nether_star"),
         name: {
           translate: "item.nether_star.name",
         },
@@ -1084,7 +1082,7 @@ export const NETHER_STAR = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("netherite_ingot", 5),
+        itemStack: new ItemStack("netherite_ingot", 5),
         name: {
           translate: "item.netherite_ingot.name",
         },
@@ -1094,14 +1092,14 @@ export const NETHER_STAR = new quest.Quest(
   }
 );
 
-export const ENDER_PEARL = new quest.Quest(
+export const ENDER_PEARL = new Quest(
   "ender_pearl",
   { translate: "hy.quest.ender_pearl.title" },
   { translate: "hy.quest.ender_pearl.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("ender_pearl"),
+        itemStack: new ItemStack("ender_pearl"),
         name: {
           translate: "item.ender_pearl.name",
         },
@@ -1109,7 +1107,7 @@ export const ENDER_PEARL = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("hy:stack_of_diamond_coin", 3),
+        itemStack: new ItemStack("hy:stack_of_diamond_coin", 3),
         name: {
           translate: "hy.item.stack_of_diamond_coin",
         },
@@ -1119,20 +1117,20 @@ export const ENDER_PEARL = new quest.Quest(
   }
 );
 
-export const DRAGON_BREATH = new quest.Quest(
+export const DRAGON_BREATH = new Quest(
   "dragon_breath",
   { translate: "hy.quest.dragon_breath.title" },
   { translate: "hy.quest.dragon_breath.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("dragon_breath"),
+        itemStack: new ItemStack("dragon_breath"),
         name: { translate: "item.dragon_breath.name" },
       },
     },
     award: {
       item: {
-        item: new ItemStack("hy:diamond_badge"),
+        itemStack: new ItemStack("hy:diamond_badge"),
         name: {
           translate: "hy.item.diamond_badge",
         },
@@ -1142,7 +1140,7 @@ export const DRAGON_BREATH = new quest.Quest(
   }
 );
 
-export const DRAGON_EGG = new quest.Quest(
+export const DRAGON_EGG = new Quest(
   "dragon_egg",
   { translate: "hy.quest.dragon_egg.title" },
   {
@@ -1159,7 +1157,7 @@ export const DRAGON_EGG = new quest.Quest(
   {
     condition: {
       item: {
-        item: new ItemStack("dragon_egg"),
+        itemStack: new ItemStack("dragon_egg"),
         name: {
           translate: "tile.dragon_egg.name",
         },
@@ -1168,18 +1166,18 @@ export const DRAGON_EGG = new quest.Quest(
     },
     award: {
       item: {
-        item: new ItemStack("netherite_ingot", 10),
+        itemStack: new ItemStack("netherite_ingot", 10),
         name: {
           translate: "item.netherite_ingot.name",
         },
       },
-      playerXpLevel: 5,
+      level: 5,
     },
     iconPath: "textures/ui/quest/dragon_head",
   }
 );
 
-export const STORY_BOOK = new quest.Quest(
+export const STORY_BOOK = new Quest(
   "story_book",
   { translate: "hy.quest.readings1.title" },
   { translate: "hy.quest.readings1.body" },
@@ -1189,7 +1187,7 @@ export const STORY_BOOK = new quest.Quest(
         name: {
           translate: "hy.item.story_book",
         },
-        item: new ItemStack("hy:story_book"),
+        itemStack: new ItemStack("hy:story_book"),
       },
     },
     award: {
@@ -1197,21 +1195,21 @@ export const STORY_BOOK = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 2),
+        itemStack: new ItemStack("diamond", 2),
       },
     },
     iconPath: "textures/items/story_book",
   }
 );
 
-export const LETTER_0 = new quest.Quest(
+export const LETTER_0 = new Quest(
   "letter_0",
   { translate: "hy.quest.readings2.title" },
   { translate: "hy.quest.readings2.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:letter_0"),
+        itemStack: new ItemStack("hy:letter_0"),
         name: {
           translate: "hy.item.lost_letter",
         },
@@ -1222,21 +1220,21 @@ export const LETTER_0 = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 2),
+        itemStack: new ItemStack("diamond", 2),
       },
     },
     iconPath: "textures/items/lost_letter",
   }
 );
 
-export const LETTER_11 = new quest.Quest(
+export const LETTER_11 = new Quest(
   "letter_11",
   { translate: "hy.quest.readings3.title" },
   { translate: "hy.quest.readings3.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:letter_11"),
+        itemStack: new ItemStack("hy:letter_11"),
         name: {
           translate: "hy.item.lost_letter",
         },
@@ -1247,21 +1245,21 @@ export const LETTER_11 = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 2),
+        itemStack: new ItemStack("diamond", 2),
       },
     },
     iconPath: "textures/items/lost_letter",
   }
 );
 
-export const METAL_STAR = new quest.Quest(
+export const METAL_STAR = new Quest(
   "metal_star",
   { translate: "hy.quest.metal_star.title" },
   { translate: "hy.quest.metal_star.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:metal_star"),
+        itemStack: new ItemStack("hy:metal_star"),
         name: {
           translate: "hy.item.metal_star",
         },
@@ -1272,21 +1270,21 @@ export const METAL_STAR = new quest.Quest(
         name: {
           translate: "hy.item.diamond_coin",
         },
-        item: new ItemStack("hy:diamond_coin", 5),
+        itemStack: new ItemStack("hy:diamond_coin", 5),
       },
     },
     iconPath: "textures/items/metal_star",
   }
 );
 
-export const COPPER_ESSENCE = new quest.Quest(
+export const COPPER_ESSENCE = new Quest(
   "copper_essence",
   { translate: "hy.quest.copper_essence.title" },
   { translate: "hy.quest.copper_essence.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:copper_essence"),
+        itemStack: new ItemStack("hy:copper_essence"),
         name: {
           translate: "hy.item.copper_essence",
         },
@@ -1297,7 +1295,7 @@ export const COPPER_ESSENCE = new quest.Quest(
         name: {
           translate: "hy.item.diamond_coin",
         },
-        item: new ItemStack("hy:diamond_coin", 6),
+        itemStack: new ItemStack("hy:diamond_coin", 6),
       },
     },
     iconPath: "textures/items/copper_essence",
@@ -1307,14 +1305,14 @@ export const COPPER_ESSENCE = new quest.Quest(
 /**
  * 任务-开垦荒地
  */
-export const WHEAT = new quest.Quest(
+export const WHEAT = new Quest(
   "wheat",
   { translate: "hy.quest.wheat.title" },
   { translate: "hy.quest.wheat.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("wheat"),
+        itemStack: new ItemStack("wheat"),
         name: {
           translate: "item.wheat.name",
         },
@@ -1325,7 +1323,7 @@ export const WHEAT = new quest.Quest(
         name: {
           translate: "hy.item.amethyst_ingot",
         },
-        item: new ItemStack("hy:amethyst_ingot", 2),
+        itemStack: new ItemStack("hy:amethyst_ingot", 2),
       },
     },
     iconPath: "textures/items/wheat",
@@ -1335,14 +1333,14 @@ export const WHEAT = new quest.Quest(
 /**
  * 任务-炎炎夏日
  */
-export const MELON_SLICE = new quest.Quest(
+export const MELON_SLICE = new Quest(
   "melon_slice",
   { translate: "hy.quest.melon_slice.title" },
   { translate: "hy.quest.melon_slice.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("melon_slice"),
+        itemStack: new ItemStack("melon_slice"),
         name: {
           translate: "item.melon.name",
         },
@@ -1353,7 +1351,7 @@ export const MELON_SLICE = new quest.Quest(
         name: {
           translate: "hy.item.amethyst_ingot",
         },
-        item: new ItemStack("hy:amethyst_ingot", 2),
+        itemStack: new ItemStack("hy:amethyst_ingot", 2),
       },
     },
     iconPath: "textures/items/melon",
@@ -1363,14 +1361,14 @@ export const MELON_SLICE = new quest.Quest(
 /**
  * 任务-重金属超标
  */
-export const COPPER_APPLE = new quest.Quest(
+export const COPPER_APPLE = new Quest(
   "copper_apple",
   { translate: "hy.quest.copper_apple.title" },
   { translate: "hy.quest.copper_apple.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:copper_apple"),
+        itemStack: new ItemStack("hy:copper_apple"),
         name: {
           translate: "hy.item.copper_apple",
         },
@@ -1381,7 +1379,7 @@ export const COPPER_APPLE = new quest.Quest(
         name: {
           translate: "hy.item.amethyst_ingot",
         },
-        item: new ItemStack("hy:amethyst_ingot", 3),
+        itemStack: new ItemStack("hy:amethyst_ingot", 3),
       },
     },
     iconPath: "textures/items/copper_apple",
@@ -1391,14 +1389,14 @@ export const COPPER_APPLE = new quest.Quest(
 /**
  * 任务-不太好吃
  */
-export const ROTTEN_FLESH = new quest.Quest(
+export const ROTTEN_FLESH = new Quest(
   "rotten_flesh",
   { translate: "hy.quest.rotten_flesh.title" },
   { translate: "hy.quest.rotten_flesh.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("rotten_flesh"),
+        itemStack: new ItemStack("rotten_flesh"),
         name: {
           translate: "item.rotten_flesh.name",
         },
@@ -1409,7 +1407,7 @@ export const ROTTEN_FLESH = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot"),
+        itemStack: new ItemStack("iron_ingot"),
       },
     },
     iconPath: "textures/items/rotten_flesh",
@@ -1419,14 +1417,14 @@ export const ROTTEN_FLESH = new quest.Quest(
 /**
  * 任务-与蜂共舞
  */
-export const HONEY_BOTTLE = new quest.Quest(
+export const HONEY_BOTTLE = new Quest(
   "honey_bottle",
   { translate: "hy.quest.honey_bottle.title" },
   { translate: "hy.quest.honey_bottle.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("honey_bottle"),
+        itemStack: new ItemStack("honey_bottle"),
         name: {
           translate: "item.honey_bottle.name",
         },
@@ -1437,7 +1435,7 @@ export const HONEY_BOTTLE = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot", 2),
+        itemStack: new ItemStack("iron_ingot", 2),
       },
     },
     iconPath: "textures/items/honey_bottle",
@@ -1447,14 +1445,14 @@ export const HONEY_BOTTLE = new quest.Quest(
 /**
  * 任务-巧克力！
  */
-export const CHOCOLATE = new quest.Quest(
+export const CHOCOLATE = new Quest(
   "chocolate",
   { translate: "hy.quest.chocolate.title" },
   { translate: "hy.quest.chocolate.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:chocolate"),
+        itemStack: new ItemStack("hy:chocolate"),
         name: {
           translate: "hy.item.chocolate",
         },
@@ -1465,7 +1463,7 @@ export const CHOCOLATE = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot", 2),
+        itemStack: new ItemStack("iron_ingot", 2),
       },
     },
     iconPath: "textures/items/chocolate",
@@ -1475,14 +1473,14 @@ export const CHOCOLATE = new quest.Quest(
 /**
  * 任务-轻飘飘的
  */
-export const MARSHALLOW = new quest.Quest(
+export const MARSHALLOW = new Quest(
   "marshallow",
   { translate: "hy.quest.marshallow.title" },
   { translate: "hy.quest.marshallow.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hy:marshallow"),
+        itemStack: new ItemStack("hy:marshallow"),
         name: {
           translate: "hy.item.marshallow",
         },
@@ -1493,7 +1491,7 @@ export const MARSHALLOW = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot", 2),
+        itemStack: new ItemStack("iron_ingot", 2),
       },
     },
     iconPath: "textures/items/marshallow",
@@ -1503,14 +1501,14 @@ export const MARSHALLOW = new quest.Quest(
 /**
  * 任务-良药甜口
  */
-export const MILK_BUCKET = new quest.Quest(
+export const MILK_BUCKET = new Quest(
   "milk_bucket",
   { translate: "hy.quest.milk_bucket.title" },
   { translate: "hy.quest.milk_bucket.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("milk_bucket"),
+        itemStack: new ItemStack("milk_bucket"),
         name: {
           translate: "item.milk.name",
         },
@@ -1521,7 +1519,7 @@ export const MILK_BUCKET = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot", 3),
+        itemStack: new ItemStack("iron_ingot", 3),
       },
     },
     iconPath: "textures/items/bucket_milk",
@@ -1531,14 +1529,14 @@ export const MILK_BUCKET = new quest.Quest(
 /**
  * 任务-祝你生日快乐
  */
-export const CAKE = new quest.Quest(
+export const CAKE = new Quest(
   "cake",
   { translate: "hy.quest.cake.title" },
   { translate: "hy.quest.cake.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("cake"),
+        itemStack: new ItemStack("cake"),
         name: {
           translate: "item.cake.name",
         },
@@ -1549,7 +1547,7 @@ export const CAKE = new quest.Quest(
         name: {
           translate: "item.iron_ingot.name",
         },
-        item: new ItemStack("iron_ingot", 4),
+        itemStack: new ItemStack("iron_ingot", 4),
       },
     },
     iconPath: "textures/items/cake",
@@ -1559,14 +1557,14 @@ export const CAKE = new quest.Quest(
 /**
  * 任务-祝你生日快乐
  */
-export const HAY_BLOCK = new quest.Quest(
+export const HAY_BLOCK = new Quest(
   "hay_block",
   { translate: "hy.quest.hay_block.title" },
   { translate: "hy.quest.hay_block.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("hay_block", 45),
+        itemStack: new ItemStack("hay_block", 45),
         name: {
           translate: "tile.hay_block.name",
         },
@@ -1577,7 +1575,7 @@ export const HAY_BLOCK = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 8),
+        itemStack: new ItemStack("diamond", 8),
       },
     },
     iconPath: "textures/ui/quest/hay_bale",
@@ -1587,14 +1585,14 @@ export const HAY_BLOCK = new quest.Quest(
 /**
  * 任务-知识就是力量
  */
-export const CHISELED_BOOKSHELF = new quest.Quest(
+export const CHISELED_BOOKSHELF = new Quest(
   "chiseled_bookshelf",
   { translate: "hy.quest.chiseled_bookshelf.title" },
   { translate: "hy.quest.chiseled_bookshelf.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("chiseled_bookshelf"),
+        itemStack: new ItemStack("chiseled_bookshelf"),
         name: {
           translate: "tile.chiseled_bookshelf.name",
         },
@@ -1605,7 +1603,7 @@ export const CHISELED_BOOKSHELF = new quest.Quest(
         name: {
           translate: "item.diamond.name",
         },
-        item: new ItemStack("diamond", 2),
+        itemStack: new ItemStack("diamond", 2),
       },
     },
     iconPath: "textures/ui/quest/chiseled_bookshelf",
@@ -1615,14 +1613,14 @@ export const CHISELED_BOOKSHELF = new quest.Quest(
 /**
  * 任务-刨根问底
  */
-export const BRUSH = new quest.Quest(
+export const BRUSH = new Quest(
   "brush",
   { translate: "hy.quest.brush.title" },
   { translate: "hy.quest.brush.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("brush"),
+        itemStack: new ItemStack("brush"),
         name: {
           translate: "item.brush.name",
         },
@@ -1633,7 +1631,7 @@ export const BRUSH = new quest.Quest(
         name: {
           translate: "hy.item.diamond_coin",
         },
-        item: new ItemStack("hy:diamond_coin", 4),
+        itemStack: new ItemStack("hy:diamond_coin", 4),
       },
     },
     iconPath: "textures/items/brush",
@@ -1643,21 +1641,21 @@ export const BRUSH = new quest.Quest(
 /**
  * 任务-天空即为极限
  */
-export const ELYTRA = new quest.Quest(
+export const ELYTRA = new Quest(
   "elytra",
   { translate: "hy.quest.elytra.title" },
   { translate: "hy.quest.elytra.body" },
   {
     condition: {
       item: {
-        item: new ItemStack("elytra"),
+        itemStack: new ItemStack("elytra"),
         name: {
           translate: "item.elytra.name",
         },
       },
     },
     award: {
-      playerXpPoint: 120
+      exp: 120
     },
     iconPath: "textures/items/elytra",
   }

@@ -1,14 +1,14 @@
 import { world } from "@minecraft/server";
-import { utils } from "project-lantern";
+import { getEquipmentItem, withPercentChance } from "lazuli-mc";
 
-export class Block{
+export class Block {
   /** 监听方块事件 */
-  static eventMonitor(){
+  static eventMonitor() {
     world.afterEvents.playerBreakBlock.subscribe((event) => {
       const [BLOCK, PLAYER, ITEM] = [
         event.brokenBlockPermutation,
         event.player,
-        utils.getEquipmentItem(event.player),
+        getEquipmentItem(event.player),
       ];
       if (BLOCK.hasTag("hy:experience_ores")) {
         PLAYER.dimension.spawnEntity("xp_orb", PLAYER.location);
@@ -25,15 +25,22 @@ export class Block{
         BLOCK.hasTag("hy:suspicious_ores") &&
         ITEM.hasTag("minecraft:is_pickaxe")
       ) {
-        if (utils.randomInteger(10) <= 8) {
-          PLAYER.dimension.spawnEntity("silverfish", PLAYER.location);
-          PLAYER.dimension.spawnEntity("silverfish", PLAYER.location);
-        } else {
-          PLAYER.dimension.createExplosion(PLAYER.location, 4, {
-            causesFire: true,
-            allowUnderwater: true,
-          });
-        }
+        withPercentChance({
+          chance: 0.5,
+          event: () => {
+            PLAYER.dimension.spawnEntity("silverfish", PLAYER.location);
+            PLAYER.dimension.spawnEntity("silverfish", PLAYER.location);
+          },
+        });
+        withPercentChance({
+          chance: 0.1,
+          event: () => {
+            PLAYER.dimension.createExplosion(PLAYER.location, 4, {
+              causesFire: true,
+              allowUnderwater: true,
+            });
+          },
+        });
       }
     });
   }

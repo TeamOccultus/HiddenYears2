@@ -1,5 +1,5 @@
 import { Entity, Player, system } from "@minecraft/server";
-import { utils } from "project-lantern";
+import { randomInteger } from "lazuli-mc";
 
 /**
  * Special skill of hammer.
@@ -7,7 +7,7 @@ import { utils } from "project-lantern";
  * @param attacker
  */
 export function hammerSkill(entity: Entity, attacker?: Player) {
-  const CHANCE: number = utils.randomInteger(100);
+  const CHANCE: number = randomInteger(100);
   console.warn(`Attack chance is ${CHANCE}.`);
   if (CHANCE < 30) {
     entity.addEffect("mining_fatigue", 600);
@@ -32,7 +32,7 @@ export function hammerSkill(entity: Entity, attacker?: Player) {
  * @param attacker
  */
 export function crowbarSkill(entity: Entity, attacker?: Player) {
-  const CHANCE: number = utils.randomInteger(100);
+  const CHANCE: number = randomInteger(100);
   console.warn(`Attack chance is ${CHANCE}.`);
   if (CHANCE < 50) {
     entity.applyDamage(3);
@@ -54,7 +54,7 @@ export function crowbarSkill(entity: Entity, attacker?: Player) {
  * @param attacker 
  */
 export function awlSkill(entity: Entity, attacker?: Player) {
-  const CHANCE: number = utils.randomInteger(100);
+  const CHANCE: number = randomInteger(100);
   console.warn(`Attack chance is ${CHANCE}.`);
   if (CHANCE < 90) {
     entity.applyDamage(1);
@@ -78,7 +78,7 @@ export function awlSkill(entity: Entity, attacker?: Player) {
  * @param attacker 
  */
 export function knifeSkill(entity: Entity, attacker?: Player) {
-  const CHANCE: number = utils.randomInteger(100);
+  const CHANCE: number = randomInteger(100);
   console.warn(`Attack chance is ${CHANCE}.`);
   if (CHANCE < 50) {
     entity.addTag("hy:bleed_lv1");
@@ -105,7 +105,7 @@ export function knifeSkill(entity: Entity, attacker?: Player) {
  * @param attacker 
  */
 export function boardswordSkill(entity: Entity, attacker?: Player) {
-  const CHANCE: number = utils.randomInteger(100);
+  const CHANCE: number = randomInteger(100);
   console.warn(`Attack chance is ${CHANCE}.`);
   if (CHANCE < 20) {
     attacker?.addExperience(10);

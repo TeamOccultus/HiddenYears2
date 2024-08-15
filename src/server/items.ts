@@ -1,5 +1,3 @@
-import { utils } from "project-lantern";
-import { ClassicQuest as quest } from "project-lantern";
 import {
   ItemStack,
   Entity,
@@ -19,6 +17,7 @@ import {
   knifeSkill,
 } from "../core/itemSkills";
 import * as quests from "../data/quest";
+import { randomInteger, getEquipmentItem, clearEffect, affectEntities, damageEntities, ChapterQuestBook, QuestBook } from "lazuli-mc";
 
 /**
  * 为物品消耗耐久值
@@ -54,7 +53,7 @@ function consumeDurabilityMixed(
  * @param entity 使用了仿制工具的实体
  */
 function applyImitationDamage(entity: Entity): void {
-  const CHANCE = utils.randomInteger(100, 1);
+  const CHANCE = randomInteger(100, 1);
   console.warn(`Random chance is ${CHANCE}`);
   if (CHANCE > 95) {
     entity.applyDamage(2);
@@ -68,7 +67,7 @@ function applyImitationDamage(entity: Entity): void {
  */
 export class Quest {
   static register() {
-    const QUEST_BOOK = new quest.ChapterQuestBook(
+    const QUEST_BOOK = new ChapterQuestBook(
       "hy:quest_book",
       { translate: "hy.quest.title1" },
       { translate: "hy.quest.body1" },
@@ -166,7 +165,7 @@ export class Quest {
         },
       ]
     );
-    const LETTER_0 = new quest.QuestBook(
+    const LETTER_0 = new QuestBook(
       `hy:letter_0`,
       HyLetterTitle[0],
       HyLetterBody[0],
@@ -181,7 +180,7 @@ export class Item {
       const [ATTACKER, ENTITY, ITEM] = [
         event.damagingEntity,
         event.hitEntity,
-        utils.getEquipmentItem(event.damagingEntity),
+        getEquipmentItem(event.damagingEntity),
       ];
       /**
        * @tag hy:is_hammer-判断攻击物品是否为锤子
@@ -261,7 +260,7 @@ export class Item {
           PLAYER.addEffect("fire_resistance", 900);
           break;
         case "hy:milk_chocolate":
-          utils.clearEffect(PLAYER, "all");
+          clearEffect(PLAYER, "all");
           break;
         case "hy:sweet_berry_chocolate":
           PLAYER.addEffect("instant_health", 1, {
@@ -272,7 +271,7 @@ export class Item {
           PLAYER.addLevels(2);
           break;
         case "hy:marshmallow":
-          if (utils.randomInteger(10) > 5) {
+          if (randomInteger(10) > 5) {
             PLAYER.addEffect("levitation", 100);
           }
           break;
@@ -288,7 +287,7 @@ export class Item {
           PLAYER.addEffect("saturation", 400);
           break;
         case "hy:medicine_2":
-          utils.clearEffect(PLAYER, "bad");
+          clearEffect(PLAYER, "bad");
           break;
         case "hy:medicine_3":
           PLAYER.removeEffect("darkness");
@@ -327,7 +326,7 @@ export class Item {
           PLAYER.kill();
           break;
         case "hy:medicine_11":
-          utils.clearEffect(PLAYER, "good");
+          clearEffect(PLAYER, "good");
           break;
         case "hy:medicine_12":
           PLAYER.removeEffect("bad_omen");
@@ -393,11 +392,11 @@ export class Item {
           excludeTags: ["hy.tetanus_attacker"],
           excludeFamilies: ["noaoe"],
         };
-        utils.affectEntities(PLAYER.dimension, TETANUS_OPINION, "poison", 300);
-        utils.affectEntities(PLAYER.dimension, TETANUS_OPINION, "nausea", 600, {
+        affectEntities(PLAYER.dimension, TETANUS_OPINION, "poison", 300);
+        affectEntities(PLAYER.dimension, TETANUS_OPINION, "nausea", 600, {
           amplifier: 1,
         });
-        utils.affectEntities(PLAYER.dimension, TETANUS_OPINION, "wither", 6);
+        affectEntities(PLAYER.dimension, TETANUS_OPINION, "wither", 6);
         PLAYER.removeTag("hy.tetanus_attacker");
       }
       /** 法器相关
@@ -420,7 +419,7 @@ export class Item {
             excludeTags: ["hy.magic_explode"],
             excludeFamilies: ["noaoe"],
           };
-          utils.damageEntities(PLAYER.dimension, ALL_OPTION, 6);
+          damageEntities(PLAYER.dimension, ALL_OPTION, 6);
           switch (ITEM.typeId) {
             case "hy:diamond_bone":
             case "hy:gold_bone":
@@ -430,8 +429,8 @@ export class Item {
                 maxDistance: 18,
                 families: ["skeleton"],
               };
-              utils.damageEntities(PLAYER.dimension, SKELETON_OPINION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, SKELETON_OPINION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 SKELETON_OPINION,
                 "weakness",
@@ -439,8 +438,8 @@ export class Item {
               );
               break;
             case "hy:flash_metal_boardsword":
-              utils.damageEntities(PLAYER.dimension, ALL_OPTION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, ALL_OPTION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 ALL_OPTION,
                 "weakness",
@@ -453,8 +452,8 @@ export class Item {
                 maxDistance: 18,
                 families: ["undead"],
               };
-              utils.damageEntities(PLAYER.dimension, UNDEAD_OPINION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, UNDEAD_OPINION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 UNDEAD_OPINION,
                 "weakness",
@@ -467,8 +466,8 @@ export class Item {
                 maxDistance: 18,
                 families: ["illager"],
               };
-              utils.damageEntities(PLAYER.dimension, ILLAGER_OPINION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, ILLAGER_OPINION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 ILLAGER_OPINION,
                 "weakness",
@@ -481,8 +480,8 @@ export class Item {
                 maxDistance: 18,
                 families: ["arthropod"],
               };
-              utils.damageEntities(PLAYER.dimension, ARTHROPOD_OPINION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, ARTHROPOD_OPINION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 ARTHROPOD_OPINION,
                 "weakness",
@@ -495,8 +494,8 @@ export class Item {
                 maxDistance: 18,
                 families: ["poultry"],
               };
-              utils.damageEntities(PLAYER.dimension, POULTRY_OPINION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, POULTRY_OPINION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 POULTRY_OPINION,
                 "weakness",
@@ -509,8 +508,8 @@ export class Item {
                 maxDistance: 18,
                 families: ["ruby"],
               };
-              utils.damageEntities(PLAYER.dimension, RUBY_OPINION, 8);
-              utils.affectEntities(
+              damageEntities(PLAYER.dimension, RUBY_OPINION, 8);
+              affectEntities(
                 PLAYER.dimension,
                 RUBY_OPINION,
                 "weakness",
@@ -543,7 +542,7 @@ export class Item {
             PLAYER.dimension.spawnEntity("hy:sprite", PLAYER.location);
             break;
           case "hy:ruby_bag":
-            switch (utils.randomInteger(10)) {
+            switch (randomInteger(10)) {
               case 1:
               case 2:
                 PLAYER.dimension.spawnItem(
@@ -582,7 +581,7 @@ export class Item {
             PLAYER.dimension.spawnEntity("hy:king_of_ruby", PLAYER.location);
             break;
           case "hy:ruby_runes":
-            PLAYER.addLevels(utils.randomInteger(4));
+            PLAYER.addLevels(randomInteger(4));
             PLAYER.playSound("random.orb");
             PLAYER.addEffect("fire_resistance", 1200);
             PLAYER.addEffect("resistance", 1200);
@@ -645,7 +644,7 @@ export class Item {
             };
             if (PLAYER.isSneaking) {
               world.playSound("copper_horn.sneak", PLAYER.location);
-              utils.affectEntities(
+              affectEntities(
                 PLAYER.dimension,
                 HORN_OPINION,
                 "slowness",
@@ -660,7 +659,7 @@ export class Item {
               });
             } else {
               world.playSound("copper_horn.walk", PLAYER.location);
-              utils.affectEntities(
+              affectEntities(
                 PLAYER.dimension,
                 HORN_OPINION,
                 "speed",
@@ -685,7 +684,7 @@ export class Item {
     world.afterEvents.playerBreakBlock.subscribe((event) => {
       const [ENTITY, ITEM] = [
         event.player,
-        utils.getEquipmentItem(event.player),
+        getEquipmentItem(event.player),
       ];
       if (ITEM?.hasTag("hy:custom_tools")) {
         const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, ENTITY);
@@ -707,7 +706,7 @@ export class Item {
     world.afterEvents.entityHitEntity.subscribe((event) => {
       const [ENTITY, ITEM] = [
         event.damagingEntity,
-        utils.getEquipmentItem(event.damagingEntity),
+        getEquipmentItem(event.damagingEntity),
       ];
       if (ITEM?.hasTag("hy:custom_weapons")) {
         const NEW_ITEM = consumeDurabilityMixed(ITEM, 1);
