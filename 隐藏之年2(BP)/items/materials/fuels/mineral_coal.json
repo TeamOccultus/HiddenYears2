@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:mineral_coal",
-      "category": "none"
+      "category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:glint": true,
@@ -13,14 +15,10 @@
       "minecraft:fuel": {
         "duration": 900
       },
-      "minecraft:icon": {
-        "texture": "coal"
-      },
-      "minecraft:creative_category": {
-        "parent": "items"
-      },
-      "tag:dict:fuels": {},
-      "tag:hy:metal_coals": {}
+      "minecraft:icon": "coal",
+      "minecraft:tags": {
+        "tags": ["dict:fuels", "hy:metal_coals"]
+      }
     }
   }
 }

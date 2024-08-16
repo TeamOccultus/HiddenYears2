@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:mineral_charcoal",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:glint": true,
@@ -13,14 +15,10 @@
       "minecraft:fuel": {
         "duration": 800
       },
-      "minecraft:icon": {
-        "texture": "charcoal"
-      },
-      "minecraft:creative_category": {
-        "parent": "items"
-      },
-      "tag:dict:fuels": {},
-      "tag:hy:metal_charcoals": {}
+      "minecraft:icon": "charcoal",
+      "minecraft:tags": {
+        "tags": ["dict:fuels", "hy:metal_charcoals"]
+      }
     }
   }
 }
