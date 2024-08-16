@@ -3,7 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_copper_axe",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.axe"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -114,30 +117,13 @@
           }
         ]
       },
-      "minecraft:icon": {
-        "texture": "hy.flash_copper_axe"
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.axe"
-      },
-      "minecraft:weapon": {
-        "on_hurt_entity": {
-          "event": "hy.on_hurt_entity",
-          "target": "self"
-        }
-      },
-      "tag:minecraft:is_axe": {},
-      "tag:hy:custom_tools": {}
-    },
-    "events": {
-      "on_tool_used": {
-        "damage": {
-          "type": "magic",
-          "amount": 1
-        },
-        "run_command": {
-          "command": ["playsound use.wood @a ~ ~ ~ 1.0 1.0"]
-        }
+      "minecraft:icon": "hy.flash_copper_axe",
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_axe",
+          "hy:custom_tools",
+          "hy:custom_axe"
+        ]
       }
     }
   }

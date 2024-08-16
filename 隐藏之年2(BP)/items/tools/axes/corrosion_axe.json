@@ -3,7 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:corrosion_axe",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.axe"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -114,27 +117,14 @@
           }
         ]
       },
-      "minecraft:icon": {
-        "texture": "hy.exposed_copper_axe"
-      },
-      "minecraft:creative_category": {
-        "category": "equipment",
-        "parent": "itemGroup.name.axe"
-      },
-      
+      "minecraft:icon": "hy.exposed_copper_axe",
       "tag:hy:corrosion_weapon": {},
-      "tag:minecraft:is_axe": {},
-      "tag:hy:custom_tools": {}
-    },
-    "events": {
-      "on_tool_used": {
-        "damage": {
-          "type": "magic",
-          "amount": 1
-        },
-        "run_command": {
-          "command": ["playsound use.wood @a ~ ~ ~ 1.0 1.0"]
-        }
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_axe",
+          "hy:custom_tools",
+          "hy:custom_axe"
+        ]
       }
     }
   }
