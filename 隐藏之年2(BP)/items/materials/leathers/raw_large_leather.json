@@ -3,21 +3,22 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:raw_large_leather",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "leather"
-      },
+      "minecraft:icon": "leather",
       "minecraft:display_name": {
         "value": "hy.item.raw_large_leather"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:materials.leather": {},
-      "tag:dict:materials.leather.large": {},
-      "tag:dict:materials.leather.large_raw": {}
+      "minecraft:tags": {
+        "tags": [
+          "dict:materials.leather",
+          "dict:materials.leather.large",
+          "dict:materials.leather.large_raw"
+        ]
+      }
     }
   }
 }
