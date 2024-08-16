@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.20",
+  "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
       "identifier": "hy:disc_fragment_cat",
