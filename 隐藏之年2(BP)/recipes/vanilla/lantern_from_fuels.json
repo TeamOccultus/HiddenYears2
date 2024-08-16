@@ -11,12 +11,12 @@
         "item": "iron_nugget"
       },
       "x": {
-        "tag": "dict:fuels"
+        "tag": "hy:fuels"
       }
     },
     "unlock": [
       {
-        "tag": "dict:fuels"
+        "tag": "hy:fuels"
       },
       {
         "item": "iron_nugget"

@@ -11,12 +11,12 @@
         "item": "stick"
       },
       "X": {
-        "tag": "dict:fuels"
+        "tag": "hy:fuels"
       }
     },
     "unlock": [
       {
-        "tag": "dict:fuels"
+        "tag": "hy:fuels"
       },
       {
         "item": "hy:copper_stick"

@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "sc:stone_nugget",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:icon": {
@@ -11,9 +13,6 @@
       },
       "minecraft:display_name": {
         "value": "sc.item.stone_nugget"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "minecraft:throwable": {
         "do_swing_animation": true,

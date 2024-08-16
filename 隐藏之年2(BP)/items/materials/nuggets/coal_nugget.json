@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:coal_nugget",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -11,9 +13,6 @@
       },
       "minecraft:icon": {
         "texture": "hy.coal_nugget"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "minecraft:fuel": {
         "duration": 15

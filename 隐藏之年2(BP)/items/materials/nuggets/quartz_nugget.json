@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:quartz_nugget",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -11,9 +13,6 @@
       },
       "minecraft:icon": {
         "texture": "hy.quartz_nugget"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "tag:dict:nuggets": {},
       "tag:dict:nuggets.quartz": {}

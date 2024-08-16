@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_metal_nugget",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:icon": {
@@ -11,9 +13,6 @@
       },
       "minecraft:display_name": {
         "value": "hy.item.flash_metal_nugget"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "tag:dict:nuggets": {},
       "tag:dict:nuggets.flash_metal": {}

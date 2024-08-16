@@ -7,12 +7,12 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "tag": "dict:materials.bone"
+        "tag": "hy:bone_materials"
       }
     ],
     "unlock": [
       {
-        "tag": "dict:materials.bone"
+        "tag": "hy:bone_materials"
       }
     ],
     "result": {

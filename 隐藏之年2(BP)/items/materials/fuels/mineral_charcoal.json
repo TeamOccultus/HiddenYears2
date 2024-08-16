@@ -17,7 +17,7 @@
       },
       "minecraft:icon": "charcoal",
       "minecraft:tags": {
-        "tags": ["dict:fuels", "hy:metal_charcoals"]
+        "tags": ["hy:fuels", "hy:metal_charcoals"]
       }
     }
   }

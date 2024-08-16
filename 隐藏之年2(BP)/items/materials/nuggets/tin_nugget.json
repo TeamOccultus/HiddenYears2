@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:tin_nugget",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:icon": {
@@ -11,9 +13,6 @@
       },
       "minecraft:display_name": {
         "value": "hy.item.tin_nugget"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "tag:dict:nuggets": {},
       "tag:dict:nuggets.tin": {}
