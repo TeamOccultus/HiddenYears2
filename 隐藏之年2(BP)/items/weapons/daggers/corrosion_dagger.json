@@ -83,7 +83,7 @@
           }
         ]
       },
-      "minecraft:weapon": {},
+      
       "tag:hy:corrosion_weapon": {},
       "tag:minecraft:is_tool": {},
       "tag:hy:custom_weapons": {}

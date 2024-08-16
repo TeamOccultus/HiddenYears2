@@ -104,7 +104,7 @@
           }
         ]
       },
-      "minecraft:weapon": {},
+      
       "tag:hy:custom_weapons": {},
       "tag:minecraft:is_sword": {},
       "tag:minecraft:is_tool": {}

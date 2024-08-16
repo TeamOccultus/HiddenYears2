@@ -27,7 +27,7 @@
         "texture": "hy.copper_stick"
       },
       "minecraft:max_stack_size": 1,
-      "minecraft:weapon": {},
+      
       "tag:hy:is_handle": {},
       "tag:hy:custom_weapons": {},
       "tag:hy:impart": {}

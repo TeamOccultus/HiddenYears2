@@ -437,7 +437,7 @@
           }
         ]
       },
-      "minecraft:weapon": {},
+      
       "tag:minecraft:is_pickaxe": {},
       "tag:hy:custom_tools": {},
       "tag:hy:exposed_item": {},

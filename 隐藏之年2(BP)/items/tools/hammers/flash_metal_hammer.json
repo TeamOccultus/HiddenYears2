@@ -21,7 +21,7 @@
         "texture": "hy.flash_metal_hammer"
       },
       "minecraft:damage": 3,
-      "minecraft:weapon": {},
+      
       "minecraft:enchantable": {
         "value": 1,
         "slot": "pickaxe"

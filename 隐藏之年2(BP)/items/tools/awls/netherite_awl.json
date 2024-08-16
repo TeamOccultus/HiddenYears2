@@ -18,7 +18,7 @@
       "minecraft:max_stack_size": 1,
 
       "minecraft:damage": 6,
-      "minecraft:weapon": {},
+      
       "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {
         "parent": "items"

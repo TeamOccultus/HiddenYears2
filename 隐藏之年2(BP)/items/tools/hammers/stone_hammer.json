@@ -22,7 +22,7 @@
       },
       
       "minecraft:damage": 4,
-      "minecraft:weapon": {},
+      
       "minecraft:enchantable": {
         "value": 1,
         "slot": "pickaxe"

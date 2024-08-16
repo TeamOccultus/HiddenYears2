@@ -22,7 +22,7 @@
       "minecraft:display_name": {
         "value": "hy.item.diamond_crowbar"
       },
-      "minecraft:weapon": {},
+      
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [

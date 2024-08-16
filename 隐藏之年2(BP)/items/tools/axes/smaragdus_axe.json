@@ -121,7 +121,7 @@
         "category": "equipment",
         "parent": "itemGroup.name.axe"
       },
-      "minecraft:weapon": {},
+      
       "tag:minecraft:is_axe": {},
       "tag:hy:custom_tools": {}
     },

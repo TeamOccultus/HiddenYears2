@@ -122,7 +122,7 @@
       "minecraft:creative_category": {
         "parent": "itemGroup.name.axe"
       },
-      "minecraft:weapon": {},
+      
       "tag:hy:imitation_tools": {},
       "tag:minecraft:is_axe": {},
       "tag:hy:custom_tools": {}
