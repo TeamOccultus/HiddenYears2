@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:tin_ingot",
-      "category": "items"
+      "category":{
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.tin_ingot"
-      },
+      "minecraft:icon": "hy.tin_ingot",
       "minecraft:display_name": {
         "value": "hy.item.tin_ingot"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:ingots": {},
-      "tag:dict:ingots.tin": {}
+      "minecraft:tags": {
+        "tags": ["dict:ingots", "dict:ingots.tin"]
+      }
     }
   }
 }

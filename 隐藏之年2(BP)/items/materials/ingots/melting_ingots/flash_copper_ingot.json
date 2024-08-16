@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_copper_ingot",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.flash_copper_ingot"
-      },
+      "minecraft:icon": "hy.flash_copper_ingot",
       "minecraft:display_name": {
         "value": "hy.item.flash_copper_ingot"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:ingots": {},
-      "tag:dict:ingots.flash_copper": {}
+      "minecraft:tags": {
+        "tags": ["dict:ingots", "dict:ingots.flash_copper"]
+      }
     }
   }
 }
