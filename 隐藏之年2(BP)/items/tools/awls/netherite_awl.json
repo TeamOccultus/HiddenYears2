@@ -3,15 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:netherite_awl",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.netherite_awl"
       },
-      "minecraft:icon": {
-        "texture": "hy.netherite_awl"
-      },
+      "minecraft:icon": "hy.netherite_awl",
       "minecraft:durability": {
         "max_durability": 507
       },
@@ -27,8 +27,9 @@
         "value": 1,
         "slot": "sword"
       },
-      "tag:hy:is_awl": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe"]
+      }
     }
   }
 }

@@ -3,15 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_awl",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.copper_awl"
       },
-      "minecraft:icon": {
-        "texture": "hy.copper_awl"
-      },
+      "minecraft:icon": "hy.copper_awl",
       "minecraft:durability": {
         "max_durability": 40
       },
@@ -26,8 +26,9 @@
         "value": 1,
         "slot": "sword"
       },
-      "tag:hy:is_awl": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe"]
+      }
     }
   }
 }

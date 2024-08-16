@@ -3,21 +3,20 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_copper_awl",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.flash_copper_awl"
       },
-      "minecraft:icon": {
-        "texture": "hy.flash_copper_awl"
-      },
+      "minecraft:icon": "hy.flash_copper_awl",
       "minecraft:durability": {
         "max_durability": 112
       },
       "minecraft:max_stack_size": 1,
       "minecraft:damage": 4,
-      
       "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {
         "parent": "items"
@@ -26,8 +25,9 @@
         "value": 1,
         "slot": "sword"
       },
-      "tag:hy:is_awl": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe"]
+      }
     }
   }
 }

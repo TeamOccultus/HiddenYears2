@@ -3,22 +3,20 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:corrosion_awl",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.corrosion_awl"
       },
-      "minecraft:icon": {
-        "texture": "hy.exposed_copper_awl"
-      },
+      "minecraft:icon": "hy.exposed_copper_awl",
       "minecraft:durability": {
         "max_durability": 75
       },
       "minecraft:max_stack_size": 1,
       "minecraft:damage": 4,
-      
-      "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {
         "parent": "items"
       },
@@ -26,9 +24,9 @@
         "value": 1,
         "slot": "sword"
       },
-      "tag:hy:is_awl": {},
-      "tag:hy:corrosion_weapon": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe","hy:corrosion_weapon"]
+      }
     }
   }
 }

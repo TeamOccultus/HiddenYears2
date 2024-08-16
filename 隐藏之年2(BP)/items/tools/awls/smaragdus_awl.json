@@ -3,15 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:smaragdus_awl",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.smaragdus_awl"
       },
-      "minecraft:icon": {
-        "texture": "hy.smaragdus_awl"
-      },
+      "minecraft:icon": "hy.smaragdus_awl",
       "minecraft:durability": {
         "max_durability": 1250
       },
@@ -26,8 +26,9 @@
         "value": 1,
         "slot": "sword"
       },
-      "tag:hy:is_awl": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe"]
+      }
     }
   }
 }
