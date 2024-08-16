@@ -2,26 +2,23 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "category": "equipment",
+      "menu_category": {
+        "category": "equipment",
+        "parent": "itemGroup.name.pickaxe"
+      },
       "identifier": "hy:exposed_copper_hammer"
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.exposed_copper_hammer"
       },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.pickaxe"
-      },
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "max_durability": 80
       },
-      "minecraft:icon": {
-        "texture": "hy.exposed_copper_hammer"
-      },
+      "minecraft:icon": "hy.exposed_copper_hammer",
       "minecraft:damage": 3,
-      
       "minecraft:enchantable": {
         "value": 1,
         "slot": "pickaxe"
@@ -57,10 +54,14 @@
           }
         ]
       },
-      "tag:hy:is_hammer": {},
-      "tag:hy:custom_tools": {},
-      "tag:hy:exposed_item": {},
-      "tag:hy:corrosive_tools": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:is_hammer",
+          "hy:custom_tools",
+          "hy:exposed_item",
+          "hy:corrosive_tools"
+        ]
+      }
     }
   }
 }

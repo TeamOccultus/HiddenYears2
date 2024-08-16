@@ -2,13 +2,13 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "category": "equipment",
+      "menu_category": {
+        "category": "equipment",
+        "parent": "itemGroup.name.pickaxe"
+      },
       "identifier": "hy:wooden_hammer"
     },
     "components": {
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.pickaxe"
-      },
       "minecraft:display_name": {
         "value": "hy.item.wooden_hammer"
       },
@@ -17,11 +17,8 @@
       "minecraft:durability": {
         "max_durability": 118
       },
-      "minecraft:icon": {
-        "texture": "hy.wooden_hammer"
-      },
+      "minecraft:icon": "hy.wooden_hammer",
       "minecraft:damage": 3,
-      
       "minecraft:enchantable": {
         "value": 1,
         "slot": "pickaxe"
@@ -57,8 +54,9 @@
           }
         ]
       },
-      "tag:hy:is_hammer": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_hammer", "hy:custom_tools"]
+      }
     }
   }
 }

@@ -2,13 +2,13 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "category": "equipment",
+      "menu_category":{
+        "category": "equipment",
+        "parent": "itemGroup.name.pickaxe"
+      },
       "identifier": "hy:flash_copper_hammer"
     },
     "components": {
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.pickaxe"
-      },
       "minecraft:display_name": {
         "value": "hy.item.flash_copper_hammer"
       },
@@ -17,9 +17,7 @@
       "minecraft:durability": {
         "max_durability": 900
       },
-      "minecraft:icon": {
-        "texture": "hy.flash_copper_hammer"
-      },
+      "minecraft:icon": "hy.flash_copper_hammer",
       "minecraft:damage": 5,
       
       "minecraft:enchantable": {
@@ -57,8 +55,9 @@
           }
         ]
       },
-      "tag:hy:is_hammer": {},
-      "tag:hy:custom_tools": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_hammer", "hy:custom_tools"]
+      }
     }
   }
 }
