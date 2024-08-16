@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:emerald_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.emerald_dust"
       },
-      "minecraft:icon": {
-        "texture": "hy.emerald_dust"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.emerald": {}
+      "minecraft:icon": "hy.emerald_dust",
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.emerald"]
+      }
     }
   }
 }

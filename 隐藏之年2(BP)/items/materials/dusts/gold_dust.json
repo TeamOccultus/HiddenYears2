@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:gold_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.gold_dust"
       },
-      "minecraft:icon": {
-        "texture": "hy.gold_dust"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.gold": {}
+      "minecraft:icon": "hy.gold_dust",
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.gold"]
+      }
     }
   }
 }

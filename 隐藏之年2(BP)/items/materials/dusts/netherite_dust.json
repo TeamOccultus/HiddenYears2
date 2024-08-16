@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:netherite_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.netherite_dust"
       },
-      "minecraft:icon": {
-        "texture": "hy.netherite_dust"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.netherite": {}
+      "minecraft:icon": "hy.netherite_dust",
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.netherite"]
+      }
     }
   }
 }

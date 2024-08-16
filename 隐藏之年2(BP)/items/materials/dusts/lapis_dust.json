@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:lapis_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.lapis_dust"
       },
-      "minecraft:icon": {
-        "texture": "hy.lapis_dust"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.lapis": {}
+      "minecraft:icon": "hy.lapis_dust",
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.lapis"]
+      }
     }
   }
 }

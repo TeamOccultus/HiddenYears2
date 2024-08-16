@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:amethyst_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.amethyst_dust"
       },
-      "minecraft:icon": {
-        "texture": "hy.amethyst_dust"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.amethyst": {}
+      "minecraft:icon": "hy.amethyst_dust",
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.amethyst"]
+      }
     }
   }
 }

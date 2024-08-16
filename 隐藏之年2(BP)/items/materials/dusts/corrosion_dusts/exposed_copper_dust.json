@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:exposed_copper_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.exposed_copper_dust"
-      },
+      "minecraft:icon": "hy.exposed_copper_dust",
       "minecraft:display_name": {
         "value": "hy.item.exposed_copper_dust"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.exposed_copper": {}
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.exposed_copper"]
+      }
     }
   }
 }

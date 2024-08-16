@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:weathered_copper_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.weathered_copper_dust"
-      },
+      "minecraft:icon": "hy.weathered_copper_dust",
       "minecraft:display_name": {
         "value": "hy.item.weathered_copper_dust"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.weathered_copper": {}
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.weathered_copper"]
+      }
     }
   }
 }

@@ -3,20 +3,18 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:steel_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.steel_dust"
-      },
+      "minecraft:icon": "hy.steel_dust",
       "minecraft:display_name": {
         "value": "hy.item.steel_dust"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.steel": {}
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.steel"]
+      }
     }
   }
 }

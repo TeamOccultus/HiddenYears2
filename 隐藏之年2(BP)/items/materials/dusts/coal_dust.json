@@ -3,23 +3,21 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:coal_dust",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.coal_dust"
       },
-      "minecraft:icon": {
-        "texture": "hy.coal_dust"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
+      "minecraft:icon": "hy.coal_dust",
       "minecraft:fuel": {
         "duration": 5
       },
-      "tag:dict:dusts": {},
-      "tag:dict:dusts.coal": {}
+      "minecraft:tags": {
+        "tags": ["dict:dusts", "dict:dusts.coal"]
+      }
     }
   }
 }
