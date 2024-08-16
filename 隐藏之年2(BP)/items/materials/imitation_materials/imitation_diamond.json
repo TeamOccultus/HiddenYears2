@@ -3,21 +3,22 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_diamond",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.imitation_diamond"
-      },
+      "minecraft:icon":"hy.imitation_diamond",
       "minecraft:display_name": {
         "value": "hy.item.imitation_diamond"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
       "minecraft:hover_text_color": "gold",
-      "tag:dict:materials.imitation": {},
-      "tag:dict:materials.imitation_diamond": {}
+      "minecraft:tags": {
+        "tags": [
+          "dict:ingots.imitation_diamond",
+          "dict:materials.imitation"
+        ]
+      }
     }
   }
 }

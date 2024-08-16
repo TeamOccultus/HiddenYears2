@@ -3,23 +3,22 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_charcoal",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "charcoal"
-      },
+      "minecraft:icon": "charcoal",
       "minecraft:display_name": {
         "value": "hy.item.imitation_charcoal"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "minecraft:fuel": {
         "duration": 10
       },
       "minecraft:hover_text_color": "gold",
-      "tag:dict:materials.imitation": {}
+      "minecraft:tags": {
+        "tags": ["dict:materials.imitation"]
+      }
     }
   }
 }

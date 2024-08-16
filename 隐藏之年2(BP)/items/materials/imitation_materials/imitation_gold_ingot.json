@@ -3,22 +3,23 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_gold_ingot",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.imitation_gold_ingot"
-      },
+      "minecraft:icon": "hy.imitation_gold_ingot",
       "minecraft:display_name": {
         "value": "hy.item.imitation_gold_ingot"
       },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
       "minecraft:hover_text_color": "gold",
-      "tag:dict:ingots": {},
-      "tag:dict:ingots.imitation_gold": {},
-      "tag:dict:materials.imitation": {}
+      "minecraft:tags": {
+        "tags": [
+          "dict:ingots",
+          "dict:ingots.imitation_gold",
+          "dict:materials.imitation"
+        ]
+      }
     }
   }
 }

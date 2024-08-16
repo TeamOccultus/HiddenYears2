@@ -3,23 +3,24 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_coal",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "coal"
-      },
+      "minecraft:icon": "coal",
       "minecraft:display_name": {
         "value": "hy.item.imitation_coal"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
       },
       "minecraft:fuel": {
         "duration": 15
       },
       "minecraft:hover_text_color": "gold",
-      "tag:dict:materials.imitation": {}
+      "minecraft:tags": {
+        "tags": [
+          "dict:materials.imitation"
+        ]
+      }
     }
   }
 }
