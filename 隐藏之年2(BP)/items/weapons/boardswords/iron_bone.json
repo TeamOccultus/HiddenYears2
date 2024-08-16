@@ -22,7 +22,7 @@
         "max_durability": 250
       },
       "minecraft:damage": 6,
-      "minecraft:foil": true,
+      "minecraft:glint": true,
       "minecraft:enchantable": {
         "value": 10,
         "slot": "sword"

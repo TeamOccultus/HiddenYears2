@@ -6,7 +6,7 @@
       "category": "items"
     },
     "components": {
-      "minecraft:foil": true,
+      "minecraft:glint": true,
       "minecraft:display_name": {
         "value": "hy.item.mineral_charcoals"
       },

@@ -22,7 +22,7 @@
         "max_durability": 200
       },
       "minecraft:damage": 5,
-      "minecraft:foil": true,
+      "minecraft:glint": true,
       "minecraft:digger": {
         "use_efficiency": true,
         "on_dig": {

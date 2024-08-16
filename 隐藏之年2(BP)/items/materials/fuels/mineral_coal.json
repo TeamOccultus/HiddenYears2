@@ -6,7 +6,7 @@
       "category": "none"
     },
     "components": {
-      "minecraft:foil": true,
+      "minecraft:glint": true,
       "minecraft:display_name": {
         "value": "hy.item.mineral_coals"
       },
