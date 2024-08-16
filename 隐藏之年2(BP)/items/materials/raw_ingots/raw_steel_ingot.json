@@ -3,19 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:raw_steel_ingot",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.steel_ingot"
-      },
+      "minecraft:icon": "hy.steel_ingot",
       "minecraft:display_name": {
         "value": "hy.item.raw_steel_ingot"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:ingots": {}
+      }
     }
   }
 }

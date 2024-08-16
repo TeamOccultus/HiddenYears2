@@ -3,20 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:raw_tin",
-      "category": "items"
+      "menu_category":{
+        "category": "items"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.raw_tin"
-      },
+      "minecraft:icon": "hy.raw_tin",
       "minecraft:display_name": {
         "value": "hy.item.raw_tin"
-      },
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:dict:raw_ores": {},
-      "tag:dict:raw_ores.tin": {}
+      }
     }
   }
 }
