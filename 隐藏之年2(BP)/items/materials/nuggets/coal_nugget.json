@@ -11,14 +11,10 @@
       "minecraft:display_name": {
         "value": "hy.item.coal_nugget"
       },
-      "minecraft:icon": {
-        "texture": "hy.coal_nugget"
-      },
+      "minecraft:icon": "hy.coal_nugget",
       "minecraft:fuel": {
         "duration": 15
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.coal": {}
+      }
     }
   }
 }

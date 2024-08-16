@@ -11,11 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.nether_metal_nugget"
       },
-      "minecraft:icon": {
-        "texture": "hy.nether_metal_nugget"
-      },
-      "tag:dict:nuggets.stone_metal": {},
-      "tag:dict:nuggets": {}
+      "minecraft:icon": "hy.nether_metal_nugget"
     }
   }
 }

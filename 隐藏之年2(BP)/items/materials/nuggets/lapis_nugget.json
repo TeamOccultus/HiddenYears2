@@ -11,11 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.lapis_nugget"
       },
-      "minecraft:icon": {
-        "texture": "hy.lapis_nugget"
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.lapis": {}
+      "minecraft:icon": "hy.lapis_nugget"
     }
   }
 }

@@ -8,14 +8,10 @@
       }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.steel_nugget"
-      },
+      "minecraft:icon": "hy.steel_nugget",
       "minecraft:display_name": {
         "value": "hy.item.steel_nugget"
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.steel": {}
+      }
     }
   }
 }

@@ -11,11 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.redstone_nugget"
       },
-      "minecraft:icon": {
-        "texture": "hy.redstone_nugget"
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.redstone": {}
+      "minecraft:icon": "hy.redstone_nugget"
     }
   }
 }

@@ -11,11 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.quartz_nugget"
       },
-      "minecraft:icon": {
-        "texture": "hy.quartz_nugget"
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.quartz": {}
+      "minecraft:icon": "hy.quartz_nugget"
     }
   }
 }

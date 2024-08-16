@@ -11,11 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.amethyst_nugget"
       },
-      "minecraft:icon": {
-        "texture": "hy.amethyst_nugget"
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.amethyst": {}
+      "minecraft:icon": "hy.amethyst_nugget"
     }
   }
 }

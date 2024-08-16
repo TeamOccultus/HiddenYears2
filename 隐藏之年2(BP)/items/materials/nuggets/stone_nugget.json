@@ -8,9 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "sc.stone_nugget"
-      },
+      "minecraft:icon": "sc.stone_nugget",
       "minecraft:display_name": {
         "value": "sc.item.stone_nugget"
       },
@@ -20,9 +18,7 @@
       },
       "minecraft:projectile": {
         "projectile_entity": "sc:thrown_stone_nugget"
-      },
-      "tag:dict:nuggets": {},
-      "tag:dict:nuggets.stone": {}
+      }
     }
   }
 }
