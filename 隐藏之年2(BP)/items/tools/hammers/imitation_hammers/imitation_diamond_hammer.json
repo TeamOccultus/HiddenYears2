@@ -4,7 +4,7 @@
     "description": {
       "menu_category":{
         "category": "equipment",
-        "parent": "itemGroup.name.pickaxe"
+        "group": "itemGroup.name.pickaxe"
       },
       "identifier": "hy:imitation_diamond_hammer"
     },
