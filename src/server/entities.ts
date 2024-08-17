@@ -40,7 +40,7 @@ export class Entity {
     });
   }
   /**
-   * 监听玩家生成事件
+   * 监听生成事件
    */
   static spawnMonitor(): void {
     world.afterEvents.playerSpawn.subscribe((event) => {
@@ -61,11 +61,19 @@ export class Entity {
     world.afterEvents.entitySpawn.subscribe((event) => {
       const ENTITY = event.entity;
       if (ENTITY.typeId === "hy:ruby_guardian") {
-        system.runTimeout(() => {
-          system.runInterval(() => {
-            ENTITY.applyDamage(2);
-          }, 20);
+        const num1 = system.runTimeout(() => {
+          ENTITY.remove();
         }, 600);
+        world.afterEvents.entityDie.subscribe(event=>{
+          if(event.deadEntity.id===ENTITY.id){
+            system.clearRun(num1);
+          }
+        })
+        world.afterEvents.entityRemove.subscribe(event=>{
+          if(event.removedEntityId===ENTITY.id){
+            system.clearRun(num1);
+          }
+        })
       }
     });
   }

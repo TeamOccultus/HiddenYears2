@@ -99,4 +99,14 @@ export function rubyKingSkill(entity: Entity) {
       world.sendMessage([{ translate: "hy.bossdead.ruby" }]);
     }
   });
+  world.afterEvents.entityRemove.subscribe((event) => {
+    if (event.removedEntityId === entity.id) {
+      console.warn("Clear all skills.");
+      system.clearRun(num1);
+      system.clearRun(num2);
+      system.clearRun(num3);
+      world.stopMusic();
+      world.sendMessage([{ translate: "hy.bossdead.ruby" }]);
+    }
+  });
 }
