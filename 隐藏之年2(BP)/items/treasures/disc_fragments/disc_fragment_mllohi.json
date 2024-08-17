@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:disc_fragment_mllohi",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {

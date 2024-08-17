@@ -3,7 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:disc_fragment_mall",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
