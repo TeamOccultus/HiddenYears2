@@ -2,24 +2,22 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "category": "equipment",
+      "menu_category": {
+        "category": "equipment",
+        "group": "itemGroup.name.pickaxe"
+      },
       "identifier": "hy:oxidized_copper_pickaxe"
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.oxidized_copper_pickaxe"
       },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.pickaxe"
-      },
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "max_durability": 10
       },
-      "minecraft:icon": {
-        "texture": "hy.oxidized_copper_pickaxe"
-      },
+      "minecraft:icon": "hy.oxidized_copper_pickaxe",
       "minecraft:repairable": {
         "repair_items": [
           {
@@ -437,11 +435,14 @@
           }
         ]
       },
-      
-      "tag:minecraft:is_pickaxe": {},
-      "tag:hy:custom_tools": {},
-      "tag:hy:oxidized_item": {},
-      "tag:hy:tetanus_item": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_pickaxe",
+          "hy:oxidized_item",
+          "hy:tetanus_item"
+        ]
+      }
     }
   }
 }
