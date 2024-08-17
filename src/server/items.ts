@@ -17,7 +17,15 @@ import {
   knifeSkill,
 } from "../core/itemSkills";
 import * as quests from "../data/quest";
-import { randomInteger, getEquipmentItem, clearEffect, affectEntities, damageEntities, ChapterQuestBook, QuestBook } from "lazuli-mc";
+import {
+  randomInteger,
+  getEquipmentItem,
+  clearEffect,
+  affectEntities,
+  damageEntities,
+  ChapterQuestBook,
+  QuestBook,
+} from "lazuli-mc";
 
 /**
  * 为物品消耗耐久值
@@ -219,12 +227,7 @@ export class Item {
        * @tag hy:corrosion_weapon-判断物品是否可以进行腐蚀攻击
        */
       if (ITEM?.hasTag("hy:corrosion_weapon")) {
-        let num = system.runInterval(() => {
-          ENTITY.applyDamage(2);
-        }, 40);
-        system.runTimeout(() => {
-          system.clearRun(num);
-        }, 240);
+        ENTITY.addEffect("poison", 200, { amplifier: 1 });
       }
     });
   }
@@ -439,12 +442,7 @@ export class Item {
               break;
             case "hy:flash_metal_boardsword":
               damageEntities(PLAYER.dimension, ALL_OPTION, 8);
-              affectEntities(
-                PLAYER.dimension,
-                ALL_OPTION,
-                "weakness",
-                300
-              );
+              affectEntities(PLAYER.dimension, ALL_OPTION, "weakness", 300);
               break;
             case "hy:corrosion_boardsword":
               const UNDEAD_OPINION: EntityQueryOptions = {
@@ -453,12 +451,7 @@ export class Item {
                 families: ["undead"],
               };
               damageEntities(PLAYER.dimension, UNDEAD_OPINION, 8);
-              affectEntities(
-                PLAYER.dimension,
-                UNDEAD_OPINION,
-                "weakness",
-                300
-              );
+              affectEntities(PLAYER.dimension, UNDEAD_OPINION, "weakness", 300);
               break;
             case "hy:emerald_boardsword":
               const ILLAGER_OPINION: EntityQueryOptions = {
@@ -509,12 +502,7 @@ export class Item {
                 families: ["ruby"],
               };
               damageEntities(PLAYER.dimension, RUBY_OPINION, 8);
-              affectEntities(
-                PLAYER.dimension,
-                RUBY_OPINION,
-                "weakness",
-                300
-              );
+              affectEntities(PLAYER.dimension, RUBY_OPINION, "weakness", 300);
               break;
             default:
               break;
@@ -644,30 +632,18 @@ export class Item {
             };
             if (PLAYER.isSneaking) {
               world.playSound("copper_horn.sneak", PLAYER.location);
-              affectEntities(
-                PLAYER.dimension,
-                HORN_OPINION,
-                "slowness",
-                300,
-                {
-                  amplifier: 2,
-                }
-              );
+              affectEntities(PLAYER.dimension, HORN_OPINION, "slowness", 300, {
+                amplifier: 2,
+              });
               PLAYER.removeEffect("slowness");
               PLAYER.addEffect("speed", 300, {
                 amplifier: 2,
               });
             } else {
               world.playSound("copper_horn.walk", PLAYER.location);
-              affectEntities(
-                PLAYER.dimension,
-                HORN_OPINION,
-                "speed",
-                300,
-                {
-                  amplifier: 2,
-                }
-              );
+              affectEntities(PLAYER.dimension, HORN_OPINION, "speed", 300, {
+                amplifier: 2,
+              });
               PLAYER.removeEffect("speed");
               PLAYER.addEffect("slowness", 300, {
                 amplifier: 2,
@@ -682,10 +658,7 @@ export class Item {
   }
   static durabilityMonitor() {
     world.afterEvents.playerBreakBlock.subscribe((event) => {
-      const [ENTITY, ITEM] = [
-        event.player,
-        getEquipmentItem(event.player),
-      ];
+      const [ENTITY, ITEM] = [event.player, getEquipmentItem(event.player)];
       if (ITEM?.hasTag("hy:custom_tools")) {
         const NEW_ITEM = consumeDurabilityMixed(ITEM, 1, ENTITY);
         ENTITY?.getComponent("minecraft:equippable")?.setEquipment(
