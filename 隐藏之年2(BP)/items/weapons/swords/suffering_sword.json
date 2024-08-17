@@ -3,16 +3,16 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:suffering_sword",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      } 
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.suffering_sword"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 4200
       },
@@ -87,9 +87,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.suffering_sword"
-      },
+      "minecraft:icon": "hy.suffering_sword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -98,11 +96,14 @@
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
-      },
-      
-      "tag:hy:custom_weapons": {},
-      "tag:minecraft:is_sword": {},
-      "tag:minecraft:is_tool": {}
+      },   
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_sword",
+          "minecraft:is_tool"
+        ]
+      }
     }
   }
 }
