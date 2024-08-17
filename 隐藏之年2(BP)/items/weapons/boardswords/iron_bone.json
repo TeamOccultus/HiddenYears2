@@ -3,7 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:iron_bone",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:cooldown": {
@@ -15,9 +18,6 @@
         "value": "hy.item.iron_bone"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 250
       },
@@ -28,9 +28,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.iron_bone"
-      },
+      "minecraft:icon": "hy.iron_bone",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -43,13 +41,16 @@
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
-      },
-      
-      "tag:hy:custom_weapons": {},
-      "tag:hy:magic_explode": {},
-      "tag:minecraft:is_tool": {},
-      "tag:hy:bone_materials": {},
-      "tag:hy:bone_swords": {}
+      },    
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool",
+          "hy:magic_explode",
+          "hy:bone_materials",
+          "hy:bone_swords"
+        ]
+      }
     }
   }
 }

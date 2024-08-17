@@ -3,22 +3,21 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:ruby_boardsword",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:cooldown": {
         "category": "hy.magic_explode",
         "duration": 10
       },
-      "minecraft:on_use": {},
       "minecraft:hover_text_color": "light_purple",
       "minecraft:display_name": {
         "value": "hy.item.ruby_boardsword"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 500
       },
@@ -94,9 +93,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.ruby_boardsword"
-      },
+      "minecraft:icon": "hy.ruby_boardsword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -110,11 +107,14 @@
           }
         ]
       },
-      
-      "tag:hy:custom_weapons": {},
-      "tag:hy:magic_explode": {},
-      "tag:minecraft:is_sword": {},
-      "tag:minecraft:is_tool": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool",
+          "hy:magic_explode",
+          "minecraft:is_sword"
+        ]
+      }
     }
   }
 }

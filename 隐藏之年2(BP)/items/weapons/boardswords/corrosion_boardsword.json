@@ -3,7 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:corrosion_boardsword",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:cooldown": {
@@ -11,14 +14,10 @@
         "duration": 10
       },
       "minecraft:hover_text_color": "yellow",
-      "minecraft:on_use": {},
       "minecraft:display_name": {
         "value": "hy.item.corrosion_boardsword"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 300
       },
@@ -26,10 +25,6 @@
       "minecraft:glint": true,
       "minecraft:digger": {
         "use_efficiency": true,
-        "on_dig": {
-          "event": "hy.on_break_block",
-          "target": "self"
-        },
         "destroy_speeds": [
           {
             "block": "web",
@@ -98,9 +93,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.exposed_copper_sword"
-      },
+      "minecraft:icon": "hy.exposed_copper_sword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -114,12 +107,15 @@
           }
         ]
       },
-      
-      "tag:hy:custom_weapons": {},
-      "tag:hy:magic_explode": {},
-      "tag:hy:corrosion_weapon": {},
-      "tag:minecraft:is_sword": {},
-      "tag:minecraft:is_tool": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool",
+          "hy:magic_explode",
+          "minecraft:is_sword",
+          "hy:corrosion_weapon"
+        ]
+      }
     }
   }
 }

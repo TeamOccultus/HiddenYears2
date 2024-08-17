@@ -3,22 +3,21 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:gold_bone",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:cooldown": {
         "category": "hy.magic_explode",
         "duration": 10
       },
-      "minecraft:on_use": {},
       "minecraft:hover_text_color": "yellow",
       "minecraft:display_name": {
         "value": "hy.item.gold_bone"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 80
       },
@@ -29,9 +28,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.gold_bone"
-      },
+      "minecraft:icon": "hy.gold_bone",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -45,12 +42,15 @@
           }
         ]
       },
-      
-      "tag:hy:custom_weapons": {},
-      "tag:hy:magic_explode": {},
-      "tag:minecraft:is_tool": {},
-      "tag:hy:bone_materials": {},
-      "tag:hy:bone_swords": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool",
+          "hy:magic_explode",
+          "hy:bone_materials",
+          "hy:bone_swords"
+        ]
+      }
     }
   }
 }

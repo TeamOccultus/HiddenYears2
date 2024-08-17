@@ -3,16 +3,16 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:end_metal_dagger",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.end_metal_dagger"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 20
       },
@@ -67,9 +67,7 @@
         ]
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.end_metal_dagger"
-      },
+      "minecraft:icon": "hy.end_metal_dagger",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -83,9 +81,12 @@
           }
         ]
       },
-      
-      "tag:minecraft:is_tool": {},
-      "tag:hy:custom_weapons": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool"
+        ]
+      }
     }
   }
 }

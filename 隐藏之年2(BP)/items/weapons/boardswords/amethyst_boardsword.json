@@ -3,22 +3,21 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:amethyst_boardsword",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:cooldown": {
         "category": "hy.magic_explode",
         "duration": 10
       },
-      "minecraft:on_use": {},
       "minecraft:hover_text_color": "yellow",
       "minecraft:display_name": {
         "value": "hy.item.amethyst_boardsword"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 200
       },
@@ -94,9 +93,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.amethyst_boardsword"
-      },
+      "minecraft:icon": "hy.amethyst_boardsword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -110,11 +107,14 @@
           }
         ]
       },
-      
-      "tag:hy:custom_weapons": {},
-      "tag:hy:magic_explode": {},
-      "tag:minecraft:is_sword": {},
-      "tag:minecraft:is_tool": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool",
+          "hy:magic_explode",
+          "minecraft:is_sword"
+        ]
+      }
     }
   }
 }
