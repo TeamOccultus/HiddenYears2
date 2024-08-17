@@ -1,6 +1,6 @@
 {
   "name": "hy2",
-  "version": "2.3.0",
+  "version": "2.3.1",
   "description": "A Minecraft addon",
   "scripts": {
     "build": "esbuild src/index.ts --bundle --format=esm --external:@minecraft/server --external:@minecraft/server-ui --minify-syntax \"--outfile=./隐藏之年2(BP)/scripts/index.js\"",
