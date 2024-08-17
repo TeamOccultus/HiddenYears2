@@ -3,29 +3,17 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:story_book",
-      "category": "equipment"
+      "menu_category": {
+        "category": "equipment"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.story_book"
-      },
+      "minecraft:icon": "hy.story_book",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.item.story_book"
       },
-      "minecraft:creative_category": {
-        "category": "equipment"
-      },
-      "minecraft:on_use": {
-        "on_use": {
-          "event": "hy.on_use",
-          "target": "self"
-        }
-      },
       "minecraft:hover_text_color": "light_purple"
-    },
-    "events": {
-      "hy.on_use": {}
     }
   }
 }

@@ -3,12 +3,12 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:ruby_runes",
-      "category": "equipment"
+      "menu_category": {
+        "category": "equipment"
+      }
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.ruby_runes"
-      },
+      "minecraft:icon": "hy.ruby_runes",
       "minecraft:durability": {
         "max_durability": 1
       },
@@ -16,12 +16,12 @@
       "minecraft:display_name": {
         "value": "hy.item.ruby_runes"
       },
-      "minecraft:creative_category": {
-        "category": "equipment"
-      },
-      "minecraft:on_use": {},
       "minecraft:hover_text_color": "light_purple",
-      "tag:hy:single_use": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:single_use"
+        ]
+      }
     }
   }
 }

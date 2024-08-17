@@ -9,13 +9,8 @@
       "minecraft:display_name": {
         "value": "hy.item.disc_fragment.chirp"
       },
-      "minecraft:icon": {
-        "texture": "hy.disc_fragment"
-      },
-      "minecraft:hover_text_color": "yellow",
-      "minecraft:creative_category": {
-        "parent": "items"
-      }
+      "minecraft:icon": "hy.disc_fragment",
+      "minecraft:hover_text_color": "yellow"
     }
   }
 }

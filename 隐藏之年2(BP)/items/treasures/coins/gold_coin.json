@@ -3,18 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:gold_coin",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.gold_coin"
       },
-      "minecraft:icon": {
-        "texture": "hy.gold_coin"
-      },
-      "minecraft:creative_category": {
-        "parent": "items"
-      }
+      "minecraft:icon": "hy.gold_coin"
     }
   }
 }

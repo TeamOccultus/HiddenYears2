@@ -3,12 +3,12 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:golden_badge",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment"
+      } 
     },
     "components": {
-      "minecraft:icon": {
-        "texture": "hy.golden_badge"
-      },
+      "minecraft:icon": "hy.golden_badge",
       "minecraft:durability": {
         "max_durability": 3
       },
@@ -16,16 +16,16 @@
       "minecraft:display_name": {
         "value": "hy.item.golden_badge"
       },
-      "minecraft:creative_category": {
-        "category": "equipment"
-      },
       "minecraft:cooldown": {
         "category": "hy.badge_cooldown",
         "duration": 100
       },
-      "minecraft:on_use": {},
       "minecraft:hover_text_color": "light_purple",
-      "tag:hy:single_use": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:single_use"
+        ]
+      }
     }
   }
 }

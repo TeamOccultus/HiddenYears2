@@ -3,18 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:stack_of_diamond_coin",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.stack_of_diamond_coin"
       },
-      "minecraft:icon": {
-        "texture": "hy.stack_of_diamond_coin"
-      },
-      "minecraft:creative_category": {
-        "parent": "items"
-      }
+      "minecraft:icon": "hy.stack_of_diamond_coin"
     }
   }
 }

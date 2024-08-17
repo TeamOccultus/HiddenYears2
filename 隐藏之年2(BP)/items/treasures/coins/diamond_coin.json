@@ -3,18 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:diamond_coin",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.diamond_coin"
       },
-      "minecraft:icon": {
-        "texture": "hy.diamond_coin"
-      },
-      "minecraft:creative_category": {
-        "parent": "items"
-      }
+      "minecraft:icon": "hy.diamond_coin"
     }
   }
 }

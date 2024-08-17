@@ -3,18 +3,15 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_coin",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.copper_coin"
       },
-      "minecraft:icon": {
-        "texture": "hy.copper_coin"
-      },
-      "minecraft:creative_category": {
-        "parent": "items"
-      }
+      "minecraft:icon": "hy.copper_coin"
     }
   }
 }
