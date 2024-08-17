@@ -195,14 +195,6 @@
     "sound": "stone",
     "textures": "stone"
   },
-  "hy:flash_copper_ore": {
-    "sound": "stone",
-    "textures": "hy.flash_copper_ore"
-  },
-  "hy:deepslate_flash_copper_ore": {
-    "sound": "deepslate",
-    "textures": "hy.deepslate_flash_copper_ore"
-  },
   "hy:chocolate_block": {
     "sound": "metal",
     "textures": "hy.chocolate_block"
