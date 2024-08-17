@@ -3,23 +3,22 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:weathered_copper_knife",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.weathered_copper_knife"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 60
       },
       "minecraft:damage": 3,
       "minecraft:digger": {
         "use_efficiency": true,
-
         "destroy_speeds": [
           {
             "block": "web",
@@ -80,9 +79,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.weathered_copper_knife"
-      },
+      "minecraft:icon": "hy.weathered_copper_knife",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -101,12 +98,15 @@
           }
         ]
       },
-      
-      "tag:minecraft:is_tool": {},
-      "tag:hy:is_knife": {},
-      "tag:hy:custom_weapons": {},
-      "tag:hy:weathered_item": {},
-      "tag:hy:corrosive_tools": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "hy:is_knife",
+          "minecraft:is_tool",
+          "hy:corrosive_tools",
+          "hy:weathered_item"
+        ]
+      }
     }
   }
 }
