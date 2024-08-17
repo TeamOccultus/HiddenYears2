@@ -3,17 +3,16 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_stick",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.sword"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.copper_stick"
       },
       "minecraft:can_destroy_in_creative": false,
-      "minecraft:creative_category": {
-        "category": "equipment",
-        "parent": "itemGroup.name.sword"
-      },
       "minecraft:durability": {
         "max_durability": 25
       },
@@ -23,14 +22,15 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": {
-        "texture": "hy.copper_stick"
-      },
+      "minecraft:icon": "hy.copper_stick",
       "minecraft:max_stack_size": 1,
-      
-      "tag:hy:is_handle": {},
-      "tag:hy:custom_weapons": {},
-      "tag:hy:impart": {}
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "hy:is_handle",
+          "hy:impart"
+        ]
+      }
     }
   }
 }

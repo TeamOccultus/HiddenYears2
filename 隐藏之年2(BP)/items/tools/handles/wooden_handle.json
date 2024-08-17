@@ -3,20 +3,19 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:wooden_handle",
-      "category": "items"
+      "menu_category": {
+        "category": "items"
+      }
     },
     "components": {
       "minecraft:display_name": {
         "value": "hy.item.wooden_handle"
       },
-      "minecraft:icon": {
-        "texture": "hy.wooden_handle"
-      },
+      "minecraft:icon": "hy.wooden_handle",
       "minecraft:damage": 2,
-      "minecraft:creative_category": {
-        "category": "items"
-      },
-      "tag:hy:is_handle": {}
+      "minecraft:tags": {
+        "tags": ["hy:is_handle"]
+      }
     }
   }
 }
