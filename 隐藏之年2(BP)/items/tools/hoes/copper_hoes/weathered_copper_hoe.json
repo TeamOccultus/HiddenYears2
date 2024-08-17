@@ -3,7 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:weathered_copper_hoe",
-      "category": "equipment"
+      "menu_category":{
+        "category": "equipment",
+        "group": "itemGroup.name.hoe"
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -36,12 +39,7 @@
           }
         ]
       },
-      "minecraft:icon": {
-        "texture": "hy.weathered_copper_hoe"
-      },
-      "minecraft:creative_category": {
-        "parent": "itemGroup.name.hoe"
-      },
+      "minecraft:icon": "hy.weathered_copper_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
@@ -120,20 +118,14 @@
         ]
       },
       
-      "tag:minecraft:is_hoe": {},
-      "tag:hy:custom_tools": {},
-      "tag:hy:weathered_item": {},
-      "tag:hy:corrosive_tools": {}
-    },
-    "events": {
-      "on_tool_used": {
-        "damage": {
-          "type": "magic",
-          "amount": 1
-        },
-        "run_command": {
-          "command": ["playsound step.gravel @a ~ ~ ~ 1.0 1.0"]
-        }
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_hoe",
+          "hy:custom_hoe",
+          "hy:weathered_item",
+          "hy:corrosive_tools"
+        ]
       }
     }
   }
