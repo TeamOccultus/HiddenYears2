@@ -1006,6 +1006,12 @@
     },
     "hy.scorched_meat": {
       "textures": "textures/items/scorched_meat"
+    },
+    "hy.sand_bone": {
+      "textures": "textures/items/sand_bone"
+    },
+    "hy.sand_fish": {
+      "textures": "textures/items/sand_fish"
     }
   }
 }
