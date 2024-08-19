@@ -1001,8 +1001,11 @@
     "hy.flash_metal_leggings": {
       "textures": "textures/items/flash_metal_leggings"
     },
-    "hy.flash_metal_boots": {
-      "textures": "textures/items/flash_metal_boots"
+    "hy.sand_meat": {
+      "textures": "textures/items/sand_meat"
+    },
+    "hy.scorched_meat": {
+      "textures": "textures/items/scorched_meat"
     }
   }
 }

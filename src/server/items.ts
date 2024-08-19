@@ -377,6 +377,9 @@ export class Item {
         case "hy:bark":
           PLAYER.sendMessage([{ translate: "hy.message.eat_bark" }]);
           break;
+        case "hy:sand_meat":
+          PLAYER.addEffect("hunger", 400);
+          break;
         default:
           break;
       }
