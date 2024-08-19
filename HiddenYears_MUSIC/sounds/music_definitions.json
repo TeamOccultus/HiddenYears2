@@ -1,0 +1,7 @@
+{
+  "rubyboss": {
+    "event_name" : "music.boss.ruby",
+    "min_delay": 600,
+    "max_delay": 1200
+  }
+}

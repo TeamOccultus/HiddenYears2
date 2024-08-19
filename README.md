@@ -20,6 +20,16 @@
 [![部分工具一览](https://s21.ax1x.com/2024/08/13/pApzY3n.png)](https://imgse.com/i/pApzY3n)
 许多奇妙的工具，让你的冒险之旅增添几分不一样的乐趣！
 
+## 自动打包
+本模组可通过Node.js进行自动打包，在项目根目录运行以下命令：
+
+~~~
+yarn
+yarn build
+~~~
+
+即可在`output`文件夹下发现生成的`隐藏之年.mcaddon`和`隐藏之年音乐包.mcpack`
+
 ## 快速上手
 ### 下载
 - [基岩版下载](https://pan.huang1111.cn/s/N6m8H1)
