@@ -102,11 +102,11 @@
       "minecraft:type_family": {
         "family": ["husk", "zombie", "undead", "monster", "mob"]
       },
-      "minecraft:loot": { "table": "loot_tables/entities/zombie.json" },
+      "minecraft:loot": { "table": "loot_tables/entities/husk.json" },
       "minecraft:equipment": {
         "table": "loot_tables/entities/zombie_equipment.json"
       },
-      "minecraft:health": { "value": { "range_min": 18, "range_max": 25 } },
+      "minecraft:health": { "value": { "range_min": 25, "range_max": 30 } },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
@@ -122,7 +122,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 3,
+        "damage": 1,
         "effect_name": "hunger",
         "effect_duration": 30
       },
