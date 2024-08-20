@@ -1012,6 +1012,12 @@
     },
     "hy.sand_fish": {
       "textures": "textures/items/sand_fish"
+    },
+    "hy.shattered_sand_cudgel": {
+      "textures": "textures/items/shattered_sand_cudgel"
+    },
+    "hy.shattered_sand_sickle": {
+      "textures": "textures/items/shattered_sand_sickle"
     }
   }
 }

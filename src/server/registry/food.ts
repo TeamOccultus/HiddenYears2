@@ -206,6 +206,15 @@ const SAND_MEAT = new FoodItem("hy:sand_meat", [
   { effectType: "hunger", duration: 400 },
 ]);
 
+const COOLING_POTION = new FoodItem("hy:cooling_potion", [], (event) => {
+  const PLAYER = event.source;
+  PLAYER.removeTag("hy:dehydration");
+  PLAYER.removeTag("hy:drought");
+  PLAYER.onScreenDisplay.setActionBar({
+    translate: "hy.message.cooling_potion",
+  });
+});
+
 export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
     const [PLAYER, ITEM] = [event.source, event.itemStack];
@@ -255,4 +264,5 @@ export function registryFood() {
   Register.foodRegistry(FUEL_METAL_STICK);
   Register.foodRegistry(BARK);
   Register.foodRegistry(SAND_MEAT);
+  Register.foodRegistry(COOLING_POTION);
 }

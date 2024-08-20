@@ -1,6 +1,6 @@
 import { ItemStack, system, world } from "@minecraft/server";
 import { initializeMod, replaceItemStack } from "lazuli-mc";
-import { bleedEffectMonitor } from "../core/effects";
+import { bleedEffectMonitor, dehydrationEffectMonitor, droughtEffectMonitor } from "../core/effects";
 
 export class System {
   /**
@@ -28,6 +28,8 @@ export class System {
     }, 18000);
     system.runInterval(() => {
       bleedEffectMonitor();
+      droughtEffectMonitor()
+      dehydrationEffectMonitor();
     }, 20);
   }
   /**

@@ -30,6 +30,38 @@ export class Entity {
       if (ATTACKER.typeId === "hy:king_of_ruby" && TARGET instanceof Player) {
         TARGET.addExperience(-15);
       }
+      if (ITEM?.typeId === "hy:shattered_sand_cudgel") {
+        if (TARGET instanceof Player) {
+          TARGET.onScreenDisplay.setActionBar({
+            translate: "hy.message.drought",
+          });
+          world.afterEvents.playerSpawn.subscribe((event) => {
+            if (event.player.id === TARGET.id) {
+              TARGET.removeTag("hy:drought");
+            }
+          });
+        }
+        TARGET.addTag("hy:drought");
+        system.runTimeout(() => {
+          if(TARGET.isValid()) TARGET.removeTag("hy:drought");
+        }, 300);
+      }
+      if (ITEM?.typeId === "hy:shattered_sand_sickle") {
+        if (TARGET instanceof Player) {
+          TARGET.onScreenDisplay.setActionBar({
+            translate: "hy.message.dehydration",
+          });
+          world.afterEvents.playerSpawn.subscribe((event) => {
+            if (event.player.id === TARGET.id) {
+              TARGET.removeTag("hy:dehydration");
+            }
+          });
+        }
+        TARGET.addTag("hy:dehydration");
+        system.runTimeout(() => {
+          if(TARGET.isValid())TARGET.removeTag("hy:dehydration");
+        }, 400);
+      }
     });
   }
   /**
@@ -45,7 +77,7 @@ export class Entity {
         PLAYER.addTag("hy:get_quest_book");
       }
       if (!PLAYER.hasTag("hy:get_first_letter")) {
-        const LETTER= new ItemStack("hy:letter_0");
+        const LETTER = new ItemStack("hy:letter_0");
         giveItem(PLAYER, LETTER);
         PLAYER.addTag("hy:get_first_letter");
       }

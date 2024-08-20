@@ -344,6 +344,12 @@ export function registryItem() {
       }, 100);
     }
   });
+  world.afterEvents.itemCompleteUse.subscribe(event=>{
+    const [PLAYER, ITEM]= [event.source,event.itemStack];
+    if(ITEM.typeId==="potion"){
+      PLAYER.removeTag("hy:drought") 
+    }
+  })
   // 注册道具
   Register.propRegistry(BANDAGE);
   Register.propRegistry(MEDICINE_PACK);
