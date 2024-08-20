@@ -483,15 +483,15 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
-lazuli-api@1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/lazuli-api/-/lazuli-api-1.4.1.tgz#5db2206dd6a11ec17b0606024ef5a83d077c9d39"
-  integrity sha512-0hdMVp4a1hMmVXXt0YGTQ24YJAkQFjVlixWW5489OIyIfciYDIrFBmal/Oe++mDbpf25Cg655N34gYrWL6l2lg==
+lazuli-api@1.4.4:
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/lazuli-api/-/lazuli-api-1.4.4.tgz#4b190eb772291416e3901ec14e524cb64ff23c1a"
+  integrity sha512-Tu5fmh71W6If4n2AIPe9CVwM7605QW7Gjlcnc7p58b6mObB1NyvLVEtG8rRKuj+q2WRBMwkpG316dFp6Tau/pg==
   dependencies:
     "@minecraft/server" "1.14.0-beta.1.21.21-stable"
     "@minecraft/server-ui" "1.3.0-beta.1.21.21-stable"
     "@minecraft/vanilla-data" "1.21.20"
-    lazuli-data "1.0.1"
+    lazuli-data "1.0.2"
     lazuli-utils "1.1.1"
     typescript "5.4.5"
 
@@ -504,15 +504,24 @@ lazuli-data@1.0.1:
     "@minecraft/vanilla-data" "1.21.20"
     typescript "5.4.5"
 
-lazuli-mc@1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/lazuli-mc/-/lazuli-mc-1.8.1.tgz#0a50599f57f8400e5a23e646a678ff9a118c9210"
-  integrity sha512-uH+bsjyDoKrihdzagPHQFCT1HPuGTop7oDSBDi6LS/bk0MhQV1RUa+eJzZI7S6kSt4Db4m/+VLPRPTcLdw4iig==
+lazuli-data@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/lazuli-data/-/lazuli-data-1.0.2.tgz#f1edd0ce9e1c15d82014f0237a2589c1ac9e8d42"
+  integrity sha512-I9F3pNQ7Aj2LOeXe05QCtM0Op2xhf7zV2SWL9h/tuh6ZCAGm46yiZXAuLZOu78Sf/LBfWXtl58nyXCVK9TCkCA==
+  dependencies:
+    "@minecraft/server" "1.14.0-beta.1.21.20-stable"
+    "@minecraft/vanilla-data" "1.21.20"
+    typescript "5.4.5"
+
+lazuli-mc@1.8.4:
+  version "1.8.4"
+  resolved "https://registry.yarnpkg.com/lazuli-mc/-/lazuli-mc-1.8.4.tgz#563649b6b228ac6b9abd0dff719bd0bc42dac890"
+  integrity sha512-fn4HHF0q5ogTtqEQnz1QS9+7n0cZOkOFfAf9BfZW6YGSWLh65ywdrDv0Vj6YC/N0+1GCx+sHRmpE5XIRPfvFPg==
   dependencies:
     "@minecraft/server" "1.14.0-beta.1.21.20-stable"
     "@minecraft/server-ui" "1.3.0-beta.1.21.20-stable"
     "@minecraft/vanilla-data" "1.21.20"
-    lazuli-api "1.4.1"
+    lazuli-api "1.4.4"
     lazuli-data "1.0.1"
     lazuli-utils "1.1.1"
     typescript "5.4.5"

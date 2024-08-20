@@ -15,7 +15,7 @@
     "@minecraft/server-ui": "1.3.0-beta.1.21.20-stable",
     "@minecraft/vanilla-data": "1.21.20",
     "esbuild": "^0.23.0",
-    "lazuli-mc": "1.8.1",
+    "lazuli-mc": "1.8.4",
     "typescript": "^5.5.4"
   },
   "devDependencies": {

@@ -1,13 +1,11 @@
-import { world, Player, system } from "@minecraft/server";
-import { getEquipmentItem, randomInteger } from "lazuli-mc";
-import { HyRewardTypes } from "../data/data";
-import { rubyKingSkill } from "../core/entitySkills";
+import { world, Player, system, ItemStack } from "@minecraft/server";
+import { getEquipmentItem, giveItem, randomInteger } from "lazuli-mc";
 
 export class Entity {
   /**
    * 监听实体事件
    */
-  static eventsMonitor(): void {
+  static eventMonitor(): void {
     /** 实体击打实体时的事件 */
     world.afterEvents.entityHitEntity.subscribe((event) => {
       const [ATTACKER, TARGET, ITEM] = [
@@ -29,13 +27,8 @@ export class Entity {
         default:
           break;
       }
-      switch (ATTACKER.typeId) {
-        case "hy:king_of_ruby":
-          /** 红宝石之王攻击玩家时会剥夺玩家经验值 */
-          if (TARGET instanceof Player) TARGET.addExperience(-15);
-          break;
-        default:
-          break;
+      if (ATTACKER.typeId === "hy:king_of_ruby" && TARGET instanceof Player) {
+        TARGET.addExperience(-15);
       }
     });
   }
@@ -46,12 +39,14 @@ export class Entity {
     world.afterEvents.playerSpawn.subscribe((event) => {
       const PLAYER = event.player;
       if (!PLAYER.hasTag("hy:get_quest_book")) {
-        HyRewardTypes.questBook1st.keepOnDeath = true;
-        PLAYER.dimension.spawnItem(HyRewardTypes.questBook1st, PLAYER.location);
+        const QUEST_BOOK = new ItemStack("hy:quest_book");
+        QUEST_BOOK.keepOnDeath = true;
+        giveItem(PLAYER, QUEST_BOOK);
         PLAYER.addTag("hy:get_quest_book");
       }
       if (!PLAYER.hasTag("hy:get_first_letter")) {
-        PLAYER.dimension.spawnItem(HyRewardTypes.letter1st, PLAYER.location);
+        const LETTER= new ItemStack("hy:letter_0");
+        giveItem(PLAYER, LETTER);
         PLAYER.addTag("hy:get_first_letter");
       }
     });
@@ -64,31 +59,16 @@ export class Entity {
         const num1 = system.runTimeout(() => {
           ENTITY.remove();
         }, 600);
-        world.afterEvents.entityDie.subscribe(event=>{
-          if(event.deadEntity.id===ENTITY.id){
+        world.afterEvents.entityDie.subscribe((event) => {
+          if (event.deadEntity.id === ENTITY.id) {
             system.clearRun(num1);
           }
-        })
-        world.afterEvents.entityRemove.subscribe(event=>{
-          if(event.removedEntityId===ENTITY.id){
+        });
+        world.afterEvents.entityRemove.subscribe((event) => {
+          if (event.removedEntityId === ENTITY.id) {
             system.clearRun(num1);
           }
-        })
-      }
-    });
-  }
-  /**
-   * 注册实体技能
-   */
-  static skillRegister() {
-    world.afterEvents.entityLoad.subscribe((event) => {
-      if (event.entity.typeId === "hy:king_of_ruby") {
-        rubyKingSkill(event.entity);
-      }
-    });
-    world.afterEvents.entitySpawn.subscribe((event) => {
-      if (event.entity.typeId === "hy:king_of_ruby") {
-        rubyKingSkill(event.entity);
+        });
       }
     });
   }

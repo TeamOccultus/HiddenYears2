@@ -1,5 +1,5 @@
 import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod, LoggerManager, replaceItemStack } from "lazuli-mc";
+import { initializeMod, replaceItemStack } from "lazuli-mc";
 import { bleedEffectMonitor } from "../core/effects";
 
 export class System {
@@ -11,9 +11,6 @@ export class System {
       questNameSpace: "hy-q",
       watchdogDisabled: true,
     });
-  }
-  static startLogger() {
-    return LoggerManager.getLogger("hy:logger");
   }
   /**
    * 监听系统事件
@@ -29,19 +26,14 @@ export class System {
         );
       });
     }, 18000);
-  }
-  /**
-   * 注册每秒运行一次的事件
-   */
-  static secondEventRegister() {
     system.runInterval(() => {
       bleedEffectMonitor();
     }, 20);
   }
   /**
-   * 兼容性测试
+   * 进行向下兼容
    */
-  static compatibleTest() {
+  static backwardsCompatibility() {
     world.afterEvents.playerSpawn.subscribe((event) => {
       const PLAYER = event.player;
       replaceItemStack(

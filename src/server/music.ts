@@ -1,7 +1,0 @@
-export class Music {
-  /**
-   * 注册音乐
-   * @deprecated from 2.2.3
-   */
-  static register() {}
-}
