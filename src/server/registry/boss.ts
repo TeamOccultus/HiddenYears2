@@ -20,24 +20,24 @@ const SPAWN_GUARDIAN = new BossSkill("spawn_guardian", 500, 15, {
       });
     }
     boss?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: entity.location.x + 1,
-      y: entity.location.y,
-      z: entity.location.z,
+      x: boss.location.x + 1,
+      y: boss.location.y,
+      z: boss.location.z,
     });
     boss?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: entity.location.x - 1,
-      y: entity.location.y,
-      z: entity.location.z,
+      x: boss.location.x - 1,
+      y: boss.location.y,
+      z: boss.location.z,
     });
     boss?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: entity.location.x,
-      y: entity.location.y,
-      z: entity.location.z + 1,
+      x: boss.location.x,
+      y: boss.location.y,
+      z: boss.location.z + 1,
     });
     boss?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: entity.location.x,
-      y: entity.location.y,
-      z: entity.location.z - 1,
+      x: boss.location.x,
+      y: boss.location.y,
+      z: boss.location.z - 1,
     });
   },
 });
