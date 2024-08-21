@@ -14,8 +14,8 @@
         "default": "geometry.humanoid"
       },
       "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 12
+        "texture": "hy.spawn_egg",
+        "texture_index": 9
       },
       "scripts": {
         "pre_animation": [
