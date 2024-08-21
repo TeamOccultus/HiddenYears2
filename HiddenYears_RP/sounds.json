@@ -111,6 +111,16 @@
           "hurt": "mob.vex.hurt",
           "charge": "mob.vex.charge"
         }
+      },
+      "hy:rabbit_killer": {
+        "events": {
+          "ambient": "mob.rabbit.idle",
+          "death": "mob.rabbit.death",
+          "eat": "",
+          "hurt": "mob.rabbit.hurt"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 0.8
       }
     }
   }

@@ -806,7 +806,8 @@
         "textures/items/egg_gemstone_trader",
         "textures/items/egg_hidden_trader",
         "textures/items/egg_sprite",
-        "textures/items/egg_ferocious_sprite"
+        "textures/items/egg_ferocious_sprite",
+        "textures/items/egg_rabbit_killer"
       ]
     },
     "hy.imitation_diamond": {
