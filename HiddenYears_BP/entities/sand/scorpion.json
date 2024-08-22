@@ -1,0 +1,75 @@
+{
+  "format_version": "1.17.20",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hy:scorpion",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:nameable": {},
+      "minecraft:type_family": {
+        "family": ["scorpion", "monster", "mob"]
+      },
+      "minecraft:collision_box": { "width": 1.0, "height": 0.5 },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_walk": true
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:health": { "value": { "range_min": 25, "range_max": 35 } },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:loot": { "table": "loot_tables/entities/scorpion.json" },
+      "minecraft:despawn": { "despawn_from_distance": {} },
+      "minecraft:behavior.random_stroll": {
+        "priority": 7,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 8,
+        "look_distance": 6,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": { "priority": 9 },
+      "minecraft:behavior.hurt_by_target": { "priority": 1 },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.melee_attack": { "priority": 3 },
+        "minecraft:attack": {
+          "damage": 3,
+          "effect_duration": 8,
+          "effect_name": "poison"
+        },
+      "minecraft:conditional_bandwidth_optimization": {}
+    },
+    "events": {
+    }
+  }
+}
