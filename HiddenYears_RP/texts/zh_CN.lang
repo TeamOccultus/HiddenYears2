@@ -914,6 +914,8 @@ hy.item.corrosion_awl=腐蚀之锥
 hy.item.corrosion_sword=腐蚀之剑
 
 entity.husk.name=砂化僵尸
+entity.hy:sand_creeper.name=砂化苦力怕
+item.spawn_egg.entity.hy:sand_creeper.name=砂化苦力怕
 entity.hy:rabbit_killer.name=杀手兔
 item.spawn_egg.entity.hy:rabbit_killer.name=杀手兔刷怪蛋
 entity.hy:mummy.name=木乃伊
