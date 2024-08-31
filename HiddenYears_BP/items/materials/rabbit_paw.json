@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:rabbit_paw",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.rabbit_paw",
+      "minecraft:display_name": {
+        "value": "hy.item.rabbit_paw"
+      }
+    }
+  }
+}

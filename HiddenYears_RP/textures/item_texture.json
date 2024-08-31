@@ -1020,6 +1020,9 @@
     },
     "hy.shattered_sand_sickle": {
       "textures": "textures/items/shattered_sand_sickle"
+    },
+    "hy.rabbit_paw": {
+      "textures": "textures/items/rabbit_paw"
     }
   }
 }
