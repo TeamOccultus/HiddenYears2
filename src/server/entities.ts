@@ -30,7 +30,10 @@ export class Entity {
       if (ATTACKER.typeId === "hy:king_of_ruby" && TARGET instanceof Player) {
         TARGET.addExperience(-15);
       }
-      if (ITEM?.typeId === "hy:shattered_sand_cudgel") {
+      if (
+        ITEM?.typeId === "hy:shattered_sand_cudgel" &&
+        !TARGET.hasTag("hy:immune_desert_debuff")
+      ) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
             translate: "hy.message.drought",
@@ -43,10 +46,13 @@ export class Entity {
         }
         TARGET.addTag("hy:drought");
         system.runTimeout(() => {
-          if(TARGET.isValid()) TARGET.removeTag("hy:drought");
+          if (TARGET.isValid()) TARGET.removeTag("hy:drought");
         }, 300);
       }
-      if (ITEM?.typeId === "hy:shattered_sand_sickle") {
+      if (
+        ITEM?.typeId === "hy:shattered_sand_sickle" &&
+        !TARGET.hasTag("hy:immune_desert_debuff")
+      ) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
             translate: "hy.message.dehydration",
@@ -59,7 +65,7 @@ export class Entity {
         }
         TARGET.addTag("hy:dehydration");
         system.runTimeout(() => {
-          if(TARGET.isValid())TARGET.removeTag("hy:dehydration");
+          if (TARGET.isValid()) TARGET.removeTag("hy:dehydration");
         }, 400);
       }
     });

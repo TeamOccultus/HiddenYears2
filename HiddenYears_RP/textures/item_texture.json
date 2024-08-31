@@ -1026,6 +1026,9 @@
     },
     "hy.paw_dust": {
       "textures": "textures/items/paw_dust"
+    },
+    "hy.rain_god_blessing": {
+      "textures": "textures/items/rain_god_blessing"
     }
   }
 }

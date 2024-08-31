@@ -10,6 +10,7 @@ import {
   damageEntities,
   DurabilityLimitedProp,
   giveItem,
+  NumberLimitedProp,
   Prop,
   randomInteger,
   Register,
@@ -302,6 +303,24 @@ const RUBY_BOARDSWORD = new DurabilityLimitedProp(
   }
 );
 
+const RAIN_GOD_BLESSING = new Prop("hy:rain_god_blessing", (event) => {
+  const PLAYER = event.source;
+  PLAYER.removeTag("hy:drought");
+  PLAYER.removeTag("hy:dehydration");
+  PLAYER.addTag("hy:immune_desert_debuff");
+  PLAYER.onScreenDisplay.setActionBar({
+    translate: "hy.message.immune_desert_debuff.get",
+  });
+  system.runTimeout(() => {
+    if (PLAYER.isValid()) {
+      PLAYER.removeTag("hy:immune_desert_debuff");
+      PLAYER.onScreenDisplay.setActionBar({
+        translate: "hy.message.immune_desert_debuff.remove",
+      });
+    }
+  }, 900);
+});
+
 /**
  * 注册道具
  */
@@ -344,12 +363,12 @@ export function registryItem() {
       }, 100);
     }
   });
-  world.afterEvents.itemCompleteUse.subscribe(event=>{
-    const [PLAYER, ITEM]= [event.source,event.itemStack];
-    if(ITEM.typeId==="potion"){
-      PLAYER.removeTag("hy:drought") 
+  world.afterEvents.itemCompleteUse.subscribe((event) => {
+    const [PLAYER, ITEM] = [event.source, event.itemStack];
+    if (ITEM.typeId === "potion") {
+      PLAYER.removeTag("hy:drought");
     }
-  })
+  });
   // 注册道具
   Register.propRegistry(BANDAGE);
   Register.propRegistry(MEDICINE_PACK);
