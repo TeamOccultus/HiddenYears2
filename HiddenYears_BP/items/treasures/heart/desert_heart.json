@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:desert_heart",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.desert_heart",
+      "minecraft:display_name": {
+        "value": "hy.item.desert_heart"
+      },
+      "minecraft:hover_text_color": "light_purple"
+    }
+  }
+}

@@ -1032,6 +1032,9 @@
     },
     "hy.cooling_potion": {
       "textures": "textures/items/cooling_potion"
+    },
+    "hy.desert_heart": {
+      "textures": "textures/items/desert_heart"
     }
   }
 }
