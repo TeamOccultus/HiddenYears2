@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:drift_sand_key",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.rain_god_blessing",
+      "minecraft:max_stack_size": 1,
+      "minecraft:display_name": {
+        "value": "hy.item.rain_god_blessing"
+      },
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

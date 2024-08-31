@@ -1038,6 +1038,9 @@
     },
     "hy.pharaoh_heart": {
       "textures": "textures/items/pharaoh_heart"
+    },
+    "hy.drift_sand_key": {
+      "textures": "textures/items/drift_sand_key"
     }
   }
 }
