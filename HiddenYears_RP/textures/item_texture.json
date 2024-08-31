@@ -1035,6 +1035,10 @@
     },
     "hy.desert_heart": {
       "textures": "textures/items/desert_heart"
+    },
+    "hy.pharaoh_heart": {
+      "textures": "textures/items/pharaoh_heart"
     }
   }
 }
+

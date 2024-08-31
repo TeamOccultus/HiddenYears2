@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:pharaoh_heart"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "XAX", "OOO"],
+    "key": {
+      "X": {
+        "item": "diamond"
+      },
+      "A": {
+        "item": "hy:desert_heart"
+      },
+      "O": {
+        "item": "gold_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "diamond"
+      },
+      {
+        "item": "hy:desert_heart"
+      },
+      {
+        "item": "gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "hy:pharaoh_heart"
+    }
+  }
+}
