@@ -1023,6 +1023,9 @@
     },
     "hy.rabbit_paw": {
       "textures": "textures/items/rabbit_paw"
+    },
+    "hy.paw_dust": {
+      "textures": "textures/items/paw_dust"
     }
   }
 }

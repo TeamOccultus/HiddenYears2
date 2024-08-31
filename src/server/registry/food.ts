@@ -215,6 +215,10 @@ const COOLING_POTION = new FoodItem("hy:cooling_potion", [], (event) => {
   });
 });
 
+const PAW_DUST = new FoodItem("hy:paw_dust", [
+  { effectType: "strength", duration: 200, amplifier: 4 },
+]);
+
 export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
     const [PLAYER, ITEM] = [event.source, event.itemStack];
@@ -265,4 +269,5 @@ export function registryFood() {
   Register.foodRegistry(BARK);
   Register.foodRegistry(SAND_MEAT);
   Register.foodRegistry(COOLING_POTION);
+  Register.foodRegistry(PAW_DUST);
 }
