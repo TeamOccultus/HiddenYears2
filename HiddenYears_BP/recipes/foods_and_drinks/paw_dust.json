@@ -7,12 +7,12 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hy:rabit_paw"
+        "item": "hy:rabbit_paw"
       }
     ],
     "unlock": [
       {
-        "item": "hy:rabit_paw"
+        "item": "hy:rabbit_paw"
       }
     ],
     "result": {
