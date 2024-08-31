@@ -206,14 +206,18 @@ const SAND_MEAT = new FoodItem("hy:sand_meat", [
   { effectType: "hunger", duration: 400 },
 ]);
 
-const COOLING_POTION = new FoodItem("hy:cooling_potion", [], (event) => {
-  const PLAYER = event.source;
-  PLAYER.removeTag("hy:dehydration");
-  PLAYER.removeTag("hy:drought");
-  PLAYER.onScreenDisplay.setActionBar({
-    translate: "hy.message.cooling_potion",
-  });
-});
+const COOLING_POTION = new FoodItem(
+  "hy:cooling_potion",
+  [{ effectType: "fire_resistance", duration: 600 }],
+  (event) => {
+    const PLAYER = event.source;
+    PLAYER.removeTag("hy:dehydration");
+    PLAYER.removeTag("hy:drought");
+    PLAYER.onScreenDisplay.setActionBar({
+      translate: "hy.message.cooling_potion",
+    });
+  }
+);
 
 const PAW_DUST = new FoodItem("hy:paw_dust", [
   { effectType: "strength", duration: 200, amplifier: 4 },

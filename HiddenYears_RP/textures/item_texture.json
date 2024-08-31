@@ -1029,6 +1029,9 @@
     },
     "hy.rain_god_blessing": {
       "textures": "textures/items/rain_god_blessing"
+    },
+    "hy.cooling_potion": {
+      "textures": "textures/items/cooling_potion"
     }
   }
 }
