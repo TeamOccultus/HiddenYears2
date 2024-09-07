@@ -6,8 +6,8 @@
         { "condition": "killed_by_player" },
         {
           "condition": "random_chance_with_looting",
-          "chance": 0.2,
-          "looting_multiplier": 0.15
+          "chance": 0.15,
+          "looting_multiplier": 0.20
         }
       ],
       "entries": [
