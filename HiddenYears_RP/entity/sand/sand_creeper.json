@@ -8,7 +8,7 @@
         "charged": "charged_creeper"
       },
       "textures": {
-        "default": "textures/entity/creeper/sand_creeper",
+        "default": "textures/entity/sand_creeper",
         "charged": "textures/entity/creeper/creeper_armor"
       },
       "geometry": {
