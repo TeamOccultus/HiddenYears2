@@ -8,6 +8,7 @@ import { registryArticle } from "./server/registry/article";
 import { registryBoss } from "./server/registry/boss";
 import { registryTool } from "./server/registry/tool";
 import { registryItem } from "./server/registry/item";
+import "./server/registry/component";
 
 System.initialize();
 System.eventMonitor();
