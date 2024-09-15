@@ -2,10 +2,10 @@
   "format_version": "1.20.11",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "hy:pharaoh_heart"
+      "identifier": "hy:drift_sand_statue"
     },
     "tags": ["crafting_table"],
-    "pattern": ["XXX", "XAX", "OOO"],
+    "pattern": ["X#X", "XAX", "OOO"],
     "key": {
       "X": {
         "item": "diamond"
@@ -15,6 +15,9 @@
       },
       "O": {
         "item": "gold_ingot"
+      },
+      "#": {
+        "item": "hy:past_statue"
       }
     },
     "unlock": [
@@ -26,10 +29,13 @@
       },
       {
         "item": "gold_ingot"
+      },
+      {
+        "item": "hy:past_statue"
       }
     ],
     "result": {
-      "item": "hy:pharaoh_heart"
+      "item": "hy:drift_sand_statue"
     }
   }
 }

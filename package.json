@@ -6,7 +6,8 @@
     "build:main": "node build/main.mjs",
     "build:music": "node build/music.mjs",
     "build:script": "node build/script.mjs",
-    "build": "node build/build.mjs"
+    "build": "node build/build.mjs",
+    "test": "node build/test.mjs "
   },
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
@@ -20,6 +21,7 @@
   },
   "devDependencies": {
     "archiver": "^7.0.1",
+    "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
     "path": "^0.12.7",
     "prettier": "^3.3.3"

@@ -1041,6 +1041,12 @@
     },
     "hy.drift_sand_key": {
       "textures": "textures/items/drift_sand_key"
+    },
+    "hy.past_statue": {
+      "textures": "textures/items/past_statue"
+    },
+    "hy.drift_sand_statue": {
+      "textures": "textures/items/drift_sand_statue"
     }
   }
 }

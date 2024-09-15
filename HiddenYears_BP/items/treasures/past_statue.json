@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:past_statue",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.past_statue",
+      "minecraft:display_name": {
+        "value": "hy.item.past_statue"
+      },
+      "minecraft:hover_text_color": "aqua"
+    }
+  }
+}
