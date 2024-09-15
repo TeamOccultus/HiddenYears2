@@ -1,5 +1,5 @@
 {
-  "include": ["src/*"],
+  "include": ["src/*", "src/core/utils.ts"],
   "compilerOptions": {
     "target": "es2022",
     "module": "ES2022",

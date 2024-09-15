@@ -1047,6 +1047,9 @@
     },
     "hy.drift_sand_statue": {
       "textures": "textures/items/drift_sand_statue"
+    },
+    "hy.drift_sand_coronet": {
+      "textures": "textures/items/drift_sand_coronet"
     }
   }
 }

@@ -1,5 +1,6 @@
 import { world, Player, system, ItemStack } from "@minecraft/server";
 import { getEquipmentItem, giveItem, randomInteger } from "lazuli-mc";
+import { HyUtils } from "../core/utils";
 
 export class Entity {
   /**
@@ -30,9 +31,9 @@ export class Entity {
       if (ATTACKER.typeId === "hy:king_of_ruby" && TARGET instanceof Player) {
         TARGET.addExperience(-15);
       }
+      // 脱水与干旱
       if (
-        ITEM?.typeId === "hy:shattered_sand_cudgel" &&
-        !TARGET.hasTag("hy:immune_desert_debuff")
+        HyUtils.isAffectByDroughtDebuff(TARGET,ITEM)
       ) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
@@ -50,8 +51,7 @@ export class Entity {
         }, 300);
       }
       if (
-        ITEM?.typeId === "hy:shattered_sand_sickle" &&
-        !TARGET.hasTag("hy:immune_desert_debuff")
+        HyUtils.isAffectByDehydrationDebuff(TARGET,ITEM)
       ) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
