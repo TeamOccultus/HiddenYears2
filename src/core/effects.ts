@@ -78,3 +78,7 @@ export function dehydrationEffectMonitor(){
     });
   });
 }
+
+export class AffectEntity{
+  constructor(){}
+}

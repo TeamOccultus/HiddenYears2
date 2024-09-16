@@ -7,7 +7,7 @@ import {
   knifeSkill,
 } from "../../core/itemSkills";
 import { getEquipmentItem } from "lazuli-mc";
-import { rubyKingSkill } from "../../core/entitySkills";
+// import { rubyKingSkill } from "../../core/entitySkills";
 
 export function registryItemSkill() {
   world.afterEvents.entityHitEntity.subscribe((event) => {
@@ -58,7 +58,7 @@ export function registryItemSkill() {
   });
 }
 
-export function registryEntitySkill() {
+/*export function registryEntitySkill() {
   world.afterEvents.entityLoad.subscribe((event) => {
     if (event.entity.typeId === "hy:king_of_ruby") {
       rubyKingSkill(event.entity);
@@ -70,3 +70,4 @@ export function registryEntitySkill() {
     }
   });
 }
+*/

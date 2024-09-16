@@ -5,6 +5,18 @@ export class HyUtils {
   static isAffectByDroughtDebuff(target: Entity, item: ItemStack): boolean {
     if (
       item?.typeId === "hy:shattered_sand_cudgel" &&
+      !target.matches({families: ["immune_desert_debuff"]}) &&
+      !target.hasTag("hy:immune_desert_debuff")&&
+      !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+    ) {
+     return true;
+    } else {
+      return false;
+    }
+  }
+  static isAffectByBossDroughtDebuff(target: Entity): boolean {
+    if (
+      !target.matches({families: ["immune_desert_debuff"]}) &&
       !target.hasTag("hy:immune_desert_debuff")&&
       !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
     ) {
@@ -22,6 +34,7 @@ export class HyUtils {
   static isAffectByDehydrationDebuff(target: Entity, item: ItemStack): boolean {
     if (
       item?.typeId === "hy:shattered_sand_sickle" &&
+      !target.matches({families: ["immune_desert_debuff"]}) &&
       !target.hasTag("hy:immune_desert_debuff")&&
       !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
     ) {

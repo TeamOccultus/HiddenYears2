@@ -737,7 +737,6 @@ item.spawn_egg.entity.hy:sprite.name=精灵刷怪蛋
 entity.hy:ferocious_sprite.name=恶灵
 item.spawn_egg.entity.hy:ferocious_sprite.name=恶灵刷怪蛋
 hy.item.suffering_sword=痛苦之剑
-hy.item.sprite_history=精灵史摘要
 hy.item.soul_letter.sprite=凝魂信笺·风灵
 
 hy.collection.title=记忆文库
@@ -948,6 +947,7 @@ hy.item.drift_sand_key=流沙之钥
 hy.item.drift_sand_coronet=流沙之冠
 hy.item.past_statue=往昔的筑像
 hy.item.drift_sand_statue=流沙的筑像
+entity.hy:pharaohs_ghost.name=法老残影
 hy.message.drought=你感到十分干旱，快喝水来缓解症状！
 hy.message.dehydration=你感到身体在脱水，快喝冷却药水来缓解症状！
 hy.message.cooling_potion=干旱和脱水症状得到了缓解！

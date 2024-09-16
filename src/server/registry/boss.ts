@@ -1,5 +1,12 @@
-import { Player } from "@minecraft/server";
+import {
+  BlockVolume,
+  BlockVolumeBase,
+  Player,
+  system,
+  world,
+} from "@minecraft/server";
 import { Boss, BossSkill, Register } from "lazuli-mc";
+import { HyUtils } from "../../core/utils";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
   level: -9999,
@@ -62,6 +69,86 @@ const RUBY_KING = new Boss(
   { trackId: "music.boss.ruby", radius: 20 }
 );
 
-export function registryBoss(){
+const SUMMON_SAND_GUARDIAN = new BossSkill("summon_sand_guardian", 700, 15, {
+  event: (entity, boss) => {
+    boss?.dimension.spawnEntity("hy:drift_sand_guardian", {
+      x: boss.location.x,
+      y: boss.location.y,
+      z: boss.location.z + 1,
+    });
+    boss?.dimension.spawnEntity("hy:drift_sand_guardian", {
+      x: boss.location.x,
+      y: boss.location.y,
+      z: boss.location.z - 1,
+    });
+  },
+});
+
+const SUMMON_MUMMY = new BossSkill("summon_mummy", 1000, 15, {
+  event: (entity, boss) => {
+    boss?.dimension.spawnEntity("hy:mummy", {
+      x: boss.location.x + 1,
+      y: boss.location.y,
+      z: boss.location.z,
+    });
+    boss?.dimension.spawnEntity("hy:mummy", {
+      x: boss.location.x - 1,
+      y: boss.location.y,
+      z: boss.location.z,
+    });
+  },
+});
+
+const DROUGHT_DEBUFF = new BossSkill("summon_mummy", 1900, 25, {
+  event: (entity) => {
+    if (HyUtils.isAffectByBossDroughtDebuff(entity)) {
+      if (entity instanceof Player) {
+        entity.onScreenDisplay.setActionBar({
+          translate: "hy.message.drought",
+        });
+        world.afterEvents.playerSpawn.subscribe((event) => {
+          if (event.player.id === entity.id) {
+            entity.removeTag("hy:drought");
+          }
+        });
+      }
+      entity.addTag("hy:drought");
+      system.runTimeout(() => {
+        if (entity.isValid()) entity.removeTag("hy:drought");
+      }, 300);
+    }
+  },
+});
+
+const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 3000, 10, {
+  event: (entity) => {
+    if (entity instanceof Player) {
+      entity.dimension.fillBlocks(
+        new BlockVolume(
+          {
+            x: entity.location.x,
+            y: entity.location.y + 2,
+            z: entity.location.z,
+          },
+          {
+            x: entity.location.x,
+            y: entity.location.y + 4,
+            z: entity.location.z,
+          }
+        ),
+        "sand"
+      );
+    }
+  },
+});
+
+const PHARAOHS_GHOST = new Boss(
+  "hy:pharaohs_ghost",
+  [SUMMON_SAND_GUARDIAN, SUMMON_MUMMY, DROUGHT_DEBUFF, CAUGHT_IN_SAND],
+  { trackId: "music.boss.pharaohs_ghost", radius: 20 }
+);
+
+export function registryBoss() {
   Register.bossRegistry(RUBY_KING);
+  Register.bossRegistry(PHARAOHS_GHOST);
 }

@@ -5,7 +5,8 @@ import { Entity, Player, system, world } from "@minecraft/server";
  * @param entity
  * @since 2.2.3
  */
-export function rubyKingSkill(entity: Entity) {
+
+/*export function rubyKingSkill(entity: Entity) {
   entity.dimension
     .getEntities({
       location: entity.location,
@@ -110,3 +111,4 @@ export function rubyKingSkill(entity: Entity) {
     }
   });
 }
+*/
