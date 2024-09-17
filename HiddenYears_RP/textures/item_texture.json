@@ -1050,6 +1050,9 @@
     },
     "hy.drift_sand_coronet": {
       "textures": "textures/items/drift_sand_coronet"
+    },
+    "hy.article_collection": {
+      "textures": "textures/items/article_collection"
     }
   }
 }
