@@ -13,6 +13,7 @@
     "anchor_to": "center",
     "$progress_bar_collection": "boss_bars",
     "controls": [
+      { "ghost@boss.ghost": { "offset": [ 0, 6 ], "layer": 5 } },
       { "ruby@boss.ruby": { "offset": [ 0, 6 ], "layer": 5 } },
       { "progress_bar_for_collections@common.progress_bar_for_collections": { "layer": 1,"offset": [ 0, 16 ] } },
      // 名称
