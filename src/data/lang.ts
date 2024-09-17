@@ -139,7 +139,15 @@ export const HyLetterBody: RawMessage[] = [
     ],
   },
   {
-    rawtext: [{ translate: "article.7.body0" }],
+    rawtext: [
+      { translate: "article.7.body0" },
+      { text: "\n" },
+      { translate: "article.7.body1" },
+      { text: "\n" },
+      { translate: "article.7.body2" },
+      { text: "\n" },
+      { translate: "article.7.body3" },
+    ],
   },
   {
     rawtext: [{ translate: "article.8.body0" }],
@@ -336,7 +344,7 @@ export const HiddenStoryBody: RawMessage[] = [
       { text: "\n" },
       { translate: "story.hs.section2.body9" },
       { text: "\n" },
-    ]
+    ],
   },
   {
     rawtext: [
@@ -380,6 +388,6 @@ export const HiddenStoryBody: RawMessage[] = [
       { text: "\n" },
       { translate: "story.hs.section3.body19" },
       { text: "\n" },
-    ]
-  }
+    ],
+  },
 ];
