@@ -1431,6 +1431,57 @@ export const LETTER_8 = new Quest(
   }
 );
 
+export const LETTER_9 = new Quest(
+  "letter_9",
+  { translate: "hy.quest.letter_9.title" },
+  { translate: "hy.quest.letter_9.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_9"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 5),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+export const LETTER_10 = new Quest(
+  "letter_10",
+  { translate: "hy.quest.letter_10.title" },
+  { translate: "hy.quest.letter_10.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_10"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 5),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+
 export const LETTER_11 = new Quest(
   "letter_11",
   { translate: "hy.quest.readings3.title" },
