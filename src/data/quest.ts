@@ -1380,6 +1380,56 @@ export const LETTER_11 = new Quest(
   }
 );
 
+export const LETTER_12 = new Quest(
+  "letter_12",
+  { translate: "hy.quest.letter_12.title" },
+  { translate: "hy.quest.letter_12.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_12"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 4),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+export const LETTER_13 = new Quest(
+  "letter_13",
+  { translate: "hy.quest.letter_13.title" },
+  { translate: "hy.quest.letter_13.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_13"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 7),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
 export const METAL_STAR = new Quest(
   "metal_star",
   { translate: "hy.quest.metal_star.title" },

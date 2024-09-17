@@ -111,9 +111,11 @@ const LETTER_0 = new QuestBook(
       quests.LETTER_4,
       quests.LETTER_5,
       quests.LETTER_11,
+      quests.LETTER_12,
       quests.LETTER_2,
       quests.LETTER_3,
       quests.LETTER_1,
+      quests.LETTER_13,
     ],
   }
 );

@@ -79,6 +79,18 @@ const LETTER_11 = new Article(
   HyLetterBody[11],
   "textures/items/lost_letter"
 );
+const LETTER_12 = new Article(
+  `hy:letter_12`,
+  HyLetterTitle[12],
+  HyLetterBody[12],
+  "textures/items/lost_letter"
+);
+const LETTER_13 = new Article(
+  `hy:letter_13`,
+  HyLetterTitle[13],
+  HyLetterBody[13],
+  "textures/items/lost_letter"
+);
 const HIDDEN_STORIES = new ChapterArticle(
   "hy:story_book",
   { translate: "hy.item.story_book" },
@@ -120,6 +132,8 @@ const COLLECTION = new ArticleCollection(
     LETTER_9,
     LETTER_10,
     LETTER_11,
+    LETTER_12,
+    LETTER_13,
   ]
 );
 
@@ -142,6 +156,7 @@ export function registryArticle() {
   Register.articleRegistry(LETTER_9);
   Register.articleRegistry(LETTER_10);
   Register.articleRegistry(LETTER_11);
-  Register.articleRegistry(LETTER_1);
+  Register.articleRegistry(LETTER_12);
+  Register.articleRegistry(LETTER_13);
   Register.articleRegistry(COLLECTION);
 }
