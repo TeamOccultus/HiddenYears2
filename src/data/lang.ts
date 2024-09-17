@@ -50,6 +50,8 @@ export const HyLetterBody: RawMessage[] = [
   },
   {
     rawtext: [
+      { translate: "article.2.begin" },
+      { text: "\n" },
       { translate: "article.2.body0" },
       { text: "\n" },
       { translate: "article.2.body1" },
@@ -67,8 +69,6 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.2.body7" },
       { text: "\n" },
       { translate: "article.2.body8" },
-      { text: "\n" },
-      { translate: "article.2.end" },
     ],
   },
   {
