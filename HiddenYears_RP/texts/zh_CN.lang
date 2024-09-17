@@ -511,6 +511,7 @@ gui.check=检查并提交
 
 hy.message.no_exp=你没有足够的经验来进行§b「法术爆发」§r
 
+
 hy.item.raw_flash_copper_ingot=粗闪铜锭
 hy.item.raw_flash_metal_ingot=粗闪金锭
 hy.item.raw_steel_ingot=粗钢锭
@@ -520,13 +521,6 @@ hy.item.quest_book.1=已经弃用的主线任务书
 
 hy.quest.title1=隐藏之年²主线任务
 hy.quest.body1=书页间跃动的不仅仅是文字，还有一路上的冒险之旅
-
-hy.quest.readings1.title=§d[书海无涯] §r故事的起点
-hy.quest.readings2.title=§d[书海无涯] §r千里之行始于足下
-hy.quest.readings3.title=§d[书海无涯] §r大历史学家
-hy.quest.readings1.body=获得隐藏的故事
-hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
-hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
 
 hy.quest.copper_apple.title=重金属超标
 hy.quest.metal_star.title=半吊子引雷士
@@ -760,6 +754,16 @@ quest.tips=§4特殊提示§r：
 article.nothing.title=无解锁文章
 article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
 
+hy.quest.story_book.title=§d[书海无涯] §r故事的起点
+hy.quest.readings2.title=§d[书海无涯] §r千里之行始于足下
+hy.quest.readings3.title=§d[书海无涯] §r大历史学家
+hy.quest.letter_1.title=§d[书海无涯] §r染上鲜血的宝石
+hy.quest.story_book.body=获得隐藏的故事
+hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
+hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
+hy.quest.letter_1.body=击败红宝石之王，获得散落的信纸·漼血的刚玉
+hy.quest.story_book.tips=完成序章任务可以领取该阅读物
+
 article.0.title=千里之行与脚下之路
 article.1.title=淬血的刚玉
 article.2.title=地底死城
@@ -777,11 +781,11 @@ article.0.body0=过往繁荣的时代正在逝去，昔日欢笑的我们也将�
 article.0.body1=而在这个孤单的世界中，恐怕唯一的智慧生物就是你。可惜的是，我无法为你详尽的解释究竟发生了什么——你现在只需知道，§l你是「异变」中的幸存者，被我们派到这里开拓新世界。§r
 article.0.body2=我们的故国已经覆灭，无数风雨使坚石也作尘沙，你本该在温室中生长，却不得不在风雨中前行。此时此刻，广阔的天地任你探索；过去未来，历史将由你书写。
 article.0.body3=「你好，世界」
-article.1.body0=人类迁往主世界后不到百年，分化出了「灾厄之族」。而其中一名无名术士痴迷于传说中名为「经验」的黄绿色小球……
-article.1.body1=春去秋来，他有一天在矿洞中发现了一种洁白的矿石，他不自觉的把手放在石上，倏忽间皮肉绽开，鲜血撒在了石头那光洁的表面上
-article.1.body2=——「经验」的力量也顿时涌入他的身体，他原本破损的铁剑瞬间变成了充盈着「经验」与力量的「红宝石阔剑」，他可以自如的运用「经验」的力量召唤守卫、控制怪物，可与此同时他自己的大脑也在逐渐被经验的力量所侵蚀……被侵蚀的他就此离开了灾厄一族，运用经验的力量积累资源、开掘地牢。
-article.1.body3=后来他彻底坠入深渊，在理智尚存的最后一刻自我封印在了「灾厄谜袋」之中，等待有能力的冒险者的到来……而据说「月蚀纪」后直到现在冒险家们探索世界、挖掘矿石获得的经验就是他力量的体现……
-article.1.end=此时，距离那场毁灭世界的「太古之战」仅仅四百年。
+article.1.body0=那不死一族在太古的鏖战后，随人类迁到主世界，分化出了被后世称之为「灾厄」的种族。
+article.1.body1=在无数次日升月落之前，一位灾厄族少年曾在洞中徘徊——他痴迷于力量，可上天却不幸让他拥有了一副羸弱的躯壳。
+article.1.body2=忽而炫目的白光闪过，一块洁白的矿石躺在他身前，把手放在其上，§l倏忽间皮肉绽开，鲜血撒在了那无瑕的石头上§r。从此，灾厄一族再无这名术士少年，而世界上多了一名丧失神智的魔物统领者。
+article.1.body3=终于，一日天雷如雨般落下，于夕阳之下，漫漫长路走到了尽头，不知他于生命的终点是在埋怨魔物下属的无能，亦或是在回忆多年前那个血淋淋的夜晚？
+article.1.end=可他带着仇怨的灵魂却始终不散，凝结成了这血色的瞥视——终于，你解开了封印，为这早应逝去的灵魂带来了解脱……
 article.2.body0=顺着矿道，我来到了这座死去的城市——去的时候一路畅通，回来的时候海水已经倒灌进去，火把和铁轨都被冲毁了。
 article.2.body1=我讨厌地下城市，那里阴暗、逼仄、曲折而且诡异，灯照不亮那些仿佛有生命跳着蓝绿色光点的漆黑材料。尽管没有看到黑暗中繁衍滋生的不死之族，我还是举着盾牌，走几步插一支火把。
 article.2.body2=「孩子们都还在睡觉，别给吵醒了。」

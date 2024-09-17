@@ -1179,8 +1179,8 @@ export const DRAGON_EGG = new Quest(
 
 export const STORY_BOOK = new Quest(
   "story_book",
-  { translate: "hy.quest.readings1.title" },
-  { translate: "hy.quest.readings1.body" },
+  { translate: "hy.quest.story_book.title" },
+  { translate: "hy.quest.story_book.body" },
   {
     condition: {
       item: {
@@ -1199,6 +1199,9 @@ export const STORY_BOOK = new Quest(
       },
     },
     iconPath: "textures/items/story_book",
+    tips: {
+      translate: "hy.quest.story_book.tips"
+    }
   }
 );
 
@@ -1221,6 +1224,31 @@ export const LETTER_0 = new Quest(
           translate: "item.diamond.name",
         },
         itemStack: new ItemStack("diamond", 2),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+export const LETTER_1 = new Quest(
+  "letter_11",
+  { translate: "hy.quest.letter_1.title" },
+  { translate: "hy.quest.letter_1.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_1"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 5),
       },
     },
     iconPath: "textures/items/lost_letter",
