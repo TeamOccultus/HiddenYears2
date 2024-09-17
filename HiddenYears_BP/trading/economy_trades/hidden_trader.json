@@ -28,8 +28,21 @@
           ]
         },
         {
-          "num_to_select": 2,
+          "num_to_select": 3,
           "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hy:stack_of_diamond_coin",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hy:letter_8", "quantity": 2 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
             {
               "wants": [
                 {
