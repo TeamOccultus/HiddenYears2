@@ -1200,8 +1200,8 @@ export const STORY_BOOK = new Quest(
     },
     iconPath: "textures/items/story_book",
     tips: {
-      translate: "hy.quest.story_book.tips"
-    }
+      translate: "hy.quest.story_book.tips",
+    },
   }
 );
 
@@ -1480,7 +1480,6 @@ export const LETTER_10 = new Quest(
     iconPath: "textures/items/lost_letter",
   }
 );
-
 
 export const LETTER_11 = new Quest(
   "letter_11",
@@ -1960,8 +1959,296 @@ export const ELYTRA = new Quest(
       },
     },
     award: {
-      exp: 120
+      exp: 120,
     },
     iconPath: "textures/items/elytra",
+  }
+);
+
+/**
+ * 任务-沙漠中的一抹绿
+ */
+export const CACTUS = new Quest(
+  "cactus",
+  { translate: "hy.quest.cactus.title" },
+  { translate: "hy.quest.cactus.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("cactus"),
+        name: {
+          translate: "tile.cactus.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 5),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      },
+    },
+    iconPath: "textures/ui/quest/cactus",
+  }
+);
+
+/**
+ * 任务-沙漠旅行必备品
+ */
+export const COOLING_POTION = new Quest(
+  "cooling_potion",
+  { translate: "hy.quest.cooling_potion.title" },
+  { translate: "hy.quest.cooling_potion.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:cooling_potion"),
+        name: {
+          translate: "hy.item.cooling_potion",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 10),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      }
+    },
+    iconPath: "textures/items/cooling_potion",
+  }
+);
+
+/**
+ * 任务-难以下咽的食物
+ */
+export const SAND_MEAT = new Quest(
+  "sand_meat",
+  { translate: "hy.quest.sand_meat.title" },
+  { translate: "hy.quest.sand_meat.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:sand_meat"),
+        name: {
+          translate: "hy.item.sand_meat",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 10),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      }
+    },
+    iconPath: "textures/items/sand_meat",
+    tips: {
+      translate: "hy.quest.sand_meat.tips"
+    }
+  }
+);
+
+/**
+ * 任务-沙漠旅行必备品
+ */
+export const SAND_BONE = new Quest(
+  "sand_bone",
+  { translate: "hy.quest.sand_bone.title" },
+  { translate: "hy.quest.sand_bone.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:sand_bone"),
+        name: {
+          translate: "hy.item.sand_bone",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 15),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      }
+    },
+    iconPath: "textures/items/sand_bone",
+  }
+);
+
+/**
+ * 任务-破碎之砂
+ */
+export const SHATTERED_SAND_CUDGEL = new Quest(
+  "shattered_sand_cudgel",
+  { translate: "hy.quest.shattered_sand_cudgel.title" },
+  { translate: "hy.quest.shattered_sand_cudgel.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:shattered_sand_cudgel"),
+        name: {
+          translate: "hy.item.shattered_sand_cudgel",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 20),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      }
+    },
+    iconPath: "textures/items/shattered_sand_cudgel",
+  }
+);
+
+/**
+ * 任务-被诛杀的杀手
+ */
+export const RABBIT_PAW = new Quest(
+  "rabbit_paw",
+  { translate: "hy.quest.rabbit_paw.title" },
+  { translate: "hy.quest.rabbit_paw.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:rabbit_paw"),
+        name: {
+          translate: "hy.item.rabbit_paw",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.golden_apple.name",
+        },
+        itemStack: new ItemStack("golden_apple", 2),
+      },
+    },
+    // TODO 添加纹理 
+    // iconPath: "textures/items/rabbit_paw",
+  }
+);
+
+/**
+ * 任务-碾作粉末……
+ */
+export const PAW_DUST = new Quest(
+  "paw_dust",
+  { translate: "hy.quest.paw_dust.title" },
+  { translate: "hy.quest.paw_dust.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:paw_dust"),
+        name: {
+          translate: "hy.item.paw_dust",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.appleEnchanted.name",
+        },
+        itemStack: new ItemStack("enchanted_golden_apple", 2),
+      },
+    },
+    // TODO 添加纹理 
+    // iconPath: "textures/items/paw_dust",
+  }
+);
+
+/**
+ * 任务-财宝通行证
+ */
+export const DRIFT_SAND_KEY = new Quest(
+  "drift_sand_key",
+  { translate: "hy.quest.drift_sand_key.title" },
+  { translate: "hy.quest.drift_sand_key.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:drift_sand_key"),
+        name: {
+          translate: "hy.item.drift_sand_key",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 20),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      }
+    },
+    iconPath: "textures/items/drift_sand_key",
+  }
+);
+
+/**
+ * 任务-雨之神的祝福
+ */
+export const RAIN_GOD_BLESSING = new Quest(
+  "rain_god_blessing",
+  { translate: "hy.quest.rain_god_blessing.title" },
+  { translate: "hy.quest.rain_god_blessing.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:rain_god_blessing"),
+        name: {
+          translate: "hy.item.rain_god_blessing",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:letter_12"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      }
+    },
+    iconPath: "textures/items/rain_god_blessing",
+    tips: {
+      translate: "hy.quest.rain_god_blessing.tips"
+    }
+  }
+);
+
+/**
+ * 任务-故国再度覆灭
+ */
+export const DESERT_HEART = new Quest(
+  "desert_heart",
+  { translate: "hy.quest.desert_heart.title" },
+  { translate: "hy.quest.desert_heart.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:desert_heart"),
+        name: {
+          translate: "hy.item.desert_heart",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 35),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      }
+    },
+    iconPath: "textures/items/desert_heart",
   }
 );

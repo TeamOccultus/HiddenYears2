@@ -98,6 +98,23 @@ const QUEST_BOOK = new ChapterQuestBook(
       ],
       iconPath: "textures/items/ender_eye",
     },
+    {
+      title: { translate: "hy.quest.chapter4.title" },
+      body: { translate: "hy.quest.chapter4.body" },
+      quests: [
+        quests.CACTUS,
+        quests.COOLING_POTION,
+        quests.SAND_MEAT,
+        quests.SAND_BONE,
+        quests.SHATTERED_SAND_CUDGEL,
+        quests.RABBIT_PAW,
+        quests.PAW_DUST,
+        quests.DRIFT_SAND_KEY,
+        quests.RAIN_GOD_BLESSING,
+        quests.DESERT_HEART,
+      ],
+      iconPath: "textures/items/past_statue",
+    },
   ]
 );
 const LETTER_0 = new QuestBook(
