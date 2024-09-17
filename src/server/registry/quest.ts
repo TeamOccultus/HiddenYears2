@@ -108,6 +108,7 @@ const LETTER_0 = new QuestBook(
     quests: [
       quests.STORY_BOOK,
       quests.LETTER_0,
+      quests.LETTER_4,
       quests.LETTER_11,
       quests.LETTER_2,
       quests.LETTER_3,

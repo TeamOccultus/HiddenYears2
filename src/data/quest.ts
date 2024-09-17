@@ -1248,7 +1248,7 @@ export const LETTER_1 = new Quest(
         name: {
           translate: "item.diamond.name",
         },
-        itemStack: new ItemStack("diamond", 5),
+        itemStack: new ItemStack("diamond", 8),
       },
     },
     iconPath: "textures/items/lost_letter",
@@ -1299,6 +1299,31 @@ export const LETTER_3 = new Quest(
           translate: "item.diamond.name",
         },
         itemStack: new ItemStack("diamond", 3),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+export const LETTER_4 = new Quest(
+  "letter_11",
+  { translate: "hy.quest.letter_4.title" },
+  { translate: "hy.quest.letter_4.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_4"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 5),
       },
     },
     iconPath: "textures/items/lost_letter",
