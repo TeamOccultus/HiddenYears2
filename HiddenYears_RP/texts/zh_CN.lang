@@ -758,10 +758,12 @@ hy.quest.story_book.title=§d[书海无涯] §r故事的起点
 hy.quest.readings2.title=§d[书海无涯] §r千里之行始于足下
 hy.quest.readings3.title=§d[书海无涯] §r大历史学家
 hy.quest.letter_1.title=§d[书海无涯] §r染上鲜血的宝石
+hy.quest.letter_2.title=§d[书海无涯] §r地底死城
 hy.quest.story_book.body=获得隐藏的故事
 hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
 hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
 hy.quest.letter_1.body=击败红宝石之王，获得散落的信纸·漼血的刚玉
+hy.quest.letter_2.body=搜刮远古城市战利品箱，获得散落的信纸·地底死城
 hy.quest.story_book.tips=完成序章任务可以领取该阅读物
 
 article.0.title=千里之行与脚下之路
