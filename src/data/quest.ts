@@ -1280,6 +1280,32 @@ export const LETTER_2 = new Quest(
   }
 );
 
+export const LETTER_3 = new Quest(
+  "letter_11",
+  { translate: "hy.quest.letter_3.title" },
+  { translate: "hy.quest.letter_3.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_3"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 3),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+
 export const LETTER_11 = new Quest(
   "letter_11",
   { translate: "hy.quest.readings3.title" },
