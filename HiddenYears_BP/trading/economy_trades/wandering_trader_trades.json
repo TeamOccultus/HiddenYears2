@@ -144,6 +144,29 @@
             {
               "wants": [
                 {
+                  "item": "hy:gold_coin",
+                  "quantity": 24,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hy:letter_5",
+                  "quantity": 15
+                }
+              ],
+              "trader_exp": 15,
+              "max_uses": 2,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
                   "item": "hy:diamond_badge",
                   "quantity": 1,
                   "price_multiplier": 0.05

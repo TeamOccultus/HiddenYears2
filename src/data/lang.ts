@@ -114,7 +114,20 @@ export const HyLetterBody: RawMessage[] = [
     ],
   },
   {
-    rawtext: [{ translate: "article.5.body0" }],
+    rawtext: [
+      { translate: "article.5.body0" },
+      { text: "\n" },
+      { translate: "article.5.body1" },
+      { text: "\n" },
+      { translate: "article.5.body2" },
+      { text: "\n" },
+      { translate: "article.5.body3" },
+      { text: "\n" },
+      { translate: "article.5.body4" },
+      { text: "\n" },
+      { translate: "article.5.body5" },
+      { text: "\n" },
+    ],
   },
   {
     rawtext: [

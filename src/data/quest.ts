@@ -1231,7 +1231,7 @@ export const LETTER_0 = new Quest(
 );
 
 export const LETTER_1 = new Quest(
-  "letter_11",
+  "letter_1",
   { translate: "hy.quest.letter_1.title" },
   { translate: "hy.quest.letter_1.body" },
   {
@@ -1256,7 +1256,7 @@ export const LETTER_1 = new Quest(
 );
 
 export const LETTER_2 = new Quest(
-  "letter_11",
+  "letter_2",
   { translate: "hy.quest.letter_2.title" },
   { translate: "hy.quest.letter_2.body" },
   {
@@ -1281,7 +1281,7 @@ export const LETTER_2 = new Quest(
 );
 
 export const LETTER_3 = new Quest(
-  "letter_11",
+  "letter_3",
   { translate: "hy.quest.letter_3.title" },
   { translate: "hy.quest.letter_3.body" },
   {
@@ -1306,7 +1306,7 @@ export const LETTER_3 = new Quest(
 );
 
 export const LETTER_4 = new Quest(
-  "letter_11",
+  "letter_4",
   { translate: "hy.quest.letter_4.title" },
   { translate: "hy.quest.letter_4.body" },
   {
@@ -1330,6 +1330,30 @@ export const LETTER_4 = new Quest(
   }
 );
 
+export const LETTER_5 = new Quest(
+  "letter_5",
+  { translate: "hy.quest.letter_5.title" },
+  { translate: "hy.quest.letter_5.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_5"),
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 5),
+      },
+    },
+    iconPath: "textures/items/lost_letter",
+  }
+);
 
 export const LETTER_11 = new Quest(
   "letter_11",
