@@ -127,40 +127,33 @@
   resolved "https://registry.yarnpkg.com/@minecraft/common/-/common-1.2.0.tgz#a00d4130dcd5084dfd30e85e108c6d58eae8358b"
   integrity sha512-JdmEq4P3Z/FtoBzhLijFgMSVFnFRrUoLwY8DHHrgtFo0mfLTOLTB1RErYjLMsA6b7BGVNxkX/pfFRiH7QZ0XwQ==
 
-"@minecraft/server-ui@1.3.0-beta.1.21.20-stable":
-  version "1.3.0-beta.1.21.20-stable"
-  resolved "https://registry.yarnpkg.com/@minecraft/server-ui/-/server-ui-1.3.0-beta.1.21.20-stable.tgz#804570babe321ce834cbbcc740c2010be1ea2408"
-  integrity sha512-brESKHzcEXVhqeoHnnxXn8v/RGZ0Vxrr+IRsfV8qEDLu0J8KAYt513ZxowbU8QOQ4u962iwexWiwgR4usP8RDQ==
+"@minecraft/server-ui@1.4.0-beta.1.21.30-stable":
+  version "1.4.0-beta.1.21.30-stable"
+  resolved "https://registry.yarnpkg.com/@minecraft/server-ui/-/server-ui-1.4.0-beta.1.21.30-stable.tgz#9dba48b4c48f3ede3f9edbc8bc81e28a9ccffdba"
+  integrity sha512-Ky3X8vnQnAZ43CciWvSvTjxThir46mGjq87FJzSGicdQEG2YlyAMygdxOnce3BBuPUTsEUGcEdFbnNGE4LinmQ==
   dependencies:
     "@minecraft/common" "^1.0.0"
     "@minecraft/server" "^1.8.0"
 
-"@minecraft/server-ui@1.3.0-beta.1.21.21-stable":
-  version "1.3.0-beta.1.21.21-stable"
-  resolved "https://registry.yarnpkg.com/@minecraft/server-ui/-/server-ui-1.3.0-beta.1.21.21-stable.tgz#ab518f85139af7d2a9fb1ff4c42a9fe2eb4113c2"
-  integrity sha512-uRVeCp+Iuu1xOE50fAzV9GiXBqcY5aHsGVmMzD56qhKVQ3B00C8oyNzODE4R6bFd7vpOXvqJr3qMXJacGFe4OQ==
+"@minecraft/server-ui@^1.4.0-beta.1.21.30-stable":
+  version "1.4.0-beta.1.21.40-preview.22"
+  resolved "https://registry.yarnpkg.com/@minecraft/server-ui/-/server-ui-1.4.0-beta.1.21.40-preview.22.tgz#75c21c4a03a53201a6ad69b9c1d4dc8b300d98de"
+  integrity sha512-GYXtdxPGB0X/VQR1I5F+TUFvyw74IvxiHWPCSypJyzg7lJKGOFuO7ftZflqytXrC6uO0d9cORTww+mfnuIsC0g==
   dependencies:
     "@minecraft/common" "^1.0.0"
     "@minecraft/server" "^1.8.0"
 
-"@minecraft/server@1.14.0-beta.1.21.20-stable":
-  version "1.14.0-beta.1.21.20-stable"
-  resolved "https://registry.yarnpkg.com/@minecraft/server/-/server-1.14.0-beta.1.21.20-stable.tgz#2174e5dd5d52155fae598832536c8966f4ef0eea"
-  integrity sha512-FczVv4P7Qq9UZf+RTaProO43elCeCJ1/4C8z1uLQhQGx2Q+onTpp+2z10K+VrdMSooEMRIBndFhM0hw0e/SDXw==
-  dependencies:
-    "@minecraft/common" "^1.1.0"
-
-"@minecraft/server@1.14.0-beta.1.21.21-stable":
-  version "1.14.0-beta.1.21.21-stable"
-  resolved "https://registry.yarnpkg.com/@minecraft/server/-/server-1.14.0-beta.1.21.21-stable.tgz#c8d2faeb217685fad225852b7904378c5acfd8b4"
-  integrity sha512-CUEUQ+GKwTc3CWwbjhYr29kfE+cgqb3RxbF+mSA0UyatK9zftPNE2ew+gdVvr+CtMBfhsxxviJKmLTOVy1AiSA==
+"@minecraft/server@1.15.0-beta.1.21.30-stable":
+  version "1.15.0-beta.1.21.30-stable"
+  resolved "https://registry.yarnpkg.com/@minecraft/server/-/server-1.15.0-beta.1.21.30-stable.tgz#e17a411678f082f3e8ba0273072ff1462e6ac99c"
+  integrity sha512-t9NhnP2W+7agojr5IWXZnC4uy9SGfcIrSFEqvNxj/NaT29/DXtH+1nJq7wLa5kGwyBlG/lDz6/CpiWn4PBv+Kg==
   dependencies:
     "@minecraft/common" "^1.1.0"
 
 "@minecraft/server@^1.8.0":
-  version "1.13.0"
-  resolved "https://registry.yarnpkg.com/@minecraft/server/-/server-1.13.0.tgz#bb1aaaa1aa7aa8a37dcd3930cf37e46aeb279ac1"
-  integrity sha512-LYmYRLjZZ5b+AO2GArQorBBo6Ad18ZmdoK2jx7mmo7Jo/gFXLiSq2xEJuLb5WBXTaBg4rBiersQiAbTj3QjNHQ==
+  version "1.14.0"
+  resolved "https://registry.yarnpkg.com/@minecraft/server/-/server-1.14.0.tgz#1c4014ab5602a4c9257ccbcb2796a3fe862b55e9"
+  integrity sha512-4oOdkbjD7UBwRUtmPcYvMmyxtDGyUipM6X4h1LjjwrZ07078q8su8F4Almj/R2Qn+e573mLJzQyGUhgtu071ZQ==
   dependencies:
     "@minecraft/common" "^1.1.0"
 
@@ -168,6 +161,11 @@
   version "1.21.20"
   resolved "https://registry.yarnpkg.com/@minecraft/vanilla-data/-/vanilla-data-1.21.20.tgz#f2831c50ea386556baf399c986d64c0b29b28f06"
   integrity sha512-4dDfZ4onn8oGAsTpS6KNMjH7mgeRHP9uEJRov9kTxJQCnRZwygp4gZE5qZqC+1p5gvyuM7GBA37IJhNj4rXSzg==
+
+"@minecraft/vanilla-data@1.21.30":
+  version "1.21.30"
+  resolved "https://registry.yarnpkg.com/@minecraft/vanilla-data/-/vanilla-data-1.21.30.tgz#f8019ba125b7531aa6c4a5a6b1de5f6c577cd3e0"
+  integrity sha512-1pOmPoQy3uOFEsWsXpiezARYKO+gbWiDx9OxMsKXY2ycH+DWa/sAkKyJUsY4KunOdGIrDvMm5cAwv9MDirEnIQ==
 
 "@rollup/rollup-android-arm-eabi@4.20.0":
   version "4.20.0"
@@ -289,49 +287,49 @@ fsevents@~2.3.2:
   resolved "https://registry.yarnpkg.com/fsevents/-/fsevents-2.3.3.tgz#cac6407785d03675a2a5e1a5305c697b347d90d6"
   integrity sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==
 
-lazuli-api@1.2.3:
-  version "1.2.3"
-  resolved "https://registry.yarnpkg.com/lazuli-api/-/lazuli-api-1.2.3.tgz#587e36b32657a424e1b4f397cac3e117b1829fbb"
-  integrity sha512-49lXu6Bbx+cvVx8C4e72z9GCQKHOBBeWzKnDOshrcK9DRR0f+n5Zcq82NVl2MhBTT/IM3ig0bvxAJykEvXHCmg==
+lazuli-api@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/lazuli-api/-/lazuli-api-1.6.2.tgz#04889ae1307f7e4b032c9c635bf7889b2a9244a0"
+  integrity sha512-Fy69JG1Zk0iL88z4fi90+o5kTkjUPGMg6HJP7o4/m2WvtX90ZWQq/LP8wfiuQ7pCbvot4d/RflNHIrCzpECh+g==
   dependencies:
-    "@minecraft/server" "1.14.0-beta.1.21.21-stable"
-    "@minecraft/server-ui" "1.3.0-beta.1.21.21-stable"
-    "@minecraft/vanilla-data" "1.21.20"
-    lazuli-data "1.0.1"
-    lazuli-utils "1.1.1"
+    "@minecraft/server" "1.15.0-beta.1.21.30-stable"
+    "@minecraft/server-ui" "^1.4.0-beta.1.21.30-stable"
+    "@minecraft/vanilla-data" "1.21.30"
+    lazuli-data "1.0.4"
+    lazuli-utils "1.1.3"
     typescript "5.4.5"
 
-lazuli-data@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/lazuli-data/-/lazuli-data-1.0.1.tgz#07c638ef54d153e1e0cc7122bb2032871e7261e9"
-  integrity sha512-4nKJZjkIItJIjEKKSvY7oe34RhcBLPRQ8GtPSb87pz3L0p9PudQsyHYE4cX/UyXJulGh1NNIgJ4FClkVblAWVQ==
+lazuli-data@1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lazuli-data/-/lazuli-data-1.0.4.tgz#3efa9e37e1f37b5ef01c048938caaea16fcc99f4"
+  integrity sha512-b6plKke25ipi/ZbNR2qqSkh4QZnZgvUWhBtC+zERjygVdTe10t1Og/iWshVZbxJ89YeLd0x/PeThdwZhEbeUSA==
   dependencies:
-    "@minecraft/server" "1.14.0-beta.1.21.20-stable"
-    "@minecraft/vanilla-data" "1.21.20"
+    "@minecraft/server" "1.15.0-beta.1.21.30-stable"
+    "@minecraft/vanilla-data" "1.21.30"
     typescript "5.4.5"
 
-lazuli-mc@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/lazuli-mc/-/lazuli-mc-1.6.3.tgz#7615fe7633d10277acf93ff61beb638e437fb25d"
-  integrity sha512-ndk02swK+aUf2hoDO+0NHoF/4n0fla34QC6UIA9Gkz6XIlF5XfDeZaPxKP4Pm50UCRSs6IT5x8wwXlbH0Mp7Bw==
+lazuli-mc@1.10.1:
+  version "1.10.1"
+  resolved "https://registry.yarnpkg.com/lazuli-mc/-/lazuli-mc-1.10.1.tgz#1c2be735c90dbc8686821dae5b00c745703f88a1"
+  integrity sha512-gtLIRcnydTMItQAuBAfHrPp6xAJKh+C6s/NTWQ1j08ydPtaMMCiSgMld5HVjvKtSlH7Do2e0/CVLjkYSQN9ZzQ==
   dependencies:
-    "@minecraft/server" "1.14.0-beta.1.21.20-stable"
-    "@minecraft/server-ui" "1.3.0-beta.1.21.20-stable"
-    "@minecraft/vanilla-data" "1.21.20"
-    lazuli-api "1.2.3"
-    lazuli-data "1.0.1"
-    lazuli-utils "1.1.1"
+    "@minecraft/server" "1.15.0-beta.1.21.30-stable"
+    "@minecraft/server-ui" "1.4.0-beta.1.21.30-stable"
+    "@minecraft/vanilla-data" "1.21.30"
+    lazuli-api "1.6.2"
+    lazuli-data "1.0.4"
+    lazuli-utils "1.1.3"
     typescript "5.4.5"
 
-lazuli-utils@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/lazuli-utils/-/lazuli-utils-1.1.1.tgz#73bd427f6c1b12fc0f27721fdd1d0dfe0c9533ff"
-  integrity sha512-yxklTY7RCX///3OU2mrzC79tU+LGs2gIDTWgrASVvOMm3pTJQiodOsmgNtO9MspQt3BzESkjlygQ/H6vIP33UA==
+lazuli-utils@1.1.3:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/lazuli-utils/-/lazuli-utils-1.1.3.tgz#a778a761d91d724f4255cb09d668b9ce9c2681c3"
+  integrity sha512-TyhwVLfERtHv7i6VS6ZWndtzLhprOAfSmetvm8G/wJffvMQofSecA/T/+1GIhg5X1jqY8aWdktGvBiVZCPO2DA==
   dependencies:
-    "@minecraft/server" "1.14.0-beta.1.21.20-stable"
-    "@minecraft/server-ui" "1.3.0-beta.1.21.20-stable"
+    "@minecraft/server" "1.15.0-beta.1.21.30-stable"
+    "@minecraft/server-ui" "1.4.0-beta.1.21.30-stable"
     "@minecraft/vanilla-data" "1.21.20"
-    lazuli-data "1.0.1"
+    lazuli-data "1.0.4"
     typescript "5.4.5"
 
 prettier@^3.3.3:
