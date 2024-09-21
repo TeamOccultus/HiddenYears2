@@ -143,6 +143,6 @@ const LETTER_0 = new QuestBook(
 );
 
 export function registryQuest() {
-  Register.questRegister(QUEST_BOOK);
-  Register.questRegister(LETTER_0);
+  Register.questRegistry(QUEST_BOOK);
+  Register.questRegistry(LETTER_0);
 }
