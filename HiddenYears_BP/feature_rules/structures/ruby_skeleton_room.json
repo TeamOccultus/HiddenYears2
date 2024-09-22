@@ -20,7 +20,7 @@
         "distribution": "uniform"
       },
       "y": {
-        "extent": [0, 50],
+        "extent": [0, 35],
         "distribution": "uniform"
       },
       "z": {
