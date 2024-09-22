@@ -33,7 +33,7 @@ export class HyUtils {
    */
   static isAffectByDehydrationDebuff(target: Entity, item: ItemStack): boolean {
     if (
-      item?.typeId === "hy:shattered_sand_sickle" &&
+      item?.typeId === "hy:shattered_sand_staff" &&
       !target.matches({families: ["immune_desert_debuff"]}) &&
       !target.hasTag("hy:immune_desert_debuff")&&
       !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
