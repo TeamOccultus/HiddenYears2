@@ -2,8 +2,8 @@
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "hy:desert_grave",
-      "places_feature": "hy:structures/desert_grave"
+      "identifier": "hy:desert_depot",
+      "places_feature": "hy:structures/desert_depot"
     },
     "conditions": {
       "placement_pass": "first_pass",
