@@ -19,14 +19,17 @@
         "extent": [0, 16],
         "distribution": "uniform"
       },
-      "y": "q.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+      "y": {
+        "extent": [0, 35],
+        "distribution": "uniform"
+      },
       "z": {
         "extent": [0, 16],
         "distribution": "uniform"
       },
       "scatter_chance": {
         "numerator": 1,
-        "denominator": 25
+        "denominator": 30
       }
     }
   }
