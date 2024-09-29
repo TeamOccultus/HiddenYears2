@@ -2132,8 +2132,7 @@ export const RABBIT_PAW = new Quest(
         itemStack: new ItemStack("golden_apple", 2),
       },
     },
-    // TODO 添加纹理 
-    // iconPath: "textures/items/rabbit_paw",
+    iconPath: "textures/items/rabbit_paw",
   }
 );
 
@@ -2161,8 +2160,7 @@ export const PAW_DUST = new Quest(
         itemStack: new ItemStack("enchanted_golden_apple", 2),
       },
     },
-    // TODO 添加纹理 
-    // iconPath: "textures/items/paw_dust",
+    iconPath: "textures/items/paw_dust",
   }
 );
 
