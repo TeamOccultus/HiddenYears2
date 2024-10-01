@@ -226,5 +226,27 @@
   "hy:steel_core_ore": {
     "sound": "deepslate",
     "textures": "hy.steel_core_ore"
+  },
+  "hy:unknown_frame": {
+    "sound": "metal",
+    "textures": {
+      "up": "hy.unknown_frame_top",
+      "down": "hy.unknown_frame_bottom",
+      "north": "hy.unknown_frame_side",
+      "south": "hy.unknown_frame_side",
+      "west": "hy.unknown_frame_side",
+      "east": "hy.unknown_frame_side"
+    }
+  },
+  "hy:actived_unknown_frame": {
+    "sound": "metal",
+    "textures": {
+      "up": "hy.unknown_frame_top_filled",
+      "down": "hy.unknown_frame_bottom",
+      "north": "hy.unknown_frame_side",
+      "south": "hy.unknown_frame_side",
+      "west": "hy.unknown_frame_side",
+      "east": "hy.unknown_frame_side"
+    }
   }
 }

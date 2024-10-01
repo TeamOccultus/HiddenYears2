@@ -129,6 +129,18 @@
     },
     "hy.extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
+    },
+    "hy.unknown_frame_top": {
+      "textures": "textures/blocks/unknown_frame_top"
+    },
+    "hy.unknown_frame_top_filled": {
+      "textures": "textures/blocks/unknown_frame_top_filled"
+    },
+    "hy.unknown_frame_side": {
+      "textures": "textures/blocks/unknown_frame_side"
+    },
+    "hy.unknown_frame_bottom": {
+      "textures": "textures/blocks/unknown_frame_bottom"
     }
   }
 }

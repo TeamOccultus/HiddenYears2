@@ -38,5 +38,19 @@ export class Block {
         }
       }
     });
+    world.afterEvents.itemUseOn.subscribe((event) => {
+      const BLOCK = event.block;
+      if (
+        event.itemStack.typeId === "hy:drift_sand_statue" &&
+        BLOCK.typeId === "hy:unknown_frame"
+      ) {
+        BLOCK.setType("hy:actived_unknown_frame");
+        BLOCK.dimension.spawnEntity("hy:pharaohs_ghost", {
+          x: BLOCK.location.x,
+          y: BLOCK.location.y + 1,
+          z: BLOCK.location.z,
+        });
+      }
+    });
   }
 }

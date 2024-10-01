@@ -23,4 +23,21 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       }
     },
   });
+  REGISTER.registerCustomComponent("hy:frame_acrtiver", {
+    onUseOn(arg) {
+      const BLOCK = arg.block;
+      if (
+        arg.itemStack.typeId === "hy:drift_sand_statue" &&
+        BLOCK.typeId === "hy:unknown_frame"
+      ) {
+        setEquipmentItem(arg.source);
+        BLOCK.setType("hy:actived_unknown_frame");
+        BLOCK.dimension.spawnEntity("hy:pharaohs_ghost", {
+          x: BLOCK.location.x,
+          y: BLOCK.location.y + 1,
+          z: BLOCK.location.z,
+        });
+      }
+    },
+  });
 });
