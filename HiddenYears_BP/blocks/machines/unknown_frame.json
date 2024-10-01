@@ -9,7 +9,7 @@
     },
     "components": {
       "minecraft:flammable": false,
-      "minecraft:display_name": "hy.block.known_frame",
+      "minecraft:display_name": "hy.block.unknown_frame",
       "minecraft:destructible_by_mining": false,
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 10.0
