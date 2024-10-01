@@ -74,32 +74,44 @@ const SUMMON_SAND_GUARDIAN = new BossSkill("summon_sand_guardian", 700, 15, {
     boss?.dimension.spawnEntity("hy:drift_sand_guardian", {
       x: boss.location.x,
       y: boss.location.y,
-      z: boss.location.z + 1,
+      z: boss.location.z + 2,
     });
     boss?.dimension.spawnEntity("hy:drift_sand_guardian", {
       x: boss.location.x,
       y: boss.location.y,
-      z: boss.location.z - 1,
+      z: boss.location.z - 2,
     });
+    if (entity instanceof Player) {
+      entity.playSound("boss_skill.ruby");
+      entity.sendMessage({
+        translate: "hy.boosSkill.ghost.guardian",
+      });
+    }
   },
 });
 
 const SUMMON_MUMMY = new BossSkill("summon_mummy", 1000, 15, {
   event: (entity, boss) => {
     boss?.dimension.spawnEntity("hy:mummy", {
-      x: boss.location.x + 1,
+      x: boss.location.x + 2,
       y: boss.location.y,
       z: boss.location.z,
     });
     boss?.dimension.spawnEntity("hy:mummy", {
-      x: boss.location.x - 1,
+      x: boss.location.x - 2,
       y: boss.location.y,
       z: boss.location.z,
     });
+    if (entity instanceof Player) {
+      entity.playSound("boss_skill.ruby");
+      entity.sendMessage({
+        translate: "hy.boosSkill.ghost.mummy",
+      });
+    }
   },
 });
 
-const DROUGHT_DEBUFF = new BossSkill("summon_mummy", 1900, 25, {
+const DROUGHT_DEBUFF = new BossSkill("drought", 1900, 25, {
   event: (entity) => {
     if (HyUtils.isAffectByBossDroughtDebuff(entity)) {
       if (entity instanceof Player) {
@@ -111,6 +123,10 @@ const DROUGHT_DEBUFF = new BossSkill("summon_mummy", 1900, 25, {
             entity.removeTag("hy:drought");
           }
         });
+          entity.playSound("boss_skill.ruby");
+          entity.sendMessage({
+            translate: "hy.boosSkill.ghost.drought",
+          });
       }
       entity.addTag("hy:drought");
       system.runTimeout(() => {
@@ -138,6 +154,10 @@ const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 3000, 10, {
         ),
         "sand"
       );
+        entity.playSound("boss_skill.ruby");
+        entity.sendMessage({
+          translate: "hy.boosSkill.ghost.caughtsand",
+        });
     }
   },
 });

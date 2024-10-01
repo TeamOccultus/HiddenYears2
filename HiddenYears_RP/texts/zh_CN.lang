@@ -1039,3 +1039,8 @@ hy.message.dehydration=你感到身体在脱水，快喝冷却药水来缓解症
 hy.message.cooling_potion=干旱和脱水症状得到了缓解！
 hy.message.immune_desert_debuff.get=你获得了神的祝福，将暂时免疫干旱和脱水！
 hy.message.immune_desert_debuff.remove=你对干旱和脱水的免疫已经失效！
+
+hy.boosSkill.ghost.guardian=法老残影即将发动战技§d「尘沙的号令」§r！
+hy.boosSkill.ghost.mummy=法老残影即将发动战技§d「尘沙的魔法」§r！
+hy.boosSkill.ghost.drought=法老残影即将发动战技§d「尘沙的诅咒」§r！
+hy.boosSkill.ghost.caughtsand=法老残影即将发动战技§4「尘沙的惩罚」§r！
