@@ -135,6 +135,25 @@
             "pitch": 1.0
           }
         }
+      },
+      "hy:pharaohs_ghost": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.evocation_illager.ambient",
+          "death": "mob.evocation_illager.death",
+          "hurt": "mob.evocation_illager.hurt",
+          "cast.spell": "mob.evocation_illager.cast_spell",
+          "prepare.attack": "mob.evocation_illager.prepare_attack",
+          "prepare.summon": "mob.evocation_illager.prepare_summon",
+          "prepare.wololo": "mob.evocation_illager.prepare_wololo",
+          "ambient.in.raid": {
+            "sound": "mob.evocation_illager.ambient",
+            "volume": 3.0,
+            "pitch": [0.8, 1.2]
+          },
+          "celebrate": "mob.evocation_illager.celebrate"
+        }
       }
     }
   }
