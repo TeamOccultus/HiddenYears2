@@ -2015,7 +2015,7 @@ export const COOLING_POTION = new Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-      }
+      },
     },
     iconPath: "textures/items/cooling_potion",
   }
@@ -2043,12 +2043,12 @@ export const SAND_MEAT = new Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-      }
+      },
     },
     iconPath: "textures/items/sand_meat",
     tips: {
-      translate: "hy.quest.sand_meat.tips"
-    }
+      translate: "hy.quest.sand_meat.tips",
+    },
   }
 );
 
@@ -2074,7 +2074,7 @@ export const SAND_BONE = new Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-      }
+      },
     },
     iconPath: "textures/items/sand_bone",
   }
@@ -2102,7 +2102,7 @@ export const SHATTERED_SAND_CUDGEL = new Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-      }
+      },
     },
     iconPath: "textures/items/shattered_sand_cudgel",
   }
@@ -2186,7 +2186,7 @@ export const DRIFT_SAND_KEY = new Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-      }
+      },
     },
     iconPath: "textures/items/drift_sand_key",
   }
@@ -2214,12 +2214,12 @@ export const RAIN_GOD_BLESSING = new Quest(
         name: {
           translate: "hy.item.lost_letter",
         },
-      }
+      },
     },
     iconPath: "textures/items/rain_god_blessing",
     tips: {
-      translate: "hy.quest.rain_god_blessing.tips"
-    }
+      translate: "hy.quest.rain_god_blessing.tips",
+    },
   }
 );
 
@@ -2245,8 +2245,79 @@ export const DESERT_HEART = new Quest(
         name: {
           translate: "hy.item.gold_coin",
         },
-      }
+      },
     },
     iconPath: "textures/items/desert_heart",
+  }
+);
+
+export const DRIFT_SAND_STATUE = new Quest(
+  "drift_sand_statue",
+  { translate: "hy.quest.drift_sand_statue.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.drift_sand_statue.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.drift_sand_statue.body2" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        name: {
+          translate: "hy.item.drift_sand_statue",
+        },
+        itemStack: new ItemStack("hy:drift_sand_statue"),
+      },
+    },
+    award: {
+      exp: 30,
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 16),
+      },
+    },
+    iconPath: "textures/items/drift_sand_statue",
+  }
+);
+
+export const SHATTERED_SAND_STAFF = new Quest(
+  "shattered_sand_staff",
+  { translate: "hy.quest.shattered_sand_staff.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.shattered_sand_staff.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.shattered_sand_staff.body2" },
+      { text: "\n\n" },
+      { translate: "hy.quest.shattered_sand_staff.body3" },
+      { text: "\n\n" },
+      { translate: "hy.quest.shattered_sand_staff.body4" },
+      { text: "\n\n" },
+      { translate: "hy.quest.shattered_sand_staff.body5" },
+    ],
+  },
+  {
+    condition: {
+      playerXpLevel: 12,
+      item: {
+        name: {
+          translate: "hy.item.shattered_sand_staff",
+        },
+        itemStack: new ItemStack("hy:shattered_sand_staff"),
+      },
+    },
+    award: {
+      exp: 30,
+      item: {
+        name: {
+          translate: "hy.item.lost_letter",
+        },
+        itemStack: new ItemStack("hy:letter_13"),
+      },
+    },
+    iconPath: "textures/items/shattered_sand_staff",
   }
 );

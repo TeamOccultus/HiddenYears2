@@ -112,6 +112,8 @@ const QUEST_BOOK = new ChapterQuestBook(
         quests.DRIFT_SAND_KEY,
         quests.RAIN_GOD_BLESSING,
         quests.DESERT_HEART,
+        quests.DRIFT_SAND_STATUE,
+        quests.SHATTERED_SAND_STAFF,
       ],
       iconPath: "textures/items/past_statue",
     },
