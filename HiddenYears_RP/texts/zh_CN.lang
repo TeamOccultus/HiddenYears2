@@ -1041,6 +1041,7 @@ hy.item.drift_sand_key=流沙之钥
 hy.item.drift_sand_coronet=流沙之冠
 hy.item.past_statue=往昔的筑像
 hy.item.drift_sand_statue=流沙的筑像
+hy.item.aaru_dream=芦苇之梦
 entity.hy:pharaohs_ghost.name=法老残影
 hy.block.unknown_frame=未知的框架
 hy.message.drought=你感到十分干旱，快喝水来缓解症状！
@@ -1048,6 +1049,7 @@ hy.message.dehydration=你感到身体在脱水，快喝冷却药水来缓解症
 hy.message.cooling_potion=干旱和脱水症状得到了缓解！
 hy.message.immune_desert_debuff.get=你获得了神的祝福，将暂时免疫干旱和脱水！
 hy.message.immune_desert_debuff.remove=你对干旱和脱水的免疫已经失效！
+hy.message.cant_place=未知过高或处于其他维度，无法生成结构！
 
 hy.boosSkill.ghost.guardian=法老残影即将发动战技§d「尘沙的号令」§r！
 hy.boosSkill.ghost.mummy=法老残影即将发动战技§d「尘沙的魔法」§r！

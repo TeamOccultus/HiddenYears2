@@ -1,4 +1,9 @@
-import { world } from "@minecraft/server";
+import {
+  Structure,
+  StructureAnimationMode,
+  StructureManager,
+  world,
+} from "@minecraft/server";
 import {
   consumeDurability,
   getEquipmentItem,
@@ -37,6 +42,28 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
           y: BLOCK.location.y + 1,
           z: BLOCK.location.z,
         });
+      }
+    },
+  });
+  REGISTER.registerCustomComponent("hy:pyramid_summer", {
+    onUse(arg) {
+      if (
+        arg.source.location.y < 270
+      ) {
+        setEquipmentItem(arg.source);
+        let PYRAMID = world.structureManager.get("mystructure:pyramid");
+        world.structureManager.place(
+          PYRAMID,
+          arg.source.dimension,
+          {
+            x: arg.source.location.x + 2,
+            y: arg.source.location.y,
+            z: arg.source.location.z,
+          },
+          { animationMode: StructureAnimationMode.Blocks, animationSeconds: 15 }
+        );
+      } else {
+        arg.source.sendMessage({ translate: "hy.message.cant_place" });
       }
     },
   });
