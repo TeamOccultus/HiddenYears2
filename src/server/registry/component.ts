@@ -2,6 +2,7 @@ import {
   Structure,
   StructureAnimationMode,
   StructureManager,
+  system,
   world,
 } from "@minecraft/server";
 import {
@@ -47,10 +48,21 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
   });
   REGISTER.registerCustomComponent("hy:pyramid_summer", {
     onUse(arg) {
-      if (
-        arg.source.location.y < 270
-      ) {
+      if (arg.source.location.y < 270) {
         setEquipmentItem(arg.source);
+        arg.source.sendMessage({ translate: "hy.monologue.osiris.1" });
+        system.runTimeout(() => {
+          arg.source.sendMessage({ translate: "hy.monologue.osiris.2" });
+        }, 60);
+        system.runTimeout(() => {
+          arg.source.sendMessage({ translate: "hy.monologue.osiris.3" });
+        }, 120);
+        system.runTimeout(() => {
+          arg.source.sendMessage({ translate: "hy.monologue.osiris.4" });
+        }, 180);
+        system.runTimeout(() => {
+          arg.source.sendMessage({ translate: "hy.monologue.osiris.5" });
+        }, 240);
         let PYRAMID = world.structureManager.get("mystructure:pyramid");
         world.structureManager.place(
           PYRAMID,
