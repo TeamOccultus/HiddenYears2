@@ -19,6 +19,16 @@
             "weight": 1
           }
         ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "hy:aaru_dream",
+            "weight": 1
+          }
+        ]
       }
     ]
   }
