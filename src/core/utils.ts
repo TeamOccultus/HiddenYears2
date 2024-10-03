@@ -7,7 +7,7 @@ export class HyUtils {
       item?.typeId === "hy:shattered_sand_cudgel" &&
       !target.matches({families: ["immune_desert_debuff"]}) &&
       !target.hasTag("hy:immune_desert_debuff")&&
-      !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+      !(target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
     ) {
      return true;
     } else {
@@ -18,7 +18,7 @@ export class HyUtils {
     if (
       !target.matches({families: ["immune_desert_debuff"]}) &&
       !target.hasTag("hy:immune_desert_debuff")&&
-      !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+      !(target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
     ) {
      return true;
     } else {
@@ -36,7 +36,7 @@ export class HyUtils {
       item?.typeId === "hy:shattered_sand_staff" &&
       !target.matches({families: ["immune_desert_debuff"]}) &&
       !target.hasTag("hy:immune_desert_debuff")&&
-      !(target.getComponent("equippable").getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+      !(target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
     ) {
      return true;
     } else {
