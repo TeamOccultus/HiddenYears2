@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hy:pharaohs_ghost",
       "materials": {
-        "default": "villager_v2"
+        "default": "entity_alphablend"
       },
       "textures": {
         "default": "textures/entity/pharaohs_ghost"
