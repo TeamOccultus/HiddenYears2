@@ -57,6 +57,9 @@
       }
     },
     "components": {
+      "minecraft:despawn": {
+        "filters": { "test": "is_difficulty", "value": "peaceful" }
+      },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
         "family": ["rabbit", "lightweight", "monster", "rabbit_killer"]
@@ -109,9 +112,6 @@
       },
       "minecraft:balloonable": {
         "mass": 0.4
-      },
-      "minecraft:despawn": {
-        "despawn_from_distance": {}
       },
       "minecraft:behavior.float": {
         "priority": 0

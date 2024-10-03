@@ -44,6 +44,9 @@
       "minecraft:can_break_doors": { "minecraft:annotation.break_door": {} }
     },
     "components": {
+      "minecraft:despawn": {
+        "filters": { "test": "is_difficulty", "value": "peaceful" }
+      },
       "minecraft:equipment": {
         "table": "loot_tables/entities/mummy_equipment.json"
       },
@@ -91,7 +94,6 @@
         "effect_name": "waekness"
       },
       "minecraft:loot": { "table": "loot_tables/entities/mummy.json" },
-      "minecraft:despawn": { "despawn_from_distance": {} },
       "minecraft:behavior.equip_item": { "priority": 2 },
       "minecraft:behavior.melee_attack": { "priority": 3 },
       "minecraft:behavior.stomp_turtle_egg": {
