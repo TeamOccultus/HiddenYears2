@@ -8,10 +8,10 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.rain_god_blessing",
+      "minecraft:icon": "hy.drift_sand_key",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
-        "value": "hy.item.rain_god_blessing"
+        "value": "hy.item.drift_sand_key"
       },
       "minecraft:hover_text_color": "yellow"
     }
