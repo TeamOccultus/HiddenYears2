@@ -30,7 +30,7 @@
         "on_death": "200"
       },
       "minecraft:type_family": {
-        "family": ["pharaohs_ghost", "monster", "desert", "mob"]
+        "family": ["immune_desert_debuff", "pharaohs_ghost", "monster", "desert", "mob"]
       },
       "minecraft:knockback_resistance": {
         "value": 1.0
