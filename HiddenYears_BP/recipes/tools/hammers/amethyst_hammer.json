@@ -6,10 +6,10 @@
     },
     "tags": ["crafting_table"],
     "key": {
-      "#": {
+      "X": {
         "tag": "hy:is_handle"
       },
-      "X": {
+      "#": {
         "item": "hy:amethyst_ingot"
       }
     },
