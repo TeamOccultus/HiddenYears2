@@ -30,7 +30,7 @@
         }
       ],
       "render_controllers": [
-        "controller.render.spider"
+        "controller.render.scorpion"
       ],
       "spawn_egg": {
         "texture": "spawn_egg",
