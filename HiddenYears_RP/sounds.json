@@ -123,18 +123,114 @@
         "volume": 0.8
       },
       "hy:mummy": {
+        "events": {
+          "ambient": "mob.husk.ambient",
+          "death": "mob.husk.death",
+          "hurt": "mob.husk.hurt",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.husk.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hy:drift_sand_sergeant": {
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hy:drift_sand_soldier": {
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hy:drift_sand_shooter": {
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hy:sand_creeper": {
+        "events": {
+          "death": "mob.creeper.death",
+          "fuse": {
+            "pitch": 0.5,
+            "sound": "random.fuse",
+            "volume": 1.0
+          },
+          "hurt": "mob.creeper.say"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hy:sand_skeleton": {
         "volume": 1.0,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.skeleton.say",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "death": "mob.skeleton.death",
           "step": {
-            "sound": "mob.zombie.step",
-            "volume": 0.45,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0,
             "pitch": 1.0
           }
         }
+      },
+      "hy:drift_sand_guardian": {
+        "events": {
+          "ambient": "mob.pillager.idle",
+          "ambient.in.raid": {
+            "pitch": [0.8, 1.2],
+            "sound": "mob.pillager.idle",
+            "volume": 3.0
+          },
+          "celebrate": "mob.pillager.celebrate",
+          "death": "mob.pillager.death",
+          "hurt": "mob.pillager.hurt"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
       },
       "hy:pharaohs_ghost": {
         "volume": 1.0,
