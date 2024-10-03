@@ -6,7 +6,7 @@ import {
   giveItem,
   Register,
   withPercentChance,
-} from "lazuli-mc";
+} from "lazuli-devkit";
 
 const HONEY_CANDY = new FoodItem("hy:honey_candy", [
   { effectType: "saturation", duration: 600 },
@@ -240,38 +240,40 @@ export function registryFood() {
       }
     }
   });
-  Register.foodRegistry(HONEY_CANDY);
-  Register.foodRegistry(SYRUP);
-  Register.foodRegistry(CHOCOLATE_PASTE);
-  Register.foodRegistry(MILK_CHOCOLATE);
-  Register.foodRegistry(SWEET_BERRY_CHOCOLATE);
-  Register.foodRegistry(AMETHYST_CHOCOLATE);
-  Register.foodRegistry(MARSHMALLOW);
-  Register.foodRegistry(SWEET_BERRY_MARSHMALLOW);
-  Register.foodRegistry(AMETHYST_MARSHMALLOW);
-  Register.foodRegistry(MEDICINE_1);
-  Register.foodRegistry(MEDICINE_2);
-  Register.foodRegistry(MEDICINE_3);
-  Register.foodRegistry(MEDICINE_4);
-  Register.foodRegistry(MEDICINE_5);
-  Register.foodRegistry(MEDICINE_6);
-  Register.foodRegistry(MEDICINE_7);
-  Register.foodRegistry(MEDICINE_8);
-  Register.foodRegistry(MEDICINE_9);
-  Register.foodRegistry(MEDICINE_10);
-  Register.foodRegistry(MEDICINE_11);
-  Register.foodRegistry(MEDICINE_12);
-  Register.foodRegistry(MEDICINE_13);
-  Register.foodRegistry(MEDICINE_14);
-  Register.foodRegistry(MEDICINE_15);
-  Register.foodRegistry(RUBY_APPLE);
-  Register.foodRegistry(COPPER_APPLE);
-  Register.foodRegistry(ENCHANTED_COPPER_APPLE);
-  Register.foodRegistry(FUEL_METAL);
-  Register.foodRegistry(MINERAL_FUEL_METAL);
-  Register.foodRegistry(FUEL_METAL_STICK);
-  Register.foodRegistry(BARK);
-  Register.foodRegistry(SAND_MEAT);
-  Register.foodRegistry(COOLING_POTION);
-  Register.foodRegistry(PAW_DUST);
+  Register.registry([
+    HONEY_CANDY,
+    SYRUP,
+    CHOCOLATE_PASTE,
+    MILK_CHOCOLATE,
+    SWEET_BERRY_CHOCOLATE,
+    AMETHYST_CHOCOLATE,
+    MARSHMALLOW,
+    SWEET_BERRY_MARSHMALLOW,
+    AMETHYST_MARSHMALLOW,
+    MEDICINE_1,
+    MEDICINE_2,
+    MEDICINE_3,
+    MEDICINE_4,
+    MEDICINE_5,
+    MEDICINE_6,
+    MEDICINE_7,
+    MEDICINE_8,
+    MEDICINE_9,
+    MEDICINE_10,
+    MEDICINE_11,
+    MEDICINE_12,
+    MEDICINE_13,
+    MEDICINE_14,
+    MEDICINE_15,
+    RUBY_APPLE,
+    COPPER_APPLE,
+    ENCHANTED_COPPER_APPLE,
+    FUEL_METAL,
+    MINERAL_FUEL_METAL,
+    FUEL_METAL_STICK,
+    BARK,
+    SAND_MEAT,
+    COOLING_POTION,
+    PAW_DUST,
+  ]);
 }

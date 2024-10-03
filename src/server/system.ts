@@ -1,16 +1,17 @@
 import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod, replaceItemStack } from "lazuli-mc";
-import { bleedEffectMonitor, dehydrationEffectMonitor, droughtEffectMonitor } from "../core/effects";
+import { initializeMod, replaceItemStack } from "lazuli-devkit";
+import {
+  bleedEffectMonitor,
+  dehydrationEffectMonitor,
+  droughtEffectMonitor,
+} from "../core/effects";
 
 export class System {
   /**
    * 初始化模组
    */
   static initialize(): void {
-    initializeMod("hy", {name: "HiddenYears"}, {
-      questNameSpace: "hy-q",
-      watchdogDisabled: true,
-    });
+    initializeMod("hy", { name: "HiddenYears" });
   }
   /**
    * 监听系统事件
@@ -28,7 +29,7 @@ export class System {
     }, 18000);
     system.runInterval(() => {
       bleedEffectMonitor();
-      droughtEffectMonitor()
+      droughtEffectMonitor();
       dehydrationEffectMonitor();
     }, 20);
   }

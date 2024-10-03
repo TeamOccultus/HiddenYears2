@@ -1,7 +1,5 @@
 import {
-  Structure,
   StructureAnimationMode,
-  StructureManager,
   system,
   world,
 } from "@minecraft/server";
@@ -9,7 +7,7 @@ import {
   consumeDurability,
   getEquipmentItem,
   setEquipmentItem,
-} from "lazuli-mc";
+} from "lazuli-devkit";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const REGISTER = event.itemComponentRegistry;

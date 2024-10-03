@@ -1,5 +1,5 @@
 import { world, Player, system, ItemStack } from "@minecraft/server";
-import { getEquipmentItem, giveItem, randomInteger } from "lazuli-mc";
+import { getEquipmentItem, giveItem, randomInteger } from "lazuli-devkit";
 import { HyUtils } from "../core/utils";
 
 export class Entity {

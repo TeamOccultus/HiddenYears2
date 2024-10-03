@@ -1,5 +1,5 @@
 import { Player, system, world } from "@minecraft/server";
-import { vanillaDimensions } from "lazuli-mc";
+import { vanillaDimensions } from "lazuli-devkit";
 
 /**
  * 流血效果

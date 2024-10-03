@@ -1,6 +1,8 @@
-import { ChapterQuestBook, QuestBook, Register } from "lazuli-mc";
+import { ChapterQuestBook, QuestBook, Register, setQuestNameSpace } from "lazuli-devkit";
 import * as quests from "../../data/quest";
 import { HyLetterTitle, HyLetterBody } from "../../data/lang";
+
+setQuestNameSpace("hy-q");
 
 const QUEST_BOOK = new ChapterQuestBook(
   "hy:quest_book",
@@ -145,6 +147,5 @@ const LETTER_0 = new QuestBook(
 );
 
 export function registryQuest() {
-  Register.questRegistry(QUEST_BOOK);
-  Register.questRegistry(LETTER_0);
+  Register.registry([QUEST_BOOK, LETTER_0]);
 }

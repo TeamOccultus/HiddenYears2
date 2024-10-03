@@ -6,8 +6,7 @@ import {
   hammerSkill,
   knifeSkill,
 } from "../../core/itemSkills";
-import { getEquipmentItem } from "lazuli-mc";
-// import { rubyKingSkill } from "../../core/entitySkills";
+import { getEquipmentItem } from "lazuli-devkit";
 
 export function registryItemSkill() {
   world.afterEvents.entityHitEntity.subscribe((event) => {

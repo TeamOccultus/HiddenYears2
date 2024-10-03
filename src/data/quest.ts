@@ -1,5 +1,5 @@
 import { ItemStack } from "@minecraft/server";
-import { Quest } from "lazuli-mc";
+import { Quest } from "lazuli-devkit";
 
 /**
  * 任务-树上新生枝桠

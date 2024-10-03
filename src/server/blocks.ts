@@ -1,5 +1,5 @@
 import { world } from "@minecraft/server";
-import { getEquipmentItem, withPercentChance } from "lazuli-mc";
+import { getEquipmentItem, withPercentChance } from "lazuli-devkit";
 
 export class Block {
   /** 监听方块事件 */

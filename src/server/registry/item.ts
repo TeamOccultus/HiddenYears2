@@ -10,12 +10,11 @@ import {
   damageEntities,
   DurabilityLimitedProp,
   giveItem,
-  NumberLimitedProp,
   Prop,
   randomInteger,
   Register,
   withWeightChance,
-} from "lazuli-mc";
+} from "lazuli-devkit";
 
 function boneMagicExplode(player: Player) {
   if (player.level > 5) {
@@ -370,23 +369,25 @@ export function registryItem() {
     }
   });
   // 注册道具
-  Register.propRegistry(BANDAGE);
-  Register.propRegistry(MEDICINE_PACK);
-  Register.propRegistry(COPPER_HORN);
-  Register.propRegistry(SOUL_LETTER);
-  Register.propRegistry(RUBY_BAG);
-  Register.propRegistry(EXP_CALAMITY_BAG);
-  Register.propRegistry(RUBY_RUNES);
-  Register.propRegistry(DIAMOND_BADGE);
-  Register.propRegistry(GOLDEN_BADGE);
-  Register.propRegistry(COPPER_BADGE);
-  Register.propRegistry(DIAMOND_BONE);
-  Register.propRegistry(GOLD_BONE);
-  Register.propRegistry(IRON_BONE);
-  Register.propRegistry(FLASH_METAL_BOARDSWORD);
-  Register.propRegistry(CORROSION_BOARDSWORD);
-  Register.propRegistry(EMERALD_BOARDSWORD);
-  Register.propRegistry(FLASH_COPPER_BOARDSWORD);
-  Register.propRegistry(AMETHYST_BOARDSWORD);
-  Register.propRegistry(RUBY_BOARDSWORD);
+  Register.registry([
+    BANDAGE,
+    MEDICINE_PACK,
+    COPPER_HORN,
+    SOUL_LETTER,
+    RUBY_BAG,
+    EXP_CALAMITY_BAG,
+    RUBY_RUNES,
+    DIAMOND_BADGE,
+    GOLDEN_BADGE,
+    COPPER_BADGE,
+    DIAMOND_BONE,
+    GOLD_BONE,
+    IRON_BONE,
+    FLASH_METAL_BOARDSWORD,
+    CORROSION_BOARDSWORD,
+    EMERALD_BOARDSWORD,
+    FLASH_COPPER_BOARDSWORD,
+    AMETHYST_BOARDSWORD,
+    RUBY_BOARDSWORD,
+  ]);
 }

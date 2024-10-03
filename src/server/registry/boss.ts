@@ -1,11 +1,5 @@
-import {
-  BlockVolume,
-  BlockVolumeBase,
-  Player,
-  system,
-  world,
-} from "@minecraft/server";
-import { Boss, BossSkill, Register } from "lazuli-mc";
+import { BlockVolume, Player, system, world } from "@minecraft/server";
+import { Boss, BossSkill, Register } from "lazuli-devkit";
 import { HyUtils } from "../../core/utils";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
@@ -123,10 +117,10 @@ const DROUGHT_DEBUFF = new BossSkill("drought", 1900, 25, {
             entity.removeTag("hy:drought");
           }
         });
-          entity.playSound("boss_skill.ruby");
-          entity.sendMessage({
-            translate: "hy.boosSkill.ghost.drought",
-          });
+        entity.playSound("boss_skill.ruby");
+        entity.sendMessage({
+          translate: "hy.boosSkill.ghost.drought",
+        });
       }
       entity.addTag("hy:drought");
       system.runTimeout(() => {
@@ -154,10 +148,10 @@ const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 3000, 10, {
         ),
         "sand"
       );
-        entity.playSound("boss_skill.ruby");
-        entity.sendMessage({
-          translate: "hy.boosSkill.ghost.caughtsand",
-        });
+      entity.playSound("boss_skill.ruby");
+      entity.sendMessage({
+        translate: "hy.boosSkill.ghost.caughtsand",
+      });
     }
   },
 });
@@ -169,6 +163,5 @@ const PHARAOHS_GHOST = new Boss(
 );
 
 export function registryBoss() {
-  Register.bossRegistry(RUBY_KING);
-  Register.bossRegistry(PHARAOHS_GHOST);
+  Register.registry([RUBY_KING, PHARAOHS_GHOST]);
 }

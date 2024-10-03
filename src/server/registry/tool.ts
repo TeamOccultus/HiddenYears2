@@ -5,7 +5,7 @@ import {
   ToolTag,
   ToolType,
   WeaponTag,
-} from "lazuli-mc";
+} from "lazuli-devkit";
 import { HyCorrosionMap } from "../../data/data";
 import { world } from "@minecraft/server";
 import { applyImitationDamage } from "../../core/imitation";
@@ -74,9 +74,11 @@ export function registryTool() {
       applyImitationDamage(ENTITY);
     }
   });
-  Register.weaponRegistry(NORMAL_WEAPON);
-  Register.toolRegistry(NORMAL_TOOL);
-  Register.toolRegistry(NORMAL_SHOVEL);
-  Register.toolRegistry(NORMAL_AXE);
-  Register.toolRegistry(NORMAL_HOE);
+  Register.registry([
+    NORMAL_WEAPON,
+    NORMAL_TOOL,
+    NORMAL_SHOVEL,
+    NORMAL_AXE,
+    NORMAL_HOE,
+  ]);
 }

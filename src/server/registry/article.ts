@@ -5,7 +5,7 @@ import {
   ArticleCollection,
   giveItem,
   Register,
-} from "lazuli-mc";
+} from "lazuli-devkit";
 import {
   HyLetterTitle,
   HyLetterBody,
@@ -144,19 +144,21 @@ export function registryArticle() {
       event.player.addTag("hy:get_collection");
     }
   });
-  Register.articleRegistry(HIDDEN_STORIES);
-  Register.articleRegistry(LETTER_1);
-  Register.articleRegistry(LETTER_2);
-  Register.articleRegistry(LETTER_3);
-  Register.articleRegistry(LETTER_4);
-  Register.articleRegistry(LETTER_5);
-  Register.articleRegistry(LETTER_6);
-  Register.articleRegistry(LETTER_7);
-  Register.articleRegistry(LETTER_8);
-  Register.articleRegistry(LETTER_9);
-  Register.articleRegistry(LETTER_10);
-  Register.articleRegistry(LETTER_11);
-  Register.articleRegistry(LETTER_12);
-  Register.articleRegistry(LETTER_13);
-  Register.articleRegistry(COLLECTION);
+  Register.registry([
+    HIDDEN_STORIES,
+    LETTER_1,
+    LETTER_2,
+    LETTER_3,
+    LETTER_4,
+    LETTER_5,
+    LETTER_6,
+    LETTER_7,
+    LETTER_8,
+    LETTER_9,
+    LETTER_10,
+    LETTER_11,
+    LETTER_12,
+    LETTER_13,
+    COLLECTION,
+  ]);
 }
