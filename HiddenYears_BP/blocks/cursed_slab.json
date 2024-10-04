@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:cursed_slab",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.slab"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "hy.block.cursed_slab",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 8.0
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 16.0
+      },
+      "minecraft:collision_box": {
+        "origin": [-8.0, 0.0, -8.0],
+        "size": [16.0, 8.0, 16.0]
+      },
+      "minecraft:geometry": "geometry.half_block",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "sandstone_slab_side",
+          "render_method": "alpha_test"
+        },
+        "down": {
+          "texture": "sandstone_slab_bottom",
+          "render_method": "alpha_test"
+        },
+        "up": {
+          "texture": "sandstone_slab_top",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_dampening": 0,
+      "minecraft:custom_components": ["hy:cursed_slab"],
+      "minecraft:map_color": "#A7A7A7",
+      "tag:metal": {}
+    }
+  }
+}

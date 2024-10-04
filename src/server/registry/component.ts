@@ -79,4 +79,9 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       arg?.entity.addEffect("mining_fatigue", 100, { showParticles: false });
     },
   });
+  BLOCK_COMREG.registerCustomComponent("hy:cursed_slab", {
+    onPlayerDestroy(arg) {
+      arg.dimension.spawnEntity("hy:mummy", arg.block.location);
+    },
+  });
 });

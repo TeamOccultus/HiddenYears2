@@ -19,7 +19,6 @@
       },
       "minecraft:map_color": "#A7A7A7",
       "tag:metal": {}
-    },
-    "events": {}
+    }
   }
 }
