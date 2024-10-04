@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:fatigue_sandstone",
+      "menu_category": {
+        "category": "construction",
+        "group": "itemGroup.name.sandstone"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "hy.block.fatigue_sandstone",
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": false,
+      "minecraft:map_color": "#707070",
+      "minecraft:custom_components": ["hy:fatigue_sandstone"],
+      "tag:stone": {}
+    }
+  }
+}

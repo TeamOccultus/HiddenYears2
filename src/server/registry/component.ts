@@ -1,8 +1,4 @@
-import {
-  StructureAnimationMode,
-  system,
-  world,
-} from "@minecraft/server";
+import { StructureAnimationMode, system, world } from "@minecraft/server";
 import {
   consumeDurability,
   getEquipmentItem,
@@ -10,8 +6,8 @@ import {
 } from "lazuli-devkit";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
-  const REGISTER = event.itemComponentRegistry;
-  REGISTER.registerCustomComponent("lazuli:custom_tools", {
+  const ITEM_COMREG = event.itemComponentRegistry;
+  ITEM_COMREG.registerCustomComponent("lazuli:custom_tools", {
     onMineBlock(arg) {
       const item = getEquipmentItem(arg.source);
       if (item) {
@@ -27,7 +23,7 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       }
     },
   });
-  REGISTER.registerCustomComponent("hy:frame_acrtiver", {
+  ITEM_COMREG.registerCustomComponent("hy:frame_acrtiver", {
     onUseOn(arg) {
       const BLOCK = arg.block;
       if (
@@ -44,7 +40,7 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       }
     },
   });
-  REGISTER.registerCustomComponent("hy:pyramid_summer", {
+  ITEM_COMREG.registerCustomComponent("hy:pyramid_summer", {
     onUse(arg) {
       if (arg.source.location.y < 270) {
         setEquipmentItem(arg.source);
@@ -75,6 +71,12 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       } else {
         arg.source.sendMessage({ translate: "hy.message.cant_place" });
       }
+    },
+  });
+  const BLOCK_COMREG = event.blockComponentRegistry;
+  BLOCK_COMREG.registerCustomComponent("hy:fatigue_sandstone", {
+    onStepOn(arg) {
+      arg?.entity.addEffect("mining_fatigue", 100, { showParticles: false });
     },
   });
 });

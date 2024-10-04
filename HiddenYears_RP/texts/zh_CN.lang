@@ -1043,6 +1043,7 @@ hy.item.drift_sand_statue=回生之符
 hy.item.aaru_dream=芦苇之梦
 entity.hy:pharaohs_ghost.name=法老残影
 hy.block.unknown_frame=未知的框架
+hy.block.fatigue_sandstone=疲劳砂岩
 hy.message.drought=你感到十分干旱，快喝水来缓解症状！
 hy.message.dehydration=你感到身体在脱水，快喝清凉药茶来缓解症状！
 hy.message.cooling_potion=干旱和脱水症状得到了缓解！

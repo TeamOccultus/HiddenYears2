@@ -248,5 +248,18 @@
       "west": "hy.unknown_frame_side",
       "east": "hy.unknown_frame_side"
     }
+  },
+  "hy:fatigue_sandstone": {
+    "brightness_gamma": 0.7,
+    "isotropic": {
+      "down": true,
+      "up": true
+    },
+    "sound": "stone",
+    "textures": {
+      "down": "sandstone_bottom",
+      "side": "sandstone_side",
+      "up": "sandstone_top"
+    }
   }
 }
