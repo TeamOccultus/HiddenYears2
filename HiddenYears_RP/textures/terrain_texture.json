@@ -141,6 +141,9 @@
     },
     "hy.unknown_frame_bottom": {
       "textures": "textures/blocks/unknown_frame_bottom"
+    },
+    "hy.drift_sand_cabinet": {
+      "textures": "textures/blocks/drift_sand_cabinet"
     }
   }
 }

@@ -1,8 +1,17 @@
-import { StructureAnimationMode, system, world } from "@minecraft/server";
+import {
+  ItemStack,
+  StructureAnimationMode,
+  system,
+  Vector3,
+  world,
+} from "@minecraft/server";
 import {
   consumeDurability,
   getEquipmentItem,
+  giveItem,
+  randomInteger,
   setEquipmentItem,
+  withWeightChance,
 } from "lazuli-devkit";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
@@ -82,6 +91,25 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
   BLOCK_COMREG.registerCustomComponent("hy:cursed_slab", {
     onPlayerDestroy(arg) {
       arg.dimension.spawnEntity("hy:mummy", arg.block.location);
+    },
+  });
+  BLOCK_COMREG.registerCustomComponent("hy:drift_sand_cabinet", {
+    onPlayerInteract(arg) {
+      if (arg.block.permutation.getState("hy:use_up")) {
+        return;
+      } else if (getEquipmentItem(arg.player)?.typeId === "hy:drift_sand_key") {
+        setEquipmentItem(arg.player);
+        arg.block.setPermutation(
+          arg.block.permutation.withState("hy:use_up", true)
+        );
+        const LOC: Vector3 = {
+          x: arg.block.location.x,
+          y: arg.block.location.y + 1,
+          z: arg.block.location.z,
+        };
+        arg.dimension.playSound("trial_spawner.eject_item", LOC);
+        giveItem(arg.player,new ItemStack("hy:rain_god_blessing"))
+      }
     },
   });
 });
