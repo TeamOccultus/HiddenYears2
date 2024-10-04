@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "hy:structures/desert_treasure"
+    },
+    "structure_name": "mystructure:desert_treasure",
+    "adjustment_radius": 4,
+    "facing_direction": "random",
+    "constraints": {
+      "block_intersection": {
+        "block_allowlist": ["minecraft:air", "minecraft:sandstone", "minecraft:stone"]
+      }
+    }
+  }
+}

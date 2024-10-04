@@ -2,8 +2,8 @@
   "format_version": "1.13.0",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "hy:desert_grave_small",
-      "places_feature": "hy:structures/desert_grave_small"
+      "identifier": "hy:desert_treasure",
+      "places_feature": "hy:structures/desert_treasure"
     },
     "conditions": {
       "placement_pass": "first_pass",
@@ -19,14 +19,17 @@
         "extent": [0, 16],
         "distribution": "uniform"
       },
-      "y": "q.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+      "y": {
+        "extent": [0, 45],
+        "distribution": "uniform"
+      },
       "z": {
         "extent": [0, 16],
         "distribution": "uniform"
       },
       "scatter_chance": {
         "numerator": 1,
-        "denominator": 50
+        "denominator": 80
       }
     }
   }
