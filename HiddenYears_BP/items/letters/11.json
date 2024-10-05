@@ -4,7 +4,8 @@
     "description": {
       "identifier": "hy:letter_11",
       "menu_category": {
-        "category": "equipment"
+        "category": "none",
+        "is_hidden_in_commands": false
       }
     },
     "components": {
