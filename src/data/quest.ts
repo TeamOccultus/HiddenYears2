@@ -2053,7 +2053,7 @@ export const SAND_MEAT = new Quest(
 );
 
 /**
- * 任务-沙漠旅行必备品
+ * 任务-砂骨
  */
 export const SAND_BONE = new Quest(
   "sand_bone",
@@ -2075,6 +2075,9 @@ export const SAND_BONE = new Quest(
           translate: "hy.item.gold_coin",
         },
       },
+    },
+    tips: {
+      translate: "hy.quest.sand_bone.tips"
     },
     iconPath: "textures/items/sand_bone",
   }
@@ -2098,12 +2101,13 @@ export const SHATTERED_SAND_CUDGEL = new Quest(
     },
     award: {
       item: {
-        itemStack: new ItemStack("hy:gold_coin", 20),
+        itemStack: new ItemStack("hy:gold_coin", 25),
         name: {
           translate: "hy.item.gold_coin",
         },
       },
     },
+    tips: { translate: "hy.quest.shattered_sand_cudgel.tips" },
     iconPath: "textures/items/shattered_sand_cudgel",
   }
 );
@@ -2247,6 +2251,7 @@ export const DESERT_HEART = new Quest(
         },
       },
     },
+    tips: { translate: "hy.quest.desert_heart.tips" },
     iconPath: "textures/items/desert_heart",
   }
 );
