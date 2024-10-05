@@ -123,7 +123,7 @@ const QUEST_BOOK = new ChapterQuestBook(
 );
 const LETTER_0 = new QuestBook(
   `hy:letter_0`,
-  HyLetterTitle[0],
+  { translate: "article.0.title" },
   HyLetterBody[0],
   {
     quests: [
