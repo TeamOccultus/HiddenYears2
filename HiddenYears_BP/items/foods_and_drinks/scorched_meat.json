@@ -5,7 +5,7 @@
       "identifier": "hy:scorched_meat",
       "menu_category": {
         "category": "equipment",
-        "group": "itemGroup.name.rawFood"
+        "group": "itemGroup.name.cookedFood"
       }
     },
     "components": {
