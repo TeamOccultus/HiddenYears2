@@ -389,5 +389,6 @@ export function registryItem() {
     FLASH_COPPER_BOARDSWORD,
     AMETHYST_BOARDSWORD,
     RUBY_BOARDSWORD,
+    RAIN_GOD_BLESSING
   ]);
 }
