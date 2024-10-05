@@ -53,6 +53,7 @@
           }
         ]
       },
+      "minecraft:icon": "hy.flash_metal_shovel",
       "minecraft:tags": {
         "tags": ["hy:custom_tools", "minecraft:is_shovel", "hy:custom_shovel"]
       }
