@@ -89,8 +89,8 @@
       ],
       "enable_attachables": true,
       "spawn_egg": {
-        "texture": "spawn_egg",
-        "texture_index": 9
+        "texture": "hy.spawn_egg",
+        "texture_index": 12
       }
     }
   }

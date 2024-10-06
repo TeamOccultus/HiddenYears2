@@ -808,7 +808,13 @@
         "textures/items/egg_sprite",
         "textures/items/egg_ferocious_sprite",
         "textures/items/egg_rabbit_killer",
-        "textures/items/egg_mummy"
+        "textures/items/egg_mummy",
+        "textures/items/egg_drift_sand_guardian",
+        "textures/items/egg_drift_sand_sergeant",
+        "textures/items/egg_drift_sand_shooter",
+        "textures/items/egg_drift_sand_soldier",
+        "textures/items/egg_pharaohs_ghost",
+        "textures/items/egg_sand_creeper"
       ]
     },
     "hy.imitation_diamond": {
