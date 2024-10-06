@@ -63,7 +63,7 @@ const RUBY_KING = new Boss(
   { trackId: "music.boss.ruby", radius: 20 }
 );
 
-const SUMMON_SAND_GUARDIAN = new BossSkill("summon_sand_guardian", 700, 15, {
+const SUMMON_SAND_GUARDIAN = new BossSkill("summon_sand_guardian", 600, 15, {
   event: (entity, boss) => {
     boss?.dimension.spawnEntity("hy:drift_sand_guardian", {
       x: boss.location.x,
@@ -84,7 +84,7 @@ const SUMMON_SAND_GUARDIAN = new BossSkill("summon_sand_guardian", 700, 15, {
   },
 });
 
-const SUMMON_MUMMY = new BossSkill("summon_mummy", 1000, 15, {
+const SUMMON_MUMMY = new BossSkill("summon_mummy", 800, 15, {
   event: (entity, boss) => {
     boss?.dimension.spawnEntity("hy:mummy", {
       x: boss.location.x + 2,
@@ -105,7 +105,7 @@ const SUMMON_MUMMY = new BossSkill("summon_mummy", 1000, 15, {
   },
 });
 
-const DROUGHT_DEBUFF = new BossSkill("drought", 1900, 25, {
+const DROUGHT_DEBUFF = new BossSkill("drought", 1200, 25, {
   event: (entity) => {
     if (HyUtils.isAffectByBossDroughtDebuff(entity)) {
       if (entity instanceof Player) {
@@ -130,7 +130,7 @@ const DROUGHT_DEBUFF = new BossSkill("drought", 1900, 25, {
   },
 });
 
-const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 3000, 10, {
+const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 1400, 10, {
   event: (entity) => {
     if (entity instanceof Player) {
       entity.dimension.fillBlocks(
