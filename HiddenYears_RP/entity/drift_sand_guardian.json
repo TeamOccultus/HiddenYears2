@@ -36,7 +36,7 @@
       ],
       "enable_attachables": true,
       "spawn_egg": {
-        "texture": "hy.spawn_egg",
+        "texture": "hy.spawn_eggs",
         "texture_index": 10
       },
       "hide_armor": true

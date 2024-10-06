@@ -16,7 +16,7 @@
         "charged": "geometry.creeper.charged"
       },
       "spawn_egg": {
-        "texture": "hy.spawn_egg",
+        "texture": "hy.spawn_eggs",
         "texture_index": 15
       },
       "scripts": {
