@@ -1,6 +1,11 @@
 {
   "rubyboss": {
-    "event_name" : "music.boss.ruby",
+    "event_name": "music.boss.ruby",
+    "min_delay": 600,
+    "max_delay": 1200
+  },
+  "pharaohsboss": {
+    "event_name": "music.boss.pharaohs_ghost",
     "min_delay": 600,
     "max_delay": 1200
   }

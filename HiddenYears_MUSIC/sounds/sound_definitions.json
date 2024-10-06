@@ -1,9 +1,19 @@
 {
-"music.boss.ruby": {
+  "music.boss.ruby": {
     "category": "music",
     "sounds": [
       {
         "name": "sounds/music/boss/ruby",
+        "stream": true,
+        "load_on_low_memory": true
+      }
+    ]
+  },
+  "music.boss.pharaohs_ghost": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "sounds/music/boss/pharaohs_ghost",
         "stream": true,
         "load_on_low_memory": true
       }
