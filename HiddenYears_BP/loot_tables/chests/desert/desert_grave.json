@@ -1,6 +1,23 @@
 {
     "pools": [
       {
+        "conditions": [
+          {
+            "condition": "random_chance_with_looting",
+            "chance": 0.5,
+            "looting_multiplier": 0.02
+          }
+        ],
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "item",
+            "name": "hy:past_statue",
+            "weight": 1
+          }
+        ]
+      },
+      {
         "rolls": {
           "min": 1,
           "max": 2
