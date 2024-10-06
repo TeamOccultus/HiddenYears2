@@ -703,12 +703,14 @@ hy.quest.desert_heart.tips=在「无名坟墓」中获得沙漠之心
 hy.quest.drift_sand_statue.title=§d[风起层沙]§r 生命的符号
 hy.quest.drift_sand_statue.body1=帝国的君王于沙海和绿洲建立庞大的国家后，令他的臣子为他和他的神明铸造象征着生命与权利的符咒，分散于帝国各界，传说手持符咒之时，雨之神便会投下目光……
 hy.quest.drift_sand_statue.body2=直到某一日，人们发现神明不再注视他们……
+hy.quest.drift_sand_statue.tips=在「无名坟墓」中获得生命之符，而后用黄金、钻石、生命之符、沙漠之心合成回生之符
 hy.quest.shattered_sand_staff.title=§d[风起层沙·终]§r 沙海中的绵绵细雨
 hy.quest.shattered_sand_staff.body1=「一个将真实严密包裹于文字牢笼中的故事，而非必然使人灼伤的赤裸真相。」
 hy.quest.shattered_sand_staff.body2=我们在冰层之间沉睡，醒来之时七十万个日夜已经过去，故国已然倾覆，风景几度变幻，无数觊觎财宝的魔物降临主世……
 hy.quest.shattered_sand_staff.body3=于是我们结为部族，抵御这外来的魔物。 
 hy.quest.shattered_sand_staff.body4=在月亮升起的刹那，星空中的第一位神明降临世间，她令我们歃血为盟，建立流沙之团抵御魔物，用神力封锁受觊觎的财宝，还将她最虔诚的信徒选作帝国的君王，即是被称为「法老」的存在。
 hy.quest.shattered_sand_staff.body5=十年后，魔物终于剿灭，我们建立了庞大的帝国，将文明与繁荣洒向大地，可不久之后，星空中的第二个「神」降临世间……
+hy.quest.shattered_sand_staff.tips=在沙漠中寻找「沙漠祭坛」，将回生之符插入其中的无名框架即可召唤法老残影，击败BOSS即可获得流沙之杖
 
 story.hs.title1=一切的开始？
 story.hs.title2=诞生于毁灭的新生

@@ -2285,6 +2285,7 @@ export const DRIFT_SAND_STATUE = new Quest(
       },
     },
     iconPath: "textures/items/drift_sand_statue",
+    tips: { translate: "hy.quest.drift_sand_statue.tips" }
   }
 );
 
@@ -2324,5 +2325,6 @@ export const SHATTERED_SAND_STAFF = new Quest(
       },
     },
     iconPath: "textures/items/shattered_sand_staff",
+    tips: { translate: "hy.quest.shattered_sand_staff.tips" },
   }
 );
