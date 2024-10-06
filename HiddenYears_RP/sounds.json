@@ -200,23 +200,6 @@
         "pitch": [0.8, 1.2],
         "volume": 1.0
       },
-      "hy:sand_skeleton": {
-        "volume": 1.0,
-        "pitch": [0.8, 1.2],
-        "events": {
-          "ambient": "mob.skeleton.say",
-          "hurt": {
-            "sound": "mob.skeleton.hurt",
-            "volume": 0.7
-          },
-          "death": "mob.skeleton.death",
-          "step": {
-            "sound": "mob.skeleton.step",
-            "volume": 1.0,
-            "pitch": 1.0
-          }
-        }
-      },
       "hy:drift_sand_guardian": {
         "events": {
           "ambient": "mob.pillager.idle",
