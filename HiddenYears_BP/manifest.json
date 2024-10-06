@@ -10,7 +10,7 @@
     "description": "pack.description",
     "min_engine_version": [1, 21, 0],
     "uuid": "e1b2000f-c88c-46ed-a9cd-3f0b06130a1f",
-    "version": "2.4.0-beta",
+    "version": "2.4.0",
     "pack_scope": "world"
   },
   "capabilities": ["script_eval"],
@@ -18,12 +18,12 @@
     {
       "type": "data",
       "uuid": "553b40a9-116e-44bf-ae36-704a730b1ca2",
-      "version": "2.4.0-beta"
+      "version": "2.4.0"
     },
     {
       "type": "script",
       "uuid": "8182c0e7-0013-1234-852e-95dec34c1145",
-      "version": "2.4.0-beta",
+      "version": "2.4.0",
       "entry": "scripts/index.js"
     }
   ],
@@ -56,7 +56,7 @@
   "dependencies": [
     {
       "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
-      "version": "2.4.0-beta"
+      "version": "2.4.0"
     },
     {
       "module_name": "@minecraft/server",
