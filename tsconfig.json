@@ -1,12 +1,11 @@
 {
-  "include": ["src/*"],
+  "include": ["src/*", "src/core/utils.ts"],
   "compilerOptions": {
     "target": "es2022",
     "module": "ES2022",
     "moduleResolution": "node10",
     //"declaration": true,
-    "outDir": ".gitee/ISSUE_TEMPLATE/隐藏之年2(BP)/scripts",
-    "noEmit": true,
+    "outDir": "./tsc-out",
     "removeComments": true,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,

@@ -1,0 +1,52 @@
+{
+	"format_version": "1.10.0",
+	"geometry.humanoid.shattered_sand_staff": {
+		"texturewidth": 64,
+		"textureheight": 64,
+		"visible_bounds_width": 3,
+		"visible_bounds_height": 3,
+		"visible_bounds_offset": [0, 1.5, 0],
+		"bones": [
+			{
+				"name": "rightArm",
+				"pivot": [-5, 22, 0],
+				"rotation": [-15, 0, 0],
+				"cubes": [
+					{"origin": [-8, 12, -2], "size": [4, 12, 4], "uv": [40, 16]}
+				]
+			},
+			{
+				"name": "rightItem",
+				"parent": "rightArm",
+				"pivot": [-12, 15, 10]
+			},
+			{
+				"name": "shatteredSandStaff",
+				"parent": "rightItem",
+				"pivot": [-6, 0, 9],
+				"rotation": [37.15846, 18.26883, 13.36473],
+				"cubes": [
+					{"origin": [-7, 1, 8], "size": [1, 26, 1], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "T",
+				"parent": "shatteredSandStaff",
+				"pivot": [-4, 29, 9],
+				"rotation": [0, 0, 25],
+				"cubes": [
+					{"origin": [-8, 27, 7], "size": [3, 3, 3], "uv": [0, 0]},
+					{"origin": [-10, 25, 8], "size": [5, 1, 1], "uv": [0, 0]},
+					{"origin": [-10, 31, 8], "size": [7, 1, 1], "uv": [0, 0]},
+					{"origin": [-10, 26, 8], "size": [1, 5, 1], "uv": [0, 0]},
+					{"origin": [-4, 29, 8], "size": [1, 2, 1], "uv": [0, 0]}
+				]
+			},
+			{
+				"name": "rightArmArmor",
+				"parent": "rightArm",
+				"pivot": [-5, 22, 0]
+			}
+		]
+	}
+}

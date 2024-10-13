@@ -1,0 +1,47 @@
+{
+  "format_version": 2,
+  "metadata": {
+    "authors": ["星屹工作室", "方漓猫", "大队长_Captain", "KuLou_D", "oldb"],
+    "license": "BSD-3",
+    "url": "https://klpbbs.com/thread-85797-1-1.html"
+  },
+  "header": {
+    "name": "pack.name",
+    "description": "pack.description",
+    "min_engine_version": [1, 21, 0],
+    "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
+    "version": "2.4.2",
+    "pack_scope": "world"
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "98abb052-0d22-4750-bd21-3521f53f00b9",
+      "version": "2.4.2"
+    }
+  ],
+  "settings": [
+    {
+      "type": "label",
+      "text": "§l开源项目§r"
+    },
+    {
+      "type": "label",
+      "text": "本项目使用了下面开源项目的代码/资源，谨此对这些项目的开发者致以崇高的敬意！"
+    },
+    {
+      "type": "label",
+      "text": "石头工艺"
+    },
+    {
+      "type": "label",
+      "text": "The MIT License\nCopyright ©2023 CTN STUDIO（BakeBee、MCcaptain5412、GuiCaiYaKeLi）\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\nThe Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software."
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "e1b2000f-c88c-46ed-a9cd-3f0b06130a1f",
+      "version": "2.4.2"
+    }
+  ]
+}

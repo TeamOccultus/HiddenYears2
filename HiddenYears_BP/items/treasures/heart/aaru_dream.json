@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:aaru_dream",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.desert_heart",
+      "minecraft:display_name": {
+        "value": "hy.item.aaru_dream"
+      },
+      "minecraft:glint": true,
+      "minecraft:hover_text_color": "aqua",
+      "minecraft:custom_components": ["hy:pyramid_summer"]
+    }
+  }
+}

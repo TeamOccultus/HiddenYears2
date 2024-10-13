@@ -1,0 +1,16 @@
+{
+    "format_version": "1.21.0",
+    "minecraft:recipe_brewing_container": {
+      "description": {
+        "identifier": "hy:cooling_potion"
+      },
+      "tags": [ "brewing_stand" ],
+      "input": {
+          "item": "minecraft:potion",
+          "data": 4
+      },
+      "reagent": "minecraft:blue_ice",
+      "output": "hy:cooling_potion"
+    }
+  }
+  

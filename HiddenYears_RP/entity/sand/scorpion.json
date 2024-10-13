@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hy:scorpion",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/scorpion"
+      },
+      "geometry": {
+        "default": "geometry.scorpion"
+      },
+      "animations": {
+        "idle": "animation.scorpion.idle",
+        "attack": "animation.scorpion.attack",
+        "move": "animation.scorpion.move",
+        "dance": "animation.scorpion.dance",
+        "in_ground": "animation.scorpion.in_ground",
+        "out_ground": "animation.scorpion.out_ground",
+        "goto_air": "animation.scorpion.goto_air"
+      },
+      "animation_controllers": [
+        {
+         "attack": "controller.animation.scorpion.attack"
+        },
+        {
+          "move": "controller.animation.scorpion.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.scorpion"
+      ],
+      "spawn_egg": {
+        "texture": "spawn_egg",
+        "texture_index": 11
+      }
+    }
+  }
+}

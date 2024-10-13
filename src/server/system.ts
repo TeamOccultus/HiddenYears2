@@ -1,19 +1,17 @@
 import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod, LoggerManager, replaceItemStack } from "lazuli-mc";
-import { bleedEffectMonitor } from "../core/effects";
+import { initializeMod, replaceItemStack } from "@lazuli/ldk2";
+import {
+  bleedEffectMonitor,
+  dehydrationEffectMonitor,
+  droughtEffectMonitor,
+} from "../core/effects";
 
 export class System {
   /**
    * 初始化模组
    */
   static initialize(): void {
-    initializeMod("hy", {name: "HiddenYears"}, {
-      questNameSpace: "hy-q",
-      watchdogDisabled: true,
-    });
-  }
-  static startLogger() {
-    return LoggerManager.getLogger("hy:logger");
+    initializeMod("hy",  "HiddenYears");
   }
   /**
    * 监听系统事件
@@ -29,19 +27,16 @@ export class System {
         );
       });
     }, 18000);
-  }
-  /**
-   * 注册每秒运行一次的事件
-   */
-  static secondEventRegister() {
     system.runInterval(() => {
       bleedEffectMonitor();
+      droughtEffectMonitor();
+      dehydrationEffectMonitor();
     }, 20);
   }
   /**
-   * 兼容性测试
+   * 进行向下兼容
    */
-  static compatibleTest() {
+  static backwardsCompatibility() {
     world.afterEvents.playerSpawn.subscribe((event) => {
       const PLAYER = event.player;
       replaceItemStack(

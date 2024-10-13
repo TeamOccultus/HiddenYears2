@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:unknown_frame",
+      "menu_category": {
+        "category": "construction"
+      }
+    },
+    "components": {
+      "minecraft:flammable": false,
+      "minecraft:display_name": "hy.block.unknown_frame",
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 10.0
+      },
+      "minecraft:map_color": "#999999",
+      "tag:metal": {}
+    }
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "namespace": "boss",
+
+  "empty_progress_bar": {
+    "type": "image",
+    "layer": 2,
+    "texture": "$empty_texture"
+  },
+
+  "filled_progress_bar_for_collections": {
+    "size": [180, 4],
+    "layer": 4,
+    "type": "image",
+    "texture": "$filled_texture",
+    "clip_direction": "left",
+    "clip_pixelperfect": false,
+    "bindings": [
+      {
+        "binding_name": "#progress_percentage",
+        "binding_name_override": "#clip_ratio",
+        "binding_type": "collection",
+        "binding_collection_name": "$progress_bar_collection"
+      }
+    ]
+  },
+
+  "progress_bar_for_collections": {
+    "type": "panel",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [188, 26],
+    "controls": [
+      { "empty@empty_progress_bar": { "layer": 1 } },
+      { "filled@filled_progress_bar_for_collections": { "layer": 2 } }
+    ]
+  },
+  "ruby@progress_bar_for_collections": {
+    "size": [268, 15],
+    "$empty_texture": "textures/ui/ruby_bar_empty",
+    "$filled_texture": "textures/ui/ruby_bar_filled",
+    "controls": [
+      { "empty@empty_progress_bar": { "layer": 1, "size": [268, 15] } },
+      {
+        "filled@filled_progress_bar_for_collections": {
+          "layer": 2,
+          "size": [268, 15]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(#bossName = '红宝石之王')",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  "ghost@progress_bar_for_collections": {
+    "size": [268, 15],
+    "$empty_texture": "textures/ui/ghost_bar_empty",
+    "$filled_texture": "textures/ui/ghost_bar_filled",
+    "controls": [
+      { "empty@empty_progress_bar": { "layer": 1, "size": [268, 15] } },
+      {
+        "filled@filled_progress_bar_for_collections": {
+          "layer": 2,
+          "size": [268, 15]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_name": "(#bossName = '法老残影')",
+        "binding_type": "collection",
+        "binding_collection_name": "boss_bars",
+        "binding_name_override": "#visible"
+      }
+    ]
+  }
+}

@@ -27,18 +27,13 @@ export const HyLetterBody: RawMessage[] = [
   {
     rawtext: [
       { translate: "article.0.body0" },
-      { text: "\n" },
+      { text: "\n\n" },
       { translate: "article.0.body1" },
       { text: "\n\n" },
       { translate: "article.0.body2" },
-      { text: "\n" },
+      { text: "\n\n" },
       { translate: "article.0.body3" },
-      { text: "\n" },
-      { translate: "article.0.body4" },
-      { text: "\n" },
-      { translate: "article.0.body5" },
-      { text: "\n" },
-      { translate: "article.0.end" },
+      { text: "\n\n" }
     ],
   },
   {
@@ -56,6 +51,8 @@ export const HyLetterBody: RawMessage[] = [
   },
   {
     rawtext: [
+      { translate: "article.2.begin" },
+      { text: "\n" },
       { translate: "article.2.body0" },
       { text: "\n" },
       { translate: "article.2.body1" },
@@ -73,13 +70,13 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.2.body7" },
       { text: "\n" },
       { translate: "article.2.body8" },
-      { text: "\n" },
-      { translate: "article.2.end" },
     ],
   },
   {
     rawtext: [
-      { translate: "article.3.body0" },
+      { translate: "article.3.begin" },
+      { text: "\n" },
+      { translate: "article.3.body" },
       { text: "\n" },
       { translate: "article.3.end" },
     ],
@@ -100,11 +97,38 @@ export const HyLetterBody: RawMessage[] = [
       { text: "\n" },
       { translate: "article.4.body6" },
       { text: "\n" },
-      { translate: "article.4.end" },
+      { translate: "article.4.body7" },
+      { text: "\n" },
+      { translate: "article.4.body8" },
+      { text: "\n" },
+      { translate: "article.4.body9" },
+      { text: "\n" },
+      { translate: "article.4.body10" },
+      { text: "\n" },
+      { translate: "article.4.body11" },
+      { text: "\n" },
+      { translate: "article.4.body12" },
+      { text: "\n" },
+      { translate: "article.4.body13" },
+      { text: "\n" },
+      { translate: "article.4.body14" },
     ],
   },
   {
-    rawtext: [{ translate: "article.5.body0" }],
+    rawtext: [
+      { translate: "article.5.body0" },
+      { text: "\n" },
+      { translate: "article.5.body1" },
+      { text: "\n" },
+      { translate: "article.5.body2" },
+      { text: "\n" },
+      { translate: "article.5.body3" },
+      { text: "\n" },
+      { translate: "article.5.body4" },
+      { text: "\n" },
+      { translate: "article.5.body5" },
+      { text: "\n" },
+    ],
   },
   {
     rawtext: [
@@ -116,13 +140,33 @@ export const HyLetterBody: RawMessage[] = [
     ],
   },
   {
-    rawtext: [{ translate: "article.7.body0" }],
-  },
-  {
-    rawtext: [{ translate: "article.8.body0" }],
+    rawtext: [
+      { translate: "article.7.body0" },
+      { text: "\n" },
+      { translate: "article.7.body1" },
+      { text: "\n" },
+      { translate: "article.7.body2" },
+      { text: "\n" },
+      { translate: "article.7.body3" },
+    ],
   },
   {
     rawtext: [
+      { translate: "article.8.begin" },
+      { text: "\n" },
+      { translate: "article.8.body0" },
+      { text: "\n" },
+      { translate: "article.8.body1" },
+      { text: "\n" },
+      { translate: "article.8.body2" },
+      { text: "\n" },
+      { translate: "article.8.body3" },
+    ],
+  },
+  {
+    rawtext: [
+      { translate: "article.9.begin" },
+      { text: "\n" },
       { translate: "article.9.body0" },
       { text: "\n" },
       { translate: "article.9.body1" },
@@ -148,6 +192,8 @@ export const HyLetterBody: RawMessage[] = [
   },
   {
     rawtext: [
+      { translate: "article.10.begin" },
+      { text: "\n" },
       { translate: "article.10.body0" },
       { text: "\n" },
       { translate: "article.10.body1" },
@@ -169,12 +215,6 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.10.body9" },
       { text: "\n" },
       { translate: "article.10.body10" },
-      { text: "\n" },
-      { translate: "article.10.body11" },
-      { text: "\n" },
-      { translate: "article.10.body12" },
-      { text: "\n" },
-      { translate: "article.10.body13" },
       { text: "\n" },
       { translate: "article.10.end" },
     ],
@@ -212,6 +252,36 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.11.body14" },
       { text: "\n" },
       { translate: "article.11.end" },
+    ],
+  },
+  {
+    rawtext: [
+      { translate: "article.12.body0" },
+      { text: "\n" },
+      { translate: "article.12.body1" },
+      { text: "\n" },
+      { translate: "article.12.body2" },
+      { text: "\n\n" },
+      { translate: "article.12.body3" },
+    ],
+  },
+  {
+    rawtext: [
+      { translate: "article.13.body0" },
+      { text: "\n" },
+      { translate: "article.13.body1" },
+      { text: "\n" },
+      { translate: "article.13.body2" },
+      { text: "\n\n" },
+      { translate: "article.13.body3" },
+      { text: "\n" },
+      { translate: "article.13.body4" },
+      { text: "\n\n" },
+      { translate: "article.13.body5" },
+      { text: "\n\n" },
+      { translate: "article.13.body6" },
+      { text: "\n" },
+      { translate: "article.13.body7" },
     ],
   },
 ];
@@ -287,7 +357,7 @@ export const HiddenStoryBody: RawMessage[] = [
       { text: "\n" },
       { translate: "story.hs.section2.body9" },
       { text: "\n" },
-    ]
+    ],
   },
   {
     rawtext: [
@@ -331,6 +401,6 @@ export const HiddenStoryBody: RawMessage[] = [
       { text: "\n" },
       { translate: "story.hs.section3.body19" },
       { text: "\n" },
-    ]
-  }
+    ],
+  },
 ];

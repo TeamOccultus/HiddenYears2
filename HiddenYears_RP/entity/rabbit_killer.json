@@ -1,0 +1,38 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hy:rabbit_killer",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "rabbit"
+      },
+      "textures": {
+        "default": "textures/entity/rabbit_killer"
+      },
+      "geometry": {
+        "default": "geometry.rabbit.v1.8"
+      },
+      "animations": {
+        "move": "animation.rabbit.move",
+        "baby_transform": "animation.rabbit.baby_transform",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.rabbit.general"
+        },
+        {
+          "baby": "controller.animation.rabbit.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.rabbit_killer"
+      ],
+      "spawn_egg": {
+        "texture": "hy.spawn_eggs",
+        "texture_index": 8
+      }
+    }
+  }
+}

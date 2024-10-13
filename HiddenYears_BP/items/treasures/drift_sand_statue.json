@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:drift_sand_statue",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.drift_sand_statue",
+      "minecraft:display_name": {
+        "value": "hy.item.drift_sand_statue"
+      },
+      "minecraft:custom_components": [
+        "hy:frame_acrtiver"
+      ],
+      "minecraft:hover_text_color": "light_purple"
+    }
+  }
+}

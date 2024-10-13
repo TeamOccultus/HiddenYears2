@@ -1,0 +1,515 @@
+pack.name=HiddenYears²
+pack.description=Explore the unknown world ｜ Release 2.4.2  [§lNeed Bedrock 1.21.X and enable§6 Custom Biomes,Beta APIs§r experimental gameplays]
+
+gui.check=Submit Quest
+gui.about=About
+hy.empty= 
+
+container.stonecutter=Cutter
+container.stonecutter_block=Cutter
+tile.stonecutter.name=Cutter
+tile.stonecutter_block.name=Cutter
+
+hy.message.tetanus=You got the §b「tetanus」§reffect！
+hy.message.oxidising.exposed=This tool became §b「exposed」§r.
+hy.message.oxidising.weathered=This tool became §b「weathered」§r.
+hy.message.oxidising.oxidized=This tool is §b「oxidized」§r.
+
+entity.hy:gemstone_trader.name=Gemstone Trader
+item.spawn_egg.entity.hy:gemstone_trader.name=Gemstone Trader Spawn Egg
+
+hy.item.wooden_handle=Wooden Handle
+
+hy.block.copper_essence_ore=Copper Essence Ore
+hy.block.deepslate_copper_essence_ore=Deepslate Copper Essence Ore
+hy.item.copper_stick=Copper Handle
+hy.item.copper_essence=Copper Essence
+hy.item.copper_coin=Copper Coin
+hy.item.metal_star=Metal Star
+hy.item.copper_hoe=Copper Hoe
+hy.item.exposed_copper_hoe=Exposed Copper Hoe
+hy.item.oxidized_copper_hoe=Oxidized Copper Hoe
+hy.item.weathered_copper_hoe=Weathered Copper Hoe
+hy.item.waxed_copper_hoe=Waxed Copper Hoe
+hy.item.copper_sword=Copper Sword
+hy.item.exposed_copper_sword=Exposed Copper Sword
+hy.item.oxidized_copper_sword=Oxidized Copper Sword
+hy.item.weathered_copper_sword=Weathered Copper Sword
+hy.item.waxed_copper_sword=Waxed Copper Sword
+hy.item.copper_axe=Copper Axe
+hy.item.exposed_copper_axe=Exposed Copper Axe
+hy.item.oxidized_copper_axe=Oxidize Copper Axe
+hy.item.weathered_copper_axe=Weathered Copper Axe
+hy.item.waxed_copper_axe=Waxed Copper Axe
+hy.item.copper_hammer=Copper Hammer
+hy.item.exposed_copper_hammer=Exposed Copper Hammer
+hy.item.oxidized_copper_hammer=Oxidized Copper Hammer
+hy.item.weathered_copper_hammer=Weathered Copper Hammer
+hy.item.copper_pickaxe=Copper Pickaxe
+hy.item.exposed_copper_pickaxe=Exposed Copper Pickaxe
+hy.item.oxidized_copper_pickaxe=Oxidized Copper Pickaxe
+hy.item.weathered_copper_pickaxe=Weathered Copper Pickaxe
+hy.item.waxed_copper_pickaxe=Waxed Copper Pickaxe
+hy.item.copper_shovel=Copper Shovel
+hy.item.exposed_copper_shovel=Exposed Copper Shovel
+hy.item.oxidized_copper_shovel=Oxidized Copper Shovel
+hy.item.weathered_copper_shovel=Weathered Copper Shovel
+hy.item.waxed_copper_shovel=Waxed Copper Shovel
+
+hy.block.amethyst_essence_ore=Amethyst Ore
+hy.block.deepslate_amethyst_essence_ore=Deepslate Amethyst Ore
+hy.item.amethyst_ingot=Amethyst Ingot
+hy.item.amethyst_axe=Amethyst Axe
+hy.item.amethyst_hammer=Amethyst Hammer
+hy.item.amethyst_hoe=Amethyst Hoe
+hy.item.amethyst_pickaxe=Amethyst Pickaxe
+hy.item.amethyst_shovel=Amethyst Shovel
+hy.item.amethyst_sword=Amethyst Sword
+
+hy.item.amethyst_nugget=Amethyst Nugget
+hy.item.coal_nugget=Coal Nugget
+hy.item.copper_nugget=Copper Nugget
+hy.item.diamond_nugget=Diamond Nugget
+hy.item.emerald_nugget=Emerald Nugget
+hy.item.lapis_nugget=Lapis Nugget
+hy.item.netherite_nugget=Netherite Nugget
+hy.item.quartz_nugget=Quartz Nugget
+hy.item.redstone_nugget=Redstone Nugget
+
+hy.item.amethyst_dust=Amethyst Dust
+hy.item.coal_dust=Coal Dust
+hy.item.copper_dust=Copper Dust
+hy.item.diamond_dust=Diamond Dust
+hy.item.emerald_dust=Emerald Dust
+hy.item.lapis_dust=Lapis Dust
+hy.item.netherite_dust=Metherite Dust
+hy.item.quartz_dust=Quartz Dust
+hy.item.iron_dust=Iron Dust
+hy.item.gold_dust=Gold Dust
+
+hy.item.diamond_hammer=Diamond Hammer
+hy.item.gold_hammer=Gold Hammer
+hy.item.iron_hammer=Iron Hammer
+hy.item.netherite_hammer=Netherite Hammer
+hy.item.wooden_hammer=Wooden Hammer
+hy.item.stone_hammer=Stone Hammer
+
+hy.item.waxed_copper_hammer=Waxed Copper Hammer
+hy.item.waxed_amethyst_hammer=Waxed Amethyst Hammer
+hy.item.waxed_diamond_hammer=Waxed Diamond Hammer
+hy.item.waxed_gold_hammer=Waxed Golden Hammer
+hy.item.waxed_iron_hammer=Waxed Iron Hammer
+hy.item.waxed_netherite_hammer=Waxed Netherite Hammer
+hy.item.waxed_wooden_hammer=Waxed Wooden Hammer
+hy.item.waxed_stone_hammer=Waxed Stone Hammer
+
+hy.item.sharp_copper_hammer=Sharp Copper Hammer
+hy.item.sharp_amethyst_hammer=Sharp Amethyst Hammer
+hy.item.sharp_diamond_hammer=Sharp Diamond Hammer
+hy.item.sharp_gold_hammer=Sharp Golden Hammer
+hy.item.sharp_iron_hammer=Sharp Iron Hammer
+hy.item.sharp_netherite_hammer=Sharp Netherite Hammer
+hy.item.sharp_wooden_hammer=Sharp Wooden Hammer
+hy.item.sharp_stone_hammer=Sharp Stone Hammer
+
+hy.item.amethyst_coal=Amethyst Coal
+hy.item.copper_coal=Copper Coal
+hy.item.iron_coal=Iron Coal
+hy.item.gold_coal=Gold Coal
+hy.item.emerald_coal=Emerald Coal
+hy.item.quartz_coal=Quartz Coal
+hy.item.diamond_coal=Diamond Coal
+hy.item.redstone_coal=Redstone Coal
+hy.item.lapis_coal=Lapis Coal
+hy.item.netherite_coal=Netherite Coal
+
+hy.item.diamond_awl=Diamond Awl
+hy.item.gold_awl=Golden Awl
+hy.item.iron_awl=Iron Awl
+hy.item.netherite_awl=Netherite Awl
+hy.item.wooden_awl=Wooden Awl
+hy.item.stone_awl=Stone Awl
+hy.item.copper_awl=Copper Awl
+hy.item.amethyst_awl=Amethyst Awl
+
+hy.item.diamond_knife=Diamond Knife
+hy.item.gold_knife=Golden Knife
+hy.item.iron_knife=Iron Knife
+hy.item.netherite_knife=Netherite Knife
+hy.item.wooden_knife=Wooden Knife
+hy.item.stone_knife=Stone Knife
+hy.item.amethyst_knife=Amethyst Knife
+
+hy.item.diamond_dagger=Diamond Dagger
+hy.item.gold_dagger=Golden Dagger
+hy.item.iron_dagger=Iron Dagger
+hy.item.netherite_dagger=Netherite Dagger
+hy.item.wooden_dagger=Wooden Dagger
+hy.item.stone_dagger=Stone Dagger
+hy.item.amethyst_dagger=Amethyst Dagger
+
+hy.item.gold_coin=Gold Coin
+hy.item.diamond_coin=Diamond Coin
+hy.item.stack_of_gold_coin=Stack Of Gold Coin
+hy.item.stack_of_diamond_coin=Stack Of Diamond Coin
+hy.item.stack_of_copper_coin=Stack Of Copper Coin
+
+hy.block.fuel_metal_ore=Stone With Fuel Metals
+hy.block.deepslate_fuel_metal_ore=Deepslate With Fuel Metals
+hy.item.amethyst_fuel_metal=Amethyst Fuel Metal
+hy.item.mineral_fuel_metal=Mineral Fuel Metal
+hy.item.fuel_metal=Fuel Metal
+hy.item.crop_fuel_metal=Fuel Metal From Crop
+hy.item.fuel_metal_stick=Fuel Metal Stick
+hy.item.nightmare_fuel_metal=Nightmare Fuel Metal
+
+hy.item.end_metal_ingot=End Metal Ingot
+hy.item.nether_metal_ingot=Nether Metal Ingot
+hy.item.over_metal_ingot=Stone Metal Ingot
+
+hy.item.over_metal_axe=Stone Metal Axe
+hy.item.over_metal_hammer=Stone Metal Hammer
+hy.item.over_metal_hoe=Stone Metal Hoe
+hy.item.over_metal_pickaxe=Stone Metal Pickaxe
+hy.item.over_metal_shovel=Stone Metal Shovel
+hy.item.over_metal_dagger=Stone Metal Dagger
+hy.item.over_metal_knife=Stone Metal Knife
+hy.item.over_metal_sword=Stone Metal Sword
+
+hy.item.end_metal_axe=End Metal Axe
+hy.item.end_metal_hammer=End Metal Hammer
+hy.item.end_metal_hoe=End Metal Hoe
+hy.item.end_metal_pickaxe=End Metal Pickaxe
+hy.item.end_metal_shovel=End Metal Shovel
+hy.item.end_metal_dagger=End Metal Dagger
+hy.item.end_metal_knife=End Metal Knife
+hy.item.end_metal_sword=End Metal Sword
+
+hy.item.nether_metal_axe=Nether Metal Axe
+hy.item.nether_metal_hammer=Nether Metal Hammer
+hy.item.nether_metal_hoe=Nether Metal Hoe
+hy.item.nether_metal_pickaxe=Nether Metal Pickaxe
+hy.item.nether_metal_shovel=Nether Metal Shovel
+hy.item.nether_metal_dagger=Nether Metal Dagger
+hy.item.nether_metal_knife=Nether Metal Knife
+hy.item.nether_metal_sword=Nether Metal Sword
+
+hy.item.over_metal_nugget=Stone Metal Nugget
+hy.item.nether_metal_nugget=Nether Metal Nugget
+hy.item.end_metal_nugget=End Metal Nugget
+
+hy.item.over_metal_awl=Over Metal Awl
+hy.item.nether_metal_awl=Nether Metal Awl
+hy.item.end_metal_awl=End Metal Awl
+
+hy.block.andesite_metal_stone=Andesite Metal Stone
+hy.block.diorite_metal_stone=Diorite Metal Stone
+hy.block.granite_metal_stone=Granite Metal Stone
+
+hy.block.shallow_coal_ore=Shallow Coal Ore
+hy.block.shallow_copper_ore=Shallow Copper Ore
+hy.block.shallow_diamond_ore=Shallow Diamond Ore
+hy.block.shallow_emerald_ore=Shallow Emerald Ore
+hy.block.shallow_iron_ore=Shallow Iron Ore
+hy.block.shallow_lapis_ore=Shallow Lapis Ore
+hy.block.shallow_redstone_ore=Shallow Redstone Ore
+hy.block.shallow_gold_ore=Shallow Gold Ore
+
+hy.block.geocentric_coal_ore=Geocentric Coal Ore
+hy.block.geocentric_copper_ore=Geocentric Copper Ore
+hy.block.geocentric_diamond_ore=Geocentric Diamond Ore
+hy.block.geocentric_emerald_ore=Geocentric Emerald Ore
+hy.block.geocentric_iron_ore=Geocentric Iron Ore
+hy.block.geocentric_lapis_ore=Geocentric Lapis Ore
+hy.block.geocentric_redstone_ore=Geocentric Redstone Ore
+hy.block.geocentric_gold_ore=Geocentric Gold Ore
+
+hy.block.suspicious_coal_ore=Suspicious Coal Ore
+hy.block.suspicious_copper_ore=Suspicious Copper Ore
+hy.block.suspicious_diamond_ore=Suspicious Diamond Ore
+hy.block.suspicious_emerald_ore=Suspicious Emerald Ore
+hy.block.suspicious_iron_ore=Suspicious Iron Ore
+hy.block.suspicious_lapis_ore=Suspicious Lapis Ore
+hy.block.suspicious_redstone_ore=Suspicious Redstone Ore
+hy.block.suspicious_gold_ore=Suspicious Gold Ore
+
+hy.block.deepslate_suspicious_coal_ore=Deepslate Suspicious Coal Ore
+hy.block.deepslate_suspicious_copper_ore=Deepslate Suspicious Copper Ore
+hy.block.deepslate_suspicious_diamond_ore=deepslate Suspicious Diamond Ore
+hy.block.deepslate_suspicious_emerald_ore=deepslate Suspicious Emerald Ore
+hy.block.deepslate_suspicious_iron_ore=deepslate Suspicious Iron Ore
+hy.block.deepslate_suspicious_lapis_ore=deepslate Suspicious Lapis Ore
+hy.block.deepslate_suspicious_redstone_ore=deepslate Suspicious Redstone Ore
+hy.block.deepslate_suspicious_gold_ore=deepslate Suspicious Gold Ore
+
+hy.item.tin_ingot=Tin Ingot
+hy.item.tin_nugget=Tin Nugget
+hy.item.tin_dust=Tin Dust
+hy.item.raw_tin=Raw Tin
+hy.block.tin_ore=Tin Ore
+hy.block.deepslate_tin_ore=Deepslate Tin Ore
+hy.block.tin_block=Block Of Tin
+
+hy.item.flash_metal_ingot=flash_metal Ingot
+hy.item.flash_metal_nugget=flash_metal Nugget
+hy.item.flash_metal_dust=flash_metal Dust
+hy.item.flash_metal_axe=flash_metal Axe
+hy.item.flash_metal_hammer=flash_metal Hammer
+hy.item.flash_metal_hoe=flash_metal Hoe
+hy.item.flash_metal_pickaxe=flash_metal Pickaxe
+hy.item.flash_metal_shovel=flash_metal Shovel
+hy.item.flash_metal_dagger=flash_metal Dagger
+hy.item.flash_metal_knife=flash_metal Knife
+hy.item.flash_metal_awl=flash_metal Awl
+hy.item.flash_metal_sword=flash_metal Sword
+hy.block.flash_metal_block=Block Of flash_metal
+
+hy.block.lab_table=Alchemy Table
+hy.item.medicines.medicine_pack=Medicine Package
+hy.item.medicines.bandage=Bandage
+
+hy.item.steel_ingot=Steel Ingot
+hy.item.steel_nugget=Steel Nugget
+hy.item.steel_dust=Steel Dust
+hy.item.steel_helmet=Steel Helmet
+hy.item.steel_chestplate=Steel Chestplate
+hy.item.steel_leggings=Steel Leggings
+hy.item.steel_boots=Steel Boots
+hy.item.steel_axe=Steel Axe
+hy.item.steel_hammer=Steel Hammer
+hy.item.steel_hoe=Steel Hoe
+hy.item.steel_pickaxe=Steel Pickaxe
+hy.item.steel_shovel=Steel Shovel
+hy.item.steel_dagger=Steel Dagger
+hy.item.steel_knife=Steel Knife
+hy.item.steel_awl=Steel Awl
+hy.item.steel_sword=Steel Sword
+hy.block.steel_block=Steel Block
+
+hy.item.copper_knife=Copper Knife
+hy.item.exposed_copper_knife=Exposed Copper Knife
+hy.item.oxidized_copper_knife=Oxidized Copper Knife
+hy.item.weathered_copper_knife=Weathered Copper Knife
+hy.item.waxed_copper_knife=Waxed Copper Knife
+hy.item.copper_dagger=Copper Dagger
+hy.item.exposed_copper_dagger=Exposed Copper Dagger
+hy.item.oxidized_copper_dagger=Oxidized Copper Dagger
+hy.item.weathered_copper_dagger=Weathered Copper Dagger
+hy.item.waxed_copper_dagger=Waxed Copper Dagger
+hy.item.copper_apple=Copper Apple
+hy.item.enchanted_copper_apple=Enchanted Copper Apple
+
+hy.item.flash_copper_ingot=Flash Copper Ingot
+hy.item.flash_copper_nugget=Flash Copper Nugget
+hy.item.flash_copper_dust=Flash Copper Dust
+hy.item.flash_copper_helmet=Flash Copper Helmet
+hy.item.flash_copper_chestplate=Flash Copper Chestplate
+hy.item.flash_copper_leggings=Flash Copper Leggings
+hy.item.flash_copper_boots=Flash Copper Boots
+hy.item.flash_copper_axe=Flash Copper Axe
+hy.item.flash_copper_hammer=Flash Copper Hammer
+hy.item.flash_copper_hoe=Flash Copper Hoe
+hy.item.flash_copper_pickaxe=Flash Copper Pickaxe
+hy.item.flash_copper_shovel=Flash Copper Shovel
+hy.item.flash_copper_dagger=Flash Copper Dagger
+hy.item.flash_copper_knife=Flash Copper Knife
+hy.item.flash_copper_awl=Flash Copper Awl
+hy.item.flash_copper_sword=Flash Copper Sword
+hy.block.flash_copper_block=Block Of flash_copper
+
+hy.item.imitation_amethyst_ingot=Imitation Amethyst Ingot
+hy.item.imitation_amethyst_axe=Imitation Amethyst Axe
+hy.item.imitation_amethyst_hammer=Imitation Amethyst Hammer
+hy.item.imitation_amethyst_hoe=Imitation Amethyst Hoe
+hy.item.imitation_amethyst_pickaxe=Imitation Amethyst Pickaxe
+hy.item.imitation_amethyst_shovel=Imitation Amethyst Shovel
+hy.item.imitation_amethyst_sword=Imitation Amethyst Sword
+
+hy.item.imitation_gold_ingot=Imitation Gold Ingot
+hy.item.imitation_gold_axe=Imitation Golden Axe
+hy.item.imitation_gold_hammer=Imitation Golden Hammer
+hy.item.imitation_gold_hoe=Imitation Golden Hoe
+hy.item.imitation_gold_pickaxe=Imitation Golden Pickaxe
+hy.item.imitation_gold_shovel=Imitation Golden Shovel
+hy.item.imitation_gold_sword=Imitation Golden Sword
+
+hy.item.imitation_diamond=Imitation Diamond
+hy.item.imitation_diamond_axe=Imitation Diamond Axe
+hy.item.imitation_diamond_hammer=Imitation Diamond Hammer
+hy.item.imitation_diamond_hoe=Imitation Diamond Hoe
+hy.item.imitation_diamond_pickaxe=Imitation Diamond Pickaxe
+hy.item.imitation_diamond_shovel=Imitation Diamond Shovel
+hy.item.imitation_diamond_sword=Imitation Diamond Sword
+
+hy.item.imitation_iron_ingot=Imitation Iron Ingot
+hy.item.imitation_iron_axe=Imitation Iron Axe
+hy.item.imitation_iron_hammer=Imitation Iron Hammer
+hy.item.imitation_iron_hoe=Imitation Iron Hoe
+hy.item.imitation_iron_pickaxe=Imitation Iron Pickaxe
+hy.item.imitation_iron_shovel=Imitation Iron Shovel
+hy.item.imitation_iron_sword=Imitation Iron Sword
+
+hy.item.corrosion_ingot=Corrosion Ingot
+
+hy.item.exposed_copper_dust=Exposed Copper Dust
+hy.item.weathered_copper_dust=Weathered Copper Dust
+hy.item.oxidized_copper_dust=Oxidized Copper Dust
+
+hy.item.imitation_coal=Imitation Coal
+hy.item.imitation_charcoal=Imitation Charcoal
+
+hy.item.iron_crowbar=Iron Crowbar
+hy.item.gold_crowbar=Golden Crowbar
+hy.item.diamond_crowbar=Diamond Crowbar
+
+sc.item.stone_nugget=Stone Nugget
+sc.block.crushed_stone=Crushed Stone
+
+hy.message.imitation_damage.1=The quality of this tool doesn't seem to be very good……
+hy.message.imitation_damage.2=The quality of this imitation tool is so poor that it hurts its own owner.
+
+hy.item.bark=Bark
+item.leather.name=Large Leather
+item.rabbit_hide.name=Small Leather
+hy.item.enchanted_bone=Enchanted Bone
+hy.item.raw_large_leather=Raw Large Leather
+hy.item.raw_small_leather=Raw Small Leather
+
+hy.message.sus_ore.1=There are too many bugs in the ore!
+hy.message.sus_ore.2=§c§lThere is a TNT in the ore!
+hy.open_message.sus_ore=Somebody got an ore with TNT！
+hy.message.fuel_metal=Is this item edible?
+hy.message.eat_bark=Are you already poor enough to eat the bark?
+
+hy.item.mineral_coals=Mineral Coal
+hy.item.mineral_charcoals=Mineral Charcoal
+hy.item.diamond_badge=Diamond Badge
+hy.item.golden_badge=Golden Badge
+hy.item.copper_badge=Copper Badge
+hy.item.disc_fragment.cat=Disc Fragment - Cat
+hy.item.disc_fragment.blocks=Disc Fragment - Blocks
+hy.item.disc_fragment.chirp=Disc Fragment - Chirp
+hy.item.disc_fragment.far=Disc Fragment - Far
+hy.item.disc_fragment.mall=Disc Fragment - Mall
+hy.item.disc_fragment.mllohi=Disc Fragment - Mllohi
+hy.item.copper_horn=Copper Horn
+
+hy.item.copper_helmet=Copper Helmet
+hy.item.copper_chestplate=Copper Chestplate
+hy.item.copper_leggings=Copper Leggings
+hy.item.copper_boots=Copper Boots
+hy.item.flash_copper_helmet=Flash Copper Helmet
+hy.item.flash_copper_chestplate=Flash Copper Chestplate
+hy.item.flash_copper_leggings=Flash Copper Leggings
+hy.item.flash_copper_boots=Flash Copper Boots
+
+hy.item.amethyst_boardsword=Amethyst Boardsword
+hy.item.emerald_boardsword=Emerald Boardsword
+hy.item.flash_copper_boardsword=Flash Copper Boardsword
+hy.item.flash_metal_boardsword=Flash Metal Boardsword
+hy.item.corrosion_boardsword=Corrosion Boardsword
+hy.item.diamond_bone=Diamond Bonesword
+hy.item.gold_bone=Golden Bonesword
+hy.item.iron_bone=Iron Bonesword
+
+entity.hy:oldb.name=[方漓猫的呆毛]
+
+hy.block.flash_copper_ore=Flash Copper Ore
+hy.block.deepslate_copper_ore=Deepslate Copper Ore
+hy.block.flash_copper_block=Block Of Flash Copper
+
+hy.item.medicines.1=Dandelion Poison
+hy.item.medicines.2=Suspicious Poison
+hy.item.medicines.3=Blue Orchid Poison
+hy.item.medicines.4=Allium Poison
+hy.item.medicines.5=Azure Bluet Poison
+hy.item.medicines.6=Tulip Poison
+hy.item.medicines.7=Oxeye Daisy Poison
+hy.item.medicines.8=Cornflower Poison
+hy.item.medicines.9=Lily of the Valley Poison
+hy.item.medicines.10=Mother Killer Poison
+hy.item.medicines.11=Torchflower Poison
+hy.item.medicines.12=Pitcher Plant Poison
+hy.item.medicines.13=Seagrass Poison
+hy.item.medicines.14=Sunflower Poison
+
+hy.item.copper_kelp=Copper Kelp
+hy.item.copper_carrot=Copper Carrot
+hy.item.copper_bread=Copper Bread
+hy.item.copper_hodgepodge=Copper Hodgepodge
+hy.item.copper_melon_slice=Copper Melon Slice
+hy.item.copper_potato=Copper Potato
+
+entity.hy:hidden_trader.name=Hidden Trader
+item.spawn_egg.entity.hy:hidden_trader.name=Hidden Trader Spawn Egg
+hy.item.honey_candy=Honey Candy
+hy.item.syrup=Syrup
+hy.item.chocolate_paste=Chocolate Paste
+hy.item.chocolate_bar=Chocolate Bar
+hy.item.chocolate=Chocolate
+hy.item.milk_chocolate=Milk Chocolate
+hy.item.sweet_berry_chocolate=Sweet Berry Chocolate
+hy.item.amethyst_chocolate=Amethyst Chocolate
+hy.item.marshmallow=Marshallow
+hy.item.sweet_berry_marshmallow=Sweet Berry Marshmallow
+hy.item.amethyst_marshmallow=Amethyst Marshmallow
+hy.block.chocolate_block=Chocolate Block
+hy.block.chocolate_bricks=Chocolate Bricks
+
+hy.item.story_book=The Hidden Stories
+hy.item.lost_letter=Lost Letter
+hy.item.ruby=Ruby
+hy.block.ruby_block=Ruby Block
+hy.item.ruby_helmet=Ruby Helmet
+hy.item.ruby_chestplate=Ruby Chestplate
+hy.item.ruby_leggings=Ruby Leggings
+hy.item.ruby_boots=Ruby Boots
+hy.item.ruby_apple=Ruby Apple
+hy.block.ruby_ore=Ruby Ore
+hy.block.deepslate_ruby_ore=Deepslate Ruby Ore
+hy.item.ruby_boardsword=Ruby Boardsword
+hy.item.ruby_runes=Ruby Runes
+hy.item.ruby_bag=Ruby Bag
+hy.item.calamity_bag.experience=Experience Calamity Bag
+hy.block.ruby_stone_bricks=Stone Bricks with Ruby
+hy.bossdead.ruby=「King of Ruby」has fallen and the world has fallen silent……
+
+entity.hy:ruby_zombie.name=Ruby Zombie
+item.spawn_egg.entity.hy:ruby_zombie.name=Ruby Zombie Spawn Egg
+entity.hy:ruby_skeleton.name=Ruby Skeleton
+item.spawn_egg.entity.hy:ruby_skeleton.name=Ruby Skeleton Spawn Egg
+entity.hy:ruby_guardian.name=Ruby Guardian
+item.spawn_egg.entity.hy:ruby_guardian.name=Ruby Guardian Spawn Egg
+entity.hy:king_of_ruby.name=King of Ruby
+item.spawn_egg.entity.hy:king_of_ruby.name=King of Ruby Spawn Egg
+
+hy.item.amethyst_boardsword.embryo=Amethyst Boardsword Embryo
+hy.item.emerald_boardsword.embryo=Emerald Boardsword Embryo
+hy.item.flash_copper_boardsword.embryo=Flash Copper Boardsword Embryo
+hy.item.flash_metal_boardsword.embryo=Flash Metal Boardsword Embryo
+hy.item.corrosion_boardsword.embryo=Corrosion Boardsword Embryo
+hy.item.ruby_boardsword.embryo=Ruby Boardsword Embryo
+
+hy.message.no_exp = You don't have enough experience to do §b 「Magic Explode」§r
+
+hy.item.raw_flash_copper_ingot=Raw Flash Copper Ingot
+hy.item.raw_flash_metal_ingot=Raw Flash Metal Ingot
+hy.item.raw_steel_ingot=Raw Steel Ingot
+
+hy.item.quest_book=Hidden Years·Quest Book
+
+hy.item.sand_meat=Sand Meat
+hy.item.scorched_meat=Scorched Meat
+hy.item.sand_fish=Sand Fish
+hy.item.sand_bone=Sand Bone
+hy.item.rabbit_paw=Rabbit Paw
+hy.item.paw_dust=Paw Dust
+hy.item.rain_god_blessing=God Blessing·Something Fell From the Sky
+hy.item.cooling_potion=Cooling Potion
+hy.item.desert_heart=Desert Heart
+hy.item.pharaoh_heart=Pharaoh Heart
+hy.item.drift_sand_key=Drift Sand Key
+hy.item.past_statue=Past Statue
+hy.item.drift_sand_statue=Drift Sand Statue
+hy.item.drift_sand_coronet=Drift Sand Coronet
+hy.message.cooling_potion=干旱和脱水症状得到了缓解！

@@ -1,0 +1,53 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.simple_cabinet",
+				"texture_width": 80,
+				"texture_height": 80,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "cabinet",
+					"pivot": [1.4, 5.35, 0],
+					"cubes": [
+						{"origin": [-8, 1, -8], "size": [16, 1, 16], "uv": [0, 0]},
+						{"origin": [7, 2, -8], "size": [1, 13, 16], "uv": [0, 34]},
+						{"origin": [-7, 2, 7], "size": [14, 13, 1], "uv": [30, 63]},
+						{"origin": [-8, 2, -8], "size": [1, 13, 16], "uv": [34, 34]},
+						{"origin": [-8, 15, -8], "size": [16, 1, 16], "uv": [0, 17]},
+						{"origin": [7, 0, -8], "size": [1, 1, 1], "uv": [68, 0]},
+						{"origin": [-8, 0, -8], "size": [1, 1, 1], "uv": [64, 0]},
+						{"origin": [7, 0, 7], "size": [1, 1, 1], "uv": [68, 2]},
+						{"origin": [-8, 0, 7], "size": [1, 1, 1], "uv": [64, 2]}
+					]
+				},
+				{
+					"name": "door",
+					"pivot": [-7, 8.5, -7.5]
+				},
+				{
+					"name": "door_open",
+					"parent": "door",
+					"pivot": [0, 8.5, -7.1],
+					"cubes": [
+						{"origin": [0, 2, -7.6], "size": [7, 13, 1], "pivot": [7, 8.5, -7.1], "rotation": [0, 80, 0], "uv": [7, 63]},
+						{"origin": [-7, 2, -7.6], "size": [7, 13, 1], "pivot": [-7, 8.5, -7.1], "rotation": [0, -80, 0], "uv": [0, 63]}
+					]
+				},
+				{
+					"name": "door_close",
+					"parent": "door",
+					"pivot": [0, 8.5, -7.1],
+					"cubes": [
+						{"origin": [-7, 2, -7.6], "size": [14, 13, 1], "uv": [0, 63]}
+					]
+				}
+			]
+		}
+	]
+}

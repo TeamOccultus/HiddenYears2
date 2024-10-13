@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "bone_meal_from_sand_bone"
+    },
+    "tags": ["crafting_table"],
+    "group": "bonemeal",
+    "ingredients": [
+      {
+        "item": "hy:sand_bone"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hy:sand_bone"
+      }
+    ],
+    "result": {
+      "item": "bone_meal",
+      "count": 18
+    }
+  }
+}

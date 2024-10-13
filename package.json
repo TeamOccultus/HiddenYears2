@@ -1,13 +1,13 @@
 {
   "name": "hy2",
-  "version": "2.3.3",
+  "version": "2.4.2",
   "description": "A Minecraft addon",
   "scripts": {
-    "build": "esbuild src/index.ts --bundle --format=esm --external:@minecraft/server --external:@minecraft/server-ui --minify-syntax \"--outfile=./隐藏之年2(BP)/scripts/index.js\"",
-    "buildSrc": "prettier --write src&&tsc",
-    "debug": "tsc --noEmit&&prettier --write .",
-    "prettier": "prettier --write .",
-    "test": "tsc"
+    "build:main": "node build/main.mjs",
+    "build:music": "node build/music.mjs",
+    "build:script": "node build/script.mjs",
+    "build": "node build/build.mjs",
+    "test": "node build/test.mjs "
   },
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
@@ -15,12 +15,15 @@
     "@minecraft/server": "1.15.0-beta.1.21.30-stable",
     "@minecraft/server-ui": "1.4.0-beta.1.21.30-stable",
     "@minecraft/vanilla-data": "1.21.30",
-    "esbuild": "^0.23.0",
-    "lazuli-mc": "1.10.1",
+    "esbuild": "^0.23.1",
+    "@lazuli/ldk2": "2.0.0-beta.1",
     "typescript": "^5.5.3"
   },
   "devDependencies": {
-    "prettier": "^3.3.3",
-    "rollup": "^4.18.1"
+    "archiver": "^7.0.1",
+    "commander": "^12.1.0",
+    "fs-extra": "^11.2.0",
+    "path": "^0.12.7",
+    "prettier": "^3.3.3"
   }
 }

@@ -1,0 +1,149 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "隐藏之年²",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "hy.copper_essence_ore": {
+      "textures": "textures/blocks/copper_essence_ore"
+    },
+    "hy.deepslate_copper_essence_ore": {
+      "textures": "textures/blocks/deepslate_copper_essence_ore"
+    },
+    "hy.amethyst_essence_ore": {
+      "textures": "textures/blocks/amethyst_essence_ore"
+    },
+    "hy.deepslate_amethyst_essence_ore": {
+      "textures": "textures/blocks/deepslate_amethyst_essence_ore"
+    },
+    "hy.fuel_metal_ore": {
+      "textures": "textures/blocks/fuel_metal_ore"
+    },
+    "hy.deepslate_fuel_metal_ore": {
+      "textures": "textures/blocks/deepslate_fuel_metal_ore"
+    },
+    "hy.shallow_diamond_ore": {
+      "textures": "textures/blocks/shallow_diamond_ore"
+    },
+    "hy.shallow_gold_ore": {
+      "textures": "textures/blocks/shallow_gold_ore"
+    },
+    "hy.shallow_iron_ore": {
+      "textures": "textures/blocks/shallow_iron_ore"
+    },
+    "hy.shallow_lapis_ore": {
+      "textures": "textures/blocks/shallow_lapis_ore"
+    },
+    "hy.shallow_emerald_ore": {
+      "textures": "textures/blocks/shallow_emerald_ore"
+    },
+    "hy.shallow_redstone_ore": {
+      "textures": "textures/blocks/shallow_redstone_ore"
+    },
+    "hy.shallow_copper_ore": {
+      "textures": "textures/blocks/shallow_copper_ore"
+    },
+    "hy.shallow_coal_ore": {
+      "textures": "textures/blocks/shallow_coal_ore"
+    },
+    "hy.deep_diamond_ore": {
+      "textures": "textures/blocks/deep_diamond_ore"
+    },
+    "hy.deep_gold_ore": {
+      "textures": "textures/blocks/deep_gold_ore"
+    },
+    "hy.deep_iron_ore": {
+      "textures": "textures/blocks/deep_iron_ore"
+    },
+    "hy.deep_lapis_ore": {
+      "textures": "textures/blocks/deep_lapis_ore"
+    },
+    "hy.deep_emerald_ore": {
+      "textures": "textures/blocks/deep_emerald_ore"
+    },
+    "hy.deep_redstone_ore": {
+      "textures": "textures/blocks/deep_redstone_ore"
+    },
+    "hy.deep_copper_ore": {
+      "textures": "textures/blocks/deep_copper_ore"
+    },
+    "hy.tin_ore": {
+      "textures": "textures/blocks/tin_ore"
+    },
+    "hy.deepslate_tin_ore": {
+      "textures": "textures/blocks/deepslate_tin_ore"
+    },
+    "hy.tin_block": {
+      "textures": "textures/blocks/tin_block"
+    },
+    "hy.flash_metal_block": {
+      "textures": "textures/blocks/flash_metal_block"
+    },
+    "hy.lab_table.top": {
+      "textures": "textures/blocks/lab_table_top"
+    },
+    "hy.lab_table.front": {
+      "textures": "textures/blocks/lab_table_front"
+    },
+    "hy.lab_table.side_1": {
+      "textures": "textures/blocks/lab_table_side_a"
+    },
+    "hy.lab_table.side_2": {
+      "textures": "textures/blocks/lab_table_side_b"
+    },
+    "hy.lab_table.side_3": {
+      "textures": "textures/blocks/lab_table_side_c"
+    },
+    "hy.lab_table.bottom": {
+      "textures": "textures/blocks/lab_table_bottom"
+    },
+    "hy.flash_copper_ore": {
+      "textures": "textures/blocks/flash_copper_ore"
+    },
+    "hy.deepslate_flash_copper_ore": {
+      "textures": "textures/blocks/deepslate_flash_copper_ore"
+    },
+    "hy.flash_copper_block": {
+      "textures": "textures/blocks/flash_copper_block"
+    },
+    "hy.chocolate_block": {
+      "textures": "textures/blocks/chocolate_block"
+    },
+    "hy.chocolate_bricks": {
+      "textures": "textures/blocks/chocolate_bricks"
+    },
+    "hy.ruby_block": {
+      "textures": "textures/blocks/ruby_block"
+    },
+    "hy.ruby_ore": {
+      "textures": "textures/blocks/ruby_ore"
+    },
+    "hy.deepslate_ruby_ore": {
+      "textures": "textures/blocks/deepslate_ruby_ore"
+    },
+    "hy.ruby_stone_bricks": {
+      "textures": "textures/blocks/ruby_stone_bricks"
+    },
+    "hy.steel_core_ore": {
+      "textures": "textures/blocks/steel_core_ore"
+    },
+    "hy.extracts_ore": {
+      "textures": "textures/blocks/extracts_ore"
+    },
+    "hy.unknown_frame_top": {
+      "textures": "textures/blocks/unknown_frame_top"
+    },
+    "hy.unknown_frame_top_filled": {
+      "textures": "textures/blocks/unknown_frame_top_filled"
+    },
+    "hy.unknown_frame_side": {
+      "textures": "textures/blocks/unknown_frame_side"
+    },
+    "hy.unknown_frame_bottom": {
+      "textures": "textures/blocks/unknown_frame_bottom"
+    },
+    "hy.drift_sand_cabinet": {
+      "textures": "textures/blocks/drift_sand_cabinet"
+    }
+  }
+}

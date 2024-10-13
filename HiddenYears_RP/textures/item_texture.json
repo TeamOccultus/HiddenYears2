@@ -1,0 +1,1068 @@
+{
+  "resource_pack_name": "隐藏之年²",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "hy.copper_hammer": {
+      "textures": "textures/items/copper_hammer"
+    },
+    "hy.exposed_copper_hammer": {
+      "textures": "textures/items/exposed_copper_hammer"
+    },
+    "hy.weathered_copper_hammer": {
+      "textures": "textures/items/weathered_copper_hammer"
+    },
+    "hy.oxidized_copper_hammer": {
+      "textures": "textures/items/oxidized_copper_hammer"
+    },
+    "hy.wooden_handle": {
+      "textures": "textures/items/wooden_handle"
+    },
+    "hy.copper_coin": {
+      "textures": "textures/items/copper_coin"
+    },
+    "hy.copper_pickaxe": {
+      "textures": "textures/items/copper_pickaxe"
+    },
+    "hy.exposed_copper_pickaxe": {
+      "textures": "textures/items/exposed_copper_pickaxe"
+    },
+    "hy.weathered_copper_pickaxe": {
+      "textures": "textures/items/weathered_copper_pickaxe"
+    },
+    "hy.oxidized_copper_pickaxe": {
+      "textures": "textures/items/oxidized_copper_pickaxe"
+    },
+    "hy.copper_essence": {
+      "textures": "textures/items/copper_essence"
+    },
+    "hy.metal_star": {
+      "textures": "textures/items/metal_star"
+    },
+    "hy.copper_axe": {
+      "textures": "textures/items/copper_axe"
+    },
+    "hy.exposed_copper_axe": {
+      "textures": "textures/items/exposed_copper_axe"
+    },
+    "hy.weathered_copper_axe": {
+      "textures": "textures/items/weathered_copper_axe"
+    },
+    "hy.oxidized_copper_axe": {
+      "textures": "textures/items/oxidized_copper_axe"
+    },
+    "hy.copper_stick": {
+      "textures": "textures/items/copper_stick"
+    },
+    "hy.amethyst_axe": {
+      "textures": "textures/items/amethyst_axe"
+    },
+    "hy.amethyst_hammer": {
+      "textures": "textures/items/amethyst_hammer"
+    },
+    "hy.amethyst_hoe": {
+      "textures": "textures/items/amethyst_hoe"
+    },
+    "hy.amethyst_pickaxe": {
+      "textures": "textures/items/amethyst_pickaxe"
+    },
+    "hy.amethyst_shovel": {
+      "textures": "textures/items/amethyst_shovel"
+    },
+    "hy.amethyst_ingot": {
+      "textures": "textures/items/amethyst_ingot"
+    },
+    "hy.copper_hoe": {
+      "textures": "textures/items/copper_hoe"
+    },
+    "hy.exposed_copper_hoe": {
+      "textures": "textures/items/exposed_copper_hoe"
+    },
+    "hy.weathered_copper_hoe": {
+      "textures": "textures/items/weathered_exposed_copper_hoe"
+    },
+    "hy.oxidized_copper_hoe": {
+      "textures": "textures/items/oxidized_exposed_copper_hoe"
+    },
+    "hy.copper_sword": {
+      "textures": "textures/items/copper_sword"
+    },
+    "hy.exposed_copper_sword": {
+      "textures": "textures/items/exposed_copper_sword"
+    },
+    "hy.weathered_copper_sword": {
+      "textures": "textures/items/weathered_copper_sword"
+    },
+    "hy.oxidized_copper_sword": {
+      "textures": "textures/items/oxidized_copper_sword"
+    },
+    "hy.copper_shovel": {
+      "textures": "textures/items/copper_shovel"
+    },
+    "hy.exposed_copper_shovel": {
+      "textures": "textures/items/exposed_copper_shovel"
+    },
+    "hy.weathered_copper_shovel": {
+      "textures": "textures/items/weathered_copper_shovel"
+    },
+    "hy.oxidized_copper_shovel": {
+      "textures": "textures/items/oxidized_copper_shovel"
+    },
+    "hy.amethyst_nugget": {
+      "textures": "textures/items/amethyst_nugget"
+    },
+    "hy.coal_nugget": {
+      "textures": "textures/items/coal_nugget"
+    },
+    "hy.copper_nugget": {
+      "textures": "textures/items/copper_nugget"
+    },
+    "hy.diamond_nugget": {
+      "textures": "textures/items/diamond_nugget"
+    },
+    "hy.emerald_nugget": {
+      "textures": "textures/items/emerald_nugget"
+    },
+    "hy.lapis_nugget": {
+      "textures": "textures/items/lapis_nugget"
+    },
+    "hy.netherite_nugget": {
+      "textures": "textures/items/netherite_nugget"
+    },
+    "hy.quartz_nugget": {
+      "textures": "textures/items/quartz_nugget"
+    },
+    "hy.redstone_nugget": {
+      "textures": "textures/items/redstone_nugget"
+    },
+    "hy.amethyst_dust": {
+      "textures": "textures/items/amethyst_dust"
+    },
+    "hy.coal_dust": {
+      "textures": "textures/items/coal_dust"
+    },
+    "hy.copper_dust": {
+      "textures": "textures/items/copper_dust"
+    },
+    "hy.diamond_dust": {
+      "textures": "textures/items/diamond_dust"
+    },
+    "hy.emerald_dust": {
+      "textures": "textures/items/emerald_dust"
+    },
+    "hy.lapis_dust": {
+      "textures": "textures/items/lapis_dust"
+    },
+    "hy.netherite_dust": {
+      "textures": "textures/items/netherite_dust"
+    },
+    "hy.quartz_dust": {
+      "textures": "textures/items/quartz_dust"
+    },
+    "hy.iron_dust": {
+      "textures": "textures/items/iron_dust"
+    },
+    "hy.gold_dust": {
+      "textures": "textures/items/gold_dust"
+    },
+    "hy.netherite_hammer": {
+      "textures": "textures/items/netherite_hammer"
+    },
+    "hy.diamond_hammer": {
+      "textures": "textures/items/diamond_hammer"
+    },
+    "hy.iron_hammer": {
+      "textures": "textures/items/iron_hammer"
+    },
+    "hy.gold_hammer": {
+      "textures": "textures/items/gold_hammer"
+    },
+    "hy.stone_hammer": {
+      "textures": "textures/items/stone_hammer"
+    },
+    "hy.wooden_hammer": {
+      "textures": "textures/items/wooden_hammer"
+    },
+    "hy.amethyst_knife": {
+      "textures": "textures/items/amethyst_knife"
+    },
+    "hy.iron_knife": {
+      "textures": "textures/items/iron_knife"
+    },
+    "hy.gold_knife": {
+      "textures": "textures/items/gold_knife"
+    },
+    "hy.diamond_knife": {
+      "textures": "textures/items/diamond_knife"
+    },
+    "hy.netherite_knife": {
+      "textures": "textures/items/netherite_knife"
+    },
+    "hy.stone_knife": {
+      "textures": "textures/items/stone_knife"
+    },
+    "hy.wooden_knife": {
+      "textures": "textures/items/wooden_knife"
+    },
+    "hy.amethyst_awl": {
+      "textures": "textures/items/amethyst_awl"
+    },
+    "hy.copper_awl": {
+      "textures": "textures/items/copper_awl"
+    },
+    "hy.iron_awl": {
+      "textures": "textures/items/iron_awl"
+    },
+    "hy.gold_awl": {
+      "textures": "textures/items/gold_awl"
+    },
+    "hy.diamond_awl": {
+      "textures": "textures/items/diamond_awl"
+    },
+    "hy.netherite_awl": {
+      "textures": "textures/items/netherite_awl"
+    },
+    "hy.stone_awl": {
+      "textures": "textures/items/stone_awl"
+    },
+    "hy.wooden_awl": {
+      "textures": "textures/items/wooden_awl"
+    },
+    "hy.amethyst_dagger": {
+      "textures": "textures/items/amethyst_dagger"
+    },
+    "hy.copper_dagger": {
+      "textures": "textures/items/copper_dagger"
+    },
+    "hy.iron_dagger": {
+      "textures": "textures/items/iron_dagger"
+    },
+    "hy.gold_dagger": {
+      "textures": "textures/items/gold_dagger"
+    },
+    "hy.diamond_dagger": {
+      "textures": "textures/items/diamond_dagger"
+    },
+    "hy.netherite_dagger": {
+      "textures": "textures/items/netherite_dagger"
+    },
+    "hy.stone_dagger": {
+      "textures": "textures/items/stone_dagger"
+    },
+    "hy.wooden_dagger": {
+      "textures": "textures/items/wooden_dagger"
+    },
+    "hy.gold_coin": {
+      "textures": "textures/items/gold_coin"
+    },
+    "hy.diamond_coin": {
+      "textures": "textures/items/diamond_coin"
+    },
+    "hy.stack_of_gold_coin": {
+      "textures": "textures/items/stack_of_gold_coin"
+    },
+    "hy.stack_of_diamond_coin": {
+      "textures": "textures/items/stack_of_diamond_coin"
+    },
+    "hy.stack_of_copper_coin": {
+      "textures": "textures/items/stack_of_copper_coin"
+    },
+    "hy.fuel_metal": {
+      "textures": "textures/items/fuel"
+    },
+    "hy.over_metal_ingot": {
+      "textures": "textures/items/over_metal_ingot"
+    },
+    "hy.end_metal_ingot": {
+      "textures": "textures/items/end_metal_ingot"
+    },
+    "hy.nether_metal_ingot": {
+      "textures": "textures/items/nether_metal_ingot"
+    },
+    "hy.end_metal_axe": {
+      "textures": "textures/items/end_metal_axe"
+    },
+    "hy.end_metal_hammer": {
+      "textures": "textures/items/end_metal_hammer"
+    },
+    "hy.end_metal_hoe": {
+      "textures": "textures/items/end_metal_hoe"
+    },
+    "hy.end_metal_pickaxe": {
+      "textures": "textures/items/end_metal_pickaxe"
+    },
+    "hy.end_metal_shovel": {
+      "textures": "textures/items/end_metal_shovel"
+    },
+    "hy.end_metal_dagger": {
+      "textures": "textures/items/end_metal_dagger"
+    },
+    "hy.end_metal_knife": {
+      "textures": "textures/items/end_metal_knife"
+    },
+    "hy.end_metal_sword": {
+      "textures": "textures/items/end_metal_sword"
+    },
+    "hy.over_metal_axe": {
+      "textures": "textures/items/over_metal_axe"
+    },
+    "hy.over_metal_hammer": {
+      "textures": "textures/items/over_metal_hammer"
+    },
+    "hy.over_metal_hoe": {
+      "textures": "textures/items/over_metal_hoe"
+    },
+    "hy.over_metal_pickaxe": {
+      "textures": "textures/items/over_metal_pickaxe"
+    },
+    "hy.over_metal_shovel": {
+      "textures": "textures/items/over_metal_shovel"
+    },
+    "hy.over_metal_dagger": {
+      "textures": "textures/items/over_metal_dagger"
+    },
+    "hy.over_metal_knife": {
+      "textures": "textures/items/over_metal_knife"
+    },
+    "hy.over_metal_sword": {
+      "textures": "textures/items/over_metal_sword"
+    },
+    "hy.nether_metal_axe": {
+      "textures": "textures/items/nether_metal_axe"
+    },
+    "hy.nether_metal_hammer": {
+      "textures": "textures/items/nether_metal_hammer"
+    },
+    "hy.nether_metal_hoe": {
+      "textures": "textures/items/nether_metal_hoe"
+    },
+    "hy.nether_metal_pickaxe": {
+      "textures": "textures/items/nether_metal_pickaxe"
+    },
+    "hy.nether_metal_shovel": {
+      "textures": "textures/items/nether_metal_shovel"
+    },
+    "hy.nether_metal_dagger": {
+      "textures": "textures/items/nether_metal_dagger"
+    },
+    "hy.nether_metal_knife": {
+      "textures": "textures/items/nether_metal_knife"
+    },
+    "hy.nether_metal_sword": {
+      "textures": "textures/items/nether_metal_sword"
+    },
+    "hy.over_metal_nugget": {
+      "textures": "textures/items/over_metal_nugget"
+    },
+    "hy.end_metal_nugget": {
+      "textures": "textures/items/end_metal_nugget"
+    },
+    "hy.nether_metal_nugget": {
+      "textures": "textures/items/nether_metal_nugget"
+    },
+    "hy.over_metal_awl": {
+      "textures": "textures/items/over_metal_awl"
+    },
+    "hy.end_metal_awl": {
+      "textures": "textures/items/end_metal_awl"
+    },
+    "hy.nether_metal_awl": {
+      "textures": "textures/items/nether_metal_awl"
+    },
+    "hy.tin_ingot": {
+      "textures": "textures/items/tin_ingot"
+    },
+    "hy.tin_dust": {
+      "textures": "textures/items/tin_dust"
+    },
+    "hy.tin_nugget": {
+      "textures": "textures/items/tin_nugget"
+    },
+    "hy.raw_tin": {
+      "textures": "textures/items/raw_tin"
+    },
+    "hy.flash_metal_ingot": {
+      "textures": "textures/items/flash_metal_ingot"
+    },
+    "hy.flash_metal_dust": {
+      "textures": "textures/items/flash_metal_dust"
+    },
+    "hy.flash_metal_nugget": {
+      "textures": "textures/items/flash_metal_nugget"
+    },
+    "hy.flash_metal_hammer": {
+      "textures": "textures/items/flash_metal_hammer"
+    },
+    "hy.flash_metal_hoe": {
+      "textures": "textures/items/flash_metal_hoe"
+    },
+    "hy.flash_metal_pickaxe": {
+      "textures": "textures/items/flash_metal_pickaxe"
+    },
+    "hy.flash_metal_shovel": {
+      "textures": "textures/items/flash_metal_shovel"
+    },
+    "hy.flash_metal_sword": {
+      "textures": "textures/items/flash_metal_sword"
+    },
+    "hy.flash_metal_dagger": {
+      "textures": "textures/items/flash_metal_dagger"
+    },
+    "hy.flash_metal_knife": {
+      "textures": "textures/items/flash_metal_knife"
+    },
+    "hy.flash_metal_axe": {
+      "textures": "textures/items/flash_metal_axe"
+    },
+    "hy.flash_metal_awl": {
+      "textures": "textures/items/flash_metal_awl"
+    },
+    "hy.medicines.bandage": {
+      "textures": "textures/items/bandage"
+    },
+    "hy.medicines.medicine_pack": {
+      "textures": "textures/items/medicine_pack"
+    },
+    "hy.steel_ingot": {
+      "textures": "textures/items/steel_ingot"
+    },
+    "hy.steel_dust": {
+      "textures": "textures/items/steel_dust"
+    },
+    "hy.steel_nugget": {
+      "textures": "textures/items/steel_nugget"
+    },
+    "hy.steel_helmet": {
+      "textures": "textures/items/steel_helmet"
+    },
+    "hy.steel_chestplate": {
+      "textures": "textures/items/steel_chestplate"
+    },
+    "hy.steel_leggings": {
+      "textures": "textures/items/steel_leggings"
+    },
+    "hy.steel_boots": {
+      "textures": "textures/items/steel_boots"
+    },
+    "hy.steel_hammer": {
+      "textures": "textures/items/steel_hammer"
+    },
+    "hy.steel_hoe": {
+      "textures": "textures/items/steel_hoe"
+    },
+    "hy.steel_pickaxe": {
+      "textures": "textures/items/steel_pickaxe"
+    },
+    "hy.steel_shovel": {
+      "textures": "textures/items/steel_shovel"
+    },
+    "hy.steel_sword": {
+      "textures": "textures/items/steel_sword"
+    },
+    "hy.steel_dagger": {
+      "textures": "textures/items/steel_dagger"
+    },
+    "hy.steel_knife": {
+      "textures": "textures/items/steel_knife"
+    },
+    "hy.steel_axe": {
+      "textures": "textures/items/steel_axe"
+    },
+    "hy.steel_awl": {
+      "textures": "textures/items/steel_awl"
+    },
+    "hy.raw_steel": {
+      "textures": "textures/items/raw_steel"
+    },
+    "hy.copper_knife": {
+      "textures": "textures/items/copper_knife"
+    },
+    "hy.exposed_copper_knife": {
+      "textures": "textures/items/exposed_copper_knife"
+    },
+    "hy.weathered_copper_knife": {
+      "textures": "textures/items/weathered_copper_knife"
+    },
+    "hy.oxidized_copper_knife": {
+      "textures": "textures/items/oxidized_copper_knife"
+    },
+    "hy.flash_copper_ingot": {
+      "textures": "textures/items/flash_copper_ingot"
+    },
+    "hy.flash_copper_dust": {
+      "textures": "textures/items/flash_copper_dust"
+    },
+    "hy.flash_copper_nugget": {
+      "textures": "textures/items/flash_copper_nugget"
+    },
+    "hy.flash_copper_hammer": {
+      "textures": "textures/items/flash_copper_hammer"
+    },
+    "hy.flash_copper_hoe": {
+      "textures": "textures/items/flash_copper_hoe"
+    },
+    "hy.flash_copper_pickaxe": {
+      "textures": "textures/items/flash_copper_pickaxe"
+    },
+    "hy.flash_copper_shovel": {
+      "textures": "textures/items/flash_copper_shovel"
+    },
+    "hy.flash_copper_sword": {
+      "textures": "textures/items/flash_copper_sword"
+    },
+    "hy.flash_copper_dagger": {
+      "textures": "textures/items/flash_copper_dagger"
+    },
+    "hy.flash_copper_knife": {
+      "textures": "textures/items/flash_copper_knife"
+    },
+    "hy.flash_copper_axe": {
+      "textures": "textures/items/flash_copper_axe"
+    },
+    "hy.flash_copper_awl": {
+      "textures": "textures/items/flash_copper_awl"
+    },
+    "hy.raw_flash_copper_ingot": {
+      "textures": "textures/items/raw_flash_copper_ingot"
+    },
+    "mc.diamond_axe": {
+      "textures": "textures/items/diamond_axe"
+    },
+    "mc.iron_axe": {
+      "textures": "textures/items/iron_axe"
+    },
+    "mc.gold_axe": {
+      "textures": "textures/items/gold_axe"
+    },
+    "mc.diamond_hoe": {
+      "textures": "textures/items/diamond_hoe"
+    },
+    "mc.iron_hoe": {
+      "textures": "textures/items/iron_hoe"
+    },
+    "mc.gold_hoe": {
+      "textures": "textures/items/gold_hoe"
+    },
+    "mc.diamond_pickaxe": {
+      "textures": "textures/items/diamond_pickaxe"
+    },
+    "mc.iron_pickaxe": {
+      "textures": "textures/items/iron_pickaxe"
+    },
+    "mc.gold_pickaxe": {
+      "textures": "textures/items/gold_pickaxe"
+    },
+    "mc.diamond_shovel": {
+      "textures": "textures/items/diamond_shovel"
+    },
+    "mc.iron_shovel": {
+      "textures": "textures/items/iron_shovel"
+    },
+    "mc.gold_shovel": {
+      "textures": "textures/items/gold_shovel"
+    },
+    "mc.diamond_sword": {
+      "textures": "textures/items/diamond_sword"
+    },
+    "mc.iron_sword": {
+      "textures": "textures/items/iron_sword"
+    },
+    "mc.gold_sword": {
+      "textures": "textures/items/gold_sword"
+    },
+    "hy.lv1_corrosion_ingot": {
+      "textures": "textures/items/corrosion_ingot"
+    },
+    "hy.exposed_copper_dust": {
+      "textures": "textures/items/exposed_copper_dust"
+    },
+    "hy.weathered_copper_dust": {
+      "textures": "textures/items/weathered_copper_dust"
+    },
+    "hy.oxidized_copper_dust": {
+      "textures": "textures/items/oxidized_copper_dust"
+    },
+    "hy.iron_crowbar": {
+      "textures": "textures/items/iron_crowbar"
+    },
+    "hy.gold_crowbar": {
+      "textures": "textures/items/gold_crowbar"
+    },
+    "hy.diamond_crowbar": {
+      "textures": "textures/items/diamond_crowbar"
+    },
+    "sc.stone_nugget": {
+      "textures": "textures/items/stone_nugget"
+    },
+    "hy.fuel_metal_stick": {
+      "textures": "textures/items/fuel_metal_stick"
+    },
+    "hy.bark": {
+      "textures": "textures/items/bark"
+    },
+    "hy.copper_badge": {
+      "textures": "textures/items/copper_badge"
+    },
+    "hy.diamond_badge": {
+      "textures": "textures/items/diamond_badge"
+    },
+    "hy.golden_badge": {
+      "textures": "textures/items/golden_badge"
+    },
+    "hy.disc_fragment": {
+      "textures": "textures/items/disc_fragment"
+    },
+    "hy.copper_horn": {
+      "textures": "textures/items/copper_horn"
+    },
+    "hy.copper_helmet": {
+      "textures": "textures/items/copper_helmet"
+    },
+    "hy.copper_chestplate": {
+      "textures": "textures/items/copper_chestplate"
+    },
+    "hy.copper_leggings": {
+      "textures": "textures/items/copper_leggings"
+    },
+    "hy.copper_boots": {
+      "textures": "textures/items/copper_boots"
+    },
+    "hy.amethyst_boardsword": {
+      "textures": "textures/items/amethyst_boardsword"
+    },
+    "hy.flash_metal_boardsword": {
+      "textures": "textures/items/flash_metal_boardsword"
+    },
+    "hy.flash_copper_boardsword": {
+      "textures": "textures/items/flash_copper_boardsword"
+    },
+    "hy.diamond_bone": {
+      "textures": "textures/items/diamond_bone"
+    },
+    "hy.gold_bone": {
+      "textures": "textures/items/gold_bone"
+    },
+    "hy.iron_bone": {
+      "textures": "textures/items/iron_bone"
+    },
+    "hy.emerald_boardsword": {
+      "textures": "textures/items/emerald_boardsword"
+    },
+    "hy.flash_copper_helmet": {
+      "textures": "textures/items/flash_copper_helmet"
+    },
+    "hy.flash_copper_chestplate": {
+      "textures": "textures/items/flash_copper_chestplate"
+    },
+    "hy.flash_copper_leggings": {
+      "textures": "textures/items/flash_copper_leggings"
+    },
+    "hy.flash_copper_boots": {
+      "textures": "textures/items/flash_copper_boots"
+    },
+    "hy.medicines.1": {
+      "textures": "textures/items/medicine_1"
+    },
+    "hy.medicines.2": {
+      "textures": "textures/items/medicine_2"
+    },
+    "hy.medicines.3": {
+      "textures": "textures/items/medicine_3"
+    },
+    "hy.medicines.4": {
+      "textures": "textures/items/medicine_4"
+    },
+    "hy.medicines.5": {
+      "textures": "textures/items/medicine_5"
+    },
+    "hy.medicines.6": {
+      "textures": "textures/items/medicine_6"
+    },
+    "hy.medicines.7": {
+      "textures": "textures/items/medicine_7"
+    },
+    "hy.medicines.8": {
+      "textures": "textures/items/medicine_8"
+    },
+    "hy.medicines.9": {
+      "textures": "textures/items/medicine_9"
+    },
+    "hy.medicines.10": {
+      "textures": "textures/items/medicine_10"
+    },
+    "hy.medicines.11": {
+      "textures": "textures/items/medicine_11"
+    },
+    "hy.medicines.12": {
+      "textures": "textures/items/medicine_12"
+    },
+    "hy.medicines.13": {
+      "textures": "textures/items/medicine_13"
+    },
+    "hy.medicines.14": {
+      "textures": "textures/items/medicine_14"
+    },
+    "hy.copper_apple": {
+      "textures": "textures/items/copper_apple"
+    },
+    "hy.copper_bread": {
+      "textures": "textures/items/copper_bread"
+    },
+    "hy.copper_carrot": {
+      "textures": "textures/items/copper_carrot"
+    },
+    "hy.copper_hodgepodge": {
+      "textures": "textures/items/copper_hodgepodge"
+    },
+    "hy.copper_kelp": {
+      "textures": "textures/items/copper_kelp"
+    },
+    "hy.copper_melon_slice": {
+      "textures": "textures/items/copper_melon_slice"
+    },
+    "hy.copper_potato": {
+      "textures": "textures/items/copper_potato"
+    },
+    "hy.lost_letter": {
+      "textures": "textures/items/lost_letter"
+    },
+    "mc.potion": {
+      "textures": "textures/items/potion_bottle_drinkable"
+    },
+    "hy.honey_candy": {
+      "textures": "textures/items/honey_candy"
+    },
+    "hy.chocolate_paste": {
+      "textures": "textures/items/chocolate_paste"
+    },
+    "hy.chocolate_bar": {
+      "textures": "textures/items/chocolate_bar"
+    },
+    "hy.chocolate": {
+      "textures": "textures/items/chocolate"
+    },
+    "hy.milk_chocolate": {
+      "textures": "textures/items/milk_chocolate"
+    },
+    "hy.sweet_berry_chocolate": {
+      "textures": "textures/items/sweet_berry_chocolate"
+    },
+    "hy.amethyst_chocolate": {
+      "textures": "textures/items/amethyst_chocolate"
+    },
+    "hy.marshallow": {
+      "textures": "textures/items/marshallow"
+    },
+    "hy.sweet_berry_marshallow": {
+      "textures": "textures/items/sweet_berry_marshallow"
+    },
+    "hy.amethyst_marshallow": {
+      "textures": "textures/items/amethyst_marshallow"
+    },
+    "hy.ruby": {
+      "textures": "textures/items/ruby"
+    },
+    "hy.story_book": {
+      "textures": "textures/items/story_book"
+    },
+    "hy.ruby_helmet": {
+      "textures": "textures/items/ruby_helmet"
+    },
+    "hy.ruby_chestplate": {
+      "textures": "textures/items/ruby_chestplate"
+    },
+    "hy.ruby_leggings": {
+      "textures": "textures/items/ruby_leggings"
+    },
+    "hy.ruby_boots": {
+      "textures": "textures/items/ruby_boots"
+    },
+    "hy.ruby_apple": {
+      "textures": "textures/items/ruby_apple"
+    },
+    "hy.ruby_boardsword": {
+      "textures": "textures/items/ruby_boardsword"
+    },
+    "hy.ruby_runes": {
+      "textures": "textures/items/ruby_runes"
+    },
+    "hy.ruby_bag": {
+      "textures": "textures/items/ruby_bag"
+    },
+    "hy.calamity_bag": {
+      "textures": "textures/items/calamity_bag"
+    },
+    "hy.quest_book.0": {
+      "textures": "textures/items/quest_book0"
+    },
+    "hy.quest_book.1": {
+      "textures": "textures/items/quest_book1"
+    },
+    "hy.spawn_eggs": {
+      "textures": [
+        "textures/items/egg_king_of_ruby",
+        "textures/items/egg_ruby_guardian",
+        "textures/items/egg_ruby_zombie",
+        "textures/items/egg_ruby_skeleton",
+        "textures/items/egg_gemstone_trader",
+        "textures/items/egg_hidden_trader",
+        "textures/items/egg_sprite",
+        "textures/items/egg_ferocious_sprite",
+        "textures/items/egg_rabbit_killer",
+        "textures/items/egg_mummy",
+        "textures/items/egg_drift_sand_guardian",
+        "textures/items/egg_drift_sand_sergeant",
+        "textures/items/egg_drift_sand_shooter",
+        "textures/items/egg_drift_sand_soldier",
+        "textures/items/egg_pharaohs_ghost",
+        "textures/items/egg_sand_creeper"
+      ]
+    },
+    "hy.imitation_diamond": {
+      "textures": "textures/items/imitation_diamond"
+    },
+    "hy.imitation_iron_ingot": {
+      "textures": "textures/items/imitation_iron_ingot"
+    },
+    "hy.imitation_gold_ingot": {
+      "textures": "textures/items/imitation_gold_ingot"
+    },
+    "hy.imitation_amethyst_ingot": {
+      "textures": "textures/items/imitation_amethyst_ingot"
+    },
+    "hy.suffering_sword": {
+      "textures": "textures/items/suffering_sword"
+    },
+    "hy.imitation_diamond_axe": {
+      "textures": "textures/items/imitation_diamond_axe"
+    },
+    "hy.imitation_iron_axe": {
+      "textures": "textures/items/imitation_iron_axe"
+    },
+    "hy.imitation_gold_axe": {
+      "textures": "textures/items/imitation_golden_axe"
+    },
+    "hy.imitation_amethyst_axe": {
+      "textures": "textures/items/imitation_amethyst_axe"
+    },
+    "hy.imitation_diamond_hammer": {
+      "textures": "textures/items/imitation_diamond_hammer"
+    },
+    "hy.imitation_iron_hammer": {
+      "textures": "textures/items/imitation_iron_hammer"
+    },
+    "hy.imitation_gold_hammer": {
+      "textures": "textures/items/imitation_golden_hammer"
+    },
+    "hy.imitation_amethyst_hammer": {
+      "textures": "textures/items/imitation_amethyst_hammer"
+    },
+    "hy.imitation_diamond_hoe": {
+      "textures": "textures/items/imitation_diamond_hoe"
+    },
+    "hy.imitation_iron_hoe": {
+      "textures": "textures/items/imitation_iron_hoe"
+    },
+    "hy.imitation_gold_hoe": {
+      "textures": "textures/items/imitation_golden_hoe"
+    },
+    "hy.imitation_amethyst_hoe": {
+      "textures": "textures/items/imitation_amethyst_hoe"
+    },
+    "hy.imitation_diamond_pickaxe": {
+      "textures": "textures/items/imitation_diamond_pickaxe"
+    },
+    "hy.imitation_iron_pickaxe": {
+      "textures": "textures/items/imitation_iron_pickaxe"
+    },
+    "hy.imitation_gold_pickaxe": {
+      "textures": "textures/items/imitation_golden_pickaxe"
+    },
+    "hy.imitation_amethyst_pickaxe": {
+      "textures": "textures/items/imitation_amethyst_pickaxe"
+    },
+    "hy.imitation_diamond_shovel": {
+      "textures": "textures/items/imitation_diamond_shovel"
+    },
+    "hy.imitation_iron_shovel": {
+      "textures": "textures/items/imitation_iron_shovel"
+    },
+    "hy.imitation_gold_shovel": {
+      "textures": "textures/items/imitation_golden_shovel"
+    },
+    "hy.imitation_amethyst_shovel": {
+      "textures": "textures/items/imitation_amethyst_shovel"
+    },
+    "hy.imitation_amethyst_sword": {
+      "textures": "textures/items/imitation_amethyst_sword"
+    },
+    "hy.imitation_diamond_sword": {
+      "textures": "textures/items/imitation_diamond_sword"
+    },
+    "hy.imitation_iron_sword": {
+      "textures": "textures/items/imitation_iron_sword"
+    },
+    "hy.imitation_gold_sword": {
+      "textures": "textures/items/imitation_golden_sword"
+    },
+    "hy.bone_piece_axe": {
+      "textures": "textures/items/bone_piece_axe"
+    },
+    "hy.bone_piece_hammer": {
+      "textures": "textures/items/bone_piece_hammer"
+    },
+    "hy.bone_piece_hoe": {
+      "textures": "textures/items/bone_piece_hoe"
+    },
+    "hy.bone_piece_pickaxe": {
+      "textures": "textures/items/bone_piece_pickaxe"
+    },
+    "hy.bone_piece_shovel": {
+      "textures": "textures/items/bone_piece_shovel"
+    },
+    "hy.bone_piece": {
+      "textures": "textures/items/bone_piece"
+    },
+    "hy.bone_piece_helmet": {
+      "textures": "textures/items/bone_piece_helmet"
+    },
+    "hy.bone_piece_chestplate": {
+      "textures": "textures/items/bone_piece_chestplate"
+    },
+    "hy.bone_piece_leggings": {
+      "textures": "textures/items/bone_piece_leggings"
+    },
+    "hy.bone_piece_boots": {
+      "textures": "textures/items/bone_piece_boots"
+    },
+    "hy.smaragdus": {
+      "textures": "textures/items/smaragdus"
+    },
+    "hy.smaragdus_axe": {
+      "textures": "textures/items/smaragdus_axe"
+    },
+    "hy.smaragdus_hammer": {
+      "textures": "textures/items/smaragdus_hammer"
+    },
+    "hy.smaragdus_hoe": {
+      "textures": "textures/items/smaragdus_hoe"
+    },
+    "hy.smaragdus_pickaxe": {
+      "textures": "textures/items/smaragdus_pickaxe"
+    },
+    "hy.smaragdus_shovel": {
+      "textures": "textures/items/smaragdus_shovel"
+    },
+     "hy.smaragdus_awl": {
+      "textures": "textures/items/smaragdus_awl"
+    },
+     "hy.smaragdus_dagger": {
+      "textures": "textures/items/smaragdus_dagger"
+    },
+     "hy.smaragdus_knife": {
+      "textures": "textures/items/smaragdus_knife"
+    },
+     "hy.smaragdus_sword": {
+      "textures": "textures/items/smaragdus_sword"
+    },
+    "hy.smaragdus_helmet": {
+      "textures": "textures/items/smaragdus_helmet"
+    },
+    "hy.smaragdus_chestplate": {
+      "textures": "textures/items/smaragdus_chestplate"
+    },
+    "hy.smaragdus_leggings": {
+      "textures": "textures/items/smaragdus_leggings"
+    },
+    "hy.smaragdus_boots": {
+      "textures": "textures/items/smaragdus_boots"
+    },
+    "hy.amethyst_helmet": {
+      "textures": "textures/items/amethyst_helmet"
+    },
+    "hy.amethyst_chestplate": {
+      "textures": "textures/items/amethyst_chestplate"
+    },
+    "hy.amethyst_leggings": {
+      "textures": "textures/items/amethyst_leggings"
+    },
+    "hy.amethyst_boots": {
+      "textures": "textures/items/amethyst_boots"
+    },
+    "hy.ancient_extracts": {
+      "textures": "textures/items/ancient_extracts"
+    },
+    "hy.steel_core": {
+      "textures": "textures/items/steel_core"
+    },
+    "hy.exposed_copper_awl": {
+      "textures": "textures/items/exposed_copper_awl"
+    },
+    "hy.exposed_copper_dagger": {
+      "textures": "textures/items/exposed_copper_dagger"
+    },
+    "hy.flash_metal_helmet": {
+      "textures": "textures/items/flash_metal_helmet"
+    },
+    "hy.flash_metal_chestplate": {
+      "textures": "textures/items/flash_metal_chestplate"
+    },
+    "hy.flash_metal_leggings": {
+      "textures": "textures/items/flash_metal_leggings"
+    },
+    "hy.flash_metal_boots": {
+      "textures": "textures/items/flash_metal_boots"
+    },
+    "hy.sand_meat": {
+      "textures": "textures/items/sand_meat"
+    },
+    "hy.scorched_meat": {
+      "textures": "textures/items/scorched_meat"
+    },
+    "hy.sand_bone": {
+      "textures": "textures/items/sand_bone"
+    },
+    "hy.sand_fish": {
+      "textures": "textures/items/sand_fish"
+    },
+    "hy.shattered_sand_cudgel": {
+      "textures": "textures/items/shattered_sand_cudgel"
+    },
+    "hy.shattered_sand_staff": {
+      "textures": "textures/items/shattered_sand_staff"
+    },
+    "hy.rabbit_paw": {
+      "textures": "textures/items/rabbit_paw"
+    },
+    "hy.paw_dust": {
+      "textures": "textures/items/paw_dust"
+    },
+    "hy.rain_god_blessing": {
+      "textures": "textures/items/rain_god_blessing"
+    },
+    "hy.cooling_potion": {
+      "textures": "textures/items/cooling_potion"
+    },
+    "hy.desert_heart": {
+      "textures": "textures/items/desert_heart"
+    },
+    "hy.pharaoh_heart": {
+      "textures": "textures/items/pharaoh_heart"
+    },
+    "hy.drift_sand_key": {
+      "textures": "textures/items/drift_sand_key"
+    },
+    "hy.past_statue": {
+      "textures": "textures/items/past_statue"
+    },
+    "hy.drift_sand_statue": {
+      "textures": "textures/items/drift_sand_statue"
+    },
+    "hy.drift_sand_coronet": {
+      "textures": "textures/items/drift_sand_coronet"
+    },
+    "hy.article_collection": {
+      "textures": "textures/items/article_collection"
+    }
+  }
+}
+

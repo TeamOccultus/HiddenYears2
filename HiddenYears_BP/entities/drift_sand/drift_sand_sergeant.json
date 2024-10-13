@@ -1,0 +1,200 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hy:drift_sand_sergeant",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "hy:ds_sergeant_aggro": {
+        "minecraft:angry": {
+          "duration": -1,
+          "broadcast_anger": false,
+          "calm_event": { "event": "minecraft:stop_aggro", "target": "self" }
+        }
+      },
+      "hy:ds_sergeant_flm": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "within_radius": 12.0,
+          "must_see_forget_duration": 40.0,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "illager"
+                  }
+                ]
+              },
+              "max_dist": 12
+            }
+          ]
+        }
+      },
+      "minecraft:default_targeting": {
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 2,
+          "must_see": true,
+          "within_radius": 12.0,
+          "must_see_forget_duration": 40.0,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "snowgolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wandering_trader"
+                  }
+                ]
+              },
+              "max_dist": 12
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "villager"
+                  },
+                  {
+                    "test": "has_component",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "minecraft:is_baby"
+                  }
+                ]
+              },
+              "max_dist": 12
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:despawn": {
+        "filters": { "test": "is_difficulty", "value": "peaceful" }
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:experience_reward": {
+        "on_death": "15"
+      },
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:nameable": {
+        "default_trigger": {
+          "event": "minecraft:stop_flm",
+          "target": "self"
+        },
+        "name_actions": [
+          {
+            "name_filter": "FangLimao",
+            "on_named": { "event": "minecraft:start_flm", "target": "self" }
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": ["drift_sand_sergeant", "monster", "drift_sand", "mob"]
+      },
+      "minecraft:variant": { "value": 0 },
+      "minecraft:breathable": { "total_supply": 15, "suffocate_time": 0 },
+      "minecraft:collision_box": { "width": 0.6, "height": 1.9 },
+      "minecraft:health": { "value": { "range_min": 30, "range_max": 45 } },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:attack": {
+        "damage": 4,
+        "effect_duration": 30.0,
+        "effect_name": "poison"
+      },
+      "minecraft:movement": { "value": 0.35 },
+      "minecraft:navigation.walk": { "can_path_over_water": true },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:follow_range": { "value": 64 },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/drift_sand_sergeant.json"
+      },
+      "minecraft:equipment": {
+        "table": "loot_tables/entities/drift_sand_sergeant_equipment.json"
+      },
+      "minecraft:behavior.float": { "priority": 0 },
+      "minecraft:behavior.melee_attack": { "priority": 3 },
+      "minecraft:behavior.random_stroll": {
+        "priority": 9,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 10,
+        "look_distance": 8,
+        "probability": 0.02
+      },
+      "minecraft:behavior.hurt_by_target": { "priority": 1 },
+      "minecraft:on_target_acquired": {
+        "event": "minecraft:become_aggro",
+        "target": "self"
+      },
+      "minecraft:on_target_escape": {
+        "event": "minecraft:stop_aggro",
+        "target": "self"
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": { "component_groups": ["minecraft:default_targeting"] }
+      },
+      "minecraft:become_aggro": {
+        "add": { "component_groups": ["hy:ds_sergeant_aggro"] }
+      },
+      "minecraft:stop_aggro": {
+        "remove": { "component_groups": ["hy:ds_sergeant_aggro"] }
+      },
+      "minecraft:start_flm": {
+        "add": { "component_groups": ["hy:ds_sergeant_flm"] }
+      },
+      "minecraft:stop_flm": {
+        "remove": { "component_groups": ["hy:ds_sergeant_flm"] },
+        "add": { "component_groups": ["minecraft:default_targeting"] }
+      }
+    }
+  }
+}

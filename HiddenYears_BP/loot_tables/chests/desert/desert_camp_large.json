@@ -1,0 +1,93 @@
+{
+    "pools": [
+      {
+        "rolls": { "min": 1, "max": 4 },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:water_bucket",
+            "weight": 10,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 4 } }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "hy:cooling_potion",
+            "weight": 10,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 4 } }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:potion",
+            "weight": 20,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 4 } },
+              { "function": "set_data", "data": 0 }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": { "min": 1, "max": 2 },
+        "entries": [
+          {
+            "type": "item",
+            "name": "minecraft:bread",
+            "weight": 20,
+            "functions": [
+              { "function": "set_count", "count": { "min": 2, "max": 7 } }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:cooked_rabbit",
+            "weight": 20,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 3 } }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "minecraft:rabbit_stew",
+            "weight": 20,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 5 } }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 3,
+        "entries": [
+          {
+            "type": "item",
+            "name": "hy:sand_bone",
+            "weight": 10,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 8 } }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "hy:sand_meat",
+            "weight": 10,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 8 } }
+            ]
+          },
+          {
+            "type": "item",
+            "name": "hy:sand_fish",
+            "weight": 10,
+            "functions": [
+              { "function": "set_count", "count": { "min": 1, "max": 8 } }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

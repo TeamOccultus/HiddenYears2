@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "amethyst_hammer"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "X": {
+        "tag": "hy:is_handle"
+      },
+      "#": {
+        "item": "hy:amethyst_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:amethyst_ingot"
+      },
+      {
+        "tag": "hy:is_handle"
+      }
+    ],
+    "pattern": ["###", "###", " X "],
+    "result": {
+      "item": "hy:amethyst_hammer"
+    }
+  }
+}
