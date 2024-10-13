@@ -8,8 +8,44 @@
       },
       "states": {
         "hy:use_up": [false, true]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"], // Can be used in queries e.g. `q.block_state('minecraft:cardinal_direction') == 'north'`
+          "y_rotation_offset": 180 // Face towards player
+        }
       }
     },
+    "permutations": [
+      // Facing north
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      // Facing west
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      // Facing south
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      // Facing east
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      }
+    ],
     "components": {
       "minecraft:display_name": "hy.block.drift_sand_cabinet",
       "minecraft:destructible_by_mining": {
