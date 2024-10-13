@@ -11,6 +11,7 @@ import {
   giveItem,
   setEquipmentItem,
 } from "@lazuli/ldk2";
+import { HyUtils } from "../../core/utils";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const ITEM_COMREG = event.itemComponentRegistry;
@@ -106,7 +107,7 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
           z: arg.block.location.z,
         };
         arg.dimension.playSound("trial_spawner.eject_item", LOC);
-        giveItem(arg.player,new ItemStack("hy:rain_god_blessing"))
+        HyUtils.loot(arg.dimension, LOC, "chests/desert/drift_sand_cabinet");
       }
     },
   });

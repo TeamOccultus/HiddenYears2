@@ -1,46 +1,64 @@
-import { Entity, EquipmentSlot, ItemStack } from "@minecraft/server";
+import {
+  Dimension,
+  Entity,
+  EquipmentSlot,
+  ItemStack,
+  Vector3,
+} from "@minecraft/server";
 
 export class HyUtils {
   private constructor() {}
   static isAffectByDroughtDebuff(target: Entity, item: ItemStack): boolean {
     if (
       item?.typeId === "hy:shattered_sand_cudgel" &&
-      !target.matches({families: ["immune_desert_debuff"]}) &&
-      !target.hasTag("hy:immune_desert_debuff")&&
-      !(target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+      !target.matches({ families: ["immune_desert_debuff"] }) &&
+      !target.hasTag("hy:immune_desert_debuff") &&
+      !(
+        target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head)
+          .typeId === "hy:drift_sand_coronet"
+      )
     ) {
-     return true;
+      return true;
     } else {
       return false;
     }
   }
   static isAffectByBossDroughtDebuff(target: Entity): boolean {
     if (
-      !target.matches({families: ["immune_desert_debuff"]}) &&
-      !target.hasTag("hy:immune_desert_debuff")&&
-      !(target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+      !target.matches({ families: ["immune_desert_debuff"] }) &&
+      !target.hasTag("hy:immune_desert_debuff") &&
+      !(
+        target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head)
+          .typeId === "hy:drift_sand_coronet"
+      )
     ) {
-     return true;
+      return true;
     } else {
       return false;
     }
   }
   /**
    * 返回实体是否会被沙漠Debuff影响
-   * @param target 
-   * @param item 
-   * @returns 
+   * @param target
+   * @param item
+   * @returns
    */
   static isAffectByDehydrationDebuff(target: Entity, item: ItemStack): boolean {
     if (
       item?.typeId === "hy:shattered_sand_staff" &&
-      !target.matches({families: ["immune_desert_debuff"]}) &&
-      !target.hasTag("hy:immune_desert_debuff")&&
-      !(target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head).typeId === "hy:drift_sand_coronet")
+      !target.matches({ families: ["immune_desert_debuff"] }) &&
+      !target.hasTag("hy:immune_desert_debuff") &&
+      !(
+        target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head)
+          .typeId === "hy:drift_sand_coronet"
+      )
     ) {
-     return true;
+      return true;
     } else {
       return false;
     }
+  }
+  static loot(dimension: Dimension, location: Vector3, path: string) {
+    dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`)
   }
 }
