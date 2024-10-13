@@ -7,6 +7,7 @@ await esbuild.build({
   outfile: "./HiddenYears_BP/scripts/index.js",
   format: "esm",
   external: ["@minecraft/server", "@minecraft/server-ui"],
-  minify: false,
+  minify: true,
+  treeShaking: true,
 });
 console.info("script build done");

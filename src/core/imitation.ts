@@ -1,5 +1,5 @@
 import { Entity, Player } from "@minecraft/server";
-import { withPercentChance } from "lazuli-devkit";
+import { withPercentChance } from "@lazuli/ldk2";
 
 /**
  * 造成仿制伤害

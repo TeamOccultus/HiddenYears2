@@ -1,6 +1,6 @@
-import { ChapterQuestBook, QuestBook, Register, setQuestNameSpace } from "lazuli-devkit";
+import { ChapterQuestBook, QuestBook, Register, setQuestNameSpace } from "@lazuli/ldk2";
 import * as quests from "../../data/quest";
-import { HyLetterTitle, HyLetterBody } from "../../data/lang";
+import { HyLetterBody } from "../../data/lang";
 
 setQuestNameSpace("hy-q");
 

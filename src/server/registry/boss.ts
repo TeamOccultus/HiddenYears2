@@ -1,5 +1,5 @@
 import { BlockVolume, Player, system, world } from "@minecraft/server";
-import { Boss, BossSkill, Register } from "lazuli-devkit";
+import { Boss, BossSkill, Register } from "@lazuli/ldk2";
 import { HyUtils } from "../../core/utils";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {

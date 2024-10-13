@@ -14,7 +14,7 @@ import {
   randomInteger,
   Register,
   withWeightChance,
-} from "lazuli-devkit";
+} from "@lazuli/ldk2";
 
 function boneMagicExplode(player: Player) {
   if (player.level > 5) {

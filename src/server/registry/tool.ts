@@ -5,7 +5,7 @@ import {
   ToolTag,
   ToolType,
   WeaponTag,
-} from "lazuli-devkit";
+} from "@lazuli/ldk2";
 import { HyCorrosionMap } from "../../data/data";
 import { world } from "@minecraft/server";
 import { applyImitationDamage } from "../../core/imitation";

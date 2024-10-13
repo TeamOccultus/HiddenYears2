@@ -5,9 +5,8 @@ import {
   ArticleCollection,
   giveItem,
   Register,
-} from "lazuli-devkit";
+} from "@lazuli/ldk2";
 import {
-  HyLetterTitle,
   HyLetterBody,
   HiddenStoryTitle,
   HiddenStoryBody,

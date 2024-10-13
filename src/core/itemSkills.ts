@@ -1,5 +1,5 @@
 import { Entity, Player, system } from "@minecraft/server";
-import { randomInteger } from "lazuli-devkit";
+import { randomInteger } from "@lazuli/ldk2";
 
 /**
  * Special skill of hammer.

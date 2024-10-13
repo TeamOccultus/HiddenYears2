@@ -6,7 +6,7 @@ import {
   giveItem,
   Register,
   withPercentChance,
-} from "lazuli-devkit";
+} from "@lazuli/ldk2";
 
 const HONEY_CANDY = new FoodItem("hy:honey_candy", [
   { effectType: "saturation", duration: 600 },

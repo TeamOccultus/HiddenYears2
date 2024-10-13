@@ -1,5 +1,5 @@
 import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod, replaceItemStack } from "lazuli-devkit";
+import { initializeMod, replaceItemStack } from "@lazuli/ldk2";
 import {
   bleedEffectMonitor,
   dehydrationEffectMonitor,
@@ -11,7 +11,7 @@ export class System {
    * 初始化模组
    */
   static initialize(): void {
-    initializeMod("hy", { name: "HiddenYears" });
+    initializeMod("hy",  "HiddenYears");
   }
   /**
    * 监听系统事件

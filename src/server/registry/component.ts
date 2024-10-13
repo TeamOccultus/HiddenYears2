@@ -9,10 +9,8 @@ import {
   consumeDurability,
   getEquipmentItem,
   giveItem,
-  randomInteger,
   setEquipmentItem,
-  withWeightChance,
-} from "lazuli-devkit";
+} from "@lazuli/ldk2";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const ITEM_COMREG = event.itemComponentRegistry;
