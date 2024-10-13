@@ -57,7 +57,8 @@
       "minecraft:geometry": {
         "identifier": "geometry.simple_cabinet",
         "bone_visibility": {
-          "door": "q.block_state('hy:use_up') == false",
+          "door_open": "q.block_state('hy:use_up') == true",
+          "door_close": "q.block_state('hy:use_up') == false",
           "cabinet": true
         }
       },

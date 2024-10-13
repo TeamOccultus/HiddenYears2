@@ -28,7 +28,21 @@
 				},
 				{
 					"name": "door",
-					"pivot": [-7, 8.5, -7.5],
+					"pivot": [-7, 8.5, -7.5]
+				},
+				{
+					"name": "door_open",
+					"parent": "door",
+					"pivot": [0, 8.5, -7.1],
+					"cubes": [
+						{"origin": [0, 2, -7.6], "size": [7, 13, 1], "pivot": [7, 8.5, -7.1], "rotation": [0, 80, 0], "uv": [7, 63]},
+						{"origin": [-7, 2, -7.6], "size": [7, 13, 1], "pivot": [-7, 8.5, -7.1], "rotation": [0, -80, 0], "uv": [0, 63]}
+					]
+				},
+				{
+					"name": "door_close",
+					"parent": "door",
+					"pivot": [0, 8.5, -7.1],
 					"cubes": [
 						{"origin": [-7, 2, -7.6], "size": [14, 13, 1], "uv": [0, 63]}
 					]
