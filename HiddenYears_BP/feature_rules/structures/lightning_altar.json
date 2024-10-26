@@ -10,7 +10,7 @@
       "minecraft:biome_filter": {
         "test": "has_biome_tag",
         "operator": "==",
-        "value": "flower_forest"
+        "value": "plains"
       }
     },
     "distribution": {
@@ -26,7 +26,7 @@
       },
       "scatter_chance": {
         "numerator": 1,
-        "denominator": 100
+        "denominator": 35
       }
     }
   }
