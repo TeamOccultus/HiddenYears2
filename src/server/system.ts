@@ -49,6 +49,11 @@ export class System {
         new ItemStack("hy:flash_metal_ingot"),
         PLAYER.getComponent("inventory").container
       );
+      replaceItemStack(
+        new ItemStack("hy:experience_calamity_bag"),
+        new ItemStack("hy:crimson_eyes"),
+        PLAYER.getComponent("inventory").container
+      );
     });
   }
 }

@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hy:experience_calamity_bag",
       "menu_category": {
-        "category": "equipment"
+        "category": "none"
       }
     },
     "components": {

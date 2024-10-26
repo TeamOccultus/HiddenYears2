@@ -2,13 +2,16 @@
   "format_version": "1.20.11",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "hy:experience_calamity_bag"
+      "identifier": "hy:crimson_eyes"
     },
     "tags": ["crafting_table"],
-    "pattern": ["XXX", "XOX", "XXX"],
+    "pattern": ["AXA", "XOX", "AXA"],
     "key": {
-      "X": {
+      "A": {
         "item": "hy:ruby_block"
+      },
+      "X":{
+        "item": "experience_bottle"
       },
       "O": {
         "item": "hy:ruby_bag"
@@ -20,10 +23,13 @@
       },
       {
         "item": "hy:ruby_bag"
+      },
+      {
+        "item": "experience_bottle"
       }
     ],
     "result": {
-      "item": "hy:experience_calamity_bag"
+      "item": "hy:crimson_eyes"
     }
   }
 }

@@ -1062,6 +1062,9 @@
     },
     "hy.article_collection": {
       "textures": "textures/items/article_collection"
+    },
+    "hy.crimson_eyes": {
+      "textures": "textures/items/crimson_eyes"
     }
   }
 }
