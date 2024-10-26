@@ -64,8 +64,65 @@ export class HyUtils {
       `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`
     );
   }
-  static isAffectByBloodArmor(entity: Entity) {
-    if (getEquipmentItem(entity, EquipmentSlot.Legs)) {
+  /**
+   * 判断实体是否受血色的护甲机制影响
+   * @param entity
+   * @returns
+   */
+  static isAffectByBloodArmor(entity: Entity, attacker: Entity) {
+    if (
+      !attacker.matches({
+        families: ["ruby"],
+      })
+    ) {
+      return false;
+    }
+    if (
+      !(
+        getEquipmentItem(entity, EquipmentSlot.Chest)?.typeId ===
+        "hy:ruby_chestplate"
+      )
+    ) {
+      return false;
+    }
+    if (
+      !(
+        getEquipmentItem(entity, EquipmentSlot.Legs)?.typeId ===
+        "hy:ruby_leggings"
+      )
+    ) {
+      return false;
+    }
+    if (
+      !(
+        getEquipmentItem(entity, EquipmentSlot.Feet)?.typeId === "hy:ruby_boots"
+      )
+    ) {
+      return false;
+    }
+    console.info("This entity is affect by Blood Armor.")
+    return true;
+  }
+  /**
+   * 判断实体是否会受血色的冠冕效果影响
+   * @param entity
+   * @returns
+   */
+  static isAffectByBloodCrown(entity: Entity, attacker: Entity) {
+    if (
+      !attacker.matches({
+        families: ["ruby"],
+      })
+    ) {
+      return false;
+    }
+    if (
+      getEquipmentItem(entity, EquipmentSlot.Head)?.typeId === "hy:ruby_helmet"
+    ) {
+      console.info("This entity is affect by Blood Crown.")
+      return true;
+    } else {
+      return false;
     }
   }
 }

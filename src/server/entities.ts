@@ -68,6 +68,13 @@ export class Entity {
           if (TARGET.isValid()) TARGET.removeTag("hy:dehydration");
         }, 400);
       }
+      if(HyUtils.isAffectByBloodArmor(TARGET, ATTACKER)){
+        TARGET.addEffect("regeneration",6,{amplifier: 4})
+      }
+      if(HyUtils.isAffectByBloodCrown(TARGET, ATTACKER)){
+        TARGET.addEffect("regeneration",9,{amplifier: 4})
+        ATTACKER.applyDamage(2);
+      }
     });
   }
   /**
