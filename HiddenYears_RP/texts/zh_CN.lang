@@ -1075,3 +1075,8 @@ hy.boosSkill.ghost.caughtsand=法老残影即将发动战技§4「尘沙的惩�
 
 hy.block.lighting_frame=雷光框架
 hy.item.crimson_eyes=血色的瞥视
+hy.message.blood_armor=§d「血色的盔甲」§r机制生效，现在所受伤害得到减免！
+hy.title.king_of_ruby=§4力量与鲜血的试炼§r
+hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强大的力量……§r
+hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
+hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r

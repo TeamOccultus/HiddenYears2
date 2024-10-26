@@ -1,5 +1,6 @@
 import {
   ItemStack,
+  Player,
   StructureAnimationMode,
   system,
   Vector3,
@@ -37,6 +38,10 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       if (
         BLOCK.typeId === "hy:unknown_frame"
       ) {
+        if(arg.source instanceof Player){
+          arg.source.onScreenDisplay.setTitle({translate: "hy.title.pharaohs_ghost"})
+          arg.source.onScreenDisplay.updateSubtitle({translate: "hy.title.pharaohs_ghost.subtitle"})
+        }
         setEquipmentItem(arg.source);
         BLOCK.setType("hy:actived_unknown_frame");
         BLOCK.dimension.spawnEntity("hy:pharaohs_ghost", {
@@ -53,6 +58,10 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       if (
         BLOCK.typeId === "hy:lighting_frame"
       ) {
+        if(arg.source instanceof Player){
+          arg.source.onScreenDisplay.setTitle({translate: "hy.title.king_of_ruby"})
+          arg.source.onScreenDisplay.updateSubtitle({translate: "hy.title.king_of_ruby.subtitle"})
+        }
         setEquipmentItem(arg.source);
         BLOCK.setType("hy:actived_lighting_frame");
         BLOCK.dimension.spawnEntity("hy:king_of_ruby", {

@@ -69,6 +69,9 @@ export class Entity {
         }, 400);
       }
       if(HyUtils.isAffectByBloodArmor(TARGET, ATTACKER)){
+        if(TARGET instanceof Player){
+          TARGET.onScreenDisplay.setActionBar({translate: "hy.message.blood_armor"})
+        }
         TARGET.addEffect("regeneration",6,{amplifier: 4})
       }
       if(HyUtils.isAffectByBloodCrown(TARGET, ATTACKER)){
