@@ -1,3 +1,4 @@
+import { getEquipmentItem } from "@lazuli/ldk2";
 import {
   Dimension,
   Entity,
@@ -59,6 +60,12 @@ export class HyUtils {
     }
   }
   static loot(dimension: Dimension, location: Vector3, path: string) {
-    dimension.runCommand(`loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`)
+    dimension.runCommand(
+      `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`
+    );
+  }
+  static isAffectByBloodArmor(entity: Entity) {
+    if (getEquipmentItem(entity, EquipmentSlot.Legs)) {
+    }
   }
 }
