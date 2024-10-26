@@ -1,0 +1,33 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "hy:lightning_altar",
+      "places_feature": "hy:structures/lightning_altar"
+    },
+    "conditions": {
+      "placement_pass": "first_pass",
+      "minecraft:biome_filter": {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "flower_forest"
+      }
+    },
+    "distribution": {
+      "iterations": 1,
+      "x": {
+        "extent": [0, 16],
+        "distribution": "uniform"
+      },
+      "y": "q.heightmap(v.worldx, v.worldz)", //Generates the feature on the highest block on the column
+      "z": {
+        "extent": [0, 16],
+        "distribution": "uniform"
+      },
+      "scatter_chance": {
+        "numerator": 1,
+        "denominator": 100
+      }
+    }
+  }
+}
