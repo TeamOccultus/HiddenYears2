@@ -261,5 +261,21 @@
       "side": "sandstone_side",
       "up": "sandstone_top"
     }
+  },
+  "hy:lighting_frame": {
+    "sound": "metal",
+    "textures": {
+      "up": "hy.lighting_frame_top",
+      "down": "hy.lighting_frame_side",
+      "side": "hy.lighting_frame_side"
+    }
+  },
+  "hy:actived_lighting_frame": {
+    "sound": "metal",
+    "textures": {
+      "up": "hy.lighting_frame_top_filled",
+      "down": "hy.lighting_frame_side",
+      "side": "hy.lighting_frame_side"
+    }
   }
 }

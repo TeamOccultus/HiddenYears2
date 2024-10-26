@@ -144,6 +144,15 @@
     },
     "hy.drift_sand_cabinet": {
       "textures": "textures/blocks/drift_sand_cabinet"
+    },
+    "hy.lighting_frame_top": {
+      "textures": "textures/blocks/lighting_frame_top"
+    },
+    "hy.lighting_frame_top_filled": {
+      "textures": "textures/blocks/lighting_frame_top_filled"
+    },
+    "hy.lighting_frame_side": {
+      "textures": "textures/blocks/lighting_frame_side"
     }
   }
 }
