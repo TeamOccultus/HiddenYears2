@@ -905,6 +905,9 @@ export const RUBY_RUNES = new Quest(
       exp: 35,
     },
     iconPath: "textures/items/ruby_helmet",
+    tips: {
+      translate: "hy.quest.ruby_runes.tips"
+    }
   }
 );
 
