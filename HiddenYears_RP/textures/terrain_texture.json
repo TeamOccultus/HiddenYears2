@@ -153,6 +153,9 @@
     },
     "hy.lighting_frame_side": {
       "textures": "textures/blocks/lighting_frame_side"
+    },
+    "hy.darkish_red_flower": {
+      "textures": "textures/blocks/darkish_red_flower"
     }
   }
 }

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:darkish_red_flower",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:loot": "loot_tables/blocks/darkish_red_flower.json",
+      "minecraft:display_name": "hy.item.darkish_red_flower",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"],
+            "block_filter": ["grass", "dirt"]
+          }
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:geometry": "minecraft:geometry.cross",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hy.darkish_red_flower",
+          "render_method": "alpha_test",
+          "ambient_occlusion": false,
+          "face_dimming": false
+        }
+      },
+      "minecraft:map_color": "#A7A7A7",
+      "tag:flower": {}
+    }
+  }
+}

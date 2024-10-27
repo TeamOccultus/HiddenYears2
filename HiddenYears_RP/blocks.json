@@ -277,5 +277,8 @@
       "down": "hy.lighting_frame_side",
       "side": "hy.lighting_frame_side"
     }
+  },
+  "hy:darkish_red_flower": {
+    "sound": "grass"
   }
 }

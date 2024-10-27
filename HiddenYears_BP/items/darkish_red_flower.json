@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:darkish_red_flower_item",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.flower"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.darkish_red_flower"
+      },
+      "minecraft:icon": "hy.darkish_red_flower",
+      "minecraft:block_placer": {
+        "block": "hy:darkish_red_flower",
+        "use_on": ["dirt", "grass"],
+        "replace_block_item": true
+      }
+    }
+  }
+}
