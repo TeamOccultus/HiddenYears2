@@ -2,10 +2,11 @@ import {
   getEquipmentItem,
   Register,
   ToolTag,
+  tryOperateEntity,
   WeaponAtkSkill,
   WeaponTag,
 } from "@lazuli/ldk2";
-import { world } from "@minecraft/server";
+import { system, world } from "@minecraft/server";
 import { applyImitationDamage } from "../../core/imitation";
 import { HyUtils } from "../../core/utils";
 
@@ -116,6 +117,99 @@ const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
   ],
 });
 
+const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
+  skill: [
+    new WeaponAtkSkill(2, "empty"),
+    new WeaponAtkSkill(
+      3,
+      {
+        damageTarget: 4,
+      },
+      { translate: "hy.itemSkill.crowbar.1" },
+    ),
+    new WeaponAtkSkill(
+      1,
+      {
+        damageTarget: 5,
+        effectTarget: [
+          {
+            effectType: "slowness",
+            duration: 400,
+            amplifier: 1,
+          },
+          {
+            effectType: "weakness",
+            duration: 300,
+          },
+          {
+            effectType: "darkness",
+            duration: 200,
+          },
+        ],
+      },
+      { translate: "hy.itemSkill.crowbar.2" },
+    ),
+  ],
+});
+
+const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
+  destroyedAfterEvents: (holder, item) => {
+    HyUtils.replaceLowerCopperTool(item, holder);
+  },
+  skill: [
+    new WeaponAtkSkill(3, "empty"),
+    new WeaponAtkSkill(
+      3,
+      {
+        custom: (entity, target) => {
+          target.addTag("hy:bleed_lv1");
+          system.runTimeout(() => {
+            tryOperateEntity(target, (entity) => {
+              entity.removeTag("hy:bleed_lv1");
+            });
+          }, 160);
+        },
+      },
+      { translate: "hy.itemSkill.knife.1" },
+    ),
+    new WeaponAtkSkill(
+      1,
+      {
+        custom: (entity, target) => {
+          target.addTag("hy:bleed_lv2");
+          system.runTimeout(() => {
+            tryOperateEntity(target, (entity) => {
+              entity.removeTag("hy:bleed_lv2");
+            });
+          }, 160);
+        },
+      },
+      { translate: "hy.itemSkill.knife.2" },
+    ),
+  ],
+});
+
+const BOARDSWORD_WEAPON = new WeaponTag("hy:is_knife", {
+  skill: [
+    new WeaponAtkSkill(5, "empty"),
+    new WeaponAtkSkill(
+        2,
+        {
+          xp: 10
+        },
+        { translate: "hy.itemSkill.boardsword.1" },
+    ),
+    new WeaponAtkSkill(
+        1,
+        {
+          levels: 1
+        },
+        { translate: "hy.itemSkill.boardsword.2" },
+    ),
+  ],
+});
+
+
 export function registryTool() {
   world.afterEvents.playerBreakBlock.subscribe((event) => {
     const [ENTITY, ITEM] = [event.player, event.itemStackBeforeBreak];
@@ -140,5 +234,8 @@ export function registryTool() {
     NORMAL_HOE,
     AWL_WEAPON,
     HAMMER_WEAPON,
+    CROWBAR_WEAPON,
+    KNIFE_WEAPON,
+    BOARDSWORD_WEAPON
   ]);
 }
