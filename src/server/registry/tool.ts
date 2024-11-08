@@ -1,70 +1,48 @@
 import {
   getEquipmentItem,
   Register,
-  setEquipmentItem,
   ToolTag,
   WeaponAtkSkill,
   WeaponTag,
 } from "@lazuli/ldk2";
-import { HyCorrosionMap } from "../../data/data";
 import { world } from "@minecraft/server";
 import { applyImitationDamage } from "../../core/imitation";
+import { HyUtils } from "../../core/utils";
 
 const NORMAL_TOOL = new ToolTag("hy:custom_tools", {
   destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
+    HyUtils.replaceLowerCopperTool(item, holder);
   },
 });
 
 const NORMAL_SHOVEL = new ToolTag("hy:custom_shovel", {
   destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
+    HyUtils.replaceLowerCopperTool(item, holder);
   },
   type: "shovel",
 });
 
 const NORMAL_AXE = new ToolTag("hy:custom_axe", {
   destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
+    HyUtils.replaceLowerCopperTool(item, holder);
   },
   type: "axe",
 });
 
 const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
   destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
+    HyUtils.replaceLowerCopperTool(item, holder);
   },
   type: "hoe",
 });
 
 const NORMAL_WEAPON = new WeaponTag("hy:custom_tools", {
   destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
+    HyUtils.replaceLowerCopperTool(item, holder);
   },
 });
 
 const AWL_WEAPON = new WeaponTag("hy:is_awl", {
-  destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
-  },
   skill: [
     new WeaponAtkSkill(5, "empty"),
     new WeaponAtkSkill(
@@ -94,10 +72,7 @@ const AWL_WEAPON = new WeaponTag("hy:is_awl", {
 
 const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
   destroyedAfterEvents: (holder, item) => {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-    }
+    HyUtils.replaceLowerCopperTool(item, holder);
   },
   skill: [
     new WeaponAtkSkill(5, "empty"),
