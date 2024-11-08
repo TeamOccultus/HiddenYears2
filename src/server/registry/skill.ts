@@ -1,6 +1,5 @@
 import { world, Player } from "@minecraft/server";
 import {
-  awlSkill,
   boardswordSkill,
   crowbarSkill,
   hammerSkill,
@@ -27,12 +26,7 @@ export function registryItemSkill() {
     if (ITEM?.hasTag("hy:is_crowbar")) {
       crowbarSkill(ENTITY, ATTACKER instanceof Player ? ATTACKER : undefined);
     }
-    /**
-     * @tag hy:is_awl-判断攻击物品是否为锥
-     */
-    if (ITEM?.hasTag("hy:is_awl")) {
-      awlSkill(ENTITY, ATTACKER instanceof Player ? ATTACKER : undefined);
-    }
+
     /**
      * @tag hy:is_knife-判断攻击物品是否为小刀
      */
@@ -56,17 +50,3 @@ export function registryItemSkill() {
     }
   });
 }
-
-/*export function registryEntitySkill() {
-  world.afterEvents.entityLoad.subscribe((event) => {
-    if (event.entity.typeId === "hy:king_of_ruby") {
-      rubyKingSkill(event.entity);
-    }
-  });
-  world.afterEvents.entitySpawn.subscribe((event) => {
-    if (event.entity.typeId === "hy:king_of_ruby") {
-      rubyKingSkill(event.entity);
-    }
-  });
-}
-*/
