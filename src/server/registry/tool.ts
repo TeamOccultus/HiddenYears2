@@ -5,6 +5,7 @@ import {
   tryOperateEntity,
   WeaponAtkSkill,
   WeaponTag,
+  WeaponUseSkill,
 } from "@lazuli/ldk2";
 import { system, world } from "@minecraft/server";
 import { applyImitationDamage } from "../../core/imitation";
@@ -149,6 +150,14 @@ const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
       },
       { translate: "hy.itemSkill.crowbar.2" },
     ),
+    new WeaponUseSkill(
+      1,
+      {
+        xp: 114,
+      },
+      { text: "这是测试的使用技能" },
+      10,
+    ),
   ],
 });
 
@@ -189,26 +198,25 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
   ],
 });
 
-const BOARDSWORD_WEAPON = new WeaponTag("hy:is_knife", {
+const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode", {
   skill: [
     new WeaponAtkSkill(5, "empty"),
     new WeaponAtkSkill(
-        2,
-        {
-          xp: 10
-        },
-        { translate: "hy.itemSkill.boardsword.1" },
+      2,
+      {
+        xp: 10,
+      },
+      { translate: "hy.itemSkill.boardsword.1" },
     ),
     new WeaponAtkSkill(
-        1,
-        {
-          levels: 1
-        },
-        { translate: "hy.itemSkill.boardsword.2" },
+      1,
+      {
+        levels: 1,
+      },
+      { translate: "hy.itemSkill.boardsword.2" },
     ),
   ],
 });
-
 
 export function registryTool() {
   world.afterEvents.playerBreakBlock.subscribe((event) => {
@@ -236,6 +244,6 @@ export function registryTool() {
     HAMMER_WEAPON,
     CROWBAR_WEAPON,
     KNIFE_WEAPON,
-    BOARDSWORD_WEAPON
+    BOARDSWORD_WEAPON,
   ]);
 }
