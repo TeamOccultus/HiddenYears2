@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "bandage"
+    },
+    "tags": ["crafting_table", "medicine_table"],
+    "pattern": ["XX", "XS"],
+    "key": {
+      "X": {
+        "item": "wool"
+      },
+      "S": {
+        "item": "stick"
+      }
+    },
+    "unlock": [
+      {
+        "item": "wool"
+      },
+      {
+        "item": "stick"
+      }
+    ],
+    "result": {
+      "item": "hy:bandage"
+    }
+  }
+}

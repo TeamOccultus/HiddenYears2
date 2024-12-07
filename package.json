@@ -13,9 +13,9 @@
   "license": "BSD-3-Clause",
   "dependencies": {
     "@lazuli/ldk2": "2.1.0-rc.1",
-    "@minecraft/server": "1.16.0-beta.1.21.40-stable",
-    "@minecraft/server-ui": "1.4.0-beta.1.21.40-stable",
-    "@minecraft/vanilla-data": "1.21.30",
+    "@minecraft/server": "1.17.0-beta.1.21.50-stable",
+    "@minecraft/server-ui": "1.4.0-beta.1.21.50-stable",
+    "@minecraft/vanilla-data": "1.21.50",
     "esbuild": "^0.23.1",
     "prettier": "^3.3.3",
     "typescript": "^5.5.3"
