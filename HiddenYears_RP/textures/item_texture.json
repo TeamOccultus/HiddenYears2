@@ -1062,6 +1062,12 @@
     },
     "hy.article_collection": {
       "textures": "textures/items/article_collection"
+    },
+    "hy.crimson_eyes": {
+      "textures": "textures/items/crimson_eyes"
+    },
+    "hy.darkish_red_flower": {
+      "textures": "textures/blocks/darkish_red_flower"
     }
   }
 }

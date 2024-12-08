@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "hy:darkish_red_flower"
+    },
+    "places_block": "hy:darkish_red_flower",
+    "enforce_placement_rules": false,
+    "enforce_survivability_rules": false,
+    "may_attach_to": {
+      "top": ["dirt", "grass"]
+    },
+    "may_replace": ["air"]
+  }
+}

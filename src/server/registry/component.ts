@@ -1,5 +1,6 @@
 import {
   ItemStack,
+  Player,
   StructureAnimationMode,
   system,
   Vector3,
@@ -35,12 +36,35 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
     onUseOn(arg) {
       const BLOCK = arg.block;
       if (
-        arg.itemStack.typeId === "hy:drift_sand_statue" &&
         BLOCK.typeId === "hy:unknown_frame"
       ) {
+        if(arg.source instanceof Player){
+          arg.source.onScreenDisplay.setTitle({translate: "hy.title.pharaohs_ghost"})
+          arg.source.onScreenDisplay.updateSubtitle({translate: "hy.title.pharaohs_ghost.subtitle"})
+        }
         setEquipmentItem(arg.source);
         BLOCK.setType("hy:actived_unknown_frame");
         BLOCK.dimension.spawnEntity("hy:pharaohs_ghost", {
+          x: BLOCK.location.x,
+          y: BLOCK.location.y + 1,
+          z: BLOCK.location.z,
+        });
+      }
+    },
+  });
+  ITEM_COMREG.registerCustomComponent("hy:lighting_frame_acrtiver", {
+    onUseOn(arg) {
+      const BLOCK = arg.block;
+      if (
+        BLOCK.typeId === "hy:lighting_frame"
+      ) {
+        if(arg.source instanceof Player){
+          arg.source.onScreenDisplay.setTitle({translate: "hy.title.king_of_ruby"})
+          arg.source.onScreenDisplay.updateSubtitle({translate: "hy.title.king_of_ruby.subtitle"})
+        }
+        setEquipmentItem(arg.source);
+        BLOCK.setType("hy:actived_lighting_frame");
+        BLOCK.dimension.spawnEntity("hy:king_of_ruby", {
           x: BLOCK.location.x,
           y: BLOCK.location.y + 1,
           z: BLOCK.location.z,

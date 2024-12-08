@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "medicine_pack"
+    },
+    "tags": ["crafting_table", "medicine_table"],
+    "pattern": ["XXX", "XSX", "XXX"],
+    "key": {
+      "X": {
+        "item": "paper"
+      },
+      "S": {
+        "tag": "hy:medicine_potion"
+      }
+    },
+    "unlock": [
+      {
+        "item": "paper"
+      },
+      {
+        "tag": "hy:medicine_potion"
+      }
+    ],
+    "result": {
+      "item": "hy:medicine_pack"
+    }
+  }
+}

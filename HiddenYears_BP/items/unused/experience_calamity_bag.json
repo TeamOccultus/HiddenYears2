@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:experience_calamity_bag",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.calamity_bag",
+      "minecraft:max_stack_size": 1,
+      "minecraft:display_name": {
+        "value": "hy.item.calamity_bag.experience"
+      },
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:tags": {
+        "tags": ["hy:single_use"]
+      }
+    }
+  }
+}

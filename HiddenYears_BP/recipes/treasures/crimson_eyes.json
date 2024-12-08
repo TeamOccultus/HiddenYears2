@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:crimson_eyes"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["AXA", "XOX", "AXA"],
+    "key": {
+      "A": {
+        "item": "hy:ruby_block"
+      },
+      "X":{
+        "item": "experience_bottle"
+      },
+      "O": {
+        "item": "hy:ruby_bag"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:ruby_block"
+      },
+      {
+        "item": "hy:ruby_bag"
+      },
+      {
+        "item": "experience_bottle"
+      }
+    ],
+    "result": {
+      "item": "hy:crimson_eyes"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 {
   "name": "hy2",
-  "version": "2.4.2",
+  "version": "2.4.4",
   "description": "A Minecraft addon",
   "scripts": {
     "build:main": "node build/main.mjs",
@@ -12,18 +12,18 @@
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@minecraft/server": "1.15.0-beta.1.21.30-stable",
-    "@minecraft/server-ui": "1.4.0-beta.1.21.30-stable",
-    "@minecraft/vanilla-data": "1.21.30",
+    "@lazuli/ldk2": "2.1.0-rc.1",
+    "@minecraft/server": "1.17.0-beta.1.21.50-stable",
+    "@minecraft/server-ui": "1.4.0-beta.1.21.50-stable",
+    "@minecraft/vanilla-data": "1.21.50",
     "esbuild": "^0.23.1",
-    "@lazuli/ldk2": "2.0.0-beta.1",
+    "prettier": "^3.3.3",
     "typescript": "^5.5.3"
   },
   "devDependencies": {
     "archiver": "^7.0.1",
     "commander": "^12.1.0",
     "fs-extra": "^11.2.0",
-    "path": "^0.12.7",
-    "prettier": "^3.3.3"
+    "path": "^0.12.7"
   }
 }

@@ -44,23 +44,6 @@ const QUEST_BOOK = new ChapterQuestBook(
       iconPath: "textures/items/book_writable",
     },
     {
-      title: { translate: "hy.quest.interlude_food.title" },
-      body: { translate: "hy.quest.interlude.body" },
-      quests: [
-        quests.WHEAT,
-        quests.MELON_SLICE,
-        quests.COPPER_APPLE,
-        quests.ROTTEN_FLESH,
-        quests.HONEY_BOTTLE,
-        quests.CHOCOLATE,
-        quests.MARSHALLOW,
-        quests.MILK_BUCKET,
-        quests.CAKE,
-        quests.HAY_BLOCK,
-      ],
-      iconPath: "textures/items/wheat",
-    },
-    {
       title: { translate: "hy.quest.chapter2.title" },
       body: { translate: "hy.quest.chapter2.body" },
       quests: [

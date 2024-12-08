@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:experience_bottle"
+    },
+    "tags": ["lab_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "X": {
+        "item": "hy:darkish_red_flower_item"
+      },
+      "A": {
+        "item": "glass_bottle"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hy:darkish_red_flower_item"
+      },
+      {
+        "item": "glass_bottle"
+      }
+    ],
+    "result": {
+      "item": "experience_bottle"
+    }
+  }
+}

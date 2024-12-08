@@ -1,5 +1,5 @@
 pack.name=隐藏之年²
-pack.description=「探索未知的世间」 ｜ 正式版2.4.2 §l本包需要基岩版1.21.X并开启§6自定义生物群系、测试版API§r实验性玩法
+pack.description=「探索未知的世间」 ｜ 正式版2.4.4 §l本包需要基岩版1.21.5X并开启§6自定义生物群系、测试版API§r实验性玩法
 
 gui.check=提交任务
 gui.about=关于
@@ -640,12 +640,13 @@ hy.quest.ruby_chestplate.title=§d[淬血的刚玉]§r 满身赤红
 hy.quest.ruby_chestplate.body=用这来之不易的宝石打造一套甲胄吧
 hy.quest.ruby_bag.title=§d[淬血的刚玉]§r 经验之袋
 hy.quest.ruby_bag.body=在地底寻找红宝石地牢击杀红宝石怪物获得这种战利品袋子
-hy.quest.ruby_bag.tips=通过红宝石谜袋与红宝石块合成灾厄谜袋·经验，使用此灾厄谜袋即可召唤BOSS-红宝石之王
+hy.quest.ruby_bag.tips=你可以通过红宝石谜袋与红宝石块、附魔之瓶合成血色的瞥视
 hy.quest.ruby_runes.title=§d[淬血的刚玉·终]§r 力量与鲜血之歌
 hy.quest.ruby_runes.body1=「让我们回溯到遥远的过去。」
 hy.quest.ruby_runes.body2=在不死之族诞生之后，世界的主人——人类也随即诞生了，两个种族和睦相处，但几个千年后的一个月夜，人类的领袖倒在血泊之中，战争终于还是爆发了。
 hy.quest.ruby_runes.body3=五十年鏖战，满目疮痍，世间将倾。
 hy.quest.ruby_runes.body4=是为「太古之战」
+hy.quest.ruby_runes.tips=在平原的「雷光祭坛」中插入血色的瞥视，召唤红宝石之王
 hy.quest.gold_ingot.title=§d[最初的家园]§r 失去光芒的黄金
 hy.quest.gold_ingot.body=在大洞穴成为下界之前最为寻常的东西，现在已经变成了一种珍贵的金属，可以用来交换物品
 hy.quest.obsidian.title=§d[最初的家园]§r 水火交融
@@ -1072,3 +1073,12 @@ hy.boosSkill.ghost.guardian=法老残影即将发动战技§d「尘沙的号令�
 hy.boosSkill.ghost.mummy=法老残影即将发动战技§d「尘沙的魔法」§r！
 hy.boosSkill.ghost.drought=法老残影即将发动战技§d「尘沙的诅咒」§r！
 hy.boosSkill.ghost.caughtsand=法老残影即将发动战技§4「尘沙的惩罚」§r！
+
+hy.block.lighting_frame=雷光框架
+hy.item.crimson_eyes=血色的瞥视
+hy.item.darkish_red_flower=殷红之花
+hy.message.blood_armor=§d「血色的盔甲」§r机制生效，现在所受伤害得到减免！
+hy.title.king_of_ruby=§4力量与鲜血的试炼§r
+hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强大的力量……§r
+hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
+hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
