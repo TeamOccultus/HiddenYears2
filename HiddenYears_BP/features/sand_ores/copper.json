@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hy:sand_ores/copper"
+    },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "hy:sand_copper_ore",
+        "may_replace": ["sandstone"]
+      }
+    ]
+  }
+}

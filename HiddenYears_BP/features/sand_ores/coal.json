@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hy:sand_ores/coal"
+    },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "hy:sand_coal_ore",
+        "may_replace": ["sandstone"]
+      }
+    ]
+  }
+}

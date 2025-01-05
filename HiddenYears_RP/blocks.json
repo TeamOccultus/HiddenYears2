@@ -283,14 +283,14 @@
   },
   "hy:sand_copper_ore": {
     "sound": "stone",
-    "textures": "hy.sand_copper_ore"
+    "textures": "hy.copper_sand_ore"
   },
   "hy:sand_iron_ore": {
     "sound": "stone",
-    "textures": "hy.sand_iron_ore"
+    "textures": "hy.iron_sand_ore"
   },
   "hy:sand_coal_ore": {
     "sound": "stone",
-    "textures": "hy.sand_coal_ore"
+    "textures": "hy.coal_sand_ore"
   }
 }

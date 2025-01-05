@@ -1083,8 +1083,8 @@ hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强�
 hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
 hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
 
-hy.block.copper_sand_ore=砂岩铜矿石
-hy.block.coal_sand_ore=砂岩煤矿石
-hy.block.iron_sand_ore=砂岩铁矿石
+hy.block.sand_copper_ore=砂岩铜矿石
+hy.block.sand_coal_ore=砂岩煤矿石
+hy.block.sand_iron_ore=砂岩铁矿石
 hy.block.sand_with_gold_dust=碎金细沙
 hy.item.desert_gold=沙漠碎金
