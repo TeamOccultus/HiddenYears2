@@ -1,4 +1,9 @@
-import { ChapterQuestBook, QuestBook, Register, setQuestNameSpace } from "@lazuli/ldk2";
+import {
+  ChapterQuestBook,
+  QuestBook,
+  Register,
+  setQuestNameSpace,
+} from "@lazuli/ldk2";
 import * as quests from "../../data/quest";
 import { HyLetterBody } from "../../data/lang";
 
@@ -45,7 +50,13 @@ const QUEST_BOOK = new ChapterQuestBook(
     },
     {
       title: { translate: "hy.quest.chapter2.title" },
-      body: { translate: "hy.quest.chapter2.body" },
+      body: {
+        rawtext: [
+          { translate: "hy.quest.chapter2.body" },
+          { text: "\n" },
+          { translate: "hy.quest.chapter2.body2" },
+        ],
+      },
       quests: [
         quests.RUBY,
         quests.RUBY_CHESTPLATE,
