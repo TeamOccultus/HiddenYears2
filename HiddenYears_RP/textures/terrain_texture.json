@@ -156,6 +156,15 @@
     },
     "hy.darkish_red_flower": {
       "textures": "textures/blocks/darkish_red_flower"
+    },
+    "hy.iron_sand_ore": {
+      "textures": "textures/blocks/iron_sand_ore"
+    },
+    "hy.gold_sand_ore": {
+      "textures": "textures/blocks/gold_sand_ore"
+    },
+    "hy.copper_sand_ore": {
+      "textures": "textures/blocks/copper_sand_ore"
     }
   }
 }

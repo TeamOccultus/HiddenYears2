@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:sand_coal_ore",
+      "menu_category": {
+        "category": "nature",
+        "group": "itemGroup.name.ore"
+      }
+    },
+    "components": {
+      "minecraft:display_name": "hy.block.sand_coal_ore",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.8
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:map_color": "#F7E9A3",
+      "minecraft:loot": "loot_tables/blocks/sand_ores/coal.json",
+      "tag:hy:custom_ores": {},
+      "tag:minecraft:stone_pick_diggable": {}
+    }
+  }
+}
