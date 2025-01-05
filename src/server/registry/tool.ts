@@ -38,7 +38,7 @@ const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
   type: "hoe",
 });
 
-const NORMAL_WEAPON = new WeaponTag("hy:custom_tools", {
+const NORMAL_WEAPON = new WeaponTag("hy:custom_weapons", {
   destroyedAfterEvents: (holder, item) => {
     HyUtils.replaceLowerCopperTool(item, holder);
   },
