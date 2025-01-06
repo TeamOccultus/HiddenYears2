@@ -10,14 +10,14 @@
     "description": "pack.description",
     "min_engine_version": [1, 21, 0],
     "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
-    "version": "2.4.4",
+    "version": "2.4.5",
     "pack_scope": "world"
   },
   "modules": [
     {
       "type": "resources",
       "uuid": "98abb052-0d22-4750-bd21-3521f53f00b9",
-      "version": "2.4.4"
+      "version": "2.4.5"
     }
   ],
   "settings": [
@@ -41,7 +41,7 @@
   "dependencies": [
     {
       "uuid": "e1b2000f-c88c-46ed-a9cd-3f0b06130a1f",
-      "version": "2.4.4"
+      "version": "2.4.5"
     }
   ]
 }
