@@ -13,10 +13,10 @@ container.stonecutter_block=切割机	#
 tile.stonecutter.name=切割机	#
 tile.stonecutter_block.name=切割机	#
 
-hy.message.tetanus=你获得了§b「破伤风」§r效果！
-hy.message.oxidising.exposed=此工具变得§b「斑驳」§r
-hy.message.oxidising.weathered=此工具变得§b「锈蚀」§r
-hy.message.oxidising.oxidized=此工具已经§b「完全氧化」§r
+hy.message.tetanus=你获得了§d「破伤风」§r效果！
+hy.message.oxidising.exposed=此工具已然变得§d「斑驳」§r！
+hy.message.oxidising.weathered=此工具已然变得§d「锈蚀」§r！
+hy.message.oxidising.oxidized=此工具已然§d「完全氧化」§r！
 
 entity.hy:gemstone_trader.name=宝石商人
 item.spawn_egg.entity.hy:gemstone_trader.name=宝石商人刷怪蛋
@@ -101,24 +101,6 @@ hy.item.iron_hammer=铁锤
 hy.item.netherite_hammer=下界合金锤
 hy.item.wooden_hammer=木锤
 hy.item.stone_hammer=石锤
-
-hy.item.waxed_copper_hammer=涂蜡的铜锤
-hy.item.waxed_amethyst_hammer=涂蜡的紫水晶锤
-hy.item.waxed_diamond_hammer=涂蜡的钻石锤
-hy.item.waxed_gold_hammer=涂蜡的金锤
-hy.item.waxed_iron_hammer=涂蜡的铁锤
-hy.item.waxed_netherite_hammer=涂蜡的下界合金锤
-hy.item.waxed_wooden_hammer=涂蜡的木锤
-hy.item.waxed_stone_hammer=涂蜡的石锤
-
-hy.item.sharp_copper_hammer=打磨的铜锤
-hy.item.sharp_amethyst_hammer=打磨的紫水晶锤
-hy.item.sharp_diamond_hammer=打磨的钻石锤
-hy.item.sharp_gold_hammer=打磨的金锤
-hy.item.sharp_iron_hammer=打磨的铁锤
-hy.item.sharp_netherite_hammer=打磨的下界合金锤
-hy.item.sharp_wooden_hammer=打磨的木锤
-hy.item.sharp_stone_hammer=打磨的石锤
 
 hy.item.amethyst_coal=紫水晶煤炭
 hy.item.copper_coal=铜煤炭
