@@ -440,9 +440,9 @@ export const IRON_DAGGER: Quest = new Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.copper_apple",
+          translate: "item.cooked_porkchop.name",
         },
-        itemStack: new ItemStack("hy:copper_apple", 6),
+        itemStack: new ItemStack("cooked_porkchop", 10),
       },
     },
     tips: {
@@ -471,9 +471,9 @@ export const IRON_SWORD: Quest = new Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.enchanted_copper_apple",
+          translate: "item.golden_apple.name",
         },
-        itemStack: new ItemStack("hy:enchanted_copper_apple", 3),
+        itemStack: new ItemStack("golden_apple", 1),
       },
     },
     tips: {
@@ -502,9 +502,9 @@ export const CROSSBOW: Quest = new Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.enchanted_copper_apple",
+          translate: "item.golden_apple.name",
         },
-        itemStack: new ItemStack("hy:enchanted_copper_apple", 5),
+        itemStack: new ItemStack("golden_apple", 1),
       },
     },
   }
@@ -530,9 +530,9 @@ export const SHIELD: Quest = new Quest(
     award: {
       item: {
         name: {
-          translate: "hy.item.enchanted_copper_apple",
+          translate: "item.golden_apple.name",
         },
-        itemStack: new ItemStack("hy:enchanted_copper_apple", 7),
+        itemStack: new ItemStack("golden_apple", 1),
       },
     },
   }
