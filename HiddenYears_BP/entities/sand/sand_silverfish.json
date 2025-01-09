@@ -103,7 +103,7 @@
     "events": {
       "minecraft:entity_spawned": {
         "remove": {},
-        "add": { "component_groups": ["hy:sand_silverfish_calm"] }
+        "add": { "component_groups": ["hy:sand_silverfish_angry"] }
       },
       "minecraft:become_angry": {
         "remove": { "hy:sand_silverfish_calm": {} },
