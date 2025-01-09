@@ -1068,6 +1068,9 @@
     },
     "hy.darkish_red_flower": {
       "textures": "textures/blocks/darkish_red_flower"
+    },
+    "hy.gold_sand": {
+      "textures": "textures/blocks/gold_sand"
     }
   }
 }

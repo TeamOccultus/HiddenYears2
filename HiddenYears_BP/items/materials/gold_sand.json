@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:gold_sand",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.gold_sand"
+      },
+      "minecraft:icon": "hy.gold_sand",
+      "minecraft:tags": {
+        "tags": ["dict:dusts"]
+      }
+    }
+  }
+}

@@ -1071,7 +1071,7 @@ hy.block.sand_copper_ore=砂岩铜矿石
 hy.block.sand_coal_ore=砂岩煤矿石
 hy.block.sand_iron_ore=砂岩铁矿石
 hy.block.sand_with_gold_dust=碎金细沙
-hy.item.desert_gold=沙漠碎金
+hy.item.gold_sand=金砂
 
 hy.beginnerTips.1=「探索未知的世间」
 hy.beginnerTips.2=§d[隐藏之年²]§r 游戏中的任务书可以提供引导
