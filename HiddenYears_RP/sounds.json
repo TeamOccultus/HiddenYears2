@@ -233,6 +233,20 @@
           },
           "celebrate": "mob.evocation_illager.celebrate"
         }
+      },
+      "hy:sand_silverfish": {
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "death": "mob.silverfish.kill",
+          "hurt": "mob.silverfish.hit",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.silverfish.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
       }
     }
   }
