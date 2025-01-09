@@ -283,15 +283,27 @@
   },
   "hy:sand_copper_ore": {
     "sound": "stone",
-    "textures": "hy.copper_sand_ore"
+    "textures": {
+      "down": "sandstone_bottom",
+      "side": "hy.copper_sand_ore",
+      "up": "sandstone_top"
+    }
   },
   "hy:sand_iron_ore": {
     "sound": "stone",
-    "textures": "hy.iron_sand_ore"
+    "textures": {
+      "down": "sandstone_bottom",
+      "side": "hy.iron_sand_ore",
+      "up": "sandstone_top"
+    }
   },
   "hy:sand_coal_ore": {
     "sound": "stone",
-    "textures": "hy.coal_sand_ore"
+    "textures": {
+      "down": "sandstone_bottom",
+      "side": "hy.coal_sand_ore",
+      "up": "sandstone_top"
+    }
   },
   "hy:sand_with_gold_dust": {
     "sound": "sand",
