@@ -1074,6 +1074,7 @@ hy.block.sand_with_gold_dust=碎金细沙
 hy.item.gold_sand=金砂
 entity.hy:sand_silverfish.name=沙虫
 item.spawn_egg.entity.hy:sand_silverfish.name=沙虫刷怪蛋
+hy.message.sand_silverfish=有什么奇怪的东西从沙子中钻出来了！
 
 hy.beginnerTips.1=「探索未知的世间」
 hy.beginnerTips.2=§d[隐藏之年²]§r 游戏中的任务书可以提供引导

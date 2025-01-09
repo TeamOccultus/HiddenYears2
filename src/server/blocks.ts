@@ -13,6 +13,12 @@ export class Block {
       if (BLOCK.hasTag("hy:experience_ores")) {
         PLAYER.dimension.spawnEntity("xp_orb", PLAYER.location);
       }
+      if (BLOCK.hasTag("hy:sand_ores")) {
+        withPercentChance({chance: 0.05,event: ()=>{
+        PLAYER.dimension.spawnEntity("hy:sand_silverfish",PLAYER.location)
+        PLAYER.sendMessage({translate: "hy.message.sand_silverfish"})
+      }})
+      }
       if (ITEM) {
         /** 使用`hy:suspicious_ores`标签来标记一个方块为可疑的矿石 */
         if (
