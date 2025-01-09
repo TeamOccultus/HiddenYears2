@@ -292,5 +292,9 @@
   "hy:sand_coal_ore": {
     "sound": "stone",
     "textures": "hy.coal_sand_ore"
+  },
+  "hy:sand_with_gold_dust": {
+    "sound": "sand",
+    "textures": "hy.sand_with_gold_dust"
   }
 }

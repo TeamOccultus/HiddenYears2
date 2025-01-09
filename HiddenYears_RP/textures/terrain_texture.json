@@ -165,6 +165,9 @@
     },
     "hy.copper_sand_ore": {
       "textures": "textures/blocks/copper_sand_ore"
+    },
+    "hy.sand_with_gold_dust": {
+      "textures": "textures/blocks/sand_with_gold_dust"
     }
   }
 }

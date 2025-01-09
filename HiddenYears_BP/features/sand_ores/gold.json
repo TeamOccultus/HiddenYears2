@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hy:sand_ores/gold"
+    },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "hy:sand_with_gold_dust",
+        "may_replace": ["sand"]
+      }
+    ]
+  }
+}
