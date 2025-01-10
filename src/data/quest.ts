@@ -2102,7 +2102,7 @@ export const SAND_SLIVERFISH = new Quest(
     condition: {
       killEntity: {
         name: "沙虫",
-        typeId: "hy:sand_sliverfish"
+        typeId: "hy:sand_silverfish"
       }
     },
     award: {
