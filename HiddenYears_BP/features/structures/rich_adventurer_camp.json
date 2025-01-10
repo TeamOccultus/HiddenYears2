@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:structure_template_feature": {
+    "description": {
+      "identifier": "hy:structures/rich_adventurer_camp"
+    },
+    "structure_name": "mystructure:rich_adventurer_camp",
+    "adjustment_radius": 4,
+    "facing_direction": "random",
+    "constraints": {
+      "grounded": {},
+      "unburied": {},
+      "block_intersection": {
+        "block_allowlist": [
+          "minecraft:air" //The structure can only replace air
+        ]
+      }
+    }
+  }
+}
