@@ -90,6 +90,12 @@ const LETTER_13 = new Article(
   HyLetterBody[13],
   "textures/items/lost_letter"
 );
+const LETTER_14 = new Article(
+  `hy:letter_14`,
+  { translate: "article.14.title" },
+  HyLetterBody[14],
+  "textures/items/lost_letter"
+);
 const HIDDEN_STORIES = new ChapterArticle(
   "hy:story_book",
   { translate: "hy.item.story_book" },
@@ -158,6 +164,7 @@ export function registryArticle() {
     LETTER_11,
     LETTER_12,
     LETTER_13,
+    LETTER_14,
     COLLECTION,
   ]);
 }
