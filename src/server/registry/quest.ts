@@ -113,6 +113,16 @@ const QUEST_BOOK = new ChapterQuestBook(
       ],
       iconPath: "textures/items/past_statue",
     },
+    {
+      title: { translate: "hy.quest.chapter5.title" },
+      body: { translate: "hy.quest.chapter5.body" },
+      quests: [
+        quests.GOLD_SAND,
+        quests.SAND_SLIVERFISH,
+        quests.LETTER_14,
+      ],
+      iconPath: "textures/items/gold_sand",
+    },
   ]
 );
 const LETTER_0 = new QuestBook(
@@ -136,10 +146,12 @@ const LETTER_0 = new QuestBook(
       quests.LETTER_8,
       quests.LETTER_1,
       quests.LETTER_13,
+      quests.LETTER_14,
     ],
   }
 );
 
 export function registryQuest() {
+  Register.registry(quests.SAND_SLIVERFISH)
   Register.registry([QUEST_BOOK, LETTER_0]);
 }

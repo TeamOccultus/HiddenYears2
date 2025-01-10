@@ -2051,3 +2051,93 @@ export const SHATTERED_SAND_STAFF = new Quest(
     tips: { translate: "hy.quest.shattered_sand_staff.tips" },
   }
 );
+
+export const GOLD_SAND = new Quest(
+  "gold_sand",
+  { translate: "hy.quest.gold_sand.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.gold_sand.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.gold_sand.body2" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        name: {
+          translate: "hy.item.gold_sand",
+        },
+        itemStack: new ItemStack("hy:gold_sand"),
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 10),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      },
+    },
+    iconPath: "textures/items/gold_sand",
+    tips: { translate: "hy.quest.gold_sand.tips" },
+  }
+);
+
+export const SAND_SLIVERFISH = new Quest(
+  "sand_sliverfish",
+  { translate: "hy.quest.sand_sliverfish.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.sand_sliverfish.body1" },
+      { text: "\n" },
+      { translate: "hy.quest.sand_sliverfish.body2" },
+      { text: "\n" },
+      { translate: "hy.quest.sand_sliverfish.body3" },
+      { text: "\n\n" },
+      { translate: "hy.quest.sand_sliverfish.body4" },
+    ],
+  },
+  {
+    condition: {
+      killEntity: {
+        name: "沙虫",
+        typeId: "hy:sand_sliverfish"
+      }
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 20),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      },
+    },
+    iconPath: "textures/items/egg_sand_sliverfish"
+  }
+);
+
+export const LETTER_14 = new Quest(
+  "letter_14",
+  { translate: "hy.quest.letter_14.title" },
+  { translate:  "hy.quest.letter_14.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_14"),
+        name: {
+          translate: "article.14.title",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:gold_coin", 20),
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+      },
+    },
+    iconPath: "textures/items/lost_letter"
+  }
+);
