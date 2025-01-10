@@ -470,7 +470,7 @@ hy.item.ruby_runes=红宝石符文
 hy.item.ruby_bag=红宝石谜袋
 hy.item.calamity_bag.experience=灾厄谜袋·经验
 hy.block.ruby_stone_bricks=嵌入红宝石的石砖
-hy.bossdead.ruby=§b「红宝石之王」§r陨落了，世界都沉默了下来……
+hy.bossdead.ruby=§d「红宝石之王」§r陨落了，世界都沉默了下来……
 
 entity.hy:ruby_zombie.name=红宝石僵尸
 item.spawn_egg.entity.hy:ruby_zombie.name=红宝石僵尸刷怪蛋
@@ -491,7 +491,7 @@ hy.item.ruby_boardsword.embryo=红宝石阔剑原胚
 gui.quest_done=你已完成此任务
 gui.check=检查并提交
 
-hy.message.no_exp=你没有足够的经验来进行§b「法术爆发」§r
+hy.message.no_exp=你没有足够的经验来进行§d「法术爆发」§r
 
 
 hy.item.raw_flash_copper_ingot=粗闪铜锭
@@ -957,7 +957,7 @@ article.14.body11=在附近的商人的安排下，我到了一处矿井工作�
 article.14.body12=第一次看到沙漠中的矿井，这里有丰富的铜、铁、煤资源，甚至还有一种埋藏着碎金的沙子。
 
 article.14.body13=§l三界纪年8902年1月27日§r
-article.14.body14=井下发生了混乱，一位工友在采集矿石时，深褐色的毒虫从他的脚底下钻出，最后§k▉▉▉▉▉§r，§k▉▉▉▉▉▉§r。
+article.14.body14=井下发生了混乱，一位工友在采集矿石时，深褐色的毒虫从他的脚底下钻出，最后，▉▉▉▉▉▉，▉▉▉▉▉▉。
 article.14.body15=我还是换份工作吧，万一某一天……把命搭上了也不值得
 
 article.14.body16=§l三界纪年8902年1月28日§r

@@ -25,8 +25,3 @@ registryArticle();
 registryBoss();
 registryTool();
 registryItem();
-
-// 测试代码
-world.afterEvents.playerSpawn.subscribe(event=>{
-  giveItem(event.player,new ItemStack("hy:letter_14"))  
-})
