@@ -1,5 +1,5 @@
 pack.name=隐藏之年²
-pack.description=「探索未知的世间」 ｜ 正式版2.4.6 §l本包需要基岩版1.21.5X并开启§6自定义生物群系、测试版API§r实验性玩法
+pack.description=「探索未知的世间」 ｜ 正式版2.4.7 §l本包需要基岩版1.21.5X并开启§6自定义生物群系、测试版API§r实验性玩法
 
 quest.entity=杀死 %1
 quest.not_enough.entity=你需要杀死 %1 才能完成这个任务
