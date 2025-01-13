@@ -9,6 +9,7 @@ import {
   affectEntities,
   damageEntities,
   DurabilityLimitedProp,
+  FoodItem,
   giveItem,
   Prop,
   randomInteger,
@@ -320,6 +321,12 @@ const RAIN_GOD_BLESSING = new Prop("hy:rain_god_blessing", (event) => {
   }, 900);
 });
 
+const RUBY_APPLE = new FoodItem("hy:ruby_apple", [], (event) => {
+  const PLAYER = event.source;
+  PLAYER.addExperience(3);
+  world.playSound("random.orb", PLAYER.location);
+});
+
 /**
  * 注册道具
  */
@@ -389,6 +396,7 @@ export function registryItem() {
     FLASH_COPPER_BOARDSWORD,
     AMETHYST_BOARDSWORD,
     RUBY_BOARDSWORD,
-    RAIN_GOD_BLESSING
+    RAIN_GOD_BLESSING,
+    RUBY_APPLE
   ]);
 }
