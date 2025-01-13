@@ -44,7 +44,21 @@
         {
           "type": "item",
           "name": "hy:flash_metal_boardsword_embryo",
-          "weight": 1
+          "weight": 1,
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                "§9§l加工后：§r",
+                "§f+6×10格 范围伤害",
+                "§f+8×18格 精通伤害",
+                "",
+                "§9§l精通生物：§r",
+                "§f一般生物"
+              ]
+            }
+          ]
         }
       ]
     }

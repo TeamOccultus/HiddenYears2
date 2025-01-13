@@ -16,17 +16,21 @@
         {
           "type": "item",
           "name": "hy:bone_boardsword_embryo",
-          "weight": 1,
           "functions": [
             {
               "function": "set_lore",
               "lore": [
-                "§1法术攻击：",
-                "+6×10格 范围伤害",
-                "+8×18格 精通伤害"
+                "",
+                "§9§l加工后：§r",
+                "§f+6×10格 范围伤害",
+                "§f+8×18格 精通伤害",
+                "",
+                "§9§l精通生物：§r",
+                "§f骷髅类生物"
               ]
             }
-          ]
+          ],
+          "weight": 1
         }
       ]
     },

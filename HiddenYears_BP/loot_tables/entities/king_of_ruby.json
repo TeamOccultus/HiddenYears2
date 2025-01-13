@@ -60,6 +60,20 @@
         {
           "type": "item",
           "name": "hy:ruby_boardsword_embryo",
+          "functions": [
+            {
+              "function": "set_lore",
+              "lore": [
+                "",
+                "§9§l加工后：§r",
+                "§f+6×10格 范围伤害",
+                "§f+8×18格 精通伤害",
+                "",
+                "§9§l精通生物：§r",
+                "§f红宝石类生物"
+              ]
+            }
+          ],
           "weight": 1
         }
       ]
