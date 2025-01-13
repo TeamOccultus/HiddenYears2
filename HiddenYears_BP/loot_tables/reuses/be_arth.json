@@ -6,6 +6,26 @@
         { "type": "empty", "weight": 10 },
         { "type": "item", "name": "hy:golden_badge", "weight": 1 }
       ]
+    },
+    {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.08,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hy:flash_copper_boardsword_embryo",
+          "weight": 1
+        }
+      ]
     }
   ]
 }
