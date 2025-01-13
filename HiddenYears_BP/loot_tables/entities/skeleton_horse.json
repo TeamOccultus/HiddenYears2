@@ -1,6 +1,26 @@
 {
   "pools": [
     {
+      "conditions": [
+        {
+          "condition": "killed_by_player"
+        },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.012,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hy:bone_boardsword_embryo",
+          "weight": 1
+        }
+      ]
+    },
+    {
       "rolls": 1,
       "entries": [
         {
