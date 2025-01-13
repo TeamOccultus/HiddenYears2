@@ -173,19 +173,10 @@ const FLASH_METAL_BOARDSWORD = new DurabilityLimitedProp(
   "hy:flash_metal_boardsword",
   1,
   (event) => {
-    const PLAYER = event.source;
-    if (PLAYER.level > 5) {
-      const ALL_OPTION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 18,
-        excludeTags: ["hy.magic_explode"],
-        excludeFamilies: ["noaoe"],
-      };
-      damageEntities(PLAYER.dimension, ALL_OPTION, 8);
-      affectEntities(PLAYER.dimension, ALL_OPTION, "weakness", 300);
-    } else {
-      PLAYER.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.flashMetalExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
 
@@ -193,18 +184,10 @@ const CORROSION_BOARDSWORD = new DurabilityLimitedProp(
   "hy:corrosion_boardsword",
   1,
   (event) => {
-    const PLAYER = event.source;
-    if (PLAYER.level > 5) {
-      const UNDEAD_OPINION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 18,
-        families: ["undead"],
-      };
-      damageEntities(PLAYER.dimension, UNDEAD_OPINION, 8);
-      affectEntities(PLAYER.dimension, UNDEAD_OPINION, "weakness", 300);
-    } else {
-      PLAYER.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.corrosionExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
 
@@ -212,18 +195,10 @@ const EMERALD_BOARDSWORD = new DurabilityLimitedProp(
   "hy:emerald_boardsword",
   1,
   (event) => {
-    const PLAYER = event.source;
-    if (PLAYER.level > 5) {
-      const ILLAGER_OPINION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 18,
-        families: ["illager"],
-      };
-      damageEntities(PLAYER.dimension, ILLAGER_OPINION, 8);
-      affectEntities(PLAYER.dimension, ILLAGER_OPINION, "weakness", 300);
-    } else {
-      PLAYER.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.emeraldExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
 
@@ -231,18 +206,10 @@ const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedProp(
   "hy:flash_copper_boardsword",
   1,
   (event) => {
-    const PLAYER = event.source;
-    if (PLAYER.level > 5) {
-      const ARTHROPOD_OPINION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 18,
-        families: ["arthropod"],
-      };
-      damageEntities(PLAYER.dimension, ARTHROPOD_OPINION, 8);
-      affectEntities(PLAYER.dimension, ARTHROPOD_OPINION, "weakness", 300);
-    } else {
-      PLAYER.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.flashCopperExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
 
@@ -250,18 +217,10 @@ const AMETHYST_BOARDSWORD = new DurabilityLimitedProp(
   "hy:amethyst_boardsword",
   1,
   (event) => {
-    const PLAYER = event.source;
-    if (PLAYER.level > 5) {
-      const POULTRY_OPINION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 18,
-        families: ["poultry"],
-      };
-      damageEntities(PLAYER.dimension, POULTRY_OPINION, 8);
-      affectEntities(PLAYER.dimension, POULTRY_OPINION, "weakness", 300);
-    } else {
-      PLAYER.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.amethystExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
 
@@ -269,18 +228,10 @@ const RUBY_BOARDSWORD = new DurabilityLimitedProp(
   "hy:ruby_boardsword",
   1,
   (event) => {
-    const PLAYER = event.source;
-    if (PLAYER.level > 5) {
-      const RUBY_OPINION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 18,
-        families: ["ruby"],
-      };
-      damageEntities(PLAYER.dimension, RUBY_OPINION, 8);
-      affectEntities(PLAYER.dimension, RUBY_OPINION, "weakness", 300);
-    } else {
-      PLAYER.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.rubyExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
 
