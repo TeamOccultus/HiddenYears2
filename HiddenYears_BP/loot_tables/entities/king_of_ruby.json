@@ -53,6 +53,16 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hy:ruby_boardsword_embryo",
+          "weight": 1
+        }
+      ]
     }
   ]
 }
