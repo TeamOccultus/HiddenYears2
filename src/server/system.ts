@@ -1,10 +1,11 @@
 import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod, replaceItemStack } from "@lazuli/ldk2";
+import { initializeMod } from "@lazuli/ldk2";
 import {
   bleedEffectMonitor,
   dehydrationEffectMonitor,
   droughtEffectMonitor,
 } from "../core/effects";
+import { replaceItemStack } from "@grindstone/utils";
 
 export class System {
   /**
@@ -54,7 +55,7 @@ export class System {
         new ItemStack("hy:crimson_eyes"),
         PLAYER.getComponent("inventory").container
       );
-      let num = replaceItemStack(
+      replaceItemStack(
         new ItemStack("hy:diamond_bone"),
         new ItemStack("hy:bone_boardsword"),
         PLAYER.getComponent("inventory").container
@@ -69,7 +70,6 @@ export class System {
         new ItemStack("hy:bone_boardsword"),
         PLAYER.getComponent("inventory").container
       );
-      console.log(num);
     });
   }
 }

@@ -12,6 +12,7 @@
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "@grindstone/utils": "^0.7.1",
     "@lazuli/ldk2": "2.3.2",
     "@minecraft/common": "^1.2.0",
     "@minecraft/server": "1.17.0-beta.1.21.50-stable",
