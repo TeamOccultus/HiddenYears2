@@ -2,33 +2,29 @@
   "format_version": "1.20.11",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "diamond_bone"
+      "identifier": "bone_boardsword"
     },
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hy:enchanted_bone"
+        "item": "hy:enchanted_bone",
+        "count": 4
       },
       {
-        "item": "hy:nightmare_fuel_metal"
-      },
-      {
-        "item": "diamond"
+        "item": "hy:bone_boardsword_embryo"
       }
     ],
     "unlock": [
       {
-        "item": "hy:enchanted_bone"
+        "item": "hy:enchanted_bone",
+        "count": 4
       },
       {
-        "item": "hy:nightmare_fuel_metal"
-      },
-      {
-        "item": "diamond"
+        "item": "hy:bone_boardsword_embryo"
       }
     ],
     "result": {
-      "item": "hy:diamond_bone"
+      "item": "hy:bone_boardsword"
     }
   }
 }
