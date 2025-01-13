@@ -54,6 +54,22 @@ export class System {
         new ItemStack("hy:crimson_eyes"),
         PLAYER.getComponent("inventory").container
       );
+      let num = replaceItemStack(
+        new ItemStack("hy:diamond_bone"),
+        new ItemStack("hy:bone_boardsword"),
+        PLAYER.getComponent("inventory").container
+      );
+      replaceItemStack(
+        new ItemStack("hy:gold_bone"),
+        new ItemStack("hy:bone_boardsword"),
+        PLAYER.getComponent("inventory").container
+      );
+      replaceItemStack(
+        new ItemStack("hy:iron_bone"),
+        new ItemStack("hy:bone_boardsword"),
+        PLAYER.getComponent("inventory").container
+      );
+      console.log(num);
     });
   }
 }

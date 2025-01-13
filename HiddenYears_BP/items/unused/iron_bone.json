@@ -2,10 +2,10 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:diamond_bone",
-      "menu_category":{
-        "category": "equipment",
-        "group": "itemGroup.name.sword"
+      "identifier": "hy:iron_bone",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": false
       }
     },
     "components": {
@@ -15,11 +15,11 @@
       },
       "minecraft:hover_text_color": "yellow",
       "minecraft:display_name": {
-        "value": "hy.item.diamond_bone"
+        "value": "hy.item.iron_bone"
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
-        "max_durability": 450
+        "max_durability": 250
       },
       "minecraft:damage": 6,
       "minecraft:glint": true,
@@ -28,7 +28,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.diamond_bone",
+      "minecraft:icon": "hy.iron_bone",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -37,11 +37,11 @@
             "repair_amount": 50
           },
           {
-            "items": ["hy:diamond_bone"],
+            "items": ["hy:iron_bone"],
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
-      },
+      },    
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",

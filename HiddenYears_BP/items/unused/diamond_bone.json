@@ -1,0 +1,56 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:diamond_bone",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": false
+      }
+    },
+    "components": {
+      "minecraft:cooldown": {
+        "category": "hy.magic_explode",
+        "duration": 10
+      },
+      "minecraft:hover_text_color": "yellow",
+      "minecraft:display_name": {
+        "value": "hy.item.diamond_bone"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:durability": {
+        "max_durability": 450
+      },
+      "minecraft:damage": 6,
+      "minecraft:glint": true,
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "sword"
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:icon": "hy.diamond_bone",
+      "minecraft:max_stack_size": 1,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["bone"],
+            "repair_amount": 50
+          },
+          {
+            "items": ["hy:diamond_bone"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_tool",
+          "hy:magic_explode",
+          "hy:bone_materials",
+          "hy:bone_swords"
+        ]
+      }
+    }
+  }
+}

@@ -9,8 +9,6 @@ import { registryBoss } from "./server/registry/boss";
 import { registryTool } from "./server/registry/tool";
 import { registryItem } from "./server/registry/item";
 import "./server/registry/component";
-import { ItemStack, world } from "@minecraft/server";
-import { giveItem } from "@lazuli/ldk2";
 
 System.initialize();
 System.eventMonitor();

@@ -2,7 +2,7 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:gold_bone",
+      "identifier": "hy:bone_boardsword",
       "menu_category":{
         "category": "equipment",
         "group": "itemGroup.name.sword"
@@ -15,11 +15,11 @@
       },
       "minecraft:hover_text_color": "yellow",
       "minecraft:display_name": {
-        "value": "hy.item.gold_bone"
+        "value": "hy.item.bone_boardsword"
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
-        "max_durability": 80
+        "max_durability": 450
       },
       "minecraft:damage": 6,
       "minecraft:glint": true,
@@ -28,7 +28,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.gold_bone",
+      "minecraft:icon": "hy.bone_boardsword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -37,7 +37,7 @@
             "repair_amount": 50
           },
           {
-            "items": ["hy:gold_bone"],
+            "items": ["hy:bone_boardsword"],
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]

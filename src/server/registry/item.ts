@@ -172,11 +172,12 @@ const COPPER_BADGE = new Prop("hy:copper_badge", (event) => {
   });
 });
 
-const DIAMOND_BONE = new DurabilityLimitedProp(
-  "hy:diamond_bone",
+const BONE_BOARDSWORD = new DurabilityLimitedProp(
+  "hy:bone_boardsword",
   1,
   (event) => {
     boneMagicExplode(event.source);
+    event.itemStack.getComponent("cooldown").startCooldown(event.source);
   }
 );
 
@@ -387,7 +388,7 @@ export function registryItem() {
     DIAMOND_BADGE,
     GOLDEN_BADGE,
     COPPER_BADGE,
-    DIAMOND_BONE,
+    BONE_BOARDSWORD,
     GOLD_BONE,
     IRON_BONE,
     FLASH_METAL_BOARDSWORD,
