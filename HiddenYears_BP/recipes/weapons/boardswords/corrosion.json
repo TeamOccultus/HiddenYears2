@@ -4,21 +4,22 @@
     "description": {
       "identifier": "corrosion_boardsword"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
-        "item": "hy:corrosion_boardsword_embryo"
+        "item": "hy:corrosion_ingot",
+        "count": 4
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:corrosion_boardsword_embryo"
       }
     ],
     "unlock": [
       {
-        "item": "hy:corrosion_boardsword_embryo"
+        "item": "hy:corrosion_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:corrosion_boardsword_embryo"
       }
     ],
     "result": {

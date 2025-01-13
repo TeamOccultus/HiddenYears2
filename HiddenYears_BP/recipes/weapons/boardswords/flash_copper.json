@@ -4,21 +4,22 @@
     "description": {
       "identifier": "flash_copper_boardsword"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
-        "item": "hy:flash_copper_boardsword_embryo"
+        "item": "hy:flash_copper_ingot",
+        "count": 4
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:flash_copper_boardsword_embryo"
       }
     ],
     "unlock": [
       {
-        "item": "hy:flash_copper_boardsword_embryo"
+        "item": "hy:flash_copper_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:flash_copper_boardsword_embryo"
       }
     ],
     "result": {

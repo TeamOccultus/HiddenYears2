@@ -4,21 +4,22 @@
     "description": {
       "identifier": "ruby_boardsword"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
-        "item": "hy:ruby_boardsword_embryo"
+        "item": "hy:ruby",
+        "count": 4
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:ruby_boardsword_embryo"
       }
     ],
     "unlock": [
       {
-        "item": "hy:ruby_boardsword_embryo"
+        "item": "hy:ruby"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:ruby_boardsword_embryo"
       }
     ],
     "result": {

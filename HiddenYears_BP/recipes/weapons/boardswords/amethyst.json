@@ -4,21 +4,22 @@
     "description": {
       "identifier": "amethyst_boardsword"
     },
-    "tags": ["crafting_table"],
+    "tags": ["lab_table"],
     "ingredients": [
       {
-        "item": "hy:amethyst_boardsword_embryo"
+        "item": "hy:amethyst_ingot",
+        "count": 4
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:amethyst_boardsword_embryo"
       }
     ],
     "unlock": [
       {
-        "item": "hy:amethyst_boardsword_embryo"
+        "item": "hy:amethyst_ingot"
       },
       {
-        "item": "hy:nightmare_fuel_metal"
+        "item": "hy:amethyst_boardsword_embryo"
       }
     ],
     "result": {
