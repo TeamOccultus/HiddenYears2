@@ -1072,6 +1072,9 @@
     },
     "hy.gold_sand": {
       "textures": "textures/items/gold_sand"
+    },
+    "hy.bone_boardsword": {
+      "textures": "textures/items/bone_boardsword"
     }
   }
 }
