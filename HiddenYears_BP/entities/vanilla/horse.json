@@ -44,14 +44,6 @@
             {
               "item": "appleEnchanted",
               "growth": 0.2
-            },
-            {
-              "item": "hy:copper_apple",
-              "growth": 0.2
-            },
-            {
-              "item": "hy:enchanted_copper_apple",
-              "growth": 0.2
             }
           ],
           "grow_up": {
@@ -124,14 +116,6 @@
             },
             {
               "item": "appleEnchanted",
-              "temper_mod": 10
-            },
-            {
-              "item": "hy:copper_apple",
-              "temper_mod": 10
-            },
-            {
-              "item": "hy:enchanted_copper_apple",
               "temper_mod": 10
             }
           ],
@@ -319,9 +303,7 @@
           "breed_items": [
             "golden_carrot",
             "golden_apple",
-            "appleEnchanted",
-            "hy:copper_apple",
-            "hy:enchanted_copper_apple"
+            "appleEnchanted"
           ],
           "mutation_factor": {
             "extra_variant": 0.2, // 1/5
@@ -512,14 +494,6 @@
           {
             "item": "appleEnchanted",
             "heal_amount": 10
-          },
-          {
-            "item": "hy:copper_apple",
-            "heal_amount": 10
-          },
-          {
-            "item": "hy:enchanted_copper_apple",
-            "heal_amount": 10
           }
         ]
       },
@@ -539,9 +513,7 @@
         "items": [
           "golden_apple",
           "appleEnchanted",
-          "golden_carrot",
-          "hy:copper_apple",
-          "hy:enchanted_copper_apple"
+          "golden_carrot"
         ]
       },
       "minecraft:behavior.random_stroll": {

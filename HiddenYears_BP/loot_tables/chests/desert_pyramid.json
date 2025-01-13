@@ -86,8 +86,7 @@
         },
         { "type": "item", "name": "minecraft:golden_apple", "weight": 20 },
         { "type": "item", "name": "minecraft:appleEnchanted", "weight": 2 },
-        { "type": "item", "name": "hy:copper_apple", "weight": 50 },
-        { "type": "item", "name": "hy:enchanted_copper_apple", "weight": 2 },
+
         { "type": "empty", "weight": 15 }
       ]
     },

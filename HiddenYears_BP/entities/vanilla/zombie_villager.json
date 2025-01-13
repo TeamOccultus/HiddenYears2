@@ -552,12 +552,6 @@
                   "domain": "hand",
                   "subject": "other",
                   "value": "golden_apple"
-                },
-                {
-                  "test": "has_equipment",
-                  "domain": "hand",
-                  "subject": "other",
-                  "value": "hy:copper_apple"
                 }
               ]
             },
