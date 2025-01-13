@@ -14,6 +14,7 @@ import {
   Register,
   withWeightChance,
   DurabilityLimitedProp,
+  pushLore,
 } from "@lazuli/ldk2";
 import { HyUtils } from "../../core/utils";
 
@@ -164,6 +165,24 @@ const BONE_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f骷髅类生物",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.boneMagicExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -175,6 +194,24 @@ const FLASH_METAL_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f一般生物",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.flashMetalExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -186,6 +223,24 @@ const CORROSION_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f亡灵类生物",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.corrosionExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -197,6 +252,24 @@ const EMERALD_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f灾厄类生物",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.emeraldExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -208,6 +281,24 @@ const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f节肢类生物",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.flashCopperExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -219,6 +310,24 @@ const AMETHYST_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f家禽与家畜",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.amethystExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -230,6 +339,24 @@ const RUBY_BOARDSWORD = new DurabilityLimitedProp(
   (event) => {
     let cooldown = event.itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    if (!event.itemStack.getDynamicProperty("hy:show_details")) {
+      event.source.onScreenDisplay.setActionBar({
+        translate: "hy.message.know_details",
+      });
+      let lore = event.itemStack.getLore();
+      event.itemStack.setLore(
+        lore.concat([
+          "",
+          "§9§l使用时：§r",
+          "§f+6×10格 范围伤害",
+          "§f+8×18格 精通伤害",
+          "",
+          "§9§l精通生物：§r",
+          "§f红宝石生物",
+        ])
+      );
+      event.itemStack.setDynamicProperty("hy:show_details", true);
+    }
     HyUtils.rubyExplode(event.source);
     cooldown.startCooldown(event.source);
   }
@@ -286,7 +413,9 @@ export function registryItem() {
       if (
         ITEM.getComponent("cooldown").getCooldownTicksRemaining(PLAYER) !== 0
       ) {
-        PLAYER.onScreenDisplay.setActionBar({translate: "hy.message.wait_cooldown"})
+        PLAYER.onScreenDisplay.setActionBar({
+          translate: "hy.message.wait_cooldown",
+        });
         return;
       }
       PLAYER.addTag("hy.magic_explode");
