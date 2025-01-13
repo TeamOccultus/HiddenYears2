@@ -23,7 +23,7 @@ export class System {
       const PLAYERS = world.getPlayers();
       PLAYERS.forEach((players) => {
         players.setDynamicProperty("hy:copper_foods", 0);
-        console.warn(
+        console.log(
           "Dynamic Property of copper food eating counts has reset to zero."
         );
       });

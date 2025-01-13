@@ -1,35 +1,21 @@
 import {
   EntityQueryOptions,
   ItemStack,
-  Player,
   system,
   world,
 } from "@minecraft/server";
 import {
   affectEntities,
   damageEntities,
-  DurabilityLimitedProp,
   FoodItem,
   giveItem,
   Prop,
   randomInteger,
   Register,
   withWeightChance,
+  DurabilityLimitedProp,
 } from "@lazuli/ldk2";
-
-function boneMagicExplode(player: Player) {
-  if (player.level > 5) {
-    const SKELETON_OPINION: EntityQueryOptions = {
-      location: player.location,
-      maxDistance: 18,
-      families: ["skeleton"],
-    };
-    damageEntities(player.dimension, SKELETON_OPINION, 8);
-    affectEntities(player.dimension, SKELETON_OPINION, "weakness", 300);
-  } else {
-    player.sendMessage([{ translate: "hy.message.no_exp" }]);
-  }
-}
+import { HyUtils } from "../../core/utils";
 
 const BANDAGE = new DurabilityLimitedProp("hy:bandage", 1, (event) => {
   const PLAYER = event.source;
@@ -176,18 +162,12 @@ const BONE_BOARDSWORD = new DurabilityLimitedProp(
   "hy:bone_boardsword",
   1,
   (event) => {
-    boneMagicExplode(event.source);
-    event.itemStack.getComponent("cooldown").startCooldown(event.source);
+    let cooldown = event.itemStack.getComponent("cooldown");
+    if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
+    HyUtils.boneMagicExplode(event.source);
+    cooldown.startCooldown(event.source);
   }
 );
-
-const GOLD_BONE = new DurabilityLimitedProp("hy:gold_bone", 1, (event) => {
-  boneMagicExplode(event.source);
-});
-
-const IRON_BONE = new DurabilityLimitedProp("hy:iron_bone", 1, (event) => {
-  boneMagicExplode(event.source);
-});
 
 const FLASH_METAL_BOARDSWORD = new DurabilityLimitedProp(
   "hy:flash_metal_boardsword",
@@ -350,9 +330,14 @@ export function registryItem() {
       affectEntities(PLAYER.dimension, TETANUS_OPINION, "wither", 6);
       PLAYER.removeTag("hy.tetanus_attacker");
     }
-    // TODO 添加冷却
     // 法术爆发
     if (ITEM.hasTag("hy:magic_explode") && PLAYER.level > 5) {
+      if (
+        ITEM.getComponent("cooldown").getCooldownTicksRemaining(PLAYER) !== 0
+      ) {
+        PLAYER.onScreenDisplay.setActionBar({translate: "hy.message.wait_cooldown"})
+        return;
+      }
       PLAYER.addTag("hy.magic_explode");
       PLAYER.addExperience(-10);
       damageEntities(
@@ -389,8 +374,6 @@ export function registryItem() {
     GOLDEN_BADGE,
     COPPER_BADGE,
     BONE_BOARDSWORD,
-    GOLD_BONE,
-    IRON_BONE,
     FLASH_METAL_BOARDSWORD,
     CORROSION_BOARDSWORD,
     EMERALD_BOARDSWORD,
@@ -398,6 +381,6 @@ export function registryItem() {
     AMETHYST_BOARDSWORD,
     RUBY_BOARDSWORD,
     RAIN_GOD_BLESSING,
-    RUBY_APPLE
+    RUBY_APPLE,
   ]);
 }

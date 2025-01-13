@@ -1,9 +1,11 @@
-import { getEquipmentItem, setEquipmentItem } from "@lazuli/ldk2";
+import { affectEntities, damageEntities, getEquipmentItem, setEquipmentItem } from "@lazuli/ldk2";
 import {
   Dimension,
   Entity,
+  EntityQueryOptions,
   EquipmentSlot,
   ItemStack,
+  Player,
   Vector3,
 } from "@minecraft/server";
 import { HyCorrosionMap } from "../data/data";
@@ -128,6 +130,19 @@ export class HyUtils {
       return true;
     } else {
       return false;
+    }
+  }
+  static boneMagicExplode(player: Player) {
+    if (player.level > 5) {
+      const SKELETON_OPINION: EntityQueryOptions = {
+        location: player.location,
+        maxDistance: 18,
+        families: ["skeleton"],
+      };
+      damageEntities(player.dimension, SKELETON_OPINION, 8);
+      affectEntities(player.dimension, SKELETON_OPINION, "weakness", 300);
+    } else {
+      player.sendMessage([{ translate: "hy.message.no_exp" }]);
     }
   }
 }
