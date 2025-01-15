@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:bleak_totem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "hy.item.bleak_totem"
+      },
+      "minecraft:icon": "hy.bleak_totem"
+    }
+  }
+}
