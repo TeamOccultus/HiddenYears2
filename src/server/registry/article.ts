@@ -145,6 +145,8 @@ const COLLECTION = new ArticleCollection(
     LETTER_11,
     LETTER_12,
     LETTER_13,
+    LETTER_14,
+    LETTER_15,
   ]
 );
 
