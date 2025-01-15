@@ -1095,7 +1095,7 @@
       "textures": "textures/items/flash_copper_boardsword_embryo"
     },
     "hy.corrosion_boardsword_embryo": {
-      "textures": "textures/items/flash_copper_boardsword_embryo"
+      "textures": "textures/items/corrosion_boardsword_embryo"
     },
     "hy.bleak_totem": {
       "textures": "textures/items/bleak_totem"
