@@ -81,8 +81,9 @@ export function dehydrationEffectMonitor() {
 
 export function badgeEffectMonitor() {
   world.getAllPlayers().forEach((player) => {
-    if (!getEquipmentItem(player, EquipmentSlot.Chest).hasTag("hy:badge"))
+    if (!getEquipmentItem(player, EquipmentSlot.Chest)?.hasTag("hy:badge")){
       return;
+    }
     const chestItem = getEquipmentItem(player, EquipmentSlot.Chest);
     switch (chestItem.typeId) {
       case "hy:diamond_badge":
