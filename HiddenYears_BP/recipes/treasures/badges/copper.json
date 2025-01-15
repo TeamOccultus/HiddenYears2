@@ -8,7 +8,7 @@
     "pattern": ["XXX", "XOX", "XXX"],
     "key": {
       "X": {
-        "item": "copper_block"
+        "item": "copper_ingot"
       },
       "O": {
         "item": "hy:ruby_block"
@@ -16,7 +16,7 @@
     },
     "unlock": [
       {
-        "item": "copper_block"
+        "item": "copper_ingot"
       },
       {
         "item": "hy:ruby_block"
