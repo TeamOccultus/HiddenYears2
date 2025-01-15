@@ -11,7 +11,7 @@
     "components": {
       "minecraft:cooldown": {
         "category": "hy.magic_explode",
-        "duration": 10
+        "duration": 6
       },
       "minecraft:hover_text_color": "yellow",
       "minecraft:display_name": {
