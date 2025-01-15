@@ -834,6 +834,7 @@ article.11.title=精灵史摘要
 article.12.title=来自空中的神
 article.13.title=层沙之灭
 article.14.title=沙中淘金的故事
+article.15.title=阔剑锻造指南
 
 article.0.body0=过往繁荣的时代正在逝去，昔日欢笑的我们也将化作尘埃。
 article.0.body1=而在这个孤单的世界中，恐怕唯一的智慧生物就是你。可惜的是，我无法为你详尽的解释究竟发生了什么——你现在只需知道，§l你是「异变」中的幸存者，被我们派到这里开拓新世界。§r
@@ -973,6 +974,16 @@ article.14.body19=「我们可以借助这来自于沙漠的炽热力量，补�
 
 article.14.body20=§o日记到此结束，最后还夹着一张死亡证明：
 article.14.body21=§o死者约翰·萨特，27岁，8902年1月29日夜因醉酒跌落河谷而亡。
+
+article.15.body0=阔剑可以由击杀怪物来获取的铸剑原胚和对应的原料，在炼金台上铸造而来，目前已知的阔剑有：
+article.15.body1=魔骨阔剑——原胚由骷髅掉落
+article.15.body2=闪金阔剑——原胚由猪灵掉落
+article.15.body3=腐蚀阔剑——原胚由亡灵生物掉落
+article.15.body4=绿宝石阔剑——原胚由灾厄村民掉落
+article.15.body5=闪铜阔剑————原胚由节肢生物掉落
+article.15.body6=紫水晶阔剑——原胚由女巫掉落
+article.15.body7=红宝石阔剑——？？？
+article.15.body8=​这些材料因为其自身特性无法被直接铸造成剑，不过在与原胚结合后得到的武器品质却格外的好……
 
 hy.boosSkill.ruby.exp=红宝石之王即将发动战技§d「经验窃取」§r！
 hy.boosSkill.ruby.guardian=红宝石之王即将发动战技§d「力量的仆从」§r！
