@@ -801,6 +801,7 @@ hy.quest.letter_9.title=§d[书海无涯] §r假冒伪劣·一
 hy.quest.letter_10.title=§d[书海无涯] §r假冒伪劣·二
 hy.quest.letter_12.title=§d[书海无涯] §r来自空中的神
 hy.quest.letter_13.title=§d[书海无涯] §r层沙之灭
+hy.quest.letter_15.title=§d[书海无涯] §r阔剑锻造指南
 hy.quest.story_book.body=获得隐藏的故事
 hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
 hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
@@ -816,6 +817,7 @@ hy.quest.letter_9.body=与新手牧师交易，获得散落的信纸·假冒伪�
 hy.quest.letter_10.body=搜刮雪屋战利品箱，获得散落的信纸·假冒伪劣之二
 hy.quest.letter_12.body=完成任务 [第三章]雨之神的祝福 获得散落的信纸·来自空中的神
 hy.quest.letter_13.body=完成任务 [第三章]沙海中的绵绵细雨 获得散落的信纸·层沙之灭
+hy.quest.letter_15.body=完成[工具与武器] 腐蚀的铸剑，获得散落的信纸·阔剑锻造指南
 hy.quest.story_book.tips=完成序章任务可以领取该阅读物
 hy.quest.letter_8.tips=流浪商人遭受雷击时会变为隐藏商人
 

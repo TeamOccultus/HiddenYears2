@@ -2143,3 +2143,28 @@ export const LETTER_14 = new Quest(
     iconPath: "textures/items/lost_letter"
   }
 );
+
+export const LETTER_15 = new Quest(
+  "letter_15",
+  { translate: "hy.quest.letter_15.title" },
+  { translate:  "hy.quest.letter_15.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_15"),
+        name: {
+          translate: "article.15.title",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:amethyst_boardsword_embryo"),
+        name: {
+          translate: "hy.item.amethyst_boardsword.embryo",
+        },
+      },
+    },
+    iconPath: "textures/items/lost_letter"
+  }
+);

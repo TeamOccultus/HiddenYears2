@@ -147,6 +147,7 @@ const LETTER_0 = new QuestBook(
       quests.LETTER_1,
       quests.LETTER_13,
       quests.LETTER_14,
+      quests.LETTER_15,
     ],
   }
 );
