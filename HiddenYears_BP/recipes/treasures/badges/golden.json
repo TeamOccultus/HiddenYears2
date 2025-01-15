@@ -11,7 +11,7 @@
         "item": "gold_block"
       },
       "O": {
-        "item": "hy:metal_star"
+        "item": "hy:ruby_block"
       }
     },
     "unlock": [
@@ -19,7 +19,7 @@
         "item": "gold_block"
       },
       {
-        "item": "hy:metal_star"
+        "item": "hy:ruby_block"
       }
     ],
     "result": {
