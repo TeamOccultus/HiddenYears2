@@ -1075,6 +1075,27 @@
     },
     "hy.bone_boardsword": {
       "textures": "textures/items/bone_boardsword"
+    },
+    "hy.bone_boardsword_embryo": {
+      "textures": "textures/items/bone_boardsword_embryo"
+    },
+    "hy.ruby_boardsword_embryo": {
+      "textures": "textures/items/ruby_boardsword_embryo"
+    },
+    "hy.emerald_boardsword_embryo": {
+      "textures": "textures/items/emerald_boardsword_embryo"
+    },
+    "hy.amethyst_boardsword_embryo": {
+      "textures": "textures/items/amethyst_boardsword_embryo"
+    },
+    "hy.flash_metal_boardsword_embryo": {
+      "textures": "textures/items/flash_metal_boardsword_embryo"
+    },
+    "hy.flash_copper_boardsword_embryo": {
+      "textures": "textures/items/flash_copper_boardsword_embryo"
+    },
+    "hy.corrosion_boardsword_embryo": {
+      "textures": "textures/items/flash_copper_boardsword_embryo"
     }
   }
 }

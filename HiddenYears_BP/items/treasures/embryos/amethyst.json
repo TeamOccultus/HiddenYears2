@@ -14,7 +14,7 @@
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.amethyst_boardsword",
+      "minecraft:icon": "hy.amethyst_boardsword_embryo",
       "minecraft:max_stack_size": 1
     }
   }
