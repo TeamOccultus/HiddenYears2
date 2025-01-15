@@ -768,6 +768,8 @@ export const TOTEM = new Quest(
       { translate: "hy.quest.totem.body3" },
       { text: "\n\n" },
       { translate: "hy.quest.totem.body4" },
+      { text: "\n\n" },
+      { translate: "hy.quest.totem.body5" },
     ],
   },
   {
