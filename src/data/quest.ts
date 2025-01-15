@@ -908,8 +908,8 @@ export const RUBY_RUNES = new Quest(
     },
     iconPath: "textures/items/ruby_helmet",
     tips: {
-      translate: "hy.quest.ruby_runes.tips"
-    }
+      translate: "hy.quest.ruby_runes.tips",
+    },
   }
 );
 
@@ -1802,7 +1802,7 @@ export const SAND_BONE = new Quest(
       },
     },
     tips: {
-      translate: "hy.quest.sand_bone.tips"
+      translate: "hy.quest.sand_bone.tips",
     },
     iconPath: "textures/items/sand_bone",
   }
@@ -2010,7 +2010,7 @@ export const DRIFT_SAND_STATUE = new Quest(
       },
     },
     iconPath: "textures/items/drift_sand_statue",
-    tips: { translate: "hy.quest.drift_sand_statue.tips" }
+    tips: { translate: "hy.quest.drift_sand_statue.tips" },
   }
 );
 
@@ -2104,8 +2104,8 @@ export const SAND_SLIVERFISH = new Quest(
     condition: {
       killEntity: {
         name: "沙虫",
-        typeId: "hy:sand_silverfish"
-      }
+        typeId: "hy:sand_silverfish",
+      },
     },
     award: {
       item: {
@@ -2115,14 +2115,14 @@ export const SAND_SLIVERFISH = new Quest(
         },
       },
     },
-    iconPath: "textures/items/egg_sand_sliverfish"
+    iconPath: "textures/items/egg_sand_sliverfish",
   }
 );
 
 export const LETTER_14 = new Quest(
   "letter_14",
   { translate: "hy.quest.letter_14.title" },
-  { translate:  "hy.quest.letter_14.body" },
+  { translate: "hy.quest.letter_14.body" },
   {
     condition: {
       item: {
@@ -2140,14 +2140,14 @@ export const LETTER_14 = new Quest(
         },
       },
     },
-    iconPath: "textures/items/lost_letter"
+    iconPath: "textures/items/lost_letter",
   }
 );
 
 export const LETTER_15 = new Quest(
   "letter_15",
   { translate: "hy.quest.letter_15.title" },
-  { translate:  "hy.quest.letter_15.body" },
+  { translate: "hy.quest.letter_15.body" },
   {
     condition: {
       item: {
@@ -2165,6 +2165,126 @@ export const LETTER_15 = new Quest(
         },
       },
     },
-    iconPath: "textures/items/lost_letter"
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+export const CORROSION_BOARDSWORD = new Quest(
+  "corrosion_boardsword",
+  { translate: "hy.quest.corrosion_boardsword.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.corrosion_boardsword.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.corrosion_boardsword.body2" },
+      { text: "\n" },
+      { translate: "hy.quest.corrosion_boardsword.body3" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:corrosion_boardsword"),
+        name: {
+          translate: "hy.item.corrosion_boardsword",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("hy:letter_15"),
+        name: {
+          translate: "article.15.title",
+        },
+      },
+    },
+    iconPath: "textures/items/corrosion_boardsword_embryo",
+    tips: {
+      translate: "hy.quest.corrosion_boardsword.tips",
+    },
+  }
+);
+
+export const COPPER_HRON = new Quest(
+  "copper_hron",
+  { translate: "hy.quest.copper_horn.title" },
+  { translate: "hy.quest.copper_horn.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:copper_horn"),
+        name: {
+          translate: "hy.item.copper_horn",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        itemStack: new ItemStack("hy:gold_coin", 5),
+      },
+    },
+    iconPath: "textures/items/copper_horn",
+  }
+);
+
+export const BLEAK_TOTEM = new Quest(
+  "bleak_totem",
+  { translate: "hy.quest.bleak_totem.title" },
+  { translate: "hy.quest.bleak_totem.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:bleak_totem"),
+        name: {
+          translate: "hy.item.bleak_totem",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.emerald.name",
+        },
+        itemStack: new ItemStack("emerald", 4),
+      },
+    },
+    iconPath: "textures/items/bleak_totem",
+  }
+);
+
+export const GOLDEN_BADGE = new Quest(
+  "golden_badge",
+  { translate: "hy.quest.golden_badge.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.golden_badge.body1" },
+      { text: "\n\n" },
+      { translate: "hy.quest.golden_badge.body2" },
+    ],
+  },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:golden_badge"),
+        name: {
+          translate: "hy.item.golden_badge",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 6),
+      },
+    },
+    iconPath: "textures/items/golden_badge",
+    tips: {
+      translate: "hy.quest.golden_badge.tips",
+    },
   }
 );
