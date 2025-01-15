@@ -1,6 +1,7 @@
 import { ItemStack, system, world } from "@minecraft/server";
 import { initializeMod } from "@lazuli/ldk2";
 import {
+  badgeEffectMonitor,
   bleedEffectMonitor,
   dehydrationEffectMonitor,
   droughtEffectMonitor,
@@ -32,6 +33,7 @@ export class System {
       bleedEffectMonitor();
       droughtEffectMonitor();
       dehydrationEffectMonitor();
+      badgeEffectMonitor();
     }, 20);
   }
   /**

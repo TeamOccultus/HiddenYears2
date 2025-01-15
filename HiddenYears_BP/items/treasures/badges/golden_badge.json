@@ -23,7 +23,8 @@
       "minecraft:hover_text_color": "light_purple",
       "minecraft:tags": {
         "tags": [
-          "hy:single_use"
+          "hy:single_use",
+          "hy:badge"
         ]
       }
     }
