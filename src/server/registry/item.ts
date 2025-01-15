@@ -138,27 +138,6 @@ const RUBY_RUNES = new Prop("hy:ruby_runes", (event) => {
   PLAYER.addEffect("resistance", 1200);
 });
 
-const DIAMOND_BADGE = new Prop("hy:diamond_badge", (event) => {
-  const PLAYER = event.source;
-  PLAYER.addEffect("health_boost", 900, {
-    amplifier: 4,
-  });
-});
-
-const GOLDEN_BADGE = new Prop("hy:golden_badge", (event) => {
-  const PLAYER = event.source;
-  PLAYER.addEffect("health_boost", 600, {
-    amplifier: 4,
-  });
-});
-
-const COPPER_BADGE = new Prop("hy:copper_badge", (event) => {
-  const PLAYER = event.source;
-  PLAYER.addEffect("health_boost", 300, {
-    amplifier: 4,
-  });
-});
-
 const BONE_BOARDSWORD = new DurabilityLimitedProp(
   "hy:bone_boardsword",
   1,
@@ -450,9 +429,6 @@ export function registryItem() {
     RUBY_BAG,
     EXP_CALAMITY_BAG,
     RUBY_RUNES,
-    DIAMOND_BADGE,
-    GOLDEN_BADGE,
-    COPPER_BADGE,
     BONE_BOARDSWORD,
     FLASH_METAL_BOARDSWORD,
     CORROSION_BOARDSWORD,
