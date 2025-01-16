@@ -1,7 +1,7 @@
 import { world } from "@minecraft/server";
-import { getEquipmentItem, withPercentChance } from "@lazuli/ldk2";
+import { getEquipmentItem, withPercentChance } from "@grindstone/utils";
 
-export class Block {
+export class Hy2Block {
   /** 监听方块事件 */
   static eventMonitor() {
     world.afterEvents.playerBreakBlock.subscribe((event) => {

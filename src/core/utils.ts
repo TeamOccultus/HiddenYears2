@@ -1,232 +1,162 @@
 import {
-  affectEntities,
-  damageEntities,
   getEquipmentItem,
   setEquipmentItem,
-} from "@lazuli/ldk2";
+  withPercentChance,
+} from "@grindstone/utils";
 import {
-  Dimension,
   Entity,
-  EntityQueryOptions,
   EquipmentSlot,
   ItemStack,
   Player,
-  Vector3,
 } from "@minecraft/server";
 import { HyCorrosionMap } from "../data/data";
 
-export class HyUtils {
-  static isAffectByDroughtDebuff(target: Entity, item: ItemStack): boolean {
-    return (
-      item?.typeId === "hy:shattered_sand_cudgel" &&
-      !target.matches({ families: ["immune_desert_debuff"] }) &&
-      !target.hasTag("hy:immune_desert_debuff") &&
-      !(
-        target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head)
-          .typeId === "hy:drift_sand_coronet"
-      )
-    );
-  }
-  static isAffectByBossDroughtDebuff(target: Entity): boolean {
-    return (
-      !target.matches({ families: ["immune_desert_debuff"] }) &&
-      !target.hasTag("hy:immune_desert_debuff") &&
-      !(
-        target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head)
-          .typeId === "hy:drift_sand_coronet"
-      )
-    );
-  }
-  /**
-   * 返回实体是否会被沙漠Debuff影响
-   * @param target
-   * @param item
-   * @returns
-   */
-  static isAffectByDehydrationDebuff(target: Entity, item: ItemStack): boolean {
-    return (
-      item?.typeId === "hy:shattered_sand_staff" &&
-      !target.matches({ families: ["immune_desert_debuff"] }) &&
-      !target.hasTag("hy:immune_desert_debuff") &&
-      !(
-        target.getComponent("equippable")?.getEquipment(EquipmentSlot.Head)
-          .typeId === "hy:drift_sand_coronet"
-      )
-    );
-  }
-  static loot(dimension: Dimension, location: Vector3, path: string) {
-    dimension.runCommand(
-      `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`
-    );
-  }
-  /**
-   * 判断实体是否受血色的护甲机制影响
-   * @param entity
-   * @param attacker
-   * @returns
-   */
-  static isAffectByBloodArmor(entity: Entity, attacker: Entity) {
-    if (
-      !attacker.matches({
-        families: ["ruby"],
-      })
-    ) {
-      return false;
-    }
-    if (
-      !(
-        getEquipmentItem(entity, EquipmentSlot.Chest)?.typeId ===
-        "hy:ruby_chestplate"
-      )
-    ) {
-      return false;
-    }
-    if (
-      !(
-        getEquipmentItem(entity, EquipmentSlot.Legs)?.typeId ===
-        "hy:ruby_leggings"
-      )
-    ) {
-      return false;
-    }
-    if (
-      !(
-        getEquipmentItem(entity, EquipmentSlot.Feet)?.typeId === "hy:ruby_boots"
-      )
-    ) {
-      return false;
-    }
-    console.info("This entity is affect by Blood Armor.");
-    return true;
-  }
-  /**
-   * 判断实体是否会受血色的冠冕效果影响
-   * @param entity
-   * @param attacker
-   * @returns
-   */
-  static isAffectByBloodCrown(entity: Entity, attacker: Entity) {
-    if (
-      !attacker.matches({
-        families: ["ruby"],
-      })
-    ) {
-      return false;
-    }
-    if (
-      getEquipmentItem(entity, EquipmentSlot.Head)?.typeId === "hy:ruby_helmet"
-    ) {
-      console.info("This entity is affect by Blood Crown.");
-      return true;
-    } else {
-      return false;
-    }
-  }
+/**
+ * 实体被攻击时，判断其是否会获得干旱效果
+ * @param target 被攻击的实体
+ * @param attackWeapon 攻击武器
+ * @tag `hy:immune_desert_debuff` 使实体免疫沙漠负面效果
+ * @returns
+ */
+export function isAffectByDroughtDebuff(
+  target: Entity,
+  attackWeapon: ItemStack
+): boolean {
+  if (attackWeapon?.typeId !== "hy:shattered_sand_cudgel") return false;
+  if (target.matches({ families: ["immune_desert_debuff"] })) return false;
+  if (target.hasTag("hy:immune_desert_debuff")) return false;
+  if (
+    getEquipmentItem(target, EquipmentSlot.Head)?.typeId ===
+    "hy:drift_sand_coronet"
+  )
+    return false;
+  return true;
+}
 
-  /**
-   * 判断该物品能否锈蚀，并进行替换
-   * @param item
-   * @param holder
-   */
-  static replaceLowerCopperTool(item: ItemStack, holder: Entity) {
-    if (item.hasTag("hy:corrosive_tools")) {
-      //@ts-ignore
-      setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
-      return true;
-    } else {
-      return false;
-    }
+/**
+ * 实体被攻击时，判断其是否会获得脱水效果
+ * @param target 被攻击的实体
+ * @param attackWeapon 攻击武器
+ * @tag `hy:immune_desert_debuff` 使实体免疫沙漠负面效果
+ * @returns
+ */
+export function isAffectByDehydrationDebuff(
+  target: Entity,
+  attackWeapon: ItemStack
+): boolean {
+  if (attackWeapon?.typeId !== "hy:shattered_sand_staff") return false;
+  if (target.matches({ families: ["immune_desert_debuff"] })) return false;
+  if (target.hasTag("hy:immune_desert_debuff")) return false;
+  if (
+    getEquipmentItem(target, EquipmentSlot.Head)?.typeId ===
+    "hy:drift_sand_coronet"
+  )
+    return false;
+  return true;
+}
+
+/**
+ * 判断法老残影是否可以为实体添加干旱效果
+ * @param target 被施法的实体
+ * @returns
+ */
+export function isAffectByBossDroughtDebuff(target: Entity): boolean {
+  if (target.matches({ families: ["immune_desert_debuff"] })) return false;
+  if (target.hasTag("hy:immune_desert_debuff")) return false;
+  if (
+    getEquipmentItem(target, EquipmentSlot.Head)?.typeId ===
+    "hy:drift_sand_coronet"
+  )
+    return false;
+  return true;
+}
+/**
+ * 判断实体受到攻击时，是否受血色的护甲机制影响
+ * @param target 被攻击的实体
+ * @param attacker 造成攻击的实体
+ * @returns
+ */
+export function isAffectByBloodArmor(target: Entity, attacker: Entity) {
+  if (
+    !attacker.matches({
+      families: ["ruby"],
+    })
+  ) {
+    return false;
   }
-  static boneMagicExplode(player: Player) {
-    if (player.level > 5) {
-      const SKELETON_OPINION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        families: ["skeleton"],
-      };
-      damageEntities(player.dimension, SKELETON_OPINION, 8);
-      affectEntities(player.dimension, SKELETON_OPINION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+  if (
+    !(
+      getEquipmentItem(target, EquipmentSlot.Chest)?.typeId ===
+      "hy:ruby_chestplate"
+    )
+  ) {
+    return false;
   }
-  static flashMetalExplode(player: Player) {
-    if (player.level > 5) {
-      const ALL_OPTION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        excludeTags: ["hy.magic_explode"],
-        excludeFamilies: ["noaoe"],
-      };
-      damageEntities(player.dimension, ALL_OPTION, 8);
-      affectEntities(player.dimension, ALL_OPTION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+  if (
+    !(
+      getEquipmentItem(target, EquipmentSlot.Legs)?.typeId ===
+      "hy:ruby_leggings"
+    )
+  ) {
+    return false;
   }
-  static corrosionExplode(player: Player) {
-    if (player.level > 5) {
-      const UNDEAD_OPINION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        families: ["undead"],
-      };
-      damageEntities(player.dimension, UNDEAD_OPINION, 8);
-      affectEntities(player.dimension, UNDEAD_OPINION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+  if (
+    !(getEquipmentItem(target, EquipmentSlot.Feet)?.typeId === "hy:ruby_boots")
+  ) {
+    return false;
   }
-  static emeraldExplode(player: Player) {
-    if (player.level > 5) {
-      const ILLAGER_OPINION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        families: ["illager"],
-      };
-      damageEntities(player.dimension, ILLAGER_OPINION, 8);
-      affectEntities(player.dimension, ILLAGER_OPINION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+  return true;
+}
+
+/**
+ * 判断实体受到攻击时，是否会受血色的冠冕效果影响
+ * @param target 被攻击的实体
+ * @param attacker 造成攻击的实体
+ * @returns
+ */
+export function isAffectByBloodCrown(target: Entity, attacker: Entity) {
+  if (
+    !attacker.matches({
+      families: ["ruby"],
+    })
+  ) {
+    return false;
   }
-  static flashCopperExplode(player: Player) {
-    if (player.level > 5) {
-      const ARTHROPOD_OPINION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        families: ["arthropod"],
-      };
-      damageEntities(player.dimension, ARTHROPOD_OPINION, 8);
-      affectEntities(player.dimension, ARTHROPOD_OPINION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+  if (
+    !(getEquipmentItem(target, EquipmentSlot.Head)?.typeId === "hy:ruby_helmet")
+  ) {
+    return false;
   }
-  static amethystExplode(player: Player) {
-    if (player.level > 5) {
-      const POULTRY_OPINION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        families: ["poultry"],
-      };
-      damageEntities(player.dimension, POULTRY_OPINION, 8);
-      affectEntities(player.dimension, POULTRY_OPINION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
+  return false;
+}
+
+/**
+ * 判断当工具耐久耗尽时是否执行锈蚀操作
+ * @param item 要替换的物品
+ * @param holder
+ */
+export function replaceLowerCopperTool(item: ItemStack, holder: Entity) {
+  if (item.hasTag("hy:corrosive_tools")) {
+    //@ts-ignore
+    setEquipmentItem(holder, HyCorrosionMap[item.typeId.replace("hy:", "")]);
+    return true;
+  } else {
+    return false;
   }
-  static rubyExplode(player: Player) {
-    if (player.level > 5) {
-      const RUBY_OPINION: EntityQueryOptions = {
-        location: player.location,
-        maxDistance: 18,
-        families: ["ruby"],
-      };
-      damageEntities(player.dimension, RUBY_OPINION, 8);
-      affectEntities(player.dimension, RUBY_OPINION, "weakness", 300);
-    } else {
-      player.sendMessage([{ translate: "hy.message.no_exp" }]);
-    }
-  }
+}
+
+/**
+ * 造成仿制伤害
+ * @param entity 使用了仿制工具的实体
+ */
+export function applyImitationDamage(entity: Entity): void {
+  withPercentChance({
+    chance: 0.05,
+    event: () => {
+      entity.applyDamage(2);
+      if (entity instanceof Player) {
+        entity.sendMessage({ translate: "hy.message.imitation_damage" });
+      }
+    },
+  });
 }

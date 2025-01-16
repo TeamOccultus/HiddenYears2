@@ -1,5 +1,6 @@
 import { EquipmentSlot, system, world } from "@minecraft/server";
-import { getEquipmentItem, vanillaDimensions } from "@lazuli/ldk2";
+import { getEquipmentItem } from "@grindstone/utils";
+import { vanillaDimensions } from "@lazuli/ldk2";
 
 /**
  * 流血效果
@@ -79,6 +80,9 @@ export function dehydrationEffectMonitor() {
   });
 }
 
+/**
+ * 徽章效果监听器
+ */
 export function badgeEffectMonitor() {
   world.getAllPlayers().forEach((player) => {
     if (!getEquipmentItem(player, EquipmentSlot.Chest)?.hasTag("hy:badge")){
@@ -105,8 +109,4 @@ export function badgeEffectMonitor() {
         break;
     }
   });
-}
-
-export class AffectEntity {
-  constructor() {}
 }

@@ -1,6 +1,7 @@
 import { BlockVolume, Player, system, world } from "@minecraft/server";
-import { Boss, BossSkill, Register } from "@lazuli/ldk2";
-import { HyUtils } from "../../core/utils";
+import { Boss, BossSkill } from "@grindstone/entity-kit";
+import { isAffectByBossDroughtDebuff } from "../../core/utils";
+import { MagicAimAttack } from "../../core/magicAimAttack";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
   level: -9999,
@@ -107,7 +108,7 @@ const SUMMON_MUMMY = new BossSkill("summon_mummy", 800, 15, {
 
 const DROUGHT_DEBUFF = new BossSkill("drought", 1200, 25, {
   event: (entity) => {
-    if (HyUtils.isAffectByBossDroughtDebuff(entity)) {
+    if (isAffectByBossDroughtDebuff(entity)) {
       if (entity instanceof Player) {
         entity.onScreenDisplay.setActionBar({
           translate: "hy.message.drought",
@@ -163,5 +164,6 @@ const PHARAOHS_GHOST = new Boss(
 );
 
 export function registryBoss() {
-  Register.registry([RUBY_KING, PHARAOHS_GHOST]);
+  RUBY_KING.build();
+  PHARAOHS_GHOST.build();
 }

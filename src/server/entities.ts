@@ -1,8 +1,13 @@
 import { world, Player, system, ItemStack } from "@minecraft/server";
-import { getEquipmentItem, giveItem, randomInteger } from "@lazuli/ldk2";
-import { HyUtils } from "../core/utils";
+import { getEquipmentItem, giveItem, randomInteger } from "@grindstone/utils";
+import {
+  isAffectByBloodArmor,
+  isAffectByBloodCrown,
+  isAffectByDehydrationDebuff,
+  isAffectByDroughtDebuff,
+} from "../core/utils";
 
-export class Entity {
+export class Hy2Entity {
   /**
    * 监听实体事件
    */
@@ -32,9 +37,7 @@ export class Entity {
         TARGET.addExperience(-15);
       }
       // 脱水与干旱
-      if (
-        HyUtils.isAffectByDroughtDebuff(TARGET,ITEM)
-      ) {
+      if (isAffectByDroughtDebuff(TARGET, ITEM)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
             translate: "hy.message.drought",
@@ -50,9 +53,7 @@ export class Entity {
           if (TARGET.isValid()) TARGET.removeTag("hy:drought");
         }, 300);
       }
-      if (
-        HyUtils.isAffectByDehydrationDebuff(TARGET,ITEM)
-      ) {
+      if (isAffectByDehydrationDebuff(TARGET, ITEM)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
             translate: "hy.message.dehydration",
@@ -68,14 +69,16 @@ export class Entity {
           if (TARGET.isValid()) TARGET.removeTag("hy:dehydration");
         }, 400);
       }
-      if(HyUtils.isAffectByBloodArmor(TARGET, ATTACKER)){
-        if(TARGET instanceof Player){
-          TARGET.onScreenDisplay.setActionBar({translate: "hy.message.blood_armor"})
+      if (isAffectByBloodArmor(TARGET, ATTACKER)) {
+        if (TARGET instanceof Player) {
+          TARGET.onScreenDisplay.setActionBar({
+            translate: "hy.message.blood_armor",
+          });
         }
-        TARGET.addEffect("regeneration",6,{amplifier: 4})
+        TARGET.addEffect("regeneration", 6, { amplifier: 4 });
       }
-      if(HyUtils.isAffectByBloodCrown(TARGET, ATTACKER)){
-        TARGET.addEffect("regeneration",9,{amplifier: 4})
+      if (isAffectByBloodCrown(TARGET, ATTACKER)) {
+        TARGET.addEffect("regeneration", 9, { amplifier: 4 });
         ATTACKER.applyDamage(2);
       }
     });

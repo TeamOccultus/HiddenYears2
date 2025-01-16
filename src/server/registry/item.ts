@@ -1,24 +1,25 @@
 import {
   EntityQueryOptions,
+  ItemCooldownComponent,
   ItemStack,
   system,
   world,
 } from "@minecraft/server";
 import {
+  PropBuilder,
+  DurabilityLimitedPropBuilder,
+} from "@grindstone/item-kit";
+import { MagicAimAttack } from "../../core/magicAimAttack";
+import { corrosionAttackTrigger, imitationDamageTrigger, magicExplodeTrigger, tetanusAttackTrigger } from "../../core/triggers";
+import {
   affectEntities,
   damageEntities,
-  FoodItem,
   giveItem,
-  Prop,
   randomInteger,
-  Register,
   withWeightChance,
-  DurabilityLimitedProp,
-  pushLore,
-} from "@lazuli/ldk2";
-import { HyUtils } from "../../core/utils";
+} from "@grindstone/utils";
 
-const BANDAGE = new DurabilityLimitedProp("hy:bandage", 1, (event) => {
+const BANDAGE = new DurabilityLimitedPropBuilder("hy:bandage", 1, (event) => {
   const PLAYER = event.source;
   PLAYER.addEffect("regeneration", 1200);
   PLAYER.addEffect("resistance", 600);
@@ -27,7 +28,7 @@ const BANDAGE = new DurabilityLimitedProp("hy:bandage", 1, (event) => {
   PLAYER.playSound("use.cloth");
 });
 
-const MEDICINE_PACK = new DurabilityLimitedProp(
+const MEDICINE_PACK = new DurabilityLimitedPropBuilder(
   "hy:medicine_pack",
   1,
   (event) => {
@@ -42,57 +43,61 @@ const MEDICINE_PACK = new DurabilityLimitedProp(
   }
 );
 
-const COPPER_HORN = new DurabilityLimitedProp("hy:copper_horn", 1, (event) => {
-  const PLAYER = event.source;
-  if (PLAYER.isSneaking) {
-    world.playSound("copper_horn.sneak", PLAYER.location);
-    affectEntities(
-      PLAYER.dimension,
-      {
-        location: PLAYER.location,
-        maxDistance: 20,
-        excludeTags: ["hy.horn_user"],
-        excludeFamilies: ["noaoe"],
-      },
-      "slowness",
-      300,
-      {
+const COPPER_HORN = new DurabilityLimitedPropBuilder(
+  "hy:copper_horn",
+  1,
+  (event) => {
+    const PLAYER = event.source;
+    if (PLAYER.isSneaking) {
+      world.playSound("copper_horn.sneak", PLAYER.location);
+      affectEntities(
+        PLAYER.dimension,
+        {
+          location: PLAYER.location,
+          maxDistance: 20,
+          excludeTags: ["hy.horn_user"],
+          excludeFamilies: ["noaoe"],
+        },
+        "slowness",
+        300,
+        {
+          amplifier: 2,
+        }
+      );
+      PLAYER.removeEffect("slowness");
+      PLAYER.addEffect("speed", 300, {
         amplifier: 2,
-      }
-    );
-    PLAYER.removeEffect("slowness");
-    PLAYER.addEffect("speed", 300, {
-      amplifier: 2,
-    });
-  } else {
-    world.playSound("copper_horn.walk", PLAYER.location);
-    affectEntities(
-      PLAYER.dimension,
-      {
-        location: PLAYER.location,
-        maxDistance: 20,
-        excludeTags: ["hy.horn_user"],
-        excludeFamilies: ["noaoe"],
-      },
-      "speed",
-      300,
-      {
+      });
+    } else {
+      world.playSound("copper_horn.walk", PLAYER.location);
+      affectEntities(
+        PLAYER.dimension,
+        {
+          location: PLAYER.location,
+          maxDistance: 20,
+          excludeTags: ["hy.horn_user"],
+          excludeFamilies: ["noaoe"],
+        },
+        "speed",
+        300,
+        {
+          amplifier: 2,
+        }
+      );
+      PLAYER.removeEffect("speed");
+      PLAYER.addEffect("slowness", 300, {
         amplifier: 2,
-      }
-    );
-    PLAYER.removeEffect("speed");
-    PLAYER.addEffect("slowness", 300, {
-      amplifier: 2,
-    });
+      });
+    }
   }
-});
+);
 
-const SOUL_LETTER = new Prop("hy:soul_letter_sprite", (event) => {
+const SOUL_LETTER = new PropBuilder("hy:soul_letter_sprite", (event) => {
   const PLAYER = event.source;
   PLAYER.dimension.spawnEntity("hy:sprite", PLAYER.location);
 });
 
-const RUBY_BAG = new Prop("hy:ruby_bag", (event) => {
+const RUBY_BAG = new PropBuilder("hy:ruby_bag", (event) => {
   const PLAYER = event.source;
   withWeightChance([
     {
@@ -125,12 +130,15 @@ const RUBY_BAG = new Prop("hy:ruby_bag", (event) => {
   ]);
 });
 
-const EXP_CALAMITY_BAG = new Prop("hy:experience_calamity_bag", (event) => {
-  const PLAYER = event.source;
-  PLAYER.dimension.spawnEntity("hy:king_of_ruby", PLAYER.location);
-});
+const EXP_CALAMITY_BAG = new PropBuilder(
+  "hy:experience_calamity_bag",
+  (event) => {
+    const PLAYER = event.source;
+    PLAYER.dimension.spawnEntity("hy:king_of_ruby", PLAYER.location);
+  }
+);
 
-const RUBY_RUNES = new Prop("hy:ruby_runes", (event) => {
+const RUBY_RUNES = new PropBuilder("hy:ruby_runes", (event) => {
   const PLAYER = event.source;
   PLAYER.addLevels(randomInteger(10, 1));
   PLAYER.playSound("random.orb");
@@ -138,11 +146,13 @@ const RUBY_RUNES = new Prop("hy:ruby_runes", (event) => {
   PLAYER.addEffect("resistance", 1200);
 });
 
-const BONE_BOARDSWORD = new DurabilityLimitedProp(
+const BONE_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:bone_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -162,16 +172,18 @@ const BONE_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.boneMagicExplode(event.source);
+    MagicAimAttack.boneMagicExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const FLASH_METAL_BOARDSWORD = new DurabilityLimitedProp(
+const FLASH_METAL_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:flash_metal_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -191,16 +203,18 @@ const FLASH_METAL_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.flashMetalExplode(event.source);
+    MagicAimAttack.flashMetalExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const CORROSION_BOARDSWORD = new DurabilityLimitedProp(
+const CORROSION_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:corrosion_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -220,16 +234,18 @@ const CORROSION_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.corrosionExplode(event.source);
+    MagicAimAttack.corrosionExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const EMERALD_BOARDSWORD = new DurabilityLimitedProp(
+const EMERALD_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:emerald_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -249,16 +265,18 @@ const EMERALD_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.emeraldExplode(event.source);
+    MagicAimAttack.emeraldExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedProp(
+const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:flash_copper_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -278,16 +296,18 @@ const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.flashCopperExplode(event.source);
+    MagicAimAttack.flashCopperExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const AMETHYST_BOARDSWORD = new DurabilityLimitedProp(
+const AMETHYST_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:amethyst_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -307,16 +327,18 @@ const AMETHYST_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.amethystExplode(event.source);
+    MagicAimAttack.amethystExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const RUBY_BOARDSWORD = new DurabilityLimitedProp(
+const RUBY_BOARDSWORD = new DurabilityLimitedPropBuilder(
   "hy:ruby_boardsword",
   1,
   (event) => {
-    let cooldown = event.itemStack.getComponent("cooldown");
+    let cooldown = event.itemStack.getComponent(
+      "cooldown"
+    ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
       event.source.onScreenDisplay.setActionBar({
@@ -336,12 +358,12 @@ const RUBY_BOARDSWORD = new DurabilityLimitedProp(
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
-    HyUtils.rubyExplode(event.source);
+    MagicAimAttack.rubyExplode(event.source);
     cooldown.startCooldown(event.source);
   }
 );
 
-const RAIN_GOD_BLESSING = new Prop("hy:rain_god_blessing", (event) => {
+const RAIN_GOD_BLESSING = new PropBuilder("hy:rain_god_blessing", (event) => {
   const PLAYER = event.source;
   PLAYER.removeTag("hy:drought");
   PLAYER.removeTag("hy:dehydration");
@@ -359,84 +381,27 @@ const RAIN_GOD_BLESSING = new Prop("hy:rain_god_blessing", (event) => {
   }, 900);
 });
 
-const RUBY_APPLE = new FoodItem("hy:ruby_apple", [], (event) => {
-  const PLAYER = event.source;
-  PLAYER.addExperience(3);
-  world.playSound("random.orb", PLAYER.location);
-});
-
 /**
  * 注册道具
  */
 export function registryItem() {
-  world.afterEvents.itemUse.subscribe((event) => {
-    // 破伤风伤害
-    const [PLAYER, ITEM] = [event.source, event.itemStack];
-    if (ITEM.hasTag("hy:tetanus_item")) {
-      PLAYER.addTag("hy.tetanus_attacker");
-      const TETANUS_OPINION: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 4,
-        excludeTags: ["hy.tetanus_attacker"],
-        excludeFamilies: ["noaoe"],
-      };
-      affectEntities(PLAYER.dimension, TETANUS_OPINION, "poison", 300);
-      affectEntities(PLAYER.dimension, TETANUS_OPINION, "nausea", 600, {
-        amplifier: 1,
-      });
-      affectEntities(PLAYER.dimension, TETANUS_OPINION, "wither", 6);
-      PLAYER.removeTag("hy.tetanus_attacker");
-    }
-    // 法术爆发
-    if (ITEM.hasTag("hy:magic_explode") && PLAYER.level > 5) {
-      if (
-        ITEM.getComponent("cooldown").getCooldownTicksRemaining(PLAYER) !== 0
-      ) {
-        PLAYER.onScreenDisplay.setActionBar({
-          translate: "hy.message.wait_cooldown",
-        });
-        return;
-      }
-      PLAYER.addTag("hy.magic_explode");
-      PLAYER.addExperience(-10);
-      damageEntities(
-        PLAYER.dimension,
-        {
-          location: PLAYER.location,
-          maxDistance: 10,
-          excludeTags: ["hy.magic_explode"],
-          excludeFamilies: ["noaoe"],
-        },
-        6
-      );
-      system.runTimeout(() => {
-        PLAYER.removeTag("hy.magic_explode");
-      }, 100);
-    }
-  });
-  world.afterEvents.itemCompleteUse.subscribe((event) => {
-    const [PLAYER, ITEM] = [event.source, event.itemStack];
-    if (ITEM.typeId === "potion") {
-      PLAYER.removeTag("hy:drought");
-    }
-  });
-  // 注册道具
-  Register.registry([
-    BANDAGE,
-    MEDICINE_PACK,
-    COPPER_HORN,
-    SOUL_LETTER,
-    RUBY_BAG,
-    EXP_CALAMITY_BAG,
-    RUBY_RUNES,
-    BONE_BOARDSWORD,
-    FLASH_METAL_BOARDSWORD,
-    CORROSION_BOARDSWORD,
-    EMERALD_BOARDSWORD,
-    FLASH_COPPER_BOARDSWORD,
-    AMETHYST_BOARDSWORD,
-    RUBY_BOARDSWORD,
-    RAIN_GOD_BLESSING,
-    RUBY_APPLE,
-  ]);
+  magicExplodeTrigger();
+  tetanusAttackTrigger();
+  corrosionAttackTrigger()
+  imitationDamageTrigger();
+  BANDAGE.build();
+  MEDICINE_PACK.build();
+  COPPER_HORN.build();
+  SOUL_LETTER.build();
+  RUBY_BAG.build();
+  EXP_CALAMITY_BAG.build();
+  RUBY_RUNES.build();
+  BONE_BOARDSWORD.build();
+  FLASH_METAL_BOARDSWORD.build();
+  CORROSION_BOARDSWORD.build();
+  EMERALD_BOARDSWORD.build();
+  FLASH_COPPER_BOARDSWORD.build();
+  AMETHYST_BOARDSWORD.build();
+  RUBY_BOARDSWORD.build();
+  RAIN_GOD_BLESSING.build();
 }

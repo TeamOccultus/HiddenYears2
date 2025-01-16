@@ -1,46 +1,43 @@
 import {
-  getEquipmentItem,
-  Register,
   ToolTag,
-  tryOperateEntity,
   WeaponAtkSkill,
   WeaponTag,
   WeaponUseSkill,
-} from "@lazuli/ldk2";
-import { system, world } from "@minecraft/server";
-import { applyImitationDamage } from "../../core/imitation";
-import { HyUtils } from "../../core/utils";
+} from "@grindstone/item-kit";
+import { system } from "@minecraft/server";
+import { tryOperateEntity } from "@grindstone/utils";
+import { replaceLowerCopperTool } from "../../core/utils";
 
 const NORMAL_TOOL = new ToolTag("hy:custom_tools", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
 });
 
 const NORMAL_SHOVEL = new ToolTag("hy:custom_shovel", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
   type: "shovel",
 });
 
 const NORMAL_AXE = new ToolTag("hy:custom_axe", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
   type: "axe",
 });
 
 const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
   type: "hoe",
 });
 
 const NORMAL_WEAPON = new WeaponTag("hy:custom_weapons", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
 });
 
@@ -56,7 +53,7 @@ const AWL_WEAPON = new WeaponTag("hy:is_awl", {
           duration: 100,
         },
       },
-      { translate: "hy.itemSkill.awl.1" },
+      { translate: "hy.itemSkill.awl.1" }
     ),
     new WeaponAtkSkill(
       2,
@@ -67,14 +64,14 @@ const AWL_WEAPON = new WeaponTag("hy:is_awl", {
           duration: 140,
         },
       },
-      { translate: "hy.itemSkill.awl.2" },
+      { translate: "hy.itemSkill.awl.2" }
     ),
   ],
 });
 
 const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
   skill: [
     new WeaponAtkSkill(5, "empty"),
@@ -92,7 +89,7 @@ const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
           },
         ],
       },
-      { translate: "hy.itemSkill.hammer.1" },
+      { translate: "hy.itemSkill.hammer.1" }
     ),
     new WeaponAtkSkill(
       1,
@@ -113,7 +110,7 @@ const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
           },
         ],
       },
-      { translate: "hy.itemSkill.hammer.2" },
+      { translate: "hy.itemSkill.hammer.2" }
     ),
   ],
 });
@@ -126,7 +123,7 @@ const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
       {
         damageTarget: 4,
       },
-      { translate: "hy.itemSkill.crowbar.1" },
+      { translate: "hy.itemSkill.crowbar.1" }
     ),
     new WeaponAtkSkill(
       1,
@@ -148,7 +145,7 @@ const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
           },
         ],
       },
-      { translate: "hy.itemSkill.crowbar.2" },
+      { translate: "hy.itemSkill.crowbar.2" }
     ),
     new WeaponUseSkill(
       1,
@@ -156,14 +153,14 @@ const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
         xp: 114,
       },
       { text: "这是测试的使用技能" },
-      10,
+      10
     ),
   ],
 });
 
 const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
   destroyedAfterEvents: (holder, item) => {
-    HyUtils.replaceLowerCopperTool(item, holder);
+    replaceLowerCopperTool(item, holder);
   },
   skill: [
     new WeaponAtkSkill(3, "empty"),
@@ -179,7 +176,7 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
           }, 160);
         },
       },
-      { translate: "hy.itemSkill.knife.1" },
+      { translate: "hy.itemSkill.knife.1" }
     ),
     new WeaponAtkSkill(
       1,
@@ -193,7 +190,7 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
           }, 160);
         },
       },
-      { translate: "hy.itemSkill.knife.2" },
+      { translate: "hy.itemSkill.knife.2" }
     ),
   ],
 });
@@ -206,44 +203,27 @@ const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode", {
       {
         xp: 10,
       },
-      { translate: "hy.itemSkill.boardsword.1" },
+      { translate: "hy.itemSkill.boardsword.1" }
     ),
     new WeaponAtkSkill(
       1,
       {
         levels: 1,
       },
-      { translate: "hy.itemSkill.boardsword.2" },
+      { translate: "hy.itemSkill.boardsword.2" }
     ),
   ],
 });
 
 export function registryTool() {
-  world.afterEvents.playerBreakBlock.subscribe((event) => {
-    const [ENTITY, ITEM] = [event.player, event.itemStackBeforeBreak];
-    if (ITEM?.hasTag("hy:imitation_tools")) {
-      applyImitationDamage(ENTITY);
-    }
-  });
-  world.afterEvents.entityHitEntity.subscribe((event) => {
-    const [ENTITY, ITEM] = [
-      event.damagingEntity,
-      getEquipmentItem(event.damagingEntity),
-    ];
-    if (ITEM?.hasTag("hy:imitation_tools")) {
-      applyImitationDamage(ENTITY);
-    }
-  });
-  Register.registry([
-    NORMAL_WEAPON,
-    NORMAL_TOOL,
-    NORMAL_SHOVEL,
-    NORMAL_AXE,
-    NORMAL_HOE,
-    AWL_WEAPON,
-    HAMMER_WEAPON,
-    CROWBAR_WEAPON,
-    KNIFE_WEAPON,
-    BOARDSWORD_WEAPON,
-  ]);
+  NORMAL_WEAPON.build();
+  NORMAL_TOOL.build();
+  NORMAL_SHOVEL.build();
+  NORMAL_AXE.build();
+  NORMAL_HOE.build();
+  AWL_WEAPON.build();
+  HAMMER_WEAPON.build();
+  CROWBAR_WEAPON.build();
+  KNIFE_WEAPON.build();
+  BOARDSWORD_WEAPON.build();
 }

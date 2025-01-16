@@ -1,5 +1,5 @@
-import { ItemStack, system, world } from "@minecraft/server";
-import { initializeMod } from "@lazuli/ldk2";
+import { EntityInventoryComponent, ItemStack, system, world } from "@minecraft/server";
+import { initializeMod } from "@grindstone/core";
 import {
   badgeEffectMonitor,
   bleedEffectMonitor,
@@ -8,7 +8,7 @@ import {
 } from "../core/effects";
 import { replaceItemStack } from "@grindstone/utils";
 
-export class System {
+export class Hy2System {
   /**
    * 初始化模组
    */
@@ -41,36 +41,37 @@ export class System {
    */
   static backwardsCompatibility() {
     world.afterEvents.playerSpawn.subscribe((event) => {
-      const PLAYER = event.player;
+      const player = event.player;
+      const inventory= player.getComponent("inventory") as EntityInventoryComponent;
       replaceItemStack(
         new ItemStack("hy:raw_flash_copper_ingot"),
         new ItemStack("hy:flash_copper_ingot"),
-        PLAYER.getComponent("inventory").container
+        inventory.container
       );
       replaceItemStack(
         new ItemStack("hy:raw_flash_metal_ingot"),
         new ItemStack("hy:flash_metal_ingot"),
-        PLAYER.getComponent("inventory").container
+        inventory.container
       );
       replaceItemStack(
         new ItemStack("hy:experience_calamity_bag"),
         new ItemStack("hy:crimson_eyes"),
-        PLAYER.getComponent("inventory").container
+        inventory.container
       );
       replaceItemStack(
         new ItemStack("hy:diamond_bone"),
         new ItemStack("hy:bone_boardsword"),
-        PLAYER.getComponent("inventory").container
+        inventory.container
       );
       replaceItemStack(
         new ItemStack("hy:gold_bone"),
         new ItemStack("hy:bone_boardsword"),
-        PLAYER.getComponent("inventory").container
+        inventory.container
       );
       replaceItemStack(
         new ItemStack("hy:iron_bone"),
         new ItemStack("hy:bone_boardsword"),
-        PLAYER.getComponent("inventory").container
+        inventory.container
       );
     });
   }

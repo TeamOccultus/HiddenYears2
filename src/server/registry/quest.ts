@@ -1,15 +1,12 @@
 import {
-  ChapterQuestBook,
-  QuestBook,
-  Register,
-  setQuestNameSpace,
-} from "@lazuli/ldk2";
+  ChapterQuestBookBuilder,
+  QuestBookBuilder,
+  QuestManager,
+} from "@grindstone/quest-kit";
 import * as quests from "../../data/quest";
 import { HyLetterBody } from "../../data/lang";
 
-setQuestNameSpace("hy-q");
-
-const QUEST_BOOK = new ChapterQuestBook(
+const QUEST_BOOK = new ChapterQuestBookBuilder(
   "hy:quest_book",
   { translate: "hy.quest.title1" },
   { translate: "hy.quest.body1" },
@@ -120,43 +117,38 @@ const QUEST_BOOK = new ChapterQuestBook(
     {
       title: { translate: "hy.quest.chapter5.title" },
       body: { translate: "hy.quest.chapter5.body" },
-      quests: [
-        quests.GOLD_SAND,
-        quests.SAND_SLIVERFISH,
-        quests.LETTER_14,
-      ],
+      quests: [quests.GOLD_SAND, quests.SAND_SLIVERFISH, quests.LETTER_14],
       iconPath: "textures/items/gold_sand",
     },
   ]
 );
-const LETTER_0 = new QuestBook(
+const LETTER_0 = new QuestBookBuilder(
   `hy:letter_0`,
   { translate: "article.0.title" },
   HyLetterBody[0],
-  {
-    quests: [
-      quests.STORY_BOOK,
-      quests.LETTER_0,
-      quests.LETTER_4,
-      quests.LETTER_5,
-      quests.LETTER_6,
-      quests.LETTER_7,
-      quests.LETTER_11,
-      quests.LETTER_12,
-      quests.LETTER_2,
-      quests.LETTER_3,
-      quests.LETTER_9,
-      quests.LETTER_10,
-      quests.LETTER_8,
-      quests.LETTER_1,
-      quests.LETTER_13,
-      quests.LETTER_14,
-      quests.LETTER_15,
-    ],
-  }
+  [
+    quests.STORY_BOOK,
+    quests.LETTER_0,
+    quests.LETTER_4,
+    quests.LETTER_5,
+    quests.LETTER_6,
+    quests.LETTER_7,
+    quests.LETTER_11,
+    quests.LETTER_12,
+    quests.LETTER_2,
+    quests.LETTER_3,
+    quests.LETTER_9,
+    quests.LETTER_10,
+    quests.LETTER_8,
+    quests.LETTER_1,
+    quests.LETTER_13,
+    quests.LETTER_14,
+    quests.LETTER_15,
+  ]
 );
 
 export function registryQuest() {
-  Register.registry(quests.SAND_SLIVERFISH)
-  Register.registry([QUEST_BOOK, LETTER_0]);
+  QuestManager.setNameSpace("hy-q");
+  QUEST_BOOK.build();
+  LETTER_0.build();
 }

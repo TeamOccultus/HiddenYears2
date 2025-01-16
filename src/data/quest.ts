@@ -1,5 +1,5 @@
 import { ItemStack } from "@minecraft/server";
-import { Quest } from "@lazuli/ldk2";
+import { Quest } from "@grindstone/quest-kit";
 
 /**
  * 任务-树上新生枝桠

@@ -1,25 +1,6 @@
 import { RawMessage } from "@minecraft/server";
 
 /**
- * 隐藏之年文章的标题
- * @author 方漓猫
- */
-export const HyLetterTitle: RawMessage[] = [
-  { translate: "article.0.title" },
-  { translate: "article.1.title" },
-  { translate: "article.2.title" },
-  { translate: "article.3.title" },
-  { translate: "article.4.title" },
-  { translate: "article.5.title" },
-  { translate: "article.6.title" },
-  { translate: "article.7.title" },
-  { translate: "article.8.title" },
-  { translate: "article.9.title" },
-  { translate: "article.10.title" },
-  { translate: "article.11.title" },
-];
-
-/**
  * 隐藏之年阅读物的内容
  * @author 方漓猫
  */
