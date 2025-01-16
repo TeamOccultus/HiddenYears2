@@ -17,22 +17,6 @@ import { MagicAimAttack } from "../../core/magicAimAttack";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const itemRegistry = event.itemComponentRegistry;
-  itemRegistry.registerCustomComponent("lazuli:custom_tools", {
-    onMineBlock(arg) {
-      const item = getEquipmentItem(arg.source);
-      if (item) {
-        const newItem = consumeDurability(item, 1, arg.source);
-        setEquipmentItem(arg.source, newItem);
-      }
-    },
-    onHitEntity(arg) {
-      const item = getEquipmentItem(arg.attackingEntity);
-      if (item) {
-        const newItem = consumeDurability(item, 1, arg.attackingEntity);
-        setEquipmentItem(arg.attackingEntity, newItem);
-      }
-    },
-  });
   itemRegistry.registerCustomComponent("hy:frame_acrtiver", {
     onUseOn(arg) {
       const BLOCK = arg.block;

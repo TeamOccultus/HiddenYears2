@@ -54,9 +54,6 @@
         ]
       },
       "minecraft:icon": "hy.steel_shovel",
-      "minecraft:custom_components": [
-        "lazuli:custom_tools"
-      ],
       "minecraft:tags": {
         "tags": ["minecraft:is_shovel"]
       }
