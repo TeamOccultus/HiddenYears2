@@ -8,32 +8,47 @@ import { system } from "@minecraft/server";
 import { tryOperateEntity } from "@grindstone/utils";
 import { replaceLowerCopperTool } from "../../core/utils";
 
-const NORMAL_TOOL = new ToolTag("hy:custom_tools", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-});
+const NORMAL_TOOL = new ToolTag(
+  "hy:custom_tools",
+  {
+    destroyedAfterEvents: (holder, item) => {
+      replaceLowerCopperTool(item, holder);
+    },
+  }
+);
 
-const NORMAL_SHOVEL = new ToolTag("hy:custom_shovel", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-  type: "shovel",
-});
+const NORMAL_SHOVEL = new ToolTag(
+  "hy:custom_shovel",
+  {
+    destroyedAfterEvents: (holder, item) => {
+      replaceLowerCopperTool(item, holder);
+    },
+    type: "shovel",
+    closeDurabilityTrigger: true
+  }
+);
 
-const NORMAL_AXE = new ToolTag("hy:custom_axe", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-  type: "axe",
-});
+const NORMAL_AXE = new ToolTag(
+  "hy:custom_axe",
+  {
+    destroyedAfterEvents: (holder, item) => {
+      replaceLowerCopperTool(item, holder);
+    },
+    type: "axe",
+    closeDurabilityTrigger: true
+  }
+);
 
-const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-  type: "hoe",
-});
+const NORMAL_HOE = new ToolTag(
+  "hy:custom_hoe",
+  {
+    destroyedAfterEvents: (holder, item) => {
+      replaceLowerCopperTool(item, holder);
+    },
+    type: "hoe",
+    closeDurabilityTrigger: true
+  }
+);
 
 const NORMAL_WEAPON = new WeaponTag("hy:custom_weapons", {
   destroyedAfterEvents: (holder, item) => {
@@ -42,6 +57,7 @@ const NORMAL_WEAPON = new WeaponTag("hy:custom_weapons", {
 });
 
 const AWL_WEAPON = new WeaponTag("hy:is_awl", {
+  closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(5, "empty"),
     new WeaponAtkSkill(
@@ -73,6 +89,7 @@ const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
+  closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(5, "empty"),
     new WeaponAtkSkill(
@@ -116,6 +133,7 @@ const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
 });
 
 const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
+  closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(2, "empty"),
     new WeaponAtkSkill(
@@ -147,14 +165,6 @@ const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
       },
       { translate: "hy.itemSkill.crowbar.2" }
     ),
-    new WeaponUseSkill(
-      1,
-      {
-        xp: 114,
-      },
-      { text: "这是测试的使用技能" },
-      10
-    ),
   ],
 });
 
@@ -162,6 +172,7 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
+  closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(3, "empty"),
     new WeaponAtkSkill(
@@ -195,7 +206,8 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
   ],
 });
 
-const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode", {
+const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode",{
+  closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(5, "empty"),
     new WeaponAtkSkill(
