@@ -7,7 +7,18 @@
         "groups": [
           {
             "group_identifier": {
-              "icon": "hy:wooden_dagger",
+              "icon": "hy:diamond_crowbar",
+              "name": "hy:itemGroup.name.crowbars"
+            },
+            "items": [
+              "hy:gold_crowbar",
+              "hy:iron_crowbar",
+              "hy:diamond_crowbar"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_dagger",
               "name": "hy:itemGroup.name.daggers"
             },
             "items": [
@@ -27,6 +38,38 @@
               "hy:steel_dagger",
               "hy:netherite_dagger",
               "hy:smaragdus_dagger"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_hammer",
+              "name": "hy:itemGroup.name.hammers"
+            },
+            "items": [
+              "hy:wooden_hammer",
+              "hy:stone_hammer",
+              "hy:gold_hammer",
+              "hy:imitation_gold_hammer",
+              "hy:over_metal_hammer",
+              "hy:nether_metal_hammer",
+              "hy:end_metal_hammer",
+              "hy:amethyst_hammer",
+              "hy:imitation_amethyst_hammer",
+              "hy:bone_piece_hammer",
+              "hy:corrosion_hammer",
+              "hy:copper_hammer",
+              "hy:exposed_copper_hammer",
+              "hy:weathered_copper_hammer",
+              "hy:oxidized_copper_hammer",
+              "hy:iron_hammer",
+              "hy:imitation_iron_hammer",
+              "hy:flash_copper_hammer",
+              "hy:flash_metal_hammer",
+              "hy:diamond_hammer",
+              "hy:imitation_diamond_hammer",
+              "hy:steel_hammer",
+              "hy:netherite_hammer",
+              "hy:smaragdus_hammer"
             ]
           },
           {
@@ -73,11 +116,44 @@
         "groups": [
           {
             "group_identifier": {
+              "icon": "minecraft:leather",
+              "name": "hy:itemGroup.name.leathers"
+            },
+            "items": ["hy:raw_large_leather", "hy:raw_small_leather"]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:wooden_awl",
+              "name": "hy:itemGroup.name.awls"
+            },
+            "items": [
+              "hy:wooden_awl",
+              "hy:stone_awl",
+              "hy:gold_awl",
+              "hy:over_metal_awl",
+              "hy:nether_metal_awl",
+              "hy:end_metal_awl",
+              "hy:amethyst_awl",
+              "hy:corrosion_awl",
+              "hy:copper_awl",
+              "hy:iron_awl",
+              "hy:flash_copper_awl",
+              "hy:flash_metal_awl",
+              "hy:diamond_awl",
+              "hy:steel_awl",
+              "hy:netherite_awl",
+              "hy:smaragdus_awl"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hy:story_book",
               "name": "hy:itemGroup.name.readings"
             },
             "items": [
+              "hy:quest_book",
               "hy:story_book",
+              "hy:collection_book",
               "hy:letter_0",
               "hy:letter_1",
               "hy:letter_2",
@@ -92,9 +168,142 @@
               "hy:letter_11",
               "hy:letter_12",
               "hy:letter_13",
-              "hy:letter_",
               "hy:letter_14",
               "hy:letter_15"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:fuel_metal",
+              "name": "hy:itemGroup.name.fuels"
+            },
+            "items": [
+              "hy:fuel_metal",
+              "hy:fuel_metal_stick",
+              "hy:crop_fuel_metal",
+              "hy:mineral_fuel_metal",
+              "hy:nightmare_fuel_metal",
+              "hy:mineral_coal",
+              "hy:mineral_charcoal"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_nugget",
+              "name": "hy:itemGroup.name.nuggets"
+            },
+            "items": [
+              "sc:stone_nugget",
+              "hy:coal_nugget",
+              "hy:tin_nugget",
+              "hy:redstone_nugget",
+              "hy:quartz_nugget",
+              "hy:lapis_nugget",
+              "hy:emerald_nugget",
+              "hy:over_metal_nugget",
+              "hy:nether_metal_nugget",
+              "hy:end_metal_nugget",
+              "hy:amethyst_nugget",
+              "hy:copper_nugget",
+              "hy:flash_copper_nugget",
+              "hy:flash_metal_nugget",
+              "hy:diamond_nugget",
+              "hy:steel_nugget",
+              "hy:netherite_nugget"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_dust",
+              "name": "hy:itemGroup.name.dusts"
+            },
+            "items": [
+              "hy:coal_dust",
+              "hy:tin_dust",
+              "hy:quartz_dust",
+              "hy:lapis_dust",
+              "hy:emerald_dust",
+              "hy:exposed_copper_dust",
+              "hy:weathered_copper_dust",
+              "hy:oxidized_copper_dust",
+              "hy:amethyst_dust",
+              "hy:copper_dust",
+              "hy:iron_dust",
+              "hy:gold_dust",
+              "hy:flash_copper_dust",
+              "hy:flash_metal_dust",
+              "hy:diamond_dust",
+              "hy:steel_dust",
+              "hy:netherite_dust"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:imitation_amethyst_ingot",
+              "name": "hy:itemGroup.name.imitations"
+            },
+            "items": [
+              "hy:imitation_amethyst_ingot",
+              "hy:imitation_charcoal",
+              "hy:imitation_coal",
+              "hy:imitation_diamond",
+              "hy:imitation_gold_ingot",
+              "hy:imitation_iron_ingot"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:gold_coin",
+              "name": "hy:itemGroup.name.coins"
+            },
+            "items": [
+              "hy:gold_coin",
+              "hy:copper_coin",
+              "hy:diamond_coin",
+              "hy:stack_of_gold_coin",
+              "hy:stack_of_copper_coin",
+              "hy:stack_of_diamond_coin"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:disc_fragment_blocks",
+              "name": "hy:itemGroup.name.disc_fragments"
+            },
+            "items": [
+              "hy:disc_fragment_blocks",
+              "hy:disc_fragment_cat",
+              "hy:disc_fragment_chirp",
+              "hy:disc_fragment_far",
+              "hy:disc_fragment_mall",
+              "hy:disc_fragment_mllohi"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:drift_sand_shooter_spawn_egg",
+              "name": "hy:itemGroup.name.spawn_eggs"
+            },
+            "items": [
+              "hy:king_of_ruby_spawn_egg",
+              "hy:ruby_guardian_spawn_egg",
+              "hy:ruby_skeleton_spawn_egg",
+              "hy:ruby_zombie_spawn_egg",
+              "hy:mummy_spawn_egg",
+              "hy:sand_creeper_spawn_egg",
+              "hy:sand_silverfish_spawn_egg",
+              "hy:scorpion_spawn_egg",
+              "hy:gemstone_trader_spawn_egg",
+              "hy:hidden_trader_spawn_egg",
+              "hy:drift_sand_guardian_spawn_egg",
+              "hy:drift_sand_sergeant_spawn_egg",
+              "hy:drift_sand_shooter_spawn_egg",
+              "hy:drift_sand_soldier_spawn_egg",
+              "hy:ferocious_sprite_spawn_egg",
+              "hy:pharaohs_ghost_spawn_egg",
+              "hy:rabbit_killer_spawn_egg",
+              "hy:sprite_spawn_egg",
+              "hy:venomous_spider_spawn_egg"
             ]
           }
         ]

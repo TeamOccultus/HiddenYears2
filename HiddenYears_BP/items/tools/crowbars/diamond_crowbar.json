@@ -4,8 +4,7 @@
     "description": {
       "identifier": "hy:diamond_crowbar",
       "menu_category": {
-        "category": "equipment",
-        "group": "itemGroup.name.pickaxe"
+        "category": "equipment"
       }
     },
     "components": {

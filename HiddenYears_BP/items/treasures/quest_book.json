@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hy:quest_book",
       "menu_category": {
-        "category": "equipment"
+        "category": "items"
       }
     },
     "components": {

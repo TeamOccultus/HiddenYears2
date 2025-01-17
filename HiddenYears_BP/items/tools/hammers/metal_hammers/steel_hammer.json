@@ -2,9 +2,8 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "menu_category":{
-        "category": "equipment",
-        "group": "itemGroup.name.pickaxe"
+      "menu_category": {
+        "category": "equipment"
       },
       "identifier": "hy:steel_hammer"
     },

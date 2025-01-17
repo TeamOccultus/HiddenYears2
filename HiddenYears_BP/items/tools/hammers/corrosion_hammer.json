@@ -3,8 +3,7 @@
   "minecraft:item": {
     "description": {
       "menu_category": {
-        "category": "equipment",
-        "group": "itemGroup.name.pickaxe"
+        "category": "equipment"
       },
       "identifier": "hy:corrosion_hammer"
     },
