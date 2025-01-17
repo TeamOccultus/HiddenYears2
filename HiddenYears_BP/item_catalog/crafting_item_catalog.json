@@ -5,30 +5,30 @@
       {
         "category_name": "equipment",
         "groups": [
-            {
-                "group_identifier": {
-                  "icon": "hy:wooden_dagger",
-                  "name": "hy:itemGroup.name.daggers"
-                },
-                "items": [
-                  "hy:wooden_dagger",
-                  "hy:stone_dagger",
-                  "hy:gold_dagger",
-                  "hy:over_metal_dagger",
-                  "hy:nether_metal_dagger",
-                  "hy:end_metal_dagger",
-                  "hy:amethyst_dagger",
-                  "hy:corrosion_dagger",
-                  "hy:copper_dagger",
-                  "hy:iron_dagger",
-                  "hy:flash_copper_dagger",
-                  "hy:flash_metal_dagger",
-                  "hy:diamond_dagger",
-                  "hy:steel_dagger",
-                  "hy:netherite_dagger",
-                  "hy:smaragdus_dagger"
-                ]
-              },
+          {
+            "group_identifier": {
+              "icon": "hy:wooden_dagger",
+              "name": "hy:itemGroup.name.daggers"
+            },
+            "items": [
+              "hy:wooden_dagger",
+              "hy:stone_dagger",
+              "hy:gold_dagger",
+              "hy:over_metal_dagger",
+              "hy:nether_metal_dagger",
+              "hy:end_metal_dagger",
+              "hy:amethyst_dagger",
+              "hy:corrosion_dagger",
+              "hy:copper_dagger",
+              "hy:iron_dagger",
+              "hy:flash_copper_dagger",
+              "hy:flash_metal_dagger",
+              "hy:diamond_dagger",
+              "hy:steel_dagger",
+              "hy:netherite_dagger",
+              "hy:smaragdus_dagger"
+            ]
+          },
           {
             "group_identifier": {
               "icon": "hy:amethyst_boardsword_embryo",
@@ -64,10 +64,37 @@
               "icon": "hy:golden_badge",
               "name": "hy:itemGroup.name.badges"
             },
+            "items": ["hy:diamond_badge", "hy:golden_badge", "hy:copper_badge"]
+          }
+        ]
+      },
+      {
+        "category_name": "items",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "hy:story_book",
+              "name": "hy:itemGroup.name.readings"
+            },
             "items": [
-              "hy:diamond_badge",
-              "hy:golden_badge",
-              "hy:copper_badge"
+              "hy:story_book",
+              "hy:letter_0",
+              "hy:letter_1",
+              "hy:letter_2",
+              "hy:letter_3",
+              "hy:letter_4",
+              "hy:letter_5",
+              "hy:letter_6",
+              "hy:letter_7",
+              "hy:letter_8",
+              "hy:letter_9",
+              "hy:letter_10",
+              "hy:letter_11",
+              "hy:letter_12",
+              "hy:letter_13",
+              "hy:letter_",
+              "hy:letter_14",
+              "hy:letter_15"
             ]
           }
         ]

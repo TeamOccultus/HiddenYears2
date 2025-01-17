@@ -4,15 +4,14 @@
     "description": {
       "identifier": "hy:letter_7",
       "menu_category": {
-        "category": "none",
-        "is_hidden_in_commands": false
+        "category": "items"
       }
     },
     "components": {
       "minecraft:icon": "hy.lost_letter",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
-        "value": "hy.item.lost_letter"
+        "value": "article.7.title"
       },
       "minecraft:hover_text_color": "yellow"
     }
