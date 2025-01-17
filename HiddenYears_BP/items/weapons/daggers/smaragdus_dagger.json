@@ -4,8 +4,7 @@
     "description": {
       "identifier": "hy:smaragdus_dagger",
       "menu_category":{
-        "category": "equipment",
-        "group": "itemGroup.name.sword"
+        "category": "equipment"
       }
     },
     "components": {

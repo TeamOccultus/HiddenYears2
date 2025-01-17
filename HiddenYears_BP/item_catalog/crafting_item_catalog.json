@@ -1,21 +1,77 @@
 {
-    "format_version": "1.21.60",
-    "minecraft:crafting_items_catalog": {
-      "categories": [
-        {
-          "category_name": "equipment",
-          "groups": [
+  "format_version": "1.21.60",
+  "minecraft:crafting_items_catalog": {
+    "categories": [
+      {
+        "category_name": "equipment",
+        "groups": [
             {
-              "group_identifier": {
-                "icon": "minecraft:oak_planks",
-                "name": "minecraft:itemGroup.name.planks"
+                "group_identifier": {
+                  "icon": "hy:wooden_dagger",
+                  "name": "hy:itemGroup.name.daggers"
+                },
+                "items": [
+                  "hy:wooden_dagger",
+                  "hy:stone_dagger",
+                  "hy:gold_dagger",
+                  "hy:over_metal_dagger",
+                  "hy:nether_metal_dagger",
+                  "hy:end_metal_dagger",
+                  "hy:amethyst_dagger",
+                  "hy:corrosion_dagger",
+                  "hy:copper_dagger",
+                  "hy:iron_dagger",
+                  "hy:flash_copper_dagger",
+                  "hy:flash_metal_dagger",
+                  "hy:diamond_dagger",
+                  "hy:steel_dagger",
+                  "hy:netherite_dagger",
+                  "hy:smaragdus_dagger"
+                ]
               },
-              "items": [
-                "namespace:identifier"
-              ]
-            }
-          ]
-        }
-      ]
-    }
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_boardsword_embryo",
+              "name": "hy:itemGroup.name.embryos"
+            },
+            "items": [
+              "hy:amethyst_boardsword_embryo",
+              "hy:bone_boardsword_embryo",
+              "hy:corrosion_boardsword_embryo",
+              "hy:emerald_boardsword_embryo",
+              "hy:flash_copper_boardsword_embryo",
+              "hy:flash_metal_boardsword_embryo",
+              "hy:ruby_boardsword_embryo"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_boardsword",
+              "name": "hy:itemGroup.name.boardswords"
+            },
+            "items": [
+              "hy:amethyst_boardsword",
+              "hy:bone_boardsword",
+              "hy:corrosion_boardsword",
+              "hy:emerald_boardsword",
+              "hy:flash_copper_boardsword",
+              "hy:flash_metal_boardsword",
+              "hy:ruby_boardsword"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:golden_badge",
+              "name": "hy:itemGroup.name.badges"
+            },
+            "items": [
+              "hy:diamond_badge",
+              "hy:golden_badge",
+              "hy:copper_badge"
+            ]
+          }
+        ]
+      }
+    ]
   }
+}

@@ -1190,3 +1190,7 @@ hy.message.wait_cooldown=法器滋滋作响，恐怕是没能量了
 hy.message.know_details=你已经完全了解了这个法器！
 hy.item.bleak_totem=黯淡的图腾
 
+hy:itemGroup.name.embryos=隐藏之年·铸剑原胚
+hy:itemGroup.name.boardswords=隐藏之年·阔剑
+hy:itemGroup.name.badges=隐藏之年·徽章
+hy:itemGroup.name.daggers=隐藏之年·匕首
