@@ -2,16 +2,16 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:cooling_potion",
+      "identifier": "hy:medicine_14",
       "menu_category": {
         "category": "equipment"
       }
     },
     "components": {
-      "minecraft:max_stack_size": 16,
-      "minecraft:icon": "hy.cooling_potion",
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "hy.medicines.14",
       "minecraft:display_name": {
-        "value": "hy.item.cooling_potion"
+        "value": "hy.item.medicines.14"
       },
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
@@ -19,13 +19,13 @@
         "movement_modifier": 0.5
       },
       "minecraft:food": {
-        "nutrition": 1,
+        "nutrition": 2,
         "can_always_eat": true,
         "saturation_modifier": 1.0,
         "using_converts_to": "glass_bottle"
       },
       "minecraft:tags": {
-        "tags": ["potion"]
+        "tags": ["hy:medicine_potion"]
       }
     }
   }

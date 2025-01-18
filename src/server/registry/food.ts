@@ -1,6 +1,6 @@
-import { ItemStack, world } from "@minecraft/server";
+import { EntityDamageCause, ItemStack, world } from "@minecraft/server";
 import { FoodItemBuilder } from "@grindstone/item-kit";
-import { giveItem } from "@grindstone/utils";
+import { clearEffect, EffectGroups, giveItem } from "@grindstone/utils";
 
 const FUEL_METAL = new FoodItemBuilder(
   "hy:fuel_metal",
@@ -53,6 +53,107 @@ const RUBY_APPLE = new FoodItemBuilder("hy:ruby_apple", [], (event) => {
   world.playSound("random.orb", PLAYER.location);
 });
 
+const MEDICINE_1 = new FoodItemBuilder(
+  "hy:medicine_1",
+  [{ effectType: "saturation", duration: 400 }],
+  (event) => {
+    clearEffect(event.source, ["nausea", "hunger"]);
+  }
+);
+
+const MEDICINE_2 = new FoodItemBuilder("hy:medicine_2", [], (event) => {
+  clearEffect(event.source, EffectGroups.bad);
+});
+
+const MEDICINE_3 = new FoodItemBuilder(
+  "hy:medicine_3",
+  [{ effectType: "night_vision", duration: 400 }],
+  (event) => {
+    clearEffect(event.source, ["blindness", "darkness"]);
+  }
+);
+
+const MEDICINE_4 = new FoodItemBuilder(
+  "hy:medicine_4",
+  [
+    { effectType: "blindness", duration: 600 },
+    { effectType: "darkness", duration: 600 },
+  ],
+  (event) => {
+    clearEffect(event.source, "night_vision");
+  }
+);
+
+const MEDICINE_5 = new FoodItemBuilder(
+  "hy:medicine_5",
+  [{ effectType: "absorption", duration: 400 }],
+  (event) => {
+    clearEffect(event.source, ["wither", "poison", "fatal_poison"]);
+  }
+);
+
+const MEDICINE_6 = new FoodItemBuilder(
+  "hy:medicine_6",
+  [{ effectType: "strength", duration: 400 }],
+  (event) => {
+    clearEffect(event.source, "weakness");
+  }
+);
+
+const MEDICINE_7 = new FoodItemBuilder(
+  "hy:medicine_7",
+  [{ effectType: "speed", duration: 600 }],
+  (event) => {
+    clearEffect(event.source, "slowness");
+  }
+);
+
+const MEDICINE_8 = new FoodItemBuilder(
+  "hy:medicine_8",
+  [{ effectType: "jump_boost", duration: 600 }],
+  (event) => {
+    clearEffect(event.source, "slowness");
+  }
+);
+
+const MEDICINE_9 = new FoodItemBuilder("hy:medicine_9", [
+  { effectType: "poison", duration: 400 },
+  { effectType: "slowness", duration: 400 },
+  { effectType: "weakness", duration: 400 },
+]);
+
+const MEDICINE_10 = new FoodItemBuilder("hy:medicine_10", [], (event) => {
+  event.source.applyDamage(5, { cause: EntityDamageCause.magic });
+});
+
+const MEDICINE_11 = new FoodItemBuilder("hy:medicine_9", [], (event) => {
+  clearEffect(event.source, EffectGroups.good);
+});
+
+const MEDICINE_12 = new FoodItemBuilder(
+  "hy:medicine_12",
+  [{ effectType: "village_hero", duration: 3000 }],
+  (event) => {
+    clearEffect(event.source, "bad_omen");
+  }
+);
+
+const MEDICINE_13 = new FoodItemBuilder(
+  "hy:medicine_13",
+  [{ effectType: "water_breathing", duration: 300 }],
+  (event) => {
+    clearEffect(event.source, "mining_fatigue");
+  }
+);
+
+const MEDICINE_14 = new FoodItemBuilder("hy:medicine_14", [
+  { effectType: "fire_resistance", duration: 400 },
+]);
+
+const MEDICINE_15 = new FoodItemBuilder("hy:medicine_15", [
+  { effectType: "health_boost", duration: 6000 },
+]);
+
 export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
     const [PLAYER, ITEM] = [event.source, event.itemStack];
@@ -68,4 +169,19 @@ export function registryFood() {
   COOLING_POTION.build();
   PAW_DUST.build();
   RUBY_APPLE.build();
+  MEDICINE_1.build();
+  MEDICINE_2.build();
+  MEDICINE_3.build();
+  MEDICINE_4.build();
+  MEDICINE_5.build();
+  MEDICINE_6.build();
+  MEDICINE_7.build();
+  MEDICINE_8.build();
+  MEDICINE_9.build();
+  MEDICINE_10.build();
+  MEDICINE_11.build();
+  MEDICINE_12.build();
+  MEDICINE_13.build();
+  MEDICINE_14.build();
+  MEDICINE_15.build();
 }

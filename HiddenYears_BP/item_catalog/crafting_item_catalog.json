@@ -108,6 +108,29 @@
               "name": "hy:itemGroup.name.badges"
             },
             "items": ["hy:diamond_badge", "hy:golden_badge", "hy:copper_badge"]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:medicine_1",
+              "name": "hy:itemGroup.name.medicines"
+            },
+            "items": [
+              "hy:medicine_1",
+              "hy:medicine_2",
+              "hy:medicine_3",
+              "hy:medicine_4",
+              "hy:medicine_5",
+              "hy:medicine_6",
+              "hy:medicine_7",
+              "hy:medicine_8",
+              "hy:medicine_9",
+              "hy:medicine_10",
+              "hy:medicine_11",
+              "hy:medicine_12",
+              "hy:medicine_13",
+              "hy:medicine_14",
+              "hy:cooling_potion"
+            ]
           }
         ]
       },
