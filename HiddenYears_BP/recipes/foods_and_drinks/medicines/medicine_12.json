@@ -1,0 +1,28 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "medicine_12"
+    },
+    "tags": ["medicine_table"],
+    "ingredients": [
+      {
+        "item": "potion"
+      },
+      {
+        "item": "pitcher_plant"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "potion"
+      },
+      {
+        "item": "pitcher_plant"
+      }
+    ],
+    "result": {
+      "item": "hy:medicine_12"
+    }
+  }
+}
