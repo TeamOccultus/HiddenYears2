@@ -150,10 +150,6 @@ const MEDICINE_14 = new FoodItemBuilder("hy:medicine_14", [
   { effectType: "fire_resistance", duration: 400 },
 ]);
 
-const MEDICINE_15 = new FoodItemBuilder("hy:medicine_15", [
-  { effectType: "health_boost", duration: 6000 },
-]);
-
 export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
     const [PLAYER, ITEM] = [event.source, event.itemStack];
@@ -183,5 +179,4 @@ export function registryFood() {
   MEDICINE_12.build();
   MEDICINE_13.build();
   MEDICINE_14.build();
-  MEDICINE_15.build();
 }
