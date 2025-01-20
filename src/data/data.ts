@@ -1,4 +1,4 @@
-import { ItemStack } from "@minecraft/server";
+import { Dimension, ItemStack, world } from "@minecraft/server";
 
 /**
  * 物品锈蚀的对应表
@@ -26,3 +26,16 @@ export const HyCorrosionMap = {
   exposed_copper_sword: new ItemStack("hy:weathered_copper_sword"),
   weathered_copper_sword: new ItemStack("hy:oxidized_copper_sword"),
 };
+
+/**
+ * All vanilla dimensions.
+ */
+export const vanillaDimensions: Dimension[] = [
+  world.getDimension("minecraft:overworld"),
+  world.getDimension("minecraft:nether"),
+  world.getDimension("minecraft:the_end"),
+];
+
+export const Overworld: Dimension = world.getDimension("minecraft:overworld");
+export const Nether: Dimension = world.getDimension("minecraft:nether");
+export const TheEnd: Dimension = world.getDimension("minecraft:the_end");

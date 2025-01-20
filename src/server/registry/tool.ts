@@ -7,48 +7,37 @@ import {
 import { system } from "@minecraft/server";
 import { tryOperateEntity } from "@grindstone/utils";
 import { replaceLowerCopperTool } from "../../core/utils";
+import { bleedEffect } from "../effects/bleed";
 
-const NORMAL_TOOL = new ToolTag(
-  "hy:custom_tools",
-  {
-    destroyedAfterEvents: (holder, item) => {
-      replaceLowerCopperTool(item, holder);
-    },
-  }
-);
+const NORMAL_TOOL = new ToolTag("hy:custom_tools", {
+  destroyedAfterEvents: (holder, item) => {
+    replaceLowerCopperTool(item, holder);
+  },
+});
 
-const NORMAL_SHOVEL = new ToolTag(
-  "hy:custom_shovel",
-  {
-    destroyedAfterEvents: (holder, item) => {
-      replaceLowerCopperTool(item, holder);
-    },
-    type: "shovel",
-    closeDurabilityTrigger: true
-  }
-);
+const NORMAL_SHOVEL = new ToolTag("hy:custom_shovel", {
+  destroyedAfterEvents: (holder, item) => {
+    replaceLowerCopperTool(item, holder);
+  },
+  type: "shovel",
+  closeDurabilityTrigger: true,
+});
 
-const NORMAL_AXE = new ToolTag(
-  "hy:custom_axe",
-  {
-    destroyedAfterEvents: (holder, item) => {
-      replaceLowerCopperTool(item, holder);
-    },
-    type: "axe",
-    closeDurabilityTrigger: true
-  }
-);
+const NORMAL_AXE = new ToolTag("hy:custom_axe", {
+  destroyedAfterEvents: (holder, item) => {
+    replaceLowerCopperTool(item, holder);
+  },
+  type: "axe",
+  closeDurabilityTrigger: true,
+});
 
-const NORMAL_HOE = new ToolTag(
-  "hy:custom_hoe",
-  {
-    destroyedAfterEvents: (holder, item) => {
-      replaceLowerCopperTool(item, holder);
-    },
-    type: "hoe",
-    closeDurabilityTrigger: true
-  }
-);
+const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
+  destroyedAfterEvents: (holder, item) => {
+    replaceLowerCopperTool(item, holder);
+  },
+  type: "hoe",
+  closeDurabilityTrigger: true,
+});
 
 const NORMAL_WEAPON = new WeaponTag("hy:custom_weapons", {
   destroyedAfterEvents: (holder, item) => {
@@ -178,13 +167,8 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
     new WeaponAtkSkill(
       3,
       {
-        custom: (entity, target) => {
-          target.addTag("hy:bleed_lv1");
-          system.runTimeout(() => {
-            tryOperateEntity(target, (entity) => {
-              entity.removeTag("hy:bleed_lv1");
-            });
-          }, 160);
+        custom: (attacker, target) => {
+          bleedEffect.addLevelTemporarily(target, 1, 100);
         },
       },
       { translate: "hy.itemSkill.knife.1" }
@@ -192,13 +176,8 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
     new WeaponAtkSkill(
       1,
       {
-        custom: (entity, target) => {
-          target.addTag("hy:bleed_lv2");
-          system.runTimeout(() => {
-            tryOperateEntity(target, (entity) => {
-              entity.removeTag("hy:bleed_lv2");
-            });
-          }, 160);
+        custom: (attacker, target) => {
+          bleedEffect.addLevelTemporarily(target, 2, 120);
         },
       },
       { translate: "hy.itemSkill.knife.2" }
@@ -206,7 +185,7 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
   ],
 });
 
-const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode",{
+const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode", {
   closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(5, "empty"),

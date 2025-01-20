@@ -8,10 +8,14 @@ import { registryBoss } from "./server/registry/boss";
 import { registryTool } from "./server/registry/tool";
 import { registryItem } from "./server/registry/item";
 import "./server/registry/component";
+import { initializeMod } from "@grindstone/core";
+import { bleedEffect } from "./server/effects/bleed";
 
-Hy2System.initialize();
-Hy2System.eventMonitor();
-Hy2System.backwardsCompatibility();
+
+initializeMod("hy",  "HiddenYears");
+Hy2System.registryTickEvent();
+Hy2System.registryTrigger();
+Hy2System.replaceOldItem();
 Hy2Block.eventMonitor();
 Hy2Entity.eventMonitor();
 Hy2Entity.spawnMonitor();
@@ -21,3 +25,4 @@ registryArticle();
 registryBoss();
 registryTool();
 registryItem();
+bleedEffect.startTrigger();

@@ -1,48 +1,48 @@
-import { EntityInventoryComponent, ItemStack, system, world } from "@minecraft/server";
-import { initializeMod } from "@grindstone/core";
+import {
+  EntityInventoryComponent,
+  ItemStack,
+  system,
+  world,
+} from "@minecraft/server";
 import {
   badgeEffectMonitor,
   bleedEffectMonitor,
   dehydrationEffectMonitor,
   droughtEffectMonitor,
-} from "../core/effects";
+} from "../core/tickEventMonitor";
 import { replaceItemStack } from "@grindstone/utils";
+import { magicExplodeTrigger, tetanusAttackTrigger, corrosionAttackTrigger, imitationDamageTrigger } from "../core/triggers";
 
 export class Hy2System {
   /**
-   * 初始化模组
+   * 事件监听
    */
-  static initialize(): void {
-    initializeMod("hy",  "HiddenYears");
-  }
-  /**
-   * 监听系统事件
-   */
-  static eventMonitor(): void {
-    /** 清除铜食物食用次数 */
+  static registryTickEvent(): void {
     system.runInterval(() => {
-      const PLAYERS = world.getPlayers();
-      PLAYERS.forEach((players) => {
-        players.setDynamicProperty("hy:copper_foods", 0);
-        console.log(
-          "Dynamic Property of copper food eating counts has reset to zero."
-        );
-      });
-    }, 18000);
-    system.runInterval(() => {
-      bleedEffectMonitor();
+     // bleedEffectMonitor();
       droughtEffectMonitor();
       dehydrationEffectMonitor();
       badgeEffectMonitor();
     }, 20);
   }
   /**
-   * 进行向下兼容
+   * 注册事件监听器
    */
-  static backwardsCompatibility() {
+  static registryTrigger(): void{
+    magicExplodeTrigger();
+    tetanusAttackTrigger();
+    corrosionAttackTrigger()
+    imitationDamageTrigger();
+  }
+  /**
+   * 更新物品ID
+   */
+  static replaceOldItem() {
     world.afterEvents.playerSpawn.subscribe((event) => {
       const player = event.player;
-      const inventory= player.getComponent("inventory") as EntityInventoryComponent;
+      const inventory = player.getComponent(
+        "inventory"
+      ) as EntityInventoryComponent;
       replaceItemStack(
         new ItemStack("hy:raw_flash_copper_ingot"),
         new ItemStack("hy:flash_copper_ingot"),

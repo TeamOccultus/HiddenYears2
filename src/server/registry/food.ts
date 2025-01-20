@@ -7,6 +7,8 @@ const FUEL_METAL = new FoodItemBuilder(
   [{ effectType: "poison", duration: 1200 }],
   (event) => {
     event.source.sendMessage([{ translate: "hy.message.fuel_metal" }]);
+    const entities = event.source.dimension.getEntities();
+    console.log(entities, event.source.name);
   }
 );
 

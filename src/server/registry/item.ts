@@ -385,10 +385,6 @@ const RAIN_GOD_BLESSING = new PropBuilder("hy:rain_god_blessing", (event) => {
  * 注册道具
  */
 export function registryItem() {
-  magicExplodeTrigger();
-  tetanusAttackTrigger();
-  corrosionAttackTrigger()
-  imitationDamageTrigger();
   BANDAGE.build();
   MEDICINE_PACK.build();
   COPPER_HORN.build();
