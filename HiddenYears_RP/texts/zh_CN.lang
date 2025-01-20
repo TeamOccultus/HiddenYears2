@@ -1206,4 +1206,6 @@ hy:itemGroup.name.crowbars=隐藏之年·撬棍
 hy:itemGroup.name.hammers=隐藏之年·锤
 hy:itemGroup.name.spawn_eggs=隐藏之年·刷怪蛋
 hy:itemGroup.name.leathers=隐藏之年·皮革
-hy:itemGroup.name.medicines=隐藏之年·药茶
+hy:itemGroup.name.medicines=隐藏之年·药物
+hy:itemGroup.name.materials=隐藏之年·铸锭与宝石
+hy:itemGroup.name.raw_materials=隐藏之年·原始材料

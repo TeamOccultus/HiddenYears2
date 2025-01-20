@@ -129,7 +129,9 @@
               "hy:medicine_12",
               "hy:medicine_13",
               "hy:medicine_14",
-              "hy:cooling_potion"
+              "hy:cooling_potion",
+              "hy:bandage",
+              "hy:medicine_pack"
             ]
           }
         ]
@@ -139,7 +141,7 @@
         "groups": [
           {
             "group_identifier": {
-              "icon": "minecraft:leather",
+              "icon": "hy:raw_large_leather",
               "name": "hy:itemGroup.name.leathers"
             },
             "items": ["hy:raw_large_leather", "hy:raw_small_leather"]
@@ -302,9 +304,9 @@
               "hy:disc_fragment_mllohi"
             ]
           },
-          {
+         /* {
             "group_identifier": {
-              "icon": "hy:drift_sand_shooter_spawn_egg",
+              "icon": "hy:king_of_ruby_spawn_egg",
               "name": "hy:itemGroup.name.spawn_eggs"
             },
             "items": [
@@ -327,6 +329,37 @@
               "hy:rabbit_killer_spawn_egg",
               "hy:sprite_spawn_egg",
               "hy:venomous_spider_spawn_egg"
+            ]
+          },*/
+          {
+            "group_identifier": {
+              "icon": "hy:amethyst_ingot",
+              "name": "hy:itemGroup.name.materials"
+            },
+            "items": [
+              "hy:amethyst_ingot",
+              "hy:over_metal_ingot",
+              "hy:nether_metal_ingot",
+              "hy:end_metal_ingot",
+              "hy:flash_copper_ingot",
+              "hy:flash_metal_ingot",
+              "hy:steel_ingot",
+              "hy:corrosion_ingot",
+              "hy:tin_ingot",
+              "hy:ruby",
+              "hy:smaragdus"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:steel_core",
+              "name": "hy:itemGroup.name.raw_materials"
+            },
+            "items": [
+              "hy:steel_core",
+              "hy:ancient_extracts",
+              "hy:raw_steel_ingot",
+              "hy:raw_tin"
             ]
           }
         ]
