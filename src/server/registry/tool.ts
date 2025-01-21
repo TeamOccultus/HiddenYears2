@@ -4,9 +4,9 @@ import {
   WeaponTag,
 } from "@grindstone/item-kit";
 import { replaceLowerCopperTool } from "../../core/utils";
-import { bleedEffect } from "../effects/bleed";
-import { droughtEffect } from "../effects/drought";
-import { dehydrationEffect } from "../effects/dehydration";
+import { bleedEffect } from "./effects/bleed";
+import { droughtEffect } from "./effects/drought";
+import { dehydrationEffect } from "./effects/dehydration";
 
 const normalTool = new ToolTag("hy:custom_tools", {
   destroyedAfterEvents: (holder, item) => {

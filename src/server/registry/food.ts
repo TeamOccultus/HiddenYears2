@@ -1,8 +1,8 @@
 import { EntityDamageCause, ItemStack, world } from "@minecraft/server";
 import { FoodItemBuilder } from "@grindstone/item-kit";
 import { clearEffect, EffectGroups, giveItem } from "@grindstone/utils";
-import { dehydrationEffect } from "../effects/dehydration";
-import { droughtEffect } from "../effects/drought";
+import { dehydrationEffect } from "./effects/dehydration";
+import { droughtEffect } from "./effects/drought";
 
 const FUEL_METAL = new FoodItemBuilder(
   "hy:fuel_metal",
@@ -154,6 +154,9 @@ const MEDICINE_14 = new FoodItemBuilder("hy:medicine_14", [
   { effectType: "fire_resistance", duration: 400 },
 ]);
 
+/**
+ * 注册食物
+ */
 export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
     const [player, item] = [event.source, event.itemStack];

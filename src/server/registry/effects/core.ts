@@ -1,5 +1,5 @@
 import { Entity, system, world } from "@minecraft/server";
-import { vanillaDimensions } from "../../data/data";
+import { vanillaDimensions } from "../../../data/data";
 
 export class VirtualEffect {
   protected effect: (entity: Entity, level: number) => void;

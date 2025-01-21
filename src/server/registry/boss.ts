@@ -1,8 +1,6 @@
 import { BlockVolume, Player, system, world } from "@minecraft/server";
 import { Boss, BossSkill } from "@grindstone/entity-kit";
-import { isAffectByBossDroughtDebuff } from "../../core/utils";
-import { MagicAimAttack } from "../../core/magicAimAttack";
-import { droughtEffect } from "../effects/drought";
+import { droughtEffect } from "./effects/drought";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
   level: -9999,

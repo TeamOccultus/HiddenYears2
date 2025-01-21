@@ -1,5 +1,4 @@
 import {
-  ItemStack,
   Player,
   StructureAnimationMode,
   system,
@@ -7,13 +6,10 @@ import {
   world,
 } from "@minecraft/server";
 import {
-  consumeDurability,
   getEquipmentItem,
-  giveItem,
   loot,
   setEquipmentItem,
 } from "@grindstone/utils";
-import { MagicAimAttack } from "../../core/magicAimAttack";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const itemRegistry = event.itemComponentRegistry;

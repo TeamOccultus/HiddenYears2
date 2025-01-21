@@ -4,12 +4,14 @@ import {
   system,
   world,
 } from "@minecraft/server";
-import {
-  badgeEffectMonitor,
-  dehydrationEffectMonitor,
-} from "../core/tickEventMonitor";
+import { badgeEffectMonitor } from "../core/tickEventMonitor";
 import { replaceItemStack } from "@grindstone/utils";
-import { magicExplodeTrigger, tetanusAttackTrigger, corrosionAttackTrigger, imitationDamageTrigger } from "../core/triggers";
+import {
+  magicExplodeTrigger,
+  tetanusAttackTrigger,
+  corrosionAttackTrigger,
+  imitationDamageTrigger,
+} from "../core/triggers";
 
 export class Hy2System {
   /**
@@ -17,18 +19,16 @@ export class Hy2System {
    */
   static registryTickEvent(): void {
     system.runInterval(() => {
-      // droughtEffectMonitor();
-      // dehydrationEffectMonitor();
       badgeEffectMonitor();
     }, 20);
   }
   /**
    * 注册事件监听器
    */
-  static registryTrigger(): void{
+  static registryTrigger(): void {
     magicExplodeTrigger();
     tetanusAttackTrigger();
-    corrosionAttackTrigger()
+    corrosionAttackTrigger();
     imitationDamageTrigger();
   }
   /**

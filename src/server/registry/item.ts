@@ -10,16 +10,14 @@ import {
   DurabilityLimitedPropBuilder,
 } from "@grindstone/item-kit";
 import { MagicAimAttack } from "../../core/magicAimAttack";
-import { corrosionAttackTrigger, imitationDamageTrigger, magicExplodeTrigger, tetanusAttackTrigger } from "../../core/triggers";
 import {
   affectEntities,
-  damageEntities,
   giveItem,
   randomInteger,
   withWeightChance,
 } from "@grindstone/utils";
-import { droughtEffect } from "../effects/drought";
-import { dehydrationEffect } from "../effects/dehydration";
+import { droughtEffect } from "./effects/drought";
+import { dehydrationEffect } from "./effects/dehydration";
 
 const BANDAGE = new DurabilityLimitedPropBuilder("hy:bandage", 1, (event) => {
   const PLAYER = event.source;

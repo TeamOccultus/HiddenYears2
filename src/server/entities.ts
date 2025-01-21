@@ -3,8 +3,6 @@ import { getEquipmentItem, giveItem, randomInteger } from "@grindstone/utils";
 import {
   isAffectByBloodArmor,
   isAffectByBloodCrown,
-  isAffectByDehydrationDebuff,
-  isAffectByDroughtDebuff,
 } from "../core/utils";
 
 export class Hy2Entity {
@@ -36,39 +34,6 @@ export class Hy2Entity {
       if (ATTACKER.typeId === "hy:king_of_ruby" && TARGET instanceof Player) {
         TARGET.addExperience(-15);
       }
-      // 脱水与干旱
-      /*if (isAffectByDroughtDebuff(TARGET, ITEM)) {
-        if (TARGET instanceof Player) {
-          TARGET.onScreenDisplay.setActionBar({
-            translate: "hy.message.drought",
-          });
-          world.afterEvents.playerSpawn.subscribe((event) => {
-            if (event.player.id === TARGET.id) {
-              TARGET.removeTag("hy:drought");
-            }
-          });
-        }
-        TARGET.addTag("hy:drought");
-        system.runTimeout(() => {
-          if (TARGET.isValid()) TARGET.removeTag("hy:drought");
-        }, 300);
-      }
-      if (isAffectByDehydrationDebuff(TARGET, ITEM)) {
-        if (TARGET instanceof Player) {
-          TARGET.onScreenDisplay.setActionBar({
-            translate: "hy.message.dehydration",
-          });
-          world.afterEvents.playerSpawn.subscribe((event) => {
-            if (event.player.id === TARGET.id) {
-              TARGET.removeTag("hy:dehydration");
-            }
-          });
-        }
-        TARGET.addTag("hy:dehydration");
-        system.runTimeout(() => {
-          if (TARGET.isValid()) TARGET.removeTag("hy:dehydration");
-        }, 400);
-      }*/
       if (isAffectByBloodArmor(TARGET, ATTACKER)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
