@@ -1,6 +1,8 @@
 import { EntityDamageCause, ItemStack, world } from "@minecraft/server";
 import { FoodItemBuilder } from "@grindstone/item-kit";
 import { clearEffect, EffectGroups, giveItem } from "@grindstone/utils";
+import { dehydrationEffect } from "../effects/dehydration";
+import { droughtEffect } from "../effects/drought";
 
 const FUEL_METAL = new FoodItemBuilder(
   "hy:fuel_metal",
@@ -36,10 +38,10 @@ const COOLING_POTION = new FoodItemBuilder(
   "hy:cooling_potion",
   [{ effectType: "fire_resistance", duration: 600 }],
   (event) => {
-    const PLAYER = event.source;
-    PLAYER.removeTag("hy:dehydration");
-    PLAYER.removeTag("hy:drought");
-    PLAYER.onScreenDisplay.setActionBar({
+    const player = event.source;
+    droughtEffect.setLevel(player);
+    dehydrationEffect.setLevel(player);
+    player.onScreenDisplay.setActionBar({
       translate: "hy.message.cooling_potion",
     });
   }
@@ -154,9 +156,9 @@ const MEDICINE_14 = new FoodItemBuilder("hy:medicine_14", [
 
 export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
-    const [PLAYER, ITEM] = [event.source, event.itemStack];
-    if (ITEM.typeId === "potion") {
-      PLAYER.removeTag("hy:drought");
+    const [player, item] = [event.source, event.itemStack];
+    if (item.typeId === "potion") {
+      droughtEffect.setLevel(player);
     }
   });
   FUEL_METAL.build();

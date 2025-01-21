@@ -7,10 +7,11 @@ import { registryArticle } from "./server/registry/article";
 import { registryBoss } from "./server/registry/boss";
 import { registryTool } from "./server/registry/tool";
 import { registryItem } from "./server/registry/item";
-import "./server/registry/component";
 import { initializeMod } from "@grindstone/core";
 import { bleedEffect } from "./server/effects/bleed";
 import { droughtEffect } from "./server/effects/drought";
+import { dehydrationEffect } from "./server/effects/dehydration";
+import "./server/registry/component";
 
 
 initializeMod("hy",  "HiddenYears");
@@ -28,3 +29,4 @@ registryTool();
 registryItem();
 bleedEffect.startTrigger();
 droughtEffect.startTrigger();
+dehydrationEffect.startTrigger();

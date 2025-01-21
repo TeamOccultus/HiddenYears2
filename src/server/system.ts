@@ -18,7 +18,7 @@ export class Hy2System {
   static registryTickEvent(): void {
     system.runInterval(() => {
       // droughtEffectMonitor();
-      dehydrationEffectMonitor();
+      // dehydrationEffectMonitor();
       badgeEffectMonitor();
     }, 20);
   }

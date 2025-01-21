@@ -18,6 +18,8 @@ import {
   randomInteger,
   withWeightChance,
 } from "@grindstone/utils";
+import { droughtEffect } from "../effects/drought";
+import { dehydrationEffect } from "../effects/dehydration";
 
 const BANDAGE = new DurabilityLimitedPropBuilder("hy:bandage", 1, (event) => {
   const PLAYER = event.source;
@@ -364,17 +366,17 @@ const RUBY_BOARDSWORD = new DurabilityLimitedPropBuilder(
 );
 
 const RAIN_GOD_BLESSING = new PropBuilder("hy:rain_god_blessing", (event) => {
-  const PLAYER = event.source;
-  PLAYER.removeTag("hy:drought");
-  PLAYER.removeTag("hy:dehydration");
-  PLAYER.addTag("hy:immune_desert_debuff");
-  PLAYER.onScreenDisplay.setActionBar({
+  const player = event.source;
+  droughtEffect.setLevel(player)
+  dehydrationEffect.setLevel(player);
+  player.addTag("hy:immune_desert_debuff");
+  player.onScreenDisplay.setActionBar({
     translate: "hy.message.immune_desert_debuff.get",
   });
   system.runTimeout(() => {
-    if (PLAYER.isValid()) {
-      PLAYER.removeTag("hy:immune_desert_debuff");
-      PLAYER.onScreenDisplay.setActionBar({
+    if (player.isValid()) {
+      player.removeTag("hy:immune_desert_debuff");
+      player.onScreenDisplay.setActionBar({
         translate: "hy.message.immune_desert_debuff.remove",
       });
     }

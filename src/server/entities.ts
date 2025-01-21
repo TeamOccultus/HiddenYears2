@@ -52,7 +52,7 @@ export class Hy2Entity {
         system.runTimeout(() => {
           if (TARGET.isValid()) TARGET.removeTag("hy:drought");
         }, 300);
-      }*/
+      }
       if (isAffectByDehydrationDebuff(TARGET, ITEM)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
@@ -68,7 +68,7 @@ export class Hy2Entity {
         system.runTimeout(() => {
           if (TARGET.isValid()) TARGET.removeTag("hy:dehydration");
         }, 400);
-      }
+      }*/
       if (isAffectByBloodArmor(TARGET, ATTACKER)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({

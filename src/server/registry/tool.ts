@@ -6,6 +6,7 @@ import {
 import { replaceLowerCopperTool } from "../../core/utils";
 import { bleedEffect } from "../effects/bleed";
 import { droughtEffect } from "../effects/drought";
+import { dehydrationEffect } from "../effects/dehydration";
 
 const normalTool = new ToolTag("hy:custom_tools", {
   destroyedAfterEvents: (holder, item) => {
@@ -213,8 +214,23 @@ const droughtEffectWeapon = new WeaponTag("hy:drought_effect",{
   skill: [
    new WeaponAtkSkill(1,{
     custom(attacker, target) {
-      droughtEffect.addLevelTemporarily(attacker, 1, 300);
       droughtEffect.addLevelTemporarily(target, 1, 300);
+    },
+   })
+  ]
+})
+
+/**
+ * 带有脱水效果的武器
+ * @tag `hy:dehydration_effect` 使物品攻击时给予目标300刻的脱水效果
+ */
+const dehydrationEffectWeapon = new WeaponTag("hy:dehydration_effect",{
+  closeDurabilityTrigger: true,
+  skill: [
+   new WeaponAtkSkill(1,{
+    custom(attacker, target) {
+      dehydrationEffect.addLevelTemporarily(attacker, 1, 300);
+      dehydrationEffect.addLevelTemporarily(target, 1, 300);
     },
    })
   ]
@@ -232,4 +248,5 @@ export function registryTool() {
   knifeWeapon.build();
   boardswordWeapon.build();
   droughtEffectWeapon.build();
+  dehydrationEffectWeapon.build();
 }
