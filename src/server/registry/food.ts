@@ -130,7 +130,7 @@ const MEDICINE_10 = new FoodItemBuilder("hy:medicine_10", [], (event) => {
   event.source.applyDamage(5, { cause: EntityDamageCause.magic });
 });
 
-const MEDICINE_11 = new FoodItemBuilder("hy:medicine_9", [], (event) => {
+const MEDICINE_11 = new FoodItemBuilder("hy:medicine_11", [], (event) => {
   clearEffect(event.source, EffectGroups.good);
 });
 
