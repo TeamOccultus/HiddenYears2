@@ -583,7 +583,7 @@ export const FLASH_COPPER_INGOT: Quest = new Quest(
         name: {
           translate: "hy.item.flash_copper_ingot",
         },
-        itemStack: new ItemStack("hy:flash_metal_ingot"),
+        itemStack: new ItemStack("hy:flash_copper_ingot"),
       },
     },
     award: {
