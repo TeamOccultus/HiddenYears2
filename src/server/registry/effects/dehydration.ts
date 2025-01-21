@@ -1,5 +1,5 @@
 import { Entity, EquipmentSlot, Player } from "@minecraft/server";
-import { VirtualEffect } from "./core";
+import { VirtualEffect } from "@grindstone/effect-kit";
 import { getEquipmentItem } from "@grindstone/utils";
 
 /**

@@ -229,7 +229,6 @@ const dehydrationEffectWeapon = new WeaponTag("hy:dehydration_effect",{
   skill: [
    new WeaponAtkSkill(1,{
     custom(attacker, target) {
-      dehydrationEffect.addLevelTemporarily(attacker, 1, 300);
       dehydrationEffect.addLevelTemporarily(target, 1, 300);
     },
    })

@@ -1,5 +1,5 @@
 import { Player } from "@minecraft/server";
-import { VirtualEffect } from "./core";
+import { VirtualEffect } from "@grindstone/effect-kit";
 
 export const bleedEffect = new VirtualEffect("hy:bleed", 2, 20);
 

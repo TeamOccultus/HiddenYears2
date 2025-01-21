@@ -12,6 +12,7 @@
     "@grindstone/article-kit": "^0.2.0",
     "@grindstone/common": "^0.4.0",
     "@grindstone/core": "^0.3.0",
+    "@grindstone/effect-kit": "^0.1.0",
     "@grindstone/entity-kit": "^0.1.0",
     "@grindstone/item-kit": "^0.6.0",
     "@grindstone/quest-kit": "^0.2.0",
