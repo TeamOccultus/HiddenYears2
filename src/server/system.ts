@@ -6,9 +6,7 @@ import {
 } from "@minecraft/server";
 import {
   badgeEffectMonitor,
-  bleedEffectMonitor,
   dehydrationEffectMonitor,
-  droughtEffectMonitor,
 } from "../core/tickEventMonitor";
 import { replaceItemStack } from "@grindstone/utils";
 import { magicExplodeTrigger, tetanusAttackTrigger, corrosionAttackTrigger, imitationDamageTrigger } from "../core/triggers";
@@ -19,8 +17,7 @@ export class Hy2System {
    */
   static registryTickEvent(): void {
     system.runInterval(() => {
-     // bleedEffectMonitor();
-      droughtEffectMonitor();
+      // droughtEffectMonitor();
       dehydrationEffectMonitor();
       badgeEffectMonitor();
     }, 20);

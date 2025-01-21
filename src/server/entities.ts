@@ -37,7 +37,7 @@ export class Hy2Entity {
         TARGET.addExperience(-15);
       }
       // 脱水与干旱
-      if (isAffectByDroughtDebuff(TARGET, ITEM)) {
+      /*if (isAffectByDroughtDebuff(TARGET, ITEM)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({
             translate: "hy.message.drought",
@@ -52,7 +52,7 @@ export class Hy2Entity {
         system.runTimeout(() => {
           if (TARGET.isValid()) TARGET.removeTag("hy:drought");
         }, 300);
-      }
+      }*/
       if (isAffectByDehydrationDebuff(TARGET, ITEM)) {
         if (TARGET instanceof Player) {
           TARGET.onScreenDisplay.setActionBar({

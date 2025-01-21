@@ -72,9 +72,8 @@ export class VirtualEffect {
       }
     }, tick);
   }
-  setEffect(effect: (entity: Entity, level: number) => void, tick: number) {
+  setEffect(effect: (entity: Entity, level: number) => void) {
     this.effect = effect;
-    this.triggerTick = tick;
     if (this.systemId) {
       system.clearRun(this.systemId);
       let num = system.runInterval(() => {

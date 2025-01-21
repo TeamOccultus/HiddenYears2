@@ -12,7 +12,7 @@ bleedEffect.setEffect((entity, level) => {
     entity.applyDamage(2);
     entity.addEffect("slowness", 40, { amplifier: 2 });
   }
-}, 20);
+});
 
 bleedEffect.setLevelUp((entity) => {
   if (entity instanceof Player) {

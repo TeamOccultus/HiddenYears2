@@ -2,6 +2,7 @@ import { BlockVolume, Player, system, world } from "@minecraft/server";
 import { Boss, BossSkill } from "@grindstone/entity-kit";
 import { isAffectByBossDroughtDebuff } from "../../core/utils";
 import { MagicAimAttack } from "../../core/magicAimAttack";
+import { droughtEffect } from "../effects/drought";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
   level: -9999,
@@ -108,26 +109,7 @@ const SUMMON_MUMMY = new BossSkill("summon_mummy", 800, 15, {
 
 const DROUGHT_DEBUFF = new BossSkill("drought", 1200, 25, {
   event: (entity) => {
-    if (isAffectByBossDroughtDebuff(entity)) {
-      if (entity instanceof Player) {
-        entity.onScreenDisplay.setActionBar({
-          translate: "hy.message.drought",
-        });
-        world.afterEvents.playerSpawn.subscribe((event) => {
-          if (event.player.id === entity.id) {
-            entity.removeTag("hy:drought");
-          }
-        });
-        entity.playSound("boss_skill.ruby");
-        entity.sendMessage({
-          translate: "hy.boosSkill.ghost.drought",
-        });
-      }
-      entity.addTag("hy:drought");
-      system.runTimeout(() => {
-        if (entity.isValid()) entity.removeTag("hy:drought");
-      }, 300);
-    }
+    droughtEffect.addLevelTemporarily(entity, 1, 300);
   },
 });
 

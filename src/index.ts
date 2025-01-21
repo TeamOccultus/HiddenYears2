@@ -10,6 +10,7 @@ import { registryItem } from "./server/registry/item";
 import "./server/registry/component";
 import { initializeMod } from "@grindstone/core";
 import { bleedEffect } from "./server/effects/bleed";
+import { droughtEffect } from "./server/effects/drought";
 
 
 initializeMod("hy",  "HiddenYears");
@@ -26,3 +27,4 @@ registryBoss();
 registryTool();
 registryItem();
 bleedEffect.startTrigger();
+droughtEffect.startTrigger();

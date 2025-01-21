@@ -2,20 +2,18 @@ import {
   ToolTag,
   WeaponAtkSkill,
   WeaponTag,
-  WeaponUseSkill,
 } from "@grindstone/item-kit";
-import { system } from "@minecraft/server";
-import { tryOperateEntity } from "@grindstone/utils";
 import { replaceLowerCopperTool } from "../../core/utils";
 import { bleedEffect } from "../effects/bleed";
+import { droughtEffect } from "../effects/drought";
 
-const NORMAL_TOOL = new ToolTag("hy:custom_tools", {
+const normalTool = new ToolTag("hy:custom_tools", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
 });
 
-const NORMAL_SHOVEL = new ToolTag("hy:custom_shovel", {
+const normalShovel = new ToolTag("hy:custom_shovel", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
@@ -23,7 +21,7 @@ const NORMAL_SHOVEL = new ToolTag("hy:custom_shovel", {
   closeDurabilityTrigger: true,
 });
 
-const NORMAL_AXE = new ToolTag("hy:custom_axe", {
+const normalAxe = new ToolTag("hy:custom_axe", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
@@ -31,7 +29,7 @@ const NORMAL_AXE = new ToolTag("hy:custom_axe", {
   closeDurabilityTrigger: true,
 });
 
-const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
+const normalHoe = new ToolTag("hy:custom_hoe", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
@@ -39,13 +37,13 @@ const NORMAL_HOE = new ToolTag("hy:custom_hoe", {
   closeDurabilityTrigger: true,
 });
 
-const NORMAL_WEAPON = new WeaponTag("hy:custom_weapons", {
+const normalWeapon = new WeaponTag("hy:custom_weapons", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
 });
 
-const AWL_WEAPON = new WeaponTag("hy:is_awl", {
+const awlWeapon = new WeaponTag("hy:is_awl", {
   closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(5, "empty"),
@@ -74,7 +72,7 @@ const AWL_WEAPON = new WeaponTag("hy:is_awl", {
   ],
 });
 
-const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
+const hammerWeapon = new WeaponTag("hy:is_hammer", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
@@ -121,7 +119,7 @@ const HAMMER_WEAPON = new WeaponTag("hy:is_hammer", {
   ],
 });
 
-const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
+const corwbarWeapon = new WeaponTag("hy:is_crowbar", {
   closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(2, "empty"),
@@ -157,7 +155,7 @@ const CROWBAR_WEAPON = new WeaponTag("hy:is_crowbar", {
   ],
 });
 
-const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
+const knifeWeapon = new WeaponTag("hy:is_knife", {
   destroyedAfterEvents: (holder, item) => {
     replaceLowerCopperTool(item, holder);
   },
@@ -185,7 +183,7 @@ const KNIFE_WEAPON = new WeaponTag("hy:is_knife", {
   ],
 });
 
-const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode", {
+const boardswordWeapon = new WeaponTag("hy:magic_explode", {
   closeDurabilityTrigger: true,
   skill: [
     new WeaponAtkSkill(5, "empty"),
@@ -206,15 +204,32 @@ const BOARDSWORD_WEAPON = new WeaponTag("hy:magic_explode", {
   ],
 });
 
+/**
+ * 带有干旱效果的武器
+ * @tag `hy:drought_effect` 使物品攻击时给予目标300刻的干旱效果
+ */
+const droughtEffectWeapon = new WeaponTag("hy:drought_effect",{
+  closeDurabilityTrigger: true,
+  skill: [
+   new WeaponAtkSkill(1,{
+    custom(attacker, target) {
+      droughtEffect.addLevelTemporarily(attacker, 1, 300);
+      droughtEffect.addLevelTemporarily(target, 1, 300);
+    },
+   })
+  ]
+})
+
 export function registryTool() {
-  NORMAL_WEAPON.build();
-  NORMAL_TOOL.build();
-  NORMAL_SHOVEL.build();
-  NORMAL_AXE.build();
-  NORMAL_HOE.build();
-  AWL_WEAPON.build();
-  HAMMER_WEAPON.build();
-  CROWBAR_WEAPON.build();
-  KNIFE_WEAPON.build();
-  BOARDSWORD_WEAPON.build();
+  normalWeapon.build();
+  normalTool.build();
+  normalShovel.build();
+  normalAxe.build();
+  normalHoe.build();
+  awlWeapon.build();
+  hammerWeapon.build();
+  corwbarWeapon.build();
+  knifeWeapon.build();
+  boardswordWeapon.build();
+  droughtEffectWeapon.build();
 }
