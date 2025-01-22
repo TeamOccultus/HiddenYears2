@@ -1,6 +1,6 @@
 {
   "name": "hy2",
-  "version": "2.4.8",
+  "version": "2.4.9",
   "description": "A Minecraft addon",
   "scripts": {
     "build": "node build.mjs",
