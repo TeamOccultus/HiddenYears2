@@ -1,7 +1,7 @@
 {
   "format_version": "1.8.0",
   "render_controllers": {
-    "controller.render.mummy": {
+    "controller.render.default": {
       "textures": ["texture.default"],
       "geometry": "Geometry.default",
       "materials": [{ "*": "Material.default" }]

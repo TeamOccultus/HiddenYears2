@@ -26,7 +26,7 @@
         { "look_at_target": "controller.animation.humanoid.look_at_target" },
         { "vex_idle": "controller.animation.vex.idle" }
       ],
-      "render_controllers": ["controller.render.sprite"],
+      "render_controllers": ["controller.render.default"],
       "held_item_ignores_lighting": true,
       "spawn_egg": {
         "texture": "hy.spawn_eggs",

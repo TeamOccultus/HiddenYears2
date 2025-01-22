@@ -81,7 +81,7 @@
           "use_item_progress": "controller.animation.humanoid.use_item_progress"
         }
       ],
-      "render_controllers": ["controller.render.pharaohs_ghost"],
+      "render_controllers": ["controller.render.default"],
       "enable_attachables": true
     }
   }

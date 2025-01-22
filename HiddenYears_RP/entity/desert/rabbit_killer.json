@@ -27,7 +27,7 @@
         }
       ],
       "render_controllers": [
-        "controller.render.rabbit_killer"
+        "controller.render.default"
       ],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",

@@ -32,7 +32,7 @@
           "move": "controller.animation.hidden_trader.move"
         }
       ],
-      "render_controllers": ["controller.render.hidden_trader"],
+      "render_controllers": ["controller.render.default"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 5

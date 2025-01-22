@@ -32,7 +32,7 @@
           "move": "controller.animation.gemstone_trader.move"
         }
       ],
-      "render_controllers": ["controller.render.gemstone_trader"],
+      "render_controllers": ["controller.render.default"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 4
