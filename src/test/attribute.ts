@@ -1,6 +1,5 @@
 import { ItemStack, world } from "@minecraft/server";
 import { NumberRange } from "@minecraft/common";
-import { getEquipmentItem, randomInteger } from "@lazuli/ldk2";
 
 let attributes: ItemAttribute[] = [];
 
