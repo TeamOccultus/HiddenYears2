@@ -11,6 +11,7 @@ import {
   tetanusAttackTrigger,
   corrosionAttackTrigger,
   imitationDamageTrigger,
+  trophyBundleTrigger,
 } from "../core/triggers";
 
 export class Hy2System {
@@ -30,6 +31,7 @@ export class Hy2System {
     tetanusAttackTrigger();
     corrosionAttackTrigger();
     imitationDamageTrigger();
+    trophyBundleTrigger()
   }
   /**
    * 更新物品ID

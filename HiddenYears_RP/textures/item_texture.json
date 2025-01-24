@@ -1099,6 +1099,9 @@
     },
     "hy.bleak_totem": {
       "textures": "textures/items/bleak_totem"
+    },
+    "hy.trophy_bundle": {
+      "textures": "textures/items/trophy_bundle"
     }
   }
 }

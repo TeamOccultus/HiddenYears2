@@ -8,9 +8,10 @@ import {
   affectEntities,
   damageEntities,
   getEquipmentItem,
+  loot,
+  setEquipmentItem,
 } from "@grindstone/utils";
 import { applyImitationDamage } from "./utils";
-
 
 /**
  * 破伤风伤害监听器
@@ -108,6 +109,34 @@ export function imitationDamageTrigger() {
     ];
     if (ITEM?.hasTag("hy:imitation_tools")) {
       applyImitationDamage(ENTITY);
+    }
+  });
+}
+
+/**
+ * 战利品袋监听器
+ * @tag `hy:trophy_bundle` 将物品设置为战利品袋
+ * @tag `hy:loot_from_tag` 将物品设置为从标签读取战利品表，如`loot:entities.allay`将会被解析为`loot_tables/entities/allay.json`
+ * @tag `hy:loot_from_script` 将物品设置为从脚本动态属性读取战利品表，此时则应该将`hy:loot_table`属性设置为`entities/allay`
+ */
+export function trophyBundleTrigger() {
+  world.afterEvents.itemUse.subscribe((event) => {
+    if (!event.itemStack.hasTag("hy:trophy_bundle")) return;
+    const [item, player] = [event.itemStack, event.source];
+    setEquipmentItem(player);
+    if (item.hasTag("hy:loot_from_tag")) {
+      const tags = item.getTags();
+      tags.forEach((tag) => {
+        if (tag.startsWith("loot:")) {
+          const path = tag.replace("loot:", "").replace(".", "/");
+          loot(player.dimension, player.location, path);
+        }
+      });
+    }
+    if (item.hasTag("hy:loot_from_script")) {
+      const path = item.getDynamicProperty("hy:loot_table");
+      if (typeof path !== "string") return;
+      loot(player.dimension, player.location, path);
     }
   });
 }
