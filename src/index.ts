@@ -8,9 +8,9 @@ import { registryBoss } from "./server/registry/boss";
 import { registryTool } from "./server/registry/tool";
 import { registryItem } from "./server/registry/item";
 import { registryEffect } from "./server/registry/effect";
+import { registryLoot } from "./server/registry/loot";
 import { initializeMod } from "@grindstone/core";
 import "./server/registry/component";
-import { ItemStack, world } from "@minecraft/server";
 
 initializeMod("hy", "HiddenYears");
 Hy2System.registryTickEvent();
@@ -26,11 +26,4 @@ registryBoss();
 registryTool();
 registryItem();
 registryEffect();
-
-world.afterEvents.entityDie.subscribe((event) => {
-  if (event.deadEntity.typeId === "minecraft:allay") {
-    const item = new ItemStack("hy:trophy_bundle_1");
-    item.setDynamicProperty("hy:loot_table", "entities/allay");
-    event.deadEntity.dimension.spawnItem(item, event.deadEntity.location);
-  }
-});
+registryLoot();
