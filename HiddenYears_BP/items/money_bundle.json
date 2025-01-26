@@ -8,22 +8,29 @@
       }
     },
     "components": {
-      "minecraft:icon": {
-        "textures": {
-          "default": "hy.money_bundle"
-        }
+      "minecraft:display_name": {
+        "value": "hy.item.money_bundle"
       },
+      "minecraft:icon": "hy.money_bundle",
       "minecraft:max_stack_size": 1,
       "minecraft:storage_item": {
         "max_slots": 64,
         "max_weight_limit": 64,
         "weight_in_storage_item": 4,
         "allow_nested_storage_items": true,
-        "allowed_items": [ "hy:copper_coin","hy:diamond_coin","hy:gold_coin", "hy:stack_of_copper_coin","hy:stack_of_diamond_coin","hy:stack_of_gold_coin", "minecraft:emerald" ]
+        "allowed_items": [
+          "hy:copper_coin",
+          "hy:diamond_coin",
+          "hy:gold_coin",
+          "hy:stack_of_copper_coin",
+          "hy:stack_of_diamond_coin",
+          "hy:stack_of_gold_coin",
+          "minecraft:emerald"
+        ]
       },
-      "minecraft:bundle_interaction": { 
+      "minecraft:bundle_interaction": {
         "num_viewable_slots": 8
-      } 
+      }
     }
   }
 }

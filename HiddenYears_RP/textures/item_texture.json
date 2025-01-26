@@ -1103,7 +1103,7 @@
     "hy.trophy_bundle": {
       "textures": "textures/items/trophy_bundle"
     },
-     "hy:money_bundle": {
+     "hy.money_bundle": {
       "textures": [
         "textures/items/money_bundle",
         "textures/items/money_bundle_open",

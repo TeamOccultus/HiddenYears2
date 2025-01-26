@@ -8,10 +8,10 @@
       }
     },
     "components": {
-       "minecraft:max_stack_size": 1,
+      "minecraft:max_stack_size": 1,
       "minecraft:icon": "hy.trophy_bundle",
       "minecraft:display_name": {
-        "value": "hy.item.trophy_bundle.test"
+        "value": "hy.item.trophy_bundle"
       },
       "minecraft:hover_text_color": "yellow",
       "minecraft:tags": {
