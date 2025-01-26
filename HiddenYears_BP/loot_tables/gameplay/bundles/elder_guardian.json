@@ -8,7 +8,7 @@
           "name": "minecraft:prismarine_shard",
           "weight": 1,
           "functions": [
-            { "function": "set_count", "count": { "min": 0, "max": 2 } },
+            { "function": "set_count", "count": { "min": 1, "max": 2 } },
             { "function": "looting_enchant", "count": { "min": 2, "max": 3 } }
           ]
         }

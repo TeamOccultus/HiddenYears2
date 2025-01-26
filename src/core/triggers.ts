@@ -2,6 +2,7 @@ import {
   EntityQueryOptions,
   ItemCooldownComponent,
   system,
+  Vector3,
   world,
 } from "@minecraft/server";
 import {
@@ -9,6 +10,7 @@ import {
   damageEntities,
   getEquipmentItem,
   loot,
+  randomInteger,
   setEquipmentItem,
 } from "@grindstone/utils";
 import { applyImitationDamage } from "./utils";
@@ -123,20 +125,26 @@ export function trophyBundleTrigger() {
   world.afterEvents.itemUse.subscribe((event) => {
     if (!event.itemStack.hasTag("hy:trophy_bundle")) return;
     const [item, player] = [event.itemStack, event.source];
+    const location: Vector3 = {
+      x: player.location.x,
+      y: player.location.y + 2,
+      z: player.location.z,
+    };
     setEquipmentItem(player);
+    player.playSound("bundle.drop_contents");
     if (item.hasTag("hy:loot_from_tag")) {
       const tags = item.getTags();
       tags.forEach((tag) => {
         if (tag.startsWith("loot:")) {
           const path = tag.replace("loot:", "").replace(".", "/");
-          loot(player.dimension, player.location, path);
+          loot(player.dimension, location, path);
         }
       });
     }
     if (item.hasTag("hy:loot_from_script")) {
       const path = item.getDynamicProperty("hy:loot_table");
       if (typeof path !== "string") return;
-      loot(player.dimension, player.location, path);
+      loot(player.dimension, location, path);
     }
   });
 }

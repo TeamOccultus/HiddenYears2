@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:money_bundle"
+    },
+    "tags": ["lab_table"],
+    "pattern": ["X", "A"],
+    "key": {
+      "X": {
+        "item": "iron_nugget"
+      },
+      "A": {
+        "item": "leather"
+      }
+    },
+    "unlock": [
+      {
+        "item": "iron_nugget"
+      },
+      {
+        "item": "leather"
+      }
+    ],
+    "result": {
+      "item": "hy:money_bundle"
+    }
+  }
+}

@@ -40,6 +40,7 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
         quests.STEEL_INGOT,
         quests.NETHERITE_SCRAP,
         quests.FUEL_METAL,
+        quests.TROPHY_BUNDLE,
         quests.COPPER_HRON,
         quests.BLEAK_TOTEM,
         quests.SUFFERING_SWORD,
