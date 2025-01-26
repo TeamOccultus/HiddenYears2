@@ -1211,6 +1211,7 @@ hy:itemGroup.name.leathers=隐藏之年·皮革
 hy:itemGroup.name.medicines=隐藏之年·药物
 hy:itemGroup.name.materials=隐藏之年·铸锭与宝石
 hy:itemGroup.name.raw_materials=隐藏之年·原始材料
+hy:itemGroup.name.bundles=隐藏之年·宝袋
 
 hy.message.bleed=你的伤口开始不停地流血！
 hy.item.trophy_bundle=战利品袋

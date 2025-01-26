@@ -111,6 +111,13 @@
           },
           {
             "group_identifier": {
+              "icon": "hy:trophy_bundle",
+              "name": "hy:itemGroup.name.bundles"
+            },
+            "items": ["hy:trophy_bundle", "hy:money_bundle"]
+          },
+          {
+            "group_identifier": {
               "icon": "hy:medicine_1",
               "name": "hy:itemGroup.name.medicines"
             },
