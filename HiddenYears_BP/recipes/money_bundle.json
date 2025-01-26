@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hy:money_bundle"
     },
-    "tags": ["lab_table"],
+    "tags": ["crafting_table"],
     "pattern": ["X", "A"],
     "key": {
       "X": {

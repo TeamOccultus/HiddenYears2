@@ -127,7 +127,7 @@ export function trophyBundleTrigger() {
     const [item, player] = [event.itemStack, event.source];
     const location: Vector3 = {
       x: player.location.x,
-      y: player.location.y + 2,
+      y: player.location.y,
       z: player.location.z,
     };
     setEquipmentItem(player);
@@ -144,7 +144,9 @@ export function trophyBundleTrigger() {
     if (item.hasTag("hy:loot_from_script")) {
       const path = item.getDynamicProperty("hy:loot_table");
       if (typeof path !== "string") return;
-      loot(player.dimension, location, path);
+      system.runTimeout(()=>{
+        loot(player.dimension, location, path);
+      }, 20)    
     }
   });
 }
