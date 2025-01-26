@@ -34,7 +34,7 @@ export function registryLoot() {
         entity.dimension.spawnItem(bundle, entity.location);
         break;
       case "minecraft:cat":
-      case "minecraft:ocelot":  
+      case "minecraft:ocelot":
         bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/cat");
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -61,7 +61,7 @@ export function registryLoot() {
         break;
       case "minecraft:donkey":
       case "minecraft:horse":
-      case "minecraft:mule":  
+      case "minecraft:mule":
         bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/donkey");
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -129,7 +129,6 @@ export function registryLoot() {
         entity.dimension.spawnItem(bundle, entity.location);
         break;
       case "minecraft:hoglin":
-      case "minecraft:zoglin":
         bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/hoglin");
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -140,103 +139,116 @@ export function registryLoot() {
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
-        case "minecraft:mooshroom":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/mooshroom");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;  
-        case "minecraft:panda":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/panda");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break; 
-        case "minecraft:parrot":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/parrot");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;    
-        case "minecraft:phantom":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/phantom");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;     
-        case "minecraft:pig":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/pig");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;
-        case "minecraft:piglin":
-        case "minecraft:zoglin":
-        case "minecraft:piglin_brute":
-        case "minecraft:zombie_pigman":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/piglin");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;                                                case "minecraft:ravager":
-          case "minecraft:pillager":
-          case "minecraft:vex":
-          case "minecraft:vindicator_illager":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/illager");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;    
-        case "minecraft:polar_bear":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/polar_bear");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;       
-        case "minecraft:pufferfish":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/pufferfish");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;  
-        case "minecraft:rabbit":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/rabbit");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;                        
-        case "minecraft:sheep":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/sheep");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break; 
-        case "minecraft:shulker":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/shulker");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;           
-        case "minecraft:skeleton":
-         case "minecraft:skeleton_horse":
-         case "minecraft:wither_skeleton":
-         case "minecraft:stray":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/skeleton");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break; 
-        case "minecraft:slime":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/slime=");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break; 
-        case "minecraft:snow_golem":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/snow_golem");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break; 
-        case "minecraft:strider":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/strider");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;    
-        case "minecraft:sniffer":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/sniffer");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;    
-        case "minecraft:turtle":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/turtle");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;  
-        case "minecraft:villager_v2":
-        case "minecraft:wandering_trader":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/trader");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;   
-        case "minecraft:warden":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/warden");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;  
-        case "minecraft:witch":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/witch");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;    
-              case "minecraft:wolf":
-          bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/wolf");
-          entity.dimension.spawnItem(bundle, entity.location);
-          break;                                                                        
+      case "minecraft:mooshroom":
+        bundle.setDynamicProperty(
+          "hy:loot_table",
+          "gameplay/bundles/mooshroom"
+        );
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:panda":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/panda");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:parrot":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/parrot");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:phantom":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/phantom");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:pig":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/pig");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:piglin":
+      case "minecraft:zoglin":
+      case "minecraft:piglin_brute":
+      case "minecraft:zombie_pigman":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/piglin");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:ravager":
+      case "minecraft:pillager":
+      case "minecraft:vex":
+      case "minecraft:vindicator_illager":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/illager");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:polar_bear":
+        bundle.setDynamicProperty(
+          "hy:loot_table",
+          "gameplay/bundles/polar_bear"
+        );
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:pufferfish":
+        bundle.setDynamicProperty(
+          "hy:loot_table",
+          "gameplay/bundles/pufferfish"
+        );
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:rabbit":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/rabbit");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:sheep":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/sheep");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:shulker":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/shulker");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:skeleton":
+      case "minecraft:skeleton_horse":
+      case "minecraft:wither_skeleton":
+      case "minecraft:stray":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/skeleton");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:slime":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/slime=");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:snow_golem":
+        bundle.setDynamicProperty(
+          "hy:loot_table",
+          "gameplay/bundles/snow_golem"
+        );
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:strider":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/strider");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:sniffer":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/sniffer");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:turtle":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/turtle");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:villager_v2":
+      case "minecraft:wandering_trader":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/trader");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:warden":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/warden");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:witch":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/witch");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
+      case "minecraft:wolf":
+        bundle.setDynamicProperty("hy:loot_table", "gameplay/bundles/wolf");
+        entity.dimension.spawnItem(bundle, entity.location);
+        break;
       default:
         break;
     }

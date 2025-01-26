@@ -2288,3 +2288,28 @@ export const GOLDEN_BADGE = new Quest(
     },
   }
 );
+
+export const TROPHY_BUNDLE = new Quest(
+  "trophy_bundle",
+  { translate: "hy.quest.trophy_bundle.title" },
+  { translate: "hy.quest.trophy_bundle.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:trophy_bundle"),
+        name: {
+          translate: "hy.item.trophy_bundle",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        itemStack: new ItemStack("hy:gold_coin", 10),
+      },
+    },
+    iconPath: "textures/items/trophy_bundle",
+  }
+);
