@@ -101,6 +101,24 @@ const LETTER_15 = new ArticleBuilder(
   HyLetterBody[15],
   "textures/items/lost_letter"
 );
+const LETTER_16 = new ArticleBuilder(
+  `hy:letter_16`,
+  { translate: "article.16.title" },
+  HyLetterBody[16],
+  "textures/items/lost_letter"
+);
+const LETTER_17 = new ArticleBuilder(
+  `hy:letter_17`,
+  { translate: "article.17.title" },
+  HyLetterBody[17],
+  "textures/items/desert_mythology"
+);
+const LETTER_18 = new ArticleBuilder(
+  `hy:letter_18`,
+  { translate: "article.18.title" },
+  HyLetterBody[18],
+  "textures/items/lost_letter"
+);
 const HIDDEN_STORIES = new ChapterArticleBuilder(
   "hy:story_book",
   { translate: "hy.item.story_book" },
@@ -145,6 +163,9 @@ const COLLECTION = new ArticleCollectionBuilder(
     LETTER_13,
     LETTER_14,
     LETTER_15,
+    LETTER_16,
+    LETTER_17,
+    LETTER_18
   ]
 );
 
@@ -171,5 +192,8 @@ export function registryArticle() {
   LETTER_13.build();
   LETTER_14.build();
   LETTER_15.build();
+  LETTER_16.build();
+  LETTER_17.build();
+  LETTER_18.build();
   COLLECTION.build();
 }

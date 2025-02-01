@@ -1,3 +1,4 @@
+import { Format } from "@grindstone/format-kit";
 import { RawMessage } from "@minecraft/server";
 
 /**
@@ -333,10 +334,126 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.15.body8" },
     ],
   },
+  {
+    rawtext: [
+      { translate: "article.16.body0" },
+      { text: "\n\n" },
+      { translate: "article.16.body1" },
+      { text: Format.newLine },
+      { translate: "article.16.body2" },
+      { text: "\n\n" },
+      { translate: "article.16.body3" },
+      { text: Format.newLine },
+      { translate: "article.16.body4" },
+      { text: "\n\n" },
+      { translate: "article.16.body5" },
+      { text: Format.newLine },
+      { translate: "article.16.body6" },
+      { text: "\n\n" },
+      { translate: "article.16.body7" },
+      { text: Format.newLine },
+      { translate: "article.16.body8" },
+      { text: "\n\n" },
+      { translate: "article.16.body9" },
+      { text: Format.newLine },
+      { translate: "article.16.body10" },
+      { text: "\n\n" },
+      { translate: "article.16.body11" },
+      { text: Format.newLine },
+      { translate: "article.16.body12" },
+      { text: Format.newLine },
+      { translate: "article.16.body13" },
+      { text: "\n\n" },
+      { translate: "article.16.body14" },
+      { text: Format.newLine },
+      { translate: "article.16.body15" },
+      { text: "\n\n" },
+      { translate: "article.16.body16" },
+      { text: "\n" },
+      { translate: "article.16.body17" },
+      { text: "\n" },
+    ],
+  },
+  {
+    rawtext: [
+      { translate: "article.17.body0" },
+      { text: Format.newLine },
+      { translate: "article.17.body1" },
+      { text: "\n\n" },
+      { translate: "article.17.body2" },
+      { text: Format.newLine },
+      { translate: "article.17.body3" },
+      { text: Format.newLine },
+      { translate: "article.17.body4" },
+      { text: "\n\n" },
+      { translate: "article.17.body5" },
+      { text: Format.newLine },
+      { translate: "article.17.body6" },
+      { text: Format.newLine },
+      { translate: "article.17.body7" },
+      { text: "\n\n" },
+      { translate: "article.17.body8" },
+      { text: Format.newLine },
+      { translate: "article.17.body9" },
+      { text: Format.newLine },
+      { translate: "article.17.body10" },
+      { text: "\n\n" },
+      { translate: "article.17.body11" },
+      { text: Format.newLine },
+      { translate: "article.17.body12" },
+      { text: Format.newLine },
+      { translate: "article.17.body13" },
+      { text: "\n\n" },
+      { translate: "article.17.body14" },
+      { text: Format.newLine },
+      { translate: "article.17.body15" },
+      { text: Format.newLine },
+      { translate: "article.17.body16" },
+      { text: "\n\n" },
+      { translate: "article.17.body17" },
+      { text: Format.newLine },
+      { translate: "article.17.body18" },
+      { text: Format.newLine },
+      { translate: "article.17.body19" },
+      { text: "\n\n" },
+      { translate: "article.17.body20" },
+      { text: Format.newLine },
+      { translate: "article.17.body21" },
+      { text: Format.newLine },
+      { translate: "article.17.body22" },
+      { text: Format.newLine },
+      { translate: "article.17.body23" },
+    ],   
+  },
+  {
+    rawtext: [
+      { translate: "article.18.body0" },
+      { text: Format.newLine },
+      { translate: "article.18.body1" },
+      { text: Format.newLine },
+      { translate: "article.18.body2" },
+      { text: Format.newLine },
+      { translate: "article.18.body3" },
+      { text: Format.newLine },
+      { translate: "article.18.body4" },
+      { text: Format.newLine },
+      { translate: "article.18.body5" },
+      { text: Format.newLine },
+      { translate: "article.18.body6" },
+      { text: Format.newLine },
+      { translate: "article.18.body7" },
+      { text: "\n\n" },
+      { translate: "article.18.body8" },
+      { text: Format.newLine},
+      { translate: "article.18.body9" },
+      { text: Format.newLine },
+      { translate: "article.18.body10" },
+    ],
+  },
 ];
 
 /**
- * 隐藏的故事的标题
+ * 隐藏的故事标题
  * @author 方漓猫
  */
 export const HiddenStoryTitle: RawMessage[] = [
@@ -346,7 +463,7 @@ export const HiddenStoryTitle: RawMessage[] = [
 ];
 
 /**
- * 隐藏的故事的内容
+ * 隐藏的故事内容
  * @enum
  * @author 方漓猫
  */

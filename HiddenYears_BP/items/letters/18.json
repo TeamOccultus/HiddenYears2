@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:letter_18",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy.lost_letter",
+      "minecraft:max_stack_size": 1,
+      "minecraft:display_name": {
+        "value": "article.18.title"
+      },
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}
