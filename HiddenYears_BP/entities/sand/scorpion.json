@@ -25,7 +25,7 @@
       },
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
-      "minecraft:health": { "value": { "range_min": 25, "range_max": 35 } },
+      "minecraft:health": { "value": 30 },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
@@ -65,9 +65,45 @@
       },
       "minecraft:behavior.melee_attack": { "priority": 3 },
       "minecraft:attack": {
-        "damage": 3,
-        "effect_duration": 8,
-        "effect_name": "poison"
+        "damage": 3
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "must_see": true,
+        "within_radius": 12.0,
+        "must_see_forget_duration": 40.0,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            },
+            "max_dist": 12
+          },
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "villager"
+                },
+                {
+                  "test": "has_component",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "minecraft:is_baby"
+                }
+              ]
+            },
+            "max_dist": 12
+          }
+        ]
       },
       "minecraft:conditional_bandwidth_optimization": {}
     },
