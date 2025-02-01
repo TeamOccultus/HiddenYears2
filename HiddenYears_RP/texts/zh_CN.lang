@@ -789,6 +789,7 @@ hy.quest.chapter2.title=§d第一章§r 染上鲜血的宝石
 hy.quest.chapter3.title=§d第二章§r 镇压之所与昔日摇篮
 hy.quest.chapter4.title=§d第三章·第一幕§r 风起层沙
 hy.quest.chapter5.title=§d第三章·第二幕§r 旧日的沙加缅度
+hy.quest.chapter6.title=§d第三章·第二幕§r 自黄沙至幽匿
 hy.quest.interlude_food.title=§d间章§r 尝遍世间百味
 hy.quest.interlude.title=§d间章§r 进度与成就
 hy.quest.chapter1.body=「过往繁荣的时代正在逝去，昔日欢笑的我们也将化作尘埃。」
@@ -798,6 +799,7 @@ hy.quest.chapter2.body3=你不禁问道，仅仅这一角力量，就可以使�
 hy.quest.chapter3.body=旅者的足迹踏遍三个世界，本以为是故事的终结，却是冒险真正的起点。
 hy.quest.chapter4.body=冰层之间的沉沦者终于苏醒于茫茫沙海，七十万个日夜已然流逝，前路漫漫，将行何处？
 hy.quest.chapter5.body=【沙加缅度】，尽管早已消散在时间的长河之中，但是生活在新聚纪的每个人都知道——这里是昔日尼罗特帝国之都，亦是那时探险家的喜悦与伤心之地。
+hy.quest.chapter6.body=？？？
 hy.quest.interlude.body=在冒险途中的简短休憩。
 
 hy.quest.beginning.title=§d[一切的开始]§r 新生的枝桠
@@ -976,6 +978,10 @@ hy.quest.sand_sliverfish.body3=「他们挖掘这里的宝藏时，只会掘到�
 hy.quest.sand_sliverfish.body4=——▉▉▉▉，尼罗特帝国末代法老
 hy.quest.letter_14.title=沙中淘金的故事
 hy.quest.letter_14.body=在探险家营地中获得散落的信纸·沙中淘金的故事，了解尼罗特帝国覆灭后的故事
+
+hy.quest.echo_shard.title=「回响」的碎片
+hy.quest.echo_shard.body0=承载着「回响」力量的碎片。
+hy.quest.echo_shard.body1=古时的祭司用「回响」力量来超度亡魂，维持死与生的边界。然而你感受到在这碎片上，除了「回响」之外，还有一股奇怪的力量……
 
 ## 文章内容
 

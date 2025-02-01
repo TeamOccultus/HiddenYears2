@@ -121,6 +121,12 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
       quests: [quests.GOLD_SAND, quests.SAND_SLIVERFISH, quests.LETTER_14],
       iconPath: "textures/items/gold_sand",
     },
+    {
+      title: { translate: "hy.quest.chapter6.title" },
+      body: { translate: "hy.quest.chapter6.body" },
+      quests: [quests.ECHO_SHARD],
+      iconPath: "textures/items/echo_shard",
+    },
   ]
 );
 const LETTER_0 = new QuestBookBuilder(

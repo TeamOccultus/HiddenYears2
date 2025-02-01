@@ -2313,3 +2313,34 @@ export const TROPHY_BUNDLE = new Quest(
     iconPath: "textures/items/trophy_bundle",
   }
 );
+
+export const ECHO_SHARD = new Quest(
+  "echo_shard",
+  { translate: "hy.quest.echo_shard.title" },
+  {
+    rawtext: [
+      {translate: "hy.quest.echo_shard.body0"},
+      {text: "\n\n"},
+      {translate: "hy.quest.echo_shard.body1"}
+    ]
+  },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("minecraft:echo_shard"),
+        name: {
+          translate: "item.echo_shard.name",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.copper_coin",
+        },
+        itemStack: new ItemStack("hy:copper_coin", 5),
+      },
+    },
+    iconPath: "textures/items/echo_shard",
+  }
+);
