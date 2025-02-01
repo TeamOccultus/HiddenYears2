@@ -1,25 +1,9 @@
+## 包名与简介
 pack.name=隐藏之年²
 pack.description=「探索未知的世间」 ｜ 正式版2.4.10
 
-quest.entity=杀死 %1
-quest.not_enough.entity=你需要杀死 %1 才能完成这个任务
-gui.check=提交任务
-gui.about=关于
-hy.empty=     
 
-hy.ui.open_source.title=开源项目
-hy.ui.open_source.description=本项目使用了下面开源项目的代码/资源，谨此对这些项目的开发者致以崇高的敬意！
-
-container.stonecutter=切割机	#
-container.stonecutter_block=切割机	#
-tile.stonecutter.name=切割机	#
-tile.stonecutter_block.name=切割机	#
-
-hy.message.tetanus=你获得了§d「破伤风」§r效果！
-hy.message.oxidising.exposed=此工具已然变得§d「斑驳」§r！
-hy.message.oxidising.weathered=此工具已然变得§d「锈蚀」§r！
-hy.message.oxidising.oxidized=此工具已然§d「完全氧化」§r！
-
+## 方块、物品与实体
 entity.hy:gemstone_trader.name=宝石商人
 item.spawn_egg.entity.hy:gemstone_trader.name=宝石商人刷怪蛋
 
@@ -372,14 +356,6 @@ hy.item.enchanted_bone=附魔骨头
 hy.item.raw_large_leather=大块生皮革
 hy.item.raw_small_leather=小块生皮革
 
-hy.message.imitation_damage=这东西仿制的质量太差以至于伤着了自己的主人
-
-hy.message.sus_ore.1=这个矿石里面藏着虫子！
-hy.message.sus_ore.2=§c§l这个矿石里面埋了核弹！！！
-hy.open_message.sus_ore=有人挖到了一枚埋着核弹的矿石！
-hy.message.fuel_metal=这个东西是可以吃的吗……
-hy.message.eat_bark=你已经穷到吃树皮了吗……
-
 hy.item.mineral_coals=矿化煤炭
 hy.item.mineral_charcoals=矿化木炭
 hy.item.diamond_badge=钻石徽章
@@ -495,7 +471,7 @@ hy.item.ruby_boardsword.embryo=红宝石阔剑原胚
 gui.quest_done=你已完成此任务
 gui.check=检查并提交
 
-hy.message.no_exp=你没有足够的经验来进行§d「法术爆发」§r
+
 
 
 hy.item.raw_flash_copper_ingot=粗闪铜锭
@@ -505,6 +481,277 @@ hy.item.raw_steel_ingot=粗钢锭
 hy.item.quest_book.0=隐藏之年主线任务书
 hy.item.quest_book.1=已经弃用的主线任务书
 
+
+
+
+
+entity.hy:sprite.name=精灵
+item.spawn_egg.entity.hy:sprite.name=精灵刷怪蛋
+entity.hy:ferocious_sprite.name=恶灵
+item.spawn_egg.entity.hy:ferocious_sprite.name=恶灵刷怪蛋
+hy.item.suffering_sword=痛苦之剑
+hy.item.soul_letter.sprite=凝魂信笺·风灵
+
+hy.collection.title=记忆文库
+hy.collection.body=这里会显示你所有阅读过的文章
+
+
+
+hy.item.bone_piece=骨片
+hy.item.bone_piece_axe=骨片斧
+hy.item.bone_piece_hammer=骨片锤
+hy.item.bone_piece_hoe=骨片锄
+hy.item.bone_piece_pickaxe=骨片镐
+hy.item.bone_piece_shovel=骨片锹
+hy.item.bone_piece_helmet=骨片头盔
+hy.item.bone_piece_chestplate=骨片胸甲
+hy.item.bone_piece_leggings=骨片护腿
+hy.item.bone_piece_boots=骨片靴子
+
+hy.item.smaragdus=翠珏
+hy.item.ancient_extracts=远古萃华
+hy.item.smaragdus_axe=翠珏斧
+hy.item.smaragdus_hammer=翠珏锤
+hy.item.smaragdus_hoe=翠珏锄
+hy.item.smaragdus_pickaxe=翠珏镐
+hy.item.smaragdus_shovel=翠珏锹
+hy.item.smaragdus_awl=翠珏锥
+hy.item.smaragdus_knife=翠珏小刀
+hy.item.smaragdus_dagger=翠珏匕首
+hy.item.smaragdus_sword=翠珏剑
+hy.item.smaragdus_helmet=翠珏头盔
+hy.item.smaragdus_chestplate=翠珏胸甲
+hy.item.smaragdus_leggings=翠珏护腿
+hy.item.smaragdus_boots=翠珏靴子
+
+hy.block.extracts_ore=萃华矿石
+hy.block.steel_core_ore=钢芯矿石
+hy.item.steel_core=钢芯
+
+hy.item.corrosion_axe=腐蚀之斧
+hy.item.corrosion_hammer=腐蚀之锤
+hy.item.corrosion_hoe=腐蚀之锄
+hy.item.corrosion_pickaxe=腐蚀之镐
+hy.item.corrosion_shovel=腐蚀之锹
+hy.item.corrosion_dagger=腐蚀匕首
+hy.item.corrosion_knife=腐蚀小刀
+hy.item.corrosion_awl=腐蚀之锥
+hy.item.corrosion_sword=腐蚀之剑
+
+entity.husk.name=砂化僵尸
+entity.hy:sand_creeper.name=砂化苦力怕
+item.spawn_egg.entity.hy:sand_creeper.name=砂化苦力怕
+entity.hy:sand_skeleton.name=砂化骷髅
+item.spawn_egg.entity.hy:sand_skeleton.name=砂化骷髅刷怪蛋
+entity.hy:rabbit_killer.name=杀手兔
+item.spawn_egg.entity.hy:rabbit_killer.name=杀手兔刷怪蛋
+entity.hy:drift_sand_soldier.name=流沙士兵
+item.spawn_egg.entity.hy:drift_sand_soldier.name=流沙士兵刷怪蛋
+entity.hy:drift_sand_shooter.name=流沙射手
+item.spawn_egg.entity.hy:drift_sand_shooter.name=流沙射手刷怪蛋
+entity.hy:drift_sand_sergeant.name=流沙士官
+item.spawn_egg.entity.hy:drift_sand_sergeant.name=流沙士官刷怪蛋
+entity.hy:drift_sand_guardian.name=流沙守卫
+item.spawn_egg.entity.hy:drift_sand_guardian.name=流沙守卫刷怪蛋
+entity.hy:pharaohs_ghost.name=法老残影
+item.spawn_egg.entity.hy:pharaohs_ghost.name=法老残影刷怪蛋
+entity.hy:mummy.name=木乃伊
+item.spawn_egg.entity.hy:mummy.name=木乃伊刷怪蛋
+entity.hy:scorpion.name=蝎子
+item.spawn_egg.entity.hy:scorpion.name=蝎子刷怪蛋
+entity.hy:venomous_spider.name=毒蜘蛛
+item.spawn_egg.entity.hy:venomous_spider.name=毒蜘蛛
+hy.item.sand_meat=砂肉
+hy.item.scorched_meat=焦糊的肉
+hy.item.sand_fish=砂鱼
+hy.item.sand_bone=砂骨
+hy.item.shattered_sand_cudgel=碎砂之棍
+hy.item.shattered_sand_staff=碎砂之杖
+hy.item.rabbit_paw=兔的利爪
+hy.item.paw_dust=利爪粉末
+hy.item.rain_god_blessing=神之祝福·天降甘霖
+hy.item.cooling_potion=清凉药茶
+hy.item.desert_heart=沙漠之心
+hy.item.drift_sand_key=流沙之钥
+hy.item.drift_sand_coronet=流沙之冠
+hy.item.past_statue=生命之符
+hy.item.drift_sand_statue=回生之符
+hy.item.aaru_dream=芦苇之梦
+entity.hy:pharaohs_ghost.name=法老残影
+hy.block.unknown_frame=未知的框架
+hy.block.fatigue_sandstone=疲劳砂岩
+hy.block.cursed_slab=诅咒之板
+hy.block.drift_sand_cabinet=流沙之柜
+
+
+
+hy.block.lighting_frame=雷光框架
+hy.item.crimson_eyes=血色的瞥视
+hy.item.darkish_red_flower=殷红之花
+
+hy.title.king_of_ruby=§4力量与鲜血的试炼§r
+hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强大的力量……§r
+hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
+hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
+
+hy.block.sand_copper_ore=砂岩铜矿石
+hy.block.sand_coal_ore=砂岩煤矿石
+hy.block.sand_iron_ore=砂岩铁矿石
+hy.block.sand_with_gold_dust=碎金细沙
+hy.item.gold_sand=金砂
+entity.hy:sand_silverfish.name=沙虫
+item.spawn_egg.entity.hy:sand_silverfish.name=沙虫刷怪蛋
+
+hy.item.bleak_totem=黯淡的图腾
+hy.item.trophy_bundle=战利品袋
+hy.item.money_bundle=钱袋
+
+## 工具技能
+hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！
+hy.itemSkill.hammer.2=「矿工的愤怒」触发，额外给予敌人2点伤害与虚弱！
+hy.itemSkill.crowbar.1=「当头一棍」触发，额外给予敌人3点伤害！
+hy.itemSkill.crowbar.2=「终结的一击」触发，额外给予敌人5点伤害与缓慢！
+hy.itemSkill.awl.1=「工匠的悲哀」触发，额外给予敌人1点伤害与中毒！
+hy.itemSkill.awl.2=「终将化作利器」触发，额外给予敌人2点伤害与中毒！
+hy.itemSkill.knife.1=「淬血的小刀」触发，敌人将获得流血I！
+hy.itemSkill.knife.2=「失血过多」触发，敌人将获得流血II！
+hy.itemSkill.boardsword.1=「错误示范」触发，你将回复10点经验！
+hy.itemSkill.boardsword.2=「摧枯拉朽」触发，你将回复1级经验！
+
+## 加载提示（暂时没用）
+hy.beginnerTips.1=「探索未知的世间」
+hy.beginnerTips.2=§d[隐藏之年²]§r 游戏中的任务书可以提供引导
+hy.beginnerTips.3=§d[隐藏之年²]§r 沙漠中存在着丰厚的矿藏，不过有时……
+hy.beginnerTips.4=§d[隐藏之年²]§r 窃取沙漠中无名坟墓中财宝时要额外当心怪物！
+hy.beginnerTips.5=§d[隐藏之年²]§r 用锹挖掘埋藏着金子的黄沙可获得更丰厚的回报。
+hy.beginnerTips.6=§d[隐藏之年²]§r 将四块相同的岩石进行排列可以合成岩金锭。
+hy.beginnerTips.7=§d[隐藏之年²]§r 在沙漠中感到干旱？快喝水！
+hy.beginnerTips.8=§d[隐藏之年²]§r 在某个位面的世界，你甚至可以将圆石压缩成为更强力的材料……
+hy.beginnerTips.9=§d[隐藏之年²]§r 在这个世界中散落着不知何时留下的记录。
+hy.beginnerTips.10=§d[隐藏之年²]§r 当心可疑的矿石！
+hy.beginnerTips.11=§d[隐藏之年²]§r 你可以用骨头制成工具与武器。
+hy.beginnerTips.12=§d[隐藏之年²]§r 用铜锭、金锭或钻石合成货币与商人交易！
+hy.midgameTips.1=§d[隐藏之年²]§r 使用神之祝福·天降甘霖，可以暂时免疫沙漠中的干旱与脱水效果
+hy.midgameTips.2=§d[隐藏之年²]§r 古尼罗特帝国尽管覆灭了数千年，可其化作骷髅状的卫兵却在一种神秘力量的加持下，依旧在大漠横行。
+hy.midgameTips.3=§d[隐藏之年²]§r 用冰块在炼药台炼制清凉药茶，当你感到干旱或身体脱水时可以用它救命。
+hy.midgameTips.4=§d[隐藏之年²]§r 流浪商人遭受雷击时会变为隐藏商人。
+hy.midgameTips.5=§d[隐藏之年²]§r 使用流沙之钥可以获得埋藏于流沙之柜中的宝藏。
+hy.midgameTips.6=§d[隐藏之年²]§r 生成在沙漠的兔子格外具有攻击力……
+hy.midgameTips.7=§d[隐藏之年²]§r 矿洞中黑乎乎的石头是可以食用的（
+hy.midgameTips.8=§d[隐藏之年²]§r 通过红宝石谜袋与红宝石块、附魔之瓶合成血色的瞥视。
+hy.midgameTips.9=§d[隐藏之年²]§r 在很久很久以前，这个世界上并没有如今被称为「经验」的造物。
+hy.midgameTips.10=§d[隐藏之年²]§r 部分仿制而来的工具质量并不好，使用时甚至会伤到自己。
+hy.midgameTips.11=§d[隐藏之年²]§r 世界中最强悍的材料由绿宝石、钻石和在主世界底层的远古萃华在炼金台上合成而来。
+hy.midgameTips.12=§d[隐藏之年²]§r 使用凝魂信笺·风灵以召唤精灵。
+hy.midgameTips.13=§d[隐藏之年²]§r 末影龙吐下的浓痰在炼药师手中有妙用。
+hy.midgameTips.14=§d[隐藏之年²]§r 这个世界中存在着爱好杀戮的「恶灵」和与人为善的「精灵」。
+hy.midgameTips.15=§d[隐藏之年²]§r 部分特殊的工具有着独特的力量，在用其攻击时会触发战技。
+hy.midgameTips.16=§d[隐藏之年²]§r 可以用矿物强化煤炭或燃金，使其可以燃烧更长时间。
+hy.midgameTips.17=§d[隐藏之年²]§r 使用怪物掉落的「徽章」可以增加玩家的最大生命值。
+hy.midgameTips.18=§d[隐藏之年²]§r 用燧石在工作台上打磨小刀来获得匕首。
+hy.lategameTips.1=「但桎梏之间，仍有幸存的『人』」——卡图库斯纳尔
+hy.lategameTips.2=「自由之神恩赐的「自由」，真的是所谓的自由吗？」——德芬特尔
+hy.lategameTips.3=「陷入迷途之人，『我』将会赐予你们自由」——迦万涅尔
+hy.lategameTips.4=「很快，我们将会在那轮回无有之处相遇。因为，§l我将为一切战乱的逝者摆渡§r」——■■■的使者
+hy.lategameTips.5=有了「名字」，就不会被「遗忘」，没有「遗忘」就不会「消失」
+
+## 游戏消息
+hy.message.tetanus=你获得了§d「破伤风」§r效果！
+hy.message.oxidising.exposed=此工具已然变得§d「斑驳」§r！
+hy.message.oxidising.weathered=此工具已然变得§d「锈蚀」§r！
+hy.message.oxidising.oxidized=此工具已然§d「完全氧化」§r！
+hy.message.bleed=你的伤口开始不停地流血！
+hy.message.wait_cooldown=法器滋滋作响，恐怕是没能量了
+hy.message.know_details=你已经完全了解了这个法器！
+hy.message.drought=你感到十分干旱，快喝水来缓解症状！
+hy.message.dehydration=你感到身体在脱水，快喝清凉药茶来缓解症状！
+hy.message.cooling_potion=干旱和脱水症状得到了缓解！
+hy.message.immune_desert_debuff.get=你获得了神的祝福，将暂时免疫干旱和脱水！
+hy.message.immune_desert_debuff.remove=你对干旱和脱水的免疫已经失效！
+hy.message.cant_place=未知过高或处于其他维度，无法生成结构！
+hy.message.sand_silverfish=有什么奇怪的东西从沙子中钻出来了！
+hy.message.blood_armor=§d「血色的盔甲」§r机制生效，现在所受伤害得到减免！
+hy.message.low_health.ruby=红宝石之王陷入虚弱状态，暂时无法释放战技！
+hy.message.no_exp=你没有足够的经验来进行§d「法术爆发」§r
+hy.message.imitation_damage=这东西仿制的质量太差以至于伤着了自己的主人
+hy.message.sus_ore.1=这个矿石里面藏着虫子！
+hy.message.sus_ore.2=§c§l这个矿石里面埋了核弹！！！
+hy.message.fuel_metal=这个东西是可以吃的吗……
+hy.message.eat_bark=你已经穷到吃树皮了吗……
+
+## BOSS战技与独白
+hy.boosSkill.ruby.exp=红宝石之王即将发动战技§d「经验窃取」§r！
+hy.boosSkill.ruby.guardian=红宝石之王即将发动战技§d「力量的仆从」§r！
+hy.boosSkill.ruby.lightning=红宝石之王即将发动战技§4「往日之雷光」§r！
+hy.boosSkill.ghost.guardian=法老残影即将发动战技§d「尘沙的号令」§r！
+hy.boosSkill.ghost.mummy=法老残影即将发动战技§d「尘沙的魔法」§r！
+hy.boosSkill.ghost.drought=法老残影即将发动战技§d「尘沙的诅咒」§r！
+hy.boosSkill.ghost.caughtsand=法老残影即将发动战技§4「尘沙的惩罚」§r！
+hy.monologue.osiris.1=【？？？】尼罗特的人民死后将会于此聚集，接受审判……
+hy.monologue.osiris.2=【？？？】倘若他们尊重神明、吃苦耐劳，便可以得到神的祝福，在一片祥和中生活，然后在开始新的起点……
+hy.monologue.osiris.3=【？？？】尽管这恢宏的殿堂早已灰飞烟灭，但其一角仍藏于我的心中……
+hy.monologue.osiris.4=【？？？】殿堂的回廊已经寂寞了太久，如今也将迎来最后一名受审之人……
+hy.monologue.osiris.5=【奥西里斯】此人即是奥西里斯，§4雨之神伊西斯最忠实的信徒，尼罗特帝国法老§r
+
+## 物品分组
+hy:itemGroup.name.embryos=隐藏之年·铸剑原胚
+hy:itemGroup.name.boardswords=隐藏之年·阔剑
+hy:itemGroup.name.badges=隐藏之年·徽章
+hy:itemGroup.name.daggers=隐藏之年·匕首
+hy:itemGroup.name.readings=隐藏之年·阅读物与任务书
+hy:itemGroup.name.fuels=隐藏之年·燃料
+hy:itemGroup.name.nuggets=隐藏之年·矿物颗粒
+hy:itemGroup.name.dusts=隐藏之年·矿物粉末
+hy:itemGroup.name.imitations=隐藏之年·仿制材料
+hy:itemGroup.name.coins=隐藏之年·货币
+hy:itemGroup.name.disc_fragments=隐藏之年·唱片残片
+hy:itemGroup.name.awls=隐藏之年·锥
+hy:itemGroup.name.crowbars=隐藏之年·撬棍
+hy:itemGroup.name.hammers=隐藏之年·锤
+hy:itemGroup.name.spawn_eggs=隐藏之年·刷怪蛋
+hy:itemGroup.name.leathers=隐藏之年·皮革
+hy:itemGroup.name.medicines=隐藏之年·药物
+hy:itemGroup.name.materials=隐藏之年·铸锭与宝石
+hy:itemGroup.name.raw_materials=隐藏之年·原始材料
+hy:itemGroup.name.bundles=隐藏之年·宝袋
+
+## 文章收集任务
+hy.quest.story_book.title=§d[书海无涯] §r故事的起点
+hy.quest.readings2.title=§d[书海无涯] §r千里之行始于足下
+hy.quest.readings3.title=§d[书海无涯] §r大历史学家
+hy.quest.letter_1.title=§d[书海无涯] §r染上鲜血的宝石
+hy.quest.letter_2.title=§d[书海无涯] §r地底死城
+hy.quest.letter_3.title=§d[书海无涯] §r时空匿藏
+hy.quest.letter_4.title=§d[书海无涯] §r纪元简述·一
+hy.quest.letter_5.title=§d[书海无涯] §r纪元简述·二
+hy.quest.letter_6.title=§d[书海无涯] §r祭礼会
+hy.quest.letter_7.title=§d[书海无涯] §r旧人类考据
+hy.quest.letter_8.title=§d[书海无涯] §r掌舵之人
+hy.quest.letter_9.title=§d[书海无涯] §r假冒伪劣·一
+hy.quest.letter_10.title=§d[书海无涯] §r假冒伪劣·二
+hy.quest.letter_12.title=§d[书海无涯] §r来自空中的神
+hy.quest.letter_13.title=§d[书海无涯] §r层沙之灭
+hy.quest.letter_15.title=§d[书海无涯] §r阔剑锻造指南
+hy.quest.story_book.body=获得隐藏的故事
+hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
+hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
+hy.quest.letter_1.body=击败红宝石之王，获得散落的信纸·漼血的刚玉
+hy.quest.letter_2.body=搜刮远古城市战利品箱，获得散落的信纸·地底死城
+hy.quest.letter_3.body=搜刮圆石地牢战利品箱，获得散落的信纸·时空匿藏
+hy.quest.letter_4.body=与新手图书管理员交易，获得散落的信纸·纪元简述之一
+hy.quest.letter_5.body=与流浪商人交易，获得散落的信纸·纪元简述之二
+hy.quest.letter_6.body=搜刮远古城市战利品箱，获得散落的信纸·祀礼会
+hy.quest.letter_7.body=搜刮埋藏的宝藏，获得散落的信纸·祀礼会
+hy.quest.letter_8.body=与隐藏商人交易，获得散落的信纸·祀礼会
+hy.quest.letter_9.body=与新手牧师交易，获得散落的信纸·假冒伪劣之一
+hy.quest.letter_10.body=搜刮雪屋战利品箱，获得散落的信纸·假冒伪劣之二
+hy.quest.letter_12.body=完成任务 [第三章]雨之神的祝福 获得散落的信纸·来自空中的神
+hy.quest.letter_13.body=完成任务 [第三章]沙海中的绵绵细雨 获得散落的信纸·层沙之灭
+hy.quest.letter_15.body=完成[工具与武器] 腐蚀的铸剑，获得散落的信纸·阔剑锻造指南
+hy.quest.story_book.tips=完成序章任务可以领取该阅读物
+hy.quest.letter_8.tips=流浪商人遭受雷击时会变为隐藏商人
+
+## 主线任务
 hy.quest.title1=隐藏之年²主线任务
 hy.quest.body1=书页间跃动的不仅仅是文字，还有一路上的冒险之旅
 
@@ -718,6 +965,19 @@ hy.quest.shattered_sand_staff.body3=于是我们结为部族，抵御这外来�
 hy.quest.shattered_sand_staff.body4=在月亮升起的刹那，星空中的第一位神明降临世间，她令我们歃血为盟，建立流沙之团抵御魔物，用神力封锁受觊觎的财宝，还将她最虔诚的信徒选作帝国的君王，即是被称为「法老」的存在。
 hy.quest.shattered_sand_staff.body5=十年后，魔物终于剿灭，我们建立了庞大的帝国，将文明与繁荣洒向大地，可不久之后，星空中的第二个「神」降临世间……
 hy.quest.shattered_sand_staff.tips=在沙漠中寻找「沙漠祭坛」，将回生之符插入其中的无名框架即可召唤法老残影，击败BOSS即可获得流沙之杖
+hy.quest.gold_sand.title=沙中碎金
+hy.quest.gold_sand.body1=传说在雨之神陨灭之后，古尼罗特所有的财宝都逐渐湮没在沙尘之中，形成了这种带有魔力的沙子……
+hy.quest.gold_sand.body2=由于某种诅咒，你似乎无法将其中的金子直接从细沙中淘洗出来……
+hy.quest.gold_sand.tips=可利用炼金台把金砂转化为金粒
+hy.quest.sand_sliverfish.title=「▉▉▉▉的诅咒」
+hy.quest.sand_sliverfish.body1=「即便我已身死，
+hy.quest.sand_sliverfish.body2=「来到这片沙海的傀儡们也将身受我的咒诅，
+hy.quest.sand_sliverfish.body3=「他们挖掘这里的宝藏时，只会掘到一捧又一捧一文不值的黄沙；地，也将为他们生出毒虫来……」
+hy.quest.sand_sliverfish.body4=——▉▉▉▉，尼罗特帝国末代法老
+hy.quest.letter_14.title=沙中淘金的故事
+hy.quest.letter_14.body=在探险家营地中获得散落的信纸·沙中淘金的故事，了解尼罗特帝国覆灭后的故事
+
+## 文章内容
 
 story.hs.title1=一切的开始？
 story.hs.title2=诞生于毁灭的新生
@@ -771,71 +1031,6 @@ story.hs.section3.body18=自由之神恩赐的「自由」，
 story.hs.section3.body19=真的是所谓的自由吗？
 hy.story.hs.body=这本书记载了一些模糊的上古旧事……
 
-
-
-entity.hy:sprite.name=精灵
-item.spawn_egg.entity.hy:sprite.name=精灵刷怪蛋
-entity.hy:ferocious_sprite.name=恶灵
-item.spawn_egg.entity.hy:ferocious_sprite.name=恶灵刷怪蛋
-hy.item.suffering_sword=痛苦之剑
-hy.item.soul_letter.sprite=凝魂信笺·风灵
-
-hy.collection.title=记忆文库
-hy.collection.body=这里会显示你所有阅读过的文章
-
-api.unexpected_error.quest=任务系统出现未知错误
-quest.finished=你完成了一个任务！
-quest.done=任务已完成
-quest.check=尝试提交任务
-quest.not_enough.item=材料不足，你需要 %1 个 %2 才能完成这个任务
-quest.not_enough.level=你需要 %1 级经验才能完成这个任务
-quest.not_enough.xp=你需要 %1 点经验才能完成这个任务
-quest.condition=§e完成条件§r：
-quest.award=§e完成奖励§r：
-quest.item=%1 个 %2;
-quest.xp=%1 点经验
-quest.level=%1 级经验
-quest.reward.none=无奖励
-quest.condition.none=无条件
-quest.tips=§4特殊提示§r：
-article.nothing.title=无解锁文章
-article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
-
-hy.quest.story_book.title=§d[书海无涯] §r故事的起点
-hy.quest.readings2.title=§d[书海无涯] §r千里之行始于足下
-hy.quest.readings3.title=§d[书海无涯] §r大历史学家
-hy.quest.letter_1.title=§d[书海无涯] §r染上鲜血的宝石
-hy.quest.letter_2.title=§d[书海无涯] §r地底死城
-hy.quest.letter_3.title=§d[书海无涯] §r时空匿藏
-hy.quest.letter_4.title=§d[书海无涯] §r纪元简述·一
-hy.quest.letter_5.title=§d[书海无涯] §r纪元简述·二
-hy.quest.letter_6.title=§d[书海无涯] §r祭礼会
-hy.quest.letter_7.title=§d[书海无涯] §r旧人类考据
-hy.quest.letter_8.title=§d[书海无涯] §r掌舵之人
-hy.quest.letter_9.title=§d[书海无涯] §r假冒伪劣·一
-hy.quest.letter_10.title=§d[书海无涯] §r假冒伪劣·二
-hy.quest.letter_12.title=§d[书海无涯] §r来自空中的神
-hy.quest.letter_13.title=§d[书海无涯] §r层沙之灭
-hy.quest.letter_15.title=§d[书海无涯] §r阔剑锻造指南
-hy.quest.story_book.body=获得隐藏的故事
-hy.quest.readings2.body=获得散落的信纸·千里之行与脚下之路
-hy.quest.readings3.body=搜刮黑森林中某处囚笼，获得精灵史摘要
-hy.quest.letter_1.body=击败红宝石之王，获得散落的信纸·漼血的刚玉
-hy.quest.letter_2.body=搜刮远古城市战利品箱，获得散落的信纸·地底死城
-hy.quest.letter_3.body=搜刮圆石地牢战利品箱，获得散落的信纸·时空匿藏
-hy.quest.letter_4.body=与新手图书管理员交易，获得散落的信纸·纪元简述之一
-hy.quest.letter_5.body=与流浪商人交易，获得散落的信纸·纪元简述之二
-hy.quest.letter_6.body=搜刮远古城市战利品箱，获得散落的信纸·祀礼会
-hy.quest.letter_7.body=搜刮埋藏的宝藏，获得散落的信纸·祀礼会
-hy.quest.letter_8.body=与隐藏商人交易，获得散落的信纸·祀礼会
-hy.quest.letter_9.body=与新手牧师交易，获得散落的信纸·假冒伪劣之一
-hy.quest.letter_10.body=搜刮雪屋战利品箱，获得散落的信纸·假冒伪劣之二
-hy.quest.letter_12.body=完成任务 [第三章]雨之神的祝福 获得散落的信纸·来自空中的神
-hy.quest.letter_13.body=完成任务 [第三章]沙海中的绵绵细雨 获得散落的信纸·层沙之灭
-hy.quest.letter_15.body=完成[工具与武器] 腐蚀的铸剑，获得散落的信纸·阔剑锻造指南
-hy.quest.story_book.tips=完成序章任务可以领取该阅读物
-hy.quest.letter_8.tips=流浪商人遭受雷击时会变为隐藏商人
-
 article.0.title=千里之行与脚下之路
 article.1.title=淬血的刚玉
 article.2.title=地底死城
@@ -852,6 +1047,9 @@ article.12.title=来自空中的神
 article.13.title=层沙之灭
 article.14.title=沙中淘金的故事
 article.15.title=阔剑锻造指南
+article.16.title=沙加缅度发掘记
+article.17.title=尼罗特神话集
+article.18.title=一沓凌乱的证件
 
 article.0.body0=过往繁荣的时代正在逝去，昔日欢笑的我们也将化作尘埃。
 article.0.body1=而在这个孤单的世界中，恐怕唯一的智慧生物就是你。可惜的是，我无法为你详尽的解释究竟发生了什么——你现在只需知道，§l你是「异变」中的幸存者，被我们派到这里开拓新世界。§r
@@ -1002,217 +1200,100 @@ article.15.body6=紫水晶阔剑——原胚由女巫掉落
 article.15.body7=红宝石阔剑——？？？
 article.15.body8=这些材料因为其自身特性无法被直接铸造成剑，不过在与原胚结合后得到的武器品质却格外的好……
 
-hy.boosSkill.ruby.exp=红宝石之王即将发动战技§d「经验窃取」§r！
-hy.boosSkill.ruby.guardian=红宝石之王即将发动战技§d「力量的仆从」§r！
-hy.boosSkill.ruby.lightning=红宝石之王即将发动战技§4「往日之雷光」§r！
-hy.message.low_health.ruby=红宝石之王陷入虚弱状态，暂时无法释放战技！
+article.16.body0=（模糊不清的记录，只有部分内容可以看清）
 
-hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！
-hy.itemSkill.hammer.2=「矿工的愤怒」触发，额外给予敌人2点伤害与虚弱！
-hy.itemSkill.crowbar.1=「当头一棍」触发，额外给予敌人3点伤害！
-hy.itemSkill.crowbar.2=「终结的一击」触发，额外给予敌人5点伤害与缓慢！
-hy.itemSkill.awl.1=「工匠的悲哀」触发，额外给予敌人1点伤害与中毒！
-hy.itemSkill.awl.2=「终将化作利器」触发，额外给予敌人2点伤害与中毒！
-hy.itemSkill.knife.1=「淬血的小刀」触发，敌人将获得流血I！
-hy.itemSkill.knife.2=「失血过多」触发，敌人将获得流血II！
-hy.itemSkill.boardsword.1=「错误示范」触发，你将回复10点经验！
-hy.itemSkill.boardsword.2=「摧枯拉朽」触发，你将回复1级经验！
+article.16.body1=三界纪元8900年12月3日
+article.16.body2=​神昭告圣幕的王……祂早将沙海中的旧文明孽余诛灭……于是王派遣吾等前往沙海，寻找旧文明遗留的财宝……
 
+article.16.body3=三界纪元8901年5月
+article.16.body4=吾等在沙海中找到了一处宏伟的遗址，这里却有不计其数的财宝与黄金……王赐予其「沙加缅度」之名，与传说中上一次首现黄金之地相同的名称。
 
-hy.item.bone_piece=骨片
-hy.item.bone_piece_axe=骨片斧
-hy.item.bone_piece_hammer=骨片锤
-hy.item.bone_piece_hoe=骨片锄
-hy.item.bone_piece_pickaxe=骨片镐
-hy.item.bone_piece_shovel=骨片锹
-hy.item.bone_piece_helmet=骨片头盔
-hy.item.bone_piece_chestplate=骨片胸甲
-hy.item.bone_piece_leggings=骨片护腿
-hy.item.bone_piece_boots=骨片靴子
+article.16.body5=三界纪元8901年6月
+article.16.body6=​沙加缅度的财宝大多已献给了吾等之王，然而部分财宝附有一种奇特的力量封印，贸然靠近只会伤及无辜……吾提议将这些财宝留在这里……征集天下的勇士前来破解……
 
-hy.item.smaragdus=翠珏
-hy.item.ancient_extracts=远古萃华
-hy.item.smaragdus_axe=翠珏斧
-hy.item.smaragdus_hammer=翠珏锤
-hy.item.smaragdus_hoe=翠珏锄
-hy.item.smaragdus_pickaxe=翠珏镐
-hy.item.smaragdus_shovel=翠珏锹
-hy.item.smaragdus_awl=翠珏锥
-hy.item.smaragdus_knife=翠珏小刀
-hy.item.smaragdus_dagger=翠珏匕首
-hy.item.smaragdus_sword=翠珏剑
-hy.item.smaragdus_helmet=翠珏头盔
-hy.item.smaragdus_chestplate=翠珏胸甲
-hy.item.smaragdus_leggings=翠珏护腿
-hy.item.smaragdus_boots=翠珏靴子
+article.16.body7=三界纪元8901年7月
+article.16.body8=​来自各地的勇士将沙加缅度挤得水泄不通……然而他们大多无功而返，一些路途遥远的甚至没有归途的盘缠……
 
-hy.block.extracts_ore=萃华矿石
-hy.block.steel_core_ore=钢芯矿石
-hy.item.steel_core=钢芯
+article.16.body9=三界纪元8902年1月
+article.16.body10=​沙加缅度的矿井出现了骇人听闻的惨案……祭司赶来安抚惶惶不安的矿工，却无意发现了利用这旧日力量的方法……
 
-hy.item.corrosion_axe=腐蚀之斧
-hy.item.corrosion_hammer=腐蚀之锤
-hy.item.corrosion_hoe=腐蚀之锄
-hy.item.corrosion_pickaxe=腐蚀之镐
-hy.item.corrosion_shovel=腐蚀之锹
-hy.item.corrosion_dagger=腐蚀匕首
-hy.item.corrosion_knife=腐蚀小刀
-hy.item.corrosion_awl=腐蚀之锥
-hy.item.corrosion_sword=腐蚀之剑
+article.16.body11=三界纪元8902年4月
+article.16.body12=​在一处名叫「帝王谷」的不毛之地发现了一处无名坟墓，打开发现……竟是……伊西斯所册封的……的遗体。
+article.16.body13=​其保存的非常完整，似乎仅离去不久……吾等为他伪造了护照，装作在沙漠中死去的冒险家，送至王城研究……
 
-entity.husk.name=砂化僵尸
-entity.hy:sand_creeper.name=砂化苦力怕
-item.spawn_egg.entity.hy:sand_creeper.name=砂化苦力怕
-entity.hy:sand_skeleton.name=砂化骷髅
-item.spawn_egg.entity.hy:sand_skeleton.name=砂化骷髅刷怪蛋
-entity.hy:rabbit_killer.name=杀手兔
-item.spawn_egg.entity.hy:rabbit_killer.name=杀手兔刷怪蛋
-entity.hy:drift_sand_soldier.name=流沙士兵
-item.spawn_egg.entity.hy:drift_sand_soldier.name=流沙士兵刷怪蛋
-entity.hy:drift_sand_shooter.name=流沙射手
-item.spawn_egg.entity.hy:drift_sand_shooter.name=流沙射手刷怪蛋
-entity.hy:drift_sand_sergeant.name=流沙士官
-item.spawn_egg.entity.hy:drift_sand_sergeant.name=流沙士官刷怪蛋
-entity.hy:drift_sand_guardian.name=流沙守卫
-item.spawn_egg.entity.hy:drift_sand_guardian.name=流沙守卫刷怪蛋
-entity.hy:pharaohs_ghost.name=法老残影
-item.spawn_egg.entity.hy:pharaohs_ghost.name=法老残影刷怪蛋
-entity.hy:mummy.name=木乃伊
-item.spawn_egg.entity.hy:mummy.name=木乃伊刷怪蛋
-entity.hy:scorpion.name=蝎子
-item.spawn_egg.entity.hy:scorpion.name=蝎子刷怪蛋
-entity.hy:venomous_spider.name=毒蜘蛛
-item.spawn_egg.entity.hy:venomous_spider.name=毒蜘蛛
-hy.item.sand_meat=砂肉
-hy.item.scorched_meat=焦糊的肉
-hy.item.sand_fish=砂鱼
-hy.item.sand_bone=砂骨
-hy.item.shattered_sand_cudgel=碎砂之棍
-hy.item.shattered_sand_staff=碎砂之杖
-hy.item.rabbit_paw=兔的利爪
-hy.item.paw_dust=利爪粉末
-hy.item.rain_god_blessing=神之祝福·天降甘霖
-hy.item.cooling_potion=清凉药茶
-hy.item.desert_heart=沙漠之心
-hy.item.drift_sand_key=流沙之钥
-hy.item.drift_sand_coronet=流沙之冠
-hy.item.past_statue=生命之符
-hy.item.drift_sand_statue=回生之符
-hy.item.aaru_dream=芦苇之梦
-entity.hy:pharaohs_ghost.name=法老残影
-hy.block.unknown_frame=未知的框架
-hy.block.fatigue_sandstone=疲劳砂岩
-hy.block.cursed_slab=诅咒之板
-hy.block.drift_sand_cabinet=流沙之柜
-hy.message.drought=你感到十分干旱，快喝水来缓解症状！
-hy.message.dehydration=你感到身体在脱水，快喝清凉药茶来缓解症状！
-hy.message.cooling_potion=干旱和脱水症状得到了缓解！
-hy.message.immune_desert_debuff.get=你获得了神的祝福，将暂时免疫干旱和脱水！
-hy.message.immune_desert_debuff.remove=你对干旱和脱水的免疫已经失效！
-hy.message.cant_place=未知过高或处于其他维度，无法生成结构！
+article.16.body14=三界纪元8902年6月
+article.16.body15=​遗体的研究有了突破……沙加缅度的古老力量最终转为了祀城隔离生死、实现轮回的回响之力……尽管几个无辜的矿工因此献出了生命……危机就这么解除了……
 
-hy.monologue.osiris.1=【？？？】尼罗特的人民死后将会于此聚集，接受审判……
-hy.monologue.osiris.2=【？？？】倘若他们尊重神明、吃苦耐劳，便可以得到神的祝福，在一片祥和中生活，然后在开始新的起点……
-hy.monologue.osiris.3=【？？？】尽管这恢宏的殿堂早已灰飞烟灭，但其一角仍藏于我的心中……
-hy.monologue.osiris.4=【？？？】殿堂的回廊已经寂寞了太久，如今也将迎来最后一名受审之人……
-hy.monologue.osiris.5=【奥西里斯】此人即是奥西里斯，§4雨之神伊西斯最忠实的信徒，尼罗特帝国法老§r
+article.16.body16=​（很久之后的批注,三界纪元8962年）
+article.16.body17=我们都错了……那来自于天外红灯的力量……绝非祭司可以驯化……
 
-hy.boosSkill.ghost.guardian=法老残影即将发动战技§d「尘沙的号令」§r！
-hy.boosSkill.ghost.mummy=法老残影即将发动战技§d「尘沙的魔法」§r！
-hy.boosSkill.ghost.drought=法老残影即将发动战技§d「尘沙的诅咒」§r！
-hy.boosSkill.ghost.caughtsand=法老残影即将发动战技§4「尘沙的惩罚」§r！
+article.17.body0=【其一】
+article.17.body1=于第一日，那太阳的化身于一片混沌之中苏醒，脑海中响起了一缕声音：
 
-hy.block.lighting_frame=雷光框架
-hy.item.crimson_eyes=血色的瞥视
-hy.item.darkish_red_flower=殷红之花
-hy.message.blood_armor=§d「血色的盔甲」§r机制生效，现在所受伤害得到减免！
-hy.title.king_of_ruby=§4力量与鲜血的试炼§r
-hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强大的力量……§r
-hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
-hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
+article.17.body2=「穆图安，太阳的化身，快点醒来……」
+article.17.body3=祂便用光的秘法创造了世界。
+article.17.body4=​将自己的力量分出一角创造了「日」， 而「日」的投影形成了「月」，然而这时，世间并无生机，所行之处皆是茫茫沙海，日月起落没有规律，生命无以繁衍。
 
-hy.block.sand_copper_ore=砂岩铜矿石
-hy.block.sand_coal_ore=砂岩煤矿石
-hy.block.sand_iron_ore=砂岩铁矿石
-hy.block.sand_with_gold_dust=碎金细沙
-hy.item.gold_sand=金砂
-entity.hy:sand_silverfish.name=沙虫
-item.spawn_egg.entity.hy:sand_silverfish.name=沙虫刷怪蛋
-hy.message.sand_silverfish=有什么奇怪的东西从沙子中钻出来了！
+article.17.body5=【其二】
+article.17.body6=​于第二日，天边降下了司掌力量的喀贺，祂见到茫茫的沙海，愿帮助穆图安。
+article.17.body7=于是喀贺制定了「规则」，「日」与「月」本不服从喀贺的规则，然而喀贺用祂的力量使日月臣服与祂，终于，日月轮回得以规律，生命有了繁衍的机会。
 
-hy.beginnerTips.1=「探索未知的世间」
-hy.beginnerTips.2=§d[隐藏之年²]§r 游戏中的任务书可以提供引导
-hy.beginnerTips.3=§d[隐藏之年²]§r 沙漠中存在着丰厚的矿藏，不过有时……
-hy.beginnerTips.4=§d[隐藏之年²]§r 窃取沙漠中无名坟墓中财宝时要额外当心怪物！
-hy.beginnerTips.5=§d[隐藏之年²]§r 用锹挖掘埋藏着金子的黄沙可获得更丰厚的回报。
-hy.beginnerTips.6=§d[隐藏之年²]§r 将四块相同的岩石进行排列可以合成岩金锭。
-hy.beginnerTips.7=§d[隐藏之年²]§r 在沙漠中感到干旱？快喝水！
-hy.beginnerTips.8=§d[隐藏之年²]§r 在某个位面的世界，你甚至可以将圆石压缩成为更强力的材料……
-hy.beginnerTips.9=§d[隐藏之年²]§r 在这个世界中散落着不知何时留下的记录。
-hy.beginnerTips.10=§d[隐藏之年²]§r 当心可疑的矿石！
-hy.beginnerTips.11=§d[隐藏之年²]§r 你可以用骨头制成工具与武器。
-hy.beginnerTips.12=§d[隐藏之年²]§r 用铜锭、金锭或钻石合成货币与商人交易！
-hy.midgameTips.1=§d[隐藏之年²]§r 使用神之祝福·天降甘霖，可以暂时免疫沙漠中的干旱与脱水效果
-hy.midgameTips.2=§d[隐藏之年²]§r 古尼罗特帝国尽管覆灭了数千年，可其化作骷髅状的卫兵却在一种神秘力量的加持下，依旧在大漠横行。
-hy.midgameTips.3=§d[隐藏之年²]§r 用冰块在炼药台炼制清凉药茶，当你感到干旱或身体脱水时可以用它救命。
-hy.midgameTips.4=§d[隐藏之年²]§r 流浪商人遭受雷击时会变为隐藏商人。
-hy.midgameTips.5=§d[隐藏之年²]§r 使用流沙之钥可以获得埋藏于流沙之柜中的宝藏。
-hy.midgameTips.6=§d[隐藏之年²]§r 生成在沙漠的兔子格外具有攻击力……
-hy.midgameTips.7=§d[隐藏之年²]§r 矿洞中黑乎乎的石头是可以食用的（
-hy.midgameTips.8=§d[隐藏之年²]§r 通过红宝石谜袋与红宝石块、附魔之瓶合成血色的瞥视。
-hy.midgameTips.9=§d[隐藏之年²]§r 在很久很久以前，这个世界上并没有如今被称为「经验」的造物。
-hy.midgameTips.10=§d[隐藏之年²]§r 部分仿制而来的工具质量并不好，使用时甚至会伤到自己。
-hy.midgameTips.11=§d[隐藏之年²]§r 世界中最强悍的材料由绿宝石、钻石和在主世界底层的远古萃华在炼金台上合成而来。
-hy.midgameTips.12=§d[隐藏之年²]§r 使用凝魂信笺·风灵以召唤精灵。
-hy.midgameTips.13=§d[隐藏之年²]§r 末影龙吐下的浓痰在炼药师手中有妙用。
-hy.midgameTips.14=§d[隐藏之年²]§r 这个世界中存在着爱好杀戮的「恶灵」和与人为善的「精灵」。
-hy.midgameTips.15=§d[隐藏之年²]§r 部分特殊的工具有着独特的力量，在用其攻击时会触发战技。
-hy.midgameTips.16=§d[隐藏之年²]§r 可以用矿物强化煤炭或燃金，使其可以燃烧更长时间。
-hy.midgameTips.17=§d[隐藏之年²]§r 使用怪物掉落的「徽章」可以增加玩家的最大生命值。
-hy.midgameTips.18=§d[隐藏之年²]§r 用燧石在工作台上打磨小刀来获得匕首。
-hy.lategameTips.1=「但桎梏之间，仍有幸存的『人』」——卡图库斯纳尔
-hy.lategameTips.2=「自由之神恩赐的「自由」，真的是所谓的自由吗？」——德芬特尔
-hy.lategameTips.3=「陷入迷途之人，『我』将会赐予你们自由」——迦万涅尔
-hy.lategameTips.4=「很快，我们将会在那轮回无有之处相遇。因为，§l我将为一切战乱的逝者摆渡§r」——■■■的使者
-hy.lategameTips.5=有了「名字」，就不会被「遗忘」，没有「遗忘」就不会「消失」
+article.17.body8=【其三】
+article.17.body9=​穆图安见到日月臣服于「规则」之下，大喜，与喀贺相约饮酒。
+article.17.body10=​祂们醉时世间便生出魔物，醒时文明则得以繁衍。
 
-hy.quest.gold_sand.title=沙中碎金
-hy.quest.gold_sand.body1=传说在雨之神陨灭之后，古尼罗特所有的财宝都逐渐湮没在沙尘之中，形成了这种带有魔力的沙子……
-hy.quest.gold_sand.body2=由于某种诅咒，你似乎无法将其中的金子直接从细沙中淘洗出来……
-hy.quest.gold_sand.tips=可利用炼金台把金砂转化为金粒
-hy.quest.sand_sliverfish.title=「▉▉▉▉的诅咒」
-hy.quest.sand_sliverfish.body1=「即便我已身死，
-hy.quest.sand_sliverfish.body2=「来到这片沙海的傀儡们也将身受我的咒诅，
-hy.quest.sand_sliverfish.body3=「他们挖掘这里的宝藏时，只会掘到一捧又一捧一文不值的黄沙；地，也将为他们生出毒虫来……」
-hy.quest.sand_sliverfish.body4=——▉▉▉▉，尼罗特帝国末代法老
-hy.quest.letter_14.title=沙中淘金的故事
-hy.quest.letter_14.body=在探险家营地中获得散落的信纸·沙中淘金的故事，了解尼罗特帝国覆灭后的故事
+article.17.body11=​【其四】
+article.17.body12=那时的沙海，由腐朽的「王」所统御，稍有差错，「王」就会将奴隶坑杀于沙海，并将其骨做成法杖，将其血献给穆图安与喀贺，以祈求祂们不要醉酒，降下灾难。
+article.17.body13=​穆图安和喀贺便造了「伊西斯」 ，引领人族走向正路。
 
-hy.message.wait_cooldown=法器滋滋作响，恐怕是没能量了
-hy.message.know_details=你已经完全了解了这个法器！
-hy.item.bleak_totem=黯淡的图腾
+article.17.body14=​【其五】
+article.17.body15=月升之时，伊西斯带着「神谕」自天空中降下。
+article.17.body16=​于是她走过的地方由沙海变为绿洲，她流下的泪水变为世间最珍贵的泉水，文明不再因双神的醉醒而延续或消亡。
 
-hy:itemGroup.name.embryos=隐藏之年·铸剑原胚
-hy:itemGroup.name.boardswords=隐藏之年·阔剑
-hy:itemGroup.name.badges=隐藏之年·徽章
-hy:itemGroup.name.daggers=隐藏之年·匕首
-hy:itemGroup.name.readings=隐藏之年·阅读物与任务书
-hy:itemGroup.name.fuels=隐藏之年·燃料
-hy:itemGroup.name.nuggets=隐藏之年·矿物颗粒
-hy:itemGroup.name.dusts=隐藏之年·矿物粉末
-hy:itemGroup.name.imitations=隐藏之年·仿制材料
-hy:itemGroup.name.coins=隐藏之年·货币
-hy:itemGroup.name.disc_fragments=隐藏之年·唱片残片
-hy:itemGroup.name.awls=隐藏之年·锥
-hy:itemGroup.name.crowbars=隐藏之年·撬棍
-hy:itemGroup.name.hammers=隐藏之年·锤
-hy:itemGroup.name.spawn_eggs=隐藏之年·刷怪蛋
-hy:itemGroup.name.leathers=隐藏之年·皮革
-hy:itemGroup.name.medicines=隐藏之年·药物
-hy:itemGroup.name.materials=隐藏之年·铸锭与宝石
-hy:itemGroup.name.raw_materials=隐藏之年·原始材料
-hy:itemGroup.name.bundles=隐藏之年·宝袋
+article.17.body17=​【其六】
+article.17.body18=​伊西斯在绿洲之上建立帝国，将奥西里斯，自己最虔诚的信徒选作帝国的君王，将自己的追随者封作神殿的祭司，将文明洒向四方……
+article.17.body19=此，即「尼罗特帝国」之始。
 
-hy.message.bleed=你的伤口开始不停地流血！
-hy.item.trophy_bundle=战利品袋
-hy.item.money_bundle=钱袋
+article.17.body20=【其七】
+article.17.body21=伊西斯为了让人向善，运用光的秘法创立了死与生的边界，又将这股力量封锁于黄沙的某处……
+article.17.body22=​自此以后，尼罗特帝国死后的人们将在恢宏之殿的地下回廊受到审判，如若获得肯定，便会前往一个名为「芦苇之地」的天边乐土。
+article.17.body23=一旦抵达这里，人们就能在一片祥和中与生前挚爱之人一同生活，然后开始新的起点。 
+
+article.18.body0=圣幕王国护照
+article.18.body1==============
+article.18.body2=​姓名：奥西里斯·法郎 Osiris Pharaoh
+article.18.body3=​籍贯：卡盒省穆秃俺城 Muta City, Kahe Province
+article.18.body4=出生：三界8876.1.14
+article.18.body5=​签发地：穆秃俺城 Muta City
+article.18.body6=签发时间：三界8901.7.15
+article.18.body7=签发机关：王国祭祀院外务处
+
+article.18.body8=​死亡证明
+article.18.body9==============
+article.18.body10=​死者奥西里斯·法郎，26岁，8902年5月因感染风寒而亡。
+
+## 技术性
+quest.entity=杀死 %1
+quest.not_enough.entity=你需要杀死 %1 才能完成这个任务
+gui.check=提交任务
+gui.about=关于
+hy.empty=     
+hy.ui.open_source.title=开源项目
+hy.ui.open_source.description=本项目使用了下面开源项目的代码/资源，谨此对这些项目的开发者致以崇高的敬意！
+api.unexpected_error.quest=任务系统出现未知错误
+quest.finished=你完成了一个任务！
+quest.done=任务已完成
+quest.check=尝试提交任务
+quest.not_enough.item=材料不足，你需要 %1 个 %2 才能完成这个任务
+quest.not_enough.level=你需要 %1 级经验才能完成这个任务
+quest.not_enough.xp=你需要 %1 点经验才能完成这个任务
+quest.condition=§e完成条件§r：
+quest.award=§e完成奖励§r：
+quest.item=%1 个 %2;
+quest.xp=%1 点经验
+quest.level=%1 级经验
+quest.reward.none=无奖励
+quest.condition.none=无条件
+quest.tips=§4特殊提示§r：
+article.nothing.title=无解锁文章
+article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
