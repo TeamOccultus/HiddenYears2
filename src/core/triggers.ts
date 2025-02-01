@@ -14,6 +14,7 @@ import {
   setEquipmentItem,
 } from "@grindstone/utils";
 import { applyImitationDamage } from "./utils";
+import { droughtEffect } from "../server/registry/effects/drought";
 
 /**
  * 破伤风伤害监听器
@@ -144,9 +145,23 @@ export function trophyBundleTrigger() {
     if (item.hasTag("hy:loot_from_script")) {
       const path = item.getDynamicProperty("hy:loot_table");
       if (typeof path !== "string") return;
-      system.runTimeout(()=>{
+      system.runTimeout(() => {
         loot(player.dimension, location, path);
-      }, 20)    
+      }, 20);
+    }
+  });
+}
+
+/**
+ * 令实体可以造成干旱伤害
+ * @family `drought_attacker`——将实体设置为可造成干旱攻击
+ * @todo 开放自定义效果等级和时长
+ */
+export function droughtEffectAtkTrigger() {
+  world.afterEvents.entityHitEntity.subscribe((arg) => {
+    if (arg.damagingEntity.matches({ families: ["drought_attacker"] })) {
+      if (arg.hitEntity.isValid())
+        droughtEffect.addLevelTemporarily(arg.hitEntity, 1, 160);
     }
   });
 }

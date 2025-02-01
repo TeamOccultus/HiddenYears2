@@ -12,6 +12,7 @@ import {
   corrosionAttackTrigger,
   imitationDamageTrigger,
   trophyBundleTrigger,
+  droughtEffectAtkTrigger,
 } from "../core/triggers";
 
 export class Hy2System {
@@ -31,7 +32,8 @@ export class Hy2System {
     tetanusAttackTrigger();
     corrosionAttackTrigger();
     imitationDamageTrigger();
-    trophyBundleTrigger()
+    trophyBundleTrigger();
+    droughtEffectAtkTrigger();
   }
   /**
    * 更新物品ID
