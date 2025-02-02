@@ -26,7 +26,7 @@
         },
         "minecraft:biome_filter": {
           "all_of": [
-            { "test": "has_biome_tag", "operator": "==", "value": "taiga" },
+            { "test": "has_biome_tag", "operator": "==", "value": "monster" },
             { "test": "has_biome_tag", "operator": "!=", "value": "desert" }
           ]
         }
