@@ -261,6 +261,19 @@
         },
         "pitch": [0.8, 1.2],
         "volume": 1.0
+      },
+      "hy:sand_trader": {
+        "volume": 1,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
       }
     }
   }

@@ -605,6 +605,8 @@ item.spawn_egg.entity.hy:sand_silverfish.name=沙蟲刷怪蛋
 hy.item.bleak_totem=黯淡的圖騰
 hy.item.trophy_bundle=戰利品袋
 hy.item.money_bundle=錢袋
+entity.hy:sand_trader.name=流沙行商
+item.spawn_egg.entity.hy:sand_trader.name=流沙行商刷怪蛋
 
 ## 工具技能
 hy.itemSkill.hammer.1=「礦工的一擊」觸發，額外給予敵人挖掘疲勞III與虛弱！
