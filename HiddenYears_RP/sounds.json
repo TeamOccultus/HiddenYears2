@@ -247,6 +247,20 @@
         },
         "pitch": [0.8, 1.2],
         "volume": 1.0
+      },
+      "hy:scorpion": {
+        "events": {
+          "ambient": "mob.spider.say",
+          "death": "mob.spider.death",
+          "hurt": "mob.spider.say",
+          "step": {
+            "pitch": [0.9, 1.1],
+            "sound": "mob.spider.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
       }
     }
   }

@@ -815,7 +815,9 @@
         "textures/items/egg_drift_sand_soldier",
         "textures/items/egg_pharaohs_ghost",
         "textures/items/egg_sand_creeper",
-        "textures/items/egg_sand_sliverfish"
+        "textures/items/egg_sand_sliverfish",
+        "textures/items/egg_scorpion"
+
       ]
     },
     "hy.imitation_diamond": {
