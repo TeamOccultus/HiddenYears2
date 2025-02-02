@@ -1,0 +1,21 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:jigsaw": {
+      "description": {
+        "identifier": "hy:sand_trader_house"
+      },
+      "heightmap_projection": "world_surface",
+      "max_depth": 20,
+      "start_height": 0,
+      "start_pool": "hy:sand_trader_house",
+      "step": "surface_structures",
+      "terrain_adaptation": "none",
+      "biome_filters": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "desert"
+        }
+      ]
+    }
+  }
