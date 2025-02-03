@@ -8,6 +8,7 @@ import {
 } from "@grindstone/utils";
 import { dehydrationEffect } from "./effects/dehydration";
 import { droughtEffect } from "./effects/drought";
+import { tetanusEffect } from "./effects/tetanus";
 
 const FUEL_METAL = new FoodItemBuilder(
   "hy:fuel_metal",
@@ -192,6 +193,24 @@ const ENCHANTED_SAND_APPLE = new FoodItemBuilder(
   }
 );
 
+const SCORPION_POTION = new FoodItemBuilder(
+  "hy:scorpion_potion",
+  [{ effectType: "saturation", duration: 20 }],
+  (event) => {
+    const player = event.source;
+    tetanusEffect.setLevel(player,0);
+    withPercentChance({
+      chance: 0.65,
+      event: () => {
+        player.addEffect("poison", 400);
+      },
+    });
+    player.onScreenDisplay.setActionBar({
+      translate: "hy.message.scorpion_potion",
+    });
+  }
+);
+
 /**
  * 注册食物
  */
@@ -226,4 +245,5 @@ export function registryFood() {
   MEDICINE_14.build();
   SAND_APPLE.build();
   ENCHANTED_SAND_APPLE.build();
+  SCORPION_POTION.build();
 }

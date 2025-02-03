@@ -28,7 +28,11 @@ export function tetanusAttackTrigger() {
       event.hitEntity,
       getEquipmentItem(event.damagingEntity),
     ];
-    if (ITEM?.hasTag("hy:oxidized_item")||ITEM?.hasTag("hy:weathered_item")||ITEM?.hasTag("hy:exposed_item")) {
+    if (
+      ITEM?.hasTag("hy:oxidized_item") ||
+      ITEM?.hasTag("hy:weathered_item") ||
+      ITEM?.hasTag("hy:exposed_item")
+    ) {
       tetanusEffect.addLevelTemporarily(TARGET, 1, 300);
     }
   });
