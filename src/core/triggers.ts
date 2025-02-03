@@ -19,7 +19,7 @@ import { tetanusEffect } from "../server/registry/effects/tetanus";
 
 /**
  * 破伤风伤害监听器
- * @tag `hy:tetanus_item` 将物品设置为可进行破伤风伤害
+ * @tag `hy:oxidized_item`、`hy:weathered_item`、`hy:exposed_item` 将物品设置为可进行破伤风伤害
  * @tag `hy:tetanus_attacker` 标记造成伤害的生物，破伤风伤害不会应用在含有此标签的生物之上
  */
 export function tetanusAttackTrigger() {
@@ -28,7 +28,7 @@ export function tetanusAttackTrigger() {
       event.hitEntity,
       getEquipmentItem(event.damagingEntity),
     ];
-    if (ITEM?.hasTag("hy:tetanus_item")) {
+    if (ITEM?.hasTag("hy:oxidized_item")||ITEM?.hasTag("hy:weathered_item")||ITEM?.hasTag("hy:exposed_item")) {
       tetanusEffect.addLevelTemporarily(TARGET, 1, 300);
     }
   });
