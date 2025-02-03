@@ -1121,6 +1121,9 @@
     },
     "hy.scorpion_pincers": {
       "textures": "textures/items/scorpion_pincers"
+    },
+    "hy.scorpion_potion": {
+      "textures": "textures/items/scorpion_potion"
     }
   }
 }

@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:scorpion_potion",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "minecraft:max_stack_size": 16,
+      "minecraft:icon": "hy.scorpion_potion",
+      "minecraft:display_name": {
+        "value": "hy.item.scorpion_potion"
+      },
+      "minecraft:use_animation": "drink",
+      "minecraft:use_modifiers": {
+        "use_duration": 2.0,
+        "movement_modifier": 0.5
+      },
+      "minecraft:food": {
+        "nutrition": 1,
+        "can_always_eat": true,
+        "saturation_modifier": 1.0,
+        "using_converts_to": "glass_bottle"
+      },
+      "minecraft:tags": {
+        "tags": ["potion"]
+      }
+    }
+  }
+}

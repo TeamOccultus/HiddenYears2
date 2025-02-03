@@ -601,6 +601,7 @@ item.spawn_egg.entity.hy:sand_trader.name=流沙行商刷怪蛋
 hy.item.sand_apple=砂化苹果
 hy.item.enchanted_sand_apple=附魔砂化苹果
 hy.item.scorpion_pincers=蝎钳
+hy.item.scorpion_potion=蝎毒药水
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！
