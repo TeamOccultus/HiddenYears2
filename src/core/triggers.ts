@@ -15,6 +15,7 @@ import {
 } from "@grindstone/utils";
 import { applyImitationDamage } from "./utils";
 import { droughtEffect } from "../server/registry/effects/drought";
+import { tetanusEffect } from "../server/registry/effects/tetanus";
 
 /**
  * 破伤风伤害监听器
@@ -22,22 +23,13 @@ import { droughtEffect } from "../server/registry/effects/drought";
  * @tag `hy:tetanus_attacker` 标记造成伤害的生物，破伤风伤害不会应用在含有此标签的生物之上
  */
 export function tetanusAttackTrigger() {
-  world.afterEvents.itemUse.subscribe((event) => {
-    const [PLAYER, ITEM] = [event.source, event.itemStack];
-    if (ITEM.hasTag("hy:tetanus_item")) {
-      PLAYER.addTag("hy:tetanus_attacker");
-      const opinion: EntityQueryOptions = {
-        location: PLAYER.location,
-        maxDistance: 4,
-        excludeTags: ["hy:tetanus_attacker"],
-        excludeFamilies: ["noaoe"],
-      };
-      affectEntities(PLAYER.dimension, opinion, "poison", 300);
-      affectEntities(PLAYER.dimension, opinion, "nausea", 600, {
-        amplifier: 1,
-      });
-      affectEntities(PLAYER.dimension, opinion, "wither", 6);
-      PLAYER.removeTag("hy:tetanus_attacker");
+  world.afterEvents.entityHitEntity.subscribe((event) => {
+    const [TARGET, ITEM] = [
+      event.hitEntity,
+      getEquipmentItem(event.damagingEntity),
+    ];
+    if (ITEM?.hasTag("hy:tetanus_item")) {
+      tetanusEffect.addLevelTemporarily(TARGET, 1, 300);
     }
   });
 }

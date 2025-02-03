@@ -653,7 +653,7 @@ hy.lategameTips.4=「很快，我们将会在那轮回无有之处相遇。因�
 hy.lategameTips.5=有了「名字」，就不会被「遗忘」，没有「遗忘」就不会「消失」
 
 ## 游戏消息
-hy.message.tetanus=你获得了§d「破伤风」§r效果！
+hy.message.tetanus=敌人武器上带有的§d「破伤风」§r效果使你感觉不适……
 hy.message.oxidising.exposed=此工具已然变得§d「斑驳」§r！
 hy.message.oxidising.weathered=此工具已然变得§d「锈蚀」§r！
 hy.message.oxidising.oxidized=此工具已然§d「完全氧化」§r！
