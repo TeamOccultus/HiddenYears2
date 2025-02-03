@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "sand_apple"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "X": {
+        "item": "sandstone"
+      },
+      "A": {
+        "item": "apple"
+      }
+    },
+    "unlock": [
+      {
+        "item": "sandstone"
+      },
+      {
+        "item": "apple"
+      }
+    ],
+    "result": {
+      "item": "hy:sand_apple"
+    }
+  }
+}

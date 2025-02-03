@@ -1,6 +1,11 @@
 import { EntityDamageCause, ItemStack, world } from "@minecraft/server";
 import { FoodItemBuilder } from "@grindstone/item-kit";
-import { clearEffect, EffectGroups, giveItem } from "@grindstone/utils";
+import {
+  clearEffect,
+  EffectGroups,
+  giveItem,
+  withPercentChance,
+} from "@grindstone/utils";
 import { dehydrationEffect } from "./effects/dehydration";
 import { droughtEffect } from "./effects/drought";
 
@@ -154,6 +159,39 @@ const MEDICINE_14 = new FoodItemBuilder("hy:medicine_14", [
   { effectType: "fire_resistance", duration: 400 },
 ]);
 
+const SAND_APPLE = new FoodItemBuilder(
+  "hy:sand_apple",
+  [
+    { effectType: "absorption", duration: 600 },
+    { effectType: "fire_resistance", duration: 600 },
+  ],
+  (event) => {
+    withPercentChance({
+      chance: 0.15,
+      event: () => {
+        droughtEffect.addLevelTemporarily(event.source, 1, 200);
+      },
+    });
+  }
+);
+
+const ENCHANTED_SAND_APPLE = new FoodItemBuilder(
+  "hy:enchanted_sand_apple",
+  [
+    { effectType: "absorption", duration: 600 },
+    { effectType: "fire_resistance", duration: 600 },
+    { effectType: "regeneration", duration: 400, amplifier: 1 },
+  ],
+  (event) => {
+    withPercentChance({
+      chance: 0.15,
+      event: () => {
+        droughtEffect.addLevelTemporarily(event.source, 1, 200);
+      },
+    });
+  }
+);
+
 /**
  * 注册食物
  */
@@ -186,4 +224,6 @@ export function registryFood() {
   MEDICINE_12.build();
   MEDICINE_13.build();
   MEDICINE_14.build();
+  SAND_APPLE.build();
+  ENCHANTED_SAND_APPLE.build();
 }

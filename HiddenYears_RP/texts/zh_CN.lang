@@ -471,19 +471,12 @@ hy.item.ruby_boardsword.embryo=红宝石阔剑原胚
 gui.quest_done=你已完成此任务
 gui.check=检查并提交
 
-
-
-
 hy.item.raw_flash_copper_ingot=粗闪铜锭
 hy.item.raw_flash_metal_ingot=粗闪金锭
 hy.item.raw_steel_ingot=粗钢锭
 
 hy.item.quest_book.0=隐藏之年主线任务书
 hy.item.quest_book.1=已经弃用的主线任务书
-
-
-
-
 
 entity.hy:sprite.name=精灵
 item.spawn_egg.entity.hy:sprite.name=精灵刷怪蛋
@@ -494,8 +487,6 @@ hy.item.soul_letter.sprite=凝魂信笺·风灵
 
 hy.collection.title=记忆文库
 hy.collection.body=这里会显示你所有阅读过的文章
-
-
 
 hy.item.bone_piece=骨片
 hy.item.bone_piece_axe=骨片斧
@@ -607,6 +598,8 @@ hy.item.trophy_bundle=战利品袋
 hy.item.money_bundle=钱袋
 entity.hy:sand_trader.name=流沙行商
 item.spawn_egg.entity.hy:sand_trader.name=流沙行商刷怪蛋
+hy.item.sand_apple=砂化苹果
+hy.item.enchanted_sand_apple=附魔砂化苹果
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！

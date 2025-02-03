@@ -1115,6 +1115,9 @@
     },
     "hy.desert_mythology": {
       "textures": "textures/items/desert_mythology"
+    },
+    "hy.sand_apple": {
+      "textures": "textures/items/sand_apple"
     }
   }
 }
