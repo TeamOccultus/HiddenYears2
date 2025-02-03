@@ -118,7 +118,14 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
     {
       title: { translate: "hy.quest.chapter5.title" },
       body: { translate: "hy.quest.chapter5.body" },
-      quests: [quests.GOLD_SAND, quests.SAND_SLIVERFISH, quests.LETTER_14],
+      quests: [
+        quests.GOLD_SAND,
+        quests.SAND_SLIVERFISH,
+        quests.LETTER_14,
+        quests.SCORPION,
+        quests.SCORPION_POTION,
+        quests.LETTER_17,
+      ],
       iconPath: "textures/items/gold_sand",
     },
     {

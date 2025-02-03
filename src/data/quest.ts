@@ -2314,6 +2314,79 @@ export const TROPHY_BUNDLE = new Quest(
   }
 );
 
+export const SCORPION = new Quest(
+  "scorpion",
+  { translate: "hy.quest.scorpion.title" },
+  { translate: "hy.quest.scorpion.body" },
+  {
+    condition: {
+      killEntity: {
+        name: "蝎子",
+        typeId: "hy:scorpion"
+      }
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        itemStack: new ItemStack("hy:gold_coin", 15),
+      },
+    },
+    iconPath: "textures/items/egg_scorpion",
+  }
+);
+
+export const SCORPION_POTION = new Quest(
+  "scorpion_potion",
+  { translate: "hy.quest.scorpion_potion.title" },
+  { translate: "hy.quest.scorpion_potion.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:scorpion_potion"),
+        name: {
+          translate: "hy.item.scorpion_potion",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        itemStack: new ItemStack("hy:gold_coin", 20),
+      },
+    },
+    iconPath: "textures/items/scorpion_potion",
+  }
+);
+
+export const LETTER_17 = new Quest(
+  "letter_17",
+  { translate: "hy.quest.letter_17.title" },
+  { translate: "hy.quest.letter_17.body" },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:letter_17"),
+        name: {
+          translate: "article.17.title",
+        },
+      },
+    },
+    award: {
+      item: {
+        itemStack: new ItemStack("diamond", 2),
+        name: {
+          translate: "item.diamond.name",
+        },
+      },
+    },
+    iconPath: "textures/items/desert_mythology",
+  }
+);
+
 export const ECHO_SHARD = new Quest(
   "echo_shard",
   { translate: "hy.quest.echo_shard.title" },
