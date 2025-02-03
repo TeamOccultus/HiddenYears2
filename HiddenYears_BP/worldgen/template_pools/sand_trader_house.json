@@ -6,7 +6,7 @@
       },
       "elements": [
         {
-          "projection": "rigid",
+          "projection": "terrain_matching",
           "element": {
             "element_type": "minecraft:single_pool_element",
             "location": "hy/sand_trader_house",

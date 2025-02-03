@@ -4,8 +4,8 @@
       "description": {
         "identifier": "hy:sand_trader_house"
       },
-      "heightmap_projection": "world_surface",
-      "max_depth": 20,
+      "heightmap_projection": "ocean_floor",
+      "max_depth": 5,
       "start_height": 0,
       "start_pool": "hy:sand_trader_house",
       "step": "surface_structures",
