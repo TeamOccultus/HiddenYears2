@@ -177,7 +177,7 @@
         "damage": 2
       },
       "minecraft:despawn": {
-        "despawn_from_distance": {}
+        "filters": { "test": "is_difficulty", "value": "peaceful" }
       },
       "minecraft:behavior.float": {
         "priority": 1
