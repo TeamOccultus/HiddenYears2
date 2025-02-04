@@ -2315,14 +2315,14 @@ export const TROPHY_BUNDLE = new Quest(
 );
 
 export const SCORPION = new Quest(
-  "scorpion",
-  { translate: "hy.quest.scorpion.title" },
-  { translate: "hy.quest.scorpion.body" },
+  "sand_spider",
+  { translate: "hy.quest.sand_spider.title" },
+  { translate: "hy.quest.sand_spider.body" },
   {
     condition: {
       killEntity: {
         name: "蝎子",
-        typeId: "hy:scorpion"
+        typeId: "hy:sand_spider"
       }
     },
     award: {
@@ -2333,20 +2333,20 @@ export const SCORPION = new Quest(
         itemStack: new ItemStack("hy:gold_coin", 15),
       },
     },
-    iconPath: "textures/items/egg_scorpion",
+    iconPath: "textures/items/egg_sand_spider",
   }
 );
 
 export const SCORPION_POTION = new Quest(
-  "scorpion_potion",
-  { translate: "hy.quest.scorpion_potion.title" },
-  { translate: "hy.quest.scorpion_potion.body" },
+  "sand_spider_potion",
+  { translate: "hy.quest.sand_spider_potion.title" },
+  { translate: "hy.quest.sand_spider_potion.body" },
   {
     condition: {
       item: {
-        itemStack: new ItemStack("hy:scorpion_potion"),
+        itemStack: new ItemStack("hy:sand_spider_potion"),
         name: {
-          translate: "hy.item.scorpion_potion",
+          translate: "hy.item.sand_spider_potion",
         },
       },
     },
@@ -2358,7 +2358,7 @@ export const SCORPION_POTION = new Quest(
         itemStack: new ItemStack("hy:gold_coin", 20),
       },
     },
-    iconPath: "textures/items/scorpion_potion",
+    iconPath: "textures/items/sand_spider_potion",
   }
 );
 
@@ -2384,6 +2384,29 @@ export const LETTER_17 = new Quest(
       },
     },
     iconPath: "textures/items/desert_mythology",
+  }
+);
+
+export const SAND_SPIDER = new Quest(
+  "sand_spider",
+  { translate: "hy.quest.sand_spider.title" },
+  { translate: "hy.quest.sand_spider.body" },
+  {
+    condition: {
+      killEntity: {
+        name: "沙蚀蜘蛛",
+        typeId: "hy:sand_spider"
+      }
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        itemStack: new ItemStack("hy:gold_coin", 10),
+      },
+    },
+    iconPath: "textures/items/egg_sand_spider",
   }
 );
 

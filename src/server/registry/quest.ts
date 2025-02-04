@@ -122,6 +122,7 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
         quests.GOLD_SAND,
         quests.SAND_SLIVERFISH,
         quests.LETTER_14,
+        quests.SAND_SPIDER,
         quests.SCORPION,
         quests.SCORPION_POTION,
         quests.LETTER_17,
