@@ -211,6 +211,12 @@ const SCORPION_POTION = new FoodItemBuilder(
   }
 );
 
+const SAND_SPIDER_EYE = new FoodItemBuilder(
+  "hy:sand_spider_eye",
+  [{ effectType: "hunger", duration: 200 }],
+);
+
+
 /**
  * 注册食物
  */
@@ -246,4 +252,5 @@ export function registryFood() {
   SAND_APPLE.build();
   ENCHANTED_SAND_APPLE.build();
   SCORPION_POTION.build();
+  SAND_SPIDER_EYE.build();
 }
