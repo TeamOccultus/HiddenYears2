@@ -1,0 +1,21 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:structure_set": {
+      "description": {
+        "identifier": "hy:spider_dungeon"
+      },
+      "placement": {
+        "type": "minecraft:random_spread",
+        "salt": 114514,
+        "separation": 2,
+        "spacing": 8,
+        "spread_type": "linear"
+      },
+      "structures": [
+        {
+          "structure": "hy:spider_dungeon",
+          "weight": 1
+        }
+      ]
+    }
+  }
