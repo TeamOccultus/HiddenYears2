@@ -262,6 +262,20 @@
         "pitch": [0.8, 1.2],
         "volume": 1.0
       },
+      "hy:sand_spider": {
+        "events": {
+          "ambient": "mob.spider.say",
+          "death": "mob.spider.death",
+          "hurt": "mob.spider.say",
+          "step": {
+            "pitch": [0.9, 1.1],
+            "sound": "mob.spider.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
       "hy:sand_trader": {
         "volume": 1,
         "pitch": [0.8, 1.2],
