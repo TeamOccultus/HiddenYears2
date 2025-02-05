@@ -1,42 +1,11 @@
-import {
-  ToolTag,
-  WeaponAtkSkill,
-  WeaponTag,
-} from "@grindstone/item-kit";
+import { ToolTag, WeaponAtkSkill, WeaponTag } from "@grindstone/item-kit";
 import { replaceLowerCopperTool } from "../../core/utils";
 import { bleedEffect } from "./effects/bleed";
 import { droughtEffect } from "./effects/drought";
 import { dehydrationEffect } from "./effects/dehydration";
-
-const normalTool = new ToolTag("hy:custom_tools", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-});
-
-const normalShovel = new ToolTag("hy:custom_shovel", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-  type: "shovel",
-  closeDurabilityTrigger: true,
-});
-
-const normalAxe = new ToolTag("hy:custom_axe", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-  type: "axe",
-  closeDurabilityTrigger: true,
-});
-
-const normalHoe = new ToolTag("hy:custom_hoe", {
-  destroyedAfterEvents: (holder, item) => {
-    replaceLowerCopperTool(item, holder);
-  },
-  type: "hoe",
-  closeDurabilityTrigger: true,
-});
+import {
+  ToolMaterial,
+} from "@grindstone/material-kit";
 
 const normalWeapon = new WeaponTag("hy:custom_weapons", {
   destroyedAfterEvents: (holder, item) => {
@@ -209,38 +178,39 @@ const boardswordWeapon = new WeaponTag("hy:magic_explode", {
  * 带有干旱效果的武器
  * @tag `hy:drought_effect` 使物品攻击时给予目标300刻的干旱效果
  */
-const droughtEffectWeapon = new WeaponTag("hy:drought_effect",{
+const droughtEffectWeapon = new WeaponTag("hy:drought_effect", {
   closeDurabilityTrigger: true,
   skill: [
-   new WeaponAtkSkill(1,{
-    custom(attacker, target) {
-      droughtEffect.addLevelTemporarily(target, 1, 300);
-    },
-   })
-  ]
-})
+    new WeaponAtkSkill(1, {
+      custom(attacker, target) {
+        droughtEffect.addLevelTemporarily(target, 1, 300);
+      },
+    }),
+  ],
+});
 
 /**
  * 带有脱水效果的武器
  * @tag `hy:dehydration_effect` 使物品攻击时给予目标300刻的脱水效果
  */
-const dehydrationEffectWeapon = new WeaponTag("hy:dehydration_effect",{
+const dehydrationEffectWeapon = new WeaponTag("hy:dehydration_effect", {
   closeDurabilityTrigger: true,
   skill: [
-   new WeaponAtkSkill(1,{
-    custom(attacker, target) {
-      dehydrationEffect.addLevelTemporarily(target, 1, 300);
-    },
-   })
-  ]
-})
+    new WeaponAtkSkill(1, {
+      custom(attacker, target) {
+        dehydrationEffect.addLevelTemporarily(target, 1, 300);
+      },
+    }),
+  ],
+});
 
 export function registryTool() {
+  const tool = new ToolMaterial("hy:custom_tools", true);
+  tool.onToolBreak((callback) => {
+    replaceLowerCopperTool(callback.itemStack, callback.source);
+  });
+
   normalWeapon.build();
-  normalTool.build();
-  normalShovel.build();
-  normalAxe.build();
-  normalHoe.build();
   awlWeapon.build();
   hammerWeapon.build();
   corwbarWeapon.build();
