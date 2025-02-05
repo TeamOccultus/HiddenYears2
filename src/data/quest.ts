@@ -2315,14 +2315,14 @@ export const TROPHY_BUNDLE = new Quest(
 );
 
 export const SCORPION = new Quest(
-  "sand_spider",
-  { translate: "hy.quest.sand_spider.title" },
-  { translate: "hy.quest.sand_spider.body" },
+  "scorpion",
+  { translate: "hy.quest.scorpion.title" },
+  { translate: "hy.quest.scorpion.body" },
   {
     condition: {
       killEntity: {
         name: "蝎子",
-        typeId: "hy:sand_spider"
+        typeId: "hy:scorpion"
       }
     },
     award: {
@@ -2333,20 +2333,20 @@ export const SCORPION = new Quest(
         itemStack: new ItemStack("hy:gold_coin", 15),
       },
     },
-    iconPath: "textures/items/egg_sand_spider",
+    iconPath: "textures/items/egg_scorpion",
   }
 );
 
 export const SCORPION_POTION = new Quest(
-  "sand_spider_potion",
-  { translate: "hy.quest.sand_spider_potion.title" },
-  { translate: "hy.quest.sand_spider_potion.body" },
+  "scorpion_potion",
+  { translate: "hy.quest.scorpion_potion.title" },
+  { translate: "hy.quest.scorpion_potion.body" },
   {
     condition: {
       item: {
-        itemStack: new ItemStack("hy:sand_spider_potion"),
+        itemStack: new ItemStack("hy:scorpion_potion"),
         name: {
-          translate: "hy.item.sand_spider_potion",
+          translate: "hy.item.scorpion_potion",
         },
       },
     },
@@ -2358,7 +2358,7 @@ export const SCORPION_POTION = new Quest(
         itemStack: new ItemStack("hy:gold_coin", 20),
       },
     },
-    iconPath: "textures/items/sand_spider_potion",
+    iconPath: "textures/items/scorpion_potion",
   }
 );
 
