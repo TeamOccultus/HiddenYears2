@@ -23,7 +23,7 @@
               "wants": [
                 {
                   "item": "minecraft:potato",
-                  "quantity": 15,
+                  "quantity": 5,
                   "price_multiplier": 0.05
                 }
               ],
@@ -49,7 +49,7 @@
               "wants": [
                 {
                   "item": "minecraft:carrot",
-                  "quantity": 20,
+                  "quantity": 8,
                   "price_multiplier": 0.05
                 }
               ],
@@ -233,7 +233,7 @@
             },{
               "wants": [
                 {
-                  "item": "hy:copper_coin",
+                  "item": "hy:stack_of_copper_coin",
                   "quantity": 12,
                   "price_multiplier": 0.05
                 }
@@ -270,7 +270,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 4,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],
@@ -282,7 +282,7 @@
             {
               "wants": [
                 {
-                  "item": "hy:copper_coin",
+                  "item": "hy:stack_of_copper_coin",
                   "quantity": 18,
                   "price_multiplier": 0.05
                 }

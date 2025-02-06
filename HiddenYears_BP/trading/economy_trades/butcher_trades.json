@@ -10,7 +10,7 @@
               "wants": [
                 { "item": "chicken", "quantity": 2, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 30 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 12 }],
               "trader_exp": 3,
               "max_uses": 16,
               "reward_exp": true
@@ -19,7 +19,7 @@
               "wants": [
                 { "item": "mutton", "quantity": 2, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 50 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 15 }],
               "trader_exp": 3,
               "max_uses": 16,
               "reward_exp": true
@@ -37,7 +37,7 @@
               "wants": [
                 { "item": "porkchop", "quantity": 2, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 40 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 13 }],
               "trader_exp": 3,
               "max_uses": 16,
               "reward_exp": true
@@ -46,7 +46,7 @@
               "wants": [
                 { "item": "beef", "quantity": 2, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 60 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 25 }],
               "trader_exp": 3,
               "max_uses": 16,
               "reward_exp": true
@@ -55,7 +55,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 28,
+                  "quantity": 9,
                   "price_multiplier": 0.05
                 }
               ],
@@ -68,7 +68,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 45,
+                  "quantity": 18,
                   "price_multiplier": 0.05
                 }
               ],
@@ -94,7 +94,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 57,
+                  "quantity": 20,
                   "price_multiplier": 0.05
                 }
               ],
@@ -117,7 +117,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 50,
+                  "quantity": 25,
                   "price_multiplier": 0.05
                 }
               ],
@@ -130,7 +130,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 30,
+                  "quantity": 25,
                   "price_multiplier": 0.05
                 }
               ],
@@ -147,7 +147,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 15 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 10 }],
               "trader_exp": 5,
               "max_uses": 16,
               "reward_exp": true
@@ -160,7 +160,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 20 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 12 }],
               "trader_exp": 5,
               "max_uses": 16,
               "reward_exp": true
@@ -173,7 +173,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 10 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 7 }],
               "trader_exp": 5,
               "max_uses": 16,
               "reward_exp": true
@@ -186,7 +186,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "cooked_mutton", "quantity": 50 }],
+              "gives": [{ "item": "cooked_mutton", "quantity": 25 }],
               "trader_exp": 5,
               "max_uses": 16,
               "reward_exp": true
@@ -199,7 +199,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 30 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 12 }],
               "trader_exp": 5,
               "max_uses": 16,
               "reward_exp": true
@@ -208,7 +208,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 17,
+                  "quantity": 8,
                   "price_multiplier": 0.05
                 }
               ],
@@ -221,7 +221,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 22,
+                  "quantity": 12,
                   "price_multiplier": 0.05
                 }
               ],
@@ -234,7 +234,7 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 20,
+                  "quantity": 24,
                   "price_multiplier": 0.05
                 }
               ],
@@ -333,11 +333,11 @@
               "wants": [
                 {
                   "item": "hy:copper_coin",
-                  "quantity": 40,
+                  "quantity": 20,
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "porkchop", "quantity": 2 }],
+              "gives": [{ "item": "porkchop", "quantity": 5 }],
               "trader_exp": 3,
               "max_uses": 16,
               "reward_exp": true
@@ -350,7 +350,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:copper_coin", "quantity": 27 }],
+              "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -373,7 +373,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 3 }],
+              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 2 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -382,7 +382,7 @@
               "wants": [
                 { "item": "coal", "quantity": 1, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 6 }],
+              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 3 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -395,7 +395,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 8 }],
+              "gives": [{ "item": "hy:stack_of_copper_coin", "quantity": 10 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
