@@ -604,6 +604,7 @@ hy.item.scorpion_potion=蝎毒药水
 hy.item.sand_spider_eye=沙蚀蜘蛛眼
 entity.hy:sand_spider.name=沙蚀蜘蛛
 item.spawn_egg.entity.hy:sand_spider.name=沙蚀蜘蛛刷怪蛋
+hy.item.babel_tower_wreckage.sand=「列巴部·否热沃忒」之碎片·赤沙
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！

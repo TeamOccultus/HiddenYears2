@@ -1127,6 +1127,9 @@
     },
     "hy.sand_spider_eye": {
       "textures": "textures/items/sand_spider_eye"
+    },
+    "hy.babel_tower_wreckage.sand": {
+      "textures": "textures/items/babel_tower_wreckage_sand"
     }
   }
 }
