@@ -1,6 +1,19 @@
-import { BlockVolume, Player, system, world } from "@minecraft/server";
+import {
+  BlockVolume,
+  EquipmentSlot,
+  ItemStack,
+  Player,
+  system,
+  WeatherType,
+  world,
+} from "@minecraft/server";
 import { Boss, BossSkill } from "@grindstone/entity-kit";
 import { droughtEffect } from "./effects/drought";
+import {
+  getEquipmentItem,
+  setEquipmentItem,
+  withPercentChance,
+} from "@grindstone/utils";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
   level: -9999,
@@ -143,7 +156,92 @@ const PHARAOHS_GHOST = new Boss(
   { trackId: "music.boss.pharaohs_ghost", radius: 20 }
 );
 
+const KAHE = new BossSkill(
+  "kahe",
+  300,
+  10,
+  {
+    event: (entity, boss) => {
+      if (boss) boss.playAnimation("animation.mutas_wrath.kahe_skill");
+      if (!entity.isValid()) return;
+      entity.addEffect("weakness", 400, { amplifier: 2 });
+      entity.addEffect("poison", 400);
+    },
+  },
+  { translate: "hy.boosSkill.mutas_wrath.kahe" }
+);
+
+const OSIRIS = new BossSkill(
+  "osiris",
+  600,
+  5,
+  {
+    event: (entity, boss) => {
+      if (boss) boss.playAnimation("animation.mutas_wrath.osiris_skill");
+      if (!entity.isValid()) return;
+      if (
+        getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
+        "hy:drift_sand_coronet"
+      )
+        return;
+      entity.applyDamage(10);
+    },
+  },
+  { translate: "hy.boosSkill.mutas_wrath.osiris" }
+);
+
+const ISIS = new BossSkill(
+  "isis",
+  1200,
+  10,
+  {
+    event: (entity, boss) => {
+      if (boss) {
+        boss.playAnimation("animation.mutas_wrath.kahe_skill");
+        boss.dimension.setWeather(WeatherType.Thunder);
+      }
+      if (!entity.isValid()) return;
+      withPercentChance({
+        chance: 0.9,
+        event: () => {
+          entity.dimension.spawnEntity("lightning_bolt", entity.location);
+        },
+      });
+    },
+  },
+  { translate: "hy.boosSkill.mutas_wrath.isis" }
+);
+
+const MUTA = new BossSkill(
+  "muta",
+  100,
+  15,
+  {
+    event: (entity, boss) => {
+      if (boss) {
+        setEquipmentItem(boss, new ItemStack("diamond_sword"));
+        console.log(getEquipmentItem(boss)?.typeId)
+        boss.playAnimation("animation.mutas_wrath.muta_skill", {
+          controller: "controller.animation.mutas_wrath.none",
+        });
+        setEquipmentItem(boss);
+      }
+      if (!entity.isValid()) return;
+      if (
+        getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
+        "hy:drift_sand_coronet"
+      )
+        return;
+      entity.applyDamage(18);
+    },
+  },
+  { translate: "hy.boosSkill.mutas_wrath.muta" }
+);
+
+const MUTAS_WRATH = new Boss("hy:mutas_wrath", [KAHE, OSIRIS, ISIS, MUTA]);
+
 export function registryBoss() {
   RUBY_KING.build();
   PHARAOHS_GHOST.build();
+  MUTAS_WRATH.build();
 }

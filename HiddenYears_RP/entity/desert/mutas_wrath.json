@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hy:mutas_wrath",
+      "materials": {
+        "default": "spider"
+      },
+      "textures": {
+        "default": "textures/entity/mutas_wrath"
+      },
+      "geometry": {
+        "default": "geometry.mutas_wrath"
+      },
+      "animations": {
+        "idle": "animation.mutas_wrath.idle",
+        "move": "animation.mutas_wrath.move",
+        "none": "animation.mutas_wrath.none",
+        "kahe_skill": "animation.mutas_wrath.kahe_skill",
+        "osiris_skill": "animation.mutas_wrath.osiris_skill",
+        "muta_skill": "animation.mutas_wrath.muta_skill"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.mutas_wrath.move"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.default"
+      ],
+      "spawn_egg": {
+        "texture": "hy.spawn_eggs",
+        "texture_index": 19
+      }
+    }
+  }
+}
