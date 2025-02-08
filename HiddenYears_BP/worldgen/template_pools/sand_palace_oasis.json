@@ -1,0 +1,19 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:template_pool": {
+      "description": {
+        "identifier": "hy:sand_palace_oasis"
+      },
+      "elements": [
+        {
+          "projection": "rigid",
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "hy/sand_palace_oasis",
+            "processors": "hy:none"
+          },
+          "weight": 1
+        }
+      ]
+    }
+  }

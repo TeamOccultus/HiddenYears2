@@ -1,0 +1,21 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:jigsaw": {
+      "description": {
+        "identifier": "hy:desert_underground_palace"
+      },
+      "heightmap_projection": "ocean_floor",
+      "max_depth": 20,
+      "start_height": -30,
+      "start_pool": "hy:sand_palace_entrance_hall",
+      "step": "underground_structures",
+      "terrain_adaptation": "bury",
+      "biome_filters": [
+        {
+          "test": "has_biome_tag",
+          "operator": "==",
+          "value": "desert"
+        }
+      ]
+    }
+  }

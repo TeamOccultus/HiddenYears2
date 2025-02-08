@@ -1,0 +1,37 @@
+{
+    "format_version": "1.21.40",
+    "minecraft:template_pool": {
+      "description": {
+        "identifier": "hy:sand_palace_entrance_hall"
+      },
+      "elements": [
+        {
+          "projection": "rigid",
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "hy/sand_palace_entrance_hall_1",
+            "processors": "hy:none"
+          },
+          "weight": 1
+        },
+        {
+          "projection": "rigid",
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "hy/sand_palace_entrance_hall_2",
+            "processors": "hy:none"
+          },
+          "weight": 1
+        },
+        {
+          "projection": "rigid",
+          "element": {
+            "element_type": "minecraft:single_pool_element",
+            "location": "hy/sand_palace_entrance_hall_3",
+            "processors": "hy:none"
+          },
+          "weight": 1
+        }
+      ]
+    }
+  }
