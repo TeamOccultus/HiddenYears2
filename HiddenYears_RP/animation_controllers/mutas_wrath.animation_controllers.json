@@ -9,25 +9,11 @@
           "transitions": [
             {
               "move": "query.modified_move_speed > 0"
-            },
-            {
-              "none": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:diamond_sword')"
             }
           ]
         },
         "move": {
           "animations": ["idle", "move"],
-          "transitions": [
-            {
-              "default": "query.all_animations_finished"
-            },
-            {
-              "none": "query.is_item_name_any('slot.weapon.mainhand', 0, 'minecraft:diamond_sword')"
-            }
-          ]
-        },
-        "none": {
-          "animations": ["none"],
           "transitions": [
             {
               "default": "query.all_animations_finished"

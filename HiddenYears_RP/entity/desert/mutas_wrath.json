@@ -25,9 +25,7 @@
           "move": "controller.animation.mutas_wrath.move"
         }
       ],
-      "render_controllers": [
-        "controller.render.default"
-      ],
+      "render_controllers": ["controller.render.default"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 19

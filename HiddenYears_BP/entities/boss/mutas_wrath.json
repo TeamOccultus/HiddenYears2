@@ -38,6 +38,13 @@
       "minecraft:knockback_resistance": {
         "value": 1.0
       },
+      "minecraft:inventory": {
+        "can_be_siphoned_from": false,
+        "container_type": "container",
+        "inventory_size": 1,
+        "private": true,
+        "restrict_to_owner": true
+      },
       "minecraft:fire_immune": {},
       "minecraft:breathable": {
         "breathes_air": true,
@@ -105,6 +112,13 @@
               "test": "is_family",
               "subject": "other",
               "value": "player"
+            }
+          },
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "villager"
             }
           }
         ],

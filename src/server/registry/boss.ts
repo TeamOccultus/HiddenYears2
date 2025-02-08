@@ -1,5 +1,8 @@
 import {
   BlockVolume,
+  EntityComponentTypes,
+  EntityEquippableComponent,
+  EntityInventoryComponent,
   EquipmentSlot,
   ItemStack,
   Player,
@@ -177,7 +180,7 @@ const OSIRIS = new BossSkill(
   5,
   {
     event: (entity, boss) => {
-      if (boss) boss.playAnimation("animation.mutas_wrath.osiris_skill");
+      if (boss) boss.playAnimation("animation.mutas_wrath.kahe_skill");
       if (!entity.isValid()) return;
       if (
         getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
@@ -219,12 +222,7 @@ const MUTA = new BossSkill(
   {
     event: (entity, boss) => {
       if (boss) {
-        setEquipmentItem(boss, new ItemStack("diamond_sword"));
-        console.log(getEquipmentItem(boss)?.typeId)
-        boss.playAnimation("animation.mutas_wrath.muta_skill", {
-          controller: "controller.animation.mutas_wrath.none",
-        });
-        setEquipmentItem(boss);
+        boss.playAnimation("animation.mutas_wrath.kahe_skill");
       }
       if (!entity.isValid()) return;
       if (
