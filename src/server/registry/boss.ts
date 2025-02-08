@@ -187,7 +187,7 @@ const OSIRIS = new BossSkill(
         "hy:drift_sand_coronet"
       )
         return;
-      entity.applyDamage(10);
+      entity.applyDamage(15);
     },
   },
   { translate: "hy.boosSkill.mutas_wrath.osiris" }
@@ -228,8 +228,10 @@ const MUTA = new BossSkill(
       if (
         getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
         "hy:drift_sand_coronet"
-      )
+      ) {
+        entity.applyDamage(8);
         return;
+      }
       entity.applyDamage(18);
     },
   },
