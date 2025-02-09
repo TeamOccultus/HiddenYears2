@@ -610,6 +610,7 @@ hy.item.babel_tower_wreckage.sand=「列巴部·否热沃忒」之碎片·赤沙
 entity.hy:mutas_wrath.name=「创世者」的愤怒
 item.spawn_egg.entity.hy:mutas_wrath.name=「创世者」的愤怒召唤蛋
 hy.block.sand_grave=沙蚀的坟冢
+hy.item.aaru_dream.desc=§4该物品会对游戏地形造成较大影响，请谨慎使用！§r
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！

@@ -11,7 +11,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hy.desert_heart",
       "minecraft:display_name": {
-        "value": "hy.item.aaru_dream"
+        "value": "%hy.item.aaru_dream\n%hy.item.aaru_dream.desc"
       },
       "minecraft:glint": true,
       "minecraft:hover_text_color": "aqua",
