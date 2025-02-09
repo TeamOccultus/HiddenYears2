@@ -5,11 +5,7 @@ import {
   Vector3,
   world,
 } from "@minecraft/server";
-import {
-  getEquipmentItem,
-  loot,
-  setEquipmentItem,
-} from "@grindstone/utils";
+import { getEquipmentItem, loot, setEquipmentItem } from "@grindstone/utils";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const itemRegistry = event.itemComponentRegistry;
@@ -122,16 +118,27 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
   });
   blockRegistry.registerCustomComponent("hy:sand_grave", {
     onPlayerInteract(arg) {
-      if(getEquipmentItem(arg.player)?.typeId === "hy:drift_sand_coronet") {
-        arg.block.setType("hy:actived_sand_grave")
+      if (getEquipmentItem(arg.player)?.typeId === "hy:drift_sand_coronet") {
+        arg.player.camera.fade({
+          fadeTime: {
+            fadeInTime: 1,
+            holdTime: 3,
+            fadeOutTime: 1 
+          }
+        })
+        arg.player.camera.setCamera("minecraft:third_person");
         arg.player.onScreenDisplay.setTitle({
           translate: "hy.title.mutas_wrath",
         });
         arg.player.onScreenDisplay.updateSubtitle({
           translate: "hy.title.mutas_wrath.subtitle",
         });
-        arg.dimension.spawnEntity("hy:mutas_wrath", arg.block.location);
+        arg.block.setType("hy:actived_sand_grave");
+        system.runTimeout(() => {
+          arg.dimension.spawnEntity("hy:mutas_wrath", arg.block.location);
+          arg.player.camera.setCamera("minecraft:first_person");
+        }, 60);
       }
-    }
-  })
+    },
+  });
 });
