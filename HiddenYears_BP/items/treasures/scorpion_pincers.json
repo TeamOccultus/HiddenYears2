@@ -10,7 +10,7 @@
     "components": {
       "minecraft:icon": "hy.scorpion_pincers",
       "minecraft:display_name": {
-        "value": "hy.scorpion_pincers"
+        "value": "hy.item.scorpion_pincers"
       },
       "minecraft:compostable": {
         "composting_chance": 55
