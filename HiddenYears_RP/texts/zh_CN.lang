@@ -583,6 +583,8 @@ hy.title.king_of_ruby=§4力量与鲜血的试炼§r
 hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强大的力量……§r
 hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
 hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
+hy.title.mutas_wrath=§4「创世者」的愤怒§r
+hy.title.mutas_wrath.subtitle=§d被改造的层沙之力凝结为了一体……§r
 
 hy.block.sand_copper_ore=砂岩铜矿石
 hy.block.sand_coal_ore=砂岩煤矿石
@@ -607,6 +609,7 @@ item.spawn_egg.entity.hy:sand_spider.name=沙蚀蜘蛛刷怪蛋
 hy.item.babel_tower_wreckage.sand=「列巴部·否热沃忒」之碎片·赤沙
 entity.hy:mutas_wrath.name=「创世者」的愤怒
 item.spawn_egg.entity.hy:mutas_wrath.name=「创世者」的愤怒召唤蛋
+hy.block.sand_grave=沙蚀的坟冢
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！

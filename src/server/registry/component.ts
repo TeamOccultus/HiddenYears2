@@ -120,4 +120,18 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       }
     },
   });
+  blockRegistry.registerCustomComponent("hy:sand_grave", {
+    onPlayerInteract(arg) {
+      if(getEquipmentItem(arg.player)?.typeId === "hy:drift_sand_coronet") {
+        arg.block.setType("hy:actived_sand_grave")
+        arg.player.onScreenDisplay.setTitle({
+          translate: "hy.title.mutas_wrath",
+        });
+        arg.player.onScreenDisplay.updateSubtitle({
+          translate: "hy.title.mutas_wrath.subtitle",
+        });
+        arg.dimension.spawnEntity("hy:mutas_wrath", arg.block.location);
+      }
+    }
+  })
 });

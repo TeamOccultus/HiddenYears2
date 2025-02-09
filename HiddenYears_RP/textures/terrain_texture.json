@@ -168,6 +168,12 @@
     },
     "hy.sand_with_gold_dust": {
       "textures": "textures/blocks/sand_with_gold_dust"
+    },
+    "hy.sand_grave": {
+      "textures": "textures/blocks/sand_grave"
+    },
+    "hy.actived_sand_grave": {
+      "textures": "textures/blocks/actived_sand_grave"
     }
   }
 }
