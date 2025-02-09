@@ -10,7 +10,7 @@
           "element": {
             "element_type": "minecraft:single_pool_element",
             "location": "hy/sand_palace_trial_hall",
-            "processors": "hy:none"
+            "processors": "hy:random_sand"
           },
           "weight": 1
         }

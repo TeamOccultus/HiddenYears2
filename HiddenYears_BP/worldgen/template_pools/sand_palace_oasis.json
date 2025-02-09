@@ -10,7 +10,7 @@
           "element": {
             "element_type": "minecraft:single_pool_element",
             "location": "hy/sand_palace_oasis",
-            "processors": "hy:none"
+            "processors": "hy:ban_torch"
           },
           "weight": 1
         }
