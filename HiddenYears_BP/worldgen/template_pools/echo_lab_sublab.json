@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hy:echo_lab_sublab"
+    },
+    "elements": [
+      {
+        "projection": "rigid",
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hy/echo_lab_sublab",
+          "processors": "hy:echo_desert_lab"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}
