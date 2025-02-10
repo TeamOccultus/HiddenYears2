@@ -450,6 +450,33 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.18.body10" },
     ],
   },
+  {
+    rawtext: [
+      { translate: "article.19.quote" },
+      { text: "\n\n" },
+      { translate: "article.19.body0" },
+      { text: Format.newLine },
+      { translate: "article.19.body1" },
+      { text: Format.newLine },
+      { translate: "article.19.body2" },
+      { text: "\n\n" },
+      { translate: "article.19.body3" },
+      { text: Format.newLine },
+      { translate: "article.19.body4" },
+      { text: Format.newLine },
+      { translate: "article.19.body5" },
+      { text: "\n\n" },
+      { translate: "article.19.body6" },
+      { text: Format.newLine },
+      { translate: "article.19.body7" },
+      { text: "\n\n" },
+      { translate: "article.19.body8" },
+      { text: Format.newLine},
+      { translate: "article.19.body9" },
+      { text: "\n\n" },
+      { translate: "article.19.body10" },
+    ],
+  },
 ];
 
 /**

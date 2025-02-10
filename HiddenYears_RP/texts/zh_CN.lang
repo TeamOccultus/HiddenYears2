@@ -2,6 +2,32 @@
 pack.name=隐藏之年²
 pack.description=「探索未知的世间」 ｜ 正式版2.4.10
 
+## 技术性字符串
+hy.lang.on_use=§9§l使用时：§r
+quest.entity=杀死 %1
+quest.not_enough.entity=你需要杀死 %1 才能完成这个任务
+gui.check=提交任务
+gui.about=关于
+hy.empty=     
+hy.ui.open_source.title=开源项目
+hy.ui.open_source.description=本项目使用了下面开源项目的代码/资源，谨此对这些项目的开发者致以崇高的敬意！
+api.unexpected_error.quest=任务系统出现未知错误
+quest.finished=你完成了一个任务！
+quest.done=任务已完成
+quest.check=尝试提交任务
+quest.not_enough.item=材料不足，你需要 %1 个 %2 才能完成这个任务
+quest.not_enough.level=你需要 %1 级经验才能完成这个任务
+quest.not_enough.xp=你需要 %1 点经验才能完成这个任务
+quest.condition=§e完成条件§r：
+quest.award=§e完成奖励§r：
+quest.item=%1 个 %2;
+quest.xp=%1 点经验
+quest.level=%1 级经验
+quest.reward.none=无奖励
+quest.condition.none=无条件
+quest.tips=§4特殊提示§r：
+article.nothing.title=无解锁文章
+article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
 
 ## 方块、物品与实体
 entity.hy:gemstone_trader.name=宝石商人
@@ -612,6 +638,9 @@ item.spawn_egg.entity.hy:mutas_wrath.name=「创世者」的愤怒召唤蛋
 hy.block.sand_grave=沙蚀的坟冢
 hy.item.aaru_dream.desc=§4该物品会对游戏地形造成较大影响，请谨慎使用！§r
 hy.item.isis_crown=雨神之冠
+hy.item.mutas_staff=「创世三神」之魔杖
+hy.item.mutas_staff.desc1=§f+6×15格 范围伤害§r
+hy.item.mutas_staff.desc2=§f在半径6格敌对生物头顶召唤雷暴§r
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！
@@ -716,8 +745,8 @@ hy.monologue.mutas_wrath_dead.7=【伊西斯】可天边的陌生来客此时再
 hy.monologue.mutas_wrath_dead.8=【伊西斯】这，就是层沙的真相……
 
 ## 物品分组
-hy:itemGroup.name.embryos=隐藏之年·铸剑原胚
-hy:itemGroup.name.boardswords=隐藏之年·阔剑
+hy:itemGroup.name.embryos=隐藏之年·法器原胚
+hy:itemGroup.name.boardswords=隐藏之年·法器
 hy:itemGroup.name.badges=隐藏之年·徽章
 hy:itemGroup.name.daggers=隐藏之年·匕首
 hy:itemGroup.name.readings=隐藏之年·阅读物与任务书
@@ -1093,6 +1122,7 @@ article.15.title=阔剑锻造指南
 article.16.title=沙加缅度发掘记
 article.17.title=尼罗特神话集
 article.18.title=一沓凌乱的证件
+article.19.title=「层沙」的真相
 
 article.0.body0=过往繁荣的时代正在逝去，昔日欢笑的我们也将化作尘埃。
 article.0.body1=而在这个孤单的世界中，恐怕唯一的智慧生物就是你。可惜的是，我无法为你详尽的解释究竟发生了什么——你现在只需知道，§l你是「异变」中的幸存者，被我们派到这里开拓新世界。§r
@@ -1315,28 +1345,20 @@ article.18.body8=​死亡证明
 article.18.body9==============
 article.18.body10=​死者奥西里斯·法郎，26岁，8902年5月因感染风寒而亡。
 
-## 技术性
-quest.entity=杀死 %1
-quest.not_enough.entity=你需要杀死 %1 才能完成这个任务
-gui.check=提交任务
-gui.about=关于
-hy.empty=     
-hy.ui.open_source.title=开源项目
-hy.ui.open_source.description=本项目使用了下面开源项目的代码/资源，谨此对这些项目的开发者致以崇高的敬意！
-api.unexpected_error.quest=任务系统出现未知错误
-quest.finished=你完成了一个任务！
-quest.done=任务已完成
-quest.check=尝试提交任务
-quest.not_enough.item=材料不足，你需要 %1 个 %2 才能完成这个任务
-quest.not_enough.level=你需要 %1 级经验才能完成这个任务
-quest.not_enough.xp=你需要 %1 点经验才能完成这个任务
-quest.condition=§e完成条件§r：
-quest.award=§e完成奖励§r：
-quest.item=%1 个 %2;
-quest.xp=%1 点经验
-quest.level=%1 级经验
-quest.reward.none=无奖励
-quest.condition.none=无条件
-quest.tips=§4特殊提示§r：
-article.nothing.title=无解锁文章
-article.nothing.body=你没有解锁任何文章，你可以得到并阅读一篇文章来解锁它。
+article.19.quote=（击败「创世者」的愤怒后，脑海中响起的声音所给予你的口述）
+
+article.19.body0=我曾见到，天边的陌生来客造访旧世，随后那冰封的断裂时代便开始了。
+article.19.body1=再度醒来，故土早已堕为三层荒芜的世界，而中间的一层，被茫茫的沙海所覆盖，魔物横行其间，无数与我有着相同血脉的部族在其间厮杀……月亮升起的刹那，我获得了属于层沙的力量，于是在部族之外游离的我——
+article.19.body2=成为了部族口中「星空中的第一位神明」，伊西斯。
+
+article.19.body3=我令部族歃血为盟，抵御魔物，建立了沙海中的古帝国。
+article.19.body4=我将最虔诚的信徒选作帝国的君王，即是被称为「法老」的存在。
+article.19.body5=可天边的陌生来客此时再度降临世间，倾覆了整个帝国，我也在此中陨落……
+
+article.19.body6=这时的我才知晓，在沙海下方的下方，是承载着两族的巨大岩窟，他们信奉天边的陌生来客，尊其为「自由」之神，其中一族还与我有着相同的血脉……
+article.19.body7=此时，维持岩窟中脆弱环境的力量已经不多了，而两族正为了争夺那股力量而战……
+
+article.19.body8=无尽的战争持续了半个世纪后，「自由」之神姗姗来迟，降下神谕，带领两族迁移到了我们的位面，而原来的岩窟环境则彻底恶化，成为了如今的炽热之地——「下界」
+article.19.body9=——我由于得到了纯正的「层沙之力」从而记下了这一切，不像被抹去了记忆的那些「自由」之神的拥趸……
+
+article.19.body10=这就是「层沙」的真相。
