@@ -7,6 +7,17 @@
         "groups": [
           {
             "group_identifier": {
+              "icon": "hy:isis_crown",
+              "name": "hy:itemGroup.name.crowns"
+            },
+            "items": [
+              "hy:isis_crown",
+              "hy:drift_sand_coronet",
+              "hy:ruby_helmet"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hy:diamond_crowbar",
               "name": "hy:itemGroup.name.crowbars"
             },

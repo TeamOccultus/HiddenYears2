@@ -4,8 +4,7 @@
     "description": {
       "identifier": "hy:drift_sand_coronet",
       "menu_category": {
-        "category": "equipment",
-        "group": "itemGroup.name.helmet"
+        "category": "equipment"
       }
     },
     "components": {

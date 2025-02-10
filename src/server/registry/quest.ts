@@ -126,6 +126,7 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
         quests.SCORPION,
         quests.SCORPION_POTION,
         quests.LETTER_17,
+        quests.ISIS_CROWN,
       ],
       iconPath: "textures/items/gold_sand",
     },

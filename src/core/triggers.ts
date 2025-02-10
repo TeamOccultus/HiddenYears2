@@ -1,5 +1,8 @@
 import {
+  EntityHealableComponent,
+  EntityHealthComponent,
   EntityQueryOptions,
+  EquipmentSlot,
   ItemCooldownComponent,
   system,
   Vector3,
@@ -16,6 +19,7 @@ import {
 import { applyImitationDamage } from "./utils";
 import { droughtEffect } from "../server/registry/effects/drought";
 import { tetanusEffect } from "../server/registry/effects/tetanus";
+import { hasRestParameter } from "typescript";
 
 /**
  * 破伤风伤害监听器
@@ -158,6 +162,28 @@ export function droughtEffectAtkTrigger() {
     if (arg.damagingEntity.matches({ families: ["drought_attacker"] })) {
       if (arg.hitEntity.isValid())
         droughtEffect.addLevelTemporarily(arg.hitEntity, 1, 160);
+    }
+  });
+}
+
+export function isisCrownAtkTrigger() {
+  world.afterEvents.entityHealthChanged.subscribe((event) => {
+    const changedValue = event.newValue - event.oldValue;
+    if (changedValue <= 0) return;
+    if (!event.entity.isValid()) return;
+    if (
+      getEquipmentItem(event.entity, EquipmentSlot.Head)?.typeId ===
+      "hy:isis_crown"
+    ) {
+      const health = event.entity.getComponent(
+        "minecraft:health"
+      ) as EntityHealthComponent;
+      const newHealth = health.currentValue + changedValue * 0.25;
+      if (newHealth > health.defaultValue) {
+        health.resetToDefaultValue();
+      } else {
+        health.setCurrentValue(newHealth);
+      }
     }
   });
 }

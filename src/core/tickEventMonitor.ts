@@ -32,3 +32,17 @@ export function badgeEffectMonitor() {
     }
   });
 }
+
+/**
+ * 雨神王冠效果监听器
+ */
+export function isisCrownEffectMonitor() {
+  world.getAllPlayers().forEach((player) => {
+    if (getEquipmentItem(player, EquipmentSlot.Head)?.typeId ==="hy:isis_crown"){
+      player.addEffect("fire_resistance", 40);
+      if(!player.hasTag("hy:immune_desert_debuff")){
+        player.addTag("hy:immune_desert_debuff");
+      }
+    }
+  });
+}

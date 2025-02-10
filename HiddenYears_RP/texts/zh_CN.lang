@@ -611,6 +611,7 @@ entity.hy:mutas_wrath.name=「创世者」的愤怒
 item.spawn_egg.entity.hy:mutas_wrath.name=「创世者」的愤怒召唤蛋
 hy.block.sand_grave=沙蚀的坟冢
 hy.item.aaru_dream.desc=§4该物品会对游戏地形造成较大影响，请谨慎使用！§r
+hy.item.isis_crown=雨神之冠
 
 ## 工具技能
 hy.itemSkill.hammer.1=「矿工的一击」触发，额外给予敌人挖掘疲劳III与虚弱！
@@ -705,6 +706,14 @@ hy.monologue.osiris.4=【？？？】殿堂的回廊已经寂寞了太久，如�
 hy.monologue.osiris.5=【奥西里斯】此人即是奥西里斯，§4雨之神伊西斯最忠实的信徒，尼罗特帝国法老§r
 hy.monologue.mutas_wrath.1=【？？？】时隔千年，谁再一次惊动了沉睡的沙海？
 hy.monologue.mutas_wrath.2=【奥西里斯】吾将与那创世的「三神」结合，击败无礼的僭越者！
+hy.monologue.mutas_wrath_dead.1=【？】我曾见到，天边的陌生来客造访旧世，随后那冰封的断裂时代便开始了……
+hy.monologue.mutas_wrath_dead.2=【？】再度醒来，故土早已堕为三层荒芜的世界，而其中的一层，被茫茫的沙海所覆盖，魔物横行其间，无数与我有着相同血脉的部族在其间厮杀……
+hy.monologue.mutas_wrath_dead.3=【？】在月亮升起的刹那，天边熟悉的来客降下属于层沙的力量，于是在部族之外游离的我——
+hy.monologue.mutas_wrath_dead.4=【伊西斯】成为了部族口中「星空中的第一位神明」，伊西斯……
+hy.monologue.mutas_wrath_dead.5=【伊西斯】我令部族歃血为盟，抵御魔物，建立了沙海中的古帝国。
+hy.monologue.mutas_wrath_dead.6=【伊西斯】我将最虔诚的信徒选作帝国的君王，即是被称为「法老」的存在。
+hy.monologue.mutas_wrath_dead.7=【伊西斯】可天边的陌生来客此时再度降临世间，倾覆了整个帝国，我也在此中陨落……
+hy.monologue.mutas_wrath_dead.8=【伊西斯】这，就是层沙的真相……
 
 ## 物品分组
 hy:itemGroup.name.embryos=隐藏之年·铸剑原胚
@@ -727,6 +736,7 @@ hy:itemGroup.name.medicines=隐藏之年·药物
 hy:itemGroup.name.materials=隐藏之年·铸锭与宝石
 hy:itemGroup.name.raw_materials=隐藏之年·原始材料
 hy:itemGroup.name.bundles=隐藏之年·宝袋
+hy:itemGroup.name.crowns=隐藏之年·冠冕
 
 ## 文章收集任务
 hy.quest.story_book.title=§d[书海无涯] §r故事的起点
@@ -979,7 +989,7 @@ hy.quest.shattered_sand_staff.body2=我们在冰层之间沉睡，醒来之时�
 hy.quest.shattered_sand_staff.body3=于是我们结为部族，抵御这外来的魔物。 
 hy.quest.shattered_sand_staff.body4=在月亮升起的刹那，星空中的第一位神明降临世间，她令我们歃血为盟，建立流沙之团抵御魔物，用神力封锁受觊觎的财宝，还将她最虔诚的信徒选作帝国的君王，即是被称为「法老」的存在。
 hy.quest.shattered_sand_staff.body5=十年后，魔物终于剿灭，我们建立了庞大的帝国，将文明与繁荣洒向大地，可不久之后，星空中的第二个「神」降临世间……
-hy.quest.shattered_sand_staff.tips=在沙漠中寻找「沙漠祭坛」，将回生之符插入其中的无名框架即可召唤法老残影，击败BOSS即可获得流沙之杖
+hy.quest.shattered_sand_staff.tips=在沙漠中寻找「沙漠祭坛」，将回生之符插入其中的无名框架即可召唤BOSS-法老残影，击败BOSS即可获得流沙之杖
 hy.quest.gold_sand.title=沙中碎金
 hy.quest.gold_sand.body1=传说在雨之神陨灭之后，古尼罗特所有的财宝都逐渐湮没在沙尘之中，形成了这种带有魔力的沙子……
 hy.quest.gold_sand.body2=由于某种诅咒，你似乎无法将其中的金子直接从细沙中淘洗出来……
@@ -993,13 +1003,19 @@ hy.quest.letter_14.title=沙中淘金的故事
 hy.quest.letter_14.body=在探险家营地中获得散落的信纸·沙中淘金的故事，了解尼罗特帝国覆灭后的故事
 hy.quest.scorpion.title=【异变】的前兆
 hy.quest.scorpion.body=在沙蚀蜘蛛受侵蚀多少年后，来自于「祀礼会」的祭司们■■■■■■■，使用了沙蚀蜘蛛作为试验品，结果就是一种更凶悍的怪物诞生了……
+hy.quest.scorpion.tips=在地下寻找「异变的实验所」，击败其中的蝎子
 hy.quest.scorpion_potion.title=蝎之毒
 hy.quest.scorpion_potion.body=用蝎子的钳酿造而成的药水，可以用来治疗破伤风患者，同时在过于饥饿时也可用于救命，然而蝎子的毒素使饮用它的生物也有可能眩晕、中毒
-hy.quest.letter_17.title=行商与古神话
-hy.quest.letter_17.body=在探险家营地中获得散落的信纸·沙中淘金的故事，了解尼罗特帝国覆灭后的故事
+hy.quest.letter_17.title=商旅与古神话
+hy.quest.letter_17.body=在沙漠中定居着一种商旅，而你可以在他们手中买到古尼罗特时代的神话……
 hy.quest.sand_spider.title=侵蚀的造物
 hy.quest.sand_spider.body=原先在原野生存的族群，在尼罗特帝国覆灭后迁移到沙漠，受沙尘所侵蚀，形成的新造物……
-
+hy.quest.isis_crown.title=§d[旧日的沙加缅度·终]§r三神与人之子的行宫
+hy.quest.isis_crown.body0=「我们是谁？我们曾经被称作▉▉▉▉，而后是『神明』……说法不断变化。我们始终如一。」
+hy.quest.isis_crown.body1=在尼罗特人的传说中，「创世三神」与「人之子」奥西里斯曾经修建了一座庞大的行宫，而这地宫在帝国覆灭时也随之一同被黄沙而掩埋。
+hy.quest.isis_crown.body2=时光荏苒，尘沙之上的帝国的所有造物都已归于尘沙，只有这地下行宫的某一角在「层沙之力」的影响下仍然存在于世间……
+hy.quest.isis_crown.body3=然而其间，凝结着一团「层沙之力」的具象表现，或许击败它，才能知道层沙背后的真相吧……
+hy.quest.isis_crown.tips=在沙漠地下寻找「地下行宫的一角」，将流沙之冠激活「无名的坟冢」即可召唤BOSS-「创世者」的愤怒，击败BOSS即可获得雨神之冠
 hy.quest.echo_shard.title=「回响」的碎片
 hy.quest.echo_shard.body0=承载着「回响」力量的碎片。
 hy.quest.echo_shard.body1=古时的祭司用「回响」力量来超度亡魂，维持死与生的边界。然而你感受到在这碎片上，除了「回响」之外，还有一股奇怪的力量……

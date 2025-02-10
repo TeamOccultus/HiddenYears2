@@ -1,20 +1,13 @@
 import {
   BlockVolume,
-  EntityComponentTypes,
-  EntityEquippableComponent,
-  EntityInventoryComponent,
   EquipmentSlot,
-  ItemStack,
   Player,
-  system,
   WeatherType,
-  world,
 } from "@minecraft/server";
 import { Boss, BossSkill } from "@grindstone/entity-kit";
 import { droughtEffect } from "./effects/drought";
 import {
   getEquipmentItem,
-  setEquipmentItem,
   withPercentChance,
 } from "@grindstone/utils";
 
@@ -257,7 +250,21 @@ const MUTA = new BossSkill(
   { translate: "hy.boosSkill.mutas_wrath.muta" }
 );
 
-const MUTAS_WRATH = new Boss("hy:mutas_wrath", [KAHE, OSIRIS, ISIS, MUTA]);
+const MUTAS_WRATH = new Boss(
+  "hy:mutas_wrath",
+  [KAHE, OSIRIS, ISIS, MUTA],
+  undefined,
+  (arg) => {
+    const dim = arg.deadEntity.dimension;
+    const boss = arg.deadEntity;
+    dim
+      .getEntities({ location: boss.location, minDistance: 0, maxDistance: 20 })
+      .forEach((entity) => {
+        if (entity instanceof Player) {
+        }
+      });
+  }
+);
 
 export function registryBoss() {
   RUBY_KING.build();

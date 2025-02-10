@@ -4,7 +4,7 @@ import {
   system,
   world,
 } from "@minecraft/server";
-import { badgeEffectMonitor } from "../core/tickEventMonitor";
+import { badgeEffectMonitor, isisCrownEffectMonitor } from "../core/tickEventMonitor";
 import { replaceItemStack } from "@grindstone/utils";
 import {
   magicExplodeTrigger,
@@ -22,6 +22,7 @@ export class Hy2System {
   static registryTickEvent(): void {
     system.runInterval(() => {
       badgeEffectMonitor();
+      isisCrownEffectMonitor();
     }, 20);
   }
   /**
@@ -34,6 +35,7 @@ export class Hy2System {
     imitationDamageTrigger();
     trophyBundleTrigger();
     droughtEffectAtkTrigger();
+    isisCrownEffectMonitor();
   }
   /**
    * 更新物品ID

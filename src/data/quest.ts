@@ -2334,6 +2334,9 @@ export const SCORPION = new Quest(
       },
     },
     iconPath: "textures/items/egg_scorpion",
+    tips: {
+      translate: "hy.quest.scorpion.tips",
+    }
   }
 );
 
@@ -2438,5 +2441,43 @@ export const ECHO_SHARD = new Quest(
       },
     },
     iconPath: "textures/items/echo_shard",
+  }
+);
+
+export const ISIS_CROWN = new Quest(
+  "isis_crown",
+  { translate: "hy.quest.isis_crown.title" },
+  {
+    rawtext: [
+      { translate: "hy.quest.isis_crown.body0" },
+      { text: "\n\n" },
+      { translate: "hy.quest.isis_crown.body1" },
+      { text: "\n" },
+      { translate: "hy.quest.isis_crown.body2" },
+      { text: "\n" },
+      { translate: "hy.quest.isis_crown.body3" },
+    ],
+  },
+  {
+    condition: {
+      playerXpLevel: 15,
+      item: {
+        name: {
+          translate: "hy.item.isis_crown",
+        },
+        itemStack: new ItemStack("hy:isis_crown"),
+      },
+    },
+    award: {
+      exp: 30,
+      item: {
+        name: {
+          translate: "item.diamond.name",
+        },
+        itemStack: new ItemStack("diamond", 10),
+      },
+    },
+    iconPath: "textures/items/isis_crown",
+    tips: { translate: "hy.quest.isis_crown.tips" },
   }
 );

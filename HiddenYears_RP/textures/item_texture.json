@@ -1131,6 +1131,9 @@
     },
     "hy.babel_tower_wreckage.sand": {
       "textures": "textures/items/babel_tower_wreckage_sand"
+    },
+    "hy.isis_crown": {
+      "textures": "textures/items/isis_crown"
     }
   }
 }
