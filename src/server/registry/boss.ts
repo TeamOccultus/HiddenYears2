@@ -6,10 +6,8 @@ import {
 } from "@minecraft/server";
 import { Boss, BossSkill } from "@grindstone/entity-kit";
 import { droughtEffect } from "./effects/drought";
-import {
-  getEquipmentItem,
-  withPercentChance,
-} from "@grindstone/utils";
+import { getEquipmentItem, withPercentChance } from "@grindstone/utils";
+import { listenIsisMonologue } from "../../core/utils";
 
 const STEAL_EXP = new BossSkill("steal_exp", 300, 15, {
   level: -9999,
@@ -261,6 +259,10 @@ const MUTAS_WRATH = new Boss(
       .getEntities({ location: boss.location, minDistance: 0, maxDistance: 20 })
       .forEach((entity) => {
         if (entity instanceof Player) {
+          if (entity.getDynamicProperty("hy:has_listened_isis_monologue")) {
+            return;
+          }
+          listenIsisMonologue(entity);
         }
       });
   }

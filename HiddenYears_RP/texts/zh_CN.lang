@@ -611,6 +611,8 @@ hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
 hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
 hy.title.mutas_wrath=§g「创世者」的愤怒§r
 hy.title.mutas_wrath.subtitle=§7被改造的层沙之力凝结为了一体……§r
+hy.title.desert_book=§g第三章·层沙的回响§r
+hy.title.desert_book.subtitle=§7任务完成§r
 
 hy.block.sand_copper_ore=砂岩铜矿石
 hy.block.sand_coal_ore=砂岩煤矿石
@@ -736,13 +738,12 @@ hy.monologue.osiris.5=【奥西里斯】此人即是奥西里斯，§4雨之神�
 hy.monologue.mutas_wrath.1=【？？？】时隔千年，谁再一次惊动了沉睡的沙海？
 hy.monologue.mutas_wrath.2=【奥西里斯】吾将与那创世的「三神」结合，击败无礼的僭越者！
 hy.monologue.mutas_wrath_dead.1=【？】我曾见到，天边的陌生来客造访旧世，随后那冰封的断裂时代便开始了……
-hy.monologue.mutas_wrath_dead.2=【？】再度醒来，故土早已堕为三层荒芜的世界，而其中的一层，被茫茫的沙海所覆盖，魔物横行其间，无数与我有着相同血脉的部族在其间厮杀……
+hy.monologue.mutas_wrath_dead.2=【？】再度醒来，故土早已堕为三层荒芜的世界，而其中的一层，被茫茫的沙海所覆盖。
 hy.monologue.mutas_wrath_dead.3=【？】在月亮升起的刹那，天边熟悉的来客降下属于层沙的力量，于是在部族之外游离的我——
 hy.monologue.mutas_wrath_dead.4=【伊西斯】成为了部族口中「星空中的第一位神明」，伊西斯……
-hy.monologue.mutas_wrath_dead.5=【伊西斯】我令部族歃血为盟，抵御魔物，建立了沙海中的古帝国。
-hy.monologue.mutas_wrath_dead.6=【伊西斯】我将最虔诚的信徒选作帝国的君王，即是被称为「法老」的存在。
-hy.monologue.mutas_wrath_dead.7=【伊西斯】可天边的陌生来客此时再度降临世间，倾覆了整个帝国，我也在此中陨落……
-hy.monologue.mutas_wrath_dead.8=【伊西斯】这，就是层沙的真相……
+hy.monologue.mutas_wrath_dead.5=【伊西斯】僭越者啊——不，你我都流淌着相同的血液，就由我——
+hy.monologue.mutas_wrath_dead.6=告诉你「层沙」的真相吧……
+hy.monologue.mutas_wrath_dead.7=§o %1 获得了文章「『层沙』的真相」§r
 
 ## 物品分组
 hy:itemGroup.name.embryos=隐藏之年·法器原胚
