@@ -161,7 +161,7 @@ const PHARAOHS_GHOST = new Boss(
 
 const KAHE = new BossSkill(
   "kahe",
-  300,
+  200,
   10,
   {
     event: (entity, boss) => {
@@ -177,19 +177,34 @@ const KAHE = new BossSkill(
 
 const OSIRIS = new BossSkill(
   "osiris",
-  600,
+  400,
   5,
   {
     event: (entity, boss) => {
-      if (boss) boss.playAnimation("animation.mutas_wrath.kahe_skill");
-      if (!entity.isValid()) return;
+      if (boss) {
+        boss.playAnimation("animation.mutas_wrath.kahe_skill");
+        boss.dimension.spawnEntity("hy:mummy", {
+          x: boss.location.x + 2,
+          y: boss.location.y,
+          z: boss.location.z,
+        });
+        boss.dimension.spawnEntity("hy:mummy", {
+          x: boss.location.x - 2,
+          y: boss.location.y,
+          z: boss.location.z,
+        });
+        boss.dimension.spawnEntity("hy:drift_sand_guardian", {
+          x: boss.location.x,
+          y: boss.location.y,
+          z: boss.location.z + 2,
+        });
+        boss.dimension.spawnEntity("hy:drift_sand_guardian", {
+          x: boss.location.x,
+          y: boss.location.y,
+          z: boss.location.z - 2,
+        });
+      }
       if (entity instanceof Player) entity.playSound("mob.shulker.shoot");
-      if (
-        getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
-        "hy:drift_sand_coronet"
-      )
-        return;
-      entity.applyDamage(15);
     },
   },
   { translate: "hy.boosSkill.mutas_wrath.osiris" }
@@ -197,7 +212,7 @@ const OSIRIS = new BossSkill(
 
 const ISIS = new BossSkill(
   "isis",
-  1200,
+  800,
   10,
   {
     event: (entity, boss) => {
@@ -220,7 +235,7 @@ const ISIS = new BossSkill(
 
 const MUTA = new BossSkill(
   "muta",
-  100,
+  1200,
   15,
   {
     event: (entity, boss) => {
