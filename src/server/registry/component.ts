@@ -1,11 +1,18 @@
 import {
+  ItemCooldownComponent,
   Player,
   StructureAnimationMode,
   system,
   Vector3,
   world,
 } from "@minecraft/server";
-import { getEquipmentItem, loot, setEquipmentItem } from "@grindstone/utils";
+import {
+  consumeDurability,
+  damageEntities,
+  getEquipmentItem,
+  loot,
+  setEquipmentItem,
+} from "@grindstone/utils";
 
 world.beforeEvents.worldInitialize.subscribe((event) => {
   const itemRegistry = event.itemComponentRegistry;
@@ -84,6 +91,11 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       } else {
         arg.source.sendMessage({ translate: "hy.message.cant_place" });
       }
+    },
+  });
+  itemRegistry.registerCustomComponent("hy:mutas_staff", {
+    onUse(arg) {
+     
     },
   });
   const blockRegistry = event.blockComponentRegistry;

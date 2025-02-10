@@ -13,6 +13,7 @@ import {
   imitationDamageTrigger,
   trophyBundleTrigger,
   droughtEffectAtkTrigger,
+  mutasStaffTrigger,
 } from "../core/triggers";
 
 export class Hy2System {
@@ -36,6 +37,7 @@ export class Hy2System {
     trophyBundleTrigger();
     droughtEffectAtkTrigger();
     isisCrownEffectMonitor();
+    // mutasStaffTrigger();
   }
   /**
    * 更新物品ID

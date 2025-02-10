@@ -10,6 +10,7 @@ import {
 } from "@minecraft/server";
 import {
   affectEntities,
+  consumeDurability,
   damageEntities,
   getEquipmentItem,
   loot,
@@ -75,6 +76,17 @@ export function magicExplodeTrigger() {
         PLAYER.removeTag("hy:magic_explode_attacker");
       }, 100);
     }
+  });
+}
+
+/**
+ * 法术爆发监听器
+ * @tag `hy:magic_explode_attacker` 标记造成伤害的生物，法术爆发不会应用在含有此标签的生物之上
+ */
+export function mutasStaffTrigger() {
+  world.afterEvents.itemUse.subscribe((event) => {
+    const [player, item] = [event.source, event.itemStack];
+    
   });
 }
 

@@ -1134,6 +1134,9 @@
     },
     "hy.isis_crown": {
       "textures": "textures/items/isis_crown"
+    },
+    "hy.mutas_staff": {
+      "textures": "textures/items/mutas_staff"
     }
   }
 }

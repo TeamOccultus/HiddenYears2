@@ -1,0 +1,52 @@
+{
+  "format_version": "1.21.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:mutas_staff",
+      "menu_category":{
+        "category": "equipment"
+      } 
+    },
+    "components": {
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:display_name": {
+        "value": "%hy.item.mutas_staff\n\n%hy.lang.on_use\n%hy.item.mutas_staff.desc1\n%hy.item.mutas_staff.desc2"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:durability": {
+        "max_durability": 600
+      },
+      "minecraft:damage": 8,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "sword"
+      },
+      "minecraft:cooldown": {
+        "category": "hy.mutas_staff",
+        "duration": 5
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:icon": "hy.mutas_staff",
+      "minecraft:max_stack_size": 1,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hy:mutas_staff"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          },
+          {
+            "items": ["minecraft:sandstone"],
+            "repair_amount": 120
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "hy:custom_weapons",
+          "minecraft:is_sword",
+          "minecraft:is_tool"
+        ]
+      }
+    }
+  }
+}

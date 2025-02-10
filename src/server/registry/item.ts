@@ -12,8 +12,11 @@ import {
 import { MagicAimAttack } from "../../core/magicAimAttack";
 import {
   affectEntities,
+  consumeDurability,
+  damageEntities,
   giveItem,
   randomInteger,
+  setEquipmentItem,
   withWeightChance,
 } from "@grindstone/utils";
 import { droughtEffect } from "./effects/drought";
@@ -363,9 +366,50 @@ const RUBY_BOARDSWORD = new DurabilityLimitedPropBuilder(
   }
 );
 
+const MUTAS_STAFF = new DurabilityLimitedPropBuilder(
+  "hy:mutas_staff",
+  1,
+  (event) => {
+    const [item, player] = [event.itemStack, event.source];
+    if (item.typeId === "hy:mutas_staff") {
+      const cooldown = item.getComponent("cooldown") as ItemCooldownComponent;
+      if (cooldown.getCooldownTicksRemaining(player) !== 0) {
+        console.log(cooldown.getCooldownTicksRemaining(player));
+        player.onScreenDisplay.setActionBar({
+          translate: "hy.message.wait_cooldown",
+        });
+        return;
+      }
+      const newItem = consumeDurability(item, 1, player);
+      setEquipmentItem(player, newItem);
+      player.addTag("hy:magic_explode_attacker");
+      damageEntities(
+        player.dimension,
+        {
+          location: player.location,
+          maxDistance: 15,
+          excludeTags: ["hy:magic_explode_attacker"],
+          excludeFamilies: ["noaoe"],
+        },
+        5
+      );
+      player.dimension
+        .getEntities({
+          location: player.location,
+          maxDistance: 15,
+          families: ["monster"],
+        })
+        .forEach((entity) => {
+          entity.dimension.spawnEntity("lightning_bolt", entity.location);
+        });
+      cooldown.startCooldown(player);
+    }
+  }
+);
+
 const RAIN_GOD_BLESSING = new PropBuilder("hy:rain_god_blessing", (event) => {
   const player = event.source;
-  droughtEffect.setLevel(player)
+  droughtEffect.setLevel(player);
   dehydrationEffect.setLevel(player);
   player.addTag("hy:immune_desert_debuff");
   player.onScreenDisplay.setActionBar({
@@ -400,4 +444,5 @@ export function registryItem() {
   AMETHYST_BOARDSWORD.build();
   RUBY_BOARDSWORD.build();
   RAIN_GOD_BLESSING.build();
+  MUTAS_STAFF.build();
 }
