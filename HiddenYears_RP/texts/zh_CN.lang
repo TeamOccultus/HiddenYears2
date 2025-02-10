@@ -583,8 +583,8 @@ hy.title.king_of_ruby=§4力量与鲜血的试炼§r
 hy.title.king_of_ruby.subtitle=§d嵌入祭坛的血色瞥视聚集起一股强大的力量……§r
 hy.title.pharaohs_ghost=§4乐土恨作尘沙§r
 hy.title.pharaohs_ghost.subtitle=§d尘沙之上的帝国终将复归尘沙……§r
-hy.title.mutas_wrath=§4「创世者」的愤怒§r
-hy.title.mutas_wrath.subtitle=§d被改造的层沙之力凝结为了一体……§r
+hy.title.mutas_wrath=§g「创世者」的愤怒§r
+hy.title.mutas_wrath.subtitle=§7被改造的层沙之力凝结为了一体……§r
 
 hy.block.sand_copper_ore=砂岩铜矿石
 hy.block.sand_coal_ore=砂岩煤矿石
@@ -703,6 +703,8 @@ hy.monologue.osiris.2=【？？？】倘若他们尊重神明、吃苦耐劳，�
 hy.monologue.osiris.3=【？？？】尽管这恢宏的殿堂早已灰飞烟灭，但其一角仍藏于我的心中……
 hy.monologue.osiris.4=【？？？】殿堂的回廊已经寂寞了太久，如今也将迎来最后一名受审之人……
 hy.monologue.osiris.5=【奥西里斯】此人即是奥西里斯，§4雨之神伊西斯最忠实的信徒，尼罗特帝国法老§r
+hy.monologue.mutas_wrath.1=【？？？】时隔千年，谁再一次惊动了沉睡的沙海？
+hy.monologue.mutas_wrath.2=【奥西里斯】吾将与那创世的「三神」结合，击败无礼的僭越者！
 
 ## 物品分组
 hy:itemGroup.name.embryos=隐藏之年·铸剑原胚

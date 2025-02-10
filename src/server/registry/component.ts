@@ -119,24 +119,35 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
   blockRegistry.registerCustomComponent("hy:sand_grave", {
     onPlayerInteract(arg) {
       if (getEquipmentItem(arg.player)?.typeId === "hy:drift_sand_coronet") {
-        arg.player.camera.fade({
-          fadeTime: {
-            fadeInTime: 1,
-            holdTime: 3,
-            fadeOutTime: 1 
-          }
-        })
-        arg.player.camera.setCamera("minecraft:third_person");
-        arg.player.onScreenDisplay.setTitle({
-          translate: "hy.title.mutas_wrath",
-        });
-        arg.player.onScreenDisplay.updateSubtitle({
-          translate: "hy.title.mutas_wrath.subtitle",
-        });
+        arg.player.playSound("vault.open_shutter");
         arg.block.setType("hy:actived_sand_grave");
+        arg.player.runCommand("camerashake add @p 0.25 5 rotational");
+        arg.player.sendMessage({ translate: "hy.monologue.mutas_wrath.1" });
         system.runTimeout(() => {
-          arg.dimension.spawnEntity("hy:mutas_wrath", arg.block.location);
-          arg.player.camera.setCamera("minecraft:first_person");
+          arg.player.camera.fade({
+            fadeTime: {
+              fadeInTime: 1,
+              holdTime: 3,
+              fadeOutTime: 1,
+            },
+          });
+          arg.player.sendMessage({ translate: "hy.monologue.mutas_wrath.2" });
+        }, 15);
+        system.runTimeout(() => {
+          arg.player.onScreenDisplay.setTitle({
+            translate: "hy.title.mutas_wrath",
+          });
+          arg.player.onScreenDisplay.updateSubtitle({
+            translate: "hy.title.mutas_wrath.subtitle",
+          });
+        }, 40);
+        system.runTimeout(() => {
+          const loc = arg.block.location;
+          arg.dimension.spawnEntity("hy:mutas_wrath", {
+            x: loc.x + 4,
+            y: loc.y,
+            z: loc.z,
+          });
         }, 60);
       }
     },

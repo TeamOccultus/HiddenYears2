@@ -288,6 +288,15 @@
           "haggle.yes": "mob.villager.yes",
           "haggle.no": "mob.villager.no"
         }
+      },
+      "hy:mutas_wrath": {
+        "events": {
+          "ambient": "mob.shulker.ambient",
+          "death": "mob.shulker.death",
+          "hurt": "mob.shulker.hurt"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
       }
     }
   }

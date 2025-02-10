@@ -167,6 +167,7 @@ const KAHE = new BossSkill(
     event: (entity, boss) => {
       if (boss) boss.playAnimation("animation.mutas_wrath.kahe_skill");
       if (!entity.isValid()) return;
+      if (entity instanceof Player) entity.playSound("mob.shulker.shoot");
       entity.addEffect("weakness", 400, { amplifier: 2 });
       entity.addEffect("poison", 400);
     },
@@ -182,6 +183,7 @@ const OSIRIS = new BossSkill(
     event: (entity, boss) => {
       if (boss) boss.playAnimation("animation.mutas_wrath.kahe_skill");
       if (!entity.isValid()) return;
+      if (entity instanceof Player) entity.playSound("mob.shulker.shoot");
       if (
         getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
         "hy:drift_sand_coronet"
@@ -204,6 +206,7 @@ const ISIS = new BossSkill(
         boss.dimension.setWeather(WeatherType.Thunder);
       }
       if (!entity.isValid()) return;
+      if (entity instanceof Player) entity.playSound("mob.shulker.shoot");
       withPercentChance({
         chance: 0.9,
         event: () => {
@@ -225,6 +228,7 @@ const MUTA = new BossSkill(
         boss.playAnimation("animation.mutas_wrath.kahe_skill");
       }
       if (!entity.isValid()) return;
+      if (entity instanceof Player) entity.playSound("mob.shulker.shoot");
       if (
         getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
         "hy:drift_sand_coronet"
