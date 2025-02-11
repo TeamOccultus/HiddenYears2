@@ -2481,3 +2481,30 @@ export const ISIS_CROWN = new Quest(
     tips: { translate: "hy.quest.isis_crown.tips" },
   }
 );
+
+export const BABEL_TOWER_WRECKAGE_SAND = new Quest(
+  "babel_tower_wreckage_sand",
+  { translate: "hy.quest.babel_tower_wreckage_sand.title" },
+  {
+    translate: "hy.quest.babel_tower_wreckage_sand.body",
+  },
+  {
+    condition: {
+      item: {
+        itemStack: new ItemStack("hy:babel_tower_wreckage_sand"),
+        name: {
+          translate: "hy.item.babel_tower_wreckage.sand",
+        },
+      },
+    },
+    award: {
+      item: {
+        name: {
+          translate: "hy.item.gold_coin",
+        },
+        itemStack: new ItemStack("hy:gold_coin", 20),
+      },
+    },
+    iconPath: "textures/items/babel_tower_wreckage_sand",
+  }
+);

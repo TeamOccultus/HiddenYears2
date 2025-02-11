@@ -136,6 +136,12 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
       quests: [quests.ECHO_SHARD],
       iconPath: "textures/items/echo_shard",
     },
+    {
+      title: { translate: "hy.quest.lastChapter1.title" },
+      body: { translate: "hy.quest.lastChapter1.body" },
+      quests: [quests.BABEL_TOWER_WRECKAGE_SAND],
+      iconPath: "textures/items/babel_tower_wreckage_sand",
+    },
   ]
 );
 const LETTER_0 = new QuestBookBuilder(
