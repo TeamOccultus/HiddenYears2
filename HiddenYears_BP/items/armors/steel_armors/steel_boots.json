@@ -19,7 +19,7 @@
         "slot": "armor_feet"
       },
       "minecraft:durability": {
-        "max_durability": 850
+        "max_durability": 455
       },
       "minecraft:wearable": {
         "slot": "slot.armor.feet",
