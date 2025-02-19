@@ -44,81 +44,9 @@
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.any_tag('wood', 'pumpkin', 'plant')"
+              "tags": "query.any_tag('minecraft:is_axe_item_destructible')"
             },
-            "speed": 3
-          },
-          {
-            "block": "crafting_table",
-            "speed": 3
-          },
-          {
-            "block": "chest",
-            "speed": 3
-          },
-          {
-            "block": "trapped_chest",
-            "speed": 3
-          },
-          {
-            "block": "lectern",
-            "speed": 3
-          },
-          {
-            "block": "smithing_table",
-            "speed": 3
-          },
-          {
-            "block": "loom",
-            "speed": 3
-          },
-          {
-            "block": "cartography_table",
-            "speed": 3
-          },
-          {
-            "block": "barrel",
-            "speed": 3
-          },
-          {
-            "block": "jukebox",
-            "speed": 3
-          },
-          {
-            "block": "campfire",
-            "speed": 3
-          },
-          {
-            "block": "soul_campfire",
-            "speed": 3
-          },
-          {
-            "block": "bookshelf",
-            "speed": 3
-          },
-          {
-            "block": "chiseled_bookshelf",
-            "speed": 3
-          },
-          {
-            "block": "noteblock",
-            "speed": 3
-          },
-          {
-            "block": "beehive",
-            "speed": 3
-          },
-          {
-            "block": "bee_nest",
-            "speed": 3
-          },
-          {
-            "block": "daylight_detector",
-            "speed": 3
-          },
-          {
-            "block": "melon_block",
-            "speed": 3
+            "speed": 4
           }
         ]
       },
