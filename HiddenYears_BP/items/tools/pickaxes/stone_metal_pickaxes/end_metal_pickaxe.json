@@ -26,7 +26,7 @@
           },
           {
             "items": ["hy:end_metal_ingot"],
-            "repair_amount": 50
+            "repair_amount": "query.max_durability * 0.25"
           }
         ]
       },
