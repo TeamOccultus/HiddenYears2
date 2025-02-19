@@ -30,27 +30,27 @@
             "block": {
               "tags": "query.any_tag('stone')"
             },
-            "speed": 7
+            "speed": 6
           },
           {
             "block": "netherrack",
-            "speed": 7
+            "speed": 6
           },
           {
             "block": "sandstone",
-            "speed": 7
+            "speed": 6
           },
           {
             "block": "deepslate",
-            "speed": 7
+            "speed": 6
           },
           {
             "block": "chiseled_deepslate",
-            "speed": 7
+            "speed": 6
           },
           {
             "block": "polished_deepslate",
-            "speed": 7
+            "speed": 6
           }
         ]
       },
