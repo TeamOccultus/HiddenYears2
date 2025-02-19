@@ -29,7 +29,7 @@
         "repair_items": [
           {
             "items": ["hy:smaragdus"],
-            "repair_amount": 500
+            "repair_amount": "query.max_durability * 0.25"
           },
           {
             "items": ["hy:smaragdus_helmet"],

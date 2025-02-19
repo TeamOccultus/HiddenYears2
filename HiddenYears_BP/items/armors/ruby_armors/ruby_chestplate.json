@@ -29,7 +29,7 @@
         "repair_items": [
           {
             "items": ["hy:ruby"],
-            "repair_amount": 50
+            "repair_amount": "query.max_durability * 0.25"
           },
           {
             "items": ["hy:ruby_chestplate"],
