@@ -39,75 +39,9 @@
         "use_efficiency": true,
         "destroy_speeds": [
           {
-            "block": "nether_wart_block",
-            "speed": 15
-          },
-          {
-            "block": "warped_wart_block",
-            "speed": 15
-          },
-          {
-            "block": "shroomlight",
-            "speed": 15
-          },
-          {
-            "block": "hay_block",
-            "speed": 15
-          },
-          {
-            "block": "target",
-            "speed": 15
-          },
-          {
-            "block": "dried_kelp_block",
-            "speed": 15
-          },
-          {
-            "block": "sponge",
-            "speed": 15
-          },
-          {
-            "block": "moss_block",
-            "speed": 15
-          },
-          {
-            "block": "leaves",
-            "speed": 15
-          },
-          {
-            "block": "leaves2",
-            "speed": 15
-          },
-          {
-            "block": "mangrove_leaves",
-            "speed": 15
-          },
-          {
-            "block": "azalea_leaves",
-            "speed": 15
-          },
-          {
-            "block": "azalea_leaves_flowered",
-            "speed": 15
-          },
-          {
-            "block": "sculk",
-            "speed": 15
-          },
-          {
-            "block": "sculk_vein",
-            "speed": 15
-          },
-          {
-            "block": "sculk_sensor",
-            "speed": 15
-          },
-          {
-            "block": "sculk_catalyst",
-            "speed": 15
-          },
-          {
-            "block": "sculk_shrieker",
+            "block": {
+              "tags": "query.any_tag('minecraft:is_hoe_item_destructible')"
+            },
             "speed": 15
           }
         ]
