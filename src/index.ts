@@ -7,11 +7,14 @@ import { registryArticle } from "./server/registry/article";
 import { registryBoss } from "./server/registry/boss";
 import { registryTool } from "./server/registry/tool";
 import { registryItem } from "./server/registry/item";
-import { registryEffect } from "./server/registry/effect";
 import { registryWeapon } from "./server/registry/weapon";
 import { registryLoot } from "./server/registry/loot";
 import { initializeMod } from "@grindstone/core";
 import "./server/registry/component";
+import "./server/registry/effects/bleed";
+import "./server/registry/effects/dehydration"
+import "./server/registry/effects/drought"
+import "./server/registry/effects/tetanus"
 
 initializeMod("hy", "HiddenYears");
 Hy2System.registryTickEvent();
@@ -26,6 +29,5 @@ registryArticle();
 registryBoss();
 registryTool();
 registryItem();
-registryEffect();
 registryLoot();
 registryWeapon();

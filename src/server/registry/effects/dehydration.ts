@@ -19,9 +19,9 @@ function isAffectByDehydrationEffect(entity: Entity): boolean {
   return true;
 }
 
-export const dehydrationEffect = new VirtualEffect("hy:dehydration", 1, 20);
+export const dehydrationEffect = new VirtualEffect("hy:dehydration", 20);
 
-dehydrationEffect.setEffect((entity) => {
+dehydrationEffect.onUpdate((entity) => {
   if (isAffectByDehydrationEffect(entity)) {
     entity.applyDamage(1);
     entity.addEffect("weakness", 40, {
@@ -33,7 +33,7 @@ dehydrationEffect.setEffect((entity) => {
   }
 });
 
-dehydrationEffect.setLevelUp((entity) => {
+dehydrationEffect.onAddToEntity((entity) => {
   if (entity instanceof Player) {
     entity.sendMessage({ translate: "hy.message.dehydration" });
   }

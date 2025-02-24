@@ -97,7 +97,7 @@ const knifeSkill = new WeaponAtkSkill(3);
 knifeSkill.onReleased((callback) => {
   const [target, atker] = [callback.target, callback.releaser];
   if (target) {
-    bleedEffect.addLevelTemporarily(target, 1, 100);
+    bleedEffect.add(target, 100, 1);
   }
 });
 knifeSkill.setTips({ translate: "hy.itemSkill.knife.1" });
@@ -109,7 +109,7 @@ const knifeFinalSkill = new WeaponAtkSkill(2);
 knifeFinalSkill.onReleased((callback) => {
   const [target, atker] = [callback.target, callback.releaser];
   if (target) {
-    bleedEffect.addLevelTemporarily(target, 2, 120);
+    bleedEffect.add(target, 120, 2);
   }
 });
 knifeFinalSkill.setTips({ translate: "hy.itemSkill.knife.2" });
@@ -140,7 +140,7 @@ boardswordFinalSkill.setTips({ translate: "hy.itemSkill.boardsword.2" });
 const droughtSkill = new WeaponAtkSkill(1);
 droughtSkill.onReleased((callback) => {
   if (callback.target)
-    droughtEffect.addLevelTemporarily(callback.target, 1, 300);
+    droughtEffect.add(callback.target, 300, 1);
 });
 
 /**
@@ -149,7 +149,7 @@ droughtSkill.onReleased((callback) => {
 const dehydrationSkill = new WeaponAtkSkill(1);
 dehydrationSkill.onReleased((callback) => {
   if (callback.target)
-    dehydrationEffect.addLevelTemporarily(callback.target, 1, 300);
+    dehydrationEffect.add(callback.target, 300, 1);
 });
 
 /**

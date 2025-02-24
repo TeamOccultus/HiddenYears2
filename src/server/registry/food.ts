@@ -45,8 +45,8 @@ const COOLING_POTION = new FoodItemBuilder(
   [{ effectType: "fire_resistance", duration: 600 }],
   (event) => {
     const player = event.source;
-    droughtEffect.setLevel(player);
-    dehydrationEffect.setLevel(player);
+    droughtEffect.remove(player);
+    dehydrationEffect.remove(player);
     player.onScreenDisplay.setActionBar({
       translate: "hy.message.cooling_potion",
     });
@@ -170,7 +170,7 @@ const SAND_APPLE = new FoodItemBuilder(
     withPercentChance({
       chance: 0.15,
       event: () => {
-        droughtEffect.addLevelTemporarily(event.source, 1, 200);
+        droughtEffect.add(event.source, 200, 1);
       },
     });
   }
@@ -187,7 +187,7 @@ const ENCHANTED_SAND_APPLE = new FoodItemBuilder(
     withPercentChance({
       chance: 0.15,
       event: () => {
-        droughtEffect.addLevelTemporarily(event.source, 1, 200);
+        droughtEffect.add(event.source, 200, 1);
       },
     });
   }
@@ -198,7 +198,7 @@ const SCORPION_POTION = new FoodItemBuilder(
   [{ effectType: "saturation", duration: 20 }],
   (event) => {
     const player = event.source;
-    tetanusEffect.setLevel(player,0);
+    tetanusEffect.remove(player);
     withPercentChance({
       chance: 0.65,
       event: () => {
@@ -224,7 +224,7 @@ export function registryFood() {
   world.afterEvents.itemCompleteUse.subscribe((event) => {
     const [player, item] = [event.source, event.itemStack];
     if (item.typeId === "potion") {
-      droughtEffect.setLevel(player);
+      droughtEffect.remove(player);
     }
   });
   FUEL_METAL.build();

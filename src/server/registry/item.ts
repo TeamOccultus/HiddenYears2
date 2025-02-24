@@ -409,8 +409,8 @@ const MUTAS_STAFF = new DurabilityLimitedPropBuilder(
 
 const RAIN_GOD_BLESSING = new PropBuilder("hy:rain_god_blessing", (event) => {
   const player = event.source;
-  droughtEffect.setLevel(player);
-  dehydrationEffect.setLevel(player);
+  droughtEffect.remove(player);
+  dehydrationEffect.remove(player);
   player.addTag("hy:immune_desert_debuff");
   player.onScreenDisplay.setActionBar({
     translate: "hy.message.immune_desert_debuff.get",

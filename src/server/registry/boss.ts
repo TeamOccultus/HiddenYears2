@@ -114,7 +114,7 @@ const SUMMON_MUMMY = new BossSkill("summon_mummy", 800, 15, {
 
 const DROUGHT_DEBUFF = new BossSkill("drought", 1200, 25, {
   event: (entity) => {
-    droughtEffect.addLevelTemporarily(entity, 1, 300);
+    droughtEffect.add(entity, 300, 1);
   },
 });
 

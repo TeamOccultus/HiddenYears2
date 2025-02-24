@@ -19,9 +19,9 @@ function isAffectByDroughtEffect(entity: Entity): boolean {
   return true;
 }
 
-export const droughtEffect = new VirtualEffect("hy:drought", 1, 20);
+export const droughtEffect = new VirtualEffect("hy:drought", 20);
 
-droughtEffect.setEffect((entity) => {
+droughtEffect.onUpdate((entity) => {
   if (isAffectByDroughtEffect(entity)) {
     entity.addEffect("weakness", 40, {
       amplifier: 2,
@@ -32,7 +32,7 @@ droughtEffect.setEffect((entity) => {
   }
 });
 
-droughtEffect.setLevelUp((entity) => {
+droughtEffect.onAddToEntity((entity) => {
   if (entity instanceof Player) {
     entity.sendMessage({ translate: "hy.message.drought" });
   }

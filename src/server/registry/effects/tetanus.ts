@@ -13,9 +13,9 @@ function isAffectByTetanusEffect(entity: Entity): boolean {
   return true;
 }
 
-export const tetanusEffect = new VirtualEffect("hy:tetanus", 1, 20);
+export const tetanusEffect = new VirtualEffect("hy:tetanus", 20);
 
-tetanusEffect.setEffect((entity) => {
+tetanusEffect.onUpdate((entity) => {
   if (isAffectByTetanusEffect(entity)) {
     entity.addEffect("poison", 40, {
       amplifier: 2,
@@ -25,7 +25,7 @@ tetanusEffect.setEffect((entity) => {
   }
 });
 
-tetanusEffect.setLevelUp((entity) => {
+tetanusEffect.onAddToEntity((entity) => {
   if (entity instanceof Player) {
     entity.sendMessage({ translate: "hy.message.tetanus" });
   }
