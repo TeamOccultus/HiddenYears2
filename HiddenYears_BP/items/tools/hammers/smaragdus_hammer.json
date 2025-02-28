@@ -54,7 +54,12 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hy:is_hammer", "hy:custom_tools"]
+        "tags": [
+          "hy:is_hammer",
+          "hy:custom_tools",
+          "minecraft:netherite_tier",
+          "hy:smaragdus_tier"
+        ]
       }
     }
   }

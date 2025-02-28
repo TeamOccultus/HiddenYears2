@@ -106,7 +106,9 @@
         "tags": [
           "hy:custom_weapons",
           "minecraft:is_sword",
-          "minecraft:is_tool"
+          "minecraft:is_tool",
+          "minecraft:netherite_tier",
+          "hy:smaragdus_tier"
         ]
       }
     }
