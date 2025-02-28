@@ -50,7 +50,9 @@
         "tags": [
           "minecraft:is_axe",
           "hy:custom_tools",
-          "hy:custom_axe"
+          "hy:custom_axe",
+        "minecraft:diamond_tier",
+        "hy:steel_tier"
         ]
       }
     }

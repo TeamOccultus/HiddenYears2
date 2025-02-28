@@ -27,7 +27,9 @@
         "slot": "sword"
       },
       "minecraft:tags": {
-        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe"]
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe",
+        "minecraft:diamond_tier",
+        "hy:steel_tier"]
       }
     }
   }

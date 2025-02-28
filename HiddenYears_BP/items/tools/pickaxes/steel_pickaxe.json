@@ -67,7 +67,9 @@
       "minecraft:tags": {
         "tags": [
           "hy:custom_tools",
-          "minecraft:is_pickaxe"
+          "minecraft:is_pickaxe",
+          "minecraft:diamond_tier",
+          "hy:steel_tier"
         ]
       }
     }

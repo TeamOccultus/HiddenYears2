@@ -84,7 +84,9 @@
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",
-          "minecraft:is_tool"
+          "minecraft:is_tool",
+          "minecraft:diamond_tier",
+          "hy:steel_tier"
         ]
       }
     }

@@ -47,7 +47,11 @@
       },
       "minecraft:icon": "hy.steel_shovel",
       "minecraft:tags": {
-        "tags": ["minecraft:is_shovel"]
+        "tags": [
+          "minecraft:is_shovel",
+          // TODO
+        "minecraft:diamond_tier",
+        "hy:steel_tier"]
       }
     }
   }
