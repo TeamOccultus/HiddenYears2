@@ -49,9 +49,11 @@
       "minecraft:tags": {
         "tags": [
           "minecraft:is_shovel",
-          // TODO
-        "minecraft:diamond_tier",
-        "hy:steel_tier"]
+          "hy:custom_tools",
+          "hy:custom_shovel",
+          "minecraft:diamond_tier",
+          "hy:steel_tier"
+        ]
       }
     }
   }
