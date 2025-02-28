@@ -112,7 +112,7 @@
           "minecraft:is_tool",
           "hy:magic_explode",
           "minecraft:is_sword",
-          "hy:corrosion_weapon"
+          "hy:corrosion_tier", "hy:iron_tier"
         ]
       }
     }

@@ -51,7 +51,7 @@
           "hy:custom_tools",
           "minecraft:is_shovel",
           "hy:custom_shovel",
-          "hy:corrosion_weapon"
+          "hy:corrosion_tier", "hy:iron_tier"
         ]
       }
     }

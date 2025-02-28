@@ -25,7 +25,7 @@
         "slot": "sword"
       },
       "minecraft:tags": {
-        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe","hy:corrosion_weapon"]
+        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe","hy:corrosion_tier", "hy:iron_tier"]
       }
     }
   }

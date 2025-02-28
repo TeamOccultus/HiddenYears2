@@ -62,7 +62,7 @@
         "tags": [
           "hy:custom_tools",
           "minecraft:is_pickaxe",
-          "hy:corrosion_weapon"
+          "hy:corrosion_tier", "hy:iron_tier"
         ]
       }
     }

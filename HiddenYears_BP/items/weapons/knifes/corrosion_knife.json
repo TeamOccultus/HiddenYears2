@@ -98,7 +98,7 @@
           "hy:custom_weapons",
           "hy:is_knife",
           "minecraft:is_tool",
-          "hy:corrosion_weapon"
+          "hy:corrosion_tier", "hy:iron_tier"
         ]
       }
     }

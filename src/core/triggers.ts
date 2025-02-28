@@ -92,7 +92,7 @@ export function mutasStaffTrigger() {
 
 /**
  * 腐蚀攻击监听器
- * @tag `hy:corrosion_weapon` 将物品设置为可进行腐蚀攻击
+ * @tag `hy:corrosion_tier` 将物品设置为可进行腐蚀攻击
  */
 export function corrosionAttackTrigger() {
   world.afterEvents.entityHitEntity.subscribe((event) => {
@@ -100,7 +100,7 @@ export function corrosionAttackTrigger() {
       event.hitEntity,
       getEquipmentItem(event.damagingEntity),
     ];
-    if (ITEM?.hasTag("hy:corrosion_weapon")) {
+    if (ITEM?.hasTag("hy:corrosion_tier")) {
       ENTITY.addEffect("poison", 200, { amplifier: 1 });
     }
   });

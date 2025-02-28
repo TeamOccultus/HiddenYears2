@@ -55,7 +55,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hy:is_hammer", "hy:custom_tools", "hy:corrosion_weapon"]
+        "tags": ["hy:is_hammer", "hy:custom_tools", "hy:corrosion_tier", "hy:iron_tier"]
       }
     }
   }
