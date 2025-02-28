@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.60",
   "minecraft:item": {
     "description": {
       "identifier": "hy:letter_11",
@@ -13,6 +13,9 @@
       "minecraft:display_name": {
         "value": "article.11.title"
       },
+      "minecraft:custom_components": [
+        "hy:letter_11"
+      ],
       "minecraft:hover_text_color": "yellow"
     }
   }

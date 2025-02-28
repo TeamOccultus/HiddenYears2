@@ -1,8 +1,8 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.60",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:letter_14",
+      "identifier": "hy:letter_9",
       "menu_category": {
         "category": "items"
       }
@@ -11,8 +11,11 @@
       "minecraft:icon": "hy.lost_letter",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
-        "value": "article.14.title"
+        "value": "article.9.title"
       },
+      "minecraft:custom_components": [
+        "hy:letter_9"
+      ],
       "minecraft:hover_text_color": "yellow"
     }
   }

@@ -9,7 +9,7 @@
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@grindstone/article-kit": "^0.2.0",
+    "@grindstone/article-kit": "^1.0.0",
     "@grindstone/common": "^0.4.0",
     "@grindstone/core": "^0.3.0",
     "@grindstone/effect-kit": "^1.0.0",

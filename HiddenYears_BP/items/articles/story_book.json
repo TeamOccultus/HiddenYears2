@@ -1,18 +1,21 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.60",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:collection_book",
+      "identifier": "hy:story_book",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
-      "minecraft:icon": "hy.article_collection",
+      "minecraft:icon": "hy.story_book",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
-        "value": "hy.collection.title"
+        "value": "hy.item.story_book"
       },
+      "minecraft:custom_components": [
+        "hy:hidden_story"
+      ],
       "minecraft:hover_text_color": "light_purple"
     }
   }
