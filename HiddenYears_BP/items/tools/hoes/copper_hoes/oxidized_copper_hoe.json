@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:oxidized_copper_hoe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.hoe"
       }
@@ -58,7 +58,9 @@
           "hy:custom_hoe",
           "hy:corrosive_tools",
           "hy:oxidized_item",
-          "hy:tetanus_item"
+          "hy:tetanus_item",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

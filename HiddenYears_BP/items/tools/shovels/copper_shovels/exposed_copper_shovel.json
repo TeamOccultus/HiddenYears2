@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:exposed_copper_shovel",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.shovel"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -50,14 +50,16 @@
           }
         ]
       },
-      "minecraft:icon":  "hy.exposed_copper_shovel",
+      "minecraft:icon": "hy.exposed_copper_shovel",
       "minecraft:tags": {
         "tags": [
           "hy:custom_tools",
           "minecraft:is_shovel",
           "hy:custom_shovel",
           "hy:corrosive_tools",
-          "hy:exposed_item"
+          "hy:exposed_item",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

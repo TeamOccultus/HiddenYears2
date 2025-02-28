@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_axe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.axe"
       }
@@ -56,7 +56,9 @@
           "minecraft:is_axe",
           "hy:custom_tools",
           "hy:custom_axe",
-          "hy:corrosive_tools"
+          "hy:corrosive_tools",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

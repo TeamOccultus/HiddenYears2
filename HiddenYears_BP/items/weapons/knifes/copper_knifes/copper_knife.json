@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_knife",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
       }
@@ -97,13 +97,15 @@
             "repair_amount": 50
           }
         ]
-      },   
+      },
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",
           "hy:is_knife",
           "minecraft:is_tool",
-          "hy:corrosive_tools"
+          "hy:corrosive_tools",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

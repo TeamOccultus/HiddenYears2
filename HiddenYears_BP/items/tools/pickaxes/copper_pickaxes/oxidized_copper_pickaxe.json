@@ -62,7 +62,9 @@
           "hy:custom_tools",
           "minecraft:is_pickaxe",
           "hy:oxidized_item",
-          "hy:tetanus_item"
+          "hy:tetanus_item",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

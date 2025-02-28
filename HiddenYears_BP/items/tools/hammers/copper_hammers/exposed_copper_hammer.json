@@ -58,7 +58,9 @@
           "hy:is_hammer",
           "hy:custom_tools",
           "hy:exposed_item",
-          "hy:corrosive_tools"
+          "hy:corrosive_tools",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

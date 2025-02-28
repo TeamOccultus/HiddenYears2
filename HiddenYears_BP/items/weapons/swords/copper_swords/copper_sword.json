@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_sword",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -112,7 +112,9 @@
           "hy:custom_weapons",
           "minecraft:is_sword",
           "minecraft:is_tool",
-          "hy:corrosive_tools"
+          "hy:corrosive_tools",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:oxidized_copper_knife",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
       }
@@ -104,7 +104,9 @@
           "hy:is_knife",
           "minecraft:is_tool",
           "hy:oxidized_item",
-          "hy:tetanus_item"
+          "hy:tetanus_item",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

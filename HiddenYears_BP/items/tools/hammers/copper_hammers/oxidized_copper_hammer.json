@@ -54,7 +54,9 @@
           "hy:is_hammer",
           "hy:custom_tools",
           "hy:oxidized_item",
-          "hy:tetanus_item"
+          "hy:tetanus_item",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

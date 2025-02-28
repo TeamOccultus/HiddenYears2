@@ -2,7 +2,7 @@
   "format_version": "1.21.0",
   "minecraft:item": {
     "description": {
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.pickaxe"
       },
@@ -62,7 +62,9 @@
           "hy:custom_tools",
           "minecraft:is_pickaxe",
           "hy:corrosive_tools",
-          "hy:weathered_item"
+          "hy:weathered_item",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

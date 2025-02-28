@@ -61,7 +61,9 @@
         "tags": [
           "hy:custom_tools",
           "minecraft:is_pickaxe",
-          "hy:corrosive_tools"
+          "hy:corrosive_tools",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }

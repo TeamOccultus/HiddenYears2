@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:copper_stick",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
       }
@@ -28,7 +28,9 @@
         "tags": [
           "hy:custom_weapons",
           "hy:is_handle",
-          "hy:impart"
+          "hy:impart",
+          "minecraft:stone_tier",
+          "hy:copper_tier"
         ]
       }
     }
