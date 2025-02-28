@@ -53,7 +53,12 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_pickaxe"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_pickaxe",
+          "minecraft:stone_tier",
+          "hy:amethyst_tier"
+        ]
       }
     }
   }

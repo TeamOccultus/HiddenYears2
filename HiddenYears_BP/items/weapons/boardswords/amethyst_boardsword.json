@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:amethyst_boardsword",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -111,7 +111,9 @@
           "hy:custom_weapons",
           "minecraft:is_tool",
           "hy:magic_explode",
-          "minecraft:is_sword"
+          "minecraft:is_sword",
+          "minecraft:stone_tier",
+          "hy:amethyst_tier"
         ]
       }
     }

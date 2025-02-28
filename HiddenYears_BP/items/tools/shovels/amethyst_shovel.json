@@ -47,7 +47,13 @@
       },
       "minecraft:icon": "hy.amethyst_shovel",
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_shovel", "hy:custom_shovel"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_shovel",
+          "hy:custom_shovel",
+          "minecraft:stone_tier",
+          "hy:amethyst_tier"
+        ]
       }
     }
   }
