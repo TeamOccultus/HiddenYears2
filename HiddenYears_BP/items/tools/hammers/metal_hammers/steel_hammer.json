@@ -54,9 +54,12 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hy:is_hammer", "hy:custom_tools",
-        "minecraft:diamond_tier",
-        "hy:steel_tier"]
+        "tags": [
+          "hy:is_hammer",
+          "hy:custom_tools",
+          "minecraft:diamond_tier",
+          "hy:steel_tier"
+        ]
       }
     }
   }

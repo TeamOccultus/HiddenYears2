@@ -1,19 +1,19 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:template_pool": {
-      "description": {
-        "identifier": "hy:sand_palace_well"
-      },
-      "elements": [
-        {
-          "projection": "rigid",
-          "element": {
-            "element_type": "minecraft:single_pool_element",
-            "location": "hy/sand_palace_well",
-            "processors": "hy:none"
-          },
-          "weight": 1
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hy:sand_palace_well"
+    },
+    "elements": [
+      {
+        "projection": "rigid",
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hy/sand_palace_well",
+          "processors": "hy:none"
+        },
+        "weight": 1
+      }
+    ]
   }
+}

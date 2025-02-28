@@ -1,19 +1,19 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:template_pool": {
-      "description": {
-        "identifier": "hy:spider_monster_room"
-      },
-      "elements": [
-        {
-          "projection": "rigid",
-          "element": {
-            "element_type": "minecraft:single_pool_element",
-            "location": "hy/spider_monster_room",
-            "processors": "hy:none"
-          },
-          "weight": 1
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hy:spider_monster_room"
+    },
+    "elements": [
+      {
+        "projection": "rigid",
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hy/spider_monster_room",
+          "processors": "hy:none"
+        },
+        "weight": 1
+      }
+    ]
   }
+}

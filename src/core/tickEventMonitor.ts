@@ -1,13 +1,12 @@
 import { EquipmentSlot, world } from "@minecraft/server";
 import { getEquipmentItem } from "@grindstone/utils";
 
-
 /**
  * 徽章效果监听器
  */
 export function badgeEffectMonitor() {
   world.getAllPlayers().forEach((player) => {
-    if (!getEquipmentItem(player, EquipmentSlot.Chest)?.hasTag("hy:badge")){
+    if (!getEquipmentItem(player, EquipmentSlot.Chest)?.hasTag("hy:badge")) {
       return;
     }
     const chestItem = getEquipmentItem(player, EquipmentSlot.Chest);
@@ -38,9 +37,11 @@ export function badgeEffectMonitor() {
  */
 export function isisCrownEffectMonitor() {
   world.getAllPlayers().forEach((player) => {
-    if (getEquipmentItem(player, EquipmentSlot.Head)?.typeId ==="hy:isis_crown"){
+    if (
+      getEquipmentItem(player, EquipmentSlot.Head)?.typeId === "hy:isis_crown"
+    ) {
       player.addEffect("fire_resistance", 40);
-      if(!player.hasTag("hy:immune_desert_debuff")){
+      if (!player.hasTag("hy:immune_desert_debuff")) {
         player.addTag("hy:immune_desert_debuff");
       }
     }

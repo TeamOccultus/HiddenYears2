@@ -9,7 +9,11 @@
     "facing_direction": "random",
     "constraints": {
       "block_intersection": {
-        "block_allowlist": ["minecraft:air", "minecraft:sandstone", "minecraft:stone"]
+        "block_allowlist": [
+          "minecraft:air",
+          "minecraft:sandstone",
+          "minecraft:stone"
+        ]
       }
     }
   }

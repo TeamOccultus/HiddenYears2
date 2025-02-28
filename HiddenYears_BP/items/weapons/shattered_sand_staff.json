@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:shattered_sand_staff",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
-      } 
+      }
     },
     "components": {
       "minecraft:hover_text_color": "light_purple",
@@ -33,7 +33,7 @@
           }
         ]
       },
-      
+
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",

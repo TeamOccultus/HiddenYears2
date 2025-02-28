@@ -4,7 +4,8 @@
   "description": "A Minecraft addon",
   "scripts": {
     "build": "node build.mjs",
-    "debug": "node debug.mjs "
+    "debug": "node debug.mjs",
+    "prettier": "prettier --write ."
   },
   "author": "CTN Studios",
   "license": "BSD-3-Clause",

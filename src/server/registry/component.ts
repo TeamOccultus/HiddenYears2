@@ -86,7 +86,10 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
             y: arg.source.location.y,
             z: arg.source.location.z,
           },
-          { animationMode: StructureAnimationMode.Blocks, animationSeconds: 15 }
+          {
+            animationMode: StructureAnimationMode.Blocks,
+            animationSeconds: 15,
+          },
         );
       } else {
         arg.source.sendMessage({ translate: "hy.message.cant_place" });
@@ -94,9 +97,7 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
     },
   });
   itemRegistry.registerCustomComponent("hy:mutas_staff", {
-    onUse(arg) {
-     
-    },
+    onUse(arg) {},
   });
   const blockRegistry = event.blockComponentRegistry;
   blockRegistry.registerCustomComponent("hy:fatigue_sandstone", {
@@ -116,7 +117,7 @@ world.beforeEvents.worldInitialize.subscribe((event) => {
       } else if (getEquipmentItem(arg.player)?.typeId === "hy:drift_sand_key") {
         setEquipmentItem(arg.player);
         arg.block.setPermutation(
-          arg.block.permutation.withState("hy:use_up", true)
+          arg.block.permutation.withState("hy:use_up", true),
         );
         const LOC: Vector3 = {
           x: arg.block.location.x,

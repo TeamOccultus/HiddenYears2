@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:shattered_sand_cudgel",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -32,7 +32,7 @@
           }
         ]
       },
-      
+
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",

@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:wooden_knife",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -94,11 +94,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:custom_weapons",
-          "hy:is_knife",
-          "minecraft:is_tool"
-        ]
+        "tags": ["hy:custom_weapons", "hy:is_knife", "minecraft:is_tool"]
       }
     }
   }

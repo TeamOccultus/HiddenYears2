@@ -66,11 +66,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:is_crowbar",
-          "hy:custom_tools",
-          "minecraft:iron_tier"
-        ]
+        "tags": ["hy:is_crowbar", "hy:custom_tools", "minecraft:iron_tier"]
       }
     }
   }

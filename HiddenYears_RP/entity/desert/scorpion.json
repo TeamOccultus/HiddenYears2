@@ -23,15 +23,13 @@
       },
       "animation_controllers": [
         {
-         "attack": "controller.animation.scorpion.attack"
+          "attack": "controller.animation.scorpion.attack"
         },
         {
           "move": "controller.animation.scorpion.move"
         }
       ],
-      "render_controllers": [
-        "controller.render.default"
-      ],
+      "render_controllers": ["controller.render.default"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 17

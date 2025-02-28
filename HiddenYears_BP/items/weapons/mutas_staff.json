@@ -3,9 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:mutas_staff",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
-      } 
+      }
     },
     "components": {
       "minecraft:hover_text_color": "light_purple",
@@ -41,11 +41,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:custom_weapons",
-          "minecraft:is_sword",
-          "minecraft:is_tool"
-        ]
+        "tags": ["hy:custom_weapons", "minecraft:is_sword", "minecraft:is_tool"]
       }
     }
   }

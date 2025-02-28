@@ -67,7 +67,7 @@ const PAST_LIGHTNING = new BossSkill("past_lightning", 800, 15, {
 const RUBY_KING = new Boss(
   "hy:king_of_ruby",
   [STEAL_EXP, SPAWN_GUARDIAN, PAST_LIGHTNING],
-  { trackId: "music.boss.ruby", radius: 20 }
+  { trackId: "music.boss.ruby", radius: 20 },
 );
 
 const SUMMON_SAND_GUARDIAN = new BossSkill("summon_sand_guardian", 600, 15, {
@@ -132,9 +132,9 @@ const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 1400, 10, {
             x: entity.location.x,
             y: entity.location.y + 4,
             z: entity.location.z,
-          }
+          },
         ),
-        "sand"
+        "sand",
       );
       entity.playSound("boss_skill.ruby");
       entity.sendMessage({
@@ -147,7 +147,7 @@ const CAUGHT_IN_SAND = new BossSkill("caught_in_sand", 1400, 10, {
 const PHARAOHS_GHOST = new Boss(
   "hy:pharaohs_ghost",
   [SUMMON_SAND_GUARDIAN, SUMMON_MUMMY, DROUGHT_DEBUFF, CAUGHT_IN_SAND],
-  { trackId: "music.boss.pharaohs_ghost", radius: 20 }
+  { trackId: "music.boss.pharaohs_ghost", radius: 20 },
 );
 
 const KAHE = new BossSkill(
@@ -163,7 +163,7 @@ const KAHE = new BossSkill(
       entity.addEffect("poison", 400);
     },
   },
-  { translate: "hy.boosSkill.mutas_wrath.kahe" }
+  { translate: "hy.boosSkill.mutas_wrath.kahe" },
 );
 
 const OSIRIS = new BossSkill(
@@ -198,7 +198,7 @@ const OSIRIS = new BossSkill(
       if (entity instanceof Player) entity.playSound("mob.shulker.shoot");
     },
   },
-  { translate: "hy.boosSkill.mutas_wrath.osiris" }
+  { translate: "hy.boosSkill.mutas_wrath.osiris" },
 );
 
 const ISIS = new BossSkill(
@@ -221,7 +221,7 @@ const ISIS = new BossSkill(
       });
     },
   },
-  { translate: "hy.boosSkill.mutas_wrath.isis" }
+  { translate: "hy.boosSkill.mutas_wrath.isis" },
 );
 
 const MUTA = new BossSkill(
@@ -245,7 +245,7 @@ const MUTA = new BossSkill(
       entity.applyDamage(18);
     },
   },
-  { translate: "hy.boosSkill.mutas_wrath.muta" }
+  { translate: "hy.boosSkill.mutas_wrath.muta" },
 );
 
 const MUTAS_WRATH = new Boss(
@@ -265,7 +265,7 @@ const MUTAS_WRATH = new Boss(
           listenIsisMonologue(entity);
         }
       });
-  }
+  },
 );
 
 export function registryBoss() {

@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:corrosion_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -84,7 +84,8 @@
         "tags": [
           "hy:custom_weapons",
           "minecraft:is_tool",
-          "hy:corrosion_tier", "hy:iron_tier"
+          "hy:corrosion_tier",
+          "hy:iron_tier"
         ]
       }
     }

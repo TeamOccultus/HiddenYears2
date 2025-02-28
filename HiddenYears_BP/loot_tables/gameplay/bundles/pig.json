@@ -21,7 +21,7 @@
             { "function": "set_count", "count": { "min": 0, "max": 2 } }
           ]
         },
-        { "type": "empty", "weight": 4 },
+        { "type": "empty", "weight": 4 }
       ]
     },
     {

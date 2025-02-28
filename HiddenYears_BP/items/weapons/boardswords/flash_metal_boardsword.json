@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_metal_boardsword",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -105,7 +105,7 @@
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
-      }, 
+      },
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",

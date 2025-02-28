@@ -47,7 +47,13 @@
       },
       "minecraft:icon": "hy.nether_metal_shovel",
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_shovel", "hy:custom_shovel", "minecraft:stone_tier", "hy:stone_metal_tier"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_shovel",
+          "hy:custom_shovel",
+          "minecraft:stone_tier",
+          "hy:stone_metal_tier"
+        ]
       }
     }
   }

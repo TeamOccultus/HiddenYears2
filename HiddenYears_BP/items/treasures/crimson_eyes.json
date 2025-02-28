@@ -13,9 +13,7 @@
       "minecraft:display_name": {
         "value": "hy.item.crimson_eyes"
       },
-      "minecraft:custom_components": [
-        "hy:lighting_frame_acrtiver"
-      ],
+      "minecraft:custom_components": ["hy:lighting_frame_acrtiver"],
       "minecraft:hover_text_color": "light_purple"
     }
   }

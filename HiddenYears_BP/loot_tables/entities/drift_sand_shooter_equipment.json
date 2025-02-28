@@ -17,7 +17,7 @@
             },
             {
               "function": "enchant_random_gear",
-              "chance": 0.10
+              "chance": 0.1
             }
           ]
         }

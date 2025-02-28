@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:bone_piece_axe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.axe"
       }
@@ -47,11 +47,7 @@
       },
       "minecraft:icon": "hy.bone_piece_axe",
       "minecraft:tags": {
-        "tags": [
-          "minecraft:is_axe",
-          "hy:custom_tools",
-          "hy:custom_axe"
-        ]
+        "tags": ["minecraft:is_axe", "hy:custom_tools", "hy:custom_axe"]
       }
     }
   }

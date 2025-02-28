@@ -41,7 +41,7 @@
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
-      },    
+      },
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",

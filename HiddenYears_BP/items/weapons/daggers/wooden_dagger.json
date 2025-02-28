@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:wooden_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -81,10 +81,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:custom_weapons",
-          "minecraft:is_tool"
-        ]
+        "tags": ["hy:custom_weapons", "minecraft:is_tool"]
       }
     }
   }

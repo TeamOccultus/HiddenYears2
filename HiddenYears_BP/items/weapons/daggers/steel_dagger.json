@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:steel_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -80,7 +80,7 @@
           }
         ]
       },
-      
+
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",

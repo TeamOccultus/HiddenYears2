@@ -192,8 +192,5 @@
     "lategameTips.26",
     "lategameTips.27"
   ],
-  "realms_loading_messages": [
-    "tips.realms.1",
-    "tips.realms.2"
-  ]
+  "realms_loading_messages": ["tips.realms.1", "tips.realms.2"]
 }

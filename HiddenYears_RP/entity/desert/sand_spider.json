@@ -24,9 +24,7 @@
           "move": "controller.animation.spider.move"
         }
       ],
-      "render_controllers": [
-        "controller.render.spider"
-      ],
+      "render_controllers": ["controller.render.spider"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 18

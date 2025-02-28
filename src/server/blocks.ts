@@ -19,10 +19,13 @@ export class Hy2Block {
       }
       // 如果方块有"hy:sand_ores"标签，则以0.05的概率在玩家位置生成沙银鱼，并发送消息
       if (BLOCK.hasTag("hy:sand_ores")) {
-        withPercentChance({chance: 0.05,event: ()=>{
-        PLAYER.dimension.spawnEntity("hy:sand_silverfish",PLAYER.location)
-        PLAYER.sendMessage({translate: "hy.message.sand_silverfish"})
-      }})
+        withPercentChance({
+          chance: 0.05,
+          event: () => {
+            PLAYER.dimension.spawnEntity("hy:sand_silverfish", PLAYER.location);
+            PLAYER.sendMessage({ translate: "hy.message.sand_silverfish" });
+          },
+        });
       }
       if (ITEM) {
         /** 使用`hy:suspicious_ores`标签来标记一个方块为可疑的矿石 */

@@ -1,21 +1,21 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:jigsaw": {
-      "description": {
-        "identifier": "hy:spider_dungeon"
-      },
-      "heightmap_projection": "ocean_floor",
-      "max_depth": 5,
-      "start_height": -15,
-      "start_pool": "hy:spider_monster_room",
-      "step": "underground_structures",
-      "terrain_adaptation": "bury",
-      "biome_filters": [
-        {
-          "test": "has_biome_tag",
-          "operator": "==",
-          "value": "desert"
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "hy:spider_dungeon"
+    },
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 5,
+    "start_height": -15,
+    "start_pool": "hy:spider_monster_room",
+    "step": "underground_structures",
+    "terrain_adaptation": "bury",
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "desert"
+      }
+    ]
   }
+}

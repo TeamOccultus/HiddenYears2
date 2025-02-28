@@ -65,9 +65,12 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_pickaxe",
-        "minecraft:netherite_tier",
-        "hy:smaragdus_tier"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_pickaxe",
+          "minecraft:netherite_tier",
+          "hy:smaragdus_tier"
+        ]
       }
     }
   }

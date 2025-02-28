@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:corrosion_awl",
-      "menu_category":{
+      "menu_category": {
         "category": "items"
       }
     },
@@ -25,7 +25,13 @@
         "slot": "sword"
       },
       "minecraft:tags": {
-        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe","hy:corrosion_tier", "hy:iron_tier"]
+        "tags": [
+          "hy:is_awl",
+          "hy:custom_tools",
+          "minecraft:is_axe",
+          "hy:corrosion_tier",
+          "hy:iron_tier"
+        ]
       }
     }
   }

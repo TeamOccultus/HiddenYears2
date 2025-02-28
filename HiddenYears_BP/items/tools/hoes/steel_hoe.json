@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:steel_hoe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.hoe"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {

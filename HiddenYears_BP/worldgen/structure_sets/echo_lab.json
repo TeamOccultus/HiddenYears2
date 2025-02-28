@@ -1,21 +1,21 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:structure_set": {
-      "description": {
-        "identifier": "hy:echo_lab"
-      },
-      "placement": {
-        "type": "minecraft:random_spread",
-        "salt": 1919,
-        "separation": 3,
-        "spacing": 5,
-        "spread_type": "linear"
-      },
-      "structures": [
-        {
-          "structure": "hy:echo_lab",
-          "weight": 1
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hy:echo_lab"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1919,
+      "separation": 3,
+      "spacing": 5,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hy:echo_lab",
+        "weight": 1
+      }
+    ]
   }
+}

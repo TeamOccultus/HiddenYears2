@@ -2,7 +2,9 @@
   "pools": [
     {
       "rolls": 1,
-      "entries": [{ "type": "item", "name": "hy:shattered_sand_cudgel", "weight": 1 }]
+      "entries": [
+        { "type": "item", "name": "hy:shattered_sand_cudgel", "weight": 1 }
+      ]
     }
   ]
 }

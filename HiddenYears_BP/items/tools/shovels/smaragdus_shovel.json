@@ -47,9 +47,13 @@
       },
       "minecraft:icon": "hy.smaragdus_shovel",
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_shovel", "hy:custom_shovel",
-        "minecraft:netherite_tier",
-        "hy:smaragdus_tier"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_shovel",
+          "hy:custom_shovel",
+          "minecraft:netherite_tier",
+          "hy:smaragdus_tier"
+        ]
       }
     }
   }

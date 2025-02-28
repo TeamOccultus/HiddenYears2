@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_gold_axe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.axe"
       }
@@ -17,7 +17,7 @@
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
         "max_durability": 16
-      }, 
+      },
       "minecraft:damage": 2,
       "minecraft:enchantable": {
         "value": 1,

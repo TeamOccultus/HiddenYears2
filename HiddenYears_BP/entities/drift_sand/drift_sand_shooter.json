@@ -78,7 +78,9 @@
           }
         ]
       },
-      "minecraft:loot": { "table": "loot_tables/entities/drift_sand_shooter.json" },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/drift_sand_shooter.json"
+      },
       "minecraft:movement": { "value": 0.35 },
       "minecraft:navigation.walk": { "can_path_over_water": true },
       "minecraft:movement.basic": {},

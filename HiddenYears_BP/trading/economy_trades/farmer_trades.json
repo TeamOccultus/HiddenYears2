@@ -230,7 +230,8 @@
               "trader_exp": 15,
               "max_uses": 12,
               "reward_exp": true
-            },{
+            },
+            {
               "wants": [
                 {
                   "item": "hy:stack_of_copper_coin",
@@ -287,7 +288,9 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "minecraft:enchanted_golden_apple", "quantity": 1 }],
+              "gives": [
+                { "item": "minecraft:enchanted_golden_apple", "quantity": 1 }
+              ],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true

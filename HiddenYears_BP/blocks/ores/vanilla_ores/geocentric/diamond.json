@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:loot":  "loot_tables/blocks/geocentric_ores/diamond.json",
+      "minecraft:loot": "loot_tables/blocks/geocentric_ores/diamond.json",
       "minecraft:display_name": "hy.block.geocentric_diamond_ore",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.8

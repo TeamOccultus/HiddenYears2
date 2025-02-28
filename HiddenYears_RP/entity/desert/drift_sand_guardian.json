@@ -31,9 +31,7 @@
           "vindicator_base": "controller.animation.vindicator.base.v1.0"
         }
       ],
-      "render_controllers": [
-        "controller.render.vindicator"
-      ],
+      "render_controllers": ["controller.render.vindicator"],
       "enable_attachables": true,
       "spawn_egg": {
         "texture": "hy.spawn_eggs",

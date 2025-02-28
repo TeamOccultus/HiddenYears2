@@ -26,9 +26,7 @@
           "baby": "controller.animation.rabbit.baby"
         }
       ],
-      "render_controllers": [
-        "controller.render.default"
-      ],
+      "render_controllers": ["controller.render.default"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 8

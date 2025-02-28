@@ -154,7 +154,11 @@
           "trades": [
             {
               "wants": [
-                { "item": "hy:raw_large_leather", "quantity": 2, "price_multiplier": 0.05 }
+                {
+                  "item": "hy:raw_large_leather",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
               ],
               "gives": [{ "item": "hy:copper_coin", "quantity": 8 }],
               "trader_exp": 2,

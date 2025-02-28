@@ -21,7 +21,7 @@
       "minecraft:icon": "hy.diamond_crowbar",
       "minecraft:display_name": {
         "value": "hy.item.diamond_crowbar"
-      },    
+      },
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
@@ -66,11 +66,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:is_crowbar",
-          "hy:custom_tools",
-          "minecraft:diamond_tier"
-        ]
+        "tags": ["hy:is_crowbar", "hy:custom_tools", "minecraft:diamond_tier"]
       }
     }
   }

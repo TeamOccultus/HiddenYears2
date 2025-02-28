@@ -1,24 +1,24 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "item",
-            "name": "minecraft:gold_nugget",
-            "weight": 10
-          },
-          {
-            "type": "item",
-            "name": "minecraft:gold_ingot",
-            "weight": 1
-          },
-          {
-            "type": "item",
-            "name": "hy:gold_coin",
-            "weight": 5
-          }
-        ]
-      }
-    ]
-  }
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_nugget",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hy:gold_coin",
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:iron_knife",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
       }
@@ -95,11 +95,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:custom_weapons",
-          "hy:is_knife",
-          "minecraft:is_tool"
-        ]
+        "tags": ["hy:custom_weapons", "hy:is_knife", "minecraft:is_tool"]
       }
     }
   }

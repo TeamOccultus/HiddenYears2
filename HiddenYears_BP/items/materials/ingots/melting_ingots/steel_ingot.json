@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:steel_ingot",
-      "menu_category":{
+      "menu_category": {
         "category": "items"
       }
     },

@@ -21,9 +21,7 @@
       },
       "minecraft:icon": "hy.copper_horn",
       "minecraft:tags": {
-        "tags": [
-          "hy:durability_use"
-        ]
+        "tags": ["hy:durability_use"]
       }
     }
   }

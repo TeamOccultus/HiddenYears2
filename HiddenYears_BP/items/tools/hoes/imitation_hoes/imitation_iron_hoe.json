@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_iron_hoe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.hoe"
       }

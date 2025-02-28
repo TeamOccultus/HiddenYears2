@@ -17,7 +17,7 @@ const FUEL_METAL = new FoodItemBuilder(
     event.source.sendMessage([{ translate: "hy.message.fuel_metal" }]);
     const entities = event.source.dimension.getEntities();
     console.log(entities, event.source.name);
-  }
+  },
 );
 
 const MINERAL_FUEL_METAL = new FoodItemBuilder(
@@ -25,7 +25,7 @@ const MINERAL_FUEL_METAL = new FoodItemBuilder(
   [{ effectType: "poison", duration: 800 }],
   (event) => {
     giveItem(event.source, new ItemStack("hy:nightmare_fuel_metal", 2));
-  }
+  },
 );
 
 const FUEL_METAL_STICK = new FoodItemBuilder("hy:fuel_metal_stick", [
@@ -50,7 +50,7 @@ const COOLING_POTION = new FoodItemBuilder(
     player.onScreenDisplay.setActionBar({
       translate: "hy.message.cooling_potion",
     });
-  }
+  },
 );
 
 const PAW_DUST = new FoodItemBuilder("hy:paw_dust", [
@@ -68,7 +68,7 @@ const MEDICINE_1 = new FoodItemBuilder(
   [{ effectType: "saturation", duration: 400 }],
   (event) => {
     clearEffect(event.source, ["nausea", "hunger"]);
-  }
+  },
 );
 
 const MEDICINE_2 = new FoodItemBuilder("hy:medicine_2", [], (event) => {
@@ -80,7 +80,7 @@ const MEDICINE_3 = new FoodItemBuilder(
   [{ effectType: "night_vision", duration: 400 }],
   (event) => {
     clearEffect(event.source, ["blindness", "darkness"]);
-  }
+  },
 );
 
 const MEDICINE_4 = new FoodItemBuilder(
@@ -91,7 +91,7 @@ const MEDICINE_4 = new FoodItemBuilder(
   ],
   (event) => {
     clearEffect(event.source, "night_vision");
-  }
+  },
 );
 
 const MEDICINE_5 = new FoodItemBuilder(
@@ -99,7 +99,7 @@ const MEDICINE_5 = new FoodItemBuilder(
   [{ effectType: "absorption", duration: 400 }],
   (event) => {
     clearEffect(event.source, ["wither", "poison", "fatal_poison"]);
-  }
+  },
 );
 
 const MEDICINE_6 = new FoodItemBuilder(
@@ -107,7 +107,7 @@ const MEDICINE_6 = new FoodItemBuilder(
   [{ effectType: "strength", duration: 400 }],
   (event) => {
     clearEffect(event.source, "weakness");
-  }
+  },
 );
 
 const MEDICINE_7 = new FoodItemBuilder(
@@ -115,7 +115,7 @@ const MEDICINE_7 = new FoodItemBuilder(
   [{ effectType: "speed", duration: 600 }],
   (event) => {
     clearEffect(event.source, "slowness");
-  }
+  },
 );
 
 const MEDICINE_8 = new FoodItemBuilder(
@@ -123,7 +123,7 @@ const MEDICINE_8 = new FoodItemBuilder(
   [{ effectType: "jump_boost", duration: 600 }],
   (event) => {
     clearEffect(event.source, "slowness");
-  }
+  },
 );
 
 const MEDICINE_9 = new FoodItemBuilder("hy:medicine_9", [
@@ -145,7 +145,7 @@ const MEDICINE_12 = new FoodItemBuilder(
   [{ effectType: "village_hero", duration: 3000 }],
   (event) => {
     clearEffect(event.source, "bad_omen");
-  }
+  },
 );
 
 const MEDICINE_13 = new FoodItemBuilder(
@@ -153,7 +153,7 @@ const MEDICINE_13 = new FoodItemBuilder(
   [{ effectType: "water_breathing", duration: 300 }],
   (event) => {
     clearEffect(event.source, "mining_fatigue");
-  }
+  },
 );
 
 const MEDICINE_14 = new FoodItemBuilder("hy:medicine_14", [
@@ -173,7 +173,7 @@ const SAND_APPLE = new FoodItemBuilder(
         droughtEffect.add(event.source, 200, 1);
       },
     });
-  }
+  },
 );
 
 const ENCHANTED_SAND_APPLE = new FoodItemBuilder(
@@ -190,7 +190,7 @@ const ENCHANTED_SAND_APPLE = new FoodItemBuilder(
         droughtEffect.add(event.source, 200, 1);
       },
     });
-  }
+  },
 );
 
 const SCORPION_POTION = new FoodItemBuilder(
@@ -208,14 +208,12 @@ const SCORPION_POTION = new FoodItemBuilder(
     player.onScreenDisplay.setActionBar({
       translate: "hy.message.scorpion_potion",
     });
-  }
+  },
 );
 
-const SAND_SPIDER_EYE = new FoodItemBuilder(
-  "hy:sand_spider_eye",
-  [{ effectType: "hunger", duration: 200 }],
-);
-
+const SAND_SPIDER_EYE = new FoodItemBuilder("hy:sand_spider_eye", [
+  { effectType: "hunger", duration: 200 },
+]);
 
 /**
  * 注册食物

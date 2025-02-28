@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:iron_awl",
-      "menu_category":{
+      "menu_category": {
         "category": "items"
       }
     },
@@ -17,7 +17,7 @@
       },
       "minecraft:max_stack_size": 1,
       "minecraft:damage": 4,
-      
+
       "tag:minecraft:is_axe": {},
       "minecraft:creative_category": {
         "parent": "items"
@@ -27,7 +27,12 @@
         "slot": "sword"
       },
       "minecraft:tags": {
-        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe", "minecraft:iron_tier"]
+        "tags": [
+          "hy:is_awl",
+          "hy:custom_tools",
+          "minecraft:is_axe",
+          "minecraft:iron_tier"
+        ]
       }
     }
   }

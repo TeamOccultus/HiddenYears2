@@ -26,7 +26,7 @@ export const BEGINNING: Quest = new Quest(
         itemStack: new ItemStack("bread", 3),
       },
     },
-  }
+  },
 );
 
 /**
@@ -54,7 +54,7 @@ export const CRAFTING_TABLE: Quest = new Quest(
         itemStack: new ItemStack("bread", 5),
       },
     },
-  }
+  },
 );
 
 /**
@@ -85,7 +85,7 @@ export const OLDB: Quest = new Quest(
     tips: {
       translate: "hy.quest.oldb.tips",
     },
-  }
+  },
 );
 
 /**
@@ -116,7 +116,7 @@ export const BONE_PIECE: Quest = new Quest(
     tips: {
       translate: "hy.quest.bone_piece.tips",
     },
-  }
+  },
 );
 
 /**
@@ -147,7 +147,7 @@ export const COPPER_INGOT: Quest = new Quest(
     tips: {
       translate: "hy.quest.copper_ingot.tips",
     },
-  }
+  },
 );
 
 /**
@@ -175,7 +175,7 @@ export const TIN_INGOT: Quest = new Quest(
         itemStack: new ItemStack("hy:copper_coin", 10),
       },
     },
-  }
+  },
 );
 
 /**
@@ -206,7 +206,7 @@ export const AMETHYST_INGOT: Quest = new Quest(
     tips: {
       translate: "hy.quest.amethyst_ingot.tips",
     },
-  }
+  },
 );
 
 /**
@@ -237,7 +237,7 @@ export const OVER_METAL_INGOT: Quest = new Quest(
     tips: {
       translate: "hy.quest.over_metal_ingot.tips",
     },
-  }
+  },
 );
 
 /**
@@ -268,7 +268,7 @@ export const IRON_INGOT: Quest = new Quest(
     tips: {
       translate: "hy.quest.iron_ingot.tips",
     },
-  }
+  },
 );
 
 /**
@@ -296,7 +296,7 @@ export const CORROSION_INGOT: Quest = new Quest(
         itemStack: new ItemStack("hy:copper_coin", 18),
       },
     },
-  }
+  },
 );
 
 /**
@@ -327,7 +327,7 @@ export const IRON_CROWBAR: Quest = new Quest(
     tips: {
       translate: "hy.quest.iron_crowbar.tips",
     },
-  }
+  },
 );
 
 /**
@@ -358,7 +358,7 @@ export const IRON_HAMMER: Quest = new Quest(
     tips: {
       translate: "hy.quest.iron_hammer.tips",
     },
-  }
+  },
 );
 
 /**
@@ -386,7 +386,7 @@ export const IRON_AWL: Quest = new Quest(
         itemStack: new ItemStack("cooked_mutton", 4),
       },
     },
-  }
+  },
 );
 
 /**
@@ -417,7 +417,7 @@ export const IRON_KNIFE: Quest = new Quest(
     tips: {
       translate: "hy.quest.iron_knife.tips",
     },
-  }
+  },
 );
 
 /**
@@ -448,7 +448,7 @@ export const IRON_DAGGER: Quest = new Quest(
     tips: {
       translate: "hy.quest.iron_dagger.tips",
     },
-  }
+  },
 );
 
 /**
@@ -479,7 +479,7 @@ export const IRON_SWORD: Quest = new Quest(
     tips: {
       translate: "hy.quest.iron_sword.tips",
     },
-  }
+  },
 );
 
 /**
@@ -507,7 +507,7 @@ export const CROSSBOW: Quest = new Quest(
         itemStack: new ItemStack("golden_apple", 1),
       },
     },
-  }
+  },
 );
 
 /**
@@ -535,7 +535,7 @@ export const SHIELD: Quest = new Quest(
         itemStack: new ItemStack("golden_apple", 1),
       },
     },
-  }
+  },
 );
 
 /**
@@ -566,7 +566,7 @@ export const FLASH_METAL_INGOT: Quest = new Quest(
     tips: {
       translate: "hy.quest.flash_metal_ingot.tips",
     },
-  }
+  },
 );
 
 /**
@@ -594,7 +594,7 @@ export const FLASH_COPPER_INGOT: Quest = new Quest(
         itemStack: new ItemStack("golden_apple", 5),
       },
     },
-  }
+  },
 );
 
 /**
@@ -622,7 +622,7 @@ export const DIAMOND: Quest = new Quest(
         itemStack: new ItemStack("enchanted_golden_apple", 5),
       },
     },
-  }
+  },
 );
 
 export const STEEL_INGOT = new Quest(
@@ -650,7 +650,7 @@ export const STEEL_INGOT = new Quest(
     tips: {
       translate: "hy.quest.steel_ingot.tips",
     },
-  }
+  },
 );
 
 export const NETHERITE_SCRAP = new Quest(
@@ -675,7 +675,7 @@ export const NETHERITE_SCRAP = new Quest(
       },
     },
     iconPath: "textures/items/netherite_scrap",
-  }
+  },
 );
 
 export const FUEL_METAL = new Quest(
@@ -700,7 +700,7 @@ export const FUEL_METAL = new Quest(
       },
     },
     iconPath: "textures/items/fuel",
-  }
+  },
 );
 
 export const SUFFERING_SWORD = new Quest(
@@ -728,7 +728,7 @@ export const SUFFERING_SWORD = new Quest(
     tips: {
       translate: "hy.quest.suffering_sword.tips",
     },
-  }
+  },
 );
 
 export const SMARAGDUS = new Quest(
@@ -753,7 +753,7 @@ export const SMARAGDUS = new Quest(
       },
     },
     iconPath: "textures/items/smaragdus",
-  }
+  },
 );
 
 export const TOTEM = new Quest(
@@ -792,7 +792,7 @@ export const TOTEM = new Quest(
       },
     },
     iconPath: "textures/items/totem",
-  }
+  },
 );
 
 export const RUBY = new Quest(
@@ -817,7 +817,7 @@ export const RUBY = new Quest(
       },
     },
     iconPath: "textures/items/ruby",
-  }
+  },
 );
 
 export const RUBY_CHESTPLATE = new Quest(
@@ -842,7 +842,7 @@ export const RUBY_CHESTPLATE = new Quest(
       },
     },
     iconPath: "textures/items/ruby_chestplate",
-  }
+  },
 );
 
 export const RUBY_BAG = new Quest(
@@ -870,7 +870,7 @@ export const RUBY_BAG = new Quest(
     tips: {
       translate: "hy.quest.ruby_bag.tips",
     },
-  }
+  },
 );
 
 export const RUBY_RUNES = new Quest(
@@ -910,7 +910,7 @@ export const RUBY_RUNES = new Quest(
     tips: {
       translate: "hy.quest.ruby_runes.tips",
     },
-  }
+  },
 );
 
 export const GOLD_INGOT = new Quest(
@@ -935,7 +935,7 @@ export const GOLD_INGOT = new Quest(
       },
     },
     iconPath: "textures/items/gold_ingot",
-  }
+  },
 );
 
 export const OBSIDIAN = new Quest(
@@ -960,7 +960,7 @@ export const OBSIDIAN = new Quest(
       },
     },
     iconPath: "textures/ui/quest/obsidian",
-  }
+  },
 );
 
 export const GHAST_TEAR = new Quest(
@@ -985,7 +985,7 @@ export const GHAST_TEAR = new Quest(
       },
     },
     iconPath: "textures/items/ghast_tear",
-  }
+  },
 );
 
 export const LODESTONE = new Quest(
@@ -1010,7 +1010,7 @@ export const LODESTONE = new Quest(
       },
     },
     iconPath: "textures/ui/quest/lodestone",
-  }
+  },
 );
 
 export const RESPAWN_ANCHOR = new Quest(
@@ -1035,7 +1035,7 @@ export const RESPAWN_ANCHOR = new Quest(
       },
     },
     iconPath: "textures/ui/quest/respawn_anchor",
-  }
+  },
 );
 
 export const BLAZE_ROD = new Quest(
@@ -1060,7 +1060,7 @@ export const BLAZE_ROD = new Quest(
       },
     },
     iconPath: "textures/items/blaze_rod",
-  }
+  },
 );
 
 export const NETHER_STAR = new Quest(
@@ -1094,7 +1094,7 @@ export const NETHER_STAR = new Quest(
       },
     },
     iconPath: "textures/items/nether_star",
-  }
+  },
 );
 
 export const ENDER_PEARL = new Quest(
@@ -1119,7 +1119,7 @@ export const ENDER_PEARL = new Quest(
       },
     },
     iconPath: "textures/items/ender_pearl",
-  }
+  },
 );
 
 export const DRAGON_BREATH = new Quest(
@@ -1142,7 +1142,7 @@ export const DRAGON_BREATH = new Quest(
       },
     },
     iconPath: "textures/items/dragons_breath",
-  }
+  },
 );
 
 export const DRAGON_EGG = new Quest(
@@ -1179,7 +1179,7 @@ export const DRAGON_EGG = new Quest(
       level: 5,
     },
     iconPath: "textures/ui/quest/dragon_head",
-  }
+  },
 );
 
 export const STORY_BOOK = new Quest(
@@ -1207,7 +1207,7 @@ export const STORY_BOOK = new Quest(
     tips: {
       translate: "hy.quest.story_book.tips",
     },
-  }
+  },
 );
 
 export const LETTER_0 = new Quest(
@@ -1232,7 +1232,7 @@ export const LETTER_0 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_1 = new Quest(
@@ -1257,7 +1257,7 @@ export const LETTER_1 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_2 = new Quest(
@@ -1282,7 +1282,7 @@ export const LETTER_2 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_3 = new Quest(
@@ -1307,7 +1307,7 @@ export const LETTER_3 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_4 = new Quest(
@@ -1332,7 +1332,7 @@ export const LETTER_4 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_5 = new Quest(
@@ -1357,7 +1357,7 @@ export const LETTER_5 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_6 = new Quest(
@@ -1382,7 +1382,7 @@ export const LETTER_6 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_7 = new Quest(
@@ -1407,7 +1407,7 @@ export const LETTER_7 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_8 = new Quest(
@@ -1433,7 +1433,7 @@ export const LETTER_8 = new Quest(
     },
     iconPath: "textures/items/lost_letter",
     tips: { translate: "hy.quest.letter_8.tips" },
-  }
+  },
 );
 
 export const LETTER_9 = new Quest(
@@ -1458,7 +1458,7 @@ export const LETTER_9 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_10 = new Quest(
@@ -1483,7 +1483,7 @@ export const LETTER_10 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_11 = new Quest(
@@ -1508,7 +1508,7 @@ export const LETTER_11 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_12 = new Quest(
@@ -1533,7 +1533,7 @@ export const LETTER_12 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_13 = new Quest(
@@ -1558,7 +1558,7 @@ export const LETTER_13 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const METAL_STAR = new Quest(
@@ -1583,7 +1583,7 @@ export const METAL_STAR = new Quest(
       },
     },
     iconPath: "textures/items/metal_star",
-  }
+  },
 );
 
 export const COPPER_ESSENCE = new Quest(
@@ -1608,7 +1608,7 @@ export const COPPER_ESSENCE = new Quest(
       },
     },
     iconPath: "textures/items/copper_essence",
-  }
+  },
 );
 
 /**
@@ -1636,7 +1636,7 @@ export const CHISELED_BOOKSHELF = new Quest(
       },
     },
     iconPath: "textures/ui/quest/chiseled_bookshelf",
-  }
+  },
 );
 
 /**
@@ -1664,7 +1664,7 @@ export const BRUSH = new Quest(
       },
     },
     iconPath: "textures/items/brush",
-  }
+  },
 );
 
 /**
@@ -1687,7 +1687,7 @@ export const ELYTRA = new Quest(
       exp: 120,
     },
     iconPath: "textures/items/elytra",
-  }
+  },
 );
 
 /**
@@ -1715,7 +1715,7 @@ export const CACTUS = new Quest(
       },
     },
     iconPath: "textures/ui/quest/cactus",
-  }
+  },
 );
 
 /**
@@ -1743,7 +1743,7 @@ export const COOLING_POTION = new Quest(
       },
     },
     iconPath: "textures/items/cooling_potion",
-  }
+  },
 );
 
 /**
@@ -1774,7 +1774,7 @@ export const SAND_MEAT = new Quest(
     tips: {
       translate: "hy.quest.sand_meat.tips",
     },
-  }
+  },
 );
 
 /**
@@ -1805,7 +1805,7 @@ export const SAND_BONE = new Quest(
       translate: "hy.quest.sand_bone.tips",
     },
     iconPath: "textures/items/sand_bone",
-  }
+  },
 );
 
 /**
@@ -1834,7 +1834,7 @@ export const SHATTERED_SAND_CUDGEL = new Quest(
     },
     tips: { translate: "hy.quest.shattered_sand_cudgel.tips" },
     iconPath: "textures/items/shattered_sand_cudgel",
-  }
+  },
 );
 
 /**
@@ -1862,7 +1862,7 @@ export const RABBIT_PAW = new Quest(
       },
     },
     iconPath: "textures/items/rabbit_paw",
-  }
+  },
 );
 
 /**
@@ -1890,7 +1890,7 @@ export const PAW_DUST = new Quest(
       },
     },
     iconPath: "textures/items/paw_dust",
-  }
+  },
 );
 
 /**
@@ -1918,7 +1918,7 @@ export const DRIFT_SAND_KEY = new Quest(
       },
     },
     iconPath: "textures/items/drift_sand_key",
-  }
+  },
 );
 
 /**
@@ -1949,7 +1949,7 @@ export const RAIN_GOD_BLESSING = new Quest(
     tips: {
       translate: "hy.quest.rain_god_blessing.tips",
     },
-  }
+  },
 );
 
 /**
@@ -1978,7 +1978,7 @@ export const DESERT_HEART = new Quest(
     },
     tips: { translate: "hy.quest.desert_heart.tips" },
     iconPath: "textures/items/desert_heart",
-  }
+  },
 );
 
 export const DRIFT_SAND_STATUE = new Quest(
@@ -2011,7 +2011,7 @@ export const DRIFT_SAND_STATUE = new Quest(
     },
     iconPath: "textures/items/drift_sand_statue",
     tips: { translate: "hy.quest.drift_sand_statue.tips" },
-  }
+  },
 );
 
 export const SHATTERED_SAND_STAFF = new Quest(
@@ -2051,7 +2051,7 @@ export const SHATTERED_SAND_STAFF = new Quest(
     },
     iconPath: "textures/items/shattered_sand_staff",
     tips: { translate: "hy.quest.shattered_sand_staff.tips" },
-  }
+  },
 );
 
 export const GOLD_SAND = new Quest(
@@ -2083,7 +2083,7 @@ export const GOLD_SAND = new Quest(
     },
     iconPath: "textures/items/gold_sand",
     tips: { translate: "hy.quest.gold_sand.tips" },
-  }
+  },
 );
 
 export const SAND_SLIVERFISH = new Quest(
@@ -2116,7 +2116,7 @@ export const SAND_SLIVERFISH = new Quest(
       },
     },
     iconPath: "textures/items/egg_sand_sliverfish",
-  }
+  },
 );
 
 export const LETTER_14 = new Quest(
@@ -2141,7 +2141,7 @@ export const LETTER_14 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const LETTER_15 = new Quest(
@@ -2166,7 +2166,7 @@ export const LETTER_15 = new Quest(
       },
     },
     iconPath: "textures/items/lost_letter",
-  }
+  },
 );
 
 export const CORROSION_BOARDSWORD = new Quest(
@@ -2202,7 +2202,7 @@ export const CORROSION_BOARDSWORD = new Quest(
     tips: {
       translate: "hy.quest.corrosion_boardsword.tips",
     },
-  }
+  },
 );
 
 export const COPPER_HRON = new Quest(
@@ -2227,7 +2227,7 @@ export const COPPER_HRON = new Quest(
       },
     },
     iconPath: "textures/items/copper_horn",
-  }
+  },
 );
 
 export const BLEAK_TOTEM = new Quest(
@@ -2252,7 +2252,7 @@ export const BLEAK_TOTEM = new Quest(
       },
     },
     iconPath: "textures/items/bleak_totem",
-  }
+  },
 );
 
 export const GOLDEN_BADGE = new Quest(
@@ -2286,7 +2286,7 @@ export const GOLDEN_BADGE = new Quest(
     tips: {
       translate: "hy.quest.golden_badge.tips",
     },
-  }
+  },
 );
 
 export const TROPHY_BUNDLE = new Quest(
@@ -2311,7 +2311,7 @@ export const TROPHY_BUNDLE = new Quest(
       },
     },
     iconPath: "textures/items/trophy_bundle",
-  }
+  },
 );
 
 export const SCORPION = new Quest(
@@ -2322,8 +2322,8 @@ export const SCORPION = new Quest(
     condition: {
       killEntity: {
         name: "蝎子",
-        typeId: "hy:scorpion"
-      }
+        typeId: "hy:scorpion",
+      },
     },
     award: {
       item: {
@@ -2336,8 +2336,8 @@ export const SCORPION = new Quest(
     iconPath: "textures/items/egg_scorpion",
     tips: {
       translate: "hy.quest.scorpion.tips",
-    }
-  }
+    },
+  },
 );
 
 export const SCORPION_POTION = new Quest(
@@ -2362,7 +2362,7 @@ export const SCORPION_POTION = new Quest(
       },
     },
     iconPath: "textures/items/scorpion_potion",
-  }
+  },
 );
 
 export const LETTER_17 = new Quest(
@@ -2387,7 +2387,7 @@ export const LETTER_17 = new Quest(
       },
     },
     iconPath: "textures/items/desert_mythology",
-  }
+  },
 );
 
 export const SAND_SPIDER = new Quest(
@@ -2398,8 +2398,8 @@ export const SAND_SPIDER = new Quest(
     condition: {
       killEntity: {
         name: "沙蚀蜘蛛",
-        typeId: "hy:sand_spider"
-      }
+        typeId: "hy:sand_spider",
+      },
     },
     award: {
       item: {
@@ -2410,7 +2410,7 @@ export const SAND_SPIDER = new Quest(
       },
     },
     iconPath: "textures/items/egg_sand_spider",
-  }
+  },
 );
 
 export const ECHO_SHARD = new Quest(
@@ -2418,10 +2418,10 @@ export const ECHO_SHARD = new Quest(
   { translate: "hy.quest.echo_shard.title" },
   {
     rawtext: [
-      {translate: "hy.quest.echo_shard.body0"},
-      {text: "\n\n"},
-      {translate: "hy.quest.echo_shard.body1"}
-    ]
+      { translate: "hy.quest.echo_shard.body0" },
+      { text: "\n\n" },
+      { translate: "hy.quest.echo_shard.body1" },
+    ],
   },
   {
     condition: {
@@ -2441,7 +2441,7 @@ export const ECHO_SHARD = new Quest(
       },
     },
     iconPath: "textures/items/echo_shard",
-  }
+  },
 );
 
 export const ISIS_CROWN = new Quest(
@@ -2479,7 +2479,7 @@ export const ISIS_CROWN = new Quest(
     },
     iconPath: "textures/items/isis_crown",
     tips: { translate: "hy.quest.isis_crown.tips" },
-  }
+  },
 );
 
 export const BABEL_TOWER_WRECKAGE_SAND = new Quest(
@@ -2506,5 +2506,5 @@ export const BABEL_TOWER_WRECKAGE_SAND = new Quest(
       },
     },
     iconPath: "textures/items/babel_tower_wreckage_sand",
-  }
+  },
 );

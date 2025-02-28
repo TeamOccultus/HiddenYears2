@@ -423,7 +423,7 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.17.body22" },
       { text: Format.newLine },
       { translate: "article.17.body23" },
-    ],   
+    ],
   },
   {
     rawtext: [
@@ -444,7 +444,7 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.18.body7" },
       { text: "\n\n" },
       { translate: "article.18.body8" },
-      { text: Format.newLine},
+      { text: Format.newLine },
       { translate: "article.18.body9" },
       { text: Format.newLine },
       { translate: "article.18.body10" },
@@ -471,7 +471,7 @@ export const HyLetterBody: RawMessage[] = [
       { translate: "article.19.body7" },
       { text: "\n\n" },
       { translate: "article.19.body8" },
-      { text: Format.newLine},
+      { text: Format.newLine },
       { translate: "article.19.body9" },
       { text: "\n\n" },
       { translate: "article.19.body10" },

@@ -84,9 +84,7 @@
           "skeleton_attack": "controller.animation.skeleton.attack"
         }
       ],
-      "render_controllers": [
-        "controller.render.skeleton"
-      ],
+      "render_controllers": ["controller.render.skeleton"],
       "enable_attachables": true,
       "spawn_egg": {
         "texture": "hy.spawn_eggs",

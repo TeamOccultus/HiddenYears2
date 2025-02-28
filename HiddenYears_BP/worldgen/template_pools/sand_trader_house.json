@@ -1,19 +1,19 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:template_pool": {
-      "description": {
-        "identifier": "hy:sand_trader_house"
-      },
-      "elements": [
-        {
-          "projection": "terrain_matching",
-          "element": {
-            "element_type": "minecraft:single_pool_element",
-            "location": "hy/sand_trader_house",
-            "processors": "hy:none"
-          },
-          "weight": 1
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hy:sand_trader_house"
+    },
+    "elements": [
+      {
+        "projection": "terrain_matching",
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hy/sand_trader_house",
+          "processors": "hy:none"
+        },
+        "weight": 1
+      }
+    ]
   }
+}

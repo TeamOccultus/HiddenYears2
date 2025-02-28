@@ -7,7 +7,7 @@ export class ItemAttribute {
   constructor(
     public id: string,
     public valueRange: NumberRange,
-    public name: string
+    public name: string,
   ) {}
   trigger() {}
   registry() {
@@ -29,7 +29,7 @@ export class ItemAttackAttribute extends ItemAttribute {
   constructor(
     public id: string,
     public valueRange: NumberRange,
-    public name: string
+    public name: string,
   ) {
     super(id, valueRange, name);
   }

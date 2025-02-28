@@ -13,9 +13,7 @@
       "minecraft:display_name": {
         "value": "article.3.title"
       },
-      "minecraft:custom_components": [
-        "hy:letter_3"
-      ],
+      "minecraft:custom_components": ["hy:letter_3"],
       "minecraft:hover_text_color": "yellow"
     }
   }

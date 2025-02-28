@@ -59,7 +59,12 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_pickaxe", "minecraft:iron_tier", "hy:flash_copper_tier"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_pickaxe",
+          "minecraft:iron_tier",
+          "hy:flash_copper_tier"
+        ]
       }
     }
   }

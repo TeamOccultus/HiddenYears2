@@ -1,21 +1,21 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:structure_set": {
-      "description": {
-        "identifier": "hy:desert_underground_palace"
-      },
-      "placement": {
-        "type": "minecraft:random_spread",
-        "salt": 1142,
-        "separation": 2,
-        "spacing": 10,
-        "spread_type": "linear"
-      },
-      "structures": [
-        {
-          "structure": "hy:desert_underground_palace",
-          "weight": 1
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hy:desert_underground_palace"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1142,
+      "separation": 2,
+      "spacing": 10,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hy:desert_underground_palace",
+        "weight": 1
+      }
+    ]
   }
+}

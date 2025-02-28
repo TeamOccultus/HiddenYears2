@@ -12,9 +12,9 @@ import { registryLoot } from "./server/registry/loot";
 import { initializeMod } from "@grindstone/core";
 import "./server/registry/component";
 import "./server/registry/effects/bleed";
-import "./server/registry/effects/dehydration"
-import "./server/registry/effects/drought"
-import "./server/registry/effects/tetanus"
+import "./server/registry/effects/dehydration";
+import "./server/registry/effects/drought";
+import "./server/registry/effects/tetanus";
 
 initializeMod("hy", "HiddenYears");
 Hy2System.registryTickEvent();

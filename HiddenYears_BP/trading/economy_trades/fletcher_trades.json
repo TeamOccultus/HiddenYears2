@@ -516,7 +516,7 @@
                     {
                       "function": "enchant_with_levels",
                       "treasure": true,
-                      "levels": { "min": 23, "max": 80}
+                      "levels": { "min": 23, "max": 80 }
                     }
                   ]
                 }

@@ -21,9 +21,7 @@
           "move": "controller.animation.silverfish.move"
         }
       ],
-      "render_controllers": [
-        "controller.render.silverfish"
-      ],
+      "render_controllers": ["controller.render.silverfish"],
       "spawn_egg": {
         "texture": "hy.spawn_eggs",
         "texture_index": 16

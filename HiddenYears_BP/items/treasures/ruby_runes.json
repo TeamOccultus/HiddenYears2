@@ -18,9 +18,7 @@
       },
       "minecraft:hover_text_color": "light_purple",
       "minecraft:tags": {
-        "tags": [
-          "hy:single_use"
-        ]
+        "tags": ["hy:single_use"]
       }
     }
   }

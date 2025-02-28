@@ -1,9 +1,6 @@
 import { world, Player, system, ItemStack } from "@minecraft/server";
 import { getEquipmentItem, giveItem, randomInteger } from "@grindstone/utils";
-import {
-  isAffectByBloodArmor,
-  isAffectByBloodCrown,
-} from "../core/utils";
+import { isAffectByBloodArmor, isAffectByBloodCrown } from "../core/utils";
 
 export class Hy2Entity {
   /**

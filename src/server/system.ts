@@ -4,7 +4,10 @@ import {
   system,
   world,
 } from "@minecraft/server";
-import { badgeEffectMonitor, isisCrownEffectMonitor } from "../core/tickEventMonitor";
+import {
+  badgeEffectMonitor,
+  isisCrownEffectMonitor,
+} from "../core/tickEventMonitor";
 import { replaceItemStack } from "@grindstone/utils";
 import {
   magicExplodeTrigger,
@@ -46,37 +49,37 @@ export class Hy2System {
     world.afterEvents.playerSpawn.subscribe((event) => {
       const player = event.player;
       const inventory = player.getComponent(
-        "inventory"
+        "inventory",
       ) as EntityInventoryComponent;
       replaceItemStack(
         new ItemStack("hy:raw_flash_copper_ingot"),
         new ItemStack("hy:flash_copper_ingot"),
-        inventory.container
+        inventory.container,
       );
       replaceItemStack(
         new ItemStack("hy:raw_flash_metal_ingot"),
         new ItemStack("hy:flash_metal_ingot"),
-        inventory.container
+        inventory.container,
       );
       replaceItemStack(
         new ItemStack("hy:experience_calamity_bag"),
         new ItemStack("hy:crimson_eyes"),
-        inventory.container
+        inventory.container,
       );
       replaceItemStack(
         new ItemStack("hy:diamond_bone"),
         new ItemStack("hy:bone_boardsword"),
-        inventory.container
+        inventory.container,
       );
       replaceItemStack(
         new ItemStack("hy:gold_bone"),
         new ItemStack("hy:bone_boardsword"),
-        inventory.container
+        inventory.container,
       );
       replaceItemStack(
         new ItemStack("hy:iron_bone"),
         new ItemStack("hy:bone_boardsword"),
-        inventory.container
+        inventory.container,
       );
     });
   }

@@ -3,7 +3,7 @@
     {
       "total_exp_required": 0,
       "groups": [
-      {
+        {
           "num_to_select": 2,
           "trades": [
             {
@@ -112,13 +112,13 @@
               "reward_exp": true
             }
           ]
-        }        
+        }
       ]
     },
     {
       "total_exp_required": 10,
       "groups": [
-      {
+        {
           "num_to_select": 2,
           "trades": [
             {
@@ -174,7 +174,7 @@
               "reward_exp": true
             }
           ]
-        }        
+        }
       ]
     },
     {

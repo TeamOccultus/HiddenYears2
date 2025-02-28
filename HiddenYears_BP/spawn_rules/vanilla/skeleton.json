@@ -7,10 +7,8 @@
     },
     "conditions": [
       {
-        "minecraft:spawns_on_surface": {
-        },
-        "minecraft:spawns_underground": {
-        },
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underground": {},
         "minecraft:spawns_on_block_prevented_filter": [
           "minecraft:nether_wart_block",
           "minecraft:shroomlight"

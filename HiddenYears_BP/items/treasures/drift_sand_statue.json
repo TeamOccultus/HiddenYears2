@@ -13,9 +13,7 @@
       "minecraft:display_name": {
         "value": "hy.item.drift_sand_statue"
       },
-      "minecraft:custom_components": [
-        "hy:frame_acrtiver"
-      ],
+      "minecraft:custom_components": ["hy:frame_acrtiver"],
       "minecraft:hover_text_color": "light_purple"
     }
   }

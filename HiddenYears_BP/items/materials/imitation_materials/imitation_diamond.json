@@ -8,16 +8,13 @@
       }
     },
     "components": {
-      "minecraft:icon":"hy.imitation_diamond",
+      "minecraft:icon": "hy.imitation_diamond",
       "minecraft:display_name": {
         "value": "hy.item.imitation_diamond"
       },
       "minecraft:hover_text_color": "gold",
       "minecraft:tags": {
-        "tags": [
-          "dict:ingots.imitation_diamond",
-          "dict:materials.imitation"
-        ]
+        "tags": ["dict:ingots.imitation_diamond", "dict:materials.imitation"]
       }
     }
   }

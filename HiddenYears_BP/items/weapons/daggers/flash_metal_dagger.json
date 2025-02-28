@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_metal_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },

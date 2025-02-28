@@ -43,7 +43,7 @@ const MEDICINE_PACK = new DurabilityLimitedPropBuilder(
     PLAYER.removeTag("hy:bleed_lv1");
     PLAYER.removeTag("hy:bleed_lv2");
     PLAYER.playSound("use.cloth");
-  }
+  },
 );
 
 const COPPER_HORN = new DurabilityLimitedPropBuilder(
@@ -65,7 +65,7 @@ const COPPER_HORN = new DurabilityLimitedPropBuilder(
         300,
         {
           amplifier: 2,
-        }
+        },
       );
       PLAYER.removeEffect("slowness");
       PLAYER.addEffect("speed", 300, {
@@ -85,14 +85,14 @@ const COPPER_HORN = new DurabilityLimitedPropBuilder(
         300,
         {
           amplifier: 2,
-        }
+        },
       );
       PLAYER.removeEffect("speed");
       PLAYER.addEffect("slowness", 300, {
         amplifier: 2,
       });
     }
-  }
+  },
 );
 
 const SOUL_LETTER = new PropBuilder("hy:soul_letter_sprite", (event) => {
@@ -108,7 +108,7 @@ const RUBY_BAG = new PropBuilder("hy:ruby_bag", (event) => {
       event: () => {
         giveItem(
           PLAYER,
-          new ItemStack("minecraft:netherite_scrap", randomInteger(2, 1))
+          new ItemStack("minecraft:netherite_scrap", randomInteger(2, 1)),
         );
       },
     },
@@ -138,7 +138,7 @@ const EXP_CALAMITY_BAG = new PropBuilder(
   (event) => {
     const PLAYER = event.source;
     PLAYER.dimension.spawnEntity("hy:king_of_ruby", PLAYER.location);
-  }
+  },
 );
 
 const RUBY_RUNES = new PropBuilder("hy:ruby_runes", (event) => {
@@ -154,7 +154,7 @@ const BONE_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -171,13 +171,13 @@ const BONE_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f骷髅类生物",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.boneMagicExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const FLASH_METAL_BOARDSWORD = new DurabilityLimitedPropBuilder(
@@ -185,7 +185,7 @@ const FLASH_METAL_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -202,13 +202,13 @@ const FLASH_METAL_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f一般生物",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.flashMetalExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const CORROSION_BOARDSWORD = new DurabilityLimitedPropBuilder(
@@ -216,7 +216,7 @@ const CORROSION_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -233,13 +233,13 @@ const CORROSION_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f亡灵类生物",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.corrosionExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const EMERALD_BOARDSWORD = new DurabilityLimitedPropBuilder(
@@ -247,7 +247,7 @@ const EMERALD_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -264,13 +264,13 @@ const EMERALD_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f灾厄类生物",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.emeraldExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedPropBuilder(
@@ -278,7 +278,7 @@ const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -295,13 +295,13 @@ const FLASH_COPPER_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f节肢类生物",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.flashCopperExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const AMETHYST_BOARDSWORD = new DurabilityLimitedPropBuilder(
@@ -309,7 +309,7 @@ const AMETHYST_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -326,13 +326,13 @@ const AMETHYST_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f家禽与家畜",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.amethystExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const RUBY_BOARDSWORD = new DurabilityLimitedPropBuilder(
@@ -340,7 +340,7 @@ const RUBY_BOARDSWORD = new DurabilityLimitedPropBuilder(
   1,
   (event) => {
     let cooldown = event.itemStack.getComponent(
-      "cooldown"
+      "cooldown",
     ) as ItemCooldownComponent;
     if (cooldown.getCooldownTicksRemaining(event.source) !== 0) return;
     if (!event.itemStack.getDynamicProperty("hy:show_details")) {
@@ -357,13 +357,13 @@ const RUBY_BOARDSWORD = new DurabilityLimitedPropBuilder(
           "",
           "§9§l精通生物：§r",
           "§f红宝石生物",
-        ])
+        ]),
       );
       event.itemStack.setDynamicProperty("hy:show_details", true);
     }
     MagicAimAttack.rubyExplode(event.source);
     cooldown.startCooldown(event.source);
-  }
+  },
 );
 
 const MUTAS_STAFF = new DurabilityLimitedPropBuilder(
@@ -391,7 +391,7 @@ const MUTAS_STAFF = new DurabilityLimitedPropBuilder(
           excludeTags: ["hy:magic_explode_attacker"],
           excludeFamilies: ["noaoe"],
         },
-        5
+        5,
       );
       player.dimension
         .getEntities({
@@ -404,7 +404,7 @@ const MUTAS_STAFF = new DurabilityLimitedPropBuilder(
         });
       cooldown.startCooldown(player);
     }
-  }
+  },
 );
 
 const RAIN_GOD_BLESSING = new PropBuilder("hy:rain_god_blessing", (event) => {

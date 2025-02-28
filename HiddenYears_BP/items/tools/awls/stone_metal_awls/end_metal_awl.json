@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:end_metal_awl",
-      "menu_category":{
+      "menu_category": {
         "category": "items"
       }
     },
@@ -22,7 +22,13 @@
         "slot": "sword"
       },
       "minecraft:tags": {
-        "tags": ["hy:is_awl", "hy:custom_tools", "minecraft:is_axe", "minecraft:stone_tier", "hy:stone_metal_tier"]
+        "tags": [
+          "hy:is_awl",
+          "hy:custom_tools",
+          "minecraft:is_axe",
+          "minecraft:stone_tier",
+          "hy:stone_metal_tier"
+        ]
       }
     }
   }

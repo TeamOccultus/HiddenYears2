@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:corrosion_boardsword",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -112,7 +112,8 @@
           "minecraft:is_tool",
           "hy:magic_explode",
           "minecraft:is_sword",
-          "hy:corrosion_tier", "hy:iron_tier"
+          "hy:corrosion_tier",
+          "hy:iron_tier"
         ]
       }
     }

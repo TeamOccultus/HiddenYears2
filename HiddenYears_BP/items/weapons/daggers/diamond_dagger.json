@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:diamond_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -79,12 +79,9 @@
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
-      }, 
+      },
       "minecraft:tags": {
-        "tags": [
-          "hy:custom_weapons",
-          "minecraft:is_tool"
-        ]
+        "tags": ["hy:custom_weapons", "minecraft:is_tool"]
       }
     }
   }

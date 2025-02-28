@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_diamond_axe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.axe"
       }
@@ -18,7 +18,7 @@
       "minecraft:durability": {
         "max_durability": 780
       },
-      
+
       "minecraft:damage": 5,
       "minecraft:enchantable": {
         "value": 1,

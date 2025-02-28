@@ -230,9 +230,7 @@
         ]
       },
       "minecraft:entity_born": {
-        "sequence": [
-          { "add": { "component_groups": ["baby"] } }
-        ]
+        "sequence": [{ "add": { "component_groups": ["baby"] } }]
       },
       "grow_up": {
         "remove": { "component_groups": ["baby"] },

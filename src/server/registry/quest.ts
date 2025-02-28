@@ -142,7 +142,7 @@ const QUEST_BOOK = new ChapterQuestBookBuilder(
       quests: [quests.BABEL_TOWER_WRECKAGE_SAND],
       iconPath: "textures/items/babel_tower_wreckage_sand",
     },
-  ]
+  ],
 );
 const LETTER_0 = new QuestBookBuilder(
   `hy:letter_0`,
@@ -166,7 +166,7 @@ const LETTER_0 = new QuestBookBuilder(
     quests.LETTER_13,
     quests.LETTER_14,
     quests.LETTER_15,
-  ]
+  ],
 );
 
 export function registryQuest() {

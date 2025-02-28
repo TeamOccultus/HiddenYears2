@@ -75,7 +75,7 @@ export function registryLoot() {
       case "minecraft:elder_guardian":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/elder_guardian"
+          "gameplay/bundles/elder_guardian",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -86,14 +86,14 @@ export function registryLoot() {
       case "minecraft:endermite":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/endermite"
+          "gameplay/bundles/endermite",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
       case "minecraft:evocation_illager":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/evocation_illager"
+          "gameplay/bundles/evocation_illager",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -135,14 +135,14 @@ export function registryLoot() {
       case "minecraft:magma_cube":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/magma_cube"
+          "gameplay/bundles/magma_cube",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
       case "minecraft:mooshroom":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/mooshroom"
+          "gameplay/bundles/mooshroom",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -179,14 +179,14 @@ export function registryLoot() {
       case "minecraft:polar_bear":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/polar_bear"
+          "gameplay/bundles/polar_bear",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
       case "minecraft:pufferfish":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/pufferfish"
+          "gameplay/bundles/pufferfish",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;
@@ -216,7 +216,7 @@ export function registryLoot() {
       case "minecraft:snow_golem":
         bundle.setDynamicProperty(
           "hy:loot_table",
-          "gameplay/bundles/snow_golem"
+          "gameplay/bundles/snow_golem",
         );
         entity.dimension.spawnItem(bundle, entity.location);
         break;

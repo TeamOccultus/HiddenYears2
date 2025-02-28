@@ -1,21 +1,21 @@
 {
-    "format_version": "1.21.40",
-    "minecraft:structure_set": {
-      "description": {
-        "identifier": "hy:sand_trader_house"
-      },
-      "placement": {
-        "type": "minecraft:random_spread",
-        "salt": 11,
-        "separation": 2,
-        "spacing": 8,
-        "spread_type": "linear"
-      },
-      "structures": [
-        {
-          "structure": "hy:sand_trader_house",
-          "weight": 1
-        }
-      ]
-    }
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hy:sand_trader_house"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 11,
+      "separation": 2,
+      "spacing": 8,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hy:sand_trader_house",
+        "weight": 1
+      }
+    ]
   }
+}

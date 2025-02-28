@@ -17,9 +17,7 @@
       },
       "minecraft:hover_text_color": "gold",
       "minecraft:tags": {
-        "tags": [
-          "dict:materials.imitation"
-        ]
+        "tags": ["dict:materials.imitation"]
       }
     }
   }

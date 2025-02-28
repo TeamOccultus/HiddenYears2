@@ -21,20 +21,24 @@
 许多奇妙的工具，让你的冒险之旅增添几分不一样的乐趣！
 
 ## 自动打包
+
 本模组可通过Node.js进行自动打包，在项目根目录运行以下命令：
 
-~~~
+```
 yarn
 yarn build
-~~~
+```
 
 即可在`output`文件夹下发现生成的`隐藏之年.mcaddon`和`隐藏之年音乐包.mcpack`
 
 ## 快速上手
+
 ### 下载
+
 - [基岩版下载](https://pan.huang1111.cn/s/N6m8H1)
 
 ### 安装
+
 请在加载前保证你的设上安装了最新的 Minecraft 基岩版或模组要求的 Java 版版本，然后进行如下操作：
 
 1. 将下载到的.mcaddon文件导入Minecraft中，并在世界中加载
@@ -42,10 +46,13 @@ yarn build
 3. 大功告成！
 
 ### 游玩
+
 本模组内置任务系统，可帮助玩家快速上手模组内容，如果仍然对模组内容有疑惑，请阅读开发组撰写的[教程](https://hiddeny-devs.github.io/tutorials)或加入[官方交流群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=mYOwQP51BKu_4Xg7d08YWhVIKbAhN2Un&authKey=p3N6oq3waxO%2BuWokyRUEwNUXhS7TXNKFCUBGC6XSDcZvcUEbyHMnXRSdv9lbCGKl&noverify=0&group_code=499251252)进行提问～
 
 ## 幕后工作者
+
 ### 隐藏之年开发组
+
 隐藏之年开发组隶属于星屹工作室，承担隐藏之年²的策划、开发、宣传事宜：
 
 - 方琉璃：制作人/程序/策划/半个美术
@@ -58,6 +65,7 @@ yarn build
 - BakaBee：吉祥物
 
 ### 贡献者
+
 同时，感谢所有对隐藏之年²作出贡献的人：
 
 - 吴仁辶：功能建议/剧情建议
@@ -110,6 +118,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 ```
 
 ## 相关链接
+
 - 苦力怕论坛：https://klpbbs.com/thread-85797-1-1.html
 - Minebbs：https://www.minebbs.com/resources/6182/
 - 苦力怕论坛反馈：https://klpbbs.com/thread-109005-1-1.html
@@ -120,6 +129,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 - 【推荐模组】石头工艺：https://klpbbs.com/thread-28013-1-1.html
 
 ## 写在最后
+
 愿所有看到这里的冒险家能够在隐藏之年的世界中获得不一样的乐趣！
 
 愿你我的旅途，不论在游戏世界或者现实中，一路顺风无阻，处处生花！

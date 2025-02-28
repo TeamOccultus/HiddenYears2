@@ -139,8 +139,7 @@ boardswordFinalSkill.setTips({ translate: "hy.itemSkill.boardsword.2" });
  */
 const droughtSkill = new WeaponAtkSkill(1);
 droughtSkill.onReleased((callback) => {
-  if (callback.target)
-    droughtEffect.add(callback.target, 300, 1);
+  if (callback.target) droughtEffect.add(callback.target, 300, 1);
 });
 
 /**
@@ -148,8 +147,7 @@ droughtSkill.onReleased((callback) => {
  */
 const dehydrationSkill = new WeaponAtkSkill(1);
 dehydrationSkill.onReleased((callback) => {
-  if (callback.target)
-    dehydrationEffect.add(callback.target, 300, 1);
+  if (callback.target) dehydrationEffect.add(callback.target, 300, 1);
 });
 
 /**

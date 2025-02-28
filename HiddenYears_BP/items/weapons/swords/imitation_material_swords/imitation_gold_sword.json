@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:imitation_gold_sword",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {

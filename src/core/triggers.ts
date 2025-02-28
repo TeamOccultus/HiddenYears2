@@ -70,7 +70,7 @@ export function magicExplodeTrigger() {
           excludeTags: ["hy:magic_explode_attacker"],
           excludeFamilies: ["noaoe"],
         },
-        6
+        6,
       );
       system.runTimeout(() => {
         PLAYER.removeTag("hy:magic_explode_attacker");
@@ -86,7 +86,6 @@ export function magicExplodeTrigger() {
 export function mutasStaffTrigger() {
   world.afterEvents.itemUse.subscribe((event) => {
     const [player, item] = [event.source, event.itemStack];
-    
   });
 }
 
@@ -172,8 +171,7 @@ export function trophyBundleTrigger() {
 export function droughtEffectAtkTrigger() {
   world.afterEvents.entityHitEntity.subscribe((arg) => {
     if (arg.damagingEntity.matches({ families: ["drought_attacker"] })) {
-      if (arg.hitEntity.isValid())
-        droughtEffect.add(arg.hitEntity, 160);
+      if (arg.hitEntity.isValid()) droughtEffect.add(arg.hitEntity, 160);
     }
   });
 }
@@ -188,7 +186,7 @@ export function isisCrownAtkTrigger() {
       "hy:isis_crown"
     ) {
       const health = event.entity.getComponent(
-        "minecraft:health"
+        "minecraft:health",
       ) as EntityHealthComponent;
       const newHealth = health.currentValue + changedValue * 0.25;
       if (newHealth > health.defaultValue) {

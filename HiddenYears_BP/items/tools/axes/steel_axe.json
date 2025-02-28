@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:steel_axe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.axe"
       }
@@ -51,8 +51,8 @@
           "minecraft:is_axe",
           "hy:custom_tools",
           "hy:custom_axe",
-        "minecraft:diamond_tier",
-        "hy:steel_tier"
+          "minecraft:diamond_tier",
+          "hy:steel_tier"
         ]
       }
     }

@@ -3,9 +3,9 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:golden_badge",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
-      } 
+      }
     },
     "components": {
       "minecraft:icon": "hy.golden_badge",
@@ -26,9 +26,7 @@
       },
       "minecraft:hover_text_color": "light_purple",
       "minecraft:tags": {
-        "tags": [
-          "hy:badge"
-        ]
+        "tags": ["hy:badge"]
       }
     }
   }

@@ -1,6 +1,4 @@
 {
   // Alphabetical order please :)
-  "ui_defs": [
-  	"ui/boss.json"
-  ]
+  "ui_defs": ["ui/boss.json"]
 }

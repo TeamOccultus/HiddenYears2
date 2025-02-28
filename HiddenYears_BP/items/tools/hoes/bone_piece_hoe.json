@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:bone_piece_hoe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.hoe"
       }
@@ -47,11 +47,7 @@
         ]
       },
       "minecraft:tags": {
-        "tags": [
-          "hy:custom_tools",
-          "minecraft:is_hoe",
-          "hy:custom_hoe"
-        ]
+        "tags": ["hy:custom_tools", "minecraft:is_hoe", "hy:custom_hoe"]
       }
     }
   }
