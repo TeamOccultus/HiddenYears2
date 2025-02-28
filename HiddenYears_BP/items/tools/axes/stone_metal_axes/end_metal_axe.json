@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:end_metal_axe",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.axe"
       }
@@ -50,7 +50,9 @@
         "tags": [
           "minecraft:is_axe",
           "hy:custom_tools",
-          "hy:custom_axe"
+          "hy:custom_axe",
+          "minecraft:stone_tier",
+          "hy:stone_metal_tier"
         ]
       }
     }

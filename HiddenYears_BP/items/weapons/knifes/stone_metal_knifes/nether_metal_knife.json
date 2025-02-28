@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:nether_metal_knife",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
       }
@@ -98,7 +98,9 @@
         "tags": [
           "hy:custom_weapons",
           "hy:is_knife",
-          "minecraft:is_tool"
+          "minecraft:is_tool",
+          "minecraft:stone_tier",
+          "hy:stone_metal_tier"
         ]
       }
     }

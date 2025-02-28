@@ -3,10 +3,10 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:end_metal_sword",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment",
         "group": "itemGroup.name.sword"
-      } 
+      }
     },
     "components": {
       "minecraft:display_name": {
@@ -101,12 +101,14 @@
           }
         ]
       },
-      
+
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",
           "minecraft:is_sword",
-          "minecraft:is_tool"
+          "minecraft:is_tool",
+          "minecraft:stone_tier",
+          "hy:stone_metal_tier"
         ]
       }
     }

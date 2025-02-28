@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:over_metal_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -83,7 +83,9 @@
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",
-          "minecraft:is_tool"
+          "minecraft:is_tool",
+          "minecraft:stone_tier",
+          "hy:stone_metal_tier"
         ]
       }
     }
