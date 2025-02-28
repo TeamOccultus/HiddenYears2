@@ -50,7 +50,9 @@
         "tags": [
           "hy:custom_tools",
           "minecraft:is_hoe",
-          "hy:custom_hoe"
+          "hy:custom_hoe",
+          "minecraft:stone_tier",
+          "hy:flash_metal_tier"
         ]
       }
     }

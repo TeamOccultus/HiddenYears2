@@ -3,7 +3,7 @@
   "minecraft:item": {
     "description": {
       "identifier": "hy:flash_copper_dagger",
-      "menu_category":{
+      "menu_category": {
         "category": "equipment"
       }
     },
@@ -83,7 +83,9 @@
       "minecraft:tags": {
         "tags": [
           "hy:custom_weapons",
-          "minecraft:is_tool"
+          "minecraft:is_tool",
+          "minecraft:iron_tier",
+          "hy:flash_copper_tier"
         ]
       }
     }

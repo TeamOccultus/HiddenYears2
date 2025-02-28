@@ -111,7 +111,9 @@
           "hy:custom_weapons",
           "minecraft:is_tool",
           "hy:magic_explode",
-          "minecraft:is_sword"
+          "minecraft:is_sword",
+          "minecraft:stone_tier",
+          "hy:flash_metal_tier"
         ]
       }
     }

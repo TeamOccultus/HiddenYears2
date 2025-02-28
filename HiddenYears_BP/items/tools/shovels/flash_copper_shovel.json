@@ -47,7 +47,13 @@
       },
       "minecraft:icon": "hy.flash_copper_shovel",
       "minecraft:tags": {
-        "tags": ["hy:custom_tools", "minecraft:is_shovel", "hy:custom_shovel"]
+        "tags": [
+          "hy:custom_tools",
+          "minecraft:is_shovel",
+          "hy:custom_shovel",
+          "minecraft:iron_tier",
+          "hy:flash_copper_tier"
+        ]
       }
     }
   }
