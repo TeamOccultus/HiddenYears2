@@ -38,7 +38,7 @@ export function tetanusAttackTrigger() {
       ITEM?.hasTag("hy:weathered_item") ||
       ITEM?.hasTag("hy:exposed_item")
     ) {
-      tetanusEffect.addLevelTemporarily(TARGET, 1, 300);
+      tetanusEffect.add(TARGET, 300);
     }
   });
 }
@@ -173,7 +173,7 @@ export function droughtEffectAtkTrigger() {
   world.afterEvents.entityHitEntity.subscribe((arg) => {
     if (arg.damagingEntity.matches({ families: ["drought_attacker"] })) {
       if (arg.hitEntity.isValid())
-        droughtEffect.addLevelTemporarily(arg.hitEntity, 1, 160);
+        droughtEffect.add(arg.hitEntity, 160);
     }
   });
 }
