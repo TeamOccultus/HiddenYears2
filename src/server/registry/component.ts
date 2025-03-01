@@ -1,5 +1,6 @@
 import {
   ItemCooldownComponent,
+  ItemEnchantableComponent,
   Player,
   StructureAnimationMode,
   system,
@@ -11,6 +12,7 @@ import {
   damageEntities,
   getEquipmentItem,
   loot,
+  randomInteger,
   setEquipmentItem,
 } from "@grindstone/utils";
 

@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.20",
+  "format_version": "1.20.0",
   "minecraft:block": {
     "description": {
       "identifier": "hy:sand_coal_ore",
@@ -17,9 +17,13 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#F7E9A3",
-      "minecraft:loot": "loot_tables/blocks/sand_ores/coal.json",
+      "minecraft:loot": "loot_tables/empty.json",
       "tag:hy:sand_ores": {},
-      "tag:minecraft:stone_pick_diggable": {}
+      "tag:hy:custom_ore": {},
+      "tag:minecraft:stone_pick_diggable": {},
+      "tag:hy:custom_ore.has_loot": {},
+      "tag:hy:custom_ore.has_xp": {},
+      "tag:loot:blocks.sand_ores.coal": {}
     }
   }
 }

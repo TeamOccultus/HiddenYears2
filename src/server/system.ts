@@ -17,6 +17,7 @@ import {
   trophyBundleTrigger,
   droughtEffectAtkTrigger,
   mutasStaffTrigger,
+  customOreListener,
 } from "../core/triggers";
 
 export class Hy2System {
@@ -40,6 +41,7 @@ export class Hy2System {
     trophyBundleTrigger();
     droughtEffectAtkTrigger();
     isisCrownEffectMonitor();
+    customOreListener();
     // mutasStaffTrigger();
   }
   /**

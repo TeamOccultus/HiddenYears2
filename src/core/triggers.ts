@@ -4,6 +4,7 @@ import {
   EntityQueryOptions,
   EquipmentSlot,
   ItemCooldownComponent,
+  ItemEnchantableComponent,
   system,
   Vector3,
   world,
@@ -195,5 +196,41 @@ export function isisCrownAtkTrigger() {
         health.setCurrentValue(newHealth);
       }
     }
+  });
+}
+
+/**
+ * 自定义矿石相关接口
+ * @tag `hy:custom_ore`——将方块设置为自定义矿石，这从标签读取其战利品表，如`loot:entities.allay`将会被解析为`loot_tables/entities/allay.json`
+ * @todo @minecraft/server 2.0.0 发布时进行重构
+ */
+export function customOreListener() {
+  world.beforeEvents.playerBreakBlock.subscribe((arg) => {
+    const [player, block, item] = [
+      arg.player,
+      arg.block,
+      getEquipmentItem(arg.player),
+    ];
+    if (!block.hasTag("hy:custom_ore")) return;
+    if (!item) return;
+    if (!item.hasTag("minecraft:is_pickaxe")) return;
+    const enchantable = item.getComponent(
+      "minecraft:enchantable",
+    ) as ItemEnchantableComponent;
+    const silkTouch = enchantable?.getEnchantment("silk_touch");
+    if (silkTouch) return;
+    const tags = block.getTags();
+    system.runTimeout(() => {
+      tags.forEach((tag) => {
+        if (tag.startsWith("loot:")) {
+          const path = tag.replace("loot:", "").replaceAll(".", "/");
+          loot(player.dimension, block.location, path);
+        }
+      });
+      const num = randomInteger(5);
+      for (let i = 0; i < num; i++) {
+        block.dimension.spawnEntity("xp_orb", block.location);
+      }
+    }, 1);
   });
 }

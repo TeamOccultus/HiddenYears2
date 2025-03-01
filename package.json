@@ -19,7 +19,7 @@
     "@grindstone/item-kit": "^0.6.0",
     "@grindstone/material-kit": "^0.4.0",
     "@grindstone/quest-kit": "^0.2.0",
-    "@grindstone/utils": "^0.7.1",
+    "@grindstone/utils": "^1.0.0",
     "@minecraft/common": "^1.2.0",
     "@minecraft/server": "1.16.0",
     "@minecraft/server-ui": "1.3.0",
