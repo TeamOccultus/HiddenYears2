@@ -17,8 +17,10 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#F7E9A3",
-      "minecraft:loot": "loot_tables/blocks/sand_ores/copper.json",
+      "minecraft:loot": "loot_tables/empty.json",
       "tag:hy:sand_ores": {},
+      "tag:loot:blocks.sand_ores.copper": {},
+      "tag:hy:custom_ore": {},
       "tag:minecraft:stone_pick_diggable": {}
     }
   }

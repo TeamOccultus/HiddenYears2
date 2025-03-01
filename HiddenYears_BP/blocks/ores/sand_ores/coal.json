@@ -19,11 +19,8 @@
       "minecraft:map_color": "#F7E9A3",
       "minecraft:loot": "loot_tables/empty.json",
       "tag:hy:sand_ores": {},
-      "tag:hy:custom_ore": {},
-      "tag:minecraft:stone_pick_diggable": {},
-      "tag:hy:custom_ore.has_loot": {},
-      "tag:hy:custom_ore.has_xp": {},
-      "tag:loot:blocks.sand_ores.coal": {}
+      "tag:loot:blocks.sand_ores.coal": {},
+      "tag:hy:custom_ore": {}
     }
   }
 }

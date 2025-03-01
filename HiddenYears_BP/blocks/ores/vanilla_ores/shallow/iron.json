@@ -9,6 +9,7 @@
       }
     },
     "components": {
+      "minecraft:loot": "loot_tables/empty.json",
       "minecraft:display_name": "hy.block.shallow_iron_ore",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.8
@@ -17,8 +18,8 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#707070",
-      "minecraft:loot": "loot_tables/blocks/shallow_ores/iron.json",
-      "tag:hy:custom_ores": {},
+      "tag:loot:blocks.shallow_ores.iron": {},
+      "tag:hy:custom_ore": {},
       "tag:minecraft:stone_pick_diggable": {}
     }
   }

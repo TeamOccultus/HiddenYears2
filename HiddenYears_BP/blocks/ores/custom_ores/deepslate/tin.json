@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:loot": "loot_tables/blocks/custom_ores/tin.json",
+      "minecraft:loot": "loot_tables/empty.json",
       "minecraft:display_name": "hy.block.deepslate_tin_ore",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 0.8
@@ -18,8 +18,8 @@
         "explosion_resistance": 3.0
       },
       "minecraft:map_color": "#565656",
-
-      "tag:hy:custom_ores": {},
+      "tag:loot:blocks.custom_ores.tin": {},
+      "tag:hy:custom_ore": {},
       "tag:minecraft:stone_pick_diggable": {}
     }
   }

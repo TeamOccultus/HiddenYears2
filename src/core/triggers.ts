@@ -3,6 +3,7 @@ import {
   EntityHealthComponent,
   EntityQueryOptions,
   EquipmentSlot,
+  GameMode,
   ItemCooldownComponent,
   ItemEnchantableComponent,
   system,
@@ -212,6 +213,7 @@ export function customOreListener() {
       getEquipmentItem(arg.player),
     ];
     if (!block.hasTag("hy:custom_ore")) return;
+    if (player.getGameMode() === GameMode.creative) return;
     if (!item) return;
     if (!item.hasTag("minecraft:is_pickaxe")) return;
     const enchantable = item.getComponent(
