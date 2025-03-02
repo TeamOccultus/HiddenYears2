@@ -52,7 +52,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "quantity": 1,
                   "functions": [
                     {
@@ -138,7 +138,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "quantity": 1,
                   "functions": [{ "function": "set_data", "data": 0 }]
                 }
@@ -157,7 +157,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "quantity": 1,
                   "functions": [{ "function": "set_data", "data": 2 }]
                 }
@@ -259,7 +259,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     { "function": "exploration_map", "destination": "monument" }
                   ]
@@ -279,7 +279,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     { "function": "exploration_map", "destination": "mansion" }
                   ]
@@ -299,7 +299,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     {
                       "function": "exploration_map",
@@ -363,7 +363,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     {
                       "function": "exploration_map",
@@ -386,7 +386,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     { "function": "exploration_map", "destination": "temple" }
                   ]
@@ -406,7 +406,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     { "function": "exploration_map", "destination": "village" }
                   ]
@@ -447,7 +447,7 @@
                       "item": "cyan_wool",
                       "quantity": 15,
                       "price_multiplier": 0.05,
-                      "biomes": ["snow", "taiga"]
+                      "biomes": ["taiga"]
                     },
                     {
                       "item": "lime_wool",
@@ -460,18 +460,6 @@
                       "quantity": 15,
                       "price_multiplier": 0.05,
                       "biomes": ["jungle"]
-                    },
-                    {
-                      "item": "brown_wool",
-                      "quantity": 15,
-                      "price_multiplier": 0.05,
-                      "biomes": ["savannah"]
-                    },
-                    {
-                      "item": "purple_wool",
-                      "quantity": 15,
-                      "price_multiplier": 0.05,
-                      "biomes": ["swamp"]
                     }
                   ]
                 }
@@ -566,7 +554,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     { "function": "exploration_map", "destination": "endcity" }
                   ]
@@ -586,7 +574,7 @@
               ],
               "gives": [
                 {
-                  "item": "map",
+                  "item": "minecraft:empty_map",
                   "functions": [
                     { "function": "exploration_map", "destination": "fortress" }
                   ]

@@ -527,7 +527,7 @@
             {
               "wants": [
                 {
-                  "item": "turtle_shell_piece",
+                  "item": "minecraft:turtle_scute",
                   "quantity": 1,
                   "price_multiplier": 0.05
                 }
@@ -609,7 +609,7 @@
               ],
               "gives": [
                 {
-                  "item": "horsearmorleather",
+                  "item": "minecraft:leather_horse_armor",
                   "quantity": 1,
                   "functions": [{ "function": "random_dye" }]
                 }

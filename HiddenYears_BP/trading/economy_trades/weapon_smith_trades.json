@@ -8,7 +8,7 @@
           "trades": [
             {
               "wants": [
-                { "item": "coal:0", "quantity": 15, "price_multiplier": 0.05 }
+                { "item": "charcoal", "quantity": 15, "price_multiplier": 0.05 }
               ],
               "gives": [{ "item": "hy:copper_coin", "quantity": 24 }],
               "trader_exp": 2,

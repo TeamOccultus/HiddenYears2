@@ -447,7 +447,7 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "nametag", "quantity": 1 }],
+              "gives": [{ "item": "name_tag", "quantity": 1 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
