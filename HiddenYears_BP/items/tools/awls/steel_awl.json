@@ -19,9 +19,6 @@
       "minecraft:damage": 5,
 
       "tag:minecraft:is_axe": {},
-      "minecraft:creative_category": {
-        "parent": "items"
-      },
       "minecraft:enchantable": {
         "value": 1,
         "slot": "sword"

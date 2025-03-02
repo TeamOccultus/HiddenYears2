@@ -18,9 +18,6 @@
       "minecraft:max_stack_size": 1,
       "minecraft:damage": 4,
       "tag:minecraft:is_axe": {},
-      "minecraft:creative_category": {
-        "parent": "items"
-      },
       "minecraft:enchantable": {
         "value": 1,
         "slot": "sword"
