@@ -71,7 +71,7 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": ["hy:smaragdus_ingot"],
+            "items": ["hy:smaragdus"],
             "repair_amount": 50
           },
           {
