@@ -10,13 +10,13 @@
     "components": {
       "minecraft:display_name": "hy.block.sand_with_gold_dust",
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 0.8,
+        "seconds_to_destroy": 1.2,
         "item_specific_speeds": [
           {
             "item": {
               "tags": "q.any_tag('minecraft:is_shovel') "
             },
-            "destroy_speed": 5.0
+            "destroy_speed": 0.8
           }
         ]
       },
