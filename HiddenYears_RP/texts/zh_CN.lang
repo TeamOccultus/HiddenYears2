@@ -8,6 +8,7 @@ quest.entity=杀死 %1
 quest.not_enough.entity=你需要杀死 %1 才能完成这个任务
 gui.check=提交任务
 gui.about=关于
+gui.quest_done=你已完成此任务
 hy.empty=     
 hy.ui.open_source.title=开源项目
 hy.ui.open_source.description=本项目使用了下面开源项目的代码/资源，谨此对这些项目的开发者致以崇高的敬意！
@@ -321,11 +322,9 @@ hy.item.flash_copper_dagger=闪铜匕首
 hy.item.flash_copper_knife=闪铜小刀
 hy.item.flash_copper_awl=闪铜锥
 hy.item.flash_copper_sword=闪铜剑
-hy.block.flash_copper_block=闪铜块
 
 hy.item.imitation_amethyst_axe=仿制紫水晶斧
 hy.item.imitation_amethyst_ingot=仿制紫水晶锭
-hy.item.imitation_amethyst_axe=仿制紫水晶斧
 hy.item.imitation_amethyst_hammer=仿制紫水晶锤
 hy.item.imitation_amethyst_hoe=仿制紫水晶锄
 hy.item.imitation_amethyst_pickaxe=仿制紫水晶镐
@@ -334,7 +333,6 @@ hy.item.imitation_amethyst_sword=仿制紫水晶剑
 
 hy.item.imitation_gold_axe=仿制金斧
 hy.item.imitation_gold_ingot=仿制金锭
-hy.item.imitation_gold_axe=仿制金斧
 hy.item.imitation_gold_hammer=仿制金锤
 hy.item.imitation_gold_hoe=仿制金锄
 hy.item.imitation_gold_pickaxe=仿制金镐
@@ -343,7 +341,6 @@ hy.item.imitation_gold_sword=仿制金剑
 
 hy.item.imitation_diamond_axe=仿制钻石斧
 hy.item.imitation_diamond=仿制钻石
-hy.item.imitation_diamond_axe=仿制钻石斧
 hy.item.imitation_diamond_hammer=仿制钻石锤
 hy.item.imitation_diamond_hoe=仿制钻石锄
 hy.item.imitation_diamond_pickaxe=仿制钻石镐
@@ -352,7 +349,6 @@ hy.item.imitation_diamond_sword=仿制钻石剑
 
 hy.item.imitation_iron_axe=仿制铁斧
 hy.item.imitation_iron_ingot=仿制铁锭
-hy.item.imitation_iron_axe=仿制铁斧
 hy.item.imitation_iron_hammer=仿制铁锤
 hy.item.imitation_iron_hoe=仿制铁锄
 hy.item.imitation_iron_pickaxe=仿制铁镐
@@ -399,10 +395,7 @@ hy.item.copper_helmet=铜头盔
 hy.item.copper_chestplate=铜胸甲
 hy.item.copper_leggings=铜护腿
 hy.item.copper_boots=铜靴子
-hy.item.flash_copper_helmet=闪铜头盔
-hy.item.flash_copper_chestplate=闪铜胸甲
-hy.item.flash_copper_leggings=闪铜护腿
-hy.item.flash_copper_boots=闪铜靴子
+
 
 hy.item.bone_boardsword=魔骨阔剑
 hy.item.amethyst_boardsword=紫水晶阔剑
@@ -494,8 +487,6 @@ hy.item.flash_metal_boardsword.embryo=闪金阔剑原胚
 hy.item.corrosion_boardsword.embryo=腐蚀阔剑原胚
 hy.item.ruby_boardsword.embryo=红宝石阔剑原胚
 
-gui.quest_done=你已完成此任务
-gui.check=检查并提交
 
 hy.item.raw_flash_copper_ingot=粗闪铜锭
 hy.item.raw_flash_metal_ingot=粗闪金锭
@@ -594,7 +585,6 @@ hy.item.drift_sand_coronet=流沙之冠
 hy.item.past_statue=生命之符
 hy.item.drift_sand_statue=回生之符
 hy.item.aaru_dream=芦苇之梦
-entity.hy:pharaohs_ghost.name=法老残影
 hy.block.unknown_frame=未知的框架
 hy.block.fatigue_sandstone=疲劳砂岩
 hy.block.cursed_slab=诅咒之板

@@ -2,6 +2,33 @@
 pack.name=隱藏之年²
 pack.description=「探索未知的世間」 ｜ 正式版2.4.12
 
+## 技術性字符串
+hy.lang.on_use=§9§l使用時：§r
+quest.entity=殺死 %1
+quest.not_enough.entity=你需要殺死 %1 才能完成這個任務
+gui.check=提交任務
+gui.about=關於
+gui.quest_done=你已完成此任務
+hy.empty=     
+hy.ui.open_source.title=開源項目
+hy.ui.open_source.description=本項目使用了下面開源項目的代碼/資源，謹此對這些項目的開發者致以崇高的敬意！
+api.unexpected_error.quest=任務系統出現未知錯誤
+quest.finished=你完成了一個任務！
+quest.done=任務已完成
+quest.check=嘗試提交任務
+quest.not_enough.item=材料不足，你需要 %1 個 %2 才能完成這個任務
+quest.not_enough.level=你需要 %1 級經驗才能完成這個任務
+quest.not_enough.xp=你需要 %1 點經驗才能完成這個任務
+quest.condition=§e完成條件§r：
+quest.award=§e完成獎勵§r：
+quest.item=%1 個 %2;
+quest.xp=%1 點經驗
+quest.level=%1 級經驗
+quest.reward.none=無獎勵
+quest.condition.none=無條件
+quest.tips=§4特殊提示§r：
+article.nothing.title=無解鎖文章
+article.nothing.body=你沒有解鎖任何文章，你可以得到並閱讀一篇文章來解鎖它。
 
 ## 方塊、物品與實體
 entity.hy:gemstone_trader.name=寶石商人
@@ -295,11 +322,9 @@ hy.item.flash_copper_dagger=閃銅匕首
 hy.item.flash_copper_knife=閃銅小刀
 hy.item.flash_copper_awl=閃銅錐
 hy.item.flash_copper_sword=閃銅劍
-hy.block.flash_copper_block=閃銅塊
 
 hy.item.imitation_amethyst_axe=仿製紫水晶斧
 hy.item.imitation_amethyst_ingot=仿製紫水晶錠
-hy.item.imitation_amethyst_axe=仿製紫水晶斧
 hy.item.imitation_amethyst_hammer=仿製紫水晶錘
 hy.item.imitation_amethyst_hoe=仿製紫水晶鋤
 hy.item.imitation_amethyst_pickaxe=仿製紫水晶鎬
@@ -308,7 +333,6 @@ hy.item.imitation_amethyst_sword=仿製紫水晶劍
 
 hy.item.imitation_gold_axe=仿製金斧
 hy.item.imitation_gold_ingot=仿製金錠
-hy.item.imitation_gold_axe=仿製金斧
 hy.item.imitation_gold_hammer=仿製金錘
 hy.item.imitation_gold_hoe=仿製金鋤
 hy.item.imitation_gold_pickaxe=仿製金鎬
@@ -317,7 +341,6 @@ hy.item.imitation_gold_sword=仿製金劍
 
 hy.item.imitation_diamond_axe=仿製鉆石斧
 hy.item.imitation_diamond=仿製鉆石
-hy.item.imitation_diamond_axe=仿製鉆石斧
 hy.item.imitation_diamond_hammer=仿製鉆石錘
 hy.item.imitation_diamond_hoe=仿製鉆石鋤
 hy.item.imitation_diamond_pickaxe=仿製鉆石鎬
@@ -326,7 +349,6 @@ hy.item.imitation_diamond_sword=仿製鉆石劍
 
 hy.item.imitation_iron_axe=仿製鐵斧
 hy.item.imitation_iron_ingot=仿製鐵錠
-hy.item.imitation_iron_axe=仿製鐵斧
 hy.item.imitation_iron_hammer=仿製鐵錘
 hy.item.imitation_iron_hoe=仿製鐵鋤
 hy.item.imitation_iron_pickaxe=仿製鐵鎬
@@ -373,10 +395,7 @@ hy.item.copper_helmet=銅頭盔
 hy.item.copper_chestplate=銅胸甲
 hy.item.copper_leggings=銅護腿
 hy.item.copper_boots=銅靴子
-hy.item.flash_copper_helmet=閃銅頭盔
-hy.item.flash_copper_chestplate=閃銅胸甲
-hy.item.flash_copper_leggings=閃銅護腿
-hy.item.flash_copper_boots=閃銅靴子
+
 
 hy.item.bone_boardsword=魔骨闊劍
 hy.item.amethyst_boardsword=紫水晶闊劍
@@ -468,11 +487,6 @@ hy.item.flash_metal_boardsword.embryo=閃金闊劍原胚
 hy.item.corrosion_boardsword.embryo=腐蝕闊劍原胚
 hy.item.ruby_boardsword.embryo=紅寶石闊劍原胚
 
-gui.quest_done=你已完成此任務
-gui.check=檢查並提交
-
-
-
 
 hy.item.raw_flash_copper_ingot=粗閃銅錠
 hy.item.raw_flash_metal_ingot=粗閃金錠
@@ -480,10 +494,6 @@ hy.item.raw_steel_ingot=粗鋼錠
 
 hy.item.quest_book.0=隱藏之年主線任務書
 hy.item.quest_book.1=已經棄用的主線任務書
-
-
-
-
 
 entity.hy:sprite.name=精靈
 item.spawn_egg.entity.hy:sprite.name=精靈刷怪蛋
@@ -494,8 +504,6 @@ hy.item.soul_letter.sprite=凝魂信箋·風靈
 
 hy.collection.title=記憶文庫
 hy.collection.body=這裏會顯示你所有閱讀過的文章
-
-
 
 hy.item.bone_piece=骨片
 hy.item.bone_piece_axe=骨片斧
@@ -538,11 +546,11 @@ hy.item.corrosion_knife=腐蝕小刀
 hy.item.corrosion_awl=腐蝕之錐
 hy.item.corrosion_sword=腐蝕之劍
 
-entity.husk.name=砂化僵屍
-entity.hy:sand_creeper.name=砂化苦力怕
-item.spawn_egg.entity.hy:sand_creeper.name=砂化苦力怕
-entity.hy:sand_skeleton.name=砂化骷髏
-item.spawn_egg.entity.hy:sand_skeleton.name=砂化骷髏刷怪蛋
+entity.husk.name=沙蝕僵屍
+entity.hy:sand_creeper.name=沙蝕苦力怕
+item.spawn_egg.entity.hy:sand_creeper.name=沙蝕苦力怕刷怪蛋
+entity.hy:sand_skeleton.name=沙蝕骷髏
+item.spawn_egg.entity.hy:sand_skeleton.name=沙蝕骷髏刷怪蛋
 entity.hy:rabbit_killer.name=殺手兔
 item.spawn_egg.entity.hy:rabbit_killer.name=殺手兔刷怪蛋
 entity.hy:drift_sand_soldier.name=流沙士兵
@@ -561,12 +569,12 @@ entity.hy:scorpion.name=蠍子
 item.spawn_egg.entity.hy:scorpion.name=蠍子刷怪蛋
 entity.hy:venomous_spider.name=毒蜘蛛
 item.spawn_egg.entity.hy:venomous_spider.name=毒蜘蛛
-hy.item.sand_meat=砂肉
+hy.item.sand_meat=沙蝕肉
 hy.item.scorched_meat=焦糊的肉
-hy.item.sand_fish=砂魚
-hy.item.sand_bone=砂骨
-hy.item.shattered_sand_cudgel=碎砂之棍
-hy.item.shattered_sand_staff=碎砂之杖
+hy.item.sand_fish=沙蝕之魚
+hy.item.sand_bone=沙蝕之骨
+hy.item.shattered_sand_cudgel=塵沙之棍
+hy.item.shattered_sand_staff=塵沙之杖
 hy.item.rabbit_paw=兔的利爪
 hy.item.paw_dust=利爪粉末
 hy.item.rain_god_blessing=神之祝福·天降甘霖
@@ -577,12 +585,10 @@ hy.item.drift_sand_coronet=流沙之冠
 hy.item.past_statue=生命之符
 hy.item.drift_sand_statue=回生之符
 hy.item.aaru_dream=蘆葦之夢
-entity.hy:pharaohs_ghost.name=法老殘影
 hy.block.unknown_frame=未知的框架
 hy.block.fatigue_sandstone=疲勞砂巖
 hy.block.cursed_slab=詛咒之板
 hy.block.drift_sand_cabinet=流沙之櫃
-
 
 
 hy.block.lighting_frame=雷光框架
@@ -593,6 +599,10 @@ hy.title.king_of_ruby=§4力量與鮮血的試煉§r
 hy.title.king_of_ruby.subtitle=§d嵌入祭壇的血色瞥視聚集起一股強大的力量……§r
 hy.title.pharaohs_ghost=§4樂土恨作塵沙§r
 hy.title.pharaohs_ghost.subtitle=§d塵沙之上的帝國終將復歸塵沙……§r
+hy.title.mutas_wrath=§g「創世者」的憤怒§r
+hy.title.mutas_wrath.subtitle=§7被改造的層沙之力凝結為了一體……§r
+hy.title.desert_book=§g第三章·層沙的回響§r
+hy.title.desert_book.subtitle=§7任務完成§r
 
 hy.block.sand_copper_ore=砂巖銅礦石
 hy.block.sand_coal_ore=砂巖煤礦石
@@ -607,6 +617,22 @@ hy.item.trophy_bundle=戰利品袋
 hy.item.money_bundle=錢袋
 entity.hy:sand_trader.name=流沙行商
 item.spawn_egg.entity.hy:sand_trader.name=流沙行商刷怪蛋
+hy.item.sand_apple=沙蝕蘋果
+hy.item.enchanted_sand_apple=附魔沙蝕蘋果
+hy.item.scorpion_pincers=蠍鉗
+hy.item.scorpion_potion=蠍毒藥水
+hy.item.sand_spider_eye=沙蝕蜘蛛眼
+entity.hy:sand_spider.name=沙蝕蜘蛛
+item.spawn_egg.entity.hy:sand_spider.name=沙蝕蜘蛛刷怪蛋
+hy.item.babel_tower_wreckage.sand=「列巴部·否熱沃忒」之碎片·赤沙
+entity.hy:mutas_wrath.name=「創世者」的憤怒
+item.spawn_egg.entity.hy:mutas_wrath.name=「創世者」的憤怒召喚蛋
+hy.block.sand_grave=沙蝕的墳冢
+hy.item.aaru_dream.desc=§4該物品會對遊戲地形造成較大影響，請謹慎使用！§r
+hy.item.isis_crown=雨神之冠
+hy.item.mutas_staff=「創世三神」之魔杖
+hy.item.mutas_staff.desc1=§f+6×15格 範圍傷害§r
+hy.item.mutas_staff.desc2=§f在半徑6格敵對生物頭頂召喚雷暴§r
 
 ## 工具技能
 hy.itemSkill.hammer.1=「礦工的一擊」觸發，額外給予敵人挖掘疲勞III與虛弱！
@@ -658,7 +684,7 @@ hy.lategameTips.4=「很快，我們將會在那輪回無有之處相遇。因�
 hy.lategameTips.5=有了「名字」，就不會被「遺忘」，沒有「遺忘」就不會「消失」
 
 ## 遊戲消息
-hy.message.tetanus=你獲得了§d「破傷風」§r效果！
+hy.message.tetanus=敵人武器上帶有的§d「破傷風」§r效果使你感覺不適……
 hy.message.oxidising.exposed=此工具已然變得§d「斑駁」§r！
 hy.message.oxidising.weathered=此工具已然變得§d「銹蝕」§r！
 hy.message.oxidising.oxidized=此工具已然§d「完全氧化」§r！
@@ -680,6 +706,7 @@ hy.message.sus_ore.1=這個礦石裏面藏著蟲子！
 hy.message.sus_ore.2=§c§l這個礦石裏面埋了核彈！！！
 hy.message.fuel_metal=這個東西是可以吃的嗎……
 hy.message.eat_bark=你已經窮到吃樹皮了嗎……
+hy.message.scorpion_potion=喝下這瓶藥水後，你感到有一股奇怪的感覺……
 
 ## BOSS戰技與獨白
 hy.boosSkill.ruby.exp=紅寶石之王即將發動戰技§d「經驗竊取」§r！
@@ -689,15 +716,28 @@ hy.boosSkill.ghost.guardian=法老殘影即將發動戰技§d「塵沙的號令�
 hy.boosSkill.ghost.mummy=法老殘影即將發動戰技§d「塵沙的魔法」§r！
 hy.boosSkill.ghost.drought=法老殘影即將發動戰技§d「塵沙的詛咒」§r！
 hy.boosSkill.ghost.caughtsand=法老殘影即將發動戰技§4「塵沙的懲罰」§r！
+hy.boosSkill.mutas_wrath.kahe=【？？】吾將製定「規則」，令「日」「月」臣服……
+hy.boosSkill.mutas_wrath.osiris=【？？？？】吾將掃清沙海，為？？？建立統一的帝國……
+hy.boosSkill.mutas_wrath.isis=【？？？】吾將帶著「神諭」自天空中降下，令沙海變為綠洲……
+hy.boosSkill.mutas_wrath.muta=【？】太陽的化身，快點醒來，賜予所有與吾等為敵的人以§4死亡§r……
 hy.monologue.osiris.1=【？？？】尼羅特的人民死後將會於此聚集，接受審判……
 hy.monologue.osiris.2=【？？？】倘若他們尊重神明、吃苦耐勞，便可以得到神的祝福，在一片祥和中生活，然後在開始新的起點……
 hy.monologue.osiris.3=【？？？】盡管這恢宏的殿堂早已灰飛煙滅，但其一角仍藏於我的心中……
 hy.monologue.osiris.4=【？？？】殿堂的回廊已經寂寞了太久，如今也將迎來最後一名受審之人……
 hy.monologue.osiris.5=【奧西裏斯】此人即是奧西裏斯，§4雨之神伊西斯最忠實的信徒，尼羅特帝國法老§r
+hy.monologue.mutas_wrath.1=【？？？】時隔千年，誰再一次驚動了沈睡的沙海？
+hy.monologue.mutas_wrath.2=【奧西裏斯】吾將與那創世的「三神」結合，擊敗無禮的僭越者！
+hy.monologue.mutas_wrath_dead.1=【？】我曾見到，天邊的陌生來客造訪舊世，隨後那冰封的斷裂時代便開始了……
+hy.monologue.mutas_wrath_dead.2=【？】再度醒來，故土早已墮為三層荒蕪的世界，而其中的一層，被茫茫的沙海所覆蓋。
+hy.monologue.mutas_wrath_dead.3=【？】在月亮升起的剎那，天邊熟悉的來客降下屬於層沙的力量，於是在部族之外遊離的我——
+hy.monologue.mutas_wrath_dead.4=【伊西斯】成為了部族口中「星空中的第一位神明」，伊西斯……
+hy.monologue.mutas_wrath_dead.5=【伊西斯】僭越者啊——不，你我都流淌著相同的血液，就由我——
+hy.monologue.mutas_wrath_dead.6=告訴你「層沙」的真相吧……
+hy.monologue.mutas_wrath_dead.7=§o %1 獲得了文章「『層沙』的真相」§r
 
 ## 物品分組
-hy:itemGroup.name.embryos=隱藏之年·鑄劍原胚
-hy:itemGroup.name.boardswords=隱藏之年·闊劍
+hy:itemGroup.name.embryos=隱藏之年·法器原胚
+hy:itemGroup.name.boardswords=隱藏之年·法器
 hy:itemGroup.name.badges=隱藏之年·徽章
 hy:itemGroup.name.daggers=隱藏之年·匕首
 hy:itemGroup.name.readings=隱藏之年·閱讀物與任務書
@@ -716,6 +756,7 @@ hy:itemGroup.name.medicines=隱藏之年·藥物
 hy:itemGroup.name.materials=隱藏之年·鑄錠與寶石
 hy:itemGroup.name.raw_materials=隱藏之年·原始材料
 hy:itemGroup.name.bundles=隱藏之年·寶袋
+hy:itemGroup.name.crowns=隱藏之年·冠冕
 
 ## 文章收集任務
 hy.quest.story_book.title=§d[書海無涯] §r故事的起點
@@ -791,6 +832,8 @@ hy.quest.chapter2.title=§d第一章§r 染上鮮血的寶石
 hy.quest.chapter3.title=§d第二章§r 鎮壓之所與昔日搖籃
 hy.quest.chapter4.title=§d第三章·第一幕§r 風起層沙
 hy.quest.chapter5.title=§d第三章·第二幕§r 舊日的沙加緬度
+hy.quest.chapter6.title=§d第四章·第一幕§r 自黃沙至幽匿
+hy.quest.lastChapter1.title=§d終章·第一幕§r 「███」的再建 
 hy.quest.interlude_food.title=§d間章§r 嘗遍世間百味
 hy.quest.interlude.title=§d間章§r 進度與成就
 hy.quest.chapter1.body=「過往繁榮的時代正在逝去，昔日歡笑的我們也將化作塵埃。」
@@ -800,6 +843,8 @@ hy.quest.chapter2.body3=你不禁問道，僅僅這一角力量，就可以使�
 hy.quest.chapter3.body=旅者的足跡踏遍三個世界，本以為是故事的終結，卻是冒險真正的起點。
 hy.quest.chapter4.body=冰層之間的沈淪者終於蘇醒於茫茫沙海，七十萬個日夜已然流逝，前路漫漫，將行何處？
 hy.quest.chapter5.body=【沙加緬度】，盡管早已消散在時間的長河之中，但是生活在新聚紀的每個人都知道——這裏是昔日尼羅特帝國之都，亦是那時探險家的喜悅與傷心之地。
+hy.quest.chapter6.body=？？？
+hy.quest.lastChapter1.body=？？？
 hy.quest.interlude.body=在冒險途中的簡短休憩。
 
 hy.quest.beginning.title=§d[一切的開始]§r 新生的枝椏
@@ -935,14 +980,14 @@ hy.quest.cooling_potion.title=§d[風起層沙]§r 沙漠旅行必備品
 hy.quest.cooling_potion.body=用冰塊在煉藥臺煉製清涼藥茶，當你感到幹旱或身體脫水時可以用它救命
 hy.quest.sand_meat.title=§d[風起層沙]§r 難以下咽的食物
 hy.quest.sand_meat.body=這肉沾滿了沙子，或許需要烤一下才能放心食用？
-hy.quest.sand_meat.tips=擊敗砂化僵屍（屍殼）來獲得砂肉
-hy.quest.sand_bone.title=§d[風起層沙]§r 染砂之骨
+hy.quest.sand_meat.tips=擊敗沙蝕僵屍（屍殼）來獲得沙蝕肉
+hy.quest.sand_bone.title=§d[風起層沙]§r 塵沙之骨
 hy.quest.sand_bone.body1=傳說人類在洞內茹毛飲血的時代，沙漠上曾有一個巨大的帝國，
 hy.quest.sand_bone.body2=時光荏苒，那帝國的士兵早已化作骷髏狀的魔物……
-hy.quest.sand_bone.tips=擊敗骷髏狀的流沙怪物來獲得砂骨
+hy.quest.sand_bone.tips=擊敗骷髏狀的流沙怪物來獲得沙蝕之骨
 hy.quest.shattered_sand_cudgel.title=§d[風起層沙]§r 沙塵的破滅
 hy.quest.shattered_sand_cudgel.body=傳說那巨大帝國覆滅後，沙漠中出現了如繁星般的無名墳墓……
-hy.quest.shattered_sand_cudgel.tips=找到沙漠中的「無名墳墓」，擊敗木乃伊，獲得碎砂之棍
+hy.quest.shattered_sand_cudgel.tips=找到沙漠中的「無名墳墓」，擊敗木乃伊，獲得塵沙之棍
 hy.quest.rabbit_paw.title=§d[風起層沙]§r 被誅殺的殺手
 hy.quest.rabbit_paw.body=擊敗殺手兔，獲得利爪
 hy.quest.paw_dust.title=§d[風起層沙]§r 碾作粉末……
@@ -966,7 +1011,7 @@ hy.quest.shattered_sand_staff.body2=我們在冰層之間沈睡，醒來之時�
 hy.quest.shattered_sand_staff.body3=於是我們結為部族，抵禦這外來的魔物。 
 hy.quest.shattered_sand_staff.body4=在月亮升起的剎那，星空中的第一位神明降臨世間，她令我們歃血為盟，建立流沙之團抵禦魔物，用神力封鎖受覬覦的財寶，還將她最虔誠的信徒選作帝國的君王，即是被稱為「法老」的存在。
 hy.quest.shattered_sand_staff.body5=十年後，魔物終於剿滅，我們建立了龐大的帝國，將文明與繁榮灑向大地，可不久之後，星空中的第二個「神」降臨世間……
-hy.quest.shattered_sand_staff.tips=在沙漠中尋找「沙漠祭壇」，將回生之符插入其中的無名框架即可召喚法老殘影，擊敗BOSS即可獲得流沙之杖
+hy.quest.shattered_sand_staff.tips=在沙漠中尋找「沙漠祭壇」，將回生之符插入其中的無名框架即可召喚BOSS-法老殘影，擊敗BOSS即可獲得流沙之杖
 hy.quest.gold_sand.title=沙中碎金
 hy.quest.gold_sand.body1=傳說在雨之神隕滅之後，古尼羅特所有的財寶都逐漸湮沒在沙塵之中，形成了這種帶有魔力的沙子……
 hy.quest.gold_sand.body2=由於某種詛咒，你似乎無法將其中的金子直接從細沙中淘洗出來……
@@ -978,6 +1023,28 @@ hy.quest.sand_sliverfish.body3=「他們挖掘這裏的寶藏時，只會掘到�
 hy.quest.sand_sliverfish.body4=——▉▉▉▉，尼羅特帝國末代法老
 hy.quest.letter_14.title=沙中淘金的故事
 hy.quest.letter_14.body=在探險家營地中獲得散落的信紙·沙中淘金的故事，了解尼羅特帝國覆滅後的故事
+hy.quest.scorpion.title=【異變】的前兆
+hy.quest.scorpion.body=在沙蝕蜘蛛受侵蝕多少年後，來自於「祀禮會」的祭司們■■■■■■■，使用了沙蝕蜘蛛作為試驗品，結果就是一種更兇悍的怪物誕生了……
+hy.quest.scorpion.tips=在地下尋找「異變的實驗所」，擊敗其中的蠍子
+hy.quest.scorpion_potion.title=蠍之毒
+hy.quest.scorpion_potion.body=用蠍子的鉗釀造而成的藥水，可以用來治療破傷風患者，同時在過於饑餓時也可用於救命，然而蠍子的毒素使飲用它的生物也有可能眩暈、中毒
+hy.quest.letter_17.title=商旅與古神話
+hy.quest.letter_17.body=在沙漠中定居著一種商旅，而你可以在他們手中買到古尼羅特時代的神話……
+hy.quest.sand_spider.title=侵蝕的造物
+hy.quest.sand_spider.body=原先在原野生存的族群，在尼羅特帝國覆滅後遷移到沙漠，受沙塵所侵蝕，形成的新造物……
+hy.quest.isis_crown.title=§d[舊日的沙加緬度·終]§r三神與人之子的行宮
+hy.quest.isis_crown.body0=「我們是誰？我們曾經被稱作▉▉▉▉，而後是『神明』……說法不斷變化。我們始終如一。」
+hy.quest.isis_crown.body1=在尼羅特人的傳說中，「創世三神」與「人之子」奧西裏斯曾經修建了一座龐大的行宮，而這地宮在帝國覆滅時也隨之一同被黃沙而掩埋。
+hy.quest.isis_crown.body2=時光荏苒，塵沙之上的帝國的所有造物都已歸於塵沙，只有這地下行宮的某一角在「層沙之力」的影響下仍然存在於世間……
+hy.quest.isis_crown.body3=然而其間，凝結著一團「層沙之力」的具象表現，或許擊敗它，才能知道層沙背後的真相吧……
+hy.quest.isis_crown.tips=在沙漠地下尋找「地下行宮的一角」，將流沙之冠激活「無名的墳冢」即可召喚BOSS-「創世者」的憤怒，擊敗BOSS即可獲得雨神之冠
+hy.quest.echo_shard.title=「回響」的碎片
+hy.quest.echo_shard.body0=承載著「回響」力量的碎片。
+hy.quest.echo_shard.body1=古時的祭司用「回響」力量來超度亡魂，維持死與生的邊界。然而你感受到在這碎片上，除了「回響」之外，還有一股奇怪的力量……
+
+hy.quest.babel_tower_wreckage_sand.title=層沙的回響
+hy.quest.babel_tower_wreckage_sand.body=「來吧，我們要建造一座城和一座塔，塔頂通天，為要傳揚我們的名，免得我們分散在全地上。」
+hy.quest.babel_tower_wreckage_sand.tips=完成 第三章·層沙的回響
 
 ## 文章內容
 
@@ -1052,10 +1119,11 @@ article.15.title=闊劍鍛造指南
 article.16.title=沙加緬度發掘記
 article.17.title=尼羅特神話集
 article.18.title=一沓淩亂的證件
+article.19.title=「層沙」的真相
 
 article.0.body0=過往繁榮的時代正在逝去，昔日歡笑的我們也將化作塵埃。
 article.0.body1=而在這個孤單的世界中，恐怕唯一的智慧生物就是你。可惜的是，我無法為你詳盡的解釋究竟發生了什麽——你現在只需知道，§l你是「異變」中的幸存者，被我們派到這裏開拓新世界。§r
-article.0.body2=我們的故國已經覆滅，無數風雨使堅石也作塵沙，你本該在溫室中生長，卻不得不在風雨中前行。此時此刻，廣闊的天地任你探索；過去未來，歷史將由你書寫。
+article.0.body2=我們的故國已然覆滅，無數風雨使堅石也作塵沙，你本該在溫室中生長，卻不得不在風雨中前行。此時此刻，廣闊的天地任你探索；過去未來，歷史將由你書寫。
 article.0.body3=「你好，世界」
 article.1.body0=那不死一族在太古的鏖戰後，隨人類遷到主世界，分化出了被後世稱之為「災厄」的種族。
 article.1.body1=在無數次日升月落之前，一位災厄族少年曾在洞中徘徊——他癡迷於力量，可上天卻不幸讓他擁有了一副羸弱的軀殼。
@@ -1069,7 +1137,7 @@ article.2.body2=「孩子們都還在睡覺，別給吵醒了」
 article.2.body3=這是個老女人的聲音，我轉過身，一個矮小削瘦、沒穿盔甲的人站在我背後，她伸出一只空空的手，我便把綁著盾牌的手臂伸過去和她握手——皮包骨頭的手過分地硌硬，手上的皮和帶釉陶瓦一樣光滑，但似乎她的力氣比我還大。
 article.2.body4=我戰戰兢兢跟著走到一處幽藍的營火旁坐下，我看到她方解石色的皮膚上勒出鮮明的骨頭輪廓，不甚明亮的營火把上細下粗、強幹弱枝的陰影投在被照成暗藍色的凝灰巖壁上面。她突然開口：「地上的情況怎麽樣了？」
 article.2.body5=「非常不好，現在到處都在打仗，要不然我也不會到這個鬼地方 」
-article.2.body6=「是這樣啊，還是人類和不死之族在打仗嗎？——但其實多少年之後，你們住的地方就會變成沙礫掩埋的海底遺跡，包圍你們的石山會蓋上泥土，長出新的橡樹、白樺樹、雲杉樹、叢林樹、櫻花樹......」
+article.2.body6=「是這樣啊，人類和不死之族又打起仗了嗎？——但其實多少年之後，你們住的地方就會變成沙礫掩埋的海底遺跡，包圍你們的石山會蓋上泥土，長出新的橡樹、白樺樹、雲杉樹、叢林樹、櫻花樹......」
 article.2.body7=「櫻花？我沒有見過什麽櫻花，前輩告訴我說這種樹在兩千年前就滅絕了……你是怎麽知道的？」沒等問完我的腦袋就越來越沈，最後竟昏了過去。
 article.2.body8=「因為，§l我將為一切戰亂的逝者擺渡§r」她似笑非笑著說。
 article.3.begin=§o新聚紀某位人類學者的手稿§r
@@ -1158,7 +1226,7 @@ article.13.body1=於是我們結為部族，抵禦這外來的魔物。在月亮
 article.13.body2=魔物終於剿滅，我們建立了龐大的帝國，將文明與繁榮灑向大地，可不久之後，星空中的第二個「神」降臨世間 
 article.13.body3=「將文明帶給了舊日的孽余
 article.13.body4=「伊西斯，你有罪」 
-article.13.body5=雨之神的身軀崩裂開來，陰雨數十年而不止——於是故國再度傾覆，往日的樂土變成了我們的亂葬崗，蹉跎於沙海的我們漸受砂蝕，帝國的軍隊淪為了沒有意識的骨骸，茫茫沙海披上死神的面紗……尼羅特帝國，就此覆滅
+article.13.body5=雨之神的身軀崩裂開來，陰雨數十年而不止——於是故國再度傾覆，往日的樂土變成了我們的亂葬崗，蹉跎於沙海的我們漸受沙蝕，帝國的軍隊淪為了沒有意識的骨骸，茫茫沙海披上死神的面紗……尼羅特帝國，就此覆滅
 article.13.body6=——而後，這片大地將會成為「神」之兩種附庸的家園。
 article.13.body7=它們來自於我們的下方，一種背叛了自己的種族從而獲得了祝福 ；而另一種是「神」參照前一種所造的人偶。
 
@@ -1205,28 +1273,28 @@ article.15.body8=這些材料因為其自身特性無法被直接鑄造成劍，
 article.16.body0=（模糊不清的記錄，只有部分內容可以看清）
 
 article.16.body1=三界紀元8900年12月3日
-article.16.body2=​神昭告聖幕的王……祂早將沙海中的舊文明孽余誅滅……於是王派遣吾等前往沙海，尋找舊文明遺留的財寶……
+article.16.body2=神昭告聖幕的王……祂早將沙海中的舊文明孽余誅滅……於是王派遣吾等前往沙海，尋找舊文明遺留的財寶……
 
 article.16.body3=三界紀元8901年5月
 article.16.body4=吾等在沙海中找到了一處宏偉的遺址，這裏卻有不計其數的財寶與黃金……王賜予其「沙加緬度」之名，與傳說中上一次首現黃金之地相同的名稱。
 
 article.16.body5=三界紀元8901年6月
-article.16.body6=​沙加緬度的財寶大多已獻給了吾等之王，然而部分財寶附有一種奇特的力量封印，貿然靠近只會傷及無辜……吾提議將這些財寶留在這裏……征集天下的勇士前來破解……
+article.16.body6=沙加緬度的財寶大多已獻給了吾等之王，然而部分財寶附有一種奇特的力量封印，貿然靠近只會傷及無辜……吾提議將這些財寶留在這裏……征集天下的勇士前來破解……
 
 article.16.body7=三界紀元8901年7月
-article.16.body8=​來自各地的勇士將沙加緬度擠得水泄不通……然而他們大多無功而返，一些路途遙遠的甚至沒有歸途的盤纏……
+article.16.body8=來自各地的勇士將沙加緬度擠得水泄不通……然而他們大多無功而返，一些路途遙遠的甚至沒有歸途的盤纏……
 
 article.16.body9=三界紀元8902年1月
-article.16.body10=​沙加緬度的礦井出現了駭人聽聞的慘案……祭司趕來安撫惶惶不安的礦工，卻無意發現了利用這舊日力量的方法……
+article.16.body10=沙加緬度的礦井出現了駭人聽聞的慘案……祭司趕來安撫惶惶不安的礦工，卻無意發現了利用這舊日力量的方法……
 
 article.16.body11=三界紀元8902年4月
-article.16.body12=​在一處名叫「帝王谷」的不毛之地發現了一處無名墳墓，打開發現……竟是……伊西斯所冊封的……的遺體。
-article.16.body13=​其保存的非常完整，似乎僅離去不久……吾等為他偽造了護照，裝作在沙漠中死去的冒險家，送至王城研究……
+article.16.body12=在一處名叫「帝王谷」的不毛之地發現了一處無名墳墓，打開發現……竟是……伊西斯所冊封的……的遺體。
+article.16.body13=其保存的非常完整，似乎僅離去不久……吾等為他偽造了護照，裝作在沙漠中死去的冒險家，送至沙漠地下的某個地方研究……
 
 article.16.body14=三界紀元8902年6月
-article.16.body15=​遺體的研究有了突破……沙加緬度的古老力量最終轉為了祀城隔離生死、實現輪回的回響之力……盡管幾個無辜的礦工因此獻出了生命……危機就這麽解除了……
+article.16.body15=遺體的研究有了突破……沙加緬度的古老力量最終轉為了祀城隔離生死、實現輪回的回響之力……盡管幾個無辜的礦工因此獻出了生命……危機就這麽解除了……
 
-article.16.body16=​（很久之後的批註,三界紀元8962年）
+article.16.body16=（很久之後的批註,三界紀元8962年）
 article.16.body17=我們都錯了……那來自於天外紅燈的力量……絕非祭司可以馴化……
 
 article.17.body0=【其一】
@@ -1234,31 +1302,31 @@ article.17.body1=於第一日，那太陽的化身於一片混沌之中蘇醒，
 
 article.17.body2=「穆圖安，太陽的化身，快點醒來……」
 article.17.body3=祂便用光的秘法創造了世界。
-article.17.body4=​將自己的力量分出一角創造了「日」， 而「日」的投影形成了「月」，然而這時，世間並無生機，所行之處皆是茫茫沙海，日月起落沒有規律，生命無以繁衍。
+article.17.body4=將自己的力量分出一角創造了「日」， 而「日」的投影形成了「月」，然而這時，世間並無生機，所行之處皆是茫茫沙海，日月起落沒有規律，生命無以繁衍。
 
 article.17.body5=【其二】
-article.17.body6=​於第二日，天邊降下了司掌力量的喀賀，祂見到茫茫的沙海，願幫助穆圖安。
+article.17.body6=於第二日，天邊降下了司掌力量的喀賀，祂見到茫茫的沙海，願幫助穆圖安。
 article.17.body7=於是喀賀製定了「規則」，「日」與「月」本不服從喀賀的規則，然而喀賀用祂的力量使日月臣服與祂，終於，日月輪回得以規律，生命有了繁衍的機會。
 
 article.17.body8=【其三】
-article.17.body9=​穆圖安見到日月臣服於「規則」之下，大喜，與喀賀相約飲酒。
-article.17.body10=​祂們醉時世間便生出魔物，醒時文明則得以繁衍。
+article.17.body9=穆圖安見到日月臣服於「規則」之下，大喜，與喀賀相約飲酒。
+article.17.body10=祂們醉時世間便生出魔物，醒時文明則得以繁衍。
 
-article.17.body11=​【其四】
+article.17.body11=【其四】
 article.17.body12=那時的沙海，由腐朽的「王」所統禦，稍有差錯，「王」就會將奴隸坑殺於沙海，並將其骨做成法杖，將其血獻給穆圖安與喀賀，以祈求祂們不要醉酒，降下災難。
-article.17.body13=​穆圖安和喀賀便造了「伊西斯」 ，引領人族走向正路。
+article.17.body13=穆圖安和喀賀便造了「伊西斯」 ，引領人族走向正路。
 
-article.17.body14=​【其五】
+article.17.body14=【其五】
 article.17.body15=月升之時，伊西斯帶著「神諭」自天空中降下。
-article.17.body16=​於是她走過的地方由沙海變為綠洲，她流下的淚水變為世間最珍貴的泉水，文明不再因雙神的醉醒而延續或消亡。
+article.17.body16=於是她走過的地方由沙海變為綠洲，她流下的淚水變為世間最珍貴的泉水，文明不再因雙神的醉醒而延續或消亡。
 
-article.17.body17=​【其六】
-article.17.body18=​伊西斯在綠洲之上建立帝國，將奧西裏斯，自己最虔誠的信徒選作帝國的君王，將自己的追隨者封作神殿的祭司，將文明灑向四方……
+article.17.body17=【其六】
+article.17.body18=伊西斯在綠洲之上建立帝國，將奧西裏斯，自己最虔誠的信徒選作帝國的君王，將自己的追隨者封作神殿的祭司，將文明灑向四方……
 article.17.body19=此，即「尼羅特帝國」之始。
 
 article.17.body20=【其七】
 article.17.body21=伊西斯為了讓人向善，運用光的秘法創立了死與生的邊界，又將這股力量封鎖於黃沙的某處……
-article.17.body22=​自此以後，尼羅特帝國死後的人們將在恢宏之殿的地下回廊受到審判，如若獲得肯定，便會前往一個名為「蘆葦之地」的天邊樂土。
+article.17.body22=自此以後，尼羅特帝國死後的人們將在恢宏之殿的地下回廊受到審判，如若獲得肯定，便會前往一個名為「蘆葦之地」的天邊樂土。
 article.17.body23=一旦抵達這裏，人們就能在一片祥和中與生前摯愛之人一同生活，然後開始新的起點。 
 
 article.18.body0=聖幕王國護照
@@ -1274,28 +1342,23 @@ article.18.body8=​死亡證明
 article.18.body9==============
 article.18.body10=​死者奧西裏斯·法郎，26歲，8902年5月因感染風寒而亡。
 
-## 技術性
-quest.entity=殺死 %1
-quest.not_enough.entity=你需要殺死 %1 才能完成這個任務
-gui.check=提交任務
-gui.about=關於
-hy.empty=     
-hy.ui.open_source.title=開源項目
-hy.ui.open_source.description=本項目使用了下面開源項目的代碼/資源，謹此對這些項目的開發者致以崇高的敬意！
-api.unexpected_error.quest=任務系統出現未知錯誤
-quest.finished=你完成了一個任務！
-quest.done=任務已完成
-quest.check=嘗試提交任務
-quest.not_enough.item=材料不足，你需要 %1 個 %2 才能完成這個任務
-quest.not_enough.level=你需要 %1 級經驗才能完成這個任務
-quest.not_enough.xp=你需要 %1 點經驗才能完成這個任務
-quest.condition=§e完成條件§r：
-quest.award=§e完成獎勵§r：
-quest.item=%1 個 %2;
-quest.xp=%1 點經驗
-quest.level=%1 級經驗
-quest.reward.none=無獎勵
-quest.condition.none=無條件
-quest.tips=§4特殊提示§r：
-article.nothing.title=無解鎖文章
-article.nothing.body=你沒有解鎖任何文章，你可以得到並閱讀一篇文章來解鎖它。
+
+article.19.quote=（擊敗「創世者」的憤怒後，腦海中響起的聲音所給予你的口述）
+
+article.19.body0=我曾見到，天邊的陌生來客造訪舊世，隨後那冰封的斷裂時代便開始了。
+article.19.body1=再度醒來，故土早已墮為三層荒蕪的世界，而中間的一層，被茫茫的沙海所覆蓋，魔物橫行其間，無數與我有著相同血脈的部族在其間廝殺……月亮升起的剎那，我獲得了屬於層沙的力量，於是在部族之外遊離的我——
+article.19.body2=成為了部族口中「星空中的第一位神明」，伊西斯。
+
+article.19.body3=我令部族歃血為盟，抵禦魔物，建立了沙海中的古帝國。
+article.19.body4=我將最虔誠的信徒選作帝國的君王，將力量分與他，即是被稱為「法老」的存在。
+article.19.body5=可天邊的陌生來客此時再度降臨世間，傾覆了整個帝國，我也在此中隕落……意誌就此散落於世間各地……
+
+article.19.body6=在沙海下方的下方，是承載著兩族的巨大巖窟，他們信奉天邊的陌生來客，尊其為「自由」之神，其中一族還與我有著相同的血脈……
+article.19.body7=此時，維持巖窟中脆弱環境的力量已經不多了，而兩族正為了爭奪那股力量而戰……
+
+article.19.body8=無盡的戰爭持續了半個世紀後，「自由」之神姍姍來遲，降下神諭，帶領兩族遷移到了我們的位面，而原來的巖窟環境則徹底惡化，成為了如今的熾熱之地——「下界」
+article.19.body9=——我由於得到了純正的「層沙之力」從而記下了這一切，不像被抹去了記憶的那些「自由」之神的擁躉……
+
+article.19.body10=這就是「層沙」的真相。
+article.19.body11=就在「神諭」降下的不久後，當我的意識的再一次於地宮的一角融合、蘇醒時，面前不是故國的砂巖宮殿，而是……
+article.19.body12=身著幽藍色衣服的祭司，正覬覦著「層沙之力」……
