@@ -195,14 +195,6 @@
     "sound": "stone",
     "textures": "stone"
   },
-  "hy:chocolate_block": {
-    "sound": "metal",
-    "textures": "hy.chocolate_block"
-  },
-  "hy:chocolate_bricks": {
-    "sound": "metal",
-    "textures": "hy.chocolate_bricks"
-  },
   "hy:ruby_block": {
     "sound": "amethyst_block",
     "textures": "hy.ruby_block"

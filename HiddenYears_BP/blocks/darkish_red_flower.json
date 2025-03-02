@@ -20,7 +20,7 @@
         "conditions": [
           {
             "allowed_faces": ["up"],
-            "block_filter": ["grass", "dirt"]
+            "block_filter": ["grass_block", "dirt"]
           }
         ]
       },
