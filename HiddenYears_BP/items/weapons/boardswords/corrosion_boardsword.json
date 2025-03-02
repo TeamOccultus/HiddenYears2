@@ -97,7 +97,7 @@
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": ["hy:lv1_corrosion_ingot"],
+            "items": ["hy:corrosion_ingot"],
             "repair_amount": 40
           },
           {
