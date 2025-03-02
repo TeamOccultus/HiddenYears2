@@ -97,7 +97,7 @@
             "repair_amount": 5
           },
           {
-            "items": ["hy:amethyst_sword"],
+            "items": ["hy:imitation_amethyst_sword"],
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
