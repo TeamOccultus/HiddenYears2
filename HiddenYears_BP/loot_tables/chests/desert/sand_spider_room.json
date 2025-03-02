@@ -82,11 +82,11 @@
         { "type": "item", "name": "minecraft:saddle", "weight": 20 },
         { "type": "item", "name": "minecraft:golden_apple", "weight": 15 },
         { "type": "item", "name": "minecraft:appleEnchanted", "weight": 2 },
-        { "type": "item", "name": "minecraft:record_13", "weight": 15 },
-        { "type": "item", "name": "minecraft:record_cat", "weight": 15 },
-        { "type": "item", "name": "minecraft:record_otherside", "weight": 2 },
+        { "type": "item", "name": "minecraft:music_disc_13", "weight": 15 },
+        { "type": "item", "name": "minecraft:music_disc_cat", "weight": 15 },
+        { "type": "item", "name": "minecraft:music_disc_otherside", "weight": 2 },
         { "type": "item", "name": "minecraft:name_tag", "weight": 20 },
-        { "type": "item", "name": "minecraft:horsearmorgold", "weight": 10 }
+        { "type": "item", "name": "minecraft:golden_horse_armor", "weight": 10 }
       ]
     }
   ]

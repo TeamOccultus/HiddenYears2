@@ -67,9 +67,9 @@
           "name": "minecraft:sapling"
         },
         { "type": "item", "weight": 3, "name": "minecraft:saddle" },
-        { "type": "item", "name": "minecraft:horsearmoriron" },
-        { "type": "item", "name": "minecraft:horsearmorgold" },
-        { "type": "item", "name": "minecraft:horsearmordiamond" }
+        { "type": "item", "name": "minecraft:iron_horse_armor" },
+        { "type": "item", "name": "minecraft:golden_horse_armor" },
+        { "type": "item", "name": "minecraft:diamond_horse_armor" }
       ]
     },
     {

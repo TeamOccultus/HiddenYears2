@@ -26,7 +26,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "apple",
+          "name": "minecraft:apple",
           "functions": [
             { "function": "set_count", "count": { "min": 0, "max": 3 } }
           ]
@@ -69,8 +69,8 @@
           "weight": 10
         },
         { "type": "item", "name": "minecraft:diamond", "weight": 15 },
-        { "type": "item", "name": "minecraft:record_wait", "weight": 5 },
-        { "type": "item", "name": "minecraft:record_mellohi", "weight": 5 },
+        { "type": "item", "name": "minecraft:music_disc_wait", "weight": 5 },
+        { "type": "item", "name": "minecraft:music_disc_mellohi", "weight": 5 },
         { "type": "item", "name": "minecraft:name_tag", "weight": 10 },
         {
           "type": "item",

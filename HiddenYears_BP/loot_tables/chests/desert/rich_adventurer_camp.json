@@ -3,8 +3,8 @@
     {
       "rolls": 1,
       "entries": [
-        { "type": "item", "name": "minecraft:record_cat", "weight": 15 },
-        { "type": "item", "name": "minecraft:record_otherside", "weight": 15 },
+        { "type": "item", "name": "minecraft:music_disc_cat", "weight": 15 },
+        { "type": "item", "name": "minecraft:music_disc_otherside", "weight": 15 },
         {
           "type": "item",
           "name": "minecraft:book",
