@@ -1,3 +1,4 @@
 
 diagnostic.disable.behaviorpack.item.components.texture_not_found=true
 diagnostic.disable.behaviorpack.block.components.texture_not_found=true
+diagnostic.disable.resourcepack.texture.undefined=true
