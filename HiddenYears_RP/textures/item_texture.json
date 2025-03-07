@@ -401,9 +401,6 @@
     "hy.flash_metal_shovel": {
       "textures": "textures/items/flash_metal_shovel"
     },
-    "hy.flash_metal_sword": {
-      "textures": "textures/items/flash_metal_sword"
-    },
     "hy.flash_metal_dagger": {
       "textures": "textures/items/flash_metal_dagger"
     },
@@ -470,9 +467,6 @@
     "hy.steel_awl": {
       "textures": "textures/items/steel_awl"
     },
-    "hy.raw_steel": {
-      "textures": "textures/items/raw_steel"
-    },
     "hy.copper_knife": {
       "textures": "textures/items/copper_knife"
     },
@@ -505,9 +499,6 @@
     },
     "hy.flash_copper_shovel": {
       "textures": "textures/items/flash_copper_shovel"
-    },
-    "hy.flash_copper_sword": {
-      "textures": "textures/items/flash_copper_sword"
     },
     "hy.flash_copper_dagger": {
       "textures": "textures/items/flash_copper_dagger"
@@ -701,27 +692,6 @@
     "hy.medicines.14": {
       "textures": "textures/items/medicine_14"
     },
-    "hy.copper_apple": {
-      "textures": "textures/items/copper_apple"
-    },
-    "hy.copper_bread": {
-      "textures": "textures/items/copper_bread"
-    },
-    "hy.copper_carrot": {
-      "textures": "textures/items/copper_carrot"
-    },
-    "hy.copper_hodgepodge": {
-      "textures": "textures/items/copper_hodgepodge"
-    },
-    "hy.copper_kelp": {
-      "textures": "textures/items/copper_kelp"
-    },
-    "hy.copper_melon_slice": {
-      "textures": "textures/items/copper_melon_slice"
-    },
-    "hy.copper_potato": {
-      "textures": "textures/items/copper_potato"
-    },
     "hy.lost_letter": {
       "textures": "textures/items/lost_letter"
     },
@@ -730,33 +700,6 @@
     },
     "hy.honey_candy": {
       "textures": "textures/items/honey_candy"
-    },
-    "hy.chocolate_paste": {
-      "textures": "textures/items/chocolate_paste"
-    },
-    "hy.chocolate_bar": {
-      "textures": "textures/items/chocolate_bar"
-    },
-    "hy.chocolate": {
-      "textures": "textures/items/chocolate"
-    },
-    "hy.milk_chocolate": {
-      "textures": "textures/items/milk_chocolate"
-    },
-    "hy.sweet_berry_chocolate": {
-      "textures": "textures/items/sweet_berry_chocolate"
-    },
-    "hy.amethyst_chocolate": {
-      "textures": "textures/items/amethyst_chocolate"
-    },
-    "hy.marshallow": {
-      "textures": "textures/items/marshallow"
-    },
-    "hy.sweet_berry_marshallow": {
-      "textures": "textures/items/sweet_berry_marshallow"
-    },
-    "hy.amethyst_marshallow": {
-      "textures": "textures/items/amethyst_marshallow"
     },
     "hy.ruby": {
       "textures": "textures/items/ruby"
@@ -1049,9 +992,6 @@
     },
     "hy.desert_heart": {
       "textures": "textures/items/desert_heart"
-    },
-    "hy.pharaoh_heart": {
-      "textures": "textures/items/pharaoh_heart"
     },
     "hy.drift_sand_key": {
       "textures": "textures/items/drift_sand_key"

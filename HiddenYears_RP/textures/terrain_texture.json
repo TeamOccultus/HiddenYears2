@@ -106,12 +106,6 @@
     "hy.flash_copper_block": {
       "textures": "textures/blocks/flash_copper_block"
     },
-    "hy.chocolate_block": {
-      "textures": "textures/blocks/chocolate_block"
-    },
-    "hy.chocolate_bricks": {
-      "textures": "textures/blocks/chocolate_bricks"
-    },
     "hy.ruby_block": {
       "textures": "textures/blocks/ruby_block"
     },
