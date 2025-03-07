@@ -3,6 +3,38 @@
   "minecraft:crafting_items_catalog": {
     "categories": [
       {
+        "category_name": "nature",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "minecraft:chicken_spawn_egg",
+              "name": "minecraft:itemGroup.name.mobEgg"
+            },
+            "items": [
+              "hy:king_of_ruby_spawn_egg",
+              "hy:ruby_guardian_spawn_egg",
+              "hy:ruby_skeleton_spawn_egg",
+              "hy:ruby_zombie_spawn_egg",
+              "hy:mummy_spawn_egg",
+              "hy:sand_creeper_spawn_egg",
+              "hy:sand_silverfish_spawn_egg",
+              "hy:scorpion_spawn_egg",
+              "hy:gemstone_trader_spawn_egg",
+              "hy:hidden_trader_spawn_egg",
+              "hy:drift_sand_guardian_spawn_egg",
+              "hy:drift_sand_sergeant_spawn_egg",
+              "hy:drift_sand_shooter_spawn_egg",
+              "hy:drift_sand_soldier_spawn_egg",
+              "hy:ferocious_sprite_spawn_egg",
+              "hy:pharaohs_ghost_spawn_egg",
+              "hy:rabbit_killer_spawn_egg",
+              "hy:sprite_spawn_egg",
+              "hy:venomous_spider_spawn_egg"
+            ]
+          }
+        ]
+      },
+      {
         "category_name": "equipment",
         "groups": [
           {
@@ -327,33 +359,6 @@
               "hy:disc_fragment_mllohi"
             ]
           },
-          /* {
-            "group_identifier": {
-              "icon": "hy:king_of_ruby_spawn_egg",
-              "name": "hy:itemGroup.name.spawn_eggs"
-            },
-            "items": [
-              "hy:king_of_ruby_spawn_egg",
-              "hy:ruby_guardian_spawn_egg",
-              "hy:ruby_skeleton_spawn_egg",
-              "hy:ruby_zombie_spawn_egg",
-              "hy:mummy_spawn_egg",
-              "hy:sand_creeper_spawn_egg",
-              "hy:sand_silverfish_spawn_egg",
-              "hy:scorpion_spawn_egg",
-              "hy:gemstone_trader_spawn_egg",
-              "hy:hidden_trader_spawn_egg",
-              "hy:drift_sand_guardian_spawn_egg",
-              "hy:drift_sand_sergeant_spawn_egg",
-              "hy:drift_sand_shooter_spawn_egg",
-              "hy:drift_sand_soldier_spawn_egg",
-              "hy:ferocious_sprite_spawn_egg",
-              "hy:pharaohs_ghost_spawn_egg",
-              "hy:rabbit_killer_spawn_egg",
-              "hy:sprite_spawn_egg",
-              "hy:venomous_spider_spawn_egg"
-            ]
-          },*/
           {
             "group_identifier": {
               "icon": "hy:amethyst_ingot",
