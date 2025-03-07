@@ -757,6 +757,11 @@ hy:itemGroup.name.materials=隐藏之年·铸锭与宝石
 hy:itemGroup.name.raw_materials=隐藏之年·原始材料
 hy:itemGroup.name.bundles=隐藏之年·宝袋
 hy:itemGroup.name.crowns=隐藏之年·冠冕
+hy:itemGroup.name.customOres=隐藏之年·矿石
+hy:itemGroup.name.suspiciousOre=隐藏之年·可疑的矿石
+hy:itemGroup.name.shallowOre=隐藏之年·浅层矿石
+hy:itemGroup.name.geocentricOre=隐藏之年·地心矿石
+hy:itemGroup.name.sandOre=隐藏之年砂岩矿石
 
 ## 文章收集任务
 hy.quest.story_book.title=§d[书海无涯] §r故事的起点

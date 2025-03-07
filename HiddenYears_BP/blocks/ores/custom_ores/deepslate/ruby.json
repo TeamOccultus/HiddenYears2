@@ -4,8 +4,7 @@
     "description": {
       "identifier": "hy:deepslate_ruby_ore",
       "menu_category": {
-        "category": "nature",
-        "group": "minecraft:itemGroup.name.ore"
+        "category": "nature"
       }
     },
     "components": {

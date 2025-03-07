@@ -31,6 +31,92 @@
               "hy:sprite_spawn_egg",
               "hy:venomous_spider_spawn_egg"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:deepslate_amethyst_essence_ore",
+              "name": "hy:itemGroup.name.customOre"
+            },
+            "items": [
+              "hy:deepslate_amethyst_essence_ore",
+              "hy:deepslate_copper_essence_ore",
+              "hy:extracts_ore",
+              "hy:deepslate_fuel_metal_ore",
+              "hy:deepslate_ruby_ore",
+              "hy:steel_core_ore",
+              "hy:deepslate_tin_ore",
+              "hy:amethyst_essence_ore",
+              "hy:copper_essence_ore",
+              "hy:fuel_metal_ore",
+              "hy:ruby_ore",
+              "hy:tin_ore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:sand_coal_ore",
+              "name": "hy:itemGroup.name.sandOre"
+            },
+            "items": [
+              "hy:sand_coal_ore",
+              "hy:sand_copper_ore",
+              "hy:sand_iron_ore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:geocentric_copper_ore",
+              "name": "hy:itemGroup.name.geocentricOre"
+            },
+            "items": [
+              "hy:geocentric_copper_ore",
+              "hy:geocentric_diamond_ore",
+              "hy:geocentric_emerald_ore",
+              "hy:geocentric_gold_ore",
+              "hy:geocentric_iron_ore",
+              "hy:geocentric_lapis_ore",
+              "hy:geocentric_redstone_ore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:shallow_copper_ore",
+              "name": "hy:itemGroup.name.shallowOre"
+            },
+            "items": [
+              "hy:shallow_copper_ore",
+              "hy:shallow_diamond_ore",
+              "hy:shallow_emerald_ore",
+              "hy:shallow_gold_ore",
+              "hy:shallow_iron_ore",
+              "hy:shallow_lapis_ore",
+              "hy:shallow_redstone_ore",
+              "hy:shallow_coal_ore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hy:suspicious_copper_ore",
+              "name": "hy:itemGroup.name.suspiciousOre"
+            },
+            "items": [
+              "hy:suspicious_copper_ore",
+              "hy:suspicious_diamond_ore",
+              "hy:suspicious_emerald_ore",
+              "hy:suspicious_gold_ore",
+              "hy:suspicious_iron_ore",
+              "hy:suspicious_lapis_ore",
+              "hy:suspicious_redstone_ore",
+              "hy:suspicious_coal_ore",
+              "hy:deepslate_suspicious_copper_ore",
+              "hy:deepslate_suspicious_diamond_ore",
+              "hy:deepslate_suspicious_emerald_ore",
+              "hy:deepslate_suspicious_gold_ore",
+              "hy:deepslate_suspicious_iron_ore",
+              "hy:deepslate_suspicious_lapis_ore",
+              "hy:deepslate_suspicious_redstone_ore",
+              "hy:deepslate_suspicious_coal_ore"
+            ]
           }
         ]
       },
