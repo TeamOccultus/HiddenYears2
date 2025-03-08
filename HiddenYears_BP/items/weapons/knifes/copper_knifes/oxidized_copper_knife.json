@@ -102,6 +102,8 @@
         "tags": [
           "hy:custom_weapons",
           "hy:is_knife",
+          "farmersdelight:is_knife",
+          "farmersdelight:straw_harvesters",
           "minecraft:is_tool",
           "hy:oxidized_item",
           "hy:tetanus_item",

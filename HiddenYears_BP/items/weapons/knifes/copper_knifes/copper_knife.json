@@ -102,6 +102,8 @@
         "tags": [
           "hy:custom_weapons",
           "hy:is_knife",
+          "farmersdelight:is_knife",
+          "farmersdelight:straw_harvesters",
           "minecraft:is_tool",
           "hy:corrosive_tools",
           "minecraft:stone_tier",

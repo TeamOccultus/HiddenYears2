@@ -97,6 +97,8 @@
         "tags": [
           "hy:custom_weapons",
           "hy:is_knife",
+          "farmersdelight:is_knife",
+          "farmersdelight:straw_harvesters",
           "minecraft:is_tool",
           "minecraft:iron_tier",
           "hy:flash_copper_tier"
