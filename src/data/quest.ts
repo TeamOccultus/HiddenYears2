@@ -1,5 +1,6 @@
 import { ItemStack } from "@minecraft/server";
 import { Quest } from "@grindstone/quest-kit";
+import { Format } from "@grindstone/format-kit";
 
 /**
  * 任务-树上新生枝桠
@@ -1783,7 +1784,11 @@ export const SAND_MEAT = new Quest(
 export const SAND_BONE = new Quest(
   "sand_bone",
   { translate: "hy.quest.sand_bone.title" },
-  { translate: "hy.quest.sand_bone.body" },
+  {rawtext: [
+    { translate: "hy.quest.sand_bone.body1" },
+    { text: Format.newLine },
+    { translate: "hy.quest.sand_bone.body2" },
+  ]},
   {
     condition: {
       item: {
