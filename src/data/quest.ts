@@ -1080,7 +1080,7 @@ export const NETHER_STAR = new Quest(
       item: {
         itemStack: new ItemStack("nether_star"),
         name: {
-          translate: "item.nether_star.name",
+          translate: "item.netherStar.name",
         },
       },
       playerXpLevel: 25,
