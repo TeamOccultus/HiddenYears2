@@ -12,7 +12,7 @@
     },
     "components": {
       "minecraft:loot": "loot_tables/empty.json",
-      "minecraft:display_name": "hy.block.geocentric_redstone_ore",
+      "minecraft:display_name": "hy.block.shallow_redstone_ore",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 15.0,
         "item_specific_speeds": [
