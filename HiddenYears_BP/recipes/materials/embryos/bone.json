@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "bone_boardsword_embryo"
+    },
+    "tags": ["furnace", "blast_furnace"],
+    "unlock": [
+      {
+        "item": "hy:bone_boardsword_embryo"
+      }
+    ],
+    "input": "hy:bone_boardsword_embryo",
+    "output": "bone"
+  }
+}

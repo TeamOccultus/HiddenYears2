@@ -1,0 +1,16 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "flash_metal_boardsword_embryo"
+    },
+    "tags": ["furnace", "blast_furnace"],
+    "unlock": [
+      {
+        "item": "hy:flash_metal_boardsword_embryo"
+      }
+    ],
+    "input": "hy:flash_metal_boardsword_embryo",
+    "output": "hy:flash_metal_ingot"
+  }
+}
