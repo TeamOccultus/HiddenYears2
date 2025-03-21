@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.bone_piece_shovel",
+      "minecraft:icon": "hy:bone_piece_shovel",
       "minecraft:tags": {
         "tags": ["hy:custom_tools", "minecraft:is_shovel", "hy:custom_shovel"]
       }

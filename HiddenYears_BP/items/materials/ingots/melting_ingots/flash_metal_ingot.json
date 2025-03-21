@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.flash_metal_ingot",
+      "minecraft:icon": "hy:flash_metal_ingot",
       "minecraft:display_name": {
         "value": "hy.item.flash_metal_ingot"
       },

@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.tin_ingot",
+      "minecraft:icon": "hy:tin_ingot",
       "minecraft:display_name": {
         "value": "hy.item.tin_ingot"
       },

@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.disc_fragment.blocks"
       },
-      "minecraft:icon": "hy.disc_fragment",
+      "minecraft:icon": "hy:disc_fragment",
       "minecraft:hover_text_color": "yellow"
     }
   }

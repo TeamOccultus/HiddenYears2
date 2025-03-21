@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.flash_copper_awl"
       },
-      "minecraft:icon": "hy.flash_copper_awl",
+      "minecraft:icon": "hy:flash_copper_awl",
       "minecraft:durability": {
         "max_durability": 112
       },

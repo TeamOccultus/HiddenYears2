@@ -26,7 +26,7 @@
         "duration": 5
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.mutas_staff",
+      "minecraft:icon": "hy:mutas_staff",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

@@ -50,7 +50,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.oxidized_copper_shovel",
+      "minecraft:icon": "hy:oxidized_copper_shovel",
       "minecraft:tags": {
         "tags": [
           "hy:custom_tools",

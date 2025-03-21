@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.raw_flash_copper_ingot",
+      "minecraft:icon": "hy:raw_flash_copper_ingot",
       "minecraft:display_name": {
         "value": "hy.item.raw_flash_copper_ingot"
       }

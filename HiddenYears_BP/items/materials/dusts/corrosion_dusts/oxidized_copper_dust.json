@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.oxidized_copper_dust",
+      "minecraft:icon": "hy:oxidized_copper_dust",
       "minecraft:display_name": {
         "value": "hy.item.oxidized_copper_dust"
       },

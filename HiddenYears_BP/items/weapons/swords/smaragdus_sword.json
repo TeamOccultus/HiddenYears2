@@ -87,7 +87,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.smaragdus_sword",
+      "minecraft:icon": "hy:smaragdus_sword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

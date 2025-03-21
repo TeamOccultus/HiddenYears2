@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.netherite_awl"
       },
-      "minecraft:icon": "hy.netherite_awl",
+      "minecraft:icon": "hy:netherite_awl",
       "minecraft:durability": {
         "max_durability": 507
       },

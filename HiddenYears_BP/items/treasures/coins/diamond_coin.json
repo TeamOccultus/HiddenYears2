@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.diamond_coin"
       },
-      "minecraft:icon": "hy.diamond_coin"
+      "minecraft:icon": "hy:diamond_coin"
     }
   }
 }

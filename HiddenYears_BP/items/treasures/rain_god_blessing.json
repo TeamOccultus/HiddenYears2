@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.rain_god_blessing",
+      "minecraft:icon": "hy:rain_god_blessing",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.item.rain_god_blessing"

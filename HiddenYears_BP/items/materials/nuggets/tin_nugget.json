@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.tin_nugget",
+      "minecraft:icon": "hy:tin_nugget",
       "minecraft:display_name": {
         "value": "hy.item.tin_nugget"
       }

@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.redstone_nugget"
       },
-      "minecraft:icon": "hy.redstone_nugget"
+      "minecraft:icon": "hy:redstone_nugget"
     }
   }
 }

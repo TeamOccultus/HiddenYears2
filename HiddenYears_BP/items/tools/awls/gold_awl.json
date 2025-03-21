@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.gold_awl"
       },
-      "minecraft:icon": "hy.gold_awl",
+      "minecraft:icon": "hy:gold_awl",
       "minecraft:durability": {
         "max_durability": 8
       },

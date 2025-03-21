@@ -79,7 +79,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.gold_knife",
+      "minecraft:icon": "hy:gold_knife",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

@@ -17,7 +17,7 @@
       "minecraft:durability": {
         "max_durability": 2500
       },
-      "minecraft:icon": "hy.steel_pickaxe",
+      "minecraft:icon": "hy:steel_pickaxe",
       "minecraft:repairable": {
         "repair_items": [
           {

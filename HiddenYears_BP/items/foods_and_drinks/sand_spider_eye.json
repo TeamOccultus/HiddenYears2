@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.sand_spider_eye",
+      "minecraft:icon": "hy:sand_spider_eye",
       "minecraft:display_name": {
         "value": "hy.item.sand_spider_eye"
       },

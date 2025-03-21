@@ -80,7 +80,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.netherite_knife",
+      "minecraft:icon": "hy:netherite_knife",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

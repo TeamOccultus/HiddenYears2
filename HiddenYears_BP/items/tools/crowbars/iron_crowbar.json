@@ -18,7 +18,7 @@
         "max_durability": 125
       },
       "minecraft:damage": 8,
-      "minecraft:icon": "hy.iron_crowbar",
+      "minecraft:icon": "hy:iron_crowbar",
       "minecraft:display_name": {
         "value": "hy.item.iron_crowbar"
       },

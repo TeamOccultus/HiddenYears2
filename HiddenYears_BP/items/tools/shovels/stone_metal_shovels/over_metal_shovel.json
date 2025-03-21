@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.over_metal_shovel",
+      "minecraft:icon": "hy:over_metal_shovel",
       "minecraft:tags": {
         "tags": [
           "hy:custom_tools",

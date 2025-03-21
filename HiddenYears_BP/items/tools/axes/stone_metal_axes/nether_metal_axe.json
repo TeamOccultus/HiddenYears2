@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.nether_metal_axe",
+      "minecraft:icon": "hy:nether_metal_axe",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_axe",

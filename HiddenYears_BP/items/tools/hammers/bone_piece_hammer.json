@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 320
       },
-      "minecraft:icon": "hy.bone_piece_hammer",
+      "minecraft:icon": "hy:bone_piece_hammer",
       "minecraft:damage": 4,
       "minecraft:enchantable": {
         "value": 1,

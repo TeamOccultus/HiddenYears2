@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.drift_sand_key",
+      "minecraft:icon": "hy:drift_sand_key",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.item.drift_sand_key"

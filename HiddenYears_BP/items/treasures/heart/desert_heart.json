@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.desert_heart",
+      "minecraft:icon": "hy:desert_heart",
       "minecraft:display_name": {
         "value": "hy.item.desert_heart"
       },

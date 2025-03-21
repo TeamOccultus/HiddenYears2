@@ -50,7 +50,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.oxidized_copper_axe",
+      "minecraft:icon": "hy:oxidized_copper_axe",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_axe",

@@ -17,7 +17,7 @@
       "minecraft:durability": {
         "max_durability": 1561
       },
-      "minecraft:icon": "hy.imitation_diamond_hammer",
+      "minecraft:icon": "hy:imitation_diamond_hammer",
       "minecraft:damage": 4,
       "minecraft:enchantable": {
         "value": 1,

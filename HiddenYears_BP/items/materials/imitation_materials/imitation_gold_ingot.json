@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.imitation_gold_ingot",
+      "minecraft:icon": "hy:imitation_gold_ingot",
       "minecraft:display_name": {
         "value": "hy.item.imitation_gold_ingot"
       },

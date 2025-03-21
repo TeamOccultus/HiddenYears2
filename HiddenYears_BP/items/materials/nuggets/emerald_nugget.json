@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.emerald_nugget"
       },
-      "minecraft:icon": "hy.emerald_nugget"
+      "minecraft:icon": "hy:emerald_nugget"
     }
   }
 }

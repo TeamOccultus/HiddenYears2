@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.scorched_meat",
+      "minecraft:icon": "hy:scorched_meat",
       "minecraft:display_name": {
         "value": "hy.item.scorched_meat"
       },

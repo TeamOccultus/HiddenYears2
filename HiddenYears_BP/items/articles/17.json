@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.desert_mythology",
+      "minecraft:icon": "hy:desert_mythology",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "article.17.title"

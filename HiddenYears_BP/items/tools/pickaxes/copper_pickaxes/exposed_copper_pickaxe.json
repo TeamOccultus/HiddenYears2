@@ -17,7 +17,7 @@
       "minecraft:durability": {
         "max_durability": 40
       },
-      "minecraft:icon": "hy.exposed_copper_pickaxe",
+      "minecraft:icon": "hy:exposed_copper_pickaxe",
       "minecraft:repairable": {
         "repair_items": [
           {

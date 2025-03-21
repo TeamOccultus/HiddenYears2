@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.lv1_corrosion_ingot",
+      "minecraft:icon": "hy:lv1_corrosion_ingot",
       "minecraft:display_name": {
         "value": "hy.item.corrosion_ingot"
       },

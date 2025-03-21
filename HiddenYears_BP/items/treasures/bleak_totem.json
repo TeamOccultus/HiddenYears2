@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.bleak_totem"
       },
-      "minecraft:icon": "hy.bleak_totem"
+      "minecraft:icon": "hy:bleak_totem"
     }
   }
 }

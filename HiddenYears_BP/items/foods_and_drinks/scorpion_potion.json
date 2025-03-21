@@ -9,7 +9,7 @@
     },
     "components": {
       "minecraft:max_stack_size": 16,
-      "minecraft:icon": "hy.scorpion_potion",
+      "minecraft:icon": "hy:scorpion_potion",
       "minecraft:display_name": {
         "value": "hy.item.scorpion_potion"
       },

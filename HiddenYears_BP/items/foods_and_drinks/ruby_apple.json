@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.ruby_apple",
+      "minecraft:icon": "hy:ruby_apple",
       "minecraft:display_name": {
         "value": "hy.item.ruby_apple"
       },

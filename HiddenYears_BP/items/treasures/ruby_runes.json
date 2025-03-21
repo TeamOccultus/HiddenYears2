@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.ruby_runes",
+      "minecraft:icon": "hy:ruby_runes",
       "minecraft:durability": {
         "max_durability": 1
       },

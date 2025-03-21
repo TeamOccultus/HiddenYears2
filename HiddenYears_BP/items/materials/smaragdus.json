@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.smaragdus",
+      "minecraft:icon": "hy:smaragdus",
       "minecraft:display_name": {
         "value": "hy.item.smaragdus"
       },

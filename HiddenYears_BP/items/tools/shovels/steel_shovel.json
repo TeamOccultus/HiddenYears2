@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.steel_shovel",
+      "minecraft:icon": "hy:steel_shovel",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_shovel",

@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.lapis_nugget"
       },
-      "minecraft:icon": "hy.lapis_nugget"
+      "minecraft:icon": "hy:lapis_nugget"
     }
   }
 }

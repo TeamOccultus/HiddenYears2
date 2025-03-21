@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.paw_dust",
+      "minecraft:icon": "hy:paw_dust",
       "minecraft:display_name": {
         "value": "hy.item.paw_dust"
       },

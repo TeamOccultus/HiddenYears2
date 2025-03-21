@@ -18,7 +18,7 @@
         "max_durability": 16
       },
       "minecraft:damage": 6,
-      "minecraft:icon": "hy.gold_crowbar",
+      "minecraft:icon": "hy:gold_crowbar",
       "minecraft:display_name": {
         "value": "hy.item.gold_crowbar"
       },

@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.wooden_handle"
       },
-      "minecraft:icon": "hy.wooden_handle",
+      "minecraft:icon": "hy:wooden_handle",
       "minecraft:damage": 2,
       "minecraft:tags": {
         "tags": ["hy:is_handle"]

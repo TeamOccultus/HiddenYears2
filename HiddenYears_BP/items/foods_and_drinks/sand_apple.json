@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.sand_apple",
+      "minecraft:icon": "hy:sand_apple",
       "minecraft:display_name": {
         "value": "hy.item.sand_apple"
       },

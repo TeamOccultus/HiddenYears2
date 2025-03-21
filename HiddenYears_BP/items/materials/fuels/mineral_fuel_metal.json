@@ -23,7 +23,7 @@
       "minecraft:fuel": {
         "duration": 1000
       },
-      "minecraft:icon": "hy.fuel_metal",
+      "minecraft:icon": "hy:fuel_metal",
       "minecraft:glint": true,
       "minecraft:tags": {
         "tags": ["hy:fuel_metal"]

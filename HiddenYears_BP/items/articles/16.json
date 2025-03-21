@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.lost_letter",
+      "minecraft:icon": "hy:lost_letter",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "article.16.title"

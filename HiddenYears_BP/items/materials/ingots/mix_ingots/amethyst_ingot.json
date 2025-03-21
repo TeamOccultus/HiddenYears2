@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.amethyst_ingot",
+      "minecraft:icon": "hy:amethyst_ingot",
       "minecraft:display_name": {
         "value": "hy.item.amethyst_ingot"
       },

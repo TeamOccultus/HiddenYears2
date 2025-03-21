@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.quartz_nugget"
       },
-      "minecraft:icon": "hy.quartz_nugget"
+      "minecraft:icon": "hy:quartz_nugget"
     }
   }
 }

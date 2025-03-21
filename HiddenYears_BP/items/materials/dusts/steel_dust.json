@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.steel_dust",
+      "minecraft:icon": "hy:steel_dust",
       "minecraft:display_name": {
         "value": "hy.item.steel_dust"
       },

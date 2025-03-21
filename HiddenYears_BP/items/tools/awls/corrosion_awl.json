@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.corrosion_awl"
       },
-      "minecraft:icon": "hy.exposed_copper_awl",
+      "minecraft:icon": "hy:exposed_copper_awl",
       "minecraft:durability": {
         "max_durability": 75
       },

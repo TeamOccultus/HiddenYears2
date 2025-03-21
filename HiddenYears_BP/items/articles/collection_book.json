@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.article_collection",
+      "minecraft:icon": "hy:article_collection",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.collection.title"

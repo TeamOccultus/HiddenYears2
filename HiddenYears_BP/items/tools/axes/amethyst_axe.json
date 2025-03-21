@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.amethyst_axe",
+      "minecraft:icon": "hy:amethyst_axe",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_axe",

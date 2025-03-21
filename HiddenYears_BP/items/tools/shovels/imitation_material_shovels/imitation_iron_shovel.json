@@ -46,7 +46,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.imitation_iron_shovel",
+      "minecraft:icon": "hy:imitation_iron_shovel",
       "minecraft:tags": {
         "tags": [
           "hy:custom_tools",

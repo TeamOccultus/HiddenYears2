@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.over_metal_nugget"
       },
-      "minecraft:icon": "hy.over_metal_nugget"
+      "minecraft:icon": "hy:over_metal_nugget"
     }
   }
 }

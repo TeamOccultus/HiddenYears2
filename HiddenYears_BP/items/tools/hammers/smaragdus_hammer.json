@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 10000
       },
-      "minecraft:icon": "hy.smaragdus_hammer",
+      "minecraft:icon": "hy:smaragdus_hammer",
       "minecraft:damage": 8,
       "minecraft:enchantable": {
         "value": 1,

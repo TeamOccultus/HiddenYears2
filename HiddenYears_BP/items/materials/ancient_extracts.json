@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.ancient_extracts",
+      "minecraft:icon": "hy:ancient_extracts",
       "minecraft:display_name": {
         "value": "hy.item.ancient_extracts"
       },

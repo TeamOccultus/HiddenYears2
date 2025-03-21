@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.weathered_copper_dust",
+      "minecraft:icon": "hy:weathered_copper_dust",
       "minecraft:display_name": {
         "value": "hy.item.weathered_copper_dust"
       },

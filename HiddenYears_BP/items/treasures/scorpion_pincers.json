@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.scorpion_pincers",
+      "minecraft:icon": "hy:scorpion_pincers",
       "minecraft:display_name": {
         "value": "hy.item.scorpion_pincers"
       },

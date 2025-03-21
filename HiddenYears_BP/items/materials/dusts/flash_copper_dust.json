@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.flash_copper_dust",
+      "minecraft:icon": "hy:flash_copper_dust",
       "minecraft:display_name": {
         "value": "hy.item.flash_copper_dust"
       },

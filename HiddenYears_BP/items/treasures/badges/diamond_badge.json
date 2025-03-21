@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.diamond_badge",
+      "minecraft:icon": "hy:diamond_badge",
       "minecraft:durability": {
         "max_durability": 150
       },

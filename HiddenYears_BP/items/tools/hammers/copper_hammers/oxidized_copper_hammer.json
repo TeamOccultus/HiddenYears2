@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 20
       },
-      "minecraft:icon": "hy.oxidized_copper_hammer",
+      "minecraft:icon": "hy:oxidized_copper_hammer",
       "minecraft:damage": 1,
       "minecraft:digger": {
         "use_efficiency": false,

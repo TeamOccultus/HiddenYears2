@@ -17,7 +17,7 @@
       "minecraft:durability": {
         "max_durability": 160
       },
-      "minecraft:icon": "hy.bone_piece_pickaxe",
+      "minecraft:icon": "hy:bone_piece_pickaxe",
       "minecraft:repairable": {
         "repair_items": [
           {

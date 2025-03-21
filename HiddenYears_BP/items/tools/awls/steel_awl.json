@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.steel_awl"
       },
-      "minecraft:icon": "hy.steel_awl",
+      "minecraft:icon": "hy:steel_awl",
       "minecraft:durability": {
         "max_durability": 625
       },

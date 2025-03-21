@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.steel_core",
+      "minecraft:icon": "hy:steel_core",
       "minecraft:display_name": {
         "value": "hy.item.steel_core"
       },

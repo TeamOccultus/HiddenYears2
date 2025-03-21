@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 500
       },
-      "minecraft:icon": "hy.iron_hammer",
+      "minecraft:icon": "hy:iron_hammer",
       "minecraft:damage": 5,
       "minecraft:enchantable": {
         "value": 1,

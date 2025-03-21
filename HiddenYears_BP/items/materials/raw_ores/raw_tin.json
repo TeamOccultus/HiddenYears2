@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.raw_tin",
+      "minecraft:icon": "hy:raw_tin",
       "minecraft:display_name": {
         "value": "hy.item.raw_tin"
       }

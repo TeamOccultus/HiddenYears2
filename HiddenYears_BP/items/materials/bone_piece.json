@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.bone_piece",
+      "minecraft:icon": "hy:bone_piece",
       "minecraft:display_name": {
         "value": "hy.item.bone_piece"
       }

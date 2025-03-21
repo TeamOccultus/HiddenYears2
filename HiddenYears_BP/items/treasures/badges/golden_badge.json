@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.golden_badge",
+      "minecraft:icon": "hy:golden_badge",
       "minecraft:durability": {
         "max_durability": 50
       },

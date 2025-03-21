@@ -39,7 +39,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.copper_hoe",
+      "minecraft:icon": "hy:copper_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [

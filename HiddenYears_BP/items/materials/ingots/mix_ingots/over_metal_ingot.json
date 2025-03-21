@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.over_metal_ingot",
+      "minecraft:icon": "hy:over_metal_ingot",
       "minecraft:display_name": {
         "value": "hy.item.over_metal_ingot"
       },

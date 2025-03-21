@@ -47,7 +47,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.imitation_iron_axe",
+      "minecraft:icon": "hy:imitation_iron_axe",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_axe",

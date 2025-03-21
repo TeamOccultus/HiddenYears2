@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.copper_badge",
+      "minecraft:icon": "hy:copper_badge",
       "minecraft:durability": {
         "max_durability": 100
       },

@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.rabbit_paw",
+      "minecraft:icon": "hy:rabbit_paw",
       "minecraft:display_name": {
         "value": "hy.item.rabbit_paw"
       }

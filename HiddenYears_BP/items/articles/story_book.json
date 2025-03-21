@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.story_book",
+      "minecraft:icon": "hy:story_book",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.item.story_book"

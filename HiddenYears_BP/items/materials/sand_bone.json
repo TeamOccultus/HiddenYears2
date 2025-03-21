@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.sand_bone",
+      "minecraft:icon": "hy:sand_bone",
       "minecraft:display_name": {
         "value": "hy.item.sand_bone"
       }

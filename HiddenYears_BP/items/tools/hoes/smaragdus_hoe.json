@@ -34,7 +34,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.smaragdus_hoe",
+      "minecraft:icon": "hy:smaragdus_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [

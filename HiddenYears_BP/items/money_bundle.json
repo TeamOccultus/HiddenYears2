@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.money_bundle"
       },
-      "minecraft:icon": "hy.money_bundle",
+      "minecraft:icon": "hy:money_bundle",
       "minecraft:max_stack_size": 1,
       "minecraft:storage_item": {
         "max_slots": 64,

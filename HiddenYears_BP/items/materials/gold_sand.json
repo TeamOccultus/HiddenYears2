@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.gold_sand"
       },
-      "minecraft:icon": "hy.gold_sand",
+      "minecraft:icon": "hy:gold_sand",
       "minecraft:tags": {
         "tags": ["dict:dusts"]
       }

@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.ruby",
+      "minecraft:icon": "hy:ruby",
       "minecraft:display_name": {
         "value": "hy.item.ruby"
       },

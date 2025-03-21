@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.copper_essence"
       },
-      "minecraft:icon": "hy.copper_essence"
+      "minecraft:icon": "hy:copper_essence"
     }
   }
 }

@@ -23,7 +23,7 @@
         "nutrition": 5,
         "saturation_modifier": 0.8
       },
-      "minecraft:icon": "hy.fuel_metal",
+      "minecraft:icon": "hy:fuel_metal",
       "minecraft:tags": {
         "tags": ["hy:fuel_metal"]
       }

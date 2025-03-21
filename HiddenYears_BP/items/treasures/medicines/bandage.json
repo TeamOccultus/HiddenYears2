@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.medicines.bandage",
+      "minecraft:icon": "hy:bandage",
       "minecraft:durability": {
         "max_durability": 3
       },

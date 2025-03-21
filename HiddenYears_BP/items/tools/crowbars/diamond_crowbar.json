@@ -18,7 +18,7 @@
         "max_durability": 780
       },
       "minecraft:damage": 9,
-      "minecraft:icon": "hy.diamond_crowbar",
+      "minecraft:icon": "hy:diamond_crowbar",
       "minecraft:display_name": {
         "value": "hy.item.diamond_crowbar"
       },

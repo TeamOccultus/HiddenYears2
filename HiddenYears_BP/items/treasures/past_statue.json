@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.past_statue",
+      "minecraft:icon": "hy:past_statue",
       "minecraft:display_name": {
         "value": "hy.item.past_statue"
       },

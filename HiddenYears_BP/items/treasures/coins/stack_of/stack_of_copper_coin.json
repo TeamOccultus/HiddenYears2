@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.stack_of_copper_coin"
       },
-      "minecraft:icon": "hy.stack_of_copper_coin"
+      "minecraft:icon": "hy:stack_of_copper_coin"
     }
   }
 }

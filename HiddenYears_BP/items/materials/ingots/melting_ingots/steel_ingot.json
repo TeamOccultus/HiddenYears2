@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.steel_ingot",
+      "minecraft:icon": "hy:steel_ingot",
       "minecraft:display_name": {
         "value": "hy.item.steel_ingot"
       },

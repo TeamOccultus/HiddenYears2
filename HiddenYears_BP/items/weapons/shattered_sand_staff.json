@@ -23,7 +23,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.shattered_sand_staff",
+      "minecraft:icon": "hy:shattered_sand_staff",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

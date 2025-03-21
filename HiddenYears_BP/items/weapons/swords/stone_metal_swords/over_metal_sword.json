@@ -87,7 +87,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.over_metal_sword",
+      "minecraft:icon": "hy:over_metal_sword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

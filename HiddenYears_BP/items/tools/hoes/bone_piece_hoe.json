@@ -34,7 +34,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.bone_piece_hoe",
+      "minecraft:icon": "hy:bone_piece_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [

@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.coal_dust"
       },
-      "minecraft:icon": "hy.coal_dust",
+      "minecraft:icon": "hy:coal_dust",
       "minecraft:fuel": {
         "duration": 5
       },

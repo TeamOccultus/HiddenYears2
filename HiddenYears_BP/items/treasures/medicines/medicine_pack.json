@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.medicines.medicine_pack",
+      "minecraft:icon": "hy:medicine_pack",
       "minecraft:durability": {
         "max_durability": 5
       },

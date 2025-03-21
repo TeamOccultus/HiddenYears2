@@ -9,7 +9,7 @@
     },
     "components": {
       "minecraft:max_stack_size": 1,
-      "minecraft:icon": "hy.medicines.7",
+      "minecraft:icon": "hy:medicines_7",
       "minecraft:display_name": {
         "value": "hy.item.medicines.7"
       },

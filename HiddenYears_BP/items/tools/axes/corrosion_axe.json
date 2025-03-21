@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.exposed_copper_axe",
+      "minecraft:icon": "hy:exposed_copper_axe",
       "tag:hy:corrosion_tier": {},
       "minecraft:tags": {
         "tags": [

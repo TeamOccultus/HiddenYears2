@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 64
       },
-      "minecraft:icon": "hy.gold_hammer",
+      "minecraft:icon": "hy:gold_hammer",
       "minecraft:damage": 3,
       "minecraft:enchantable": {
         "value": 1,

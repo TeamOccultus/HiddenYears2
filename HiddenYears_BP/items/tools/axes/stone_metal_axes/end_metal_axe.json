@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.end_metal_axe",
+      "minecraft:icon": "hy:end_metal_axe",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_axe",

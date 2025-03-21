@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.nether_metal_ingot",
+      "minecraft:icon": "hy:nether_metal_ingot",
       "minecraft:display_name": {
         "value": "hy.item.nether_metal_ingot"
       },

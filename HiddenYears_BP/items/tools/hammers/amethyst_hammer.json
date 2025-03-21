@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 400
       },
-      "minecraft:icon": "hy.amethyst_hammer",
+      "minecraft:icon": "hy:amethyst_hammer",
       "minecraft:damage": 4,
       "minecraft:enchantable": {
         "value": 1,

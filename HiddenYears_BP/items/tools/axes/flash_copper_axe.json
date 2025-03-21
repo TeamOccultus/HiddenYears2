@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.flash_copper_axe",
+      "minecraft:icon": "hy:flash_copper_axe",
       "minecraft:tags": {
         "tags": [
           "minecraft:is_axe",

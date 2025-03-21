@@ -17,7 +17,7 @@
       "minecraft:durability": {
         "max_durability": 30
       },
-      "minecraft:icon": "hy.weathered_copper_pickaxe",
+      "minecraft:icon": "hy:weathered_copper_pickaxe",
       "minecraft:repairable": {
         "repair_items": [
           {

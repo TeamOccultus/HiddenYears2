@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.calamity_bag",
+      "minecraft:icon": "hy:calamity_bag",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.item.calamity_bag.experience"

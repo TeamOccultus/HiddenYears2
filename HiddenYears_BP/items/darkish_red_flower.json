@@ -12,7 +12,7 @@
       "minecraft:display_name": {
         "value": "hy.item.darkish_red_flower"
       },
-      "minecraft:icon": "hy.darkish_red_flower",
+      "minecraft:icon": "hy:darkish_red_flower",
       "minecraft:block_placer": {
         "block": "hy:darkish_red_flower",
         "use_on": ["minecraft:dirt", "minecraft:grass_block"],

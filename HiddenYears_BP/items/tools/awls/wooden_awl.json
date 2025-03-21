@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.wooden_awl"
       },
-      "minecraft:icon": "hy.wooden_awl",
+      "minecraft:icon": "hy:wooden_awl",
       "minecraft:durability": {
         "max_durability": 15
       },

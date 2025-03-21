@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.coal_nugget"
       },
-      "minecraft:icon": "hy.coal_nugget",
+      "minecraft:icon": "hy:coal_nugget",
       "minecraft:fuel": {
         "duration": 15
       }

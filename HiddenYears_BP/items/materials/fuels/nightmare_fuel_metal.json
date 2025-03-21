@@ -17,7 +17,7 @@
       "minecraft:display_name": {
         "value": "hy.item.nightmare_fuel_metal"
       },
-      "minecraft:icon": "hy.fuel_metal",
+      "minecraft:icon": "hy:fuel_metal",
       "minecraft:tags": {
         "tags": ["hy:fuel_metal"]
       }

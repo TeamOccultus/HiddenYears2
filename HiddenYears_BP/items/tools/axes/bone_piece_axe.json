@@ -45,7 +45,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.bone_piece_axe",
+      "minecraft:icon": "hy:bone_piece_axe",
       "minecraft:tags": {
         "tags": ["minecraft:is_axe", "hy:custom_tools", "hy:custom_axe"]
       }

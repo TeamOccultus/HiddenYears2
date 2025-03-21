@@ -17,7 +17,7 @@
       "minecraft:durability": {
         "max_durability": 5000
       },
-      "minecraft:icon": "hy.smaragdus_pickaxe",
+      "minecraft:icon": "hy:smaragdus_pickaxe",
       "minecraft:repairable": {
         "repair_items": [
           {

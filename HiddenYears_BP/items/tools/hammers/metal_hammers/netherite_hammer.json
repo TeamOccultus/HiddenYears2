@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 4062
       },
-      "minecraft:icon": "hy.netherite_hammer",
+      "minecraft:icon": "hy:netherite_hammer",
       "minecraft:damage": 7,
       "minecraft:enchantable": {
         "value": 1,

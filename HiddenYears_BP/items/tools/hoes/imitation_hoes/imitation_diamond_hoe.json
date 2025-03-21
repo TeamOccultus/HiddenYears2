@@ -35,7 +35,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.imitation_diamond_hoe",
+      "minecraft:icon": "hy:imitation_diamond_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [

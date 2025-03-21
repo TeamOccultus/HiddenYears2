@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.tin_dust",
+      "minecraft:icon": "hy:tin_dust",
       "minecraft:display_name": {
         "value": "hy.item.tin_dust"
       },

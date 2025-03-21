@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "sc.stone_nugget",
+      "minecraft:icon": "sc:stone_nugget",
       "minecraft:display_name": {
         "value": "sc.item.stone_nugget"
       },

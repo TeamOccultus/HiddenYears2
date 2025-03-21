@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.gold_coin"
       },
-      "minecraft:icon": "hy.gold_coin"
+      "minecraft:icon": "hy:gold_coin"
     }
   }
 }

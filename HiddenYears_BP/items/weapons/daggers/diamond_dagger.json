@@ -66,7 +66,7 @@
         ]
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy.diamond_dagger",
+      "minecraft:icon": "hy:diamond_dagger",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [

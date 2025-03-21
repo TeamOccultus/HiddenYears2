@@ -35,7 +35,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.imitation_amethyst_hoe",
+      "minecraft:icon": "hy:imitation_amethyst_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [

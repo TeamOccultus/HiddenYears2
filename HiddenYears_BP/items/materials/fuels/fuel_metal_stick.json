@@ -24,7 +24,7 @@
         "saturation_modifier": 0.8,
         "using_converts_to": "hy:nightmare_fuel_metal"
       },
-      "minecraft:icon": "hy.fuel_metal_stick",
+      "minecraft:icon": "hy:fuel_metal_stick",
       "minecraft:tags": {
         "tags": ["hy:fuel_metal"]
       }

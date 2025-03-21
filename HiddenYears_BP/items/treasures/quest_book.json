@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hy.quest_book.0",
+      "minecraft:icon": "hy:quest_book",
       "minecraft:max_stack_size": 1,
       "minecraft:display_name": {
         "value": "hy.item.quest_book.0"

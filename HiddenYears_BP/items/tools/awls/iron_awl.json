@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "hy.item.iron_awl"
       },
-      "minecraft:icon": "hy.iron_awl",
+      "minecraft:icon": "hy:iron_awl",
       "minecraft:durability": {
         "max_durability": 62
       },

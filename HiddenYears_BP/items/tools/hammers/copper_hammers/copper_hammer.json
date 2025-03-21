@@ -16,7 +16,7 @@
       "minecraft:durability": {
         "max_durability": 160
       },
-      "minecraft:icon": "hy.copper_hammer",
+      "minecraft:icon": "hy:copper_hammer",
       "minecraft:damage": 4,
       "minecraft:enchantable": {
         "value": 1,

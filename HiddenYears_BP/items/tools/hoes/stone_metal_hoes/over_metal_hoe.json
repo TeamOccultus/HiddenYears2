@@ -34,7 +34,7 @@
           }
         ]
       },
-      "minecraft:icon": "hy.over_metal_hoe",
+      "minecraft:icon": "hy:over_metal_hoe",
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
