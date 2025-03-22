@@ -14,7 +14,10 @@
         "value": "article.17.title"
       },
       "minecraft:custom_components": ["hy:letter_17"],
-      "minecraft:hover_text_color": "yellow"
+      "minecraft:hover_text_color": "yellow",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books"]
+      }
     }
   }
 }

@@ -14,7 +14,10 @@
         "value": "hy.item.story_book"
       },
       "minecraft:custom_components": ["hy:hidden_story"],
-      "minecraft:hover_text_color": "light_purple"
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books"]
+      }
     }
   }
 }

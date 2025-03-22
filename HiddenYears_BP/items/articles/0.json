@@ -13,7 +13,10 @@
       "minecraft:display_name": {
         "value": "article.0.title"
       },
-      "minecraft:hover_text_color": "yellow"
+      "minecraft:hover_text_color": "yellow",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books"]
+      }
     }
   }
 }

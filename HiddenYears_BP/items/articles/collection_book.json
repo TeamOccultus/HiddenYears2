@@ -14,7 +14,10 @@
         "value": "hy.collection.title"
       },
       "minecraft:custom_components": ["hy:article_center"],
-      "minecraft:hover_text_color": "light_purple"
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books"]
+      }
     }
   }
 }

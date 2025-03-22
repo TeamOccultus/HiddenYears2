@@ -13,7 +13,10 @@
       "minecraft:display_name": {
         "value": "hy.item.quest_book.0"
       },
-      "minecraft:hover_text_color": "light_purple"
+      "minecraft:hover_text_color": "light_purple",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books"]
+      }
     }
   }
 }
