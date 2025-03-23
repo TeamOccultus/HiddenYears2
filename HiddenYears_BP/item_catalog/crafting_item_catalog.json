@@ -5,7 +5,7 @@
       {
         "category_name": "nature",
         "groups": [
-          {
+         {
             "group_identifier": {
               "icon": "minecraft:chicken_spawn_egg",
               "name": "minecraft:itemGroup.name.mobEgg"
@@ -31,7 +31,8 @@
               "hy:sprite_spawn_egg",
               "hy:sand_trader_spawn_egg",
               "hy:sand_spider_spawn_egg",
-              "hy:sprite_spawn_egg"
+              "hy:sprite_spawn_egg", 
+              "hy:mutas_wrath_spawn_egg"
             ]
           },
           {
