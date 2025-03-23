@@ -10,7 +10,7 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "hy.item.exposed_copper_pickaxe"
+        "value": "%hy.item.exposed_copper_pickaxe\n\n%hy.miningBlessed.desc"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
@@ -45,13 +45,19 @@
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:stone_tier_destructible')"
+              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:iron_tier_destructible')"
             },
-            "speed": 4
+            "speed": 1
           },
           {
             "block": {
-              "tags": "query.any_tag('stone')"
+              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:diamond_tier_destructible')"
+            },
+            "speed": 1
+          },
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_pickaxe_item_destructible')"
             },
             "speed": 4
           }

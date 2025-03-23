@@ -10,7 +10,7 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "hy.item.over_metal_pickaxe"
+        "value": "%hy.item.over_metal_pickaxe\n\n%hy.miningCurse.desc"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
@@ -40,13 +40,19 @@
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:stone_tier_destructible')"
+              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:iron_tier_destructible')"
             },
-            "speed": 5
+            "speed": 0
           },
           {
             "block": {
-              "tags": "query.any_tag('stone')"
+              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:diamond_tier_destructible')"
+            },
+            "speed": 0
+          },
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_pickaxe_item_destructible')"
             },
             "speed": 5
           }

@@ -10,7 +10,7 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "hy.item.imitation_iron_pickaxe"
+        "value": "%hy.item.imitation_iron_pickaxe\n\n%hy.miningCurse.desc"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:hover_text_color": "gold",
@@ -41,19 +41,13 @@
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:stone_tier_destructible')"
+              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:diamond_tier_destructible')"
             },
-            "speed": 6
+            "speed": 0
           },
           {
             "block": {
-              "tags": "query.all_tags('minecraft:is_pickaxe_item_destructible', 'minecraft:iron_tier_destructible')"
-            },
-            "speed": 6
-          },
-          {
-            "block": {
-              "tags": "query.any_tag('stone')"
+              "tags": "query.any_tag('minecraft:is_pickaxe_item_destructible')"
             },
             "speed": 6
           }
