@@ -87,7 +87,7 @@
       "render_controllers": ["controller.render.skeleton"],
       "enable_attachables": true,
       "spawn_egg": {
-        "texture": "hy.spawn_eggs",
+        "texture": "hy:spawn_eggs",
         "texture_index": 13
       }
     }

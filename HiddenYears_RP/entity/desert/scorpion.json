@@ -31,7 +31,7 @@
       ],
       "render_controllers": ["controller.render.default"],
       "spawn_egg": {
-        "texture": "hy.spawn_eggs",
+        "texture": "hy:spawn_eggs",
         "texture_index": 17
       }
     }

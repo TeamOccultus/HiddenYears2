@@ -13,7 +13,7 @@
         "default": "geometry.pillager"
       },
       "spawn_egg": {
-        "texture": "hy.spawn_eggs",
+        "texture": "hy:spawn_eggs",
         "texture_index": 1
       },
       "scripts": {

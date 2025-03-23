@@ -28,7 +28,7 @@
       },
       "render_controllers": ["controller.render.evoker"],
       "spawn_egg": {
-        "texture": "hy.spawn_eggs",
+        "texture": "hy:spawn_eggs",
         "texture_index": 0
       }
     }

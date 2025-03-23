@@ -29,7 +29,7 @@
       "render_controllers": ["controller.render.default"],
       "held_item_ignores_lighting": true,
       "spawn_egg": {
-        "texture": "hy.spawn_eggs",
+        "texture": "hy:spawn_eggs",
         "texture_index": 7
       }
     }
