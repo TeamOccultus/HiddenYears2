@@ -64,7 +64,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "hy.drift_sand_cabinet",
+          "texture": "hy:drift_sand_cabinet",
           "render_method": "alpha_test"
         }
       },
