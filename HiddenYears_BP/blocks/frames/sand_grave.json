@@ -57,7 +57,7 @@
       "minecraft:map_color": "#999999",
       "minecraft:material_instances": {
         "*": {
-          "texture": "hy.sand_grave",
+          "texture": "hy:sand_grave",
           "render_method": "alpha_test"
         }
       },
