@@ -28,7 +28,7 @@
       "minecraft:geometry": "minecraft:geometry.cross",
       "minecraft:material_instances": {
         "*": {
-          "texture": "hy.darkish_red_flower",
+          "texture": "hy:darkish_red_flower",
           "render_method": "alpha_test",
           "ambient_occlusion": false,
           "face_dimming": false
