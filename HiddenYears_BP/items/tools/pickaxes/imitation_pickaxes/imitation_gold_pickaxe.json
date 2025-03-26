@@ -27,7 +27,7 @@
           },
           {
             "items": ["hy:imitation_gold_ingot"],
-            "repair_amount": 5
+            "repair_amount": "query.max_durability * 0.25"
           }
         ]
       },

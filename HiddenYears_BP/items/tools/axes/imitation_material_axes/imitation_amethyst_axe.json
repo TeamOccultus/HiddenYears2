@@ -43,7 +43,7 @@
             "block": {
               "tags": "query.any_tag('minecraft:is_axe_item_destructible')"
             },
-            "speed": 5
+            "speed": "query.max_durability * 0.25"
           }
         ]
       },

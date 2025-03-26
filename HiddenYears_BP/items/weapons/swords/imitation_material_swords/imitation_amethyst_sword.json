@@ -94,7 +94,7 @@
         "repair_items": [
           {
             "items": ["hy:imitation_amethyst_ingot"],
-            "repair_amount": 5
+            "repair_amount": 10
           },
           {
             "items": ["hy:imitation_amethyst_sword"],
