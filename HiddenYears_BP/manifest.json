@@ -3,7 +3,8 @@
   "metadata": {
     "authors": ["星屹工作室", "方琉璃", "大队长_Captain", "KuLou_D", "oldb"],
     "license": "BSD-3",
-    "url": "https://klpbbs.com/thread-85797-1-1.html"
+    "url": "https://klpbbs.com/thread-85797-1-1.html",
+    "product_type": "addon"
   },
   "header": {
     "name": "pack.name",
