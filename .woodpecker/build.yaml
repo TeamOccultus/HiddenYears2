@@ -3,9 +3,20 @@ when:
     branch: bedrock-neo
 
 steps:
-  - name: build
+  build:
     image: node
     commands:
       - npm install -g pnpm
       - pnpm install
       - pnpm run build
+    upload:
+      image: codeberg.org/s1m/woodpecker-upload:latest
+      when:
+        branch: bedrock-neo
+        event: [push, pull_request, manual]
+      settings:
+        token:
+          from_secret: artifact
+        file:
+          - /output/隐藏之年.mcaddon.zip
+        package: true
