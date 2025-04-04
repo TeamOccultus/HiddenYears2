@@ -1,0 +1,17 @@
+.bridge/
+builds
+.git/
+.idea/
+logs/
+node_modules/
+output/
+**/*.js
+**/*.d.ts
+
+*.mcpack
+*.mcaddon
+*.mcworld
+
+*.zip
+*.rar
+*.7z

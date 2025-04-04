@@ -1,0 +1,46 @@
+{
+    "format_version": 2,
+    "metadata": {
+      "authors": ["Team Occultus"],
+      "license": "BSD-3-Clause",
+      "url": "https://klpbbs.com/thread-85797-1-1.html",
+      "product_type": "addon"
+    },
+    "header": {
+      "name": "pack.name",
+      "description": "pack.description",
+      "min_engine_version": [1, 21, 80],
+      "uuid": "cb1b4568-9021-4793-afd2-aeac2bdb18f8",
+      "version": "2.4.17",
+      "pack_scope": "world"
+    },
+    "capabilities": ["script_eval"],
+    "modules": [
+      {
+        "type": "data",
+        "uuid": "b9696678-e750-4926-8907-f795253bf07b",
+        "version": "2.4.17"
+      },
+      {
+        "type": "script",
+        "uuid": "9e7290c0-1f5a-4328-97b5-17e24f5bb3aa",
+        "version": "2.4.17",
+        "entry": "scripts/index.js"
+      }
+    ],
+    "dependencies": [
+      {
+        "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
+        "version": "2.4.17"
+      },
+      {
+        "module_name": "@minecraft/server",
+        "version": "2.0.0-beta"
+      },
+      {
+        "module_name": "@minecraft/server-ui",
+        "version": "2.0.0-beta"
+      }
+    ]
+  }
+  
