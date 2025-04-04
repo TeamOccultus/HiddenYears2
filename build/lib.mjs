@@ -40,7 +40,7 @@ export function finalize() {
     console.log(mcpacks);
   
     mcaddonArchive.pipe(
-      createWriteStream(path.join(OUTPUT_DIR, "隐藏之年.mcaddon.zip"))
+      createWriteStream(path.join(OUTPUT_DIR, "HiddenYears2.mcaddon.zip"))
     );
   
     mcpacks.forEach((file) => {

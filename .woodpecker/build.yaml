@@ -18,5 +18,5 @@ steps:
       token:
         from_secret: artifact
       file:
-        - ./output/隐藏之年.mcaddon.zip
+        - ./output/HiddenYears2.mcaddon.zip
       package: true
