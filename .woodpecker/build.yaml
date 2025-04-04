@@ -6,6 +6,6 @@ steps:
   - name: build
     image: node
     commands:
-      - sudo npm install -g pnpm
+      - npm install -g pnpm
       - pnpm install
       - pnpm run build
