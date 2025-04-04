@@ -1,0 +1,10 @@
+when:
+  - event: push
+    branch: bedrock-neo
+
+steps:
+  - name: build
+    image: node
+    commands:
+      - pnpm install
+      - pnpm run build
