@@ -1,9 +1,4 @@
-
 import { buildScript, buildMcpacks } from "./lib.mjs";
 
-
-
-buildScript()
+buildScript();
 buildMcpacks();
-
-

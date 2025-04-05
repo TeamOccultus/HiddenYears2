@@ -4,7 +4,6 @@ import archiver from "archiver";
 import path from "path";
 import { createWriteStream, readdirSync } from "fs";
 
-
 export function buildScript() {
   // Build script
   esbuild.buildSync({
@@ -16,6 +15,7 @@ export function buildScript() {
     minify: true,
     treeShaking: true,
   });
+  console.log("脚本打包成功");
 }
 
 export function buildMcpacks() {
@@ -31,24 +31,26 @@ export function buildMcpacks() {
     archive.finalize();
     console.log(`${dir} 打包成功`);
   });
+  console.log("所有分包打包成功");
 }
 
 export function finalize() {
-    const OUTPUT_DIR = path.join(process.cwd(), "output");
-    const mcaddonArchive = archiver("zip");
-    const mcpacks = readdirSync(path.join(OUTPUT_DIR, "mcpacks"));
-    console.log(mcpacks);
-  
-    mcaddonArchive.pipe(
-      createWriteStream(path.join(OUTPUT_DIR, "HiddenYears2.mcaddon.zip"))
-    );
-  
-    mcpacks.forEach((file) => {
-      const file_path = path.join(OUTPUT_DIR, "mcpacks", file);
-      mcaddonArchive.file(file_path, {
-        name: file,
-      });
-      console.log(`${file} 已添加到输出文件`);
+  const OUTPUT_DIR = path.join(process.cwd(), "output");
+  const mcaddonArchive = archiver("zip");
+  const mcpacks = readdirSync(path.join(OUTPUT_DIR, "mcpacks"));
+  console.log(mcpacks);
+
+  mcaddonArchive.pipe(
+    createWriteStream(path.join(OUTPUT_DIR, "HiddenYears2.mcaddon.zip"))
+  );
+
+  mcpacks.forEach((file) => {
+    const file_path = path.join(OUTPUT_DIR, "mcpacks", file);
+    mcaddonArchive.file(file_path, {
+      name: file,
     });
-    mcaddonArchive.finalize();
-  }
+    console.log(`${file} 已添加到输出文件`);
+  });
+  mcaddonArchive.finalize();
+  console.log("附加包文件打包成功");
+}
