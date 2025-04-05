@@ -4,14 +4,15 @@
   "description": "A Minecraft addon",
   "scripts": {
     "build": "node build/main.mjs && node build/finalize.mjs",
+    "prepare": "node build/script.mjs",
     "prettier": "prettier --write ."
   },
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "@minecraft/server": "1.16.0",
-    "@minecraft/server-ui": "1.3.0",
-    "@minecraft/vanilla-data": "1.21.50",
+    "@minecraft/server": "2.0.0-beta.1.21.80-preview.26",
+    "@minecraft/server-ui": "2.0.0-beta.1.21.80-preview.26",
+    "@minecraft/vanilla-data": "1.21.70",
     "typescript": "^5.5.3"
   },
   "devDependencies": {
