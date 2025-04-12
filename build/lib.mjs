@@ -15,7 +15,7 @@ export function buildScript() {
     minify: true,
     treeShaking: true,
   });
-  console.log("脚本打包成功");
+  console.log("INFO: 脚本编译完成");
 }
 
 export function buildMcpacks() {
@@ -29,9 +29,9 @@ export function buildMcpacks() {
     );
     archive.directory(path.join(process.cwd(), dir), false);
     archive.finalize();
-    console.log(`${dir} 打包成功`);
+    console.log(`INFO: ${dir} 打包成功`);
   });
-  console.log("所有分包打包成功");
+  console.log("INFO: 所有.mcpack文件打包成功");
 }
 
 export function finalize() {
@@ -49,8 +49,8 @@ export function finalize() {
     mcaddonArchive.file(file_path, {
       name: file,
     });
-    console.log(`${file} 已添加到输出文件`);
+    console.log(`INFO: ${file} 已添加到输出文件`);
   });
   mcaddonArchive.finalize();
-  console.log("附加包文件打包成功");
+  console.log("SUCCESS: 附加包打包成功");
 }
