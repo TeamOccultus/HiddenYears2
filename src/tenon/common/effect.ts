@@ -1,3 +1,5 @@
+import { world } from "@minecraft/server";
+
 /**
  * 状态效果组
  * @see https://zh.minecraft.wiki/w/状态效果
@@ -6,20 +8,20 @@ export enum EffectGroups {
   /**
    * 正面效果
    */
-  GOOD = 0,
+  GOOD = "GOOD",
   /**
    * 负面效果
    */
-  BAD = 1,
+  BAD = "BAD",
   /**
    * 中性效果
    */
-  NEUTRAL = 2,
+  NEUTRAL = "NEUTRAL",
   /**
    *
    * 所有效果
    */
-  ALL = 3,
+  ALL = "ALL",
 }
 
 /**
@@ -78,8 +80,8 @@ export const positiveEffectsId: string[] = [
  * 状态效果表
  */
 export const effectGroupMap = {
-  [EffectGroups.ALL]: [...positiveEffectsId, ...negativeEffectsId, ...neutralEffectsId],
-  [EffectGroups.BAD]: negativeEffectsId,
-  [EffectGroups.GOOD]: positiveEffectsId,
-  [EffectGroups.NEUTRAL]: neutralEffectsId,
-};
+  ALL: [...positiveEffectsId, ...negativeEffectsId, ...neutralEffectsId],
+  BAD: negativeEffectsId,
+  GOOD: positiveEffectsId,
+  NEUTRAL: neutralEffectsId,
+} as const;

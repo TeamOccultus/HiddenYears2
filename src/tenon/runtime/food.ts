@@ -1,6 +1,7 @@
 import { system } from "@minecraft/server";
 import { EffectData } from "../core";
 import { applyEffectData } from "../utils/entity";
+import { effectGroupMap, EffectGroups } from "../common/effect";
 
 /**
  * 自定义食物组件的运行时
@@ -19,38 +20,47 @@ export class FoodRuntime {
       });
     });
   }
-  protected parse(data: FoodCompoentSchema): EffectData[] {
+  /**
+   * 解析组件参数
+   * @param data 
+   * @returns 
+   */
+  parse(data: FoodCompoentSchema): EffectData[] {
     let effects: EffectData[] = [];
-    if (typeof data.effect === "string") {
-      if (
-        Array.isArray(data.duration) ||
-        Array.isArray(data.amplifier) ||
-        Array.isArray(data.showParticles)
-      ) {
-        throw new Error("Invalid food component data");
-      }
+    function pushEffectData(
+      type: string,
+      duration: number | number[],
+      amplifier: number | number[],
+      particle: boolean | boolean[],
+      index = 0
+    ) {
       effects.push({
-        effectType: data.effect,
-        duration: data.duration,
-        amplifier: data.amplifier,
-        showParticles: data.showParticles,
+        effectType: type,
+        duration: Array.isArray(duration)
+          ? duration[index]
+          : duration,
+        amplifier: Array.isArray(amplifier)
+          ? amplifier[index]
+          : amplifier,
+        showParticles: Array.isArray(particle)
+          ? particle[index]
+          : particle,
       });
+    }
+    if (typeof data.effect === "string") {
+      if (effectGroupMap[data.effect as EffectGroups]) {
+        const groupEffects = effectGroupMap[data.effect as EffectGroups];
+        groupEffects.forEach((effect) => {
+          pushEffectData(effect, data.duration, data.amplifier, data.showParticles);
+        });
+        return effects;
+      }
+      pushEffectData(data.effect, data.duration, data.amplifier, data.showParticles);
       return effects;
     }
     if (Array.isArray(data.effect)) {
       data.effect.forEach((effect, index) => {
-        effects.push({
-          effectType: effect,
-          duration: Array.isArray(data.duration)
-            ? data.duration[index]
-            : data.duration,
-          amplifier: Array.isArray(data.amplifier)
-            ? data.amplifier[index]
-            : data.amplifier,
-          showParticles: Array.isArray(data.showParticles)
-            ? data.showParticles[index]
-            : data.showParticles,
-        });
+        pushEffectData(effect, data.duration, data.amplifier, data.showParticles, index);
       });
       return effects;
     }
@@ -63,8 +73,12 @@ export class FoodRuntime {
 export type FoodCompoentSchema = {
   /**
    * 状态效果类型
+   *
+   * 其可以填形如`ALL`、`GOOD`、`BAD`的状态效果组
+   *
+   * **若类型为字符串，且持续时间、等级、是否展示粒子效果为数组，那么将会取数组中第一个值，其余的值将会被忽略**
    */
-  effect: string | string[];
+  effect: string | string[] | EffectGroups;
   /**
    * 状态效果持续时间，以刻为单位 *（20刻=1秒）*
    *
