@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.80",
   "minecraft:item": {
     "description": {
       "identifier": "hy:medicine_9",
@@ -8,6 +8,10 @@
       }
     },
     "components": {
+      "hy:effective_food": {
+        "effect": "minecraft:poison",
+        "duration": 2000
+      },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hy:medicines_9",
       "minecraft:display_name": {

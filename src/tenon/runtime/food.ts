@@ -15,7 +15,7 @@ export class FoodRuntime {
       init.itemComponentRegistry.registerCustomComponent(this.componentName, {
         onConsume(callback, param) {
           const p = param.params as FoodCompoentSchema;
-          applyEffectData(callback.source, that.parse(p));
+          if (that.parse(p)) applyEffectData(callback.source, that.parse(p));
           that.clearEffects(callback.source, p);
         },
       });
@@ -26,7 +26,8 @@ export class FoodRuntime {
    * @param data
    * @returns
    */
-  parse(data: FoodCompoentSchema): EffectData[] {
+  parse(data: FoodCompoentSchema): EffectData[] | undefined {
+    if (!data.effect) return;
     let effects: EffectData[] = [];
     function pushEffectData(
       type: string,

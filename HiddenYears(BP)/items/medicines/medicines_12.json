@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.80",
   "minecraft:item": {
     "description": {
       "identifier": "hy:medicine_12",
@@ -8,6 +8,12 @@
       }
     },
     "components": {
+      "hy:effective_food": {
+        "effect": "minecraft:village_hero",
+        "duration": 2000,
+        "clear": "minecraft:bad_omen",
+        "amplifier": 1
+      },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hy:medicines_12",
       "minecraft:display_name": {

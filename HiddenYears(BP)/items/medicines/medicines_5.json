@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.80",
   "minecraft:item": {
     "description": {
       "identifier": "hy:medicine_5",
@@ -8,6 +8,11 @@
       }
     },
     "components": {
+      "hy:effective_food": {
+        "effect": "minecraft:absorption",
+        "duration": 2000,
+        "clear": ["minecraft:fatal_poison", "minecraft:poison", "minecraft:wither"]
+      },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hy:medicines_5",
       "minecraft:display_name": {
