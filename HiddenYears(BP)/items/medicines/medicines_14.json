@@ -25,6 +25,7 @@
         "saturation_modifier": 1.0,
         "using_converts_to": "glass_bottle"
       },
+      "minecraft:rarity": "rare",
       "minecraft:tags": {
         "tags": ["hy:medicine_potion"]
       }
