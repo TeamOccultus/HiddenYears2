@@ -13,7 +13,7 @@
         "duration": 2000,
         "clear": ["minecraft:blindness", "minecraft:darkness"]
       },
-      "minecraft:max_stack_size": 1,
+      "minecraft:max_stack_size": 16,
       "minecraft:icon": "hy:medicines_3",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {

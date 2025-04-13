@@ -13,7 +13,7 @@
         "duration": 2400,
         "clear": "BAD"
       },
-      "minecraft:max_stack_size": 1,
+      "minecraft:max_stack_size": 16,
       "minecraft:icon": "hy:medicines_2",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
