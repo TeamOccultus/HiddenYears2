@@ -1,5 +1,5 @@
 {
-  "include": ["src/*", "src/tenon/encyclopedia.ts"],
+  "include": ["src/*", "src/tenon/game/encyclopedia.ts"],
   "compilerOptions": {
     "target": "es2022",
     "module": "ES2022",

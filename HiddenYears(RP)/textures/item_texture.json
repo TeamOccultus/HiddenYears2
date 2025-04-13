@@ -43,6 +43,9 @@
     },
     "hy:medicines_14": {
       "textures": "textures/items/medicine_14"
+    },
+    "hy:encyclopedia": {
+      "textures": "textures/items/encyclopedia"
     }
   }
 }
