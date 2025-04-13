@@ -5,6 +5,7 @@
   "scripts": {
     "build": "node build/main.mjs && node build/finalize.mjs",
     "prepare": "node build/script.mjs",
+    "lang": "node build/lang.mjs",
     "prettier": "prettier --write ."
   },
   "author": "CTN Studios",
@@ -21,6 +22,7 @@
     "archiver": "^7.0.1",
     "esbuild": "^0.25.2",
     "fs-extra": "^11.3.0",
+    "json5": "^2.2.3",
     "prettier": "^3.3.3"
   }
 }
