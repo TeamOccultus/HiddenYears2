@@ -1,14 +1,13 @@
 export class ItemAlias {
   constructor(
     public name: string,
-    public alias: string
+    public alias: string,
   ) {}
 }
 
 export class BlockAlias {
-    constructor(
-      public name: string,
-      public alias: string
-    ) {}
-  }
-  
+  constructor(
+    public name: string,
+    public alias: string,
+  ) {}
+}

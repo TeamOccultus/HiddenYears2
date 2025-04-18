@@ -7,7 +7,7 @@ export class EncyclopediaEntry extends UI {
     readonly id: string,
     public name: string | RawMessage,
     public description: string | RawMessage,
-    public iconPath?: string
+    public iconPath?: string,
   ) {
     super(id);
   }
@@ -30,7 +30,7 @@ export class Encyclopedia extends UI {
   constructor(
     readonly id: string,
     public name: string | RawMessage,
-    public description: string | RawMessage
+    public description: string | RawMessage,
   ) {
     super(id);
   }
@@ -50,7 +50,7 @@ export class Encyclopedia extends UI {
         return;
       }
       if (response.selection > 0) {
-        if(backTo) backTo.unshift(this);
+        if (backTo) backTo.unshift(this);
         this.entries[response.selection - 1].display(player, backTo);
         return;
       }
@@ -61,6 +61,6 @@ export class Encyclopedia extends UI {
       if (event.itemStack.typeId === this.id) {
         this.display(event.source);
       }
-    })
+    });
   }
 }

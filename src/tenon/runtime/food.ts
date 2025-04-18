@@ -34,7 +34,7 @@ export class FoodRuntime {
       duration: number | number[],
       amplifier: number | number[],
       particle: boolean | boolean[],
-      index = 0
+      index = 0,
     ) {
       effects.push({
         effectType: type,
@@ -51,7 +51,7 @@ export class FoodRuntime {
             effect,
             data.duration,
             data.amplifier,
-            data.showParticles
+            data.showParticles,
           );
         });
         return effects;
@@ -60,7 +60,7 @@ export class FoodRuntime {
         data.effect,
         data.duration,
         data.amplifier,
-        data.showParticles
+        data.showParticles,
       );
       return effects;
     }
@@ -71,7 +71,7 @@ export class FoodRuntime {
           data.duration,
           data.amplifier,
           data.showParticles,
-          index
+          index,
         );
       });
       return effects;

@@ -9,7 +9,11 @@
     },
     "components": {
       "hy:effective_food": {
-        "effect": ["minecraft:slowness", "minecraft:wither", "minecraft:weakness"],
+        "effect": [
+          "minecraft:slowness",
+          "minecraft:wither",
+          "minecraft:weakness"
+        ],
         "duration": 2400
       },
       "minecraft:max_stack_size": 16,
