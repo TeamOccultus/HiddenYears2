@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hy:alchemy_table",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "properties": {}
+    },
+    "component_groups": {
+      "hy:alchemy_table_despawn": {
+        "minecraft:despawn": {},
+        "minecraft:instant_despawn": {
+          "remove_child_entities": false
+        }
+      }
+    },
+    "components": {
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "on_damage": {},
+          "deals_damage": "no"
+        }
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "randomInterval": true,
+        "time": [0.0, 0.0],
+        "time_down_event": {
+          "event": "hy:alchemy_table_tick"
+        }
+      },
+      "minecraft:persistent": {},
+      "minecraft:physics": {
+        "has_collision": false,
+        "has_gravity": false
+      },
+      "minecraft:scale": {
+        "value": 0
+      },
+      "minecraft:type_family": {
+        "family": ["hiddenyears_block_entity"]
+      },
+      "minecraft:is_hidden_when_invisible": {},
+      "minecraft:breathable": {
+        "breathes_solids": true
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1,
+        "min": 1
+      },
+      "minecraft:collision_box": {
+        "width": 0.0,
+        "height": 0.0
+      }
+    },
+    "events": {
+      "hy:despawn": {
+        "add": {
+          "component_groups": ["hy:alchemy_table_despawn"]
+        }
+      },
+      "hy:alchemy_table_tick": {}
+    }
+  }
+}

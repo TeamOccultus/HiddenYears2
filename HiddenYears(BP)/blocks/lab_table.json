@@ -5,6 +5,9 @@
       "identifier": "hy:lab_table",
       "menu_category": {
         "category": "items"
+      },
+      "states": {
+        "hy:has_raw_material": [false, true]
       }
     },
     "components": {
