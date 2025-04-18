@@ -15,11 +15,12 @@ import {
  */
 export function getEquipmentItem(
   entity: Entity,
-  slot = EquipmentSlot.Mainhand
+  slot = EquipmentSlot.Mainhand,
 ): ItemStack | undefined {
-  if (!(entity instanceof Player)) throw new Error("getEquipmentItem 无法获取非玩家实体槽位中的物品");
+  if (!(entity instanceof Player))
+    throw new Error("getEquipmentItem 无法获取非玩家实体槽位中的物品");
   const equipment = entity?.getComponent(
-    "minecraft:equippable"
+    "minecraft:equippable",
   ) as EntityEquippableComponent;
   return equipment?.getEquipment(slot);
 }

@@ -7,7 +7,6 @@ import { Dimension, Vector3 } from "@minecraft/server";
  */
 export type LootToolType = string | "mainhand" | "offhand";
 
-
 /**
  * 在指定位置生成战利品
  * @param dimension 要生成战利品的维度
@@ -21,15 +20,15 @@ export function loot(
   dimension: Dimension,
   location: Vector3,
   path: string,
-  toolType?: LootToolType
+  toolType?: LootToolType,
 ): void {
   if (toolType) {
     dimension.runCommand(
-      `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}" "${toolType}"`
+      `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}" "${toolType}"`,
     );
   } else {
     dimension.runCommand(
-      `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`
+      `loot spawn ${location.x} ${location.y} ${location.z} loot "${path}"`,
     );
   }
 }
@@ -47,15 +46,15 @@ export function insertLoot(
   dimension: Dimension,
   blockLocation: Vector3,
   path: string,
-  toolType?: LootToolType
+  toolType?: LootToolType,
 ): void {
   if (toolType) {
     dimension.runCommand(
-      `loot insert ${blockLocation.x} ${blockLocation.y} ${blockLocation.z} loot "${path}" "${toolType}"`
+      `loot insert ${blockLocation.x} ${blockLocation.y} ${blockLocation.z} loot "${path}" "${toolType}"`,
     );
   } else {
     dimension.runCommand(
-      `loot insert ${blockLocation.x} ${blockLocation.y} ${blockLocation.z} loot "${path}"`
+      `loot insert ${blockLocation.x} ${blockLocation.y} ${blockLocation.z} loot "${path}"`,
     );
   }
 }

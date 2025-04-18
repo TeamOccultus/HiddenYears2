@@ -23,7 +23,7 @@ export class Food {
    */
   constructor(
     readonly typeId: string,
-    public statusEffects?: EffectData[]
+    public statusEffects?: EffectData[],
   ) {}
   /**
    * 当玩家食用该食品后触发的事件

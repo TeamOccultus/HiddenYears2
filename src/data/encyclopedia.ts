@@ -6,14 +6,14 @@ export const welcome = new EncyclopediaEntry(
   {
     translate: "wiki.welcome.body",
   },
-  "textures/items/clock"
+  "textures/items/clock",
 );
 
 export const magicPotion = new EncyclopediaEntry(
-    "hy:magic_potion",
-    { translate: "wiki.magic_potion.title" },
-    {
-      translate: "wiki.magic_potion.body",
-    },
-    "textures/items/medicine_1"
-  );
+  "hy:magic_potion",
+  { translate: "wiki.magic_potion.title" },
+  {
+    translate: "wiki.magic_potion.body",
+  },
+  "textures/items/medicine_1",
+);

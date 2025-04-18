@@ -16,7 +16,7 @@
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1.9
       },
-      "minecraft:destructible_by_explosion": { 
+      "minecraft:destructible_by_explosion": {
         "explosion_resistance": 2.5
       },
       "minecraft:map_color": "#999999",

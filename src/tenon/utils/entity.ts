@@ -4,11 +4,11 @@ import { EffectData } from "../core";
 /**
  * 向实体应用状态效果数据
  * @param entity 要应用效果的实体
- * @param effectData 
+ * @param effectData
  */
 export function applyEffectData(
   entity: Entity,
-  effectData: EffectData | EffectData[]
+  effectData: EffectData | EffectData[],
 ) {
   if (Array.isArray(effectData)) {
     effectData.forEach((effect) => {

@@ -1,5 +1,7 @@
 # 物品组件
+
 ## hy:effective_food
+
 ```js
 /**
  * 食物组件数据

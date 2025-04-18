@@ -1,3 +1,3 @@
-import {  finalize } from "./lib.mjs";
+import { finalize } from "./lib.mjs";
 
 finalize();
