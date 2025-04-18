@@ -34,7 +34,7 @@ export function buildScript(callback) {
       })
       .then((r) => {
         console.log("SUCCESS: 脚本编译完成");
-        callback();
+        callback?.();
       });
   } else {
     esbuild.buildSync({
@@ -47,7 +47,7 @@ export function buildScript(callback) {
       treeShaking: true,
       keepNames: true,
     });
-    callback();
+    callback?.();
     console.log("SUCCESS: 脚本编译完成");
   }
 }
