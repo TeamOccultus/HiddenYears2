@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hy:lab_table",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hy:destroy_condition": {
+        "tag": "minecraft:is_pickaxe",
+        "lootTable": "blocks/lab_table"
+      },
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 1.9
+      },
+      "minecraft:destructible_by_explosion": { 
+        "explosion_resistance": 2.5
+      },
+      "minecraft:map_color": "#999999",
+      "tag:metal": {}
+    }
+  }
+}
