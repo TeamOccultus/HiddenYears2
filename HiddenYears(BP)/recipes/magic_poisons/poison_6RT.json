@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:magic_poison_6RT"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "A": {
+        "item": "minecraft:experience_bottle"
+      },
+      "X": {
+        "item": "minecraft:red_tulip"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:experience_bottle"
+      },
+      {
+        "item": "minecraft:red_tulip"
+      }
+    ],
+    "result": {
+      "item": "hy:medicine_6"
+    }
+  }
+}

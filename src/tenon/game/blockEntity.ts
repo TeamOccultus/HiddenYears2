@@ -1,14 +1,23 @@
-import { Block, Dimension, Entity, ScoreboardObjective, Vector3 } from "@minecraft/server";
+import {
+  Block,
+  Dimension,
+  Entity,
+  ScoreboardObjective,
+  Vector3,
+} from "@minecraft/server";
 
-export class BlockEntity{
-    parse(entity: Entity) {
-    }
+export class BlockEntity {
+  data: BlockEntityData;
+  constructor(
+    readonly entityId: string,
+    readonly blockId: string
+  ) {}
 }
 
 export interface BlockEntityData {
-    readonly block: Block, 
-    readonly entity: Entity,
-    readonly dimension: Dimension, 
-    readonly location: Vector3, 
-    readonly scoreboard: ScoreboardObjective | null
+  readonly block: Block;
+  readonly entity: Entity;
+  readonly dimension: Dimension;
+  readonly location: Vector3;
+  readonly scoreboard: ScoreboardObjective | null;
 }

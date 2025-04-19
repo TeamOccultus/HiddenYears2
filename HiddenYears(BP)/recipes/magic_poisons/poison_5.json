@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:magic_poison_5"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "A": {
+        "item": "minecraft:experience_bottle"
+      },
+      "X": {
+        "item": "minecraft:azure_bluet"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:experience_bottle"
+      },
+      {
+        "item": "minecraft:azure_bluet"
+      }
+    ],
+    "result": {
+      "item": "hy:medicine_5"
+    }
+  }
+}

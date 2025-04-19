@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hy:magic_poison_1"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "A": {
+        "item": "minecraft:experience_bottle"
+      },
+      "X": {
+        "item": "minecraft:dandelion"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:experience_bottle"
+      },
+      {
+        "item": "minecraft:dandelion"
+      }
+    ],
+    "result": {
+      "item": "hy:medicine_1"
+    }
+  }
+}
