@@ -15,5 +15,7 @@
   "item.hy:medicine_12": "灵惑魔药",
   "item.hy:medicine_13": "海眷魔药",
   "item.hy:medicine_14": "阳光魔药",
-  "hy:itemGroup.name.magic_poitons": "隐藏之年·魔药"
+  "hy:itemGroup.name.magic_poitons": "隐藏之年·魔药",
+  "tile.hy:lab_table": "炼金台",
+  "hy:lab_table": "炼金"
 }
