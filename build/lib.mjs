@@ -14,6 +14,7 @@ import {
 // Why we need a callback?
 // because rolldown currently does not have anything like `buildSync`
 // We need to ensure mcpacks is only packed after scripts are built
+// 说的很不错，就是下回可以说中文吗，方便交流 awa
 export function buildScript(callback) {
   // Build script
   if (process.argv.includes("rolldown")) {
@@ -118,7 +119,7 @@ export function buildLang() {
   generateLangFile("lang/zh_TW.json", "HiddenYears(RP)/texts/zh_TW.lang");
   generateLangFile("lang/en_US.json", "HiddenYears(RP)/texts/en_US.lang");
   generateLangSet(
-    "HiddenYears(RP)/texts/language.json",
+    "HiddenYears(RP)/texts/languages.json",
     "zh_CN",
     "zh_TW",
     "en_US",
