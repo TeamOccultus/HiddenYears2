@@ -10,6 +10,7 @@ import {
   writeFileSync,
   readFileSync,
 } from "fs";
+import chalk from "chalk";
 
 // Why we need a callback?
 // because rolldown currently does not have anything like `buildSync`
@@ -34,7 +35,7 @@ export function buildScript(callback) {
         keepNames: true,
       })
       .then((r) => {
-        console.log("SUCCESS: 脚本编译完成");
+        console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 脚本编译完成" + " (Using Rolldown v" + rolldown.VERSION + ")");
         callback?.();
       });
   } else {
@@ -49,7 +50,7 @@ export function buildScript(callback) {
       keepNames: true,
     });
     callback?.();
-    console.log("SUCCESS: 脚本编译完成");
+    console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 脚本编译完成" + " (Using Esbuild v" + esbuild.version+ ")");
   }
 }
 
@@ -64,9 +65,9 @@ export function buildMcpacks() {
     );
     archive.directory(path.join(process.cwd(), dir), false);
     archive.finalize();
-    console.log(`INFO: ${dir} 打包成功`);
+    console.log(chalk.bold(" INFO ")+ `${dir} 打包成功`);
   });
-  console.log("INFO: 所有.mcpack文件打包成功");
+  console.log(chalk.bold(" INFO ")+ "所有 .mcpack 文件打包成功");
 }
 
 export function finalize() {
@@ -84,10 +85,10 @@ export function finalize() {
     mcaddonArchive.file(file_path, {
       name: file,
     });
-    console.log(`INFO: ${file} 已添加到输出文件`);
+    console.log(chalk.bold(" INFO ")+`${file} 已添加到输出文件`);
   });
   mcaddonArchive.finalize();
-  console.log("SUCCESS: 附加包打包成功");
+  console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 附加包打包成功");
 }
 
 export function generateLangFile(input, output) {
@@ -102,7 +103,7 @@ export function generateLangFile(input, output) {
 
   writeFileSync(output, langdata);
   const langName = path.parse(output).name;
-  console.log(`INFO: 语言 ${langName} 编译完成`);
+  console.log(chalk.bold(" INFO ")+ `语言 ${langName} 编译完成`);
 }
 
 export function generateLangSet(path, ...languages) {
@@ -124,5 +125,5 @@ export function buildLang() {
     "zh_TW",
     "en_US",
   );
-  console.log("SUCCESS: 语言文件编译完成");
+  console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 语言文件编译完成");
 }
