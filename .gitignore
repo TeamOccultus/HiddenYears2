@@ -3,5 +3,6 @@ node_modules/
 output/
 HiddenYears(BP)/scripts/index.js
 HiddenYears(RP)/texts/
+HiddenYears(RP)/textures/
 !build
 .vscode
