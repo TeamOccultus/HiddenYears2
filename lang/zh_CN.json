@@ -18,6 +18,9 @@
   "hy:itemGroup.name.magic_poitons": "隐藏之年·魔药",
   "tile.hy:lab_table": "炼金台",
   "hy:lab_table": "炼金",
+  "tile.hy:ruby_ore": "红宝石矿石",
+  "tile.hy:deepslate_ruby_ore": "深层红宝石矿石",
+  "tile.hy:ruby_block": "红宝石块",
   // 阅读物文本
   "article.adventurer_note.title": "故地异国行纪",
   "item.hy:adventurer_note": "故地异国行纪",

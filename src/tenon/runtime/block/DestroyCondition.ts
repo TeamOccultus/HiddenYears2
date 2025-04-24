@@ -1,6 +1,6 @@
 import { system } from "@minecraft/server";
-import { getEquipmentItem } from "../utils/player";
-import { loot } from "../utils/loot";
+import { getEquipmentItem } from "../../utils/player";
+import { loot } from "../../utils/loot";
 
 export class DestroyConditionRuntime {
   constructor(readonly componentName: string) {

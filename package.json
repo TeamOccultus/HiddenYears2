@@ -5,9 +5,10 @@
   "scripts": {
     "build": "node build/main.mjs && node build/finalize.mjs",
     "build-exp": "node build/main.mjs rolldown && node build/finalize.mjs",
-    "prepare": "node build/script.mjs && node build/lang.mjs",
+    "prepare": "node build/script.mjs && node build/lang.mjs && node build/gen.mjs",
     "lang": "node build/lang.mjs",
     "deploy": "node build/deploy.mjs",
+    "gen": "node build/gen.mjs",
     "prettier": "prettier --write ."
   },
   "author": "CTN Studios",

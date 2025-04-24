@@ -1,5 +1,5 @@
 import { FoodRuntime } from "./tenon/runtime/food";
-import { DestroyConditionRuntime } from "./tenon/runtime/block";
+import { DestroyConditionRuntime } from "./tenon/runtime/block/DestroyCondition";
 import { registryEncy } from "./server/registry/encyclopedia";
 import { registryNote } from "./server/registry/note";
 

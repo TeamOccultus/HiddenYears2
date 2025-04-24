@@ -6,9 +6,11 @@ import path from "path";
 import JSON5 from "json5";
 import {
   createWriteStream,
-  readdirSync,
   writeFileSync,
   readFileSync,
+  readdirSync,
+  cp,
+  cpSync,
 } from "fs";
 import chalk from "chalk";
 
@@ -35,7 +37,13 @@ export function buildScript(callback) {
         keepNames: true,
       })
       .then((r) => {
-        console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 脚本编译完成" + " (Using Rolldown v" + rolldown.VERSION + ")");
+        console.log(
+          chalk.green.bold.inverse(" SUCCESS ") +
+            " 脚本编译完成" +
+            " (Using Rolldown v" +
+            rolldown.VERSION +
+            ")"
+        );
         callback?.();
       });
   } else {
@@ -50,7 +58,13 @@ export function buildScript(callback) {
       keepNames: true,
     });
     callback?.();
-    console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 脚本编译完成" + " (Using Esbuild v" + esbuild.version+ ")");
+    console.log(
+      chalk.green.bold.inverse(" SUCCESS ") +
+        " 脚本编译完成" +
+        " (Using Esbuild v" +
+        esbuild.version +
+        ")"
+    );
   }
 }
 
@@ -61,13 +75,13 @@ export function buildMcpacks() {
   DIRS.forEach((dir) => {
     const archive = archiver("zip");
     archive.pipe(
-      createWriteStream(path.join(OUTPUT_DIR, "mcpacks", `${dir}.mcpack`)),
+      createWriteStream(path.join(OUTPUT_DIR, "mcpacks", `${dir}.mcpack`))
     );
     archive.directory(path.join(process.cwd(), dir), false);
     archive.finalize();
-    console.log(chalk.bold(" INFO ")+ `${dir} 打包成功`);
+    console.log(chalk.bold(" INFO ") + `${dir} 打包成功`);
   });
-  console.log(chalk.bold(" INFO ")+ "所有 .mcpack 文件打包成功");
+  console.log(chalk.bold(" INFO ") + "所有 .mcpack 文件打包成功");
 }
 
 export function finalize() {
@@ -77,7 +91,7 @@ export function finalize() {
   console.log(mcpacks);
 
   mcaddonArchive.pipe(
-    createWriteStream(path.join(OUTPUT_DIR, "HiddenYears2.mcaddon.zip")),
+    createWriteStream(path.join(OUTPUT_DIR, "HiddenYears2.mcaddon.zip"))
   );
 
   mcpacks.forEach((file) => {
@@ -85,10 +99,10 @@ export function finalize() {
     mcaddonArchive.file(file_path, {
       name: file,
     });
-    console.log(chalk.bold(" INFO ")+`${file} 已添加到输出文件`);
+    console.log(chalk.bold(" INFO ") + `${file} 已添加到输出文件`);
   });
   mcaddonArchive.finalize();
-  console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 附加包打包成功");
+  console.log(chalk.green.bold.inverse(" SUCCESS ") + " 附加包打包成功");
 }
 
 export function generateLangFile(input, output) {
@@ -103,7 +117,7 @@ export function generateLangFile(input, output) {
 
   writeFileSync(output, langdata);
   const langName = path.parse(output).name;
-  console.log(chalk.bold(" INFO ")+ `语言 ${langName} 编译完成`);
+  console.log(chalk.bold(" INFO ") + `语言 ${langName} 编译完成`);
 }
 
 export function generateLangSet(path, ...languages) {
@@ -123,7 +137,45 @@ export function buildLang() {
     "HiddenYears(RP)/texts/languages.json",
     "zh_CN",
     "zh_TW",
-    "en_US",
+    "en_US"
   );
-  console.log(chalk.green.bold.inverse(" SUCCESS ")+ " 语言文件编译完成");
+  console.log(chalk.green.bold.inverse(" SUCCESS ") + " 语言文件编译完成");
+}
+
+export function genResourceIndex() {
+  const itemTexure = readdirSync("assets/items");
+  const blockTexture = readdirSync("assets/blocks");
+  const itemIndex = {
+    resource_pack_name: "隐藏之年²",
+    texture_name: "atlas.items",
+    texture_data: {},
+  };
+  const blockIndex = {
+    num_mip_levels: 4,
+    padding: 8,
+    resource_pack_name: "隐藏之年²",
+    texture_name: "atlas.terrain",
+    texture_data: {},
+  };
+  itemTexure.forEach((file) => {
+    itemIndex.texture_data["hy:"+ file] = {
+      "textures": `textures/items/${file}`
+    }
+  })
+  blockTexture.forEach((file) => {
+    blockIndex.texture_data["hy:"+ file.replaceAll(".png", "")] = {
+      "textures": `textures/blocks/${file.replaceAll(".png", "")}`
+    }
+  })
+  writeFileSync("HiddenYears(RP)/textures/item_texture.json", JSON.stringify(itemIndex, null, 2));
+  writeFileSync("HiddenYears(RP)/textures/terrain_texture.json", JSON.stringify(blockIndex, null, 2));
+  console.log(chalk.green.bold.inverse(" SUCCESS ") + " 资源索引生成完成");
+}
+
+export function copyAssets() {
+  fs.ensureDirSync("HiddenYears(RP)/textures/items");
+  fs.ensureDirSync("HiddenYears(RP)/textures/blocks");
+  cpSync("assets/items", "HiddenYears(RP)/textures/items", {recursive: true});
+  cpSync("assets/blocks", "HiddenYears(RP)/textures/blocks", {recursive: true});
+  console.log(chalk.green.bold.inverse(" SUCCESS ") + " 资源文件拷贝完成");
 }

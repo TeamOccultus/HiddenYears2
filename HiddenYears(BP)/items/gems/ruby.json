@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.80",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hy:ruby",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hy:ruby",
+      "minecraft:rarity": "uncommon"
+    }
+  }
+}

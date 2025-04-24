@@ -25,10 +25,10 @@ function deploy(target) {
   ];
   fse.ensureDirSync(beh);
   fse.ensureDirSync(res);
-  console.log(chalk.bold(" INFO ")+"正在部署到"+target);
+  console.log(chalk.bold(" INFO ") + "正在部署到" + target);
   fs.cpSync("HiddenYears(BP)", beh, { recursive: true });
   fs.cpSync("HiddenYears(RP)", res, { recursive: true });
-  console.log(chalk.green.bold.inverse(" SUCCESS ")+" 部署完成");
+  console.log(chalk.green.bold.inverse(" SUCCESS ") + " 部署完成");
 }
 
 if (process.argv.includes("preview")) {

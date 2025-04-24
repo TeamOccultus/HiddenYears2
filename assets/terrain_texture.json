@@ -21,6 +21,12 @@
     },
     "hy:lab_table_bottom": {
       "textures": "textures/blocks/lab_table_bottom"
+    },
+    "hy:ruby_ore": {
+      "textures": "textures/blocks/ruby_ore"
+    },
+    "hy:deepslate_ruby_ore": {
+      "textures": "textures/blocks/deepslate_ruby_ore"
     }
   }
 }
