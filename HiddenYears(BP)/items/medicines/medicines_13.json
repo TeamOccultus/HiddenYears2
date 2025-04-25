@@ -14,7 +14,7 @@
         "clear": "minecraft:mining_fatigue"
       },
       "minecraft:max_stack_size": 16,
-      "minecraft:icon": "hy:medicines_13",
+      "minecraft:icon": "hy:medicine_13",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
         "use_duration": 2.0,

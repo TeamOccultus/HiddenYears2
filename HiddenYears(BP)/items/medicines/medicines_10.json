@@ -17,7 +17,7 @@
         "duration": 2400
       },
       "minecraft:max_stack_size": 16,
-      "minecraft:icon": "hy:medicines_10",
+      "minecraft:icon": "hy:medicine_10",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
         "use_duration": 2.0,
