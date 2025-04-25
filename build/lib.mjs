@@ -158,8 +158,8 @@ export function genResourceIndex() {
     texture_data: {},
   };
   itemTexure.forEach((file) => {
-    itemIndex.texture_data["hy:"+ file] = {
-      "textures": `textures/items/${file}`
+    itemIndex.texture_data["hy:"+ file.replaceAll(".png", "")] = {
+      "textures": `textures/items/${file.replaceAll(".png", "")}`
     }
   })
   blockTexture.forEach((file) => {
