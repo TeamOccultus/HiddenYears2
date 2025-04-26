@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.80",
+  "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
       "identifier": "hy:lab_table",
@@ -19,9 +19,9 @@
           "texture": "hy:lab_table_top"
         },
         "down": { "texture": "hy:lab_table_bottom" },
-        "north": { "texture": "hy:lab_table_side_1" },
-        "south": { "texture": "hy:lab_table_side_2" },
-        "west": { "texture": "hy:lab_table_side_3" },
+        "north": { "texture": "hy:lab_table_side_a" },
+        "south": { "texture": "hy:lab_table_side_b" },
+        "west": { "texture": "hy:lab_table_side_c" },
         "east": { "texture": "hy:lab_table_front" }
       },
       "minecraft:geometry": {

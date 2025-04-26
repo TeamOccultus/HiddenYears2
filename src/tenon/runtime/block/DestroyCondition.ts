@@ -6,7 +6,7 @@ export class DestroyConditionRuntime {
   constructor(readonly componentName: string) {
     system.beforeEvents.startup.subscribe((init) => {
       init.blockComponentRegistry.registerCustomComponent(this.componentName, {
-        onPlayerDestroy(callback, param) {
+        onPlayerBreak(callback, param) {
           const p = param.params as DestroyConditionSchema;
           if (!callback.player) return;
           if (getEquipmentItem(callback.player)?.typeId === p.item) {

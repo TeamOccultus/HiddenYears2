@@ -21,6 +21,13 @@
   "tile.hy:ruby_ore": "红宝石矿石",
   "tile.hy:deepslate_ruby_ore": "深层红宝石矿石",
   "tile.hy:ruby_block": "红宝石块",
+  // 游戏消息
+  "hy.message.first_destroy_ruby": "挖掘之后，你感到一阵眩晕……",
+  "hy.message.tenth_destroy_ruby.1": "眩晕感再次袭来……",
+  "hy.message.tenth_destroy_ruby.2": "你似乎看见了一个模糊的身躯在雷光之下被撕裂，迸裂出刺眼的光芒，黑夜也如白昼一般……",
+  "hy.message.fiftieth_destroy_ruby.1": "一阵剧烈的疼痛袭来，仿佛有无数针扎入体内……",
+  "hy.message.fiftieth_destroy_ruby.2": "眼前浮现出远古的景象：你看见了日月自北方升起，刺眼的光芒划过天际，子夜顿时成为了正午。",
+  "hy.message.fiftieth_destroy_ruby.3": "可当一切结束后——清晨似乎不再有旭日从东方升起，正午有如黑夜一般漆黑。夏天变成了冬天，而冬天变成了极寒",
   // 阅读物文本
   "article.adventurer_note.title": "故地异国行纪",
   "item.hy:adventurer_note": "故地异国行纪",
