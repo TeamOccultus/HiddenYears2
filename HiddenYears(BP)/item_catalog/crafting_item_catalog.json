@@ -7,24 +7,24 @@
         "groups": [
           {
             "group_identifier": {
-              "icon": "hy:medicine_1",
-              "name": "hy:itemGroup.name.magic_poitons"
+              "icon": "hiddenyears:medicine_1",
+              "name": "hiddenyears:itemGroup.name.magic_poitons"
             },
             "items": [
-              "hy:medicine_1",
-              "hy:medicine_2",
-              "hy:medicine_3",
-              "hy:medicine_4",
-              "hy:medicine_5",
-              "hy:medicine_6",
-              "hy:medicine_7",
-              "hy:medicine_8",
-              "hy:medicine_9",
-              "hy:medicine_10",
-              "hy:medicine_11",
-              "hy:medicine_12",
-              "hy:medicine_13",
-              "hy:medicine_14"
+              "hiddenyears:medicine_1",
+              "hiddenyears:medicine_2",
+              "hiddenyears:medicine_3",
+              "hiddenyears:medicine_4",
+              "hiddenyears:medicine_5",
+              "hiddenyears:medicine_6",
+              "hiddenyears:medicine_7",
+              "hiddenyears:medicine_8",
+              "hiddenyears:medicine_9",
+              "hiddenyears:medicine_10",
+              "hiddenyears:medicine_11",
+              "hiddenyears:medicine_12",
+              "hiddenyears:medicine_13",
+              "hiddenyears:medicine_14"
             ]
           }
         ]

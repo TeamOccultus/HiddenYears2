@@ -4,28 +4,28 @@
   "resource_pack_name": "隐藏之年²",
   "texture_name": "atlas.terrain",
   "texture_data": {
-    "hy:lab_table_top": {
+    "hiddenyears:lab_table_top": {
       "textures": "textures/blocks/lab_table_top"
     },
-    "hy:lab_table_front": {
+    "hiddenyears:lab_table_front": {
       "textures": "textures/blocks/lab_table_front"
     },
-    "hy:lab_table_side_1": {
+    "hiddenyears:lab_table_side_1": {
       "textures": "textures/blocks/lab_table_side_a"
     },
-    "hy:lab_table_side_2": {
+    "hiddenyears:lab_table_side_2": {
       "textures": "textures/blocks/lab_table_side_b"
     },
-    "hy:lab_table_side_3": {
+    "hiddenyears:lab_table_side_3": {
       "textures": "textures/blocks/lab_table_side_c"
     },
-    "hy:lab_table_bottom": {
+    "hiddenyears:lab_table_bottom": {
       "textures": "textures/blocks/lab_table_bottom"
     },
-    "hy:ruby_ore": {
+    "hiddenyears:ruby_ore": {
       "textures": "textures/blocks/ruby_ore"
     },
-    "hy:deepslate_ruby_ore": {
+    "hiddenyears:deepslate_ruby_ore": {
       "textures": "textures/blocks/deepslate_ruby_ore"
     }
   }

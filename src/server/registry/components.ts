@@ -4,7 +4,7 @@ import { DynamicPropertyError } from "../../data/Error";
 export function registryComponents() {
   system.beforeEvents.startup.subscribe((init) => {
     const block = init.blockComponentRegistry;
-    block.registerCustomComponent("hy:ore_type", {
+    block.registerCustomComponent("hiddenyears:ore_type", {
       onPlayerBreak(arg0, arg1) {
         const player = arg0.player;
         const params = arg1.params as OreTypeSchema;
@@ -18,7 +18,7 @@ export function registryComponents() {
 }
 
 function mentalAffect(player: Player) {
-  const num = player.getDynamicProperty("hy:destroy_ruby_count");
+  const num = player.getDynamicProperty("hiddenyears:destroy_ruby_count");
   if (num === 0 || !num) {
     player.addLevels(1);
     player.playSound("ambient.cave");
@@ -41,8 +41,8 @@ function mentalAffect(player: Player) {
     }, 50)
   }
   if (typeof num !== "number")
-    throw new DynamicPropertyError("动态属性类型错误", "hy:destroy_ruby_count");
-  player.setDynamicProperty("hy:destroy_ruby_count", num + 1);
+    throw new DynamicPropertyError("动态属性类型错误", "hiddenyears:destroy_ruby_count");
+  player.setDynamicProperty("hiddenyears:destroy_ruby_count", num + 1);
 }
 
 export type OreTypeSchema = {

@@ -2,49 +2,49 @@
   "resource_pack_name": "隐藏之年²",
   "texture_name": "atlas.items",
   "texture_data": {
-    "hy:medicines_1": {
+    "hiddenyears:medicines_1": {
       "textures": "textures/items/medicine_1"
     },
-    "hy:medicines_2": {
+    "hiddenyears:medicines_2": {
       "textures": "textures/items/medicine_2"
     },
-    "hy:medicines_3": {
+    "hiddenyears:medicines_3": {
       "textures": "textures/items/medicine_3"
     },
-    "hy:medicines_4": {
+    "hiddenyears:medicines_4": {
       "textures": "textures/items/medicine_4"
     },
-    "hy:medicines_5": {
+    "hiddenyears:medicines_5": {
       "textures": "textures/items/medicine_5"
     },
-    "hy:medicines_6": {
+    "hiddenyears:medicines_6": {
       "textures": "textures/items/medicine_6"
     },
-    "hy:medicines_7": {
+    "hiddenyears:medicines_7": {
       "textures": "textures/items/medicine_7"
     },
-    "hy:medicines_8": {
+    "hiddenyears:medicines_8": {
       "textures": "textures/items/medicine_8"
     },
-    "hy:medicines_9": {
+    "hiddenyears:medicines_9": {
       "textures": "textures/items/medicine_9"
     },
-    "hy:medicines_10": {
+    "hiddenyears:medicines_10": {
       "textures": "textures/items/medicine_10"
     },
-    "hy:medicines_11": {
+    "hiddenyears:medicines_11": {
       "textures": "textures/items/medicine_11"
     },
-    "hy:medicines_12": {
+    "hiddenyears:medicines_12": {
       "textures": "textures/items/medicine_12"
     },
-    "hy:medicines_13": {
+    "hiddenyears:medicines_13": {
       "textures": "textures/items/medicine_13"
     },
-    "hy:medicines_14": {
+    "hiddenyears:medicines_14": {
       "textures": "textures/items/medicine_14"
     },
-    "hy:encyclopedia": {
+    "hiddenyears:encyclopedia": {
       "textures": "textures/items/encyclopedia"
     }
   }

@@ -1,7 +1,7 @@
 import { EncyclopediaEntry } from "../tenon/game/encyclopedia";
 
 export const welcome = new EncyclopediaEntry(
-  "hy:welcome",
+  "hiddenyears:welcome",
   { translate: "wiki.welcome.title" },
   {
     translate: "wiki.welcome.body",
@@ -10,7 +10,7 @@ export const welcome = new EncyclopediaEntry(
 );
 
 export const magicPotion = new EncyclopediaEntry(
-  "hy:magic_potion",
+  "hiddenyears:magic_potion",
   { translate: "wiki.magic_potion.title" },
   {
     translate: "wiki.magic_potion.body",

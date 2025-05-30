@@ -2,13 +2,13 @@
   "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
-      "identifier": "hy:lab_table",
+      "identifier": "hiddenyears:lab_table",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
-      "hy:destroy_condition": {
+      "hiddenyears:destroy_condition": {
         "tag": "minecraft:is_pickaxe",
         "lootTable": "blocks/lab_table"
       },
@@ -16,13 +16,13 @@
       "minecraft:light_emission": 8,
       "minecraft:material_instances": {
         "up": {
-          "texture": "hy:lab_table_top"
+          "texture": "hiddenyears:lab_table_top"
         },
-        "down": { "texture": "hy:lab_table_bottom" },
-        "north": { "texture": "hy:lab_table_side_a" },
-        "south": { "texture": "hy:lab_table_side_b" },
-        "west": { "texture": "hy:lab_table_side_c" },
-        "east": { "texture": "hy:lab_table_front" }
+        "down": { "texture": "hiddenyears:lab_table_bottom" },
+        "north": { "texture": "hiddenyears:lab_table_side_a" },
+        "south": { "texture": "hiddenyears:lab_table_side_b" },
+        "west": { "texture": "hiddenyears:lab_table_side_c" },
+        "east": { "texture": "hiddenyears:lab_table_front" }
       },
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"

@@ -1,6 +1,6 @@
 # 物品组件
 
-## hy:effective_food
+## hiddenyears:effective_food
 
 ```js
 /**

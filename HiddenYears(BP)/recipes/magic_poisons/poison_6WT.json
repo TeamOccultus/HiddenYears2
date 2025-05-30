@@ -2,7 +2,7 @@
   "format_version": "1.20.11",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "hy:magic_poison_6WT"
+      "identifier": "hiddenyears:magic_poison_6WT"
     },
     "tags": ["alchemy_table"],
     "pattern": ["XXX", "XAX", "XXX"],
@@ -23,7 +23,7 @@
       }
     ],
     "result": {
-      "item": "hy:medicine_6"
+      "item": "hiddenyears:medicine_6"
     }
   }
 }

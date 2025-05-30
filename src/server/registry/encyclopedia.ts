@@ -3,7 +3,7 @@ import * as entries from "../../data/encyclopedia";
 
 export function registryEncy() {
   const encyclopedia = new Encyclopedia(
-    "hy:encyclopedia",
+    "hiddenyears:encyclopedia",
     "Encyclopedia",
     "A collection of knowledge",
   );

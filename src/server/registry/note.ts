@@ -1,5 +1,5 @@
 import { AdventurerNote } from "../item/AdventurerNote";
 
 export function registryNote(){
-    new AdventurerNote("hy:adventurer_note").registry();
+    new AdventurerNote("hiddenyears:adventurer_note").registry();
 }

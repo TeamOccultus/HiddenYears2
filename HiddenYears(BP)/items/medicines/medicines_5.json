@@ -2,13 +2,13 @@
   "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:medicine_5",
+      "identifier": "hiddenyears:medicine_5",
       "menu_category": {
         "category": "equipment"
       }
     },
     "components": {
-      "hy:effective_food": {
+      "hiddenyears:effective_food": {
         "effect": "minecraft:absorption",
         "duration": 2000,
         "clear": [
@@ -18,7 +18,7 @@
         ]
       },
       "minecraft:max_stack_size": 16,
-      "minecraft:icon": "hy:medicine_5",
+      "minecraft:icon": "hiddenyears:medicine_5",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
         "use_duration": 2.0,
@@ -32,7 +32,7 @@
       },
       "minecraft:rarity": "rare",
       "minecraft:tags": {
-        "tags": ["hy:magic_potion"]
+        "tags": ["hiddenyears:magic_potion"]
       }
     }
   }

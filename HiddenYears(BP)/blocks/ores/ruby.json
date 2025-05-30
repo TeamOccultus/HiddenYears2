@@ -2,24 +2,24 @@
   "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
-      "identifier": "hy:ruby_ore",
+      "identifier": "hiddenyears:ruby_ore",
       "menu_category": {
         "category": "nature"
       }
     },
     "components": {
-      "hy:custom_ore": {
+      "hiddenyears:custom_ore": {
         "itemTier": "stone",
         "lootTable": "blocks/ores/ruby",
         "exp": 10
       },
-      "hy:ore_type": {
+      "hiddenyears:ore_type": {
         "ore_type": "ruby"
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
         "*": {
-          "texture": "hy:ruby_ore"
+          "texture": "hiddenyears:ruby_ore"
         }
       },
       "minecraft:geometry": {

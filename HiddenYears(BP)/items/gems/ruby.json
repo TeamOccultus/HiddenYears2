@@ -2,13 +2,13 @@
   "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:ruby",
+      "identifier": "hiddenyears:ruby",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
-      "minecraft:icon": "hy:ruby",
+      "minecraft:icon": "hiddenyears:ruby",
       "minecraft:rarity": "uncommon"
     }
   }

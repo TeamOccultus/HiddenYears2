@@ -5,7 +5,7 @@ import {
 } from "@minecraft/server";
 
 export const RemoveDynamicPropertyCommand: CustomCommand = {
-  name: "hy:rmproperty",
+  name: "hiddenyears:rmproperty",
   permissionLevel: CommandPermissionLevel.Admin,
   description: "Remove dynamic property from a player",
 };

@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:ruby",
+          "name": "hiddenyears:ruby",
           "functions": [
             {
               "function": "set_count",

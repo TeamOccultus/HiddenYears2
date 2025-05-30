@@ -5,9 +5,9 @@ import { registryNote } from "./server/registry/note";
 import { OreRuntime } from "./tenon/runtime/block/Ore";
 import { registryComponents } from "./server/registry/components";
 
-new FoodRuntime("hy:effective_food");
-new DestroyConditionRuntime("hy:destroy_condition");
-new OreRuntime("hy:custom_ore");
+new FoodRuntime("hiddenyears:effective_food");
+new DestroyConditionRuntime("hiddenyears:destroy_condition");
+new OreRuntime("hiddenyears:custom_ore");
 
 registryEncy();
 registryNote();
