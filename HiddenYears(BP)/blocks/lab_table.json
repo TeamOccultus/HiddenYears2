@@ -2,7 +2,7 @@
   "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
-      "identifier": "hiddenyears:lab_table",
+      "identifier": "hiddenyears:alchemy_table",
       "menu_category": {
         "category": "items"
       }
@@ -10,19 +10,19 @@
     "components": {
       "hiddenyears:destroy_condition": {
         "tag": "minecraft:is_pickaxe",
-        "lootTable": "blocks/lab_table"
+        "lootTable": "blocks/alchemy_table"
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:light_emission": 8,
       "minecraft:material_instances": {
         "up": {
-          "texture": "hiddenyears:lab_table_top"
+          "texture": "hiddenyears:alchemy_table_top"
         },
-        "down": { "texture": "hiddenyears:lab_table_bottom" },
-        "north": { "texture": "hiddenyears:lab_table_side_a" },
-        "south": { "texture": "hiddenyears:lab_table_side_b" },
-        "west": { "texture": "hiddenyears:lab_table_side_c" },
-        "east": { "texture": "hiddenyears:lab_table_front" }
+        "down": { "texture": "hiddenyears:alchemy_table_bottom" },
+        "north": { "texture": "hiddenyears:alchemy_table_side_a" },
+        "south": { "texture": "hiddenyears:alchemy_table_side_b" },
+        "west": { "texture": "hiddenyears:alchemy_table_side_c" },
+        "east": { "texture": "hiddenyears:alchemy_table_front" }
       },
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
