@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:lapis_dust",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:lapis_dust",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:dust"]
+      }
+    }
+  }
+}

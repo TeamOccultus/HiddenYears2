@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:emerald_nugget",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:emerald_nugget",
+      "minecraft:fuel": {
+        "duration": 15
+      },
+      "minecraft:tags": {
+        "tags": ["hiddenyears:nugget"]
+      }
+    }
+  }
+}

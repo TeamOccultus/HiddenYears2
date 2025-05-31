@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:copper_dust"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:copper_nugget"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:copper_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:copper_dust",
+      "count": 9
+    }
+  }
+}

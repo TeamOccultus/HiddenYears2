@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:coal_dust",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:coal_dust",
+      "minecraft:fuel": {
+        "duration": 3
+      },
+      "minecraft:tags": {
+        "tags": ["hiddenyears:dust"]
+      }
+    }
+  }
+}

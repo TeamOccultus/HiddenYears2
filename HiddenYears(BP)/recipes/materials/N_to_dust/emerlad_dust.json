@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:emerald_dust"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:emerald_nugget"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:emerald_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:emerald_dust",
+      "count": 9
+    }
+  }
+}

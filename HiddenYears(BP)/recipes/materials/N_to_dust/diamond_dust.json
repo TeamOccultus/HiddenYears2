@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:diamond_dust"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:diamond_nugget"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:diamond_dust"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:diamond_dust",
+      "count": 9
+    }
+  }
+}

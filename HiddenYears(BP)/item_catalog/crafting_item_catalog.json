@@ -28,6 +28,43 @@
             ]
           }
         ]
+      },
+      {
+        "category_name": "items",
+        "groups":[{
+            "group_identifier": {
+              "icon": "hiddenyears:diamond_nugget",
+              "name": "hiddenyears:itemGroup.name.nuggets"
+            },
+            "items": [
+              "hiddenyears:diamond_nugget",
+              "hiddenyears:stone_nugget",
+              "hiddenyears:coal_nugget",
+              "hiddenyears:redstone_nugget",
+              "hiddenyears:quartz_nugget",
+              "hiddenyears:lapis_nugget",
+              "hiddenyears:emerald_nugget",
+              "hiddenyears:copper_nugget",
+              "hiddenyears:netherite_nugget"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:diamond_dust",
+              "name": "hiddenyears:itemGroup.name.dusts"
+            },
+            "items": [
+              "hiddenyears:diamond_dust",
+              "hiddenyears:coal_dust",
+              "hiddenyears:quartz_dust",
+              "hiddenyears:lapis_dust",
+              "hiddenyears:emerald_dust",
+              "hiddenyears:copper_dust",
+              "hiddenyears:iron_dust",
+              "hiddenyears:gold_dust",
+              "hiddenyears:netherite_dust"
+            ]
+          }]
       }
     ]
   }

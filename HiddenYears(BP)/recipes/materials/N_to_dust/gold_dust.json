@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:gold_dust"
+    },
+    "tags": ["crafting_table"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:gold_nugget"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:gold_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:gold_dust",
+      "count": 9
+    }
+  }
+}

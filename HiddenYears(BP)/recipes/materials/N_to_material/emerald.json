@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:emerald_from_nugget"
+    },
+    "tags": ["crafting_table"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "hiddenyears:emerald_nugget",
+        "count": 9
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:emerald_nugget"
+      }
+    ],
+    "result": {
+      "item": "minecraft:emerald"
+    }
+  }
+}
