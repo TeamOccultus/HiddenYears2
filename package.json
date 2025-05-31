@@ -18,6 +18,8 @@
     "@minecraft/server": "2.1.0-beta.1.21.90-preview.20",
     "@minecraft/server-ui": "2.1.0-beta.1.21.90-preview.20",
     "@minecraft/vanilla-data": "1.21.90-preview.20",
+    "@starock/component": "0.1.0",
+    "@starock/core": "0.4.2",
     "typescript": "^5.8.3"
   },
   "devDependencies": {

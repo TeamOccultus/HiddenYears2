@@ -1,16 +1,13 @@
 import { Player, RawMessage, system } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { UI } from "../../tenon/common/ui";
 import {
   adventurerNoteBody,
   adventurerNoteTitle,
 } from "../../data/AdventurerNote";
 
-export class AdventurerNote extends UI {
-  constructor(readonly id: string) {
-    super(id);
-  }
-  display(player: Player, backTo?: UI[]) {
+export class AdventurerNote {
+  constructor(readonly id: string) {}
+  display(player: Player, backTo?: AdventurerNote[]) {
     const contentForm = new ActionFormData()
       .title({ translate: "article.adventurer_note.title" })
       .body({
@@ -24,6 +21,7 @@ export class AdventurerNote extends UI {
         { translate: "article.adventurer_note.chapter1.title" },
         "textures/items/feather"
       );
+    // @ts-ignore
     contentForm.show(player).then((response) => {
       if (response.canceled || response.selection === undefined) {
         if (backTo) backTo[0].display(player, backTo.slice(1));
@@ -38,6 +36,7 @@ export class AdventurerNote extends UI {
         .title(title)
         .body(body)
         .button({ translate: "gui.back" });
+      // @ts-ignore
       chapterForm.show(player).then((response) => {
         if (response.selection === 0) {
           this.display(player, backTo);
