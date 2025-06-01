@@ -1,7 +1,9 @@
 import { ItemStack } from "@minecraft/server";
 
 export class CrusherRecipeManager {
-  static ingredients: Set<string> = new Set();
+  static ingredients: string[] = [
+    "minecraft:diamond"
+  ];
   static recipes: CrusherRecipe[] = [
     {
       ingredient: "minecraft:diamond",
@@ -19,7 +21,7 @@ export class CrusherRecipeManager {
   }
   static addRecipe(recipe: CrusherRecipe) {
     this.recipes.push(recipe);
-    this.ingredients.add(recipe.ingredient);
+    this.ingredients.push(recipe.ingredient);
   }
 }
 

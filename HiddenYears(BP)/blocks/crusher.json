@@ -11,6 +11,7 @@
       }
     },
     "components": {
+      "starock:interact": {},
       "hiddenyears:destroy_condition": {
         "tag": "minecraft:is_pickaxe",
         "lootTable": "blocks/crusher"

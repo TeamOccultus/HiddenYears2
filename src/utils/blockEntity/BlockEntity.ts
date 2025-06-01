@@ -30,7 +30,10 @@ export class BlockEntity {
   }
   static destory(data: BlockEntityData) {
     const item = this.getStoredItem(data);
-    if (!item) return;
+    if (!item) {
+      this.remove(data);
+      return
+    };
     if (Array.isArray(item)) {
       item.forEach((i) => {
         data.dimension.spawnItem(i, data.entity.location);
@@ -45,7 +48,19 @@ export class BlockEntity {
       world.scoreboard.removeObjective(data.scoreboardObjective);
     data.entity?.remove();
   }
-  static getStoredItem(data: BlockEntityData): ItemStack | ItemStack[] | undefined {
+  static clearStoredItem(data: BlockEntityData) {
+    if (data.entity.hasComponent("inventory")) {
+      const container = data.entity.getComponent("inventory")?.container;
+      if (!container) return;
+      container.clearAll();
+      return;
+    } else {
+      data.entity.setDynamicProperty("starock:storedItem");
+    }
+  }
+  static getStoredItem(
+    data: BlockEntityData
+  ): ItemStack | ItemStack[] | undefined {
     if (data.entity.hasComponent("inventory")) {
       const container = data.entity.getComponent("inventory")?.container;
       if (!container) return;
@@ -61,13 +76,11 @@ export class BlockEntity {
     const rawData = data.entity.getDynamicProperty("starock:storedItem");
     if (typeof rawData !== "string") return;
     const itemData = JSON.parse(rawData);
-    if (itemData instanceof ItemStackData) {
-      const item = new ItemStack(itemData.typeId, itemData.amount);
-      if (!item.hasComponent("durability")) return item;
-      if (!itemData.damage) return item;
-      item.getComponent("durability")!.damage = itemData.damage;
-      return item;
-    }
+    const item = new ItemStack(itemData.typeId, itemData.amount);
+    if (!item.hasComponent("durability")) return item;
+    if (!itemData.damage) return item;
+    item.getComponent("durability")!.damage = itemData.damage;
+    return item;
   }
   static storeWithContainer(
     data: BlockEntityData,
@@ -89,7 +102,11 @@ export class BlockEntity {
       amount: item.amount,
       damage: item.getComponent("durability")?.damage,
     };
-    data.entity.setDynamicProperty("starock:storedItem", itemData.toString());
+    data.entity.setDynamicProperty(
+      "starock:storedItem",
+      JSON.stringify(itemData)
+    );
+    console.log(JSON.stringify(itemData));
   }
 }
 

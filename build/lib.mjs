@@ -53,8 +53,7 @@ export function buildScript(callback) {
       outfile: "./HiddenYears(BP)/scripts/index.js",
       format: "esm",
       external: ["@minecraft/server", "@minecraft/server-ui"],
-      minify: true,
-      treeShaking: true,
+      minify: false,
       keepNames: true,
     });
     callback?.();

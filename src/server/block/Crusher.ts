@@ -2,6 +2,7 @@ import { BlockWithEntity } from "../../utils/blockEntity/BlockWithEntity";
 import { BlockEntity } from "../../utils/blockEntity/BlockEntity";
 import {
   Block,
+  ItemStack,
   PlayerInteractWithBlockAfterEvent,
   world,
 } from "@minecraft/server";
@@ -16,30 +17,34 @@ export class Crusher extends BlockWithEntity {
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {
     const [item, entityData, player] = [
       event.beforeItemStack,
-      this.getBlockEntity(event.block),
+      this.getBlockEntityData(event.block),
       event.player,
     ];
     if (!item) return;
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
+    if(Array.isArray(filledItem)) return;
+    console.warn(filledItem?.typeId);
     if (!filledItem) {
-      if (!CrusherRecipeManager.ingredients.has(item?.typeId)) {
+      if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
         player.sendMessage({ translate: "hy.message.cant_be_crushed" });
         return;
       }
-      BlockEntity.storeItem(item, entityData);
+      BlockEntity.storeItem(new ItemStack(item.typeId), entityData);
+      item.amount = item.amount - 1;
+      EntityUtils.setEquipmentItem(player, item);
+      player.playSound("fall.stone");
       return;
     }
-    if (EntityUtils.getEquipmentItem(player)?.hasTag("minecraft:is_pickaxe")) {
-      const storedItem = BlockEntity.getStoredItem(entityData);
-      if (!storedItem) return;
-      if (Array.isArray(storedItem)) return;
-      const output = CrusherRecipeManager.getResult(storedItem.typeId);
+    if (item?.hasTag("minecraft:is_pickaxe")) {
+      const output = CrusherRecipeManager.getResult(filledItem.typeId);
       if (!output) return;
       player.dimension.spawnItem(
         output,
         Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 })
       );
+      player.playSound("random.anvil_use")
+      BlockEntity.clearStoredItem(entityData);
     }
   }
 }
