@@ -1,0 +1,51 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:crusher",
+      "menu_category": {
+        "category": "items"
+      },
+      "states": {
+        "hiddenyears:is_filled": [false, true]
+      }
+    },
+    "components": {
+      "hiddenyears:destroy_condition": {
+        "tag": "minecraft:is_pickaxe",
+        "lootTable": "blocks/crusher"
+      },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:light_emission": 8,
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "hiddenyears:crusher_top"
+        },
+        "down": { "texture": "hiddenyears:crusher_bottom" },
+        "north": { "texture": "hiddenyears:crusher_side" },
+        "south": { "texture": "hiddenyears:crusher_side" },
+        "west": { "texture": "hiddenyears:crusher_other_side" },
+        "east": { "texture": "hiddenyears:crusher_top" }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 12,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 2
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2.5
+      },
+      "minecraft:map_color": "#999999",
+      "tag:metal": {},
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}
