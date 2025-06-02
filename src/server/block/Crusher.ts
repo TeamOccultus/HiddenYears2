@@ -5,7 +5,7 @@ import {
   PlayerInteractWithBlockAfterEvent,
   world,
 } from "@minecraft/server";
-import { CrusherRecipeManager } from "../../data/recipe/CrusherRecipe";
+import { CrusherRecipeManager } from "../recipe/CrusherRecipeManager";
 import { EntityUtils } from "@starock/entity";
 import { Vector3Utils } from "@minecraft/math";
 
