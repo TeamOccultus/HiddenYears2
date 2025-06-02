@@ -1,5 +1,4 @@
-import { BlockWithEntity } from "../../utils/blockEntity/BlockWithEntity";
-import { BlockEntity } from "../../utils/blockEntity/BlockEntity";
+import { BlockEntity, BlockWithEntity } from "@starock/entity";
 import {
   Block,
   ItemStack,

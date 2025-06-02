@@ -16,12 +16,13 @@
   "dependencies": {
     "@minecraft/debug-utilities": "1.0.0-beta.1.21.90-preview.20",
     "@minecraft/math": "^2.2.6",
-    "@minecraft/server": "2.1.0-beta.1.21.90-preview.20",
-    "@minecraft/server-ui": "2.1.0-beta.1.21.90-preview.20",
+    "@minecraft/server": "2.1.0-beta.1.21.90-preview.27",
+    "@minecraft/server-ui": "2.1.0-beta.1.21.90-preview.27",
     "@minecraft/vanilla-data": "1.21.90-preview.20",
-    "@starock/component": "0.1.0",
-    "@starock/core": "0.4.2",
-    "@starock/entity": "^0.4.0",
+    "@starock/common": "^0.1.2",
+    "@starock/component": "0.1.2",
+    "@starock/core": "0.4.3",
+    "@starock/entity": "^0.5.0",
     "typescript": "^5.8.3"
   },
   "devDependencies": {
