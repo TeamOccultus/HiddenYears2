@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:loose_ores/iron"
+    },
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:loose_iron_ore",
+        "may_replace": ["iron_ore", "minecraft:stone"]
+      }
+    ]
+  }
+}
