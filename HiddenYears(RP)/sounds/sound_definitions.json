@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.60",
+  "sound_definitions": {
+    "music.boss.ruby": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/music/boss/ruby",
+          "stream": true
+        }
+      ]
+    },
+    "music.boss.pharaohs_ghost": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/music/boss/pharaohs_ghost",
+          "stream": true
+        }
+      ]
+    },
+    "music.biome.cherry_plains": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/music/biome/plain_thoughts",
+          "stream": true
+        }
+      ]
+    }
+  }
+}
