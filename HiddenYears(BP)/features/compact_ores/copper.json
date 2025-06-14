@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:compact_ores/copper"
+    },
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:compact_copper_ore",
+        "may_replace": [
+          "deepslate_copper_ore",
+          "deepslate"
+        ]
+      }
+    ]
+  }
+}

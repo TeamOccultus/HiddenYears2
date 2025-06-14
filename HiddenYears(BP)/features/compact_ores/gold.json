@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:compact_ores/gold"
+    },
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:compact_gold_ore",
+        "may_replace": ["deepslate_gold_ore","deepslate"]
+      }
+    ]
+  }
+}
