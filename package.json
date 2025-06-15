@@ -24,7 +24,7 @@
     "@starock/core": "0.4.4",
     "@starock/entity": "^0.5.1",
     "@starock/format": "^0.4.1",
-    "@starock/record": "^0.4.2",
+    "@starock/record": "0.4.4",
     "typescript": "^5.8.3"
   },
   "devDependencies": {

@@ -11,7 +11,7 @@
       "minecraft:display_name": {
         "value": "%item.record.name\n§7%item.record_plains.desc" //注意这里只是给唱片加一个本地化介绍键名
       },
-      "minecraft:icon": "record_13",
+      "minecraft:icon": "hiddenyears:record_plains",
       "minecraft:rarity": "uncommon", 
       "minecraft:record": {
         "duration": 95,

@@ -10,14 +10,14 @@ export function registryRecord() {
   new Record(
     "hiddenyears:record_ruby",
     "music.boss.ruby",
-    "Fighting, Lighting",
+    "The Hidden Finale",
     "FREIRC"
   );
   new Record(
     "hiddenyears:record_pharaohs",
     "music.boss.pharaohs_ghost",
     "Song of Ancient Desert",
-    "FREIRC"
+    "3xLnw"
   );
   RecordManager.initialize();
 }
