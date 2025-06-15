@@ -1,4 +1,4 @@
-import { CrusherRecipe } from "../../server/recipe/CrusherRecipeType";
+import { CrusherRecipe } from "./CrusherRecipeType";
 
 /**
  * 粉碎机内置配方

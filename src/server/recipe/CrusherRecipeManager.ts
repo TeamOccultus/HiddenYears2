@@ -1,6 +1,9 @@
 import { ItemStack, system } from "@minecraft/server";
 import { CrusherRecipe } from "./CrusherRecipeType";
-import { crusherIngredientData, crusherRecipesData } from "../../data/recipe/crusherRecipe";
+import {
+  crusherIngredientData,
+  crusherRecipesData,
+} from "./CrusherRecipeData";
 
 export class CrusherRecipeManager {
   static ingredients: string[] = crusherIngredientData;
@@ -23,13 +26,13 @@ export class CrusherRecipeManager {
    * /scriptevent hiddenyears:addCrusherRecipe {"ingredient":"minecraft:brick_block","output":"minecraft:brick","amount":12}
    */
   static openToPlugin() {
-    system.afterEvents.scriptEventReceive.subscribe(arg=>{
-      if(arg.id!=="hiddenyears:addCrusherRecipe") return;
+    system.afterEvents.scriptEventReceive.subscribe((arg) => {
+      if (arg.id !== "hiddenyears:addCrusherRecipe") return;
       const data = JSON.parse(arg.message) as CrusherRecipe;
       this.addRecipe(data);
-      console.log(`[隐藏之年] 已添加新的碎石机配方: ${data.ingredient} -> ${data.output} x${data.amount}`);
-    })
+      console.log(
+        `[隐藏之年] 已添加新的碎石机配方: ${data.ingredient} -> ${data.output} x${data.amount}`
+      );
+    });
   }
 }
-
-
