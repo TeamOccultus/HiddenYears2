@@ -1,0 +1,18 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:sandstone_ores/copper"
+    },
+    "count": 6,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:sandstone_copper_ore",
+        "may_replace": [
+          "copper_ore",
+          "minecraft:sandstone"
+        ]
+      }
+    ]
+  }
+}

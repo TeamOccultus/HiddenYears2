@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:sandstone_ores/iron"
+    },
+    "count": 6,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:sandstone_iron_ore",
+        "may_replace": ["iron_ore", "minecraft:sandstone"]
+      }
+    ]
+  }
+}

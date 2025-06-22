@@ -31,7 +31,8 @@
       },
       {
         "category_name": "items",
-        "groups":[{
+        "groups": [
+          {
             "group_identifier": {
               "icon": "hiddenyears:diamond_nugget",
               "name": "hiddenyears:itemGroup.name.nuggets"
@@ -64,7 +65,56 @@
               "hiddenyears:gold_dust",
               "hiddenyears:netherite_dust"
             ]
-          }]
+          }
+        ]
+      },
+      {
+        "category_name": "nature",
+        "groups": [
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:compact_diamond_ore",
+              "name": "hiddenyears:itemGroup.name.compactOres"
+            },
+            "items": [
+              "hiddenyears:compact_diamond_ore",
+              "hiddenyears:compact_iron_ore",
+              "hiddenyears:compact_gold_ore",
+              "hiddenyears:compact_copper_ore",
+              "hiddenyears:compact_coal_ore",
+              "hiddenyears:compact_lapis_ore",
+              "hiddenyears:compact_emerald_ore",
+              "hiddenyears:compact_redstone_ore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:loose_diamond_ore",
+              "name": "hiddenyears:itemGroup.name.looseOres"
+            },
+            "items": [
+              "hiddenyears:loose_diamond_ore",
+              "hiddenyears:loose_iron_ore",
+              "hiddenyears:loose_gold_ore",
+              "hiddenyears:loose_copper_ore",
+              "hiddenyears:loose_coal_ore",
+              "hiddenyears:loose_lapis_ore",
+              "hiddenyears:loose_emerald_ore",
+              "hiddenyears:loose_redstone_ore"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:sandstone_coal_ore",
+              "name": "hiddenyears:itemGroup.name.sandstoneOres"
+            },
+            "items": [
+              "hiddenyears:sandstone_coal_ore",
+              "hiddenyears:sandstone_iron_ore",
+              "hiddenyears:sandstone_copper_ore"
+            ]
+          }
+        ]
       }
     ]
   }
