@@ -1,11 +1,9 @@
 import { registryNote } from "./server/registry/note";
 import { registryComponents } from "./server/registry/components";
 import { registryRecord } from "./server/registry/record";
-import { Crusher } from "./server/block/Crusher";
-import { CrusherRecipeManager } from "./server/recipe/CrusherRecipeManager";
+import { registryRecipe } from "./server/registry/recipe";
 
-new Crusher();
-CrusherRecipeManager.openToPlugin();
+registryRecipe();
 registryNote();
 registryComponents();
 registryRecord();
