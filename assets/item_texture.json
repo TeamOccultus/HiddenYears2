@@ -1,0 +1,123 @@
+{
+  "resource_pack_name": "HiddenYears2",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "hiddenyears:coal_dust": {
+      "textures": "textures/items/coal_dust"
+    },
+    "hiddenyears:coal_nugget": {
+      "textures": "textures/items/coal_nugget"
+    },
+    "hiddenyears:copper_dust": {
+      "textures": "textures/items/copper_dust"
+    },
+    "hiddenyears:copper_nugget": {
+      "textures": "textures/items/copper_nugget"
+    },
+    "hiddenyears:diamond_dust": {
+      "textures": "textures/items/diamond_dust"
+    },
+    "hiddenyears:diamond_nugget": {
+      "textures": "textures/items/diamond_nugget"
+    },
+    "hiddenyears:emerald_dust": {
+      "textures": "textures/items/emerald_dust"
+    },
+    "hiddenyears:emerald_nugget": {
+      "textures": "textures/items/emerald_nugget"
+    },
+    "hiddenyears:encyclopedia": {
+      "textures": "textures/items/encyclopedia"
+    },
+    "hiddenyears:gold_dust": {
+      "textures": "textures/items/gold_dust"
+    },
+    "hiddenyears:iron_dust": {
+      "textures": "textures/items/iron_dust"
+    },
+    "hiddenyears:lapis_dust": {
+      "textures": "textures/items/lapis_dust"
+    },
+    "hiddenyears:lapis_nugget": {
+      "textures": "textures/items/lapis_nugget"
+    },
+    "hiddenyears:medicine_1": {
+      "textures": "textures/items/medicine_1"
+    },
+    "hiddenyears:medicine_10": {
+      "textures": "textures/items/medicine_10"
+    },
+    "hiddenyears:medicine_11": {
+      "textures": "textures/items/medicine_11"
+    },
+    "hiddenyears:medicine_12": {
+      "textures": "textures/items/medicine_12"
+    },
+    "hiddenyears:medicine_13": {
+      "textures": "textures/items/medicine_13"
+    },
+    "hiddenyears:medicine_14": {
+      "textures": "textures/items/medicine_14"
+    },
+    "hiddenyears:medicine_2": {
+      "textures": "textures/items/medicine_2"
+    },
+    "hiddenyears:medicine_3": {
+      "textures": "textures/items/medicine_3"
+    },
+    "hiddenyears:medicine_4": {
+      "textures": "textures/items/medicine_4"
+    },
+    "hiddenyears:medicine_5": {
+      "textures": "textures/items/medicine_5"
+    },
+    "hiddenyears:medicine_6": {
+      "textures": "textures/items/medicine_6"
+    },
+    "hiddenyears:medicine_7": {
+      "textures": "textures/items/medicine_7"
+    },
+    "hiddenyears:medicine_8": {
+      "textures": "textures/items/medicine_8"
+    },
+    "hiddenyears:medicine_9": {
+      "textures": "textures/items/medicine_9"
+    },
+    "hiddenyears:netherite_dust": {
+      "textures": "textures/items/netherite_dust"
+    },
+    "hiddenyears:netherite_nugget": {
+      "textures": "textures/items/netherite_nugget"
+    },
+    "hiddenyears:quartz_dust": {
+      "textures": "textures/items/quartz_dust"
+    },
+    "hiddenyears:quartz_nugget": {
+      "textures": "textures/items/quartz_nugget"
+    },
+    "hiddenyears:record_pharaohs": {
+      "textures": "textures/items/record_pharaohs"
+    },
+    "hiddenyears:record_plains": {
+      "textures": "textures/items/record_plains"
+    },
+    "hiddenyears:record_ruby": {
+      "textures": "textures/items/record_ruby"
+    },
+    "hiddenyears:redstone_nugget": {
+      "textures": "textures/items/redstone_nugget"
+    },
+    "hiddenyears:ruby": {
+      "textures": "textures/items/ruby"
+    },
+    "hiddenyears:ruby_apple": {
+      "textures": "textures/items/ruby_apple"
+    },
+    "hiddenyears:ruby_runes": {
+      "textures": "textures/items/ruby_runes"
+    },
+    "hiddenyears:stone_nugget": {
+      "textures": "textures/items/stone_nugget"
+    }
+  }
+}

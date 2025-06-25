@@ -1,0 +1,101 @@
+{
+  "num_mip_levels": 4,
+  "padding": 8,
+  "resource_pack_name": "HiddenYears2",
+  "texture_name": "atlas.terrain",
+  "texture_data": {
+    "hiddenyears:alchemy_table_bottom": {
+      "textures": "textures/blocks/alchemy_table_bottom"
+    },
+    "hiddenyears:alchemy_table_front": {
+      "textures": "textures/blocks/alchemy_table_front"
+    },
+    "hiddenyears:alchemy_table_side_a": {
+      "textures": "textures/blocks/alchemy_table_side_a"
+    },
+    "hiddenyears:alchemy_table_side_b": {
+      "textures": "textures/blocks/alchemy_table_side_b"
+    },
+    "hiddenyears:alchemy_table_side_c": {
+      "textures": "textures/blocks/alchemy_table_side_c"
+    },
+    "hiddenyears:alchemy_table_top": {
+      "textures": "textures/blocks/alchemy_table_top"
+    },
+    "hiddenyears:compact_copper_ore": {
+      "textures": "textures/blocks/compact_copper_ore"
+    },
+    "hiddenyears:compact_diamond_ore": {
+      "textures": "textures/blocks/compact_diamond_ore"
+    },
+    "hiddenyears:compact_emerald_ore": {
+      "textures": "textures/blocks/compact_emerald_ore"
+    },
+    "hiddenyears:compact_gold_ore": {
+      "textures": "textures/blocks/compact_gold_ore"
+    },
+    "hiddenyears:compact_iron_ore": {
+      "textures": "textures/blocks/compact_iron_ore"
+    },
+    "hiddenyears:compact_lapis_ore": {
+      "textures": "textures/blocks/compact_lapis_ore"
+    },
+    "hiddenyears:compact_redstone_ore": {
+      "textures": "textures/blocks/compact_redstone_ore"
+    },
+    "hiddenyears:crusher_bottom": {
+      "textures": "textures/blocks/crusher_bottom"
+    },
+    "hiddenyears:crusher_other_side": {
+      "textures": "textures/blocks/crusher_other_side"
+    },
+    "hiddenyears:crusher_side": {
+      "textures": "textures/blocks/crusher_side"
+    },
+    "hiddenyears:crusher_top": {
+      "textures": "textures/blocks/crusher_top"
+    },
+    "hiddenyears:deepslate_ruby_ore": {
+      "textures": "textures/blocks/deepslate_ruby_ore"
+    },
+    "hiddenyears:loose_copper_ore": {
+      "textures": "textures/blocks/loose_copper_ore"
+    },
+    "hiddenyears:loose_diamond_ore": {
+      "textures": "textures/blocks/loose_diamond_ore"
+    },
+    "hiddenyears:loose_emerald_ore": {
+      "textures": "textures/blocks/loose_emerald_ore"
+    },
+    "hiddenyears:loose_gold_ore": {
+      "textures": "textures/blocks/loose_gold_ore"
+    },
+    "hiddenyears:loose_iron_ore": {
+      "textures": "textures/blocks/loose_iron_ore"
+    },
+    "hiddenyears:loose_lapis_ore": {
+      "textures": "textures/blocks/loose_lapis_ore"
+    },
+    "hiddenyears:loose_redstone_ore": {
+      "textures": "textures/blocks/loose_redstone_ore"
+    },
+    "hiddenyears:ruby_ore": {
+      "textures": "textures/blocks/ruby_ore"
+    },
+    "hiddenyears:ruby_stone_bricks": {
+      "textures": "textures/blocks/ruby_stone_bricks"
+    },
+    "hiddenyears:sandstone_coal_ore": {
+      "textures": "textures/blocks/sandstone_coal_ore"
+    },
+    "hiddenyears:sandstone_copper_ore": {
+      "textures": "textures/blocks/sandstone_copper_ore"
+    },
+    "hiddenyears:sandstone_iron_ore": {
+      "textures": "textures/blocks/sandstone_iron_ore"
+    },
+    "hiddenyears:sand_with_gold_dust": {
+      "textures": "textures/blocks/sand_with_gold_dust"
+    }
+  }
+}

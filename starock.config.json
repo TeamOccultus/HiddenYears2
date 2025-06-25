@@ -1,0 +1,41 @@
+{
+  "name": "HiddenYears2",
+  "id": "hiddenyears",
+  "metadata": {
+    "description": "",
+    "author": "Team Occultus",
+    "version": "3.0.0-alpha.2"
+  },
+  "build": {
+    "behavior": "HiddenYears(BP)",
+    "resource": "HiddenYears(RP)",
+    "typescript": {
+      "enable": true,
+      "entryPoint": "src/index.ts",
+      "engine": "esbuild",
+      "output": "HiddenYears(BP)/scripts/index.js"
+    },
+    "output": "dist"
+  },
+  "asset": {
+    "type": "Starock",
+    "texture": "assets",
+    "lang": {
+      "path": "lang",
+      "type": "Json"
+    }
+  },
+  "deploy": {
+    "platform": "preview",
+    "sources": [
+      {
+        "path": "HiddenYears(BP)",
+        "type": "behavior"
+      },
+      {
+        "path": "HiddenYears(RP)",
+        "type": "resource"
+      }
+    ]
+  }
+}
