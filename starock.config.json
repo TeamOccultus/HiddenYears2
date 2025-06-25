@@ -19,7 +19,7 @@
   },
   "asset": {
     "type": "Starock",
-    "texture": "assets",
+    "texture": "assets/textures",
     "lang": {
       "path": "lang",
       "type": "Json"

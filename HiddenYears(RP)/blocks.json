@@ -2,5 +2,8 @@
   "format_version": [1, 20, 0],
   "hiddenyears:alchemy_table": {
     "sound": "metal"
+  },
+  "hiddenyears:ancient_suspicious_sand": {
+    "sound": "sand"
   }
 }

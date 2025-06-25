@@ -14,7 +14,7 @@
     "@minecraft/math": "^2.2.6",
     "@minecraft/server": "2.2.0-beta.1.21.100-preview.20",
     "@minecraft/server-ui": "2.1.0-beta.1.21.100-preview.20",
-    "@starock/cli": "^0.2.1",
+    "@starock/cli": "^0.2.2",
     "@starock/common": "^0.1.3",
     "@starock/core": "0.4.4",
     "@starock/entity": "^0.5.1",

@@ -32,6 +32,9 @@
     "hiddenyears:gold_dust": {
       "textures": "textures/items/gold_dust"
     },
+    "hiddenyears:gold_sand": {
+      "textures": "textures/items/gold_sand"
+    },
     "hiddenyears:iron_dust": {
       "textures": "textures/items/iron_dust"
     },

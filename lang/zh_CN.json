@@ -66,6 +66,8 @@
   "tile.hiddenyears:sandstone_iron_ore.name": "砂岩铁矿石",
   "tile.hiddenyears:sandstone_gold_ore.name": "砂岩金矿石",
   "tile.hiddenyears:sandstone_copper_ore.name": "砂岩铜矿石",
+  "tile.hiddenyears:ancient_suspicious_sand.name": "远古异沙",
+  "item.hiddenyears:gold_sand.name": "金砂",
   "item.record_plains.desc": "平原遐想 - FREIRC",
   "item.record_ruby.desc": "雷光的战曲 - FREIRC",
   "item.record_pharaohs.desc": "沙海古音 - 3xLnw",

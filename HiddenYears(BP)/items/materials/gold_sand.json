@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:gold_sand",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:gold_sand",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:dust"]
+      }
+    }
+  }
+}

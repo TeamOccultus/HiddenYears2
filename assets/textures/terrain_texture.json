@@ -22,6 +22,9 @@
     "hiddenyears:alchemy_table_top": {
       "textures": "textures/blocks/alchemy_table_top"
     },
+    "hiddenyears:ancient_suspicious_sand": {
+      "textures": "textures/blocks/ancient_suspicious_sand"
+    },
     "hiddenyears:compact_copper_ore": {
       "textures": "textures/blocks/compact_copper_ore"
     },
@@ -93,9 +96,6 @@
     },
     "hiddenyears:sandstone_iron_ore": {
       "textures": "textures/blocks/sandstone_iron_ore"
-    },
-    "hiddenyears:sand_with_gold_dust": {
-      "textures": "textures/blocks/sand_with_gold_dust"
     }
   }
 }
