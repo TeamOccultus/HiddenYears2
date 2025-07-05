@@ -7,6 +7,7 @@ import {
 import { OreBlock, InteractableBlock, BlcokRegistries } from "@starock/block";
 import { OreTypeComponent } from "../components/OreTypeComponent";
 import { ToolTypeComponent } from "../components/ToolTypeComponent";
+import { WeaponTypeComponent } from "../components/WeaponTypeComponent";
 
 /**
  * 注册自定义组件
@@ -15,6 +16,7 @@ export function registryComponents() {
   const [item, block] = [new ItemRegistries(), new BlcokRegistries()];
   new OreTypeComponent("hiddenyears:ore_type");
   new ToolTypeComponent("hiddenyears:tool_type");
+  new WeaponTypeComponent("hiddenyears:weapon_type");
   item.register(
     "hiddenyears:effective_food",
     new Food("hiddenyears:effective_food")
