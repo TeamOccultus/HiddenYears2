@@ -91,22 +91,4 @@ export let crusherRecipesData: CrusherRecipe[] = [
   },
 ];
 
-export let crusherIngredientData: string[] = [
-  "minecraft:diamond",
-  "minecraft:coal",
-  "minecraft:copper_ingot",
-  "minecraft:emerald",
-  "minecraft:lapis_lazuli",
-  "minecraft:netherite_ingot",
-  "minecraft:quartz",
-  "minecraft:stone",
-  "hiddenyears:coal_nugget",
-  "hiddenyears:copper_nugget",
-  "hiddenyears:diamond_nugget",
-  "hiddenyears:emerald_nugget",
-  "minecraft:gold_nugget",
-  "minecraft:iron_nugget",
-  "hiddenyears:lapis_nugget",
-  "hiddenyears:netherite_nugget",
-  "hiddenyears:quartz_nugget"
-]
+export let crusherIngredientData: string[] = crusherRecipesData.map((recipe) => recipe.ingredient);

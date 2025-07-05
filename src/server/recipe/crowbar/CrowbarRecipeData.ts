@@ -42,12 +42,4 @@ export let crowbarRecipesData: CrowbarRecipe[] = [
   },
 ];
 
-export let crowbarIngredientData: string[] = [
-  "minecraft:diamond_block",
-  "minecraft:copper_block",
-  "minecraft:emerald_block",
-  "minecraft:lapis_block",
-  "minecraft:netherite_block",
-  "minecraft:gold_block",
-  "minecraft:iron_block",
-];
+export let crowbarIngredientData: string[] = crowbarRecipesData.map((recipe) => recipe.ingredient);

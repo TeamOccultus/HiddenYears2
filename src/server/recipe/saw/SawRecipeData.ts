@@ -1,18 +1,5 @@
-import { ItemStack } from "@minecraft/server";
 import { SawRecipe } from "./SawRecipeType";
 import { Random } from "@starock/math";
-
-export const sawIngredientData: string[] = [
-  "minecraft:oak_log",
-  "minecraft:birch_log",
-  "minecraft:spruce_log",
-  "minecraft:jungle_log",
-  "minecraft:acacia_log",
-  "minecraft:dark_oak_log",
-  "minecraft:crimson_stem",
-  "minecraft:warped_stem",
-  "minecraft:pale_oak_log",
-];
 
 export const sawRecipesData: SawRecipe[] = [
   {
@@ -61,3 +48,5 @@ export const sawRecipesData: SawRecipe[] = [
     amount: Random.integer(4,1),
   }
 ]
+
+export const sawIngredientData: string[] = sawRecipesData.map((recipe) => recipe.ingredient);
