@@ -9,7 +9,10 @@
     },
     "components": {
       "minecraft:icon": "hiddenyears:ruby",
-      "minecraft:rarity": "uncommon"
+      "minecraft:rarity": "uncommon",
+      "hiddenyears:tool_type": {
+        "tool_type": "saw"
+      }
     }
   }
 }
