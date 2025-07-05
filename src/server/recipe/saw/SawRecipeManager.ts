@@ -1,5 +1,5 @@
 import { ItemStack, system } from "@minecraft/server";
-import { CrusherRecipe } from "./CrusherRecipeType";
+import { CrusherRecipe } from "../crusher/CrusherRecipeType";
 import {
   sawIngredientData,
   sawRecipesData,

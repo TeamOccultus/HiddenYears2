@@ -3,7 +3,7 @@ import {
   ItemStack,
   PlayerInteractWithBlockAfterEvent,
 } from "@minecraft/server";
-import { CrusherRecipeManager } from "../recipe/CrusherRecipeManager";
+import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
 import { EntityUtils } from "@starock/entity";
 import { Vector3Utils } from "@starock/math";
 
