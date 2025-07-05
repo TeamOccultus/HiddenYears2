@@ -4,7 +4,7 @@ import { CrusherRecipeManager } from "../recipe/CrusherRecipeManager";
 /**
  * 注册配方
  */
-export function registryRecipe() {
+export function registryCustomRecipe() {
   new Crusher();
   CrusherRecipeManager.openToPlugin();
 }

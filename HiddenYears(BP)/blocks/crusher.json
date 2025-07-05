@@ -41,9 +41,10 @@
     ],
     "components": {
       "hiddenyears:interact": {},
-      "hiddenyears:destroy_condition": {
-        "tag": "minecraft:is_pickaxe",
-        "lootTable": "blocks/crusher"
+      "hiddenyears:custom_ore": {
+        "itemTier": "stone",
+        "lootTable": "blocks/crusher",
+        "exp": 0
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {

@@ -8,9 +8,10 @@
       }
     },
     "components": {
-      "hiddenyears:destroy_condition": {
-        "tag": "minecraft:is_pickaxe",
-        "lootTable": "blocks/alchemy_table"
+      "hiddenyears:custom_ore": {
+        "itemTier": "stone",
+        "lootTable": "blocks/alchemy_table",
+        "exp": 0
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:light_emission": 8,

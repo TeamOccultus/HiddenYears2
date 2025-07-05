@@ -1,10 +1,12 @@
-import { registryNote } from "./server/registry/note";
+import { registryAdventurerNote } from "./server/registry/note";
 import { registryComponents } from "./server/registry/components";
-import { registryRecord } from "./server/registry/record";
-import { registryRecipe } from "./server/registry/recipe";
+import { registryMusicDisc } from "./server/registry/record";
+import { registryCustomRecipe } from "./server/registry/recipe";
+import { initialize } from "./server/initialize";
 
-registryRecipe();
-registryNote();
+initialize();
+registryCustomRecipe();
+registryAdventurerNote();
 registryComponents();
-registryRecord();
+registryMusicDisc();
 console.log("Hello World!");

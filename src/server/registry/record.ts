@@ -1,6 +1,6 @@
 import { Record, RecordManager } from "@starock/record";
 
-export function registryRecord() {
+export function registryMusicDisc() {
   new Record(
     "hiddenyears:record_plains",
     "music.biome.cherry_plains",
