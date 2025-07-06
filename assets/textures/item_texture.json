@@ -2,6 +2,45 @@
   "resource_pack_name": "HiddenYears2",
   "texture_name": "atlas.items",
   "texture_data": {
+    "hiddenyears:bone_axe": {
+      "textures": "textures/items/bone_axe"
+    },
+    "hiddenyears:bone_boots": {
+      "textures": "textures/items/bone_boots"
+    },
+    "hiddenyears:bone_chestplate": {
+      "textures": "textures/items/bone_chestplate"
+    },
+    "hiddenyears:bone_dagger": {
+      "textures": "textures/items/bone_dagger"
+    },
+    "hiddenyears:bone_hammer": {
+      "textures": "textures/items/bone_hammer"
+    },
+    "hiddenyears:bone_helmet": {
+      "textures": "textures/items/bone_helmet"
+    },
+    "hiddenyears:bone_hoe": {
+      "textures": "textures/items/bone_hoe"
+    },
+    "hiddenyears:bone_leggings": {
+      "textures": "textures/items/bone_leggings"
+    },
+    "hiddenyears:bone_pickaxe": {
+      "textures": "textures/items/bone_pickaxe"
+    },
+    "hiddenyears:bone_saw": {
+      "textures": "textures/items/bone_saw"
+    },
+    "hiddenyears:bone_shovel": {
+      "textures": "textures/items/bone_shovel"
+    },
+    "hiddenyears:bone_sledgehammer": {
+      "textures": "textures/items/bone_sledgehammer"
+    },
+    "hiddenyears:bone_sword": {
+      "textures": "textures/items/bone_sword"
+    },
     "hiddenyears:coal_dust": {
       "textures": "textures/items/coal_dust"
     },
