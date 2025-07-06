@@ -31,7 +31,7 @@ export function registryComponents() {
   );
   block.register(
     "hiddenyears:custom_interactable_block",
-    new InteractableBlock("hiddenyears:custom_interactable_block")
+    new InteractableBlock("hiddenyears:interactable")
   );
   block.register(
     "hiddenyears:custom_ore",

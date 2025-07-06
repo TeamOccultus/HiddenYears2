@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.60",
+  "format_version": "1.21.90",
   "minecraft:item": {
     "description": {
       "identifier": "hiddenyears:bone_sword",
@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "hiddenyears:custom_weapons": {
+      "hiddenyears:custom_weapon": {
         "type": "sword"
       },
       "minecraft:can_destroy_in_creative": false,
@@ -33,7 +33,7 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy:smaragdus_sword",
+      "minecraft:icon": "hiddenyears:bone_sword",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
@@ -51,7 +51,8 @@
         "tags": [
           "minecraft:is_sword",
           "minecraft:is_tool",
-          "hiddenyears:bone_tier", "minecraft:stone_tier"
+          "hiddenyears:bone_tier",
+          "minecraft:stone_tier"
         ]
       }
     }

@@ -8,7 +8,7 @@
       "identifier": "hiddenyears:bone_hammer"
     },
     "components": {
-      "hiddenyears:custom_tools": {
+      "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },
       "hiddenyears:tool_type": {

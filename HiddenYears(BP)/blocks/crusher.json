@@ -40,7 +40,7 @@
       }
     ],
     "components": {
-      "hiddenyears:interact": {},
+      "hiddenyears:interactable": {},
       "hiddenyears:custom_ore": {
         "itemTier": "stone",
         "lootTable": "blocks/crusher",

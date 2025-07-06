@@ -8,7 +8,7 @@
       "identifier": "hiddenyears:bone_sledgehammer"
     },
     "components": {
-      "hiddenyears:custom_tools": {
+      "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },
       "hiddenyears:weapon_type": {

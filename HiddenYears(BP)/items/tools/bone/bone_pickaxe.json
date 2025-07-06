@@ -9,7 +9,7 @@
       "identifier": "hiddenyears:bone_pickaxe"
     },
     "components": {
-      "hiddenyears:custom_tools": {
+      "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },
       "minecraft:max_stack_size": 1,
