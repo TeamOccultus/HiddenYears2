@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "hiddenyears:stone_to_refined_rock"
+    },
+    "input": "minecraft:stone",
+    "output": "hiddenyears:refined_rock_ingot",
+    "tags": ["furnace", "blast_furnace"],
+    "unlock": [
+      {
+        "item": "hiddenyears:refined_rock_ingot"
+      },
+      {
+        "item": "minecraft:stone"
+      }
+    ]
+  }
+}

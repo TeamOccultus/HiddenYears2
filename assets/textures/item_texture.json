@@ -149,6 +149,42 @@
     "hiddenyears:redstone_nugget": {
       "textures": "textures/items/redstone_nugget"
     },
+    "hiddenyears:refined_rock_axe": {
+      "textures": "textures/items/refined_rock_axe"
+    },
+    "hiddenyears:refined_rock_dagger": {
+      "textures": "textures/items/refined_rock_dagger"
+    },
+    "hiddenyears:refined_rock_dust": {
+      "textures": "textures/items/refined_rock_dust"
+    },
+    "hiddenyears:refined_rock_hammer": {
+      "textures": "textures/items/refined_rock_hammer"
+    },
+    "hiddenyears:refined_rock_hoe": {
+      "textures": "textures/items/refined_rock_hoe"
+    },
+    "hiddenyears:refined_rock_ingot": {
+      "textures": "textures/items/refined_rock_ingot"
+    },
+    "hiddenyears:refined_rock_nugget": {
+      "textures": "textures/items/refined_rock_nugget"
+    },
+    "hiddenyears:refined_rock_pickaxe": {
+      "textures": "textures/items/refined_rock_pickaxe"
+    },
+    "hiddenyears:refined_rock_saw": {
+      "textures": "textures/items/refined_rock_saw"
+    },
+    "hiddenyears:refined_rock_shovel": {
+      "textures": "textures/items/refined_rock_shovel"
+    },
+    "hiddenyears:refined_rock_sledgehammer": {
+      "textures": "textures/items/refined_rock_sledgehammer"
+    },
+    "hiddenyears:refined_rock_sword": {
+      "textures": "textures/items/refined_rock_sword"
+    },
     "hiddenyears:ruby": {
       "textures": "textures/items/ruby"
     },

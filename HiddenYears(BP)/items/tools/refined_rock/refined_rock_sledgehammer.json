@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "menu_category": {
+        "category": "equipment"
+      },
+      "identifier": "hiddenyears:refined_rock_sledgehammer"
+    },
+    "components": {
+      "hiddenyears:custom_tools": {
+        "type": "pickaxe"
+      },
+      "hiddenyears:weapon_type": {
+        "weapon_type": "sledgehammer"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 96
+      },
+      "minecraft:icon": "hiddenyears:refined_rock_sledgehammer",
+      "minecraft:damage": 7,
+      "minecraft:enchantable": {
+        "value": 1,
+        "slot": "sword"
+      },
+      "minecraft:tags": {
+        "tags": ["hiddenyears:is_sledgehammer", "hiddenyears:refined_rock_tier", "minecraft:stone_tier"]
+      }
+    }
+  }
+}

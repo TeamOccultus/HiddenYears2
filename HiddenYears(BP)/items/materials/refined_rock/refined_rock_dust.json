@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:refined_rock_dust",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:refined_rock_dust",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:refined_rock_material", "hiddenyears:dust"]
+      }
+    }
+  }
+}

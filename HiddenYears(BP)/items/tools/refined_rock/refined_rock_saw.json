@@ -1,0 +1,56 @@
+{
+  "format_version": "1.21.60",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:refined_rock_saw",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_tools": {
+        "type": "axe"
+      },
+      "hiddenyears:weapon_type": {
+        "weapon_type": "saw"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 120
+      },
+      "minecraft:damage": 4,
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "axe"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hiddenyears:refined_rock_saw"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          },
+          {
+            "items": ["hiddenyears:refined_rock_ingot"],
+            "repair_amount": "query.max_durability * 0.25"
+          }
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_axe_item_destructible')"
+            },
+            "speed": 6
+          }
+        ]
+      },
+      "minecraft:icon": "hiddenyears:refined_rock_saw",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:is_saw", "hiddenyears:refined_rock_tier", "minecraft:stone_tier"]
+      }
+    }
+  }
+}
