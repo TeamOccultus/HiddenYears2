@@ -25,7 +25,7 @@
       },
       "minecraft:surface_builder": {
         "builder": {
-          "type": "surface_parameters",
+          "type": "minecraft:overworld",
           "sea_floor_depth": 7, //海洋深度大伙都填7
           "sea_floor_material": "minecraft:gravel", //海底地基为沙砾，你改掉也不是不行
           "foundation_material": "minecraft:stone", //这一般是泥土下面的方块，平常是石头，你也可以改

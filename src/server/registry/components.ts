@@ -1,5 +1,5 @@
 import {
-  Food,
+  FoodMaterial,
   ItemRegistries,
   ToolMaterial,
   WeaponMaterial,
@@ -19,7 +19,7 @@ export function registryComponents() {
   new WeaponTypeComponent("hiddenyears:weapon_type");
   item.register(
     "hiddenyears:effective_food",
-    new Food("hiddenyears:effective_food")
+    new FoodMaterial("hiddenyears:effective_food")
   );
   item.register(
     "hiddenyears:custom_tool",
