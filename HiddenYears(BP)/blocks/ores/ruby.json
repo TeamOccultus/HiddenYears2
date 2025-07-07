@@ -58,7 +58,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 2.5
       },
-      "minecraft:map_color": "#999999",
+      "minecraft:map_color": "#565656",
       "tag:metal": {},
       "tag:minecraft:iron_tier_destructible": {},
       "tag:minecraft:is_pickaxe_item_destructible": {}

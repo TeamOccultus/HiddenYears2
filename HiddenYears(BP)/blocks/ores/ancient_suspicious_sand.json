@@ -28,7 +28,7 @@
         "identifier": "minecraft:geometry.full_block"
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 3.0
+        "explosion_resistance": 0.5
       },
       "minecraft:map_color": "#F7E9A3",
       "minecraft:loot": "loot_tables/blocks/ancient_suspicious_sand.json"

@@ -53,12 +53,12 @@
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
             },
-            "destroy_speed": 0.6
+            "destroy_speed": 2.0
           }
         ]
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 3.0
+        "explosion_resistance": 5.0
       },
       "minecraft:map_color": "#565656",
       "tag:minecraft:stone_pick_diggable": {}

@@ -68,7 +68,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 3.0
       },
-      "minecraft:map_color": "#565656",
+      "minecraft:map_color": "#F7E9A3",
       "tag:minecraft:stone_pick_diggable": {}
     }
   }
