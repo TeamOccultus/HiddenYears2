@@ -50,6 +50,11 @@ export let crusherRecipesData: CrusherRecipe[] = [
     amount: 15,
   },
   {
+    ingredient: "hiddenyears:originite_ingot",
+    output: "hiddenyears:originite_nugget",
+    amount: 15,
+  },
+  {
     ingredient: "minecraft:quartz",
     output: "hiddenyears:quartz_nugget",
     amount: 15,
@@ -112,6 +117,11 @@ export let crusherRecipesData: CrusherRecipe[] = [
   {
     ingredient: "hiddenyears:crystal_nugget",
     output: "hiddenyears:crystal_dust",
+    amount: 5,
+  },
+  {
+    ingredient: "hiddenyears:originite_nugget",
+    output: "hiddenyears:originite_dust",
     amount: 5,
   },
   {

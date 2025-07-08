@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:originite_dust"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:originite_nugget"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:originite_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:originite_dust",
+      "count": 9
+    }
+  }
+}
