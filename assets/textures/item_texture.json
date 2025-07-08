@@ -137,6 +137,9 @@
     "hiddenyears:quartz_nugget": {
       "textures": "textures/items/quartz_nugget"
     },
+    "hiddenyears:raw_silver": {
+      "textures": "textures/items/raw_silver"
+    },
     "hiddenyears:record_pharaohs": {
       "textures": "textures/items/record_pharaohs"
     },
@@ -193,6 +196,66 @@
     },
     "hiddenyears:ruby_runes": {
       "textures": "textures/items/ruby_runes"
+    },
+    "hiddenyears:silver_axe": {
+      "textures": "textures/items/silver_axe"
+    },
+    "hiddenyears:silver_dagger": {
+      "textures": "textures/items/silver_dagger"
+    },
+    "hiddenyears:silver_hammer": {
+      "textures": "textures/items/silver_hammer"
+    },
+    "hiddenyears:silver_hoe": {
+      "textures": "textures/items/silver_hoe"
+    },
+    "hiddenyears:silver_ingot": {
+      "textures": "textures/items/silver_ingot"
+    },
+    "hiddenyears:silver_pickaxe": {
+      "textures": "textures/items/silver_pickaxe"
+    },
+    "hiddenyears:silver_saw": {
+      "textures": "textures/items/silver_saw"
+    },
+    "hiddenyears:silver_shovel": {
+      "textures": "textures/items/silver_shovel"
+    },
+    "hiddenyears:silver_sledgehammer": {
+      "textures": "textures/items/silver_sledgehammer"
+    },
+    "hiddenyears:silver_sword": {
+      "textures": "textures/items/silver_sword"
+    },
+    "hiddenyears:steel_axe": {
+      "textures": "textures/items/steel_axe"
+    },
+    "hiddenyears:steel_dagger": {
+      "textures": "textures/items/steel_dagger"
+    },
+    "hiddenyears:steel_hammer": {
+      "textures": "textures/items/steel_hammer"
+    },
+    "hiddenyears:steel_hoe": {
+      "textures": "textures/items/steel_hoe"
+    },
+    "hiddenyears:steel_ingot": {
+      "textures": "textures/items/steel_ingot"
+    },
+    "hiddenyears:steel_pickaxe": {
+      "textures": "textures/items/steel_pickaxe"
+    },
+    "hiddenyears:steel_saw": {
+      "textures": "textures/items/steel_saw"
+    },
+    "hiddenyears:steel_shovel": {
+      "textures": "textures/items/steel_shovel"
+    },
+    "hiddenyears:steel_sledgehammer": {
+      "textures": "textures/items/steel_sledgehammer"
+    },
+    "hiddenyears:steel_sword": {
+      "textures": "textures/items/steel_sword"
     },
     "hiddenyears:stone_nugget": {
       "textures": "textures/items/stone_nugget"

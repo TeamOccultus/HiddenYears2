@@ -1,0 +1,23 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:silver_dust"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:silver_nugget"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:silver_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:silver_dust",
+      "count": 9
+    }
+  }
+}

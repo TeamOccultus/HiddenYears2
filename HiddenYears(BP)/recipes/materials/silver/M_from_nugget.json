@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:silver_from_nugget"
+    },
+    "tags": ["crafting_table"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "hiddenyears:silver_nugget",
+        "count": 9
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:silver_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:silver_ingot"
+    }
+  }
+}

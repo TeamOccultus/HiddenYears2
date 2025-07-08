@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:silver_dust",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:silver_dust",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:silver_material", "hiddenyears:dust"]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:raw_silver",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:raw_silver",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:silver_material"]
+      }
+    }
+  }
+}

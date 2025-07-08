@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "hiddenyears:silver_ingot"
+    },
+    "input": "hiddenyears:raw_silver",
+    "output": "hiddenyears:silver_ingot",
+    "tags": ["furnace", "blast_furnace"],
+    "unlock": [
+      {
+        "item": "hiddenyears:silver_ingot"
+      },
+      {
+        "item": "hiddenyears:raw_silver"
+      }
+    ]
+  }
+}

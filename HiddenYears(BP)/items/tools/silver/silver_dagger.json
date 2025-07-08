@@ -1,0 +1,57 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:silver_dagger",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_weapon": {
+        "type": "sword"
+      },
+      "hiddenyears:weapon_type": {
+        "weapon_type": "dagger"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:durability": {
+        "max_durability": 64
+      },
+      "minecraft:damage": 10,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag( 'minecraft:is_sword_item_destructible' )"
+            },
+            "speed": 15
+          }
+        ]
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:icon": "hiddenyears:silver_dagger",
+      "minecraft:max_stack_size": 1,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hiddenyears:silver_ingot"],
+            "repair_amount": "query.max_durability * 0.25"
+          },
+          {
+            "items": ["hiddenyears:silver_dagger"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_weapon",
+          "hiddenyears:silver_tier",
+          "minecraft:stone_tier"
+        ]
+      }
+    }
+  }
+}

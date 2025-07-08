@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:silver_ingot",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:silver_ingot",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:silver_material"]
+      }
+    }
+  }
+}
