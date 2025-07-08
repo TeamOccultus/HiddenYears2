@@ -15,7 +15,7 @@
       "minecraft:max_stack_size": 1,
       "minecraft:hand_equipped": true,
       "minecraft:durability": {
-        "max_durability": 120
+        "max_durability": 200
       },
       "minecraft:icon": "hiddenyears:refined_rock_pickaxe",
       "minecraft:repairable": {
@@ -42,12 +42,16 @@
             "block": {
               "tags": "query.any_tag('minecraft:is_pickaxe_item_destructible') && !query.any_tag('minecraft:iron_tier_destructible', 'minecraft:diamond_tier_destructible')"
             },
-            "speed": 3
+            "speed": 5
           }
         ]
       },
       "minecraft:tags": {
-        "tags": ["minecraft:is_pickaxe", "hiddenyears:refined_rock_tier", "minecraft:stone_tier"]
+        "tags": [
+          "minecraft:is_pickaxe",
+          "hiddenyears:refined_rock_tier",
+          "minecraft:stone_tier"
+        ]
       }
     }
   }

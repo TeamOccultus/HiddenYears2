@@ -16,9 +16,9 @@
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
-        "max_durability": 10
+        "max_durability": 16
       },
-      "minecraft:damage": 6,
+      "minecraft:damage": 9,
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
@@ -48,7 +48,8 @@
       "minecraft:tags": {
         "tags": [
           "minecraft:is_weapon",
-          "hiddenyears:refined_rock_tier", "minecraft:stone_tier"
+          "hiddenyears:refined_rock_tier",
+          "minecraft:stone_tier"
         ]
       }
     }
