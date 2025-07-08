@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:enchanted_amethyst_shard",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "amethyst_shard",
+      "minecraft:glint": true,
+      "minecraft:tags": {
+        "tags": ["hiddenyears:crystal_material"]
+      }
+    }
+  }
+}

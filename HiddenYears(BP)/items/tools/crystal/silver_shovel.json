@@ -1,0 +1,58 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:crystal_shovel",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.shovel"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_tool": {
+        "type": "shovel"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1600
+      },
+      "minecraft:damage": 6,
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "shovel"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hiddenyears:crystal_ingot"],
+            "repair_amount": "query.max_durability * 0.25"
+          },
+          {
+            "items": ["hiddenyears:crystal_shovel"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_shovel_item_destructible')"
+            },
+            "speed": 8
+          }
+        ]
+      },
+      "minecraft:icon": "hiddenyears:crystal_shovel",
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_shovel",
+          "hiddenyears:crystal_tier",
+          "minecraft:stone_tier"
+        ]
+      }
+    }
+  }
+}

@@ -53,6 +53,42 @@
     "hiddenyears:copper_nugget": {
       "textures": "textures/items/copper_nugget"
     },
+    "hiddenyears:crystal_axe": {
+      "textures": "textures/items/crystal_axe"
+    },
+    "hiddenyears:crystal_dagger": {
+      "textures": "textures/items/crystal_dagger"
+    },
+    "hiddenyears:crystal_dust": {
+      "textures": "textures/items/crystal_dust"
+    },
+    "hiddenyears:crystal_hammer": {
+      "textures": "textures/items/crystal_hammer"
+    },
+    "hiddenyears:crystal_hoe": {
+      "textures": "textures/items/crystal_hoe"
+    },
+    "hiddenyears:crystal_ingot": {
+      "textures": "textures/items/crystal_ingot"
+    },
+    "hiddenyears:crystal_nugget": {
+      "textures": "textures/items/crystal_nugget"
+    },
+    "hiddenyears:crystal_pickaxe": {
+      "textures": "textures/items/crystal_pickaxe"
+    },
+    "hiddenyears:crystal_saw": {
+      "textures": "textures/items/crystal_saw"
+    },
+    "hiddenyears:crystal_shovel": {
+      "textures": "textures/items/crystal_shovel"
+    },
+    "hiddenyears:crystal_sledgehammer": {
+      "textures": "textures/items/crystal_sledgehammer"
+    },
+    "hiddenyears:crystal_sword": {
+      "textures": "textures/items/crystal_sword"
+    },
     "hiddenyears:diamond_dust": {
       "textures": "textures/items/diamond_dust"
     },
@@ -130,6 +166,42 @@
     },
     "hiddenyears:netherite_nugget": {
       "textures": "textures/items/netherite_nugget"
+    },
+    "hiddenyears:originite_axe": {
+      "textures": "textures/items/originite_axe"
+    },
+    "hiddenyears:originite_dagger": {
+      "textures": "textures/items/originite_dagger"
+    },
+    "hiddenyears:originite_dust": {
+      "textures": "textures/items/originite_dust"
+    },
+    "hiddenyears:originite_hammer": {
+      "textures": "textures/items/originite_hammer"
+    },
+    "hiddenyears:originite_hoe": {
+      "textures": "textures/items/originite_hoe"
+    },
+    "hiddenyears:originite_ingot": {
+      "textures": "textures/items/originite_ingot"
+    },
+    "hiddenyears:originite_nugget": {
+      "textures": "textures/items/originite_nugget"
+    },
+    "hiddenyears:originite_pickaxe": {
+      "textures": "textures/items/originite_pickaxe"
+    },
+    "hiddenyears:originite_saw": {
+      "textures": "textures/items/originite_saw"
+    },
+    "hiddenyears:originite_shovel": {
+      "textures": "textures/items/originite_shovel"
+    },
+    "hiddenyears:originite_sledgehammer": {
+      "textures": "textures/items/originite_sledgehammer"
+    },
+    "hiddenyears:originite_sword": {
+      "textures": "textures/items/originite_sword"
     },
     "hiddenyears:quartz_dust": {
       "textures": "textures/items/quartz_dust"

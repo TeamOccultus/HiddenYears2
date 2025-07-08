@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "hiddenyears:crystal_ingot"
+    },
+    "input": "hiddenyears:enchanted_amethyst_shard",
+    "output": "hiddenyears:crystal_ingot",
+    "tags": ["furnace", "blast_furnace"],
+    "unlock": [
+      {
+        "item": "hiddenyears:crystal_ingot"
+      },
+      {
+        "item": "hiddenyears:enchanted_amethyst_shard"
+      }
+    ]
+  }
+}

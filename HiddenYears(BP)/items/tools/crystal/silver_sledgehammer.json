@@ -1,0 +1,37 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "menu_category": {
+        "category": "equipment"
+      },
+      "identifier": "hiddenyears:crystal_sledgehammer"
+    },
+    "components": {
+      "hiddenyears:custom_tool": {
+        "type": "pickaxe"
+      },
+      "hiddenyears:weapon_type": {
+        "weapon_type": "sledgehammer"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1280
+      },
+      "minecraft:icon": "hiddenyears:crystal_sledgehammer",
+      "minecraft:damage": 11,
+      "minecraft:enchantable": {
+        "value": 1,
+        "slot": "sword"
+      },
+      "minecraft:tags": {
+        "tags": [
+          "hiddenyears:is_sledgehammer",
+          "hiddenyears:crystal_tier",
+          "minecraft:stone_tier"
+        ]
+      }
+    }
+  }
+}
