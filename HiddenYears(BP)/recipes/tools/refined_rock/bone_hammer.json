@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:refined_rock_hammer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SXS", "#", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hiddenyears:refined_rock_ingot"
+      },
+      "S": {
+        "item": "hiddenyears:refined_rock_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "hiddenyears:refined_rock_ingot"
+      },
+      {
+        "item": "hiddenyears:refined_rock_block"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:refined_rock_hammer"
+    }
+  }
+}
