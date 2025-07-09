@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:bone_hammer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SXS", "#", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "minecraft:bone"
+      },
+      "S": {
+        "item": "minecraft:bone_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:bone"
+      },
+      {
+        "item": "minecraft:bone_block"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bone_hammer"
+    }
+  }
+}

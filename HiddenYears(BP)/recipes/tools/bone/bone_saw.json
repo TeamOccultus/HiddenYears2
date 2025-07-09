@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:bone_saw"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["S#", "XX"],
+    "key": {
+      "S": {
+        "item": "stick"
+      },
+      "#": {
+        "item": "minecraft:string"
+      },
+      "X": {
+        "item": "minecraft:bone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bone_saw"
+    }
+  }
+}

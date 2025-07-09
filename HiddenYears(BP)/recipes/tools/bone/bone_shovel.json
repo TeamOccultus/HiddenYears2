@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:bone_shovel"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", " #", " #"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "minecraft:bone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bone_shovel"
+    }
+  }
+}
