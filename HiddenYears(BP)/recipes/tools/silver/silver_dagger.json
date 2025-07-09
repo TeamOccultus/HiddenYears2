@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:silver_dagger"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hiddenyears:silver_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "hiddenyears:silver_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:silver_dagger"
+    }
+  }
+}

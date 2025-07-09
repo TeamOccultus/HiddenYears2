@@ -1,0 +1,35 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:silver_hammer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SXS", "#", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hiddenyears:silver_ingot"
+      },
+      "S": {
+        "item": "hiddenyears:silver_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "hiddenyears:silver_ingot"
+      },
+      {
+        "item": "hiddenyears:silver_block"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:silver_hammer"
+    }
+  }
+}
