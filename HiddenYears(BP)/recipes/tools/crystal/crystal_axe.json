@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:crystal_axe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", "X#", " #"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "hiddenyears:crystal_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "hiddenyears:crystal_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:crystal_axe"
+    }
+  }
+}
