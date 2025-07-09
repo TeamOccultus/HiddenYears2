@@ -62,6 +62,9 @@
     "hiddenyears:crystal_dust": {
       "textures": "textures/items/crystal_dust"
     },
+    "hiddenyears:crystal_enhanced_arrow": {
+      "textures": "textures/items/crystal_enhanced_arrow"
+    },
     "hiddenyears:crystal_hammer": {
       "textures": "textures/items/crystal_hammer"
     },
@@ -92,6 +95,9 @@
     "hiddenyears:diamond_dust": {
       "textures": "textures/items/diamond_dust"
     },
+    "hiddenyears:diamond_enhanced_arrow": {
+      "textures": "textures/items/diamond_enhanced_arrow"
+    },
     "hiddenyears:diamond_nugget": {
       "textures": "textures/items/diamond_nugget"
     },
@@ -112,6 +118,9 @@
     },
     "hiddenyears:iron_dust": {
       "textures": "textures/items/iron_dust"
+    },
+    "hiddenyears:iron_enhanced_arrow": {
+      "textures": "textures/items/iron_enhanced_arrow"
     },
     "hiddenyears:lapis_dust": {
       "textures": "textures/items/lapis_dust"
@@ -164,6 +173,9 @@
     "hiddenyears:netherite_dust": {
       "textures": "textures/items/netherite_dust"
     },
+    "hiddenyears:netherite_enhanced_arrow": {
+      "textures": "textures/items/netherite_enhanced_arrow"
+    },
     "hiddenyears:netherite_nugget": {
       "textures": "textures/items/netherite_nugget"
     },
@@ -175,6 +187,9 @@
     },
     "hiddenyears:originite_dust": {
       "textures": "textures/items/originite_dust"
+    },
+    "hiddenyears:originite_enhanced_arrow": {
+      "textures": "textures/items/originite_enhanced_arrow"
     },
     "hiddenyears:originite_hammer": {
       "textures": "textures/items/originite_hammer"

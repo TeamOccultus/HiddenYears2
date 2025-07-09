@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:netherite_enhanced_arrow",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.tools"
+      }
+    },
+    "components": {
+      "minecraft:projectile": {
+        "minimum_critical_power": 1.25,
+        "projectile_entity": "hiddenyears:netherite_enhanced_arrow"
+      },
+      "minecraft:allow_off_hand": true,
+      "minecraft:icon": "hiddenyears:netherite_enhanced_arrow"
+    }
+  }
+}

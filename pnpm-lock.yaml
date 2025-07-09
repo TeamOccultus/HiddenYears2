@@ -21,8 +21,8 @@ importers:
         specifier: ^0.14.1
         version: 0.14.1(@minecraft/vanilla-data@1.21.90-preview.20)(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
       '@starock/cli':
-        specifier: ^0.2.2
-        version: 0.2.2(@types/node@22.14.0)
+        specifier: ^0.2.3
+        version: 0.2.3(@types/node@22.14.0)
       '@starock/common':
         specifier: ^0.14.1
         version: 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
@@ -449,8 +449,8 @@ packages:
   '@starock/block@0.14.1':
     resolution: {integrity: sha512-IdH2k4FONC+EaliqnWDnLzMKoPktRxcWdeNKXF+d2YTc+jssxnJXuSjEB/ls2YMhkGADYVtELhdLkJ9+arSRgQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fblock/-/0.14.1/block-0.14.1.tgz}
 
-  '@starock/cli@0.2.2':
-    resolution: {integrity: sha512-csI/OuRk1kP1eALQ5WxNpScWgkhX/UHwUADIaS6yRB+XeDAzvfJUBU7yWrEPCRip5qEp/0NQTskdhUuoD3Wv4w==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.2.2/cli-0.2.2.tgz}
+  '@starock/cli@0.2.3':
+    resolution: {integrity: sha512-onybdcZ9FCe5KEC5GyA7XCBHnBAFLplvvHa3DdHAg459xRang1eUHcwmNo5Ox3wVznSn5jdCoi1jc3en3WgfPg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.2.3/cli-0.2.3.tgz}
     hasBin: true
 
   '@starock/common@0.14.1':
@@ -1198,7 +1198,7 @@ snapshots:
       - '@starock/common'
       - '@starock/math'
 
-  '@starock/cli@0.2.2(@types/node@22.14.0)':
+  '@starock/cli@0.2.3(@types/node@22.14.0)':
     dependencies:
       '@inquirer/prompts': 7.5.3(@types/node@22.14.0)
       archiver: 7.0.1

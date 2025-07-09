@@ -1,0 +1,84 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:bowyers_bench",
+      "menu_category": {
+        "category": "items"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"],
+          "y_rotation_offset": 180
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      }
+    ],
+    "components": {
+      "hiddenyears:interactable": {},
+      "hiddenyears:custom_ore": {
+        "itemTier": "stone",
+        "lootTable": "blocks/bowyers_bench",
+        "exp": 0
+      },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:material_instances": {
+        "up": {
+          "texture": "hiddenyears:crusher_top"
+        },
+        "down": { "texture": "hiddenyears:crusher_bottom" },
+        "north": { "texture": "hiddenyears:crusher_other_side" },
+        "south": { "texture": "hiddenyears:crusher_other_side" },
+        "west": { "texture": "hiddenyears:crusher_side" },
+        "east": { "texture": "hiddenyears:crusher_other_side" }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:crafting_table": {
+        "crafting_tags": ["bowyers_bench"]
+      },
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 12,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 2
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2.5
+      },
+      "minecraft:map_color": "#999999",
+      "tag:metal": {},
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}
