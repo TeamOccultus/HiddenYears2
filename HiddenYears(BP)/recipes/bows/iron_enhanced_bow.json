@@ -2,13 +2,13 @@
   "format_version": "1.20.11",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "hiddenyears:iron_enhanced_arrow"
+      "identifier": "hiddenyears:iron_enhanced_bow"
     },
     "tags": ["bowyers_bench"],
     "priority": 0,
     "ingredients": [
       {
-        "item": "minecraft:arrow",
+        "item": "minecraft:bow",
         "count": 1
       },{
         "item": "minecraft:iron_ingot",
@@ -17,13 +17,13 @@
     ],
     "unlock": [
       {
-        "item": "minecraft:arrow"
+        "item": "minecraft:bow"
       },{
         "item": "minecraft:iron_ingot"
       }
     ],
     "result": {
-      "item": "hiddenyears:iron_enhanced_arrow"
+      "item": "hiddenyears:iron_enhanced_bow"
     }
   }
 }

@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hiddenyears:diamond_enhanced_arrow"
     },
-    "tags": ["crafting_table"],
+    "tags": ["bowyers_bench"],
     "priority": 0,
     "ingredients": [
       {
