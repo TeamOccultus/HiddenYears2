@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:bowyers_bench"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", "##", "##"],
+    "key": {
+      "#": {
+        "item": "minecraft:wool"
+      },
+      "X": {
+        "item": "hiddenyears:ruby"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:wool"
+      },
+      {
+        "item": "hiddenyears:ruby"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bowyers_bench"
+    }
+  }
+}

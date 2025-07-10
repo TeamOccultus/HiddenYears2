@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.11",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:alchemy_table"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", "##", "##"],
+    "key": {
+      "#": {
+        "item": "minecraft:planks"
+      },
+      "X": {
+        "item": "hiddenyears:ruby"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:planks"
+      },
+      {
+        "item": "hiddenyears:ruby"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:alchemy_table"
+    }
+  }
+}
