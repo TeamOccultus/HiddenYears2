@@ -65,6 +65,18 @@
     "hiddenyears:crystal_enhanced_arrow": {
       "textures": "textures/items/crystal_enhanced_arrow"
     },
+    "hiddenyears:crystal_enhanced_bow_pulling_0": {
+      "textures": "textures/items/crystal_enhanced_bow_pulling_0"
+    },
+    "hiddenyears:crystal_enhanced_bow_pulling_1": {
+      "textures": "textures/items/crystal_enhanced_bow_pulling_1"
+    },
+    "hiddenyears:crystal_enhanced_bow_pulling_2": {
+      "textures": "textures/items/crystal_enhanced_bow_pulling_2"
+    },
+    "hiddenyears:crystal_enhanced_bow_standby": {
+      "textures": "textures/items/crystal_enhanced_bow_standby"
+    },
     "hiddenyears:crystal_hammer": {
       "textures": "textures/items/crystal_hammer"
     },
@@ -98,6 +110,18 @@
     "hiddenyears:diamond_enhanced_arrow": {
       "textures": "textures/items/diamond_enhanced_arrow"
     },
+    "hiddenyears:diamond_enhanced_bow_pulling_0": {
+      "textures": "textures/items/diamond_enhanced_bow_pulling_0"
+    },
+    "hiddenyears:diamond_enhanced_bow_pulling_1": {
+      "textures": "textures/items/diamond_enhanced_bow_pulling_1"
+    },
+    "hiddenyears:diamond_enhanced_bow_pulling_2": {
+      "textures": "textures/items/diamond_enhanced_bow_pulling_2"
+    },
+    "hiddenyears:diamond_enhanced_bow_standby": {
+      "textures": "textures/items/diamond_enhanced_bow_standby"
+    },
     "hiddenyears:diamond_nugget": {
       "textures": "textures/items/diamond_nugget"
     },
@@ -121,6 +145,18 @@
     },
     "hiddenyears:iron_enhanced_arrow": {
       "textures": "textures/items/iron_enhanced_arrow"
+    },
+    "hiddenyears:iron_enhanced_bow_pulling_0": {
+      "textures": "textures/items/iron_enhanced_bow_pulling_0"
+    },
+    "hiddenyears:iron_enhanced_bow_pulling_1": {
+      "textures": "textures/items/iron_enhanced_bow_pulling_1"
+    },
+    "hiddenyears:iron_enhanced_bow_pulling_2": {
+      "textures": "textures/items/iron_enhanced_bow_pulling_2"
+    },
+    "hiddenyears:iron_enhanced_bow_standby": {
+      "textures": "textures/items/iron_enhanced_bow_standby"
     },
     "hiddenyears:lapis_dust": {
       "textures": "textures/items/lapis_dust"
@@ -176,6 +212,18 @@
     "hiddenyears:netherite_enhanced_arrow": {
       "textures": "textures/items/netherite_enhanced_arrow"
     },
+    "hiddenyears:netherite_enhanced_bow_pulling_0": {
+      "textures": "textures/items/netherite_enhanced_bow_pulling_0"
+    },
+    "hiddenyears:netherite_enhanced_bow_pulling_1": {
+      "textures": "textures/items/netherite_enhanced_bow_pulling_1"
+    },
+    "hiddenyears:netherite_enhanced_bow_pulling_2": {
+      "textures": "textures/items/netherite_enhanced_bow_pulling_2"
+    },
+    "hiddenyears:netherite_enhanced_bow_standby": {
+      "textures": "textures/items/netherite_enhanced_bow_standby"
+    },
     "hiddenyears:netherite_nugget": {
       "textures": "textures/items/netherite_nugget"
     },
@@ -190,6 +238,18 @@
     },
     "hiddenyears:originite_enhanced_arrow": {
       "textures": "textures/items/originite_enhanced_arrow"
+    },
+    "hiddenyears:originite_enhanced_bow_pulling_0": {
+      "textures": "textures/items/originite_enhanced_bow_pulling_0"
+    },
+    "hiddenyears:originite_enhanced_bow_pulling_1": {
+      "textures": "textures/items/originite_enhanced_bow_pulling_1"
+    },
+    "hiddenyears:originite_enhanced_bow_pulling_2": {
+      "textures": "textures/items/originite_enhanced_bow_pulling_2"
+    },
+    "hiddenyears:originite_enhanced_bow_standby": {
+      "textures": "textures/items/originite_enhanced_bow_standby"
     },
     "hiddenyears:originite_hammer": {
       "textures": "textures/items/originite_hammer"

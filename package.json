@@ -5,6 +5,7 @@
   "scripts": {
     "build": "starock build",
     "ready": "starock prepare",
+    "clear": "starock clear",
     "prettier": "prettier --write ."
   },
   "author": "CTN Studios",

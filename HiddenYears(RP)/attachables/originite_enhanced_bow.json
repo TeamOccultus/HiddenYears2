@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "hiddenyears:originite_enhanced_bow",
+      "materials": {
+        "default": "entity_alphatest",
+        "enchanted": "entity_alphatest_glint"
+      },
+      "textures": {
+        "default": "textures/items/originite_enhanced_bow_standby",
+        "bow_pulling_0": "textures/items/originite_enhanced_bow_pulling_0",
+        "bow_pulling_1": "textures/items/originite_enhanced_bow_pulling_1",
+        "bow_pulling_2": "textures/items/originite_enhanced_bow_pulling_2",
+        "enchanted": "textures/misc/enchanted_item_glint"
+      },
+      "geometry": {
+        "default": "geometry.bow_standby",
+        "bow_pulling_0": "geometry.bow_pulling_0",
+        "bow_pulling_1": "geometry.bow_pulling_1",
+        "bow_pulling_2": "geometry.bow_pulling_2"
+      },
+      "animations": {
+        "wield": "animation.bow.wield",
+        "wield_first_person_pull": "animation.bow.wield_first_person_pull"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.charge_amount=math.clamp((q.main_hand_item_max_duration-(q.main_hand_item_use_duration-q.frame_alpha+1.0))/10.0,0.0,1.0f);",
+          "v.bow_frame=(q.main_hand_item_use_duration>0.0f&&c.is_first_person) ? math.min(q.item_in_use_duration*0.0075, 3) : 0;"
+        ],
+        "animate": [
+          "wield",
+          {
+            "wield_first_person_pull": "q.main_hand_item_use_duration>0.0f&&c.is_first_person"
+          }
+        ]
+      },
+      "render_controllers": ["controller.render.bows"]
+    }
+  }
+}
