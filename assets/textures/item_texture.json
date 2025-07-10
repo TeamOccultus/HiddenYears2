@@ -41,6 +41,24 @@
     "hiddenyears:bone_sword": {
       "textures": "textures/items/bone_sword"
     },
+    "hiddenyears:breeze_arrow": {
+      "textures": "textures/items/breeze_arrow"
+    },
+    "hiddenyears:breeze_crossbow_pulling_0": {
+      "textures": "textures/items/breeze_crossbow_pulling_0"
+    },
+    "hiddenyears:breeze_crossbow_pulling_1": {
+      "textures": "textures/items/breeze_crossbow_pulling_1"
+    },
+    "hiddenyears:breeze_crossbow_pulling_2": {
+      "textures": "textures/items/breeze_crossbow_pulling_2"
+    },
+    "hiddenyears:breeze_crossbow_pulling_3": {
+      "textures": "textures/items/breeze_crossbow_pulling_3"
+    },
+    "hiddenyears:breeze_crossbow_standby": {
+      "textures": "textures/items/breeze_crossbow_standby"
+    },
     "hiddenyears:coal_dust": {
       "textures": "textures/items/coal_dust"
     },

@@ -8,6 +8,7 @@ import { OreBlock, InteractableBlock, BlcokRegistries } from "@starock/block";
 import { OreTypeComponent } from "../components/OreTypeComponent";
 import { ToolTypeComponent } from "../components/ToolTypeComponent";
 import { WeaponTypeComponent } from "../components/WeaponTypeComponent";
+import { CrossbowComponent } from "../components/CrossbowComponent";
 
 /**
  * 注册自定义组件
@@ -17,6 +18,7 @@ export function registryComponents() {
   new OreTypeComponent("hiddenyears:ore_type");
   new ToolTypeComponent("hiddenyears:tool_type");
   new WeaponTypeComponent("hiddenyears:weapon_type");
+  new CrossbowComponent("hiddenyears:custom_crossbow");
   item.register(
     "hiddenyears:effective_food",
     new FoodMaterial("hiddenyears:effective_food")

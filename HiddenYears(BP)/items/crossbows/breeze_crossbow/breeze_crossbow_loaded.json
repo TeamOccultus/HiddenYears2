@@ -1,0 +1,46 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:breeze_crossbow_loaded",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      }
+    },
+    "components": {
+      "hiddenyears:custom_crossbow": {
+        "pulling_level": "loaded",
+        "next_level_item": "hiddenyears:breeze_crossbow",
+        "ammunitions": ["hiddenyears:iron_enhanced_arrow"]
+      },
+      "minecraft:shooter": {
+        "ammunition": [
+          {
+            "item": "hiddenyears:iron_enhanced_arrow",
+            "use_offhand": true,
+            "search_inventory": true,
+            "use_in_creative": true
+          }
+        ],
+        "max_draw_duration": 1.25,
+        "scale_power_by_draw_duration": true,
+        "charge_on_draw": false
+      },
+      "minecraft:projectile": {
+        "minimum_critical_power": 1.25,
+        "projectile_entity": "hiddenyears:iron_enhanced_arrow"
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 99
+      },
+      "minecraft:durability": {
+        "max_durability": 386
+      },
+      "minecraft:use_animation": "crossbow",
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "hiddenyears:breeze_crossbow_pulling_3"
+    }
+  }
+}
