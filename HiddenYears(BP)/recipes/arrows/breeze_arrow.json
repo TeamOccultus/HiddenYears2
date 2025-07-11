@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:breeze_arrow"
+    },
+    "tags": ["bowyers_bench"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:breeze_rod"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:breeze_rod"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:breeze_arrow"
+    }
+  }
+}

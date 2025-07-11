@@ -9,16 +9,19 @@
       }
     },
     "components": {
+      "minecraft:display_name": {
+        "value": "item.hiddenyears:breeze_crossbow"
+      },
       "hiddenyears:custom_crossbow": {
         "pulling_level": "pulling_1",
         "next_level_item": "hiddenyears:breeze_crossbow_pulling_2",
-        "ammunitions": ["hiddenyears:iron_enhanced_arrow"]
+        "ammunitions": ["hiddenyears:breeze_arrow"]
       },
       "minecraft:tags": {
         "tags": ["rev:crossbow_plus"]
       },
       "minecraft:durability": {
-        "max_durability": 386
+        "max_durability": 800
       },
       "minecraft:use_modifiers": {
         "movement_modifier": 0.5,

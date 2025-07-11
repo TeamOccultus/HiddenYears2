@@ -11,14 +11,14 @@
       "hiddenyears:custom_crossbow": {
         "pulling_level": "standby",
         "next_level_item": "hiddenyears:breeze_crossbow_pulling_0",
-        "ammunitions": ["hiddenyears:iron_enhanced_arrow"]
+        "ammunitions": ["hiddenyears:breeze_arrow"]
       },
       "minecraft:durability": {
-        "max_durability": 386
+        "max_durability": 800
       },
       "minecraft:use_modifiers": {
         "movement_modifier": 0.5,
-        "use_duration": 1.25
+        "use_duration": 1.2
       },
       "minecraft:use_animation": "crossbow",
       "minecraft:max_stack_size": 1,

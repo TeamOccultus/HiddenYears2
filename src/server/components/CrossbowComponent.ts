@@ -14,9 +14,9 @@ export class CrossbowComponent {
   constructor(readonly componentName: string) {
     world.afterEvents.itemReleaseUse.subscribe((arg) => {
       const component = arg.itemStack.getComponent(this.componentName);
-      if(!component) return;
+      if (!component) return;
       onReleaseUse(arg, this);
-    })
+    });
     system.beforeEvents.startup.subscribe((arg) => {
       const that = this;
       arg.itemComponentRegistry.registerCustomComponent(componentName, {
@@ -46,13 +46,28 @@ export class CrossbowComponent {
     if (!params.pulling_level) return "standby";
     return params.pulling_level;
   }
-  getNextLevelItem(item: ItemStack): ItemStack {
+  getNextLevelItem(item: ItemStack, player: Player): ItemStack {
     const component = item.getComponent(this.componentName);
     if (!component) throw new Error();
     const params = component.customComponentParameters
       .params as CrossbowComponentParams;
     if (!params) throw new Error();
-    return new ItemStack(params.next_level_item);
+    const newItem = new ItemStack(params.next_level_item);
+    if (
+      item.getComponent("durability").damage ===
+      item.getComponent("durability").maxDurability
+    ) {
+      player.playSound("random.break");
+      return;
+    }
+    if (params.pulling_level === "loaded") {
+      newItem.getComponent("durability").damage =
+        item.getComponent("durability").damage + 1;
+    } else {
+      newItem.getComponent("durability").damage =
+        item.getComponent("durability").damage;
+    }
+    return newItem;
   }
   getAmmunitions(item: ItemStack): string[] {
     const component = item.getComponent(this.componentName);
@@ -63,6 +78,7 @@ export class CrossbowComponent {
     return params.ammunitions;
   }
   hasAmmunition(item: ItemStack, player: Player): boolean {
+    if (player.getGameMode() === "Creative") return true;
     const offhandItem = EntityUtils.getEquipmentItem(
       player,
       EquipmentSlot.Offhand
@@ -77,6 +93,7 @@ export class CrossbowComponent {
     return false;
   }
   consumeAmmunition(item: ItemStack, player: Player) {
+    if (player.getGameMode() === "Creative") return;
     const offhandItem = EntityUtils.getEquipmentItem(
       player,
       EquipmentSlot.Offhand
@@ -131,22 +148,22 @@ function onComplete(
   }*/
   if (pullingLevel === "pulling_1") {
     player.playSound("crossbow.loading.middle");
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item));
+    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
   if (pullingLevel === "pulling_2") {
     player.playSound("crossbow.loading.end");
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item));
+    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
   if (pullingLevel === "standby") {
     if (!that.hasAmmunition(item, player)) return;
     that.consumeAmmunition(item, player);
     player.playSound("crossbow.loading.start");
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item));
+    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
-  EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item));
+  EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
 }
 
 function onReleaseUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
@@ -154,7 +171,7 @@ function onReleaseUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
   const pullingLevel = that.getPullingLevels(item);
   console.warn(pullingLevel);
   if (pullingLevel === "loaded") {
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item));
+    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
 }

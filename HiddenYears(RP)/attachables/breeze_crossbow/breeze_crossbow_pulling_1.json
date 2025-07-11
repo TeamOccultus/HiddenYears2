@@ -8,10 +8,10 @@
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/items/breeze_crossbow_standby",
-        "bow_pulling_0": "textures/items/breeze_crossbow_pulling_0",
+        "default": "textures/items/breeze_crossbow_pulling_1",
+        "bow_pulling_0": "textures/items/breeze_crossbow_pulling_1",
         "bow_pulling_1": "textures/items/breeze_crossbow_pulling_1",
-        "bow_pulling_2": "textures/items/breeze_crossbow_pulling_2",
+        "bow_pulling_2": "textures/items/breeze_crossbow_pulling_1",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
@@ -27,7 +27,7 @@
       },
       "scripts": {
         "pre_animation": [
-          "v.charge_amount = q.main_hand_item_use_duration > 0.0f ? (math.clamp((q.main_hand_item_max_duration - q.main_hand_item_use_duration) / 4, 0, 3)) : 0;"
+          "v.charge_amount = q.main_hand_item_use_duration > 0.0f ? (math.clamp((q.main_hand_item_max_duration - q.main_hand_item_use_duration) / 4, 1, 3)) : 0;"
         ],
         "animate": [
           "wield",
