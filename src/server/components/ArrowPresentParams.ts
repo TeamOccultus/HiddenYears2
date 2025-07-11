@@ -2,4 +2,4 @@ export type ArrowPresentParams = {
     present: ArrowPresents;
 }
 
-export type ArrowPresents = "Daylight"
+export type ArrowPresents = "daylight" | "lightning"

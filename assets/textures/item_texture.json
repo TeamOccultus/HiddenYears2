@@ -197,6 +197,24 @@
     "hiddenyears:lapis_nugget": {
       "textures": "textures/items/lapis_nugget"
     },
+    "hiddenyears:lightning_arrow": {
+      "textures": "textures/items/lightning_arrow"
+    },
+    "hiddenyears:lightning_crossbow_pulling_0": {
+      "textures": "textures/items/lightning_crossbow_pulling_0"
+    },
+    "hiddenyears:lightning_crossbow_pulling_1": {
+      "textures": "textures/items/lightning_crossbow_pulling_1"
+    },
+    "hiddenyears:lightning_crossbow_pulling_2": {
+      "textures": "textures/items/lightning_crossbow_pulling_2"
+    },
+    "hiddenyears:lightning_crossbow_pulling_3": {
+      "textures": "textures/items/lightning_crossbow_pulling_3"
+    },
+    "hiddenyears:lightning_crossbow_standby": {
+      "textures": "textures/items/lightning_crossbow_standby"
+    },
     "hiddenyears:medicine_1": {
       "textures": "textures/items/medicine_1"
     },

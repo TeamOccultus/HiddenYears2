@@ -2,18 +2,19 @@
   "format_version": "1.10.0",
   "minecraft:attachable": {
     "description": {
-      "identifier": "hiddenyears:breeze_crossbow_pulling_2",
+      "identifier": "hiddenyears:lightning_crossbow_loaded",
       "materials": {
         "default": "entity_alphatest",
         "enchanted": "entity_alphatest_glint"
       },
       "textures": {
-        "default": "textures/items/breeze_crossbow_pulling_2",
-        "bow_pulling_0": "textures/items/breeze_crossbow_pulling_2",
-        "bow_pulling_1": "textures/items/breeze_crossbow_pulling_2",
-        "bow_pulling_2": "textures/items/breeze_crossbow_pulling_2",
+        "default": "textures/items/lightning_crossbow_pulling_3",
+        "bow_pulling_0": "textures/items/lightning_crossbow_pulling_3",
+        "bow_pulling_1": "textures/items/lightning_crossbow_pulling_3",
+        "bow_pulling_2": "textures/items/lightning_crossbow_pulling_3",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
+
       "geometry": {
         "default": "geometry.crossbows_standby",
         "bow_pulling_0": "geometry.crossbows_pulling_0",
@@ -23,12 +24,9 @@
       "animations": {
         "wield": "animation.crossbow.wield",
         "wield_first_person_pull": "animation.crossbow.wield_first_person_pull"
-
       },
       "scripts": {
-        "pre_animation": [
-          "v.charge_amount = q.main_hand_item_use_duration > 0.0f ? (math.clamp((q.main_hand_item_max_duration - q.main_hand_item_use_duration) / 3, 2, 3)) : 0;"
-        ],
+        "pre_animation": ["v.charge_amount = 0;"],
         "animate": [
           "wield",
           {
@@ -36,9 +34,7 @@
           }
         ]
       },
-      "render_controllers": [
-        "controller.render.crossbows"
-      ]
+      "render_controllers": ["controller.render.crossbows"]
     }
   }
 }

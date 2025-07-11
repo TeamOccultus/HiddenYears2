@@ -2,22 +2,21 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:daylight_arrow",
+      "identifier": "hiddenyears:lightning_arrow",
       "menu_category": {
-        "category": "equipment",
-        "group": "minecraft:itemGroup.name.tools"
+        "category": "equipment"
       }
     },
     "components": {
       "hiddenyears:arrow_present": {
-        "present": "daylight"
+        "present": "lightning"
       },
       "minecraft:projectile": {
         "minimum_critical_power": 1.25,
-        "projectile_entity": "hiddenyears:daylight_arrow"
+        "projectile_entity": "hiddenyears:lightning_arrow"
       },
       "minecraft:allow_off_hand": true,
-      "minecraft:icon": "hiddenyears:daylight_arrow"
+      "minecraft:icon": "hiddenyears:lightning_arrow"
     }
   }
 }

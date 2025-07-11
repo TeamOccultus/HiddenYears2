@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:breeze_crossbow",
+      "identifier": "hiddenyears:lightning_crossbow",
       "menu_category": {
         "category": "equipment"
       }
@@ -10,19 +10,19 @@
     "components": {
       "hiddenyears:custom_crossbow": {
         "pulling_level": "standby",
-        "next_level_item": "hiddenyears:breeze_crossbow_loaded",
-        "ammunitions": ["hiddenyears:breeze_arrow"]
+        "next_level_item": "hiddenyears:lightning_crossbow_loaded",
+        "ammunitions": ["hiddenyears:lightning_arrow"]
       },
       "minecraft:durability": {
         "max_durability": 800
       },
       "minecraft:use_modifiers": {
         "movement_modifier": 0.5,
-        "use_duration": 1.25
+        "use_duration": 1.2
       },
       "minecraft:use_animation": "crossbow",
       "minecraft:max_stack_size": 1,
-      "minecraft:icon": "hiddenyears:breeze_crossbow_standby"
+      "minecraft:icon": "hiddenyears:lightning_crossbow_standby"
     }
   }
 }

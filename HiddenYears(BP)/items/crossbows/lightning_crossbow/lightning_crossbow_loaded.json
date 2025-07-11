@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:breeze_crossbow_loaded",
+      "identifier": "hiddenyears:lightning_crossbow_loaded",
       "menu_category": {
         "category": "none",
         "is_hidden_in_commands": true
@@ -11,13 +11,13 @@
     "components": {
       "hiddenyears:custom_crossbow": {
         "pulling_level": "loaded",
-        "next_level_item": "hiddenyears:breeze_crossbow",
-        "ammunitions": ["hiddenyears:breeze_arrow"]
+        "next_level_item": "hiddenyears:lightning_crossbow",
+        "ammunitions": ["hiddenyears:lightning_arrow"]
       },
       "minecraft:shooter": {
         "ammunition": [
           {
-            "item": "hiddenyears:breeze_arrow",
+            "item": "hiddenyears:lightning_arrow",
             "use_offhand": true,
             "search_inventory": true,
             "use_in_creative": true
@@ -29,18 +29,18 @@
       },
       "minecraft:projectile": {
         "minimum_critical_power": 0.1,
-        "projectile_entity": "hiddenyears:breeze_arrow"
+        "projectile_entity": "hiddenyears:lightning_arrow"
       },
       "minecraft:use_modifiers": {
         "movement_modifier": 1,
-        "use_duration": 99
+        "use_duration": 900
       },
       "minecraft:durability": {
         "max_durability": 800
       },
       "minecraft:use_animation": "crossbow",
       "minecraft:max_stack_size": 1,
-      "minecraft:icon": "hiddenyears:breeze_crossbow_pulling_3"
+      "minecraft:icon": "hiddenyears:lightning_crossbow_pulling_3"
     }
   }
 }

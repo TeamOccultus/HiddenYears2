@@ -13,6 +13,7 @@ import { EntityUtils } from "@starock/entity";
 export class CrossbowComponent {
   constructor(readonly componentName: string) {
     world.afterEvents.itemReleaseUse.subscribe((arg) => {
+      if(!arg.itemStack) return;
       const component = arg.itemStack.getComponent(this.componentName);
       if (!component) return;
       onReleaseUse(arg, this);
@@ -22,6 +23,9 @@ export class CrossbowComponent {
       arg.itemComponentRegistry.registerCustomComponent(componentName, {
         onCompleteUse(arg0, arg1) {
           onComplete(arg0, that);
+        },
+        onUse(arg0, arg1) {
+          onUse(arg0, that);
         },
       });
     });
@@ -34,9 +38,6 @@ export class CrossbowComponent {
   getPullingLevels(item: ItemStack): CrossbowPullingLevels {
     const component = item.getComponent(this.componentName);
     if (!component) {
-      if (item.typeId.includes("pulling_0")) return "pulling_0";
-      if (item.typeId.includes("pulling_1")) return "pulling_1";
-      if (item.typeId.includes("pulling_2")) return "pulling_2";
       if (item.typeId.includes("loaded")) return "loaded";
       return "standby";
     }
@@ -46,7 +47,7 @@ export class CrossbowComponent {
     if (!params.pulling_level) return "standby";
     return params.pulling_level;
   }
-  getNextLevelItem(item: ItemStack, player: Player): ItemStack {
+  getNextLevelItem(item: ItemStack, player: Player): ItemStack | undefined {
     const component = item.getComponent(this.componentName);
     if (!component) throw new Error();
     const params = component.customComponentParameters
@@ -54,18 +55,18 @@ export class CrossbowComponent {
     if (!params) throw new Error();
     const newItem = new ItemStack(params.next_level_item);
     if (
-      item.getComponent("durability").damage ===
-      item.getComponent("durability").maxDurability
+      item.getComponent("durability")!.damage ===
+      item.getComponent("durability")!.maxDurability
     ) {
       player.playSound("random.break");
       return;
     }
     if (params.pulling_level === "loaded") {
-      newItem.getComponent("durability").damage =
-        item.getComponent("durability").damage + 1;
+      newItem.getComponent("durability")!.damage =
+        item.getComponent("durability")!.damage + 1;
     } else {
-      newItem.getComponent("durability").damage =
-        item.getComponent("durability").damage;
+      newItem.getComponent("durability")!.damage =
+        item.getComponent("durability")!.damage;
     }
     return newItem;
   }
@@ -122,18 +123,22 @@ export class CrossbowComponent {
   }
 }
 
-export type CrossbowPullingLevels =
-  | "standby"
-  | "pulling_0"
-  | "pulling_1"
-  | "pulling_2"
-  | "loaded";
+export type CrossbowPullingLevels = "standby" | "loaded";
 
 export type CrossbowComponentParams = {
   pulling_level: CrossbowPullingLevels;
   next_level_item: string;
   ammunitions: string[];
 };
+
+function onUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
+  const [player, item] = [arg0.source, arg0.itemStack];
+  if(!item) return;
+  const pullingLevel = that.getPullingLevels(item);
+  if (pullingLevel === "standby") {
+    player.playSound("crossbow.loading.start");
+  }
+}
 
 function onComplete(
   arg0: ItemComponentCompleteUseEvent,
@@ -142,24 +147,10 @@ function onComplete(
   const [player, item] = [arg0.source, arg0.itemStack];
   const pullingLevel = that.getPullingLevels(item);
   console.warn(pullingLevel);
-  /*if (pullingLevel === "loaded") {
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item));
-    return;
-  }*/
-  if (pullingLevel === "pulling_1") {
-    player.playSound("crossbow.loading.middle");
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
-    return;
-  }
-  if (pullingLevel === "pulling_2") {
-    player.playSound("crossbow.loading.end");
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
-    return;
-  }
   if (pullingLevel === "standby") {
     if (!that.hasAmmunition(item, player)) return;
     that.consumeAmmunition(item, player);
-    player.playSound("crossbow.loading.start");
+    player.playSound("crossbow.loading.end");
     EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
@@ -168,6 +159,7 @@ function onComplete(
 
 function onReleaseUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
   const [player, item] = [arg0.source, arg0.itemStack];
+  if (!item) return;
   const pullingLevel = that.getPullingLevels(item);
   console.warn(pullingLevel);
   if (pullingLevel === "loaded") {

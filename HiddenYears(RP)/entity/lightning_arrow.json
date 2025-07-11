@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hiddenyears:lightning_arrow",
+      "materials": {
+        "default": "arrow"
+      },
+      "textures": {
+        "default": "textures/entity/lightning_arrow"
+      },
+      "geometry": {
+        "default": "geometry.arrow"
+      },
+      "scripts": {
+        "pre_animation": [
+          "v.shake = q.shake_time - q.frame_alpha;",
+          "v.shake_power = v.shake > 0.0 ? -Math.sin(v.shake * 200.0) * v.shake : 0.0;"
+        ],
+        "animate": ["move"]
+      },
+      "animations": {
+        "move": "animation.arrow.move"
+      },
+      "render_controllers": ["controller.render.arrow"]
+    }
+  }
+}

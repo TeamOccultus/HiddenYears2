@@ -26,17 +26,32 @@ function stringifyPresent(
   present: ArrowPresents
 ) {
   if (!hitEntity) return;
-  if (present === "Daylight") {
+  if (present === "daylight") {
     hitEntity.dimension
       .getEntities({
         location: hitEntity.location,
-        maxDistance: 5,
+        maxDistance: 6,
         families: ["monster"],
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
         entity.setOnFire(10);
-        entity.applyDamage(4);
+        entity.applyDamage(8);
       });
+    return;  
+  }
+  if (present === "lightning") {
+    hitEntity.dimension
+      .getEntities({
+        location: hitEntity.location,
+        maxDistance: 15,
+        families: ["monster"],
+      })
+      .forEach((entity) => {
+        if (!entity.isValid) return;
+        entity.dimension.spawnEntity("minecraft:lightning_bolt", entity.location);
+        entity.applyDamage(10);
+      });
+    return;  
   }
 }
