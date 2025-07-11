@@ -49,7 +49,7 @@
         "slot": "bow"
       },
       "minecraft:durability": {
-        "max_durability": 1536
+        "max_durability": 650
       },
       "minecraft:stacked_by_data": true,
       "minecraft:allow_off_hand": true,
