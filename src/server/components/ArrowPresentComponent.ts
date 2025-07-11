@@ -1,4 +1,10 @@
-import { Entity, ItemStack, system, world } from "@minecraft/server";
+import {
+  Entity,
+  EntityDamageCause,
+  ItemStack,
+  system,
+  world,
+} from "@minecraft/server";
 import { ArrowPresentParams, ArrowPresents } from "./ArrowPresentParams";
 import { EntitiesUtils } from "@starock/entity";
 
@@ -36,9 +42,9 @@ function stringifyPresent(
       .forEach((entity) => {
         if (!entity.isValid) return;
         entity.setOnFire(10);
-        entity.applyDamage(8);
+        entity.applyDamage(5);
       });
-    return;  
+    return;
   }
   if (present === "lightning") {
     hitEntity.dimension
@@ -49,9 +55,26 @@ function stringifyPresent(
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
-        entity.dimension.spawnEntity("minecraft:lightning_bolt", entity.location);
+        entity.dimension.spawnEntity(
+          "minecraft:lightning_bolt",
+          entity.location
+        );
         entity.applyDamage(10);
       });
-    return;  
+    return;
+  }
+  if (present === "fire") {
+    hitEntity.dimension
+      .getEntities({
+        location: hitEntity.location,
+        maxDistance: 6,
+        excludeFamilies: ["player"]
+      })
+      .forEach((entity) => {
+        if (!entity.isValid) return;
+        entity.setOnFire(20);
+        entity.applyDamage(10, { cause: EntityDamageCause.fire });
+      });
+    return;
   }
 }

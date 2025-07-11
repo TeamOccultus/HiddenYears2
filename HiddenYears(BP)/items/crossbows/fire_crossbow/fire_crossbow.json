@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:fire_crossbow",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_crossbow": {
+        "pulling_level": "standby",
+        "next_level_item": "hiddenyears:fire_crossbow_loaded",
+        "ammunitions": ["hiddenyears:fire_arrow"]
+      },
+      "minecraft:durability": {
+        "max_durability": 800
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 0.5,
+        "use_duration": 1.2
+      },
+      "minecraft:use_animation": "crossbow",
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "hiddenyears:fire_crossbow_standby"
+    }
+  }
+}

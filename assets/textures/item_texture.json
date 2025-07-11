@@ -167,6 +167,24 @@
     "hiddenyears:encyclopedia": {
       "textures": "textures/items/encyclopedia"
     },
+    "hiddenyears:fire_arrow": {
+      "textures": "textures/items/fire_arrow"
+    },
+    "hiddenyears:fire_crossbow_pulling_0": {
+      "textures": "textures/items/fire_crossbow_pulling_0"
+    },
+    "hiddenyears:fire_crossbow_pulling_1": {
+      "textures": "textures/items/fire_crossbow_pulling_1"
+    },
+    "hiddenyears:fire_crossbow_pulling_2": {
+      "textures": "textures/items/fire_crossbow_pulling_2"
+    },
+    "hiddenyears:fire_crossbow_pulling_3": {
+      "textures": "textures/items/fire_crossbow_pulling_3"
+    },
+    "hiddenyears:fire_crossbow_standby": {
+      "textures": "textures/items/fire_crossbow_standby"
+    },
     "hiddenyears:gold_dust": {
       "textures": "textures/items/gold_dust"
     },
