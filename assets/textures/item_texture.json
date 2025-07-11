@@ -122,6 +122,21 @@
     "hiddenyears:crystal_sword": {
       "textures": "textures/items/crystal_sword"
     },
+    "hiddenyears:daylight_arrow": {
+      "textures": "textures/items/daylight_arrow"
+    },
+    "hiddenyears:daylight_bow_pulling_0": {
+      "textures": "textures/items/daylight_bow_pulling_0"
+    },
+    "hiddenyears:daylight_bow_pulling_1": {
+      "textures": "textures/items/daylight_bow_pulling_1"
+    },
+    "hiddenyears:daylight_bow_pulling_2": {
+      "textures": "textures/items/daylight_bow_pulling_2"
+    },
+    "hiddenyears:daylight_bow_standby": {
+      "textures": "textures/items/daylight_bow_standby"
+    },
     "hiddenyears:diamond_dust": {
       "textures": "textures/items/diamond_dust"
     },
