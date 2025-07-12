@@ -479,6 +479,9 @@
     "hiddenyears:silver_sword": {
       "textures": "textures/items/silver_sword"
     },
+    "hiddenyears:sparkling_stone": {
+      "textures": "textures/items/sparkling_stone"
+    },
     "hiddenyears:steel_axe": {
       "textures": "textures/items/steel_axe"
     },

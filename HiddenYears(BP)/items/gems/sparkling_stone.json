@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:sparkling_stone",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:sparkling_stone",
+      "minecraft:rarity": "uncommon"
+    }
+  }
+}

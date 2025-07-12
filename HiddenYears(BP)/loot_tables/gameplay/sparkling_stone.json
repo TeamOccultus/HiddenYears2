@@ -1,0 +1,28 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.5
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:sparkling_stone",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 3,
+                "max": 7
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
