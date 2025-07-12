@@ -1,0 +1,55 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:explode_crossbow_loaded",
+      "menu_category": {
+        "category": "none",
+        "is_hidden_in_commands": true
+      }
+    },
+    "components": {
+      "hiddenyears:custom_crossbow": {
+        "pulling_level": "loaded",
+        "next_level_item": "hiddenyears:explode_crossbow",
+        "ammunitions": [
+          "hiddenyears:explode_arrow",
+          "hiddenyears:enchanted_explode_arrow"
+        ]
+      },
+      "minecraft:shooter": {
+        "ammunition": [
+          {
+            "item": "hiddenyears:explode_arrow",
+            "use_offhand": true,
+            "search_inventory": true,
+            "use_in_creative": true
+          },
+          {
+            "item": "hiddenyears:enchanted_explode_arrow",
+            "use_offhand": true,
+            "search_inventory": true,
+            "use_in_creative": true
+          }
+        ],
+        "max_draw_duration": 0.1,
+        "scale_power_by_draw_duration": true,
+        "charge_on_draw": false
+      },
+      "minecraft:projectile": {
+        "minimum_critical_power": 0.1,
+        "projectile_entity": "hiddenyears:explode_arrow"
+      },
+      "minecraft:use_modifiers": {
+        "movement_modifier": 1,
+        "use_duration": 900
+      },
+      "minecraft:durability": {
+        "max_durability": 800
+      },
+      "minecraft:use_animation": "crossbow",
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "hiddenyears:explode_crossbow_pulling_3"
+    }
+  }
+}
