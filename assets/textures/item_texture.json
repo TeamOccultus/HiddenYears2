@@ -167,6 +167,24 @@
     "hiddenyears:encyclopedia": {
       "textures": "textures/items/encyclopedia"
     },
+    "hiddenyears:end_arrow": {
+      "textures": "textures/items/end_arrow"
+    },
+    "hiddenyears:end_crossbow_pulling_0": {
+      "textures": "textures/items/end_crossbow_pulling_0"
+    },
+    "hiddenyears:end_crossbow_pulling_1": {
+      "textures": "textures/items/end_crossbow_pulling_1"
+    },
+    "hiddenyears:end_crossbow_pulling_2": {
+      "textures": "textures/items/end_crossbow_pulling_2"
+    },
+    "hiddenyears:end_crossbow_pulling_3": {
+      "textures": "textures/items/end_crossbow_pulling_3"
+    },
+    "hiddenyears:end_crossbow_standby": {
+      "textures": "textures/items/end_crossbow_standby"
+    },
     "hiddenyears:explode_arrow": {
       "textures": "textures/items/explode_arrow"
     },
