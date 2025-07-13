@@ -26,4 +26,4 @@ steps:
     settings:
       folder: docs
       ssh_key:
-        from_secret: artifact
+        from_secret: deploy
