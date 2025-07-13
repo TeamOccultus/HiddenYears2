@@ -129,6 +129,11 @@ export let crusherRecipesData: CrusherRecipe[] = [
     output: "hiddenyears:quartz_dust",
     amount: 5,
   },
+  {
+    ingredient: "hiddenyears:ruby",
+    output: "hiddenyears:magic_dust",
+    amount: 1,
+  }
 ];
 
 export let crusherIngredientData: string[] = crusherRecipesData.map((recipe) => recipe.ingredient);

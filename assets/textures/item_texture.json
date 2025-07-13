@@ -269,6 +269,9 @@
     "hiddenyears:lightning_crossbow_standby": {
       "textures": "textures/items/lightning_crossbow_standby"
     },
+    "hiddenyears:magic_dust": {
+      "textures": "textures/items/magic_dust"
+    },
     "hiddenyears:medicine_1": {
       "textures": "textures/items/medicine_1"
     },

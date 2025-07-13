@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:magic_dust"
+    },
+    "tags": ["alchemy_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:ruby",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:ruby"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:magic_dust",
+      "count": 6
+    }
+  }
+}
