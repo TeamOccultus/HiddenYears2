@@ -1,5 +1,8 @@
 import { Credits } from "../server/credits/Credits";
 
+/**
+ * 《隐藏之年²：天边的迦万涅尔》鸣谢名单
+ */
 export const HiddenYears2Credits: Credits = [
   {
     discipline: "Team Occultus",
@@ -98,6 +101,26 @@ export const HiddenYears2Credits: Credits = [
         name: "Kastname",
         role: "协助投稿到MC百科",
       },
+      {
+        name: "合理的Fish",
+        role: "功能建议",
+      },
+      {
+        name: "绝对零度·沉寂",
+        role: "功能建议",
+      },
+      {
+        name: "柘玄",
+        role: "功能建议",
+      },
+      {
+        name: "h梓u_元rk",
+        role: "功能建议",
+      },
+      {
+        name: "笨弊",
+        role: "功能建议",
+      }
     ],
   },
   "那是有生以来最大的一场雪，\n你我立下誓言，长相厮守，\n但偏偏 ，风渐渐。\n\n——？？？"

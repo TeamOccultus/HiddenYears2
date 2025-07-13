@@ -13,7 +13,7 @@ export function parseCredits(credits: Credits): string {
     parsedCredits.push(credit.discipline);
     parsedCredits.push("============");
     credit.contributors.forEach((contributor) => {
-      parsedCredits.push(`${contributor.name} - ${contributor.role}`);
+      parsedCredits.push(`${contributor.name} - §7§o${contributor.role}§r`);
     });
     parsedCredits.push("\n");
   });
