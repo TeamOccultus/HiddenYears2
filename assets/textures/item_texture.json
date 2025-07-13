@@ -482,8 +482,26 @@
     "hiddenyears:sparkling_stone": {
       "textures": "textures/items/sparkling_stone"
     },
+    "hiddenyears:steel_arrow": {
+      "textures": "textures/items/steel_arrow"
+    },
     "hiddenyears:steel_axe": {
       "textures": "textures/items/steel_axe"
+    },
+    "hiddenyears:steel_crossbow_pulling_0": {
+      "textures": "textures/items/steel_crossbow_pulling_0"
+    },
+    "hiddenyears:steel_crossbow_pulling_1": {
+      "textures": "textures/items/steel_crossbow_pulling_1"
+    },
+    "hiddenyears:steel_crossbow_pulling_2": {
+      "textures": "textures/items/steel_crossbow_pulling_2"
+    },
+    "hiddenyears:steel_crossbow_pulling_3": {
+      "textures": "textures/items/steel_crossbow_pulling_3"
+    },
+    "hiddenyears:steel_crossbow_standby": {
+      "textures": "textures/items/steel_crossbow_standby"
     },
     "hiddenyears:steel_dagger": {
       "textures": "textures/items/steel_dagger"

@@ -2,11 +2,13 @@ import {
   Entity,
   EntityDamageCause,
   ItemStack,
+  Player,
   system,
   world,
 } from "@minecraft/server";
 import { ArrowPresentParams, ArrowPresents } from "./ArrowPresentParams";
 import { EntitiesUtils } from "@starock/entity";
+import { Random } from "@starock/math";
 
 export class ArrowPresentComponent {
   constructor(readonly componentName: string) {
@@ -68,12 +70,35 @@ function stringifyPresent(
       .getEntities({
         location: hitEntity.location,
         maxDistance: 6,
-        excludeFamilies: ["player"]
+        excludeFamilies: ["player"],
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
         entity.setOnFire(20);
         entity.applyDamage(10, { cause: EntityDamageCause.fire });
+      });
+    return;
+  }
+  if (present === "steel") {
+    hitEntity.dimension
+      .getEntities({
+        location: hitEntity.location,
+        maxDistance: 6,
+        excludeFamilies: ["player"],
+      })
+      .forEach((entity) => {
+        if (!entity.isValid) return;
+        entity.applyDamage(Random.integer(12, 8), {
+          cause: EntityDamageCause.freezing,
+        });
+        entity.dimension.spawnParticle(
+          "minecraft:snowflake_particle",
+          entity.location
+        );
+        entity.addEffect("minecraft:slowness", 200, {
+          amplifier: 1,
+          showParticles: false,
+        });
       });
     return;
   }
