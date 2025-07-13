@@ -455,6 +455,9 @@
     "hiddenyears:silver_dagger": {
       "textures": "textures/items/silver_dagger"
     },
+    "hiddenyears:silver_dust": {
+      "textures": "textures/items/silver_dust"
+    },
     "hiddenyears:silver_hammer": {
       "textures": "textures/items/silver_hammer"
     },
@@ -463,6 +466,9 @@
     },
     "hiddenyears:silver_ingot": {
       "textures": "textures/items/silver_ingot"
+    },
+    "hiddenyears:silver_nugget": {
+      "textures": "textures/items/silver_nugget"
     },
     "hiddenyears:silver_pickaxe": {
       "textures": "textures/items/silver_pickaxe"
