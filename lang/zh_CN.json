@@ -171,6 +171,7 @@
   "item.record_plains.desc": "平原遐想 - FREIRC",
   "item.record_ruby.desc": "雷光的战曲 - FREIRC",
   "item.record_pharaohs.desc": "沙海古音 - 3xLnw",
+  "command.credits.description": "显示《隐藏之年²：天边的迦万涅尔》鸣谢名单",
   // 游戏消息
   "hy.message.first_destroy_ruby": "挖掘之后，你感到一阵眩晕……",
   "hy.message.tenth_destroy_ruby.1": "眩晕感再次袭来……",

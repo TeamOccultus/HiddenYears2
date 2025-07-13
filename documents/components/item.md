@@ -1,3 +1,9 @@
+---
+title: 物品组件
+group: Components
+category: Components
+---
+
 # 物品组件
 
 ## hiddenyears:effective_food

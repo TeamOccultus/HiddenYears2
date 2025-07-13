@@ -1,15 +1,15 @@
 {
-  "include": ["src/*", "src/tenon/game/encyclopedia.ts"],
+  "include": ["src/*", "types/**/*"],
   "compilerOptions": {
     "target": "es2022",
     "module": "ES2022",
     "moduleResolution": "node10",
-    //"declaration": true,
-    "outDir": "./tsc-out",
-    "removeComments": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "declarationDir": "types",
+    "removeComments": false,
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
-    "strict": true,
     "strictNullChecks": false,
     "skipLibCheck": true
   }

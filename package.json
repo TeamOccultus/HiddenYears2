@@ -6,7 +6,9 @@
     "build": "starock build",
     "ready": "starock prepare",
     "clear": "starock clear",
-    "prettier": "prettier --write ."
+    "doc": "typedoc --options typedoc.json",
+    "prettier": "prettier --write .",
+    "typescript": "dts-gen -m ./src"
   },
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
@@ -27,5 +29,9 @@
     "@starock/record": "^0.14.1",
     "@starock/tier": "^0.14.1",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "typedoc": "^0.28.7",
+    "typedoc-material-theme": "^1.4.0"
   }
 }

@@ -1,4 +1,8 @@
-# 编译脚本
+---
+title: 编译脚本
+group: Documents
+category: Guides
+---
 
 项目内置了一些 NPM 脚本，用于编译和打包项目。
 
