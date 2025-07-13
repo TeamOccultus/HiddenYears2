@@ -9,6 +9,7 @@ steps:
       - npm install -g pnpm
       - pnpm install
       - pnpm run build
+      - pnpm run doc      
   - name: upload
     image: codeberg.org/s1m/woodpecker-upload:latest
     when:
@@ -20,10 +21,6 @@ steps:
       file:
         - ./dist/HiddenYears2-unversioned.mcaddon
       package: true
-  - name: docs
-    image: node
-    commands:
-      - pnpm run doc
   - name: deploy
     image: codeberg.org/xfix/plugin-codeberg-pages-deploy:1
     settings:
