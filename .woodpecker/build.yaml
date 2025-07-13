@@ -20,3 +20,13 @@ steps:
       file:
         - ./dist/HiddenYears2-unversioned.mcaddon
       package: true
+  - name: docs
+    image: node
+    commands:
+      - pnpm run doc
+  - name: deploy
+    image: codeberg.org/xfix/plugin-codeberg-pages-deploy:1
+    settings:
+    folder: docs
+    ssh_key:
+      from_secret: artifact
