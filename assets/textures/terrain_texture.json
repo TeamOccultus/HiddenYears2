@@ -58,6 +58,9 @@
     "hiddenyears:crusher_top": {
       "textures": "textures/blocks/crusher_top"
     },
+    "hiddenyears:crystal_block": {
+      "textures": "textures/blocks/crystal_block"
+    },
     "hiddenyears:deepslate_ruby_ore": {
       "textures": "textures/blocks/deepslate_ruby_ore"
     },
@@ -82,6 +85,12 @@
     "hiddenyears:loose_redstone_ore": {
       "textures": "textures/blocks/loose_redstone_ore"
     },
+    "hiddenyears:originite_block": {
+      "textures": "textures/blocks/originite_block"
+    },
+    "hiddenyears:refined_rock_block": {
+      "textures": "textures/blocks/refined_rock_block"
+    },
     "hiddenyears:ruby_ore": {
       "textures": "textures/blocks/ruby_ore"
     },
@@ -96,6 +105,9 @@
     },
     "hiddenyears:sandstone_iron_ore": {
       "textures": "textures/blocks/sandstone_iron_ore"
+    },
+    "hiddenyears:silver_block": {
+      "textures": "textures/blocks/silver_block"
     }
   }
 }

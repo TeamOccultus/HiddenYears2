@@ -5,5 +5,17 @@
   },
   "hiddenyears:ancient_suspicious_sand": {
     "sound": "sand"
+  },
+  "hiddenyears:silver_block": {
+    "sound": "metal"
+  },
+  "hiddenyears:crystal_block": {
+    "sound": "amethyst"
+  },
+  "hiddenyears:refined_rock_block": {
+    "sound": "stone"
+  },
+  "hiddenyears:originite_block": {
+    "sound": "metal"
   }
 }
