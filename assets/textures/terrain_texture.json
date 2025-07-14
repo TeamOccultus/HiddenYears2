@@ -25,6 +25,9 @@
     "hiddenyears:ancient_suspicious_sand": {
       "textures": "textures/blocks/ancient_suspicious_sand"
     },
+    "hiddenyears:bowyers_bench": {
+      "textures": "textures/blocks/bowyers_bench"
+    },
     "hiddenyears:compact_copper_ore": {
       "textures": "textures/blocks/compact_copper_ore"
     },

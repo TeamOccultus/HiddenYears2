@@ -48,17 +48,13 @@
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
-        "up": {
-          "texture": "hiddenyears:crusher_top"
-        },
-        "down": { "texture": "hiddenyears:crusher_bottom" },
-        "north": { "texture": "hiddenyears:crusher_other_side" },
-        "south": { "texture": "hiddenyears:crusher_other_side" },
-        "west": { "texture": "hiddenyears:crusher_side" },
-        "east": { "texture": "hiddenyears:crusher_other_side" }
+        "*": {
+          "texture": "hiddenyears:bowyers_bench",
+          "render_method": "alpha_test"
+        }
       },
       "minecraft:geometry": {
-        "identifier": "minecraft:geometry.full_block"
+        "identifier": "geometry.bowyers_bench"
       },
       "minecraft:crafting_table": {
         "crafting_tags": ["bowyers_bench"]
