@@ -1,6 +1,6 @@
 import { system } from "@minecraft/server";
 import { OreTypeSchema } from "./OreTypeSchema";
-import { mentalAffect } from "../../utils/entity";
+import { OreEvents } from "../events/OreEvents";
 
 export class OreTypeComponent {
   constructor(readonly componentName: string) {
@@ -12,7 +12,7 @@ export class OreTypeComponent {
           const params = arg1.params as OreTypeSchema;
           if (!player) return;
           if (params.ore_type == "ruby") {
-            mentalAffect(player);
+            OreEvents.mentalAffect(player)
           }
         },
       });

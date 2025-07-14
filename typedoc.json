@@ -5,7 +5,8 @@
   "out": "docs",
   "plugin": ["typedoc-material-theme"],
   "projectDocuments": [
-    "documents/README.md"
+    "documents/README.md",
+    "documents/v3.md",
   ],
   "includeVersion": true
 }
