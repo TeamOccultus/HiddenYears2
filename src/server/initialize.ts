@@ -1,3 +1,7 @@
+/**
+ * @module server/initialize
+ * @category Initialize
+ */
 import { ModInitializer } from "@starock/core";
 import { registryAdventurerNote } from "./registry/note";
 import { registryComponents } from "./registry/components";

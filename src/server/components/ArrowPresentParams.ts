@@ -1,3 +1,7 @@
+/**
+ * @module server/components/ArrowPresentParams
+ * @category ComponentParams
+ */
 export type ArrowPresentParams = {
     present: ArrowPresents;
 }
