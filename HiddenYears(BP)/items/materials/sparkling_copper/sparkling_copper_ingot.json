@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:sparkling_copper_ingot",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:sparkling_copper_ingot",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:sparkling_copper_material"]
+      }
+    }
+  }
+}

@@ -178,10 +178,15 @@
   "item.hiddenyears:end_crossbow_loaded": "装填满的末影之弩",
   "item.hiddenyears:sparkling_stone": "闪耀之石",
   "item.hiddenyears:gold_sand": "金砂",
+  "item.hiddenyears:sparkling_copper_ingot": "闪铜锭",
+  "item.hiddenyears:sparkling_copper_nugget": "闪铜碎片",
+  "item.hiddenyears:sparkling_copper_block": "闪铜块",
+  "item.hiddenyears:erosion_totem": "腐蚀图腾",
   "item.hiddenyears:magic_dust": "魔法的尘埃",
   "item.record_plains.desc": "平原遐想 - FREIRC",
   "item.record_ruby.desc": "雷光的战曲 - FREIRC",
   "item.record_pharaohs.desc": "沙海古音 - 3xLnw",
+  "lore.hiddenyears:sparkling_copper": "闪铜升级",
   // 命令描述
   "command.credits.description": "显示《隐藏之年²：天边的迦万涅尔》鸣谢名单",
   // 游戏消息

@@ -185,6 +185,9 @@
     "hiddenyears:end_crossbow_standby": {
       "textures": "textures/items/end_crossbow_standby"
     },
+    "hiddenyears:erosion_totem": {
+      "textures": "textures/items/erosion_totem"
+    },
     "hiddenyears:explode_arrow": {
       "textures": "textures/items/explode_arrow"
     },
@@ -487,6 +490,9 @@
     },
     "hiddenyears:silver_sword": {
       "textures": "textures/items/silver_sword"
+    },
+    "hiddenyears:sparkling_copper_ingot": {
+      "textures": "textures/items/sparkling_copper_ingot"
     },
     "hiddenyears:sparkling_stone": {
       "textures": "textures/items/sparkling_stone"

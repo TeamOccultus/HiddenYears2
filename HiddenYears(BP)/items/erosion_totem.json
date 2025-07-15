@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:erosion_totem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:erosion_totem",
+      "minecraft:rarity": "uncommon",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:erosion_totem"]
+      }
+    }
+  }
+}
