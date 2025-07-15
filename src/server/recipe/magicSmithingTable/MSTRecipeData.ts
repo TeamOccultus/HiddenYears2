@@ -65,6 +65,62 @@ export let MSTRecipesData: MagicSmithingTableRecipe[] = [
     addition: "hiddenyears:frigid_steel_ingot",
     output: "hiddenyears:frigid_steel_sword",
   },
+  //
+    {
+    type: "transform",
+    base: "hiddenyears:originite_axe",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_axe",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_dagger",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_dagger",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_hammer",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_hammer",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_hoe",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_hoe",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_pickaxe",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_pickaxe",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_saw",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_saw",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_shovel",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_shovel",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_sledgehammer",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_sledgehammer",
+  },
+  {
+    type: "transform",
+    base: "hiddenyears:originite_sword",
+    addition: "hiddenyears:sparkling_gold_ingot",
+    output: "hiddenyears:sparkling_gold_sword",
+  },
+  //
   {
     type: "addtional",
     base: "minecraft:netherite_sword",

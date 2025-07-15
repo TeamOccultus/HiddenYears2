@@ -1,0 +1,58 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:sparkling_gold_hoe",
+      "menu_category": {
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.hoe"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_tool": {
+        "type": "hoe"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 2000
+      },
+      "minecraft:damage": 6,
+      "minecraft:enchantable": {
+        "value": 10,
+        "slot": "hoe"
+      },
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hiddenyears:sparkling_gold_hoe"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          },
+          {
+            "items": ["hiddenyears:sparkling_gold_ingot"],
+            "repair_amount": "query.max_durability * 0.25"
+          }
+        ]
+      },
+      "minecraft:icon": "hiddenyears:sparkling_gold_hoe",
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag('minecraft:is_hoe_item_destructible')"
+            },
+            "speed": 22
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_hoe",
+          "hiddenyears:sparkling_gold_tier",
+          "minecraft:stone_tier"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:sparkling_gold_dust",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:steel_dust",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:sparkling_gold_material", "hiddenyears:dust"]
+      }
+    }
+  }
+}
