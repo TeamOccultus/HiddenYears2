@@ -7,14 +7,19 @@ export class MSTRecipeManager {
   static addtions: string[] = MSTAddtionData;
   static recipes: MagicSmithingTableRecipe[] = MSTRecipesData;
   static getResult(recipe: MagicSmithingTableRecipe, base: ItemStack): ItemStack {
-    if (recipe.type === "addtional") {
-      return new ItemStack(recipe.output);
+    if (recipe.type === "transform") {
+      const result = new ItemStack(recipe.output);
+      if(recipe.lore) result.setLore([recipe.lore]);
+      return 
     }
-    const itemStack = new ItemStack(recipe.output);
+    const itemStack = new ItemStack(recipe.base);
     if(itemStack.getComponent("minecraft:durability") && base.getComponent("minecraft:durability")) {
       itemStack.getComponent("minecraft:durability").damage = base.getComponent("minecraft:durability").damage
     }
     itemStack.setDynamicProperty("hiddenyears:additional_material_type", recipe.output);
+    if(recipe.lore){ 
+      itemStack.setLore([recipe.lore]);
+    }
     return itemStack;
   }
   static addRecipe(recipe: MagicSmithingTableRecipe) {

@@ -3,7 +3,7 @@
  * @category Initialize
  */
 import { ModInitializer } from "@starock/core";
-import { registryAdventurerNote } from "./registry/note";
+import { registryItemSystems } from "./registry/item";
 import { registryComponents } from "./registry/components";
 import { registryMusicDisc } from "./registry/record";
 import { registryCustomRecipe } from "./registry/recipe";
@@ -20,7 +20,7 @@ export function initialize() {
   );
   registryCommands();
   registryCustomRecipe();
-  registryAdventurerNote();
+  registryItemSystems();
   registryComponents();
   registryMusicDisc();
 }

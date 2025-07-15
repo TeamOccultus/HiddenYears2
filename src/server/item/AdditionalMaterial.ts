@@ -1,7 +1,24 @@
-import { ItemStack } from "@minecraft/server";
+import { ItemStack, world } from "@minecraft/server";
+import { AdditionalMaterialEvents } from "../events/AdditionalMaterialEvents";
+import { EntityUtils } from "@starock/entity";
 
 export class AdditionalMaterialSystem {
-    
+  constructor(){
+    world.afterEvents.playerBreakBlock.subscribe((event) => {
+      const item = event.itemStackAfterBreak 
+      if(!item) return;
+      if (AdditionalMaterialSystem.getType(item)) {
+        AdditionalMaterialEvents.onMineBlock(event, AdditionalMaterialSystem.getType(item))
+      }
+    })
+    world.afterEvents.entityHitEntity.subscribe((event) => {
+      const item = EntityUtils.getEquipmentItem(event.damagingEntity)
+      if(!item) return;
+      if (AdditionalMaterialSystem.getType(item)) {
+        AdditionalMaterialEvents.onHitEntity(event, AdditionalMaterialSystem.getType(item))
+      }
+    })
+  }  
   /**
    * 获取物品的附加材料类型
    * @param item 要获取类型的物品

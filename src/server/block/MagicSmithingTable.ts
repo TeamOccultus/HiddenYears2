@@ -1,14 +1,28 @@
-import { PlayerInteractWithBlockAfterEvent } from "@minecraft/server";
+import {
+  ItemStack,
+  PlayerInteractWithBlockAfterEvent,
+} from "@minecraft/server";
 import { BlockEntity, BlockWithEntity, EntityUtils } from "@starock/entity";
 import { MSTRecipeManager } from "../recipe/magicSmithingTable/MSTRecipeManager";
 import { Vector3Utils } from "@starock/math";
+import { ItemUtils } from "@starock/item";
 
 export class MagicSmithingTable extends BlockWithEntity {
   constructor() {
     super(
-      "hiddenears:magic_smithing_table",
+      "hiddenyears:magic_smithing_table",
       "hiddenyears:magic_smithing_table"
     );
+  }
+  synchronizedStackData(from: ItemStack, to: ItemStack) {
+    if (
+      to.getComponent("minecraft:durability") &&
+      from.getComponent("minecraft:durability")
+    ) {
+      to.getComponent("minecraft:durability").damage = from.getComponent(
+        "minecraft:durability"
+      ).damage;
+    }
   }
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {
     const [item, entityData, player] = [
@@ -25,9 +39,11 @@ export class MagicSmithingTable extends BlockWithEntity {
         });
         return;
       }
-      BlockEntity.storeItem(item, entityData);
-      item.amount = item.amount - 1;
-      EntityUtils.setEquipmentItem(player, item);
+      const inputItem = new ItemStack(item.typeId);
+      this.synchronizedStackData(item, inputItem);
+      BlockEntity.storeItem(inputItem, entityData);
+      const eqItem = ItemUtils.consumeAmount(item, 1);
+      EntityUtils.setEquipmentItem(player, eqItem);
       return;
     }
 
@@ -39,12 +55,12 @@ export class MagicSmithingTable extends BlockWithEntity {
       return;
     }
     player.dimension.spawnItem(
-      MSTRecipeManager.getResult(recipe,baseItem),
+      MSTRecipeManager.getResult(recipe, baseItem),
       Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 })
     );
     player.playSound("smithing_table.use");
     BlockEntity.clearStoredItem(entityData);
-    item.amount = item.amount - 1;
-    EntityUtils.setEquipmentItem(player, item);
+    const eqItem = ItemUtils.consumeAmount(item, 1);
+    EntityUtils.setEquipmentItem(player, eqItem);
   }
 }

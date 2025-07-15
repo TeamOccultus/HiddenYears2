@@ -6,6 +6,7 @@ import {
 import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
 import { EntityUtils } from "@starock/entity";
 import { Vector3Utils } from "@starock/math";
+import { ItemUtils } from "@starock/item";
 
 export class Crusher extends BlockWithEntity {
   constructor() {
@@ -20,7 +21,7 @@ export class Crusher extends BlockWithEntity {
     if (!item) return;
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
-    if(Array.isArray(filledItem)) return;
+    if (Array.isArray(filledItem)) return;
     console.warn(filledItem?.typeId);
     if (!filledItem) {
       if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
@@ -28,8 +29,8 @@ export class Crusher extends BlockWithEntity {
         return;
       }
       BlockEntity.storeItem(new ItemStack(item.typeId), entityData);
-      item.amount = item.amount - 1;
-      EntityUtils.setEquipmentItem(player, item);
+      const eqItem = ItemUtils.consumeAmount(item, 1);
+      EntityUtils.setEquipmentItem(player, eqItem);
       player.playSound("fall.stone");
       return;
     }
@@ -40,7 +41,7 @@ export class Crusher extends BlockWithEntity {
         output,
         Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 })
       );
-      player.playSound("random.anvil_use")
+      player.playSound("random.anvil_use");
       BlockEntity.clearStoredItem(entityData);
     }
   }

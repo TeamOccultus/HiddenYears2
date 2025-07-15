@@ -1,7 +1,7 @@
 import {
   EntityDamageCause,
-  ItemComponentHitEntityEvent,
-  ItemComponentMineBlockEvent,
+  EntityHitEntityAfterEvent,
+  PlayerBreakBlockAfterEvent,
   system,
 } from "@minecraft/server";
 import { AdditionalMaterialType } from "../item/AdditionalMaterial";
@@ -10,46 +10,47 @@ import { EntitiesUtils } from "@starock/entity";
 export class AdditionalMaterialEvents {
   private constructor() {}
   static onHitEntity(
-    arg: ItemComponentHitEntityEvent,
+    arg: EntityHitEntityAfterEvent,
     type: AdditionalMaterialType
   ) {
-    const { itemStack, hitEntity, attackingEntity } = arg;
+    const { hitEntity, damagingEntity } = arg;
+    if(!hitEntity.isValid) return;
     if (type === "erosion") {
       hitEntity.addEffect("minecraft:slowness", 200);
       const handle = system.runInterval(() => {
-        if (hitEntity.isValid) {
-          hitEntity.applyDamage(5, { cause: EntityDamageCause.magic });
-        }
+        hitEntity.applyDamage(5, { cause: EntityDamageCause.magic });
       }, 40);
       system.runTimeout(() => system.clearRun(handle), 120);
       return;
     }
     if (type === "sparkling_copper") {
-      attackingEntity.addTag("hiddenyears:sparkling_copper_attaker");
+      damagingEntity.addTag("hiddenyears:sparkling_copper_attaker");
       const entities = hitEntity.dimension.getEntities({
-        location: attackingEntity.location,
+        location: damagingEntity.location,
         maxDistance: 8,
         excludeTags: ["hiddenyears:sparkling_copper_attaker"],
       });
       entities.forEach((entity) => {
+        if(!entity.isValid) return;
         entity.applyDamage(8, { cause: EntityDamageCause.magic });
+        if(!entity.isValid) return;
         entity.dimension.spawnParticle(
           "minecraft:critical_hit_emitter",
           entity.location
         );
       });
-      attackingEntity.removeTag("hiddenyears:sparkling_copper_attaker");
+      damagingEntity.removeTag("hiddenyears:sparkling_copper_attaker");
       return;
     }
   }
   static onMineBlock(
-    arg: ItemComponentMineBlockEvent,
+    arg: PlayerBreakBlockAfterEvent,
     type: AdditionalMaterialType
   ) {
-    const { itemStack, block, source } = arg;
+    const { player } = arg;
     if (type === "erosion") return;
     if (type === "sparkling_copper") {
-      source.addEffect("minecraft:haste", 200, {
+      player.addEffect("minecraft:haste", 200, {
         amplifier: 3,
         showParticles: false,
       });
