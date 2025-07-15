@@ -65,11 +65,23 @@
     "hiddenyears:coal_nugget": {
       "textures": "textures/items/coal_nugget"
     },
+    "hiddenyears:copper_dagger": {
+      "textures": "textures/items/copper_dagger"
+    },
     "hiddenyears:copper_dust": {
       "textures": "textures/items/copper_dust"
     },
+    "hiddenyears:copper_hammer": {
+      "textures": "textures/items/copper_hammer"
+    },
     "hiddenyears:copper_nugget": {
       "textures": "textures/items/copper_nugget"
+    },
+    "hiddenyears:copper_saw": {
+      "textures": "textures/items/copper_saw"
+    },
+    "hiddenyears:copper_sledgehammer": {
+      "textures": "textures/items/copper_sledgehammer"
     },
     "hiddenyears:crystal_axe": {
       "textures": "textures/items/crystal_axe"
@@ -137,6 +149,12 @@
     "hiddenyears:daylight_bow_standby": {
       "textures": "textures/items/daylight_bow_standby"
     },
+    "hiddenyears:diamond_crowbar": {
+      "textures": "textures/items/diamond_crowbar"
+    },
+    "hiddenyears:diamond_dagger": {
+      "textures": "textures/items/diamond_dagger"
+    },
     "hiddenyears:diamond_dust": {
       "textures": "textures/items/diamond_dust"
     },
@@ -155,8 +173,17 @@
     "hiddenyears:diamond_enhanced_bow_standby": {
       "textures": "textures/items/diamond_enhanced_bow_standby"
     },
+    "hiddenyears:diamond_hammer": {
+      "textures": "textures/items/diamond_hammer"
+    },
     "hiddenyears:diamond_nugget": {
       "textures": "textures/items/diamond_nugget"
+    },
+    "hiddenyears:diamond_saw": {
+      "textures": "textures/items/diamond_saw"
+    },
+    "hiddenyears:diamond_sledgehammer": {
+      "textures": "textures/items/diamond_sledgehammer"
     },
     "hiddenyears:emerald_dust": {
       "textures": "textures/items/emerald_dust"
@@ -224,11 +251,29 @@
     "hiddenyears:fire_crossbow_standby": {
       "textures": "textures/items/fire_crossbow_standby"
     },
+    "hiddenyears:golden_dagger": {
+      "textures": "textures/items/golden_dagger"
+    },
+    "hiddenyears:golden_hammer": {
+      "textures": "textures/items/golden_hammer"
+    },
+    "hiddenyears:golden_saw": {
+      "textures": "textures/items/golden_saw"
+    },
+    "hiddenyears:golden_sledgehammer": {
+      "textures": "textures/items/golden_sledgehammer"
+    },
     "hiddenyears:gold_dust": {
       "textures": "textures/items/gold_dust"
     },
     "hiddenyears:gold_sand": {
       "textures": "textures/items/gold_sand"
+    },
+    "hiddenyears:iron_crowbar": {
+      "textures": "textures/items/iron_crowbar"
+    },
+    "hiddenyears:iron_dagger": {
+      "textures": "textures/items/iron_dagger"
     },
     "hiddenyears:iron_dust": {
       "textures": "textures/items/iron_dust"
@@ -247,6 +292,15 @@
     },
     "hiddenyears:iron_enhanced_bow_standby": {
       "textures": "textures/items/iron_enhanced_bow_standby"
+    },
+    "hiddenyears:iron_hammer": {
+      "textures": "textures/items/iron_hammer"
+    },
+    "hiddenyears:iron_saw": {
+      "textures": "textures/items/iron_saw"
+    },
+    "hiddenyears:iron_sledgehammer": {
+      "textures": "textures/items/iron_sledgehammer"
     },
     "hiddenyears:lapis_dust": {
       "textures": "textures/items/lapis_dust"
@@ -317,6 +371,9 @@
     "hiddenyears:medicine_9": {
       "textures": "textures/items/medicine_9"
     },
+    "hiddenyears:netherite_dagger": {
+      "textures": "textures/items/netherite_dagger"
+    },
     "hiddenyears:netherite_dust": {
       "textures": "textures/items/netherite_dust"
     },
@@ -335,8 +392,17 @@
     "hiddenyears:netherite_enhanced_bow_standby": {
       "textures": "textures/items/netherite_enhanced_bow_standby"
     },
+    "hiddenyears:netherite_hammer": {
+      "textures": "textures/items/netherite_hammer"
+    },
     "hiddenyears:netherite_nugget": {
       "textures": "textures/items/netherite_nugget"
+    },
+    "hiddenyears:netherite_saw": {
+      "textures": "textures/items/netherite_saw"
+    },
+    "hiddenyears:netherite_sledgehammer": {
+      "textures": "textures/items/netherite_sledgehammer"
     },
     "hiddenyears:originite_axe": {
       "textures": "textures/items/originite_axe"
@@ -584,8 +650,32 @@
     "hiddenyears:steel_sword": {
       "textures": "textures/items/steel_sword"
     },
+    "hiddenyears:stone_dagger": {
+      "textures": "textures/items/stone_dagger"
+    },
+    "hiddenyears:stone_hammer": {
+      "textures": "textures/items/stone_hammer"
+    },
     "hiddenyears:stone_nugget": {
       "textures": "textures/items/stone_nugget"
+    },
+    "hiddenyears:stone_saw": {
+      "textures": "textures/items/stone_saw"
+    },
+    "hiddenyears:stone_sledgehammer": {
+      "textures": "textures/items/stone_sledgehammer"
+    },
+    "hiddenyears:wooden_dagger": {
+      "textures": "textures/items/wooden_dagger"
+    },
+    "hiddenyears:wooden_hammer": {
+      "textures": "textures/items/wooden_hammer"
+    },
+    "hiddenyears:wooden_saw": {
+      "textures": "textures/items/wooden_saw"
+    },
+    "hiddenyears:wooden_sledgehammer": {
+      "textures": "textures/items/wooden_sledgehammer"
     }
   }
 }
