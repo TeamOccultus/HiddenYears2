@@ -186,7 +186,8 @@
   "item.record_plains.desc": "平原遐想 - FREIRC",
   "item.record_ruby.desc": "雷光的战曲 - FREIRC",
   "item.record_pharaohs.desc": "沙海古音 - 3xLnw",
-  "lore.hiddenyears:sparkling_copper": "闪铜升级",
+  "lore.hiddenyears:sparkling_copper": "§f闪铜升级§r",
+  "lore.hiddenyears:erosion_totem": "§f腐蚀图腾升级§r",
   // 命令描述
   "command.credits.description": "显示《隐藏之年²：天边的迦万涅尔》鸣谢名单",
   // 游戏消息
