@@ -398,6 +398,9 @@
     "hiddenyears:raw_silver": {
       "textures": "textures/items/raw_silver"
     },
+    "hiddenyears:raw_steel": {
+      "textures": "textures/items/raw_steel"
+    },
     "hiddenyears:record_pharaohs": {
       "textures": "textures/items/record_pharaohs"
     },
@@ -494,6 +497,36 @@
     "hiddenyears:sparkling_copper_ingot": {
       "textures": "textures/items/sparkling_copper_ingot"
     },
+    "hiddenyears:sparkling_gold_axe": {
+      "textures": "textures/items/sparkling_gold_axe"
+    },
+    "hiddenyears:sparkling_gold_dagger": {
+      "textures": "textures/items/sparkling_gold_dagger"
+    },
+    "hiddenyears:sparkling_gold_hammer": {
+      "textures": "textures/items/sparkling_gold_hammer"
+    },
+    "hiddenyears:sparkling_gold_hoe": {
+      "textures": "textures/items/sparkling_gold_hoe"
+    },
+    "hiddenyears:sparkling_gold_ingot": {
+      "textures": "textures/items/sparkling_gold_ingot"
+    },
+    "hiddenyears:sparkling_gold_pickaxe": {
+      "textures": "textures/items/sparkling_gold_pickaxe"
+    },
+    "hiddenyears:sparkling_gold_saw": {
+      "textures": "textures/items/sparkling_gold_saw"
+    },
+    "hiddenyears:sparkling_gold_shovel": {
+      "textures": "textures/items/sparkling_gold_shovel"
+    },
+    "hiddenyears:sparkling_gold_sledgehammer": {
+      "textures": "textures/items/sparkling_gold_sledgehammer"
+    },
+    "hiddenyears:sparkling_gold_sword": {
+      "textures": "textures/items/sparkling_gold_sword"
+    },
     "hiddenyears:sparkling_stone": {
       "textures": "textures/items/sparkling_stone"
     },
@@ -521,6 +554,9 @@
     "hiddenyears:steel_dagger": {
       "textures": "textures/items/steel_dagger"
     },
+    "hiddenyears:steel_dust": {
+      "textures": "textures/items/steel_dust"
+    },
     "hiddenyears:steel_hammer": {
       "textures": "textures/items/steel_hammer"
     },
@@ -529,6 +565,9 @@
     },
     "hiddenyears:steel_ingot": {
       "textures": "textures/items/steel_ingot"
+    },
+    "hiddenyears:steel_nugget": {
+      "textures": "textures/items/steel_nugget"
     },
     "hiddenyears:steel_pickaxe": {
       "textures": "textures/items/steel_pickaxe"

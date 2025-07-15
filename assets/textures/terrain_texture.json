@@ -111,6 +111,9 @@
     },
     "hiddenyears:silver_block": {
       "textures": "textures/blocks/silver_block"
+    },
+    "hiddenyears:steel_block": {
+      "textures": "textures/blocks/steel_block"
     }
   }
 }

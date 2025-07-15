@@ -10,7 +10,7 @@ export class MSTRecipeManager {
     if (recipe.type === "transform") {
       const result = new ItemStack(recipe.output);
       if(recipe.lore) result.setLore([recipe.lore]);
-      return 
+      return result;
     }
     const itemStack = new ItemStack(recipe.base);
     if(itemStack.getComponent("minecraft:durability") && base.getComponent("minecraft:durability")) {
