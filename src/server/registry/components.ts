@@ -4,7 +4,7 @@ import {
   ToolMaterial,
   WeaponMaterial,
 } from "@starock/item";
-import { OreBlock, InteractableBlock, BlcokRegistries } from "@starock/block";
+import { OreBlock, InteractableBlock, BlcokRegistries, BlockWithDestroyCondition } from "@starock/block";
 import { OreTypeComponent } from "../components/OreTypeComponent";
 import { ToolTypeComponent } from "../components/ToolTypeComponent";
 import { WeaponTypeComponent } from "../components/WeaponTypeComponent";
@@ -41,4 +41,8 @@ export function registryComponents() {
     "hiddenyears:custom_ore",
     new OreBlock("hiddenyears:custom_ore")
   );
+  block.register(
+    "hiddenyears:destroy_condition",
+    new BlockWithDestroyCondition("hiddenyears:destroy_condition")
+  )
 }

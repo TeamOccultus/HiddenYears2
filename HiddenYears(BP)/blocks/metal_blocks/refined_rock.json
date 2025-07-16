@@ -8,10 +8,9 @@
       }
     },
     "components": {
-      "hiddenyears:custom_ore": {
-        "itemTier": "iron",
-        "lootTable": "blocks/metal_blocks/cystal_block",
-        "exp": 0
+      "hiddenyears:destroy_condition": {
+        "item_tier": "iron",
+        "loot_table": "blocks/metal_blocks/cystal_block"
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 15.0,

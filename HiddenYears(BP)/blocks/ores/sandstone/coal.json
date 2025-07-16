@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "itemTier": "stone",
-        "lootTable": "blocks/ores/sandstone/coal",
+        "item_tier": "stone",
+        "loot_table": "blocks/ores/sandstone/coal",
         "exp": 1
       },
       "minecraft:material_instances": {

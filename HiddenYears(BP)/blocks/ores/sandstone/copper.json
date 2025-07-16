@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "itemTier": "stone",
-        "lootTable": "blocks/ores/sandstone/copper",
+        "item_tier": "stone",
+        "loot_table": "blocks/ores/sandstone/copper",
         "exp": 1
       },
       "minecraft:material_instances": {

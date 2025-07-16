@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "itemTier": "wooden",
-        "lootTable": "blocks/ores/compact/coal",
+        "item_tier": "wooden",
+        "loot_table": "blocks/ores/compact/coal",
         "exp": 4
       },
       "minecraft:material_instances": {

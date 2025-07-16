@@ -41,10 +41,9 @@
     ],
     "components": {
       "hiddenyears:interactable": {},
-      "hiddenyears:custom_ore": {
-        "itemTier": "stone",
-        "lootTable": "blocks/crusher",
-        "exp": 0
+      "hiddenyears:destroy_condition": {
+        "item_tier": "stone",
+        "loot_table": "blocks/crusher"
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {

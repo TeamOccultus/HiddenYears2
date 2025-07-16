@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "itemTier": "stone",
-        "lootTable": "blocks/ores/compact/redstone",
+        "item_tier": "stone",
+        "loot_table": "blocks/ores/compact/redstone",
         "exp": 4
       },
       "minecraft:material_instances": {

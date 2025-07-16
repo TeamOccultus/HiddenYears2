@@ -8,10 +8,9 @@
       }
     },
     "components": {
-      "hiddenyears:custom_ore": {
-        "itemTier": "stone",
-        "lootTable": "blocks/alchemy_table",
-        "exp": 0
+      "hiddenyears:destroy_condition": {
+        "item_tier": "stone",
+        "loot_table": "blocks/alchemy_table"
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:light_emission": 8,

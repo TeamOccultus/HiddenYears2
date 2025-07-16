@@ -18,41 +18,41 @@ importers:
         specifier: 2.1.0-beta.1.21.100-preview.23
         version: 2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
       '@starock/block':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/vanilla-data@1.21.90-preview.20)(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/vanilla-data@1.21.90-preview.20)(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
       '@starock/cli':
         specifier: ^0.2.3
         version: 0.2.3(@types/node@22.14.0)
       '@starock/common':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
       '@starock/component':
-        specifier: 0.14.1
-        version: 0.14.1(a47e0e44da48cee9d5a251484c754494)
+        specifier: 0.15.1
+        version: 0.15.1(c79442c7e2364b487428fe82c7dc92e4)
       '@starock/core':
-        specifier: 0.14.1
-        version: 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+        specifier: 0.15.1
+        version: 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
       '@starock/entity':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
       '@starock/format':
         specifier: ^1.0.1
         version: 1.0.1
       '@starock/item':
-        specifier: ^0.14.1
-        version: 0.14.1(aea588e6460bf97a4d5163b3c2481c9c)
+        specifier: ^0.15.1
+        version: 0.15.1(ef35a6e4bffe3ca655e007ee6a8ee537)
       '@starock/loot':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@starock/math':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@starock/record':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/format@1.0.1)
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/format@1.0.1)
       '@starock/tier':
-        specifier: ^0.14.1
-        version: 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+        specifier: ^0.15.1
+        version: 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -474,87 +474,87 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@starock/block@0.14.1':
-    resolution: {integrity: sha512-IdH2k4FONC+EaliqnWDnLzMKoPktRxcWdeNKXF+d2YTc+jssxnJXuSjEB/ls2YMhkGADYVtELhdLkJ9+arSRgQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fblock/-/0.14.1/block-0.14.1.tgz}
+  '@starock/block@0.15.1':
+    resolution: {integrity: sha512-6Qnu4gXTVrMYnJe9X3ktCuVdpd+yBaqYxsAkdScFH9LsN0ilw7l/TR2vFzj+7WCf/d4JRgLCd2LFsvHfXOl8Ow==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fblock/-/0.15.1/block-0.15.1.tgz}
 
   '@starock/cli@0.2.3':
     resolution: {integrity: sha512-onybdcZ9FCe5KEC5GyA7XCBHnBAFLplvvHa3DdHAg459xRang1eUHcwmNo5Ox3wVznSn5jdCoi1jc3en3WgfPg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.2.3/cli-0.2.3.tgz}
     hasBin: true
 
-  '@starock/common@0.14.1':
-    resolution: {integrity: sha512-OMoPqTFXTBTL7m10g+9rtQ1gmzR+M2MvslxkONmDb+BefzHkLZKYl1EkFhhZ1XKrHSL248BkbZzeQ9k+7zEnrQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcommon/-/0.14.1/common-0.14.1.tgz}
+  '@starock/common@0.15.1':
+    resolution: {integrity: sha512-uDmEEQTg3+64l78fsoT0sJ2xzQxnUIpoAdQ2/PBxTtfKvKNAMNHHq4cpeoiWGre9CAuoqyo7VMHGtckNkBrLHg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcommon/-/0.15.1/common-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
 
-  '@starock/component@0.14.1':
-    resolution: {integrity: sha512-2YVMLF5igGDcUwTgeJwaQUw7q8xrvWuh8ApxdoB29c+IYgxUXio7K5H3pShQQb3I+GHABMsJkVggyokH+8imUw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcomponent/-/0.14.1/component-0.14.1.tgz}
+  '@starock/component@0.15.1':
+    resolution: {integrity: sha512-bZvlD0HnDJjl+A7OCx+MVtiAAj4vMMVEwJfdUPNV6VoQ0PBFPboKeXsdYPjNUDakzND+CxqhiU+MjJuy1T46dA==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcomponent/-/0.15.1/component-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/common': 0.14.1
-      '@starock/core': 0.14.1
-      '@starock/entity': 0.14.1
-      '@starock/loot': 0.14.1
-      '@starock/tier': 0.14.1
+      '@starock/common': 0.15.1
+      '@starock/core': 0.15.1
+      '@starock/entity': 0.15.1
+      '@starock/loot': 0.15.1
+      '@starock/tier': 0.15.1
 
-  '@starock/core@0.14.1':
-    resolution: {integrity: sha512-5VSywPXJJ81I5JuLOg1JQRMtdNXFp1lY04dGmo8pZNH3a6w2MpaPwHzw5aHqw1mb1QgAh1LiF+RRwcJ8IU2TMQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcore/-/0.14.1/core-0.14.1.tgz}
+  '@starock/core@0.15.1':
+    resolution: {integrity: sha512-o8vKQOulOwJltH/bYVv4SpxN9yFjzTS6WmB3VF0lelrM11HG92JLXE6HJsikA37AkPtzokeuOPoCes3ERgE/nw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcore/-/0.15.1/core-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
       '@minecraft/server-ui': 2.1.0-beta.1.21.100-preview.23
 
-  '@starock/entity@0.14.1':
-    resolution: {integrity: sha512-6QHG9+I4gvt+kNvazH+JNr6hBvaEZUzQwMHS4HeGpBHCBdkCnzmz5uOqivDInOAsiUIptoiv5rMipL/uYzcJyg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fentity/-/0.14.1/entity-0.14.1.tgz}
+  '@starock/entity@0.15.1':
+    resolution: {integrity: sha512-23UD1ACtISiI5HL72pfS1ON+XWV5SDPKKjLKM163Pkcyeqf5ylmSO54TBRHmEB/klQuIqBQ5JYLOl8WRPja6HQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fentity/-/0.15.1/entity-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/common': 0.14.1
-      '@starock/core': 0.14.1
-      '@starock/math': 0.14.1
+      '@starock/common': 0.15.1
+      '@starock/core': 0.15.1
+      '@starock/math': 0.15.1
 
   '@starock/format@1.0.1':
     resolution: {integrity: sha512-KNaW1bkystMPlBRbXRGnqbu6OBFsNXRnn0u8N3ktRlHvnRPIHVUbY7t2I8fAaeX/COf742ULvUpuT3fFaILGEg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fformat/-/1.0.1/format-1.0.1.tgz}
 
-  '@starock/item@0.14.1':
-    resolution: {integrity: sha512-3S7MKcUPxTmy77AFJNHEp/+8LZKIusNPhFLxnzVeyEr1TBag5si5Sz48fAGM3rCAwYyU1wXwVINeDBwFI0Z3dA==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fitem/-/0.14.1/item-0.14.1.tgz}
+  '@starock/item@0.15.1':
+    resolution: {integrity: sha512-XbuHCAvvs9pL0vTnahSAhG+drxI+WbUODWOSgInAcGfcaLTPHqaBgzaJlrfITd3P5BqtSuHv1Hb3o4Ql6Mt1sA==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fitem/-/0.15.1/item-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/common': 0.14.1
-      '@starock/core': 0.14.1
-      '@starock/entity': 0.14.1
-      '@starock/math': 0.14.1
-      '@starock/skill': 0.14.1
+      '@starock/common': 0.15.1
+      '@starock/core': 0.15.1
+      '@starock/entity': 0.15.1
+      '@starock/math': 0.15.1
+      '@starock/skill': 0.15.1
 
-  '@starock/loot@0.14.1':
-    resolution: {integrity: sha512-5QhmhaDgGK61dxjrt3E+RefLg5avV80HboinrT7PVrp9iBhMAt8iyvDqoYkBUwgyEizSgZkZX9Dm+289dNwcPw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Floot/-/0.14.1/loot-0.14.1.tgz}
+  '@starock/loot@0.15.1':
+    resolution: {integrity: sha512-RN3aLfn68QBHgIKKaceqveWHlKJy6iYz3ETUbLCWosWeSiwEp0UMERf8CET0Oz3B2SdWy23cvvuo8jyhJWQKQg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Floot/-/0.15.1/loot-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
       '@minecraft/server-ui': 2.1.0-beta.1.21.100-preview.23
-      '@starock/core': 0.14.1
+      '@starock/core': 0.15.1
 
-  '@starock/math@0.14.1':
-    resolution: {integrity: sha512-/P6h/J/uS8W8bp+15JwCGL7VqjWE3tivFc6NAIvOl/jWDM5cf6zUU+xH70DkB8f21mvjExvL735DG9CU/sV+jg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fmath/-/0.14.1/math-0.14.1.tgz}
+  '@starock/math@0.15.1':
+    resolution: {integrity: sha512-b0Q2RugR81xAFDPjPMBpFvnebaCa+y1xQG/BHc4yYkfvEb6AvDgtWtiakcyre7w6tK4KTWAxl86Rqp8pC/PHKQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fmath/-/0.15.1/math-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/core': 0.14.1
+      '@starock/core': 0.15.1
 
-  '@starock/record@0.14.1':
-    resolution: {integrity: sha512-aNVAVM8fNkU2lEb9CBd+NhdCAP/A3jGeJLnz47LuyUUGBIS5offDkOPj5KIyDBdYXYQoJo33fS+k0oROG0ORKA==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Frecord/-/0.14.1/record-0.14.1.tgz}
+  '@starock/record@0.15.1':
+    resolution: {integrity: sha512-eIIssP7Z+JC2fli5VDMYVfO6JBGy9adSnsURrqMQtjqJePBV4yg4SVh52TbMIa7b23mnCyoX6JB1tIyybB53oQ==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Frecord/-/0.15.1/record-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/core': 0.14.1
+      '@starock/core': 0.15.1
       '@starock/format': 1.0.1
 
-  '@starock/skill@0.14.1':
-    resolution: {integrity: sha512-L5ODgLFyK+AKX3mx1qj25Sm8sWP7Slr2LgIdOkFfppYYXQe6gYfuk1KbgptoE97KSdVDK4F5IkeuFf8L00NWCg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fskill/-/0.14.1/skill-0.14.1.tgz}
+  '@starock/skill@0.15.1':
+    resolution: {integrity: sha512-tZUPer7BhEPjlmf+lOHZ4EOFVmilRlF+x+i6vJ8UKMXfX6yJ6ZpDeJn0r3A8sWtZXAsLwsQrQQKRYCwSs1lT/w==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fskill/-/0.15.1/skill-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/core': 0.14.1
-      '@starock/entity': 0.14.1
+      '@starock/core': 0.15.1
+      '@starock/entity': 0.15.1
 
-  '@starock/tier@0.14.1':
-    resolution: {integrity: sha512-adDfah5c+6vphYC0InRLyWcnRABCZOqQZSl0s36dA3Ta/zuYrmSvlwsSm0EFSSG2ICKV+4jviT7LBygQGpn0Iw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Ftier/-/0.14.1/tier-0.14.1.tgz}
+  '@starock/tier@0.15.1':
+    resolution: {integrity: sha512-62m1eD3ktw3SUlbLzo+RvuglWvk0CpiqX07Xnt/YOQEcYqWrhzQU0eRoCRMfNC4pjOf5hOQ8HdwvvT307tBc3A==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Ftier/-/0.15.1/tier-0.15.1.tgz}
     peerDependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23
-      '@starock/core': 0.14.1
+      '@starock/core': 0.15.1
 
   '@tybys/wasm-util@0.9.0':
     resolution: {integrity: sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw==}
@@ -1294,14 +1294,14 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@starock/block@0.14.1(@minecraft/vanilla-data@1.21.90-preview.20)(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))':
+  '@starock/block@0.15.1(@minecraft/vanilla-data@1.21.90-preview.20)(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
       '@minecraft/server-ui': 2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/entity': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
-      '@starock/loot': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@starock/tier': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/entity': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
+      '@starock/loot': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@starock/tier': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
     transitivePeerDependencies:
       - '@minecraft/vanilla-data'
       - '@starock/common'
@@ -1320,69 +1320,69 @@ snapshots:
     transitivePeerDependencies:
       - '@types/node'
 
-  '@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))':
+  '@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
 
-  '@starock/component@0.14.1(a47e0e44da48cee9d5a251484c754494)':
+  '@starock/component@0.15.1(c79442c7e2364b487428fe82c7dc92e4)':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/common': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/entity': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
-      '@starock/loot': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@starock/tier': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@starock/common': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/entity': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
+      '@starock/loot': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@starock/tier': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
 
-  '@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))':
+  '@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
       '@minecraft/server-ui': 2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
 
-  '@starock/entity@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))':
+  '@starock/entity@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/common': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/math': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@starock/common': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/math': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
 
   '@starock/format@1.0.1': {}
 
-  '@starock/item@0.14.1(aea588e6460bf97a4d5163b3c2481c9c)':
+  '@starock/item@0.15.1(ef35a6e4bffe3ca655e007ee6a8ee537)':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/common': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/entity': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
-      '@starock/math': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@starock/skill': 0.14.1(dfaa2e120470a11e8b8336594c10c5ac)
+      '@starock/common': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/entity': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
+      '@starock/math': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@starock/skill': 0.15.1(104b44435de943b068016dea36812214)
 
-  '@starock/loot@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@starock/loot@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
       '@minecraft/server-ui': 2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
 
-  '@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
 
-  '@starock/record@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/format@1.0.1)':
+  '@starock/record@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/format@1.0.1)':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
       '@starock/format': 1.0.1
 
-  '@starock/skill@0.14.1(dfaa2e120470a11e8b8336594c10c5ac)':
+  '@starock/skill@0.15.1(104b44435de943b068016dea36812214)':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/entity': 0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/entity': 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
 
-  '@starock/tier@0.14.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@starock/tier@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@starock/core': 0.14.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@starock/core': 0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
 
   '@tybys/wasm-util@0.9.0':
     dependencies:

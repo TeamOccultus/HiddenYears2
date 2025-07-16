@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "itemTier": "iron",
-        "lootTable": "blocks/ores/compact/emerald",
+        "item_tier": "iron",
+        "loot_table": "blocks/ores/compact/emerald",
         "exp": 4
       },
       "minecraft:material_instances": {
