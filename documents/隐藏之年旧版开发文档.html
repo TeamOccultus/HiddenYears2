@@ -1,0 +1,701 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>隐藏之年旧版开发文档 | hidden-years - v3.0.0-alpha.1</title><meta name="description" content="Documentation for hidden-years"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><style>
+@media (prefers-color-scheme: dark) {
+  :root {
+    --md-sys-color-primary: #f6be46;
+    --md-sys-color-on-primary: #412d00;
+    --md-sys-color-primary-container: #5d4200;
+    --md-sys-color-on-primary-container: #ffdea3;
+    --md-sys-color-secondary: #d9c4a0;
+    --md-sys-color-on-secondary: #3b2f15;
+    --md-sys-color-secondary-container: #53452a;
+    --md-sys-color-on-secondary-container: #f6e0bb;
+    --md-sys-color-tertiary: #b2cfa8;
+    --md-sys-color-on-tertiary: #1e361a;
+    --md-sys-color-tertiary-container: #344d2f;
+    --md-sys-color-on-tertiary-container: #cdebc2;
+    --md-sys-color-error: #ffb4ab;
+    --md-sys-color-on-error: #690005;
+    --md-sys-color-error-container: #93000a;
+    --md-sys-color-on-error-container: #ffb4ab;
+    --md-sys-color-background: #1e1b16;
+    --md-sys-color-on-background: #e9e1d9;
+    --md-sys-color-surface: #1e1b16;
+    --md-sys-color-on-surface: #e9e1d9;
+    --md-sys-color-surface-variant: #4e4639;
+    --md-sys-color-on-surface-variant: #d1c5b4;
+    --md-sys-color-outline: #9a8f80;
+    --md-sys-color-outline-variant: #4e4639;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #e9e1d9;
+    --md-sys-color-inverse-on-surface: #34302a;
+    --md-sys-color-inverse-primary: #7a5900;
+    --md-sys-color-surface-dim: #16130e;
+    --md-sys-color-surface-bright: #3d3933;
+    --md-sys-color-surface-container-lowest: #110e09;
+    --md-sys-color-surface-container-low: #1e1b16;
+    --md-sys-color-surface-container: #221f1a;
+    --md-sys-color-surface-container-high: #2d2924;
+    --md-sys-color-surface-container-highest: #38342e
+  }
+}
+:root[data-theme="dark"] {
+  --md-sys-color-primary: #f6be46;
+  --md-sys-color-on-primary: #412d00;
+  --md-sys-color-primary-container: #5d4200;
+  --md-sys-color-on-primary-container: #ffdea3;
+  --md-sys-color-secondary: #d9c4a0;
+  --md-sys-color-on-secondary: #3b2f15;
+  --md-sys-color-secondary-container: #53452a;
+  --md-sys-color-on-secondary-container: #f6e0bb;
+  --md-sys-color-tertiary: #b2cfa8;
+  --md-sys-color-on-tertiary: #1e361a;
+  --md-sys-color-tertiary-container: #344d2f;
+  --md-sys-color-on-tertiary-container: #cdebc2;
+  --md-sys-color-error: #ffb4ab;
+  --md-sys-color-on-error: #690005;
+  --md-sys-color-error-container: #93000a;
+  --md-sys-color-on-error-container: #ffb4ab;
+  --md-sys-color-background: #1e1b16;
+  --md-sys-color-on-background: #e9e1d9;
+  --md-sys-color-surface: #1e1b16;
+  --md-sys-color-on-surface: #e9e1d9;
+  --md-sys-color-surface-variant: #4e4639;
+  --md-sys-color-on-surface-variant: #d1c5b4;
+  --md-sys-color-outline: #9a8f80;
+  --md-sys-color-outline-variant: #4e4639;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #e9e1d9;
+  --md-sys-color-inverse-on-surface: #34302a;
+  --md-sys-color-inverse-primary: #7a5900;
+  --md-sys-color-surface-dim: #16130e;
+  --md-sys-color-surface-bright: #3d3933;
+  --md-sys-color-surface-container-lowest: #110e09;
+  --md-sys-color-surface-container-low: #1e1b16;
+  --md-sys-color-surface-container: #221f1a;
+  --md-sys-color-surface-container-high: #2d2924;
+  --md-sys-color-surface-container-highest: #38342e
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --md-sys-color-primary: #7a5900;
+    --md-sys-color-on-primary: #ffffff;
+    --md-sys-color-primary-container: #ffdea3;
+    --md-sys-color-on-primary-container: #261900;
+    --md-sys-color-secondary: #6c5c3f;
+    --md-sys-color-on-secondary: #ffffff;
+    --md-sys-color-secondary-container: #f6e0bb;
+    --md-sys-color-on-secondary-container: #251a04;
+    --md-sys-color-tertiary: #4b6545;
+    --md-sys-color-on-tertiary: #ffffff;
+    --md-sys-color-tertiary-container: #cdebc2;
+    --md-sys-color-on-tertiary-container: #092007;
+    --md-sys-color-error: #ba1a1a;
+    --md-sys-color-on-error: #ffffff;
+    --md-sys-color-error-container: #ffdad6;
+    --md-sys-color-on-error-container: #410002;
+    --md-sys-color-background: #fffbff;
+    --md-sys-color-on-background: #1e1b16;
+    --md-sys-color-surface: #fffbff;
+    --md-sys-color-on-surface: #1e1b16;
+    --md-sys-color-surface-variant: #ede1cf;
+    --md-sys-color-on-surface-variant: #4e4639;
+    --md-sys-color-outline: #7f7667;
+    --md-sys-color-outline-variant: #d1c5b4;
+    --md-sys-color-shadow: #000000;
+    --md-sys-color-scrim: #000000;
+    --md-sys-color-inverse-surface: #34302a;
+    --md-sys-color-inverse-on-surface: #f8efe7;
+    --md-sys-color-inverse-primary: #f6be46;
+    --md-sys-color-surface-dim: #e1d9d0;
+    --md-sys-color-surface-bright: #fff8f2;
+    --md-sys-color-surface-container-lowest: #ffffff;
+    --md-sys-color-surface-container-low: #fbf2e9;
+    --md-sys-color-surface-container: #f5ede4;
+    --md-sys-color-surface-container-high: #efe7de;
+    --md-sys-color-surface-container-highest: #e9e1d9
+  }
+}
+:root[data-theme="light"] {
+  --md-sys-color-primary: #7a5900;
+  --md-sys-color-on-primary: #ffffff;
+  --md-sys-color-primary-container: #ffdea3;
+  --md-sys-color-on-primary-container: #261900;
+  --md-sys-color-secondary: #6c5c3f;
+  --md-sys-color-on-secondary: #ffffff;
+  --md-sys-color-secondary-container: #f6e0bb;
+  --md-sys-color-on-secondary-container: #251a04;
+  --md-sys-color-tertiary: #4b6545;
+  --md-sys-color-on-tertiary: #ffffff;
+  --md-sys-color-tertiary-container: #cdebc2;
+  --md-sys-color-on-tertiary-container: #092007;
+  --md-sys-color-error: #ba1a1a;
+  --md-sys-color-on-error: #ffffff;
+  --md-sys-color-error-container: #ffdad6;
+  --md-sys-color-on-error-container: #410002;
+  --md-sys-color-background: #fffbff;
+  --md-sys-color-on-background: #1e1b16;
+  --md-sys-color-surface: #fffbff;
+  --md-sys-color-on-surface: #1e1b16;
+  --md-sys-color-surface-variant: #ede1cf;
+  --md-sys-color-on-surface-variant: #4e4639;
+  --md-sys-color-outline: #7f7667;
+  --md-sys-color-outline-variant: #d1c5b4;
+  --md-sys-color-shadow: #000000;
+  --md-sys-color-scrim: #000000;
+  --md-sys-color-inverse-surface: #34302a;
+  --md-sys-color-inverse-on-surface: #f8efe7;
+  --md-sys-color-inverse-primary: #f6be46;
+  --md-sys-color-surface-dim: #e1d9d0;
+  --md-sys-color-surface-bright: #fff8f2;
+  --md-sys-color-surface-container-lowest: #ffffff;
+  --md-sys-color-surface-container-low: #fbf2e9;
+  --md-sys-color-surface-container: #f5ede4;
+  --md-sys-color-surface-container-high: #efe7de;
+  --md-sys-color-surface-container-highest: #e9e1d9
+}
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">hidden-years - v3.0.0-alpha.1</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="" aria-current="page">隐藏之年旧版开发文档</a></li></ul></div><div class="tsd-panel tsd-typography"><h1 id="隐藏之年旧版开发文档" class="tsd-anchor-link">隐藏之年旧版开发文档<a href="#隐藏之年旧版开发文档" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1><div class="tsd-alert tsd-alert-important"><div class="tsd-alert-title"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="../assets/icons.svg#icon-alertImportant"></use></svg><span>Important</span></div><p></p>
+<p>本文档为隐藏之年 2.X 版本开发文档，仅供参考</p>
+</div>
+<h1 id="旧版标签" class="tsd-anchor-link">旧版标签<a href="#旧版标签" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1><h2 id="物品标签" class="tsd-anchor-link">物品标签<a href="#物品标签" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="hyimitation_tools" class="tsd-anchor-link">hy:imitation_tools<a href="#hyimitation_tools" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为仿制工具，使其使用时有概率对使用者造成伤害。</p>
+<h3 id="hycorrosion_tier" class="tsd-anchor-link">hy:corrosion_tier<a href="#hycorrosion_tier" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为腐蚀武器，使其可进行腐蚀攻击。</p>
+<h3 id="hymagic_explode" class="tsd-anchor-link">hy:magic_explode<a href="#hymagic_explode" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为法器，使其可进行法术爆发。</p>
+<p>并为其添加阔剑的技能。</p>
+<h3 id="hytetanus_item" class="tsd-anchor-link">hy:tetanus_item<a href="#hytetanus_item" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为可进行破伤风攻击。</p>
+<h3 id="hymedicine_potion" class="tsd-anchor-link">hy:medicine_potion<a href="#hymedicine_potion" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为药茶，使其可以合成医药包。</p>
+<h3 id="hycorrosive_tools" class="tsd-anchor-link">hy:corrosive_tools<a href="#hycorrosive_tools" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为可锈蚀。</p>
+<div class="tsd-alert tsd-alert-note"><div class="tsd-alert-title"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><use href="../assets/icons.svg#icon-alertNote"></use></svg><span>Note</span></div><p>
+目前暂时无法自定义锈蚀后给予的物品</p>
+</div>
+<h3 id="hycustom_weapons" class="tsd-anchor-link">hy:custom_weapons<a href="#hycustom_weapons" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为自定义武器，将为其监听耐久事件。</p>
+<h3 id="hycustom_tools" class="tsd-anchor-link">hy:custom_tools<a href="#hycustom_tools" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为自定义工具，将为其监听耐久事件。</p>
+<h3 id="hycustom_shovels" class="tsd-anchor-link">hy:custom_shovels<a href="#hycustom_shovels" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为自定义锹，使其拥有压平土径时的音效和动画。</p>
+<h3 id="hycustom_axes" class="tsd-anchor-link">hy:custom_axes<a href="#hycustom_axes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为自定义斧，使其拥有给原木剥皮时的音效和动画。</p>
+<h3 id="hycustom_hoes" class="tsd-anchor-link">hy:custom_hoes<a href="#hycustom_hoes" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品标记为自定义锄，使其拥有锄地的音效和动画。</p>
+<h3 id="hyis_awl" class="tsd-anchor-link">hy:is_awl<a href="#hyis_awl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为锥，使其拥有锥的技能。</p>
+<h3 id="hyis_hammer" class="tsd-anchor-link">hy:is_hammer<a href="#hyis_hammer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为锤，使其拥有锤的技能。</p>
+<h3 id="hyis_crowbar" class="tsd-anchor-link">hy:is_crowbar<a href="#hyis_crowbar" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为撬棍，使其拥有撬棍的技能。</p>
+<h3 id="hyis_knife" class="tsd-anchor-link">hy:is_knife<a href="#hyis_knife" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为小刀，使其拥有小刀的技能。</p>
+<h3 id="hyis_crowbar-1" class="tsd-anchor-link">hy:is_crowbar<a href="#hyis_crowbar-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>将物品设置为撬棍，使其拥有撬棍的技能。</p>
+<h2 id="实体标签" class="tsd-anchor-link">实体标签<a href="#实体标签" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="hytetanus_attacker" class="tsd-anchor-link">hy:tetanus_attacker<a href="#hytetanus_attacker" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>标记进行破伤风攻击的生物，破伤风伤害不会应用在含有此标签的生物之上。</p>
+<h3 id="hymagic_explode_attacker" class="tsd-anchor-link">hy:magic_explode_attacker<a href="#hymagic_explode_attacker" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>标记进行法术爆发的生物，法术爆发所造成的伤害不会应用在含有此标签的生物之上。</p>
+<h3 id="hyimmune_desert_debuff" class="tsd-anchor-link">hy:immune_desert_debuff<a href="#hyimmune_desert_debuff" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>使实体免疫干旱与脱水效果。</p>
+<h1 id="旧版工具与武器" class="tsd-anchor-link">旧版工具与武器<a href="#旧版工具与武器" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1><p>工具类：</p>
+<ul>
+<li>锤：耐久高、挖掘速度快；不可以挖掘矿石，伤害低</li>
+<li>撬棍：伤害高、挖掘速度快、可挖掘特殊矿物；可挖掘方块数量少，耐久低</li>
+<li>锥：伤害高；耐久低</li>
+</ul>
+<p>武器类：</p>
+<ul>
+<li>小刀：有附加效果，耐久高；伤害低</li>
+<li>匕首：伤害高；耐久低；纯物理伤害</li>
+<li>阔剑：可释放法术攻击，耐久与剑相当；近战伤害低</li>
+</ul>
+<h2 id="附加效果" class="tsd-anchor-link">附加效果<a href="#附加效果" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="锤" class="tsd-anchor-link">锤<a href="#锤" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>矿工的一击
+<ul>
+<li>30%触发</li>
+<li>被攻击者获得30s挖掘疲劳III与15s虚弱</li>
+</ul>
+</li>
+<li>矿工的愤怒
+<ul>
+<li>5%概率触发</li>
+<li>除矿工的一击效果外，额外获得黑暗10s</li>
+<li>扣除被攻击者2点血量</li>
+</ul>
+</li>
+</ul>
+<h3 id="撬棍" class="tsd-anchor-link">撬棍<a href="#撬棍" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>当头一棍
+<ul>
+<li>50%触发</li>
+<li>扣除被攻击者3点血量</li>
+</ul>
+</li>
+<li>终结的一击
+<ul>
+<li>10%触发</li>
+<li>扣除被攻击者5点血量，并给予其缓慢II 20s</li>
+</ul>
+</li>
+</ul>
+<h3 id="锥" class="tsd-anchor-link">锥<a href="#锥" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>工匠的悲哀
+<ul>
+<li>90%触发</li>
+<li>扣除被攻击者1点血量，给予其中毒3s</li>
+</ul>
+</li>
+<li>终将化作利器
+<ul>
+<li>50%触发</li>
+<li>扣除被攻击者2点血量，给予其中毒5s</li>
+</ul>
+</li>
+</ul>
+<h3 id="小刀" class="tsd-anchor-link">小刀<a href="#小刀" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>「淬血的小刀」
+<ul>
+<li>50%触发</li>
+<li>每2秒丧失1滴血量，持续8秒</li>
+<li>流血过程中持续获得缓慢II</li>
+<li>可以用绷带、医药包移除该效果</li>
+</ul>
+</li>
+<li>「失血过多」
+<ul>
+<li>10%触发</li>
+<li>每1秒丧失1滴血量，持续8秒</li>
+<li>流血过程中持续获得缓慢III</li>
+<li>可通过医药包移除该效果</li>
+</ul>
+</li>
+</ul>
+<h3 id="阔剑" class="tsd-anchor-link">阔剑<a href="#阔剑" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>「错误示范」
+<ul>
+<li>20%触发</li>
+<li>回复10经验</li>
+</ul>
+</li>
+<li>摧枯拉朽
+<ul>
+<li>5%触发</li>
+<li>造成2点附加伤害</li>
+<li>回复一级经验</li>
+</ul>
+</li>
+</ul>
+<h2 id="使用效果" class="tsd-anchor-link">使用效果<a href="#使用效果" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="阔剑-法术攻击" class="tsd-anchor-link">阔剑-法术攻击<a href="#阔剑-法术攻击" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><ul>
+<li>法术爆发：在10格内对所有生物造成6点伤害</li>
+<li>法术精通：在18格对精通的生物造成8点伤害，并给予其虚弱15s</li>
+</ul>
+<p>注意：两者同时进行，需要玩家有5级经验，每次爆发消耗2耐久、10经验，法术攻击开始后5秒内玩家不受任何原因的法术伤害</p>
+<h1 id="旧版数值表" class="tsd-anchor-link">旧版数值表<a href="#旧版数值表" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1><p>令同一材料下剑的伤害为标准伤害 X，则有：</p>
+<table>
+<thead>
+<tr>
+<th>工具/武器类型</th>
+<th>伤害</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>锹、锥</td>
+<td><code>X-3</code></td>
+</tr>
+<tr>
+<td>锤、锄、镐</td>
+<td><code>X-2</code></td>
+</tr>
+<tr>
+<td>斧、小刀</td>
+<td><code>X-1</code></td>
+</tr>
+<tr>
+<td>剑、阔剑</td>
+<td><code>X</code></td>
+</tr>
+<tr>
+<td>撬棍</td>
+<td><code>X+1</code></td>
+</tr>
+<tr>
+<td>匕首</td>
+<td><code>X+3</code></td>
+</tr>
+</tbody>
+</table>
+<p>令同一材料下剑的耐久为标准耐久 D，则：</p>
+<table>
+<thead>
+<tr>
+<th>工具/武器类型</th>
+<th>耐久</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>匕首</td>
+<td><code>0.1D</code></td>
+</tr>
+<tr>
+<td>锥</td>
+<td><code>0.25D</code></td>
+</tr>
+<tr>
+<td>撬棍</td>
+<td><code>0.5D</code></td>
+</tr>
+<tr>
+<td>剑、阔剑、镐、锹、斧、锄</td>
+<td><code>D</code></td>
+</tr>
+<tr>
+<td>锤、小刀</td>
+<td><code>2D</code></td>
+</tr>
+</tbody>
+</table>
+<p>令胸甲的护甲值为标准护甲值 A，则:</p>
+<table>
+<thead>
+<tr>
+<th>护甲类型</th>
+<th>护甲值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>头盔/靴子</td>
+<td><code>A.护腿-1</code>或<code>A.护腿-2</code></td>
+</tr>
+<tr>
+<td>护腿</td>
+<td><code>A-1</code>或<code>A-2</code></td>
+</tr>
+<tr>
+<td>胸甲</td>
+<td><code>A</code></td>
+</tr>
+</tbody>
+</table>
+<p>盔甲的最大耐久度为耐久倍率和由盔甲类型决定的基础耐久的乘积。不同类型的基础耐久度如：头部为 11，上身为 16，腿部为 15，足部为 13，全身为 16。</p>
+<p>部分物品具有定死的附魔能力，不随材料而变化：</p>
+<table>
+<thead>
+<tr>
+<th>物品</th>
+<th>附魔能力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>锥</td>
+<td>1</td>
+</tr>
+<tr>
+<td>匕首</td>
+<td>1</td>
+</tr>
+<tr>
+<td>小刀</td>
+<td>1</td>
+</tr>
+<tr>
+<td>锤</td>
+<td>1</td>
+</tr>
+<tr>
+<td>撬棍</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>锤的挖掘速度为一般挖掘速度+2</p>
+<h1 id="旧版材料" class="tsd-anchor-link">旧版材料<a href="#旧版材料" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1><h2 id="数值表" class="tsd-anchor-link">数值表<a href="#数值表" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><p>普通材料：</p>
+<table>
+<thead>
+<tr>
+<th>材料种类</th>
+<th>标准耐久</th>
+<th>标准攻击</th>
+<th>标准护甲值</th>
+<th>盔甲耐久倍率</th>
+<th>挖掘速度倍率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仿制材料</td>
+<td>0.5 对应材料</td>
+<td>同对应材料-2</td>
+<td>-</td>
+<td>-</td>
+<td>无仿制伤害</td>
+</tr>
+<tr>
+<td>木</td>
+<td>59</td>
+<td>5</td>
+<td>-</td>
+<td>-</td>
+<td>2</td>
+</tr>
+<tr>
+<td>金</td>
+<td>32</td>
+<td>5</td>
+<td>5</td>
+<td>7</td>
+<td>12</td>
+</tr>
+<tr>
+<td>石</td>
+<td>131</td>
+<td>6</td>
+<td>-</td>
+<td>10</td>
+<td>4</td>
+</tr>
+<tr>
+<td>铜</td>
+<td>160(80+40+30+10)</td>
+<td>6/5/4/3</td>
+<td>5</td>
+<td>12</td>
+<td>4</td>
+</tr>
+<tr>
+<td>骨</td>
+<td>160</td>
+<td>6</td>
+<td>5</td>
+<td>12</td>
+<td>4</td>
+</tr>
+<tr>
+<td>紫水晶</td>
+<td>200</td>
+<td>6</td>
+<td>5</td>
+<td>14</td>
+<td>5</td>
+</tr>
+<tr>
+<td>岩金</td>
+<td>200</td>
+<td>6</td>
+<td>5</td>
+<td>14</td>
+<td>5</td>
+</tr>
+<tr>
+<td>闪金</td>
+<td>200</td>
+<td>5</td>
+<td>5</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td>铁</td>
+<td>250</td>
+<td>7</td>
+<td>6</td>
+<td>15</td>
+<td>6</td>
+</tr>
+<tr>
+<td>腐蚀</td>
+<td>300</td>
+<td>7</td>
+<td>-</td>
+<td>-</td>
+<td>6</td>
+</tr>
+<tr>
+<td>闪铜</td>
+<td>450</td>
+<td>7</td>
+<td>7</td>
+<td>28</td>
+<td>7</td>
+</tr>
+<tr>
+<td>钻石</td>
+<td>1561</td>
+<td>8</td>
+<td>8</td>
+<td>33</td>
+<td>8</td>
+</tr>
+<tr>
+<td>钢</td>
+<td>2500</td>
+<td>8</td>
+<td>8</td>
+<td>35</td>
+<td>8</td>
+</tr>
+<tr>
+<td>下界合金</td>
+<td>2031</td>
+<td>9</td>
+<td>8</td>
+<td>37</td>
+<td>9</td>
+</tr>
+<tr>
+<td>翠珏</td>
+<td>5000</td>
+<td>10</td>
+<td>8</td>
+<td>50</td>
+<td>10</td>
+</tr>
+</tbody>
+</table>
+<p>特殊材料</p>
+<table>
+<thead>
+<tr>
+<th>材料种类</th>
+<th>标准耐久</th>
+<th>标准攻击</th>
+<th>标准护甲值</th>
+<th>盔甲耐久倍率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>锡</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>红宝石</td>
+<td>-</td>
+<td>-</td>
+<td>7（王冠）</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>此表格按照品质由坏到好的顺序排列</strong></p>
+<h2 id="附魔能力" class="tsd-anchor-link">附魔能力<a href="#附魔能力" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><table>
+<thead>
+<tr>
+<th>材料种类</th>
+<th>工具（一般）附魔能力</th>
+<th>盔甲附魔能力</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>仿制材料</td>
+<td>1</td>
+<td>-</td>
+</tr>
+<tr>
+<td>木</td>
+<td>15</td>
+<td>-</td>
+</tr>
+<tr>
+<td>金</td>
+<td>22</td>
+<td>25</td>
+</tr>
+<tr>
+<td>石</td>
+<td>5</td>
+<td>-</td>
+</tr>
+<tr>
+<td>铜</td>
+<td>8</td>
+<td>12</td>
+</tr>
+<tr>
+<td>骨</td>
+<td>10</td>
+<td>14</td>
+</tr>
+<tr>
+<td>紫水晶</td>
+<td>114514</td>
+<td>114514</td>
+</tr>
+<tr>
+<td>岩金</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td>闪金</td>
+<td>30</td>
+<td>35</td>
+</tr>
+<tr>
+<td>铁</td>
+<td>14</td>
+<td>9</td>
+</tr>
+<tr>
+<td>腐蚀</td>
+<td>14</td>
+<td>10</td>
+</tr>
+<tr>
+<td>闪铜</td>
+<td>14</td>
+<td>16</td>
+</tr>
+<tr>
+<td>钻石</td>
+<td>10</td>
+<td>10</td>
+</tr>
+<tr>
+<td>钢</td>
+<td>8</td>
+<td>8</td>
+</tr>
+<tr>
+<td>下界合金</td>
+<td>15</td>
+<td>15</td>
+</tr>
+<tr>
+<td>翠珏</td>
+<td>20</td>
+<td>20</td>
+</tr>
+</tbody>
+</table>
+<h2 id="获取" class="tsd-anchor-link">获取<a href="#获取" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>仿制材料：搜刮战利品</li>
+<li>骨：4 骨头 →6 骨片</li>
+<li>紫水晶：2紫水晶碎片+1锡锭 → 紫水晶锭</li>
+<li>岩金：4 各种石头(注1) →2 岩金锭</li>
+<li>腐蚀：腐肉+铜锭+锡锭 → 腐蚀之锭</li>
+<li>闪金锭：金锭+2 锡锭(炼金台)→ 闪金锭</li>
+<li>闪铜锭：铜锭+2 锡锭(炼金台)→ 闪铜锭</li>
+<li>钢：铁锭高炉中熔炼获得生钢锭，生钢锭+钢之核心(炼金台)→ 钢锭</li>
+<li>翠珏：绿宝石+4 钻石+4 远古萃华(炼金台)→2 翠珏</li>
+</ul>
+<h2 id="用途" class="tsd-anchor-link">用途<a href="#用途" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>闪制材料：原有材料的加强版</li>
+<li>锡：将普通材料变成闪制材料</li>
+<li>腐蚀：连续10秒，每2秒造成2点伤害</li>
+</ul>
+<h2 id="仿制伤害" class="tsd-anchor-link">仿制伤害<a href="#仿制伤害" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><p>每次挖掘有5%概率造成2点伤害</p>
+<h2 id="注释" class="tsd-anchor-link">注释<a href="#注释" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><ul>
+<li>(注1)：令原材料为#，则排列方式如下：</li>
+</ul>
+<pre><code><span class="hl-0">##</span><br/><span class="hl-0"> ##</span>
+</code><button>Copy</button></pre>
+
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg><h3>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#隐藏之年旧版开发文档"><span>隐藏之年旧版开发文档</span></a><a href="#旧版标签"><span>旧版标签</span></a><ul><li><a href="#物品标签"><span>物品标签</span></a></li><li><ul><li><a href="#hyimitation_tools"><span>hy:imitation_<wbr/>tools</span></a></li><li><a href="#hycorrosion_tier"><span>hy:corrosion_<wbr/>tier</span></a></li><li><a href="#hymagic_explode"><span>hy:magic_<wbr/>explode</span></a></li><li><a href="#hytetanus_item"><span>hy:tetanus_<wbr/>item</span></a></li><li><a href="#hymedicine_potion"><span>hy:medicine_<wbr/>potion</span></a></li><li><a href="#hycorrosive_tools"><span>hy:corrosive_<wbr/>tools</span></a></li><li><a href="#hycustom_weapons"><span>hy:custom_<wbr/>weapons</span></a></li><li><a href="#hycustom_tools"><span>hy:custom_<wbr/>tools</span></a></li><li><a href="#hycustom_shovels"><span>hy:custom_<wbr/>shovels</span></a></li><li><a href="#hycustom_axes"><span>hy:custom_<wbr/>axes</span></a></li><li><a href="#hycustom_hoes"><span>hy:custom_<wbr/>hoes</span></a></li><li><a href="#hyis_awl"><span>hy:is_<wbr/>awl</span></a></li><li><a href="#hyis_hammer"><span>hy:is_<wbr/>hammer</span></a></li><li><a href="#hyis_crowbar"><span>hy:is_<wbr/>crowbar</span></a></li><li><a href="#hyis_knife"><span>hy:is_<wbr/>knife</span></a></li><li><a href="#hyis_crowbar-1"><span>hy:is_<wbr/>crowbar</span></a></li></ul></li><li><a href="#实体标签"><span>实体标签</span></a></li><li><ul><li><a href="#hytetanus_attacker"><span>hy:tetanus_<wbr/>attacker</span></a></li><li><a href="#hymagic_explode_attacker"><span>hy:magic_<wbr/>explode_<wbr/>attacker</span></a></li><li><a href="#hyimmune_desert_debuff"><span>hy:immune_<wbr/>desert_<wbr/>debuff</span></a></li></ul></li></ul><a href="#旧版工具与武器"><span>旧版工具与武器</span></a><ul><li><a href="#附加效果"><span>附加效果</span></a></li><li><ul><li><a href="#锤"><span>锤</span></a></li><li><a href="#撬棍"><span>撬棍</span></a></li><li><a href="#锥"><span>锥</span></a></li><li><a href="#小刀"><span>小刀</span></a></li><li><a href="#阔剑"><span>阔剑</span></a></li></ul></li><li><a href="#使用效果"><span>使用效果</span></a></li><li><ul><li><a href="#阔剑-法术攻击"><span>阔剑-<wbr/>法术攻击</span></a></li></ul></li></ul><a href="#旧版数值表"><span>旧版数值表</span></a><a href="#旧版材料"><span>旧版材料</span></a><ul><li><a href="#数值表"><span>数值表</span></a></li><li><a href="#附魔能力"><span>附魔能力</span></a></li><li><a href="#获取"><span>获取</span></a></li><li><a href="#用途"><span>用途</span></a></li><li><a href="#仿制伤害"><span>仿制伤害</span></a></li><li><a href="#注释"><span>注释</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="../modules.html">hidden-years - v3.0.0-alpha.1</a><ul class="tsd-small-nested-navigation" id="tsd-nav-container"><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div><script>
+          try {
+            const generateLinkElement = document.querySelector(".tsd-generator a");
+            const link = document.createElement("a");
+            Object.assign(link, {
+              href: "https://github.com/dmnsgn/typedoc-material-theme",
+              target: "_blank",
+              rel: "noreferrer",
+              innerText: "typedoc-material-theme."
+            });
+            generateLinkElement.insertAdjacentElement("afterend", link);
+            generateLinkElement.insertAdjacentText("afterend", " with ");
+          } catch (error) {
+
+          }
+        </script></body></html>
