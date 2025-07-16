@@ -1,7 +1,7 @@
 ---
 title: 物品组件
-group: Components
-category: Components
+group: Documents
+category: Documents
 ---
 
 # 物品组件

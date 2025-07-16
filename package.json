@@ -7,8 +7,7 @@
     "ready": "starock prepare",
     "clear": "starock clear",
     "doc": "typedoc --options typedoc.json",
-    "prettier": "prettier --write .",
-    "typescript": "dts-gen -m ./src"
+    "prettier": "prettier --write ."
   },
   "author": "CTN Studios",
   "license": "BSD-3-Clause",
