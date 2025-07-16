@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:copper_hammer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SXS", "#", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "minecraft:copper_ingot"
+      },
+      "S": {
+        "item": "minecraft:copper_block"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:copper_ingot"
+      },
+      {
+        "item": "minecraft:copper_block"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:copper_hammer"
+    }
+  }
+}

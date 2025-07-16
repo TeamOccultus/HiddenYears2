@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:golden_saw"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["S#", "XX"],
+    "key": {
+      "S": {
+        "item": "stick"
+      },
+      "#": {
+        "item": "minecraft:string"
+      },
+      "X": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:golden_saw"
+    }
+  }
+}

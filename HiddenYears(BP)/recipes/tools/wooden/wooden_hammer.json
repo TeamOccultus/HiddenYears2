@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:wooden_hammer"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["SXS", "#", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "minecraft:planks"
+      },
+      "S": {
+        "item": "minecraft:log"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:planks"
+      },
+      {
+        "item": "minecraft:log"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:wooden_hammer"
+    }
+  }
+}

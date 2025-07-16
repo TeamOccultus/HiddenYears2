@@ -1,0 +1,32 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:wooden_saw"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["S#", "XX"],
+    "key": {
+      "S": {
+        "item": "stick"
+      },
+      "#": {
+        "item": "minecraft:string"
+      },
+      "X": {
+        "item": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:planks"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:wooden_saw"
+    }
+  }
+}

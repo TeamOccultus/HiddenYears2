@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:wooden_dagger"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", "#"],
+    "key": {
+      "#": {
+        "item": "stick"
+      },
+      "X": {
+        "item": "minecraft:planks"
+      }
+    },
+    "unlock": [
+      {
+        "item": "stick"
+      },
+      {
+        "item": "minecraft:planks"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:wooden_dagger"
+    }
+  }
+}
