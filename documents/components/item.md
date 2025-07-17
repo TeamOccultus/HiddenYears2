@@ -148,3 +148,24 @@ category: Documents
 | `lightning` | 雷光之箭 |
 | `fire` | 烈焰之箭 |
 | `steel` | 寒钢之箭 |
+
+## hiddenyears:trophy_bundle
+
+指定物品为历战宝袋：
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| loot_table | `string` | 可选 | 历战包袋的战利品表 |
+| table_source | `TrophyBundleSourceType` | 必填 | 历战包袋的战利品表来源 |
+
+在`TrophyBundleSourceType`类型中：
+
+| 可用值 | 描述 |
+| ------ | ---- |
+| `hardcode` | 硬编码 |
+| `script` | 脚本 |
+
+> [!IMPORTANT]
+> 如果`table_source`参数为`script`，那么物品的最大堆叠必须为 1！
+
+其中的硬编码即指`loot_table`参数指定的战利品表，脚本指从物品的`hiddenyears:loot_table`动态属性获取战利品表。
