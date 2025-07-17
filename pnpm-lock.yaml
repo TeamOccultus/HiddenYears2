@@ -21,8 +21,8 @@ importers:
         specifier: ^0.15.1
         version: 0.15.1(@minecraft/vanilla-data@1.21.90-preview.20)(@starock/common@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20)))(@starock/math@0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@starock/core@0.15.1(@minecraft/server-ui@2.1.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))))
       '@starock/cli':
-        specifier: ^0.2.3
-        version: 0.2.3(@types/node@22.14.0)
+        specifier: ^0.3.0
+        version: 0.3.1(@types/node@22.14.0)
       '@starock/common':
         specifier: ^0.15.1
         version: 0.15.1(@minecraft/server@2.2.0-beta.1.21.100-preview.23(@minecraft/vanilla-data@1.21.90-preview.20))
@@ -477,8 +477,8 @@ packages:
   '@starock/block@0.15.1':
     resolution: {integrity: sha512-6Qnu4gXTVrMYnJe9X3ktCuVdpd+yBaqYxsAkdScFH9LsN0ilw7l/TR2vFzj+7WCf/d4JRgLCd2LFsvHfXOl8Ow==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fblock/-/0.15.1/block-0.15.1.tgz}
 
-  '@starock/cli@0.2.3':
-    resolution: {integrity: sha512-onybdcZ9FCe5KEC5GyA7XCBHnBAFLplvvHa3DdHAg459xRang1eUHcwmNo5Ox3wVznSn5jdCoi1jc3en3WgfPg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.2.3/cli-0.2.3.tgz}
+  '@starock/cli@0.3.1':
+    resolution: {integrity: sha512-DPKG8NRSc0QE8av9Y5LG2vtEFCR0eKBZjh5Z74436d6D4+8o5TcIgTAGKsTFOc3HQtHKBSNIu8TVAiKRu63ilg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.3.1/cli-0.3.1.tgz}
     hasBin: true
 
   '@starock/common@0.15.1':
@@ -1307,7 +1307,7 @@ snapshots:
       - '@starock/common'
       - '@starock/math'
 
-  '@starock/cli@0.2.3(@types/node@22.14.0)':
+  '@starock/cli@0.3.1(@types/node@22.14.0)':
     dependencies:
       '@inquirer/prompts': 7.5.3(@types/node@22.14.0)
       archiver: 7.0.1
@@ -1317,6 +1317,7 @@ snapshots:
       fs-extra: 11.3.0
       json5: 2.2.3
       rolldown: 1.0.0-beta.19
+      typescript: 5.8.3
     transitivePeerDependencies:
       - '@types/node'
 
