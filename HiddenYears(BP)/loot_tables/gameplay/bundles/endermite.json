@@ -1,0 +1,25 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "empty", "weight": 50 },
+        {
+          "type": "item",
+          "name": "minecraft:tide_armor_trim_smithing_template",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "loot_table",
+          "name": "loot_tables/reuses/be_arth.json",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

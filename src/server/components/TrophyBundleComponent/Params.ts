@@ -1,6 +1,6 @@
 
 export type TrophyBundleParam = {
-  loot_table: string;
+  loot_table?: string;
   table_source: TrophyBundleSourceType;
 };
 

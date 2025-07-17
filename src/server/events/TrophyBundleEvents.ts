@@ -4,10 +4,14 @@ import {
   Dimension,
   Vector3,
   ItemStack,
+  world,
+  system,
 } from "@minecraft/server";
 import { EntityUtils } from "@starock/entity";
 import { loot } from "@starock/loot";
 import { TrophyBundleParam } from "../components/TrophyBundleComponent/Params";
+import { RandomEvent, Random } from "@starock/math";
+import { bundlesLoot, bundlesBossLoot } from "../../data/bundle";
 
 /**
  * 战利品袋的相关事件
@@ -19,13 +23,16 @@ export class TrophyBundleEvents {
     const { source, itemStack } = arg0;
     if (!itemStack) return;
     EntityUtils.setEquipmentItem(source);
-    source.playSound("bundle.drop_contents");
+
     const p = arg1.params as TrophyBundleParam;
-    loot(
-      source.dimension,
-      source.location,
-      TrophyBundleEvents.getLootTable(itemStack, p)
-    );
+    system.runTimeout(() => {
+      source.playSound("bundle.drop_contents");
+      loot(
+        source.dimension,
+        source.location,
+        TrophyBundleEvents.getLootTable(itemStack, p)
+      );
+    }, 10);
   }
   static getLootTable(itemStack: ItemStack, params: TrophyBundleParam) {
     if (params.table_source === "hardcode") {
@@ -34,5 +41,29 @@ export class TrophyBundleEvents {
     const table = itemStack.getDynamicProperty("hiddenyears:loot_table");
     if (typeof table === "string") return table;
     throw new Error("Invalid loot table!");
+  }
+  static registryLoot() {
+    world.afterEvents.entityDie.subscribe((event) => {
+      const entity = event.deadEntity;
+      if (bundlesLoot.has(entity.typeId)) {
+        const res = new RandomEvent(1.0, () => {
+          const bundle = new ItemStack("hiddenyears:trophy_bundle");
+          bundle.setDynamicProperty(
+            "hiddenyears:loot_table",
+            bundlesLoot.get(entity.typeId)
+          );
+          entity.dimension.spawnItem(bundle, entity.location);
+        });
+        res.call();
+      }
+      if (bundlesBossLoot.has(entity.typeId)) {
+        const bundle = new ItemStack("hiddenyears:trophy_bundle");
+        bundle.setDynamicProperty(
+          "hiddenyears:loot_table",
+          bundlesBossLoot.get(entity.typeId)
+        );
+        entity.dimension.spawnItem(bundle, entity.location);
+      }
+    });
   }
 }
