@@ -665,6 +665,9 @@
     "hiddenyears:stone_sledgehammer": {
       "textures": "textures/items/stone_sledgehammer"
     },
+    "hiddenyears:trophy_bundle": {
+      "textures": "textures/items/trophy_bundle"
+    },
     "hiddenyears:wooden_dagger": {
       "textures": "textures/items/wooden_dagger"
     },
