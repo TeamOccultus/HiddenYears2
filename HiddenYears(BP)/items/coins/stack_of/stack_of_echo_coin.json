@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:stack_of_echo_coin",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:coin": {
+        "ucv_value": 9000
+      },
+      "minecraft:icon": "hiddenyears:stack_of_echo_coin",
+      "minecraft:rarity": "rare"
+    }
+  }
+}

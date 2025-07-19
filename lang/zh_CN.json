@@ -1,6 +1,14 @@
 {
   "pack.name": "隐藏之年²：天边的迦万涅尔",
   "pack.description": "「探索未知的世间」",
+  "item.hiddenyears:copper_coin": "铜币",
+  "item.hiddenyears:gold_coin": "金币",
+  "item.hiddenyears:diamond_coin": "钻石币",
+  "item.hiddenyears:echo_coin": "回响硬币",
+  "item.hiddenyears:stack_of_copper_coin": "一堆铜币",
+  "item.hiddenyears:stack_of_gold_coin": "一堆金币",
+  "item.hiddenyears:stack_of_diamond_coin": "一堆钻石币",
+  "item.hiddenyears:stack_of_echo_coin": "一堆回响硬币",
   "item.hiddenyears:medicine_1": "饱和魔药",
   "item.hiddenyears:medicine_2": "镇痛魔药",
   "item.hiddenyears:medicine_3": "明视魔药",
@@ -241,6 +249,7 @@
   "hy.message.cant_be_crushed": "这玩意可不兴粉碎啊……",
   "message.hiddenyears:not_a_base_item": "该物品无法被锻造！",
   "message.hiddenyears:recipe_not_found": "这玩意可不能往上面锻造啊……",
+  "message.hiddenyears:ucv_add": "手持货币已经转换为 %s 点统一货币值！",
   // 阅读物文本
   "article.adventurer_note.title": "故地异国行纪",
   "item.hiddenyears:adventurer_note": "故地异国行纪",

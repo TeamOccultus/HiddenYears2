@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:stack_of_gold_coin",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:coin": {
+        "ucv_value": 900
+      },
+      "minecraft:icon": "hiddenyears:stack_of_gold_coin"
+    }
+  }
+}

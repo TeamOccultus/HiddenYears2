@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:diamond_coin",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:coin": {
+        "ucv_value": 500
+      },
+      "minecraft:icon": "hiddenyears:diamond_coin"
+    }
+  }
+}

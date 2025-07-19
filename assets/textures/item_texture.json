@@ -65,6 +65,9 @@
     "hiddenyears:coal_nugget": {
       "textures": "textures/items/coal_nugget"
     },
+    "hiddenyears:copper_coin": {
+      "textures": "textures/items/copper_coin"
+    },
     "hiddenyears:copper_dagger": {
       "textures": "textures/items/copper_dagger"
     },
@@ -149,6 +152,9 @@
     "hiddenyears:daylight_bow_standby": {
       "textures": "textures/items/daylight_bow_standby"
     },
+    "hiddenyears:diamond_coin": {
+      "textures": "textures/items/diamond_coin"
+    },
     "hiddenyears:diamond_crowbar": {
       "textures": "textures/items/diamond_crowbar"
     },
@@ -184,6 +190,9 @@
     },
     "hiddenyears:diamond_sledgehammer": {
       "textures": "textures/items/diamond_sledgehammer"
+    },
+    "hiddenyears:echo_coin": {
+      "textures": "textures/items/echo_coin"
     },
     "hiddenyears:emerald_dust": {
       "textures": "textures/items/emerald_dust"
@@ -262,6 +271,9 @@
     },
     "hiddenyears:golden_sledgehammer": {
       "textures": "textures/items/golden_sledgehammer"
+    },
+    "hiddenyears:gold_coin": {
+      "textures": "textures/items/gold_coin"
     },
     "hiddenyears:gold_dust": {
       "textures": "textures/items/gold_dust"
@@ -560,8 +572,17 @@
     "hiddenyears:silver_sword": {
       "textures": "textures/items/silver_sword"
     },
+    "hiddenyears:soul_of_fear": {
+      "textures": "textures/items/soul_of_fear"
+    },
+    "hiddenyears:sparkling_copper_dust": {
+      "textures": "textures/items/sparkling_copper_dust"
+    },
     "hiddenyears:sparkling_copper_ingot": {
       "textures": "textures/items/sparkling_copper_ingot"
+    },
+    "hiddenyears:sparkling_copper_nugget": {
+      "textures": "textures/items/sparkling_copper_nugget"
     },
     "hiddenyears:sparkling_gold_axe": {
       "textures": "textures/items/sparkling_gold_axe"
@@ -595,6 +616,18 @@
     },
     "hiddenyears:sparkling_stone": {
       "textures": "textures/items/sparkling_stone"
+    },
+    "hiddenyears:stack_of_copper_coin": {
+      "textures": "textures/items/stack_of_copper_coin"
+    },
+    "hiddenyears:stack_of_diamond_coin": {
+      "textures": "textures/items/stack_of_diamond_coin"
+    },
+    "hiddenyears:stack_of_echo_coin": {
+      "textures": "textures/items/stack_of_echo_coin"
+    },
+    "hiddenyears:stack_of_gold_coin": {
+      "textures": "textures/items/stack_of_gold_coin"
     },
     "hiddenyears:steel_arrow": {
       "textures": "textures/items/steel_arrow"
@@ -646,6 +679,9 @@
     },
     "hiddenyears:steel_sledgehammer": {
       "textures": "textures/items/steel_sledgehammer"
+    },
+    "hiddenyears:steel_sparkling_sledgehammer": {
+      "textures": "textures/items/steel_sparkling_sledgehammer"
     },
     "hiddenyears:steel_sword": {
       "textures": "textures/items/steel_sword"

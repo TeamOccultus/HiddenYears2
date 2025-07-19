@@ -11,6 +11,7 @@ import { WeaponTypeComponent } from "../components/WeaponTypeComponent";
 import { CrossbowComponent } from "../components/CrossbowComponent";
 import { ArrowPresentComponent } from "../components/ArrowPresentComponent";
 import { TrophyBundleComponent } from "../components/TrophyBundleComponent/Component";
+import { CoinComponent } from "../components/CoinComponent/Component";
 
 /**
  * 注册自定义组件
@@ -23,6 +24,7 @@ export function registryComponents() {
   new CrossbowComponent("hiddenyears:custom_crossbow");
   new ArrowPresentComponent("hiddenyears:arrow_present");
   new TrophyBundleComponent("hiddenyears:trophy_bundle");
+  new CoinComponent("hiddenyears:coin");
   item.register(
     "hiddenyears:effective_food",
     new FoodMaterial("hiddenyears:effective_food")
