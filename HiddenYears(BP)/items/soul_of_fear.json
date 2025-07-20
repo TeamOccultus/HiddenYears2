@@ -1,0 +1,15 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:soul_of_fear",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:soul_of_fear",
+      "minecraft:rarity": "rare"
+    }
+  }
+}

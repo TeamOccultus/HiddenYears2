@@ -236,6 +236,8 @@
   "item.record_pharaohs.desc": "沙海古音 - 3xLnw",
   "item.hiddenyears:trophy_bundle": "历战宝袋",
   "item.hiddenyears:money_bundle": "钱袋",
+  "tile.hiddenyears:stone_of_fear.name": "恐惧之石",
+  "item.hiddenyears:soul_of_fear": "恐惧之魂",
   "lore.hiddenyears:sparkling_copper": "§f闪铜升级§r",
   "lore.hiddenyears:erosion_totem": "§f腐蚀图腾升级§r",
   // 命令描述
