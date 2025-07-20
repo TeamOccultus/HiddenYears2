@@ -16,7 +16,7 @@
     "@minecraft/server": "2.2.0-beta.1.21.100-preview.23",
     "@minecraft/server-ui": "2.1.0-beta.1.21.100-preview.23",
     "@starock/block": "^0.15.1",
-    "@starock/cli": "^0.3.0",
+    "@starock/cli": "^0.3.2",
     "@starock/common": "^0.15.1",
     "@starock/component": "0.15.1",
     "@starock/core": "0.15.1",
