@@ -383,6 +383,14 @@
     "hiddenyears:medicine_9": {
       "textures": "textures/items/medicine_9"
     },
+    "hiddenyears:money_bundle": {
+      "textures": [
+        "textures/items/money_bundle/money_bundle",
+        "textures/items/money_bundle/money_bundle_open",
+        "textures/items/money_bundle/money_bundle_open_back",
+        "textures/items/money_bundle/money_bundle_open_front"
+      ]
+    },
     "hiddenyears:netherite_dagger": {
       "textures": "textures/items/netherite_dagger"
     },

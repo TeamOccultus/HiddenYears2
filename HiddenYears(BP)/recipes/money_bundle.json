@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:money_bundle"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", "A"],
+    "key": {
+      "X": {
+        "item": "minecraft:iron_nugget"
+      },
+      "A": {
+        "item": "minecraft:leather"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:iron_nugget"
+      },
+      {
+        "item": "minecraft:leather"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:money_bundle"
+    }
+  }
+}
