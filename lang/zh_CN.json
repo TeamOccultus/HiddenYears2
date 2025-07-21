@@ -180,6 +180,8 @@
   "tile.hiddenyears:originite_block.name": "原初合金块",
   "tile.hiddenyears:refined_rock_block.name": "精炼岩块",
   "tile.hiddenyears:crystal_block.name": "魔晶块",
+  "tile.hiddenyears:sparkling_copper_block.name": "闪铜块",
+  "tile.hiddenyears:sparkling_gold_block.name": "闪金块",
   "entity.hiddenyears:diamond_enhanced_arrow.name": "钻石强化箭",
   "item.hiddenyears:diamond_enhanced_arrow": "钻石强化箭",
   "item.hiddenyears:diamond_enhanced_bow": "钻石强化弓",

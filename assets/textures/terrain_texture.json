@@ -118,6 +118,12 @@
     "hiddenyears:silver_block": {
       "textures": "textures/blocks/silver_block"
     },
+    "hiddenyears:sparkling_copper_block": {
+      "textures": "textures/blocks/sparkling_copper_block"
+    },
+    "hiddenyears:sparkling_gold_block": {
+      "textures": "textures/blocks/sparkling_gold_block"
+    },
     "hiddenyears:steel_block": {
       "textures": "textures/blocks/steel_block"
     },

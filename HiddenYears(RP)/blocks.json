@@ -18,6 +18,12 @@
   "hiddenyears:originite_block": {
     "sound": "metal"
   },
+  "hiddenyears:sparkling_copper_block": {
+    "sound": "metal"
+  },
+  "hiddenyears:sparkling_gold_block": {
+    "sound": "metal"
+  },
   "hiddenyears:stone_of_fear": {
     "sound": "stone"
   }
