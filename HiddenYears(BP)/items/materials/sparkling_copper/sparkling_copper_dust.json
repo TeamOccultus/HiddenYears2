@@ -2,15 +2,15 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:sparkling_gold_ingot",
+      "identifier": "hiddenyears:sparkling_copper_dust",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:sparkling_gold_ingot",
+      "minecraft:icon": "hiddenyears:sparkling_copper_dust",
       "minecraft:tags": {
-        "tags": ["hiddenyears:sparkling_gold_material"]
+        "tags": ["hiddenyears:sparkling_copper_material", "hiddenyears:dust"]
       }
     }
   }

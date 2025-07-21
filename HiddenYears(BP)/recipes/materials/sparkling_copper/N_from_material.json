@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:sparkling_copper_nugget"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:sparkling_copper_ingot"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:sparkling_copper_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:sparkling_copper_nugget",
+      "count": 9
+    }
+  }
+}

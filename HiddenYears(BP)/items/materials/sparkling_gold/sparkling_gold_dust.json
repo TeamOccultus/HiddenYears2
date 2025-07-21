@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:steel_dust",
+      "minecraft:icon": "hiddenyears:sparkling_gold_dust",
       "minecraft:tags": {
         "tags": ["hiddenyears:sparkling_gold_material", "hiddenyears:dust"]
       }

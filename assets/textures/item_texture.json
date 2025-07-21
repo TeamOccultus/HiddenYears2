@@ -601,6 +601,9 @@
     "hiddenyears:sparkling_gold_dagger": {
       "textures": "textures/items/sparkling_gold_dagger"
     },
+    "hiddenyears:sparkling_gold_dust": {
+      "textures": "textures/items/sparkling_gold_dust"
+    },
     "hiddenyears:sparkling_gold_hammer": {
       "textures": "textures/items/sparkling_gold_hammer"
     },
@@ -609,6 +612,9 @@
     },
     "hiddenyears:sparkling_gold_ingot": {
       "textures": "textures/items/sparkling_gold_ingot"
+    },
+    "hiddenyears:sparkling_gold_nugget": {
+      "textures": "textures/items/sparkling_gold_nugget"
     },
     "hiddenyears:sparkling_gold_pickaxe": {
       "textures": "textures/items/sparkling_gold_pickaxe"
