@@ -2,14 +2,14 @@
   "format_version": "1.21.100",
   "minecraft:block": {
     "description": {
-      "identifier": "hiddenyears:extracts_ore",
+      "identifier": "hiddenyears:deepslate_extracts_ore",
       "menu_category": {
         "category": "nature"
       }
     },
     "components": {
        "hiddenyears:custom_ore": {
-        "item_tier": "stone",
+        "item_tier": "diamond",
         "loot_table": "blocks/ores/extracts_ore",
         "exp": 10
       },
@@ -18,53 +18,53 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "hiddenyears:extracts_ore"
+          "texture": "hiddenyears:deepslate_extracts_ore"
         }
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 140,
+        "seconds_to_destroy": 150,
         "item_specific_speeds": [
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
             },
-            "destroy_speed": 60
+            "destroy_speed": 75
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
             },
-            "destroy_speed": 30
+            "destroy_speed": 37.5
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
             },
-            "destroy_speed": 20
+            "destroy_speed": 25
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
             },
-            "destroy_speed": 5
+            "destroy_speed": 5.65
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
             },
-            "destroy_speed": 4.0
+            "destroy_speed": 5.0
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
             },
-            "destroy_speed": 10
+            "destroy_speed": 12.5
           }
         ]
       },
       "minecraft:destructible_by_explosion": {
-        "explosion_resistance": 1000.0
+        "explosion_resistance": 1200.0
       },
       "minecraft:map_color": "#191919",
       "tag:minecraft:stone_pick_diggable": {}
