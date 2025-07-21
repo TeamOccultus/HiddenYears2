@@ -64,8 +64,14 @@
     "hiddenyears:crystal_block": {
       "textures": "textures/blocks/crystal_block"
     },
+    "hiddenyears:deepslate_extracts_ore": {
+      "textures": "textures/blocks/deepslate_extracts_ore"
+    },
     "hiddenyears:deepslate_ruby_ore": {
       "textures": "textures/blocks/deepslate_ruby_ore"
+    },
+    "hiddenyears:extracts_ore": {
+      "textures": "textures/blocks/extracts_ore"
     },
     "hiddenyears:loose_copper_ore": {
       "textures": "textures/blocks/loose_copper_ore"

@@ -238,6 +238,9 @@
   "item.hiddenyears:money_bundle": "钱袋",
   "tile.hiddenyears:stone_of_fear.name": "恐惧之石",
   "item.hiddenyears:soul_of_fear": "恐惧之魂",
+  "tile.hiddenyears:deepslate_extracts_ore.name": "深层萃华矿石",
+  "tile.hiddenyears:extracts_ore.name": "萃华矿石",
+  "item.hiddenyears:ancient_extracts": "结绿之石",
   "lore.hiddenyears:sparkling_copper": "§f闪铜升级§r",
   "lore.hiddenyears:erosion_totem": "§f腐蚀图腾升级§r",
   // 命令描述
