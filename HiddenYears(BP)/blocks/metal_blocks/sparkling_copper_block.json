@@ -2,15 +2,15 @@
   "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
-      "identifier": "hiddenyears:originite_block",
+      "identifier": "hiddenyears:sparkling_copper_block",
       "menu_category": {
         "category": "nature"
       }
     },
     "components": {
       "hiddenyears:destroy_condition": {
-        "item_tier": "diamond",
-        "loot_table": "blocks/metal_blocks/originite_block"
+        "item_tier": "iron",
+        "loot_table": "blocks/metal_blocks/sparkling_copper_block"
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 15.0,
@@ -55,7 +55,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "hiddenyears:originite_block"
+          "texture": "hiddenyears:sparkling_copper_block"
         }
       },
       "minecraft:geometry": {
@@ -64,7 +64,7 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6.0
       },
-      "minecraft:map_color": "#E4478D"
+      "minecraft:map_color": "#7182B4"
     }
   }
 }

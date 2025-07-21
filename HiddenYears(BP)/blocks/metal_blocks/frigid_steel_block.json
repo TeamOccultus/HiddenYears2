@@ -10,7 +10,7 @@
     "components": {
       "hiddenyears:destroy_condition": {
         "item_tier": "iron",
-        "loot_table": "blocks/metal_blocks/cystal_block"
+        "loot_table": "blocks/metal_blocks/frigid_steel_block"
       },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 15.0,
