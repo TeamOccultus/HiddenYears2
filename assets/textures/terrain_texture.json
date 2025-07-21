@@ -70,6 +70,9 @@
     "hiddenyears:deepslate_ruby_ore": {
       "textures": "textures/blocks/deepslate_ruby_ore"
     },
+    "hiddenyears:deepslate_silver_ore": {
+      "textures": "textures/blocks/deepslate_silver_ore"
+    },
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
     },
@@ -117,6 +120,9 @@
     },
     "hiddenyears:silver_block": {
       "textures": "textures/blocks/silver_block"
+    },
+    "hiddenyears:silver_ore": {
+      "textures": "textures/blocks/silver_ore"
     },
     "hiddenyears:sparkling_copper_block": {
       "textures": "textures/blocks/sparkling_copper_block"
