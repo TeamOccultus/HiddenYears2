@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "bone_helmet"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X"],
+    "key": {
+      "X": {
+        "item": "minecraft:bone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bone_helmet"
+    }
+  }
+}

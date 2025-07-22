@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "bone_boots"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X X", "X X"],
+    "key": {
+      "X": {
+        "item": "minecraft:bone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bone_boots"
+    }
+  }
+}

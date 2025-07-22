@@ -249,6 +249,10 @@
   "item.hiddenyears:ancient_extracts": "结绿之石",
   "tile.hiddenyears:deepslate_silver_ore.name": "深层秘银矿石",
   "tile.hiddenyears:silver_ore.name": "秘银矿石",
+  "item.hiddenyears:bone_helmet": "骨头盔",
+  "item.hiddenyears:bone_chestplate": "骨胸甲",
+  "item.hiddenyears:bone_leggings": "骨护腿",
+  "item.hiddenyears:bone_boots": "骨靴子",
   "lore.hiddenyears:sparkling_copper": "§f闪铜升级§r",
   "lore.hiddenyears:erosion_totem": "§f腐蚀图腾升级§r",
   // 命令描述
