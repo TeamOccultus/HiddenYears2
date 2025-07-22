@@ -430,6 +430,12 @@
     "hiddenyears:originite_axe": {
       "textures": "textures/items/originite_axe"
     },
+    "hiddenyears:originite_boots": {
+      "textures": "textures/items/originite_boots"
+    },
+    "hiddenyears:originite_chestplate": {
+      "textures": "textures/items/originite_chestplate"
+    },
     "hiddenyears:originite_dagger": {
       "textures": "textures/items/originite_dagger"
     },
@@ -454,11 +460,17 @@
     "hiddenyears:originite_hammer": {
       "textures": "textures/items/originite_hammer"
     },
+    "hiddenyears:originite_helmet": {
+      "textures": "textures/items/originite_helmet"
+    },
     "hiddenyears:originite_hoe": {
       "textures": "textures/items/originite_hoe"
     },
     "hiddenyears:originite_ingot": {
       "textures": "textures/items/originite_ingot"
+    },
+    "hiddenyears:originite_leggings": {
+      "textures": "textures/items/originite_leggings"
     },
     "hiddenyears:originite_nugget": {
       "textures": "textures/items/originite_nugget"

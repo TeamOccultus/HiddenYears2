@@ -1,6 +1,7 @@
 import {
   CustomComponentParameters,
   ItemComponentUseEvent,
+  world,
 } from "@minecraft/server";
 import { CoinComponentParams } from "../components/CoinComponent/Params";
 import { EntityUtils } from "@starock/entity";
