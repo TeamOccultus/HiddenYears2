@@ -16,7 +16,7 @@
     "@minecraft/server-ui": "2.1.0-beta.1.21.110-preview.20",
     "@starock/artifact": "^0.16.3",
     "@starock/block": "^0.16.3",
-    "@starock/cli": "^0.3.3",
+    "@starock/cli": "^0.4.0",
     "@starock/common": "^0.16.3",
     "@starock/component": "0.16.3",
     "@starock/core": "0.16.3",
