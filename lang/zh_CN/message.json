@@ -1,0 +1,13 @@
+{
+  // 游戏消息
+  "message.hiddenyears:first_destroy_ruby": "挖掘之后，你感到一阵眩晕……",
+  "message.hiddenyears:tenth_destroy_ruby.1": "眩晕感再次袭来……",
+  "message.hiddenyears:tenth_destroy_ruby.2": "你似乎看见了一个模糊的身躯在雷光之下被撕裂，迸裂出刺眼的光芒，黑夜也如白昼一般……",
+  "message.hiddenyears:fiftieth_destroy_ruby.1": "一阵剧烈的疼痛袭来，仿佛有无数针扎入体内……",
+  "message.hiddenyears:fiftieth_destroy_ruby.2": "眼前浮现出远古的景象：你看见了日月自北方升起，刺眼的光芒划过天际，子夜顿时成为了正午。",
+  "message.hiddenyears:fiftieth_destroy_ruby.3": "可当一切结束后——清晨似乎不再有旭日从东方升起，正午有如黑夜一般漆黑。夏天变成了冬天，而冬天变成了极寒",
+  "message.hiddenyears:cant_be_crushed": "这玩意可不兴粉碎啊……",
+  "message.hiddenyears:not_a_base_item": "该物品无法被锻造！",
+  "message.hiddenyears:recipe_not_found": "这玩意可不能往上面锻造啊……",
+  "message.hiddenyears:ucv_add": "手持货币已经转换为 %s 点统一货币值！"
+}

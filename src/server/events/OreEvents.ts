@@ -21,21 +21,21 @@ export class OreEvents {
       player.addLevels(1);
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 200);
-      player.sendMessage({ translate: "hy.message.first_destroy_ruby" });
+      player.sendMessage({ translate: "message.hiddenyears:first_destroy_ruby" });
     }
     if (num === 10) {
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 300);
-      player.sendMessage({ translate: "hy.message.tenth_destroy_ruby.1" });
-      player.sendMessage({ translate: "hy.message.tenth_destroy_ruby.2" });
+      player.sendMessage({ translate: "message.hiddenyears:tenth_destroy_ruby.1" });
+      player.sendMessage({ translate: "message.hiddenyears:tenth_destroy_ruby.2" });
     }
     if (num === 50) {
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 400);
-      player.sendMessage({ translate: "hy.message.fiftieth_destroy_ruby.1" });
+      player.sendMessage({ translate: "message.hiddenyears:fiftieth_destroy_ruby.1" });
       system.runTimeout(() => {
-        player.sendMessage({ translate: "hy.message.fiftieth_destroy_ruby.2" });
-        player.sendMessage({ translate: "hy.message.fiftieth_destroy_ruby.3" });
+        player.sendMessage({ translate: "message.hiddenyears:fiftieth_destroy_ruby.2" });
+        player.sendMessage({ translate: "message.hiddenyears:fiftieth_destroy_ruby.3" });
       }, 50);
     }
     if (typeof num !== "number") throw new Error("动态属性类型错误");

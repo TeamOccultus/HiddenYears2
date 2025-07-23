@@ -25,7 +25,7 @@ export class Crusher extends BlockWithEntity {
     console.warn(filledItem?.typeId);
     if (!filledItem) {
       if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
-        player.sendMessage({ translate: "hy.message.cant_be_crushed" });
+        player.sendMessage({ translate: "message.hiddenyears:cant_be_crushed" });
         return;
       }
       BlockEntity.storeItem(new ItemStack(item.typeId), entityData);
