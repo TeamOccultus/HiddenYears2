@@ -32,6 +32,10 @@ export const HiddenYears2Credits: Credits = [
         role: "建筑",
       },
       {
+        name: "Kiris",
+        role: "模型/美术",
+      },
+      {
         name: "KuLou_D",
         role: "美术",
       },

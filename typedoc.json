@@ -10,6 +10,8 @@
     "documents/tags.md",
     "documents/v2.md",
     "documents/v3.md",
+    "LICENSE-Markdown.md",
+    "LICENSE-Zh.md"
   ],
   "includeVersion": true
 }
