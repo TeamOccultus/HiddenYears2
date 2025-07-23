@@ -1,6 +1,11 @@
 {
   "pack.name": "隐藏之年²：天边的迦万涅尔",
   "pack.description": "「探索未知的世间」",
+  "gui.unequip": "卸下",
+  "ui.artifact": "饰品",
+  "ui.artifact_equipped": "已装备饰品：",
+  "ui.artifact.description": "旅者的行迹踏遍四海，若能寻得一件能够抵御命运之手的饰品，便能在旅途中获得更多的力量。",
+  "command.artifact.description": "打开饰品菜单",
   "item.hiddenyears:copper_coin": "铜币",
   "item.hiddenyears:gold_coin": "金币",
   "item.hiddenyears:diamond_coin": "钻石币",
@@ -259,6 +264,12 @@
   "item.hiddenyears:originite_boots": "原初靴子",
   "lore.hiddenyears:sparkling_copper": "§f闪铜升级§r",
   "lore.hiddenyears:erosion_totem": "§f腐蚀图腾升级§r",
+  "item.hiddenyears:diamond_badge": "钻石徽章",
+  "item.hiddenyears:golden_badge": "金徽章",
+  "item.hiddenyears:copper_badge": "铜徽章",
+  "item.hiddenyears:diamond_badge.desc": "这是一个钻石徽章",
+  "item.hiddenyears:golden_badge.desc": "这是一个金徽章",
+  "item.hiddenyears:copper_badge.desc": "这是一个铜徽章",
   // 命令描述
   "command.credits.description": "显示《隐藏之年²：天边的迦万涅尔》鸣谢名单",
   // 游戏消息

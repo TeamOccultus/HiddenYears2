@@ -68,6 +68,9 @@
     "hiddenyears:coal_nugget": {
       "textures": "textures/items/coal_nugget"
     },
+    "hiddenyears:copper_badge": {
+      "textures": "textures/items/copper_badge"
+    },
     "hiddenyears:copper_coin": {
       "textures": "textures/items/copper_coin"
     },
@@ -154,6 +157,9 @@
     },
     "hiddenyears:daylight_bow_standby": {
       "textures": "textures/items/daylight_bow_standby"
+    },
+    "hiddenyears:diamond_badge": {
+      "textures": "textures/items/diamond_badge"
     },
     "hiddenyears:diamond_coin": {
       "textures": "textures/items/diamond_coin"
@@ -262,6 +268,9 @@
     },
     "hiddenyears:fire_crossbow_standby": {
       "textures": "textures/items/fire_crossbow_standby"
+    },
+    "hiddenyears:golden_badge": {
+      "textures": "textures/items/golden_badge"
     },
     "hiddenyears:golden_dagger": {
       "textures": "textures/items/golden_dagger"
