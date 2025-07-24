@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.60",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hiddenyears:thrown_crystal_nugget",
+      "materials": {
+        "default": "snowball"
+      },
+      "textures": {
+        "default": "textures/items/crystal_nugget"
+      },
+      "geometry": {
+        "default": "geometry.item_sprite"
+      },
+      "render_controllers": ["controller.render.item_sprite"],
+      "animations": {
+        "flying": "animation.actor.billboard"
+      },
+      "scripts": {
+        "animate": ["flying"]
+      }
+    }
+  }
+}
