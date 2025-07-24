@@ -1,46 +1,43 @@
 import {
-  system,
-  CustomCommand,
   CommandPermissionLevel,
+  CustomCommand,
   CustomCommandSource,
   CustomCommandStatus,
   Player,
-  CustomCommandResult,
+  system,
 } from "@minecraft/server";
-import { ActionFormData } from "@minecraft/server-ui";
-import { Credits } from "../credits/Credits";
-import { parseCredits } from "../credits/parseCredits";
-import { CreditsForm } from "../../ui/CreditsForm";
+import { ProfileForm } from "../../ui/ProfileForm";
 
-export class CreditsCommand {
-  constructor(readonly commandName: string, public creditsData: Credits) {
+export class ProfileCommand {
+  constructor(readonly commandName: string) {
     system.beforeEvents.startup.subscribe((arg) => {
       const command: CustomCommand = {
         name: this.commandName,
-        description: " %command.credits.description",
+        description: " %command.profile.description",
         permissionLevel: CommandPermissionLevel.Any,
       };
       arg.customCommandRegistry.registerCommand(command, (origin) => {
+        const { sourceType, sourceEntity } = origin;
         system.run(() => {
-          if (origin.sourceType !== CustomCommandSource.Entity)
+          if (sourceType !== CustomCommandSource.Entity)
             return {
               status: CustomCommandStatus.Failure,
             };
-          if (!origin.sourceEntity)
+          if (!sourceEntity)
             return {
               status: CustomCommandStatus.Failure,
             };
-          if (!(origin.sourceEntity instanceof Player))
+          if (!(sourceEntity instanceof Player))
             return {
               status: CustomCommandStatus.Failure,
             };
-          CreditsForm.display(origin.sourceEntity, this.creditsData);
+          ProfileForm.display(sourceEntity);
           return {
             status: CustomCommandStatus.Success,
           };
         });
         return {
-          status: CustomCommandStatus.Success,
+          status: CustomCommandStatus.Failure,
         };
       });
     });
