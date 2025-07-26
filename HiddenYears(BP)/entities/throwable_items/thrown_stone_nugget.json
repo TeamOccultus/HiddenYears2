@@ -1,0 +1,43 @@
+{
+  "format_version": "1.20.70",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "hiddenyears:thrown_stone_nugget",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "runtime_identifier": "minecraft:snowball"
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.25,
+        "height": 0.25
+      },
+      "minecraft:projectile": {
+        "destroy_on_hurt": true,
+        "anchor": 1,
+        "power": 1.5,
+        "gravity": 0.03,
+        "angle_offset": 0,
+        "offset": [0, -0.1, 0],
+        "on_hit": {
+          "impact_damage": {
+            "filter": "blaze",
+            "damage": 4,
+            "knockback": true,
+            "semi_random_diff_damage": false,
+            "destroy_on_hit": true
+          }
+        }
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

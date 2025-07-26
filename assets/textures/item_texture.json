@@ -739,6 +739,9 @@
     "hiddenyears:stone_sledgehammer": {
       "textures": "textures/items/stone_sledgehammer"
     },
+    "hiddenyears:task_book": {
+      "textures": "textures/items/task_book"
+    },
     "hiddenyears:trophy_bundle": {
       "textures": "textures/items/trophy_bundle"
     },

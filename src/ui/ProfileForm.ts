@@ -4,6 +4,7 @@ import { CreditsForm } from "./CreditsForm";
 import { HiddenYears2Credits } from "../data/credits";
 import { CopyrightForm } from "./CopyrightForm";
 import { ArtifactForm } from "@starock/artifact";
+import { book } from "../server/registry/task";
 
 export class ProfileForm {
   static display(player: Player): void {
@@ -13,6 +14,7 @@ export class ProfileForm {
     form
       .divider()
       .label({ translate: "ui.profile.game" })
+      .button({ translate: "ui.task" }, "textures/items/task_book")
       .button({ translate: "ui.artifact" }, "textures/items/diamond_badge")
     form
       .divider()
@@ -22,14 +24,20 @@ export class ProfileForm {
     form.show(player).then((result) => {
       if (result.canceled) return;
       if (result.selection === undefined) return;
-      if (result.selection === 0) {
-        ArtifactForm.display(player);
+      if(result.selection === 0){
+        book.display(player);
       }
       if (result.selection === 1) {
-        CopyrightForm.display(player);
+        ArtifactForm.display(player);
+        return;
       }
       if (result.selection === 2) {
+        CopyrightForm.display(player);
+        return;
+      }
+      if (result.selection === 3) {
         CreditsForm.display(player, HiddenYears2Credits);
+        return;
       }
     });
   }

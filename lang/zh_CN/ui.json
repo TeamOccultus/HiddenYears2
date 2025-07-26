@@ -13,5 +13,18 @@
   "ui.profile.credits": "鸣谢名单",
   "ui.credits": "鸣谢名单",
   "ui.ucv": "货币兑换",
-  "ui.ucv.own": "你现在拥有统一货币值：%s"
+  "ui.task": "任务",
+  "ui.ucv.own": "你现在拥有统一货币值：%s",
+  "ui.task.done": "任务已完成",
+  "ui.task.submit": "提交任务",
+  "ui.task.complete": "你完成了任务：",
+  "task.condition.item.failed": "你缺少任务所需的物品：",
+  "task.locked": "任务未解锁",
+  "task.locked.body": "你需要完成以下任务才能解锁此任务：",
+  "task.locked.goto": "前往完成",
+  "ui.task.getAward": "获取章节奖励",
+  "ui.task.tips": "提示：",
+  "ui.task.condition": "任务条件：",
+  "ui.task.award": "任务奖励：",
+  "ui.task.failed_reason": "你无法提交此任务，因为："
 }

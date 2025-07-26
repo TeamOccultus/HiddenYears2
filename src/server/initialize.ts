@@ -10,6 +10,7 @@ import { registryCustomRecipe } from "./registry/recipe";
 import { registryCommands } from "./registry/commands";
 import { registryCustomLoot } from "./registry/loot";
 import { registryArtifacts, registryArtifactSlots, registryForm } from "./registry/artifacts";
+import { registryTask } from "./registry/task";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -29,4 +30,5 @@ export function initialize() {
   registryArtifactSlots();
   registryArtifacts();
   registryForm()
+  registryTask();
 }
