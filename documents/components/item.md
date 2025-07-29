@@ -169,3 +169,11 @@ category: Documents
 > 如果`table_source`参数为`script`，那么物品的最大堆叠必须为 1！
 
 其中的硬编码即指`loot_table`参数指定的战利品表，脚本指从物品的`hiddenyears:loot_table`动态属性获取战利品表。
+
+#### hiddenyears:exp_food
+
+指定食物给予的经验值：
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| exp | `number` | 必填 | 食物给予玩家的经验值 |
