@@ -9,7 +9,7 @@
   "header": {
     "name": "pack.name",
     "description": "pack.description",
-    "min_engine_version": [1, 21, 80],
+    "min_engine_version": [1, 21, 110],
     "uuid": "cb1b4568-9021-4793-afd2-aeac2bdb18f8",
     "version": "3.0.0-alpha.1",
     "pack_scope": "world"
