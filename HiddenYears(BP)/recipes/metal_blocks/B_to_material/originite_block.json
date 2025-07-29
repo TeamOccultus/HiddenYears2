@@ -7,8 +7,7 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:originite_block",
-        "count": 9
+        "item": "hiddenyears:originite_block"
       }
     ],
     "unlock": [

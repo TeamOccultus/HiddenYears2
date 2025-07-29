@@ -7,8 +7,7 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:sparkling_gold_block",
-        "count": 9
+        "item": "hiddenyears:sparkling_gold_block"
       }
     ],
     "unlock": [
@@ -17,7 +16,8 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:sparkling_gold_ingot"
+      "item": "hiddenyears:sparkling_gold_ingot",
+      "count": 9
     }
   }
 }

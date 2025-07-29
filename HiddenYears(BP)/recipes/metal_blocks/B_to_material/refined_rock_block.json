@@ -7,8 +7,7 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:refined_rock_block",
-        "count": 9
+        "item": "hiddenyears:refined_rock_block"
       }
     ],
     "unlock": [
@@ -17,7 +16,8 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:refined_rock_ingot"
+      "item": "hiddenyears:refined_rock_ingot",
+      "count": 9
     }
   }
 }

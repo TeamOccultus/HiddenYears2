@@ -2,22 +2,22 @@
   "format_version": "1.21.100",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "hiddenyears:silver_block_reverse"
+      "identifier": "hiddenyears:ruby_block"
     },
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:silver_block"
+        "item": "hiddenyears:ruby",
+        "count": 9
       }
     ],
     "unlock": [
       {
-        "item": "hiddenyears:silver_block"
+        "item": "hiddenyears:ruby"
       }
     ],
     "result": {
-      "item": "hiddenyears:silver_ingot",
-      "count": 9
+      "item": "hiddenyears:ruby_block"
     }
   }
 }

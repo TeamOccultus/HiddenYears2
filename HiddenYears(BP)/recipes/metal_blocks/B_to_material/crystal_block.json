@@ -7,8 +7,7 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:crystal_block",
-        "count": 9
+        "item": "hiddenyears:crystal_block"
       }
     ],
     "unlock": [
@@ -17,7 +16,8 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:crystal_ingot"
+      "item": "hiddenyears:crystal_ingot",
+      "count": 9
     }
   }
 }

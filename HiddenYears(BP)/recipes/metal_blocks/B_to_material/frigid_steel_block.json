@@ -7,8 +7,7 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:frigid_steel_block",
-        "count": 9
+        "item": "hiddenyears:frigid_steel_block"
       }
     ],
     "unlock": [
@@ -17,7 +16,8 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:frigid_steel_ingot"
+      "item": "hiddenyears:frigid_steel_ingot",
+      "count": 9
     }
   }
 }
