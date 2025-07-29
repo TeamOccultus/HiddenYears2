@@ -43,7 +43,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:shattered_sand_staff",
+          "name": "hiddenyears:shattered_sand_staff",
           "weight": 1
         }
       ]
@@ -53,7 +53,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:drift_sand_coronet",
+          "name": "hiddenyears:drift_sand_coronet",
           "weight": 1
         }
       ]

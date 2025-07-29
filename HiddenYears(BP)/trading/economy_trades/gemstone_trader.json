@@ -1,0 +1,186 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 4,
+          "trades": [
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 1
+                }
+              ],
+              "gives": [
+                {
+                  "item": "copper_ingot",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 6
+                }
+              ],
+              "gives": [
+                {
+                  "item": "iron_ingot",
+                  "quantity": 12
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "gold_ingot",
+                  "quantity": 8
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "quartz",
+                  "quantity": 10
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 15
+                }
+              ],
+              "gives": [
+                {
+                  "item": "lapis_lazuli",
+                  "quantity": 10
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 35
+                }
+              ],
+              "gives": [
+                {
+                  "item": "diamond",
+                  "quantity": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "yellow_flower",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "red_flower",
+                  "quantity": 3,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": 0
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "double_plant",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": 0
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 3
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "red_flower",
+                  "quantity": 7,
+                  "functions": [
+                    {
+                      "function": "set_data",
+                      "data": 1
+                    }
+                  ]
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

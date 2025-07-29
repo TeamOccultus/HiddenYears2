@@ -5,7 +5,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:ruby",
+          "name": "hiddenyears:ruby",
           "functions": [
             {
               "function": "set_count",
@@ -43,7 +43,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:ruby_boardsword",
+          "name": "hiddenyears:ruby_boardsword",
           "weight": 1
         }
       ]
@@ -53,7 +53,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:letter_1",
+          "name": "hiddenyears:letter_1",
           "weight": 1
         }
       ]
@@ -63,7 +63,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:ruby_helmet",
+          "name": "hiddenyears:ruby_helmet",
           "weight": 1
         }
       ]
@@ -73,7 +73,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:ruby_bag",
+          "name": "hiddenyears:ruby_bag",
           "weight": 1,
           "functions": [
             { "function": "set_count", "count": { "min": 2, "max": 5 } },
@@ -87,7 +87,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:ruby_boardsword_embryo",
+          "name": "hiddenyears:ruby_boardsword_embryo",
           "functions": [
             {
               "function": "set_lore",

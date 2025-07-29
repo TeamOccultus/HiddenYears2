@@ -43,7 +43,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:isis_crown",
+          "name": "hiddenyears:isis_crown",
           "weight": 1
         }
       ]
@@ -53,7 +53,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:mutas_staff",
+          "name": "hiddenyears:mutas_staff",
           "weight": 1
         }
       ]

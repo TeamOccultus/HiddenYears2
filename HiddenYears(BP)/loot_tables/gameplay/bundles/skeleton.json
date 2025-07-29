@@ -12,7 +12,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:bone_boardsword_embryo",
+          "name": "hiddenyears:bone_boardsword_embryo",
           "functions": [
             {
               "function": "set_lore",
@@ -60,7 +60,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "hy:copper_coin",
+          "name": "hiddenyears:copper_coin",
           "weight": 1,
           "functions": [
             { "function": "set_count", "count": { "min": 1, "max": 3 } }
