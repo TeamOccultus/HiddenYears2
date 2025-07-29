@@ -2,7 +2,7 @@
   "format_version": "1.21.90",
   "minecraft:block": {
     "description": {
-      "identifier": "hiddenyears:crystal_block",
+      "identifier": "hiddenyears:ruby_block",
       "menu_category": {
         "category": "nature"
       }
@@ -55,7 +55,7 @@
       },
       "minecraft:material_instances": {
         "*": {
-          "texture": "hiddenyears:crystal_block"
+          "texture": "hiddenyears:ruby_block"
         }
       },
       "minecraft:geometry": {

@@ -103,6 +103,9 @@
     "hiddenyears:refined_rock_block": {
       "textures": "textures/blocks/refined_rock_block"
     },
+    "hiddenyears:ruby_block": {
+      "textures": "textures/blocks/ruby_block"
+    },
     "hiddenyears:ruby_ore": {
       "textures": "textures/blocks/ruby_ore"
     },
