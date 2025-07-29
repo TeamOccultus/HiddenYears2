@@ -64,6 +64,9 @@
     "hiddenyears:crystal_block": {
       "textures": "textures/blocks/crystal_block"
     },
+    "hiddenyears:darkish_red_flower": {
+      "textures": "textures/blocks/darkish_red_flower"
+    },
     "hiddenyears:deepslate_extracts_ore": {
       "textures": "textures/blocks/deepslate_extracts_ore"
     },

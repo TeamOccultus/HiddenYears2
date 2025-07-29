@@ -143,6 +143,9 @@
     "hiddenyears:crystal_sword": {
       "textures": "textures/items/crystal_sword"
     },
+    "hiddenyears:darkish_red_flower": {
+      "textures": "textures/items/darkish_red_flower"
+    },
     "hiddenyears:daylight_arrow": {
       "textures": "textures/items/daylight_arrow"
     },

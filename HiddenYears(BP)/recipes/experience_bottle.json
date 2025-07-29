@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:experience_bottle"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "X": {
+        "item": "hiddenyears:darkish_red_flower"
+      },
+      "A": {
+        "item": "glass_bottle"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:darkish_red_flower"
+      },
+      {
+        "item": "glass_bottle"
+      }
+    ],
+    "result": {
+      "item": "experience_bottle"
+    }
+  }
+}

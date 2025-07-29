@@ -29,5 +29,8 @@
   },
   "hiddenyears:deepslate_ruby_ore": {
     "sound": "deespslate"
+  },
+  "hiddenyears:darkish_red_flower": {
+    "sound": "grass"
   }
 }
