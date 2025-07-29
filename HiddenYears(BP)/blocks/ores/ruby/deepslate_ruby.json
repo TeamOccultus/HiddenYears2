@@ -1,0 +1,67 @@
+{
+  "format_version": "1.21.90",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:deepslate_ruby_ore",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_ore": {
+        "item_tier": "stone",
+        "loot_table": "blocks/ores/deepslate_ruby",
+        "exp": 10
+      },
+      "hiddenyears:ore_type": {
+        "ore_type": "ruby"
+      },
+      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hiddenyears:deepslate_ruby_ore"
+        }
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 15,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+            },
+            "destroy_speed": 0.75
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+            },
+            "destroy_speed": 0.6
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 0.5
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+            },
+            "destroy_speed": 0.4
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2.5
+      },
+      "minecraft:map_color": "#565656",
+      "tag:metal": {},
+      "tag:minecraft:iron_tier_destructible": {},
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    }
+  }
+}

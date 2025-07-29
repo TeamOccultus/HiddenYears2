@@ -26,5 +26,8 @@
   },
   "hiddenyears:stone_of_fear": {
     "sound": "stone"
+  },
+  "hiddenyears:deepslate_ruby_ore": {
+    "sound": "deespslate"
   }
 }
