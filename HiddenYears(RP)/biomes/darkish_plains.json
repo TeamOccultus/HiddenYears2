@@ -9,9 +9,12 @@
       "minecraft:sky_color": {
         "sky_color": "#82111f" //天空颜色，改改改
       }, //你不加这玩意那就是默认群系的天空
-      "minecraft:biome_music": {
-        "music_definition": "darkish_plains"
-      } //这个生物群系播不播放音乐由你说了算，填0就是不播放，把这组件删了就默认播放
+      "minecraft:water_appearance": {
+        "surface_color": "#82111f" //水的颜色，改改改
+      },
+      "minecraft:fog_appearance": {
+        "fog_identifier": "hiddenyears:darkish_fog"
+      }
     }
   }
 }
