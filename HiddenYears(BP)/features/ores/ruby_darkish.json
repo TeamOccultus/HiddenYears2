@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:ores/ruby_darkish"
+    },
+    "count": 8,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:ruby_ore",
+        "may_replace": ["minecraft:stone"]
+      },
+      {
+        "places_block": "hiddenyears:deepslate_ruby_ore",
+        "may_replace": ["minecraft:deepslate"]
+      }
+    ]
+  }
+}
