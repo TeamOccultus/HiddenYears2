@@ -12,6 +12,7 @@
   "author": "CTN Studios",
   "license": "HY-OSS",
   "dependencies": {
+    "@minecraft/diagnostics": "1.0.0-beta.1.21.110-preview.20",
     "@minecraft/server": "2.3.0-beta.1.21.110-preview.20",
     "@minecraft/server-ui": "2.1.0-beta.1.21.110-preview.20",
     "@starock/artifact": "^0.17.3",

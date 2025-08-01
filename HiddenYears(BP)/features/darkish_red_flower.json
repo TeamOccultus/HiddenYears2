@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.30",
+
+  "minecraft:single_block_feature": {
+    "description": {
+      "identifier": "hiddenyears:darkish_red_flower"
+    },
+    "places_block": "hiddenyears:darkish_red_flower",
+    "enforce_survivability_rules": true,
+    "enforce_placement_rules": false,
+    "may_replace": ["minecraft:air"],
+    "may_attach_to": {
+      "min_sides_must_attach": 1,
+      "bottom": ["minecraft:dirt", "minecraft:grass_block"]
+    }
+  }
+}
