@@ -13,8 +13,7 @@
         "default": "geometry.pillager"
       },
       "spawn_egg": {
-        "texture": "hiddenyears:egg_ruby_guardian",
-        "texture_index": 1
+        "texture": "hiddenyears:egg_ruby_guardian"
       },
       "scripts": {
         "pre_animation": [

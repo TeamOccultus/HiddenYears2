@@ -14,8 +14,7 @@
         "default": "geometry.zombie.v1.8"
       },
       "spawn_egg": {
-        "texture": "hiddenyears:egg_ruby_zombie",
-        "texture_index": 2
+        "texture": "hiddenyears:egg_ruby_zombie"
       },
       "scripts": {
         "pre_animation": [

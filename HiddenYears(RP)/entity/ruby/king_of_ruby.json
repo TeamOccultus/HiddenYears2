@@ -28,8 +28,7 @@
       },
       "render_controllers": ["controller.render.evoker"],
       "spawn_egg": {
-        "texture": "hiddenyears:egg_king_of_ruby",
-        "texture_index": 0
+        "texture": "hiddenyears:egg_king_of_ruby"
       }
     }
   }
