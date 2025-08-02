@@ -1,4 +1,4 @@
-import { CommandPermissionLevel } from "@minecraft/server";
+import { CommandPermissionLevel, Dimension } from "@minecraft/server";
 import {
   ArtifactForm,
   ArtifactRegistries,

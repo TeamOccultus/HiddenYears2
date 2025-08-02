@@ -1,3 +1,4 @@
 
 diagnostic.disable.behaviorpack.recipes.furnace_tags=true
 diagnostic.disable.behaviorpack.entities.missing=true
+diagnostic.disable.debugger.internal.exception=true

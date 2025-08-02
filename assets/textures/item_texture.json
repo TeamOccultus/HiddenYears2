@@ -206,6 +206,69 @@
     "hiddenyears:echo_coin": {
       "textures": "textures/items/echo_coin"
     },
+    "hiddenyears:egg_drift_sand_guardian": {
+      "textures": "textures/items/egg_drift_sand_guardian"
+    },
+    "hiddenyears:egg_drift_sand_sergeant": {
+      "textures": "textures/items/egg_drift_sand_sergeant"
+    },
+    "hiddenyears:egg_drift_sand_shooter": {
+      "textures": "textures/items/egg_drift_sand_shooter"
+    },
+    "hiddenyears:egg_drift_sand_soldier": {
+      "textures": "textures/items/egg_drift_sand_soldier"
+    },
+    "hiddenyears:egg_ferocious_sprite": {
+      "textures": "textures/items/egg_ferocious_sprite"
+    },
+    "hiddenyears:egg_gemstone_trader": {
+      "textures": "textures/items/egg_gemstone_trader"
+    },
+    "hiddenyears:egg_hidden_trader": {
+      "textures": "textures/items/egg_hidden_trader"
+    },
+    "hiddenyears:egg_king_of_ruby": {
+      "textures": "textures/items/egg_king_of_ruby"
+    },
+    "hiddenyears:egg_mummy": {
+      "textures": "textures/items/egg_mummy"
+    },
+    "hiddenyears:egg_mutas_wrath": {
+      "textures": "textures/items/egg_mutas_wrath"
+    },
+    "hiddenyears:egg_pharaohs_ghost": {
+      "textures": "textures/items/egg_pharaohs_ghost"
+    },
+    "hiddenyears:egg_rabbit_killer": {
+      "textures": "textures/items/egg_rabbit_killer"
+    },
+    "hiddenyears:egg_ruby_guardian": {
+      "textures": "textures/items/egg_ruby_guardian"
+    },
+    "hiddenyears:egg_ruby_skeleton": {
+      "textures": "textures/items/egg_ruby_skeleton"
+    },
+    "hiddenyears:egg_ruby_zombie": {
+      "textures": "textures/items/egg_ruby_zombie"
+    },
+    "hiddenyears:egg_sand_creeper": {
+      "textures": "textures/items/egg_sand_creeper"
+    },
+    "hiddenyears:egg_sand_sliverfish": {
+      "textures": "textures/items/egg_sand_sliverfish"
+    },
+    "hiddenyears:egg_sand_spider": {
+      "textures": "textures/items/egg_sand_spider"
+    },
+    "hiddenyears:egg_sand_trader": {
+      "textures": "textures/items/egg_sand_trader"
+    },
+    "hiddenyears:egg_scorpion": {
+      "textures": "textures/items/egg_scorpion"
+    },
+    "hiddenyears:egg_sprite": {
+      "textures": "textures/items/egg_sprite"
+    },
     "hiddenyears:emerald_dust": {
       "textures": "textures/items/emerald_dust"
     },

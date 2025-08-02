@@ -1,3 +1,13 @@
 {
-    "entity.hiddenyears:thrown_crystal_nugget.name": "扔出的魔晶碎片"
+  "entity.hiddenyears:thrown_crystal_nugget.name": "扔出的魔晶碎片",
+  "entity.hiddenyears:ruby_zombie.name": "红宝石僵尸",
+  "entity.hiddenyears:ruby_skeleton.name": "红宝石骷髅",
+  "entity.hiddenyears:ruby_guardian.name": "红宝石守卫",
+  "entity.hiddenyears:ferocious_ruby_guardian.name": "红宝石守卫",
+  "entity.hiddenyears:king_of_ruby.name": "红宝石之王",
+  "item.spawn_egg.entity.hiddenyears:ruby_zombie.name": "红宝石僵尸刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:ruby_skeleton.name": "红宝石骷髅刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:ruby_guardian.name": "红宝石守卫刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:ferocious_ruby_guardian.name": "红宝石守卫刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:king_of_ruby.name": "红宝石之王刷怪蛋"
 }
