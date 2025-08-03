@@ -32,5 +32,8 @@
   },
   "hiddenyears:darkish_red_flower": {
     "sound": "grass"
+  },
+  "hiddenyears:ruby_stone_bricks":{
+    "sound": "stone"
   }
 }
