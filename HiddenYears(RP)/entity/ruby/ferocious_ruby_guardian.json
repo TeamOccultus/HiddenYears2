@@ -42,7 +42,7 @@
         "controller_attack": "controller.animation.humanoid.attack",
         "controller_bob": "controller.animation.humanoid.bob",
         "controller_ruby_guardian_attack": "controller.animation.pillager.attack",
-        "ruby_guardian_root_controller": "controller.animation.ruby_guardian.root"
+        "ruby_guardian_root_controller": "controller.animation.pillager.root"
       },
       "render_controllers": ["controller.render.pillager"],
       "enable_attachables": true

@@ -149,7 +149,8 @@
             "filters": {
               "test": "is_family",
               "subject": "other",
-              "value": "player"
+              "operator": "!=",
+              "value": "ruby"
             }
           }
         ],

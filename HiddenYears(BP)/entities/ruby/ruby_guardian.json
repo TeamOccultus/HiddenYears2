@@ -85,20 +85,21 @@
         }
       },
       "minecraft:behavior.nearest_attackable_target": {
-        "priority": 1,
+        "priority": 8,
         "entity_types": [
           {
             "filters": {
               "test": "is_family",
               "subject": "other",
-              "value": "player"
+              "operator": "!=",
+              "value": "ruby"
             }
           }
         ],
         "must_see": true
       },
       "minecraft:behavior.random_stroll": {
-        "priority": 7,
+        "priority": 2,
         "speed_multiplier": 1
       },
       "minecraft:behavior.look_at_player": {
