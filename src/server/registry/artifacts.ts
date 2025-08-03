@@ -5,7 +5,7 @@ import {
   ArtifactSlot,
   ArtifactSlotRegistries,
 } from "@starock/artifact";
-import { body, head } from "../item/ArtifactSlots";
+import { body, feet, hand, head, runes } from "../item/ArtifactSlots";
 import { copperBadge, diamondBadge, goldenBadge } from "../item/Artifacts";
 
 export function registryArtifacts() {
@@ -19,6 +19,9 @@ export function registryArtifactSlots() {
   const slot = new ArtifactSlotRegistries();
   slot.register("hiddenyears:head", head);
   slot.register("hiddenyears:body", body);
+  slot.register("hiddenyears:hand", hand);
+  slot.register("hiddenyears:feet", feet);
+  slot.register("hiddenyears:runes", runes);
 }
 
 export function registryForm() {
