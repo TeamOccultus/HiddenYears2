@@ -15,6 +15,7 @@ export class ProfileCommand {
         name: this.commandName,
         description: " %command.profile.description",
         permissionLevel: CommandPermissionLevel.Any,
+        cheatsRequired: false
       };
       arg.customCommandRegistry.registerCommand(command, (origin) => {
         const { sourceType, sourceEntity } = origin;

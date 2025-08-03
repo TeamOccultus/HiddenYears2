@@ -19,6 +19,7 @@ export class CreditsCommand {
         name: this.commandName,
         description: " %command.credits.description",
         permissionLevel: CommandPermissionLevel.Any,
+        cheatsRequired: false
       };
       arg.customCommandRegistry.registerCommand(command, (origin) => {
         system.run(() => {

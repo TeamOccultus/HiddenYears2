@@ -29,5 +29,6 @@ export function registryForm() {
     name: "hiddenyears:artifact",
     description: " %command.artifact.description",
     permissionLevel: CommandPermissionLevel.Any,
+    cheatsRequired: false
   });
 }
