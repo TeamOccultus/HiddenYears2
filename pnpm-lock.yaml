@@ -24,8 +24,8 @@ importers:
         specifier: ^0.17.3
         version: 0.17.3(f1c8443693e473fdc6d6187528491a42)
       '@starock/cli':
-        specifier: ^0.4.0
-        version: 0.4.0(@types/node@22.14.0)
+        specifier: ^0.5.0
+        version: 0.5.0(@types/node@22.14.0)
       '@starock/common':
         specifier: ^0.17.3
         version: 0.17.3(@minecraft/server@2.3.0-beta.1.21.110-preview.20(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
@@ -515,8 +515,8 @@ packages:
       '@minecraft/server-ui': 2.1.0-beta.1.21.110-preview.20
       '@starock/core': 0.17.3
 
-  '@starock/cli@0.4.0':
-    resolution: {integrity: sha512-eoeq/VWRT555nTYFdyDUkc1yHf2uTgd5HzlgASenpH84LdvFNt3DPWWBocFoEktQsj6poYX4U9f/OTSosDqJSg==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.4.0/cli-0.4.0.tgz}
+  '@starock/cli@0.5.0':
+    resolution: {integrity: sha512-1OPjxre0/O82tPB8QMBq4XdQSy+kHbhnZRvS4FGRBq15xamYY6v6RO5q/qlb7fzKGoCW+yn4SPj0ee3Q0sJqPw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.5.0/cli-0.5.0.tgz}
     hasBin: true
 
   '@starock/common@0.17.3':
@@ -1351,7 +1351,7 @@ snapshots:
     transitivePeerDependencies:
       - '@starock/math'
 
-  '@starock/cli@0.4.0(@types/node@22.14.0)':
+  '@starock/cli@0.5.0(@types/node@22.14.0)':
     dependencies:
       '@inquirer/prompts': 7.7.1(@types/node@22.14.0)
       archiver: 7.0.1
