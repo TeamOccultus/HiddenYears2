@@ -1,10 +1,7 @@
 {
-  "item.hiddenyears:diamond_badge": "钻石徽章",
-  "item.hiddenyears:golden_badge": "金徽章",
-  "item.hiddenyears:copper_badge": "铜徽章",
-  "item.hiddenyears:diamond_badge.desc": "这是一个钻石徽章",
-  "item.hiddenyears:golden_badge.desc": "这是一个金徽章",
-  "item.hiddenyears:copper_badge.desc": "这是一个铜徽章",
+  "item.hiddenyears:diamond_badge": "钻石勇者徽章",
+  "item.hiddenyears:golden_badge": "金制勇者徽章",
+  "item.hiddenyears:copper_badge": "铜制勇者徽章",
   "item.hiddenyears:end_arrow": "末影之箭",
   "item.hiddenyears:end_crossbow": "末影之弩",
   "item.hiddenyears:end_crossbow_loaded": "装填满的末影之弩",

@@ -1,0 +1,5 @@
+{
+    "item.hiddenyears:copper_badge.usage": "§7佩戴后的10分钟内最大生命值提升12点，脱下该饰品后此增益立即消失§r",
+    "item.hiddenyears:golden_badge.usage": "§7佩戴后的10分钟内最大生命值提升16点，脱下该饰品后此增益立即消失§r",
+    "item.hiddenyears:diamond_badge.usage": "§7佩戴后的10分钟内最大生命值提升20点，脱下该饰品后此增益立即消失§r"
+}

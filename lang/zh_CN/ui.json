@@ -29,12 +29,20 @@
   "ui.task.failed_reason": "你无法提交此任务，因为：",
   "ui.artifact.head": "头饰",
   "ui.artifact.head.desc": "装饰头部的饰品，通常为帽子或头环",
+  "ui.artifact.head.itemDesc": "饰品类型：头部",
   "ui.artifact.body": "身体",
   "ui.artifact.body.desc": "可以佩戴在躯干部位的饰品，通常为斗篷或者徽章",
+  "ui.artifact.body.itemDesc": "§7饰品类型：身体§r",
   "ui.artifact.hand": "手饰",
   "ui.artifact.hand.desc": "戴在手部的饰品，通常为手套或护腕",
+  "ui.artifact.hand.itemDesc": "饰品类型：手部",
   "ui.artifact.feet": "脚饰",
   "ui.artifact.feet.desc": "可以穿在脚下的饰品，通常为各种靴子",
+  "ui.artifact.feet.itemDesc": "饰品类型：脚部",
   "ui.artifact.runes": "符文",
-  "ui.artifact.runes.desc": "各种神秘的、带有神秘力量的符文"
+  "ui.artifact.runes.desc": "各种神秘的、带有神秘力量的符文",
+  "ui.artifact.runes.itemDesc": "饰品类型：符文",
+  "ui.artifact.copper_badge": "铜徽章",
+  "ui.artifact.diamond_badge": "钻石徽章",
+  "ui.artifact.gold_badge": "金徽章"
 }
