@@ -1,27 +1,26 @@
-import { CommandPermissionLevel, Dimension } from "@minecraft/server";
+import { CommandPermissionLevel } from "@minecraft/server";
 import {
   ArtifactForm,
   ArtifactRegistries,
-  ArtifactSlot,
   ArtifactSlotRegistries,
 } from "@starock/artifact";
-import { body, feet, hand, head, runes } from "../item/ArtifactSlots";
-import { copperBadge, diamondBadge, goldenBadge } from "../item/Artifacts";
+import * as slots from "../item/ArtifactSlots";
+import { artifacts } from "../item/Artifacts";
 
 export function registryArtifacts() {
-  const artifact = new ArtifactRegistries("hiddenyears:artifacts");
-  artifact.register("hiddenyears:diamond_badge", diamondBadge);
-  artifact.register("hiddenyears:golden_badge", goldenBadge);
-  artifact.register("hiddenyears:copper_badge", copperBadge);
+  const registry = new ArtifactRegistries("hiddenyears:artifacts");
+  artifacts.forEach((artifact) => {
+    registry.register(artifact.typeId, artifact);
+  })
 }
 
 export function registryArtifactSlots() {
   const slot = new ArtifactSlotRegistries();
-  slot.register("hiddenyears:head", head);
-  slot.register("hiddenyears:body", body);
-  slot.register("hiddenyears:hand", hand);
-  slot.register("hiddenyears:feet", feet);
-  slot.register("hiddenyears:runes", runes);
+  slot.register("hiddenyears:head", slots.head);
+  slot.register("hiddenyears:body", slots.body);
+  slot.register("hiddenyears:hand", slots.hand);
+  slot.register("hiddenyears:feet", slots.feet);
+  slot.register("hiddenyears:runes", slots.runes);
 }
 
 export function registryForm() {
@@ -29,6 +28,6 @@ export function registryForm() {
     name: "hiddenyears:artifact",
     description: " %command.artifact.description",
     permissionLevel: CommandPermissionLevel.Any,
-    cheatsRequired: false
+    cheatsRequired: false,
   });
 }
