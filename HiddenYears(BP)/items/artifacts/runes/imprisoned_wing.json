@@ -1,0 +1,20 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:imprisoned_wing",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "hiddenyears:artifacts": {},
+      "minecraft:display_name": {
+        "value": "%ui.artifact.imprisoned_wing\n%ui.artifact.runes.itemDesc"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:icon": "hiddenyears:imprisoned_wing",
+      "minecraft:rarity": "rare"
+    }
+  }
+}

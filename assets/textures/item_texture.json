@@ -92,6 +92,9 @@
     "hiddenyears:copper_sledgehammer": {
       "textures": "textures/items/copper_sledgehammer"
     },
+    "hiddenyears:crucifix_runes": {
+      "textures": "textures/items/crucifix_runes"
+    },
     "hiddenyears:crystal_axe": {
       "textures": "textures/items/crystal_axe"
     },
@@ -142,6 +145,9 @@
     },
     "hiddenyears:crystal_sword": {
       "textures": "textures/items/crystal_sword"
+    },
+    "hiddenyears:cursed_ring": {
+      "textures": "textures/items/cursed_ring"
     },
     "hiddenyears:darkish_red_flower": {
       "textures": "textures/items/darkish_red_flower"
@@ -296,6 +302,9 @@
     "hiddenyears:end_crossbow_standby": {
       "textures": "textures/items/end_crossbow_standby"
     },
+    "hiddenyears:engulf_glove": {
+      "textures": "textures/items/engulf_glove"
+    },
     "hiddenyears:erosion_totem": {
       "textures": "textures/items/erosion_totem"
     },
@@ -317,8 +326,17 @@
     "hiddenyears:explode_crossbow_standby": {
       "textures": "textures/items/explode_crossbow_standby"
     },
+    "hiddenyears:farmers_hat": {
+      "textures": "textures/items/farmers_hat"
+    },
+    "hiddenyears:fighters_glove": {
+      "textures": "textures/items/fighters_glove"
+    },
     "hiddenyears:fire_arrow": {
       "textures": "textures/items/fire_arrow"
+    },
+    "hiddenyears:fire_cape": {
+      "textures": "textures/items/fire_cape"
     },
     "hiddenyears:fire_crossbow_pulling_0": {
       "textures": "textures/items/fire_crossbow_pulling_0"
@@ -334,6 +352,9 @@
     },
     "hiddenyears:fire_crossbow_standby": {
       "textures": "textures/items/fire_crossbow_standby"
+    },
+    "hiddenyears:gluttonous_runes": {
+      "textures": "textures/items/gluttonous_runes"
     },
     "hiddenyears:golden_badge": {
       "textures": "textures/items/golden_badge"
@@ -358,6 +379,18 @@
     },
     "hiddenyears:gold_sand": {
       "textures": "textures/items/gold_sand"
+    },
+    "hiddenyears:hare_boots": {
+      "textures": "textures/items/hare_boots"
+    },
+    "hiddenyears:herders_hat": {
+      "textures": "textures/items/herders_hat"
+    },
+    "hiddenyears:imprisoned_wing": {
+      "textures": "textures/items/imprisoned_wing"
+    },
+    "hiddenyears:invisible_cape": {
+      "textures": "textures/items/invisible_cape"
     },
     "hiddenyears:iron_crowbar": {
       "textures": "textures/items/iron_crowbar"
@@ -419,6 +452,12 @@
     "hiddenyears:magic_dust": {
       "textures": "textures/items/magic_dust"
     },
+    "hiddenyears:magic_feather_cape": {
+      "textures": "textures/items/magic_feather_cape"
+    },
+    "hiddenyears:mask_of_the_sea": {
+      "textures": "textures/items/mask_of_the_sea"
+    },
     "hiddenyears:medicine_1": {
       "textures": "textures/items/medicine_1"
     },
@@ -460,6 +499,9 @@
     },
     "hiddenyears:medicine_9": {
       "textures": "textures/items/medicine_9"
+    },
+    "hiddenyears:miners_glove": {
+      "textures": "textures/items/miners_glove"
     },
     "hiddenyears:money_bundle": {
       "textures": [
@@ -631,8 +673,17 @@
     "hiddenyears:ruby_apple": {
       "textures": "textures/items/ruby_apple"
     },
+    "hiddenyears:ruby_ring": {
+      "textures": "textures/items/ruby_ring"
+    },
+    "hiddenyears:ruby_runes copy": {
+      "textures": "textures/items/ruby_runes copy"
+    },
     "hiddenyears:ruby_runes": {
       "textures": "textures/items/ruby_runes"
+    },
+    "hiddenyears:sand_runes": {
+      "textures": "textures/items/sand_runes"
     },
     "hiddenyears:silver_axe": {
       "textures": "textures/items/silver_axe"
@@ -669,6 +720,9 @@
     },
     "hiddenyears:silver_sword": {
       "textures": "textures/items/silver_sword"
+    },
+    "hiddenyears:soldiers_helmet": {
+      "textures": "textures/items/soldiers_helmet"
     },
     "hiddenyears:soul_of_fear": {
       "textures": "textures/items/soul_of_fear"
@@ -718,8 +772,14 @@
     "hiddenyears:sparkling_gold_sword": {
       "textures": "textures/items/sparkling_gold_sword"
     },
+    "hiddenyears:sparkling_mask": {
+      "textures": "textures/items/sparkling_mask"
+    },
     "hiddenyears:sparkling_stone": {
       "textures": "textures/items/sparkling_stone"
+    },
+    "hiddenyears:speed_boots": {
+      "textures": "textures/items/speed_boots"
     },
     "hiddenyears:stack_of_copper_coin": {
       "textures": "textures/items/stack_of_copper_coin"
@@ -807,6 +867,9 @@
     },
     "hiddenyears:task_book": {
       "textures": "textures/items/task_book"
+    },
+    "hiddenyears:thorns_cape": {
+      "textures": "textures/items/thorns_cape"
     },
     "hiddenyears:trophy_bundle": {
       "textures": "textures/items/trophy_bundle"
