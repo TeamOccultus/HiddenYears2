@@ -1,11 +1,8 @@
-import { Artifact } from "@starock/artifact";
 import { body, feet, hand, head, runes } from "./ArtifactSlots";
-import { Format } from "@starock/format";
-import { Random, RandomEvent } from "@starock/math";
 import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
 import herd from "../../data/herd";
 import crop from "../../data/crop";
-import { EntitiesUtils } from "@starock/entity";
+import { Artifact, Format, RandomEvent, Random } from "@occultus/api";
 
 /**
  * 钻石制战士徽章

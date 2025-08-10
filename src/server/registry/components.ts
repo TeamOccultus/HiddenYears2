@@ -1,10 +1,13 @@
 import {
+  BlockRegistries,
+  BlockWithDestroyCondition,
   FoodMaterial,
+  InteractableBlock,
   ItemRegistries,
+  OreBlock,
   ToolMaterial,
   WeaponMaterial,
-} from "@starock/item";
-import { OreBlock, InteractableBlock, BlcokRegistries, BlockWithDestroyCondition } from "@starock/block";
+} from "@occultus/api";
 import { OreTypeComponent } from "../components/OreTypeComponent";
 import { ToolTypeComponent } from "../components/ToolTypeComponent";
 import { WeaponTypeComponent } from "../components/WeaponTypeComponent";
@@ -18,7 +21,7 @@ import { ExpFoodComponent } from "../components/ExpFoodComponent/Component";
  * 注册自定义组件
  */
 export function registryComponents() {
-  const [item, block] = [new ItemRegistries(), new BlcokRegistries()];
+  const [item, block] = [new ItemRegistries(), new BlockRegistries()];
   new OreTypeComponent("hiddenyears:ore_type");
   new ToolTypeComponent("hiddenyears:tool_type");
   new WeaponTypeComponent("hiddenyears:weapon_type");
@@ -27,28 +30,12 @@ export function registryComponents() {
   new TrophyBundleComponent("hiddenyears:trophy_bundle");
   new ExpFoodComponent("hiddenyears:exp_food");
   new CoinComponent("hiddenyears:coin");
-  item.register(
-    "hiddenyears:effective_food",
-    new FoodMaterial("hiddenyears:effective_food")
-  );
-  item.register(
-    "hiddenyears:custom_tool",
-    new ToolMaterial("hiddenyears:custom_tool")
-  );
-  item.register(
-    "hiddenyears:custom_weapon",
-    new WeaponMaterial("hiddenyears:custom_weapon")
-  );
-  block.register(
-    "hiddenyears:custom_interactable_block",
-    new InteractableBlock("hiddenyears:interactable")
-  );
-  block.register(
-    "hiddenyears:custom_ore",
-    new OreBlock("hiddenyears:custom_ore")
-  );
-  block.register(
-    "hiddenyears:destroy_condition",
-    new BlockWithDestroyCondition("hiddenyears:destroy_condition")
-  )
+  item.add(new FoodMaterial("hiddenyears:effective_food"));
+  item.add(new ToolMaterial("hiddenyears:custom_tool"));
+  item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
+  block.add(new InteractableBlock("hiddenyears:interactable"));
+  block.add(new OreBlock("hiddenyears:custom_ore"));
+  block.add(new BlockWithDestroyCondition("hiddenyears:destroy_condition"));
+  item.register();
+  block.register();
 }

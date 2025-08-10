@@ -7,8 +7,7 @@ import {
   world,
 } from "@minecraft/server";
 import { ArrowPresentParams, ArrowPresents } from "./ArrowPresentParams";
-import { EntitiesUtils } from "@starock/entity";
-import { Random } from "@starock/math";
+import { Random } from "@occultus/api";
 
 export class ArrowPresentComponent {
   constructor(readonly componentName: string) {

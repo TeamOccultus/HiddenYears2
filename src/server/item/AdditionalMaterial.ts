@@ -1,6 +1,6 @@
 import { ItemStack, world } from "@minecraft/server";
 import { AdditionalMaterialEvents } from "../events/AdditionalMaterialEvents";
-import { EntityUtils } from "@starock/entity";
+import { getEquipmentItem } from "@occultus/api";
 
 export class AdditionalMaterialSystem {
   constructor(){
@@ -12,7 +12,7 @@ export class AdditionalMaterialSystem {
       }
     })
     world.afterEvents.entityHitEntity.subscribe((event) => {
-      const item = EntityUtils.getEquipmentItem(event.damagingEntity)
+      const item = getEquipmentItem(event.damagingEntity)
       if(!item) return;
       if (AdditionalMaterialSystem.getType(item)) {
         AdditionalMaterialEvents.onHitEntity(event, AdditionalMaterialSystem.getType(item))

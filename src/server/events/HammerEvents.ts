@@ -1,6 +1,6 @@
 import { Block, ItemStack } from "@minecraft/server";
-import { RandomEvent, Random } from "@starock/math";
 import { HammerRecipeManager } from "../recipe/hammer/HammerRecipeManager";
+import { RandomEvent } from "@occultus/api";
 
 export class HammerEvents {
   static spawnAdditionalMaterial(id: string, block: Block) {

@@ -1,4 +1,5 @@
-import { ArtifactSlot } from "@starock/artifact";
+import { ArtifactSlot } from "@occultus/api";
+
 
 export const head = new ArtifactSlot(
   "hiddenyears:head",

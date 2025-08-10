@@ -1,17 +1,13 @@
 import {
   ItemComponentUseEvent,
   CustomComponentParameters,
-  Dimension,
-  Vector3,
   ItemStack,
   world,
   system,
 } from "@minecraft/server";
-import { EntityUtils } from "@starock/entity";
-import { loot } from "@starock/loot";
 import { TrophyBundleParam } from "../components/TrophyBundleComponent/Params";
-import { RandomEvent, Random } from "@starock/math";
 import { bundlesLoot, bundlesBossLoot } from "../../data/bundle";
+import { setEquipmentItem, loot, RandomEvent } from "@occultus/api";
 
 /**
  * 战利品袋的相关事件
@@ -22,7 +18,7 @@ export class TrophyBundleEvents {
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const { source, itemStack } = arg0;
     if (!itemStack) return;
-    EntityUtils.setEquipmentItem(source);
+    setEquipmentItem(source);
 
     const p = arg1.params as TrophyBundleParam;
     system.runTimeout(() => {

@@ -1,6 +1,6 @@
 import { Block, ItemStack } from "@minecraft/server";
-import { RandomEvent } from "@starock/math";
 import { CrowbarRecipeManager } from "../recipe/crowbar/CrowbarRecipeManager";
+import { RandomEvent } from "@occultus/api";
 
 export class CrowbarEvents {
   static spawnNugget(id: string, block: Block) {

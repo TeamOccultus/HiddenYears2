@@ -1,12 +1,9 @@
-import { BlockEntity, BlockWithEntity } from "@starock/entity";
+import { BlockEntity, BlockWithEntity, consumeAmount, setEquipmentItem, Vector3Utils } from "@occultus/api";
 import {
   ItemStack,
   PlayerInteractWithBlockAfterEvent,
 } from "@minecraft/server";
 import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
-import { EntityUtils } from "@starock/entity";
-import { Vector3Utils } from "@starock/math";
-import { ItemUtils } from "@starock/item";
 
 export class Crusher extends BlockWithEntity {
   constructor() {
@@ -29,8 +26,8 @@ export class Crusher extends BlockWithEntity {
         return;
       }
       BlockEntity.storeItem(new ItemStack(item.typeId), entityData);
-      const eqItem = ItemUtils.consumeAmount(item, 1);
-      EntityUtils.setEquipmentItem(player, eqItem);
+      const eqItem = consumeAmount(item, 1);
+      setEquipmentItem(player, eqItem);
       player.playSound("fall.stone");
       return;
     }

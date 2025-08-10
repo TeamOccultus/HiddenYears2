@@ -1,5 +1,5 @@
 import { HammerRecipe } from "./HammerRecipeType";
-import { Random } from "@starock/math";
+import { Random } from "@occultus/api";
 
 /**
  * 锤子内置配方

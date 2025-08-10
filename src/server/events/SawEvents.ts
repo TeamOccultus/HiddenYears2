@@ -1,6 +1,6 @@
 import { Block, ItemStack } from "@minecraft/server";
-import { Random, RandomEvent } from "@starock/math";
 import { SawRecipeManager } from "../recipe/saw/SawRecipeManager";
+import { RandomEvent, Random } from "@occultus/api";
 
 export class SawEvents {
   static spawnStick(block: Block) {

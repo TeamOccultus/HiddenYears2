@@ -2,10 +2,14 @@ import {
   ItemStack,
   PlayerInteractWithBlockAfterEvent,
 } from "@minecraft/server";
-import { BlockEntity, BlockWithEntity, EntityUtils } from "@starock/entity";
+import {
+  BlockEntity,
+  BlockWithEntity,
+  consumeAmount,
+  setEquipmentItem,
+  Vector3Utils,
+} from "@occultus/api";
 import { MSTRecipeManager } from "../recipe/magicSmithingTable/MSTRecipeManager";
-import { Vector3Utils } from "@starock/math";
-import { ItemUtils } from "@starock/item";
 
 export class MagicSmithingTable extends BlockWithEntity {
   constructor() {
@@ -42,8 +46,8 @@ export class MagicSmithingTable extends BlockWithEntity {
       const inputItem = new ItemStack(item.typeId);
       this.synchronizedStackData(item, inputItem);
       BlockEntity.storeItem(inputItem, entityData);
-      const eqItem = ItemUtils.consumeAmount(item, 1);
-      EntityUtils.setEquipmentItem(player, eqItem);
+      const eqItem = consumeAmount(item, 1);
+      setEquipmentItem(player, eqItem);
       return;
     }
 
@@ -60,7 +64,7 @@ export class MagicSmithingTable extends BlockWithEntity {
     );
     player.playSound("smithing_table.use");
     BlockEntity.clearStoredItem(entityData);
-    const eqItem = ItemUtils.consumeAmount(item, 1);
-    EntityUtils.setEquipmentItem(player, eqItem);
+    const eqItem = consumeAmount(item, 1);
+    setEquipmentItem(player, eqItem);
   }
 }

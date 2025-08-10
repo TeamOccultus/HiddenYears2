@@ -1,5 +1,5 @@
+import { Random } from "@occultus/api";
 import { CrowbarRecipe } from "./CrowbarRecipeType";
-import { Random } from "@starock/math";
 
 /**
  * 粉碎机内置配方

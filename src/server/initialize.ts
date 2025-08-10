@@ -2,7 +2,7 @@
  * @module server/initialize
  * @category Initialize
  */
-import { ModInitializer } from "@starock/core";
+import { ModInitializer } from "@occultus/core"
 import { registryItemSystems } from "./registry/item";
 import { registryComponents } from "./registry/components";
 import { registryMusicDisc } from "./registry/record";

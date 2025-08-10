@@ -50,7 +50,7 @@ export class OreEvents {
         });
       }, 50);
     }
-    if (typeof num !== "number") throw new Error("动态属性类型错误");
+    if (typeof num !== "number") throw new Error("Invalid dynamic property type!");
     player.setDynamicProperty("hiddenyears:destroy_ruby_count", num + 1);
   }
 }

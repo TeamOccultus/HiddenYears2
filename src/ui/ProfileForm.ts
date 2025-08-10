@@ -3,7 +3,7 @@ import { ActionFormData } from "@minecraft/server-ui";
 import { CreditsForm } from "./CreditsForm";
 import { HiddenYears2Credits } from "../data/credits";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArtifactForm } from "@starock/artifact";
+import { ArtifactForm } from "@occultus/api";
 import { book } from "../server/registry/task";
 
 export class ProfileForm {

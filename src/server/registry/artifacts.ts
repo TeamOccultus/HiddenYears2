@@ -3,24 +3,26 @@ import {
   ArtifactForm,
   ArtifactRegistries,
   ArtifactSlotRegistries,
-} from "@starock/artifact";
+} from "@occultus/api";
 import * as slots from "../item/ArtifactSlots";
 import { artifacts } from "../item/Artifacts";
 
 export function registryArtifacts() {
   const registry = new ArtifactRegistries("hiddenyears:artifacts");
   artifacts.forEach((artifact) => {
-    registry.register(artifact.typeId, artifact);
+    registry.add(artifact);
   })
+  registry.register();
 }
 
 export function registryArtifactSlots() {
-  const slot = new ArtifactSlotRegistries();
-  slot.register("hiddenyears:head", slots.head);
-  slot.register("hiddenyears:body", slots.body);
-  slot.register("hiddenyears:hand", slots.hand);
-  slot.register("hiddenyears:feet", slots.feet);
-  slot.register("hiddenyears:runes", slots.runes);
+  const registry = new ArtifactSlotRegistries();
+  registry.add(slots.head);
+  registry.add(slots.body);
+  registry.add(slots.hand);
+  registry.add(slots.feet);
+  registry.add(slots.runes);
+  registry.register();
 }
 
 export function registryForm() {

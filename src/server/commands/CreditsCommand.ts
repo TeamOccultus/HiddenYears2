@@ -5,11 +5,8 @@ import {
   CustomCommandSource,
   CustomCommandStatus,
   Player,
-  CustomCommandResult,
 } from "@minecraft/server";
-import { ActionFormData } from "@minecraft/server-ui";
 import { Credits } from "../credits/Credits";
-import { parseCredits } from "../credits/parseCredits";
 import { CreditsForm } from "../../ui/CreditsForm";
 
 export class CreditsCommand {

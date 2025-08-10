@@ -5,7 +5,6 @@ import {
   system,
 } from "@minecraft/server";
 import { AdditionalMaterialType } from "../item/AdditionalMaterial";
-import { EntitiesUtils } from "@starock/entity";
 
 export class AdditionalMaterialEvents {
   private constructor() {}

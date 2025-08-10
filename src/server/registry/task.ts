@@ -1,4 +1,4 @@
-import { TaskCenter } from "@starock/task";
+import { TaskCenter } from "@occultus/api";
 import { group1, group2 } from "../../data/tasks";
 import { CommandPermissionLevel } from "@minecraft/server";
 

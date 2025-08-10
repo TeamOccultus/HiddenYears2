@@ -1,5 +1,5 @@
 import { SawRecipe } from "./SawRecipeType";
-import { Random } from "@starock/math";
+import { Random } from "@occultus/api";
 
 export const sawRecipesData: SawRecipe[] = [
   {

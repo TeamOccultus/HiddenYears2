@@ -7,7 +7,7 @@ import {
   system,
   world,
 } from "@minecraft/server";
-import { EntityUtils } from "@starock/entity";
+import { getEquipmentItem, setEquipmentItem } from "@occultus/api";
 
 // @todo: 添加耐久消耗机制
 export class CrossbowComponent {
@@ -80,7 +80,7 @@ export class CrossbowComponent {
   }
   hasAmmunition(item: ItemStack, player: Player): boolean {
     if (player.getGameMode() === "Creative") return true;
-    const offhandItem = EntityUtils.getEquipmentItem(
+    const offhandItem = getEquipmentItem(
       player,
       EquipmentSlot.Offhand
     );
@@ -95,14 +95,14 @@ export class CrossbowComponent {
   }
   consumeAmmunition(item: ItemStack, player: Player) {
     if (player.getGameMode() === "Creative") return;
-    const offhandItem = EntityUtils.getEquipmentItem(
+    const offhandItem = getEquipmentItem(
       player,
       EquipmentSlot.Offhand
     );
     if (offhandItem) {
       if (this.getAmmunitions(item).includes(offhandItem.typeId)) {
         offhandItem.amount--;
-        EntityUtils.setEquipmentItem(
+        setEquipmentItem(
           player,
           offhandItem,
           EquipmentSlot.Offhand
@@ -151,10 +151,10 @@ function onComplete(
     if (!that.hasAmmunition(item, player)) return;
     that.consumeAmmunition(item, player);
     player.playSound("crossbow.loading.end");
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
+    setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
-  EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
+  setEquipmentItem(player, that.getNextLevelItem(item, player));
 }
 
 function onReleaseUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
@@ -163,7 +163,7 @@ function onReleaseUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
   const pullingLevel = that.getPullingLevels(item);
   console.warn(pullingLevel);
   if (pullingLevel === "loaded") {
-    EntityUtils.setEquipmentItem(player, that.getNextLevelItem(item, player));
+    setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;
   }
 }

@@ -1,23 +1,26 @@
-import { Record, RecordManager } from "@starock/record";
+import { MusicDisc, MusicDiscServer } from "@occultus/api";
 
 export function registryMusicDisc() {
-  new Record(
+  const plains = new MusicDisc(
     "hiddenyears:record_plains",
     "music.biome.cherry_plains",
     "Plain Thoughts",
     "FREIRC"
   );
-  new Record(
+  const ruby = new MusicDisc(
     "hiddenyears:record_ruby",
     "music.boss.ruby",
     "The Hidden Finale",
     "FREIRC"
   );
-  new Record(
+  const pharaohs = new MusicDisc(
     "hiddenyears:record_pharaohs",
     "music.boss.pharaohs_ghost",
     "Song of Ancient Desert",
     "3xLnw"
   );
-  RecordManager.initialize();
+  const server = new MusicDiscServer()
+  server.addDisc(plains)
+  server.addDisc(ruby)
+  server.addDisc(pharaohs);
 }
