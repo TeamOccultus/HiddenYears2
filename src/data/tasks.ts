@@ -1,5 +1,5 @@
 import { ItemStack } from "@minecraft/server";
-import { ItemAwards, ItemConditions, Task, TaskGroup } from "@starock/task";
+import { ItemAwards, ItemConditions, Task, TaskGroup } from "@occultus/api";
 
 export const task1 = new Task("hiddenyears:task1", "任务1", "任务1的描述", {
   awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
