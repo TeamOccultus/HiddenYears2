@@ -41,5 +41,7 @@
   "ui.artifact.feet.itemDesc": "§7饰品类型：脚饰§r",
   "ui.artifact.runes": "符文",
   "ui.artifact.runes.desc": "各种神秘的、带有神秘力量的符文",
-  "ui.artifact.runes.itemDesc": "§7饰品类型：符文§r"
+  "ui.artifact.runes.itemDesc": "§7饰品类型：符文§r",
+  "ui.tutorial": "教程",
+  "ui.tutorial.unlock": "教程已解锁："
 }
