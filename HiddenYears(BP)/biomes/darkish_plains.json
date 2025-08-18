@@ -1,5 +1,5 @@
 /*{
-  "format_version": "1.21.110",
+  "format_version": "1.21.100",
   "minecraft:biome": {
     "description": {
       "identifier": "hiddenyears:darkish_plains"
@@ -55,7 +55,7 @@
   }
 } //先到这里，其他的我还在写～JD，6.11*/
 {
-  "format_version": "1.21.110",
+  "format_version": "1.21.100",
   "minecraft:biome": {
     "description": {
       "identifier": "hiddenyears:darkish_plains"

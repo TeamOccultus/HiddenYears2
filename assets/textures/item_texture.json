@@ -676,9 +676,6 @@
     "hiddenyears:ruby_ring": {
       "textures": "textures/items/ruby_ring"
     },
-    "hiddenyears:ruby_runes copy": {
-      "textures": "textures/items/ruby_runes copy"
-    },
     "hiddenyears:ruby_runes": {
       "textures": "textures/items/ruby_runes"
     },

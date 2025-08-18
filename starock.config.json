@@ -26,7 +26,7 @@
     }
   },
   "deploy": {
-    "platform": "preview",
+    "platform": "stable",
     "sources": [
       {
         "path": "HiddenYears(BP)",
