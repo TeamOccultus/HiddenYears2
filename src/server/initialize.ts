@@ -17,6 +17,7 @@ import {
 import { registryTask } from "./registry/task";
 import { registryTutorial } from "./registry/tutorial";
 import { world } from "@minecraft/server";
+import { registryMessage } from "./msg";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -38,4 +39,5 @@ export function initialize() {
   registryForm();
   registryTask();
   registryTutorial();
+  registryMessage();
 }
