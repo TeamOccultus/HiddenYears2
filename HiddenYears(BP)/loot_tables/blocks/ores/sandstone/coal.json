@@ -14,7 +14,17 @@
       "entries": [
         {
           "type": "item",
-          "name": "hiddenyears:ruby_block"
+          "weight": 1,
+          "name": "hiddenyears:coal_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
         }
       ]
     }

@@ -9,8 +9,6 @@
     },
     "components": {
        "hiddenyears:custom_ore": {
-        "item_tier": "iron",
-        "loot_table": "blocks/ores/silver_ore",
         "exp": 2
       },
       "minecraft:geometry": {
@@ -21,7 +19,7 @@
           "texture": "hiddenyears:deepslate_silver_ore"
         }
       },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ores/silver_ore.json",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 22.5,
         "item_specific_speeds": [

@@ -47,7 +47,11 @@
       },
       "minecraft:icon": "hiddenyears:bone_shovel",
       "minecraft:tags": {
-        "tags": ["minecraft:is_shovel",  "hiddenyears:bone_tier", "minecraft:stone_tier"]
+        "tags": [
+          "minecraft:is_shovel",
+          "hiddenyears:bone_tier",
+          "minecraft:stone_tier"
+        ]
       }
     }
   }

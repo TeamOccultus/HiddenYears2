@@ -9,8 +9,6 @@
     },
     "components": {
        "hiddenyears:custom_ore": {
-        "item_tier": "diamond",
-        "loot_table": "blocks/ores/extracts_ore",
         "exp": 10
       },
       "minecraft:geometry": {
@@ -21,7 +19,7 @@
           "texture": "hiddenyears:deepslate_extracts_ore"
         }
       },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ores/extracts_ore.json",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 150,
         "item_specific_speeds": [

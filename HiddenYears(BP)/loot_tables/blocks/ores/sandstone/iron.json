@@ -14,7 +14,17 @@
       "entries": [
         {
           "type": "item",
-          "name": "hiddenyears:ruby_block"
+          "weight": 1,
+          "name": "minecraft:iron_nugget",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 12
+              }
+            }
+          ]
         }
       ]
     }

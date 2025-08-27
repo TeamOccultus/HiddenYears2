@@ -52,7 +52,7 @@
           "minecraft:is_sword",
           "minecraft:is_tool",
           "hiddenyears:silver_tier",
-          "minecraft:stone_tier"
+          "minecraft:iron_tier"
         ]
       }
     }

@@ -1,4 +1,4 @@
-import { body, feet, hand, head, runes } from "./ArtifactSlots";
+import { body, feet, hand, head, runes } from "./artifactSlots";
 import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
 import herd from "../../data/herd";
 import crop from "../../data/crop";

@@ -9,8 +9,6 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "item_tier": "iron",
-        "loot_table": "blocks/ores/compact/diamond",
         "exp": 4
       },
       "minecraft:material_instances": {
@@ -21,7 +19,7 @@
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ores/compact/diamond.json",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 25.0,
         "item_specific_speeds": [

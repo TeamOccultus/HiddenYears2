@@ -9,14 +9,12 @@
     },
     "components": {
       "hiddenyears:custom_ore": {
-        "item_tier": "stone",
-        "loot_table": "blocks/ores/ruby",
         "exp": 10
       },
       "hiddenyears:ore_type": {
         "ore_type": "ruby"
       },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/ores/ruby.json",
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:ruby_ore"

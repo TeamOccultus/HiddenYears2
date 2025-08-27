@@ -52,7 +52,7 @@
           "minecraft:is_sword",
           "minecraft:is_tool",
           "hiddenyears:sparkling_gold_tier",
-          "minecraft:stone_tier"
+          "minecraft:netherite_tier"
         ]
       }
     }

@@ -2,16 +2,21 @@
  * @module server/initialize
  * @category Initialize
  */
-import { ModInitializer } from "@occultus/core"
+import { ModInitializer } from "@occultus/core";
 import { registryItemSystems } from "./registry/item";
 import { registryComponents } from "./registry/components";
 import { registryMusicDisc } from "./registry/record";
 import { registryCustomRecipe } from "./registry/recipe";
 import { registryCommands } from "./registry/commands";
 import { registryCustomLoot } from "./registry/loot";
-import { registryArtifacts, registryArtifactSlots, registryForm } from "./registry/artifacts";
+import {
+  registryArtifacts,
+  registryArtifactSlots,
+  registryForm,
+} from "./registry/artifacts";
 import { registryTask } from "./registry/task";
 import { registryTutorial } from "./registry/tutorial";
+import { world } from "@minecraft/server";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -30,7 +35,7 @@ export function initialize() {
   registryCustomLoot();
   registryArtifactSlots();
   registryArtifacts();
-  registryForm()
+  registryForm();
   registryTask();
   registryTutorial();
 }

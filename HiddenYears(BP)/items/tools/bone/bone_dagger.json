@@ -48,7 +48,8 @@
       "minecraft:tags": {
         "tags": [
           "minecraft:is_weapon",
-          "hiddenyears:bone_tier", "minecraft:stone_tier"
+          "hiddenyears:bone_tier",
+          "minecraft:stone_tier"
         ]
       }
     }
