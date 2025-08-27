@@ -8,7 +8,8 @@
       }
     },
     "components": {
-      "minecraft:max_stack_size": 16,
+      "hiddenyears:tutorial_center": {},
+      "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:encyclopedia",
       "minecraft:rarity": "epic",
       "minecraft:tags": {

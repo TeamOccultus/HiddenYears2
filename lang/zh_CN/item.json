@@ -10,6 +10,15 @@
   "item.hiddenyears:sparkling_gold_ingot": "闪金锭",
   "item.hiddenyears:sparkling_gold_dust": "闪金粉末",
   "item.hiddenyears:sparkling_gold_nugget": "闪金碎片",
+  "item.hiddenyears:sparkling_gold_axe": "闪金斧",
+  "item.hiddenyears:sparkling_gold_dagger": "闪金匕首",
+  "item.hiddenyears:sparkling_gold_hammer": "闪金重锤",
+  "item.hiddenyears:sparkling_gold_pickaxe": "闪金镐",
+  "item.hiddenyears:sparkling_gold_shovel": "闪金铲",
+  "item.hiddenyears:sparkling_gold_sword": "闪金剑",
+  "item.hiddenyears:sparkling_gold_hoe": "闪金锄",
+  "item.hiddenyears:sparkling_gold_saw": "闪金锯",
+  "item.hiddenyears:sparkling_gold_sledgehammer": "闪金战锤",
   "item.hiddenyears:sparkling_copper_block": "闪铜块",
   "item.hiddenyears:erosion_totem": "腐蚀图腾",
   "item.hiddenyears:magic_dust": "魔法的尘埃",
@@ -217,5 +226,7 @@
   "item.hiddenyears:ruby_apple": "红宝石苹果",
   "item.hiddenyears:enchanted_ruby_apple": "附魔红宝石苹果",
   "item.hiddenyears:darkish_red_flower": "殷红之花",
-  "item.hiddenyears:task_book": "《隐藏之年²：天边的迦万涅尔》任务书"
+  "item.hiddenyears:task_book": "《隐藏之年²：天边的迦万涅尔》任务书",
+  "item.hiddenyears:encyclopedia": "隐藏大典",
+  "item.hiddenyears:ruby": "红宝石"
 }

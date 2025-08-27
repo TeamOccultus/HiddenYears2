@@ -40,5 +40,7 @@
   "tile.hiddenyears:deepslate_silver_ore.name": "深层秘银矿石",
   "tile.hiddenyears:silver_ore.name": "秘银矿石",
   "tile.hiddenyears:darkish_red_flower.name": "殷红之花",
-  "tile.hiddenyears:ruby_stone_bricks.name": "嵌入红宝石的砖块"
+  "tile.hiddenyears:ruby_stone_bricks.name": "嵌入红宝石的砖块",
+  "tile.hiddenyears:magic_smithing_table.name": "魔法锻造台",
+  "tile.hiddenyears:frigid_steel_block.name": "寒钢块"
 }
