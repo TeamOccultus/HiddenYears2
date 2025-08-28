@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:letter_1",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:lost_letter",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hover_text_color": "yellow",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books"]
+      }
+    }
+  }
+}

@@ -255,5 +255,91 @@ export function getAllChapters() {
     }
   );
 
-  return [prolugueActI, prolugueActII];
+  // 珍贵材料任务
+const silver = new Task(
+  "hiddenyears:silver",
+  { translate: "task.silver" },
+  { translate: "task.silver.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 3)],
+    conditions: [new ItemConditions("hiddenyears:silver_ingot")],
+    previousTask: "none",
+    iconPath: "textures/items/silver_ingot",
+  }
+);
+
+const diamond = new Task(
+  "hiddenyears:diamond",
+  { translate: "task.diamond" },
+  { translate: "task.diamond.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    conditions: [new ItemConditions("minecraft:diamond")],
+    previousTask: "none",
+    iconPath: "textures/items/diamond",
+  }
+);
+
+const crystal = new Task(
+  "hiddenyears:crystal",
+  { translate: "task.crystal" },
+  { translate: "task.crystal.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
+    conditions: [new ItemConditions("hiddenyears:crystal_ingot")],
+    previousTask: "none",
+    iconPath: "textures/items/crystal_ingot",
+  }
+);
+
+// 世界探索任务
+const god = new Task(
+  "hiddenyears:god",
+  { translate: "task.god" },
+  { translate: "task.god.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
+    conditions: [new ItemConditions("hiddenyears:letter_1")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+  }
+);
+
+const totem = new Task(
+  "hiddenyears:totem",
+  { translate: "task.totem" },
+  { translate: "task.totem.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+    conditions: [new ItemConditions("minecraft:totem_of_undying")],
+    previousTask: "none",
+    iconPath: "textures/items/totem",
+  }
+);
+
+const prolugueActIII = new TaskGroup(
+  "hiddenyears:prolugue_act_III",
+  { translate: "task.prolugue.act_3" },
+  {
+    rawtext: [
+      { translate: "task.prolugue.act_3.desc_1" },
+      { text: Format.newLine },
+      { translate: "task.prolugue.act_3.desc_2" },
+    ],
+  },
+  {
+    tasks: [
+      silver,
+      diamond,
+      crystal,
+      god,
+      totem
+    ],
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    previousTask: "none",
+    iconPath: "textures/items/diamond"
+  }
+);
+
+  return [prolugueActI, prolugueActII, prolugueActIII];
 }

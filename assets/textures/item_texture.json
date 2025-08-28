@@ -452,6 +452,9 @@
     "hiddenyears:lightning_crossbow_standby": {
       "textures": "textures/items/lightning_crossbow_standby"
     },
+    "hiddenyears:lost_letter": {
+      "textures": "textures/items/lost_letter"
+    },
     "hiddenyears:magic_dust": {
       "textures": "textures/items/magic_dust"
     },
