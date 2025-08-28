@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:iron_crowbar"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", "#", "#"],
+    "key": {
+      "#": {
+        "item": "iron_ingot"
+      },
+      "X": {
+        "item": "iron_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "iron_ingot"
+      },
+      {
+        "item": "iron_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:iron_crowbar"
+    }
+  }
+}

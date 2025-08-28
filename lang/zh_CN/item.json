@@ -228,5 +228,8 @@
   "item.hiddenyears:darkish_red_flower": "殷红之花",
   "item.hiddenyears:task_book": "任务书",
   "item.hiddenyears:encyclopedia": "隐藏大典",
-  "item.hiddenyears:ruby": "红宝石"
+  "item.hiddenyears:ruby": "红宝石",
+  "item.hiddenyears:gold_crowbar": "金撬棍",
+  "item.hiddenyears:iron_crowbar": "铁撬棍",
+  "item.hiddenyears:diamond_crowbar": "钻石撬棍"
 }

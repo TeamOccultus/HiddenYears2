@@ -26,6 +26,17 @@
               "hiddenyears:medicine_13",
               "hiddenyears:medicine_14"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:diamond_crowbar",
+              "name": "hiddenyears:itemGroup.name.crowbars"
+            },
+            "items": [
+              "hiddenyears:diamond_crowbar",
+              "hiddenyears:iron_crowbar",
+              "hiddenyears:golden_crowbar"
+            ]
           }
         ]
       },

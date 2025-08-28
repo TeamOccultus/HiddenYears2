@@ -359,6 +359,9 @@
     "hiddenyears:golden_badge": {
       "textures": "textures/items/golden_badge"
     },
+    "hiddenyears:golden_crowbar": {
+      "textures": "textures/items/golden_crowbar"
+    },
     "hiddenyears:golden_dagger": {
       "textures": "textures/items/golden_dagger"
     },

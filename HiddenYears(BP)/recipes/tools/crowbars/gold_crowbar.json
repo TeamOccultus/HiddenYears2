@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:golden_crowbar"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X", "#", "#"],
+    "key": {
+      "#": {
+        "item": "gold_ingot"
+      },
+      "X": {
+        "item": "gold_nugget"
+      }
+    },
+    "unlock": [
+      {
+        "item": "gold_ingot"
+      },
+      {
+        "item": "gold_nugget"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:golden_crowbar"
+    }
+  }
+}
