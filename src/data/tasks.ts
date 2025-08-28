@@ -100,9 +100,160 @@ export function getAllChapters() {
       tasks: [stick, craftingTable, furnace, bed, bread, monsterHunter],
       awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
       previousTask: "none",
-      iconPath: "textures/items/stick"
+      iconPath: "textures/items/stick",
     }
   );
 
-  return [prolugueActI];
+  // 基础材料任务
+  const boneTools = new Task(
+    "hiddenyears:bone_tools",
+    { translate: "task.bone_tools" },
+    { translate: "task.bone_tools.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
+      conditions: [new ItemConditions("minecraft:bone")],
+      previousTask: "none",
+      iconPath: "textures/items/bone",
+    }
+  );
+
+  const stoneCraft = new Task(
+    "hiddenyears:stone_craft",
+    { translate: "task.stone_craft" },
+    { translate: "task.stone_craft.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:copper_coin", 12)],
+      conditions: [new ItemConditions("minecraft:cobblestone")],
+      previousTask: "none",
+      iconPath: "textures/items/stone_nugget",
+    }
+  );
+
+  const copper = new Task(
+    "hiddenyears:copper",
+    { translate: "task.copper" },
+    { translate: "task.copper.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 2)],
+      conditions: [new ItemConditions("minecraft:copper_ingot")],
+      previousTask: "none",
+      iconPath: "textures/items/copper_ingot",
+    }
+  );
+
+  const refinedRock = new Task(
+    "hiddenyears:refined_rock",
+    { translate: "task.refined_rock" },
+    { translate: "task.refined_rock.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
+      conditions: [new ItemConditions("hiddenyears:refined_rock_ingot")],
+      previousTask: "none",
+      iconPath: "textures/items/refined_rock_ingot",
+    }
+  );
+
+  const iron = new Task(
+    "hiddenyears:iron",
+    { translate: "task.iron" },
+    { translate: "task.iron.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+      conditions: [new ItemConditions("minecraft:iron_ingot")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_ingot",
+    }
+  );
+
+  // 记忆中所不存在的任务
+  const saw = new Task(
+    "hiddenyears:saw",
+    { translate: "task.saw" },
+    { translate: "task.saw.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:iron_saw")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_saw",
+    }
+  );
+
+  const crowbar = new Task(
+    "hiddenyears:crowbar",
+    { translate: "task.crowbar" },
+    { translate: "task.crowbar.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:iron_crowbar")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_crowbar",
+    }
+  );
+
+  const hammer = new Task(
+    "hiddenyears:hammer",
+    { translate: "task.hammer" },
+    { translate: "task.hammer.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
+      conditions: [new ItemConditions("hiddenyears:iron_hammer")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_hammer",
+    }
+  );
+
+  const dagger = new Task(
+    "hiddenyears:dagger",
+    { translate: "task.dagger" },
+    { translate: "task.dagger.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
+      conditions: [new ItemConditions("hiddenyears:iron_dagger")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_dagger",
+    }
+  );
+
+  const sledgehammer = new Task(
+    "hiddenyears:sledgehammer",
+    { translate: "task.sledgehammer" },
+    { translate: "task.sledgehammer.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+      conditions: [new ItemConditions("hiddenyears:iron_sledgehammer")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_sledgehammer",
+    }
+  );
+
+  const prolugueActII = new TaskGroup(
+    "hiddenyears:prolugue_act_II",
+    { translate: "task.prolugue.act_2" },
+    {
+      rawtext: [
+        { translate: "task.prolugue.act_2.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.prolugue.act_2.desc_2" },
+      ],
+    },
+    {
+      tasks: [
+        boneTools,
+        stoneCraft,
+        copper,
+        refinedRock,
+        iron,
+        saw,
+        crowbar,
+        hammer,
+        dagger,
+        sledgehammer,
+      ],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
+      previousTask: "none",
+      iconPath: "textures/items/iron_ingot",
+    }
+  );
+
+  return [prolugueActI, prolugueActII];
 }
