@@ -1,1 +1,26 @@
-{}
+{
+  "task.title": "任务",
+  "task.body": "旅者游历四海，寻找着世界的真相……",
+  "task.prologue": "§d序章§r 故地的异旅人",
+  "task.prolugue.act_1": "§d序章·第一幕§r 漫长的第一日",
+  "task.prolugue.act_1.desc_1": "旧日星空下的旅者重临世间，",
+  "task.prolugue.act_1.desc_2": "故土已然迸裂，但这个熟悉而陌生的世界等待着他。",
+  "task.stick": "新生的枝桠",
+  "task.stick.desc": "这是树上新生的枝桠，亦是你旅途的开始……",
+  "task.crafting_table": "这是？工作台！",
+  "task.crafting_table.desc": "游戏的核心与故事",
+  "task.furnace": "「热」门话题",
+  "task.furnace.desc": "用八个圆石来制作一个熔炉",
+  "task.bed": "生命因何而沉睡？",
+  "task.bed.desc": "因为我们终将从梦中醒来",
+  "task.bread": "烘焙面包！",
+  "task.bread.desc": "用小麦在工作台上烘焙面包",
+  "task.monster_hunter": "怪物猎手",
+  "task.monster_hunter.desc": "这个世界并非如你所想般安全，夜晚时会有不怀好意的怪物尝试将你杀死……",
+  
+  "task.chapter_1": "§d第一章§r 染上鲜血的宝石",
+  "task.chapter_2": "§d第二章§r 追随旧人的足迹",
+  "task.chapter_3": "§d第三章§r 那叛神的国度",
+  "task.chapter_4": "§d第四章§r 随风的回响",
+  "task.epilogue": "§d尾声§r 再创世纪"
+}
