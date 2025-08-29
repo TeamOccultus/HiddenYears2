@@ -125,162 +125,126 @@ export let MSTRecipesData: MagicSmithingTableRecipe[] = [
     base: "minecraft:netherite_sword",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_sword",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_axe",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_axe",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_dagger",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_dagger",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_hammer",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_hammer",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_hoe",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_axe",
     addition: "hiddenyears:erosion_hoe",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_pickaxe",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_pickaxe",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_saw",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_saw",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_shovel",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_shovel",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_sledgehammer",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:netherite_sledgehammer",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   // sd
   {
@@ -288,162 +252,126 @@ export let MSTRecipesData: MagicSmithingTableRecipe[] = [
     base: "minecraft:originite_sword",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_sword",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_axe",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_axe",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_dagger",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_dagger",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_hammer",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_hammer",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_hoe",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_axe",
     addition: "hiddenyears:erosion_hoe",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_pickaxe",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_pickaxe",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_saw",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_saw",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_shovel",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_shovel",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_sledgehammer",
     addition: "hiddenyears:sparkling_copper_ingot",
     output: "sparkling_copper",
-    lore: {
-      translate: "lore.hiddenyears:sparkling_copper"
-    }
+    lore: "§fSPARKLING COPPER§r"
   },
   {
     type: "addtional",
     base: "minecraft:originite_sledgehammer",
     addition: "hiddenyears:erosion_totem",
     output: "erosion",
-    lore: {
-      translate: "lore.hiddenyears:erosion_totem"
-    }
+    lore: "§fTOTEM§r"
   },
 ];
 
