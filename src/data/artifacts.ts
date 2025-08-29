@@ -1,7 +1,7 @@
 import { body, feet, hand, head, runes } from "./artifactSlots";
 import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
-import herd from "../../data/herd";
-import crop from "../../data/crop";
+import herd from "./herd";
+import crop from "./crop";
 import { Artifact, Format, RandomEvent, Random } from "@occultus/api";
 
 /**

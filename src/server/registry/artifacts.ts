@@ -4,8 +4,8 @@ import {
   ArtifactRegistries,
   ArtifactSlotRegistries,
 } from "@occultus/api";
-import * as slots from "../item/artifactSlots";
-import { artifacts } from "../item/artifacts";
+import * as slots from "../../data/artifactSlots";
+import { artifacts } from "../../data/artifacts";
 
 export function registryArtifacts() {
   const registry = new ArtifactRegistries("hiddenyears:artifacts");
