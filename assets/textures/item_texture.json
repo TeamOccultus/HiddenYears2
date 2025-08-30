@@ -868,6 +868,9 @@
     "hiddenyears:stone_sledgehammer": {
       "textures": "textures/items/stone_sledgehammer"
     },
+    "hiddenyears:suffering_sword": {
+      "textures": "textures/items/suffering_sword"
+    },
     "hiddenyears:task_book": {
       "textures": "textures/items/task_book"
     },
