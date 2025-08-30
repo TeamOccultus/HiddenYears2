@@ -17,7 +17,7 @@
         "family": ["ferocious_sprite", "monster", "mob"]
       },
       "minecraft:equipment": {
-        "table": "loot_tables/entities/ferocious_sprite_gear.json"
+        "table": "loot_tables/gameplay/gears/ferocious_sprite.json"
       },
       "minecraft:health": {
         "value": 14,
@@ -44,7 +44,7 @@
         "despawn_from_distance": {}
       },
       "minecraft:behavior.float": {
-        "priority": 0
+        "priority": 7
       },
       "minecraft:behavior.charge_attack": {
         "priority": 4

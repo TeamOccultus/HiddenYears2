@@ -8,7 +8,7 @@
       "is_experimental": false
     },
     "component_groups": {
-      "hy:sprite_wild": {
+      "hiddenyears:sprite_wild": {
         "minecraft:tameable": {
           "probability": 0.33,
           "tame_items": "amethyst_shard",
@@ -26,7 +26,7 @@
           "hover_height": [1, 4]
         }
       },
-      "hy:sprite_tame": {
+      "hiddenyears:sprite_tame": {
         "minecraft:behavior.random_hover": {
           "priority": 2,
           "xz_dist": 4,
@@ -79,11 +79,7 @@
       "minecraft:behavior.tempt": {
         "priority": 10,
         "speed_multiplier": 1.2,
-        "items": [
-          "amethyst_shard",
-          "hy:amethyst_ingot",
-          "hy:imitation_amethyst_ingot"
-        ]
+        "items": ["amethyst_shard", "hiddenyears:crystal_ingot"]
       },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:type_family": {
@@ -97,8 +93,8 @@
         "mass": 0.5
       },
       "minecraft:breathable": {
-        "totalSupply": 15,
-        "suffocateTime": 0
+        "total_supply": 15,
+        "suffocate_time": 0
       },
       "minecraft:nameable": {},
       "minecraft:leashable": {
@@ -142,7 +138,7 @@
                 ]
               }
             },
-            "deals_damage": false
+            "deals_damage": "no"
           }
         ]
       },
@@ -189,7 +185,6 @@
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
-      "minecraft:vibration_listener": {},
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:game_event_movement_tracking": {
         "emit_flap": true
@@ -219,15 +214,15 @@
     "events": {
       "minecraft:on_tame": {
         "remove": {
-          "component_groups": ["hy:sprite_wild"]
+          "component_groups": ["hiddenyears:sprite_wild"]
         },
         "add": {
-          "component_groups": ["hy:sprite_tame"]
+          "component_groups": ["hiddenyears:sprite_tame"]
         }
       },
       "minecraft:entity_spawned": {
         "add": {
-          "component_groups": ["hy:sprite_wild"]
+          "component_groups": ["hiddenyears:sprite_wild"]
         }
       }
     }

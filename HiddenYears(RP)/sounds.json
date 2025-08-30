@@ -1,0 +1,303 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "hiddenyears:gemstone_trader": {
+        "volume": 1,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "hiddenyears:hidden_trader": {
+        "volume": 1,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "hiddenyears:ruby_zombie": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "hiddenyears:ruby_skeleton": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "death": "mob.skeleton.death",
+          "step": {
+            "sound": "mob.skeleton.step",
+            "volume": 1.0,
+            "pitch": 1.0
+          }
+        }
+      },
+      "hiddenyears:ruby_guardian": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.pillager.idle",
+          "hurt": "mob.pillager.hurt",
+          "death": "mob.pillager.death",
+          "ambient.in.raid": {
+            "sound": "mob.pillager.idle",
+            "volume": 3.0,
+            "pitch": [0.8, 1.2]
+          },
+          "celebrate": "mob.pillager.celebrate"
+        }
+      },
+      "hiddenyears:king_of_ruby": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.evocation_illager.ambient",
+          "death": "mob.evocation_illager.death",
+          "hurt": "mob.evocation_illager.hurt",
+          "cast.spell": "mob.evocation_illager.cast_spell",
+          "prepare.attack": "mob.evocation_illager.prepare_attack",
+          "prepare.summon": "mob.evocation_illager.prepare_summon",
+          "prepare.wololo": "mob.evocation_illager.prepare_wololo",
+          "ambient.in.raid": {
+            "sound": "mob.evocation_illager.ambient",
+            "volume": 3.0,
+            "pitch": [0.8, 1.2]
+          },
+          "celebrate": "mob.evocation_illager.celebrate"
+        }
+      },
+      "hiddenyears:sprite": {
+        "volume": 1,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "hurt": "mob.allay.hurt",
+          "death": "mob.allay.death",
+          "ambient": "mob.allay.idle",
+          "ambient.tame": "mob.allay.idle_holding"
+        }
+      },
+      "hiddenyears:ferocious_sprite": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.vex.ambient",
+          "death": "mob.vex.death",
+          "hurt": "mob.vex.hurt",
+          "charge": "mob.vex.charge"
+        }
+      },
+      "hiddenyears:rabbit_killer": {
+        "events": {
+          "ambient": "mob.rabbit.idle",
+          "death": "mob.rabbit.death",
+          "eat": "",
+          "hurt": "mob.rabbit.hurt"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 0.8
+      },
+      "hiddenyears:mummy": {
+        "events": {
+          "ambient": "mob.husk.ambient",
+          "death": "mob.husk.death",
+          "hurt": "mob.husk.hurt",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.husk.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:drift_sand_sergeant": {
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:drift_sand_soldier": {
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:drift_sand_shooter": {
+        "events": {
+          "ambient": "mob.skeleton.say",
+          "death": "mob.skeleton.death",
+          "hurt": {
+            "sound": "mob.skeleton.hurt",
+            "volume": 0.7
+          },
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.skeleton.step",
+            "volume": 1.0
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:sand_creeper": {
+        "events": {
+          "death": "mob.creeper.death",
+          "fuse": {
+            "pitch": 0.5,
+            "sound": "random.fuse",
+            "volume": 1.0
+          },
+          "hurt": "mob.creeper.say"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:drift_sand_guardian": {
+        "events": {
+          "ambient": "mob.pillager.idle",
+          "ambient.in.raid": {
+            "pitch": [0.8, 1.2],
+            "sound": "mob.pillager.idle",
+            "volume": 3.0
+          },
+          "celebrate": "mob.pillager.celebrate",
+          "death": "mob.pillager.death",
+          "hurt": "mob.pillager.hurt"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:pharaohs_ghost": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.evocation_illager.ambient",
+          "death": "mob.evocation_illager.death",
+          "hurt": "mob.evocation_illager.hurt",
+          "cast.spell": "mob.evocation_illager.cast_spell",
+          "prepare.attack": "mob.evocation_illager.prepare_attack",
+          "prepare.summon": "mob.evocation_illager.prepare_summon",
+          "prepare.wololo": "mob.evocation_illager.prepare_wololo",
+          "ambient.in.raid": {
+            "sound": "mob.evocation_illager.ambient",
+            "volume": 3.0,
+            "pitch": [0.8, 1.2]
+          },
+          "celebrate": "mob.evocation_illager.celebrate"
+        }
+      },
+      "hiddenyears:sand_silverfish": {
+        "events": {
+          "ambient": "mob.silverfish.say",
+          "death": "mob.silverfish.kill",
+          "hurt": "mob.silverfish.hit",
+          "step": {
+            "pitch": 1.0,
+            "sound": "mob.silverfish.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:scorpion": {
+        "events": {
+          "ambient": "mob.spider.say",
+          "death": "mob.spider.death",
+          "hurt": "mob.spider.say",
+          "step": {
+            "pitch": [0.9, 1.1],
+            "sound": "mob.spider.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:sand_spider": {
+        "events": {
+          "ambient": "mob.spider.say",
+          "death": "mob.spider.death",
+          "hurt": "mob.spider.say",
+          "step": {
+            "pitch": [0.9, 1.1],
+            "sound": "mob.spider.step",
+            "volume": 0.35
+          }
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      },
+      "hiddenyears:sand_trader": {
+        "volume": 1,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.villager.idle",
+          "hurt": "mob.villager.hit",
+          "death": "mob.villager.death",
+          "death.to.zombie": "mob.villager.death",
+          "haggle": "mob.villager.haggle",
+          "haggle.yes": "mob.villager.yes",
+          "haggle.no": "mob.villager.no"
+        }
+      },
+      "hiddenyears:mutas_wrath": {
+        "events": {
+          "ambient": "mob.shulker.ambient",
+          "death": "mob.shulker.death",
+          "hurt": "mob.shulker.hurt"
+        },
+        "pitch": [0.8, 1.2],
+        "volume": 1.0
+      }
+    }
+  }
+}
