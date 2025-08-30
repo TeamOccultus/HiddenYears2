@@ -26,6 +26,13 @@
       "minecraft:attack": {
         "damage": 1
       },
+      "minecraft:behavior.melee_attack": {
+        "priority": 2,
+        "melee_fov": 90.0,
+        "speed_multiplier": 1,
+        "track_target": false,
+        "require_complete_path": true
+      },
       "minecraft:collision_box": {
         "width": 0.4,
         "height": 0.8
@@ -33,10 +40,19 @@
       "minecraft:movement": {
         "value": 1.0
       },
-      "minecraft:navigation.walk": {
-        "can_path_over_water": true
+      "minecraft:navigation.hover": {
+        "can_path_over_water": true,
+        "can_sink": false,
+        "can_pass_doors": false,
+        "can_path_from_air": true,
+        "avoid_water": true,
+        "avoid_damage_blocks": true,
+        "avoid_sun": false
       },
-      "minecraft:movement.basic": {},
+      "minecraft:flying_speed": {
+        "value": 0.15
+      },
+      "minecraft:movement.hover": {},
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
       "minecraft:fire_immune": {},
@@ -44,13 +60,10 @@
         "despawn_from_distance": {}
       },
       "minecraft:behavior.float": {
-        "priority": 7
-      },
-      "minecraft:behavior.charge_attack": {
-        "priority": 4
+        "priority": 5
       },
       "minecraft:behavior.nearest_attackable_target": {
-        "priority": 3,
+        "priority": 1,
         "entity_types": [
           {
             "filters": {
@@ -92,12 +105,12 @@
         "must_see": true
       },
       "minecraft:behavior.look_at_player": {
-        "priority": 9,
+        "priority": 7,
         "look_distance": 6.0,
         "probability": 0.02
       },
       "minecraft:behavior.look_at_entity": {
-        "priority": 9,
+        "priority": 7,
         "look_distance": 6.0,
         "probability": 0.02,
         "filters": { "test": "is_family", "subject": "other", "value": "mob" }
@@ -106,8 +119,11 @@
         "priority": 6
       },
       "minecraft:physics": {
-        "has_gravity": false,
-        "has_collision": false
+        "has_gravity": false
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 2,
+        "speed_multiplier": 0.6
       },
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:game_event_movement_tracking": {
