@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "hiddenyears:sprites_jail"
+    },
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 5,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": 10
+      }
+    },
+    "start_pool": "hiddenyears:sprites_jail_main",
+    "step": "underground_structures",
+    "terrain_adaptation": "bury",
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "overworld"
+      }
+    ]
+  }
+}

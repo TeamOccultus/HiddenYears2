@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:sprites_jail_side"
+    },
+    "elements": [
+      {
+        "projection": "rigid",
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hy/sprites_jail_side",
+          "processors": "hiddenyears:become_craked"
+        },
+        "weight": 3
+      },
+      {
+        "projection": "rigid",
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hy/sprites_jail_side1",
+          "processors": "hiddenyears:become_craked"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

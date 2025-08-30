@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:sprites_jail"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1918,
+      "separation": 2,
+      "spacing": 8,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:sprites_jail",
+        "weight": 1
+      }
+    ]
+  }
+}
