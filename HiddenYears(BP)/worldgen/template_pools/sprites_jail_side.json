@@ -6,7 +6,6 @@
     },
     "elements": [
       {
-        "projection": "rigid",
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hy/sprites_jail_side",
@@ -15,7 +14,6 @@
         "weight": 3
       },
       {
-        "projection": "rigid",
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hy/sprites_jail_side1",
