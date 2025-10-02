@@ -18,6 +18,7 @@ import { registryTask } from "./registry/task";
 import { registryTutorial } from "./registry/tutorial";
 import { world } from "@minecraft/server";
 import { registryMessage } from "./msg";
+import { RubyEvents } from "./events/RubyEvents";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -40,4 +41,5 @@ export function initialize() {
   registryTask();
   registryTutorial();
   registryMessage();
+  RubyEvents.subscribe();
 }

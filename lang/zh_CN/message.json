@@ -12,5 +12,6 @@
   "message.hiddenyears:recipe_not_found": "这玩意可不能往上面锻造啊……",
   "message.hiddenyears:ucv_add": "手持货币已经转换为 %s 点统一货币值！",
   "message.hiddenyears:unyielding": "你触发了潜藏于盔甲中的「不屈」效果！",
-  "message.hiddenyears:rebirth": "盔甲中神秘的力量使你起死回生……"
+  "message.hiddenyears:rebirth": "盔甲中神秘的力量使你起死回生……",
+  "message.hiddenyears:crown": "红宝石王冠正护佑着你……"
 }

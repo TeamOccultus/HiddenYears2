@@ -92,6 +92,9 @@
     "hiddenyears:copper_sledgehammer": {
       "textures": "textures/items/copper_sledgehammer"
     },
+    "hiddenyears:crimson_eyes": {
+      "textures": "textures/items/crimson_eyes"
+    },
     "hiddenyears:crucifix_runes": {
       "textures": "textures/items/crucifix_runes"
     },
@@ -452,6 +455,9 @@
     "hiddenyears:lightning_crossbow_standby": {
       "textures": "textures/items/lightning_crossbow_standby"
     },
+    "hiddenyears:lightning_key": {
+      "textures": "textures/items/lightning_key"
+    },
     "hiddenyears:lost_letter": {
       "textures": "textures/items/lost_letter"
     },
@@ -678,6 +684,9 @@
     },
     "hiddenyears:ruby_apple": {
       "textures": "textures/items/ruby_apple"
+    },
+    "hiddenyears:ruby_crown": {
+      "textures": "textures/items/ruby_crown"
     },
     "hiddenyears:ruby_ring": {
       "textures": "textures/items/ruby_ring"

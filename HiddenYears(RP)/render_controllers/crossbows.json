@@ -23,7 +23,7 @@
       "geometry": "array.bow_geo_frames[v.charge_amount]",
       "materials": [
         {
-          "*": "v.is_enchanted?material.enchanted:material.default"
+          "*": "v.is_enchanted ? material.enchanted : material.default"
         }
       ],
       "textures": [
