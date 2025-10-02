@@ -10,7 +10,7 @@
     },
     "components": {
       "hiddenyears:exp_food": {
-        "exp": 25
+        "exp": 8
       },
       "minecraft:icon": "hiddenyears:ruby_apple",
       "minecraft:use_animation": "eat",
@@ -19,7 +19,7 @@
         "movement_modifier": 0.5
       },
       "minecraft:food": {
-        "nutrition": 12,
+        "nutrition": 6,
         "can_always_eat": true,
         "saturation_modifier": 0.6
       },
