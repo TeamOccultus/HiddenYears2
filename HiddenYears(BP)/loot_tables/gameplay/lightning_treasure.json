@@ -1,0 +1,59 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 4, "max": 6 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_apple",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 3 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:enchanted_ruby_apple",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 2 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 9,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 3 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 2 } }
+          ]
+        }
+      ]
+    }
+  ]
+}

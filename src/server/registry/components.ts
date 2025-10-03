@@ -17,6 +17,7 @@ import { TrophyBundleComponent } from "../components/TrophyBundleComponent/Compo
 import { CoinComponent } from "../components/CoinComponent/Component";
 import { ExpFoodComponent } from "../components/ExpFoodComponent/Component";
 import { FrameActiverComponent } from "../components/FrameActiverComponent/Component";
+import { VaultComponent } from "../components/VaultComponent/Component";
 
 /**
  * 注册自定义组件
@@ -31,6 +32,7 @@ export function registryComponents() {
   new TrophyBundleComponent("hiddenyears:trophy_bundle");
   new ExpFoodComponent("hiddenyears:exp_food");
   new CoinComponent("hiddenyears:coin");
+  new VaultComponent("hiddenyears:vault");
   new FrameActiverComponent("hiddenyears:frame_activer");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
