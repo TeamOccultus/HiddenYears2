@@ -109,6 +109,15 @@
     "hiddenyears:ruby_block": {
       "textures": "textures/blocks/ruby_block"
     },
+    "hiddenyears:ruby_frame_side": {
+      "textures": "textures/blocks/ruby_frame_side"
+    },
+    "hiddenyears:ruby_frame_top": {
+      "textures": "textures/blocks/ruby_frame_top"
+    },
+    "hiddenyears:ruby_frame_top_filled": {
+      "textures": "textures/blocks/ruby_frame_top_filled"
+    },
     "hiddenyears:ruby_ore": {
       "textures": "textures/blocks/ruby_ore"
     },

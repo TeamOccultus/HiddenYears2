@@ -1,0 +1,48 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "conditions": [
+        { "condition": "killed_by_player" },
+        {
+          "condition": "random_chance_with_looting",
+          "chance": 0.15,
+          "looting_multiplier": 0.2
+        }
+      ],
+      "entries": [{ "type": "item", "name": "hiddenyears:drift_sand_key", "weight": 1 }]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:sand_meat",
+          "weight": 1,
+          "functions": [
+            { "function": "looting_enchant", "count": { "min": 0, "max": 2 } },
+            { "function": "set_count", "count": { "min": 0, "max": 2 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:sand_fish",
+          "weight": 1,
+          "functions": [
+            { "function": "looting_enchant", "count": { "min": 1, "max": 2 } },
+            { "function": "set_count", "count": { "min": 0, "max": 2 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:sand_bone",
+          "weight": 1,
+          "functions": [
+            { "function": "looting_enchant", "count": { "min": 1, "max": 2 } },
+            { "function": "set_count", "count": { "min": 0, "max": 2 } }
+          ]
+        }
+      ]
+    }
+  ]
+}

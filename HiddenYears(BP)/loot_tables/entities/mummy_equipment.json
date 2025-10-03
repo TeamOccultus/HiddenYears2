@@ -1,0 +1,10 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "hiddenyears:shattered_sand_cudgel", "weight": 1 }
+      ]
+    }
+  ]
+}

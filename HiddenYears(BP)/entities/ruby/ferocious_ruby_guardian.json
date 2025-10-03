@@ -114,6 +114,9 @@
         "is_pushable": true,
         "is_pushable_by_piston": true
       },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/ferocious_ruby_guardian.json"
+      },
       "minecraft:follow_range": {
         "value": 64
       }
