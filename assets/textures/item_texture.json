@@ -685,8 +685,20 @@
     "hiddenyears:ruby_apple": {
       "textures": "textures/items/ruby_apple"
     },
+    "hiddenyears:ruby_boots": {
+      "textures": "textures/items/ruby_boots"
+    },
+    "hiddenyears:ruby_chestplate": {
+      "textures": "textures/items/ruby_chestplate"
+    },
     "hiddenyears:ruby_crown": {
       "textures": "textures/items/ruby_crown"
+    },
+    "hiddenyears:ruby_helmet": {
+      "textures": "textures/items/ruby_helmet"
+    },
+    "hiddenyears:ruby_leggings": {
+      "textures": "textures/items/ruby_leggings"
     },
     "hiddenyears:ruby_ring": {
       "textures": "textures/items/ruby_ring"

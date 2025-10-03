@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:ruby_leggings"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X", "X X"],
+    "key": {
+      "X": {
+        "item": "hiddenyears:ruby"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:ruby"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:ruby_leggings"
+    }
+  }
+}

@@ -6,3 +6,4 @@ diagnostic.disable.1=true
 diagnostic.disable.molang.minecraft:geometry.full_block=true
 diagnostic.disable.molang.minecraft:geometry.cross=true
 diagnostic.disable.molang.variable.undefined=true
+diagnostic.disable.molang.identifier.invalid=true
