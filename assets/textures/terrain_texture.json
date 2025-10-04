@@ -4,6 +4,9 @@
   "resource_pack_name": "HiddenYears2",
   "texture_name": "atlas.terrain",
   "texture_data": {
+    "hiddenyears:actived_lightning_grave": {
+      "textures": "textures/blocks/actived_lightning_grave"
+    },
     "hiddenyears:alchemy_table_bottom": {
       "textures": "textures/blocks/alchemy_table_bottom"
     },
@@ -78,6 +81,9 @@
     },
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
+    },
+    "hiddenyears:lightning_grave": {
+      "textures": "textures/blocks/lightning_grave"
     },
     "hiddenyears:loose_copper_ore": {
       "textures": "textures/blocks/loose_copper_ore"

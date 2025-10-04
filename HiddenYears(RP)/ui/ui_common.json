@@ -1,0 +1,6 @@
+{
+  "namespace": "common",
+  "blank@dialog_background_common": {
+    "texture": "textures/ui/blank"
+  }
+}

@@ -25,17 +25,17 @@ export class BossSpwanerEvents {
     player.playSound(params.client_events.sound_event ?? "empty");
     block.setType(params.transform_to);
     if (params.client_events.title) {
-      player.onScreenDisplay.setTitle(
-        parseToRaw(params.client_events.title, player)
-      );
+      player.onScreenDisplay.setTitle({
+        translate: params.client_events.title,
+      });
     }
     if (params.client_events.subtitle) {
-      player.onScreenDisplay.updateSubtitle(
-        parseToRaw(params.client_events.subtitle, player)
-      );
+      player.onScreenDisplay.updateSubtitle({
+        translate: params.client_events.subtitle,
+      });
     }
     if (params.fade) {
-      const { fadeIn, fadeOut, hold } = params.fade;
+      const { fade_in: fadeIn, fade_out: fadeOut, hold } = params.fade;
       player.camera.fade({
         fadeTime: {
           fadeInTime: fadeIn,

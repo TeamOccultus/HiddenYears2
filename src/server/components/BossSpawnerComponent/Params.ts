@@ -6,12 +6,12 @@ export type BossSpawnerParams = {
   key: "none" | string;
   client_events: {
     sound_event?: string;
-    title?: TextProvider;
-    subtitle?: TextProvider;
+    title?: string;
+    subtitle?: string;
   };
   fade?: {
-    fadeIn: number;
-    fadeOut: number;
+    fade_in: number;
+    fade_out: number;
     hold: number;
   }
 };

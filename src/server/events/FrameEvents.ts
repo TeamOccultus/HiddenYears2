@@ -50,7 +50,7 @@ export class FrameEvents {
       Vector3Utils.add(block.location, { x: 0, y: 0, z: -2 })
     );
     if (source instanceof Player) {
-      source.playSound("item.trident.thunder");
+      source.playSound("ambient.weather.thunder");
       source.sendMessage({
         translate: "message.hiddenyears:ruby_frame_spawned",
       });
