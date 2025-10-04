@@ -1,23 +1,25 @@
-import { Player } from "@minecraft/server";
-import { Boss, BossServer, BossSkill } from "@occultus/api";
+import { Player, system } from "@minecraft/server";
+import { Boss, BossServer, BossSkill, getAllExp } from "@occultus/api";
 
 const stealExperience = new BossSkill(
   "steal_exp",
   300,
   (excu, entities) => {
     let stolen = 0;
+    excu.playAnimation("animation.humanoid.celebrating");
     entities.forEach((entity) => {
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
           translate: "message.hiddenyears:boss.king_of_ruby.steal_exp",
         });
-        entity.addExperience(-99999);
-        stolen += entity.getTotalXp();
+        console.log(getAllExp(entity));
+        stolen += getAllExp(entity);
+        entity.resetLevel();
       }
     });
     const health =
-      excu.getComponent("minecraft:health").currentValue + stolen / 50;
+      excu.getComponent("minecraft:health").currentValue + stolen / 5;
     if (health >= excu.getComponent("minecraft:health").effectiveMax) {
       excu.getComponent("minecraft:health").resetToMaxValue();
       return;
@@ -31,6 +33,7 @@ const spawnGuardian = new BossSkill(
   "spawn_guardian",
   500,
   (excu, entities) => {
+    excu.playAnimation("animation.humanoid.celebrating");
     entities.forEach((entity) => {
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
@@ -39,26 +42,28 @@ const spawnGuardian = new BossSkill(
         });
       }
     });
-    excu?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: excu.location.x + 1,
-      y: excu.location.y,
-      z: excu.location.z,
-    });
-    excu?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: excu.location.x - 1,
-      y: excu.location.y,
-      z: excu.location.z,
-    });
-    excu?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: excu.location.x,
-      y: excu.location.y,
-      z: excu.location.z + 1,
-    });
-    excu?.dimension.spawnEntity("hy:ruby_guardian", {
-      x: excu.location.x,
-      y: excu.location.y,
-      z: excu.location.z - 1,
-    });
+    system.runTimeout(() => {
+      excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
+        x: excu.location.x + 2,
+        y: excu.location.y,
+        z: excu.location.z,
+      });
+      excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
+        x: excu.location.x - 2,
+        y: excu.location.y,
+        z: excu.location.z,
+      });
+      excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
+        x: excu.location.x,
+        y: excu.location.y,
+        z: excu.location.z + 2,
+      });
+      excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
+        x: excu.location.x,
+        y: excu.location.y,
+        z: excu.location.z - 2,
+      });
+    }, 40);
   },
   15
 );
@@ -67,6 +72,7 @@ const lightningFromPast = new BossSkill(
   "past_lightning",
   800,
   (excu, entities) => {
+    excu.playAnimation("animation.humanoid.celebrating");
     entities.forEach((entity) => {
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
@@ -74,9 +80,11 @@ const lightningFromPast = new BossSkill(
           translate: "message.hiddenyears:boss.king_of_ruby.past_lightning",
         });
       }
-      if (!entity.matches({ families: ["ruby"] })) {
-        entity.dimension.spawnEntity("lightning_bolt", entity.location);
-      }
+      system.runTimeout(() => {
+        if (!entity.matches({ families: ["ruby"] })) {
+          entity.dimension.spawnEntity("lightning_bolt", entity.location);
+        }
+      });
     });
   },
   15

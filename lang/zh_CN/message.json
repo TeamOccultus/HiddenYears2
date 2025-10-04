@@ -15,5 +15,8 @@
   "message.hiddenyears:rebirth": "盔甲中神秘的力量使你起死回生……",
   "message.hiddenyears:crown": "红宝石王冠正护佑着你……",
   "message.hiddenyears:ruby_frame_spawned": "从祭坛中喷涌而出的力量汇聚成了凶险的魔物……",
-  "message.hiddenyears:need_key": "这宝库似乎需要一把钥匙才能开启……"
+  "message.hiddenyears:need_key": "这宝库似乎需要一把钥匙才能开启……",
+  "message.hiddenyears:boss.king_of_ruby.spawn_guardian": "本应腐朽的侍从即将从地底钻出，守护着它们的王……",
+  "message.hiddenyears:boss.king_of_ruby.past_lightning": "远古的雷光即将再次降下，摧毁「一切」忤逆之人……",
+  "message.hiddenyears:boss.king_of_ruby.steal_exp": "敌人偷走了你的经验，并将之转化为自己的力量……"
 }
