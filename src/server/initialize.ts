@@ -19,6 +19,7 @@ import { registryTutorial } from "./registry/tutorial";
 import { world } from "@minecraft/server";
 import { registryMessage } from "./msg";
 import { RubyEvents } from "./events/RubyEvents";
+import { registryBoss } from "./registry/boss";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -41,5 +42,6 @@ export function initialize() {
   registryTask();
   registryTutorial();
   registryMessage();
+  registryBoss();
   RubyEvents.subscribe();
 }
