@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:ruby_room"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 19145,
+      "separation": 2,
+      "spacing": 5,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:ruby_room",
+        "weight": 1
+      }
+    ]
+  }
+}

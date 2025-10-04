@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "hiddenyears:ruby_room"
+    },
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 5,
+    "start_height": {
+      "max": {
+        "absolute": -20
+      },
+      "min": {
+        "absolute": -20
+      },
+      "type": "uniform"
+    },
+    "start_pool": "hiddenyears:ruby_room",
+    "step": "underground_structures",
+    "terrain_adaptation": "bury",
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "overworld"
+      }
+    ]
+  }
+}

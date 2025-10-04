@@ -2,21 +2,21 @@
   "format_version": "1.21.40",
   "minecraft:template_pool": {
     "description": {
-      "identifier": "hiddenyears:sprites_jail_side"
+      "identifier": "hiddenyears:ruby_room"
     },
     "elements": [
       {
         "element": {
           "element_type": "minecraft:single_pool_element",
-          "location": "hiddenyears/sprites_jail_side",
+          "location": "hiddenyears/ruby_zombie_room",
           "processors": "hiddenyears:become_craked"
         },
-        "weight": 3
+        "weight": 1
       },
       {
         "element": {
           "element_type": "minecraft:single_pool_element",
-          "location": "hiddenyears/sprites_jail_side1",
+          "location": "hiddenyears/ruby_skeleton_room",
           "processors": "hiddenyears:become_craked"
         },
         "weight": 1
