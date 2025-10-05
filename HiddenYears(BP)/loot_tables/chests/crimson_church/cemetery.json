@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 3 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:redstone",
+          "weight": 5,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 3 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:darkish_red_flower",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 5, "max": 11 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bone",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 5, "max": 18 } }
+          ]
+        }
+      ]
+    }
+  ]
+}
