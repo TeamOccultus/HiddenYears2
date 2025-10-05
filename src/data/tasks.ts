@@ -514,11 +514,220 @@ export function getAllChapters() {
       iconPath: "textures/items/ender_eye",
     }
   );
+  // 第一章·第一幕任务
+  const summaryOfElvenHistory = new Task(
+    "hiddenyears:summary_of_elven_history",
+    { translate: "task.summary_of_elven_history" },
+    { translate: "task.summary_of_elven_history.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 1)],
+      conditions: [new ItemConditions("hiddenyears:letter_1")],
+      previousTask: "none",
+      iconPath: "textures/items/lost_letter",
+    }
+  );
+
+  const imprisonedWing = new Task(
+    "hiddenyears:imprisoned_wing",
+    { translate: "task.imprisoned_wing" },
+    {
+      rawtext: [
+        { translate: "task.imprisoned_wing.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.imprisoned_wing.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 2)],
+      conditions: [new ItemConditions("hiddenyears:imprisoned_wing")],
+      previousTask: "none",
+      iconPath: "textures/items/imprisoned_wing",
+    }
+  );
+
+  const bloodyGem = new Task(
+    "hiddenyears:bloody_gem",
+    { translate: "task.bloody_gem" },
+    {
+      rawtext: [
+        { translate: "task.bloody_gem.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.bloody_gem.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 2)],
+      conditions: [new ItemConditions("hiddenyears:ruby")],
+      previousTask: "none",
+      iconPath: "textures/items/ruby",
+    }
+  );
+
+  const bloodyArmor = new Task(
+    "hiddenyears:bloody_armor",
+    { translate: "task.bloody_armor" },
+    {
+      rawtext: [
+        { translate: "task.bloody_armor.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.bloody_armor.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.bloody_armor.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+      conditions: [new ItemConditions("hiddenyears:ruby_chestplate")],
+      previousTask: "none",
+      iconPath: "textures/items/ruby_chestplate",
+    }
+  );
+
+  const decayedServant = new Task(
+    "hiddenyears:decayed_servant",
+    { translate: "task.decayed_servant" },
+    {
+      rawtext: [
+        { translate: "task.decayed_servant.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.decayed_servant.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.decayed_servant.desc_3" },
+        { text: Format.newLine },
+        { translate: "task.decayed_servant.desc_4" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+      conditions: [new KillEntityConditions("hiddenyears:ruby_zombie")],
+      previousTask: "none",
+      iconPath: "textures/items/egg_ruby_zombie",
+    }
+  );
+
+  const trueAndFalse = new Task(
+    "hiddenyears:true_and_false",
+    { translate: "task.true_and_false" },
+    {
+      rawtext: [
+        { translate: "task.true_and_false.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.true_and_false.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+      conditions: [new KillEntityConditions("hiddenyears:ferocious_ruby_guardian")],
+      previousTask: "none",
+      iconPath: "textures/items/egg_ruby_guardian",
+    }
+  );
+
+  const thunderKey = new Task(
+    "hiddenyears:thunder_key",
+    { translate: "task.thunder_key" },
+    {
+      rawtext: [
+        { translate: "task.thunder_key.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.thunder_key.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("minecraft:potion", 4)],
+      conditions: [new ItemConditions("hiddenyears:lightning_key")],
+      previousTask: "none",
+      iconPath: "textures/items/thunder_key",
+    }
+  );
+
+  const bloodGaze = new Task(
+    "hiddenyears:blood_gaze",
+    { translate: "task.blood_gaze" },
+    {
+      rawtext: [
+        { translate: "task.blood_gaze.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.blood_gaze.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.blood_gaze.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:diamond_badge", 1)],
+      conditions: [new ItemConditions("hiddenyears:crimson_eyes")],
+      previousTask: "none",
+      iconPath: "textures/items/crimson_eyes",
+    }
+  );
+
+  const worldEndFruit = new Task(
+    "hiddenyears:ruby_apple",
+    { translate: "task.world_end_fruit" },
+    {
+      rawtext: [
+        { translate: "task.world_end_fruit.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.world_end_fruit.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.world_end_fruit.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
+      conditions: [new ItemConditions("hiddenyears:ruby_apple")],
+      previousTask: "none",
+      iconPath: "textures/items/ruby_apple",
+    }
+  );
+
+  const songOfPowerAndBlood = new Task(
+    "hiddenyears:song_of_power_and_blood",
+    { translate: "task.song_of_power_and_blood" },
+    {
+      rawtext: [
+        { translate: "task.song_of_power_and_blood.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.song_of_power_and_blood.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 10)],
+      conditions: [new KillEntityConditions("hiddenyears:king_of_ruby")],
+      previousTask: "none",
+      iconPath: "textures/items/ruby_crown",
+    }
+  );
+  songOfPowerAndBlood.pushToServer(server);
+
+  const chapterIActI = new TaskGroup(
+    "hiddenyears:chapter1_act1",
+    { translate: "task.chapter_1.act_1" },
+    { translate: "task.chapter_1.act_1.desc" },
+    {
+      tasks: [
+        summaryOfElvenHistory,
+        imprisonedWing,
+        bloodyGem,
+        bloodyArmor,
+        decayedServant,
+        trueAndFalse,
+        thunderKey,
+        bloodGaze,
+        worldEndFruit,
+        songOfPowerAndBlood,
+      ],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
+      previousTask: "none",
+      iconPath: "textures/items/ruby",
+    }
+  );
 
   return [
     prolugueActI,
     prolugueActII,
     prolugueActIII,
+    chapterIActI,
     chapterIIActI,
     chapterIIActII,
   ];
