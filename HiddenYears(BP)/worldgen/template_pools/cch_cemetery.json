@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:cch_cemetery"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/cch_cemetery",
+          "processors": "hiddenyears:to_ruby"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

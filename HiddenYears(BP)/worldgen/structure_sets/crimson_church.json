@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:crimson_church"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 1919810,
+      "separation": 2,
+      "spacing": 10,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:crimson_church",
+        "weight": 1
+      }
+    ]
+  }
+}
