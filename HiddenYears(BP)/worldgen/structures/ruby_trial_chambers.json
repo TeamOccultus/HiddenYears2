@@ -2,20 +2,20 @@
   "format_version": "1.21.40",
   "minecraft:jigsaw": {
     "description": {
-      "identifier": "hiddenyears:sprites_jail"
+      "identifier": "hiddenyears:ruby_trial_chambers"
     },
     "heightmap_projection": "ocean_floor",
     "max_depth": 5,
     "start_height": {
       "max": {
-        "absolute": -10
+        "absolute": -15
       },
       "min": {
-        "absolute": -35
+        "absolute": -40
       },
       "type": "uniform"
     },
-    "start_pool": "hiddenyears:sprites_jail_main",
+    "start_pool": "hiddenyears:ruby_trial_chambers",
     "step": "underground_structures",
     "terrain_adaptation": "bury",
     "biome_filters": [

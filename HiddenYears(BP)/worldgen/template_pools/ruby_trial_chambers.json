@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:ruby_trial_chambers"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/ruby_trial_chambers",
+          "processors": "hiddenyears:to_ruby"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

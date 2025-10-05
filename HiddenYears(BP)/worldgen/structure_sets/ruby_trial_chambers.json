@@ -2,18 +2,18 @@
   "format_version": "1.21.40",
   "minecraft:structure_set": {
     "description": {
-      "identifier": "hiddenyears:sprites_jail"
+      "identifier": "hiddenyears:ruby_trial_chambers"
     },
     "placement": {
       "type": "minecraft:random_spread",
-      "salt": 1918,
+      "salt": 114514,
       "separation": 2,
-      "spacing": 10,
+      "spacing": 5,
       "spread_type": "linear"
     },
     "structures": [
       {
-        "structure": "hiddenyears:sprites_jail",
+        "structure": "hiddenyears:ruby_trial_chambers",
         "weight": 1
       }
     ]
