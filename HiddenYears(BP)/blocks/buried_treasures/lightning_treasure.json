@@ -2,16 +2,22 @@
   "format_version": "1.21.100",
   "minecraft:block": {
     "description": {
-      "identifier": "hiddenyears:empty_lighting_treasure",
+      "identifier": "hiddenyears:lightning_treasure",
       "menu_category": {
-        "category": "none"
+        "category": "construction"
       }
     },
     "components": {
+      "hiddenyears:vault": {
+        "table": "gameplay/lightning_treasure",
+        "transform_to": "hiddenyears:empty_lightning_treasure",
+        "key": "hiddenyears:lightning_key",
+        "sound_event": "vault.open_shutter"
+      },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
-        "up":{
-          "texture": "hiddenyears:ruby_frame_top"
+        "up": {
+          "texture": "hiddenyears:ruby_frame_top_filled"
         },
         "down": {
           "texture": "hiddenyears:ruby_frame_side"

@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:block": {
     "description": {
-      "identifier": "hiddenyears:actived_ruby_frame",
+      "identifier": "hiddenyears:empty_lightning_treasure",
       "menu_category": {
         "category": "none"
       }
@@ -11,7 +11,7 @@
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
         "up":{
-          "texture": "hiddenyears:ruby_frame_top_filled"
+          "texture": "hiddenyears:ruby_frame_top"
         },
         "down": {
           "texture": "hiddenyears:ruby_frame_side"
