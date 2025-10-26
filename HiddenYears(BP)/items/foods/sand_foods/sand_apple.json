@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:sand_apple",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.crop"
+      }
+    },
+    "components": {
+      "hiddenyears:effective_food": {
+        "effect": [
+          "minecraft:absorption",
+          "minecraft:fire_resistance"
+        ],
+        "duration": 550
+      },
+      "minecraft:icon": "hiddenyears:sand_apple",
+      "minecraft:use_animation": "eat",
+      "minecraft:use_modifiers": {
+        "use_duration": 1.6,
+        "movement_modifier": 0.5
+      },
+      "minecraft:food": {
+        "nutrition": 4,
+        "can_always_eat": true,
+        "saturation_modifier": 0.6
+      },
+      "minecraft:hover_text_color": "yellow"
+    }
+  }
+}

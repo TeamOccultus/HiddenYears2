@@ -706,8 +706,20 @@
     "hiddenyears:ruby_runes": {
       "textures": "textures/items/ruby_runes"
     },
+    "hiddenyears:sand_apple": {
+      "textures": "textures/items/sand_apple"
+    },
+    "hiddenyears:sand_fish": {
+      "textures": "textures/items/sand_fish"
+    },
+    "hiddenyears:sand_meat": {
+      "textures": "textures/items/sand_meat"
+    },
     "hiddenyears:sand_runes": {
       "textures": "textures/items/sand_runes"
+    },
+    "hiddenyears:scorched_meat": {
+      "textures": "textures/items/scorched_meat"
     },
     "hiddenyears:silver_axe": {
       "textures": "textures/items/silver_axe"

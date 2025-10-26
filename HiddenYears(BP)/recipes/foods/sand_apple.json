@@ -2,28 +2,28 @@
   "format_version": "1.21.100",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "hiddenyears:ruby_apple"
+      "identifier": "hiddenyears:sand_apple"
     },
     "tags": ["crafting_table"],
     "pattern": ["XXX", "XAX", "XXX"],
     "key": {
       "X": {
-        "item": "hiddenyears:ruby"
+        "item": "sandstone"
       },
       "A": {
-        "item": "minecraft:apple"
+        "item": "apple"
       }
     },
     "unlock": [
       {
-        "item": "hiddenyears:ruby"
+        "item": "sandstone"
       },
       {
-        "item": "minecraft:apple"
+        "item": "apple"
       }
     ],
     "result": {
-      "item": "hiddenyears:ruby_apple"
+      "item": "hiddenyears:sand_apple"
     }
   }
 }

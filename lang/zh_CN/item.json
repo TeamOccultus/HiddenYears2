@@ -239,5 +239,10 @@
   "item.hiddenyears:ruby_helmet": "红宝石头盔",
   "item.hiddenyears:ruby_chestplate": "红宝石胸甲",
   "item.hiddenyears:ruby_leggings": "红宝石护腿",
-  "item.hiddenyears:ruby_boots": "红宝石靴子"
+  "item.hiddenyears:ruby_boots": "红宝石靴子",
+  "item.hiddenyears:sand_apple": "沙蚀苹果",
+  "item.hiddenyears:enchanted_sand_apple": "附魔沙蚀苹果",
+  "item.hiddenyears:sand_fish": "沙蚀之鱼",
+  "item.hiddenyears:sand_meat": "沙蚀之肉",
+  "item.hiddenyears:scorched_meat": "焦糊的肉"
 }
