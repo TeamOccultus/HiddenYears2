@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "hiddenyears:desert_herbpot"
+    },
+    "tags": ["brewing_stand"],
+    "input": "minecraft:potion",
+    "unlock": [
+      {
+        "item": "minecraft:gold_nugget"
+      }
+    ],
+    "reagent": "minecraft:gold_nugget",
+    "output": "hiddenyears:desert_herbpot"
+  }
+}
