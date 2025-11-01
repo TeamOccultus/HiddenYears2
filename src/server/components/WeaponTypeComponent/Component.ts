@@ -12,6 +12,12 @@ export class WeaponTypeComponent {
           if (params?.legend_weapon === "suffering") {
             LegendWeaponEvent.onSufferingSwordAttack(arg0);
           }
+          if (params?.legend_weapon === "shattered_sand_cudgel") {
+            LegendWeaponEvent.onShatteredSandCudgelAttack(arg0);
+          }
+          if (params?.legend_weapon === "shattered_sand_staff") {
+            LegendWeaponEvent.onShatteredSandStaffAttack(arg0);
+          }
         },
       });
     });

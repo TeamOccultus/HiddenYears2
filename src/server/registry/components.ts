@@ -25,6 +25,7 @@ import { VaultComponent } from "../components/VaultComponent/Component";
 import { BossSpawnerComponent } from "../components/BossSpawnerComponent/Component";
 import { HiddenEffectFoodComponent } from "../components/HiddenEffectFoodComponent/Component";
 import { BlessingComponent } from "../components/BlessingComponent";
+import { StaffComponent } from "../components/StaffComponent/Component";
 
 /**
  * 注册自定义组件
@@ -44,6 +45,7 @@ export function registryComponents() {
   new FrameActiverComponent("hiddenyears:frame_activer");
   new HiddenEffectFoodComponent("hiddenyears:hidden_effect_food");
   new BlessingComponent("hiddenyears:blessing_of_isis");
+  new StaffComponent("hiddenyears:staff");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
