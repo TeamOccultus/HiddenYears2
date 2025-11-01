@@ -5,6 +5,9 @@
     "hiddenyears:ancient_extracts": {
       "textures": "textures/items/ancient_extracts"
     },
+    "hiddenyears:blessing_of_isis": {
+      "textures": "textures/items/blessing_of_isis"
+    },
     "hiddenyears:bone_axe": {
       "textures": "textures/items/bone_axe"
     },
@@ -214,6 +217,15 @@
     },
     "hiddenyears:diamond_sledgehammer": {
       "textures": "textures/items/diamond_sledgehammer"
+    },
+    "hiddenyears:drift_sand_coronet": {
+      "textures": "textures/items/drift_sand_coronet"
+    },
+    "hiddenyears:drift_sand_key": {
+      "textures": "textures/items/drift_sand_key"
+    },
+    "hiddenyears:drift_sand_statue": {
+      "textures": "textures/items/drift_sand_statue"
     },
     "hiddenyears:echo_coin": {
       "textures": "textures/items/echo_coin"
@@ -529,6 +541,9 @@
         "textures/items/money_bundle/money_bundle_open_front"
       ]
     },
+    "hiddenyears:mutas_staff": {
+      "textures": "textures/items/mutas_staff"
+    },
     "hiddenyears:netherite_dagger": {
       "textures": "textures/items/netherite_dagger"
     },
@@ -738,6 +753,12 @@
     },
     "hiddenyears:scorpion_pincers": {
       "textures": "textures/items/scorpion_pincers"
+    },
+    "hiddenyears:shattered_sand_cudgel": {
+      "textures": "textures/items/shattered_sand_cudgel"
+    },
+    "hiddenyears:shattered_sand_staff": {
+      "textures": "textures/items/shattered_sand_staff"
     },
     "hiddenyears:silver_axe": {
       "textures": "textures/items/silver_axe"

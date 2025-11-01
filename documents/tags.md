@@ -15,3 +15,9 @@ category: Documents
 > 适用范围：实体
 
 使实体免疫沙漠负面效果。
+
+## hiddenyears:immune_magic_attack
+
+> 适用范围：实体
+
+使实体免疫法术伤害。

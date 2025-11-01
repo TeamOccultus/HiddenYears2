@@ -79,6 +79,9 @@
     "hiddenyears:deepslate_silver_ore": {
       "textures": "textures/blocks/deepslate_silver_ore"
     },
+    "hiddenyears:drift_sand_cabinet": {
+      "textures": "textures/blocks/drift_sand_cabinet"
+    },
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
     },
