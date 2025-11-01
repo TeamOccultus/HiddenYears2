@@ -1,3 +1,7 @@
+/**
+ * @module server/registry/task
+ * @category Registry Bus
+ */
 import { TaskCenter } from "@occultus/api";
 import { getAllChapters } from "../../data/tasks";
 import { CommandPermissionLevel } from "@minecraft/server";

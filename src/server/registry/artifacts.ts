@@ -1,3 +1,7 @@
+/**
+ * @module server/registry/artifact
+ * @category Registry Bus
+ */
 import { CommandPermissionLevel } from "@minecraft/server";
 import {
   ArtifactForm,

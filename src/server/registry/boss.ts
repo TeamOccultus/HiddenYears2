@@ -1,3 +1,7 @@
+/**
+ * @module server/registry/boss
+ * @category Registry Bus
+ */
 import { Player, system } from "@minecraft/server";
 import { Boss, BossServer, BossSkill, getAllExp } from "@occultus/api";
 

@@ -1,6 +1,6 @@
 /**
  * @module server/initialize
- * @category Initialize
+ * @category Initialize Bus
  */
 import { ModInitializer } from "@occultus/core";
 import { registryItemSystems } from "./registry/item";
@@ -16,10 +16,10 @@ import {
 } from "./registry/artifacts";
 import { registryTask } from "./registry/task";
 import { registryTutorial } from "./registry/tutorial";
-import { world } from "@minecraft/server";
 import { registryMessage } from "./msg";
 import { RubyEvents } from "./events/RubyEvents";
 import { registryBoss } from "./registry/boss";
+import { registryEffects } from "./registry/effects";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -34,6 +34,7 @@ export function initialize() {
   registryCustomRecipe();
   registryItemSystems();
   registryComponents();
+  registryEffects();
   registryMusicDisc();
   registryCustomLoot();
   registryArtifactSlots();

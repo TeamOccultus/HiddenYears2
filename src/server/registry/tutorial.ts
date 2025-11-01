@@ -1,3 +1,7 @@
+/**
+ * @module server/registry/tutorial
+ * @category Registry Bus
+ */
 import { CommandPermissionLevel } from "@minecraft/server";
 import { TutorialCenter, TutorialServer } from "@occultus/api";
 import { group, tutorials } from "../../data/tutorials";

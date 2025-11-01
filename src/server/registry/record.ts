@@ -1,3 +1,7 @@
+/**
+ * @module server/registry/record
+ * @category Registry Bus
+ */
 import { MusicDisc, MusicDiscServer } from "@occultus/api";
 
 export function registryMusicDisc() {

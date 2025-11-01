@@ -1,3 +1,7 @@
+/**
+ * @module server/registry/component
+ * @category Registry Bus
+ */
 import {
   BlockRegistries,
   BlockWithDestroyCondition,

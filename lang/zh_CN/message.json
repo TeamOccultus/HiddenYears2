@@ -18,5 +18,9 @@
   "message.hiddenyears:need_key": "这宝库似乎需要一把钥匙才能开启……",
   "message.hiddenyears:boss.king_of_ruby.spawn_guardian": "本应腐朽的侍从即将从地底钻出，守护着它们的王……",
   "message.hiddenyears:boss.king_of_ruby.past_lightning": "远古的雷光即将再次降下，摧毁「一切」忤逆之人……",
-  "message.hiddenyears:boss.king_of_ruby.steal_exp": "敌人偷走了你的经验，并将之转化为自己的力量……"
+  "message.hiddenyears:boss.king_of_ruby.steal_exp": "敌人偷走了你的经验，并将之转化为自己的力量……",
+  "message.hiddenyears:tetanus": "敌人武器上带有的§d「破伤风」§d效果使你感觉不适……",
+  "message.hiddenyears:bleed": "你的伤口开始不停地§d「流血」§d！",
+  "message.hiddenyears:dehydration": "你感到身体在§d「脱水」§d，快喝清凉药茶来缓解症状！",
+  "message.hiddenyears:drought": "你感到十分§d「干旱」§d，快喝水来缓解症状！"
 }
