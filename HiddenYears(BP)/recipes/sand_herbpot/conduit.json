@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "hiddenyears:desert_herbpot_conduit"
+    },
+    "tags": ["brewing_stand"],
+    "input": "hiddenyears:desert_herbpot",
+    "unlock": [
+      {
+        "item": "hiddenyears:sand_fish"
+      }
+    ],
+    "reagent": "hiddenyears:sand_fish",
+    "output": "hiddenyears:desert_herbpot_conduit"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_brewing_container": {
+    "description": {
+      "identifier": "hiddenyears:desert_herbpot_scorpion"
+    },
+    "tags": ["brewing_stand"],
+    "input": "hiddenyears:desert_herbpot",
+    "unlock": [
+      {
+        "item": "hiddenyears:scorpion_pincers"
+      }
+    ],
+    "reagent": "hiddenyears:scorpion_pincers",
+    "output": "hiddenyears:desert_herbpot_scorpion"
+  }
+}

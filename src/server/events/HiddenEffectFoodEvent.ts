@@ -15,11 +15,14 @@ export class HiddenEffectFoodEvent {
     const p = arg1.params as HiddenEffectFoodParams;
     if (!(source instanceof Player)) return;
     const effect = effectsMap.get(p.effect);
-    if (!effect) return;
-    if (p.type === "give") {
+    if (effect) {
       effect.add(source, p.duration, p.amplifier);
-    } else {
-      effect.remove(source);
+    }
+    if (p.remove) {
+      p.remove.forEach((e) => {
+        const effect = effectsMap.get(e);
+        if (effect) effect.remove(source);
+      });
     }
   }
 }

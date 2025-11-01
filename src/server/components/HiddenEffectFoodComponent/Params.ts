@@ -1,8 +1,8 @@
 export type HiddenEffectFoodParams = {
-  type: "give" | "remove";
-  effect: HiddenEffects;
-  duration: number;
-  amplifier: number;
+  effect?: HiddenEffects;
+  duration?: number;
+  amplifier?: number;
+  remove?: HiddenEffects[];
 };
 
 export type HiddenEffects = "tetanus" | "bleed" | "dehydration" | "drought";
