@@ -8,10 +8,10 @@
     "input": "hiddenyears:desert_herbpot",
     "unlock": [
       {
-        "item": "hiddenyears:god_bless_rain"
+        "item": "hiddenyears:blessing_of_isis"
       }
     ],
-    "reagent": "hiddenyears:god_bless_rain",
+    "reagent": "hiddenyears:blessing_of_isis",
     "output": "hiddenyears:desert_herbpot_rain"
   }
 }
