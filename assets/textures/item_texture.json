@@ -709,6 +709,9 @@
     "hiddenyears:sand_apple": {
       "textures": "textures/items/sand_apple"
     },
+    "hiddenyears:sand_bone": {
+      "textures": "textures/items/sand_bone"
+    },
     "hiddenyears:sand_fish": {
       "textures": "textures/items/sand_fish"
     },
@@ -718,8 +721,17 @@
     "hiddenyears:sand_runes": {
       "textures": "textures/items/sand_runes"
     },
+    "hiddenyears:sand_spider_eye": {
+      "textures": "textures/items/sand_spider_eye"
+    },
     "hiddenyears:scorched_meat": {
       "textures": "textures/items/scorched_meat"
+    },
+    "hiddenyears:scorpion_pincers": {
+      "textures": "textures/items/scorpion_pincers"
+    },
+    "hiddenyears:scorpion_potion": {
+      "textures": "textures/items/scorpion_potion"
     },
     "hiddenyears:silver_axe": {
       "textures": "textures/items/silver_axe"

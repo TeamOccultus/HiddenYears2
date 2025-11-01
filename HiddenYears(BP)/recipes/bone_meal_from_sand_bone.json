@@ -1,0 +1,25 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:bone_meal_from_sand_bone"
+    },
+    "tags": ["crafting_table"],
+    "group": "bonemeal",
+    "ingredients": [
+      {
+        "item": "hiddenyears:sand_bone"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:sand_bone"
+      }
+    ],
+    "result": {
+      "item": "minecraft:dye",
+      "data": 15,
+      "count": 5
+    }
+  }
+}
