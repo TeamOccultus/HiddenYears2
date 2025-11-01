@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:rabbit_paw",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:rabbit_paw",
+      "minecraft:compostable": {
+        "composting_chance": 100
+      }
+    }
+  }
+}

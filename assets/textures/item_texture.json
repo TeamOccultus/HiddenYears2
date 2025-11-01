@@ -68,6 +68,9 @@
     "hiddenyears:coal_nugget": {
       "textures": "textures/items/coal_nugget"
     },
+    "hiddenyears:cooling_herbtea": {
+      "textures": "textures/items/cooling_herbtea"
+    },
     "hiddenyears:copper_badge": {
       "textures": "textures/items/copper_badge"
     },
@@ -389,6 +392,9 @@
     "hiddenyears:hare_boots": {
       "textures": "textures/items/hare_boots"
     },
+    "hiddenyears:herb_bottle": {
+      "textures": "textures/items/herb_bottle"
+    },
     "hiddenyears:herders_hat": {
       "textures": "textures/items/herders_hat"
     },
@@ -625,6 +631,9 @@
     "hiddenyears:quartz_nugget": {
       "textures": "textures/items/quartz_nugget"
     },
+    "hiddenyears:rabbit_paw": {
+      "textures": "textures/items/rabbit_paw"
+    },
     "hiddenyears:raw_silver": {
       "textures": "textures/items/raw_silver"
     },
@@ -729,9 +738,6 @@
     },
     "hiddenyears:scorpion_pincers": {
       "textures": "textures/items/scorpion_pincers"
-    },
-    "hiddenyears:scorpion_potion": {
-      "textures": "textures/items/scorpion_potion"
     },
     "hiddenyears:silver_axe": {
       "textures": "textures/items/silver_axe"

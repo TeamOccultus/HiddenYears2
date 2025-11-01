@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:scorpion_pincers",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:scorpion_pincers",
+      "minecraft:compostable": {
+        "composting_chance": 75
+      }
+    }
+  }
+}
