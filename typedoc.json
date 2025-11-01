@@ -7,11 +7,10 @@
   "projectDocuments": [
     "documents/standard/README.md",
     "documents/components/README.md",
+    "documents/agreement/README.md",
     "documents/tags.md",
     "documents/v2.md",
-    "documents/v3.md",
-    "LICENSE-Markdown.md",
-    "LICENSE-Zh.md"
+    "documents/v3.md"
   ],
   "includeVersion": true
 }

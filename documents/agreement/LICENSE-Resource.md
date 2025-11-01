@@ -1,3 +1,8 @@
+---
+title: Attribution-ShareAlike 4.0 International
+group: Documents
+category: Documents
+---
 Attribution-ShareAlike 4.0 International
 
 =======================================================================

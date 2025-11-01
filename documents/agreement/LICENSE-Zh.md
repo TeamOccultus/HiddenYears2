@@ -1,4 +1,9 @@
-# HY-OSS License Agreement
+---
+title: HY-OSS/UCV
+group: Documents
+category: Documents
+---
+# HY-OSS License Agreement(Unofficial Chinese Version)
 
 > HY-OSS 许可协议由英文撰写，为了方便玩家理解，我们仅作为参考目的提供一份逐字逐行而没有经过润色的中文翻译文本。
 > 

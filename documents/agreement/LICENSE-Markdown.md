@@ -1,3 +1,8 @@
+---
+title: HY-OSS License Agreement
+group: Documents
+category: Documents
+---
 # HY-OSS License Agreement
 Copyright (c) 2025 Team Occultus
 
