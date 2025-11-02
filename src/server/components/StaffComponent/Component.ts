@@ -1,4 +1,4 @@
-import { system } from "@minecraft/server";
+import { system, world } from "@minecraft/server";
 import { StaffEvents } from "../../events/StaffEvents";
 
 export class StaffComponent {
@@ -6,10 +6,13 @@ export class StaffComponent {
     system.beforeEvents.startup.subscribe((init) => {
       const item = init.itemComponentRegistry;
       item.registerCustomComponent(componentName, {
-        onUse(arg0, arg1) {
-          StaffEvents.onRelease(arg0, arg1);
-        },
       });
+    });
+    world.afterEvents.itemUse.subscribe((event) => {
+      const { itemStack, source } = event;
+      const staff = itemStack.getComponent(this.componentName);
+      if (!staff) return;
+      StaffEvents.onRelease(event, staff.customComponentParameters);
     });
   }
 }

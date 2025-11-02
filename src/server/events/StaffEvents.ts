@@ -1,6 +1,7 @@
 import {
   CustomComponentParameters,
   ItemComponentUseEvent,
+  system,
 } from "@minecraft/server";
 import {
   consumeDurability,
