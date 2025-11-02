@@ -27,6 +27,7 @@
   },
   "deploy": {
     "platform": "stable",
+    "gtk": true,
     "sources": [
       {
         "path": "HiddenYears(BP)",

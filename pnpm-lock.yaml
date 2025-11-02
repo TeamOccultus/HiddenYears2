@@ -21,8 +21,8 @@ importers:
         specifier: ^0.18.4
         version: 0.18.4(@minecraft/server@2.1.0(@minecraft/vanilla-data@1.21.90-preview.20))
       '@starock/cli':
-        specifier: ^0.5.0
-        version: 0.5.0(@types/node@24.2.1)
+        specifier: ^0.6.0
+        version: 0.6.0(@types/node@24.2.1)
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -598,8 +598,8 @@ packages:
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
 
-  '@starock/cli@0.5.0':
-    resolution: {integrity: sha512-1OPjxre0/O82tPB8QMBq4XdQSy+kHbhnZRvS4FGRBq15xamYY6v6RO5q/qlb7fzKGoCW+yn4SPj0ee3Q0sJqPw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.5.0/cli-0.5.0.tgz}
+  '@starock/cli@0.6.0':
+    resolution: {integrity: sha512-tMDYIXWN83EF4iCqgDAAnG70XOvjqzZsBzXrXgBxiJ8R1NUZgnnVJ2HCOIpvKJS0ZIzpb5NtAswBa4YDmytTQA==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.6.0/cli-0.6.0.tgz}
     hasBin: true
 
   '@tybys/wasm-util@0.10.0':
@@ -1501,7 +1501,7 @@ snapshots:
 
   '@shikijs/vscode-textmate@10.0.2': {}
 
-  '@starock/cli@0.5.0(@types/node@24.2.1)':
+  '@starock/cli@0.6.0(@types/node@24.2.1)':
     dependencies:
       '@inquirer/prompts': 7.8.1(@types/node@24.2.1)
       archiver: 7.0.1
