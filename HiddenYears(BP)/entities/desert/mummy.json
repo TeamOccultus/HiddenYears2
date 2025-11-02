@@ -91,7 +91,7 @@
       "minecraft:attack": {
         "damage": 4,
         "effect_duration": 15,
-        "effect_name": "waekness"
+        "effect_name": "weakness"
       },
       "minecraft:loot": { "table": "loot_tables/entities/mummy.json" },
       "minecraft:behavior.equip_item": { "priority": 2 },

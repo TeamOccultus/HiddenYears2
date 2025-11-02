@@ -1,11 +1,10 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hy:shattered_sand_staff",
+      "identifier": "hidddenyears:shattered_sand_staff",
       "menu_category": {
-        "category": "equipment",
-        "group": "itemGroup.name.sword"
+        "category": "equipment"
       }
     },
     "components": {
@@ -30,12 +29,12 @@
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,
-      "minecraft:icon": "hy:shattered_sand_staff",
+      "minecraft:icon": "hidddenyears:shattered_sand_staff",
       "minecraft:max_stack_size": 1,
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": ["hy:shattered_sand_staff"],
+            "items": ["hidddenyears:shattered_sand_staff"],
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           }
         ]
@@ -45,7 +44,7 @@
         "tags": [
           "minecraft:is_sword",
           "minecraft:is_tool",
-          "hy:dehydration_effect"
+          "hidddenyears:dehydration_effect"
         ]
       }
     }

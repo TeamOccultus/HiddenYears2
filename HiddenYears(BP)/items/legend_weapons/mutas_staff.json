@@ -28,8 +28,8 @@
         "slot": "sword"
       },
       "minecraft:cooldown": {
-        "category": "mutas_staff",
-        "duration": 5
+        "category": "hiddenyears:mutas_staff",
+        "duration": 0.8
       },
       "minecraft:hand_equipped": true,
       "minecraft:icon": "hiddenyears:mutas_staff",

@@ -22,5 +22,6 @@
   "message.hiddenyears:tetanus": "敌人武器上带有的§d「破伤风」§d效果使你感觉不适……",
   "message.hiddenyears:bleed": "你的伤口开始不停地§d「流血」§d！",
   "message.hiddenyears:dehydration": "你感到身体在§d「脱水」§d，快喝清凉药茶来缓解症状！",
-  "message.hiddenyears:drought": "你感到十分§d「干旱」§d，快喝水来缓解症状！"
+  "message.hiddenyears:drought": "你感到十分§d「干旱」§d，快喝水来缓解症状！",
+  "message.hiddenyears:wait_cooldown": "法杖滋滋作响，恐怕是没能量了……"
 }
