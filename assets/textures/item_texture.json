@@ -230,8 +230,8 @@
     "hiddenyears:echo_coin": {
       "textures": "textures/items/echo_coin"
     },
-    "hiddenyears:egg_drift_sand_guardian": {
-      "textures": "textures/items/egg_drift_sand_guardian"
+    "hiddenyears:egg_drift_sand_bodyguard": {
+      "textures": "textures/items/egg_drift_sand_bodyguard"
     },
     "hiddenyears:egg_drift_sand_sergeant": {
       "textures": "textures/items/egg_drift_sand_sergeant"
