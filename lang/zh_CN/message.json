@@ -1,6 +1,7 @@
 {
   "message.hiddenyears:welcome": "欢迎来到《隐藏之年²：天边的迦万涅尔》的世界！",
   "message.hiddenyears:is_beta": "警告：这是不稳定的测试评估副本，请务必备份存档！",
+  "message.hiddenyears:is_debug": "注意：这是不稳定的测试评估副本，且调试模式已经启用",
   "message.hiddenyears:first_destroy_ruby": "挖掘之后，你感到一阵眩晕……",
   "message.hiddenyears:tenth_destroy_ruby.1": "眩晕感再次袭来……",
   "message.hiddenyears:tenth_destroy_ruby.2": "你似乎看见了一个模糊的身躯在雷光之下被撕裂，迸裂出刺眼的光芒，黑夜也如白昼一般……",

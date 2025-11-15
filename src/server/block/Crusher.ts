@@ -12,6 +12,7 @@ import {
   world,
 } from "@minecraft/server";
 import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
+import { DebugMode } from "../../debug/Debug";
 
 export class Crusher extends BlockWithEntity {
   constructor() {
@@ -32,7 +33,7 @@ export class Crusher extends BlockWithEntity {
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
     if (Array.isArray(filledItem)) return;
-    console.warn(filledItem?.typeId);
+    DebugMode.log(filledItem?.typeId);
     if (!filledItem) {
       if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
         player.sendMessage({
@@ -44,7 +45,6 @@ export class Crusher extends BlockWithEntity {
       const eqItem = consumeAmount(item, 1);
       setEquipmentItem(player, eqItem);
       player.playSound("fall.stone");
-      console.log("Particle spawned at ", entityData.entity.location);
       return;
     }
     if (item?.hasTag("minecraft:is_pickaxe")) {
