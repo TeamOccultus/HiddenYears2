@@ -47,6 +47,17 @@
       "minecraft:collision_box": {
         "width": 0.0,
         "height": 0.0
+      },
+      "minecraft:timer": {
+        "looping": true,
+        "randomInterval": true,
+        "time": [
+          0.0,
+          0.0
+        ],
+        "time_down_event": {
+          "event": "hiddenyears:crusher_tick"
+        }
       }
     },
     "events": {
@@ -56,7 +67,8 @@
             "hiddenyears:crusher_despawn"
           ]
         }
-      }
+      },
+      "hiddenyears:crusher_tick": {}
     }
   }
 }
