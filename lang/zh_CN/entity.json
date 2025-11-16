@@ -9,6 +9,7 @@
   "entity.hiddenyears:drift_sand_soldier.name": "流沙士兵",
   "entity.hiddenyears:drift_sand_bodyguard.name": "流沙侍卫",
   "entity.hiddenyears:drift_sand_sergeant.name": "流沙士官",
+  "entity.hiddenyears:rabbit_killer.name": "杀手兔",
   "item.spawn_egg.entity.hiddenyears:ruby_zombie.name": "红宝石僵尸刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_skeleton.name": "红宝石骷髅刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_guardian.name": "红宝石守卫刷怪蛋",
@@ -17,5 +18,6 @@
   "item.spawn_egg.entity.hiddenyears:drift_sand_shooter.name": "流沙射手刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:drift_sand_soldier.name": "流沙士兵刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:drift_sand_bodyguard.name": "流沙侍卫刷怪蛋",
-  "item.spawn_egg.entity.hiddenyears:drift_sand_sergeant.name": "流沙士官刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:drift_sand_sergeant.name": "流沙士官刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:rabbit_killer.name": "杀手兔刷怪蛋"
 }

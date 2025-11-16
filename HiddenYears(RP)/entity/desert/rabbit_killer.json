@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hiddenyears:rabbit_killer",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "rabbit"
+      },
+      "textures": {
+        "default": "textures/entity/rabbit_killer"
+      },
+      "geometry": {
+        "default": "geometry.rabbit.v1.8"
+      },
+      "animations": {
+        "move": "animation.rabbit.move",
+        "baby_transform": "animation.rabbit.baby_transform",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        {
+          "general": "controller.animation.rabbit.general"
+        },
+        {
+          "baby": "controller.animation.rabbit.baby"
+        }
+      ],
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": {
+        "texture": "hiddenyears:egg_rabbit_killer"
+      }
+    }
+  }
+}
