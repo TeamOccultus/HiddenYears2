@@ -181,7 +181,7 @@
         "pitch": [0.8, 1.2],
         "volume": 1.0
       },
-      "hiddenyears:sand_creeper": {
+      "hiddenyears:sandcaust_creeper": {
         "events": {
           "death": "mob.creeper.death",
           "fuse": {
@@ -228,7 +228,7 @@
           "celebrate": "mob.evocation_illager.celebrate"
         }
       },
-      "hiddenyears:sand_silverfish": {
+      "hiddenyears:sandcaust_silverfish": {
         "events": {
           "ambient": "mob.silverfish.say",
           "death": "mob.silverfish.kill",
@@ -256,7 +256,7 @@
         "pitch": [0.8, 1.2],
         "volume": 1.0
       },
-      "hiddenyears:sand_spider": {
+      "hiddenyears:sandcaust_spider": {
         "events": {
           "ambient": "mob.spider.say",
           "death": "mob.spider.death",

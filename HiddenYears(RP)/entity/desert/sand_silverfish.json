@@ -1,0 +1,30 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hiddenyears:sandcaust_silverfish",
+      "materials": {
+        "default": "silverfish",
+        "body_layer": "silverfish_layers"
+      },
+      "textures": {
+        "default": "textures/entity/sandcaust_silverfish"
+      },
+      "geometry": {
+        "default": "geometry.silverfish"
+      },
+      "animations": {
+        "move": "animation.silverfish.move"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.silverfish.move"
+        }
+      ],
+      "render_controllers": ["controller.render.silverfish"],
+      "spawn_egg": {
+        "texture": "hiddenyears:egg_sand_sliverfish"
+      }
+    }
+  }
+}

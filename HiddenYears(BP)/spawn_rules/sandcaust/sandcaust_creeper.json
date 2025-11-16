@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "hiddenyears:sand_spider",
+      "identifier": "hiddenyears:sandcaust_creeper",
       "population_control": "monster"
     },
     "conditions": [

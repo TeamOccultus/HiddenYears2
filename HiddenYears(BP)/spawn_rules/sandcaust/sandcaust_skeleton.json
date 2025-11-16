@@ -2,13 +2,12 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "hiddenyears:venomous_spider",
+      "identifier": "hiddenyears:sandcaust_skeleton",
       "population_control": "monster"
     },
     "conditions": [
       {
         "minecraft:spawns_on_surface": {},
-        "minecraft:spawns_underground": {},
         "minecraft:brightness_filter": {
           "min": 0,
           "max": 7,
@@ -20,6 +19,9 @@
         },
         "minecraft:weight": {
           "default": 100
+        },
+        "minecraft:density_limit": {
+          "surface": 5
         },
         "minecraft:biome_filter": {
           "test": "has_biome_tag",
