@@ -176,6 +176,9 @@
     "hiddenyears:daylight_bow_standby": {
       "textures": "textures/items/daylight_bow_standby"
     },
+    "hiddenyears:desert_heart": {
+      "textures": "textures/items/desert_heart"
+    },
     "hiddenyears:diamond_badge": {
       "textures": "textures/items/diamond_badge"
     },

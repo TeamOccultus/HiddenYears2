@@ -112,6 +112,18 @@
     "hiddenyears:originite_block": {
       "textures": "textures/blocks/originite_block"
     },
+    "hiddenyears:rebirth_frame_bottom": {
+      "textures": "textures/blocks/rebirth_frame_bottom"
+    },
+    "hiddenyears:rebirth_frame_side": {
+      "textures": "textures/blocks/rebirth_frame_side"
+    },
+    "hiddenyears:rebirth_frame_top": {
+      "textures": "textures/blocks/rebirth_frame_top"
+    },
+    "hiddenyears:rebirth_frame_top_filled": {
+      "textures": "textures/blocks/rebirth_frame_top_filled"
+    },
     "hiddenyears:refined_rock_block": {
       "textures": "textures/blocks/refined_rock_block"
     },

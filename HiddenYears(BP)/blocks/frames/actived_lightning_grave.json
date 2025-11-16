@@ -44,6 +44,7 @@
       }
     ],
     "components": {
+      "minecraft:loot": "loot_tables/empty.json",
       "minecraft:geometry": {
         "identifier": "geometry.grave"
       },
