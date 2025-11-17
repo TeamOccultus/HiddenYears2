@@ -43,6 +43,18 @@
       {
         "category_name": "items",
         "groups": [
+         {
+            "group_identifier": {
+              "icon": "hiddenyears:crimson_eyes",
+              "name": "hiddenyears:itemGroup.name.boss"
+            },
+            "items": [
+              "hiddenyears:crimson_eyes",
+              "hiddenyears:desert_heart",
+              "hiddenyears:past_statue",
+              "hiddenyears:rebirth_statue"
+            ]
+          },
           {
             "group_identifier": {
               "icon": "hiddenyears:diamond_nugget",
