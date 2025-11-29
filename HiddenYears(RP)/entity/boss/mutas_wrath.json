@@ -27,7 +27,7 @@
       ],
       "render_controllers": ["controller.render.default"],
       "spawn_egg": {
-        "texture": "hiddenyears:egg_mutas_warth"
+        "texture": "hiddenyears:egg_mutas_wrath"
       }
     }
   }

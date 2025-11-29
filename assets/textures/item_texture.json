@@ -5,6 +5,9 @@
     "hiddenyears:ancient_extracts": {
       "textures": "textures/items/ancient_extracts"
     },
+    "hiddenyears:babel_tower_wreckage_sand": {
+      "textures": "textures/items/babel_tower_wreckage_sand"
+    },
     "hiddenyears:blessing_of_isis": {
       "textures": "textures/items/blessing_of_isis"
     },
@@ -226,9 +229,6 @@
     },
     "hiddenyears:drift_sand_key": {
       "textures": "textures/items/drift_sand_key"
-    },
-    "hiddenyears:drift_sand_statue": {
-      "textures": "textures/items/drift_sand_statue"
     },
     "hiddenyears:echo_coin": {
       "textures": "textures/items/echo_coin"
@@ -643,6 +643,9 @@
     "hiddenyears:originite_sword": {
       "textures": "textures/items/originite_sword"
     },
+    "hiddenyears:past_statue": {
+      "textures": "textures/items/past_statue"
+    },
     "hiddenyears:quartz_dust": {
       "textures": "textures/items/quartz_dust"
     },
@@ -657,6 +660,9 @@
     },
     "hiddenyears:raw_steel": {
       "textures": "textures/items/raw_steel"
+    },
+    "hiddenyears:rebirth_statue": {
+      "textures": "textures/items/rebirth_statue"
     },
     "hiddenyears:record_pharaohs": {
       "textures": "textures/items/record_pharaohs"
