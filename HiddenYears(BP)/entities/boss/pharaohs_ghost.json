@@ -16,9 +16,6 @@
       "minecraft:attack": {
         "damage": 5
       },
-      "minecraft:despawn": {
-        "filters": { "test": "is_difficulty", "value": "peaceful" }
-      },
       "minecraft:boss": {
         "should_darken_sky": false,
         "hud_range": 125,
