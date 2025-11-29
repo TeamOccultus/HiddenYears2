@@ -1,0 +1,13 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.pharaohs_ghost.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": ["move"]
+        }
+      }
+    }
+  }
+}

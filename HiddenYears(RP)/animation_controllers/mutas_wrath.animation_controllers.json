@@ -1,0 +1,26 @@
+{
+  "format_version": "1.19.0",
+  "animation_controllers": {
+    "controller.animation.mutas_wrath.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0"
+            }
+          ]
+        },
+        "move": {
+          "animations": ["idle", "move"],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

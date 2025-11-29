@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pharaohs_ghost.move": {
+      "loop": true,
+      "bones": {
+        "leftArm": {
+          "rotation": ["variable.tcos0", 0, 0]
+        },
+        "leftLeg": {
+          "rotation": ["variable.tcos0 * -1.4", -0.1, -0.1]
+        },
+        "rightArm": {
+          "rotation": ["-variable.tcos0", 0, 0]
+        },
+        "rightLeg": {
+          "rotation": ["variable.tcos0 * 1.4", 0.1, 0.1]
+        }
+      }
+    },
+    "animation.pharaohs_ghost.idle": {
+      "loop": true
+    }
+  }
+}
