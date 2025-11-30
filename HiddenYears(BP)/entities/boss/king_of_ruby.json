@@ -40,10 +40,6 @@
         "breathes_water": true,
         "total_supply": 120
       },
-      "minecraft:nameable": {},
-      "minecraft:equipment": {
-        "table": "loot_tables/equipments/king_of_ruby.json"
-      },
       "minecraft:loot": {
         "table": "loot_tables/entities/king_of_ruby.json"
       },
@@ -52,10 +48,17 @@
         "max": 400
       },
       "minecraft:damage_sensor": {
-        "triggers": {
-          "cause": "fall",
-          "deals_damage": "no"
-        }
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          },
+          {
+            "cause": "lightning",
+            "deals_damage": "no"
+          },
+          { "cause": "drowning", "deals_damage": "no" }
+        ]
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [

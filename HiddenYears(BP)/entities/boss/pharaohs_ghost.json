@@ -46,7 +46,6 @@
         "breathes_water": true,
         "total_supply": 120
       },
-      "minecraft:nameable": {},
       "minecraft:loot": {
         "table": "loot_tables/entities/pharaohs_ghost.json"
       },
@@ -55,10 +54,17 @@
         "max": 550
       },
       "minecraft:damage_sensor": {
-        "triggers": {
-          "cause": "fall",
-          "deals_damage": false
-        }
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          },
+          {
+            "cause": "lightning",
+            "deals_damage": "no"
+          },
+          { "cause": "drowning", "deals_damage": "no" }
+        ]
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
