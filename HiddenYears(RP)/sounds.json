@@ -285,9 +285,9 @@
       },
       "hiddenyears:mutas_wrath": {
         "events": {
-          "ambient": "mob.shulker.ambient",
-          "death": "mob.shulker.death",
-          "hurt": "mob.shulker.hurt"
+          "ambient": "mob.mutas_wrath.say",
+          "death": "mob.mutas_wrath.death",
+          "hurt": "mob.mutas_wrath.hurt"
         },
         "pitch": [0.8, 1.2],
         "volume": 1.0
