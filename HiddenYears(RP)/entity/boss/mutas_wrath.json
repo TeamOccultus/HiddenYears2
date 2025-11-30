@@ -16,6 +16,7 @@
         "idle": "animation.mutas_wrath.idle",
         "move": "animation.mutas_wrath.move",
         "none": "animation.mutas_wrath.none",
+        "hide_addition": "animation.mutas_wrath.hide_addition",
         "kahe_skill": "animation.mutas_wrath.kahe_skill",
         "osiris_skill": "animation.mutas_wrath.osiris_skill",
         "muta_skill": "animation.mutas_wrath.muta_skill"

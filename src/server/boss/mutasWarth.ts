@@ -1,14 +1,21 @@
-import { Player, WeatherType, EquipmentSlot } from "@minecraft/server";
-import { BossSkill, RandomEvent, getEquipmentItem, Boss } from "@occultus/api";
+import { Player, WeatherType, EquipmentSlot, system } from "@minecraft/server";
+import {
+  BossSkill,
+  RandomEvent,
+  getEquipmentItem,
+  Boss,
+  Vector3Utils,
+} from "@occultus/api";
 import { listenIsisMonologue } from "../../data/monologues";
 
 const kahe = new BossSkill(
   "kahe",
   200,
   (boss, entities) => {
-    if (boss) boss.playAnimation("animation.mutas_wrath.kahe_skill");
+    boss.playAnimation("animation.mutas_wrath.kahe_skill");
     entities.forEach((entity) => {
       if (!entity.isValid) return;
+      if (entity.matches({ families: ["boss"] })) return;
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
@@ -26,29 +33,6 @@ const osiris = new BossSkill(
   "osiris",
   400,
   (boss, entities) => {
-    if (boss) {
-      boss.playAnimation("animation.mutas_wrath.kahe_skill");
-      boss.dimension.spawnEntity("hiddenyears:mummy", {
-        x: boss.location.x + 2,
-        y: boss.location.y,
-        z: boss.location.z,
-      });
-      boss.dimension.spawnEntity("hiddenyears:mummy", {
-        x: boss.location.x - 2,
-        y: boss.location.y,
-        z: boss.location.z,
-      });
-      boss.dimension.spawnEntity("hiddenyears:drift_sand_bodyguard", {
-        x: boss.location.x,
-        y: boss.location.y,
-        z: boss.location.z + 2,
-      });
-      boss.dimension.spawnEntity("hiddenyears:drift_sand_bodyguard", {
-        x: boss.location.x,
-        y: boss.location.y,
-        z: boss.location.z - 2,
-      });
-    }
     entities.forEach((entity) => {
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
@@ -57,6 +41,28 @@ const osiris = new BossSkill(
         });
       }
     });
+    boss.isSneaking = true;
+    console.warn(boss.isSneaking);
+    boss.playAnimation("animation.mutas_wrath.osiris_skill");
+    system.runTimeout(() => {
+      if (boss.isValid) boss.isSneaking = false;
+    }, 30);
+    boss.dimension.spawnEntity(
+      "hiddenyears:mummy",
+      Vector3Utils.add(boss.location, { x: 4, y: 0, z: 0 })
+    );
+    boss.dimension.spawnEntity(
+      "hiddenyears:mummy",
+      Vector3Utils.add(boss.location, { x: -4, y: 0, z: 0 })
+    );
+    boss.dimension.spawnEntity(
+      "hiddenyears:drift_sand_bodyguard",
+      Vector3Utils.add(boss.location, { x: 0, y: 0, z: 4 })
+    );
+    boss.dimension.spawnEntity(
+      "hiddenyears:drift_sand_bodyguard",
+      Vector3Utils.add(boss.location, { x: 0, y: 0, z: -4 })
+    );
   },
   5
 );
@@ -65,12 +71,11 @@ const isis = new BossSkill(
   "isis",
   800,
   (boss, entities) => {
-    if (boss) {
-      boss.playAnimation("animation.mutas_wrath.kahe_skill");
-      boss.dimension.setWeather(WeatherType.Thunder);
-    }
+    boss.playAnimation("animation.mutas_wrath.kahe_skill");
+    boss.dimension.setWeather(WeatherType.Thunder);
     entities.forEach((entity) => {
       if (!entity.isValid) return;
+      if (entity.matches({ families: ["boss"] })) return;
       if (entity instanceof Player) {
         entity.sendMessage({
           translate: "message.hiddenyears:boss.mutas_wrath.isis",
@@ -89,11 +94,14 @@ const muta = new BossSkill(
   "muta",
   1200,
   (boss, entities) => {
-    if (boss) {
-      boss.playAnimation("animation.mutas_wrath.kahe_skill");
-    }
+    boss.isSneaking = true;
+    boss.playAnimation("animation.mutas_wrath.muta_skill");
+    system.runTimeout(() => {
+      if (boss.isValid) boss.isSneaking = false;
+    }, 85);
     entities.forEach((entity) => {
       if (!entity.isValid) return;
+      if (entity.matches({ families: ["boss"] })) return;
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
@@ -104,16 +112,16 @@ const muta = new BossSkill(
         getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
         "hiddenyears:drift_sand_coronet"
       ) {
-        entity.applyDamage(8);
+        entity.applyDamage(10);
         return;
       }
-      entity.applyDamage(18);
+      entity.applyDamage(20);
     });
   },
   20
 );
 
-export const muatsWarth = new Boss("hiddenyears:mutas_wrath", [
+const muatsWarth = new Boss("hiddenyears:mutas_wrath", [
   kahe,
   osiris,
   isis,
@@ -135,3 +143,5 @@ muatsWarth.onDie((arg) => {
       }
     });
 });
+
+export { muatsWarth };

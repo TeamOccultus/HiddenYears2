@@ -1,24 +1,23 @@
 {
-  "format_version": "1.19.0",
+  "format_version": "1.10.0",
   "animation_controllers": {
     "controller.animation.mutas_wrath.move": {
-      "initial_state": "default",
+      "initial_state": "idle",
       "states": {
-        "default": {
-          "animations": ["idle"],
-          "transitions": [
-            {
-              "move": "query.modified_move_speed > 0"
-            }
-          ]
+        "idle": {
+          "animations": [
+            "idle" , { "hide_addition": "!query.is_sneaking" }
+          ],
+          "transitions": [{ "walking": "q.ground_speed > 1.0" }],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true
         },
-        "move": {
-          "animations": ["idle", "move"],
-          "transitions": [
-            {
-              "default": "query.all_animations_finished"
-            }
-          ]
+        "walking": {
+          "animations": [
+            "move" , { "hide_addition": "!query.is_sneaking" }
+          ],
+          "transitions": [{ "idle": "q.ground_speed < 0.5" }],
+          "blend_transition": 0.4
         }
       }
     }

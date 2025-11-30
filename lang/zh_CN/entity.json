@@ -16,6 +16,8 @@
   "entity.hiddenyears:sandcaust_spider.name": "沙蚀蜘蛛",
   "entity.hiddenyears:sandcaust_silverfish.name": "沙蚀蠹虫",
   "entity.hiddenyears:scorpion.name": "蝎子",
+  "entity.hiddenyears:mutas_wrath.name": "「创世者」的愤怒",
+  "entity.hiddenyears:pharaohs_ghost.name": "法老残影",
   "item.spawn_egg.entity.hiddenyears:ruby_zombie.name": "红宝石僵尸刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_skeleton.name": "红宝石骷髅刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_guardian.name": "红宝石守卫刷怪蛋",
@@ -31,5 +33,7 @@
   "item.spawn_egg.entity.hiddenyears:sandcaust_creeper.name": "沙蚀苦力怕刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:sandcaust_spider.name": "沙蚀蜘蛛刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:sandcaust_silverfish.name": "沙蚀蠹虫刷怪蛋",
-  "item.spawn_egg.entity.hiddenyears:scorpion.name": "蝎子刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:scorpion.name": "蝎子刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:mutas_wrath.name": "「创世者」的愤怒刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:pharaohs_ghost.name": "法老残影刷怪蛋"
 }
