@@ -7,7 +7,7 @@ export function listenIsisMonologue(player: Player) {
     fadeTime: {
       fadeInTime: 1,
       fadeOutTime: 1,
-      holdTime: 11,
+      holdTime: 8,
     },
   });
   player.sendMessage({

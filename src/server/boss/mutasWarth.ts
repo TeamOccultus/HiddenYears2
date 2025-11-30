@@ -127,6 +127,7 @@ const muatsWarth = new Boss("hiddenyears:mutas_wrath", [
   isis,
   muta,
 ]);
+
 muatsWarth.onDie((arg) => {
   const dim = arg.deadEntity.dimension;
   const boss = arg.deadEntity;

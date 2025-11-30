@@ -7,6 +7,8 @@ import { BossServer } from "@occultus/api";
 import { kingOfRuby } from "../boss/kingOfRuby";
 import { pharaohsGhost } from "../boss/pharaohsGhost";
 import { muatsWarth } from "../boss/mutasWarth";
+import { listenIsisMonologue } from "../../data/monologues";
+import { Player } from "@minecraft/server";
 
 export function registryBoss() {
   const server = new BossServer();
