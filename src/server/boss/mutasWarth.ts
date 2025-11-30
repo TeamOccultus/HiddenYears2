@@ -15,7 +15,7 @@ const kahe = new BossSkill(
     boss.playAnimation("animation.mutas_wrath.kahe_skill");
     entities.forEach((entity) => {
       if (!entity.isValid) return;
-      if (entity.matches({ families: ["boss"] })) return;
+      if (entity.matches({ families: ["boss", "mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
@@ -75,7 +75,7 @@ const isis = new BossSkill(
     boss.dimension.setWeather(WeatherType.Thunder);
     entities.forEach((entity) => {
       if (!entity.isValid) return;
-      if (entity.matches({ families: ["boss"] })) return;
+      if (entity.matches({ families: ["boss", "mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.sendMessage({
           translate: "message.hiddenyears:boss.mutas_wrath.isis",
@@ -101,7 +101,7 @@ const muta = new BossSkill(
     }, 85);
     entities.forEach((entity) => {
       if (!entity.isValid) return;
-      if (entity.matches({ families: ["boss"] })) return;
+      if (entity.matches({ families: ["boss", "mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({

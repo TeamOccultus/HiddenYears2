@@ -69,7 +69,8 @@
           "sandcaust",
           "undead",
           "monster",
-          "mob"
+          "mob",
+          "mutas_friend"
         ]
       },
       "minecraft:breathable": {
