@@ -32,7 +32,8 @@
           "pharaohs_ghost",
           "monster",
           "desert",
-          "mob"
+          "mob",
+          "boss"
         ]
       },
       "minecraft:knockback_resistance": {

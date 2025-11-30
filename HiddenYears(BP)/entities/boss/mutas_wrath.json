@@ -30,7 +30,13 @@
         "on_death": "20"
       },
       "minecraft:type_family": {
-        "family": ["mutas_wrath", "monster", "ruby", "mob"]
+        "family": [
+          "immune_desert_debuff",
+          "mutas_wrath",
+          "monster",
+          "mob",
+          "boss"
+        ]
       },
       "minecraft:knockback_resistance": {
         "value": 1.0

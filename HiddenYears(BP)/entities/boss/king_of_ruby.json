@@ -27,7 +27,7 @@
         "on_death": "500"
       },
       "minecraft:type_family": {
-        "family": ["king_of_ruby", "monster", "ruby", "mob"]
+        "family": ["king_of_ruby", "ruby", "mob", "boss"]
       },
       "minecraft:knockback_resistance": {
         "value": 1.0
