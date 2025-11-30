@@ -10,12 +10,13 @@ import { listenIsisMonologue } from "../../data/monologues";
 
 const kahe = new BossSkill(
   "kahe",
-  200,
+  400,
   (boss, entities) => {
     boss.playAnimation("animation.mutas_wrath.kahe_skill");
     entities.forEach((entity) => {
       if (!entity.isValid) return;
-      if (entity.matches({ families: ["boss", "mutas_friend"] })) return;
+      if (entity.matches({ families: ["boss"] })) return;
+      if (entity.matches({ families: ["mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
@@ -26,12 +27,12 @@ const kahe = new BossSkill(
       entity.addEffect("poison", 400);
     });
   },
-  10
+  20
 );
 
 const osiris = new BossSkill(
   "osiris",
-  400,
+  230, //830
   (boss, entities) => {
     entities.forEach((entity) => {
       if (entity instanceof Player) {
@@ -42,40 +43,50 @@ const osiris = new BossSkill(
       }
     });
     boss.isSneaking = true;
-    console.warn(boss.isSneaking);
     boss.playAnimation("animation.mutas_wrath.osiris_skill");
+    system.runTimeout(() => {
+      boss.dimension.spawnEntity(
+        "hiddenyears:mummy",
+        Vector3Utils.add(boss.location, { x: 4, y: 0, z: 0 })
+      );
+      boss.dimension.spawnEntity(
+        "hiddenyears:mummy",
+        Vector3Utils.add(boss.location, { x: -4, y: 0, z: 0 })
+      );
+      boss.dimension.spawnEntity(
+        "hiddenyears:drift_sand_bodyguard",
+        Vector3Utils.add(boss.location, { x: 0, y: 0, z: 4 })
+      );
+      boss.dimension.spawnEntity(
+        "hiddenyears:drift_sand_bodyguard",
+        Vector3Utils.add(boss.location, { x: 0, y: 0, z: -4 })
+      );
+      entities.forEach((entity) => {
+        if (!entity.isValid) return;
+        if (entity.matches({ families: ["boss"] })) return;
+        if (entity.matches({ families: ["mutas_friend"] })) return;
+        try {
+          entity.applyKnockback({ x: 0, z: -1 }, 1);
+        } catch (error) {}
+      });
+    }, 14);
     system.runTimeout(() => {
       if (boss.isValid) boss.isSneaking = false;
     }, 30);
-    boss.dimension.spawnEntity(
-      "hiddenyears:mummy",
-      Vector3Utils.add(boss.location, { x: 4, y: 0, z: 0 })
-    );
-    boss.dimension.spawnEntity(
-      "hiddenyears:mummy",
-      Vector3Utils.add(boss.location, { x: -4, y: 0, z: 0 })
-    );
-    boss.dimension.spawnEntity(
-      "hiddenyears:drift_sand_bodyguard",
-      Vector3Utils.add(boss.location, { x: 0, y: 0, z: 4 })
-    );
-    boss.dimension.spawnEntity(
-      "hiddenyears:drift_sand_bodyguard",
-      Vector3Utils.add(boss.location, { x: 0, y: 0, z: -4 })
-    );
   },
-  5
+  20
 );
 
 const isis = new BossSkill(
   "isis",
-  800,
+  1000,
   (boss, entities) => {
     boss.playAnimation("animation.mutas_wrath.kahe_skill");
     boss.dimension.setWeather(WeatherType.Thunder);
     entities.forEach((entity) => {
       if (!entity.isValid) return;
-      if (entity.matches({ families: ["boss", "mutas_friend"] })) return;
+      if (entity.matches({ families: ["boss"] })) return;
+      if (entity.matches({ families: ["mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.sendMessage({
           translate: "message.hiddenyears:boss.mutas_wrath.isis",
@@ -87,21 +98,19 @@ const isis = new BossSkill(
       }).call();
     });
   },
-  10
+  20
 );
 
 const muta = new BossSkill(
   "muta",
-  1200,
+  1285,
   (boss, entities) => {
     boss.isSneaking = true;
     boss.playAnimation("animation.mutas_wrath.muta_skill");
-    system.runTimeout(() => {
-      if (boss.isValid) boss.isSneaking = false;
-    }, 85);
     entities.forEach((entity) => {
       if (!entity.isValid) return;
-      if (entity.matches({ families: ["boss", "mutas_friend"] })) return;
+      if (entity.matches({ families: ["boss"] })) return;
+      if (entity.matches({ families: ["mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
@@ -117,8 +126,11 @@ const muta = new BossSkill(
       }
       entity.applyDamage(20);
     });
+    system.runTimeout(() => {
+      if (boss.isValid) boss.isSneaking = false;
+    }, 85);
   },
-  20
+  25
 );
 
 const muatsWarth = new Boss("hiddenyears:mutas_wrath", [
