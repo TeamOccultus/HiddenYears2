@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.100",
+  "format_version": "1.21.130",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:deepslate_silver_ore",
