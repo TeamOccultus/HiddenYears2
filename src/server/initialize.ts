@@ -20,6 +20,7 @@ import { registryMessage } from "./msg";
 import { RubyEvents } from "./events/RubyEvents";
 import { registryBoss } from "./registry/boss";
 import { registryEffects } from "./registry/effects";
+import { registryJob } from "./registry/job";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -44,5 +45,6 @@ export function initialize() {
   registryTutorial();
   registryMessage();
   registryBoss();
+  registryJob();
   RubyEvents.subscribe();
 }

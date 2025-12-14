@@ -54,5 +54,20 @@
   "ui.suffering_sword": "痛苦之剑",
   "ui.babel_tower_wreckage_sand": "「列巴部·否热沃忒」之碎片·赤沙",
   "ui.tutorial": "教程",
-  "ui.tutorial.unlock": "教程已解锁："
+  "ui.tutorial.unlock": "教程已解锁：",
+  "ui.job": "[职业]",
+  "ui.job.get": "你已获得职业：",
+  "ui.job.get.fail": "你已获得某一职业，无法获得其他职业",
+  "ui.job.upgrade": "升级",
+  "ui.job.upgrade.tooltip": "升级需要消耗物品和等级",
+  "ui.job.transform": "转职",
+  "ui.job.transform.none": "无",
+  "ui.job.submit": "确认",
+  "ui.job.notice": "无职业可用",
+  "ui.job.upgrade.result": "尝试了 %1 次升级，成功了 %2 次",
+  "ui.job.notice.body": "你当前没有获得任何职业，请先获得职业再打开此界面",
+  "ui.job.transform.tooltip":"选中想要转职的职业后提交即可转职",
+  "ui.job.recentLevel": "当前等级： §6%s§r",
+  "ui.job.maxLevel": "最高等级： §6%s§r",
+  "ui.job.canTransformTo": "可以转职为："
 }

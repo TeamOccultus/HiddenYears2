@@ -26,6 +26,7 @@ import { BossSpawnerComponent } from "../components/BossSpawnerComponent/Compone
 import { HiddenEffectFoodComponent } from "../components/HiddenEffectFoodComponent/Component";
 import { BlessingComponent } from "../components/BlessingComponent";
 import { StaffComponent } from "../components/StaffComponent/Component";
+import { JobOfferComponent } from "../components/JobOfferComponent/Component";
 
 /**
  * 注册自定义组件
@@ -41,11 +42,12 @@ export function registryComponents() {
   new ExpFoodComponent("hiddenyears:exp_food");
   new CoinComponent("hiddenyears:coin");
   new VaultComponent("hiddenyears:vault");
-  new BossSpawnerComponent("hiddenyears:boss_spawner")
+  new BossSpawnerComponent("hiddenyears:boss_spawner");
   new FrameActiverComponent("hiddenyears:frame_activer");
   new HiddenEffectFoodComponent("hiddenyears:hidden_effect_food");
   new BlessingComponent("hiddenyears:blessing_of_isis");
   new StaffComponent("hiddenyears:staff");
+  new JobOfferComponent("hiddenyears:job_offer");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

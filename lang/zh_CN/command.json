@@ -2,5 +2,6 @@
   "command.artifact.description": "打开《隐藏之年²：天边的迦万涅尔》饰品面板",
   "command.profile.description": "打开《隐藏之年²：天边的迦万涅尔》综合面板",
   "command.task.description": "打开《隐藏之年²：天边的迦万涅尔》任务面板",
-  "command.credits.description": "显示《隐藏之年²：天边的迦万涅尔》鸣谢名单"
+  "command.credits.description": "显示《隐藏之年²：天边的迦万涅尔》鸣谢名单",
+  "command.job.description": "打开《隐藏之年²：天边的迦万涅尔》职业面板"
 }

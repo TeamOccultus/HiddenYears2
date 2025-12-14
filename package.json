@@ -12,9 +12,9 @@
   "author": "CTN Studios",
   "license": "HY-OSS",
   "dependencies": {
-    "@minecraft/server": "2.1.0",
+    "@minecraft/server": "2.4.0",
     "@minecraft/server-ui": "2.0.0",
-    "@occultus/api": "^0.21.1",
+    "@occultus/api": "^0.22.0-alpha.6",
     "@occultus/core": "^0.18.4",
     "@starock/cli": "^0.6.0",
     "typescript": "^5.8.3"
