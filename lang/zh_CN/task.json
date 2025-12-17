@@ -50,7 +50,7 @@
   "task.sledgehammer": "§d[记忆中所不存在的]§r 战狂的武器",
   "task.sledgehammer.desc": "看起来和矿工的重锤相差不大，但削减了整体重量适得其可以在战斗中挥出",
   // 序章·第三幕
-  "task.prolugue.act_3": "§d序章·第三幕§r 无尽的旅程",
+  "task.prolugue.act_3": "§d序章·第三幕§r 无尽之歌",
   "task.prolugue.act_3.desc_1": "旅者寻遍四海，找寻更加珍贵的材料、探索世界的奥秘——",
   "task.prolugue.act_3.desc_2": "但这仅仅是一个开始",
   "task.silver": "§d[珍贵材料]§r 奥秘之银",
@@ -96,7 +96,7 @@
   "task.ender_dragon.desc_1": "当勇者手持传说之剑击败魔龙的那一刻，天也倾颓，地也崩裂。",
   "task.ender_dragon.desc_2": "这是这片大陆上冒险家的旅途的终点，却是你旅程真正的起点——此刻，起与终相交汇。",
   // 第一章·第一幕
-  "task.chapter_1.act_1": "§d第一章·第一幕§r 力量与鲜血之歌",
+  "task.chapter_1.act_1": "§d第一章·第一幕§r 力量与鲜血之舞",
   "task.chapter_1.act_1.desc": "当血月升起之时，被遗忘的传说将再次苏醒……",
   "task.summary_of_elven_history": "§d报幕：§r《精灵史摘要》",
   "task.summary_of_elven_history.desc": "在地下探险时，发现了一卷奇特的羊皮纸……",
@@ -135,7 +135,7 @@
   "task.world_end_fruit.desc_2": "动乱的年代中，灾厄的使者远渡重洋抵达此方。",
   "task.world_end_fruit.desc_3": "但眼中所见，只有鲜血染红了天空与大地。",
   "task.world_end_fruit.tips": "用红宝石和苹果合成红宝石苹果",
-  "task.song_of_power_and_blood": "力量与鲜血之歌",
+  "task.song_of_power_and_blood": "力量与鲜血之舞",
   "task.song_of_power_and_blood.desc_1": "眷从发疯似的将主人的尸首运回倒塌的宫殿，但那里已不是它们的家。",
   "task.song_of_power_and_blood.desc_2": "故事的最后，它们匆匆地将尸首埋藏于低矮的教堂中，迎接自己的灭亡。",
   "task.song_of_power_and_blood.tips": "「血色的教堂」中，寻找「雷光的末冢」，使用血色的瞥视将其激活，即可召唤红宝石之王",
