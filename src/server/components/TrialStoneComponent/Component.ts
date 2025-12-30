@@ -1,5 +1,6 @@
 import { system } from "@minecraft/server";
 import { TrialStoneParams } from "./Params";
+import { TrialStoneEvents } from "../../events/TrialStoneEvent";
 
 
 export class TrialStoneComponent {
@@ -9,7 +10,7 @@ export class TrialStoneComponent {
       block.registerCustomComponent(componentName, {
         onPlayerInteract(arg0, arg1) {
           const p = arg1.params as TrialStoneParams;
-          
+          TrialStoneEvents.onPlayerInteract(arg0, p);
         },
       });
     });

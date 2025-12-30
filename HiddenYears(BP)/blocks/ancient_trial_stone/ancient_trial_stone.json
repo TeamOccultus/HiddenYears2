@@ -40,6 +40,12 @@
       }
     ],
     "components": {
+      "hiddenyears:trial_stone": {
+        "table": "gameplay/ancient_trial_stone",
+        "state": "waiting_for_active",
+        "next_state": "hiddenyears:ancient_trial_stone_active",
+        "sound_event": "trial_spawner.spawn_mob"
+      },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": false,
@@ -60,8 +66,7 @@
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
-      "minecraft:map_color": "#999999",
-      "tag:metal": {}
+      "minecraft:map_color": "#999999"
     }
   }
 }
