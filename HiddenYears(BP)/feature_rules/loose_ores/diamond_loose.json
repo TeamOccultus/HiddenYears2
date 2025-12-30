@@ -25,7 +25,7 @@
       ]
     },
     "distribution": {
-      "iterations": 15,
+      "iterations": 8,
       "coordinate_eval_order": "zyx",
       "x": {
         "distribution": "uniform",
@@ -33,7 +33,7 @@
       },
       "y": {
         "distribution": "uniform",
-        "extent": [0, 35]
+        "extent": [0, 20]
       },
       "z": {
         "distribution": "uniform",
