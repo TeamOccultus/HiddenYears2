@@ -29,7 +29,6 @@
         "move": "animation.humanoid.move",
         "riding.arms": "animation.humanoid.riding.arms",
         "riding.legs": "animation.humanoid.riding.legs",
-        "holding": "animation.humanoid.holding",
         "attack.rotations": "animation.humanoid.attack.rotations",
         "bob": "animation.humanoid.bob",
         "crossbow_hold": "animation.pillager.crossbow.hold",
