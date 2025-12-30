@@ -10,7 +10,7 @@
     "components": {
       "minecraft:icon": "hiddenyears:coal_dust",
       "minecraft:fuel": {
-        "duration": 3
+        "duration": 6
       },
       "minecraft:tags": {
         "tags": ["hiddenyears:dust"]
