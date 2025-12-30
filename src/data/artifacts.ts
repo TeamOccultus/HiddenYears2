@@ -180,9 +180,9 @@ herdersHat.onHitEntity((arg) => {
   }).call();
 });
 
-const farmerHat = new Artifact(
-  "hiddenyears:farmer_hat",
-  { translate: "item.hiddenyears:farmer_hat" },
+const farmersHat = new Artifact(
+  "hiddenyears:farmers_hat",
+  { translate: "item.hiddenyears:farmers_hat" },
   {
     rawtext: [
       { translate: "item.hiddenyears:farmer_hat.story" },
@@ -191,9 +191,9 @@ const farmerHat = new Artifact(
     ],
   },
   head,
-  "textures/items/farmer_hat"
+  "textures/items/farmers_hat"
 );
-farmerHat.onMineBlock((arg) => {
+farmersHat.onMineBlock((arg) => {
   const currectId = arg.brokenBlockPermutation.type.id;
   if (!crop.has(currectId)) return;
   new RandomEvent(0.3, () => {
@@ -579,7 +579,7 @@ export const artifacts = [
   sparklingMask,
   soldiersHelmet,
   herdersHat,
-  farmerHat,
+  farmersHat,
   invisibleCape,
   thornsCape,
   fireCape,
