@@ -27,6 +27,7 @@ import { HiddenEffectFoodComponent } from "../components/HiddenEffectFoodCompone
 import { BlessingComponent } from "../components/BlessingComponent";
 import { StaffComponent } from "../components/StaffComponent/Component";
 import { JobOfferComponent } from "../components/JobOfferComponent/Component";
+import { TrialStoneComponent } from "../components/TrialStoneComponent/Component";
 
 /**
  * 注册自定义组件
@@ -48,6 +49,7 @@ export function registryComponents() {
   new BlessingComponent("hiddenyears:blessing_of_isis");
   new StaffComponent("hiddenyears:staff");
   new JobOfferComponent("hiddenyears:job_offer");
+  new TrialStoneComponent("hiddenyears:trial_stone");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

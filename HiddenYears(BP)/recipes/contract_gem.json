@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:contract_gem"
+    },
+    "tags": ["alchemy_table", "crafting_table"],
+    "ingredients": [{ "item": "hiddenyears:contract_dust", "count": 9 }],
+    "unlock": [{ "item": "hiddenyears:contract_dust" }],
+    "result": {
+      "item": "hiddenyears:contract_gem"
+    }
+  }
+}

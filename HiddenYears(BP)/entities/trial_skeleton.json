@@ -97,7 +97,7 @@
         ]
       },
       "minecraft:loot": {
-        "table": "loot_tables/entities/trial_skeleton.json"
+        "table": "loot_tables/entities/trial_monster.json"
       },
       "minecraft:movement": {
         "value": 0.25
@@ -138,6 +138,7 @@
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 1,
+        "scan_interval": 15,
         "entity_types": [
           {
             "filters": {
