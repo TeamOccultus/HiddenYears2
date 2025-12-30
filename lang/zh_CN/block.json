@@ -47,5 +47,8 @@
   "tile.hiddenyears:lightning_grave.name": "鸣雷的坟冢",
   "tile.hiddenyears:lightning_treasure.name": "雷光秘宝",
   "tile.hiddenyears:drift_sand_cabinet.name": "流沙之柜",
-  "tile.hiddenyears:rebirth_frame.name": "回生框架"
+  "tile.hiddenyears:rebirth_frame.name": "回生框架",
+  "tile.hiddenyears:ancient_trial_stone.name": "古遗的试炼石",
+  "tile.hiddenyears:ancient_trial_stone_active.name": "古遗的试炼石·已激活",
+  "tile.hiddenyears:ancient_trial_stone_done.name": "古遗的试炼石·熄灭"
 }

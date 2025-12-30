@@ -74,6 +74,12 @@
     "hiddenyears:coal_nugget": {
       "textures": "textures/items/coal_nugget"
     },
+    "hiddenyears:contract_dust": {
+      "textures": "textures/items/contract_dust"
+    },
+    "hiddenyears:contract_gem": {
+      "textures": "textures/items/contract_gem"
+    },
     "hiddenyears:cooling_herbtea": {
       "textures": "textures/items/cooling_herbtea"
     },

@@ -28,6 +28,18 @@
     "hiddenyears:ancient_suspicious_sand": {
       "textures": "textures/blocks/ancient_suspicious_sand"
     },
+    "hiddenyears:ancient_trial_stone_done": {
+      "textures": "textures/blocks/ancient_trial_stone_done"
+    },
+    "hiddenyears:ancient_trial_stone_side": {
+      "textures": "textures/blocks/ancient_trial_stone_side"
+    },
+    "hiddenyears:ancient_trial_stone_top": {
+      "textures": "textures/blocks/ancient_trial_stone_top"
+    },
+    "hiddenyears:ancient_trial_stone_top_active": {
+      "textures": "textures/blocks/ancient_trial_stone_top_active"
+    },
     "hiddenyears:bowyers_bench": {
       "textures": "textures/blocks/bowyers_bench"
     },
