@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:originite_ingot"
+    },
+    "tags": ["alchemy_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:soul_of_fear"
+      },
+      {
+        "item": "minecraft:netherite_scrap",
+        "count": 1
+      },
+      {
+        "item": "hiddenyears:ancient_extracts",
+        "count": 1
+      },
+      {
+        "item": "hiddenyears:magic_dust",
+        "count": 3
+      },
+      {
+        "item": "minecraft:gold_ingot",
+        "count": 2
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:soul_of_fear"
+      },
+      {
+        "item": "minecraft:netherite_scrap"
+      },
+      {
+        "item": "hiddenyears:ancient_extracts"
+      },
+      {
+        "item": "hiddenyears:magic_dust"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:originite_ingot"
+    }
+  }
+}
