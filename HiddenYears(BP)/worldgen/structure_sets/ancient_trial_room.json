@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:ancient_trial_room"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 14567,
+      "separation": 2,
+      "spacing": 5,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:ancient_trial_room",
+        "weight": 1
+      }
+    ]
+  }
+}

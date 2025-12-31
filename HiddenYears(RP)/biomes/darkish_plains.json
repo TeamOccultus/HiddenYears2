@@ -1,6 +1,6 @@
 {
   //请把我放在RP/biomes文件夹中
-  "format_version": "1.21.100", //最低适配版本
+  "format_version": "1.21.120", //最低适配版本
   "minecraft:client_biome": {
     "description": {
       "identifier": "hiddenyears:darkish_plains" //你的自定义生物群系的ID，不用填命名空间前缀
