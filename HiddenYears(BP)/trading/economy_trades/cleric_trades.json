@@ -1,0 +1,474 @@
+{
+  "tiers": [
+    {
+      "total_exp_required": 0,
+      "groups": [
+        /*{
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:letter_9", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 2,
+              "reward_exp": true
+            }
+          ]
+        },*/
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "rotten_flesh",
+                  "quantity": 16,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:gold_coin", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                { "item": "redstone", "quantity": 1, "price_multiplier": 0.05 }
+              ],
+              "gives": [{ "item": "hiddenyears:gold_coin", "quantity": 2 }],
+              "trader_exp": 1,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 16,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "ghast_tear", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "lapis_lazuli", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 6,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "glistering_melon_slice", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 6,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "nether_wart", "quantity": 5 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 10,
+      "groups": [
+        {
+          "num_to_select": 3,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "spider_eye", "quantity": 5 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "fermented_spider_eye", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 25,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "prismarine_crystals", "quantity": 2 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 35,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "prismarine_shard", "quantity": 2 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "blaze_powder", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "blaze_rod", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "glowstone", "quantity": 12 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 70,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "rabbit_foot",
+                  "quantity": 14,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:gold_coin", "quantity": 1 }],
+              "trader_exp": 20,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 3,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "experience_bottle", "quantity": 5 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 17,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "ender_eye", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 20,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "ender_pearl", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 150,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                { "item": "quartz", "quantity": 4, "price_multiplier": 0.05 }
+              ],
+              "gives": [{ "item": "hiddenyears:gold_coin", "quantity": 1 }],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "glass_bottle",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:copper_coin", "quantity": 1 }],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 2,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "comparator", "quantity": 1 }],
+              "trader_exp": 15,
+              "max_uses": 12,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "repeater", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "slime", "quantity": 9 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "piston", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "sticky_piston", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "total_exp_required": 250,
+      "groups": [
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "nether_wart",
+                  "quantity": 1,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:gold_coin", "quantity": 6 }],
+              "trader_exp": 30,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 3,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 3,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "daylight_detector", "quantity": 1 }],
+              "trader_exp": 15,
+              "max_uses": 12,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "sculk_sensor", "quantity": 1 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "dispenser", "quantity": 2 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "dropper", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [{ "item": "observer", "quantity": 3 }],
+              "trader_exp": 2,
+              "max_uses": 16,
+              "reward_exp": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
