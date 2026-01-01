@@ -12,7 +12,7 @@
         "default": "textures/models/armor/originite_2"
       },
       "geometry": {
-        "default": "geometry.originite_armor.leggings"
+        "default": "geometry.player.armor.leggings"
       },
       "scripts": {
         "parent_setup": "variable.leg_layer_visible = 0.0;"
