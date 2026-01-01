@@ -2,14 +2,14 @@
   "format_version": "1.21.100",
   "minecraft:recipe_furnace": {
     "description": {
-      "identifier": "hiddenyears:netherrack_to_refined_rock"
+      "identifier": "minecraft:furnace_netherrack"
     },
     "input": "minecraft:netherrack",
-    "output": "hiddenyears:refined_rock_ingot",
-    "tags": ["blast_furnace"],
+    "output": "minecraft:netherbrick",
+    "tags": ["furnace"],
     "unlock": [
       {
-        "item": "hiddenyears:refined_rock_ingot"
+        "item": "minecraft:netherbrick"
       },
       {
         "item": "minecraft:netherrack"
