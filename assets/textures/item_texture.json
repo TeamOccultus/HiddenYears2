@@ -697,6 +697,12 @@
     "hiddenyears:refined_rock_axe": {
       "textures": "textures/items/refined_rock_axe"
     },
+    "hiddenyears:refined_rock_boots": {
+      "textures": "textures/items/refined_rock_boots"
+    },
+    "hiddenyears:refined_rock_chestplate": {
+      "textures": "textures/items/refined_rock_chestplate"
+    },
     "hiddenyears:refined_rock_dagger": {
       "textures": "textures/items/refined_rock_dagger"
     },
@@ -706,11 +712,17 @@
     "hiddenyears:refined_rock_hammer": {
       "textures": "textures/items/refined_rock_hammer"
     },
+    "hiddenyears:refined_rock_helmet": {
+      "textures": "textures/items/refined_rock_helmet"
+    },
     "hiddenyears:refined_rock_hoe": {
       "textures": "textures/items/refined_rock_hoe"
     },
     "hiddenyears:refined_rock_ingot": {
       "textures": "textures/items/refined_rock_ingot"
+    },
+    "hiddenyears:refined_rock_leggings": {
+      "textures": "textures/items/refined_rock_leggings"
     },
     "hiddenyears:refined_rock_nugget": {
       "textures": "textures/items/refined_rock_nugget"

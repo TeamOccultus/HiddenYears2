@@ -276,5 +276,9 @@
   "item.hiddenyears:frigid_steel_helmet": "寒钢头盔",
   "item.hiddenyears:frigid_steel_chestplate": "寒钢胸甲",
   "item.hiddenyears:frigid_steel_leggings": "寒钢护腿",
-  "item.hiddenyears:frigid_steel_boots": "寒钢靴子"
+  "item.hiddenyears:frigid_steel_boots": "寒钢靴子",
+  "item.hiddenyears:refined_rock_helmet": "精炼岩头盔",
+  "item.hiddenyears:refined_rock_chestplate": "精炼岩胸甲",
+  "item.hiddenyears:refined_rock_leggings": "精炼岩护腿",
+  "item.hiddenyears:refined_rock_boots": "精炼岩靴子"
 }
