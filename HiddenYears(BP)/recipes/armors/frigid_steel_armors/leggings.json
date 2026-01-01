@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:frigid_steel_leggings"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XXX", "X X", "X X"],
+    "key": {
+      "X": {
+        "item": "hiddenyears:frigid_steel_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:frigid_steel_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:frigid_steel_leggings"
+    }
+  }
+}

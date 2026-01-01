@@ -272,5 +272,9 @@
   "item.hiddenyears:crystal_helmet": "魔晶头盔",
   "item.hiddenyears:crystal_chestplate": "魔晶胸甲",
   "item.hiddenyears:crystal_leggings": "魔晶护腿",
-  "item.hiddenyears:crystal_boots": "魔晶靴子"
+  "item.hiddenyears:crystal_boots": "魔晶靴子",
+  "item.hiddenyears:frigid_steel_helmet": "寒钢头盔",
+  "item.hiddenyears:frigid_steel_chestplate": "寒钢胸甲",
+  "item.hiddenyears:frigid_steel_leggings": "寒钢护腿",
+  "item.hiddenyears:frigid_steel_boots": "寒钢靴子"
 }
