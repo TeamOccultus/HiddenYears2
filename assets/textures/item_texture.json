@@ -802,6 +802,12 @@
     "hiddenyears:silver_axe": {
       "textures": "textures/items/silver_axe"
     },
+    "hiddenyears:silver_boots": {
+      "textures": "textures/items/silver_boots"
+    },
+    "hiddenyears:silver_chestplate": {
+      "textures": "textures/items/silver_chestplate"
+    },
     "hiddenyears:silver_dagger": {
       "textures": "textures/items/silver_dagger"
     },
@@ -811,11 +817,17 @@
     "hiddenyears:silver_hammer": {
       "textures": "textures/items/silver_hammer"
     },
+    "hiddenyears:silver_helmet": {
+      "textures": "textures/items/silver_helmet"
+    },
     "hiddenyears:silver_hoe": {
       "textures": "textures/items/silver_hoe"
     },
     "hiddenyears:silver_ingot": {
       "textures": "textures/items/silver_ingot"
+    },
+    "hiddenyears:silver_leggings": {
+      "textures": "textures/items/silver_leggings"
     },
     "hiddenyears:silver_nugget": {
       "textures": "textures/items/silver_nugget"

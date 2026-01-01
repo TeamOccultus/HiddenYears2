@@ -280,5 +280,9 @@
   "item.hiddenyears:refined_rock_helmet": "精炼岩头盔",
   "item.hiddenyears:refined_rock_chestplate": "精炼岩胸甲",
   "item.hiddenyears:refined_rock_leggings": "精炼岩护腿",
-  "item.hiddenyears:refined_rock_boots": "精炼岩靴子"
+  "item.hiddenyears:refined_rock_boots": "精炼岩靴子",
+  "item.hiddenyears:silver_helmet": "秘银头盔",
+  "item.hiddenyears:silver_chestplate": "秘银胸甲",
+  "item.hiddenyears:silver_leggings": "秘银护腿",
+  "item.hiddenyears:silver_boots": "秘银靴子"
 }
