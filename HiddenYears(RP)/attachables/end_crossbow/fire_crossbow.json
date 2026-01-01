@@ -37,7 +37,7 @@
         ]
       },
       "render_controllers": [
-        "controller.render.crossbow"
+        "controller.render.crossbows"
       ]
     }
   }

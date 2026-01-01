@@ -36,7 +36,7 @@
           }
         ]
       },
-      "render_controllers": ["controller.render.bow"]
+      "render_controllers": ["controller.render.bows"]
     }
   }
 }
