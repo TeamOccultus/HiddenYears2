@@ -865,6 +865,12 @@
     "hiddenyears:sparkling_gold_axe": {
       "textures": "textures/items/sparkling_gold_axe"
     },
+    "hiddenyears:sparkling_gold_boots": {
+      "textures": "textures/items/sparkling_gold_boots"
+    },
+    "hiddenyears:sparkling_gold_chestplate": {
+      "textures": "textures/items/sparkling_gold_chestplate"
+    },
     "hiddenyears:sparkling_gold_dagger": {
       "textures": "textures/items/sparkling_gold_dagger"
     },
@@ -874,11 +880,17 @@
     "hiddenyears:sparkling_gold_hammer": {
       "textures": "textures/items/sparkling_gold_hammer"
     },
+    "hiddenyears:sparkling_gold_helmet": {
+      "textures": "textures/items/sparkling_gold_helmet"
+    },
     "hiddenyears:sparkling_gold_hoe": {
       "textures": "textures/items/sparkling_gold_hoe"
     },
     "hiddenyears:sparkling_gold_ingot": {
       "textures": "textures/items/sparkling_gold_ingot"
+    },
+    "hiddenyears:sparkling_gold_leggings": {
+      "textures": "textures/items/sparkling_gold_leggings"
     },
     "hiddenyears:sparkling_gold_nugget": {
       "textures": "textures/items/sparkling_gold_nugget"
