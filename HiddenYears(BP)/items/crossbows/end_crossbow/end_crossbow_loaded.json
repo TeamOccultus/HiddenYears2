@@ -29,7 +29,7 @@
       },
       "minecraft:projectile": {
         "minimum_critical_power": 0.1,
-        "projectile_entity": "hiddenyears:end_arrow"
+        "projectile_entity": "minecraft:dragon_fireball"
       },
       "minecraft:use_modifiers": {
         "movement_modifier": 1,
