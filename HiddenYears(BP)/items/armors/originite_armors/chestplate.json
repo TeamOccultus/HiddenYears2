@@ -22,6 +22,9 @@
         "slot": "slot.armor.chest",
         "protection": 8
       },
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:repairable": {
         "repair_items": [
           {

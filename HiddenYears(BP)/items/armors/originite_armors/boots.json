@@ -22,6 +22,9 @@
         "slot": "slot.armor.feet",
         "protection": 3
       },
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:repairable": {
         "repair_items": [
           {
