@@ -38,7 +38,8 @@
         "bow_and_arrow": "animation.humanoid.bow_and_arrow",
         "swimming": "animation.zombie.swimming",
         "use_item_progress": "animation.humanoid.use_item_progress",
-        "skeleton_attack": "animation.skeleton.attack"
+        "skeleton_attack": "animation.skeleton.attack",
+        "riding.body": "animation.humanoid.riding.body"
       },
       "animation_controllers": [
         { "look_at_target": "controller.animation.humanoid.look_at_target" },
