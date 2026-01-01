@@ -7,13 +7,10 @@
     "heightmap_projection": "ocean_floor",
     "max_depth": 5,
     "start_height": {
-      "max": {
+      "type": "constant",
+      "value": {
         "absolute": -20
-      },
-      "min": {
-        "absolute": -20
-      },
-      "type": "uniform"
+      }
     },
     "start_pool": "hiddenyears:ruby_room",
     "step": "underground_structures",
