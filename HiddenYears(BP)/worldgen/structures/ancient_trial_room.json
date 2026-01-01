@@ -7,13 +7,13 @@
     "heightmap_projection": "ocean_floor",
     "max_depth": 5,
     "start_height": {
-      "max": {
-        "absolute": -40
-      },
+      "type": "uniform",
       "min": {
-        "absolute": -20
+        "below_top": 250
       },
-      "type": "uniform"
+      "max": {
+        "below_top": 200
+      }
     },
     "start_pool": "hiddenyears:ancient_trial_room",
     "step": "underground_structures",

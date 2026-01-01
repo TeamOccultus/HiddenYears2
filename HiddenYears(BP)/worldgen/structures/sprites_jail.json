@@ -7,13 +7,13 @@
     "heightmap_projection": "ocean_floor",
     "max_depth": 5,
     "start_height": {
-      "max": {
-        "absolute": -10
-      },
+      "type": "uniform",
       "min": {
-        "absolute": -35
+        "below_top": 250
       },
-      "type": "uniform"
+      "max": {
+        "below_top": 200
+      }
     },
     "start_pool": "hiddenyears:sprites_jail_main",
     "step": "underground_structures",
