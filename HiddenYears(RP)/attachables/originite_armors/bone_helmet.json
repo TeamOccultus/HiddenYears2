@@ -8,11 +8,11 @@
         "enchanted": "armor_enchanted"
       },
       "textures": {
-        "default": "textures/models/armor/originite_1",
+        "default": "textures/models/armor/originite_3",
         "enchanted": "textures/misc/enchanted_item_glint"
       },
       "geometry": {
-        "default": "geometry.player.custom_armor.originite.helmet"
+        "default": "geometry.originite_helmet"
       },
       "scripts": {
         "parent_setup": "variable.chest_layer_visible = 0.0;"

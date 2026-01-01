@@ -392,6 +392,18 @@
     "hiddenyears:fire_crossbow_standby": {
       "textures": "textures/items/fire_crossbow_standby"
     },
+    "hiddenyears:frigid_steel_boots": {
+      "textures": "textures/items/frigid_steel_boots"
+    },
+    "hiddenyears:frigid_steel_chestplate": {
+      "textures": "textures/items/frigid_steel_chestplate"
+    },
+    "hiddenyears:frigid_steel_helmet": {
+      "textures": "textures/items/frigid_steel_helmet"
+    },
+    "hiddenyears:frigid_steel_leggings": {
+      "textures": "textures/items/frigid_steel_leggings"
+    },
     "hiddenyears:gluttonous_runes": {
       "textures": "textures/items/gluttonous_runes"
     },
