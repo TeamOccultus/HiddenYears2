@@ -34,7 +34,7 @@
           }
         ]
       },
-      "render_controllers": ["controller.render.crossbows"]
+      "render_controllers": ["controller.render.crossbow"]
     }
   }
 }
