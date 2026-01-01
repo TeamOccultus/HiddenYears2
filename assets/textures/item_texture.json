@@ -116,6 +116,12 @@
     "hiddenyears:crystal_axe": {
       "textures": "textures/items/crystal_axe"
     },
+    "hiddenyears:crystal_boots": {
+      "textures": "textures/items/crystal_boots"
+    },
+    "hiddenyears:crystal_chestplate": {
+      "textures": "textures/items/crystal_chestplate"
+    },
     "hiddenyears:crystal_dagger": {
       "textures": "textures/items/crystal_dagger"
     },
@@ -140,11 +146,17 @@
     "hiddenyears:crystal_hammer": {
       "textures": "textures/items/crystal_hammer"
     },
+    "hiddenyears:crystal_helmet": {
+      "textures": "textures/items/crystal_helmet"
+    },
     "hiddenyears:crystal_hoe": {
       "textures": "textures/items/crystal_hoe"
     },
     "hiddenyears:crystal_ingot": {
       "textures": "textures/items/crystal_ingot"
+    },
+    "hiddenyears:crystal_leggings": {
+      "textures": "textures/items/crystal_leggings"
     },
     "hiddenyears:crystal_nugget": {
       "textures": "textures/items/crystal_nugget"

@@ -268,5 +268,9 @@
   "item.hiddenyears:rebirth_statue": "回生之符",
   "item.hiddenyears:babel_tower_wreckage_sand": "「列巴部·否热沃忒」之碎片·赤沙",
   "item.hiddenyears:contract_gem": "契约晶石",
-  "item.hiddenyears:contract_dust": "契约粉末"
+  "item.hiddenyears:contract_dust": "契约粉末",
+  "item.hiddenyears:crystal_helmet": "魔晶头盔",
+  "item.hiddenyears:crystal_chestplate": "魔晶胸甲",
+  "item.hiddenyears:crystal_leggings": "魔晶护腿",
+  "item.hiddenyears:crystal_boots": "魔晶靴子"
 }

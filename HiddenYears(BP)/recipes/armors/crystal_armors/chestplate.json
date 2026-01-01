@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:crystal_chestplate"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X X", "XXX", "XXX"],
+    "key": {
+      "X": {
+        "item": "hiddenyears:crystal_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:crystal_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:crystal_chestplate"
+    }
+  }
+}

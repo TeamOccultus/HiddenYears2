@@ -2,34 +2,34 @@
   "format_version": "1.21.130",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:bone_boots",
+      "identifier": "hiddenyears:crystal_boots",
       "menu_category": {
         "category": "equipment",
         "group": "minecraft:itemGroup.name.boots"
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:bone_boots",
+      "minecraft:icon": "hiddenyears:crystal_boots",
       "minecraft:max_stack_size": 1,
       "minecraft:enchantable": {
         "value": 14,
         "slot": "armor_feet"
       },
       "minecraft:durability": {
-        "max_durability": 143
+        "max_durability": 455
       },
       "minecraft:wearable": {
         "slot": "slot.armor.feet",
-        "protection": 2
+        "protection": 3
       },
       "minecraft:repairable": {
         "repair_items": [
           {
-            "items": ["minecraft:bone"],
+            "items": ["hiddenyears:crystal_ingot"],
             "repair_amount": "query.max_durability * 0.25"
           },
           {
-            "items": ["hiddenyears:bone_boots"],
+            "items": ["hiddenyears:crystal_boots"],
             "repair_amount": "context.other->query.remaining_durability + 0.05 * context.other->query.max_durability"
           }
         ]
