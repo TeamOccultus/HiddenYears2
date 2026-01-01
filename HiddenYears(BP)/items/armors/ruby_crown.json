@@ -4,7 +4,8 @@
     "description": {
       "identifier": "hiddenyears:ruby_crown",
       "menu_category": {
-        "category": "equipment"
+        "category": "equipment",
+        "group": "minecraft:itemGroup.name.helmet"
       }
     },
     "components": {

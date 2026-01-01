@@ -4,8 +4,7 @@
     "description": {
       "identifier": "hiddenyears:breeze_arrow",
       "menu_category": {
-        "category": "equipment",
-        "group": "minecraft:itemGroup.name.tools"
+        "category": "equipment"
       }
     },
     "components": {

@@ -7,6 +7,46 @@
         "groups": [
           {
             "group_identifier": {
+              "icon": "hiddenyears:iron_enhanced_bow",
+              "name": "hiddenyears:itemGroup.name.bows"
+            },
+            "items": [
+              "hiddenyears:iron_enhanced_bow",
+              "hiddenyears:crystal_enhanced_bow",
+              "hiddenyears:diamond_enhanced_bow",
+              "hiddenyears:netherite_enhanced_bow",
+              "hiddenyears:originite_enhanced_bow",
+              "hiddenyears:daylight_bow",
+              "hiddenyears:iron_enhanced_arrow",
+              "hiddenyears:crystal_enhanced_arrow",
+              "hiddenyears:diamond_enhanced_arrow",
+              "hiddenyears:netherite_enhanced_arrow",
+              "hiddenyears:originite_enhanced_arrow",
+              "hiddenyears:daylight_arrow"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:steel_crossbow",
+              "name": "hiddenyears:itemGroup.name.crossbows"
+            },
+            "items": [
+              "hiddenyears:breeze_crossbow",
+              "hiddenyears:end_crossbow",
+              "hiddenyears:explode_crossbow",
+              "hiddenyears:fire_crossbow",
+              "hiddenyears:lightning_crossbow",
+              "hiddenyears:steel_arrow",
+              "hiddenyears:breeze_arrow",
+              "hiddenyears:end_arrow",
+              "hiddenyears:explode_arrow",
+              "hiddenyears:enchanted_explode_arrow",
+              "hiddenyears:fire_arrow",
+              "hiddenyears:lightning_arrow"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:medicine_1",
               "name": "hiddenyears:itemGroup.name.magic_poitons"
             },
@@ -43,7 +83,7 @@
       {
         "category_name": "items",
         "groups": [
-         {
+          {
             "group_identifier": {
               "icon": "hiddenyears:crimson_eyes",
               "name": "hiddenyears:itemGroup.name.boss"
