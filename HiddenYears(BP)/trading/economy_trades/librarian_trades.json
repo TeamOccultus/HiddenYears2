@@ -3,24 +3,6 @@
     {
       "total_exp_required": 0,
       "groups": [
-        /*{
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "hiddenyears:copper_coin",
-                  "quantity": 15,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [{ "item": "hiddenyears:letter_4", "quantity": 1 }],
-              "trader_exp": 10,
-              "max_uses": 2,
-              "reward_exp": true
-            }
-          ]
-        },*/
         {
           "num_to_select": 1,
           "trades": [
@@ -426,6 +408,10 @@
                       "function": "enchant_with_levels",
                       "treasure": false,
                       "levels": { "min": 52, "max": 64 }
+                    },
+                    {
+                      "function": "set_name",
+                      "name": "Knowledge is power!"
                     }
                   ]
                 }
