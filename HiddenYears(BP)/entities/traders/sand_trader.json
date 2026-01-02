@@ -2,14 +2,14 @@
   "format_version": "1.20.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "hidddenyears:sand_trader",
+      "identifier": "hiddenyears:sand_trader",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
     },
     "components": {
       "minecraft:economy_trade_table": {
-        "display_name": "entity.hidddenyears:sand_trader.name",
+        "display_name": "entity.hiddenyears:sand_trader.name",
         "table": "trading/economy_trades/sand_trader.json",
         "new_screen": true
       },

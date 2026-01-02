@@ -2,7 +2,7 @@
   "format_version": "1.20.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "hidddenyears:gemstone_trader",
+      "identifier": "hiddenyears:gemstone_trader",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -10,7 +10,7 @@
     "component_groups": {
       "become_hidden_trader": {
         "minecraft:transformation": {
-          "into": "hidddenyears:hidden_trader",
+          "into": "hiddenyears:hidden_trader",
           "delay": 0.5
         }
       }
@@ -34,7 +34,7 @@
         ]
       },
       "minecraft:economy_trade_table": {
-        "display_name": "entity.hidddenyears:gemstone_trader.name",
+        "display_name": "entity.hiddenyears:gemstone_trader.name",
         "table": "trading/economy_trades/gemstone_trader.json",
         "new_screen": true
       },

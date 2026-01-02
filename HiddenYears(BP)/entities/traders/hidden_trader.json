@@ -2,14 +2,14 @@
   "format_version": "1.20.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "hidddenyears:hidden_trader",
+      "identifier": "hiddenyears:hidden_trader",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
     },
     "components": {
       "minecraft:economy_trade_table": {
-        "display_name": "entity.hidddenyears:hidden_trader.name",
+        "display_name": "entity.hiddenyears:hidden_trader.name",
         "table": "trading/economy_trades/hidden_trader.json",
         "new_screen": true
       },
