@@ -125,7 +125,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 2,
+                  "quantity": 4,
                   "price_multiplier": 0.2
                 }
               ],
@@ -138,7 +138,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 2,
+                  "quantity": 4,
                   "price_multiplier": 0.2
                 }
               ],
@@ -151,7 +151,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 3,
+                  "quantity": 5,
                   "price_multiplier": 0.2
                 }
               ],
@@ -164,11 +164,68 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 3,
+                  "quantity": 5,
                   "price_multiplier": 0.2
                 }
               ],
               "gives": [{ "item": "iron_leggings", "quantity": 1 }],
+              "trader_exp": 1,
+              "max_uses": 12,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:silver_helmet", "quantity": 1 }],
+              "trader_exp": 1,
+              "max_uses": 12,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:silver_boots", "quantity": 1 }],
+              "trader_exp": 1,
+              "max_uses": 12,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:silver_chestplate", "quantity": 1 }],
+              "trader_exp": 1,
+              "max_uses": 12,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [{ "item": "hiddenyears:silver_leggings", "quantity": 1 }],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -205,13 +262,13 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 6,
+                  "quantity": 10,
                   "price_multiplier": 0.2
                 }
               ],
               "gives": [
                 {
-                  "item": "iron_helmet",
+                  "item": "hiddenyears:silver_helmet",
                   "quantity": 1,
                   "functions": [
                     {
@@ -230,13 +287,13 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 6,
+                  "quantity": 10,
                   "price_multiplier": 0.2
                 }
               ],
               "gives": [
                 {
-                  "item": "iron_boots",
+                  "item": "hiddenyears:silver_boots",
                   "quantity": 1,
                   "functions": [
                     {
@@ -255,13 +312,13 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 8,
+                  "quantity": 12,
                   "price_multiplier": 0.2
                 }
               ],
               "gives": [
                 {
-                  "item": "iron_chestplate",
+                  "item": "hiddenyears:silver_chestplate",
                   "quantity": 1,
                   "functions": [
                     {
@@ -280,13 +337,13 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 8,
+                  "quantity": 12,
                   "price_multiplier": 0.2
                 }
               ],
               "gives": [
                 {
-                  "item": "iron_leggings",
+                  "item": "hiddenyears:silver_leggings",
                   "quantity": 1,
                   "functions": [
                     {
@@ -315,7 +372,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 8,
+                  "quantity": 14,
                   "price_multiplier": 0.2
                 }
               ],
@@ -374,7 +431,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 8,
+                  "quantity": 12,
                   "price_multiplier": 0.2
                 }
               ],
@@ -427,36 +484,6 @@
               "wants": [
                 {
                   "item": "hiddenyears:stack_of_gold_coin",
-                  "quantity": 8,
-                  "price_multiplier": 0.2
-                }
-              ],
-              "gives": [
-                {
-                  "item": "minecraft:diamond_chestplate",
-                  "quantity": 1,
-                  "functions": [
-                    {
-                      "function": "enchant_with_levels",
-                      "treasure": false,
-                      "levels": { "min": 5, "max": 19 }
-                    }
-                  ]
-                }
-              ],
-              "trader_exp": 30,
-              "max_uses": 3,
-              "reward_exp": true
-            }
-          ]
-        },
-        {
-          "num_to_select": 1,
-          "trades": [
-            {
-              "wants": [
-                {
-                  "item": "hiddenyears:stack_of_gold_coin",
                   "quantity": 6,
                   "price_multiplier": 0.2
                 }
@@ -500,6 +527,136 @@
                 }
               ],
               "trader_exp": 15,
+              "max_uses": 3,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "minecraft:diamond_chestplate",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": { "min": 5, "max": 19 }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 3,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 8,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:crystal_helmet",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": { "min": 5, "max": 19 }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 30,
+              "max_uses": 3,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 10,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:crystal_leggings",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": { "min": 5, "max": 19 }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 15,
+              "max_uses": 3,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 7,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:crystal_boots",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": { "min": 5, "max": 19 }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 15,
+              "max_uses": 3,
+              "reward_exp": true
+            },
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 12,
+                  "price_multiplier": 0.2
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:crystal_chestplate",
+                  "quantity": 1,
+                  "functions": [
+                    {
+                      "function": "enchant_with_levels",
+                      "treasure": false,
+                      "levels": { "min": 5, "max": 19 }
+                    }
+                  ]
+                }
+              ],
+              "trader_exp": 30,
               "max_uses": 3,
               "reward_exp": true
             }
