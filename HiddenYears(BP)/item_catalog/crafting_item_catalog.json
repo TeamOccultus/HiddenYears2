@@ -85,6 +85,22 @@
         "groups": [
           {
             "group_identifier": {
+              "icon": "hiddenyears:copper_coin",
+              "name": "hiddenyears:itemGroup.name.coins"
+            },
+            "items": [
+              "hiddenyears:copper_coin",
+              "hiddenyears:gold_coin",
+              "hiddenyears:diamond_coin",
+              "hiddenyears:echo_coin",
+              "hiddenyears:stack_of_copper_coin",
+              "hiddenyears:stack_of_gold_coin",
+              "hiddenyears:stack_of_diamond_coin",
+              "hiddenyears:stack_of_echo_coin"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:crimson_eyes",
               "name": "hiddenyears:itemGroup.name.boss"
             },
