@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:bleak_totem_to_totem"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X#X"],
+    "key": {
+      "X": {
+        "item": "minecraft:emerald"
+      },
+      "#": {
+        "item": "hiddenyears:bleak_totem"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:emerald"
+      },
+      {
+        "item": "hiddenyears:bleak_totem"
+      }
+    ],
+    "result": {
+      "item": "minecraft:totem_of_undying"
+    }
+  }
+}

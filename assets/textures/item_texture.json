@@ -8,6 +8,9 @@
     "hiddenyears:babel_tower_wreckage_sand": {
       "textures": "textures/items/babel_tower_wreckage_sand"
     },
+    "hiddenyears:bleak_totem": {
+      "textures": "textures/items/bleak_totem"
+    },
     "hiddenyears:blessing_of_isis": {
       "textures": "textures/items/blessing_of_isis"
     },
