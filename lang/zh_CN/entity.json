@@ -20,6 +20,9 @@
   "entity.hiddenyears:trial_zombie.name": "试炼僵尸",
   "entity.hiddenyears:trial_skeleton.name": "试炼骷髅",
   "entity.hiddenyears:pharaohs_ghost.name": "法老残影",
+  "entity.hiddenyears:gemstone_trader.name": "宝石商人",
+  "entity.hiddenyears:hidden_trader.name": "隐秘商人",
+  "entity.hiddenyears:sand_trader.name": "尼罗特游商",
   "item.spawn_egg.entity.hiddenyears:ruby_zombie.name": "红宝石僵尸刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_skeleton.name": "红宝石骷髅刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_guardian.name": "红宝石守卫刷怪蛋",
@@ -39,5 +42,8 @@
   "item.spawn_egg.entity.hiddenyears:mutas_wrath.name": "「创世者」的愤怒刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:pharaohs_ghost.name": "法老残影刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:trial_zombie.name": "试炼僵尸刷怪蛋",
-  "item.spawn_egg.entity.hiddenyears:trial_skeleton.name": "试炼骷髅刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:trial_skeleton.name": "试炼骷髅刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:gemstone_trader.name": "宝石商人刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:hidden_trader.name": "隐秘商人刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:sand_trader.name": "尼罗特游商刷怪蛋"
 }
