@@ -3,7 +3,7 @@
     {
       "rolls": 1,
       "entries": [
-        { "type": "item", "name": "hidddenyears:shattered_sand_cudgel", "weight": 1 }
+        { "type": "item", "name": "hiddenyears:shattered_sand_cudgel", "weight": 1 }
       ]
     }
   ]
