@@ -1,4 +1,12 @@
 {
   "job.hiddenyears:traveler": "行旅者",
-  "job.hiddenyears:traveler.desc": "旧日星空下的徘徊者重临世间，故土已然迸裂，但这个熟悉而陌生的世界等待着他。"
+  "job.hiddenyears:traveler.desc": "旧日星空下的徘徊者重临世间，故土已然迸裂，但这个熟悉而陌生的世界等待着他。",
+  "job.hiddenyears:pastor": "牧师",
+  "job.hiddenyears:pastor.desc": "牧师是信仰的守护者，他们用神圣的仪式和祈祷来指引人们走向光明。",
+  "job.hiddenyears:warrior": "战士",
+  "job.hiddenyears:warrior.desc": "战士是战斗的化身，他们用勇气和力量保护着家园和人民。",
+  "job.hiddenyears:archer": "弓箭手",
+  "job.hiddenyears:archer.desc": "弓箭手是远距离战斗的专家，他们用箭矢和技巧击败敌人。",
+  "job.hiddenyears:wizard": "法师",
+  "job.hiddenyears:wizard.desc": "法师是魔法的研究者和使用者，他们用魔法来创造奇迹和改变世界。"
 }

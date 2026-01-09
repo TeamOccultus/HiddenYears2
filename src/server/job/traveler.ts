@@ -1,4 +1,9 @@
-import { ItemConditions, Job } from "@occultus/api";
+import { giveItem, ItemConditions, Job } from "@occultus/api";
+import { ItemStack } from "@minecraft/server";
+import { wizard } from "./beginner/wizard";
+import { pastor } from "./beginner/pastor";
+import { warrior } from "./beginner/warrior";
+import { archer } from "./beginner/archer";
 
 export const traveler = new Job(
   "hiddenyears:traveler",
@@ -13,5 +18,29 @@ export const traveler = new Job(
         condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)],
       },
     ],
+    transform: [
+      {
+        job: warrior,
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+      },
+      {
+        job: wizard,
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+      },
+      {
+        job: archer,
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+      },
+      {
+        job: pastor,
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+      },
+    ],
   }
 );
+
+traveler.onUpgrade((arg) => {
+  if (arg.recentLevel === 10) {
+    giveItem(arg.player, new ItemStack("hiddenyears:decision_gem"));
+  }
+});
