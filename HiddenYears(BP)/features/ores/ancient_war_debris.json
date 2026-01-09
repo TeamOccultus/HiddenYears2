@@ -1,0 +1,15 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:ores/ancient_war_debris"
+    },
+    "count": 4,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:ancient_war_debris",
+        "may_replace": ["minecraft:sand"]
+      }
+    ]
+  }
+}

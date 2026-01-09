@@ -35,5 +35,8 @@
   },
   "hiddenyears:ruby_stone_bricks":{
     "sound": "stone"
+  },
+  "hiddenyears:ancient_war_debris":{
+    "sound": "ancient_debris"
   }
 }

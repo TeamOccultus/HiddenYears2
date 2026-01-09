@@ -1,0 +1,39 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "hiddenyears:ancient_war_debris",
+      "places_feature": "hiddenyears:ores/ancient_war_debris"
+    },
+    "conditions": {
+      "placement_pass": "underground_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "nether"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 6,
+      "coordinate_eval_order": "zyx",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      },
+      "y": {
+        "distribution": "triangle",
+        "extent": [8, 128]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
         "item": "hiddenyears:soul_of_fear"
       },
       {
-        "item": "minecraft:netherite_scrap",
+        "item": "hiddenyears:ancient_scrap",
         "count": 1
       },
       {
@@ -31,7 +31,7 @@
         "item": "hiddenyears:soul_of_fear"
       },
       {
-        "item": "minecraft:netherite_scrap"
+        "item": "hiddenyears:ancient_scrap"
       },
       {
         "item": "hiddenyears:ancient_extracts"

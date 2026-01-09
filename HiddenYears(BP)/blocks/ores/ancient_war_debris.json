@@ -1,0 +1,71 @@
+{
+  "format_version": "1.21.130",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:ancient_war_debris",
+      "menu_category": {
+        "category": "nature"
+      }
+    },
+    "components": {
+       "hiddenyears:custom_ore": {
+        "exp": 10
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hiddenyears:ancient_war_debris"
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/ores/ancient_war_debris.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 140,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+            },
+            "destroy_speed": 60
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+            },
+            "destroy_speed": 30
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+            },
+            "destroy_speed": 20
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+            },
+            "destroy_speed": 5
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 4.0
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+            },
+            "destroy_speed": 10
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 100.0
+      },
+      "minecraft:map_color": "#191919",
+      "tag:minecraft:diamond_pick_diggable": {}
+    }
+  }
+}

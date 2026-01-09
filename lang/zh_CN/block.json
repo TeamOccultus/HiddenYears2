@@ -50,5 +50,6 @@
   "tile.hiddenyears:rebirth_frame.name": "回生框架",
   "tile.hiddenyears:ancient_trial_stone.name": "古遗的试炼石",
   "tile.hiddenyears:ancient_trial_stone_active.name": "古遗的试炼石·已激活",
-  "tile.hiddenyears:ancient_trial_stone_done.name": "古遗的试炼石·熄灭"
+  "tile.hiddenyears:ancient_trial_stone_done.name": "古遗的试炼石·熄灭",
+  "tile.hiddenyears:ancient_war_debris.name": "古战残骸"
 }

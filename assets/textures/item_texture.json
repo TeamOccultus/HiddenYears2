@@ -5,6 +5,9 @@
     "hiddenyears:ancient_extracts": {
       "textures": "textures/items/ancient_extracts"
     },
+    "hiddenyears:ancient_scrap": {
+      "textures": "textures/items/ancient_scrap"
+    },
     "hiddenyears:babel_tower_wreckage_sand": {
       "textures": "textures/items/babel_tower_wreckage_sand"
     },

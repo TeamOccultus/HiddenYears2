@@ -40,6 +40,9 @@
     "hiddenyears:ancient_trial_stone_top_active": {
       "textures": "textures/blocks/ancient_trial_stone_top_active"
     },
+    "hiddenyears:ancient_war_debris": {
+      "textures": "textures/blocks/ancient_war_debris"
+    },
     "hiddenyears:bowyers_bench": {
       "textures": "textures/blocks/bowyers_bench"
     },
