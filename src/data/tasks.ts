@@ -66,7 +66,7 @@ export function getAllChapters() {
     { translate: "task.bread.desc" },
     {
       awards: [new ItemAwards("minecraft:coal", 5)],
-      conditions: [new ItemConditions("minecraft:wheat")],
+      conditions: [new ItemConditions("minecraft:bread")],
       previousTask: "none",
       iconPath: "textures/items/bread",
     }
