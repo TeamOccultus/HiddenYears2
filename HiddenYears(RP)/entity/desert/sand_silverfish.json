@@ -23,7 +23,7 @@
       ],
       "render_controllers": ["controller.render.silverfish"],
       "spawn_egg": {
-        "texture": "hiddenyears:egg_sand_sliverfish"
+        "texture": "hiddenyears:egg_sand_silverfish"
       }
     }
   }

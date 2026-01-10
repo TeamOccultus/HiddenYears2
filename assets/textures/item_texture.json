@@ -305,8 +305,8 @@
     "hiddenyears:egg_sand_creeper": {
       "textures": "textures/items/egg_sand_creeper"
     },
-    "hiddenyears:egg_sand_sliverfish": {
-      "textures": "textures/items/egg_sand_sliverfish"
+    "hiddenyears:egg_sand_silverfish": {
+      "textures": "textures/items/egg_sand_silverfish"
     },
     "hiddenyears:egg_sand_spider": {
       "textures": "textures/items/egg_sand_spider"
