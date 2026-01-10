@@ -1,26 +1,17 @@
 {
   "format_version": "1.21.100",
-  "minecraft:recipe_shaped": {
+  "minecraft:recipe_shapeless": {
     "description": {
       "identifier": "hiddenyears:bowyers_bench"
     },
-    "tags": ["crafting_table"],
-    "pattern": ["XX", "##", "##"],
-    "key": {
-      "#": {
-        "item": "minecraft:wool"
-      },
-      "X": {
-        "item": "hiddenyears:ruby"
-      }
-    },
+    "tags": ["alchemy_table", "crafting_table"],
+    "ingredients": [
+      { "item": "minecraft:fletching_table", "count": 1 },
+      { "item": "minecraft:wool", "count": 8 }
+    ],
     "unlock": [
-      {
-        "item": "minecraft:wool"
-      },
-      {
-        "item": "hiddenyears:ruby"
-      }
+      { "item": "minecraft:fletching_table" },
+      { "item": "minecraft:wool" }
     ],
     "result": {
       "item": "hiddenyears:bowyers_bench"
