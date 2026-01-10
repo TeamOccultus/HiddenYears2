@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "hiddenyears:breeze_arrow"
+      "identifier": "hiddenyears:lightning_arrow"
     },
     "tags": ["bowyers_bench"],
     "priority": 0,
@@ -12,7 +12,7 @@
         "count": 1
       },
       {
-        "item": "minecraft:breeze_rod"
+        "item": "minecraft:lightning_rod"
       }
     ],
     "unlock": [
@@ -20,11 +20,11 @@
         "item": "minecraft:arrow"
       },
       {
-        "item": "minecraft:breeze_rod"
+        "item": "minecraft:lightning_rod"
       }
     ],
     "result": {
-      "item": "hiddenyears:breeze_arrow",
+      "item": "hiddenyears:lightning_arrow",
       "count": 3
     }
   }

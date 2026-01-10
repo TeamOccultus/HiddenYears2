@@ -23,7 +23,8 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:netherite_enhanced_arrow"
+      "item": "hiddenyears:netherite_enhanced_arrow",
+      "count": 3
     }
   }
 }

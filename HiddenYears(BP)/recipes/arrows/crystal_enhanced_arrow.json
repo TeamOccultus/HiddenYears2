@@ -10,7 +10,8 @@
       {
         "item": "minecraft:arrow",
         "count": 1
-      },{
+      },
+      {
         "item": "hiddenyears:crystal_ingot",
         "count": 1
       }
@@ -18,7 +19,8 @@
     "unlock": [
       {
         "item": "minecraft:arrow"
-      },{
+      },
+      {
         "item": "hiddenyears:crystal_ingot"
       }
     ],

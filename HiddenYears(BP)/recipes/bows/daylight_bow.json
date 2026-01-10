@@ -2,29 +2,28 @@
   "format_version": "1.21.100",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "hiddenyears:originite_enhanced_arrow"
+      "identifier": "hiddenyears:daylight_bow"
     },
     "tags": ["bowyers_bench"],
     "priority": 0,
     "ingredients": [
       {
-        "item": "minecraft:arrow",
+        "item": "minecraft:bow",
         "count": 1
       },{
-        "item": "hiddenyears:originite_ingot",
+        "item": "hiddenyears:sparkling_stone",
         "count": 1
       }
     ],
     "unlock": [
       {
-        "item": "minecraft:arrow"
+        "item": "minecraft:bow"
       },{
-        "item": "hiddenyears:originite_ingot"
+        "item": "hiddenyears:sparkling_stone"
       }
     ],
     "result": {
-      "item": "hiddenyears:originite_enhanced_arrow",
-      "count": 3
+      "item": "hiddenyears:daylight_bow"
     }
   }
 }
