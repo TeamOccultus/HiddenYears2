@@ -8,10 +8,10 @@
     "input": "hiddenyears:desert_herbpot",
     "unlock": [
       {
-        "item": "hiddenyears:sand_spider_eye"
+        "item": "hiddenyears:sandsandcaust_spider_eye"
       }
     ],
-    "reagent": "hiddenyears:sand_spider_eye",
+    "reagent": "hiddenyears:sandsandcaust_spider_eye",
     "output": "hiddenyears:desert_herbpot_drought"
   }
 }
