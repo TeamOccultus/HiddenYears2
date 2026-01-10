@@ -1,3 +1,4 @@
+// TODO: 添加任务提示
 import {
   Format,
   ItemAwards,
@@ -617,7 +618,9 @@ export function getAllChapters() {
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
-      conditions: [new KillEntityConditions("hiddenyears:ferocious_ruby_guardian")],
+      conditions: [
+        new KillEntityConditions("hiddenyears:ferocious_ruby_guardian"),
+      ],
       previousTask: "none",
       iconPath: "textures/items/egg_ruby_guardian",
     }
@@ -723,6 +726,206 @@ export function getAllChapters() {
     }
   );
 
+  // 第三章·第二幕任务
+  const goldInSand = new Task(
+    "hiddenyears:gold_in_sand",
+    { translate: "task.gold_in_sand" },
+    {
+      rawtext: [
+        { translate: "task.gold_in_sand.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.gold_in_sand.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:fragmented_gold_sand")],
+      previousTask: "none",
+      iconPath: "textures/items/fragmented_gold_sand",
+    }
+  );
+
+  const curseOfSand = new Task(
+    "hiddenyears:curse_of_sand",
+    { translate: "task.curse_of_sand" },
+    {
+      rawtext: [
+        { translate: "task.curse_of_sand.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.curse_of_sand.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.curse_of_sand.desc_3" },
+        { text: Format.newLine },
+        { translate: "task.curse_of_sand.desc_4" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+      conditions: [
+        new KillEntityConditions("hiddenyears:sandcaust_silverfish"),
+      ],
+      previousTask: "none",
+      iconPath: "textures/items/egg_sandcaust_silverfish",
+    }
+  );
+
+  const storyOfGold = new Task(
+    "hiddenyears:story_of_gold",
+    { translate: "task.story_of_gold" },
+    {
+      rawtext: [
+        { translate: "task.story_of_gold.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.story_of_gold.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:letter_1")],
+      previousTask: "none",
+      iconPath: "textures/items/letter_1",
+    }
+  );
+
+  const ancientMyth = new Task(
+    "hiddenyears:ancient_myth",
+    { translate: "task.ancient_myth" },
+    {
+      rawtext: [
+        { translate: "task.ancient_myth.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.ancient_myth.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.ancient_myth.desc_3" },
+        { text: Format.newLine },
+        { translate: "task.ancient_myth.desc_4" },
+        { text: Format.newLine },
+        { translate: "task.ancient_myth.desc_5" },
+        { text: Format.newLine },
+        { translate: "task.ancient_myth.desc_6" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+      conditions: [new ItemConditions("hiddenyears:letter_1")],
+      previousTask: "none",
+      iconPath: "textures/items/letter_1",
+    }
+  );
+
+  const signOfMutation = new Task(
+    "hiddenyears:sign_of_mutation",
+    { translate: "task.sign_of_mutation" },
+    {
+      rawtext: [
+        { translate: "task.sign_of_mutation.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.sign_of_mutation.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+      conditions: [new KillEntityConditions("hiddenyears:sandcaust_scorpion")],
+      previousTask: "none",
+      iconPath: "textures/items/egg_sandcaust_scorpion",
+    }
+  );
+
+  const palaceOfGods = new Task(
+    "hiddenyears:palace_of_gods",
+    { translate: "task.palace_of_gods" },
+    {
+      rawtext: [
+        { translate: "task.palace_of_gods.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.palace_of_gods.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.palace_of_gods.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 15)],
+      conditions: [new ItemConditions("hiddenyears:isis_crown")],
+      previousTask: "none",
+      iconPath: "textures/items/isis_crown",
+    }
+  );
+
+  const eyeOfSandErosion = new Task(
+    "hiddenyears:eye_of_sand_erosion",
+    { translate: "task.eye_of_sand_erosion" },
+    {
+      rawtext: [
+        { translate: "task.eye_of_sand_erosion.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.eye_of_sand_erosion.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.eye_of_sand_erosion.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:sandcaust_apple", 5)],
+      conditions: [new ItemConditions("hiddenyears:sandcaust_spider_eye")],
+      previousTask: "none",
+      iconPath: "textures/items/sand_spider_eye",
+    }
+  );
+
+  const chapterIIIActII = new TaskGroup(
+    "hiddenyears:chapter3_act2",
+    { translate: "task.chapter_3.act_2" },
+    { translate: "task.chapter_3.act_2.desc" },
+    {
+      tasks: [
+        goldInSand,
+        curseOfSand,
+        storyOfGold,
+        ancientMyth,
+        signOfMutation,
+        palaceOfGods,
+        eyeOfSandErosion,
+      ],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
+      previousTask: "none",
+      iconPath: "textures/items/isis_crown",
+    }
+  );
+
+  // 第四章·第一幕任务
+  const echoShard = new Task(
+    "hiddenyears:echo_shard",
+    { translate: "task.echo_shard" },
+    {
+      rawtext: [
+        { translate: "task.echo_shard.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.echo_shard.desc_2" },
+      ],
+    },
+    {
+      conditions: [new ItemConditions("minecraft:echo_shard")],
+      previousTask: "none",
+      iconPath: "textures/items/echo_shard",
+      awards: [new ItemAwards("hiddenyears:echo_coin", 5)],
+    }
+  );
+
+  const chapterIVactI = new TaskGroup(
+    "hiddenyears:chapter4_act1",
+    {
+      translate: "task.chapter_4.act_1",
+    },
+    {
+      translate: "task.chapter_4.act_1.desc",
+    },
+    {
+      tasks: [echoShard],
+      previousTask: "none",
+      awards: [new ItemAwards("hiddenyears:echo_coin", 20)],
+      iconPath: "textures/items/echo_coin",
+    }
+  );
+
   return [
     prolugueActI,
     prolugueActII,
@@ -730,5 +933,7 @@ export function getAllChapters() {
     chapterIActI,
     chapterIIActI,
     chapterIIActII,
+    chapterIIIActII,
+    chapterIVactI,
   ];
 }
