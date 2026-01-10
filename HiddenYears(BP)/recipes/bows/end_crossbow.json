@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:end_crossbow"
+    },
+    "tags": ["bowyers_bench"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:crossbow",
+        "count": 1
+      },
+      {
+        "item": "minecraft:end_stone",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:crossbow"
+      },
+      {
+        "item": "minecraft:end_stone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:end_crossbow"
+    }
+  }
+}

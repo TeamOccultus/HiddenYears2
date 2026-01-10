@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:lightning_crossbow"
+    },
+    "tags": ["bowyers_bench"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:crossbow",
+        "count": 1
+      },{
+        "item": "hiddenyears:sparkling_stone",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:crossbow"
+      },{
+        "item": "hiddenyears:sparkling_stone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:lightning_crossbow"
+    }
+  }
+}

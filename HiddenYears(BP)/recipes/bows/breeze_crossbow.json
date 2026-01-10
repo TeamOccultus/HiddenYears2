@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:breeze_crossbow"
+    },
+    "tags": ["bowyers_bench"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:bow",
+        "count": 1
+      },{
+        "item": "minecraft:breeze_rod",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:bow"
+      },{
+        "item": "minecraft:breeze_rod"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:breeze_crossbow"
+    }
+  }
+}

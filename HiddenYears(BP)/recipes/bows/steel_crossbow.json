@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:steel_crossbow"
+    },
+    "tags": ["bowyers_bench"],
+    "priority": 0,
+    "ingredients": [
+      {
+        "item": "minecraft:crossbow",
+        "count": 1
+      },
+      {
+        "item": "hiddenyears:frigid_steel_ingot",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "minecraft:crossbow"
+      },
+      {
+        "item": "hiddenyears:frigid_steel_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:steel_crossbow"
+    }
+  }
+}
