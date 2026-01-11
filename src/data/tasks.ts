@@ -227,6 +227,67 @@ export function getAllChapters() {
     }
   );
 
+    const sniperDuel = new Task(
+    "hiddenyears:sniper_duel",
+    { translate: "task.sniper_duel" },
+    { translate: "task.sniper_duel.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+      conditions: [new ItemConditions("minecraft:bow")],
+      previousTask: "none",
+      iconPath: "textures/items/bow_pulling_0",
+    }
+  );
+
+  const triggerBlade = new Task(
+    "hiddenyears:trigger_blade",
+    { translate: "task.trigger_blade" },
+    { translate: "task.trigger_blade.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+      conditions: [new ItemConditions("minecraft:crossbow")],
+      previousTask: "none",
+      iconPath: "textures/items/crossbow_pulling_0",
+    }
+  );
+
+  const sharpening = new Task(
+    "hiddenyears:sharpening",
+    { translate: "task.sharpening" },
+    { translate: "task.sharpening.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:iron_enhanced_bow_pulling_0")],
+      previousTask: "none",
+      iconPath: "textures/items/iron_enhanced_bow_pulling_0",
+    }
+  );
+
+  const shield = new Task(
+    "hiddenyears:shield",
+    { translate: "task.shield" },
+    { translate: "task.shield.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+      conditions: [new ItemConditions("minecraft:shield")],
+      previousTask: "none",
+      iconPath: "textures/ui/task/shield",
+    }
+  );
+
+  const skewer = new Task(
+    "hiddenyears:skewer",
+    { translate: "task.skewer" },
+    { translate: "task.skewer.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+      conditions: [new ItemConditions("minecraft:iron_spear")],
+      previousTask: "none",
+      iconPath: "textures/items/spear/iron_spear",
+    }
+  );
+
+
   const prolugueActII = new TaskGroup(
     "hiddenyears:prolugue_act_II",
     { translate: "task.prolugue.act_2" },
@@ -249,6 +310,11 @@ export function getAllChapters() {
         hammer,
         dagger,
         sledgehammer,
+        sniperDuel,
+        triggerBlade,
+        sharpening,
+        shield,
+        skewer,
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
