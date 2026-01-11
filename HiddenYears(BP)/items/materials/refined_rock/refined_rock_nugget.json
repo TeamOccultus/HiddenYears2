@@ -10,7 +10,7 @@
     "components": {
       "minecraft:icon": "hiddenyears:refined_rock_nugget",
       "minecraft:tags": {
-        "tags": ["hiddenyears:refined_rock_material", "hiddenyears:nugget"]
+        "tags": ["hiddenyears:refined_rock_material", "hiddenyears:nugget", "minecraft:metal_nuggets"]
       }
     }
   }

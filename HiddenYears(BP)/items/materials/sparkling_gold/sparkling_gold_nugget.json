@@ -10,7 +10,7 @@
     "components": {
       "minecraft:icon": "hiddenyears:sparkling_gold_nugget",
       "minecraft:tags": {
-        "tags": ["hiddenyears:sparkling_gold_material", "hiddenyears:nugget"]
+        "tags": ["hiddenyears:sparkling_gold_material", "hiddenyears:nugget", "minecraft:metal_nuggets"]
       }
     }
   }
