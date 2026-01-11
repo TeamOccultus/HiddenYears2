@@ -372,6 +372,19 @@ export function getAllChapters() {
       iconPath: "textures/items/lost_letter",
     }
   );
+  const bleakTotem = new Task(
+    "hiddenyears:bleak_totem",
+    { translate: "task.bleak_totem" },
+    {
+      rawtext: [{ translate: "task.bleak_totem.desc" }],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+      conditions: [new ItemConditions("hiddenyears:bleak_totem")],
+      previousTask: "none",
+      iconPath: "textures/items/bleak_totem",
+    }
+  );
 
   const totem = new Task(
     "hiddenyears:totem",
@@ -404,7 +417,7 @@ export function getAllChapters() {
       ],
     },
     {
-      tasks: [silver, diamond, crystal, god, totem],
+      tasks: [silver, diamond, crystal, bleakTotem, god, totem],
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
       previousTask: "none",
       iconPath: "textures/items/diamond",
