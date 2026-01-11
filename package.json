@@ -17,10 +17,10 @@
     "@occultus/api": "^0.22.0-alpha.13",
     "@occultus/core": "^0.18.4",
     "@starock/cli": "^0.6.0",
-    "typescript": "^5.8.3"
+    "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "typedoc": "^0.28.7",
-    "typedoc-material-theme": "^1.4.0"
+    "typedoc": "^0.28.15",
+    "typedoc-material-theme": "^1.4.1"
   }
 }
