@@ -48,6 +48,9 @@
         ]
       },
       "minecraft:icon": "hiddenyears:netherite_saw",
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:tags": {
         "tags": ["hiddenyears:is_saw", "minecraft:netherite_tier"]
       }

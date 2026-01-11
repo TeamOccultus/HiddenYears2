@@ -36,6 +36,9 @@
           }
         ]
       },
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:tags": {
         "tags": ["hiddenyears:is_hammer", "minecraft:netherite_tier"]
       }

@@ -25,6 +25,9 @@
         "value": 1,
         "slot": "sword"
       },
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:tags": {
         "tags": ["hiddenyears:is_sledgehammer", "minecraft:netherite_tier"]
       }

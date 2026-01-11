@@ -45,6 +45,9 @@
           }
         ]
       },
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:tags": {
         "tags": [
           "minecraft:is_weapon",
