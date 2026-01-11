@@ -1,4 +1,5 @@
 import { GameMode, Player, system } from "@minecraft/server";
+import { RandomEvent } from "@occultus/api";
 
 /**
  * 隐藏之年矿石的相关事件
@@ -10,6 +11,15 @@ import { GameMode, Player, system } from "@minecraft/server";
  * @category OwnedDynamicProperties
  */
 export class OreEvents {
+  static sandcaust(player: Player) {
+    new RandomEvent(0.2, () => {
+      player.dimension.spawnEntity(
+        "hiddenyears:sandcaust_silverfish",
+        player.location
+      );
+      player.sendMessage({ translate: "message.hiddenyears:sand_silverfish" });
+    });
+  }
   /**
    * 挖掘红宝石矿石后对玩家造成的「精神影响」
    * @param player 挖掘红宝石矿石的玩家
@@ -50,7 +60,8 @@ export class OreEvents {
         });
       }, 50);
     }
-    if (typeof num !== "number") throw new Error("Invalid dynamic property type!");
+    if (typeof num !== "number")
+      throw new Error("Invalid dynamic property type!");
     player.setDynamicProperty("hiddenyears:destroy_ruby_count", num + 1);
   }
 }

@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "hiddenyears:ore_type": {
+        "ore_type": "sandcaust"
+      },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1.2,
         "item_specific_speeds": [
