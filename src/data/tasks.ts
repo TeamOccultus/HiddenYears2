@@ -726,6 +726,258 @@ export function getAllChapters() {
     }
   );
 
+    // 第三章·第一幕任务
+  const greenInSand = new Task(
+    "hiddenyears:green_in_sand",
+    { translate: "task.green_in_sand" },
+    {
+      rawtext: [
+        { translate: "task.green_in_sand.desc" },
+        { text: Format.newLine },
+        { translate: "task.green_in_sand.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:copper_coin", 5)],
+      conditions: [new ItemConditions("minecraft:cactus")],
+      previousTask: "none",
+      iconPath: "textures/items/dye_powder_green",
+    }
+  );
+
+  const hardToSwallowFood = new Task(
+    "hiddenyears:hard_to_swallow_food",
+    { translate: "task.hard_to_swallow_food" },
+    {
+      rawtext: [
+        { translate: "task.hard_to_swallow_food.desc" },
+        { text: Format.newLine },
+        { translate: "task.hard_to_swallow_food.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
+      conditions: [new ItemConditions("hiddenyears:sand_meat")],
+      previousTask: "none",
+      iconPath: "textures/items/sand_meat",
+    }
+  );
+
+  const dryPot = new Task(
+    "hiddenyears:dry_pot",
+    { translate: "task.dry_pot" },
+    {
+      rawtext: [
+        { translate: "task.dry_pot.desc" },
+        { text: Format.newLine },
+        { translate: "task.dry_pot.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:desert_herbpot")],
+      previousTask: "none",
+      iconPath: "textures/items/herb_bottle",
+    }
+  );
+
+  const godArrival = new Task(
+    "hiddenyears:god_arrival",
+    { translate: "task.god_arrival" },
+    {
+      rawtext: [
+        { translate: "task.god_arrival.desc" },
+        { text: Format.newLine },
+        { translate: "task.god_arrival.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:cooling_herbtea")],
+      previousTask: "none",
+      iconPath: "textures/items/cooling_herbtea",
+    }
+  );
+
+  const sacrifice = new Task(
+    "hiddenyears:sacrifice",
+    { translate: "task.sacrifice" },
+    {
+      rawtext: [
+        { translate: "task.sacrifice.desc" },
+        { text: Format.newLine },
+        { translate: "task.sacrifice.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.sacrifice.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:sandcaust_apple", 2)],
+      conditions: [new ItemConditions("hiddenyears:rabbit_paw")],
+      previousTask: "none",
+      iconPath: "textures/items/rabbit_paw",
+    }
+  );
+
+  const shatteredSand = new Task(
+    "hiddenyears:shattered_sand",
+    { translate: "task.shattered_sand" },
+    {
+      rawtext: [
+        { translate: "task.shattered_sand.desc" },
+        { text: Format.newLine },
+        { translate: "task.shattered_sand.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.shattered_sand.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+      conditions: [new ItemConditions("hiddenyears:shattered_sand_cudgel")],
+      previousTask: "none",
+      iconPath: "textures/items/shattered_sand_cudgel",
+    }
+  );
+
+  const keyOfContract = new Task(
+    "hiddenyears:key_of_contract",
+    { translate: "task.key_of_contract" },
+    {
+      rawtext: [
+        { translate: "task.key_of_contract.desc" },
+        { text: Format.newLine },
+        { translate: "task.key_of_contract.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+      conditions: [new ItemConditions("hiddenyears:drift_sand_key")],
+      previousTask: "none",
+      iconPath: "textures/items/drift_sand_key",
+    }
+  );
+
+  const blessingOfRain = new Task(
+    "hiddenyears:blessing_of_rain",
+    { translate: "task.blessing_of_rain" },
+    {
+      rawtext: [
+        { translate: "task.blessing_of_rain.desc" },
+        { text: Format.newLine },
+        { translate: "task.blessing_of_rain.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:letter_1", 1)],
+      conditions: [new ItemConditions("hiddenyears:blessing_of_isis")],
+      previousTask: "none",
+      iconPath: "textures/items/blessing_of_isis",
+    }
+  );
+
+  const kingdomFall = new Task(
+    "hiddenyears:kingdom_fall",
+    { translate: "task.kingdom_fall" },
+    {
+      rawtext: [
+        { translate: "task.kingdom_fall.desc" },
+        { text: Format.newLine },
+        { translate: "task.kingdom_fall.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.kingdom_fall.desc_3" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+      conditions: [new ItemConditions("hiddenyears:desert_heart")],
+      previousTask: "none",
+      iconPath: "textures/items/desert_heart",
+    }
+  );
+
+  const statueOfPast = new Task(
+    "hiddenyears:statue_of_past",
+    { translate: "task.statue_of_past" },
+    {
+      rawtext: [
+        { translate: "task.statue_of_past.desc" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 5)],
+      conditions: [new ItemConditions("hiddenyears:past_statue")],
+      previousTask: "none",
+      iconPath: "textures/items/past_statue",
+    }
+  );
+
+  const symbolOfLife = new Task(
+    "hiddenyears:symbol_of_life",
+    { translate: "task.symbol_of_life" },
+    {
+      rawtext: [
+        { translate: "task.symbol_of_life.desc" },
+        { text: Format.newLine },
+        { translate: "task.symbol_of_life.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.symbol_of_life.desc_3" },
+        { text: Format.newLine },
+        { translate: "task.symbol_of_life.desc_4" },
+        { text: Format.newLine },
+        { translate: "task.symbol_of_life.desc_5" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 5)],
+      conditions: [new ItemConditions("hiddenyears:rebirth_statue")],
+      previousTask: "none",
+      iconPath: "textures/items/rebirth_statue",
+    }
+  );
+
+  const rainInSand = new Task(
+    "hiddenyears:rain_in_sand",
+    { translate: "task.rain_in_sand" },
+    {
+      rawtext: [
+        { translate: "task.rain_in_sand.desc" },
+        { text: Format.newLine },
+        { translate: "task.rain_in_sand.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:letter_1", 1)],
+      conditions: [new ItemConditions("hiddenyears:shattered_sand_staff")],
+      previousTask: "none",
+      iconPath: "textures/items/shattered_sand_staff",
+    }
+  );
+
+  const chapterIIIActI = new TaskGroup(
+    "hiddenyears:chapter3_act1",
+    { translate: "task.chapter_3.act_1" },
+    { translate: "task.chapter_3.act_1.desc" },
+    {
+      tasks: [
+        greenInSand,
+        hardToSwallowFood,
+        dryPot,
+        godArrival,
+        sacrifice,
+        shatteredSand,
+        keyOfContract,
+        blessingOfRain,
+        kingdomFall,
+        statueOfPast,
+        symbolOfLife,
+        rainInSand,
+      ],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
+      previousTask: "none",
+      iconPath: "textures/items/desert_heart",
+    }
+  );
+
   // 第三章·第二幕任务
   const goldInSand = new Task(
     "hiddenyears:gold_in_sand",
@@ -933,6 +1185,7 @@ export function getAllChapters() {
     chapterIActI,
     chapterIIActI,
     chapterIIActII,
+    chapterIIIActI,
     chapterIIIActII,
     chapterIVactI,
   ];

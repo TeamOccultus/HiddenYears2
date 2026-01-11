@@ -488,6 +488,9 @@
     "hiddenyears:iron_sledgehammer": {
       "textures": "textures/items/iron_sledgehammer"
     },
+    "hiddenyears:isis_crown": {
+      "textures": "textures/items/isis_crown"
+    },
     "hiddenyears:lapis_dust": {
       "textures": "textures/items/lapis_dust"
     },
