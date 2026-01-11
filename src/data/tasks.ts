@@ -640,7 +640,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("minecraft:potion", 4)],
       conditions: [new ItemConditions("hiddenyears:lightning_key")],
       previousTask: "none",
-      iconPath: "textures/items/thunder_key",
+      iconPath: "textures/items/lightning_key",
     }
   );
 
