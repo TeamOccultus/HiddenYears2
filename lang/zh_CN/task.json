@@ -290,6 +290,12 @@
   "task.echo_shard.desc_1": "高高搭起的祭台与金杯中的血水旁，大主教波提非拉正尝试用秘法驱散亡魂。",
   "task.echo_shard.desc_2": "幽蓝色的烟雾弥漫着——他成功了。",
 
+  // 终章·第一幕
+  "task.epilogue.act_1": "§d终章·第一幕§r 「███」的再建",
+  "task.epilogue.act_1.desc": "？？？",
+  "task.babel_sand": "风起层沙",
+  "task.babel_sand.desc": "「来吧，我们要建造一座城和一座塔，塔顶通天，为要传扬我们的名，免得我们分散在全地上。」",
+
   "task.chapter_1": "§d第一章§r 染上鲜血的宝石",
   "task.chapter_2": "§d第二章§r 追随旧人的足迹",
   "task.chapter_3": "§d第三章§r 那叛神的国度",

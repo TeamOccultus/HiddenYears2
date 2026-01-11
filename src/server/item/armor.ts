@@ -1,4 +1,4 @@
-import { Player, world } from "@minecraft/server";
+import { Player } from "@minecraft/server";
 import { RandomEvent } from "@occultus/api";
 
 export function unyieldingArmor(player: Player, level: number = 1) {

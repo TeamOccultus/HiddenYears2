@@ -1443,6 +1443,32 @@ export function getAllChapters() {
     }
   );
 
+  const babelSand = new Task(
+    "hiddenyears:babel_sand",
+    { translate: "task.babel_sand" },
+    {
+      rawtext: [{ translate: "task.babel_sand.desc" }],
+    },
+    {
+      conditions: [new ItemConditions("hiddenyears:babel_tower_wreckage_sand")],
+      previousTask: "none",
+      iconPath: "textures/items/babel_tower_wreckage_sand",
+      awards: [new ItemAwards("hiddenyears:stack_of_diamond_coin", 5)],
+    }
+  );
+
+  const epilogueActI = new TaskGroup(
+    "hiddenyears:epilogue_act1",
+    { translate: "task.epilogue.act_1" },
+    { translate: "task.epilogue.act_1.desc" },
+    {
+      tasks: [babelSand],
+      awards: [],
+      previousTask: "none",
+      iconPath: "textures/items/babel_tower_wreckage_sand",
+    }
+  );
+
   return [
     prolugueActI,
     prolugueActII,
@@ -1455,5 +1481,6 @@ export function getAllChapters() {
     chapterIIIActI,
     chapterIIIActII,
     chapterIVactI,
+    epilogueActI,
   ];
 }
