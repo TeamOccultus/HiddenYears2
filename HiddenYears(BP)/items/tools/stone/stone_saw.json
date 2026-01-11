@@ -53,7 +53,8 @@
       },
       "minecraft:icon": "hiddenyears:stone_saw",
       "minecraft:tags": {
-        "tags": ["hiddenyears:is_saw", "minecraft:stone_tier"]
+        "tags": [
+          "minecraft:is_tool","hiddenyears:is_saw", "minecraft:stone_tier"]
       }
     }
   }

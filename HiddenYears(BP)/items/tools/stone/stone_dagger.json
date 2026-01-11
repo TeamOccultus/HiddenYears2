@@ -51,6 +51,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_weapon",
           "minecraft:stone_tier"
         ]

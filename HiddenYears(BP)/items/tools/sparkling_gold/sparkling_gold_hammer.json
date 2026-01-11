@@ -38,6 +38,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "hiddenyears:is_hammer",
           "hiddenyears:sparkling_gold_tier",
           "minecraft:netherite_tier"

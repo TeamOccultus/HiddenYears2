@@ -49,7 +49,8 @@
       },
       "minecraft:icon": "hiddenyears:silver_saw",
       "minecraft:tags": {
-        "tags": ["hiddenyears:is_saw", "hiddenyears:silver_tier", "minecraft:iron_tier"]
+        "tags": [
+          "minecraft:is_tool","hiddenyears:is_saw", "hiddenyears:silver_tier", "minecraft:iron_tier"]
       }
     }
   }

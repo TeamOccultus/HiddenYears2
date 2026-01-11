@@ -38,6 +38,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "hiddenyears:is_hammer",
           "hiddenyears:crystal_tier",
           "minecraft:diamond_tier"

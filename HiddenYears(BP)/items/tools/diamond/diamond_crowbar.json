@@ -49,7 +49,8 @@
       },
       "minecraft:icon": "hiddenyears:diamond_crowbar",
       "minecraft:tags": {
-        "tags": ["hiddenyears:is_crowbar", "minecraft:diamond_tier"]
+        "tags": [
+          "minecraft:is_tool","hiddenyears:is_crowbar", "minecraft:diamond_tier"]
       }
     }
   }

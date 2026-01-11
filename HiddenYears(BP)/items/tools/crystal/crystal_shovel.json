@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:crystal_shovel",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_shovel",
           "hiddenyears:crystal_tier",
           "minecraft:diamond_tier"

@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:originite_shovel",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_shovel",
           "hiddenyears:originite_tier",
           "minecraft:netherite_tier"

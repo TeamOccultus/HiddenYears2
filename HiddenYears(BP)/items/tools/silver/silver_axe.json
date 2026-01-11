@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:silver_axe",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_axe",
           "hiddenyears:silver_tier",
           "minecraft:iron_tier"

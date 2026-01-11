@@ -48,6 +48,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_pickaxe",
           "hiddenyears:crystal_tier",
           "minecraft:diamond_tier"

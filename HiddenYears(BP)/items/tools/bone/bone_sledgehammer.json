@@ -26,7 +26,8 @@
         "slot": "sword"
       },
       "minecraft:tags": {
-        "tags": ["hiddenyears:is_sledgehammer", "hiddenyears:bone_tier", "minecraft:stone_tier"]
+        "tags": [
+          "minecraft:is_tool","hiddenyears:is_sledgehammer", "hiddenyears:bone_tier", "minecraft:stone_tier"]
       }
     }
   }

@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:bone_axe",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_axe",
           "hiddenyears:bone_tier",
           "minecraft:stone_tier"

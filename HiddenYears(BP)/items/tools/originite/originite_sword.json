@@ -49,8 +49,8 @@
       },
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_sword",
           "minecraft:is_tool",
+          "minecraft:is_sword",
           "hiddenyears:originite_tier",
           "minecraft:netherite_tier"
         ]

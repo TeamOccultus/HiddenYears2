@@ -48,6 +48,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_pickaxe",
           "hiddenyears:refined_rock_tier",
           "minecraft:stone_tier"

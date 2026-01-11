@@ -29,7 +29,8 @@
         "value": true
       },
       "minecraft:tags": {
-        "tags": ["hiddenyears:is_sledgehammer", "minecraft:netherite_tier"]
+        "tags": [
+          "minecraft:is_tool","hiddenyears:is_sledgehammer", "minecraft:netherite_tier"]
       }
     }
   }

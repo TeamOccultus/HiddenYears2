@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:originite_axe",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_axe",
           "hiddenyears:originite_tier",
           "minecraft:netherite_tier"

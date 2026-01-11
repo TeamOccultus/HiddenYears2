@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:refined_rock_axe",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_axe",
           "hiddenyears:refined_rock_tier",
           "minecraft:stone_tier"

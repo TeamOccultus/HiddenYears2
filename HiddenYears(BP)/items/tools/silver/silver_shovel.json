@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:silver_shovel",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_shovel",
           "hiddenyears:silver_tier",
           "minecraft:iron_tier"

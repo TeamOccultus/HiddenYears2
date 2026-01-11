@@ -47,6 +47,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_weapon",
           "hiddenyears:frigid_steel_tier",
           "minecraft:netherite_tier"

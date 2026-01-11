@@ -37,7 +37,8 @@
         ]
       },
       "minecraft:tags": {
-        "tags": ["hiddenyears:is_hammer", "minecraft:golden_tier"]
+        "tags": [
+          "minecraft:is_tool","hiddenyears:is_hammer", "minecraft:golden_tier"]
       }
     }
   }

@@ -48,6 +48,7 @@
       "minecraft:icon": "hiddenyears:sparkling_gold_axe",
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_axe",
           "hiddenyears:sparkling_gold_tier",
           "minecraft:netherite_tier"

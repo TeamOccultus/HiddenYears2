@@ -47,6 +47,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_weapon",
           "minecraft:golden_tier"
         ]

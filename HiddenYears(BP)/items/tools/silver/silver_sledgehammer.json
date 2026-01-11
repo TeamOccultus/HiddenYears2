@@ -27,6 +27,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "hiddenyears:is_sledgehammer",
           "hiddenyears:silver_tier",
           "minecraft:iron_tier"

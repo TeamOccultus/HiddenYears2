@@ -48,6 +48,7 @@
       },
       "minecraft:tags": {
         "tags": [
+          "minecraft:is_tool",
           "minecraft:is_hoe",
           "hiddenyears:bone_tier",
           "minecraft:stone_tier"
