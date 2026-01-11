@@ -227,7 +227,7 @@ export function getAllChapters() {
     }
   );
 
-    const sniperDuel = new Task(
+  const sniperDuel = new Task(
     "hiddenyears:sniper_duel",
     { translate: "task.sniper_duel" },
     { translate: "task.sniper_duel.desc" },
@@ -257,7 +257,9 @@ export function getAllChapters() {
     { translate: "task.sharpening.desc" },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
-      conditions: [new ItemConditions("hiddenyears:iron_enhanced_bow_pulling_0")],
+      conditions: [
+        new ItemConditions("hiddenyears:iron_enhanced_bow_pulling_0"),
+      ],
       previousTask: "none",
       iconPath: "textures/items/iron_enhanced_bow_pulling_0",
     }
@@ -286,7 +288,6 @@ export function getAllChapters() {
       iconPath: "textures/items/spear/iron_spear",
     }
   );
-
 
   const prolugueActII = new TaskGroup(
     "hiddenyears:prolugue_act_II",
@@ -375,7 +376,15 @@ export function getAllChapters() {
   const totem = new Task(
     "hiddenyears:totem",
     { translate: "task.totem" },
-    { translate: "task.totem.desc" },
+    {
+      rawtext: [
+        { translate: "task.totem.desc_1" },
+        { text: Format.newLine },
+        { translate: "task.totem.desc_2" },
+        { text: Format.newLine },
+        { translate: "task.totem.desc_3" },
+      ],
+    },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
       conditions: [new ItemConditions("minecraft:totem_of_undying")],
