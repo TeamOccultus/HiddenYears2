@@ -739,9 +739,9 @@ export function getAllChapters() {
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
-      conditions: [new ItemConditions("hiddenyears:fragmented_gold_sand")],
+      conditions: [new ItemConditions("hiddenyears:gold_sand")],
       previousTask: "none",
-      iconPath: "textures/items/fragmented_gold_sand",
+      iconPath: "textures/items/gold_sand",
     }
   );
 
@@ -765,7 +765,7 @@ export function getAllChapters() {
         new KillEntityConditions("hiddenyears:sandcaust_silverfish"),
       ],
       previousTask: "none",
-      iconPath: "textures/items/egg_sandcaust_silverfish",
+      iconPath: "textures/items/egg_sand_silverfish",
     }
   );
 
@@ -783,7 +783,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
-      iconPath: "textures/items/letter_1",
+      iconPath: "textures/items/paper",
     }
   );
 
@@ -809,7 +809,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
-      iconPath: "textures/items/letter_1",
+      iconPath: "textures/items/paper",
     }
   );
 
@@ -825,9 +825,9 @@ export function getAllChapters() {
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
-      conditions: [new KillEntityConditions("hiddenyears:sandcaust_scorpion")],
+      conditions: [new KillEntityConditions("hiddenyears:scorpion")],
       previousTask: "none",
-      iconPath: "textures/items/egg_sandcaust_scorpion",
+      iconPath: "textures/items/egg_scorpion",
     }
   );
 
