@@ -10,20 +10,20 @@
     "description": "pack.description",
     "min_engine_version": [1, 21, 80],
     "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
-    "version": "3.0.0-alpha.4",
+    "version": "3.0.0-alpha.5",
     "pack_scope": "world"
   },
   "modules": [
     {
       "type": "resources",
       "uuid": "297821fc-0b08-4370-9ce1-5935bb4075ee",
-      "version": "3.0.0-alpha.4"
+      "version": "3.0.0-alpha.5"
     }
   ],
   "dependencies": [
     {
       "uuid": "cb1b4568-9021-4793-afd2-aeac2bdb18f8",
-      "version": "3.0.0-alpha.4"
+      "version": "3.0.0-alpha.5"
     }
   ]
 }

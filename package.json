@@ -1,6 +1,6 @@
 {
   "name": "@occultus/hidden-years",
-  "version": "3.0.0-alpha.4",
+  "version": "3.0.0-alpha.5",
   "description": "A Minecraft adventure mod",
   "scripts": {
     "build": "starock build",
