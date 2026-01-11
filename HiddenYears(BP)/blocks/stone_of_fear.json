@@ -8,10 +8,6 @@
       }
     },
     "components": {
-      "hiddenyears:destroy_condition": {
-        "item_tier": "iron",
-        "loot_table": "blocks/stone_of_fear"
-      },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 15.0,
         "item_specific_speeds": [
@@ -64,7 +60,8 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6.0
       },
-      "minecraft:map_color": "#f6fabd"
+      "minecraft:map_color": "#f6fabd",
+      "minecraft:loot": "loot_tables/blocks/stone_of_fear.json"
     }
   }
 }
