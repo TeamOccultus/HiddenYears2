@@ -3,6 +3,7 @@ import {
   Format,
   ItemAwards,
   ItemConditions,
+  ItemTagConditions,
   KillEntityConditions,
   KillEntityFamilyConditions,
   Task,
@@ -334,7 +335,74 @@ export function getAllChapters() {
       iconPath: "textures/items/diamond",
     }
   );
+
   // 第二章·第一幕任务
+  const infestedBeast = new Task(
+    "hiddenyears:infested_beast",
+    { translate: "task.infested_beast" },
+    { translate: "task.infested_beast.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+      conditions: [
+        new KillEntityFamilyConditions(
+          "trial_monster",
+          "ui.family.trial_monster"
+        ),
+      ],
+      previousTask: "none",
+      iconPath: "textures/items/contract_dust",
+    }
+  );
+
+  const contractStone = new Task(
+    "hiddenyears:contract_stone",
+    { translate: "task.contract_stone" },
+    { translate: "task.contract_stone.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+      conditions: [new ItemConditions("hiddenyears:contract_gem")],
+      previousTask: "none",
+      iconPath: "textures/items/contract_gem",
+    }
+  );
+
+  const memoryCondensation = new Task(
+    "hiddenyears:memory_condensation",
+    { translate: "task.memory_condensation" },
+    {
+      rawtext: [
+        { translate: "task.memory_condensation.desc" },
+        { text: Format.newLine },
+        { translate: "task.memory_condensation.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+      conditions: [
+        new ItemTagConditions(
+          "hiddenyears:is_artifact",
+          1,
+          "ui.tag.is_artifact"
+        ),
+      ],
+      previousTask: "none",
+      iconPath: "textures/items/crucifix_runes",
+    }
+  );
+
+  const chapterIIActI = new TaskGroup(
+    "hiddenyears:chapter2_act1",
+    { translate: "task.chapter_2.act_1" },
+    { translate: "task.chapter_2.act_1.desc" },
+    {
+      tasks: [infestedBeast, contractStone, memoryCondensation],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
+      previousTask: "none",
+      iconPath: "textures/items/crucifix_runes",
+    }
+  );
+
+  // 第二章·第二幕任务
   const gold = new Task(
     "hiddenyears:gold",
     { translate: "task.gold" },
@@ -428,10 +496,10 @@ export function getAllChapters() {
   );
   wither.pushToServer(server);
 
-  const chapterIIActI = new TaskGroup(
-    "hiddenyears:chapter2_act1",
-    { translate: "task.chapter_2.act_1" },
-    { translate: "task.chapter_2.act_1.desc" },
+  const chapterIIActII = new TaskGroup(
+    "hiddenyears:chapter2_act2",
+    { translate: "task.chapter_2.act_2" },
+    { translate: "task.chapter_2.act_2.desc" },
     {
       tasks: [
         gold,
@@ -448,7 +516,7 @@ export function getAllChapters() {
     }
   );
 
-  // 第二章·第二幕任务
+  // 第二章·第三幕任务
   const enderEye = new Task(
     "hiddenyears:ender_eye",
     { translate: "task.ender_eye" },
@@ -504,10 +572,10 @@ export function getAllChapters() {
   );
   enderDragon.pushToServer(server);
 
-  const chapterIIActII = new TaskGroup(
-    "hiddenyears:chapter2_act2",
-    { translate: "task.chapter_2.act_2" },
-    { translate: "task.chapter_2.act_2.desc" },
+  const chapterIIActIII = new TaskGroup(
+    "hiddenyears:chapter2_act3",
+    { translate: "task.chapter_2.act_3" },
+    { translate: "task.chapter_2.act_3.desc" },
     {
       tasks: [enderEye, dragonBreath, elytra, enderDragon],
       awards: [new ItemAwards("minecraft:diamond", 10)],
@@ -1294,6 +1362,7 @@ export function getAllChapters() {
     chapterIActI,
     chapterIIActI,
     chapterIIActII,
+    chapterIIActIII,
     chapterIIActIV,
     chapterIIIActI,
     chapterIIIActII,

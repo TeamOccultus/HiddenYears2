@@ -15,8 +15,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0(@minecraft/vanilla-data@1.21.90-preview.20)
       '@occultus/api':
-        specifier: ^0.22.0-alpha.8
-        version: 0.22.0-alpha.8(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+        specifier: ^0.22.0-alpha.13
+        version: 0.22.0-alpha.13(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/core':
         specifier: ^0.18.4
         version: 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
@@ -356,8 +356,8 @@ packages:
   '@napi-rs/wasm-runtime@1.0.3':
     resolution: {integrity: sha512-rZxtMsLwjdXkMUGC3WwsPwLNVqVqnTJT6MNIB6e+5fhMcSCPP0AOsNWuMQ5mdCq6HNjs/ZeWAEchpqeprqBD2Q==}
 
-  '@occultus/api@0.22.0-alpha.8':
-    resolution: {integrity: sha512-+v5Uqb+n11O5YBzjvduuOPC1zW5VJKjfj8UglnsOmEMv/LeJIe317bw2up9wfFb9ahD9TuBQiJ/9pBVP75WV8w==}
+  '@occultus/api@0.22.0-alpha.13':
+    resolution: {integrity: sha512-Owsvro6u4MmzXJS0JmcPy/yhqXslzsQ4wuQJcBqFMZkOBZnKZppZq5whRbMBzjjXKYqMEIgekqT6cZYE2OWiTg==}
     peerDependencies:
       '@minecraft/server': ^2.4.0
       '@occultus/core': ~0.18.4
@@ -388,11 +388,11 @@ packages:
     peerDependencies:
       '@minecraft/server': '>=2.0.0'
 
-  '@occultus/condition-api@0.22.0-alpha.2':
-    resolution: {integrity: sha512-6v31vxnX+7iy12tl/4cABr+UiCRYlOP+OQNOiBwljCrVQLdpnJW7d+NUj0kacF/sGRVftbfIK9eDO0Hx2Xm4+g==}
+  '@occultus/condition-api@0.22.0-alpha.5':
+    resolution: {integrity: sha512-APAeW/mmwnasXpuhKV7qsS3mNqAPDbbWz674jSo4QW102qzkG4b/xMuexeKx/g09BvtIQib2HFwM0T7rxQwynw==}
     peerDependencies:
-      '@minecraft/server': '>=2.0.0'
-      '@occultus/core': '>=0.18.4 || <0.19.0'
+      '@minecraft/server': ^2.4.0
+      '@occultus/core': ~0.18.4
 
   '@occultus/core@0.18.4':
     resolution: {integrity: sha512-4zFN+TDLo2jMHj6ijTe4hbWbI/jtZ5/Ma5zAJADioJQbwRR3UEp7dhhHMdDfvULvTBFojwVwhyy6hW1SUPobYA==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40occultus%2Fcore/-/0.18.4/core-0.18.4.tgz}
@@ -429,8 +429,8 @@ packages:
       '@minecraft/server': '>=2.0.0'
       '@occultus/core': '>=0.18.4 || <0.19.0'
 
-  '@occultus/job-api@0.22.0-alpha.6':
-    resolution: {integrity: sha512-7V17RBcM7rKygQnOAYNN1d0G4W9EDw7oR8WkeVqXabB50YlGkl/tbFtiUkdB8p9gJpDMSqYv0ESGYHsx7GMzXQ==}
+  '@occultus/job-api@0.22.0-alpha.7':
+    resolution: {integrity: sha512-GjZP4o3cj4jd3O2UWxbU1dXpCNTEQqKRNIFumLc1Xxdixi6EpboNCFVMUp2QerTFWEEoLoC7KBACrLR3nY9Oew==}
     peerDependencies:
       '@minecraft/server': ^2.4.0
       '@minecraft/server-ui': ^2.0.0
@@ -483,12 +483,12 @@ packages:
       '@minecraft/server': '>=2.0.0'
       '@occultus/core': '>=0.18.4 || <0.19.0'
 
-  '@occultus/task-api@0.22.0-alpha.2':
-    resolution: {integrity: sha512-KOCy3iqn62W/fnn5PFm35QLTupSGtkRUF06H3XhprA01m5vI/AZMf7dwGVd0Wx4wXIflzOERP1ybiU9Fv6uWDg==}
+  '@occultus/task-api@0.22.0-alpha.3':
+    resolution: {integrity: sha512-WhX0qzwOZsm2tJDJ8NdFqOKGLafEj1TLg0SevHpCO7ADG5EvA4K3JVVRtb6NH93kTpEyOHA26XMIn5rVQPSycA==}
     peerDependencies:
-      '@minecraft/server': '>=2.1.0'
-      '@minecraft/server-ui': '>=2.0.0'
-      '@occultus/core': '>=0.18.4 || <0.19.0'
+      '@minecraft/server': ^2.4.0
+      '@minecraft/server-ui': ^2.0.0
+      '@occultus/core': ~0.18.4
 
   '@occultus/text-api@0.20.0':
     resolution: {integrity: sha512-/hGge7cYyS/SCWb/LCivzS3fHAxdeuaKuk16oOkG3YYwH+LChgfq3/JQvqlF6olwpef7RIb7pQenijJXw+QhKw==}
@@ -509,6 +509,14 @@ packages:
       '@minecraft/server-ui': '>=2.0.0'
       '@occultus/common': 0.20.0
       '@occultus/core': '>=0.18.4 || <0.19.0'
+
+  '@occultus/toolkit@0.22.1':
+    resolution: {integrity: sha512-rHC34OoPiRQXST1De6WYjDO5wWu/pcJcJQNkBGC5EeHAHxZfQ8f2QOOjCaQEMYuGSeWdDT1xOvYRq4CqHHEbhA==}
+    peerDependencies:
+      '@minecraft/server': ^2.4.0
+      '@minecraft/server-ui': ^2.0.0
+      '@occultus/common': 0.20.0
+      '@occultus/core': ~0.18.4
 
   '@occultus/tutorial-api@0.20.0':
     resolution: {integrity: sha512-hec/Tndmi6/JWhfZvEN67ZP00VPxOeDh4j+JrhbFFm0Jd3ujp5ARM5nKxEMByrI0eq3JCqeo39jshYij80yorg==}
@@ -1280,20 +1288,20 @@ snapshots:
       '@tybys/wasm-util': 0.10.0
     optional: true
 
-  '@occultus/api@0.22.0-alpha.8(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@occultus/api@0.22.0-alpha.13(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
       '@occultus/article-api': 0.22.0-alpha.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/artifact-api': 0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/block-api': 0.22.0-alpha.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/common': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@occultus/condition-api': 0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/condition-api': 0.22.0-alpha.5(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
       '@occultus/effect-api': 0.22.0-alpha.1(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/entity-api': 0.22.0-alpha.1(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/format-api': 0.21.0
       '@occultus/item-api': 0.22.0-alpha.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@occultus/job-api': 0.22.0-alpha.6(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/job-api': 0.22.0-alpha.7(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/logger-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/loot-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/math-api': 0.22.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
@@ -1301,10 +1309,10 @@ snapshots:
       '@occultus/notification-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/random-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/skill-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@occultus/task-api': 0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/task-api': 0.22.0-alpha.3(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/text-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/time-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@occultus/toolkit': 0.22.0(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/toolkit': 0.22.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/tutorial-api': 0.20.0(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
     transitivePeerDependencies:
       - '@minecraft/server-ui'
@@ -1342,13 +1350,13 @@ snapshots:
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
 
-  '@occultus/condition-api@0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@occultus/condition-api@0.22.0-alpha.5(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
       '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
       '@occultus/format-api': 0.21.0
       '@occultus/text-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@occultus/toolkit': 0.22.0(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/toolkit': 0.22.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
     transitivePeerDependencies:
       - '@minecraft/server-ui'
       - '@occultus/common'
@@ -1394,18 +1402,18 @@ snapshots:
     transitivePeerDependencies:
       - '@minecraft/server-ui'
 
-  '@occultus/job-api@0.22.0-alpha.6(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@occultus/job-api@0.22.0-alpha.7(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
       '@minecraft/server-ui': 2.0.0(@minecraft/vanilla-data@1.21.90-preview.20)
       '@occultus/common': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@occultus/condition-api': 0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/condition-api': 0.22.0-alpha.5(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
       '@occultus/format-api': 0.21.0
       '@occultus/math-api': 0.22.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/skill-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/text-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@occultus/toolkit': 0.22.0(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/toolkit': 0.22.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
 
   '@occultus/logger-api@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
@@ -1454,15 +1462,15 @@ snapshots:
       '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
       '@occultus/entity-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
 
-  '@occultus/task-api@0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
+  '@occultus/task-api@0.22.0-alpha.3(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
       '@minecraft/server-ui': 2.0.0(@minecraft/vanilla-data@1.21.90-preview.20)
-      '@occultus/condition-api': 0.22.0-alpha.2(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/condition-api': 0.22.0-alpha.5(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
       '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
       '@occultus/format-api': 0.21.0
       '@occultus/text-api': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
-      '@occultus/toolkit': 0.22.0(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
+      '@occultus/toolkit': 0.22.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))
     transitivePeerDependencies:
       - '@occultus/common'
 
@@ -1477,6 +1485,13 @@ snapshots:
       '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
 
   '@occultus/toolkit@0.22.0(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
+    dependencies:
+      '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
+      '@minecraft/server-ui': 2.0.0(@minecraft/vanilla-data@1.21.90-preview.20)
+      '@occultus/common': 0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
+      '@occultus/core': 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
+
+  '@occultus/toolkit@0.22.1(@minecraft/server-ui@2.0.0(@minecraft/vanilla-data@1.21.90-preview.20))(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/common@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
       '@minecraft/server-ui': 2.0.0(@minecraft/vanilla-data@1.21.90-preview.20)

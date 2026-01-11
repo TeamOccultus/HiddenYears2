@@ -16,6 +16,11 @@ export class CopyrightForm {
             translate:
               "See full license at https://codeberg.org/TeamOccultus/HiddenYears2/src/LICENSE",
           },
+          { text: "\n\n" },
+          {
+           text:
+              "Powered by Occultus SDK and Occultus Emoji",
+          }
         ],
       })
       .button1({ translate: "gui.back" })
