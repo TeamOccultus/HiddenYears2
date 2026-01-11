@@ -4,9 +4,14 @@
       "conditions": [
         {
           "condition": "match_tool",
-          "item": {
-            "tags": "q.any_tag('minecraft:is_pickaxe') && q.equipped_item_any_tag('minecraft:diamond_tier', 'minecraft:netherite_tier')"
-          },
+          "minecraft:match_tool_filter_all": [
+            "minecraft:is_tool",
+            "minecraft:is_pickaxe"
+          ],
+          "minecraft:match_tool_filter_any": [
+            "minecraft:diamond_tier",
+            "minecraft:netherite_tier"
+          ],
           "count": 1
         }
       ],
