@@ -17,6 +17,37 @@
           ]
         }
       ]
+    },{
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "levels": {
+                "range_min": 1,
+                "range_max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:gold_sand",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }

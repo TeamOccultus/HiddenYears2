@@ -32,6 +32,51 @@
           ]
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "minecraft:match_tool_filter_all": [
+            "minecraft:is_tool",
+            "minecraft:is_pickaxe"
+          ],
+          "minecraft:match_tool_filter_any": [
+            "minecraft:iron_tier",
+            "minecraft:diamond_tier",
+            "minecraft:netherite_tier"
+          ],
+          "count": 1
+        },
+        {
+          "condition": "match_tool",
+          "enchantments": [
+            {
+              "enchantment": "fortune",
+              "levels": {
+                "range_min": 1,
+                "range_max": 3
+              }
+            }
+          ]
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:raw_gold",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
     }
   ]
 }
