@@ -726,7 +726,118 @@ export function getAllChapters() {
     }
   );
 
-    // 第三章·第一幕任务
+  // 第二章·第四幕任务
+  const alchemist = new Task(
+    "hiddenyears:alchemist",
+    { translate: "task.alchemist" },
+    { translate: "task.alchemist.desc" },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 2)],
+      conditions: [new ItemConditions("hiddenyears:alchemy_table")],
+      previousTask: "none",
+      iconPath: "textures/ui/task/alchemy_table",
+    }
+  );
+
+  const magicDust = new Task(
+    "hiddenyears:magic_dust",
+    { translate: "task.magic_dust" },
+    { translate: "task.magic_dust.desc" },
+    {
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+      conditions: [new ItemConditions("hiddenyears:magic_dust")],
+      previousTask: "none",
+      iconPath: "textures/items/magic_dust",
+    }
+  );
+
+  const verdantStone = new Task(
+    "hiddenyears:verdant_stone",
+    { translate: "task.verdant_stone" },
+    { translate: "task.verdant_stone.desc" },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 5)],
+      conditions: [new ItemConditions("hiddenyears:ancient_extracts")],
+      previousTask: "none",
+      iconPath: "textures/items/ancient_extracts",
+    }
+  );
+
+  const infernalRemains = new Task(
+    "hiddenyears:infernal_remains",
+    { translate: "task.infernal_remains" },
+    { translate: "task.infernal_remains.desc" },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 5)],
+      conditions: [new ItemConditions("minecraft:netherite_scrap")],
+      previousTask: "none",
+      iconPath: "textures/items/netherite_scrap",
+    }
+  );
+
+  const ancientWarRemains = new Task(
+    "hiddenyears:ancient_war_remains",
+    { translate: "task.ancient_war_remains" },
+    { translate: "task.ancient_war_remains.desc" },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 5)],
+      conditions: [new ItemConditions("hiddenyears:ancient_scrap")],
+      previousTask: "none",
+      iconPath: "textures/items/ancient_scrap",
+    }
+  );
+
+  const fearSoul = new Task(
+    "hiddenyears:fear_soul",
+    { translate: "task.fear_soul" },
+    { translate: "task.fear_soul.desc" },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 5)],
+      conditions: [new ItemConditions("hiddenyears:soul_of_fear")],
+      previousTask: "none",
+      iconPath: "textures/items/soul_of_fear",
+    }
+  );
+
+  const primalYearning = new Task(
+    "hiddenyears:primal_yearning",
+    { translate: "task.primal_yearning" },
+    {
+      rawtext: [
+        { translate: "task.primal_yearning.desc" },
+        { text: Format.newLine },
+        { translate: "task.primal_yearning.desc_2" },
+      ],
+    },
+    {
+      awards: [new ItemAwards("minecraft:diamond", 15)],
+      conditions: [new ItemConditions("hiddenyears:originite_ingot")],
+      previousTask: "none",
+      iconPath: "textures/items/originite_ingot",
+    }
+  );
+
+  const chapterIIActIV = new TaskGroup(
+    "hiddenyears:chapter2_act4",
+    { translate: "task.chapter_2.act_4" },
+    { translate: "task.chapter_2.act_4.desc" },
+    {
+      tasks: [
+        alchemist,
+        magicDust,
+        verdantStone,
+        infernalRemains,
+        ancientWarRemains,
+        fearSoul,
+        primalYearning,
+      ],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
+      previousTask: "none",
+      iconPath: "textures/items/originite_ingot",
+    }
+  );
+
+  // 第三章·第一幕任务
   const greenInSand = new Task(
     "hiddenyears:green_in_sand",
     { translate: "task.green_in_sand" },
@@ -899,9 +1010,7 @@ export function getAllChapters() {
     "hiddenyears:statue_of_past",
     { translate: "task.statue_of_past" },
     {
-      rawtext: [
-        { translate: "task.statue_of_past.desc" },
-      ],
+      rawtext: [{ translate: "task.statue_of_past.desc" }],
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 5)],
@@ -1185,6 +1294,7 @@ export function getAllChapters() {
     chapterIActI,
     chapterIIActI,
     chapterIIActII,
+    chapterIIActIV,
     chapterIIIActI,
     chapterIIIActII,
     chapterIVactI,
