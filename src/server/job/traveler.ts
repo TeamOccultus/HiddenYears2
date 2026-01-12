@@ -20,11 +20,11 @@ export const traveler = new Job(
     ],
     transform: [
       {
-        job: warrior,
+        job: wizard,
         condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
       },
       {
-        job: wizard,
+        job: warrior,
         condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
       },
       {

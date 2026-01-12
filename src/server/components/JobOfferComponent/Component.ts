@@ -12,9 +12,11 @@ export class JobOfferComponent {
         onUse(arg0, arg1) {
           const params = arg1.params as JobOfferSchema;
           if (params.job_type === "traveler") {
-            arg0.source.setDynamicProperty("hiddenyears:job")
-            traveler.add(arg0.source)
-            setEquipmentItem(arg0.source);
+            arg0.source.setDynamicProperty("hiddenyears:job");
+            system.runTimeout(() => {
+              traveler.add(arg0.source);
+              setEquipmentItem(arg0.source);
+            }, 20);
           }
         },
       });
