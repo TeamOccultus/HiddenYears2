@@ -147,6 +147,21 @@
               "hiddenyears:refined_rock_dust",
               "hiddenyears:gold_sand"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:travel_gem",
+              "name": "hiddenyears:itemGroup.name.jobs"
+            },
+            "items": [
+              "hiddenyears:travel_gem",
+              "hiddenyears:decision_gem",
+              "hiddenyears:oblivion_gem",
+              "hiddenyears:pastor_gem",
+              "hiddenyears:archer_gem",
+              "hiddenyears:wizard_gem",
+              "hiddenyears:warrior_gem"
+            ]
           }
         ]
       },
