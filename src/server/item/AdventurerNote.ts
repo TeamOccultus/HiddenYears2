@@ -3,7 +3,7 @@ import { ActionFormData } from "@minecraft/server-ui";
 import {
   adventurerNoteBody,
   adventurerNoteTitle,
-} from "../../data/adventurerNote";
+} from "../../data/AdventurerNote";
 
 export class AdventurerNote {
   constructor(readonly id: string) {}
