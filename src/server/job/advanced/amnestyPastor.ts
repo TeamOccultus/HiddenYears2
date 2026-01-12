@@ -1,9 +1,9 @@
 import { ItemConditions, Job } from "@occultus/api";
 
-export const magic_archer = new Job(
-  "hiddenyears:magic_archer",
-  { translate: "job.hiddenyears:magic_archer" },
-  { translate: "job.hiddenyears:magic_archer.desc" },
+export const amnestyPastor = new Job(
+  "hiddenyears:amnesty_pastor",
+  { translate: "job.hiddenyears:amnesty_pastor" },
+  { translate: "job.hiddenyears:amnesty_pastor.desc" },
   {
     maxLevel: 15,
     upgradeCondition: [

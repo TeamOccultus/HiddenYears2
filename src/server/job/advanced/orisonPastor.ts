@@ -1,6 +1,6 @@
 import { ItemConditions, Job } from "@occultus/api";
 
-export const orison_pastor = new Job(
+export const orisonPastor = new Job(
   "hiddenyears:orison_pastor",
   { translate: "job.hiddenyears:orison_pastor" },
   { translate: "job.hiddenyears:orison_pastor.desc" },
