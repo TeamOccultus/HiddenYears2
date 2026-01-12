@@ -1,7 +1,8 @@
-import { ItemConditions, Job } from "@occultus/api";
+import { giveItem, ItemConditions, Job } from "@occultus/api";
 import { assassin } from "../advanced/assassin";
 import { berserker } from "../advanced/berserker";
 import { swordman } from "../advanced/swordman";
+import { ItemStack } from "@minecraft/server";
 
 export const warrior = new Job(
   "hiddenyears:warrior",
@@ -32,3 +33,9 @@ export const warrior = new Job(
     ],
   }
 );
+
+warrior.onUpgrade((arg) => {
+  if (arg.recentLevel === 10) {
+    giveItem(arg.player, new ItemStack("hiddenyears:warrior_gem"));
+  }
+});

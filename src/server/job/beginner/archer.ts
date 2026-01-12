@@ -1,5 +1,6 @@
-import { ItemConditions, Job } from "@occultus/api";
+import { giveItem, ItemConditions, Job } from "@occultus/api";
 import { magicArcher } from "../advanced/magicArcher";
+import { ItemStack } from "@minecraft/server";
 
 export const archer = new Job(
   "hiddenyears:archer",
@@ -22,3 +23,9 @@ export const archer = new Job(
     ],
   }
 );
+
+archer.onUpgrade((arg) => {
+  if (arg.recentLevel === 10) {
+    giveItem(arg.player, new ItemStack("hiddenyears:archer_gem"));
+  }
+});

@@ -1,6 +1,7 @@
-import { ItemConditions, Job } from "@occultus/api";
+import { giveItem, ItemConditions, Job } from "@occultus/api";
 import { amnestyPastor } from "../advanced/amnestyPastor";
 import { orisonPastor } from "../advanced/orisonPastor";
+import { ItemStack } from "@minecraft/server";
 
 export const pastor = new Job(
   "hiddenyears:pastor",
@@ -27,3 +28,9 @@ export const pastor = new Job(
     ],
   }
 );
+
+pastor.onUpgrade((arg) => {
+  if (arg.recentLevel === 10) {
+    giveItem(arg.player, new ItemStack("hiddenyears:pastor_gem"));
+  }
+});
