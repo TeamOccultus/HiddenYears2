@@ -22,6 +22,7 @@ import { registryBoss } from "./registry/boss";
 import { registryEffects } from "./registry/effects";
 import { registryJob } from "./registry/job";
 import { MigrationEvents } from "../migration/MigrationEvents";
+import { InitalSpawnEvents } from "./events/InitalSpawnEvents";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -49,4 +50,5 @@ export function initialize() {
   registryJob();
   RubyEvents.subscribe();
   MigrationEvents.subscribe();
+  InitalSpawnEvents.subscribe();
 }

@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:job_traveler",
+      "identifier": "hiddenyears:travel_gem",
       "menu_category": {
         "category": "items"
       }
@@ -12,7 +12,7 @@
         "job_type": "traveler"
       },
       "minecraft:display_name": {
-        "value": "职业测试（行旅者）"
+        "value": "行旅宝石（职业测试）"
       },
       "minecraft:icon": "hiddenyears:blessing_of_isis",
       "minecraft:rarity": "epic",
