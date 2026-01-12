@@ -2,17 +2,18 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:travel_gem",
+      "identifier": "hiddenyears:oblivion_gem",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
-      "hiddenyears:job_offer": {
-        "job_type": "traveler"
+      "hiddenyears:job": {
+        "job_type": "none",
+        "remove_old": true
       },
       "minecraft:display_name": {
-        "value": "行旅宝石（职业测试）"
+        "value": "回溯宝石（职业测试）"
       },
       "minecraft:icon": "hiddenyears:blessing_of_isis",
       "minecraft:rarity": "epic",

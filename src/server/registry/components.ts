@@ -26,7 +26,7 @@ import { BossSpawnerComponent } from "../components/BossSpawnerComponent/Compone
 import { HiddenEffectFoodComponent } from "../components/HiddenEffectFoodComponent/Component";
 import { BlessingComponent } from "../components/BlessingComponent";
 import { StaffComponent } from "../components/StaffComponent/Component";
-import { JobOfferComponent } from "../components/JobOfferComponent/Component";
+import { JobComponent } from "../components/JobOfferComponent/Component";
 import { TrialStoneComponent } from "../components/TrialStoneComponent/Component";
 import { ArmorTypeComponent } from "../components/ArmorTypeComponent/Component";
 
@@ -49,7 +49,7 @@ export function registryComponents() {
   new HiddenEffectFoodComponent("hiddenyears:hidden_effect_food");
   new BlessingComponent("hiddenyears:blessing_of_isis");
   new StaffComponent("hiddenyears:staff");
-  new JobOfferComponent("hiddenyears:job_offer");
+  new JobComponent("hiddenyears:job");
   new TrialStoneComponent("hiddenyears:trial_stone");
   new ArmorTypeComponent("hiddenyears:armor_type");
   item.add(new FoodMaterial("hiddenyears:effective_food"));

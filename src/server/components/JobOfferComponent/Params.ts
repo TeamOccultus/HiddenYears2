@@ -1,3 +1,6 @@
-export type JobOfferSchema = {
-  job_type: "traveler"
+export type JobSchema = {
+  job_type: JobType;
+  remove_old?: boolean
 };
+
+export type JobType = "traveler" | "none"
