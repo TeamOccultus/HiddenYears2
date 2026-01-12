@@ -10,5 +10,8 @@
   "hiddenyears:itemGroup.name.bows": "隐藏之年·弓与箭",
   "hiddenyears:itemGroup.name.crossbows": "隐藏之年·弩与箭",
   "hiddenyears:itemGroup.name.coins": "隐藏之年·货币",
-  "hiddenyears:itemGroup.name.jobs": "隐藏之年·职业（测试）"
+  "hiddenyears:itemGroup.name.jobs": "隐藏之年·职业（测试）",
+  "hiddenyears:itemGroup.name.saws": "隐藏之年·锯",
+  "hiddenyears:itemGroup.name.sledgehammers": "隐藏之年·战锤",
+  "hiddenyears:itemGroup.name.hammers": "隐藏之年·重锤"
 }

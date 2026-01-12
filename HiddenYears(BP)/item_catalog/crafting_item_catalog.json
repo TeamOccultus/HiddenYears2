@@ -5,6 +5,72 @@
       {
         "category_name": "equipment",
         "groups": [
+        {
+            "group_identifier": {
+              "icon": "hiddenyears:wooden_saw",
+              "name": "hiddenyears:itemGroup.name.saws"
+            },
+            "items": [
+              "hiddenyears:wooden_saw",
+              "hiddenyears:bone_saw",
+              "hiddenyears:stone_saw",
+              "hiddenyears:refined_rock_saw",
+              "hiddenyears:copper_saw",
+              "hiddenyears:iron_saw",
+              "hiddenyears:golden_saw",
+              "hiddenyears:silver_saw",
+              "hiddenyears:diamond_saw",
+              "hiddenyears:crystal_saw",
+              "hiddenyears:netherite_saw",
+              "hiddenyears:originite_saw",
+              "hiddenyears:sparkling_gold_saw",
+              "hiddenyears:steel_saw"
+            ]
+          },
+           {
+            "group_identifier": {
+              "icon": "hiddenyears:wooden_hammer",
+              "name": "hiddenyears:itemGroup.name.hammers"
+            },
+            "items": [
+              "hiddenyears:wooden_hammer",
+              "hiddenyears:bone_hammer",
+              "hiddenyears:stone_hammer",
+              "hiddenyears:refined_rock_hammer",
+              "hiddenyears:copper_hammer",
+              "hiddenyears:iron_hammer",
+              "hiddenyears:golden_hammer",
+              "hiddenyears:silver_hammer",
+              "hiddenyears:diamond_hammer",
+              "hiddenyears:crystal_hammer",
+              "hiddenyears:netherite_hammer",
+              "hiddenyears:originite_hammer",
+              "hiddenyears:sparkling_gold_hammer",
+              "hiddenyears:steel_hammer"
+            ]
+          },
+           {
+            "group_identifier": {
+              "icon": "hiddenyears:wooden_sledgehammer",
+              "name": "hiddenyears:itemGroup.name.sledgehammers"
+            },
+            "items": [
+              "hiddenyears:wooden_sledgehammer",
+              "hiddenyears:bone_sledgehammer",
+              "hiddenyears:stone_sledgehammer",
+              "hiddenyears:refined_rock_sledgehammer",
+              "hiddenyears:copper_sledgehammer",
+              "hiddenyears:iron_sledgehammer",
+              "hiddenyears:golden_sledgehammer",
+              "hiddenyears:silver_sledgehammer",
+              "hiddenyears:diamond_sledgehammer",
+              "hiddenyears:crystal_sledgehammer",
+              "hiddenyears:netherite_sledgehammer",
+              "hiddenyears:originite_sledgehammer",
+              "hiddenyears:sparkling_gold_sledgehammer",
+              "hiddenyears:steel_sledgehammer"
+            ]
+          },
           {
             "group_identifier": {
               "icon": "hiddenyears:iron_enhanced_bow",
