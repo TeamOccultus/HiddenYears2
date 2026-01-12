@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:wizard_gem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "抉择符石·法师（职业测试）"
+      },
+      "minecraft:icon": "hiddenyears:blessing_of_isis",
+      "minecraft:rarity": "epic",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}
