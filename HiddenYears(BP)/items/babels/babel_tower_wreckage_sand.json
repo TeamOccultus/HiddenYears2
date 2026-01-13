@@ -12,9 +12,6 @@
     "components": {
       "minecraft:icon": "hiddenyears:babel_tower_wreckage_sand",
       "minecraft:max_stack_size": 1,
-      "minecraft:display_name": {
-        "value": "hy.item.babel_tower_wreckage.sand"
-      },
       "minecraft:hover_text_color": "light_purple"
     }
   }
