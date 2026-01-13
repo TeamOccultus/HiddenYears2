@@ -24,7 +24,7 @@
               "hiddenyears:netherite_saw",
               "hiddenyears:originite_saw",
               "hiddenyears:sparkling_gold_saw",
-              "hiddenyears:steel_saw"
+              "hiddenyears:frigid_steel_saw"
             ]
           },
            {
@@ -46,7 +46,7 @@
               "hiddenyears:netherite_hammer",
               "hiddenyears:originite_hammer",
               "hiddenyears:sparkling_gold_hammer",
-              "hiddenyears:steel_hammer"
+              "hiddenyears:frigid_steel_hammer"
             ]
           },
            {
@@ -68,7 +68,29 @@
               "hiddenyears:netherite_sledgehammer",
               "hiddenyears:originite_sledgehammer",
               "hiddenyears:sparkling_gold_sledgehammer",
-              "hiddenyears:steel_sledgehammer"
+              "hiddenyears:frigid_steel_sledgehammer"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:wooden_dagger",
+              "name": "hiddenyears:itemGroup.name.daggers"
+            },
+            "items": [
+              "hiddenyears:wooden_dagger",
+              "hiddenyears:bone_dagger",
+              "hiddenyears:stone_dagger",
+              "hiddenyears:refined_rock_dagger",
+              "hiddenyears:copper_dagger",
+              "hiddenyears:iron_dagger",
+              "hiddenyears:golden_dagger",
+              "hiddenyears:silver_dagger",
+              "hiddenyears:diamond_dagger",
+              "hiddenyears:crystal_dagger",
+              "hiddenyears:netherite_dagger",
+              "hiddenyears:originite_dagger",
+              "hiddenyears:sparkling_gold_dagger",
+              "hiddenyears:frigid_steel_dagger"
             ]
           },
           {
@@ -97,6 +119,7 @@
               "name": "hiddenyears:itemGroup.name.crossbows"
             },
             "items": [
+              "hiddenyears:steel_crossbow",
               "hiddenyears:breeze_crossbow",
               "hiddenyears:end_crossbow",
               "hiddenyears:explode_crossbow",
@@ -135,6 +158,22 @@
           },
           {
             "group_identifier": {
+              "icon": "hiddenyears:desert_herbpot",
+              "name": "hiddenyears:itemGroup.name.herbpots"
+            },
+            "items": [
+              "hiddenyears:desert_herbpot",
+              "hiddenyears:desert_herbpot_conduit",
+              "hiddenyears:desert_herbpot_drought",
+              "hiddenyears:desert_herbpot_rain",
+              "hiddenyears:desert_herbpot_resistance",
+              "hiddenyears:desert_herbpot_saturation",
+              "hiddenyears:desert_herbpot_scorpion",
+              "hiddenyears:desert_herbpot_strength"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:diamond_crowbar",
               "name": "hiddenyears:itemGroup.name.crowbars"
             },
@@ -142,6 +181,38 @@
               "hiddenyears:diamond_crowbar",
               "hiddenyears:iron_crowbar",
               "hiddenyears:golden_crowbar"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:farmers_hat",
+              "name": "hiddenyears:itemGroup.name.artifacts"
+            },
+            "items": [
+              "hiddenyears:farmers_hat",
+              "hiddenyears:herders_hat",
+              "hiddenyears:mask_of_the_sea",
+              "hiddenyears:soldiers_helmet",
+              "hiddenyears:sparkling_mask",
+              "hiddenyears:copper_badge",
+              "hiddenyears:golden_badge",
+              "hiddenyears:diamond_badge",
+              "hiddenyears:fire_cape",
+              "hiddenyears:invisible_cape",
+              "hiddenyears:magic_feather_cape",
+              "hiddenyears:thorns_cape",
+              "hiddenyears:cursed_ring",
+              "hiddenyears:engulf_glove",
+              "hiddenyears:fighters_glove",
+              "hiddenyears:miners_glove",
+              "hiddenyears:ruby_ring",
+              "hiddenyears:hare_boots",
+              "hiddenyears:speed_boots",
+              "hiddenyears:crucifix_runes",
+              "hiddenyears:gluttonous_runes",
+              "hiddenyears:imprisoned_wing",
+              "hiddenyears:ruby_runes",
+              "hiddenyears:sand_runes"
             ]
           }
         ]
@@ -192,7 +263,13 @@
               "hiddenyears:emerald_nugget",
               "hiddenyears:copper_nugget",
               "hiddenyears:netherite_nugget",
-              "hiddenyears:refined_rock_nugget"
+              "hiddenyears:refined_rock_nugget",
+              "hiddenyears:crystal_nugget",
+              "hiddenyears:frigid_steel_nugget",
+              "hiddenyears:silver_nugget",
+              "hiddenyears:sparkling_copper_nugget",
+              "hiddenyears:sparkling_gold_nugget",
+              "hiddenyears:originite_nugget"
             ]
           },
           {
@@ -211,7 +288,13 @@
               "hiddenyears:gold_dust",
               "hiddenyears:netherite_dust",
               "hiddenyears:refined_rock_dust",
-              "hiddenyears:gold_sand"
+              "hiddenyears:gold_sand",
+              "hiddenyears:crystal_dust",
+              "hiddenyears:frigid_steel_dust",
+              "hiddenyears:silver_dust",
+              "hiddenyears:sparkling_copper_dust",
+              "hiddenyears:sparkling_gold_dust",
+              "hiddenyears:originite_dust"
             ]
           },
           {
@@ -227,6 +310,32 @@
               "hiddenyears:archer_gem",
               "hiddenyears:wizard_gem",
               "hiddenyears:warrior_gem"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:crystal_ingot",
+              "name": "hiddenyears:itemGroup.name.ingots"
+            },
+            "items": [
+              "hiddenyears:crystal_ingot",
+              "hiddenyears:frigid_steel_ingot",
+              "hiddenyears:refined_rock_ingot",
+              "hiddenyears:silver_ingot",
+              "hiddenyears:sparkling_copper_ingot",
+              "hiddenyears:sparkling_gold_ingot",
+              "hiddenyears:originite_ingot"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:ancient_extracts",
+              "name": "hiddenyears:itemGroup.name.gems"
+            },
+            "items": [
+              "hiddenyears:ancient_extracts",
+              "hiddenyears:ruby",
+              "hiddenyears:sparkling_stone"
             ]
           }
         ]

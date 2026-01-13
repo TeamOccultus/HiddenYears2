@@ -13,5 +13,10 @@
   "hiddenyears:itemGroup.name.jobs": "隐藏之年·职业（测试）",
   "hiddenyears:itemGroup.name.saws": "隐藏之年·锯",
   "hiddenyears:itemGroup.name.sledgehammers": "隐藏之年·战锤",
-  "hiddenyears:itemGroup.name.hammers": "隐藏之年·重锤"
+  "hiddenyears:itemGroup.name.hammers": "隐藏之年·重锤",
+  "hiddenyears:itemGroup.name.artifacts": "隐藏之年·饰品",
+  "hiddenyears:itemGroup.name.herbpots": "隐藏之年·沙漠药壶",
+  "hiddenyears:itemGroup.name.daggers": "隐藏之年·匕首",
+  "hiddenyears:itemGroup.name.ingots": "隐藏之年·铸锭",
+  "hiddenyears:itemGroup.name.gems": "隐藏之年·宝石"
 }
