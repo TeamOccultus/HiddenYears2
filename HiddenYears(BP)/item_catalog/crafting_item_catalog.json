@@ -337,6 +337,17 @@
               "hiddenyears:ruby",
               "hiddenyears:sparkling_stone"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:record_ruby",
+              "name": "hiddenyears:itemGroup.name.records"
+            },
+            "items": [
+              "hiddenyears:record_ruby",
+              "hiddenyears:record_plains",
+              "hiddenyears:record_pharaohs"
+            ]
           }
         ]
       },
