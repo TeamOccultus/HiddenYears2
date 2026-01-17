@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:stack_of_diamond_coin"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "#": {
+        "item": "hiddenyears:diamond_coin"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:diamond_coin"
+      }
+    ],
+    "pattern": ["###", "###", "###"],
+    "result": {
+      "item": "hiddenyears:stack_of_diamond_coin",
+      "count": 1
+    }
+  }
+}

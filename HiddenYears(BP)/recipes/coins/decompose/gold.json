@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:decompose_gold_coin"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:stack_of_gold_coin"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:stack_of_gold_coin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:gold_coin",
+      "count": 9
+    }
+  }
+}

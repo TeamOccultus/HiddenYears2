@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:decompose_copper_coin"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:stack_of_copper_coin"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:stack_of_copper_coin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:copper_coin",
+      "count": 9
+    }
+  }
+}

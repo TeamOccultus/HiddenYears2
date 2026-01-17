@@ -1,0 +1,24 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:gold_coin"
+    },
+    "tags": ["crafting_table"],
+    "key": {
+      "#": {
+        "item": "minecraft:gold_ingot"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "pattern": ["###", "# #", "###"],
+    "result": {
+      "item": "hiddenyears:gold_coin",
+      "count": 5
+    }
+  }
+}
