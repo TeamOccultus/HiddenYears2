@@ -8,7 +8,7 @@
       "type": "minecraft:random_spread",
       "salt": 114514,
       "separation": 2,
-      "spacing": 5,
+      "spacing": 8,
       "spread_type": "linear"
     },
     "structures": [
