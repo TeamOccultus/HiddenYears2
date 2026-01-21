@@ -258,7 +258,7 @@ export function getAllChapters() {
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
       conditions: [
-        new ItemConditions("hiddenyears:iron_enhanced_bow_pulling_0"),
+        new ItemConditions("hiddenyears:iron_enhanced_bow"),
       ],
       previousTask: "none",
       iconPath: "textures/items/iron_enhanced_bow_pulling_0",
