@@ -145,7 +145,7 @@
               "test": "is_family",
               "subject": "other",
               "operator": "!=",
-              "value": "trial"
+              "value": "trial_monster"
             }
           }
         ],
