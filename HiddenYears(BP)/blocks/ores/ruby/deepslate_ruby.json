@@ -4,7 +4,8 @@
     "description": {
       "identifier": "hiddenyears:deepslate_ruby_ore",
       "menu_category": {
-        "category": "nature"
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.ore"
       }
     },
     "components": {
