@@ -441,6 +441,7 @@ export function getAllChapters() {
       iconPath: "textures/items/contract_dust",
     }
   );
+  infestedBeast.pushToServer(server);
 
   const contractStone = new Task(
     "hiddenyears:contract_stone",
