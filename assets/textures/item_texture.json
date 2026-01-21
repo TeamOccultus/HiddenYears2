@@ -8,6 +8,9 @@
     "hiddenyears:ancient_scrap": {
       "textures": "textures/items/ancient_scrap"
     },
+    "hiddenyears:archer_gem": {
+      "textures": "textures/items/archer_gem"
+    },
     "hiddenyears:babel_tower_wreckage_sand": {
       "textures": "textures/items/babel_tower_wreckage_sand"
     },
@@ -202,6 +205,9 @@
     },
     "hiddenyears:daylight_bow_standby": {
       "textures": "textures/items/daylight_bow_standby"
+    },
+    "hiddenyears:decision_gem": {
+      "textures": "textures/items/decision_gem"
     },
     "hiddenyears:desert_heart": {
       "textures": "textures/items/desert_heart"
@@ -619,6 +625,9 @@
     "hiddenyears:netherite_sledgehammer": {
       "textures": "textures/items/netherite_sledgehammer"
     },
+    "hiddenyears:oblivion_gem": {
+      "textures": "textures/items/oblivion_gem"
+    },
     "hiddenyears:originite_axe": {
       "textures": "textures/items/originite_axe"
     },
@@ -681,6 +690,9 @@
     },
     "hiddenyears:originite_sword": {
       "textures": "textures/items/originite_sword"
+    },
+    "hiddenyears:pastor_gem": {
+      "textures": "textures/items/pastor_gem"
     },
     "hiddenyears:past_statue": {
       "textures": "textures/items/past_statue"
@@ -1033,8 +1045,17 @@
     "hiddenyears:thorns_cape": {
       "textures": "textures/items/thorns_cape"
     },
+    "hiddenyears:travel_gem": {
+      "textures": "textures/items/travel_gem"
+    },
     "hiddenyears:trophy_bundle": {
       "textures": "textures/items/trophy_bundle"
+    },
+    "hiddenyears:warrior_gem": {
+      "textures": "textures/items/warrior_gem"
+    },
+    "hiddenyears:wizard_gem": {
+      "textures": "textures/items/wizard_gem"
     },
     "hiddenyears:wooden_dagger": {
       "textures": "textures/items/wooden_dagger"
