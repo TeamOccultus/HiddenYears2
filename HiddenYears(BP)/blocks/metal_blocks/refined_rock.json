@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hiddenyears:refined_rock_block",
       "menu_category": {
-        "category": "nature"
+        "category": "construction"
       }
     },
     "components": {
