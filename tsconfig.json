@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*", "../HiddenYears2-classic/adventurerNote.ts"],
+  "include": ["src/**/*"],
   "compilerOptions": {
     "target": "es2022",
     "module": "ES2022",
