@@ -1,0 +1,46 @@
+{
+  "name": "Hidden Years",
+  "id": "hiddenyears",
+  "metadata": {
+    "description": "",
+    "author": "Team Occultus",
+    "version": "3.0.0-alpha.7",
+    "contributors": []
+  },
+  "compilerOptions": {
+    "basic": {
+      "behavior": "HiddenYears(BP)",
+      "resource": "HiddenYears(RP)"
+    },
+    "typescript": {
+      "enable": true,
+      "entryPoint": "src/main.ts",
+      "engine": "esbuild",
+      "output": "HiddenYears(BP)/scripts/main.js",
+      "minify": true
+    },
+    "asset": {
+      "enable": true,
+      "texture": "assets/textures",
+      "localization": {
+        "path": "assets/lang",
+        "type": "JSON"
+      }
+    },
+    "outputDir": "dist"
+  },
+  "deployOptions": {
+    "platform": "stable",
+    "sources": [
+      {
+        "path": "HiddenYears(BP)",
+        "type": "behavior"
+      },
+      {
+        "path": "HiddenYears(RP)",
+        "type": "resource"
+      }
+    ],
+    "gtk": true
+  }
+}

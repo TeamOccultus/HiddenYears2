@@ -20,9 +20,9 @@ importers:
       '@occultus/core':
         specifier: ^0.18.4
         version: 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
-      '@starock/cli':
-        specifier: ^0.7.0
-        version: 0.7.0(@types/node@24.2.1)
+      '@occultus/loom':
+        specifier: ^0.9.0
+        version: 0.9.0(@types/node@24.2.1)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -448,6 +448,10 @@ packages:
     peerDependencies:
       '@minecraft/server': '>=2.0.0'
 
+  '@occultus/loom@0.9.0':
+    resolution: {integrity: sha512-r+m1DPqwvxbTQ+aMUIN65N86BWY4h5HRj2AkYkjA5u57Oh/vVSFCUFwlhw0dxxAEp3ST2EFEghxnhAsel/N7vA==}
+    hasBin: true
+
   '@occultus/loot-api@0.20.0':
     resolution: {integrity: sha512-yooNe8x/pftcnCT9Igoj2JD197qPcLaI1MI3DezxXCIYDgXjCqMm3505+IWQ+TUYHT7NxZn/EJAwRxNmSM6FvQ==}
     peerDependencies:
@@ -637,10 +641,6 @@ packages:
 
   '@shikijs/vscode-textmate@10.0.2':
     resolution: {integrity: sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg==}
-
-  '@starock/cli@0.7.0':
-    resolution: {integrity: sha512-A5u5Dxb5TOLQeNz9919RBkv3o6NhOJN25vCMyIR0SQXG40Qmc8wURC+8GzS7kY8p7iHmlESnooIFtFR6BPCOnw==, tarball: https://codeberg.org/api/packages/TeamOccultus/npm/%40starock%2Fcli/-/0.7.0/cli-0.7.0.tgz}
-    hasBin: true
 
   '@tybys/wasm-util@0.10.1':
     resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
@@ -1432,6 +1432,22 @@ snapshots:
     transitivePeerDependencies:
       - '@occultus/core'
 
+  '@occultus/loom@0.9.0(@types/node@24.2.1)':
+    dependencies:
+      '@inquirer/prompts': 8.2.0(@types/node@24.2.1)
+      archiver: 7.0.1
+      chalk: 5.6.2
+      commander: 14.0.2
+      esbuild: 0.27.2
+      fflate: 0.8.2
+      fs-extra: 11.3.3
+      json5: 2.2.3
+      jsonc-parser: 3.3.1
+      rolldown: 1.0.0-beta.60
+      typescript: 5.9.3
+    transitivePeerDependencies:
+      - '@types/node'
+
   '@occultus/loot-api@0.20.0(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))(@occultus/core@0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)))':
     dependencies:
       '@minecraft/server': 2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20)
@@ -1581,22 +1597,6 @@ snapshots:
       '@types/hast': 3.0.4
 
   '@shikijs/vscode-textmate@10.0.2': {}
-
-  '@starock/cli@0.7.0(@types/node@24.2.1)':
-    dependencies:
-      '@inquirer/prompts': 8.2.0(@types/node@24.2.1)
-      archiver: 7.0.1
-      chalk: 5.6.2
-      commander: 14.0.2
-      esbuild: 0.27.2
-      fflate: 0.8.2
-      fs-extra: 11.3.3
-      json5: 2.2.3
-      jsonc-parser: 3.3.1
-      rolldown: 1.0.0-beta.60
-      typescript: 5.9.3
-    transitivePeerDependencies:
-      - '@types/node'
 
   '@tybys/wasm-util@0.10.1':
     dependencies:

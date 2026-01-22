@@ -1,7 +1,7 @@
 {
   "num_mip_levels": 4,
   "padding": 8,
-  "resource_pack_name": "HiddenYears2",
+  "resource_pack_name": "Hidden Years",
   "texture_name": "atlas.terrain",
   "texture_data": {
     "hiddenyears:actived_lightning_grave": {
