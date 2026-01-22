@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:magic_origin"
+    },
+    "tags": ["alchemy_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:magic_dust",
+        "count": 1
+      },
+      {
+        "item": "minecraft:gold_ingot",
+        "count": 1
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:magic_dust"
+      },
+      {
+        "item": "minecraft:gold_ingot"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:magic_origin",
+      "count": 1
+    }
+  }
+}

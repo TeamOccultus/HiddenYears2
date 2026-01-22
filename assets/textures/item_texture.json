@@ -533,6 +533,9 @@
     "hiddenyears:magic_feather_cape": {
       "textures": "textures/items/magic_feather_cape"
     },
+    "hiddenyears:magic_origin": {
+      "textures": "textures/items/magic_origin"
+    },
     "hiddenyears:mask_of_the_sea": {
       "textures": "textures/items/mask_of_the_sea"
     },
