@@ -1,10 +1,10 @@
 import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CreditsForm } from "./CreditsForm";
-import { HiddenYears2Credits } from "../data/credits";
 import { CopyrightForm } from "./CopyrightForm";
 import { ArtifactForm } from "@occultus/api";
 import { book } from "../server/registry/task";
+import { default as credits }  from "../../config/credits.json";
 
 export class ProfileForm {
   static display(player: Player): void {
@@ -15,16 +15,19 @@ export class ProfileForm {
       .divider()
       .label({ translate: "ui.profile.game" })
       .button({ translate: "ui.task" }, "textures/items/task_book")
-      .button({ translate: "ui.artifact" }, "textures/items/diamond_badge")
+      .button({ translate: "ui.artifact" }, "textures/items/diamond_badge");
     form
       .divider()
       .label({ translate: "ui.profile.about" })
-      .button({ translate: "ui.profile.copyright" }, "textures/items/book_written")
+      .button(
+        { translate: "ui.profile.copyright" },
+        "textures/items/book_written",
+      )
       .button({ translate: "ui.profile.credits" }, "textures/ui/credits_hat");
     form.show(player).then((result) => {
       if (result.canceled) return;
       if (result.selection === undefined) return;
-      if(result.selection === 0){
+      if (result.selection === 0) {
         book.display(player);
       }
       if (result.selection === 1) {
@@ -36,7 +39,7 @@ export class ProfileForm {
         return;
       }
       if (result.selection === 3) {
-        CreditsForm.display(player, HiddenYears2Credits);
+        CreditsForm.display(player, credits);
         return;
       }
     });

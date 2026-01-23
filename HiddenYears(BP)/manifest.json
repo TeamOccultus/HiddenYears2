@@ -25,7 +25,7 @@
       "type": "script",
       "uuid": "9e7290c0-1f5a-4328-97b5-17e24f5bb3aa",
       "version": "3.0.0-alpha.7",
-      "entry": "scripts/index.js"
+      "entry": "scripts/main.js"
     }
   ],
   "dependencies": [
