@@ -22,7 +22,7 @@
       {
         "test": "has_biome_tag",
         "operator": "==",
-        "value": "overworld"
+        "value": "plains"
       }
     ]
   }
