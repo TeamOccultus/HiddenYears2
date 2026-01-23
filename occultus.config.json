@@ -17,7 +17,7 @@
       "entryPoint": "src/main.ts",
       "engine": "esbuild",
       "output": "HiddenYears(BP)/scripts/main.js",
-      "minify": false
+      "minify": true
     },
     "asset": {
       "enable": true,

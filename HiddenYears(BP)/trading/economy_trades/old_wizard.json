@@ -1,0 +1,58 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 3
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:magic_dust",
+                  "quantity": 4
+                }
+              ]
+            },
+            {
+              "max_uses": 16,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 2
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "hiddenyears:copper_coin",
+                  "quantity": 15
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:ruby",
+                  "quantity": 3
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

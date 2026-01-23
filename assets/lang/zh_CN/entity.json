@@ -23,6 +23,7 @@
   "entity.hiddenyears:gemstone_trader.name": "宝石商人",
   "entity.hiddenyears:hidden_trader.name": "隐秘商人",
   "entity.hiddenyears:sand_trader.name": "尼罗特游商",
+  "entity.hiddenyears:old_wizard.name": "老法师",
   "item.spawn_egg.entity.hiddenyears:ruby_zombie.name": "红宝石僵尸刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_skeleton.name": "红宝石骷髅刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:ruby_guardian.name": "红宝石守卫刷怪蛋",
@@ -45,5 +46,6 @@
   "item.spawn_egg.entity.hiddenyears:trial_skeleton.name": "试炼骷髅刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:gemstone_trader.name": "宝石商人刷怪蛋",
   "item.spawn_egg.entity.hiddenyears:hidden_trader.name": "隐秘商人刷怪蛋",
-  "item.spawn_egg.entity.hiddenyears:sand_trader.name": "尼罗特游商刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:sand_trader.name": "尼罗特游商刷怪蛋",
+  "item.spawn_egg.entity.hiddenyears:old_wizard.name": "老法师刷怪蛋"
 }
