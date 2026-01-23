@@ -1,7 +1,7 @@
 .idea/
 node_modules/
 output/
-HiddenYears(BP)/scripts/index.js
+HiddenYears(BP)/scripts/main.js
 HiddenYears(RP)/texts/
 HiddenYears(RP)/textures/
 !build
