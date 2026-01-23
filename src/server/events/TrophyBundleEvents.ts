@@ -6,8 +6,9 @@ import {
   system,
 } from "@minecraft/server";
 import { TrophyBundleParam } from "../components/TrophyBundleComponent/Params";
-import { bundlesLoot, bundlesBossLoot } from "../../data/bundle";
 import { setEquipmentItem, loot, RandomEvent } from "@occultus/api";
+import { default as bundlesLoot } from "../../../config/bundles/monster.json";
+import { default as bundlesBossLoot } from "../../../config/bundles/boss.json";
 
 /**
  * 战利品袋的相关事件
@@ -26,7 +27,7 @@ export class TrophyBundleEvents {
       loot(
         source.dimension,
         source.location,
-        TrophyBundleEvents.getLootTable(itemStack, p)
+        TrophyBundleEvents.getLootTable(itemStack, p),
       );
     }, 10);
   }
@@ -41,22 +42,22 @@ export class TrophyBundleEvents {
   static registryLoot() {
     world.afterEvents.entityDie.subscribe((event) => {
       const entity = event.deadEntity;
-      if (bundlesLoot.has(entity.typeId)) {
+      if (bundlesLoot[entity.typeId]) {
         const res = new RandomEvent(1.0, () => {
           const bundle = new ItemStack("hiddenyears:trophy_bundle");
           bundle.setDynamicProperty(
             "hiddenyears:loot_table",
-            bundlesLoot.get(entity.typeId)
+            bundlesLoot[entity.typeId],
           );
           entity.dimension.spawnItem(bundle, entity.location);
         });
         res.call();
       }
-      if (bundlesBossLoot.has(entity.typeId)) {
+      if (bundlesBossLoot[entity.typeId]) {
         const bundle = new ItemStack("hiddenyears:trophy_bundle");
         bundle.setDynamicProperty(
           "hiddenyears:loot_table",
-          bundlesBossLoot.get(entity.typeId)
+          bundlesBossLoot[entity.typeId],
         );
         entity.dimension.spawnItem(bundle, entity.location);
       }
