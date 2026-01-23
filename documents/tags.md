@@ -10,6 +10,12 @@ category: Documents
 
 魔药具有的合成标签。
 
+## hiddenyears:complex_potion
+
+> 适用范围：物品
+
+复合魔药具有的标签，用于脚本系统的识别。
+
 ## hiddenyears:is_artifact
 
 > 适用范围：物品
