@@ -2,14 +2,98 @@
   {
     "ingredient": "minecraft:rabbit_foot",
     "effect": "minecraft:jump_boost",
-    "duration": 1200,
-    "amplifier": 0,
+    "duration": 600,
+    "amplifier": 1,
     "can_always_use": false
   },
   {
     "ingredient": "minecraft:sugar",
     "effect": "minecraft:speed",
-    "duration": 1200,
-    "amplifier": 0
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:glistering_melon_slice",
+    "effect": "minecraft:instant_health",
+    "duration": 5,
+    "amplifier": 2
+  },
+  {
+    "ingredient": "minecraft:spider_eye",
+    "effect": "minecraft:poison",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:golden_carrot",
+    "effect": "minecraft:night_vision",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:pufferfish",
+    "effect": "minecraft:water_breathing",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:magma_cream",
+    "effect": "minecraft:fire_resistance",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:blaze_powder",
+    "effect": "minecraft:strength",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:ghast_tear",
+    "effect": "minecraft:regeneration",
+    "duration": 5,
+    "amplifier": 2
+  },
+  {
+    "ingredient": "minecraft:turtle_helmet",
+    "effect": "minecraft:resistance",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:phantom_membrane",
+    "effect": "minecraft:slow_falling",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "minecraft:phantom_membrane",
+    "effect": "minecraft:slow_falling",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "hiddenyears:stone_nugget",
+    "effect": "minecraft:infested",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "hiddenyears:slime_ball",
+    "effect": "minecraft:oozing",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "hiddenyears:web",
+    "effect": "minecraft:weaving",
+    "duration": 600,
+    "amplifier": 1
+  },
+  {
+    "ingredient": "hiddenyears:breeze_rod",
+    "effect": "minecraft:wind_charged",
+    "duration": 600,
+    "amplifier": 1
   }
 ]
