@@ -2,7 +2,7 @@
   "format_version": "1.21.0",
   "minecraft:recipe_brewing_container": {
     "description": {
-      "identifier": "hiddenyears:complex_potion_basic"
+      "identifier": "hiddenyears:complex_potion"
     },
     "tags": ["brewing_stand"],
     "input": "minecraft:potion",
@@ -12,6 +12,6 @@
       }
     ],
     "reagent": "hiddenyears:magic_origin",
-    "output": "hiddenyears:complex_potion_basic"
+    "output": "hiddenyears:complex_potion"
   }
 }
