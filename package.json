@@ -17,11 +17,11 @@
     "@minecraft/server-ui": "2.0.0",
     "@occultus/api": "^0.22.0-alpha.15",
     "@occultus/core": "^0.18.4",
-    "@occultus/loom": "^0.9.2",
+    "@occultus/loom": "^0.9.3",
     "typescript": "^5.9.3"
   },
   "devDependencies": {
-    "typedoc": "^0.28.15",
+    "typedoc": "^0.28.16",
     "typedoc-material-theme": "^1.4.1"
   }
 }
