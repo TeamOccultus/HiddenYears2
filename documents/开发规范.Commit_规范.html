@@ -156,12 +156,15 @@
   --md-sys-color-surface-container-high: #efe7de;
   --md-sys-color-surface-container-highest: #e9e1d9
 }
-</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@occultus/hidden-years - v3.0.0-alpha.7</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="开发规范.html">开发规范</a></li><li><a href="" aria-current="page">Commit 规范</a></li></ul></div><div class="tsd-panel tsd-typography"><h1 id="commit-规范" class="tsd-anchor-link">Commit 规范<a href="#commit-规范" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1><p>隐藏之年项目采用类 Angular 规范编写提交信息：</p>
+</style><link rel="stylesheet" href="../assets/material-style.css"/></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@occultus/hidden-years - v3.0.0-alpha.7</a><div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/><ul role="listbox" id="tsd-search-results"></ul><div id="tsd-search-status" aria-live="polite" aria-atomic="true"><div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><ul class="tsd-breadcrumb" aria-label="Breadcrumb"><li><a href="开发规范.html">开发规范</a></li><li><a href="" aria-current="page">Commit 规范</a></li></ul></div><div class="tsd-panel tsd-typography"><h1 id="commit-规范" class="tsd-anchor-link">Commit 规范<a href="#commit-规范" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h1>
+<p>隐藏之年项目采用类 Angular 规范编写提交信息：</p>
 <pre><code><span class="hl-0">&lt;</span><span class="hl-1">type</span><span class="hl-0">&gt;(&lt;</span><span class="hl-1">scope</span><span class="hl-0">&gt;): &lt;</span><span class="hl-1">subject</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;</span><span class="hl-2">BLANK</span><span class="hl-0"> </span><span class="hl-2">LINE</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;</span><span class="hl-1">body</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;</span><span class="hl-2">BLANK</span><span class="hl-0"> </span><span class="hl-2">LINE</span><span class="hl-0">&gt;</span><br/><span class="hl-0">&lt;</span><span class="hl-1">footer</span><span class="hl-0">&gt;</span>
 </code><button>Copy</button></pre>
 
 <p>每次提交<strong>可以</strong>包含正文(<code>body</code>)和页脚(<code>footer</code>)，<strong>必须</strong>包含页眉(<code>header</code>)。内容，每次提交的信息不超过 100 个字符。</p>
-<h2 id="header" class="tsd-anchor-link">Header<a href="#header" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><h3 id="type" class="tsd-anchor-link">Type<a href="#type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>用于说明 commit 的类别，允许使用下面个标识：</p>
+<h2 id="header" class="tsd-anchor-link">Header<a href="#header" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<h3 id="type" class="tsd-anchor-link">Type<a href="#type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>用于说明 commit 的类别，允许使用下面个标识：</p>
 <ul>
 <li>feat：添加新功能；</li>
 <li>fix：修复漏洞；</li>
@@ -172,7 +175,8 @@
 <li>chore：构建过程或辅助工具的变动；</li>
 <li>revert：回滚提交。</li>
 </ul>
-<h3 id="scope" class="tsd-anchor-link">Scope<a href="#scope" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>用于说明提交影响的范围，根据本项目特点，一般使用以下标识：</p>
+<h3 id="scope" class="tsd-anchor-link">Scope<a href="#scope" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>用于说明提交影响的范围，根据本项目特点，一般使用以下标识：</p>
 <ul>
 <li>beh：行为包；</li>
 <li>res：资源包；</li>
@@ -181,13 +185,16 @@
 <li>assets：纹理资源。</li>
 </ul>
 <p>还可以使用形如<code>beh/items</code>的方法进一步细化范围。</p>
-<h3 id="subject" class="tsd-anchor-link">Subject<a href="#subject" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>用于简要描述提交的内容，需要注意：</p>
+<h3 id="subject" class="tsd-anchor-link">Subject<a href="#subject" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<p>用于简要描述提交的内容，需要注意：</p>
 <ul>
 <li><strong>使用中文描述</strong>；</li>
 <li>结尾不加句号。</li>
 </ul>
-<h2 id="body" class="tsd-anchor-link">Body<a href="#body" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><p>用于详细描述提交的内容，如果没有必要，可以省略。</p>
-<h2 id="footer" class="tsd-anchor-link">Footer<a href="#footer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2><p>如果当前代码与上一个版本不兼容，则 Footer 部分以<code>BREAKING CHANGE</code>开头，后面是对变动的描述、以及变动理由和迁移方法：</p>
+<h2 id="body" class="tsd-anchor-link">Body<a href="#body" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>用于详细描述提交的内容，如果没有必要，可以省略。</p>
+<h2 id="footer" class="tsd-anchor-link">Footer<a href="#footer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
+<p>如果当前代码与上一个版本不兼容，则 Footer 部分以<code>BREAKING CHANGE</code>开头，后面是对变动的描述、以及变动理由和迁移方法：</p>
 <pre><code><span class="hl-2">BREAKING</span><span class="hl-0"> </span><span class="hl-3">CHANGE</span><span class="hl-0">: </span><span class="hl-4">修改了</span><span class="hl-5">`hiddenyears:ore_type`</span><span class="hl-6">组件的参数类型</span>
 </code><button>Copy</button></pre>
 
