@@ -8,7 +8,8 @@
       }
     },
     "components": {
-      "minecraft:max_stack_size": 16,
+      "hiddenyears:complex_potion": {},
+      "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:cooling_herbtea",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
@@ -22,7 +23,11 @@
         "using_converts_to": "glass_bottle"
       },
       "minecraft:tags": {
-        "tags": ["potion", "hiddenyears:complex_potion"]
+        "tags": [
+          "potion",
+          "hiddenyears:complex_potion",
+          "hiddenyears:complex_basic"
+        ]
       }
     }
   }

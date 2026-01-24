@@ -29,6 +29,7 @@ import { StaffComponent } from "../components/StaffComponent/Component";
 import { JobComponent } from "../components/JobOfferComponent/Component";
 import { TrialStoneComponent } from "../components/TrialStoneComponent/Component";
 import { ArmorTypeComponent } from "../components/ArmorTypeComponent/Component";
+import { ComplexPotionComponent } from "../components/ComplexPotionComponent/Component";
 
 /**
  * 注册自定义组件
@@ -52,6 +53,7 @@ export function registryComponents() {
   new JobComponent("hiddenyears:job");
   new TrialStoneComponent("hiddenyears:trial_stone");
   new ArmorTypeComponent("hiddenyears:armor_type");
+  new ComplexPotionComponent("hiddenyears:complex_potion");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

@@ -1,10 +1,11 @@
 import { ItemStack, system } from "@minecraft/server";
 import { ComplexPotionRecipeType } from "./ComplexPotionRecipeType";
 import { default as builtinData } from "../../../../config/recipes/complex_potion.json";
-import { ComplexPotionType } from "../../item/ComplexPotion";
+import { ComplexPotion, ComplexPotionType } from "../../item/ComplexPotion";
 
 export class ComplexPotionRecipeManager {
   static recipes: ComplexPotionRecipeType[] = builtinData;
+  static ingredients: string[] = builtinData.map((recipe) => recipe.ingredient);
   static getResult(ingredient: string): ComplexPotionType | undefined {
     for (const recipe of this.recipes) {
       if (recipe.ingredient === ingredient) {
@@ -20,6 +21,28 @@ export class ComplexPotionRecipeManager {
   }
   static addRecipe(recipe: ComplexPotionRecipeType) {
     this.recipes.push(recipe);
+    this.ingredients.push(recipe.ingredient);
+  }
+  static getRecipe(str: string): ComplexPotionRecipeType | undefined {
+    return this.recipes.find((recipe) => recipe.ingredient === str);
+  }
+  static canBeAdded(
+    recipe: ComplexPotionRecipeType,
+    ingredient: ItemStack,
+  ): boolean {
+    if (!ComplexPotion.hasPotionType(ingredient, recipe.effect)) return true;
+    return recipe.can_always_use ?? false;
+  }
+  static getResultItem(
+    item: ItemStack,
+    recipe: ComplexPotionRecipeType,
+  ): ItemStack {
+    ComplexPotion.addPotionType(item, {
+      effect: recipe.effect,
+      duration: recipe.duration,
+      amplifier: recipe.amplifier,
+    });
+    return item;
   }
   /**
    * 允许第三方插件添加新的碎石机配方
