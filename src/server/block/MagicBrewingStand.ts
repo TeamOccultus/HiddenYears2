@@ -3,6 +3,7 @@ import {
   BlockWithEntity,
   consumeAmount,
   consumeEquipmentAmount,
+  parseToRomanNumber,
   setEquipmentItem,
   toVec3,
   Vector3Utils,
@@ -11,25 +12,62 @@ import {
   DataDrivenEntityTriggerAfterEvent,
   ItemStack,
   PlayerInteractWithBlockAfterEvent,
+  RawMessage,
   system,
 } from "@minecraft/server";
 import { ComplexPotionRecipeManager } from "../recipe/complexPotion/ComplexPotionRecipeManager";
 import { ComplexPotionRecipeType } from "../recipe/complexPotion/ComplexPotionRecipeType";
-
+import { default as translationMap } from "../../../config/effect.json";
 
 function setLore(item: ItemStack, recipe: ComplexPotionRecipeType) {
   let lore = item.getLore();
   if (lore.length === 0) {
     item.setLore([
-      "§r§9状态效果：",
-      `§r§f${recipe.effect} ${recipe.amplifier + 1} (${recipe.duration / 20}秒)`,
+      "",
+      { translate: "ui.complex_potion.effect" },
+      {
+        rawtext: [
+          {
+            text: "§r§f",
+          },
+          {
+            translate: translationMap[recipe.effect]!,
+          },
+          {
+            text: ` ${parseToRomanNumber(recipe.amplifier + 1)}`,
+          },
+          {
+            text: ` (${recipe.duration / 20}`,
+          },
+          {
+            translate: "ui.complex_potion.second",
+          },
+        ],
+      },
     ]);
     return;
   }
-  lore.push(
-    `§r§f${recipe.effect} ${recipe.amplifier + 1} (${recipe.duration / 20}秒)`,
-  );
-  item.setLore(lore);
+  let newLore: (string | RawMessage)[] = lore;
+  newLore.push({
+    rawtext: [
+      {
+        text: "§r§f",
+      },
+      {
+        translate: translationMap[recipe.effect]!,
+      },
+      {
+        text: ` ${parseToRomanNumber(recipe.amplifier + 1)}`,
+      },
+      {
+        text: ` (${recipe.duration / 20}`,
+      },
+      {
+        translate: "ui.complex_potion.second",
+      },
+    ],
+  });
+  item.setLore(newLore);
 }
 
 export class MagicBrewingStand extends BlockWithEntity {
