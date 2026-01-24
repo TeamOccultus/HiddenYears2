@@ -26,8 +26,10 @@ export class OreEvents {
    */
   static mentalAffect(player: Player) {
     if (player.getGameMode() === GameMode.Creative) return;
-    const num = player.getDynamicProperty("hiddenyears:destroy_ruby_count");
-    if (num === 0 || !num) {
+    let num = player.getDynamicProperty("hiddenyears:destroy_ruby_count");
+    // 初始化
+    if (typeof num !== "number") num = 0;
+    if (num === 0) {
       player.addLevels(1);
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 200);
@@ -60,8 +62,6 @@ export class OreEvents {
         });
       }, 50);
     }
-    if (typeof num !== "number")
-      throw new Error("Invalid dynamic property type!");
     player.setDynamicProperty("hiddenyears:destroy_ruby_count", num + 1);
   }
 }
