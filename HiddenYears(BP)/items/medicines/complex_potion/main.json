@@ -9,6 +9,10 @@
     },
     "components": {
       "hiddenyears:complex_potion": {},
+      "minecraft:rarity": "rare",
+      "minecraft:glint": {
+        "value": true
+      },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:cooling_herbtea",
       "minecraft:use_animation": "drink",
