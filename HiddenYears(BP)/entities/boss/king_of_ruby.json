@@ -44,8 +44,8 @@
         "table": "loot_tables/entities/king_of_ruby.json"
       },
       "minecraft:health": {
-        "value": 400,
-        "max": 400
+        "value": 800,
+        "max": 800
       },
       "minecraft:damage_sensor": {
         "triggers": [
