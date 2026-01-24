@@ -14,6 +14,23 @@ import {
   system,
 } from "@minecraft/server";
 import { ComplexPotionRecipeManager } from "../recipe/complexPotion/ComplexPotionRecipeManager";
+import { ComplexPotionRecipeType } from "../recipe/complexPotion/ComplexPotionRecipeType";
+
+
+function setLore(item: ItemStack, recipe: ComplexPotionRecipeType) {
+  let lore = item.getLore();
+  if (lore.length === 0) {
+    item.setLore([
+      "§r§9状态效果：",
+      `§r§f${recipe.effect} ${recipe.amplifier + 1} (${recipe.duration / 20}秒)`,
+    ]);
+    return;
+  }
+  lore.push(
+    `§r§f${recipe.effect} ${recipe.amplifier + 1} (${recipe.duration / 20}秒)`,
+  );
+  item.setLore(lore);
+}
 
 export class MagicBrewingStand extends BlockWithEntity {
   constructor() {
@@ -56,6 +73,7 @@ export class MagicBrewingStand extends BlockWithEntity {
       if (!ComplexPotionRecipeManager.canBeAdded(recipe, item)) return;
       console.log("canBeAdded");
       const result = ComplexPotionRecipeManager.getResultItem(item, recipe);
+      setLore(result, recipe);
       consumeEquipmentAmount(player, 1);
       system.waitTicks(10).then(() => {
         player.dimension.spawnItem(

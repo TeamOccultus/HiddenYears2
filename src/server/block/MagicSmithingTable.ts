@@ -15,7 +15,7 @@ export class MagicSmithingTable extends BlockWithEntity {
   constructor() {
     super(
       "hiddenyears:magic_smithing_table",
-      "hiddenyears:magic_smithing_table"
+      "hiddenyears:magic_smithing_table",
     );
   }
   synchronizedStackData(from: ItemStack, to: ItemStack) {
@@ -24,7 +24,7 @@ export class MagicSmithingTable extends BlockWithEntity {
       from.getComponent("minecraft:durability")
     ) {
       to.getComponent("minecraft:durability").damage = from.getComponent(
-        "minecraft:durability"
+        "minecraft:durability",
       ).damage;
     }
   }
@@ -60,7 +60,7 @@ export class MagicSmithingTable extends BlockWithEntity {
     }
     player.dimension.spawnItem(
       MSTRecipeManager.getResult(recipe, baseItem),
-      Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 })
+      Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 }),
     );
     player.playSound("smithing_table.use");
     BlockEntity.clearStoredItem(entityData);
