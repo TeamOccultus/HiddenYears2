@@ -1,0 +1,7 @@
+{
+  "minecraft:pig": "minecraft:porkchop",
+  "minecraft:cow": "minecraft:beef",
+  "minecraft:chicken": "minecraft:chicken",
+  "minecraft:sheep": "minecraft:mutton",
+  "minecraft:rabbit": "minecraft:rabbit"
+}
