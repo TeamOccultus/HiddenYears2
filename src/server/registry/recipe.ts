@@ -7,6 +7,7 @@ import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
 import { SawRecipeManager } from "../recipe/saw/SawRecipeManager";
 import { CrowbarRecipeManager } from "../recipe/crowbar/CrowbarRecipeManager";
 import { MagicSmithingTable } from "../block/MagicSmithingTable";
+import { ComplexPotionRecipeManager } from "../recipe/complexPotion/ComplexPotionRecipeManager";
 
 /**
  * 注册配方
@@ -17,4 +18,5 @@ export function registryCustomRecipe() {
   CrusherRecipeManager.openToPlugin();
   SawRecipeManager.openToPlugin();
   CrowbarRecipeManager.openToPlugin();
+  ComplexPotionRecipeManager.openToPlugin();
 }

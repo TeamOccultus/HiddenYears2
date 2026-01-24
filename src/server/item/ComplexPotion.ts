@@ -56,4 +56,5 @@ export type ComplexPotionType = {
   effect: string;
   amplifier: number;
   duration: number;
+  alwaysCanUse?: boolean;
 };
