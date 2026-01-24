@@ -1,7 +1,7 @@
 import { body, feet, hand, head, runes } from "./artifactSlots";
 import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
-import herd from "./herd";
-import crop from "./crop";
+import { default as crop } from "../../config/crop.json";
+import { default as herd } from "../../config/herd.json";
 import { Artifact, Format, RandomEvent, Random } from "@occultus/api";
 
 /**
@@ -21,7 +21,7 @@ const diamondBadge = new Artifact(
     ],
   },
   body,
-  "textures/items/diamond_badge"
+  "textures/items/diamond_badge",
 );
 diamondBadge.onEquip((arg) => {
   arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 4 });
@@ -44,7 +44,7 @@ const goldenBadge = new Artifact(
     ],
   },
   body,
-  "textures/items/golden_badge"
+  "textures/items/golden_badge",
 );
 goldenBadge.onEquip((arg) => {
   arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 3 });
@@ -67,7 +67,7 @@ const copperBadge = new Artifact(
     ],
   },
   body,
-  "textures/items/copper_badge"
+  "textures/items/copper_badge",
 );
 copperBadge.onEquip((arg) => {
   arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 2 });
@@ -89,7 +89,7 @@ const maskOfTheSea = new Artifact(
     ],
   },
   head,
-  "textures/items/mask_of_the_sea"
+  "textures/items/mask_of_the_sea",
 );
 maskOfTheSea.onEquip((arg) => {
   arg.source.addEffect("minecraft:conduit_power", 6000);
@@ -113,7 +113,7 @@ const sparklingMask = new Artifact(
     ],
   },
   head,
-  "textures/items/sparkling_mask"
+  "textures/items/sparkling_mask",
 );
 sparklingMask.onEquip((arg) => {
   arg.source.addEffect("minecraft:night_vision", 12000);
@@ -141,7 +141,7 @@ const soldiersHelmet = new Artifact(
     ],
   },
   head,
-  "textures/items/soldiers_helmet"
+  "textures/items/soldiers_helmet",
 );
 soldiersHelmet.onHitEntity((arg) => {
   new RandomEvent(0.35, () => {
@@ -151,7 +151,7 @@ soldiersHelmet.onHitEntity((arg) => {
     });
     arg.hitEntity.dimension.spawnParticle(
       "minecraft:critical_hit_emitter",
-      arg.hitEntity.location
+      arg.hitEntity.location,
     );
   }).call();
 });
@@ -167,15 +167,15 @@ const herdersHat = new Artifact(
     ],
   },
   head,
-  "textures/items/herders_hat"
+  "textures/items/herders_hat",
 );
 herdersHat.onHitEntity((arg) => {
   if (!arg.hitEntity.isValid) return;
-  if (!herd.has(arg.hitEntity.typeId)) return;
+  if (!herd[arg.hitEntity.typeId]) return;
   new RandomEvent(0.3, () => {
     arg.hitEntity.dimension.spawnItem(
-      new ItemStack(herd.get(arg.hitEntity.typeId)!, Random.integer(1, 3)),
-      arg.hitEntity.location
+      new ItemStack(herd[arg.hitEntity.typeId]!, Random.integer(4, 2)),
+      arg.hitEntity.location,
     );
   }).call();
 });
@@ -191,15 +191,15 @@ const farmersHat = new Artifact(
     ],
   },
   head,
-  "textures/items/farmers_hat"
+  "textures/items/farmers_hat",
 );
 farmersHat.onMineBlock((arg) => {
   const currectId = arg.brokenBlockPermutation.type.id;
-  if (!crop.has(currectId)) return;
+  if (!crop[currectId]) return;
   new RandomEvent(0.3, () => {
     arg.block.dimension.spawnItem(
-      new ItemStack(crop.get(currectId)!, Random.integer(1, 3)),
-      arg.block.location
+      new ItemStack(crop[currectId]!, Random.integer(4, 2)),
+      arg.block.location,
     );
   });
 });
@@ -217,7 +217,7 @@ const invisibleCape = new Artifact(
     ],
   },
   body,
-  "textures/items/invisible_cape"
+  "textures/items/invisible_cape",
 );
 invisibleCape.onEquip((arg) => {
   arg.source.addEffect("minecraft:invisibility", 12000);
@@ -237,7 +237,7 @@ const thornsCape = new Artifact(
     ],
   },
   body,
-  "textures/items/thorns_cape"
+  "textures/items/thorns_cape",
 );
 thornsCape.onHurt((arg) => {
   const { cause, damagingEntity } = arg.damageSource;
@@ -248,7 +248,7 @@ thornsCape.onHurt((arg) => {
   });
   damagingEntity.dimension.spawnParticle(
     "minecraft:critical_hit_emitter",
-    damagingEntity.location
+    damagingEntity.location,
   );
 });
 
@@ -268,7 +268,7 @@ const fireCape = new Artifact(
     ],
   },
   body,
-  "textures/items/fire_cape"
+  "textures/items/fire_cape",
 );
 fireCape.onEquip((arg) => {
   arg.source.addEffect("minecraft:fire_resistance", 12000);
@@ -288,7 +288,7 @@ const magicFeatherCape = new Artifact(
     ],
   },
   body,
-  "textures/items/magic_feather_cape"
+  "textures/items/magic_feather_cape",
 );
 magicFeatherCape.onEquip((arg) => {
   arg.source.addEffect("minecraft:slow_falling", 12000);
@@ -308,7 +308,7 @@ const minersGlove = new Artifact(
     ],
   },
   hand,
-  "textures/items/miners_glove"
+  "textures/items/miners_glove",
 );
 minersGlove.onMineBlock((arg) => {
   arg.player.addEffect("minecraft:haste", 6000);
@@ -325,7 +325,7 @@ const fightersGlove = new Artifact(
     ],
   },
   hand,
-  "textures/items/fighters_glove"
+  "textures/items/fighters_glove",
 );
 fightersGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
@@ -357,7 +357,7 @@ const engulfGlove = new Artifact(
     ],
   },
   hand,
-  "textures/items/engulf_glove"
+  "textures/items/engulf_glove",
 );
 engulfGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
@@ -382,7 +382,7 @@ const rubyRing = new Artifact(
     ],
   },
   hand,
-  "textures/items/ruby_ring"
+  "textures/items/ruby_ring",
 );
 rubyRing.onHitEntity((arg) => {
   if (!arg.damagingEntity.isValid) return;
@@ -405,7 +405,7 @@ const cursedRing = new Artifact(
     ],
   },
   hand,
-  "textures/items/cursed_ring"
+  "textures/items/cursed_ring",
 );
 cursedRing.onHitEntity((arg) => {
   if (!arg.hitEntity.isValid) return;
@@ -423,7 +423,7 @@ const speedBoots = new Artifact(
     ],
   },
   feet,
-  "textures/items/speed_boots"
+  "textures/items/speed_boots",
 );
 speedBoots.onEquip((arg) => {
   arg.source.addEffect("minecraft:speed", 12000, { amplifier: 2 });
@@ -443,7 +443,7 @@ const hareBoots = new Artifact(
     ],
   },
   feet,
-  "textures/items/hare_boots"
+  "textures/items/hare_boots",
 );
 hareBoots.onEquip((arg) => {
   arg.source.addEffect("minecraft:jump_boost", 12000, { amplifier: 2 });
@@ -463,7 +463,7 @@ const crucifixRunes = new Artifact(
     ],
   },
   runes,
-  "textures/items/crucifix_runes"
+  "textures/items/crucifix_runes",
 );
 crucifixRunes.onHurt((arg) => {
   if (!arg.hurtEntity.isValid) return;
@@ -488,7 +488,7 @@ const gluttonousRunes = new Artifact(
     ],
   },
   runes,
-  "textures/items/gluttonous_runes"
+  "textures/items/gluttonous_runes",
 );
 gluttonousRunes.onEquip((arg) => {
   arg.source.addEffect("minecraft:strength", 18000, { amplifier: 4 });
@@ -509,7 +509,7 @@ const imprisonedWing = new Artifact(
     ],
   },
   runes,
-  "textures/items/imprisoned_wing"
+  "textures/items/imprisoned_wing",
 );
 imprisonedWing.onHitEntity((arg) => {
   arg.damagingEntity.addTag("hiddenyears:imprisoned_wing");
@@ -527,7 +527,7 @@ imprisonedWing.onHitEntity((arg) => {
       });
       entity.dimension.spawnParticle(
         "dragon_breath_lingering",
-        entity.location
+        entity.location,
       );
     });
   arg.damagingEntity.removeTag("hiddenyears:imprisoned_wing");
@@ -544,7 +544,7 @@ const rubyRunes = new Artifact(
     ],
   },
   runes,
-  "textures/items/ruby_runes"
+  "textures/items/ruby_runes",
 );
 rubyRunes.onEquip((arg) => {
   arg.source.addEffect("minecraft:fire_resistance", 12000, { amplifier: 0 });
@@ -566,7 +566,7 @@ const sandRunes = new Artifact(
     ],
   },
   runes,
-  "textures/items/sand_runes"
+  "textures/items/sand_runes",
 );
 sandRunes.onEquip((arg) => {});
 sandRunes.onUnequip((player) => {});
