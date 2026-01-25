@@ -16,7 +16,7 @@ export class WayStoneForm {
       .title({ translate: "ui.waystone.title" })
       .body({ translate: "ui.waystone.body" });
     list.forEach((wayStone) => {
-      form.button(wayStone.name);
+      form.button(wayStone.name, wayStone.icp);
     });
     form.show(player).then((result) => {
       if (result.canceled) return;
@@ -24,11 +24,11 @@ export class WayStoneForm {
       const selection = list[result.selection];
       player.teleport(
         toVec3(
-          selection.location[0],
-          selection.location[1] + 1,
-          selection.location[2],
+          selection.loc[0],
+          selection.loc[1] + 1,
+          selection.loc[2],
         ),
-        { dimension: world.getDimension(selection.dimension) },
+        { dimension: world.getDimension(selection.dim) },
       );
     });
   }

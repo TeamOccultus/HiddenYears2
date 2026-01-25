@@ -68,22 +68,27 @@ export class ReturnGemEvents {
         { translate: "ui.waystone.set_name.desc" },
         { defaultValue: "My WayPoint!" },
       )
+      .textField(
+        { translate: "ui.waystone.set_icon" },
+        { translate: "ui.waystone.set_icon.desc" },
+      )
       .submitButton({ translate: "gui.ok" })
       .show(player)
       .then((response) => {
-        let [name] = response.formValues;
+        let [name, iconPath] = response.formValues;
         if (typeof name !== "string") {
           console.warn("[隐藏之年] WTF? Your way point name isn't a string!");
           name = "My WayPoint!";
         }
         WayStone.addWayStone(player, {
           name: name,
-          location: [
+          loc: [
             newBlock.location.x,
             newBlock.location.y,
             newBlock.location.z,
           ],
-          dimension: newBlock.dimension.id,
+          dim: newBlock.dimension.id,
+          icp: iconPath as string,
         });
         player.sendMessage({
           rawtext: [
