@@ -1,6 +1,6 @@
 {
   "pack.name": "隐藏之年²：天边的迦万涅尔",
-  "pack.description": "「探索未知的世间」 | 仅供测试，请在加载前备份存档 | Alpha 7",
+  "pack.description": "「探索未知的世间」 | 仅供测试，请在加载前备份存档",
   "gui.unequip": "卸下",
   "ui.artifact": "饰品",
   "ui.artifact_equipped": "已装备饰品：",
@@ -85,5 +85,7 @@
   "ui.migration.task.start": "任务迁移开始，请不要关闭游戏……",
   "ui.migration.task.success": "任务迁移完成：共找到 %1 个任务，成功迁移 %2 个任务，有 %3 个任务暂时无法迁移",
   "ui.complex_potion.effect": "§r§9状态效果：",
-  "ui.complex_potion.second": "秒）"
+  "ui.complex_potion.second": "秒）",
+  "ui.return_gem.body": "归途宝石将会与你当前所在的位置绑定，再次使用宝石时将会传送到该位置！",
+  "ui.return_gem.location": "§r§9将被传送至："
 }
