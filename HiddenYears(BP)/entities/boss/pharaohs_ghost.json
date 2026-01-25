@@ -51,8 +51,8 @@
         "table": "loot_tables/entities/pharaohs_ghost.json"
       },
       "minecraft:health": {
-        "value": 550,
-        "max": 550
+        "value": 1000,
+        "max": 1000
       },
       "minecraft:damage_sensor": {
         "triggers": [
