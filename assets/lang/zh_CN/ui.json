@@ -87,5 +87,10 @@
   "ui.complex_potion.effect": "§r§9状态效果：",
   "ui.complex_potion.second": "秒）",
   "ui.return_gem.body": "归途宝石将会与你当前所在的位置绑定，再次使用宝石时将会传送到该位置！",
-  "ui.return_gem.location": "§r§9将被传送至："
+  "ui.return_gem.location": "§r§9将被传送至：",
+  "ui.waystone.body": "从下面的列表中选择一个进行传送",
+  "ui.waystone.title": "传送石碑",
+  "ui.waystone.empty": "你还没有绑定传送石碑！",
+  "ui.waystone.set_name": "命名传送点",
+  "ui.waystone.set_name.desc": "为这个传送点起一个很棒的名字"
 }

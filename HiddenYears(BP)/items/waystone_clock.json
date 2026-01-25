@@ -2,14 +2,14 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:return_gem",
+      "identifier": "hiddenyears:waystone_clock",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
       "hiddenyears:return_gem": {
-        "bind_to": "script"
+        "bind_to": "waystone"
       },
       "minecraft:icon": "hiddenyears:pastor_gem",
       "minecraft:rarity": "rare",

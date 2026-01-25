@@ -9,6 +9,9 @@ export class ReturnGemComponent {
         onUse(arg0, arg1) {
           ReturnGemEvents.onUse(arg0, arg1);
         },
+        onUseOn(arg0, arg1) {
+          ReturnGemEvents.onUseOn(arg0, arg1);
+        },
       });
     });
   }

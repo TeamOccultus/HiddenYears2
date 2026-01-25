@@ -50,5 +50,7 @@
   "message.hiddenyears:sand_silverfish": "有什么奇怪的东西从沙子中钻出来了！",
   "message.hiddenyears:migration.task": "请使用 /migration 命令迁移旧版游戏数据！",
   "message.hiddenyears:not_a_ingredient": "该物品无法用于酿造！",
-  "message.hiddenyears:cannot_find_home": "游戏无法找到你的出生点……睡一觉试试？"
+  "message.hiddenyears:cannot_find_home": "游戏无法找到你的出生点……睡一觉试试？",
+  "message.hiddenyears:waystone_already_set": "你已激活该传送点！",
+  "message.hiddenyears:waystone_set": "你已激活传送点：%s"
 }

@@ -9,7 +9,7 @@
     },
     "components": {
       "hiddenyears:return_gem": {
-        "back_home": true
+        "bind_to": "home"
       },
       "minecraft:icon": "hiddenyears:pastor_gem",
       "minecraft:rarity": "rare",
