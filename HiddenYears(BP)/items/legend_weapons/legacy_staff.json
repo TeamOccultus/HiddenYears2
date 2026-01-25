@@ -14,8 +14,9 @@
       "hiddenyears:staff": {
         "damage": 5,
         "radius": 10,
-        "particle": "critical_hit_emitter",
-        "staff_preset": "legacy_staff"
+        "particle": "minecraft:critical_hit_emitter",
+        "staff_preset": "legacy_staff",
+        "sound_event": "wind_charge.burst"
       },
       "minecraft:rarity": "rare",
       "minecraft:can_destroy_in_creative": false,

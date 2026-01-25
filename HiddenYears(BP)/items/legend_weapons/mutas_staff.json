@@ -14,8 +14,9 @@
       "hiddenyears:staff": {
         "damage": 8,
         "radius": 15,
-        "particle": "critical_hit_emitter",
-        "staff_preset": "mutas_staff"
+        "particle": "minecraft:critical_hit_emitter",
+        "staff_preset": "mutas_staff",
+        "sound_event": "wind_charge.burst"
       },
       "minecraft:rarity": "epic",
       "minecraft:can_destroy_in_creative": false,
