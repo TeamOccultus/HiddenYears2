@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:legacy_staff"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X  ", " # ", "  #"],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "hiddenyears:magic_origin"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:legacy_staff"
+    }
+  }
+}

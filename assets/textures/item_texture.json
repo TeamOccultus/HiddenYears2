@@ -503,6 +503,9 @@
     "hiddenyears:lapis_nugget": {
       "textures": "textures/items/lapis_nugget"
     },
+    "hiddenyears:legacy_staff": {
+      "textures": "textures/items/legacy_staff"
+    },
     "hiddenyears:lightning_arrow": {
       "textures": "textures/items/lightning_arrow"
     },
