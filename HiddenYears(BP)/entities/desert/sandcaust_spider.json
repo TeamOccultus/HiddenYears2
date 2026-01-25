@@ -137,7 +137,14 @@
       },
       "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": ["spider", "monster", "mob", "arthropod", "drought_attacker", "mutas_friend"]
+        "family": [
+          "spider",
+          "monster",
+          "mob",
+          "arthropod",
+          "desert_monster",
+          "mutas_friend"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,

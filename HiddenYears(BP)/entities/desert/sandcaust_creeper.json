@@ -67,8 +67,9 @@
           "creeper",
           "monster",
           "mob",
-          "drought_attacker",
-          "mutas_friend"
+          "desert_monster",
+          "mutas_friend",
+          "desert_monster"
         ]
       },
       "minecraft:breathable": {

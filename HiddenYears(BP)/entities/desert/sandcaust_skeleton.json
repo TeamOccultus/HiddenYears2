@@ -70,7 +70,8 @@
           "undead",
           "monster",
           "mob",
-          "mutas_friend"
+          "mutas_friend",
+          "desert_monster"
         ]
       },
       "minecraft:breathable": {

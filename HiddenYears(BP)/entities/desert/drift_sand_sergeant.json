@@ -116,7 +116,14 @@
         ]
       },
       "minecraft:type_family": {
-        "family": ["drift_sand_sergeant", "monster", "drift_sand", "mob", "mutas_friend"]
+        "family": [
+          "drift_sand_sergeant",
+          "monster",
+          "drift_sand",
+          "mob",
+          "mutas_friend",
+          "desert_monster"
+        ]
       },
       "minecraft:variant": { "value": 0 },
       "minecraft:breathable": { "total_supply": 15, "suffocate_time": 0 },

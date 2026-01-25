@@ -14,7 +14,13 @@
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": ["scorpion", "monster", "mob", "drought_attacker", "mutas_friend"]
+        "family": [
+          "scorpion",
+          "monster",
+          "mob",
+          "desert_monster",
+          "mutas_friend"
+        ]
       },
       "minecraft:collision_box": { "width": 1.0, "height": 0.5 },
       "minecraft:movement.basic": {},

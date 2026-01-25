@@ -12,3 +12,6 @@ category: Documents
 
 BOSS 具有的实体族。
 
+## desert_monster
+
+沙漠怪物具有的实体族，被带有该族的生物会获得干旱效果。
