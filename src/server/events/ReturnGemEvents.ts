@@ -9,6 +9,7 @@ import {
   setEquipmentItem,
   consumeEquipmentAmount,
   toVec3,
+  Color,
 } from "@occultus/api";
 import { ReturnGemParam } from "../components/ReturnGemComponent/Params";
 import { MessageFormData } from "@minecraft/server-ui";
@@ -17,12 +18,30 @@ export class ReturnGemEvents {
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const { source: player, itemStack } = arg0;
     const p = arg1.params as ReturnGemParam;
-    consumeEquipmentAmount(player, 1);
-    if (p.location) {
+    if (p.back_home) {
+      const home = player.getSpawnPoint();
+      if (!home?.x) {
+        player.sendMessage({
+          rawtext: [
+            { text: Color.gray },
+            { translate: "message.hiddenyears:cannot_find_home" },
+          ],
+        });
+        return;
+      }
+      consumeEquipmentAmount(player, 1);
+      player.teleport(toVec3(home.x, home.y, home.z), {
+        dimension: home.dimension,
+      });
       player.playSound(p.sound_event ?? "mob.endermen.portal");
+      return;
+    }
+    if (p.location) {
+      consumeEquipmentAmount(player, 1);
       player.teleport(toVec3(p.location[0], p.location[1], p.location[2]), {
         dimension: world.getDimension(p.dimension ?? "minecraft:overworld"),
       });
+      player.playSound(p.sound_event ?? "mob.endermen.portal");
       return;
     }
     if (itemStack.getDynamicProperty("hiddenyears:location")) {
@@ -32,8 +51,9 @@ export class ReturnGemEvents {
       const location = itemStack.getDynamicProperty(
         "hiddenyears:location",
       ) as Vector3;
-      player.playSound(p.sound_event ?? "mob.endermen.portal");
+      consumeEquipmentAmount(player, 1);
       player.teleport(location, { dimension: world.getDimension(dim) });
+      player.playSound(p.sound_event ?? "mob.endermen.portal");
       return;
     }
     const form = new MessageFormData()

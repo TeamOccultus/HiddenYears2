@@ -296,5 +296,6 @@
   "item.hiddenyears:magic_origin": "魔法源质",
   "item.hiddenyears:complex_potion": "复合药水",
   "item.hiddenyears:legacy_staff": "老法杖",
-  "item.hiddenyears:return_gem": "归途之石"
+  "item.hiddenyears:return_gem": "归途晶石",
+  "item.hiddenyears:home_gem": "归乡晶石"
 }

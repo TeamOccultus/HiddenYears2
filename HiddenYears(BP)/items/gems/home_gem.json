@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:home_gem",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:return_gem": {
+        "back_home": true
+      },
+      "minecraft:icon": "hiddenyears:pastor_gem",
+      "minecraft:rarity": "rare",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}
