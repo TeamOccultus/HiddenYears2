@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:home_gem"
+    },
+    "tags": ["alchemy_table"],
+    "ingredients": [
+      { "item": "minecraft:ender_pearl", "count": 1 },
+      { "item": "minecraft:wool", "count": 1 },
+      { "item": "hiddenyears:magic_dust", "count": 1 }
+    ],
+    "unlock": [
+      { "item": "minecraft:ender_pearl" },
+      { "item": "minecraft:wool" },
+      { "item": "hiddenyears:magic_dust" }
+    ],
+    "result": {
+      "item": "hiddenyears:home_gem"
+    }
+  }
+}

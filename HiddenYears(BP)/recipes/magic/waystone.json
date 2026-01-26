@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:waystone"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["XXX", "XAX", "XXX"],
+    "key": {
+      "A": {
+        "item": "minecraft:lodestone"
+      },
+      "X": {
+        "item": "hiddenyears:magic_origin"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:lodestone"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:waystone"
+    }
+  }
+}
