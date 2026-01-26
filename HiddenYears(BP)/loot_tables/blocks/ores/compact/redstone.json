@@ -20,13 +20,28 @@
       "entries": [
         {
           "type": "item",
+          "weight": 3,
           "name": "minecraft:redstone",
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 5,
-                "max": 9
+                "min": 6,
+                "max": 10
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "weight": 1,
+          "name": "minecraft:redstone_block",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
               }
             }
           ]

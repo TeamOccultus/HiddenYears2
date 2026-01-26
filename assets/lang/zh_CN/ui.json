@@ -94,5 +94,6 @@
   "ui.waystone.set_name": "命名传送点",
   "ui.waystone.set_name.desc": "为这个传送点起一个很棒的名字",
   "ui.waystone.set_icon": "[高级选项] 设置传送点图标",
-  "ui.waystone.set_icon.desc": "除非你知道自己在干什么，否则请不要修改此项！"
+  "ui.waystone.set_icon.desc": "除非你知道自己在干什么，否则请不要修改此项！",
+  "ui.artifact_cooldown": "饰品冷却中！"
 }

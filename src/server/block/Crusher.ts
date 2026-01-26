@@ -9,7 +9,6 @@ import {
   DataDrivenEntityTriggerAfterEvent,
   ItemStack,
   PlayerInteractWithBlockAfterEvent,
-  world,
 } from "@minecraft/server";
 import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
 
