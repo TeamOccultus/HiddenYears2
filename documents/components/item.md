@@ -5,22 +5,25 @@ category: Documents
 ---
 
 # 物品组件
-## hiddenyears:adventurer_note
+## hiddenyears:hidden_effect_food
 
-使物品获得书籍「故地异国行纪」的功能。
-
+为食物添加食用后的自定义模拟效果：
 
 | 参数 | 类型 | 可选？ | 描述 |
 | ---- | ---- | ------ | ---- |
-| N/A | | | 使物品获得书籍「故地异国行纪」的功能。|
+| effect | `HiddenEffects` | 必填 | 食用后给予玩家的模拟效果 |
+| duration | `number \| number[]` | 必填 | 模拟效果持续的时间，以刻为单位，必须在范围`[0, 20000000]`内 |
+| amplifier | `number \| number[]` | 可选 | 模拟效果等级 |
+| remove | `HiddenEffects` | 可选 | 要移除的模拟效果类型 |
 
-例如：
+在`HiddenEffects`类型中：
 
-```json
-{
-  "hiddenyears:adventurer_note": {}
-}
-```
+| 可用值 | 描述 |
+| ------ | ---- |
+| `tetanus` | 破伤风 |
+| `bleed` | 失血 |
+| `dehydration` | 脱水 |
+| `drought` | 干旱 |
 
 ## hiddenyears:effective_food
 
@@ -170,10 +173,95 @@ category: Documents
 
 其中的硬编码即指`loot_table`参数指定的战利品表，脚本指从物品的`hiddenyears:loot_table`动态属性获取战利品表。
 
-#### hiddenyears:exp_food
+## hiddenyears:exp_food
 
 指定食物给予的经验值：
 
 | 参数 | 类型 | 可选？ | 描述 |
 | ---- | ---- | ------ | ---- |
 | exp | `number` | 必填 | 食物给予玩家的经验值 |
+
+## hiddenyears:coin
+
+将物品设置为货币，使用该物品时将会增加玩家的统一货币值：
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| ucv_value | `number` | 必填 | 单个货币对应的「统一货币值」 |
+
+## hiddenyears:staff
+
+为物品添加范围法杖的功能：
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| damage | `number` | 必填 | 法杖可造成的伤害 |
+| radius | `number` | 必填 | 法杖生效的范围 |
+| particle | `string` | 可选 | 法杖对敌人造成伤害时生成的粒子 |
+| sound_event | `string` | 可选 | 使用法杖时的音效 |
+| staff_preset | `StaffPreset` | 可选 | 法杖的预设 |
+
+在`StaffPreset`类型中：
+
+| 可用值 | 描述 |
+| ------ | ---- |
+| `mutas_staff` | 创世之杖的预设，会在敌人头顶生成闪电 |
+
+## hiddenyears:job
+
+允许使用该物品后对玩家的职业进行操作：
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| job_type | `JobType` | 必填 | 要向玩家添加的职业类型 |
+| remove_old | `boolean` | 可选 | 是否移除玩家当前的职业数据 |
+
+在`JobType`类型中：
+
+| 可用值 | 描述 |
+| ------ | ---- |
+| `traveler` | 行旅者 |
+| `none` | 无 |
+
+## hiddenyears:return_gem
+
+配置传送道具的相关参数：
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| bind_to | `LocationProvider` | 必填 | 传送道具的终点来源 |
+| location | `[number, number, number]` | 可选 | 将返回位置固定为某一坐标，并禁用绑定功能 |
+| dimension | `string` | 可选 | 将返回位置固定为某一维度，并禁用绑定功能 |
+| sound_event | `string` | 可选 | 返回时播放的音效 |
+
+在`LocationProvider`类型中：
+
+| 可用值 | 描述 |
+| ------ | ---- |
+| `script` | 从动态属性读取目的地 |
+| `data_driven` | 从数据驱动读取目的地 |
+| `home` | 读取玩家出生点作为目的地 |
+| `waystone` | 与传送石碑绑定 |
+
+
+## hiddenyears:blessing_of_isis
+
+> [!IMPORTANT]
+> 这是一个内部组件，在未来我们会开放更多自定义选项
+
+为物品添加「雨之神的祝福」的功能
+
+## hiddenyears:complex_potion
+
+> [!IMPORTANT]
+> 这是一个内部组件，在未来我们会开放更多自定义选项
+
+为物品添加「复合药水」的功能
+
+## hiddenyears:adventurer_note
+
+> [!IMPORTANT]
+> 这是一个内部组件，在未来我们会开放更多自定义选项
+
+使物品获得书籍「故地异国行纪」的功能。
+

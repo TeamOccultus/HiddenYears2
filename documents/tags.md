@@ -4,6 +4,12 @@ group: Documents
 category: Documents
 ---
 
+## hiddenyears:waystone
+
+> 适用范围：方块
+
+传送石具有的标签，用于脚本系统的识别。
+
 ## hiddenyears:magic_potion
 
 > 适用范围：物品
