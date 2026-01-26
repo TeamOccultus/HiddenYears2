@@ -10,12 +10,8 @@ import { getEquipmentItem } from "@occultus/api";
 export class ArmorTypeComponent {
   constructor(readonly componentName: string) {
     system.beforeEvents.startup.subscribe((init) => {
-      const block = init.blockComponentRegistry;
-      block.registerCustomComponent(componentName, {
-        onPlayerInteract(arg0, arg1) {
-          const p = arg1.params as ArmorTypeParams;
-        },
-      });
+      const item = init.itemComponentRegistry;
+      item.registerCustomComponent(componentName, {});
     });
     world.afterEvents.entityHealthChanged.subscribe((event) => {
       if (!event.entity.isValid) return;
@@ -28,7 +24,7 @@ export class ArmorTypeComponent {
         .customComponentParameters.params as ArmorTypeParams;
       if (params.present === "isis_crown") {
         const health = event.entity.getComponent(
-          "minecraft:health"
+          "minecraft:health",
         ) as EntityHealthComponent;
         const newHealth = health.currentValue + changedValue * 0.25;
         if (newHealth > health.defaultValue) {

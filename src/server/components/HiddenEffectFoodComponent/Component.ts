@@ -2,6 +2,9 @@ import { Player, system } from "@minecraft/server";
 import { HiddenEffectFoodParams } from "./Params";
 import { HiddenEffectFoodEvent } from "../../events/HiddenEffectFoodEvent";
 
+/**
+ * 为食物添加食用后的自定义模拟效果
+ */
 export class HiddenEffectFoodComponent {
   constructor(readonly componentName: string) {
     system.beforeEvents.startup.subscribe((arg) => {
