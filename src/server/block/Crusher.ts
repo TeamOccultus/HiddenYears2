@@ -12,7 +12,6 @@ import {
   world,
 } from "@minecraft/server";
 import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
-import { DebugMode } from "../../debug/Debug";
 
 export class Crusher extends BlockWithEntity {
   constructor() {
@@ -33,7 +32,6 @@ export class Crusher extends BlockWithEntity {
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
     if (Array.isArray(filledItem)) return;
-    DebugMode.log(filledItem?.typeId);
     if (!filledItem) {
       if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
         player.sendMessage({

@@ -4,7 +4,6 @@
  */
 import { default as credits }  from "../../../config/credits.json";
 import { CreditsCommand } from "../commands/CreditsCommand";
-import { DebugCommand } from "../commands/DebugCommand";
 import { MigrateCommand } from "../commands/MigrateCommand";
 import { ProfileCommand } from "../commands/ProfileCommand";
 
@@ -14,6 +13,5 @@ import { ProfileCommand } from "../commands/ProfileCommand";
 export function registryCommands() {
   new CreditsCommand("hiddenyears:credits", credits);
   new ProfileCommand("hiddenyears:profile");
-  new DebugCommand("hiddenyears:debug");
   new MigrateCommand("hiddenyears:migrate");
 }

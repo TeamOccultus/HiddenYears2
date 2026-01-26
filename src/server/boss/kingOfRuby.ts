@@ -1,6 +1,5 @@
 import { Player, system } from "@minecraft/server";
 import { BossSkill, getAllExp, Boss } from "@occultus/api";
-import { DebugMode } from "../../debug/Debug";
 
 const stealExperience = new BossSkill(
   "steal_exp",
@@ -14,7 +13,6 @@ const stealExperience = new BossSkill(
         entity.sendMessage({
           translate: "message.hiddenyears:boss.king_of_ruby.steal_exp",
         });
-        DebugMode.log(getAllExp(entity).toString());
         stolen += getAllExp(entity);
         entity.resetLevel();
       }
