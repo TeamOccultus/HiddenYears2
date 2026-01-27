@@ -31,6 +31,7 @@ import { TrialStoneComponent } from "../components/TrialStoneComponent/Component
 import { ArmorTypeComponent } from "../components/ArmorTypeComponent/Component";
 import { ComplexPotionComponent } from "../components/ComplexPotionComponent/Component";
 import { ReturnGemComponent } from "../components/ReturnGemComponent/Component";
+import { ProfileComponent } from "../components/ProfileComponent/Component";
 
 /**
  * 注册自定义组件
@@ -55,6 +56,7 @@ export function registryComponents() {
   new TrialStoneComponent("hiddenyears:trial_stone");
   new ArmorTypeComponent("hiddenyears:armor_type");
   new ComplexPotionComponent("hiddenyears:complex_potion");
+  new ProfileComponent("hiddenyears:profile");
   new ReturnGemComponent("hiddenyears:return_gem");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
