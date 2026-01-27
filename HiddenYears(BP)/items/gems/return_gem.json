@@ -11,7 +11,7 @@
       "hiddenyears:return_gem": {
         "bind_to": "script"
       },
-      "minecraft:icon": "hiddenyears:pastor_gem",
+      "minecraft:icon": "hiddenyears:return_gem",
       "minecraft:rarity": "rare",
       "minecraft:max_stack_size": 1
     }

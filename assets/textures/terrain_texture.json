@@ -124,6 +124,12 @@
     "hiddenyears:loose_redstone_ore": {
       "textures": "textures/blocks/loose_redstone_ore"
     },
+    "hiddenyears:magic_brewing_stand_side": {
+      "textures": "textures/blocks/magic_brewing_stand_side"
+    },
+    "hiddenyears:magic_brewing_stand_top": {
+      "textures": "textures/blocks/magic_brewing_stand_top"
+    },
     "hiddenyears:originite_block": {
       "textures": "textures/blocks/originite_block"
     },
@@ -186,6 +192,9 @@
     },
     "hiddenyears:stone_of_fear": {
       "textures": "textures/blocks/stone_of_fear"
+    },
+    "hiddenyears:waystone": {
+      "textures": "textures/blocks/waystone"
     }
   }
 }

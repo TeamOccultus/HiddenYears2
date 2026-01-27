@@ -41,20 +41,15 @@
     ],
     "components": {
       "hiddenyears:interactable": {},
-      "hiddenyears:destroy_condition": {
-        "item_tier": "stone",
-        "loot_table": "blocks/crusher"
-      },
-      "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
         "up": {
-          "texture": "hiddenyears:crusher_top"
+          "texture": "hiddenyears:magic_brewing_stand_top"
         },
-        "down": { "texture": "hiddenyears:crusher_bottom" },
-        "north": { "texture": "hiddenyears:crusher_other_side" },
-        "south": { "texture": "hiddenyears:crusher_other_side" },
-        "west": { "texture": "hiddenyears:crusher_side" },
-        "east": { "texture": "hiddenyears:crusher_other_side" }
+        "down": { "texture": "hiddenyears:alchemy_table_bottom" },
+        "north": { "texture": "hiddenyears:magic_brewing_stand_side" },
+        "south": { "texture": "hiddenyears:magic_brewing_stand_side" },
+        "west": { "texture": "hiddenyears:magic_brewing_stand_side" },
+        "east": { "texture": "hiddenyears:magic_brewing_stand_side" }
       },
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
@@ -64,7 +59,7 @@
         "seconds_to_destroy": 12,
         "item_specific_speeds": [
           {
-            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "item": { "tags": "query.any_tag('minecraft:is_axe')" },
             "destroy_speed": 2
           }
         ]

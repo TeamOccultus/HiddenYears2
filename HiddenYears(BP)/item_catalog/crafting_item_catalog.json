@@ -238,6 +238,26 @@
           },
           {
             "group_identifier": {
+              "icon": "hiddenyears:magic_origin",
+              "name": "hiddenyears:itemGroup.name.magic"
+            },
+            "items": [
+              "hiddenyears:magic_origin",
+              "hiddenyears:magic_dust",
+              "hiddenyears:contract_gem",
+              "hiddenyears:contract_dust",
+              "hiddenyears:waystone",
+              "hiddenyears:waystone_clock",
+              "hiddenyears:return_gem",
+              "hiddenyears:home_gem",
+              "hiddenyears:complex_potion",
+              "hiddenyears:magic_brewing_stand",
+              "hiddenyears:alchemy_table",
+              "hiddenyears:magic_smithing_table"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:crimson_eyes",
               "name": "hiddenyears:itemGroup.name.boss"
             },

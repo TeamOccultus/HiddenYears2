@@ -14,7 +14,7 @@
         "value": true
       },
       "minecraft:max_stack_size": 1,
-      "minecraft:icon": "hiddenyears:cooling_herbtea",
+      "minecraft:icon": "hiddenyears:complex_potion",
       "minecraft:use_animation": "drink",
       "minecraft:use_modifiers": {
         "use_duration": 2.0,

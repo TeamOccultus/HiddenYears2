@@ -83,6 +83,9 @@
     "hiddenyears:coal_nugget": {
       "textures": "textures/items/coal_nugget"
     },
+    "hiddenyears:complex_potion": {
+      "textures": "textures/items/complex_potion"
+    },
     "hiddenyears:contract_dust": {
       "textures": "textures/items/contract_dust"
     },
@@ -455,6 +458,9 @@
     "hiddenyears:herders_hat": {
       "textures": "textures/items/herders_hat"
     },
+    "hiddenyears:home_gem": {
+      "textures": "textures/items/home_gem"
+    },
     "hiddenyears:imprisoned_wing": {
       "textures": "textures/items/imprisoned_wing"
     },
@@ -784,6 +790,9 @@
     "hiddenyears:refined_rock_sword": {
       "textures": "textures/items/refined_rock_sword"
     },
+    "hiddenyears:return_gem": {
+      "textures": "textures/items/return_gem"
+    },
     "hiddenyears:ruby": {
       "textures": "textures/items/ruby"
     },
@@ -1062,6 +1071,9 @@
     },
     "hiddenyears:warrior_gem": {
       "textures": "textures/items/warrior_gem"
+    },
+    "hiddenyears:waystone_clock": {
+      "textures": "textures/items/waystone_clock"
     },
     "hiddenyears:wizard_gem": {
       "textures": "textures/items/wizard_gem"

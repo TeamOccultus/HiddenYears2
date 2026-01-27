@@ -11,7 +11,7 @@
       "hiddenyears:return_gem": {
         "bind_to": "waystone"
       },
-      "minecraft:icon": "hiddenyears:pastor_gem",
+      "minecraft:icon": "hiddenyears:waystone_clock",
       "minecraft:rarity": "rare",
       "minecraft:max_stack_size": 1
     }
