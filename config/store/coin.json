@@ -1,0 +1,17 @@
+[
+  {
+    "item": "hiddenyears:copper_coin",
+    "ucv": 10,
+    "count": 1
+  },
+  {
+    "item": "hiddenyears:gold_coin",
+    "ucv": 100,
+    "count": 1
+  },
+  {
+    "item": "hiddenyears:diamond_coin",
+    "ucv": 1000,
+    "count": 1
+  }
+]

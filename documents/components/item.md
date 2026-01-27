@@ -265,3 +265,10 @@ category: Documents
 
 使物品获得书籍「故地异国行纪」的功能。
 
+## hiddenyears:profile
+
+> [!IMPORTANT]
+> 这是一个内部组件，在未来我们会开放更多自定义选项
+
+使物品获得「时匿怀表」的功能。
+

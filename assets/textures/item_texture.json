@@ -634,6 +634,9 @@
     "hiddenyears:oblivion_gem": {
       "textures": "textures/items/oblivion_gem"
     },
+    "hiddenyears:occultus_watch": {
+      "textures": "textures/items/occultus_watch"
+    },
     "hiddenyears:originite_axe": {
       "textures": "textures/items/originite_axe"
     },
