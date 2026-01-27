@@ -1,9 +1,10 @@
 import { Player } from "@minecraft/server";
 import { MessageFormData } from "@minecraft/server-ui";
 import { ProfileForm } from "./ProfileForm";
+import { StarTenon } from "@occultus/api";
 
 export class CopyrightForm {
-  static display(player: Player, backTo = true) {
+  static display(player: Player, backTo = false) {
     const form = new MessageFormData()
       .title({ translate: "ui.profile.copyright" })
       .body({
@@ -19,7 +20,7 @@ export class CopyrightForm {
           { text: "\n\n" },
           {
            text:
-              "Powered by Occultus SDK and Occultus Emoji",
+              `Powered by Occultus SDK v${StarTenon.version}  and Occultus Emoji`,
           }
         ],
       })

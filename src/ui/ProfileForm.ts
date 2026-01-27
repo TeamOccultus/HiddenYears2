@@ -2,10 +2,11 @@ import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CreditsForm } from "./CreditsForm";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArtifactForm } from "@occultus/api";
+import { ArtifactForm, JobCenter } from "@occultus/api";
 import { book } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
 import { UCVForm } from "./UCVForm";
+import { jobCenter, jobServer } from "../server/registry/job";
 
 export class ProfileForm {
   static display(player: Player): void {
@@ -29,7 +30,8 @@ export class ProfileForm {
       .label({ translate: "ui.profile.game" })
       .button({ translate: "ui.task" }, "textures/items/task_book")
       .button({ translate: "ui.artifact" }, "textures/items/diamond_badge")
-      .button({ translate: "ui.ucv" }, "textures/items/gold_coin");
+      .button({ translate: "ui.ucv" }, "textures/items/gold_coin")
+      .button({ translate: "ui.job.title" }, "textures/items/legacy_staff");
     form
       .divider()
       .label({ translate: "ui.profile.about" })
@@ -53,11 +55,15 @@ export class ProfileForm {
         return;
       }
       if (result.selection === 3) {
-        CopyrightForm.display(player);
+        jobCenter.display(player, jobServer);
         return;
       }
       if (result.selection === 4) {
-        CreditsForm.display(player, credits);
+        CopyrightForm.display(player, true);
+        return;
+      }
+      if (result.selection === 5) {
+        CreditsForm.display(player, credits, true);
         return;
       }
     });

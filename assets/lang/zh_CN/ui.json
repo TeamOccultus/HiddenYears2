@@ -74,6 +74,7 @@
   "ui.job.upgrade.max": "你已是最高等级！",
   "ui.job.notice.body": "你当前没有获得任何职业，请先获得职业再打开此界面",
   "ui.job.level": "当前等级：Lv. §6%1§r（最大等级：Lv. §6%2§r）",
+  "ui.job.title": "职业",
   "ui.job.canTransformTo": "可以转职为：",
   "ui.family.trial_monster": "试炼怪物",
   "ui.tag.is_artifact": "饰品",

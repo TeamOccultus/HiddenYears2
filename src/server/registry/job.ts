@@ -14,23 +14,24 @@ import { magicArcher } from "../job/advanced/magicArcher";
 import { orisonPastor } from "../job/advanced/orisonPastor";
 import { swordman } from "../job/advanced/swordman";
 
+export const jobServer = new JobServer();
+export const jobCenter = new JobCenter("hiddenyears:job_center", jobServer);
+
 export function registryJob() {
-  const server = new JobServer();
-  server.addJob(traveler);
-  server.addJob(warrior);
-  server.addJob(archer);
-  server.addJob(pastor);
-  server.addJob(wizard);
-  server.addJob(amnestyPastor);
-  server.addJob(arcaneWizard);
-  server.addJob(assassin);
-  server.addJob(berserker);
-  server.addJob(conjureWizard);
-  server.addJob(magicArcher);
-  server.addJob(orisonPastor);
-  server.addJob(swordman);
-  const center = new JobCenter("hiddenyears:job_center", server);
-  center.addTrigger(null, {
+  jobServer.addJob(traveler);
+  jobServer.addJob(warrior);
+  jobServer.addJob(archer);
+  jobServer.addJob(pastor);
+  jobServer.addJob(wizard);
+  jobServer.addJob(amnestyPastor);
+  jobServer.addJob(arcaneWizard);
+  jobServer.addJob(assassin);
+  jobServer.addJob(berserker);
+  jobServer.addJob(conjureWizard);
+  jobServer.addJob(magicArcher);
+  jobServer.addJob(orisonPastor);
+  jobServer.addJob(swordman);
+  jobCenter.addTrigger(null, {
     name: "hiddenyears:job",
     description: " %command.job.description",
     permissionLevel: CommandPermissionLevel.Any,
