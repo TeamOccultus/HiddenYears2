@@ -1,4 +1,5 @@
-import { Player } from "@minecraft/server";
+import { ItemStack, Player } from "@minecraft/server";
+import { giveItem } from "@occultus/api";
 
 export class UnifiedCurrencyValue {
   private constructor() {}
@@ -30,7 +31,7 @@ export class UnifiedCurrencyValue {
    */
   static add(player: Player, value: number): number {
     const ucv = player.getDynamicProperty("hiddenyears:ucv");
-    player.playSound("use.coin")
+    player.playSound("use.coin");
     if (typeof ucv !== "number") {
       player.setDynamicProperty("hiddenyears:ucv", value);
       return value;
@@ -38,4 +39,37 @@ export class UnifiedCurrencyValue {
     player.setDynamicProperty("hiddenyears:ucv", ucv + value);
     return ucv + value;
   }
+  static processCoinOrder(player: Player, orders: CoinOrder[]): boolean {
+    const total = this.getTotalUCV(orders);
+    if (this.get(player) < total) {
+      const need = total - this.get(player);
+      player.sendMessage({
+        translate: "message.hiddenyears:need_ucv",
+        with: [Math.round(need).toString()],
+      });
+      return false;
+    }
+    orders.forEach((order) => {
+      giveItem(player, new ItemStack(order.item, order.itemCount));
+    });
+    this.set(player, this.get(player) - total);
+    player.sendMessage({
+      translate: "message.hiddenyears:ucv_order_success",
+      with: [Math.round(total).toString()],
+    })
+    return true;
+  }
+  static getTotalUCV(orders: CoinOrder[]) {
+    let total = 0;
+    orders.forEach((order) => {
+      total += order.ucv * order.itemCount;
+    });
+    return total;
+  }
 }
+
+export type CoinOrder = {
+  item: string;
+  ucv: number;
+  itemCount: number;
+};

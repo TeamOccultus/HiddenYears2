@@ -52,5 +52,7 @@
   "message.hiddenyears:not_a_ingredient": "该物品无法用于酿造！",
   "message.hiddenyears:cannot_find_home": "游戏无法找到你的出生点……睡一觉试试？",
   "message.hiddenyears:waystone_already_set": "你已激活该传送点！",
-  "message.hiddenyears:waystone_set": "你已激活传送点：%s"
+  "message.hiddenyears:waystone_set": "你已激活传送点：%s",
+  "message.hiddenyears:need_ucv": "你还需要 %s 点统一货币值才能兑换这些货币！",
+  "message.hiddenyears:ucv_order_success": "交易成功，共消耗了 %s 点统一货币值"
 }
