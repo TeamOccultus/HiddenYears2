@@ -1,5 +1,4 @@
 {
-  // 阅读物文本
   "article.adventurer_note.title": "故地异国行纪",
   "item.hiddenyears:adventurer_note": "故地异国行纪",
   "article.adventurer_note.content1": "旧日星空下的徘徊者重临世间",
@@ -646,7 +645,6 @@
   "task.title": "任务",
   "task.body": "旅者游历四海，寻找着世界的真相……",
   "task.prologue": "§d序章§r 故地的异旅人",
-  // 序章·第一幕
   "task.prolugue.act_1": "§d序章·第一幕§r 漫长的第一日",
   "task.prolugue.act_1.desc_1": "旧日星空下的旅者重临世间，",
   "task.prolugue.act_1.desc_2": "故土已然迸裂，但这个熟悉而陌生的世界等待着他。",
@@ -662,7 +660,6 @@
   "task.bread.desc": "用小麦在工作台上烘焙面包",
   "task.monster_hunter": "出击时刻",
   "task.monster_hunter.desc": "这个世界并非如你所想般安全，夜晚时会有不怀好意的怪物尝试将你杀死……",
-  // 序章·第二幕
   "task.prolugue.act_2": "§d序章·第二幕§r 磨砺武备",
   "task.prolugue.act_2.desc_1": "旅者望着危机四伏四伏的世界，踏上了磨砺武备的道路。",
   "task.prolugue.act_2.desc_2": "这分明不是他的故土。",
@@ -703,8 +700,6 @@
   "task.shield.desc": "用木板和铁锭合成一块盾牌",
   "task.skewer": "§d[工具与武器]§r 生物串串香",
   "task.skewer.desc": "用木棍和铸锭合成一把矛",
-
-  // 序章·第三幕
   "task.prolugue.act_3": "§d序章·第三幕§r 无尽之歌",
   "task.prolugue.act_3.desc_1": "旅者寻遍四海，找寻更加珍贵的材料、探索世界的奥秘——",
   "task.prolugue.act_3.desc_2": "但这仅仅是一个开始",
@@ -722,7 +717,6 @@
   "task.totem.desc_1": "不知多少个千年之前，天边的一颗星星突然闪烁起来，接着那天外的来客降临到这片大陆之上。",
   "task.totem.desc_2": "天地间一片黑暗，待到光明再现之时，持有不死图腾、承载着旧人类终其历史所追寻的「不朽」祝颂的「不死之族」便脱胎而出了",
   "task.totem.desc_3": "但那些拒绝归顺的生灵，只能在地狱之中日日夜夜地哭泣……",
-  // 第二章·第一幕
   "task.chapter_2.act_1": "§d第二章·第一幕§r 记忆的凝结",
   "task.chapter_2.act_1.desc": "？？？",
   "task.infested_beast": "受侵之兽",
@@ -734,8 +728,6 @@
   "task.memory_condensation": "记忆凝结之处",
   "task.memory_condensation.desc": "蔚蓝的月亮渐被腐蚀，而其下则是陷入癫狂的人类。",
   "task.memory_condensation.desc_2": "在最后时刻，他们选择将自己的记忆寄托于这些「小物件」上，以待未来的复苏。",
-
-  // 第二章·第二幕
   "task.chapter_2.act_2": "§d第二章·第二幕§r 旧日的家园",
   "task.chapter_2.act_2.desc": "旅者踏上了新的旅程，来到了一个陌生的世界……",
   "task.gold": "§d[下界探索]§r 失去光芒的黄金",
@@ -754,8 +746,6 @@
   "task.wither.desc_1": "「太古之战」后，人类搬迁到了一个新的位面，如今称为「主世界」的富饶之地。",
   "task.wither.desc_2": "之后，「傀儡术」便横空出世——这是一种精妙的技术，那些人偶师们费尽心思将这些没有生命的拙劣作品灌注智慧，让这些小玩意成为了人类的帮手。",
   "task.wither.desc_3": "凋灵何尝不是傀儡术的造物呢？从威力上讲，这恐怕就是人偶术的巅峰了吧……",
-
-  // 第二章·第三幕
   "task.chapter_2.act_3": "§d第二章·第三幕§r 天际线上",
   "task.chapter_2.act_3.desc": "旅者的足迹踏遍三个世界，本以为是故事的终结，却是冒险真正的起点。",
   "task.ender_eye": "§d[末地探索]§r 隔墙有眼",
@@ -767,7 +757,6 @@
   "task.ender_dragon": "§d[末地探索]§r 起与终相交汇",
   "task.ender_dragon.desc_1": "当勇者手持传说之剑击败魔龙的那一刻，天也倾颓，地也崩裂。",
   "task.ender_dragon.desc_2": "这是这片大陆上冒险家的旅途的终点，却是你旅程真正的起点——此刻，起与终相交汇。",
-  // 第一章·第一幕
   "task.chapter_1.act_1": "§d第一章·第一幕§r 力量与鲜血之舞",
   "task.chapter_1.act_1.desc": "当血月升起之时，被遗忘的传说将再次苏醒……",
   "task.summary_of_elven_history": "§d报幕：§r《精灵史摘要》",
@@ -811,7 +800,6 @@
   "task.song_of_power_and_blood.desc_1": "眷从发疯似的将主人的尸首运回倒塌的宫殿，但那里已不是它们的家。",
   "task.song_of_power_and_blood.desc_2": "故事的最后，它们匆匆地将尸首埋藏于低矮的教堂中，迎接自己的灭亡。",
   "task.song_of_power_and_blood.tips": "「血色的教堂」中，寻找「雷光的末冢」，使用血色的瞥视将其激活，即可召唤红宝石之王",
-  // 第二章·第四幕
   "task.chapter_2.act_4": "§d第二章·第四幕§r 原初的眷恋",
   "task.chapter_2.act_4.desc": "旅者的足迹踏遍三个世界，本以为是故事的终结，却是冒险真正的起点。",
   "task.alchemist": "炼金术士",
@@ -834,7 +822,6 @@
   "task.primal_yearning.desc": "传说神罚降下时，刺眼的光芒划过天际，子夜顿时成为了正午，而当着一切结束后，旧日的一切都化为幻影：清晨不再有旭日从东方升起，正午有如黑夜一般漆黑，夏天变成了冬天，冬天变成了极寒。",
   "task.primal_yearning.desc_2": "而你，正将这旧日的幻想如拼图般拼合到一起。",
   "task.primal_yearning.tips": "混合魔法粉、金锭、远古碎片、恐惧之魂与结绿之石，在炼金台上炼制「原初之锭」",
-  // 第三章·第一幕
   "task.chapter_3.act_1": "§d第三章·第一幕§r 风起层沙",
   "task.chapter_3.act_1.desc": "冰层之间的沉沦者终于苏醒于茫茫沙海，七十万个日夜已然流逝，前路漫漫，将行何处？",
   "task.green_in_sand": "沙海中的一抹绿",
@@ -889,7 +876,6 @@
   "task.rain_in_sand.desc": "失去了神的庇佑，往日的乐土化作乱葬岗，蹉跎于沙海的尼罗特人渐受沙蚀，帝国的军队沦为了没有意识的骨骸，茫茫沙海再一次披上死神的面纱……",
   "task.rain_in_sand.desc_2": "尼罗特帝国，就此覆灭。",
   "task.rain_in_sand.tips": "找到沙漠中的「地上祭坛」，将回生之符复位至其中的祭坛内即可开始挑战",
-  // 第三章·第二幕
   "task.chapter_3.act_2": "§d第三章·第二幕§r 旧日的沙加缅度",
   "task.chapter_3.act_2.desc": "【沙加缅度】，尽管早已消散在时间的长河之中，但是生活在新聚纪的每个人都知道——这里是昔日尼罗特帝国之都，亦是那时探险家的喜悦与伤心之地。",
   "task.gold_in_sand": "沙中碎金",
@@ -927,19 +913,15 @@
   "task.eye_of_sand_erosion.desc_2": "人们不知异变从何而来，只知道——他们如同千年前的沙漠子民失去了神明的庇佑，无数魔物从地底钻出。",
   "task.eye_of_sand_erosion.desc_3": "而这是太古的战争、灾厄的诸战后，人类面临的第三次灭顶之灾。",
   "task.eye_of_sand_erosion.tips": "击败沙蚀蜘蛛，获得沙蚀蛛眼，其可以用于酿造沙漠药壶的一种",
-  // 第四章·第一幕
   "task.chapter_4.act_1": "§d第四章·第一幕§r 九重地之下",
   "task.chapter_4.act_1.desc": "？？？",
   "task.echo_shard": "回响之碎片",
   "task.echo_shard.desc_1": "高高搭起的祭台与金杯中的血水旁，大主教波提非拉正尝试用秘法驱散亡魂。",
   "task.echo_shard.desc_2": "幽蓝色的烟雾弥漫着——他成功了。",
-
-  // 终章·第一幕
   "task.epilogue.act_1": "§d终章·第一幕§r 「███」的再建",
   "task.epilogue.act_1.desc": "？？？",
   "task.babel_sand": "风起层沙",
   "task.babel_sand.desc": "「来吧，我们要建造一座城和一座塔，塔顶通天，为要传扬我们的名，免得我们分散在全地上。」",
-
   "task.chapter_1": "§d第一章§r 染上鲜血的宝石",
   "task.chapter_2": "§d第二章§r 追随旧人的足迹",
   "task.chapter_3": "§d第三章§r 那叛神的国度",
