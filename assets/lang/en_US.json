@@ -27,7 +27,7 @@
     "ui.artifact.mask_of_the_sea": "Mask of the Sea",
     "item.hiddenyears:mask_of_the_sea.usage": "§7The conduit power effect will be granted within 5 minutes after wearing this item. The bonus will disappear immediately after removing the  artifact.§r",
     "item.hiddenyears:sparkling_mask": "Sparkling Mask",
-    "ui.artifact.sparkling_mask": "",
+    "ui.artifact.sparkling_mask": "Sparkling Mask",
     "item.hiddenyears:sparkling_mask.usage": "",
     "item.hiddenyears:soldiers_helmet": "",
     "ui.artifact.soldiers_helmet": "",
