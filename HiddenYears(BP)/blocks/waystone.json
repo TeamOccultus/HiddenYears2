@@ -44,7 +44,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:waystone",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         }
       },
       "minecraft:geometry": {

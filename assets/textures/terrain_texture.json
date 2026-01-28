@@ -130,6 +130,9 @@
     "hiddenyears:magic_brewing_stand_top": {
       "textures": "textures/blocks/magic_brewing_stand_top"
     },
+    "hiddenyears:magic_smithing_table": {
+      "textures": "textures/blocks/magic_smithing_table"
+    },
     "hiddenyears:originite_block": {
       "textures": "textures/blocks/originite_block"
     },

@@ -47,17 +47,13 @@
       },
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
-        "up": {
-          "texture": "hiddenyears:crusher_top"
-        },
-        "down": { "texture": "hiddenyears:crusher_bottom" },
-        "north": { "texture": "hiddenyears:crusher_other_side" },
-        "south": { "texture": "hiddenyears:crusher_other_side" },
-        "west": { "texture": "hiddenyears:crusher_side" },
-        "east": { "texture": "hiddenyears:crusher_other_side" }
+        "*": {
+          "texture": "hiddenyears:magic_smithing_table",
+          "render_method": "alpha_test"
+        }
       },
       "minecraft:geometry": {
-        "identifier": "minecraft:geometry.full_block"
+        "identifier": "geometry.magic_smithing_table"
       },
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": {
