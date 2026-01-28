@@ -1,6 +1,6 @@
 {
-    "article.adventurer_note.title": "",
-    "item.hiddenyears:adventurer_note": "",
+    "article.adventurer_note.title": "Adventurer's Note",
+    "item.hiddenyears:adventurer_note": "Adventurer's Note",
     "article.adventurer_note.content1": "",
     "article.adventurer_note.content2": "",
     "article.adventurer_note.chapter1.title": "",
@@ -948,7 +948,7 @@
     "ui.profile.credits": "",
     "ui.credits": "",
     "ui.ucv": "",
-    "ui.task": "",
+    "ui.task": "Task",
     "ui.ucv.own": "",
     "ui.task.done": "",
     "ui.task.submit": "",
