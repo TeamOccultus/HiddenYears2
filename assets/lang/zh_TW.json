@@ -1033,5 +1033,6 @@
     "ui.waystone.set_icon.desc": "除非你知道自己在幹什麼，否則請不要修改此項！",
     "ui.artifact_cooldown": "飾品冷卻中！",
     "ui.profile.player_name": "旅者名稱： %s",
-    "ui.profile.player_level": "玩家等級：Lv. §6%1§r（下一級需要：經驗× §6%2§r）"
+    "ui.profile.player_level": "玩家等級：Lv. §6%1§r（下一級需要：經驗× §6%2§r）",
+    "ui.profile.player_job": ""
 }
