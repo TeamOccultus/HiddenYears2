@@ -34,7 +34,7 @@
       ],
       "render_controllers": ["controller.render.default"],
       "spawn_egg": {
-        "texture": "hiddenyears:egg_gemstone_trader"
+        "texture": "hiddenyears:egg_old_wizard"
       }
     }
   }
