@@ -115,6 +115,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("minecraft:bone")],
       previousTask: "none",
       iconPath: "textures/items/bone",
+      tips: {translate: "task.bone_tools.tips"}
     }
   );
 
@@ -139,6 +140,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("minecraft:copper_ingot")],
       previousTask: "none",
       iconPath: "textures/items/copper_ingot",
+      tips: {translate: "task.copper.tips"}
     }
   );
 
@@ -151,6 +153,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:refined_rock_ingot")],
       previousTask: "none",
       iconPath: "textures/items/refined_rock_ingot",
+      tips: {translate: "task.refined_rock.tips"}
     }
   );
 
@@ -176,6 +179,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_saw")],
       previousTask: "none",
       iconPath: "textures/items/iron_saw",
+      tips: {translate: "task.saw.tips"}
     }
   );
 
@@ -188,6 +192,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_crowbar")],
       previousTask: "none",
       iconPath: "textures/items/iron_crowbar",
+      tips: {translate: "task.crowbar.tips"}
     }
   );
 
@@ -200,6 +205,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_hammer")],
       previousTask: "none",
       iconPath: "textures/items/iron_hammer",
+      tips: {translate: "task.hammer.tips"}
     }
   );
 
@@ -212,6 +218,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_dagger")],
       previousTask: "none",
       iconPath: "textures/items/iron_dagger",
+      tips: {translate: "task.dagger.tips"}
     }
   );
 
@@ -439,6 +446,7 @@ export function getAllChapters() {
       ],
       previousTask: "none",
       iconPath: "textures/items/contract_dust",
+      tips: {translate: "task.infested_beast.tips"}
     }
   );
   infestedBeast.pushToServer(server);
@@ -452,6 +460,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:contract_gem")],
       previousTask: "none",
       iconPath: "textures/items/contract_gem",
+      tips: {translate: "task.contract_stone.tips"}
     }
   );
 
@@ -718,6 +727,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:ruby")],
       previousTask: "none",
       iconPath: "textures/items/ruby",
+      tips: {translate: "task.bloody_gem.tips"}
     }
   );
 
@@ -760,6 +770,7 @@ export function getAllChapters() {
       conditions: [new KillEntityConditions("hiddenyears:ruby_zombie")],
       previousTask: "none",
       iconPath: "textures/items/egg_ruby_zombie",
+      tips: {translate: "task.decayed_servant.tips"}
     }
   );
 
@@ -780,6 +791,7 @@ export function getAllChapters() {
       ],
       previousTask: "none",
       iconPath: "textures/items/egg_ruby_guardian",
+      tips: {translate: "task.true_and_false.tips"}
     }
   );
 
@@ -798,6 +810,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:lightning_key")],
       previousTask: "none",
       iconPath: "textures/items/lightning_key",
+      tips: {translate: "task.thunder_key.tips"}
     }
   );
 
@@ -818,6 +831,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:crimson_eyes")],
       previousTask: "none",
       iconPath: "textures/items/crimson_eyes",
+      tips: {translate: "task.blood_gaze.tips"}
     }
   );
 
@@ -838,6 +852,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:ruby_apple")],
       previousTask: "none",
       iconPath: "textures/items/ruby_apple",
+      tips: {translate: "task.world_end_fruit.tips"}
     }
   );
 
@@ -856,6 +871,7 @@ export function getAllChapters() {
       conditions: [new KillEntityConditions("hiddenyears:king_of_ruby")],
       previousTask: "none",
       iconPath: "textures/items/ruby_crown",
+      tips: {translate: "task.song_of_power_and_blood.tips"}
     }
   );
   songOfPowerAndBlood.pushToServer(server);
@@ -893,6 +909,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:alchemy_table")],
       previousTask: "none",
       iconPath: "textures/ui/task/alchemy_table",
+      tips: {translate: "task.alchemist.tips"}
     }
   );
 
@@ -905,6 +922,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:magic_dust")],
       previousTask: "none",
       iconPath: "textures/items/magic_dust",
+      tips: {translate: "task.magic_dust.tips"}
     }
   );
 
@@ -941,6 +959,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:ancient_scrap")],
       previousTask: "none",
       iconPath: "textures/items/ancient_scrap",
+      tips: {translate: "task.ancient_war_remains.tips"}
     }
   );
 
@@ -953,6 +972,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:soul_of_fear")],
       previousTask: "none",
       iconPath: "textures/items/soul_of_fear",
+      tips: {translate: "task.fear_soul.tips"}
     }
   );
 
@@ -971,6 +991,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:originite_ingot")],
       previousTask: "none",
       iconPath: "textures/items/originite_ingot",
+      tips: {translate: "task.primal_yearning.tips"}
     }
   );
 
@@ -1028,6 +1049,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:sand_meat")],
       previousTask: "none",
       iconPath: "textures/items/sand_meat",
+      tips: {translate: "task.hard_to_swallow_food.tips"}
     }
   );
 
@@ -1046,6 +1068,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:desert_herbpot")],
       previousTask: "none",
       iconPath: "textures/items/herb_bottle",
+      tips: {translate: "task.dry_pot.tips"}
     }
   );
 
@@ -1064,6 +1087,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:cooling_herbtea")],
       previousTask: "none",
       iconPath: "textures/items/cooling_herbtea",
+      tips: {translate: "task.god_arrival.tips"}
     }
   );
 
@@ -1084,6 +1108,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:rabbit_paw")],
       previousTask: "none",
       iconPath: "textures/items/rabbit_paw",
+      tips: {translate: "task.sacrifice.tips"}
     }
   );
 
@@ -1104,6 +1129,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:shattered_sand_cudgel")],
       previousTask: "none",
       iconPath: "textures/items/shattered_sand_cudgel",
+      tips: {translate: "task.shattered_sand.tips"}
     }
   );
 
@@ -1122,6 +1148,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:drift_sand_key")],
       previousTask: "none",
       iconPath: "textures/items/drift_sand_key",
+      tips: {translate: "task.key_of_contract.tips"}
     }
   );
 
@@ -1140,6 +1167,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:blessing_of_isis")],
       previousTask: "none",
       iconPath: "textures/items/blessing_of_isis",
+      tips: {translate: "task.blessing_of_rain.tips"}
     }
   );
 
@@ -1160,6 +1188,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:desert_heart")],
       previousTask: "none",
       iconPath: "textures/items/desert_heart",
+      tips: {translate: "task.kingdom_fall.tips"}
     }
   );
 
@@ -1174,6 +1203,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:past_statue")],
       previousTask: "none",
       iconPath: "textures/items/past_statue",
+      tips: {translate: "task.statue_of_past.tips"}
     }
   );
 
@@ -1198,6 +1228,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:rebirth_statue")],
       previousTask: "none",
       iconPath: "textures/items/rebirth_statue",
+      tips: {translate: "task.symbol_of_life.tips"}
     }
   );
 
@@ -1216,6 +1247,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:shattered_sand_staff")],
       previousTask: "none",
       iconPath: "textures/items/shattered_sand_staff",
+      tips: {translate: "task.rain_in_sand.tips"}
     }
   );
 
@@ -1260,6 +1292,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:gold_sand")],
       previousTask: "none",
       iconPath: "textures/items/gold_sand",
+      tips: {translate: "task.gold_in_sand.tips"}
     }
   );
 
@@ -1328,6 +1361,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
       iconPath: "textures/items/paper",
+      tips: {translate: "task.ancient_myth.tips"}
     }
   );
 
@@ -1346,6 +1380,7 @@ export function getAllChapters() {
       conditions: [new KillEntityConditions("hiddenyears:scorpion")],
       previousTask: "none",
       iconPath: "textures/items/egg_scorpion",
+      tips: {translate: "task.sign_of_mutation.tips"}
     }
   );
 
@@ -1366,6 +1401,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:isis_crown")],
       previousTask: "none",
       iconPath: "textures/items/isis_crown",
+      tips: {translate: "task.palace_of_gods.tips"}
     }
   );
 
@@ -1386,6 +1422,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:sandcaust_spider_eye")],
       previousTask: "none",
       iconPath: "textures/items/sand_spider_eye",
+      tips: {translate: "task.eye_of_sand_erosion.tips"}
     }
   );
 
