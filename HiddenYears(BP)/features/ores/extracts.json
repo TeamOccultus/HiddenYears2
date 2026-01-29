@@ -4,14 +4,10 @@
     "description": {
       "identifier": "hiddenyears:ores/extracts"
     },
-    "count": 8,
+    "count": 6,
     "replace_rules": [
       {
         "places_block": "hiddenyears:extracts_ore",
-        "may_replace": ["minecraft:stone"]
-      },
-      {
-        "places_block": "hiddenyears:deepslate_extracts_ore",
         "may_replace": ["minecraft:deepslate"]
       }
     ]
