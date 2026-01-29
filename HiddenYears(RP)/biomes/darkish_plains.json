@@ -6,12 +6,6 @@
       "identifier": "hiddenyears:darkish_plains" //你的自定义生物群系的ID，不用填命名空间前缀
     },
     "components": {
-      "minecraft:sky_color": {
-        "sky_color": "#82111f" //天空颜色，改改改
-      }, //你不加这玩意那就是默认群系的天空
-      "minecraft:water_appearance": {
-        "surface_color": "#82111f" //水的颜色，改改改
-      },
       "minecraft:fog_appearance": {
         "fog_identifier": "hiddenyears:darkish_fog"
       }
