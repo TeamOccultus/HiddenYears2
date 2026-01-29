@@ -1,0 +1,6 @@
+[
+  {
+    "loot_table": "gameplay/sparkling_stone",
+    "blocks": ["minecraft:glowstone"]
+  }
+]

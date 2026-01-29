@@ -7,8 +7,6 @@ import {
 } from "@minecraft/server";
 import { TrophyBundleParam } from "../components/TrophyBundleComponent/Params";
 import { setEquipmentItem, loot, RandomEvent } from "@occultus/api";
-import { default as bundlesLoot } from "../../../config/bundles/monster.json";
-import { default as bundlesBossLoot } from "../../../config/bundles/boss.json";
 
 /**
  * 战利品袋的相关事件
@@ -39,28 +37,8 @@ export class TrophyBundleEvents {
     if (typeof table === "string") return table;
     throw new Error("Invalid loot table!");
   }
-  static registryLoot() {
-    world.afterEvents.entityDie.subscribe((event) => {
-      const entity = event.deadEntity;
-      if (bundlesLoot[entity.typeId]) {
-        const res = new RandomEvent(1.0, () => {
-          const bundle = new ItemStack("hiddenyears:trophy_bundle");
-          bundle.setDynamicProperty(
-            "hiddenyears:loot_table",
-            bundlesLoot[entity.typeId],
-          );
-          entity.dimension.spawnItem(bundle, entity.location);
-        });
-        res.call();
-      }
-      if (bundlesBossLoot[entity.typeId]) {
-        const bundle = new ItemStack("hiddenyears:trophy_bundle");
-        bundle.setDynamicProperty(
-          "hiddenyears:loot_table",
-          bundlesBossLoot[entity.typeId],
-        );
-        entity.dimension.spawnItem(bundle, entity.location);
-      }
-    });
-  }
+  /**
+   * @deprecated
+   */
+  static registryLoot() {}
 }

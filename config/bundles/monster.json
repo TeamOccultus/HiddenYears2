@@ -1,9 +1,0 @@
-{
-  "minecraft:warden": "gameplay/bundles/warden",
-  "minecraft:witch": "gameplay/bundles/witch",
-  "minecraft:iron_golem": "gameplay/bundles/snow_golem",
-  "minecraft:ravager": "gameplay/bundles/illager",
-  "minecraft:pillager": "gameplay/bundles/illager",
-  "minecraft:vindicator_illager": "gameplay/bundles/illager",
-  "minecraft:evocation_illager": "gameplay/bundles/evocation_illager"
-}
