@@ -338,8 +338,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:copper_coin",
-                  "quantity": 6,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 2,
                   "price_multiplier": 0.05
                 }
               ],

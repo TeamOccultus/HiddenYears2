@@ -373,7 +373,7 @@
               "wants": [
                 { "item": "quartz", "quantity": 12, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hiddenyears:copper_coin", "quantity": 8 }],
+              "gives": [{ "item": "hiddenyears:diamond_coin", "quantity": 2 }],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -419,35 +419,16 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:copper_coin",
-                  "quantity": 12,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 4,
                   "price_multiplier": 0.05
                 }
               ],
               "gives": [
                 {
                   "item": "stonebrick",
-                  "quantity": 50,
+                  "quantity": 30,
                   "functions": [{ "function": "set_data", "data": 2 }]
-                }
-              ],
-              "trader_exp": 5,
-              "max_uses": 16,
-              "reward_exp": true
-            },
-            {
-              "wants": [
-                {
-                  "item": "hiddenyears:copper_coin",
-                  "quantity": 15,
-                  "price_multiplier": 0.05
-                }
-              ],
-              "gives": [
-                {
-                  "item": "stonebrick",
-                  "quantity": 35,
-                  "functions": [{ "function": "set_data", "data": 3 }]
                 }
               ],
               "trader_exp": 5,
@@ -587,7 +568,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:copper_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 4,
                   "price_multiplier": 0.05
                 }
@@ -606,8 +587,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_copper_coin",
-                  "quantity": 7,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],

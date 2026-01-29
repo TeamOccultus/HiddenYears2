@@ -632,8 +632,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
-                  "quantity": 1,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 5,
                   "price_multiplier": 0.05
                 }
               ],

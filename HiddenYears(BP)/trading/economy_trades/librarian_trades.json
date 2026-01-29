@@ -359,7 +359,7 @@
             },
             {
               "wants": [
-                { "item": "hiddenyears:copper_coin", "price_multiplier": 0.2 },
+                { "item": "hiddenyears:diamond_coin", "price_multiplier": 0.2 },
                 { "item": "book", "quantity": 1, "price_multiplier": 0.2 }
               ],
               "gives": [
@@ -394,7 +394,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 25,
                   "price_multiplier": 0.2
                 }
@@ -441,7 +441,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 2,
                   "price_multiplier": 0.05
                 }

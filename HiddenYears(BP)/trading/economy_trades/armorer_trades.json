@@ -458,8 +458,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
-                  "quantity": 5,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 8,
                   "price_multiplier": 0.2
                 }
               ],
@@ -483,7 +483,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 6,
                   "price_multiplier": 0.2
                 }
@@ -508,8 +508,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
-                  "quantity": 4,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 8,
                   "price_multiplier": 0.2
                 }
               ],
@@ -533,8 +533,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
-                  "quantity": 8,
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 12,
                   "price_multiplier": 0.2
                 }
               ],
@@ -563,7 +563,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 8,
                   "price_multiplier": 0.2
                 }
@@ -588,7 +588,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 10,
                   "price_multiplier": 0.2
                 }
@@ -613,7 +613,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 7,
                   "price_multiplier": 0.2
                 }
@@ -638,7 +638,7 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:diamond_coin",
                   "quantity": 12,
                   "price_multiplier": 0.2
                 }
