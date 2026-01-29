@@ -1,8 +1,8 @@
-import { giveItem, ItemConditions, Job } from "@occultus/api";
+import { giveItem, ItemConditions, Job, RandomEvent } from "@occultus/api";
 import { assassin } from "../advanced/assassin";
 import { berserker } from "../advanced/berserker";
 import { swordman } from "../advanced/swordman";
-import { ItemStack } from "@minecraft/server";
+import { EffectType, EffectTypes, EntityDamageCause, ItemStack, Player, TicksPerSecond } from "@minecraft/server";
 
 export const warrior = new Job(
   "hiddenyears:warrior",
@@ -37,5 +37,12 @@ export const warrior = new Job(
 warrior.onUpgrade((arg) => {
   if (arg.recentLevel === 10) {
     giveItem(arg.player, new ItemStack("hiddenyears:warrior_gem"));
+  }
+});
+
+warrior.onHitEntity((arg) => {
+  const player = arg.damagingEntity as Player;
+  if (new RandomEvent(warrior.getLevel(player) * 0.1, () => {}).call()) {
+    player.addEffect("strength", 3 * TicksPerSecond, {amplifier: 2})
   }
 });
