@@ -31,9 +31,7 @@
         "value": 0.0
       },
       "minecraft:type_family": {
-        "family": [
-          "block_entity"
-        ]
+        "family": ["block_entity"]
       },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:breathable": {
@@ -52,9 +50,7 @@
     "events": {
       "hiddenyears:despawn": {
         "add": {
-          "component_groups": [
-            "hiddenyears:magic_smithing_table_despawn"
-          ]
+          "component_groups": ["hiddenyears:magic_smithing_table_despawn"]
         }
       }
     }

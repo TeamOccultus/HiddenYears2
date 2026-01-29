@@ -6,18 +6,29 @@ export class MSTRecipeManager {
   static base: string[] = MSTBaseData;
   static addtions: string[] = MSTAddtionData;
   static recipes: MagicSmithingTableRecipe[] = MSTRecipesData;
-  static getResult(recipe: MagicSmithingTableRecipe, base: ItemStack): ItemStack {
+  static getResult(
+    recipe: MagicSmithingTableRecipe,
+    base: ItemStack
+  ): ItemStack {
     if (recipe.type === "transform") {
       const result = new ItemStack(recipe.output);
-      if(recipe.lore) result.setLore([recipe.lore]);
+      if (recipe.lore) result.setLore([recipe.lore]);
       return result;
     }
     const itemStack = new ItemStack(recipe.base);
-    if(itemStack.getComponent("minecraft:durability") && base.getComponent("minecraft:durability")) {
-      itemStack.getComponent("minecraft:durability").damage = base.getComponent("minecraft:durability").damage
+    if (
+      itemStack.getComponent("minecraft:durability") &&
+      base.getComponent("minecraft:durability")
+    ) {
+      itemStack.getComponent("minecraft:durability").damage = base.getComponent(
+        "minecraft:durability"
+      ).damage;
     }
-    itemStack.setDynamicProperty("hiddenyears:additional_material_type", recipe.output);
-    if(recipe.lore){ 
+    itemStack.setDynamicProperty(
+      "hiddenyears:additional_material_type",
+      recipe.output
+    );
+    if (recipe.lore) {
       itemStack.setLore([recipe.lore]);
     }
     return itemStack;

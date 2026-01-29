@@ -1,4 +1,3 @@
-
 export type FrameActiverParams = {
-  frame_type: "ruby_frame"
+  frame_type: "ruby_frame";
 };

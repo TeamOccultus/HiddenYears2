@@ -11,7 +11,7 @@ export class ReturnGemComponent {
         },
         onUseOn(arg0, arg1) {
           ReturnGemEvents.onUseOn(arg0, arg1);
-        },
+        }
       });
     });
   }

@@ -2,7 +2,7 @@ import { Player, RawMessage, system } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import {
   adventurerNoteBody,
-  adventurerNoteTitle,
+  adventurerNoteTitle
 } from "../../data/playerStory";
 
 export class AdventurerNote {
@@ -14,8 +14,8 @@ export class AdventurerNote {
         rawtext: [
           { translate: "article.adventurer_note.content1" },
           { text: "\n" },
-          { translate: "article.adventurer_note.content2" },
-        ],
+          { translate: "article.adventurer_note.content2" }
+        ]
       })
       .button(
         { translate: "article.adventurer_note.chapter1.title" },
@@ -29,7 +29,7 @@ export class AdventurerNote {
       }
       const [title, body] = [
         adventurerNoteTitle.get(response.selection),
-        adventurerNoteBody.get(response.selection),
+        adventurerNoteBody.get(response.selection)
       ];
       if (!title || !body) return;
       const chapterForm = new ActionFormData()
@@ -50,7 +50,7 @@ export class AdventurerNote {
       init.itemComponentRegistry.registerCustomComponent(this.id, {
         onUse(arg) {
           that.display(arg.source);
-        },
+        }
       });
     });
   }

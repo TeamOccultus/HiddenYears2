@@ -13,7 +13,7 @@ export class RubyEvents {
       });
       if (hurtEntity instanceof Player) {
         hurtEntity.onScreenDisplay.setActionBar({
-          translate: "message.hiddenyears:crown",
+          translate: "message.hiddenyears:crown"
         });
       }
     });

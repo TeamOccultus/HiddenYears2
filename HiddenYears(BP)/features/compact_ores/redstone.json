@@ -8,10 +8,7 @@
     "replace_rules": [
       {
         "places_block": "hiddenyears:compact_redstone_ore",
-        "may_replace": [
-          "deepslate_redstone_ore",
-          "deepslate"
-        ]
+        "may_replace": ["deepslate_redstone_ore", "deepslate"]
       }
     ]
   }

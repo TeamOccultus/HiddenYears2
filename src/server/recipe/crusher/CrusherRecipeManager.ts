@@ -1,9 +1,6 @@
 import { ItemStack, system } from "@minecraft/server";
 import { CrusherRecipe } from "./CrusherRecipeType";
-import {
-  crusherIngredientData,
-  crusherRecipesData,
-} from "./CrusherRecipeData";
+import { crusherIngredientData, crusherRecipesData } from "./CrusherRecipeData";
 
 export class CrusherRecipeManager {
   static ingredients: string[] = crusherIngredientData;

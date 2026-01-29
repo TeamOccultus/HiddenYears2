@@ -1,7 +1,7 @@
 import {
   Block,
   BlockComponentPlayerInteractEvent,
-  Player,
+  Player
 } from "@minecraft/server";
 import { BossSpawnerParams } from "../components/BossSpawnerComponent/Params";
 import {
@@ -10,7 +10,7 @@ import {
   loot,
   parseToRaw,
   setEquipmentItem,
-  Vector3Utils,
+  Vector3Utils
 } from "@occultus/api";
 
 /**
@@ -26,12 +26,12 @@ export class BossSpwanerEvents {
     block.setType(params.transform_to);
     if (params.client_events.title) {
       player.onScreenDisplay.setTitle({
-        translate: params.client_events.title,
+        translate: params.client_events.title
       });
     }
     if (params.client_events.subtitle) {
       player.onScreenDisplay.updateSubtitle({
-        translate: params.client_events.subtitle,
+        translate: params.client_events.subtitle
       });
     }
     if (params.fade) {
@@ -40,8 +40,8 @@ export class BossSpwanerEvents {
         fadeTime: {
           fadeInTime: fadeIn,
           fadeOutTime: fadeOut,
-          holdTime: hold,
-        },
+          holdTime: hold
+        }
       });
     }
   }
@@ -61,7 +61,7 @@ export class BossSpwanerEvents {
       return;
     }
     player.onScreenDisplay.setActionBar({
-      translate: "message.hiddenyears:need_key",
+      translate: "message.hiddenyears:need_key"
     });
   }
 }

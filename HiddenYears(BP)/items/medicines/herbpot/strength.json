@@ -9,9 +9,7 @@
     },
     "components": {
       "hiddenyears:effective_food": {
-        "effect": [
-          "minecraft:strength"
-        ],
+        "effect": ["minecraft:strength"],
         "duration": 500,
         "amplifier": 1
       },

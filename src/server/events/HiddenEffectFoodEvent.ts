@@ -1,7 +1,7 @@
 import {
   CustomComponentParameters,
   ItemComponentConsumeEvent,
-  Player,
+  Player
 } from "@minecraft/server";
 import { HiddenEffectFoodParams } from "../components/HiddenEffectFoodComponent/Params";
 import effectsMap from "../../data/effects";

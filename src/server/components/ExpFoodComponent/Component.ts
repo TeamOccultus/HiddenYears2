@@ -9,11 +9,11 @@ export class ExpFoodComponent {
           const { source, itemStack } = arg0;
           if (!itemStack) return;
           const p = arg1.params as ExpFoodComponentParams;
-          if(source instanceof Player){
-            source.addExperience(p.exp)
-            source.playSound(p.sound_event ?? "random.orb")
+          if (source instanceof Player) {
+            source.addExperience(p.exp);
+            source.playSound(p.sound_event ?? "random.orb");
           }
-        },
+        }
       });
     });
   }

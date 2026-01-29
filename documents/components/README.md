@@ -3,8 +3,8 @@ title: 自定义组件
 group: Documents
 category: Documents
 children:
-    - ./block.md
-    - ./item.md
+  - ./block.md
+  - ./item.md
 ---
 
 # 自定义组件

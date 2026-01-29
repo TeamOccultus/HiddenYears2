@@ -5,7 +5,7 @@ import {
   ItemStack,
   Player,
   system,
-  world,
+  world
 } from "@minecraft/server";
 import { getEquipmentItem, setEquipmentItem } from "@occultus/api";
 
@@ -13,7 +13,7 @@ import { getEquipmentItem, setEquipmentItem } from "@occultus/api";
 export class CrossbowComponent {
   constructor(readonly componentName: string) {
     world.afterEvents.itemReleaseUse.subscribe((arg) => {
-      if(!arg.itemStack) return;
+      if (!arg.itemStack) return;
       const component = arg.itemStack.getComponent(this.componentName);
       if (!component) return;
       onReleaseUse(arg, this);
@@ -26,7 +26,7 @@ export class CrossbowComponent {
         },
         onUse(arg0, arg1) {
           onUse(arg0, that);
-        },
+        }
       });
     });
   }
@@ -80,10 +80,7 @@ export class CrossbowComponent {
   }
   hasAmmunition(item: ItemStack, player: Player): boolean {
     if (player.getGameMode() === "Creative") return true;
-    const offhandItem = getEquipmentItem(
-      player,
-      EquipmentSlot.Offhand
-    );
+    const offhandItem = getEquipmentItem(player, EquipmentSlot.Offhand);
     if (offhandItem) {
       if (this.getAmmunitions(item).includes(offhandItem.typeId)) return true;
     }
@@ -95,18 +92,11 @@ export class CrossbowComponent {
   }
   consumeAmmunition(item: ItemStack, player: Player) {
     if (player.getGameMode() === "Creative") return;
-    const offhandItem = getEquipmentItem(
-      player,
-      EquipmentSlot.Offhand
-    );
+    const offhandItem = getEquipmentItem(player, EquipmentSlot.Offhand);
     if (offhandItem) {
       if (this.getAmmunitions(item).includes(offhandItem.typeId)) {
         offhandItem.amount--;
-        setEquipmentItem(
-          player,
-          offhandItem,
-          EquipmentSlot.Offhand
-        );
+        setEquipmentItem(player, offhandItem, EquipmentSlot.Offhand);
         return;
       }
     }
@@ -133,7 +123,7 @@ export type CrossbowComponentParams = {
 
 function onUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
   const [player, item] = [arg0.source, arg0.itemStack];
-  if(!item) return;
+  if (!item) return;
   const pullingLevel = that.getPullingLevels(item);
   if (pullingLevel === "standby") {
     player.playSound("crossbow.loading.start");

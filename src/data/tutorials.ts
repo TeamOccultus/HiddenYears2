@@ -6,7 +6,7 @@ const tutorialStick = new Tutorial(
   "木棍是一种合成中的常见物品",
   {
     type: "item",
-    iconPath: "textures/items/stick",
+    iconPath: "textures/items/stick"
   }
 );
 
@@ -16,7 +16,7 @@ const tutorialFood = new Tutorial(
   "食物是使用后可以给玩家补充饥饿值和饱和度、有时还会产生额外效果的物品",
   {
     type: "item",
-    iconPath: "textures/items/apple",
+    iconPath: "textures/items/apple"
   }
 );
 
@@ -25,7 +25,7 @@ const tutorialStone = new Tutorial(
   "石头",
   "石头是一种常见的建筑材料，可以用来制作各种工具和家具",
   {
-    type: "block",
+    type: "block"
   }
 );
 
@@ -34,7 +34,7 @@ const tutorialEntity = new Tutorial(
   "牛",
   "牛是一种常见的动物，可以用来制作食物和皮革",
   {
-    type: "entity",
+    type: "entity"
   }
 );
 
@@ -43,7 +43,7 @@ const tutorialNether = new Tutorial(
   "下界",
   "下界是一个特殊维度，有着独特的生物和地形",
   {
-    type: "dimension",
+    type: "dimension"
   }
 );
 
@@ -52,12 +52,19 @@ const tutorialAlways = new Tutorial(
   "教程",
   "这是一个总是显示的教程",
   {
-    type: "alwaysAvailable",
+    type: "alwaysAvailable"
   }
 );
 
 export const group = new TutorialGroup("group", "教程组", "这是一个教程组", {
-  tutorials: [tutorialStick, tutorialFood, tutorialStone],
+  tutorials: [tutorialStick, tutorialFood, tutorialStone]
 });
 
-export const tutorials = [tutorialStick, tutorialFood, tutorialStone, tutorialEntity, tutorialNether, tutorialAlways];
+export const tutorials = [
+  tutorialStick,
+  tutorialFood,
+  tutorialStone,
+  tutorialEntity,
+  tutorialNether,
+  tutorialAlways
+];

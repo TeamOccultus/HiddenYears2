@@ -11,13 +11,13 @@ export class OreTypeComponent {
           const player = arg0.player;
           const params = arg1.params as OreTypeSchema;
           if (!player) return;
-          if(params.ore_type==="sandcaust"){
-            OreEvents.sandcaust(player)
+          if (params.ore_type === "sandcaust") {
+            OreEvents.sandcaust(player);
           }
           if (params.ore_type == "ruby") {
-            OreEvents.mentalAffect(player)
+            OreEvents.mentalAffect(player);
           }
-        },
+        }
       });
     });
   }

@@ -8,10 +8,7 @@
     "replace_rules": [
       {
         "places_block": "hiddenyears:sandstone_copper_ore",
-        "may_replace": [
-          "copper_ore",
-          "minecraft:sandstone"
-        ]
+        "may_replace": ["copper_ore", "minecraft:sandstone"]
       }
     ]
   }

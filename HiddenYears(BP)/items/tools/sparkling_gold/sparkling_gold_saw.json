@@ -50,7 +50,11 @@
       "minecraft:icon": "hiddenyears:sparkling_gold_saw",
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_tool","hiddenyears:is_saw", "hiddenyears:sparkling_gold_tier", "minecraft:netherite_tier"]
+          "minecraft:is_tool",
+          "hiddenyears:is_saw",
+          "hiddenyears:sparkling_gold_tier",
+          "minecraft:netherite_tier"
+        ]
       }
     }
   }

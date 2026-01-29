@@ -285,7 +285,9 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "minecraft:glistering_melon_slice", "quantity": 2 }],
+              "gives": [
+                { "item": "minecraft:glistering_melon_slice", "quantity": 2 }
+              ],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true

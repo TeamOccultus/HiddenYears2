@@ -17,11 +17,11 @@ const diamondBadge = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:diamond_badge.story1" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:diamond_badge.usage" },
-    ],
+      { translate: "item.hiddenyears:diamond_badge.usage" }
+    ]
   },
   body,
-  "textures/items/diamond_badge",
+  "textures/items/diamond_badge"
 );
 diamondBadge.onEquip((arg) => {
   arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 4 });
@@ -40,11 +40,11 @@ const goldenBadge = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:golden_badge.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:golden_badge.usage" },
-    ],
+      { translate: "item.hiddenyears:golden_badge.usage" }
+    ]
   },
   body,
-  "textures/items/golden_badge",
+  "textures/items/golden_badge"
 );
 goldenBadge.onEquip((arg) => {
   arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 3 });
@@ -63,11 +63,11 @@ const copperBadge = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:copper_badge.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:copper_badge.usage" },
-    ],
+      { translate: "item.hiddenyears:copper_badge.usage" }
+    ]
   },
   body,
-  "textures/items/copper_badge",
+  "textures/items/copper_badge"
 );
 copperBadge.onEquip((arg) => {
   arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 2 });
@@ -85,11 +85,11 @@ const maskOfTheSea = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:mask_of_the_sea.story1" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:mask_of_the_sea.usage" },
-    ],
+      { translate: "item.hiddenyears:mask_of_the_sea.usage" }
+    ]
   },
   head,
-  "textures/items/mask_of_the_sea",
+  "textures/items/mask_of_the_sea"
 );
 maskOfTheSea.onEquip((arg) => {
   arg.source.addEffect("minecraft:conduit_power", 6000);
@@ -109,11 +109,11 @@ const sparklingMask = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:sparkling_mask.story2" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:sparkling_mask.usage" },
-    ],
+      { translate: "item.hiddenyears:sparkling_mask.usage" }
+    ]
   },
   head,
-  "textures/items/sparkling_mask",
+  "textures/items/sparkling_mask"
 );
 sparklingMask.onEquip((arg) => {
   arg.source.addEffect("minecraft:night_vision", 12000);
@@ -137,21 +137,21 @@ const soldiersHelmet = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:soldiers_helmet.story4" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:soldiers_helmet.usage" },
-    ],
+      { translate: "item.hiddenyears:soldiers_helmet.usage" }
+    ]
   },
   head,
-  "textures/items/soldiers_helmet",
+  "textures/items/soldiers_helmet"
 );
 soldiersHelmet.onHitEntity((arg) => {
   new RandomEvent(0.35, () => {
     arg.hitEntity.applyDamage(Random.integer(8, 2), {
       cause: EntityDamageCause.none,
-      damagingEntity: undefined,
+      damagingEntity: undefined
     });
     arg.hitEntity.dimension.spawnParticle(
       "minecraft:critical_hit_emitter",
-      arg.hitEntity.location,
+      arg.hitEntity.location
     );
   }).call();
 });
@@ -163,11 +163,11 @@ const herdersHat = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:herders_hat.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:herders_hat.usage" },
-    ],
+      { translate: "item.hiddenyears:herders_hat.usage" }
+    ]
   },
   head,
-  "textures/items/herders_hat",
+  "textures/items/herders_hat"
 );
 herdersHat.onHitEntity((arg) => {
   if (!arg.hitEntity.isValid) return;
@@ -175,7 +175,7 @@ herdersHat.onHitEntity((arg) => {
   new RandomEvent(0.8, () => {
     arg.hitEntity.dimension.spawnItem(
       new ItemStack(herd[arg.hitEntity.typeId]!, Random.integer(4, 2)),
-      arg.hitEntity.location,
+      arg.hitEntity.location
     );
   }).call();
 });
@@ -187,11 +187,11 @@ const farmersHat = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:farmer_hat.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:farmer_hat.usage" },
-    ],
+      { translate: "item.hiddenyears:farmer_hat.usage" }
+    ]
   },
   head,
-  "textures/items/farmers_hat",
+  "textures/items/farmers_hat"
 );
 farmersHat.onMineBlock((arg) => {
   const currectId = arg.brokenBlockPermutation.type.id;
@@ -199,7 +199,7 @@ farmersHat.onMineBlock((arg) => {
   new RandomEvent(0.8, () => {
     arg.block.dimension.spawnItem(
       new ItemStack(crop[currectId]!, Random.integer(4, 2)),
-      arg.block.location,
+      arg.block.location
     );
   });
 });
@@ -213,11 +213,11 @@ const invisibleCape = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:invisible_cape.story1" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:invisible_cape.usage" },
-    ],
+      { translate: "item.hiddenyears:invisible_cape.usage" }
+    ]
   },
   body,
-  "textures/items/invisible_cape",
+  "textures/items/invisible_cape"
 );
 invisibleCape.onEquip((arg) => {
   arg.source.addEffect("minecraft:invisibility", 12000);
@@ -233,22 +233,22 @@ const thornsCape = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:thorns_cape.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:thorns_cape.usage" },
-    ],
+      { translate: "item.hiddenyears:thorns_cape.usage" }
+    ]
   },
   body,
-  "textures/items/thorns_cape",
+  "textures/items/thorns_cape"
 );
 thornsCape.onHurt((arg) => {
   const { cause, damagingEntity } = arg.damageSource;
   if (cause === EntityDamageCause.entityAttack) return;
   if (!damagingEntity) return;
   damagingEntity.applyDamage(arg.damage * 1.2, {
-    cause: EntityDamageCause.thorns,
+    cause: EntityDamageCause.thorns
   });
   damagingEntity.dimension.spawnParticle(
     "minecraft:critical_hit_emitter",
-    damagingEntity.location,
+    damagingEntity.location
   );
 });
 
@@ -264,11 +264,11 @@ const fireCape = new Artifact(
       { translate: "item.hiddenyears:fire_cape.story2" },
       { text: Format.newLine },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:fire_cape.usage" },
-    ],
+      { translate: "item.hiddenyears:fire_cape.usage" }
+    ]
   },
   body,
-  "textures/items/fire_cape",
+  "textures/items/fire_cape"
 );
 fireCape.onEquip((arg) => {
   arg.source.addEffect("minecraft:fire_resistance", 12000);
@@ -284,11 +284,11 @@ const magicFeatherCape = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:magic_feather_cape.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:magic_feather_cape.usage" },
-    ],
+      { translate: "item.hiddenyears:magic_feather_cape.usage" }
+    ]
   },
   body,
-  "textures/items/magic_feather_cape",
+  "textures/items/magic_feather_cape"
 );
 magicFeatherCape.onEquip((arg) => {
   arg.source.addEffect("minecraft:slow_falling", 12000);
@@ -304,11 +304,11 @@ const minersGlove = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:miners_glove.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:miners_glove.usage" },
-    ],
+      { translate: "item.hiddenyears:miners_glove.usage" }
+    ]
   },
   hand,
-  "textures/items/miners_glove",
+  "textures/items/miners_glove"
 );
 minersGlove.onMineBlock((arg) => {
   arg.player.addEffect("minecraft:haste", 6000);
@@ -321,21 +321,21 @@ const fightersGlove = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:fighters_glove.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:fighters_glove.usage" },
-    ],
+      { translate: "item.hiddenyears:fighters_glove.usage" }
+    ]
   },
   hand,
-  "textures/items/fighters_glove",
+  "textures/items/fighters_glove"
 );
 fightersGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
   if (!hitEntity.isValid) return;
   hitEntity.applyDamage(Random.integer(12, 10), {
-    cause: EntityDamageCause.none,
+    cause: EntityDamageCause.none
   });
   new RandomEvent(0.8, () => {
     damagingEntity.applyDamage(Random.integer(4, 2), {
-      cause: EntityDamageCause.magic,
+      cause: EntityDamageCause.magic
     });
   }).call();
 });
@@ -353,11 +353,11 @@ const engulfGlove = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:engulf_glove.story3" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:engulf_glove.usage" },
-    ],
+      { translate: "item.hiddenyears:engulf_glove.usage" }
+    ]
   },
   hand,
-  "textures/items/engulf_glove",
+  "textures/items/engulf_glove"
 );
 engulfGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
@@ -378,11 +378,11 @@ const rubyRing = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:ruby_ring.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:ruby_ring.usage" },
-    ],
+      { translate: "item.hiddenyears:ruby_ring.usage" }
+    ]
   },
   hand,
-  "textures/items/ruby_ring",
+  "textures/items/ruby_ring"
 );
 rubyRing.onHitEntity((arg) => {
   if (!arg.damagingEntity.isValid) return;
@@ -401,11 +401,11 @@ const cursedRing = new Artifact(
       { text: Format.newLine },
       { translate: "item.hiddenyears:cursed_ring.story1" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:cursed_ring.usage" },
-    ],
+      { translate: "item.hiddenyears:cursed_ring.usage" }
+    ]
   },
   hand,
-  "textures/items/cursed_ring",
+  "textures/items/cursed_ring"
 );
 cursedRing.onHitEntity((arg) => {
   if (!arg.hitEntity.isValid) return;
@@ -419,11 +419,11 @@ const speedBoots = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:speed_boots.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:speed_boots.usage" },
-    ],
+      { translate: "item.hiddenyears:speed_boots.usage" }
+    ]
   },
   feet,
-  "textures/items/speed_boots",
+  "textures/items/speed_boots"
 );
 speedBoots.onEquip((arg) => {
   arg.source.addEffect("minecraft:speed", 12000, { amplifier: 2 });
@@ -439,11 +439,11 @@ const hareBoots = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:hare_boots.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:hare_boots.usage" },
-    ],
+      { translate: "item.hiddenyears:hare_boots.usage" }
+    ]
   },
   feet,
-  "textures/items/hare_boots",
+  "textures/items/hare_boots"
 );
 hareBoots.onEquip((arg) => {
   arg.source.addEffect("minecraft:jump_boost", 12000, { amplifier: 2 });
@@ -459,11 +459,11 @@ const crucifixRunes = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:crucifix_runes.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:crucifix_runes.usage" },
-    ],
+      { translate: "item.hiddenyears:crucifix_runes.usage" }
+    ]
   },
   runes,
-  "textures/items/crucifix_runes",
+  "textures/items/crucifix_runes"
 );
 crucifixRunes.onHurt((arg) => {
   if (!arg.hurtEntity.isValid) return;
@@ -484,11 +484,11 @@ const gluttonousRunes = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:gluttonous_runes.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:gluttonous_runes.usage" },
-    ],
+      { translate: "item.hiddenyears:gluttonous_runes.usage" }
+    ]
   },
   runes,
-  "textures/items/gluttonous_runes",
+  "textures/items/gluttonous_runes"
 );
 gluttonousRunes.onEquip((arg) => {
   arg.source.addEffect("minecraft:strength", 18000, { amplifier: 4 });
@@ -505,11 +505,11 @@ const imprisonedWing = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:imprisoned_wing.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:imprisoned_wing.usage" },
-    ],
+      { translate: "item.hiddenyears:imprisoned_wing.usage" }
+    ]
   },
   runes,
-  "textures/items/imprisoned_wing",
+  "textures/items/imprisoned_wing"
 );
 imprisonedWing.onHitEntity((arg) => {
   arg.damagingEntity.addTag("hiddenyears:imprisoned_wing");
@@ -517,17 +517,17 @@ imprisonedWing.onHitEntity((arg) => {
     .getEntities({
       location: arg.damagingEntity.location,
       maxDistance: 10,
-      excludeFamilies: ["boss"],
+      excludeFamilies: ["boss"]
     })
     .forEach((entity) => {
       if (!entity.hasTag("hiddenyears:imprisoned_wing")) return;
       if (!entity.isValid) return;
       entity.applyDamage(Random.integer(12, 8), {
-        cause: EntityDamageCause.void,
+        cause: EntityDamageCause.void
       });
       entity.dimension.spawnParticle(
         "dragon_breath_lingering",
-        entity.location,
+        entity.location
       );
     });
   arg.damagingEntity.removeTag("hiddenyears:imprisoned_wing");
@@ -540,11 +540,11 @@ const rubyRunes = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:ruby_runes.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:ruby_runes.usage" },
-    ],
+      { translate: "item.hiddenyears:ruby_runes.usage" }
+    ]
   },
   runes,
-  "textures/items/ruby_runes",
+  "textures/items/ruby_runes"
 );
 rubyRunes.onEquip((arg) => {
   arg.source.addEffect("minecraft:fire_resistance", 12000, { amplifier: 0 });
@@ -562,11 +562,11 @@ const sandRunes = new Artifact(
     rawtext: [
       { translate: "item.hiddenyears:sand_runes.story" },
       { text: "\n\n" },
-      { translate: "item.hiddenyears:sand_runes.usage" },
-    ],
+      { translate: "item.hiddenyears:sand_runes.usage" }
+    ]
   },
   runes,
-  "textures/items/sand_runes",
+  "textures/items/sand_runes"
 );
 sandRunes.onEquip((arg) => {});
 sandRunes.onUnequip((player) => {});
@@ -594,5 +594,5 @@ export const artifacts = [
   crucifixRunes,
   imprisonedWing,
   rubyRunes,
-  sandRunes,
+  sandRunes
 ];

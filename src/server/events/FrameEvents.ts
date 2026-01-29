@@ -3,13 +3,13 @@ import {
   ItemComponentUseEvent,
   ItemComponentUseOnEvent,
   Player,
-  world,
+  world
 } from "@minecraft/server";
 import {
   setEquipmentItem,
   consumeAmount,
   Vector3Utils,
-  getEquipmentItem,
+  getEquipmentItem
 } from "@occultus/api";
 import { FrameActiverParams } from "../components/FrameActiverComponent/Params";
 
@@ -52,7 +52,7 @@ export class FrameEvents {
     if (source instanceof Player) {
       source.playSound("ambient.weather.thunder");
       source.sendMessage({
-        translate: "message.hiddenyears:ruby_frame_spawned",
+        translate: "message.hiddenyears:ruby_frame_spawned"
       });
     }
   }

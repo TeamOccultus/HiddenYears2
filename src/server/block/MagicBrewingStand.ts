@@ -6,14 +6,14 @@ import {
   parseToRomanNumber,
   setEquipmentItem,
   toVec3,
-  Vector3Utils,
+  Vector3Utils
 } from "@occultus/api";
 import {
   DataDrivenEntityTriggerAfterEvent,
   ItemStack,
   PlayerInteractWithBlockAfterEvent,
   RawMessage,
-  system,
+  system
 } from "@minecraft/server";
 import { ComplexPotionRecipeManager } from "../recipe/complexPotion/ComplexPotionRecipeManager";
 import { ComplexPotionRecipeType } from "../recipe/complexPotion/ComplexPotionRecipeType";
@@ -28,22 +28,22 @@ function setLore(item: ItemStack, recipe: ComplexPotionRecipeType) {
       {
         rawtext: [
           {
-            text: "§r§f",
+            text: "§r§f"
           },
           {
-            translate: translationMap[recipe.effect]!,
+            translate: translationMap[recipe.effect]!
           },
           {
-            text: ` ${parseToRomanNumber(recipe.amplifier + 1)}`,
+            text: ` ${parseToRomanNumber(recipe.amplifier + 1)}`
           },
           {
-            text: ` (${recipe.duration / 20}`,
+            text: ` (${recipe.duration / 20}`
           },
           {
-            translate: "ui.complex_potion.second",
-          },
-        ],
-      },
+            translate: "ui.complex_potion.second"
+          }
+        ]
+      }
     ]);
     return;
   }
@@ -51,21 +51,21 @@ function setLore(item: ItemStack, recipe: ComplexPotionRecipeType) {
   newLore.push({
     rawtext: [
       {
-        text: "§r§f",
+        text: "§r§f"
       },
       {
-        translate: translationMap[recipe.effect]!,
+        translate: translationMap[recipe.effect]!
       },
       {
-        text: ` ${parseToRomanNumber(recipe.amplifier + 1)}`,
+        text: ` ${parseToRomanNumber(recipe.amplifier + 1)}`
       },
       {
-        text: ` (${recipe.duration / 20}`,
+        text: ` (${recipe.duration / 20}`
       },
       {
-        translate: "ui.complex_potion.second",
-      },
-    ],
+        translate: "ui.complex_potion.second"
+      }
+    ]
   });
   item.setLore(newLore);
 }
@@ -75,7 +75,7 @@ export class MagicBrewingStand extends BlockWithEntity {
     super(
       "hiddenyears:magic_brewing_stand",
       "hiddenyears:magic_brewing_stand",
-      "hiddenyears:magic_brewing_stand_tick",
+      "hiddenyears:magic_brewing_stand_tick"
     );
   }
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {
@@ -84,7 +84,7 @@ export class MagicBrewingStand extends BlockWithEntity {
       event.beforeItemStack,
       this.getBlockEntityData(event.block),
       event.player,
-      event.block,
+      event.block
     ];
     if (!item) return;
     if (!entityData) return;
@@ -95,7 +95,7 @@ export class MagicBrewingStand extends BlockWithEntity {
     if (!filledItem) {
       if (!ComplexPotionRecipeManager.ingredients.includes(item?.typeId)) {
         player.sendMessage({
-          translate: "message.hiddenyears:not_a_ingredient",
+          translate: "message.hiddenyears:not_a_ingredient"
         });
         return;
       }
@@ -116,7 +116,7 @@ export class MagicBrewingStand extends BlockWithEntity {
       system.waitTicks(10).then(() => {
         player.dimension.spawnItem(
           result,
-          Vector3Utils.add(block.location, toVec3(0, 1, 0)),
+          Vector3Utils.add(block.location, toVec3(0, 1, 0))
         );
         player.playSound("random.potion.brewed");
         BlockEntity.clearStoredItem(entityData);
@@ -133,7 +133,7 @@ export class MagicBrewingStand extends BlockWithEntity {
     entityData.entity.dimension.spawnParticle(filledItem.typeId, {
       x: x,
       y: y + 1,
-      z: z,
+      z: z
     });
   }
 }

@@ -50,7 +50,11 @@
       "minecraft:icon": "hiddenyears:crystal_saw",
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_tool","hiddenyears:is_saw", "hiddenyears:crystal_tier", "minecraft:diamond_tier"]
+          "minecraft:is_tool",
+          "hiddenyears:is_saw",
+          "hiddenyears:crystal_tier",
+          "minecraft:diamond_tier"
+        ]
       }
     }
   }

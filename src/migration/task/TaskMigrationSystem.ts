@@ -24,7 +24,7 @@ export class TaskMigrationSystem {
     const result: MigrationResult = {
       success: 0,
       failed: 0,
-      all: 0,
+      all: 0
     };
     player.getTags().forEach((tag) => {
       if (!tag.startsWith("hy-q:")) return;

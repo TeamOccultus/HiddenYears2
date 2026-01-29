@@ -9,18 +9,18 @@ const sandGuardian = new BossSkill(
     boss?.dimension.spawnEntity("hiddenyears:drift_sand_bodyguard", {
       x: boss.location.x,
       y: boss.location.y,
-      z: boss.location.z + 2,
+      z: boss.location.z + 2
     });
     boss?.dimension.spawnEntity("hiddenyears:drift_sand_bodyguard", {
       x: boss.location.x,
       y: boss.location.y,
-      z: boss.location.z - 2,
+      z: boss.location.z - 2
     });
     entities.forEach((entity) => {
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.ghost.guardian",
+          translate: "message.hiddenyears:boss.ghost.guardian"
         });
       }
     });
@@ -35,18 +35,18 @@ const mummy = new BossSkill(
     boss?.dimension.spawnEntity("hiddenyears:mummy", {
       x: boss.location.x + 2,
       y: boss.location.y,
-      z: boss.location.z,
+      z: boss.location.z
     });
     boss?.dimension.spawnEntity("hiddenyears:mummy", {
       x: boss.location.x - 2,
       y: boss.location.y,
-      z: boss.location.z,
+      z: boss.location.z
     });
     entities.forEach((entity) => {
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.ghost.mummy",
+          translate: "message.hiddenyears:boss.ghost.mummy"
         });
       }
     });
@@ -76,19 +76,19 @@ const caughtInSand = new BossSkill(
             {
               x: entity.location.x,
               y: entity.location.y + 2,
-              z: entity.location.z,
+              z: entity.location.z
             },
             {
               x: entity.location.x,
               y: entity.location.y + 4,
-              z: entity.location.z,
+              z: entity.location.z
             }
           ),
           "sand"
         );
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.ghost.caughtsand",
+          translate: "message.hiddenyears:boss.ghost.caughtsand"
         });
       }
     });

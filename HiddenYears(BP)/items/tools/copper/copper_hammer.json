@@ -38,7 +38,10 @@
       },
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_tool","hiddenyears:is_hammer", "minecraft:copper_tier"]
+          "minecraft:is_tool",
+          "hiddenyears:is_hammer",
+          "minecraft:copper_tier"
+        ]
       }
     }
   }

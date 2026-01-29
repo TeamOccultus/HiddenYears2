@@ -6,7 +6,7 @@ import { CommandPermissionLevel } from "@minecraft/server";
 import {
   ArtifactForm,
   ArtifactRegistries,
-  ArtifactSlotRegistries,
+  ArtifactSlotRegistries
 } from "@occultus/api";
 import * as slots from "../../data/artifactSlots";
 import { artifacts } from "../../data/artifacts";
@@ -15,7 +15,7 @@ export function registryArtifacts() {
   const registry = new ArtifactRegistries("hiddenyears:artifacts");
   artifacts.forEach((artifact) => {
     registry.add(artifact);
-  })
+  });
   registry.register();
 }
 
@@ -34,6 +34,6 @@ export function registryForm() {
     name: "hiddenyears:artifact",
     description: " %command.artifact.description",
     permissionLevel: CommandPermissionLevel.Any,
-    cheatsRequired: false,
+    cheatsRequired: false
   });
 }

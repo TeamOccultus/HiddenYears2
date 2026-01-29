@@ -10,10 +10,10 @@ export class ComplexPotionComponent {
           if (!itemStack) return;
           ComplexPotion.getPotionType(itemStack)?.forEach((potion) => {
             source.addEffect(potion.effect, potion.duration, {
-              amplifier: potion.amplifier,
+              amplifier: potion.amplifier
             });
           });
-        },
+        }
       });
     });
   }

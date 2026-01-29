@@ -4,7 +4,7 @@ import {
   CustomCommandSource,
   CustomCommandStatus,
   Player,
-  system,
+  system
 } from "@minecraft/server";
 import { ProfileForm } from "../../ui/ProfileForm";
 
@@ -22,23 +22,23 @@ export class ProfileCommand {
         system.run(() => {
           if (sourceType !== CustomCommandSource.Entity)
             return {
-              status: CustomCommandStatus.Failure,
+              status: CustomCommandStatus.Failure
             };
           if (!sourceEntity)
             return {
-              status: CustomCommandStatus.Failure,
+              status: CustomCommandStatus.Failure
             };
           if (!(sourceEntity instanceof Player))
             return {
-              status: CustomCommandStatus.Failure,
+              status: CustomCommandStatus.Failure
             };
           ProfileForm.display(sourceEntity);
           return {
-            status: CustomCommandStatus.Success,
+            status: CustomCommandStatus.Success
           };
         });
         return {
-          status: CustomCommandStatus.Failure,
+          status: CustomCommandStatus.Failure
         };
       });
     });

@@ -17,7 +17,7 @@ export function registryTutorial() {
     name: "hiddenyears:tutorial",
     description: "教程中心",
     permissionLevel: CommandPermissionLevel.Any,
-    cheatsRequired: false,
+    cheatsRequired: false
   });
 
   const server = new TutorialServer();

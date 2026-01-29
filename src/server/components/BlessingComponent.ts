@@ -1,13 +1,10 @@
-import {
-  ItemComponentUseEvent,
-  system,
-} from "@minecraft/server";
+import { ItemComponentUseEvent, system } from "@minecraft/server";
 import { dehydrationEffect } from "../effects/dehydration";
 import { droughtEffect } from "../effects/drought";
 
 /**
  * **内部组件**
- * 
+ *
  * 使物品获得雨之神的祝福的功能
  */
 export class BlessingComponent {
@@ -23,21 +20,19 @@ export class BlessingComponent {
   }
 }
 
-function onMineBlockCallback(
-  arg0: ItemComponentUseEvent
-) {
+function onMineBlockCallback(arg0: ItemComponentUseEvent) {
   const player = arg0.source;
   droughtEffect.remove(player);
   dehydrationEffect.remove(player);
   player.addTag("hy:immune_desert_debuff");
   player.onScreenDisplay.setActionBar({
-    translate: "message.hiddenyears:immune_desert_debuff.get",
+    translate: "message.hiddenyears:immune_desert_debuff.get"
   });
   system.runTimeout(() => {
     if (player.isValid) {
       player.removeTag("hiddenyears:immune_desert_debuff");
       player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:immune_desert_debuff.remove",
+        translate: "message.hiddenyears:immune_desert_debuff.remove"
       });
     }
   }, 900);

@@ -5,7 +5,7 @@ export type ReturnGemParam = {
   bind_to: LocationProvider;
   /**
    * 将返回位置固定为某一坐标，并禁用绑定功能
-   */  
+   */
   location?: [number, number, number];
   /**
    * 将返回位置固定为某一维度，并禁用绑定功能
@@ -19,10 +19,10 @@ export type ReturnGemParam = {
 
 /**
  * 设置返回晶石的位置参数由何提供：
- * 
+ *
  * - `script`：脚本物品动态属性
  * - `data_driven`：数据驱动中写死
  * - `home`：玩家出生点
  * - `waystone`：传送石碑
  */
-export type LocationProvider = "script" | "data_driven" | "home" | "waystone"
+export type LocationProvider = "script" | "data_driven" | "home" | "waystone";

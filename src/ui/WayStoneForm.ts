@@ -8,7 +8,7 @@ export class WayStoneForm {
     const list = WayStone.getWayStoneList(player);
     if (list.length === 0) {
       player.sendMessage({
-        rawtext: [{ text: Color.gray }, { translate: "ui.waystone.empty" }],
+        rawtext: [{ text: Color.gray }, { translate: "ui.waystone.empty" }]
       });
       return;
     }
@@ -23,12 +23,8 @@ export class WayStoneForm {
       if (result.selection === undefined) return;
       const selection = list[result.selection];
       player.teleport(
-        toVec3(
-          selection.loc[0],
-          selection.loc[1] + 1,
-          selection.loc[2],
-        ),
-        { dimension: world.getDimension(selection.dim) },
+        toVec3(selection.loc[0], selection.loc[1] + 1, selection.loc[2]),
+        { dimension: world.getDimension(selection.dim) }
       );
     });
   }

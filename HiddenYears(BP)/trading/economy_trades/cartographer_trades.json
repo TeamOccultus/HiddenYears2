@@ -32,7 +32,9 @@
               "wants": [
                 { "item": "paper", "quantity": 24, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hiddenyears:stack_of_gold_coin", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:stack_of_gold_coin", "quantity": 1 }
+              ],
               "trader_exp": 10,
               "max_uses": 16,
               "reward_exp": true

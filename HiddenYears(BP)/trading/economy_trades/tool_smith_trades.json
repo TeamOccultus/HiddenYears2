@@ -125,7 +125,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:refined_rock_axe", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:refined_rock_axe", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -138,7 +140,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:refined_rock_shovel", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:refined_rock_shovel", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -151,7 +155,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:refined_rock_pickaxe", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:refined_rock_pickaxe", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -164,7 +170,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:refined_rock_hoe", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:refined_rock_hoe", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -334,7 +342,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:crystal_shovel", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:crystal_shovel", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -347,7 +357,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:crystal_pickaxe", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:crystal_pickaxe", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true

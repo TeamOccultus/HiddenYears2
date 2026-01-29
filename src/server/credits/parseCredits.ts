@@ -2,7 +2,7 @@ import { Credits } from "./Credits";
 
 export function parseCredits(credits: Credits): string {
   let parsedCredits: string[] = [
-    "CREDITS of Hidden Years²: Governor at the Skyline\n",
+    "CREDITS of Hidden Years²: Governor at the Skyline\n"
   ];
   credits.forEach((credit) => {
     if (typeof credit === "string") {

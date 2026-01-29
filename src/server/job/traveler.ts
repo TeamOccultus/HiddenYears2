@@ -15,27 +15,27 @@ export const traveler = new Job(
       {
         min: 0,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)],
-      },
+        condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)]
+      }
     ],
     transform: [
       {
         job: wizard,
-        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true)
       },
       {
         job: warrior,
-        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true)
       },
       {
         job: archer,
-        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true)
       },
       {
         job: pastor,
-        condition: new ItemConditions("hiddenyears:decision_gem", 1, true),
-      },
-    ],
+        condition: new ItemConditions("hiddenyears:decision_gem", 1, true)
+      }
+    ]
   }
 );
 

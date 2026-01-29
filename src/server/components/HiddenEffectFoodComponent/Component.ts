@@ -13,7 +13,7 @@ export class HiddenEffectFoodComponent {
           const { itemStack } = arg0;
           if (!itemStack) return;
           HiddenEffectFoodEvent.onConsume(arg0, arg1);
-        },
+        }
       });
     });
   }

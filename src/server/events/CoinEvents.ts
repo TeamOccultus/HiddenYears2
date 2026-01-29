@@ -1,7 +1,7 @@
 import {
   CustomComponentParameters,
   ItemComponentUseEvent,
-  world,
+  world
 } from "@minecraft/server";
 import { CoinComponentParams } from "../components/CoinComponent/Params";
 import { UnifiedCurrencyValue } from "../item/UCV";
@@ -14,7 +14,7 @@ export class CoinEvents {
     setEquipmentItem(source, consumeAmount(itemStack, 1));
     source.onScreenDisplay.setActionBar({
       translate: "message.hiddenyears:ucv_add",
-      with: [p.ucv_value.toString()],
+      with: [p.ucv_value.toString()]
     });
     UnifiedCurrencyValue.add(source, p.ucv_value);
   }

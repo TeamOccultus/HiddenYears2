@@ -3,7 +3,7 @@
  * @category ComponentParams
  */
 export type ArrowPresentParams = {
-    present: ArrowPresents;
-}
+  present: ArrowPresents;
+};
 
-export type ArrowPresents = "daylight" | "lightning" | "fire" | "steel"
+export type ArrowPresents = "daylight" | "lightning" | "fire" | "steel";

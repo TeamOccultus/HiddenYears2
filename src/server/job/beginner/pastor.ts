@@ -13,19 +13,19 @@ export const pastor = new Job(
       {
         min: 0,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)],
-      },
+        condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)]
+      }
     ],
     transform: [
       {
         job: amnestyPastor,
-        condition: new ItemConditions("hiddenyears:pastor_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:pastor_gem", 1, true)
       },
       {
         job: orisonPastor,
-        condition: new ItemConditions("hiddenyears:pastor_gem", 1, true),
-      },
-    ],
+        condition: new ItemConditions("hiddenyears:pastor_gem", 1, true)
+      }
+    ]
   }
 );
 

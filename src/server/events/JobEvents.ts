@@ -1,7 +1,7 @@
 import {
   ItemComponentUseEvent,
   CustomComponentParameters,
-  system,
+  system
 } from "@minecraft/server";
 import { consumeEquipmentAmount, setEquipmentItem } from "@occultus/api";
 import { JobSchema } from "../components/JobOfferComponent/Params";

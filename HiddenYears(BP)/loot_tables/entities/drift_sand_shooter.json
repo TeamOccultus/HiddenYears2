@@ -10,7 +10,9 @@
           "looting_multiplier": 0.2
         }
       ],
-      "entries": [{ "type": "item", "name": "hiddenyears:drift_sand_key", "weight": 1 }]
+      "entries": [
+        { "type": "item", "name": "hiddenyears:drift_sand_key", "weight": 1 }
+      ]
     },
     {
       "rolls": 1,

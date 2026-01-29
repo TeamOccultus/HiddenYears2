@@ -82,9 +82,7 @@
     "events": {
       "hiddenyears:arrow_explode": {
         "add": {
-          "component_groups": [
-            "hiddenyears:explode"
-          ]
+          "component_groups": ["hiddenyears:explode"]
         }
       }
     }

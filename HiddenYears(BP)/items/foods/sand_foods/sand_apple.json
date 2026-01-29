@@ -10,10 +10,7 @@
     },
     "components": {
       "hiddenyears:effective_food": {
-        "effect": [
-          "minecraft:absorption",
-          "minecraft:fire_resistance"
-        ],
+        "effect": ["minecraft:absorption", "minecraft:fire_resistance"],
         "duration": 550
       },
       "minecraft:icon": "hiddenyears:sand_apple",

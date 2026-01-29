@@ -114,10 +114,10 @@
           ]
         },
         {
-        "name": "rightItem",
-        "pivot": [ -6, 15, 1 ],
-        "parent": "rightArm"
-      },
+          "name": "rightItem",
+          "pivot": [-6, 15, 1],
+          "parent": "rightArm"
+        },
         {
           "name": "LeftArm",
           "pivot": [5, 22, 0],

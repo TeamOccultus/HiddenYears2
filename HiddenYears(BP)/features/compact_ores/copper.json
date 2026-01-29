@@ -8,10 +8,7 @@
     "replace_rules": [
       {
         "places_block": "hiddenyears:compact_copper_ore",
-        "may_replace": [
-          "deepslate_copper_ore",
-          "deepslate"
-        ]
+        "may_replace": ["deepslate_copper_ore", "deepslate"]
       }
     ]
   }

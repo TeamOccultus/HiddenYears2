@@ -8,10 +8,7 @@
     "replace_rules": [
       {
         "places_block": "hiddenyears:loose_emerald_ore",
-        "may_replace": [
-          "emerald_ore",
-          "minecraft:stone"
-        ]
+        "may_replace": ["emerald_ore", "minecraft:stone"]
       }
     ]
   }

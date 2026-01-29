@@ -4,7 +4,7 @@ import {
   ItemStack,
   Player,
   system,
-  world,
+  world
 } from "@minecraft/server";
 import { ArrowPresentParams, ArrowPresents } from "./ArrowPresentParams";
 import { Random } from "@occultus/api";
@@ -38,7 +38,7 @@ function stringifyPresent(
       .getEntities({
         location: hitEntity.location,
         maxDistance: 6,
-        families: ["monster"],
+        families: ["monster"]
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
@@ -52,7 +52,7 @@ function stringifyPresent(
       .getEntities({
         location: hitEntity.location,
         maxDistance: 15,
-        families: ["monster"],
+        families: ["monster"]
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
@@ -69,7 +69,7 @@ function stringifyPresent(
       .getEntities({
         location: hitEntity.location,
         maxDistance: 6,
-        excludeFamilies: ["player"],
+        excludeFamilies: ["player"]
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
@@ -83,12 +83,12 @@ function stringifyPresent(
       .getEntities({
         location: hitEntity.location,
         maxDistance: 6,
-        excludeFamilies: ["player"],
+        excludeFamilies: ["player"]
       })
       .forEach((entity) => {
         if (!entity.isValid) return;
         entity.applyDamage(Random.integer(12, 8), {
-          cause: EntityDamageCause.freezing,
+          cause: EntityDamageCause.freezing
         });
         entity.dimension.spawnParticle(
           "minecraft:snowflake_particle",
@@ -96,7 +96,7 @@ function stringifyPresent(
         );
         entity.addEffect("minecraft:slowness", 200, {
           amplifier: 1,
-          showParticles: false,
+          showParticles: false
         });
       });
     return;

@@ -373,7 +373,9 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hiddenyears:stack_of_copper_coin", "quantity": 2 }],
+              "gives": [
+                { "item": "hiddenyears:stack_of_copper_coin", "quantity": 2 }
+              ],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -382,7 +384,9 @@
               "wants": [
                 { "item": "coal", "quantity": 1, "price_multiplier": 0.05 }
               ],
-              "gives": [{ "item": "hiddenyears:stack_of_copper_coin", "quantity": 3 }],
+              "gives": [
+                { "item": "hiddenyears:stack_of_copper_coin", "quantity": 3 }
+              ],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true
@@ -395,7 +399,9 @@
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "hiddenyears:stack_of_copper_coin", "quantity": 10 }],
+              "gives": [
+                { "item": "hiddenyears:stack_of_copper_coin", "quantity": 10 }
+              ],
               "trader_exp": 30,
               "max_uses": 12,
               "reward_exp": true

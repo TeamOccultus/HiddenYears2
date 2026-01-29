@@ -1,12 +1,12 @@
 import {
   CustomComponentParameters,
   ItemComponentUseEvent,
-  system,
+  system
 } from "@minecraft/server";
 import {
   consumeDurability,
   EntitiesUtils,
-  setEquipmentItem,
+  setEquipmentItem
 } from "@occultus/api";
 import { StaffSchema } from "../components/StaffComponent/Params";
 
@@ -30,7 +30,7 @@ export class StaffEvents {
     const cooldown = itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(source) !== 0) {
       source.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:wait_cooldown",
+        translate: "message.hiddenyears:wait_cooldown"
       });
       return;
     }
@@ -44,7 +44,7 @@ export class StaffEvents {
       location: source.location,
       maxDistance: params.radius,
       excludeTags: ["hiddenyears:immune_magic_attack"],
-      excludeFamilies: ["noaoe"],
+      excludeFamilies: ["noaoe"]
     });
     utils.applyDamage(params.damage);
     utils.tryOperateEntity((entity) => {
@@ -67,7 +67,7 @@ export class StaffEvents {
       location: source.location,
       maxDistance: params.radius,
       excludeTags: ["hiddenyears:immune_magic_attack"],
-      excludeFamilies: ["noaoe"],
+      excludeFamilies: ["noaoe"]
     });
     utils.tryOperateEntity((entity) => {
       entity.dimension.spawnEntity("lightning_bolt", entity.location);

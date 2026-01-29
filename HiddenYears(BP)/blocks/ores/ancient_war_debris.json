@@ -8,7 +8,7 @@
       }
     },
     "components": {
-       "hiddenyears:custom_ore": {
+      "hiddenyears:custom_ore": {
         "exp": 10
       },
       "minecraft:geometry": {

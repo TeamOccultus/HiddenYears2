@@ -3,8 +3,11 @@ title: 特别鸣谢
 group: Documents
 category: Documents
 ---
+
 # 特别鸣谢
+
 ## 音乐与美术资源
+
 - [Coin4](https://freesound.org/s/336933/) by The-Sacha-Rush, License under Creative Commons 0
 - [custom_insomiac_inspired_lizard_growling_and_attack_roar_sound_02_06162025](https://freesound.org/s/811312/) by Artninja, License under Attribution 4.0
 - https://soundeffects.fandom.com/wiki/SKYWALKER,_ROAR_-_ACKLAY_SCREAM

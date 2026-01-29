@@ -4,18 +4,18 @@ import { RandomEvent } from "@occultus/api";
 export function unyieldingArmor(player: Player, level: number = 1) {
   player.addEffect("minecraft:resistance", 300 * level, {
     amplifier: level - 1,
-    showParticles: false,
+    showParticles: false
   });
   player.addEffect("minecraft:strength", 300 * level, {
     amplifier: level - 1,
-    showParticles: false,
+    showParticles: false
   });
   player.addEffect("minecraft:speed", 300 * level, {
     amplifier: level - 1,
-    showParticles: false,
+    showParticles: false
   });
   player.onScreenDisplay.setActionBar({
-    translate: "message.hiddenyears:unyielding",
+    translate: "message.hiddenyears:unyielding"
   });
 }
 
@@ -27,8 +27,6 @@ export function rebirthArmor(player: Player) {
     health.resetToMaxValue();
   });
   player.onScreenDisplay.setActionBar({
-    translate: "message.hiddenyears:rebirth",
+    translate: "message.hiddenyears:rebirth"
   });
 }
-
-

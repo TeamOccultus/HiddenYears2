@@ -13,19 +13,19 @@ export const wizard = new Job(
       {
         min: 0,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)],
-      },
+        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)]
+      }
     ],
     transform: [
       {
         job: arcaneWizard,
-        condition: new ItemConditions("hiddenyears:wizard_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:wizard_gem", 1, true)
       },
       {
         job: conjureWizard,
-        condition: new ItemConditions("hiddenyears:wizard_gem", 1, true),
-      },
-    ],
+        condition: new ItemConditions("hiddenyears:wizard_gem", 1, true)
+      }
+    ]
   }
 );
 
@@ -42,5 +42,7 @@ wizard.onCauseDamage((arg) => {
   const player = arg.damageSource.damagingEntity as Player;
   // 已经被移除
   if (!hurtEntity.isValid) return;
-  hurtEntity.applyDamage(wizard.getLevel(player) * 0.6, {cause: EntityDamageCause.none});
+  hurtEntity.applyDamage(wizard.getLevel(player) * 0.6, {
+    cause: EntityDamageCause.none
+  });
 });

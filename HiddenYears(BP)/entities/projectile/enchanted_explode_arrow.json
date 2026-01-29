@@ -16,7 +16,7 @@
           "destroy_affected_by_griefing": false,
           "fire_affected_by_griefing": false,
           "fuse_length": 0,
-					"fuse_lit": true,
+          "fuse_lit": true,
           "power": 10
         }
       }
@@ -82,9 +82,7 @@
     "events": {
       "hiddenyears:arrow_explode": {
         "add": {
-          "component_groups": [
-            "hiddenyears:explode"
-          ]
+          "component_groups": ["hiddenyears:explode"]
         }
       }
     }

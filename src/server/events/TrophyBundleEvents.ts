@@ -3,7 +3,7 @@ import {
   CustomComponentParameters,
   ItemStack,
   world,
-  system,
+  system
 } from "@minecraft/server";
 import { TrophyBundleParam } from "../components/TrophyBundleComponent/Params";
 import { setEquipmentItem, loot, RandomEvent } from "@occultus/api";
@@ -25,7 +25,7 @@ export class TrophyBundleEvents {
       loot(
         source.dimension,
         source.location,
-        TrophyBundleEvents.getLootTable(itemStack, p),
+        TrophyBundleEvents.getLootTable(itemStack, p)
       );
     }, 10);
   }

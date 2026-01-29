@@ -6,7 +6,7 @@ import { Player } from "@minecraft/server";
 import { bleedEffect } from "../effects/bleed";
 import {
   dehydrationEffect,
-  isAffectByDehydrationEffect,
+  isAffectByDehydrationEffect
 } from "../effects/dehydration";
 import { droughtEffect, isAffectByDroughtEffect } from "../effects/drought";
 import { tetanusEffect, isAffectByTetanusEffect } from "../effects/tetanus";
@@ -36,7 +36,7 @@ export function registryEffects() {
     if (isAffectByDehydrationEffect(entity)) {
       entity.applyDamage(1);
       entity.addEffect("weakness", 40, {
-        amplifier: 2,
+        amplifier: 2
       });
       entity.addEffect("nausea", 40, { amplifier: 2 });
       entity.addEffect("mining_fatigue", 40, { amplifier: 2 });
@@ -53,7 +53,7 @@ export function registryEffects() {
   droughtEffect.onUpdate((entity) => {
     if (isAffectByDroughtEffect(entity)) {
       entity.addEffect("weakness", 40, {
-        amplifier: 2,
+        amplifier: 2
       });
       entity.addEffect("nausea", 40, { amplifier: 2 });
       entity.addEffect("darkness", 40);
@@ -70,7 +70,7 @@ export function registryEffects() {
   tetanusEffect.onUpdate((entity) => {
     if (isAffectByTetanusEffect(entity)) {
       entity.addEffect("poison", 40, {
-        amplifier: 2,
+        amplifier: 2
       });
       entity.addEffect("nausea", 40, { amplifier: 2 });
       entity.addEffect("wither", 40);

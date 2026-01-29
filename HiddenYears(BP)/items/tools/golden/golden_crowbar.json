@@ -50,7 +50,10 @@
       "minecraft:icon": "hiddenyears:golden_crowbar",
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_tool","hiddenyears:is_crowbar", "minecraft:golden_tier"]
+          "minecraft:is_tool",
+          "hiddenyears:is_crowbar",
+          "minecraft:golden_tier"
+        ]
       }
     }
   }

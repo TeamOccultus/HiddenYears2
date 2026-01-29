@@ -50,7 +50,10 @@
       "minecraft:icon": "hiddenyears:wooden_saw",
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_tool","hiddenyears:is_saw", "minecraft:wooden_tier"]
+          "minecraft:is_tool",
+          "hiddenyears:is_saw",
+          "minecraft:wooden_tier"
+        ]
       }
     }
   }

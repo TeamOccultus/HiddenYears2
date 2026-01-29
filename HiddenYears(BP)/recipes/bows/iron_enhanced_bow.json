@@ -10,7 +10,8 @@
       {
         "item": "minecraft:bow",
         "count": 1
-      },{
+      },
+      {
         "item": "minecraft:iron_ingot",
         "count": 1
       }
@@ -18,7 +19,8 @@
     "unlock": [
       {
         "item": "minecraft:bow"
-      },{
+      },
+      {
         "item": "minecraft:iron_ingot"
       }
     ],

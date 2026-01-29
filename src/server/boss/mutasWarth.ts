@@ -4,7 +4,7 @@ import {
   RandomEvent,
   getEquipmentItem,
   Boss,
-  Vector3Utils,
+  Vector3Utils
 } from "@occultus/api";
 import { listenIsisMonologue } from "../../data/monologues";
 
@@ -20,7 +20,7 @@ const kahe = new BossSkill(
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.mutas_wrath.kahe",
+          translate: "message.hiddenyears:boss.mutas_wrath.kahe"
         });
       }
       entity.addEffect("weakness", 400, { amplifier: 2 });
@@ -38,7 +38,7 @@ const osiris = new BossSkill(
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.mutas_wrath.osiris",
+          translate: "message.hiddenyears:boss.mutas_wrath.osiris"
         });
       }
     });
@@ -89,7 +89,7 @@ const isis = new BossSkill(
       if (entity.matches({ families: ["mutas_friend"] })) return;
       if (entity instanceof Player) {
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.mutas_wrath.isis",
+          translate: "message.hiddenyears:boss.mutas_wrath.isis"
         });
         entity.playSound("mob.shulker.shoot");
       }
@@ -114,7 +114,7 @@ const muta = new BossSkill(
       if (entity instanceof Player) {
         entity.playSound("mob.shulker.shoot");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.mutas_wrath.muta",
+          translate: "message.hiddenyears:boss.mutas_wrath.muta"
         });
       }
       if (
@@ -137,7 +137,7 @@ const muatsWarth = new Boss("hiddenyears:mutas_wrath", [
   kahe,
   osiris,
   isis,
-  muta,
+  muta
 ]);
 
 muatsWarth.onDie((arg) => {

@@ -10,7 +10,11 @@
     "components": {
       "minecraft:icon": "hiddenyears:silver_nugget",
       "minecraft:tags": {
-        "tags": ["hiddenyears:silver_material", "hiddenyears:nugget", "minecraft:metal_nuggets"]
+        "tags": [
+          "hiddenyears:silver_material",
+          "hiddenyears:nugget",
+          "minecraft:metal_nuggets"
+        ]
       }
     }
   }

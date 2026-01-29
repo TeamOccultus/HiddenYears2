@@ -62,7 +62,14 @@
       },
       "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": ["trial_zombie", "zombie", "trial_monster", "undead", "monster", "mob"]
+        "family": [
+          "trial_zombie",
+          "zombie",
+          "trial_monster",
+          "undead",
+          "monster",
+          "mob"
+        ]
       },
       "minecraft:collision_box": {
         "width": 0.6,

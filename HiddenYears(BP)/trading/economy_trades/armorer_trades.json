@@ -194,7 +194,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:silver_chestplate", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:silver_chestplate", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true
@@ -207,7 +209,9 @@
                   "price_multiplier": 0.2
                 }
               ],
-              "gives": [{ "item": "hiddenyears:silver_leggings", "quantity": 1 }],
+              "gives": [
+                { "item": "hiddenyears:silver_leggings", "quantity": 1 }
+              ],
               "trader_exp": 1,
               "max_uses": 12,
               "reward_exp": true

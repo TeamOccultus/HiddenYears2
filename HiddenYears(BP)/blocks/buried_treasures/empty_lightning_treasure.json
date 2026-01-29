@@ -10,7 +10,7 @@
     "components": {
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
-        "up":{
+        "up": {
           "texture": "hiddenyears:ruby_frame_top"
         },
         "down": {

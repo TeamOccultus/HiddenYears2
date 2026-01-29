@@ -23,8 +23,8 @@ export function registryMusicDisc() {
     "Song of Ancient Desert",
     "3xLnw"
   );
-  const server = new MusicDiscServer()
-  server.addDisc(plains)
-  server.addDisc(ruby)
+  const server = new MusicDiscServer();
+  server.addDisc(plains);
+  server.addDisc(ruby);
   server.addDisc(pharaohs);
 }

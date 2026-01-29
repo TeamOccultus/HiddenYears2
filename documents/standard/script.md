@@ -3,10 +3,11 @@ title: NPM 脚本
 group: Documents
 category: Documents
 ---
+
 # NPM 脚本
 
 项目内置了一些 NPM 脚本，用于编译和打包项目。
- 
+
 ## 脚本列表
 
 由以下脚本可用：

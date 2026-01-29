@@ -13,5 +13,5 @@ export type BossSpawnerParams = {
     fade_in: number;
     fade_out: number;
     hold: number;
-  }
+  };
 };

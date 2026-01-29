@@ -23,7 +23,6 @@
       "animations": {
         "wield": "animation.crossbow.wield",
         "wield_first_person_pull": "animation.crossbow.wield_first_person_pull"
-
       },
       "scripts": {
         "pre_animation": [
@@ -36,9 +35,7 @@
           }
         ]
       },
-      "render_controllers": [
-        "controller.render.crossbows"
-      ]
+      "render_controllers": ["controller.render.crossbows"]
     }
   }
 }

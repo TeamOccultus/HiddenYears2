@@ -7,7 +7,7 @@ export class TrophyBundleComponent {
       arg.itemComponentRegistry.registerCustomComponent(this.componentName, {
         onUse(arg0, arg1) {
           TrophyBundleEvents.onUse(arg0, arg1);
-        },
+        }
       });
     });
   }

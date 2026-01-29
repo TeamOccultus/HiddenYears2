@@ -2,7 +2,7 @@
  * @module server/registry/command
  * @category Registry Bus
  */
-import { default as credits }  from "../../../config/credits.json";
+import { default as credits } from "../../../config/credits.json";
 import { CreditsCommand } from "../commands/CreditsCommand";
 import { MigrateCommand } from "../commands/MigrateCommand";
 import { ProfileCommand } from "../commands/ProfileCommand";

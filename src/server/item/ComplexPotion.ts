@@ -23,14 +23,14 @@ export class ComplexPotion {
       if (id.startsWith("complex_potion:")) {
         const rawData = item.getDynamicProperty(id) as string;
         const [effect, duration, amplifier] = [
-          id.split(":")[1] + ":"+  id.split(":")[2],
+          id.split(":")[1] + ":" + id.split(":")[2],
           rawData.split(":")[0],
-          rawData.split(":")[1],
+          rawData.split(":")[1]
         ];
         potionType.push({
           effect: effect,
           duration: parseInt(duration),
-          amplifier: parseInt(amplifier),
+          amplifier: parseInt(amplifier)
         });
       }
     });
@@ -44,13 +44,11 @@ export class ComplexPotion {
   static addPotionType(item: ItemStack, type: ComplexPotionType) {
     item.setDynamicProperty(
       `complex_potion:${type.effect}`,
-      `${type.duration}:${type.amplifier}`,
+      `${type.duration}:${type.amplifier}`
     );
   }
   static hasPotionType(item: ItemStack, effect: string) {
-    return (
-      item.getDynamicProperty(`complex_potion:${effect}`) !== undefined
-    );
+    return item.getDynamicProperty(`complex_potion:${effect}`) !== undefined;
   }
 }
 

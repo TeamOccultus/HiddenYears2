@@ -3,27 +3,33 @@ import { AdditionalMaterialEvents } from "../events/AdditionalMaterialEvents";
 import { getEquipmentItem } from "@occultus/api";
 
 export class AdditionalMaterialSystem {
-  constructor(){
+  constructor() {
     world.afterEvents.playerBreakBlock.subscribe((event) => {
-      const item = event.itemStackAfterBreak 
-      if(!item) return;
+      const item = event.itemStackAfterBreak;
+      if (!item) return;
       if (AdditionalMaterialSystem.getType(item)) {
-        AdditionalMaterialEvents.onMineBlock(event, AdditionalMaterialSystem.getType(item))
+        AdditionalMaterialEvents.onMineBlock(
+          event,
+          AdditionalMaterialSystem.getType(item)
+        );
       }
-    })
+    });
     world.afterEvents.entityHitEntity.subscribe((event) => {
-      const item = getEquipmentItem(event.damagingEntity)
-      if(!item) return;
+      const item = getEquipmentItem(event.damagingEntity);
+      if (!item) return;
       if (AdditionalMaterialSystem.getType(item)) {
-        AdditionalMaterialEvents.onHitEntity(event, AdditionalMaterialSystem.getType(item))
+        AdditionalMaterialEvents.onHitEntity(
+          event,
+          AdditionalMaterialSystem.getType(item)
+        );
       }
-    })
-  }  
+    });
+  }
   /**
    * 获取物品的附加材料类型
    * @param item 要获取类型的物品
    * @return
-   */  
+   */
   static getType(item: ItemStack): AdditionalMaterialType | undefined {
     const type = item.getDynamicProperty(
       "hiddenyears:additional_material_type"

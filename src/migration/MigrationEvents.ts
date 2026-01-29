@@ -11,7 +11,7 @@ export class MigrationEvents {
       if (!event.initialSpawn) return;
       if (!TaskMigrationSystem.hasLegacyQuest(event.player)) return;
       event.player.sendMessage({
-        translate: "message.hiddenyears:migration.task",
+        translate: "message.hiddenyears:migration.task"
       });
     });
   }

@@ -18,7 +18,7 @@ export class WeaponTypeComponent {
           if (params?.legend_weapon === "shattered_sand_staff") {
             LegendWeaponEvent.onShatteredSandStaffAttack(arg0);
           }
-        },
+        }
       });
     });
   }

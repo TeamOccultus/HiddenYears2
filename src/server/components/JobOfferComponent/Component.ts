@@ -8,7 +8,7 @@ export class JobComponent {
       item.registerCustomComponent(componentName, {
         onUse(arg0, arg1) {
           JobEvents.onUse(arg0, arg1);
-        },
+        }
       });
     });
   }

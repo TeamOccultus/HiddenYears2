@@ -1,7 +1,7 @@
 import {
   Block,
   BlockComponentPlayerInteractEvent,
-  Player,
+  Player
 } from "@minecraft/server";
 import { VaultParams } from "../components/VaultComponent/Params";
 import {
@@ -9,7 +9,7 @@ import {
   getEquipmentItem,
   loot,
   setEquipmentItem,
-  Vector3Utils,
+  Vector3Utils
 } from "@occultus/api";
 
 /**
@@ -41,7 +41,7 @@ export class VaultEvents {
       return;
     }
     player.onScreenDisplay.setActionBar({
-      translate: "message.hiddenyears:need_key",
+      translate: "message.hiddenyears:need_key"
     });
   }
 }

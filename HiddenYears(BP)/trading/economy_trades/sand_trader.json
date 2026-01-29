@@ -110,7 +110,10 @@
                 }
               ],
               "gives": [
-                { "item": "hiddenyears:desert_herbpot_saturation", "quantity": 1 }
+                {
+                  "item": "hiddenyears:desert_herbpot_saturation",
+                  "quantity": 1
+                }
               ],
               "trader_exp": 2,
               "max_uses": 16,

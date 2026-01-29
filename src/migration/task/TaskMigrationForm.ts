@@ -7,20 +7,20 @@ export class TaskMigrationForm {
   static display(player: Player) {
     const form = new MessageFormData()
       .title({
-        translate: "ui.migration.task",
+        translate: "ui.migration.task"
       })
       .body({
         rawtext: [
           { translate: "ui.migration.task.desc_1" },
           { text: Format.newLine },
-          { translate: "ui.migration.task.desc_2" },
-        ],
+          { translate: "ui.migration.task.desc_2" }
+        ]
       })
       .button1({
-        translate: "ui.migration.task.yes",
+        translate: "ui.migration.task.yes"
       })
       .button2({
-        translate: "ui.migration.task.no",
+        translate: "ui.migration.task.no"
       });
 
     form.show(player).then((response) => {
@@ -33,8 +33,8 @@ export class TaskMigrationForm {
           with: [
             result.all.toString(),
             result.success.toString(),
-            result.failed.toString(),
-          ],
+            result.failed.toString()
+          ]
         });
       }
     });

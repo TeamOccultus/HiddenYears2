@@ -1,5 +1,5 @@
 import { Entity, EquipmentSlot, Player } from "@minecraft/server";
-import { VirtualEffect, getEquipmentItem  } from "@occultus/api";
+import { VirtualEffect, getEquipmentItem } from "@occultus/api";
 
 /**
  * 实体被攻击时，判断其是否会获得干旱效果
@@ -18,5 +18,7 @@ export function isAffectByDehydrationEffect(entity: Entity): boolean {
   return true;
 }
 
-export const dehydrationEffect = new VirtualEffect("hiddenyears:dehydration", 20);
-
+export const dehydrationEffect = new VirtualEffect(
+  "hiddenyears:dehydration",
+  20
+);

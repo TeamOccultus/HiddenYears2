@@ -10,7 +10,7 @@ export class VaultComponent {
         onPlayerInteract(arg0, arg1) {
           const p = arg1.params as VaultParams;
           VaultEvents.onPlayerInteract(arg0, p);
-        },
+        }
       });
     });
   }

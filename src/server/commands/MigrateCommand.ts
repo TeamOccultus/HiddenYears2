@@ -5,7 +5,7 @@ import {
   CustomCommandSource,
   CustomCommandStatus,
   Player,
-  CustomCommandParamType,
+  CustomCommandParamType
 } from "@minecraft/server";
 import { TaskMigrationForm } from "../../migration/task/TaskMigrationForm";
 
@@ -13,7 +13,7 @@ export class MigrateCommand {
   constructor(readonly commandName: string) {
     system.beforeEvents.startup.subscribe((arg) => {
       arg.customCommandRegistry.registerEnum("hiddenyears:migrate_type", [
-        "task",
+        "task"
       ]);
       const command: CustomCommand = {
         name: this.commandName,
@@ -23,21 +23,20 @@ export class MigrateCommand {
         mandatoryParameters: [
           {
             type: CustomCommandParamType.Enum,
-            name: "hiddenyears:migrate_type", // The parameter name must match the registered enum name above
-
-          },
-        ],
+            name: "hiddenyears:migrate_type" // The parameter name must match the registered enum name above
+          }
+        ]
       };
       arg.customCommandRegistry.registerCommand(command, (origin, type) => {
         system.run(() => {
           if (!origin.sourceEntity) {
             return {
-              status: CustomCommandStatus.Failure,
+              status: CustomCommandStatus.Failure
             };
           }
           if (!(origin.sourceEntity instanceof Player)) {
             return {
-              status: CustomCommandStatus.Failure,
+              status: CustomCommandStatus.Failure
             };
           }
 
@@ -45,11 +44,11 @@ export class MigrateCommand {
             TaskMigrationForm.display(origin.sourceEntity);
           }
           return {
-            status: CustomCommandStatus.Success,
+            status: CustomCommandStatus.Success
           };
         });
         return {
-          status: CustomCommandStatus.Success,
+          status: CustomCommandStatus.Success
         };
       });
     });

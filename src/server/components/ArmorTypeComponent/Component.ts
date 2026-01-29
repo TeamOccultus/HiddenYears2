@@ -2,7 +2,7 @@ import {
   EntityHealthComponent,
   EquipmentSlot,
   system,
-  world,
+  world
 } from "@minecraft/server";
 import { ArmorTypeParams } from "./Params";
 import { getEquipmentItem } from "@occultus/api";
@@ -24,7 +24,7 @@ export class ArmorTypeComponent {
         .customComponentParameters.params as ArmorTypeParams;
       if (params.present === "isis_crown") {
         const health = event.entity.getComponent(
-          "minecraft:health",
+          "minecraft:health"
         ) as EntityHealthComponent;
         const newHealth = health.currentValue + changedValue * 0.25;
         if (newHealth > health.defaultValue) {

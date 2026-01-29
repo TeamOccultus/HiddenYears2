@@ -36,25 +36,19 @@
       "category": "hostile",
       "max_distance": null,
       "min_distance": null,
-      "sounds": [
-        "sounds/mob/mutas_wrath_death"
-      ]
+      "sounds": ["sounds/mob/mutas_wrath_death"]
     },
     "mob.mutas_wrath.hurt": {
       "category": "hostile",
       "max_distance": null,
       "min_distance": null,
-      "sounds": [
-        "sounds/mob/mutas_wrath_hit"
-      ]
+      "sounds": ["sounds/mob/mutas_wrath_hit"]
     },
     "mob.mutas_wrath.say": {
       "category": "hostile",
       "max_distance": null,
       "min_distance": null,
-      "sounds": [
-        "sounds/mob/mutas_wrath_say"
-      ]
+      "sounds": ["sounds/mob/mutas_wrath_say"]
     }
   }
 }

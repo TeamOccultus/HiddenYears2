@@ -5,8 +5,7 @@ export class StaffComponent {
   constructor(readonly componentName: string) {
     system.beforeEvents.startup.subscribe((init) => {
       const item = init.itemComponentRegistry;
-      item.registerCustomComponent(componentName, {
-      });
+      item.registerCustomComponent(componentName, {});
     });
     world.afterEvents.itemUse.subscribe((event) => {
       const { itemStack, source } = event;

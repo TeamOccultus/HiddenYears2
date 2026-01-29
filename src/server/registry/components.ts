@@ -10,7 +10,7 @@ import {
   ItemRegistries,
   OreBlock,
   ToolMaterial,
-  WeaponMaterial,
+  WeaponMaterial
 } from "@occultus/api";
 import { OreTypeComponent } from "../components/OreTypeComponent";
 import { ToolTypeComponent } from "../components/ToolTypeComponent";

@@ -11,7 +11,7 @@ const stealExperience = new BossSkill(
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.king_of_ruby.steal_exp",
+          translate: "message.hiddenyears:boss.king_of_ruby.steal_exp"
         });
         stolen += getAllExp(entity);
         entity.resetLevel();
@@ -37,7 +37,7 @@ const spawnGuardian = new BossSkill(
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.king_of_ruby.spawn_guardian",
+          translate: "message.hiddenyears:boss.king_of_ruby.spawn_guardian"
         });
       }
     });
@@ -45,22 +45,22 @@ const spawnGuardian = new BossSkill(
       excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
         x: excu.location.x + 2,
         y: excu.location.y,
-        z: excu.location.z,
+        z: excu.location.z
       });
       excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
         x: excu.location.x - 2,
         y: excu.location.y,
-        z: excu.location.z,
+        z: excu.location.z
       });
       excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
         x: excu.location.x,
         y: excu.location.y,
-        z: excu.location.z + 2,
+        z: excu.location.z + 2
       });
       excu?.dimension.spawnEntity("hiddenyears:ruby_guardian", {
         x: excu.location.x,
         y: excu.location.y,
-        z: excu.location.z - 2,
+        z: excu.location.z - 2
       });
     }, 40);
   },
@@ -76,7 +76,7 @@ const lightningFromPast = new BossSkill(
       if (entity instanceof Player) {
         entity.playSound("boss_skill.ruby");
         entity.sendMessage({
-          translate: "message.hiddenyears:boss.king_of_ruby.past_lightning",
+          translate: "message.hiddenyears:boss.king_of_ruby.past_lightning"
         });
       }
       system.runTimeout(() => {

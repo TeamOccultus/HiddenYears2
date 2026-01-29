@@ -41,7 +41,10 @@
       },
       "minecraft:tags": {
         "tags": [
-          "minecraft:is_tool","hiddenyears:is_hammer", "minecraft:netherite_tier"]
+          "minecraft:is_tool",
+          "hiddenyears:is_hammer",
+          "minecraft:netherite_tier"
+        ]
       }
     }
   }

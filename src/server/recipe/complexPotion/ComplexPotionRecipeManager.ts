@@ -13,7 +13,7 @@ export class ComplexPotionRecipeManager {
           effect: recipe.effect,
           duration: recipe.duration,
           amplifier: recipe.amplifier,
-          alwaysCanUse: recipe.can_always_use ?? false,
+          alwaysCanUse: recipe.can_always_use ?? false
         };
       }
       return null;
@@ -28,19 +28,19 @@ export class ComplexPotionRecipeManager {
   }
   static canBeAdded(
     recipe: ComplexPotionRecipeType,
-    ingredient: ItemStack,
+    ingredient: ItemStack
   ): boolean {
     if (!ComplexPotion.hasPotionType(ingredient, recipe.effect)) return true;
     return recipe.can_always_use ?? false;
   }
   static getResultItem(
     item: ItemStack,
-    recipe: ComplexPotionRecipeType,
+    recipe: ComplexPotionRecipeType
   ): ItemStack {
     ComplexPotion.addPotionType(item, {
       effect: recipe.effect,
       duration: recipe.duration,
-      amplifier: recipe.amplifier,
+      amplifier: recipe.amplifier
     });
     return item;
   }
@@ -55,7 +55,7 @@ export class ComplexPotionRecipeManager {
       const data = JSON.parse(arg.message) as ComplexPotionRecipeType;
       this.addRecipe(data);
       console.log(
-        `[隐藏之年] 已添加新的复合药水配方: ${data.ingredient} -> ${data.effect}(${data.amplifier}) x ${data.duration}`,
+        `[隐藏之年] 已添加新的复合药水配方: ${data.ingredient} -> ${data.effect}(${data.amplifier}) x ${data.duration}`
       );
     });
   }

@@ -34,31 +34,31 @@ export class OreEvents {
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 200);
       player.sendMessage({
-        translate: "message.hiddenyears:first_destroy_ruby",
+        translate: "message.hiddenyears:first_destroy_ruby"
       });
     }
     if (num === 10) {
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 300);
       player.sendMessage({
-        translate: "message.hiddenyears:tenth_destroy_ruby.1",
+        translate: "message.hiddenyears:tenth_destroy_ruby.1"
       });
       player.sendMessage({
-        translate: "message.hiddenyears:tenth_destroy_ruby.2",
+        translate: "message.hiddenyears:tenth_destroy_ruby.2"
       });
     }
     if (num === 50) {
       player.playSound("ambient.cave");
       player.addEffect("minecraft:darkness", 400);
       player.sendMessage({
-        translate: "message.hiddenyears:fiftieth_destroy_ruby.1",
+        translate: "message.hiddenyears:fiftieth_destroy_ruby.1"
       });
       system.runTimeout(() => {
         player.sendMessage({
-          translate: "message.hiddenyears:fiftieth_destroy_ruby.2",
+          translate: "message.hiddenyears:fiftieth_destroy_ruby.2"
         });
         player.sendMessage({
-          translate: "message.hiddenyears:fiftieth_destroy_ruby.3",
+          translate: "message.hiddenyears:fiftieth_destroy_ruby.3"
         });
       }, 50);
     }

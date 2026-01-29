@@ -10,9 +10,7 @@
     },
     "components": {
       "hiddenyears:effective_food": {
-        "effect": [
-          "minecraft:hunger"
-        ],
+        "effect": ["minecraft:hunger"],
         "duration": 400
       },
       "minecraft:icon": "hiddenyears:sand_meat",

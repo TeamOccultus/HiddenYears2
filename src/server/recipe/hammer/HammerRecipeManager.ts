@@ -1,9 +1,6 @@
 import { ItemStack, system } from "@minecraft/server";
 import { HammerRecipe } from "./HammerRecipeType";
-import {
-  hammerIngredientData,
-  hammerRecipesData,
-} from "./HammerRecipeData";
+import { hammerIngredientData, hammerRecipesData } from "./HammerRecipeData";
 
 export class HammerRecipeManager {
   static ingredients: string[] = hammerIngredientData;

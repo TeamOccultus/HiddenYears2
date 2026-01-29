@@ -1,13 +1,13 @@
 import {
   ItemStack,
-  PlayerInteractWithBlockAfterEvent,
+  PlayerInteractWithBlockAfterEvent
 } from "@minecraft/server";
 import {
   BlockEntity,
   BlockWithEntity,
   consumeAmount,
   setEquipmentItem,
-  Vector3Utils,
+  Vector3Utils
 } from "@occultus/api";
 import { MSTRecipeManager } from "../recipe/magicSmithingTable/MSTRecipeManager";
 
@@ -15,7 +15,7 @@ export class MagicSmithingTable extends BlockWithEntity {
   constructor() {
     super(
       "hiddenyears:magic_smithing_table",
-      "hiddenyears:magic_smithing_table",
+      "hiddenyears:magic_smithing_table"
     );
   }
   synchronizedStackData(from: ItemStack, to: ItemStack) {
@@ -24,7 +24,7 @@ export class MagicSmithingTable extends BlockWithEntity {
       from.getComponent("minecraft:durability")
     ) {
       to.getComponent("minecraft:durability").damage = from.getComponent(
-        "minecraft:durability",
+        "minecraft:durability"
       ).damage;
     }
   }
@@ -32,14 +32,14 @@ export class MagicSmithingTable extends BlockWithEntity {
     const [item, entityData, player] = [
       event.beforeItemStack,
       this.getBlockEntityData(event.block),
-      event.player,
+      event.player
     ];
     const baseItem = BlockEntity.getStoredItem(entityData);
     if (Array.isArray(baseItem)) return;
     if (!baseItem) {
       if (!MSTRecipeManager.base.includes(item.typeId)) {
         player.onScreenDisplay.setActionBar({
-          translate: "message.hiddenyears:not_a_base_item",
+          translate: "message.hiddenyears:not_a_base_item"
         });
         return;
       }
@@ -54,13 +54,13 @@ export class MagicSmithingTable extends BlockWithEntity {
     const recipe = MSTRecipeManager.findRecipe(baseItem, item);
     if (!recipe) {
       player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:recipe_not_found",
+        translate: "message.hiddenyears:recipe_not_found"
       });
       return;
     }
     player.dimension.spawnItem(
       MSTRecipeManager.getResult(recipe, baseItem),
-      Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 }),
+      Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 })
     );
     player.playSound("smithing_table.use");
     BlockEntity.clearStoredItem(entityData);

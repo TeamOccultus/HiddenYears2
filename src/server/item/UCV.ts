@@ -45,7 +45,7 @@ export class UnifiedCurrencyValue {
       const need = total - this.get(player);
       player.sendMessage({
         translate: "message.hiddenyears:need_ucv",
-        with: [Math.round(need).toString()],
+        with: [Math.round(need).toString()]
       });
       return false;
     }
@@ -55,8 +55,8 @@ export class UnifiedCurrencyValue {
     this.set(player, this.get(player) - total);
     player.sendMessage({
       translate: "message.hiddenyears:ucv_order_success",
-      with: [Math.round(total).toString()],
-    })
+      with: [Math.round(total).toString()]
+    });
     return true;
   }
   static getTotalUCV(orders: CoinOrder[]) {

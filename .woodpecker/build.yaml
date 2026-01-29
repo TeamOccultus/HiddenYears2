@@ -9,7 +9,7 @@ steps:
       - npm install -g pnpm
       - pnpm install
       - pnpm run build
-      - pnpm run doc      
+      - pnpm run doc
   - name: upload
     image: codeberg.org/s1m/woodpecker-upload:latest
     when:

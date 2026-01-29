@@ -7,7 +7,7 @@ export class ProfileComponent {
       arg.itemComponentRegistry.registerCustomComponent(this.componentName, {
         onUse(arg0) {
           ProfileForm.display(arg0.source);
-        },
+        }
       });
     });
   }

@@ -3,12 +3,12 @@ import {
   BlockWithEntity,
   consumeAmount,
   setEquipmentItem,
-  Vector3Utils,
+  Vector3Utils
 } from "@occultus/api";
 import {
   DataDrivenEntityTriggerAfterEvent,
   ItemStack,
-  PlayerInteractWithBlockAfterEvent,
+  PlayerInteractWithBlockAfterEvent
 } from "@minecraft/server";
 import { CrusherRecipeManager } from "../recipe/crusher/CrusherRecipeManager";
 
@@ -25,7 +25,7 @@ export class Crusher extends BlockWithEntity {
       event.beforeItemStack,
       this.getBlockEntityData(event.block),
       event.player,
-      event.block,
+      event.block
     ];
     if (!item) return;
     if (!entityData) return;
@@ -34,7 +34,7 @@ export class Crusher extends BlockWithEntity {
     if (!filledItem) {
       if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
         player.sendMessage({
-          translate: "message.hiddenyears:cant_be_crushed",
+          translate: "message.hiddenyears:cant_be_crushed"
         });
         return;
       }
@@ -65,7 +65,7 @@ export class Crusher extends BlockWithEntity {
     entityData.entity.dimension.spawnParticle(filledItem.typeId, {
       x: x,
       y: y + 1,
-      z: z,
+      z: z
     });
   }
 }

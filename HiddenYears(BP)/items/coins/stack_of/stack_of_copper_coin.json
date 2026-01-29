@@ -9,7 +9,7 @@
     },
     "components": {
       "hiddenyears:coin": {
-        "ucv_value":90
+        "ucv_value": 90
       },
       "minecraft:icon": "hiddenyears:stack_of_copper_coin"
     }

@@ -3,5 +3,5 @@ export type StaffSchema = {
   radius: number;
   particle?: string;
   sound_event?: string;
-  staff_preset?: "mutas_staff"
+  staff_preset?: "mutas_staff";
 };

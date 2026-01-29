@@ -5,7 +5,7 @@
       {
         "category_name": "equipment",
         "groups": [
-        {
+          {
             "group_identifier": {
               "icon": "hiddenyears:wooden_saw",
               "name": "hiddenyears:itemGroup.name.saws"
@@ -27,7 +27,7 @@
               "hiddenyears:frigid_steel_saw"
             ]
           },
-           {
+          {
             "group_identifier": {
               "icon": "hiddenyears:wooden_hammer",
               "name": "hiddenyears:itemGroup.name.hammers"
@@ -49,7 +49,7 @@
               "hiddenyears:frigid_steel_hammer"
             ]
           },
-           {
+          {
             "group_identifier": {
               "icon": "hiddenyears:wooden_sledgehammer",
               "name": "hiddenyears:itemGroup.name.sledgehammers"

@@ -1,9 +1,6 @@
 import { ItemStack, system } from "@minecraft/server";
 import { CrowbarRecipe } from "./CrowbarRecipeType";
-import {
-  crowbarIngredientData,
-  crowbarRecipesData,
-} from "./CrowbarRecipeData";
+import { crowbarIngredientData, crowbarRecipesData } from "./CrowbarRecipeData";
 
 export class CrowbarRecipeManager {
   static ingredients: string[] = crowbarIngredientData;

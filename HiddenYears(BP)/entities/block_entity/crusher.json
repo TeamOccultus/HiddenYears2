@@ -31,9 +31,7 @@
         "value": 0.0
       },
       "minecraft:type_family": {
-        "family": [
-          "block_entity"
-        ]
+        "family": ["block_entity"]
       },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:breathable": {
@@ -51,10 +49,7 @@
       "minecraft:timer": {
         "looping": true,
         "randomInterval": true,
-        "time": [
-          0.0,
-          0.0
-        ],
+        "time": [0.0, 0.0],
         "time_down_event": {
           "event": "hiddenyears:crusher_tick"
         }
@@ -63,9 +58,7 @@
     "events": {
       "hiddenyears:despawn": {
         "add": {
-          "component_groups": [
-            "hiddenyears:crusher_despawn"
-          ]
+          "component_groups": ["hiddenyears:crusher_despawn"]
         }
       },
       "hiddenyears:crusher_tick": {}

@@ -15,7 +15,7 @@
         "type": "sword",
         "legend_weapon": "suffering"
       },
-      "minecraft:rarity":"rare",
+      "minecraft:rarity": "rare",
       "minecraft:display_name": {
         "value": "%ui.suffering_sword\n%tooltip.suffering_sword"
       },

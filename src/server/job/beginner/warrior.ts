@@ -2,7 +2,14 @@ import { giveItem, ItemConditions, Job, RandomEvent } from "@occultus/api";
 import { assassin } from "../advanced/assassin";
 import { berserker } from "../advanced/berserker";
 import { swordman } from "../advanced/swordman";
-import { EffectType, EffectTypes, EntityDamageCause, ItemStack, Player, TicksPerSecond } from "@minecraft/server";
+import {
+  EffectType,
+  EffectTypes,
+  EntityDamageCause,
+  ItemStack,
+  Player,
+  TicksPerSecond
+} from "@minecraft/server";
 
 export const warrior = new Job(
   "hiddenyears:warrior",
@@ -14,23 +21,23 @@ export const warrior = new Job(
       {
         min: 0,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)],
-      },
+        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)]
+      }
     ],
     transform: [
       {
         job: assassin,
-        condition: new ItemConditions("hiddenyears:warrior_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:warrior_gem", 1, true)
       },
       {
         job: berserker,
-        condition: new ItemConditions("hiddenyears:warrior_gem", 1, true),
+        condition: new ItemConditions("hiddenyears:warrior_gem", 1, true)
       },
       {
         job: swordman,
-        condition: new ItemConditions("hiddenyears:warrior_gem", 1, true),
-      },
-    ],
+        condition: new ItemConditions("hiddenyears:warrior_gem", 1, true)
+      }
+    ]
   }
 );
 
@@ -43,6 +50,6 @@ warrior.onUpgrade((arg) => {
 warrior.onHitEntity((arg) => {
   const player = arg.damagingEntity as Player;
   if (new RandomEvent(warrior.getLevel(player) * 0.1, () => {}).call()) {
-    player.addEffect("strength", 3 * TicksPerSecond, {amplifier: 2})
+    player.addEffect("strength", 3 * TicksPerSecond, { amplifier: 2 });
   }
 });

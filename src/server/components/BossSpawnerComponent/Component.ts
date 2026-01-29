@@ -10,7 +10,7 @@ export class BossSpawnerComponent {
         onPlayerInteract(arg0, arg1) {
           const p = arg1.params as BossSpawnerParams;
           BossSpwanerEvents.onPlayerInteract(arg0, p);
-        },
+        }
       });
     });
   }

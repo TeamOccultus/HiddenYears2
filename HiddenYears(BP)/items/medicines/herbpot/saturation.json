@@ -9,9 +9,7 @@
     },
     "components": {
       "hiddenyears:effective_food": {
-        "effect": [
-          "minecraft:saturation"
-        ],
+        "effect": ["minecraft:saturation"],
         "duration": 500,
         "amplifier": 1
       },

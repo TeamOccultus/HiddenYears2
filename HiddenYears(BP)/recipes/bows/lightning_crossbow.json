@@ -10,7 +10,8 @@
       {
         "item": "minecraft:crossbow",
         "count": 1
-      },{
+      },
+      {
         "item": "hiddenyears:sparkling_stone",
         "count": 1
       }
@@ -18,7 +19,8 @@
     "unlock": [
       {
         "item": "minecraft:crossbow"
-      },{
+      },
+      {
         "item": "hiddenyears:sparkling_stone"
       }
     ],

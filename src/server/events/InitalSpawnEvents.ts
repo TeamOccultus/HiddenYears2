@@ -5,9 +5,7 @@ import { default as items } from "../../../config/init.json";
 export class InitalSpawnEvents {
   static subscribe() {
     world.afterEvents.playerSpawn.subscribe((event) => {
-      const handle = event.player.getDynamicProperty(
-        "hiddenyears:init_gift",
-      );
+      const handle = event.player.getDynamicProperty("hiddenyears:init_gift");
       if (!handle) {
         items.forEach((item) => {
           const itemStack = new ItemStack(item);

@@ -10,8 +10,8 @@ export const amnestyPastor = new Job(
       {
         min: 0,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)],
-      },
-    ],
+        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)]
+      }
+    ]
   }
 );

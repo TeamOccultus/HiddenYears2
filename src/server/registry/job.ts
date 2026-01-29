@@ -35,6 +35,6 @@ export function registryJob() {
     name: "hiddenyears:job",
     description: " %command.job.description",
     permissionLevel: CommandPermissionLevel.Any,
-    cheatsRequired: false,
+    cheatsRequired: false
   });
 }

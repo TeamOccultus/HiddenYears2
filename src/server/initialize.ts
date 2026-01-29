@@ -12,7 +12,7 @@ import { registryCustomLoot } from "./registry/loot";
 import {
   registryArtifacts,
   registryArtifactSlots,
-  registryForm,
+  registryForm
 } from "./registry/artifacts";
 import { registryTask } from "./registry/task";
 import { registryTutorial } from "./registry/tutorial";

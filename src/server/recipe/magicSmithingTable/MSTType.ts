@@ -1,9 +1,9 @@
 import { RawMessage } from "@minecraft/server";
 
 export type MagicSmithingTableRecipe = {
-  type: "addtional" | "transform",
+  type: "addtional" | "transform";
   lore?: string;
   base: string;
-  addition: string
+  addition: string;
   output: string;
 };

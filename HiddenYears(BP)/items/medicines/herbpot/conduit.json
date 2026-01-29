@@ -9,9 +9,7 @@
     },
     "components": {
       "hiddenyears:effective_food": {
-        "effect": [
-          "minecraft:conduit_power"
-        ],
+        "effect": ["minecraft:conduit_power"],
         "duration": 500,
         "amplifier": 1
       },

@@ -8,7 +8,7 @@ export class UCVForm {
   static display(player: Player, backTo = false) {
     const form = new ModalFormData().title({ translate: "ui.ucv" }).label({
       translate: "ui.ucv.own",
-      with: [UnifiedCurrencyValue.get(player).toString()],
+      with: [UnifiedCurrencyValue.get(player).toString()]
     });
     coins.forEach((coin) => {
       const item = new ItemStack(coin.item);
@@ -16,7 +16,7 @@ export class UCVForm {
       form.slider(
         { translate: item.localizationKey },
         0,
-        amount > 64 ? 64 : amount,
+        amount > 64 ? 64 : amount
       );
     });
     form.show(player).then((response: ModalFormResponse) => {
@@ -31,7 +31,7 @@ export class UCVForm {
         orders.push({
           item: coins[index - 1].item,
           ucv: coins[index - 1].ucv,
-          itemCount: value,
+          itemCount: value
         });
       });
       console.log(orders.toString());

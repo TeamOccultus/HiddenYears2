@@ -3,6 +3,7 @@ title: Commit 规范
 group: Documents
 category: Documents
 ---
+
 # Commit 规范
 
 隐藏之年项目采用类 Angular 规范编写提交信息：
@@ -18,6 +19,7 @@ category: Documents
 每次提交**可以**包含正文(`body`)和页脚(`footer`)，**必须**包含页眉(`header`)。内容，每次提交的信息不超过 100 个字符。
 
 ## Header
+
 ### Type
 
 用于说明 commit 的类别，允许使用下面个标识：
@@ -55,6 +57,7 @@ category: Documents
 用于详细描述提交的内容，如果没有必要，可以省略。
 
 ## Footer
+
 如果当前代码与上一个版本不兼容，则 Footer 部分以`BREAKING CHANGE`开头，后面是对变动的描述、以及变动理由和迁移方法：
 
 ```

@@ -8,7 +8,7 @@ import {
   KillEntityFamilyConditions,
   Task,
   TaskGroup,
-  TaskServer,
+  TaskServer
 } from "@occultus/api";
 
 export function getAllChapters() {
@@ -22,7 +22,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:copper_coin", 3)],
       conditions: [new ItemConditions("minecraft:stick")],
       previousTask: "none",
-      iconPath: "textures/items/stick",
+      iconPath: "textures/items/stick"
     }
   );
 
@@ -34,7 +34,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:copper_coin", 4)],
       conditions: [new ItemConditions("minecraft:crafting_table")],
       previousTask: "none",
-      iconPath: "textures/ui/task/crafting_table",
+      iconPath: "textures/ui/task/crafting_table"
     }
   );
 
@@ -46,7 +46,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:copper_coin", 5)],
       conditions: [new ItemConditions("minecraft:furnace")],
       previousTask: "none",
-      iconPath: "textures/ui/task/furnace",
+      iconPath: "textures/ui/task/furnace"
     }
   );
 
@@ -58,7 +58,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
       conditions: [new ItemConditions("minecraft:bed")],
       previousTask: "none",
-      iconPath: "textures/items/bed_red",
+      iconPath: "textures/items/bed_red"
     }
   );
 
@@ -70,7 +70,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("minecraft:coal", 5)],
       conditions: [new ItemConditions("minecraft:bread")],
       previousTask: "none",
-      iconPath: "textures/items/bread",
+      iconPath: "textures/items/bread"
     }
   );
 
@@ -82,7 +82,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
       conditions: [new KillEntityFamilyConditions("monster", "family.monster")],
       previousTask: "none",
-      iconPath: "textures/items/iron_sword",
+      iconPath: "textures/items/iron_sword"
     }
   );
   monsterHunter.pushToServer(server);
@@ -94,14 +94,14 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.prolugue.act_1.desc_1" },
         { text: Format.newLine },
-        { translate: "task.prolugue.act_1.desc_2" },
-      ],
+        { translate: "task.prolugue.act_1.desc_2" }
+      ]
     },
     {
       tasks: [stick, craftingTable, furnace, bed, bread, monsterHunter],
       awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
       previousTask: "none",
-      iconPath: "textures/items/stick",
+      iconPath: "textures/items/stick"
     }
   );
 
@@ -115,7 +115,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("minecraft:bone")],
       previousTask: "none",
       iconPath: "textures/items/bone",
-      tips: {translate: "task.bone_tools.tips"}
+      tips: { translate: "task.bone_tools.tips" }
     }
   );
 
@@ -127,7 +127,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:copper_coin", 12)],
       conditions: [new ItemConditions("minecraft:cobblestone")],
       previousTask: "none",
-      iconPath: "textures/items/stone_nugget",
+      iconPath: "textures/items/stone_nugget"
     }
   );
 
@@ -140,7 +140,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("minecraft:copper_ingot")],
       previousTask: "none",
       iconPath: "textures/items/copper_ingot",
-      tips: {translate: "task.copper.tips"}
+      tips: { translate: "task.copper.tips" }
     }
   );
 
@@ -153,7 +153,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:refined_rock_ingot")],
       previousTask: "none",
       iconPath: "textures/items/refined_rock_ingot",
-      tips: {translate: "task.refined_rock.tips"}
+      tips: { translate: "task.refined_rock.tips" }
     }
   );
 
@@ -165,7 +165,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
       conditions: [new ItemConditions("minecraft:iron_ingot")],
       previousTask: "none",
-      iconPath: "textures/items/iron_ingot",
+      iconPath: "textures/items/iron_ingot"
     }
   );
 
@@ -179,7 +179,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_saw")],
       previousTask: "none",
       iconPath: "textures/items/iron_saw",
-      tips: {translate: "task.saw.tips"}
+      tips: { translate: "task.saw.tips" }
     }
   );
 
@@ -192,7 +192,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_crowbar")],
       previousTask: "none",
       iconPath: "textures/items/iron_crowbar",
-      tips: {translate: "task.crowbar.tips"}
+      tips: { translate: "task.crowbar.tips" }
     }
   );
 
@@ -205,7 +205,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_hammer")],
       previousTask: "none",
       iconPath: "textures/items/iron_hammer",
-      tips: {translate: "task.hammer.tips"}
+      tips: { translate: "task.hammer.tips" }
     }
   );
 
@@ -218,7 +218,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:iron_dagger")],
       previousTask: "none",
       iconPath: "textures/items/iron_dagger",
-      tips: {translate: "task.dagger.tips"}
+      tips: { translate: "task.dagger.tips" }
     }
   );
 
@@ -230,7 +230,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:iron_sledgehammer")],
       previousTask: "none",
-      iconPath: "textures/items/iron_sledgehammer",
+      iconPath: "textures/items/iron_sledgehammer"
     }
   );
 
@@ -242,7 +242,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
       conditions: [new ItemConditions("minecraft:bow")],
       previousTask: "none",
-      iconPath: "textures/items/bow_pulling_0",
+      iconPath: "textures/items/bow_pulling_0"
     }
   );
 
@@ -254,7 +254,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
       conditions: [new ItemConditions("minecraft:crossbow")],
       previousTask: "none",
-      iconPath: "textures/items/crossbow_pulling_0",
+      iconPath: "textures/items/crossbow_pulling_0"
     }
   );
 
@@ -264,11 +264,9 @@ export function getAllChapters() {
     { translate: "task.sharpening.desc" },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
-      conditions: [
-        new ItemConditions("hiddenyears:iron_enhanced_bow"),
-      ],
+      conditions: [new ItemConditions("hiddenyears:iron_enhanced_bow")],
       previousTask: "none",
-      iconPath: "textures/items/iron_enhanced_bow_pulling_0",
+      iconPath: "textures/items/iron_enhanced_bow_pulling_0"
     }
   );
 
@@ -280,7 +278,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
       conditions: [new ItemConditions("minecraft:shield")],
       previousTask: "none",
-      iconPath: "textures/ui/task/shield",
+      iconPath: "textures/ui/task/shield"
     }
   );
 
@@ -292,7 +290,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
       conditions: [new ItemConditions("minecraft:iron_spear")],
       previousTask: "none",
-      iconPath: "textures/items/spear/iron_spear",
+      iconPath: "textures/items/spear/iron_spear"
     }
   );
 
@@ -303,8 +301,8 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.prolugue.act_2.desc_1" },
         { text: Format.newLine },
-        { translate: "task.prolugue.act_2.desc_2" },
-      ],
+        { translate: "task.prolugue.act_2.desc_2" }
+      ]
     },
     {
       tasks: [
@@ -322,11 +320,11 @@ export function getAllChapters() {
         triggerBlade,
         sharpening,
         shield,
-        skewer,
+        skewer
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/iron_ingot",
+      iconPath: "textures/items/iron_ingot"
     }
   );
 
@@ -339,7 +337,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 3)],
       conditions: [new ItemConditions("hiddenyears:silver_ingot")],
       previousTask: "none",
-      iconPath: "textures/items/silver_ingot",
+      iconPath: "textures/items/silver_ingot"
     }
   );
 
@@ -351,7 +349,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
       conditions: [new ItemConditions("minecraft:diamond")],
       previousTask: "none",
-      iconPath: "textures/items/diamond",
+      iconPath: "textures/items/diamond"
     }
   );
 
@@ -363,7 +361,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
       conditions: [new ItemConditions("hiddenyears:crystal_ingot")],
       previousTask: "none",
-      iconPath: "textures/items/crystal_ingot",
+      iconPath: "textures/items/crystal_ingot"
     }
   );
 
@@ -376,20 +374,20 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
-      iconPath: "textures/items/lost_letter",
+      iconPath: "textures/items/lost_letter"
     }
   );
   const bleakTotem = new Task(
     "hiddenyears:bleak_totem",
     { translate: "task.bleak_totem" },
     {
-      rawtext: [{ translate: "task.bleak_totem.desc" }],
+      rawtext: [{ translate: "task.bleak_totem.desc" }]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
       conditions: [new ItemConditions("hiddenyears:bleak_totem")],
       previousTask: "none",
-      iconPath: "textures/items/bleak_totem",
+      iconPath: "textures/items/bleak_totem"
     }
   );
 
@@ -402,14 +400,14 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.totem.desc_2" },
         { text: Format.newLine },
-        { translate: "task.totem.desc_3" },
-      ],
+        { translate: "task.totem.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
       conditions: [new ItemConditions("minecraft:totem_of_undying")],
       previousTask: "none",
-      iconPath: "textures/items/totem",
+      iconPath: "textures/items/totem"
     }
   );
 
@@ -420,14 +418,14 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.prolugue.act_3.desc_1" },
         { text: Format.newLine },
-        { translate: "task.prolugue.act_3.desc_2" },
-      ],
+        { translate: "task.prolugue.act_3.desc_2" }
+      ]
     },
     {
       tasks: [silver, diamond, crystal, bleakTotem, god, totem],
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
       previousTask: "none",
-      iconPath: "textures/items/diamond",
+      iconPath: "textures/items/diamond"
     }
   );
 
@@ -442,11 +440,11 @@ export function getAllChapters() {
         new KillEntityFamilyConditions(
           "trial_monster",
           "ui.family.trial_monster"
-        ),
+        )
       ],
       previousTask: "none",
       iconPath: "textures/items/contract_dust",
-      tips: {translate: "task.infested_beast.tips"}
+      tips: { translate: "task.infested_beast.tips" }
     }
   );
   infestedBeast.pushToServer(server);
@@ -460,7 +458,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:contract_gem")],
       previousTask: "none",
       iconPath: "textures/items/contract_gem",
-      tips: {translate: "task.contract_stone.tips"}
+      tips: { translate: "task.contract_stone.tips" }
     }
   );
 
@@ -471,8 +469,8 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.memory_condensation.desc" },
         { text: Format.newLine },
-        { translate: "task.memory_condensation.desc_2" },
-      ],
+        { translate: "task.memory_condensation.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
@@ -481,10 +479,10 @@ export function getAllChapters() {
           "hiddenyears:is_artifact",
           1,
           "ui.tag.is_artifact"
-        ),
+        )
       ],
       previousTask: "none",
-      iconPath: "textures/items/crucifix_runes",
+      iconPath: "textures/items/crucifix_runes"
     }
   );
 
@@ -496,7 +494,7 @@ export function getAllChapters() {
       tasks: [infestedBeast, contractStone, memoryCondensation],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/crucifix_runes",
+      iconPath: "textures/items/crucifix_runes"
     }
   );
 
@@ -509,7 +507,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
       conditions: [new ItemConditions("minecraft:gold_ingot")],
       previousTask: "none",
-      iconPath: "textures/items/gold_ingot",
+      iconPath: "textures/items/gold_ingot"
     }
   );
 
@@ -521,7 +519,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("minecraft:flint_and_steel", 1)],
       conditions: [new ItemConditions("minecraft:obsidian")],
       previousTask: "none",
-      iconPath: "textures/ui/task/obsidian",
+      iconPath: "textures/ui/task/obsidian"
     }
   );
 
@@ -533,7 +531,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("minecraft:ghast_tear")],
       previousTask: "none",
-      iconPath: "textures/items/ghast_tear",
+      iconPath: "textures/items/ghast_tear"
     }
   );
 
@@ -545,7 +543,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("minecraft:lodestone")],
       previousTask: "none",
-      iconPath: "textures/ui/task/lodestone",
+      iconPath: "textures/ui/task/lodestone"
     }
   );
 
@@ -557,7 +555,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("minecraft:respawn_anchor")],
       previousTask: "none",
-      iconPath: "textures/ui/task/respawn_anchor",
+      iconPath: "textures/ui/task/respawn_anchor"
     }
   );
 
@@ -569,7 +567,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 1)],
       conditions: [new ItemConditions("minecraft:blaze_rod")],
       previousTask: "none",
-      iconPath: "textures/items/blaze_rod",
+      iconPath: "textures/items/blaze_rod"
     }
   );
 
@@ -582,14 +580,14 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.wither.desc_2" },
         { text: Format.blankLine() },
-        { translate: "task.wither.desc_3" },
-      ],
+        { translate: "task.wither.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 12)],
       conditions: [new KillEntityConditions("wither")],
       previousTask: "none",
-      iconPath: "textures/items/spawn_eggs/spawn_egg_wither",
+      iconPath: "textures/items/spawn_eggs/spawn_egg_wither"
     }
   );
   wither.pushToServer(server);
@@ -606,11 +604,11 @@ export function getAllChapters() {
         compass,
         respawnAnchor,
         blazeRod,
-        wither,
+        wither
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/gold_ingot",
+      iconPath: "textures/items/gold_ingot"
     }
   );
 
@@ -623,7 +621,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:diamond_coin", 1)],
       conditions: [new ItemConditions("minecraft:ender_eye")],
       previousTask: "none",
-      iconPath: "textures/items/ender_eye",
+      iconPath: "textures/items/ender_eye"
     }
   );
 
@@ -635,7 +633,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:diamond_coin", 5)],
       conditions: [new ItemConditions("minecraft:dragon_breath")],
       previousTask: "none",
-      iconPath: "textures/items/dragons_breath",
+      iconPath: "textures/items/dragons_breath"
     }
   );
 
@@ -647,7 +645,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("minecraft:diamond", 5)],
       conditions: [new ItemConditions("minecraft:elytra")],
       previousTask: "none",
-      iconPath: "textures/items/elytra",
+      iconPath: "textures/items/elytra"
     }
   );
 
@@ -658,14 +656,14 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.ender_dragon.desc_1" },
         { text: Format.newLine },
-        { translate: "task.ender_dragon.desc_2" },
-      ],
+        { translate: "task.ender_dragon.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 15)],
       conditions: [new KillEntityConditions("ender_dragon")],
       previousTask: "none",
-      iconPath: "textures/ui/task/dragon_head",
+      iconPath: "textures/ui/task/dragon_head"
     }
   );
   enderDragon.pushToServer(server);
@@ -678,7 +676,7 @@ export function getAllChapters() {
       tasks: [enderEye, dragonBreath, elytra, enderDragon],
       awards: [new ItemAwards("minecraft:diamond", 10)],
       previousTask: "none",
-      iconPath: "textures/items/ender_eye",
+      iconPath: "textures/items/ender_eye"
     }
   );
   // 第一章·第一幕任务
@@ -690,7 +688,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 1)],
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
-      iconPath: "textures/items/lost_letter",
+      iconPath: "textures/items/lost_letter"
     }
   );
 
@@ -701,14 +699,14 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.imprisoned_wing.desc_1" },
         { text: Format.newLine },
-        { translate: "task.imprisoned_wing.desc_2" },
-      ],
+        { translate: "task.imprisoned_wing.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 2)],
       conditions: [new ItemConditions("hiddenyears:imprisoned_wing")],
       previousTask: "none",
-      iconPath: "textures/items/imprisoned_wing",
+      iconPath: "textures/items/imprisoned_wing"
     }
   );
 
@@ -719,15 +717,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.bloody_gem.desc_1" },
         { text: Format.newLine },
-        { translate: "task.bloody_gem.desc_2" },
-      ],
+        { translate: "task.bloody_gem.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 2)],
       conditions: [new ItemConditions("hiddenyears:ruby")],
       previousTask: "none",
       iconPath: "textures/items/ruby",
-      tips: {translate: "task.bloody_gem.tips"}
+      tips: { translate: "task.bloody_gem.tips" }
     }
   );
 
@@ -740,14 +738,14 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.bloody_armor.desc_2" },
         { text: Format.newLine },
-        { translate: "task.bloody_armor.desc_3" },
-      ],
+        { translate: "task.bloody_armor.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
       conditions: [new ItemConditions("hiddenyears:ruby_chestplate")],
       previousTask: "none",
-      iconPath: "textures/items/ruby_chestplate",
+      iconPath: "textures/items/ruby_chestplate"
     }
   );
 
@@ -762,15 +760,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.decayed_servant.desc_3" },
         { text: Format.newLine },
-        { translate: "task.decayed_servant.desc_4" },
-      ],
+        { translate: "task.decayed_servant.desc_4" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
       conditions: [new KillEntityConditions("hiddenyears:ruby_zombie")],
       previousTask: "none",
       iconPath: "textures/items/egg_ruby_zombie",
-      tips: {translate: "task.decayed_servant.tips"}
+      tips: { translate: "task.decayed_servant.tips" }
     }
   );
 
@@ -781,17 +779,17 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.true_and_false.desc_1" },
         { text: Format.newLine },
-        { translate: "task.true_and_false.desc_2" },
-      ],
+        { translate: "task.true_and_false.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
       conditions: [
-        new KillEntityConditions("hiddenyears:ferocious_ruby_guardian"),
+        new KillEntityConditions("hiddenyears:ferocious_ruby_guardian")
       ],
       previousTask: "none",
       iconPath: "textures/items/egg_ruby_guardian",
-      tips: {translate: "task.true_and_false.tips"}
+      tips: { translate: "task.true_and_false.tips" }
     }
   );
 
@@ -802,15 +800,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.thunder_key.desc_1" },
         { text: Format.newLine },
-        { translate: "task.thunder_key.desc_2" },
-      ],
+        { translate: "task.thunder_key.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:potion", 4)],
       conditions: [new ItemConditions("hiddenyears:lightning_key")],
       previousTask: "none",
       iconPath: "textures/items/lightning_key",
-      tips: {translate: "task.thunder_key.tips"}
+      tips: { translate: "task.thunder_key.tips" }
     }
   );
 
@@ -823,15 +821,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.blood_gaze.desc_2" },
         { text: Format.newLine },
-        { translate: "task.blood_gaze.desc_3" },
-      ],
+        { translate: "task.blood_gaze.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:diamond_badge", 1)],
       conditions: [new ItemConditions("hiddenyears:crimson_eyes")],
       previousTask: "none",
       iconPath: "textures/items/crimson_eyes",
-      tips: {translate: "task.blood_gaze.tips"}
+      tips: { translate: "task.blood_gaze.tips" }
     }
   );
 
@@ -844,15 +842,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.world_end_fruit.desc_2" },
         { text: Format.newLine },
-        { translate: "task.world_end_fruit.desc_3" },
-      ],
+        { translate: "task.world_end_fruit.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
       conditions: [new ItemConditions("hiddenyears:ruby_apple")],
       previousTask: "none",
       iconPath: "textures/items/ruby_apple",
-      tips: {translate: "task.world_end_fruit.tips"}
+      tips: { translate: "task.world_end_fruit.tips" }
     }
   );
 
@@ -863,15 +861,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.song_of_power_and_blood.desc_1" },
         { text: Format.newLine },
-        { translate: "task.song_of_power_and_blood.desc_2" },
-      ],
+        { translate: "task.song_of_power_and_blood.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 10)],
       conditions: [new KillEntityConditions("hiddenyears:king_of_ruby")],
       previousTask: "none",
       iconPath: "textures/items/ruby_crown",
-      tips: {translate: "task.song_of_power_and_blood.tips"}
+      tips: { translate: "task.song_of_power_and_blood.tips" }
     }
   );
   songOfPowerAndBlood.pushToServer(server);
@@ -891,11 +889,11 @@ export function getAllChapters() {
         thunderKey,
         bloodGaze,
         worldEndFruit,
-        songOfPowerAndBlood,
+        songOfPowerAndBlood
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/ruby",
+      iconPath: "textures/items/ruby"
     }
   );
 
@@ -909,7 +907,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:alchemy_table")],
       previousTask: "none",
       iconPath: "textures/ui/task/alchemy_table",
-      tips: {translate: "task.alchemist.tips"}
+      tips: { translate: "task.alchemist.tips" }
     }
   );
 
@@ -922,7 +920,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:magic_dust")],
       previousTask: "none",
       iconPath: "textures/items/magic_dust",
-      tips: {translate: "task.magic_dust.tips"}
+      tips: { translate: "task.magic_dust.tips" }
     }
   );
 
@@ -934,7 +932,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("minecraft:diamond", 5)],
       conditions: [new ItemConditions("hiddenyears:ancient_extracts")],
       previousTask: "none",
-      iconPath: "textures/items/ancient_extracts",
+      iconPath: "textures/items/ancient_extracts"
     }
   );
 
@@ -946,7 +944,7 @@ export function getAllChapters() {
       awards: [new ItemAwards("minecraft:diamond", 5)],
       conditions: [new ItemConditions("minecraft:netherite_scrap")],
       previousTask: "none",
-      iconPath: "textures/items/netherite_scrap",
+      iconPath: "textures/items/netherite_scrap"
     }
   );
 
@@ -959,7 +957,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:ancient_scrap")],
       previousTask: "none",
       iconPath: "textures/items/ancient_scrap",
-      tips: {translate: "task.ancient_war_remains.tips"}
+      tips: { translate: "task.ancient_war_remains.tips" }
     }
   );
 
@@ -972,7 +970,7 @@ export function getAllChapters() {
       conditions: [new ItemConditions("hiddenyears:soul_of_fear")],
       previousTask: "none",
       iconPath: "textures/items/soul_of_fear",
-      tips: {translate: "task.fear_soul.tips"}
+      tips: { translate: "task.fear_soul.tips" }
     }
   );
 
@@ -983,15 +981,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.primal_yearning.desc" },
         { text: Format.newLine },
-        { translate: "task.primal_yearning.desc_2" },
-      ],
+        { translate: "task.primal_yearning.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 15)],
       conditions: [new ItemConditions("hiddenyears:originite_ingot")],
       previousTask: "none",
       iconPath: "textures/items/originite_ingot",
-      tips: {translate: "task.primal_yearning.tips"}
+      tips: { translate: "task.primal_yearning.tips" }
     }
   );
 
@@ -1007,11 +1005,11 @@ export function getAllChapters() {
         infernalRemains,
         ancientWarRemains,
         fearSoul,
-        primalYearning,
+        primalYearning
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/originite_ingot",
+      iconPath: "textures/items/originite_ingot"
     }
   );
 
@@ -1023,14 +1021,14 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.green_in_sand.desc" },
         { text: Format.newLine },
-        { translate: "task.green_in_sand.desc_2" },
-      ],
+        { translate: "task.green_in_sand.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:copper_coin", 5)],
       conditions: [new ItemConditions("minecraft:cactus")],
       previousTask: "none",
-      iconPath: "textures/items/dye_powder_green",
+      iconPath: "textures/items/dye_powder_green"
     }
   );
 
@@ -1041,15 +1039,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.hard_to_swallow_food.desc" },
         { text: Format.newLine },
-        { translate: "task.hard_to_swallow_food.desc_2" },
-      ],
+        { translate: "task.hard_to_swallow_food.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
       conditions: [new ItemConditions("hiddenyears:sand_meat")],
       previousTask: "none",
       iconPath: "textures/items/sand_meat",
-      tips: {translate: "task.hard_to_swallow_food.tips"}
+      tips: { translate: "task.hard_to_swallow_food.tips" }
     }
   );
 
@@ -1060,15 +1058,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.dry_pot.desc" },
         { text: Format.newLine },
-        { translate: "task.dry_pot.desc_2" },
-      ],
+        { translate: "task.dry_pot.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
       conditions: [new ItemConditions("hiddenyears:desert_herbpot")],
       previousTask: "none",
       iconPath: "textures/items/herb_bottle",
-      tips: {translate: "task.dry_pot.tips"}
+      tips: { translate: "task.dry_pot.tips" }
     }
   );
 
@@ -1079,15 +1077,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.god_arrival.desc" },
         { text: Format.newLine },
-        { translate: "task.god_arrival.desc_2" },
-      ],
+        { translate: "task.god_arrival.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
       conditions: [new ItemConditions("hiddenyears:cooling_herbtea")],
       previousTask: "none",
       iconPath: "textures/items/cooling_herbtea",
-      tips: {translate: "task.god_arrival.tips"}
+      tips: { translate: "task.god_arrival.tips" }
     }
   );
 
@@ -1100,15 +1098,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.sacrifice.desc_2" },
         { text: Format.newLine },
-        { translate: "task.sacrifice.desc_3" },
-      ],
+        { translate: "task.sacrifice.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:sandcaust_apple", 2)],
       conditions: [new ItemConditions("hiddenyears:rabbit_paw")],
       previousTask: "none",
       iconPath: "textures/items/rabbit_paw",
-      tips: {translate: "task.sacrifice.tips"}
+      tips: { translate: "task.sacrifice.tips" }
     }
   );
 
@@ -1121,15 +1119,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.shattered_sand.desc_2" },
         { text: Format.newLine },
-        { translate: "task.shattered_sand.desc_3" },
-      ],
+        { translate: "task.shattered_sand.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:shattered_sand_cudgel")],
       previousTask: "none",
       iconPath: "textures/items/shattered_sand_cudgel",
-      tips: {translate: "task.shattered_sand.tips"}
+      tips: { translate: "task.shattered_sand.tips" }
     }
   );
 
@@ -1140,15 +1138,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.key_of_contract.desc" },
         { text: Format.newLine },
-        { translate: "task.key_of_contract.desc_2" },
-      ],
+        { translate: "task.key_of_contract.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:drift_sand_key")],
       previousTask: "none",
       iconPath: "textures/items/drift_sand_key",
-      tips: {translate: "task.key_of_contract.tips"}
+      tips: { translate: "task.key_of_contract.tips" }
     }
   );
 
@@ -1159,15 +1157,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.blessing_of_rain.desc" },
         { text: Format.newLine },
-        { translate: "task.blessing_of_rain.desc_2" },
-      ],
+        { translate: "task.blessing_of_rain.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:letter_1", 1)],
       conditions: [new ItemConditions("hiddenyears:blessing_of_isis")],
       previousTask: "none",
       iconPath: "textures/items/blessing_of_isis",
-      tips: {translate: "task.blessing_of_rain.tips"}
+      tips: { translate: "task.blessing_of_rain.tips" }
     }
   );
 
@@ -1180,15 +1178,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.kingdom_fall.desc_2" },
         { text: Format.newLine },
-        { translate: "task.kingdom_fall.desc_3" },
-      ],
+        { translate: "task.kingdom_fall.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:desert_heart")],
       previousTask: "none",
       iconPath: "textures/items/desert_heart",
-      tips: {translate: "task.kingdom_fall.tips"}
+      tips: { translate: "task.kingdom_fall.tips" }
     }
   );
 
@@ -1196,14 +1194,14 @@ export function getAllChapters() {
     "hiddenyears:statue_of_past",
     { translate: "task.statue_of_past" },
     {
-      rawtext: [{ translate: "task.statue_of_past.desc" }],
+      rawtext: [{ translate: "task.statue_of_past.desc" }]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 5)],
       conditions: [new ItemConditions("hiddenyears:past_statue")],
       previousTask: "none",
       iconPath: "textures/items/past_statue",
-      tips: {translate: "task.statue_of_past.tips"}
+      tips: { translate: "task.statue_of_past.tips" }
     }
   );
 
@@ -1220,15 +1218,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.symbol_of_life.desc_4" },
         { text: Format.newLine },
-        { translate: "task.symbol_of_life.desc_5" },
-      ],
+        { translate: "task.symbol_of_life.desc_5" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 5)],
       conditions: [new ItemConditions("hiddenyears:rebirth_statue")],
       previousTask: "none",
       iconPath: "textures/items/rebirth_statue",
-      tips: {translate: "task.symbol_of_life.tips"}
+      tips: { translate: "task.symbol_of_life.tips" }
     }
   );
 
@@ -1239,15 +1237,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.rain_in_sand.desc" },
         { text: Format.newLine },
-        { translate: "task.rain_in_sand.desc_2" },
-      ],
+        { translate: "task.rain_in_sand.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:letter_1", 1)],
       conditions: [new ItemConditions("hiddenyears:shattered_sand_staff")],
       previousTask: "none",
       iconPath: "textures/items/shattered_sand_staff",
-      tips: {translate: "task.rain_in_sand.tips"}
+      tips: { translate: "task.rain_in_sand.tips" }
     }
   );
 
@@ -1268,11 +1266,11 @@ export function getAllChapters() {
         kingdomFall,
         statueOfPast,
         symbolOfLife,
-        rainInSand,
+        rainInSand
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/desert_heart",
+      iconPath: "textures/items/desert_heart"
     }
   );
 
@@ -1284,15 +1282,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.gold_in_sand.desc_1" },
         { text: Format.newLine },
-        { translate: "task.gold_in_sand.desc_2" },
-      ],
+        { translate: "task.gold_in_sand.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
       conditions: [new ItemConditions("hiddenyears:gold_sand")],
       previousTask: "none",
       iconPath: "textures/items/gold_sand",
-      tips: {translate: "task.gold_in_sand.tips"}
+      tips: { translate: "task.gold_in_sand.tips" }
     }
   );
 
@@ -1307,16 +1305,16 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.curse_of_sand.desc_3" },
         { text: Format.newLine },
-        { translate: "task.curse_of_sand.desc_4" },
-      ],
+        { translate: "task.curse_of_sand.desc_4" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
       conditions: [
-        new KillEntityConditions("hiddenyears:sandcaust_silverfish"),
+        new KillEntityConditions("hiddenyears:sandcaust_silverfish")
       ],
       previousTask: "none",
-      iconPath: "textures/items/egg_sand_silverfish",
+      iconPath: "textures/items/egg_sand_silverfish"
     }
   );
 
@@ -1327,14 +1325,14 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.story_of_gold.desc_1" },
         { text: Format.newLine },
-        { translate: "task.story_of_gold.desc_2" },
-      ],
+        { translate: "task.story_of_gold.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
-      iconPath: "textures/items/paper",
+      iconPath: "textures/items/paper"
     }
   );
 
@@ -1353,15 +1351,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.ancient_myth.desc_5" },
         { text: Format.newLine },
-        { translate: "task.ancient_myth.desc_6" },
-      ],
+        { translate: "task.ancient_myth.desc_6" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:letter_1")],
       previousTask: "none",
       iconPath: "textures/items/paper",
-      tips: {translate: "task.ancient_myth.tips"}
+      tips: { translate: "task.ancient_myth.tips" }
     }
   );
 
@@ -1372,15 +1370,15 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.sign_of_mutation.desc_1" },
         { text: Format.newLine },
-        { translate: "task.sign_of_mutation.desc_2" },
-      ],
+        { translate: "task.sign_of_mutation.desc_2" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
       conditions: [new KillEntityConditions("hiddenyears:scorpion")],
       previousTask: "none",
       iconPath: "textures/items/egg_scorpion",
-      tips: {translate: "task.sign_of_mutation.tips"}
+      tips: { translate: "task.sign_of_mutation.tips" }
     }
   );
 
@@ -1393,15 +1391,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.palace_of_gods.desc_2" },
         { text: Format.newLine },
-        { translate: "task.palace_of_gods.desc_3" },
-      ],
+        { translate: "task.palace_of_gods.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("minecraft:diamond", 15)],
       conditions: [new ItemConditions("hiddenyears:isis_crown")],
       previousTask: "none",
       iconPath: "textures/items/isis_crown",
-      tips: {translate: "task.palace_of_gods.tips"}
+      tips: { translate: "task.palace_of_gods.tips" }
     }
   );
 
@@ -1414,15 +1412,15 @@ export function getAllChapters() {
         { text: Format.newLine },
         { translate: "task.eye_of_sand_erosion.desc_2" },
         { text: Format.newLine },
-        { translate: "task.eye_of_sand_erosion.desc_3" },
-      ],
+        { translate: "task.eye_of_sand_erosion.desc_3" }
+      ]
     },
     {
       awards: [new ItemAwards("hiddenyears:sandcaust_apple", 5)],
       conditions: [new ItemConditions("hiddenyears:sandcaust_spider_eye")],
       previousTask: "none",
       iconPath: "textures/items/sand_spider_eye",
-      tips: {translate: "task.eye_of_sand_erosion.tips"}
+      tips: { translate: "task.eye_of_sand_erosion.tips" }
     }
   );
 
@@ -1438,11 +1436,11 @@ export function getAllChapters() {
         ancientMyth,
         signOfMutation,
         palaceOfGods,
-        eyeOfSandErosion,
+        eyeOfSandErosion
       ],
       awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
       previousTask: "none",
-      iconPath: "textures/items/isis_crown",
+      iconPath: "textures/items/isis_crown"
     }
   );
 
@@ -1454,30 +1452,30 @@ export function getAllChapters() {
       rawtext: [
         { translate: "task.echo_shard.desc_1" },
         { text: Format.newLine },
-        { translate: "task.echo_shard.desc_2" },
-      ],
+        { translate: "task.echo_shard.desc_2" }
+      ]
     },
     {
       conditions: [new ItemConditions("minecraft:echo_shard")],
       previousTask: "none",
       iconPath: "textures/items/echo_shard",
-      awards: [new ItemAwards("hiddenyears:echo_coin", 5)],
+      awards: [new ItemAwards("hiddenyears:echo_coin", 5)]
     }
   );
 
   const chapterIVactI = new TaskGroup(
     "hiddenyears:chapter4_act1",
     {
-      translate: "task.chapter_4.act_1",
+      translate: "task.chapter_4.act_1"
     },
     {
-      translate: "task.chapter_4.act_1.desc",
+      translate: "task.chapter_4.act_1.desc"
     },
     {
       tasks: [echoShard],
       previousTask: "none",
       awards: [new ItemAwards("hiddenyears:echo_coin", 20)],
-      iconPath: "textures/items/echo_coin",
+      iconPath: "textures/items/echo_coin"
     }
   );
 
@@ -1485,13 +1483,13 @@ export function getAllChapters() {
     "hiddenyears:babel_sand",
     { translate: "task.babel_sand" },
     {
-      rawtext: [{ translate: "task.babel_sand.desc" }],
+      rawtext: [{ translate: "task.babel_sand.desc" }]
     },
     {
       conditions: [new ItemConditions("hiddenyears:babel_tower_wreckage_sand")],
       previousTask: "none",
       iconPath: "textures/items/babel_tower_wreckage_sand",
-      awards: [new ItemAwards("hiddenyears:stack_of_diamond_coin", 5)],
+      awards: [new ItemAwards("hiddenyears:stack_of_diamond_coin", 5)]
     }
   );
 
@@ -1503,7 +1501,7 @@ export function getAllChapters() {
       tasks: [babelSand],
       awards: [],
       previousTask: "none",
-      iconPath: "textures/items/babel_tower_wreckage_sand",
+      iconPath: "textures/items/babel_tower_wreckage_sand"
     }
   );
 
@@ -1519,6 +1517,6 @@ export function getAllChapters() {
     chapterIIIActI,
     chapterIIIActII,
     chapterIVactI,
-    epilogueActI,
+    epilogueActI
   ];
 }

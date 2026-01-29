@@ -20,10 +20,10 @@ export class ProfileForm {
             translate: "ui.profile.player_level",
             with: [
               player.level.toString(),
-              player.totalXpNeededForNextLevel.toString(),
-            ],
-          },
-        ],
+              player.totalXpNeededForNextLevel.toString()
+            ]
+          }
+        ]
       });
     form
       .divider()
@@ -37,7 +37,7 @@ export class ProfileForm {
       .label({ translate: "ui.profile.about" })
       .button(
         { translate: "ui.profile.copyright" },
-        "textures/items/book_written",
+        "textures/items/book_written"
       )
       .button({ translate: "ui.profile.credits" }, "textures/ui/credits_hat");
     form.show(player).then((result) => {

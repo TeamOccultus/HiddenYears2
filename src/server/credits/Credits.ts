@@ -1,12 +1,11 @@
-export type Credits = (CreditSection| string)[]
-
+export type Credits = (CreditSection | string)[];
 
 export type CreditSection = {
-  discipline: string,
-  contributors: CreditContributors[]
-}
+  discipline: string;
+  contributors: CreditContributors[];
+};
 
 export type CreditContributors = {
-  name: string,
-  role: string,
-}
+  name: string;
+  role: string;
+};

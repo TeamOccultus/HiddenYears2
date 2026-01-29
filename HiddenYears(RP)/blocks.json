@@ -33,10 +33,10 @@
   "hiddenyears:darkish_red_flower": {
     "sound": "grass"
   },
-  "hiddenyears:ruby_stone_bricks":{
+  "hiddenyears:ruby_stone_bricks": {
     "sound": "stone"
   },
-  "hiddenyears:ancient_war_debris":{
+  "hiddenyears:ancient_war_debris": {
     "sound": "ancient_debris"
   }
 }

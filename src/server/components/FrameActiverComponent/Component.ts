@@ -6,8 +6,8 @@ export class FrameActiverComponent {
     system.beforeEvents.startup.subscribe((arg) => {
       arg.itemComponentRegistry.registerCustomComponent(this.componentName, {
         onUseOn(arg0, arg1) {
-          FrameEvents.onUseOn(arg0, arg1)
-        },
+          FrameEvents.onUseOn(arg0, arg1);
+        }
       });
     });
   }

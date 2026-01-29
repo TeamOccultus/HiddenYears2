@@ -21,7 +21,11 @@
         "projectile_entity": "hiddenyears:thrown_crystal_nugget"
       },
       "minecraft:tags": {
-        "tags": ["hiddenyears:crystal_material", "hiddenyears:nugget", "minecraft:metal_nuggets"]
+        "tags": [
+          "hiddenyears:crystal_material",
+          "hiddenyears:nugget",
+          "minecraft:metal_nuggets"
+        ]
       }
     }
   }

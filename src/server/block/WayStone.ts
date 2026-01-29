@@ -28,7 +28,7 @@ export class WayStone {
     jsonData.push(data);
     player.setDynamicProperty("hiddenyears:waystone", JSON.stringify(jsonData));
     console.log(
-      `Add ${data.name}(${data.loc}) to ${player.name}'s waystone list`,
+      `Add ${data.name}(${data.loc}) to ${player.name}'s waystone list`
     );
     return;
   }
@@ -49,7 +49,7 @@ export class WayStone {
 
 /**
  * 传送点数据
- * 
+ *
  * **IMPORTANT: 由于原版动态属性存储大小有上限，因此本类型中部分名称采用缩写表示**
  */
 export type WayPointData = {

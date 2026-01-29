@@ -21,11 +21,11 @@ adventurerNoteBody.set(0, {
     { text: "\n" },
     { translate: "article.adventurer_note.chapter1.body9" },
     { text: "\n\n" },
-    { translate: "article.adventurer_note.chapter1.body10" },
-  ],
+    { translate: "article.adventurer_note.chapter1.body10" }
+  ]
 });
 
 export const adventurerNoteTitle: Map<number, string | RawMessage> = new Map();
 adventurerNoteTitle.set(0, {
-  translate: "article.adventurer_note.chapter1.title",
+  translate: "article.adventurer_note.chapter1.title"
 });

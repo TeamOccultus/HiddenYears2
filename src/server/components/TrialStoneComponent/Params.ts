@@ -9,4 +9,4 @@ export type TrialStoneParams = {
   sound_event?: string;
 };
 
-export type TrialStoneState = "waiting_for_active" | "active" | "extinguish"
+export type TrialStoneState = "waiting_for_active" | "active" | "extinguish";

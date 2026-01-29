@@ -6,8 +6,8 @@ export class CoinComponent {
     system.beforeEvents.startup.subscribe((arg) => {
       arg.itemComponentRegistry.registerCustomComponent(this.componentName, {
         onUse(arg0, arg1) {
-          CoinEvents.onUse(arg0, arg1)
-        },
+          CoinEvents.onUse(arg0, arg1);
+        }
       });
     });
   }

@@ -8,10 +8,7 @@
     "replace_rules": [
       {
         "places_block": "hiddenyears:compact_diamond_ore",
-        "may_replace": [
-          "deepslate_diamond_ore",
-          "deepslate"
-        ]
+        "may_replace": ["deepslate_diamond_ore", "deepslate"]
       }
     ]
   }

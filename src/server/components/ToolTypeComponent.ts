@@ -1,7 +1,7 @@
 import {
   CustomComponentParameters,
   ItemComponentMineBlockEvent,
-  system,
+  system
 } from "@minecraft/server";
 import { ToolTypeSchema } from "./ToolTypeSchema";
 import { SawRecipeManager } from "../recipe/saw/SawRecipeManager";
@@ -18,7 +18,7 @@ export class ToolTypeComponent {
       item.registerCustomComponent(componentName, {
         onMineBlock(arg0, arg1) {
           onMineBlockCallback(arg0, arg1);
-        },
+        }
       });
     });
   }
@@ -38,13 +38,13 @@ function onMineBlockCallback(
     SawEvents.spawnItSelf(id, block);
     return;
   }
-  if(params.tool_type === "crowbar") {
+  if (params.tool_type === "crowbar") {
     if (!CrowbarRecipeManager.ingredients.includes(id)) return;
     CrowbarEvents.spawnNugget(id, block);
     return;
   }
-  if(params.tool_type === "hammer") {
-    if(!HammerRecipeManager.ingredients.includes(id)) return;
+  if (params.tool_type === "hammer") {
+    if (!HammerRecipeManager.ingredients.includes(id)) return;
     HammerEvents.spawnAdditionalMaterial(id, block);
     return;
   }

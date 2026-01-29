@@ -2,7 +2,7 @@ import {
   EntityDamageCause,
   EntityHitEntityAfterEvent,
   PlayerBreakBlockAfterEvent,
-  system,
+  system
 } from "@minecraft/server";
 import { AdditionalMaterialType } from "../item/AdditionalMaterial";
 
@@ -13,7 +13,7 @@ export class AdditionalMaterialEvents {
     type: AdditionalMaterialType
   ) {
     const { hitEntity, damagingEntity } = arg;
-    if(!hitEntity.isValid) return;
+    if (!hitEntity.isValid) return;
     if (type === "erosion") {
       hitEntity.addEffect("minecraft:slowness", 200);
       const handle = system.runInterval(() => {
@@ -27,12 +27,12 @@ export class AdditionalMaterialEvents {
       const entities = hitEntity.dimension.getEntities({
         location: damagingEntity.location,
         maxDistance: 8,
-        excludeTags: ["hiddenyears:sparkling_copper_attaker"],
+        excludeTags: ["hiddenyears:sparkling_copper_attaker"]
       });
       entities.forEach((entity) => {
-        if(!entity.isValid) return;
+        if (!entity.isValid) return;
         entity.applyDamage(8, { cause: EntityDamageCause.magic });
-        if(!entity.isValid) return;
+        if (!entity.isValid) return;
         entity.dimension.spawnParticle(
           "minecraft:critical_hit_emitter",
           entity.location
@@ -51,7 +51,7 @@ export class AdditionalMaterialEvents {
     if (type === "sparkling_copper") {
       player.addEffect("minecraft:haste", 200, {
         amplifier: 3,
-        showParticles: false,
+        showParticles: false
       });
       return;
     }
