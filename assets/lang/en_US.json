@@ -1034,5 +1034,6 @@
     "ui.artifact_cooldown": "Artifact is on cooldown!",
     "ui.profile.player_name": "Traveler Name:  %s",
     "ui.profile.player_level": "Player level: Lv. §6%1§r (Next level: exp× §6%2§r)",
-    "ui.profile.player_job": "Player job: %s"
+    "ui.profile.player_job": "Player job: %s",
+    "item.hiddenyears:waystone": "Way Stone"
 }

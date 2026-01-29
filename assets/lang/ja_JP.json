@@ -1034,5 +1034,6 @@
     "ui.artifact_cooldown": "",
     "ui.profile.player_name": "",
     "ui.profile.player_level": "",
-    "ui.profile.player_job": ""
+    "ui.profile.player_job": "",
+    "item.hiddenyears:waystone": ""
 }

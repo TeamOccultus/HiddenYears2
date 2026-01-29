@@ -1039,5 +1039,6 @@
   "ui.artifact_cooldown": "饰品冷却中！",
   "ui.profile.player_name": "旅者名称： %s",
   "ui.profile.player_level": "玩家等级：Lv. §6%1§r（下一级需要：经验× §6%2§r）",
-  "ui.profile.player_job": "职业： %s"
+  "ui.profile.player_job": "职业： %s",
+  "item.hiddenyears:waystone": "传送石碑"
 }

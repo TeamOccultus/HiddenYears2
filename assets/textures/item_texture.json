@@ -296,6 +296,9 @@
     "hiddenyears:egg_mutas_wrath": {
       "textures": "textures/items/egg_mutas_wrath"
     },
+    "hiddenyears:egg_old_wizard": {
+      "textures": "textures/items/egg_old_wizard"
+    },
     "hiddenyears:egg_pharaohs_ghost": {
       "textures": "textures/items/egg_pharaohs_ghost"
     },
@@ -1071,6 +1074,9 @@
     },
     "hiddenyears:warrior_gem": {
       "textures": "textures/items/warrior_gem"
+    },
+    "hiddenyears:waystone": {
+      "textures": "textures/items/waystone"
     },
     "hiddenyears:waystone_clock": {
       "textures": "textures/items/waystone_clock"

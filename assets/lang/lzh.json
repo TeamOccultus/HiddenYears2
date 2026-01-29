@@ -1034,5 +1034,6 @@
     "ui.artifact_cooldown": "",
     "ui.profile.player_name": "",
     "ui.profile.player_level": "戲者階級· §6%1§r等（次階需：经验× §6%2§r）",
-    "ui.profile.player_job": ""
+    "ui.profile.player_job": "",
+  "item.hiddenyears:waystone": ""
 }

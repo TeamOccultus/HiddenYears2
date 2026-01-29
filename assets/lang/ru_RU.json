@@ -1034,5 +1034,6 @@
     "ui.artifact_cooldown": "Артефакт на перезарядке!",
     "ui.profile.player_name": "Имя путешественника: %s",
     "ui.profile.player_level": "Уровень игрока: Lv. §6%1§r (Для следующего уровня нужно: Опыт × §6%2§r)",
-    "ui.profile.player_job": "Профессия: %s"
+    "ui.profile.player_job": "Профессия: %s",
+   "item.hiddenyears:waystone": "Камень Телепортации"
 }
