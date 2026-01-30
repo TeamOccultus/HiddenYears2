@@ -368,6 +368,26 @@
               "hiddenyears:record_plains",
               "hiddenyears:record_pharaohs"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:hidden_story",
+              "name": "hiddenyears:itemGroup.name.articles"
+            },
+            "items": [
+              "hiddenyears:hidden_story",
+              "hiddenyears:article_1",
+              "hiddenyears:article_3",
+              "hiddenyears:article_4",
+              "hiddenyears:article_5",
+              "hiddenyears:article_6",
+              "hiddenyears:article_7",
+              "hiddenyears:article_8",
+              "hiddenyears:article_9",
+              "hiddenyears:article_10",
+              "hiddenyears:article_11",
+              "hiddenyears:article_12"
+            ]
           }
         ]
       },

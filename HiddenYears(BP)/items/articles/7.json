@@ -9,6 +9,9 @@
     },
     "components": {
       "hiddenyears:article_7": {},
+      "minecraft:display_name": {
+        "value": "article.hiddenyears:7.title"
+      },
       "minecraft:icon": "hiddenyears:lost_letter",
       "minecraft:max_stack_size": 1,
       "minecraft:hover_text_color": "yellow",
