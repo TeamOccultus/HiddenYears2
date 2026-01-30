@@ -75,12 +75,12 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:gold_coin",
+                  "item": "nether_wart",
                   "quantity": 6,
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "nether_wart", "quantity": 4 }],
+              "gives": [{ "item": "hiddenyears:gold_coin", "quantity": 3 }],
               "trader_exp": 2,
               "max_uses": 16,
               "reward_exp": true
