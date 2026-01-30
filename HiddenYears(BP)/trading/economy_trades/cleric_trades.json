@@ -62,8 +62,8 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
-                  "quantity": 6,
+                  "item": "hiddenyears:gold_coin",
+                  "quantity": 5,
                   "price_multiplier": 0.05
                 }
               ],
@@ -75,12 +75,12 @@
             {
               "wants": [
                 {
-                  "item": "hiddenyears:stack_of_gold_coin",
+                  "item": "hiddenyears:gold_coin",
                   "quantity": 6,
                   "price_multiplier": 0.05
                 }
               ],
-              "gives": [{ "item": "nether_wart", "quantity": 5 }],
+              "gives": [{ "item": "nether_wart", "quantity": 4 }],
               "trader_exp": 2,
               "max_uses": 16,
               "reward_exp": true
