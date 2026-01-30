@@ -1,7 +1,13 @@
-import { giveItem, ItemConditions, Job } from "@occultus/api";
+import {
+  giveItem,
+  heal,
+  ItemConditions,
+  Job,
+  RandomEvent
+} from "@occultus/api";
 import { amnestyPastor } from "../advanced/amnestyPastor";
 import { orisonPastor } from "../advanced/orisonPastor";
-import { ItemStack } from "@minecraft/server";
+import { ItemStack, Player } from "@minecraft/server";
 
 export const pastor = new Job(
   "hiddenyears:pastor",
@@ -28,6 +34,16 @@ export const pastor = new Job(
     ]
   }
 );
+
+pastor.onHurt((arg) => {
+  // 该标签代表该玩家释放的牧师技能正在生效中
+  if (arg.hurtEntity.hasTag("hiddenyears:skilled")) {
+    new RandomEvent(0.25, () => {
+      if (!(arg.hurtEntity instanceof Player)) return;
+      heal(arg.hurtEntity, pastor.getLevel(arg.hurtEntity) * 0.5);
+    }).call();
+  }
+});
 
 pastor.onUpgrade((arg) => {
   if (arg.recentLevel === 10) {

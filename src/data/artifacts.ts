@@ -2,7 +2,7 @@ import { body, feet, hand, head, runes } from "./artifactSlots";
 import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
 import { default as crop } from "../../config/crop.json";
 import { default as herd } from "../../config/herd.json";
-import { Artifact, Format, RandomEvent, Random } from "@occultus/api";
+import { Artifact, Format, RandomEvent, Random, heal } from "@occultus/api";
 
 /**
  * 钻石制战士徽章
@@ -362,13 +362,8 @@ const engulfGlove = new Artifact(
 engulfGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
   if (!damagingEntity.isValid) return;
-  const health = damagingEntity.getComponent("health");
   const rand = Random.integer(5, 1);
-  if (health.currentValue + rand >= health.effectiveMax) {
-    health.setCurrentValue(health.effectiveMax);
-    return;
-  }
-  health.setCurrentValue(health.currentValue + rand);
+  heal(hitEntity, rand);
 });
 
 const rubyRing = new Artifact(

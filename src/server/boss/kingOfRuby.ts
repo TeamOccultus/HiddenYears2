@@ -1,5 +1,5 @@
 import { Player, system } from "@minecraft/server";
-import { BossSkill, getAllExp, Boss } from "@occultus/api";
+import { BossSkill, getAllExp, Boss, heal } from "@occultus/api";
 
 const stealExperience = new BossSkill(
   "steal_exp",
@@ -17,13 +17,7 @@ const stealExperience = new BossSkill(
         entity.resetLevel();
       }
     });
-    const health =
-      excu.getComponent("minecraft:health").currentValue + stolen / 5;
-    if (health >= excu.getComponent("minecraft:health").effectiveMax) {
-      excu.getComponent("minecraft:health").resetToMaxValue();
-      return;
-    }
-    excu.getComponent("minecraft:health").setCurrentValue(health);
+    heal(excu, stolen / 5);
   },
   15
 );
