@@ -1,0 +1,343 @@
+[
+  {
+    "id": "hiddenyears:hidden_story",
+    "title": {
+      "translate": "article.hiddenyears:2.title"
+    },
+    "content": {
+      "translate": "article.hiddenyears:2.body"
+    },
+    "chapters": [
+      {
+        "title": {
+          "translate": "article.hiddenyears:2.chapter_1.title"
+        },
+        "body": {
+          "rawtext": [
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_1"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_2"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_3"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_4"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_5"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_6"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_7"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_8"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_9"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_10"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_11"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_12"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_13"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_14"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_15"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_16"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_17"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_1.body_18"
+            }
+          ]
+        }
+      },
+      {
+        "title": {
+          "translate": "article.hiddenyears:2.chapter_2.title"
+        },
+        "body": {
+          "rawtext": [
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_1"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_2"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_3"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_4"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_5"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_6"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_7"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_8"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_9"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_10"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_11"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_12"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_13"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_14"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_2.body_15"
+            }
+          ]
+        }
+      },
+      {
+        "title": {
+          "translate": "article.hiddenyears:2.chapter_3.title"
+        },
+        "body": {
+          "rawtext": [
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_1"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_2"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_3"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_4"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_5"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_6"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_7"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_8"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_9"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_10"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_11"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_12"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_13"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_14"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_15"
+            },
+            {
+              "text": "\n\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_16"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_17"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_18"
+            },
+            {
+              "text": "\n"
+            },
+            {
+              "translate": "article.hiddenyears:2.chapter_3.body_19"
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -46,7 +46,7 @@ export function listenIsisMonologue(player: Player) {
     });
   }, 200);
   system.runTimeout(() => {
-    // giveItem(player, new ItemStack("hiddenyears:letter_19"));
+    // giveItem(player, new ItemStack("hiddenyears:article_19"));
     player.sendMessage({
       translate: "monologue.hiddenyears:mutas_wrath_dead.7",
       with: [player.name]

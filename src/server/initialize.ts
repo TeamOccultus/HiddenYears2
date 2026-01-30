@@ -24,6 +24,7 @@ import { registryJob } from "./registry/job";
 import { MigrationEvents } from "../migration/MigrationEvents";
 import { InitalSpawnEvents } from "./events/InitalSpawnEvents";
 import { DesertEntityEvent } from "./events/DesertEntityEvent";
+import { registryArticles } from "./registry/article";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -36,6 +37,7 @@ export function initialize() {
   );
   registryCommands();
   registryCustomRecipe();
+  registryArticles();
   registryItemSystems();
   registryComponents();
   registryEffects();

@@ -2,13 +2,13 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:article_1",
+      "identifier": "hiddenyears:article_9",
       "menu_category": {
         "category": "items"
       }
     },
     "components": {
-      "hiddenyears:article_1": {},
+      "hiddenyears:article_9": {},
       "minecraft:icon": "hiddenyears:lost_letter",
       "minecraft:max_stack_size": 1,
       "minecraft:hover_text_color": "yellow",
