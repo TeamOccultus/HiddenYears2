@@ -1291,5 +1291,8 @@
   "article.hiddenyears:12.body_9": "死亡證明",
   "article.hiddenyears:12.body_10": "=============",
   "article.hiddenyears:12.body_11": "死者奧西里斯·法郎，26歲，2253年5月因感染風寒而亡。",
-  "hiddenyears:itemGroup.name.articles": ""
+  "hiddenyears:itemGroup.name.articles": "",
+  "ui.article_center": "",
+  "ui.article_center.description": "",
+  "ui.guide": ""
 }

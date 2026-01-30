@@ -2,11 +2,12 @@ import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CreditsForm } from "./CreditsForm";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArtifactForm, JobCenter } from "@occultus/api";
+import { ArtifactForm } from "@occultus/api";
 import { book } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
 import { UCVForm } from "./UCVForm";
 import { jobCenter, jobServer } from "../server/registry/job";
+import { articleCenter } from "../server/registry/article";
 
 export class ProfileForm {
   static display(player: Player): void {
@@ -32,6 +33,11 @@ export class ProfileForm {
       .button({ translate: "ui.artifact" }, "textures/items/diamond_badge")
       .button({ translate: "ui.ucv" }, "textures/items/gold_coin")
       .button({ translate: "ui.job.title" }, "textures/items/legacy_staff");
+
+    form
+      .divider()
+      .label({ translate: "ui.guide" })
+      .button({ translate: "ui.article_center" }, "textures/items/lost_letter")
     form
       .divider()
       .label({ translate: "ui.profile.about" })
@@ -59,10 +65,14 @@ export class ProfileForm {
         return;
       }
       if (result.selection === 4) {
-        CopyrightForm.display(player, true);
+        articleCenter.display(player);
         return;
       }
       if (result.selection === 5) {
+        CopyrightForm.display(player, true);
+        return;
+      }
+      if (result.selection === 6) {
         CreditsForm.display(player, credits, true);
         return;
       }

@@ -1291,5 +1291,8 @@
   "article.hiddenyears:12.body_9": "",
   "article.hiddenyears:12.body_10": "",
   "article.hiddenyears:12.body_11": "",
-  "hiddenyears:itemGroup.name.articles": ""
+  "hiddenyears:itemGroup.name.articles": "",
+  "ui.article_center": "",
+  "ui.article_center.description": "",
+  "ui.guide": ""
 }

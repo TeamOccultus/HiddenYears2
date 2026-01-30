@@ -1,12 +1,20 @@
 import { default as articles } from "../../../config/articles/single_article.json";
 import { default as chapteredArticles } from "../../../config/articles/chaptered_article.json";
-import { Article, ArticleRegistries } from "@occultus/api";
+import { Article, ArticleCenter, ArticleRegistries } from "@occultus/api";
+
+export const articleRegistry = new ArticleRegistries();
+export const articleCenter = new ArticleCenter(
+  "hidden_years:article_center",
+  { translate: "ui.article_center" },
+  { translate: "ui.article_center.description" },
+  true,
+  articleRegistry
+);
 
 /**
  * 注册所有的文章
  */
 export function registryArticles() {
-  const articleRegistry = new ArticleRegistries();
   articles.forEach((article) => {
     articleRegistry.add(
       new Article(
@@ -31,4 +39,3 @@ export function registryArticles() {
   });
   articleRegistry.register();
 }
-
