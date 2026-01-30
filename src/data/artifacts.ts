@@ -2,7 +2,14 @@ import { body, feet, hand, head, runes } from "./artifactSlots";
 import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
 import { default as crop } from "../../config/crop.json";
 import { default as herd } from "../../config/herd.json";
-import { Artifact, Format, RandomEvent, Random, heal } from "@occultus/api";
+import {
+  Artifact,
+  Format,
+  RandomEvent,
+  Random,
+  heal,
+  addEffect
+} from "@occultus/api";
 
 /**
  * 钻石制战士徽章
@@ -24,7 +31,7 @@ const diamondBadge = new Artifact(
   "textures/items/diamond_badge"
 );
 diamondBadge.onEquip((arg) => {
-  arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 4 });
+  addEffect(arg.source, "minecraft:health_boost", "infinite", { amplifier: 4 });
 });
 diamondBadge.onUnequip((player) => {
   player.removeEffect("minecraft:health_boost");
@@ -47,7 +54,7 @@ const goldenBadge = new Artifact(
   "textures/items/golden_badge"
 );
 goldenBadge.onEquip((arg) => {
-  arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 3 });
+  addEffect(arg.source, "minecraft:health_boost", "infinite", { amplifier: 3 });
 });
 goldenBadge.onUnequip((player) => {
   player.removeEffect("minecraft:health_boost");
@@ -70,7 +77,7 @@ const copperBadge = new Artifact(
   "textures/items/copper_badge"
 );
 copperBadge.onEquip((arg) => {
-  arg.source.addEffect("minecraft:health_boost", 12000, { amplifier: 2 });
+  addEffect(arg.source, "minecraft:health_boost", "infinite", { amplifier: 2 });
 });
 copperBadge.onUnequip((player) => {
   player.removeEffect("minecraft:health_boost");
@@ -92,7 +99,7 @@ const maskOfTheSea = new Artifact(
   "textures/items/mask_of_the_sea"
 );
 maskOfTheSea.onEquip((arg) => {
-  arg.source.addEffect("minecraft:conduit_power", 6000);
+  addEffect(arg.source, "minecraft:conduit_power", "infinite");
 });
 maskOfTheSea.onUnequip((player) => {
   player.removeEffect("minecraft:conduit_power");
@@ -116,7 +123,7 @@ const sparklingMask = new Artifact(
   "textures/items/sparkling_mask"
 );
 sparklingMask.onEquip((arg) => {
-  arg.source.addEffect("minecraft:night_vision", 12000);
+  addEffect(arg.source, "minecraft:night_vision", "infinite");
 });
 sparklingMask.onUnequip((player) => {
   player.removeEffect("minecraft:night_vision");
@@ -144,7 +151,7 @@ const soldiersHelmet = new Artifact(
   "textures/items/soldiers_helmet"
 );
 soldiersHelmet.onHitEntity((arg) => {
-  new RandomEvent(0.35, () => {
+  new RandomEvent(0.6, () => {
     arg.hitEntity.applyDamage(Random.integer(8, 2), {
       cause: EntityDamageCause.none,
       damagingEntity: undefined
@@ -220,7 +227,7 @@ const invisibleCape = new Artifact(
   "textures/items/invisible_cape"
 );
 invisibleCape.onEquip((arg) => {
-  arg.source.addEffect("minecraft:invisibility", 12000);
+  addEffect(arg.source, "minecraft:invisibility", "infinite");
 });
 invisibleCape.onUnequip((player) => {
   player.removeEffect("minecraft:invisibility");
@@ -271,7 +278,7 @@ const fireCape = new Artifact(
   "textures/items/fire_cape"
 );
 fireCape.onEquip((arg) => {
-  arg.source.addEffect("minecraft:fire_resistance", 12000);
+  addEffect(arg.source, "minecraft:fire_resistance", "infinite");
 });
 fireCape.onUnequip((player) => {
   player.removeEffect("minecraft:fire_resistance");
@@ -291,7 +298,7 @@ const magicFeatherCape = new Artifact(
   "textures/items/magic_feather_cape"
 );
 magicFeatherCape.onEquip((arg) => {
-  arg.source.addEffect("minecraft:slow_falling", 12000);
+  addEffect(arg.source, "minecraft:slow_falling", "infinite");
 });
 magicFeatherCape.onUnequip((player) => {
   player.removeEffect("minecraft:slow_falling");
@@ -421,7 +428,7 @@ const speedBoots = new Artifact(
   "textures/items/speed_boots"
 );
 speedBoots.onEquip((arg) => {
-  arg.source.addEffect("minecraft:speed", 12000, { amplifier: 2 });
+  addEffect(arg.source, "minecraft:speed", "infinite", { amplifier: 2 });
 });
 speedBoots.onUnequip((player) => {
   player.removeEffect("minecraft:speed");
@@ -441,7 +448,7 @@ const hareBoots = new Artifact(
   "textures/items/hare_boots"
 );
 hareBoots.onEquip((arg) => {
-  arg.source.addEffect("minecraft:jump_boost", 12000, { amplifier: 2 });
+  addEffect(arg.source, "minecraft:jump_boost", "infinite", { amplifier: 2 });
 });
 hareBoots.onUnequip((player) => {
   player.removeEffect("minecraft:jump_boost");
@@ -486,7 +493,7 @@ const gluttonousRunes = new Artifact(
   "textures/items/gluttonous_runes"
 );
 gluttonousRunes.onEquip((arg) => {
-  arg.source.addEffect("minecraft:strength", 18000, { amplifier: 4 });
+  addEffect(arg.source, "minecraft:strength", "infinite", { amplifier: 4 });
   arg.source.addEffect("minecraft:hunger", 24000, { amplifier: 2 });
 });
 gluttonousRunes.onUnequip((player) => {
@@ -542,8 +549,10 @@ const rubyRunes = new Artifact(
   "textures/items/ruby_runes"
 );
 rubyRunes.onEquip((arg) => {
-  arg.source.addEffect("minecraft:fire_resistance", 12000, { amplifier: 0 });
-  arg.source.addEffect("minecraft:resistance", 12000, { amplifier: 2 });
+  addEffect(arg.source, "minecraft:fire_resistance", "infinite", {
+    amplifier: 0
+  });
+  addEffect(arg.source, "minecraft:resistance", "infinite", { amplifier: 2 });
 });
 rubyRunes.onUnequip((player) => {
   player.removeEffect("minecraft:fire_resistance");
