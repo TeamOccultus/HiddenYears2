@@ -172,6 +172,26 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
+                  "quantity": 15,
+                  "price_multiplier": 0.05
+                }
+              ],
+              "gives": [
+                { "item": "hiddenyears:article_10", "quantity": 1 }
+              ],
+              "trader_exp": 10,
+              "max_uses": 1,
+              "reward_exp": true
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
                   "quantity": 25,
                   "price_multiplier": 0.05
                 }

@@ -199,6 +199,29 @@
               "reward_exp": true
             }
           ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "wants": [
+                {
+                  "item": "hiddenyears:gold_coin",
+                  "price_multiplier": 0.2,
+                  "quantity": 10
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:article_6",
+                  "quantity": 1
+                }
+              ],
+              "trader_exp": 5,
+              "max_uses": 2,
+              "reward_exp": true
+            }
+          ]
         }
       ]
     },

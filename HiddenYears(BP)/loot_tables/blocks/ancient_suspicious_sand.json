@@ -22,6 +22,22 @@
       "rolls": 1,
       "conditions": [
         {
+          "condition": "random_chance_with_looting",
+          "chance": 0.08,
+          "looting_multiplier": 0.02
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:article_9"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
           "condition": "match_tool",
           "enchantments": [
             {

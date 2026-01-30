@@ -865,7 +865,10 @@ export function getAllChapters() {
       ]
     },
     {
-      awards: [new ItemAwards("minecraft:diamond", 10)],
+      awards: [
+        new ItemAwards("minecraft:diamond", 10),
+        new ItemAwards("hiddenyears:article_4")
+      ],
       conditions: [new KillEntityConditions("hiddenyears:king_of_ruby")],
       previousTask: "none",
       iconPath: "textures/items/ruby_crown",
