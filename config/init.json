@@ -1,1 +1,5 @@
-["hiddenyears:occultus_watch", "hiddenyears:travel_gem"]
+[
+  { "id": "hiddenyears:occultus_watch", "lock": true },
+  { "id": "hiddenyears:travel_gem", "lock": true },
+  { "id": "hiddenyears:article_1", "lock": false }
+]

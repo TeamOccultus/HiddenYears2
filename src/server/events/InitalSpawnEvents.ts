@@ -8,8 +8,8 @@ export class InitalSpawnEvents {
       const handle = event.player.getDynamicProperty("hiddenyears:init_gift");
       if (!handle) {
         items.forEach((item) => {
-          const itemStack = new ItemStack(item);
-          itemStack.lockMode = ItemLockMode.inventory;
+          const itemStack = new ItemStack(item.id);
+          if(item.lock) itemStack.lockMode = ItemLockMode.inventory;
           giveItem(event.player, itemStack);
         });
         event.player.setDynamicProperty("hiddenyears:init_gift", true);

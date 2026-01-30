@@ -372,7 +372,7 @@ export function getAllChapters() {
     { translate: "task.god.desc" },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
-      conditions: [new ItemConditions("hiddenyears:article_1")],
+      conditions: [new ItemConditions("hiddenyears:hidden_story")],
       previousTask: "none",
       iconPath: "textures/items/lost_letter"
     }
@@ -423,7 +423,7 @@ export function getAllChapters() {
     },
     {
       tasks: [silver, diamond, crystal, bleakTotem, god, totem],
-      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+      awards: [new ItemAwards("hiddenyears:stack_of_gold_coin")],
       previousTask: "none",
       iconPath: "textures/items/diamond"
     }
@@ -686,7 +686,7 @@ export function getAllChapters() {
     { translate: "task.summary_of_elven_history.desc" },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 1)],
-      conditions: [new ItemConditions("hiddenyears:article_1")],
+      conditions: [new ItemConditions("hiddenyears:article_3")],
       previousTask: "none",
       iconPath: "textures/items/lost_letter"
     }
@@ -1161,7 +1161,7 @@ export function getAllChapters() {
       ]
     },
     {
-      awards: [new ItemAwards("hiddenyears:article_1", 1)],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
       conditions: [new ItemConditions("hiddenyears:blessing_of_isis")],
       previousTask: "none",
       iconPath: "textures/items/blessing_of_isis",
@@ -1241,7 +1241,7 @@ export function getAllChapters() {
       ]
     },
     {
-      awards: [new ItemAwards("hiddenyears:article_1", 1)],
+      awards: [new ItemAwards("hiddenyears:gold_coin", 1)],
       conditions: [new ItemConditions("hiddenyears:shattered_sand_staff")],
       previousTask: "none",
       iconPath: "textures/items/shattered_sand_staff",
@@ -1330,7 +1330,7 @@ export function getAllChapters() {
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
-      conditions: [new ItemConditions("hiddenyears:article_1")],
+      conditions: [new ItemConditions("hiddenyears:article_11")],
       previousTask: "none",
       iconPath: "textures/items/paper"
     }
@@ -1356,7 +1356,7 @@ export function getAllChapters() {
     },
     {
       awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
-      conditions: [new ItemConditions("hiddenyears:article_1")],
+      conditions: [new ItemConditions("hiddenyears:article_10")],
       previousTask: "none",
       iconPath: "textures/items/paper",
       tips: { translate: "task.ancient_myth.tips" }
