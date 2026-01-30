@@ -1,6 +1,6 @@
 import { giveItem, ItemConditions, Job } from "@occultus/api";
 import { magicArcher } from "../advanced/magicArcher";
-import { ItemStack } from "@minecraft/server";
+import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
 
 export const archer = new Job(
   "hiddenyears:archer",
@@ -23,6 +23,16 @@ export const archer = new Job(
     ]
   }
 );
+
+archer.onProjectHitEntity((arg) => {
+  const entity = arg.getEntityHit().entity;
+  if (!entity) return;
+  if (!entity.isValid) return;
+  if (!(arg.source instanceof Player)) return;
+  entity.applyDamage(archer.getLevel(arg.source) * 0.4, {
+    cause: EntityDamageCause.none
+  });
+});
 
 archer.onUpgrade((arg) => {
   if (arg.recentLevel === 10) {
