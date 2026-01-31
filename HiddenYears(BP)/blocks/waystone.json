@@ -40,7 +40,7 @@
       }
     ],
     "components": {
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/waystone.json",
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:waystone",
@@ -52,11 +52,43 @@
       },
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 12,
+        "seconds_to_destroy": 15.0,
         "item_specific_speeds": [
           {
-            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
-            "destroy_speed": 2
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+            },
+            "destroy_speed": 7.5
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+            },
+            "destroy_speed": 3.75
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+            },
+            "destroy_speed": 0.75
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+            },
+            "destroy_speed": 0.6
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 0.5
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+            },
+            "destroy_speed": 1.25
           }
         ]
       },

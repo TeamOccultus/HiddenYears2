@@ -8,11 +8,7 @@
       }
     },
     "components": {
-      "hiddenyears:destroy_condition": {
-        "item_tier": "stone",
-        "loot_table": "blocks/alchemy_table"
-      },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/alchemy_table.json",
       "minecraft:light_emission": 8,
       "minecraft:material_instances": {
         "up": {
@@ -35,7 +31,7 @@
         "seconds_to_destroy": 12,
         "item_specific_speeds": [
           {
-            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "item": { "tags": "query.any_tag('minecraft:is_axe')" },
             "destroy_speed": 2
           }
         ]

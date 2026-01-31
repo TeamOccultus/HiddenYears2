@@ -41,11 +41,7 @@
     ],
     "components": {
       "hiddenyears:interactable": {},
-      "hiddenyears:destroy_condition": {
-        "item_tier": "stone",
-        "loot_table": "blocks/magic_smithing_table"
-      },
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/magic_smithing_table.json",
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:magic_smithing_table",

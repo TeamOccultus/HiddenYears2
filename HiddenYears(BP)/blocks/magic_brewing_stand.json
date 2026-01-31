@@ -41,6 +41,7 @@
     ],
     "components": {
       "hiddenyears:interactable": {},
+      "minecraft:loot": "loot_tables/blocks/magic_brewing_stand.json",
       "minecraft:material_instances": {
         "up": {
           "texture": "hiddenyears:magic_brewing_stand_top"
@@ -59,7 +60,7 @@
         "seconds_to_destroy": 12,
         "item_specific_speeds": [
           {
-            "item": { "tags": "query.any_tag('minecraft:is_axe')" },
+            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
             "destroy_speed": 2
           }
         ]
