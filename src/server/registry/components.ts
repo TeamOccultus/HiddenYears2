@@ -63,7 +63,6 @@ export function registryComponents() {
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
   block.add(new InteractableBlock("hiddenyears:interactable"));
   block.add(new OreBlock("hiddenyears:custom_ore"));
-  block.add(new BlockWithDestroyCondition("hiddenyears:destroy_condition"));
   item.register();
   block.register();
 }
