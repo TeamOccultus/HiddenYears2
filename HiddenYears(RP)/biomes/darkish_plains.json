@@ -5,10 +5,6 @@
     "description": {
       "identifier": "hiddenyears:darkish_plains" //你的自定义生物群系的ID，不用填命名空间前缀
     },
-    "components": {
-      "minecraft:fog_appearance": {
-        "fog_identifier": "hiddenyears:darkish_fog"
-      }
-    }
+    "components": {}
   }
 }
