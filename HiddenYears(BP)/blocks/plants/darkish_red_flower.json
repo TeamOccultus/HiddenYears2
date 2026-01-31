@@ -27,7 +27,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:darkish_red_flower",
-          "render_method": "alpha_test",
+          "render_method": "blend",
           "ambient_occlusion": false,
           "face_dimming": false
         }
