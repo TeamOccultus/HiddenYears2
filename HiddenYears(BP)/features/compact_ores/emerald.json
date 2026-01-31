@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hiddenyears:compact_ores/emerald"
     },
-    "count": 4,
+    "count": 2,
     "replace_rules": [
       {
         "places_block": "hiddenyears:compact_emerald_ore",

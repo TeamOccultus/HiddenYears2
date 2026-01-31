@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hiddenyears:compact_ores/gold"
     },
-    "count": 4,
+    "count": 2,
     "replace_rules": [
       {
         "places_block": "hiddenyears:compact_gold_ore",
