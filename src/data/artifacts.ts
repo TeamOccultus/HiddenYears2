@@ -370,7 +370,7 @@ engulfGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
   if (!damagingEntity.isValid) return;
   const rand = Random.integer(5, 1);
-  heal(hitEntity, rand);
+  heal(damagingEntity, rand);
 });
 
 const rubyRing = new Artifact(
