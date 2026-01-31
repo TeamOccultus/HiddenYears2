@@ -1294,5 +1294,9 @@
     "hiddenyears:itemGroup.name.articles": "",
     "ui.article_center": "",
     "ui.article_center.description": "",
-    "ui.guide": ""
+    "ui.guide": "",
+  "ui.armor_effects": "",
+  "ui.armor_effects.isis": "",
+  "ui.armor_effects.rebirth": "",
+  "ui.armor_effects.unyielding": ""
 }

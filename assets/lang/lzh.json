@@ -1294,5 +1294,9 @@
     "hiddenyears:itemGroup.name.articles": "匿之歲·文籍",
     "ui.article_center": "文典",
     "ui.article_center.description": "此錄所讀諸文",
-    "ui.guide": "大典"
+    "ui.guide": "大典",
+  "ui.armor_effects": "",
+  "ui.armor_effects.isis": "",
+  "ui.armor_effects.rebirth": "",
+  "ui.armor_effects.unyielding": ""
 }

@@ -1294,5 +1294,9 @@
     "hiddenyears:itemGroup.name.articles": "隱藏之年·文章",
     "ui.article_center": "文章圖鑒",
     "ui.article_center.description": "這裡記錄著你閱讀過的所有文章",
-    "ui.guide": "圖鑒"
+    "ui.guide": "圖鑒",
+  "ui.armor_effects": "§r§9护甲赐福：",
+  "ui.armor_effects.isis": "§r§f雨之神的祝福",
+  "ui.armor_effects.rebirth": "§r§f复生",
+  "ui.armor_effects.unyielding": "§r§f不屈"
 }

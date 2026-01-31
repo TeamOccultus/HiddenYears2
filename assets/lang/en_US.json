@@ -1294,5 +1294,9 @@
     "hiddenyears:itemGroup.name.articles": "Hidden Years: Articles",
     "ui.article_center": "Article Cnter",
     "ui.article_center.description": "This record contains all the articles you have read",
-    "ui.guide": "Game Guide"
+    "ui.guide": "Game Guide",
+    "ui.armor_effects": "",
+    "ui.armor_effects.isis": "",
+    "ui.armor_effects.rebirth": "",
+    "ui.armor_effects.unyielding": ""
 }
