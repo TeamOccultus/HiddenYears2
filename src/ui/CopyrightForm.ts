@@ -19,7 +19,15 @@ export class CopyrightForm {
           },
           { text: "\n\n" },
           {
-            text: `Powered by Occultus SDK v${StarTenon.version}  and Occultus Emoji`
+            text: `Powered by:`
+          },
+          { text: "\n" },
+          {
+            text: `Occultus SDK v${StarTenon.version}`
+          },
+          { text: "\n" },
+          {
+            text: `Occultus Emoji v1.2.0`
           }
         ]
       })
