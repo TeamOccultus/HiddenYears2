@@ -9,6 +9,9 @@
       }
     },
     "components": {
+      "minecraft:display_name": {
+        "value": "%ui.armor.frigid_steel_helmet\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv3\n%ui.armor_effects.rebirth"
+      },
       "hiddenyears:armor_type": [
         {
           "present": "unyielding",

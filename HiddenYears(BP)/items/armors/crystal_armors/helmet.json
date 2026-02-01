@@ -9,6 +9,9 @@
       }
     },
     "components": {
+      "minecraft:display_name": {
+        "value": "%ui.armor.crystal_helmet\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv1"
+      },
       "hiddenyears:armor_type": [
         {
           "present": "unyielding",

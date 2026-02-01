@@ -9,6 +9,9 @@
       }
     },
     "components": {
+      "minecraft:display_name": {
+        "value": "%ui.armor.originite_helmet\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv2\n%ui.armor_effects.rebirth"
+      },
       "minecraft:icon": "hiddenyears:originite_helmet",
       "hiddenyears:armor_type": [
         {
