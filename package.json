@@ -17,7 +17,7 @@
     "@minecraft/server-ui": "2.0.0",
     "@occultus/api": "^0.22.3",
     "@occultus/core": "^0.18.4",
-    "@occultus/loom": "^0.9.3",
+    "@occultus/loom": "^0.9.4",
     "typescript": "^5.9.3"
   },
   "devDependencies": {

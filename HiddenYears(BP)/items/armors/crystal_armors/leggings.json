@@ -9,6 +9,12 @@
       }
     },
     "components": {
+      "hiddenyears:armor_type": [
+        {
+          "present": "unyielding",
+          "level": 1
+        }
+      ],
       "minecraft:icon": "hiddenyears:crystal_leggings",
       "minecraft:max_stack_size": 1,
       "minecraft:enchantable": {

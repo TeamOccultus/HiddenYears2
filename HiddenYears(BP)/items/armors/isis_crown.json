@@ -8,9 +8,15 @@
       }
     },
     "components": {
-      "hiddenyears:armor_type": {
-        "present": "isis_crown"
+      "minecraft:display_name": {
+        "value": "%ui.armor.isis_crown\n\n%ui.armor_effects\n%ui.armor_effects.isis"
       },
+      "hiddenyears:armor_type": [
+        {
+          "present": "isis_crown",
+          "level": 0
+        }
+      ],
       "minecraft:rarity": "epic",
       "minecraft:icon": "hiddenyears:isis_crown",
       "minecraft:max_stack_size": 1,

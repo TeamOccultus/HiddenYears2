@@ -1304,5 +1304,9 @@
   "ui.armor_effects": "§r§9护甲赐福：",
   "ui.armor_effects.isis": "§r§f雨之神的祝福",
   "ui.armor_effects.rebirth": "§r§f复生",
-  "ui.armor_effects.unyielding": "§r§f不屈"
+  "ui.armor_effects.unyielding": "§r§f不屈",
+  "ui.armor.isis_crown": "雨神之冠",
+  "ui.armor_effects.unyielding.lv1": "§r§f不屈 I",
+  "ui.armor_effects.unyielding.lv2": "§r§f不屈 II",
+  "ui.armor_effects.unyielding.lv3": "§r§f不屈 III"
 }
