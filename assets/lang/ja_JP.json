@@ -222,7 +222,7 @@
     "item.record_plains.desc": "",
     "item.record_ruby.desc": "",
     "item.record_pharaohs.desc": "",
-    "item:hiddenyears:ruby": "",
+    "item:hiddenyears:ruby": "ルビー",
     "item.hiddenyears:copper_coin": "",
     "item.hiddenyears:gold_coin": "",
     "item.hiddenyears:diamond_coin": "",
@@ -1295,8 +1295,8 @@
     "ui.article_center": "",
     "ui.article_center.description": "",
     "ui.guide": "",
-  "ui.armor_effects": "",
-  "ui.armor_effects.isis": "",
-  "ui.armor_effects.rebirth": "",
-  "ui.armor_effects.unyielding": ""
+    "ui.armor_effects": "",
+    "ui.armor_effects.isis": "",
+    "ui.armor_effects.rebirth": "",
+    "ui.armor_effects.unyielding": ""
 }
