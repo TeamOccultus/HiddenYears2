@@ -1,4 +1,7 @@
-export type ArmorTypeParams = {
+export type ArmorTypeParams = ArmorType[];
+
+
+export type ArmorType = {
   present: ArmorPresent;
   level?: number;
 };
