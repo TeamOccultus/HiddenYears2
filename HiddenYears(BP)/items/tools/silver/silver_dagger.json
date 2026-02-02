@@ -48,6 +48,7 @@
       "minecraft:tags": {
         "tags": [
           "minecraft:is_tool",
+          "hiddenyears:is_dagger",
           "minecraft:is_weapon",
           "hiddenyears:silver_tier",
           "minecraft:iron_tier"

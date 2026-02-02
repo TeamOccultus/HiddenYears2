@@ -48,6 +48,7 @@
       "minecraft:tags": {
         "tags": [
           "minecraft:is_tool",
+          "hiddenyears:is_dagger",
           "minecraft:is_weapon",
           "hiddenyears:refined_rock_tier",
           "minecraft:stone_tier"

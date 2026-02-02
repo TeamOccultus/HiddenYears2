@@ -50,6 +50,7 @@
           "minecraft:is_tool",
           "minecraft:is_weapon",
           "hiddenyears:crystal_tier",
+          "hiddenyears:is_dagger",
           "minecraft:diamond_tier"
         ]
       }

@@ -49,6 +49,7 @@
         "tags": [
           "minecraft:is_tool",
           "minecraft:is_weapon",
+          "hiddenyears:is_dagger",
           "minecraft:diamond_tier"
         ]
       }
