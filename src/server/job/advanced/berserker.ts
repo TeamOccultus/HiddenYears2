@@ -1,3 +1,4 @@
+import { Player } from "@minecraft/server";
 import { ItemConditions, Job } from "@occultus/api";
 
 export const berserker = new Job(
@@ -15,3 +16,14 @@ export const berserker = new Job(
     ]
   }
 );
+
+berserker.onHitEntity((arg) => {
+  const hurtEntity = arg.hitEntity;
+  if (!hurtEntity.isValid) return;
+  const player = arg.damagingEntity as Player;
+  const healthComponent = player.getComponent("minecraft:health");
+  if (!healthComponent) return;
+  const damagedAmount =
+    healthComponent.effectiveMax - healthComponent.currentValue;
+  hurtEntity.applyDamage(damagedAmount * 0.8);
+});

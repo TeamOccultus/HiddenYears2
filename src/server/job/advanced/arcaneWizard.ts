@@ -1,4 +1,5 @@
-import { ItemConditions, Job } from "@occultus/api";
+import { EntityDamageCause, Player } from "@minecraft/server";
+import { ItemConditions, Job, RandomEvent } from "@occultus/api";
 
 export const arcaneWizard = new Job(
   "hiddenyears:arcane_wizard",
@@ -15,3 +16,11 @@ export const arcaneWizard = new Job(
     ]
   }
 );
+
+arcaneWizard.onCauseDamage((arg) => {
+  if (arg.damageSource.cause != EntityDamageCause.magic) return;
+  const player = arg.damageSource.damagingEntity as Player;
+  new RandomEvent(0.15, () => {
+    player.addEffect("minecraft:absorption", 10, { amplifier: 1 });
+  }).call();
+});

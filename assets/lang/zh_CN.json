@@ -1047,7 +1047,7 @@
   "article.hiddenyears:1.body_3": "我们的故国已经覆灭，无数风雨使坚石也作尘沙，你本该在温室中生长，却不得不在风雨中前行。此时此刻，广阔的天地任你探索；过去未来，历史将由你书写。  ",
   "article.hiddenyears:1.body_4": "「你好，世界」",
   "article.hiddenyears:2.title": "诸隐之歌",
-  "article.hiddenyears:2.body":"不死之族在月蚀初写下为他们的神明写下的祷文",
+  "article.hiddenyears:2.body": "不死之族在月蚀初写下为他们的神明写下的祷文",
   "article.hiddenyears:2.chapter_1.title": "再创世",
   "article.hiddenyears:2.chapter_1.body_1": "岩层阻挡了蓝天，",
   "article.hiddenyears:2.chapter_1.body_2": "砾石横生的陆地承接着，",
@@ -1325,5 +1325,6 @@
   "ui.armor.sparkling_gold_chestplate": "闪金胸甲",
   "ui.armor.sparkling_gold_leggings": "闪金护腿",
   "ui.armor.sparkling_gold_boots": "闪金靴子",
-  "family.monster": "敌对生物"
+  "family.monster": "敌对生物",
+  "message.hiddenyears.swordman:critical_hit": "§r§o§i会心一击！"
 }

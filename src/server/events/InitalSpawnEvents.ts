@@ -9,7 +9,7 @@ export class InitalSpawnEvents {
       if (!handle) {
         items.forEach((item) => {
           const itemStack = new ItemStack(item.id);
-          if(item.lock) itemStack.lockMode = ItemLockMode.inventory;
+          if (item.lock) itemStack.lockMode = ItemLockMode.inventory;
           giveItem(event.player, itemStack);
         });
         event.player.setDynamicProperty("hiddenyears:init_gift", true);
