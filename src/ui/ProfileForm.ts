@@ -1,8 +1,7 @@
 import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { CreditsForm } from "./CreditsForm";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArtifactForm } from "@occultus/api";
+import { ArtifactForm, CreditsScreen } from "@occultus/api";
 import { book } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
 import { UCVForm } from "./UCVForm";
@@ -37,7 +36,7 @@ export class ProfileForm {
     form
       .divider()
       .label({ translate: "ui.guide" })
-      .button({ translate: "ui.article_center" }, "textures/items/lost_letter")
+      .button({ translate: "ui.article_center" }, "textures/items/lost_letter");
     form
       .divider()
       .label({ translate: "ui.profile.about" })
@@ -73,7 +72,11 @@ export class ProfileForm {
         return;
       }
       if (result.selection === 6) {
-        CreditsForm.display(player, credits, true);
+        CreditsScreen.display(
+          player,
+          "CREDITS of Hidden Years²: Governor at the Skyline",
+          credits
+        );
         return;
       }
     });
