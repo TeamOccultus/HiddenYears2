@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:netherrack_embryo"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["X X", " X ", "X X"],
+    "key": {
+      "X": {
+        "item": "minecraft:netherrack"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:netherrack"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:netherrack_embryo"
+    }
+  }
+}

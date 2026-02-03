@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:end_stone_embryo"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["X X", " X ", "X X"],
+    "key": {
+      "X": {
+        "item": "minecraft:end_stone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:end_stone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:end_stone_embryo"
+    }
+  }
+}

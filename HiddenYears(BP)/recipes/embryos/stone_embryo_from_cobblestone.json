@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:stone_embryo_from_cobblestone"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["X X", " X ", "X X"],
+    "key": {
+      "X": {
+        "item": "minecraft:cobblestone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:cobblestone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:stone_embryo"
+    }
+  }
+}
