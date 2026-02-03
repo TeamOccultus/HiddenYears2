@@ -4,7 +4,7 @@
     "description": {
       "identifier": "hiddenyears:netherrack_to_refined_rock"
     },
-    "input": "minecraft:netherrack",
+    "input": "hiddenyears:netherrack_embryo",
     "output": "hiddenyears:refined_rock_ingot",
     "tags": ["blast_furnace"],
     "unlock": [
@@ -12,7 +12,7 @@
         "item": "hiddenyears:refined_rock_ingot"
       },
       {
-        "item": "minecraft:netherrack"
+        "item": "hiddenyears:netherrack_embryo"
       }
     ]
   }

@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:netherrack_embryo",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:netherrack_embryo",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:rock_embryos"]
+      }
+    }
+  }
+}

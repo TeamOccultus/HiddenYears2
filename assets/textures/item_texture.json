@@ -395,6 +395,9 @@
     "hiddenyears:end_crossbow_standby": {
       "textures": "textures/items/end_crossbow_standby"
     },
+    "hiddenyears:end_stone_embryo": {
+      "textures": "textures/items/end_stone_embryo"
+    },
     "hiddenyears:engulf_glove": {
       "textures": "textures/items/engulf_glove"
     },
@@ -681,6 +684,9 @@
     },
     "hiddenyears:netherite_sledgehammer": {
       "textures": "textures/items/netherite_sledgehammer"
+    },
+    "hiddenyears:netherrack_embryo": {
+      "textures": "textures/items/netherrack_embryo"
     },
     "hiddenyears:oblivion_gem": {
       "textures": "textures/items/oblivion_gem"
@@ -1104,6 +1110,9 @@
     },
     "hiddenyears:stone_dagger": {
       "textures": "textures/items/stone_dagger"
+    },
+    "hiddenyears:stone_embryo": {
+      "textures": "textures/items/stone_embryo"
     },
     "hiddenyears:stone_hammer": {
       "textures": "textures/items/stone_hammer"

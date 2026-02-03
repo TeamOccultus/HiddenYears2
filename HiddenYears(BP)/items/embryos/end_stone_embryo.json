@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:end_stone_embryo",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:end_stone_embryo",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:rock_embryos"]
+      }
+    }
+  }
+}
