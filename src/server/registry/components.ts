@@ -8,6 +8,7 @@ import {
   FoodMaterial,
   InteractableBlock,
   ItemRegistries,
+  JobSkillComponent,
   OreBlock,
   ToolMaterial,
   WeaponMaterial
@@ -58,6 +59,7 @@ export function registryComponents() {
   new ComplexPotionComponent("hiddenyears:complex_potion");
   new ProfileComponent("hiddenyears:profile");
   new ReturnGemComponent("hiddenyears:return_gem");
+  new JobSkillComponent("hiddenyears:job_skill");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

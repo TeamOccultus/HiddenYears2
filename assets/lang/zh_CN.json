@@ -1350,5 +1350,6 @@
   "skill.arcane_wizard.1": "圣言惩击",
   "skill.arcane_wizard.2": "神圣爆发",
   "skill.magic_archer.1": "附魔之箭",
-  "skill.magic_archer.2": "共鸣领域"
+  "skill.magic_archer.2": "共鸣领域",
+  "skill.cooldown": "技能冷却中！"
 }
