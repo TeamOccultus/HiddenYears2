@@ -2,14 +2,38 @@
   "resource_pack_name": "HiddenYears2",
   "texture_name": "atlas.items",
   "texture_data": {
+    "hiddenyears:amnesty_pastor_skill_1": {
+      "textures": "textures/items/amnesty_pastor_skill_1"
+    },
+    "hiddenyears:amnesty_pastor_skill_2": {
+      "textures": "textures/items/amnesty_pastor_skill_2"
+    },
     "hiddenyears:ancient_extracts": {
       "textures": "textures/items/ancient_extracts"
     },
     "hiddenyears:ancient_scrap": {
       "textures": "textures/items/ancient_scrap"
     },
+    "hiddenyears:arcane_wizard_skill_1": {
+      "textures": "textures/items/arcane_wizard_skill_1"
+    },
+    "hiddenyears:arcane_wizard_skill_2": {
+      "textures": "textures/items/arcane_wizard_skill_2"
+    },
     "hiddenyears:archer_gem": {
       "textures": "textures/items/archer_gem"
+    },
+    "hiddenyears:archer_skill_1": {
+      "textures": "textures/items/archer_skill_1"
+    },
+    "hiddenyears:archer_skill_2": {
+      "textures": "textures/items/archer_skill_2"
+    },
+    "hiddenyears:assassin_skill_1": {
+      "textures": "textures/items/assassin_skill_1"
+    },
+    "hiddenyears:assassin_skill_2": {
+      "textures": "textures/items/assassin_skill_2"
     },
     "hiddenyears:babel_tower_wreckage_sand": {
       "textures": "textures/items/babel_tower_wreckage_sand"
@@ -85,6 +109,12 @@
     },
     "hiddenyears:complex_potion": {
       "textures": "textures/items/complex_potion"
+    },
+    "hiddenyears:conjure_wizard_skill_1": {
+      "textures": "textures/items/conjure_wizard_skill_1"
+    },
+    "hiddenyears:conjure_wizard_skill_2": {
+      "textures": "textures/items/conjure_wizard_skill_2"
     },
     "hiddenyears:contract_dust": {
       "textures": "textures/items/contract_dust"
@@ -539,6 +569,12 @@
     "hiddenyears:lost_letter": {
       "textures": "textures/items/lost_letter"
     },
+    "hiddenyears:magic_archer_skill_1": {
+      "textures": "textures/items/magic_archer_skill_1"
+    },
+    "hiddenyears:magic_archer_skill_2": {
+      "textures": "textures/items/magic_archer_skill_2"
+    },
     "hiddenyears:magic_dust": {
       "textures": "textures/items/magic_dust"
     },
@@ -709,8 +745,26 @@
     "hiddenyears:originite_sword": {
       "textures": "textures/items/originite_sword"
     },
+    "hiddenyears:orison_pastor_skill_1": {
+      "textures": "textures/items/orison_pastor_skill_1"
+    },
+    "hiddenyears:orison_pastor_skill_2": {
+      "textures": "textures/items/orison_pastor_skill_2"
+    },
+    "hiddenyears:paladin_skill_1": {
+      "textures": "textures/items/paladin_skill_1"
+    },
+    "hiddenyears:paladin_skill_2": {
+      "textures": "textures/items/paladin_skill_2"
+    },
     "hiddenyears:pastor_gem": {
       "textures": "textures/items/pastor_gem"
+    },
+    "hiddenyears:pastor_skill_1": {
+      "textures": "textures/items/pastor_skill_1"
+    },
+    "hiddenyears:pastor_skill_2": {
+      "textures": "textures/items/pastor_skill_2"
     },
     "hiddenyears:past_statue": {
       "textures": "textures/items/past_statue"
@@ -1060,6 +1114,12 @@
     "hiddenyears:suffering_sword": {
       "textures": "textures/items/suffering_sword"
     },
+    "hiddenyears:swordman_skill_1": {
+      "textures": "textures/items/swordman_skill_1"
+    },
+    "hiddenyears:swordman_skill_2": {
+      "textures": "textures/items/swordman_skill_2"
+    },
     "hiddenyears:task_book": {
       "textures": "textures/items/task_book"
     },
@@ -1075,6 +1135,12 @@
     "hiddenyears:warrior_gem": {
       "textures": "textures/items/warrior_gem"
     },
+    "hiddenyears:warrior_skill_1": {
+      "textures": "textures/items/warrior_skill_1"
+    },
+    "hiddenyears:warrior_skill_2": {
+      "textures": "textures/items/warrior_skill_2"
+    },
     "hiddenyears:waystone": {
       "textures": "textures/items/waystone"
     },
@@ -1083,6 +1149,12 @@
     },
     "hiddenyears:wizard_gem": {
       "textures": "textures/items/wizard_gem"
+    },
+    "hiddenyears:wizard_skill_1": {
+      "textures": "textures/items/wizard_skill_1"
+    },
+    "hiddenyears:wizard_skill_2": {
+      "textures": "textures/items/wizard_skill_2"
     },
     "hiddenyears:wooden_dagger": {
       "textures": "textures/items/wooden_dagger"
