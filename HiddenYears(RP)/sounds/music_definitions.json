@@ -1,17 +1,7 @@
 {
-  "rubyboss": {
-    "event_name": "music.boss.ruby",
-    "min_delay": 600,
-    "max_delay": 1200
-  },
-  "pharaohsboss": {
-    "event_name": "music.boss.pharaohs_ghost",
-    "min_delay": 600,
-    "max_delay": 1200
-  },
-  "cherry_plains": {
-    "event_name": "music.biome.cherry_plains",
-    "min_delay": 600,
-    "max_delay": 1200
+  "creative": {
+    "event_name": "music.game.creative",
+    "max_delay": 180,
+    "min_delay": 60
   }
 }

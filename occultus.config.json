@@ -27,7 +27,8 @@
         "type": "JSON"
       }
     },
-    "outputDir": "dist"
+    "outputDir": "dist",
+    "compressLevel": 1
   },
   "deployOptions": {
     "platform": "stable",

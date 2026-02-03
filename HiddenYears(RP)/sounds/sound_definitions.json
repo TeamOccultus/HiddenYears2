@@ -1,6 +1,226 @@
 {
   "format_version": "1.21.100",
   "sound_definitions": {
+    "music.game.creative": {
+      "__use_legacy_max_distance": true,
+      "category": "music",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/biome/plain_thoughts",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/creative/creative1",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/creative/creative2",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/creative/creative3",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/creative/creative4",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/creative/creative5",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/creative/creative6",
+          "stream": true,
+          "volume": 0.1
+        }
+      ]
+    },
+    "music.game": {
+      "__use_legacy_max_distance": true,
+      "category": "music",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/biome/plain_thoughts",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/calm1",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/calm2",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/calm3",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/hal1",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/hal2",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/hal3",
+          "stream": true,
+          "volume": 0.1
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/hal4",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/nuance1",
+          "stream": true,
+          "volume": 0.3
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/nuance2",
+          "stream": true,
+          "volume": 0.3
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/piano1",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/piano2",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/piano3",
+          "stream": true,
+          "volume": 0.2
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/one_more_day",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/floating_dream",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/left_to_bloom",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/comforting_memories",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/featherfall",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/komorebi",
+          "stream": true,
+          "volume": 0.8
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/puzzlebox",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/watcher",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/yakusoku",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/below_and_above",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/broken_clocks",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/fireflies",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/lilypad",
+          "stream": true,
+          "volume": 0.4
+        },
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/music/game/os_piano",
+          "stream": true,
+          "volume": 0.4
+        }
+      ]
+    },
     "music.boss.ruby": {
       "category": "music",
       "sounds": [
@@ -15,6 +235,15 @@
       "sounds": [
         {
           "name": "sounds/music/boss/pharaohs_ghost",
+          "stream": true
+        }
+      ]
+    },
+    "music.boss.common": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/music/boss/common_battle",
           "stream": true
         }
       ]
