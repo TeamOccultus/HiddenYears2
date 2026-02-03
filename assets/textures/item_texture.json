@@ -38,6 +38,12 @@
     "hiddenyears:babel_tower_wreckage_sand": {
       "textures": "textures/items/babel_tower_wreckage_sand"
     },
+    "hiddenyears:berserker_skill_1": {
+      "textures": "textures/items/berserker_skill_1"
+    },
+    "hiddenyears:berserker_skill_2": {
+      "textures": "textures/items/berserker_skill_2"
+    },
     "hiddenyears:bleak_totem": {
       "textures": "textures/items/bleak_totem"
     },

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:amnesty_pastor_skill_1",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:job_skill": {},
+      "minecraft:display_name": {
+        "value": "skill.amnesty_pastor.1"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:cooldown": {
+        "category": "hiddenyears:amnesty_pastor_skill_1",
+        "type": "use",
+        "duration": 10
+      },
+      "minecraft:icon": "hiddenyears:amnesty_pastor_skill_1",
+      "minecraft:rarity": "rare",
+      "minecraft:tags": {
+        "tags": ["starock:job_skill"]
+      }
+    }
+  }
+}

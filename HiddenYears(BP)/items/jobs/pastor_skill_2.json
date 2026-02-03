@@ -1,0 +1,28 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:pastor_skill_2",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:job_skill": {},
+      "minecraft:display_name": {
+        "value": "skill.pastor.2"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:cooldown": {
+        "category": "hiddenyears:pastor_skill_2",
+        "type": "use",
+        "duration": 10
+      },
+      "minecraft:icon": "hiddenyears:pastor_skill_2",
+      "minecraft:rarity": "rare",
+      "minecraft:tags": {
+        "tags": ["starock:job_skill"]
+      }
+    }
+  }
+}
