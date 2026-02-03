@@ -578,6 +578,12 @@
     "hiddenyears:lost_letter": {
       "textures": "textures/items/lost_letter"
     },
+    "hiddenyears:lunamutatio_skeleton_spawn_egg": {
+      "textures": "textures/items/lunamutatio_skeleton_spawn_egg"
+    },
+    "hiddenyears:lunamutatio_zombie_spawn_egg": {
+      "textures": "textures/items/lunamutatio_zombie_spawn_egg"
+    },
     "hiddenyears:magic_archer_skill_1": {
       "textures": "textures/items/magic_archer_skill_1"
     },

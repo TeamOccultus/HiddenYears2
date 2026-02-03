@@ -1354,5 +1354,9 @@
   "skill.cooldown": "技能冷却中！",
   "item.hiddenyears:stone_embryo":"石胚",
   "item.hiddenyears:netherrack_embryo":"下界岩胚",
-  "item.hiddenyears:end_stone_embryo":"末地石胚"
+  "item.hiddenyears:end_stone_embryo":"末地石胚",
+  "entity.hiddenyears:lunamutatio_zombie.name": "月蚀僵尸",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_zombie.name": "月蚀僵尸刷怪蛋",
+  "entity.hiddenyears:lunamutatio_skeleton.name": "月蚀骷髅",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_skeleton.name": "月蚀骷髅刷怪蛋"
 }
