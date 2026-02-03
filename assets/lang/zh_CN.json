@@ -672,8 +672,8 @@
   "task.copper.desc": "大量存在于世界的金属，可以合成工具盔甲，不过容易因时间而「锈蚀」",
   "task.copper.tips": "铜工具、武器并不会锈蚀",
   "task.refined_rock": "§d[基础材料]§r 悠古的磐岩",
-  "task.refined_rock.desc": "熔炼石头、下界岩或末地石就可以获得这种精炼过后的材料，至于原理，谁知道呢？",
-  "task.refined_rock.tips": "在高炉中熔炼圆石、下界岩或末地石",
+  "task.refined_rock.desc": "熔炼石头、下界岩或末地石的石胚就可以获得这种精炼过后的材料，至于原理，谁知道呢？",
+  "task.refined_rock.tips": "将岩石按照「X」形合成石胚，再熔炼对应的石胚即可获得精炼岩锭",
   "task.iron": "§d[基础材料]§r 陨星的结晶",
   "task.iron.desc": "这种物质来自于星海之间，如今成为了大陆上最常见的材料",
   "task.saw": "§d[工具与武器]§r 手锯……狂人？",
@@ -1351,5 +1351,8 @@
   "skill.arcane_wizard.2": "神圣爆发",
   "skill.magic_archer.1": "附魔之箭",
   "skill.magic_archer.2": "共鸣领域",
-  "skill.cooldown": "技能冷却中！"
+  "skill.cooldown": "技能冷却中！",
+  "item.hiddenyears:stone_embryo":"石胚",
+  "item.hiddenyears:netherrack_embryo":"下界岩胚",
+  "item.hiddenyears:end_stone_embryo":"末地石胚"
 }
