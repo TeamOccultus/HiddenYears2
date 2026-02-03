@@ -133,12 +133,14 @@ const muta = new BossSkill(
   25
 );
 
-const muatsWarth = new Boss("hiddenyears:mutas_wrath", [
-  kahe,
-  osiris,
-  isis,
-  muta
-]);
+const muatsWarth = new Boss(
+  "hiddenyears:mutas_wrath",
+  [kahe, osiris, isis, muta],
+  {
+    trackId: "music.boss.common",
+    radius: 15
+  }
+);
 
 muatsWarth.onDie((arg) => {
   const dim = arg.deadEntity.dimension;
