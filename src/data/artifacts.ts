@@ -522,7 +522,7 @@ imprisonedWing.onHitEntity((arg) => {
       excludeFamilies: ["boss"]
     })
     .forEach((entity) => {
-      if (!entity.hasTag("hiddenyears:imprisoned_wing")) return;
+      if (entity.hasTag("hiddenyears:imprisoned_wing")) return;
       if (!entity.isValid) return;
       entity.applyDamage(Random.integer(12, 8), {
         cause: EntityDamageCause.void
