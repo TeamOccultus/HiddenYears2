@@ -61,15 +61,8 @@ const skill1 = new JobSkill(
 );
 
 skill1.onRelease((arg) => {
-  const { source, itemStack } = arg;
-  if (isInCooldown(itemStack, source)) {
-    source.onScreenDisplay.setActionBar({
-      translate: "skill.cooldown"
-    });
-    return;
-  }
+  const { source } = arg;
   source.addTag("hiddenyears:warrior_skill_1");
-  startCooldown(itemStack, source);
   system.runTimeout(() => {
     if (source.isValid) {
       source.removeTag("hiddenyears:warrior_skill_1");
@@ -89,13 +82,7 @@ const skill2 = new JobSkill(
 );
 
 skill2.onRelease((arg) => {
-  const { source, itemStack } = arg;
-  if (isInCooldown(itemStack, source)) {
-    source.onScreenDisplay.setActionBar({
-      translate: "skill.cooldown"
-    });
-    return;
-  }
+  const { source } = arg;
   const entities = new EntitiesUtils(source.dimension, {
     families: ["monster"]
   });
@@ -109,7 +96,6 @@ skill2.onRelease((arg) => {
     );
   });
   source.addTag("hiddenyears:warrior_skill_2");
-  startCooldown(itemStack, source);
   system.runTimeout(() => {
     if (source.isValid) {
       source.removeTag("hiddenyears:warrior_skill_2");
