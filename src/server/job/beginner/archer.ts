@@ -76,6 +76,7 @@ skill2.onRelease((arg) => {
 
 archer.config.skills = [skill1, skill2];
 
+// 属性“onProjectHitEntity”在类型“Job”上不存在。你是否指的是“onProjectileHitEntity”?
 archer.onProjectileHitEntity((arg, player) => {
   const entity = arg.getEntityHit().entity;
   if (!entity) return;
