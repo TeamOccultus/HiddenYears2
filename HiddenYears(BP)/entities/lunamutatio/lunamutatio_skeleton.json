@@ -16,8 +16,7 @@
         },
         "minecraft:shooter": {
           "def": "minecraft:arrow",
-          "sound": "bow",
-          "aux_val": 20
+          "sound": "bow"
         },
         "minecraft:environment_sensor": {
           "triggers": {
@@ -117,8 +116,7 @@
       },
       "minecraft:shooter": {
         "def": "minecraft:arrow",
-          "sound": "bow",
-          "aux_val": 20
+        "sound": "bow"
       },
       "minecraft:environment_sensor": {
         "triggers": {

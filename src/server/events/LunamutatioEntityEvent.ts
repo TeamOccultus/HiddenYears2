@@ -12,5 +12,14 @@ export class LunamutatioEntityEvent {
         hitEntity.addEffect("wither", 5 * 20);
       }).call();
     });
+    world.afterEvents.projectileHitEntity.subscribe((event) => {
+      const { source } = event;
+      if (!source.matches({ families: ["lunamutatio_monster"] })) return;
+      if (!event.getEntityHit().entity) return;
+      if (!event.getEntityHit().entity.isValid) return;
+      new RandomEvent(0.6, () => {
+        event.getEntityHit().entity.addEffect("wither", 5 * 20);
+      }).call();
+    });
   }
 }
