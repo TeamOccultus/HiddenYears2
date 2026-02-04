@@ -23,7 +23,8 @@ export const magicArcher = new Job(
   }
 );
 
-magicArcher.onProjectHitEntity((arg) => {
+// 已严肃修复漏洞：属性“onProjectHitEntity”在类型“Job”上不存在。你是否指的是“onProjectileHitEntity”? —AAA 漓江猫猫批发方总
+magicArcher.onProjectileHitEntity((arg) => {
   const hurtEntity = arg.getEntityHit().entity;
   if (!hurtEntity.isValid) return;
   const eventData: EventListData[] = [
