@@ -86,8 +86,8 @@
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
       "minecraft:health": {
-        "value": 60,
-        "max": 60
+        "value": 80,
+        "max": 80
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -110,7 +110,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": [7, 11]
+        "damage": [8, 12]
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/lunamutatio_pastor.json"
