@@ -57,18 +57,9 @@ const skill1 = new JobSkill(
   },
   {
     text: "？？？"
-  }
+  },
+  8 * TicksPerSecond
 );
-
-skill1.onRelease((arg) => {
-  const { source } = arg;
-  source.addTag("hiddenyears:warrior_skill_1");
-  system.runTimeout(() => {
-    if (source.isValid) {
-      source.removeTag("hiddenyears:warrior_skill_1");
-    }
-  }, 8 * 20);
-});
 
 const skill2 = new JobSkill(
   "hiddenyears:warrior_skill_2",
@@ -78,12 +69,15 @@ const skill2 = new JobSkill(
   },
   {
     text: "？？？"
-  }
+  },
+  10 * TicksPerSecond
 );
 
 skill2.onRelease((arg) => {
   const { source } = arg;
   const entities = new EntitiesUtils(source.dimension, {
+    location: source.location,
+    maxDistance: 3,
     families: ["monster"]
   });
   entities.applyDamage(6, {
@@ -95,12 +89,6 @@ skill2.onRelease((arg) => {
       entity.location
     );
   });
-  source.addTag("hiddenyears:warrior_skill_2");
-  system.runTimeout(() => {
-    if (source.isValid) {
-      source.removeTag("hiddenyears:warrior_skill_2");
-    }
-  }, 10 * 20);
 });
 
 warrior.config.skills = [skill1, skill2];
@@ -111,36 +99,38 @@ warrior.onUpgrade((arg) => {
   }
 });
 
-warrior.onHitEntity((arg) => {
-  const player = arg.damagingEntity as Player;
+warrior.onHitEntity((_arg, player) => {
   if (new RandomEvent(warrior.getLevel(player) * 0.1, () => {}).call()) {
     player.addEffect("strength", 3 * TicksPerSecond, { amplifier: 2 });
   }
 });
 
-warrior.onCauseDamage((arg) => {
-  const { damage, damageSource, hurtEntity } = arg;
-  const entity = damageSource.damagingEntity;
-  if (!damageSource.damagingEntity) return;
-  if (!(entity instanceof Player)) return;
-  if (damageSource.damagingEntity?.hasTag("hiddenyears:warrior_skill_1")) {
-    hurtEntity.applyDamage(warrior.getLevel(entity) * 0.6, {
-      cause: EntityDamageCause.none,
-      damagingEntity: null
+warrior.onCauseDamage((arg, player) => {
+  const { damageSource, hurtEntity } = arg;
+  if (damageSource.cause !== EntityDamageCause.entityAttack) return;
+  if (skill1.isReleasing(player)) {
+    hurtEntity.applyDamage(warrior.getLevel(player) * 0.6, {
+      cause: EntityDamageCause.none
     });
     hurtEntity.dimension.spawnParticle(
       "minecraft:critical_hit_emitter",
       hurtEntity.location
     );
   }
-  if (damageSource.damagingEntity?.hasTag("hiddenyears:warrior_skill_2")) {
-    hurtEntity.applyDamage(warrior.getLevel(entity) * 0.8, {
-      cause: EntityDamageCause.none,
-      damagingEntity: null
+  if (skill2.isReleasing(player)) {
+    const entities = new EntitiesUtils(player.dimension, {
+      location: player.location,
+      maxDistance: 8,
+      families: ["monster"]
     });
-    hurtEntity.dimension.spawnParticle(
-      "minecraft:critical_hit_emitter",
-      hurtEntity.location
-    );
+    entities.applyDamage(warrior.getLevel(player) * 0.8, {
+      cause: EntityDamageCause.none
+    });
+    entities.tryOperateEntity((entity) => {
+      entity.dimension.spawnParticle(
+        "minecraft:critical_hit_emitter",
+        entity.location
+      );
+    });
   }
 });

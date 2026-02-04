@@ -1,7 +1,19 @@
-import { giveItem, ItemConditions, Job } from "@occultus/api";
+import {
+  EntitiesUtils,
+  giveItem,
+  ItemConditions,
+  Job,
+  JobSkill
+} from "@occultus/api";
 import { arcaneWizard } from "../advanced/arcaneWizard";
 import { conjureWizard } from "../advanced/conjureWizard";
-import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
+import {
+  EntityDamageCause,
+  ItemStack,
+  MolangVariableMap,
+  Player,
+  TicksPerSecond
+} from "@minecraft/server";
 
 export const wizard = new Job(
   "hiddenyears:wizard",
@@ -29,6 +41,59 @@ export const wizard = new Job(
   }
 );
 
+const skill1 = new JobSkill(
+  "hiddenyears:wizard_skill_1",
+  "hiddenyears:job_skill",
+  {
+    translate: "skill.wizard.1"
+  },
+  {
+    text: "？？？"
+  },
+  8 * TicksPerSecond
+);
+
+const skill2 = new JobSkill(
+  "hiddenyears:wizard_skill_2",
+  "hiddenyears:job_skill",
+  {
+    translate: "skill.wizard.2"
+  },
+  {
+    text: "？？？"
+  },
+  0
+);
+
+skill2.onRelease((arg) => {
+  const player = arg.source;
+  const entities = new EntitiesUtils(player.dimension, {
+    location: player.location,
+    maxDistance: 8,
+    families: ["monster"]
+  });
+  entities.applyDamage(wizard.getLevel(player) * 2.5, {
+    cause: EntityDamageCause.magic
+  });
+  const molang = new MolangVariableMap();
+  const rand = Math.random;
+  molang.setColorRGBA("variable", {
+    red: rand(),
+    green: rand(),
+    blue: rand(),
+    alpha: rand()
+  });
+  entities.tryOperateEntity((entity) => {
+    entity.dimension.spawnParticle(
+      "minecraft:splash_spell_emitter",
+      entity.location,
+      molang
+    );
+  });
+});
+
+wizard.config.skills = [skill1, skill2];
+
 wizard.onUpgrade((arg) => {
   if (arg.recentLevel === 10) {
     giveItem(arg.player, new ItemStack("hiddenyears:wizard_gem"));
@@ -45,4 +110,14 @@ wizard.onCauseDamage((arg) => {
   hurtEntity.applyDamage(wizard.getLevel(player) * 0.6, {
     cause: EntityDamageCause.none
   });
+  if (skill1.isReleasing(player)) {
+    const entities = new EntitiesUtils(player.dimension, {
+      location: player.location,
+      maxDistance: 5,
+      families: ["monster"]
+    });
+    entities.applyDamage(wizard.getLevel(player) * 1.2, {
+      cause: EntityDamageCause.none
+    });
+  }
 });
