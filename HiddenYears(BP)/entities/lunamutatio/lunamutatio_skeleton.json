@@ -79,8 +79,8 @@
         "breathes_water": true
       },
       "minecraft:health": {
-        "value": 45,
-        "max": 45
+        "value": 50,
+        "max": 50
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
