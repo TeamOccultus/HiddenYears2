@@ -1339,5 +1339,24 @@
   "skill.arcane_wizard.1": "Holy Word Strike",
   "skill.arcane_wizard.2": "Divine Eruption",
   "skill.magic_archer.1": "Enchanted Arrow",
-  "skill.magic_archer.2": "Resonance Domain"
+  "skill.magic_archer.2": "Resonance Domain",
+  
+  "skill.cooldown": "Skill is on cooldown!",
+  "item.hiddenyears:stone_embryo": "Stone Embryo",
+  "item.hiddenyears:netherrack_embryo": "Netherrack Embryo",
+  "item.hiddenyears:end_stone_embryo": "End Stone Embryo",
+  "entity.hiddenyears:lunamutatio_zombie.name": "Lunamutatio Zombie",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_zombie.name": "Lunamutatio Zombie Spawn Egg",
+  "entity.hiddenyears:lunamutatio_skeleton.name": "Lunamutatio Skeleton",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_skeleton.name": "Lunamutatio Skeleton Spawn Egg",
+  "entity.hiddenyears:lunamutatio_traveler.name": "Lunamutatio Traveler",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_traveler.name": "Lunamutatio Traveler Spawn Egg",
+  "entity.hiddenyears:lunamutatio_warrior.name": "Lunamutatio Warrior",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_warrior.name": "Lunamutatio Warrior Spawn Egg",
+  "entity.hiddenyears:lunamutatio_archer.name": "Lunamutatio Archer",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_archer.name": "Lunamutatio Archer Spawn Egg",
+  "entity.hiddenyears:lunamutatio_pastor.name": "Lunamutatio Pastor",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_pastor.name": "Lunamutatio Pastor Spawn Egg",
+  "entity.hiddenyears:lunamutatio_wizard.name": "Lunamutatio Wizard",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_wizard.name": "Lunamutatio Wizard Spawn Egg"
 }

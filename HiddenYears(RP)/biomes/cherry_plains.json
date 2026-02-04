@@ -1,5 +1,4 @@
 {
-  //请把我放在RP/biomes文件夹中
   "format_version": "1.21.130", //最低适配版本
   "minecraft:client_biome": {
     "description": {
@@ -10,7 +9,7 @@
         "sky_color": "#DB7093" //天空颜色，改改改
       }, //你不加这玩意那就是默认群系的天空
       "minecraft:biome_music": {
-        "music_definition": "cherry_plains"
+        "music_definition": "game"
       } //这个生物群系播不播放音乐由你说了算，填0就是不播放，把这组件删了就默认播放
     }
   }
