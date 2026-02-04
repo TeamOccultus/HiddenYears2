@@ -75,7 +75,7 @@ export class MagicBrewingStand extends BlockWithEntity {
     super(
       "hiddenyears:magic_brewing_stand",
       "hiddenyears:magic_brewing_stand",
-      "hiddenyears:magic_brewing_stand_tick"
+      // "hiddenyears:magic_brewing_stand_tick"
     );
   }
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {

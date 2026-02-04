@@ -17,7 +17,7 @@ export class Crusher extends BlockWithEntity {
     super(
       "hiddenyears:crusher",
       "hiddenyears:crusher",
-      "hiddenyears:crusher_tick"
+      // "hiddenyears:crusher_tick"
     );
   }
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {
