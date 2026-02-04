@@ -15,8 +15,9 @@ export class ArmorTypeComponent {
       item.registerCustomComponent(componentName, {});
     });
 
-    world.afterEvents.entityHealthChanged.subscribe((event) => {
+    // TODO: 重构盔甲效果相关代码
+    /*world.afterEvents.entityHealthChanged.subscribe((event) => {
       ArmorEvents.onEntityHealthChanged(componentName, event);
-    });
+    });*/
   }
 }
