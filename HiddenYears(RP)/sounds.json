@@ -371,15 +371,12 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.lunamutatio.say",
-          "hurt": {
-            "sound": "mob.lunamutatio.hurt",
-            "volume": 0.7
-          },
-          "death": "mob.lunamutatio.death",
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
           "step": {
             "sound": "mob.zombie.step",
-            "volume": 1.0,
+            "volume": 0.45,
             "pitch": 1.0
           }
         }
