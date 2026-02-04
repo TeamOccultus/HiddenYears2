@@ -380,6 +380,62 @@
             "pitch": 1.0
           }
         }
+      },
+      "hiddenyears:lunamutatio_wizard": {
+        "volume": 1.0,
+        "pitch": [1.5, 2.0],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "hiddenyears:lunamutatio_warrior": {
+        "volume": 1.0,
+        "pitch": [1.5, 2.0],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "hiddenyears:lunamutatio_pastor": {
+        "volume": 1.0,
+        "pitch": [1.5, 2.0],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
+      },
+      "hiddenyears:lunamutatio_archer": {
+        "volume": 1.0,
+        "pitch": [1.5, 2.0],
+        "events": {
+          "ambient": "mob.zombie.say",
+          "hurt": "mob.zombie.hurt",
+          "death": "mob.zombie.death",
+          "step": {
+            "sound": "mob.zombie.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
       }
     }
   }
