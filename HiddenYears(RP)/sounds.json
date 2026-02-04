@@ -338,7 +338,7 @@
       },
       "hiddenyears:lunamutatio_zombie": {
         "volume": 1.0,
-        "pitch": [0.8, 1.2],
+        "pitch": [1.5, 2.0],
         "events": {
           "ambient": "mob.zombie.say",
           "hurt": "mob.zombie.hurt",
@@ -352,7 +352,7 @@
       },
       "hiddenyears:lunamutatio_skeleton": {
         "volume": 1.0,
-        "pitch": [0.8, 1.2],
+        "pitch": [1.5, 2.0],
         "events": {
           "ambient": "mob.skeleton.say",
           "hurt": {
