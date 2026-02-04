@@ -278,6 +278,37 @@
       "max_distance": null,
       "min_distance": null,
       "sounds": ["sounds/mob/mutas_wrath_say"]
+    },
+    "mob.lunamutatio.death": {
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/lunamutatio_death_1",
+        "sounds/mob/lunamutatio_death_2"
+      ]
+    },
+    "mob.lunamutatio.hurt": {
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/lunamutatio_hurt_1",
+        "sounds/mob/lunamutatio_hurt_2",
+        "sounds/mob/lunamutatio_hurt_3",
+        "sounds/mob/lunamutatio_hurt_4",
+        "sounds/mob/lunamutatio_hurt_5"
+      ]
+    },
+    "mob.lunamutatio.say": {
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/lunamutatio_say_1",
+        "sounds/mob/lunamutatio_say_2",
+        "sounds/mob/lunamutatio_say_3"
+      ]
     }
   }
 }

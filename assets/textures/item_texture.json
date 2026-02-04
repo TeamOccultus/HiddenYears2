@@ -326,6 +326,21 @@
     "hiddenyears:egg_king_of_ruby": {
       "textures": "textures/items/egg_king_of_ruby"
     },
+    "hiddenyears:egg_lunamutatio_archer": {
+      "textures": "textures/items/egg_lunamutatio_archer"
+    },
+    "hiddenyears:egg_lunamutatio_pastor": {
+      "textures": "textures/items/egg_lunamutatio_pastor"
+    },
+    "hiddenyears:egg_lunamutatio_traveler": {
+      "textures": "textures/items/egg_lunamutatio_traveler"
+    },
+    "hiddenyears:egg_lunamutatio_warrior": {
+      "textures": "textures/items/egg_lunamutatio_warrior"
+    },
+    "hiddenyears:egg_lunamutatio_wizard": {
+      "textures": "textures/items/egg_lunamutatio_wizard"
+    },
     "hiddenyears:egg_mummy": {
       "textures": "textures/items/egg_mummy"
     },

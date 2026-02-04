@@ -1358,5 +1358,15 @@
   "entity.hiddenyears:lunamutatio_zombie.name": "月蚀僵尸",
   "item.spawn_egg.entity.hiddenyears:lunamutatio_zombie.name": "月蚀僵尸刷怪蛋",
   "entity.hiddenyears:lunamutatio_skeleton.name": "月蚀骷髅",
-  "item.spawn_egg.entity.hiddenyears:lunamutatio_skeleton.name": "月蚀骷髅刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_skeleton.name": "月蚀骷髅刷怪蛋",
+  "entity.hiddenyears:lunamutatio_traveler.name": "月蚀旅者",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_traveler.name":"月蚀旅者刷怪蛋",
+  "entity.hiddenyears:lunamutatio_warrior.name": "月蚀战士",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_warrior.name":"月蚀战士刷怪蛋",
+  "entity.hiddenyears:lunamutatio_archer.name": "月蚀弓箭手",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_archer.name":"月蚀弓箭手刷怪蛋",
+  "entity.hiddenyears:lunamutatio_pastor.name": "月蚀牧师",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_pastor.name":"月蚀牧师刷怪蛋",
+  "entity.hiddenyears:lunamutatio_wizard.name": "月蚀法师",
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_wizard.name":"月蚀法师刷怪蛋"
 }
