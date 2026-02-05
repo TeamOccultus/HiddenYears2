@@ -8,7 +8,7 @@ export class SpecificDamageComponent {
       item.registerCustomComponent(componentName, {
         onHitEntity(arg0, arg1) {
           WeaponEvent.onSpecificDamageHitEntity(arg0, arg1);
-        }
+        },
       });
     });
   }
