@@ -2,6 +2,7 @@
 node_modules/
 output/
 HiddenYears(BP)/scripts/main.js
+HiddenYears(BP)/scripts/main.js.map
 HiddenYears(BP)/scripts/index.js
 HiddenYears(RP)/texts/
 HiddenYears(RP)/textures/

@@ -21,8 +21,8 @@ importers:
         specifier: ^0.18.4
         version: 0.18.4(@minecraft/server@2.4.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.21.90-preview.20))
       '@occultus/loom':
-        specifier: ^1.0.0-rc.1
-        version: 1.0.0-rc.1(@types/node@24.2.1)
+        specifier: ^1.1.0
+        version: 1.1.0(@types/node@24.2.1)
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -457,8 +457,8 @@ packages:
     peerDependencies:
       '@minecraft/server': '>=2.0.0'
 
-  '@occultus/loom@1.0.0-rc.1':
-    resolution: {integrity: sha512-+4kuuyjwhb8CB/qU+QqKDE69UCzz406Rvipk+DgyPZwAwmBEQqI/nWaJLX66dZUWmcprZmS55XtsX8QOGP2v8g==}
+  '@occultus/loom@1.1.0':
+    resolution: {integrity: sha512-E8yrfHHEK9iuG8rbXb9W0mkKVs3KPQFXBK/OLwysaBSoWWWnxS0LodAB68GY8qcyFzqHXKM8/SwGxnD+kHqrwg==}
     hasBin: true
 
   '@occultus/loot-api@0.20.0':
@@ -1245,7 +1245,7 @@ snapshots:
     transitivePeerDependencies:
       - '@occultus/core'
 
-  '@occultus/loom@1.0.0-rc.1(@types/node@24.2.1)':
+  '@occultus/loom@1.1.0(@types/node@24.2.1)':
     dependencies:
       '@inquirer/prompts': 8.2.0(@types/node@24.2.1)
       chalk: 5.6.2
