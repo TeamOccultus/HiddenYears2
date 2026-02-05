@@ -1,0 +1,64 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:sacred_sword",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_weapon": {
+        "type": "sword"
+      },
+      "hiddenyears:weapon_type": {
+        "type": "sword"
+      },
+      "hiddenyears:specific_damage": [
+        {
+          "family": "lunamutatio_monster",
+          "damage": [12, 8]
+        }
+      ],
+      "minecraft:rarity": "epic",
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:durability": {
+        "max_durability": 1200
+      },
+      "minecraft:damage": 7,
+      "minecraft:digger": {
+        "use_efficiency": true,
+        "destroy_speeds": [
+          {
+            "block": {
+              "tags": "query.any_tag( 'minecraft:is_sword_item_destructible' )"
+            },
+            "speed": 15
+          }
+        ]
+      },
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "sword"
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:icon": "hiddenyears:sacred_sword",
+      "minecraft:max_stack_size": 1,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hiddenyears:sacred_sword"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": [
+          "minecraft:is_sword",
+          "minecraft:is_tool",
+          "hiddenyears:legend_weapons"
+        ]
+      }
+    }
+  }
+}

@@ -910,6 +910,9 @@
     "hiddenyears:ruby_runes": {
       "textures": "textures/items/ruby_runes"
     },
+    "hiddenyears:sacred_sword": {
+      "textures": "textures/items/sacred_sword"
+    },
     "hiddenyears:sand_apple": {
       "textures": "textures/items/sand_apple"
     },
