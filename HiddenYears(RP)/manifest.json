@@ -10,8 +10,7 @@
     "description": "pack.description",
     "min_engine_version": [1, 21, 80],
     "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
-    "version": "3.0.0-alpha.9",
-    "pack_scope": "world"
+    "version": "3.0.0-alpha.9"
   },
   "modules": [
     {
