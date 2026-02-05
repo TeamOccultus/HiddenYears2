@@ -44,11 +44,9 @@ export class ArmorEffect {
       amplifier: level - 1,
       showParticles: false
     });
-    if (player instanceof Player) {
-      player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:unyielding"
-      });
-    }
+    player.onScreenDisplay.setActionBar({
+      translate: "message.hiddenyears:unyielding"
+    });
   }
   /**
    * 盔甲效果-复生
@@ -59,29 +57,34 @@ export class ArmorEffect {
     const health = player.getComponent("health");
     if (health.currentValue > 5) return;
     health.setCurrentValue(health.currentValue + 5);
-    new RandomEvent(0.5, () => {
+    new RandomEvent(0.7, () => {
       health.resetToMaxValue();
     });
-    if (player instanceof Player) {
-      player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:rebirth"
-      });
-    }
+    player.onScreenDisplay.setActionBar({
+      translate: "message.hiddenyears:rebirth"
+    });
+    player.playSound("random.totem");
   }
   /**
    * 盔甲效果-雨神之冠
    * @param changedValue
-   * @param entity
+   * @param player
    */
-  static isisArmor(changedValue: number, entity: Entity) {
-    const health = entity.getComponent(
-      "minecraft:health"
-    ) as EntityHealthComponent;
+  static isisArmor(changedValue: number, player: Player) {
+    const health = player.getComponent("minecraft:health");
     const newHealth = health.currentValue + changedValue * 0.25;
     if (newHealth > health.defaultValue) {
       health.resetToDefaultValue();
+      player.onScreenDisplay.setActionBar({
+        translate: "message.hiddenyears:isis",
+        with: [health.effectiveMax.toString()]
+      });
     } else {
       health.setCurrentValue(newHealth);
+      player.onScreenDisplay.setActionBar({
+        translate: "message.hiddenyears:isis",
+        with: [newHealth.toString()]
+      });
     }
   }
 }
@@ -94,8 +97,7 @@ export class ArmorEffectDetector {
   static readonly cacheTag = "hiddenyears:armor_effect_cache";
   static hasValidCache(player: Player) {
     return (
-      player.hasTag(this.cacheTag) &&
-      ArmorEffect.effectCache.has(player.id)
+      player.hasTag(this.cacheTag) && ArmorEffect.effectCache.has(player.id)
     );
   }
   /**
@@ -111,7 +113,9 @@ export class ArmorEffectDetector {
     const result: ArmorEffectResult[] = [];
     if (!player.isValid) return [];
     if (this.hasValidCache(player)) {
-      console.log(`Valid cache detected from player(${player.id}), read data from script environment...`);
+      console.log(
+        `Valid cache detected from player(${player.id}), read data from script environment...`
+      );
       return ArmorEffect.effectCache.get(player.id);
     }
     for (const slot of ArmorEffect.searchSlots) {

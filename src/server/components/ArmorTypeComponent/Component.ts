@@ -1,11 +1,7 @@
 import {
-  EntityHealthComponent,
-  EquipmentSlot,
   system,
   world
 } from "@minecraft/server";
-import { ArmorTypeParams } from "./Params";
-import { getEquipmentItem } from "@occultus/api";
 import { ArmorEvents } from "../../events/ArmorEvents";
 
 export class ArmorTypeComponent {
