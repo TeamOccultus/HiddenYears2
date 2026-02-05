@@ -4,10 +4,5 @@ export type WeaponTypeSchema = {
     | "suffering"
     | "shattered_sand_cudgel"
     | "shattered_sand_staff";
-  specific_damage?: SpecificDamageType[];
 };
 
-export type SpecificDamageType = {
-  family: string;
-  damage: number | [number, number];
-};

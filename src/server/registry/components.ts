@@ -33,6 +33,7 @@ import { ArmorTypeComponent } from "../components/ArmorTypeComponent/Component";
 import { ComplexPotionComponent } from "../components/ComplexPotionComponent/Component";
 import { ReturnGemComponent } from "../components/ReturnGemComponent/Component";
 import { ProfileComponent } from "../components/ProfileComponent/Component";
+import { SpecificDamageComponent } from "../components/SpecificDamageComponent/Component";
 
 /**
  * 注册自定义组件
@@ -60,6 +61,7 @@ export function registryComponents() {
   new ProfileComponent("hiddenyears:profile");
   new ReturnGemComponent("hiddenyears:return_gem");
   new JobSkillComponent("hiddenyears:job_skill");
+  new SpecificDamageComponent("hiddenyears:specific_damage");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
