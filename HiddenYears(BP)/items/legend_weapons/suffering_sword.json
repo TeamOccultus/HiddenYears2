@@ -15,6 +15,12 @@
         "type": "sword",
         "legend_weapon": "suffering"
       },
+      "hiddenyears:specific_damage": [
+        {
+          "family": "lunamutatio_monster",
+          "damage": [7, 5]
+        }
+      ],
       "minecraft:rarity": "rare",
       "minecraft:display_name": {
         "value": "%ui.suffering_sword\n%tooltip.suffering_sword"

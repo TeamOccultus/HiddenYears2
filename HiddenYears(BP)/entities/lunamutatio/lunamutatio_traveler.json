@@ -64,6 +64,7 @@
       "minecraft:type_family": {
         "family": [
           "lunamutatio_traveler",
+          "lunamutatio_monster",
           "undead",
           "monster",
           "mob"

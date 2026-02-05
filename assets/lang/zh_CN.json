@@ -1368,5 +1368,6 @@
   "entity.hiddenyears:lunamutatio_pastor.name": "月蚀牧师",
   "item.spawn_egg.entity.hiddenyears:lunamutatio_pastor.name":"月蚀牧师刷怪蛋",
   "entity.hiddenyears:lunamutatio_wizard.name": "月蚀法师",
-  "item.spawn_egg.entity.hiddenyears:lunamutatio_wizard.name":"月蚀法师刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_wizard.name":"月蚀法师刷怪蛋",
+  "ui.specific_damage": "对敌人造成了 %s 点额外伤害！"
 }
