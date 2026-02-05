@@ -91,6 +91,9 @@
     "hiddenyears:deepslate_silver_ore": {
       "textures": "textures/blocks/deepslate_silver_ore"
     },
+    "hiddenyears:desert_casket": {
+      "textures": "textures/blocks/desert_casket"
+    },
     "hiddenyears:drift_sand_cabinet": {
       "textures": "textures/blocks/drift_sand_cabinet"
     },
