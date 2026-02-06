@@ -69,3 +69,5 @@ skill2.onRelease((arg) => {
   });
   utils.applyDamage(5, { cause: EntityDamageCause.magic });
 });
+
+conjureWizard.config.skills = [skill1, skill2];
