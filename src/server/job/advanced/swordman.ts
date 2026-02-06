@@ -1,8 +1,10 @@
-import { EntityDamageCause, Player } from "@minecraft/server";
+import { EntityDamageCause, Player, TicksPerSecond } from "@minecraft/server";
 import {
+  EntitiesUtils,
   getEquipmentItem,
   ItemConditions,
   Job,
+  JobSkill,
   RandomEvent
 } from "@occultus/api";
 
@@ -22,6 +24,58 @@ export const swordman = new Job(
   }
 );
 
+const skill1 = new JobSkill(
+  "hiddenyears:swordman_skill_1",
+  "hiddenyears:job_skill",
+  {
+    translate: "skill.swordman.1"
+  },
+  {
+    text: "？？？"
+  },
+  5 * TicksPerSecond
+);
+
+const skill2 = new JobSkill(
+  "hiddenyears:swordman_skill_2",
+  "hiddenyears:job_skill",
+  {
+    translate: "skill.swordman.2"
+  },
+  {
+    text: "？？？"
+  },
+  5 * TicksPerSecond
+);
+
+skill1.onRelease((arg) => {
+  const player = arg.source;
+  new EntitiesUtils(player.dimension, {
+    location: player.location,
+    maxDistance: 3,
+    families: ["monster"]
+  }).applyDamage(5, { cause: EntityDamageCause.none });
+});
+
+skill2.onRelease((arg) => {
+  const player = arg.source;
+  const utils = new EntitiesUtils(player.dimension, {
+    location: player.location,
+    maxDistance: 6,
+    families: ["monster"]
+  });
+  utils.applyDamage(3 + swordman.getLevel(player) * 1.2, {
+    cause: EntityDamageCause.none
+  });
+  utils.applyEffectData({
+    effectType: "minecraft:slowness",
+    duration: 15 * TicksPerSecond,
+    amplifier: 1
+  });
+});
+
+swordman.config.skills = [skill1, skill2];
+
 // 这里不能用hit entity之后等待hurt事件来实现，MS的时序炸的干干净净，全都是race condition
 // 我草泥马Mojang到底是怎么想的
 swordman.onCauseDamage((arg) => {
@@ -29,8 +83,6 @@ swordman.onCauseDamage((arg) => {
   if (arg.damageSource.cause !== EntityDamageCause.entityAttack) return;
   const player = arg.damageSource.damagingEntity as Player;
   const mainHandItem = getEquipmentItem(player);
-  // 要求主手得是剑
-  // 这样，近战+主手是剑，也就是用剑攻击
   if (!mainHandItem?.hasTag("minecraft:is_sword")) return;
   if (new RandomEvent(0.25, () => {}).call()) {
     player.onScreenDisplay.setActionBar({
