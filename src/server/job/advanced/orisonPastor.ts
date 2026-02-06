@@ -1,5 +1,19 @@
-import { Player } from "@minecraft/server";
-import { heal, ItemConditions, Job, RandomEvent } from "@occultus/api";
+import { EntityDamageCause, Player, TicksPerSecond } from "@minecraft/server";
+import {
+  EntitiesUtils,
+  heal,
+  ItemConditions,
+  Job,
+  JobSkill,
+  RandomEvent
+} from "@occultus/api";
+
+function orisonPastorSkilled(player: Player): boolean {
+  return (
+    player.hasTag("hiddenyears:orison_pastor_skill_1") ||
+    player.hasTag("hiddenyears:orison_pastor_skill_2")
+  );
+}
 
 export const orisonPastor = new Job(
   "hiddenyears:orison_pastor",
@@ -17,9 +31,63 @@ export const orisonPastor = new Job(
   }
 );
 
+const skill1 = new JobSkill(
+  "hiddenyears:orison_pastor_skill_1",
+  "hiddenyears:job_skill",
+  {
+    translate: "skill.orison_pastor.1"
+  },
+  {
+    text: "？？？"
+  },
+  5 * TicksPerSecond
+);
+
+const skill2 = new JobSkill(
+  "hiddenyears:orison_pastor_skill_2",
+  "hiddenyears:job_skill",
+  {
+    translate: "skill.orison_pastor.2"
+  },
+  {
+    text: "？？？"
+  },
+  5 * TicksPerSecond
+);
+
+skill1.onRelease((arg) => {
+  const player = arg.source;
+  new EntitiesUtils(player.dimension, {
+    location: player.location,
+    maxDistance: 3,
+    families: ["player"]
+  }).tryOperateEntity((entity) => {
+    heal(entity, orisonPastor.getLevel(player) * 2.5);
+  });
+});
+
+// 对自己和半径 5 格内所有玩家回复等级*3的生命值，并为其添加伤害吸收 II 15秒
+skill2.onRelease((arg) => {
+  const player = arg.source;
+  const utils = new EntitiesUtils(player.dimension, {
+    location: player.location,
+    maxDistance: 5,
+    families: ["player"]
+  });
+  utils.tryOperateEntity((entity) => {
+    heal(entity, orisonPastor.getLevel(player) * 3);
+    entity.addEffect("minecraft:absorption", 15 * TicksPerSecond, {
+      amplifier: 1
+    });
+  });
+});
+
+orisonPastor.config.skills = [skill1, skill2];
+
 orisonPastor.onHurt((arg) => {
-  // 该标签代表该玩家释放的牧师技能正在生效中
-  if (arg.hurtEntity.hasTag("hiddenyears:skilled")) {
+  const player = arg.hurtEntity as Player;
+  // 被动技能
+  if (orisonPastorSkilled(player)) {
     new RandomEvent(0.3, () => {
       heal(
         arg.hurtEntity,
