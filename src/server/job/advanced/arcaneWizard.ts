@@ -84,6 +84,8 @@ skill2.onRelease((arg) => {
   }, 15 * TicksPerSecond);
 });
 
+arcaneWizard.config.skills = [skill1, skill2];
+
 arcaneWizard.onCauseDamage((arg) => {
   if (arg.damageSource.cause != EntityDamageCause.magic) return;
   const player = arg.damageSource.damagingEntity as Player;
