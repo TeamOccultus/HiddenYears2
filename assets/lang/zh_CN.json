@@ -1401,5 +1401,6 @@
   "tips.hiddenyears:midgameTips.15": "§d[隐藏之年²]§r 部分特殊的工具有着独特的力量，在用其攻击时会触发战技。",
   "tips.hiddenyears:midgameTips.16": "§d[隐藏之年²]§r 可以用矿物强化煤炭或燃金，使其可以燃烧更长时间。",
   "tips.hiddenyears:midgameTips.17": "§d[隐藏之年²]§r 使用怪物掉落的「徽章」可以增加玩家的最大生命值。",
-  "tips.hiddenyears:midgameTips.18": "§d[隐藏之年²]§r 用燧石在工作台上打磨小刀来获得匕首。"
+  "tips.hiddenyears:midgameTips.18": "§d[隐藏之年²]§r 用燧石在工作台上打磨小刀来获得匕首。",
+  "message.hiddenyears:critical_next_attack": "职业的直觉让你下次攻击必定暴击……"
 }
