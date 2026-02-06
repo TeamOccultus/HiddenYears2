@@ -76,8 +76,6 @@ skill2.onRelease((arg) => {
 
 swordman.config.skills = [skill1, skill2];
 
-// 这里不能用hit entity之后等待hurt事件来实现，MS的时序炸的干干净净，全都是race condition
-// 我草泥马Mojang到底是怎么想的
 swordman.onCauseDamage((arg) => {
   // 这个是为了防止非近战攻击触发
   if (arg.damageSource.cause !== EntityDamageCause.entityAttack) return;
