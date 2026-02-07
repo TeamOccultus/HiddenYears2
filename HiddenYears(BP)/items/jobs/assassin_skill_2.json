@@ -16,7 +16,7 @@
       "minecraft:cooldown": {
         "category": "hiddenyears:assassin_skill_2",
         "type": "use",
-        "duration": 40
+        "duration": 10
       },
       "minecraft:icon": "hiddenyears:assassin_skill_2",
       "minecraft:rarity": "rare",
