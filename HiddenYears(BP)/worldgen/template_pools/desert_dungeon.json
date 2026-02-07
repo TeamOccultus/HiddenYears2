@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:desert_dungeon"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/desert_dungeon",
+          "processors": "hiddenyears:become_craked"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

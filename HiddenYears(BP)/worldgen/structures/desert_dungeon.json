@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "hiddenyears:desert_dungeon"
+    },
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 5,
+    "start_height": {
+      "type": "constant",
+      "value": {
+        "absolute": -35
+      }
+    },
+    "start_pool": "hiddenyears:desert_dungeon",
+    "step": "underground_structures",
+    "terrain_adaptation": "bury",
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "desert"
+      }
+    ]
+  }
+}
