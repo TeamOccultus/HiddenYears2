@@ -11,7 +11,7 @@
         "default": "textures/entity/lunamutatio_archer"
       },
       "geometry": {
-        "default": "geometry.humanoid"
+        "default": "geometry.humanoid.custom"
       },
       "spawn_egg": {
         "texture": "hiddenyears:egg_lunamutatio_archer"
