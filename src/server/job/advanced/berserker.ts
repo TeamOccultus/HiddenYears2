@@ -77,7 +77,7 @@ berserker.onHitEntity((arg) => {
     healthComponent.effectiveMax - healthComponent.currentValue;
   hurtEntity.applyDamage(damagedAmount * 0.8);
   // 在技能 2 发动期间，对目标造成额外伤害
-  if (player.hasTag("berserker_skill_2")) {
+  if (skill2.isReleasing(player)) {
     const currentHealth = getCurrentHealth(player);
     if (currentHealth > 5) {
       const damage = (berserker.getLevel(player) * 30) / (currentHealth - 5);

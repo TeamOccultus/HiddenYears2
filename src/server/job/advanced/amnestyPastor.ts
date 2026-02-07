@@ -53,8 +53,6 @@ const skill2 = new JobSkill(
   10 * TicksPerSecond
 );
 
-skill1.onRelease((arg) => {});
-
 skill2.onRelease((arg) => {
   const player = arg.source;
   new EntitiesUtils(player.dimension, {
@@ -67,6 +65,10 @@ skill2.onRelease((arg) => {
     amplifier: 2
   });
   const handle = system.runInterval(() => {
+    if (!skill2.isReleasing(player)) {
+      system.clearRun(handle);
+      return;
+    }
     new EntitiesUtils(player.dimension, {
       location: player.location,
       maxDistance: 8,
@@ -75,9 +77,6 @@ skill2.onRelease((arg) => {
       cause: EntityDamageCause.none
     });
   }, 1 * TicksPerSecond);
-  system.runTimeout(() => {
-    system.clearRun(handle);
-  }, 10 * TicksPerSecond);
 });
 
 amnestyPastor.config.skills = [skill1, skill2];
@@ -90,11 +89,11 @@ amnestyPastor.onHitEntity((arg) => {
   const hurtEntity = arg.hitEntity;
   if (!hurtEntity.isValid) return;
   let chance = 0.5;
-  if (player.hasTag("hiddenyears:amnesty_pastor_skill_2")) chance = 1;
+  if (skill2.isReleasing(player)) chance = 1;
   new RandomEvent(chance, () => {
     hurtEntity.addEffect("minecraft:weakness", 15 * TicksPerSecond);
   }).call();
-  if (player.hasTag("hiddenyears:amnesty_pastor_skill_1")) {
+  if (skill1.isReleasing(player)) {
     const damage = 5 + amnestyPastor.getLevel(player) * 1.2;
     hurtEntity.applyDamage(damage, {
       cause: EntityDamageCause.none

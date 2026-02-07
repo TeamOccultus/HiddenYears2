@@ -91,6 +91,7 @@ skill2.onRelease((arg) => {
 magicArcher.config.skills = [skill1, skill2];
 
 // 已严肃修复漏洞：属性“onProjectHitEntity”在类型“Job”上不存在。你是否指的是“onProjectileHitEntity”? —AAA 漓江猫猫批发方总
+// 我错了。-RRR伤害钻石批发生总
 magicArcher.onProjectileHitEntity((arg) => {
   const hurtEntity = arg.getEntityHit().entity;
   const player = arg.source as Player;
@@ -119,12 +120,13 @@ magicArcher.onProjectileHitEntity((arg) => {
   ];
   new EventList(eventData).call();
   if (hasEnhanced(player)) {
+    // TODO：方总你忘记移除了，现在刀刀烈火刀刀爆
     hurtEntity.applyDamage(0.8 * magicArcher.getLevel(player), {
       cause: EntityDamageCause.magic,
       damagingEntity: null
     });
   }
-  if (player.hasTag("hiddenyears:magic_archer_skill_2")) {
+  if (skill2.isReleasing(player)) {
     hurtEntity.applyDamage(0.6 * magicArcher.getLevel(player), {
       cause: EntityDamageCause.magic,
       damagingEntity: null

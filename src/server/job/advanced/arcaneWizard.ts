@@ -71,6 +71,10 @@ skill1.onRelease((arg) => {
 skill2.onRelease((arg) => {
   const player = arg.source;
   const handle = system.runInterval(() => {
+    if (!skill2.isReleasing(player)) {
+      system.clearRun(handle);
+      return;
+    }
     new EntitiesUtils(player.dimension, {
       location: player.location,
       maxDistance: 10,
@@ -79,9 +83,6 @@ skill2.onRelease((arg) => {
       cause: EntityDamageCause.none
     });
   }, 1 * TicksPerSecond);
-  system.runTimeout(() => {
-    system.clearRun(handle);
-  }, 15 * TicksPerSecond);
 });
 
 arcaneWizard.config.skills = [skill1, skill2];
@@ -92,7 +93,7 @@ arcaneWizard.onCauseDamage((arg) => {
   new RandomEvent(0.15, () => {
     player.addEffect("minecraft:absorption", 10, { amplifier: 1 });
   }).call();
-  if (player.hasTag("hiddenyears:arcane_wizard_skill_2")) {
+  if (skill2.isReleasing(player)) {
     arg.hurtEntity.applyDamage(arcaneWizard.getLevel(player) * 0.6, {
       cause: EntityDamageCause.magic,
       damagingEntity: null
