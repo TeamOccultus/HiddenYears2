@@ -1403,5 +1403,6 @@
   "tips.hiddenyears:midgameTips.17": "§d[隐藏之年²]§r 使用怪物掉落的「徽章」可以增加玩家的最大生命值。",
   "tips.hiddenyears:midgameTips.18": "§d[隐藏之年²]§r 用燧石在工作台上打磨小刀来获得匕首。",
   "message.hiddenyears:critical_next_attack": "职业的直觉让你下次攻击必定暴击……",
-  "item.hiddenyears:farmers_hat": "农夫草帽"
+  "item.hiddenyears:farmers_hat": "农夫草帽",
+  "message.hiddenyears:cant_place": "当前所在高度无法放置结构，可用高度：[%1, %2]"
 }
