@@ -9,6 +9,7 @@ import {
 } from "@minecraft/server";
 import { StructurePlacerComponentParams } from "../components/StructurePlacerComponent/Params";
 import { consumeEquipmentAmount, setEquipmentItem } from "@occultus/api";
+import { WarningForm } from "../../ui/WarningForm";
 
 export class StructureEvents {
   static toAnimationMode(mode: string): StructureAnimationMode {

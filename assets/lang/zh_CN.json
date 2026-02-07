@@ -1404,5 +1404,8 @@
   "tips.hiddenyears:midgameTips.18": "§d[隐藏之年²]§r 用燧石在工作台上打磨小刀来获得匕首。",
   "message.hiddenyears:critical_next_attack": "职业的直觉让你下次攻击必定暴击……",
   "item.hiddenyears:farmers_hat": "农夫草帽",
-  "message.hiddenyears:cant_place": "当前所在高度无法放置结构，可用高度：[%1, %2]"
+  "message.hiddenyears:cant_place": "当前所在高度无法放置结构，可用高度：[%1, %2]",
+  "ui.warn": "警告",
+  "ui.warn.desc_1": "使用该物品会对当前地形造成极大的、不可逆的破坏",
+  "ui.warn.desc_2": "§4倘若在附近的区块中存在玩家、重要结构，请取消操作！§r"
 }
