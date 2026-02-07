@@ -207,7 +207,7 @@
         "pitch": [0.8, 1.2],
         "volume": 1.0
       },
-      "hiddenyears:drift_sand_guardian": {
+      "hiddenyears:drift_sand_bodyguard": {
         "events": {
           "ambient": "mob.pillager.idle",
           "ambient.in.raid": {
