@@ -278,7 +278,7 @@
       "max_distance": null,
       "min_distance": null,
       "sounds": ["sounds/mob/mutas_wrath_say"]
-    },
+    } /*,
     "mob.lunamutatio.death": {
       "category": "hostile",
       "max_distance": null,
@@ -309,6 +309,6 @@
         "sounds/mob/lunamutatio_say_2",
         "sounds/mob/lunamutatio_say_3"
       ]
-    }
+    }*/
   }
 }
