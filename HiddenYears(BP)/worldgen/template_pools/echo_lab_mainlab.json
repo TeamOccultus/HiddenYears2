@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:echo_lab_mainlab"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/echo_lab_mainlab",
+          "processors": "hiddenyears:echo_desert_lab"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}
