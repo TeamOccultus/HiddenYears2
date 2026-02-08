@@ -1,0 +1,165 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.king_of_ruby",
+        "texture_width": 128,
+        "texture_height": 128,
+        "visible_bounds_width": 4,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [0, 1.5, 0]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [-1, 24, 0]
+        },
+        {
+          "name": "head",
+          "parent": "body",
+          "pivot": [-1, 25, 6],
+          "cubes": [
+            { "origin": [-4, 24, 0], "size": [8, 8, 8], "uv": [56, 51] },
+            {
+              "origin": [-4.5, 20, -1],
+              "size": [9, 8, 4],
+              "pivot": [0, 24, 1],
+              "rotation": [-30, 0, 0],
+              "uv": [68, 11]
+            },
+            {
+              "origin": [-4, 24.4, 3],
+              "size": [8, 8, 6],
+              "inflate": 0.2,
+              "pivot": [0, 28.6, 5],
+              "rotation": [19, 0, 0],
+              "uv": [0, 62]
+            }
+          ]
+        },
+        {
+          "name": "crown",
+          "parent": "head",
+          "pivot": [0, 35.26568, 4.03891],
+          "cubes": [
+            {
+              "origin": [-4.5, 31.5, -0.5],
+              "size": [9, 2, 9],
+              "inflate": 0.01,
+              "uv": [18, 96]
+            },
+            { "origin": [-4, 33.5, 0], "size": [8, 4, 8], "uv": [93, 0] },
+            {
+              "origin": [-1, 32.76568, -0.46109],
+              "size": [2, 5, 9],
+              "uv": [89, 65]
+            },
+            {
+              "origin": [-1.5, 32.76568, 0.03891],
+              "size": [2, 5, 9],
+              "pivot": [-0.5, 35.26568, 4.03891],
+              "rotation": [0, 90, 0],
+              "uv": [89, 65]
+            },
+            {
+              "origin": [-1, 37.76568, 3.03891],
+              "size": [2, 2, 2],
+              "uv": [0, 0]
+            },
+            {
+              "origin": [-1, 32.5, -0.7],
+              "size": [2, 2, 1],
+              "inflate": 0.01,
+              "uv": [1, 8]
+            }
+          ]
+        },
+        {
+          "name": "rightArm",
+          "parent": "body",
+          "pivot": [-5, 18.52822, 6.32255],
+          "cubes": [
+            {
+              "origin": [-7.5, 8, -4.5],
+              "size": [5, 15, 6],
+              "pivot": [-3.5, 15, 0.5],
+              "rotation": [-80, 0, 0],
+              "uv": [60, 67]
+            }
+          ],
+          "locators": {
+            "right_hand": {
+              "offset": [-5, 16, -6],
+              "rotation": [10, 0, 0]
+            }
+          }
+        },
+        {
+          "name": "rightItem",
+          "parent": "rightArm",
+          "pivot": [-3.5, 16.66629, -5.32828],
+          "rotation": [10, 0, 0]
+        },
+        {
+          "name": "leftArm",
+          "parent": "body",
+          "pivot": [5, 18.42822, 6.32255],
+          "mirror": true,
+          "cubes": [
+            {
+              "origin": [2.5, 8, -4.5],
+              "size": [5, 15, 6],
+              "pivot": [3.5, 15, 0.5],
+              "rotation": [-80, 0, 0],
+              "uv": [60, 67]
+            }
+          ],
+          "locators": {
+            "left_hand": {
+              "offset": [5, 15.8, -6],
+              "rotation": [10, 0, 0]
+            }
+          }
+        },
+        {
+          "name": "cloak",
+          "parent": "body",
+          "pivot": [0, 19.41523, 10.43275],
+          "cubes": [
+            {
+              "origin": [-10, 13, 3.3],
+              "size": [20, 13, 14],
+              "inflate": 0.1,
+              "pivot": [0, 19.5, 9.8],
+              "rotation": [12.5, 0, 0],
+              "uv": [0, 0]
+            }
+          ]
+        },
+        {
+          "name": "cloak_2",
+          "parent": "cloak",
+          "pivot": [0, 14.29154, 14.02753],
+          "cubes": [
+            {
+              "origin": [-10, 1.69154, 7.52753],
+              "size": [20, 13, 11],
+              "pivot": [0, 14.29154, 14.02753],
+              "rotation": [17.5, 0, 0],
+              "uv": [56, 27]
+            }
+          ]
+        },
+        {
+          "name": "cloth",
+          "parent": "body",
+          "pivot": [0, 15.5, 10],
+          "cubes": [
+            { "origin": [-8, 0, 4], "size": [16, 23, 12], "uv": [0, 27] }
+          ]
+        }
+      ]
+    }
+  ]
+}

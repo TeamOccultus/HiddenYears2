@@ -15,16 +15,14 @@
       },
       "scripts": {
         "scale": "0.9375",
-        "animate": ["controller_general", "controller_move"]
+        "animate": ["controller_attack", "controller_move"]
       },
       "animations": {
-        "general": "animation.evoker.general",
-        "casting": "animation.evoker.casting",
-        "look_at_target": "animation.common.look_at_target",
-        "move": "animation.villager.move",
-        "celebrating": "animation.humanoid.celebrating",
-        "controller_general": "controller.animation.evoker.general",
-        "controller_move": "controller.animation.villager.move"
+        "move": "animation.king_of_ruby.walk",
+        "idle": "animation.king_of_ruby.idle",
+        "attack": "animation.king_of_ruby.attack",
+        "controller_move": "controller.animation.king_of_ruby.move",
+        "controller_attack": "controller.animation.king_of_ruby.attack"
       },
       "render_controllers": ["controller.render.evoker"],
       "spawn_egg": {
