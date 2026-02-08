@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:spider_dungeon"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 456370,
+      "separation": 2,
+      "spacing": 10,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:spider_dungeon",
+        "weight": 1
+      }
+    ]
+  }
+}
