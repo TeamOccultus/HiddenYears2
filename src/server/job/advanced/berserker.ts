@@ -33,7 +33,7 @@ const skill1 = new JobSkill(
   {
     text: "？？？"
   },
-  0
+  5 * TicksPerSecond
 );
 
 const skill2 = new JobSkill(
@@ -71,20 +71,19 @@ berserker.onHitEntity((arg) => {
   const hurtEntity = arg.hitEntity;
   if (!hurtEntity.isValid) return;
   const player = arg.damagingEntity as Player;
-  // 殷红之力 - 每次近战攻击时造成已损失生命值*0.8的额外伤害  
-  const healthComponent = player.getComponent("minecraft:health")!;
-  const damagedAmount = healthComponent.effectiveMax - healthComponent.currentValue;
+  const healthComponent = player.getComponent("minecraft:health");
+  if (!healthComponent) return;
+  const damagedAmount =
+    healthComponent.effectiveMax - healthComponent.currentValue;
   hurtEntity.applyDamage(damagedAmount * 0.8);
   // 在技能 2 发动期间，对目标造成额外伤害
   if (skill2.isReleasing(player)) {
-    const currentHealth = healthComponent.currentValue;
-    // 嗜血狂战：10 秒内对目标造成(等级*30)/(生命值-5) （生命值在5~20之间）的额外伤害
+    const currentHealth = getCurrentHealth(player);
     if (currentHealth > 5) {
       const damage = (berserker.getLevel(player) * 30) / (currentHealth - 5);
       hurtEntity.applyDamage(damage, { cause: EntityDamageCause.none });
       return;
     }
-    // 嗜血狂战：10 秒内对目标造成(等级*4.5) （生命值小于等于5）的额外伤害
     const damage = berserker.getLevel(player) * 4.5;
     hurtEntity.applyDamage(damage, { cause: EntityDamageCause.none });
   }
