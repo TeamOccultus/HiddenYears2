@@ -7,6 +7,9 @@
     "hiddenyears:actived_lightning_grave": {
       "textures": "textures/blocks/actived_lightning_grave"
     },
+    "hiddenyears:actived_sand_grave": {
+      "textures": "textures/blocks/actived_sand_grave"
+    },
     "hiddenyears:alchemy_table_bottom": {
       "textures": "textures/blocks/alchemy_table_bottom"
     },
@@ -177,6 +180,9 @@
     },
     "hiddenyears:sandstone_iron_ore": {
       "textures": "textures/blocks/sandstone_iron_ore"
+    },
+    "hiddenyears:sand_grave": {
+      "textures": "textures/blocks/sand_grave"
     },
     "hiddenyears:silver_block": {
       "textures": "textures/blocks/silver_block"

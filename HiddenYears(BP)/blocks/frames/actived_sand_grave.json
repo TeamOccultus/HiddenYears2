@@ -1,0 +1,65 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:actived_sand_grave",
+      "menu_category": {
+        "category": "none"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"], // Can be used in queries e.g. `q.block_state('minecraft:cardinal_direction') == 'north'`
+          "y_rotation_offset": 180 // Face towards player
+        }
+      }
+    },
+    "permutations": [
+      // Facing north
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      // Facing west
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      // Facing south
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      // Facing east
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      }
+    ],
+    "components": {
+      "minecraft:geometry": {
+        "identifier": "geometry.grave"
+      },
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 10.0
+      },
+      "minecraft:map_color": "#999999",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hiddenyears:actived_sand_grave",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_dampening": 0
+    }
+  }
+}
