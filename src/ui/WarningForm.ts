@@ -12,7 +12,7 @@ export class WarningForm {
         rawtext: [
           { translate: "ui.warn.desc_1" },
           { text: Format.newLine },
-          { translate: "ui.warn.desc_1" }
+          { translate: "ui.warn.desc_2" }
         ]
       })
       .button1({

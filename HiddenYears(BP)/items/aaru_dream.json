@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:aaru_dream",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:structure_placer": {
+        "max_height": 128,
+        "min_height": 64,
+        "id": "hiddenyears:desert_pyramid",
+        "place_offset": [2, 0, 0],
+        "show_warning": true,
+        "animation": {
+          "type": "blocks",
+          "seconds": 15
+        },
+        "present": "aaru_dream"
+      },
+      "minecraft:glint": true,
+      "minecraft:icon": "hiddenyears:desert_heart",
+      "minecraft:rarity": "epic",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

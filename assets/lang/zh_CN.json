@@ -1407,5 +1407,6 @@
   "message.hiddenyears:cant_place": "当前所在高度无法放置结构，可用高度：[%1, %2]",
   "ui.warn": "警告",
   "ui.warn.desc_1": "使用该物品会对当前地形造成极大的、不可逆的破坏",
-  "ui.warn.desc_2": "§4倘若在附近的区块中存在玩家、重要结构，请取消操作！§r"
+  "ui.warn.desc_2": "§4倘若在附近的区块中存在玩家、重要结构，请取消操作！§r",
+  "item.hiddenyears:aaru_dream": "往世之梦"
 }

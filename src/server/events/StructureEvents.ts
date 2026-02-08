@@ -34,6 +34,21 @@ export class StructureEvents {
     }
     return true;
   }
+  static aaruDreamEvent(player: Player) {
+    player.sendMessage({ translate: "monologue.hiddenyears:osiris.1" });
+    system.runTimeout(() => {
+      player.sendMessage({ translate: "monologue.hiddenyears:osiris.2" });
+    }, 60);
+    system.runTimeout(() => {
+      player.sendMessage({ translate: "monologue.hiddenyears:osiris.3" });
+    }, 120);
+    system.runTimeout(() => {
+      player.sendMessage({ translate: "monologue.hiddenyears:osiris.4" });
+    }, 180);
+    system.runTimeout(() => {
+      player.sendMessage({ translate: "monologue.hiddenyears:osiris.5" });
+    }, 240);
+  }
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const { source, itemStack } = arg0;
     const p = arg1.params as StructurePlacerComponentParams;
@@ -58,6 +73,9 @@ export class StructureEvents {
         animationMode: this.toAnimationMode(p.animation.type),
         animationSeconds: p.animation.seconds
       };
+    }
+    if(p.present==="aaru_dream"){
+      this.aaruDreamEvent(source);
     }
     world.structureManager.place(
       struc,

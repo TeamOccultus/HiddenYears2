@@ -8,4 +8,5 @@ export type StructurePlacerComponentParams = {
     type: "blocks" | "layers" | "none";
     seconds: number;
   };
+  present?: "aaru_dream";
 };
