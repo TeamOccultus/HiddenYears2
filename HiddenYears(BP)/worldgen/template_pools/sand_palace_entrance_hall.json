@@ -1,0 +1,34 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:sand_palace_entrance_hall"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/sand_palace_entrance_hall_1",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/sand_palace_entrance_hall_2",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/sand_palace_entrance_hall_3",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

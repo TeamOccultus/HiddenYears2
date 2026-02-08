@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:sand_palace_well"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/sand_palace_well",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

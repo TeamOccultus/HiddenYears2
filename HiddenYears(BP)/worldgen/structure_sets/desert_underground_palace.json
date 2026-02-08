@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:desert_underground_palace"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 692462,
+      "separation": 2,
+      "spacing": 10,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:desert_underground_palace",
+        "weight": 1
+      }
+    ]
+  }
+}
