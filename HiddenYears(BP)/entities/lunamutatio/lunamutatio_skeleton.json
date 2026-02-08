@@ -143,11 +143,26 @@
         "entity_types": [
           {
             "filters": {
-              "test": "is_family",
-              "subject": "other",
-              "operator": "!=",
-              "value": "monster"
-            }
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "villager"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wandering_trader"
+                }
+              ]
+            },
+            "max_dist": 16
           }
         ],
         "must_see": true
