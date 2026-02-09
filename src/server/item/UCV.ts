@@ -14,7 +14,7 @@ export class UnifiedCurrencyValue {
       player.setDynamicProperty("hiddenyears:ucv", 0);
       return 0;
     }
-    return ucv;
+    return Math.round(ucv);
   }
   /**
    * 设置玩家的统一货币值
@@ -22,7 +22,7 @@ export class UnifiedCurrencyValue {
    * @param value 要设置的货币值
    */
   static set(player: Player, value: number): void {
-    return player.setDynamicProperty("hiddenyears:ucv", value);
+    return player.setDynamicProperty("hiddenyears:ucv", Math.round(value));
   }
   /**
    * 增加玩家的统一货币值
@@ -33,11 +33,11 @@ export class UnifiedCurrencyValue {
     const ucv = player.getDynamicProperty("hiddenyears:ucv");
     player.playSound("use.coin");
     if (typeof ucv !== "number") {
-      player.setDynamicProperty("hiddenyears:ucv", value);
+      player.setDynamicProperty("hiddenyears:ucv", Math.round(value));
       return value;
     }
-    player.setDynamicProperty("hiddenyears:ucv", ucv + value);
-    return ucv + value;
+    player.setDynamicProperty("hiddenyears:ucv", ucv + Math.round(value));
+    return ucv + Math.round(value);
   }
   static processCoinOrder(player: Player, orders: CoinOrder[]): boolean {
     const total = this.getTotalUCV(orders);
@@ -64,7 +64,7 @@ export class UnifiedCurrencyValue {
     orders.forEach((order) => {
       total += order.ucv * order.itemCount;
     });
-    return total;
+    return Math.round(total);
   }
 }
 
