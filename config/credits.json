@@ -3,7 +3,7 @@
     "discipline": "Team Occultus",
     "contributors": [
       {
-        "name": "方琉璃",
+        "name": "方漓猫",
         "role": "项目负责人/基岩版程序/主策划/编剧"
       },
       {
@@ -12,14 +12,14 @@
       },
       {
         "name": "RawDiamondMC",
-        "role": "Java 版程序"
+        "role": "程序"
       },
       {
         "name": "Luning_39",
         "role": "基岩版程序"
       },
       {
-        "name": "爱玩的小尽",
+        "name": "哈基尽",
         "role": "策划/模型/动画"
       },
       {
@@ -27,7 +27,7 @@
         "role": "建筑"
       },
       {
-        "name": "Kiris",
+        "name": "Xiris",
         "role": "模型/美术"
       },
       {
@@ -36,6 +36,14 @@
       },
       {
         "name": "Jess",
+        "role": "美术"
+      },
+      {
+        "name": "是亚克力",
+        "role": "美术"
+      },
+      {
+        "name": "Gstbnnnnnn",
         "role": "美术"
       },
       {
@@ -53,7 +61,8 @@
         "role": "英文本地化"
       },
       { "name": "StoneNugget", "role": "本地化" },
-      { "name": "NewBee_Bar", "role": "吉祥物" }
+      { "name": "NewBee_Bar", "role": "吉祥物" },
+      { "name": "Призмарин", "role": "俄文本地化" }
     ]
   },
   {
