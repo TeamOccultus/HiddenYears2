@@ -40,7 +40,7 @@
       }
     ],
     "components": {
-      "minecraft:display_name": "Desert Casket A",
+      "minecraft:display_name": "沙漠棺材(完整)",
       "minecraft:loot": "loot_tables/empty.json",
       "minecraft:material_instances": {
         "*": {
