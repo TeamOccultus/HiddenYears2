@@ -1,0 +1,26 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:desert_adventurer_camp"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/poor_adventurer_camp",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 3
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/rich_adventurer_camp",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

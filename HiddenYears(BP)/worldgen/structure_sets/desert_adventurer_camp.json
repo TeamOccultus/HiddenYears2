@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:desert_adventurer_camp"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 79524,
+      "separation": 2,
+      "spacing": 12,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:desert_adventurer_camp",
+        "weight": 1
+      }
+    ]
+  }
+}
