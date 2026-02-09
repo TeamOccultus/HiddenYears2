@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:recipe_shaped": {
     "description": {
-      "identifier": "hiddenyears:sandsandcaust_apple"
+      "identifier": "hiddenyears:sandcaust_apple"
     },
     "tags": ["crafting_table"],
     "pattern": ["XXX", "XAX", "XXX"],
@@ -23,7 +23,7 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:sandsandcaust_apple"
+      "item": "hiddenyears:sandcaust_apple"
     }
   }
 }
