@@ -1,7 +1,6 @@
 {
   // "entryPoints": ["src/index.ts", "src/types/data.ts"],
-  "entryPoints": ["./src"],
-  "entryPointStrategy": "expand",
+  "entryPoints": ["./src/main.ts"],
   "out": "docs",
   "plugin": ["typedoc-material-theme"],
   "projectDocuments": [
