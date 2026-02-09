@@ -5,7 +5,7 @@
       "identifier": "hiddenyears:originite_shovel"
     },
     "tags": ["crafting_table"],
-    "pattern": ["X", " #", " #"],
+    "pattern": [" X ", " # ", " # "],
     "key": {
       "#": {
         "item": "stick"
