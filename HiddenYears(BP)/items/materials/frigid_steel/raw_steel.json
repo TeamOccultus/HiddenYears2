@@ -1,0 +1,17 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:raw_steel",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:raw_steel",
+      "minecraft:tags": {
+        "tags": ["hiddenyears:frigid_steel_material"]
+      }
+    }
+  }
+}

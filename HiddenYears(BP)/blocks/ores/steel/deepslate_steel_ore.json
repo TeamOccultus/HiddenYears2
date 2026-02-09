@@ -1,0 +1,72 @@
+{
+  "format_version": "1.21.130",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:deepslate_steel_ore",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.ore"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_ore": {
+        "exp": 2
+      },
+      "minecraft:geometry": {
+        "identifier": "minecraft:geometry.full_block"
+      },
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hiddenyears:deepslate_steel_ore"
+        }
+      },
+      "minecraft:loot": "loot_tables/blocks/ores/steel_ore.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 22.5,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+            },
+            "destroy_speed": 11.25
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+            },
+            "destroy_speed": 5.65
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+            },
+            "destroy_speed": 1.15
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+            },
+            "destroy_speed": 0.85
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 0.75
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+            },
+            "destroy_speed": 1.9
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 3.0
+      },
+      "minecraft:map_color": "#191919",
+      "tag:minecraft:stone_pick_diggable": {}
+    }
+  }
+}

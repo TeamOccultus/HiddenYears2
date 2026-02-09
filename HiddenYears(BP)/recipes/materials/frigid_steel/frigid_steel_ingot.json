@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_furnace": {
+    "description": {
+      "identifier": "hiddenyears:frigid_steel_ingot"
+    },
+    "input": "hiddenyears:raw_steel",
+    "output": "hiddenyears:frigid_steel_ingot",
+    "tags": ["furnace", "blast_furnace"],
+    "unlock": [
+      {
+        "item": "hiddenyears:frigid_steel_ingot"
+      },
+      {
+        "item": "hiddenyears:raw_steel"
+      }
+    ]
+  }
+}
