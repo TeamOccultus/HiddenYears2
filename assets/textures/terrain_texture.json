@@ -88,11 +88,17 @@
     "hiddenyears:darkish_red_flower": {
       "textures": "textures/blocks/darkish_red_flower"
     },
+    "hiddenyears:deepslate_extracts_ore": {
+      "textures": "textures/blocks/deepslate_extracts_ore"
+    },
     "hiddenyears:deepslate_ruby_ore": {
       "textures": "textures/blocks/deepslate_ruby_ore"
     },
     "hiddenyears:deepslate_silver_ore": {
       "textures": "textures/blocks/deepslate_silver_ore"
+    },
+    "hiddenyears:deepslate_steel_ore": {
+      "textures": "textures/blocks/deepslate_steel_ore"
     },
     "hiddenyears:desert_casket": {
       "textures": "textures/blocks/desert_casket"
@@ -198,6 +204,9 @@
     },
     "hiddenyears:steel_block": {
       "textures": "textures/blocks/steel_block"
+    },
+    "hiddenyears:steel_ore": {
+      "textures": "textures/blocks/steel_ore"
     },
     "hiddenyears:stone_of_fear": {
       "textures": "textures/blocks/stone_of_fear"
