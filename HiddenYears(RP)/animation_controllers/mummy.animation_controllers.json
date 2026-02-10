@@ -1,0 +1,52 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.mummy.move": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [{ "walking": "q.ground_speed > 0.5" }],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true
+        },
+        "walking": {
+          "animations": ["move"],
+          "transitions": [
+            { "idle": "q.ground_speed < 0.5" },
+            { "sprinting": "q.ground_speed > 1.2" }
+          ],
+          "blend_transition": 0.4
+        },
+        "sprinting": {
+          "animations": ["sprint"],
+          "transitions": [
+            { "idle": "q.ground_speed < 0.5" },
+            { "walking": "q.ground_speed < 1.2" }
+          ],
+          "blend_transition": 0.4
+        }
+      }
+    },
+    "controller.animation.mummy.attack": {
+      "initial_state": "default",
+      "states": {
+        "attacking": {
+          "animations": ["attack"],
+          "transitions": [
+            {
+              "default": "variable.attack_time < 0.0"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time >= 0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
