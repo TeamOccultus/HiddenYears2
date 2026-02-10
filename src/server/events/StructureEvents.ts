@@ -8,8 +8,11 @@ import {
   world
 } from "@minecraft/server";
 import { StructurePlacerComponentParams } from "../components/StructurePlacerComponent/Params";
-import { consumeEquipmentAmount, setEquipmentItem } from "@occultus/api";
-import { WarningForm } from "../../ui/WarningForm";
+import {
+  consumeEquipmentAmount,
+  Monologue,
+  setEquipmentItem
+} from "@occultus/api";
 
 export class StructureEvents {
   static toAnimationMode(mode: string): StructureAnimationMode {
@@ -35,19 +38,19 @@ export class StructureEvents {
     return true;
   }
   static aaruDreamEvent(player: Player) {
-    player.sendMessage({ translate: "monologue.hiddenyears:osiris.1" });
-    system.runTimeout(() => {
-      player.sendMessage({ translate: "monologue.hiddenyears:osiris.2" });
-    }, 60);
-    system.runTimeout(() => {
-      player.sendMessage({ translate: "monologue.hiddenyears:osiris.3" });
-    }, 120);
-    system.runTimeout(() => {
-      player.sendMessage({ translate: "monologue.hiddenyears:osiris.4" });
-    }, 180);
-    system.runTimeout(() => {
-      player.sendMessage({ translate: "monologue.hiddenyears:osiris.5" });
-    }, 240);
+    const osirisMonologue = new Monologue(
+      "hiddenyears:osiris",
+      "music.biome.desert_song"
+    );
+
+    osirisMonologue
+      .addMonologue({ translate: "monologue.hiddenyears:osiris.1" }, 0) // 立即发送
+      .addMonologue({ translate: "monologue.hiddenyears:osiris.2" }, 60) // 间隔60tick
+      .addMonologue({ translate: "monologue.hiddenyears:osiris.3" }, 60) // 间隔60tick
+      .addMonologue({ translate: "monologue.hiddenyears:osiris.4" }, 60) // 间隔60tick
+      .addMonologue({ translate: "monologue.hiddenyears:osiris.5" }, 60); // 间隔60tick
+
+    osirisMonologue.play(player);
   }
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const { source, itemStack } = arg0;
@@ -74,7 +77,7 @@ export class StructureEvents {
         animationSeconds: p.animation.seconds
       };
     }
-    if(p.present==="aaru_dream"){
+    if (p.present === "aaru_dream") {
       this.aaruDreamEvent(source);
     }
     world.structureManager.place(

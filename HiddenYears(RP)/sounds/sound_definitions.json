@@ -278,6 +278,16 @@
       "max_distance": null,
       "min_distance": null,
       "sounds": ["sounds/mob/mutas_wrath_say"]
+    },
+    "music.biome.desert_song": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/music/biome/desert_song",
+          "stream": true,
+          "volume": 1.2
+        }
+      ]
     } /*,
     "mob.lunamutatio.death": {
       "category": "hostile",
