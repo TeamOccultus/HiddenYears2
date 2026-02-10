@@ -15,7 +15,7 @@
   "dependencies": {
     "@minecraft/server": "2.4.0",
     "@minecraft/server-ui": "2.0.0",
-    "@occultus/api": "^0.23.7",
+    "@occultus/api": "^0.23.8",
     "@occultus/core": "^0.18.4",
     "@occultus/loom": "^1.1.0",
     "typescript": "^5.9.3"

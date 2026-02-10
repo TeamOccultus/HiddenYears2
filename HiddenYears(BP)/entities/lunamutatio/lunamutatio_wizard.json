@@ -68,6 +68,7 @@
           "lunamutatio_traveler",
           "undead",
           "monster",
+          "lunamutatio_monster",
           "mob"
         ]
       },
@@ -110,7 +111,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": [8, 12]
+        "damage": 4
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/lunamutatio_wizard.json"

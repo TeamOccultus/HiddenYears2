@@ -110,7 +110,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": [7, 11]
+        "damage": 2
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/lunamutatio_zombie.json"

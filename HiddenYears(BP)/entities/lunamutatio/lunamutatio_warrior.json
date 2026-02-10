@@ -67,7 +67,8 @@
           "undead",
           "monster",
           "lunamutatio_traveler",
-          "mob"
+          "mob",
+          "lunamutatio_monster"
         ]
       },
       "minecraft:collision_box": {
@@ -109,7 +110,7 @@
         "breathes_water": true
       },
       "minecraft:attack": {
-        "damage": [8, 12]
+        "damage": 4
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/lunamutatio_warrior.json"

@@ -37,7 +37,7 @@
           "track_target": true
         },
         "minecraft:attack": {
-          "damage": [10, 12]
+          "damage": 2
         },
         "minecraft:environment_sensor": {
           "triggers": {

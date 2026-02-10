@@ -37,7 +37,7 @@
           "track_target": true
         },
         "minecraft:attack": {
-          "damage": [10, 12]
+          "damage": 4
         },
         "minecraft:environment_sensor": {
           "triggers": {
@@ -68,6 +68,7 @@
           "lunamutatio_archer",
           "skeleton",
           "lunamutatio_traveler",
+          "lunamutatio_monster",
           "undead",
           "monster",
           "mob"
