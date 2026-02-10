@@ -68,6 +68,7 @@
           "lunamutatio_skeleton",
           "skeleton",
           "lunamutatio_monster",
+          "basic_lunamutatio_monster",
           "undead",
           "monster",
           "mob"
