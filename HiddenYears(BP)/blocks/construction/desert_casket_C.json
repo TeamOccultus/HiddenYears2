@@ -41,7 +41,7 @@
     ],
     "components": {
       "minecraft:display_name": "沙漠棺材(全开)",
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:loot": "loot_tables/blocks/desert_casket.json",
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:desert_casket",
@@ -57,6 +57,10 @@
         "item_specific_speeds": [
           {
             "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 8
+          },
+          {
+            "item": { "tags": "query.any_tag('minecraft:is_crowbar')" },
             "destroy_speed": 2
           }
         ]
