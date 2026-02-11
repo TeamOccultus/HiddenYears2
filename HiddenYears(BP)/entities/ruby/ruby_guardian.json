@@ -76,12 +76,26 @@
         "priority": 1,
         "entity_types": {
           "filters": {
-            "test": "is_family",
-            "subject": "other",
-            "operator": "!=",
-            "value": "ruby"
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "irongolem"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "wandering_trader"
+              },
+              {
+                "test": "is_family",
+                "subject": "other",
+                "value": "villager"
+              }
+            ]
           },
-          "max_dist": 64
+          "max_dist": 16
         }
       },
       "minecraft:behavior.nearest_attackable_target": {
@@ -89,11 +103,26 @@
         "entity_types": [
           {
             "filters": {
-              "test": "is_family",
-              "subject": "other",
-              "operator": "!=",
-              "value": "ruby"
-            }
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wandering_trader"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "villager"
+                }
+              ]
+            },
+            "max_dist": 16
           }
         ],
         "must_see": true
