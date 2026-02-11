@@ -10,7 +10,7 @@
     "components": {
       "hiddenyears:job_skill": {},
       "minecraft:display_name": {
-        "value": "skill.assassin.1"
+        "value": "skill.assassin.2"
       },
       "minecraft:max_stack_size": 1,
       "minecraft:cooldown": {
