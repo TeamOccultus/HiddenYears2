@@ -1,6 +1,8 @@
 <h1 align="center">   
 <img src="https://s41.ax1x.com/2026/01/11/pZ0OAqf.png" alt="Logo"> 
+
 隐藏之年²：天边的迦万涅尔
+
 </h1> 
 
 ---
