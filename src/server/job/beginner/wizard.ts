@@ -14,11 +14,12 @@ import {
   Player,
   TicksPerSecond
 } from "@minecraft/server";
+import { getJobDescription } from "../toolkit";
 
 export const wizard = new Job(
   "hiddenyears:wizard",
   { translate: "job.hiddenyears:wizard" },
-  { translate: "job.hiddenyears:wizard.desc" },
+  getJobDescription("hiddenyears:wizard"),
   {
     maxLevel: 10,
     upgradeCondition: [

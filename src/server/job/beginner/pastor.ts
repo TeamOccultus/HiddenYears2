@@ -10,11 +10,12 @@ import {
 import { amnestyPastor } from "../advanced/amnestyPastor";
 import { orisonPastor } from "../advanced/orisonPastor";
 import { ItemStack, Player, TicksPerSecond } from "@minecraft/server";
+import { getJobDescription } from "../toolkit";
 
 export const pastor = new Job(
   "hiddenyears:pastor",
   { translate: "job.hiddenyears:pastor" },
-  { translate: "job.hiddenyears:pastor.desc" },
+  getJobDescription("hiddenyears:pastor"),
   {
     maxLevel: 10,
     upgradeCondition: [

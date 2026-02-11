@@ -7,11 +7,12 @@ import {
   JobSkill,
   RandomEvent
 } from "@occultus/api";
+import { getJobDescription } from "../toolkit";
 
 export const orisonPastor = new Job(
   "hiddenyears:orison_pastor",
   { translate: "job.hiddenyears:orison_pastor" },
-  { translate: "job.hiddenyears:orison_pastor.desc" },
+  getJobDescription("hiddenyears:orison_pastor"),
   {
     maxLevel: 15,
     upgradeCondition: [

@@ -8,6 +8,7 @@ import {
   JobSkill,
   RandomEvent
 } from "@occultus/api";
+import { getJobDescription } from "../toolkit";
 
 const ENHANCE_COUNT_PROPERTY = "hiddenyears:magic_archer_enhance_count";
 
@@ -28,7 +29,7 @@ function tryConsumeEnhance(player: Player): boolean {
 export const magicArcher = new Job(
   "hiddenyears:magic_archer",
   { translate: "job.hiddenyears:magic_archer" },
-  { translate: "job.hiddenyears:magic_archer.desc" },
+  getJobDescription("hiddenyears:magic_archer"),
   {
     maxLevel: 15,
     upgradeCondition: [

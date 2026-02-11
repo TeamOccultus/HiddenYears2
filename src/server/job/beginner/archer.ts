@@ -8,11 +8,12 @@ import {
   TicksPerSecond,
   world
 } from "@minecraft/server";
+import { getJobDescription } from "../toolkit";
 
 export const archer = new Job(
   "hiddenyears:archer",
   { translate: "job.hiddenyears:archer" },
-  { translate: "job.hiddenyears:archer.desc" },
+  getJobDescription("hiddenyears:archer"),
   {
     maxLevel: 10,
     upgradeCondition: [

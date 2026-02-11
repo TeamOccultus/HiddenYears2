@@ -12,11 +12,12 @@ import {
   toVec3,
   Vector3Utils
 } from "@occultus/api";
+import { getJobDescription } from "../toolkit";
 
 export const conjureWizard = new Job(
   "hiddenyears:conjure_wizard",
   { translate: "job.hiddenyears:conjure_wizard" },
-  { translate: "job.hiddenyears:conjure_wizard.desc" },
+  getJobDescription("hiddenyears:conjure_wizard"),
   {
     maxLevel: 15,
     upgradeCondition: [

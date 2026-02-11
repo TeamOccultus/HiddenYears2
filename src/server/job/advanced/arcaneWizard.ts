@@ -12,11 +12,12 @@ import {
   JobSkill,
   RandomEvent
 } from "@occultus/api";
+import { getJobDescription } from "../toolkit";
 
 export const arcaneWizard = new Job(
   "hiddenyears:arcane_wizard",
   { translate: "job.hiddenyears:arcane_wizard" },
-  { translate: "job.hiddenyears:arcane_wizard.desc" },
+  getJobDescription("hiddenyears:arcane_wizard"),
   {
     maxLevel: 15,
     upgradeCondition: [

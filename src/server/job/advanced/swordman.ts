@@ -7,11 +7,12 @@ import {
   JobSkill,
   RandomEvent
 } from "@occultus/api";
+import { getJobDescription } from "../toolkit";
 
 export const swordman = new Job(
   "hiddenyears:swordman",
   { translate: "job.hiddenyears:swordman" },
-  { translate: "job.hiddenyears:swordman.desc" },
+  getJobDescription("hiddenyears:swordman"),
   {
     maxLevel: 15,
     upgradeCondition: [

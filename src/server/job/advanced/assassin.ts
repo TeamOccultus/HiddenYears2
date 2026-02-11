@@ -6,11 +6,12 @@ import {
   Job,
   JobSkill
 } from "@occultus/api";
+import { getJobDescription } from "../toolkit";
 
 export const assassin = new Job(
   "hiddenyears:assassin",
   { translate: "job.hiddenyears:assassin" },
-  { translate: "job.hiddenyears:assassin.desc" },
+  getJobDescription("hiddenyears:assassin"),
   {
     maxLevel: 15,
     upgradeCondition: [
