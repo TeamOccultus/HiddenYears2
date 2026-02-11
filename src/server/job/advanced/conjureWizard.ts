@@ -51,12 +51,17 @@ skill1.onRelease((arg) => {
   const player = arg.source;
   // TODO: 制作仆从
   const entity = player.dimension.spawnEntity(
-    "hiddenyears:gun_mu",
+    "hiddenyears:magic_sprite",
     Vector3Utils.add(player.location, toVec3(0, 1, 0))
+  );
+  entity.getComponent("minecraft:tameable").tame(player);
+  console.log(
+    "Entity tamed to:" +
+      entity.getComponent("minecraft:tameable")?.tamedToPlayerId
   );
   system.runTimeout(() => {
     if (entity.isValid) entity?.kill();
-  }, 8 * TicksPerSecond);
+  }, 30 * TicksPerSecond);
 });
 
 // 引爆范围内所有己方灵体，对周围 5 格敌人造成等级 * 5 的魔法伤害。

@@ -453,6 +453,16 @@
             "pitch": 1.0
           }
         }
+      },
+      "hiddenyears:magic_sprite": {
+        "volume": 1,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "hurt": "mob.allay.hurt",
+          "death": "mob.allay.death",
+          "ambient": "mob.allay.idle",
+          "ambient.tame": "mob.allay.idle_holding"
+        }
       }
     }
   }
