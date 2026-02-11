@@ -26,6 +26,7 @@ import { InitalSpawnEvents } from "./events/InitalSpawnEvents";
 import { DesertEntityEvent } from "./events/DesertEntityEvent";
 import { registryArticles } from "./registry/article";
 import { LunamutatioEntityEvent } from "./events/LunamutatioEntityEvent";
+import { SpriteEvents } from "./events/SpriteEvents";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -57,4 +58,5 @@ export function initialize() {
   InitalSpawnEvents.subscribe();
   DesertEntityEvent.subscribe();
   LunamutatioEntityEvent.subscribe();
+  SpriteEvents.subscribe();
 }
