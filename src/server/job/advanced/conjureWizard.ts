@@ -1,4 +1,9 @@
-import { TicksPerSecond, EntityDamageCause, system } from "@minecraft/server";
+import {
+  TicksPerSecond,
+  EntityDamageCause,
+  system,
+  world
+} from "@minecraft/server";
 import {
   EntitiesUtils,
   ItemConditions,
@@ -49,30 +54,62 @@ const skill2 = new JobSkill(
 
 skill1.onRelease((arg) => {
   const player = arg.source;
+  const spritesId: string[] = [];
   // TODO: 制作仆从
-  const entity = player.dimension.spawnEntity(
-    "hiddenyears:magic_sprite",
-    Vector3Utils.add(player.location, toVec3(0, 1, 0))
+  function summonSprite(offset: [number, number, number]) {
+    const entity = player.dimension.spawnEntity(
+      "hiddenyears:magic_sprite",
+      Vector3Utils.add(player.location, toVec3(...offset))
+    );
+    entity.getComponent("minecraft:tameable").tame(player);
+    spritesId.push(entity.id);
+    console.log(entity.id);
+    return entity;
+  }
+  summonSprite([1, 0, 0]);
+  summonSprite([-1, 0, 0]);
+  summonSprite([0, 0, 1]);
+  summonSprite([0, 0, -1]);
+  player.setDynamicProperty(
+    "hiddenyears:conjure_wizard_sprites",
+    JSON.stringify(spritesId)
   );
-  entity.getComponent("minecraft:tameable").tame(player);
-  console.log(
-    "Entity tamed to:" +
-      entity.getComponent("minecraft:tameable")?.tamedToPlayerId
-  );
+  console.log(spritesId);
   system.runTimeout(() => {
-    if (entity.isValid) entity?.kill();
+    spritesId.forEach((id) => {
+      const entity = world.getEntity(id);
+      if (!entity || !entity.isValid) return;
+      entity.remove();
+    });
+    player.setDynamicProperty("hiddenyears:conjure_wizard_sprites");
   }, 30 * TicksPerSecond);
 });
 
 // 引爆范围内所有己方灵体，对周围 5 格敌人造成等级 * 5 的魔法伤害。
 skill2.onRelease((arg) => {
   const player = arg.source;
-  const utils = new EntitiesUtils(player.dimension, {
+  new EntitiesUtils(player.dimension, {
     location: player.location,
-    maxDistance: 5,
+    maxDistance: 10,
     families: ["monster"]
+  }).applyDamage(conjureWizard.getLevel(player) * 5 + 1, {
+    cause: EntityDamageCause.entityExplosion
   });
-  utils.applyDamage(5, { cause: EntityDamageCause.magic });
+
+  const rawData = player.getDynamicProperty(
+    "hiddenyears:conjure_wizard_sprites"
+  );
+  console.log(rawData);
+  if (!rawData) return;
+  if (typeof rawData !== "string")
+    return player.setDynamicProperty("hiddenyears:conjure_wizard_sprites");
+  JSON.parse(rawData).forEach((id: string) => {
+    console.log(id);
+    if (typeof id !== "string") return;
+    const entity = world.getEntity(id);
+    if (!entity || !entity.isValid) return;
+    entity.triggerEvent("hiddenyears:start_explode");
+  });
 });
 
 conjureWizard.config.skills = [skill1, skill2];

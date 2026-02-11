@@ -93,6 +93,23 @@
             }
           ]
         }
+      },
+      "hiddenyears:start_explode": {
+        "minecraft:explode": {
+          "fuse_lit": true,
+          "fuse_length": -1,
+          "power": 3,
+          "particle_effect": "breeze_wind_burst",
+          "sound_effect": "breeze_wind_charge.burst",
+          "knockback_scaling": 0.6,
+          "negates_fall_damage": false,
+          "causes_fire": false,
+          "breaks_blocks": false,
+          "allow_underwater": true,
+          "toggles_blocks": true,
+          "damage_scaling": 0,
+          "max_resistance": 0
+        }
       }
     },
     "components": {
@@ -247,6 +264,11 @@
       "minecraft:entity_spawned": {
         "add": {
           "component_groups": ["hiddenyears:magic_sprite_wild"]
+        }
+      },
+      "hiddenyears:start_explode": {
+        "add": {
+          "component_groups": ["hiddenyears:start_explode"]
         }
       }
     }
