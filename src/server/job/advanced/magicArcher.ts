@@ -9,27 +9,20 @@ import {
   RandomEvent
 } from "@occultus/api";
 
-function hasEnhanced(player: Player) {
-  return (
-    player.hasTag("hiddenyears:enhanced_1") ||
-    player.hasTag("hiddenyears:enhanced_2") ||
-    player.hasTag("hiddenyears:enhanced_3")
-  );
-}
+const ENHANCE_COUNT_PROPERTY = "hiddenyears:magic_archer_enhance_count";
 
 function enhancePlayer(player: Player) {
-  player.addTag("hiddenyears:enhanced_1");
-  player.addTag("hiddenyears:enhanced_2");
-  player.addTag("hiddenyears:enhanced_3");
+  player.setDynamicProperty(ENHANCE_COUNT_PROPERTY, 3);
 }
 
-function consumeEnhance(player: Player) {
-  if (player.hasTag("hiddenyears:enhanced_3"))
-    return player.removeTag("hiddenyears:enhanced_3");
-  if (player.hasTag("hiddenyears:enhanced_2"))
-    return player.removeTag("hiddenyears:enhanced_2");
-  if (player.hasTag("hiddenyears:enhanced_1"))
-    return player.removeTag("hiddenyears:enhanced_1");
+function tryConsumeEnhance(player: Player): boolean {
+  const property = player.getDynamicProperty(ENHANCE_COUNT_PROPERTY);
+  if (typeof property != "number" || property <=0 ) {
+    player.setDynamicProperty(ENHANCE_COUNT_PROPERTY, 0);
+    return false;
+  }
+  player.setDynamicProperty(ENHANCE_COUNT_PROPERTY, property - 1);
+  return true;
 }
 
 export const magicArcher = new Job(
@@ -91,7 +84,7 @@ skill2.onRelease((arg) => {
 magicArcher.config.skills = [skill1, skill2];
 
 // 已严肃修复漏洞：属性“onProjectHitEntity”在类型“Job”上不存在。你是否指的是“onProjectileHitEntity”? —AAA 漓江猫猫批发方总
-// 我错了。-RRR伤害钻石批发生总
+// 我错了。-RRR 钻石批发生总
 magicArcher.onProjectileHitEntity((arg) => {
   const hurtEntity = arg.getEntityHit().entity;
   const player = arg.source as Player;
@@ -119,8 +112,7 @@ magicArcher.onProjectileHitEntity((arg) => {
     { weight: 24 }
   ];
   new EventList(eventData).call();
-  if (hasEnhanced(player)) {
-    // TODO：方总你忘记移除了，现在刀刀烈火刀刀爆
+  if (tryConsumeEnhance(player)) {
     hurtEntity.applyDamage(0.8 * magicArcher.getLevel(player), {
       cause: EntityDamageCause.magic,
       damagingEntity: null

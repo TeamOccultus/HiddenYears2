@@ -8,13 +8,6 @@ import {
   RandomEvent
 } from "@occultus/api";
 
-function orisonPastorSkilled(player: Player): boolean {
-  return (
-    player.hasTag("hiddenyears:orison_pastor_skill_1") ||
-    player.hasTag("hiddenyears:orison_pastor_skill_2")
-  );
-}
-
 export const orisonPastor = new Job(
   "hiddenyears:orison_pastor",
   { translate: "job.hiddenyears:orison_pastor" },
@@ -87,7 +80,7 @@ orisonPastor.config.skills = [skill1, skill2];
 orisonPastor.onHurt((arg) => {
   const player = arg.hurtEntity as Player;
   // 被动技能
-  if (orisonPastorSkilled(player)) {
+  if (orisonPastor.isReleasingSkills(player)) {
     new RandomEvent(0.3, () => {
       heal(
         arg.hurtEntity,

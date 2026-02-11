@@ -77,6 +77,7 @@ skill2.onRelease((arg) => {
 archer.config.skills = [skill1, skill2];
 
 // 属性“onProjectHitEntity”在类型“Job”上不存在。你是否指的是“onProjectileHitEntity”?
+// 😭 - RRRRRRRawProjectileMC
 archer.onProjectileHitEntity((arg, player) => {
   const entity = arg.getEntityHit().entity;
   if (!entity) return;
@@ -84,7 +85,7 @@ archer.onProjectileHitEntity((arg, player) => {
   entity.applyDamage(archer.getLevel(player) * 0.4, {
     cause: EntityDamageCause.none
   });
-  if (player.hasTag("hiddenyears:archer_skill_2")) {
+  if (skill2.isReleasing(player)) {
     entity.applyDamage(archer.getLevel(player) * 1.5, {
       cause: EntityDamageCause.none
     });
