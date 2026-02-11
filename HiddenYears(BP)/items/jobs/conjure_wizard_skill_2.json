@@ -16,7 +16,7 @@
       "minecraft:cooldown": {
         "category": "hiddenyears:conjure_wizard_skill_2",
         "type": "use",
-        "duration": 10
+        "duration": 35
       },
       "minecraft:icon": "hiddenyears:conjure_wizard_skill_2",
       "minecraft:rarity": "rare",
