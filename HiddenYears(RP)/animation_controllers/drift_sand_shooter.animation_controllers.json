@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.drift_sand_shooter.attack": {
+      "initial_state": "default",
+      "states": {
+        "charge": {
+          "animations": [ "crossbow_charge" ],
+          "transitions": [
+            {
+              "default": "query.item_remaining_use_duration <= 0.0 && !query.item_is_charged(0)"
+            },
+            {
+              "hold": "query.item_is_charged"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "hold": "query.item_is_charged"
+            },
+            {
+              "charge": "query.item_remaining_use_duration > 0.0"
+            }
+          ]
+        },
+        "hold": {
+          "animations": [ "crossbow_hold" ],
+          "transitions": [
+            {
+              "default": "query.item_remaining_use_duration <= 0.0 && !query.item_is_charged(0)"
+            },
+            {
+              "charge": "query.item_remaining_use_duration > 0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -10,10 +10,13 @@
     "component_groups": {},
     "components": {
       "minecraft:behavior.ranged_attack": {
-        "priority": 2,
-        "attack_interval_min": 1.0,
-        "attack_interval_max": 1.0,
-        "attack_radius": 8.0
+        "attack_interval_min": 1,
+        "attack_interval_max": 1,
+        "attack_radius": 8,
+        "attack_radius_min": 4,
+        "speed_multiplier": 1.0,
+        "target_in_sight_time": 0.1,
+        "priority": 2
       },
       "minecraft:shooter": { "def": "minecraft:arrow" },
       "minecraft:despawn": {
@@ -81,6 +84,7 @@
         "must_see": true,
         "reselect_targets": true,
         "within_radius": 16.0,
+        "attack_interval": [0, 0],
         "entity_types": [
           {
             "filters": {

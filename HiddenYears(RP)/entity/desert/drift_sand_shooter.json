@@ -37,7 +37,7 @@
         "controller_riding": "controller.animation.humanoid.riding",
         "controller_attack": "controller.animation.humanoid.attack",
         "controller_bob": "controller.animation.humanoid.bob",
-        "controller_pillager_attack": "controller.animation.pillager.attack",
+        "controller_pillager_attack": "controller.animation.drift_sand_shooter.attack",
         "pillager_root_controller": "controller.animation.pillager.root"
       },
       "render_controllers": ["controller.render.pillager"],
