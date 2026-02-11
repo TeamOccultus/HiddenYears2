@@ -3,13 +3,14 @@ import {
   CustomComponentParameters,
   system
 } from "@minecraft/server";
-import { consumeEquipmentAmount, setEquipmentItem } from "@occultus/api";
+import { consumeEquipmentAmount } from "@occultus/api";
 import { JobSchema } from "../components/JobOfferComponent/Params";
 import { traveler } from "../job/traveler";
 
 export class JobEvents {
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const params = arg1.params as JobSchema;
+    arg0.source.playSound("random.levelup");
     if (params.remove_old) {
       arg0.source.setDynamicProperty("hiddenyears:job");
     }
