@@ -6,7 +6,7 @@
       "min_engine_version": "1.8.0",
       "materials": { "default": "vex" },
       "textures": {
-        "default": "textures/entity/sprite"
+        "default": "textures/entity/magic_sprite"
       },
       "geometry": {
         "default": "geometry.vex.v1.8"
