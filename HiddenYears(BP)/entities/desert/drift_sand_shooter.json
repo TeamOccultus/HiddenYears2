@@ -7,47 +7,15 @@
       "is_summonable": true,
       "is_experimental": false
     },
-    "component_groups": {
-      "minecraft:ranged_attack": {
-        "minecraft:behavior.ranged_attack": {
-          "priority": 4,
-          "attack_interval_min": 1.0,
-          "attack_interval_max": 1.0,
-          "attack_radius": 8.0
-        },
-        "minecraft:shooter": { "def": "minecraft:arrow:26" },
-        "minecraft:environment_sensor": {
-          "triggers": {
-            "filters": {
-              "test": "is_underwater",
-              "subject": "self",
-              "operator": "==",
-              "value": true
-            },
-            "event": "minecraft:melee_mode"
-          }
-        }
-      },
-      "minecraft:melee_attack": {
-        "minecraft:behavior.melee_attack": {
-          "priority": 4,
-          "track_target": true
-        },
-        "minecraft:attack": { "damage": 3 },
-        "minecraft:environment_sensor": {
-          "triggers": {
-            "filters": {
-              "test": "in_water",
-              "subject": "self",
-              "operator": "==",
-              "value": false
-            },
-            "event": "minecraft:ranged_mode"
-          }
-        }
-      }
-    },
+    "component_groups": {},
     "components": {
+      "minecraft:behavior.ranged_attack": {
+        "priority": 2,
+        "attack_interval_min": 1.0,
+        "attack_interval_max": 1.0,
+        "attack_radius": 8.0
+      },
+      "minecraft:shooter": { "def": "minecraft:arrow" },
       "minecraft:despawn": {
         "filters": { "test": "is_difficulty", "value": "peaceful" }
       },
@@ -67,7 +35,6 @@
           "desert_monster"
         ]
       },
-      "minecraft:variant": { "value": 0 },
       "minecraft:breathable": { "total_supply": 15, "suffocate_time": 0 },
       "minecraft:health": { "value": { "range_min": 12, "range_max": 18 } },
       "minecraft:conditional_bandwidth_optimization": {},
@@ -180,26 +147,6 @@
       },
       "minecraft:follow_range": { "value": 64 }
     },
-    "events": {
-      "minecraft:entity_spawned": {
-        "add": { "component_groups": ["minecraft:ranged_attack"] }
-      },
-      "minecraft:melee_mode": {
-        "remove": { "component_groups": ["minecraft:ranged_attack"] },
-        "add": { "component_groups": ["minecraft:melee_attack"] }
-      },
-      "minecraft:ranged_mode": {
-        "remove": { "component_groups": ["minecraft:melee_attack"] },
-        "add": { "component_groups": ["minecraft:ranged_attack"] }
-      },
-      "minecraft:calm": {
-        "remove": {
-          "component_groups": [
-            "minecraft:melee_attack",
-            "minecraft:ranged_attack"
-          ]
-        }
-      }
-    }
+    "events": {}
   }
 }
