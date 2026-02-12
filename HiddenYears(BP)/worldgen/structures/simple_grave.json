@@ -2,23 +2,22 @@
   "format_version": "1.21.40",
   "minecraft:jigsaw": {
     "description": {
-      "identifier": "hiddenyears:kingdom_camp"
+      "identifier": "hiddenyears:simple_grave"
     },
     "heightmap_projection": "ocean_floor",
     "max_depth": 10,
     "start_height": {
       "max": {
-        "absolute": 0
+        "absolute": -3
       },
       "min": {
-        "absolute": 0
+        "absolute": -3
       },
       "type": "uniform"
     },
-    "liquid_settings": "apply_waterlogging",
-    "start_pool": "hiddenyears:kingdom_camp",
+    "start_pool": "hiddenyears:simple_grave",
     "step": "surface_structures",
-    "terrain_adaptation": "beard_thin",
+    "terrain_adaptation": "beard_box",
     "biome_filters": [
       {
         "test": "has_biome_tag",

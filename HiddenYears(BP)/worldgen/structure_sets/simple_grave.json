@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:simple_grave"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 134200,
+      "separation": 2,
+      "spacing": 12,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:simple_grave",
+        "weight": 1
+      }
+    ]
+  }
+}
