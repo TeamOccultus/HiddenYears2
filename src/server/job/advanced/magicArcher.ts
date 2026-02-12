@@ -19,7 +19,7 @@ function enhancePlayer(player: Player) {
 
 function tryConsumeEnhance(player: Player): boolean {
   const property = player.getDynamicProperty(ENHANCE_COUNT_PROPERTY);
-  if (typeof property != "number" || property <=0 ) {
+  if (typeof property != "number" || property <= 0) {
     player.setDynamicProperty(ENHANCE_COUNT_PROPERTY, 0);
     return false;
   }
@@ -43,8 +43,13 @@ export const magicArcher = new Job(
         min: 6,
         max: 10,
         condition: [new UnifiedCurrencyValueConditions(800, true)]
+      },
+      {
+        min: 11,
+        max: 15,
+        condition: [new UnifiedCurrencyValueConditions(1500, true)]
       }
-    ],
+    ]
   }
 );
 

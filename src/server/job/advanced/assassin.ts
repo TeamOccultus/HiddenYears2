@@ -25,8 +25,13 @@ export const assassin = new Job(
         min: 6,
         max: 10,
         condition: [new UnifiedCurrencyValueConditions(800, true)]
+      },
+      {
+        min: 11,
+        max: 15,
+        condition: [new UnifiedCurrencyValueConditions(1500, true)]
       }
-    ],
+    ]
   }
 );
 
