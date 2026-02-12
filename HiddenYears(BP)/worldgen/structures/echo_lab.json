@@ -13,6 +13,7 @@
       }
     },
     "start_pool": "hiddenyears:echo_lab_mainlab",
+    "liquid_settings": "apply_waterlogging",
     "step": "underground_structures",
     "terrain_adaptation": "bury",
     "biome_filters": [

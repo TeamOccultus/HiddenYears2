@@ -16,6 +16,7 @@
       "type": "uniform"
     },
     "start_pool": "hiddenyears:rebirth_altar",
+    "liquid_settings": "apply_waterlogging",
     "step": "surface_structures",
     "terrain_adaptation": "beard_box",
     "biome_filters": [

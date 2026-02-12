@@ -15,6 +15,7 @@
       },
       "type": "uniform"
     },
+    "liquid_settings": "apply_waterlogging",
     "start_pool": "hiddenyears:cch_main",
     "step": "surface_structures",
     "terrain_adaptation": "beard_thin",

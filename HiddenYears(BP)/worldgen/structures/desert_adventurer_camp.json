@@ -16,6 +16,7 @@
       "type": "uniform"
     },
     "start_pool": "hiddenyears:desert_adventurer_camp",
+    "liquid_settings": "apply_waterlogging",
     "step": "surface_structures",
     "terrain_adaptation": "beard_thin",
     "biome_filters": [

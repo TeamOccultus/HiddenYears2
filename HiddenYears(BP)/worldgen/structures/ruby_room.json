@@ -13,6 +13,7 @@
       }
     },
     "start_pool": "hiddenyears:ruby_room",
+    "liquid_settings": "apply_waterlogging",
     "step": "underground_structures",
     "terrain_adaptation": "bury",
     "biome_filters": [

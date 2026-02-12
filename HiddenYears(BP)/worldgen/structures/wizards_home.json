@@ -17,6 +17,7 @@
     },
     "start_pool": "hiddenyears:wizards_home",
     "step": "surface_structures",
+    "liquid_settings": "apply_waterlogging",
     "terrain_adaptation": "beard_thin",
     "biome_filters": [
       {

@@ -16,6 +16,7 @@
       "type": "uniform"
     },
     "start_pool": "hiddenyears:simple_grave",
+    "liquid_settings": "apply_waterlogging",
     "step": "surface_structures",
     "terrain_adaptation": "beard_box",
     "biome_filters": [

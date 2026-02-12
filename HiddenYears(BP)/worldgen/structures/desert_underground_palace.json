@@ -13,6 +13,7 @@
       }
     },
     "start_pool": "hiddenyears:sand_palace_entrance_hall",
+    "liquid_settings": "apply_waterlogging",
     "step": "underground_structures",
     "terrain_adaptation": "bury",
     "biome_filters": [
