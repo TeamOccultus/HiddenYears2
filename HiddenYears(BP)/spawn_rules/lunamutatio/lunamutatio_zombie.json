@@ -22,9 +22,34 @@
           "default": 100
         },
         "minecraft:herd": {
-          "min_size": 2,
-          "max_size": 4
+          "min_size": 1,
+          "max_size": 5
         },
+        "minecraft:permute_type": [
+          {
+            "weight": 80
+          },
+          {
+            "weight": 10,
+            "entity_type": "hiddenyears:lunamutatio_traveler"
+          },
+          {
+            "weight": 5,
+            "entity_type": "hiddenyears:lunamutatio_archer"
+          },
+          {
+            "weight": 5,
+            "entity_type": "hiddenyears:lunamutatio_warrior"
+          },
+          {
+            "weight": 5,
+            "entity_type": "hiddenyears:lunamutatio_pastor"
+          },
+          {
+            "weight": 5,
+            "entity_type": "hiddenyears:lunamutatio_wizard"
+          }
+        ],
         "minecraft:biome_filter": {
           "test": "has_biome_tag",
           "operator": "==",
