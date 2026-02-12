@@ -9,7 +9,8 @@
     },
     "components": {
       "hiddenyears:job": {
-        "job_type": "traveler"
+        "job_type": "traveler",
+        "remove_old": true
       },
       "minecraft:display_name": {
         "value": "行旅宝石（职业测试）"

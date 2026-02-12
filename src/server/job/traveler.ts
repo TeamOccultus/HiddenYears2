@@ -4,6 +4,7 @@ import { wizard } from "./beginner/wizard";
 import { pastor } from "./beginner/pastor";
 import { warrior } from "./beginner/warrior";
 import { archer } from "./beginner/archer";
+import { UnifiedCurrencyValueConditions } from "../conditions/UCV";
 
 export const traveler = new Job(
   "hiddenyears:traveler",
@@ -14,8 +15,13 @@ export const traveler = new Job(
     upgradeCondition: [
       {
         min: 0,
+        max: 5,
+        condition: [new UnifiedCurrencyValueConditions(25, true)]
+      },
+      {
+        min: 6,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)]
+        condition: [new UnifiedCurrencyValueConditions(50, true)]
       }
     ],
     transform: [
