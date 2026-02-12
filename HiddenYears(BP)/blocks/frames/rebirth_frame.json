@@ -42,7 +42,7 @@
     "components": {
       "hiddenyears:boss_spawner": {
         "boss": "hiddenyears:pharaohs_ghost",
-        "transform_to": "hiddenyears:actived_rebirth_grave",
+        "transform_to": "hiddenyears:actived_rebirth_frame",
         "key": "hiddenyears:rebirth_statue",
         "client_events": {
           "sound_event": "item.trident.thunder",
