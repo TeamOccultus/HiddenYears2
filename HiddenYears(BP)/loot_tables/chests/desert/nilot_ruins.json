@@ -1,7 +1,7 @@
 {
   "pools": [
     {
-      "rolls": { "min": 1, "max": 2 },
+      "rolls": 1,
       "entries": [
         {
           "type": "item",
@@ -30,7 +30,7 @@
           "name": "hiddenyears:sandcaust_apple",
           "weight": 90,
           "functions": [
-            { "function": "set_count", "count": { "min": 1, "max": 7 } }
+            { "function": "set_count", "count": { "min": 1, "max": 4 } }
           ]
         },
         {
@@ -51,7 +51,7 @@
           "name": "minecraft:bread",
           "weight": 20,
           "functions": [
-            { "function": "set_count", "count": { "min": 2, "max": 7 } }
+            { "function": "set_count", "count": { "min": 2, "max": 5 } }
           ]
         },
         {
@@ -67,20 +67,23 @@
           "name": "minecraft:rabbit_stew",
           "weight": 20,
           "functions": [
-            { "function": "set_count", "count": { "min": 1, "max": 5 } }
+            { "function": "set_count", "count": { "min": 1, "max": 3 } }
           ]
         }
       ]
     },
     {
-      "rolls": 3,
+      "rolls": {
+        "min": 1,
+        "max": 3
+      },
       "entries": [
         {
           "type": "item",
           "name": "hiddenyears:sand_bone",
           "weight": 10,
           "functions": [
-            { "function": "set_count", "count": { "min": 1, "max": 8 } }
+            { "function": "set_count", "count": { "min": 1, "max": 5 } }
           ]
         },
         {
@@ -88,7 +91,7 @@
           "name": "hiddenyears:sand_meat",
           "weight": 10,
           "functions": [
-            { "function": "set_count", "count": { "min": 1, "max": 8 } }
+            { "function": "set_count", "count": { "min": 1, "max": 4 } }
           ]
         },
         {
@@ -96,7 +99,7 @@
           "name": "hiddenyears:sand_fish",
           "weight": 10,
           "functions": [
-            { "function": "set_count", "count": { "min": 1, "max": 8 } }
+            { "function": "set_count", "count": { "min": 1, "max": 6 } }
           ]
         }
       ]

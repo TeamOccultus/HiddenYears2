@@ -1,0 +1,50 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:nilot_ruins"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/nilot_ruins_1",
+          "processors": "hiddenyears:random_sand"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/nilot_ruins_2",
+          "processors": "hiddenyears:random_sand"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/nilot_ruins_3",
+          "processors": "hiddenyears:random_sand"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/nilot_ruins_4",
+          "processors": "hiddenyears:random_sand"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/nilot_ruins_5",
+          "processors": "hiddenyears:random_sand"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:nilot_ruins"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 3752420,
+      "separation": 2,
+      "spacing": 10,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:nilot_ruins",
+        "weight": 1
+      }
+    ]
+  }
+}
