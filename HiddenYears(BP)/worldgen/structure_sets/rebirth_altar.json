@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:rebirth_altar"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 23762,
+      "separation": 2,
+      "spacing": 14,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:rebirth_altar",
+        "weight": 1
+      }
+    ]
+  }
+}
