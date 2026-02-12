@@ -11,6 +11,7 @@ import { amnestyPastor } from "../advanced/amnestyPastor";
 import { orisonPastor } from "../advanced/orisonPastor";
 import { ItemStack, Player, TicksPerSecond } from "@minecraft/server";
 import { getJobDescription } from "../toolkit";
+import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
 
 export const pastor = new Job(
   "hiddenyears:pastor",
@@ -21,8 +22,13 @@ export const pastor = new Job(
     upgradeCondition: [
       {
         min: 0,
+        max: 5,
+        condition: [new UnifiedCurrencyValueConditions(200, true)]
+      },
+      {
+        min: 6,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 5, true)]
+        condition: [new UnifiedCurrencyValueConditions(500, true)]
       }
     ],
     transform: [

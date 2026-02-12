@@ -8,6 +8,7 @@ import {
   JobSkill
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
+import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
 
 export const berserker = new Job(
   "hiddenyears:berserker",
@@ -18,10 +19,15 @@ export const berserker = new Job(
     upgradeCondition: [
       {
         min: 0,
+        max: 5,
+        condition: [new UnifiedCurrencyValueConditions(500, true)]
+      },
+      {
+        min: 6,
         max: 10,
-        condition: [new ItemConditions("hiddenyears:copper_coin", 10, true)]
+        condition: [new UnifiedCurrencyValueConditions(800, true)]
       }
-    ]
+    ],
   }
 );
 
