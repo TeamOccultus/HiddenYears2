@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:jigsaw": {
+    "description": {
+      "identifier": "hiddenyears:kingdom_camp"
+    },
+    "heightmap_projection": "ocean_floor",
+    "max_depth": 10,
+    "start_height": {
+      "max": {
+        "absolute": 0
+      },
+      "min": {
+        "absolute": 0
+      },
+      "type": "uniform"
+    },
+    "start_pool": "hiddenyears:kingdom_camp",
+    "step": "surface_structures",
+    "terrain_adaptation": "beard_thin",
+    "biome_filters": [
+      {
+        "test": "has_biome_tag",
+        "operator": "==",
+        "value": "desert"
+      }
+    ]
+  }
+}
