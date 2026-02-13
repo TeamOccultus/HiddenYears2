@@ -8,7 +8,7 @@
     "replace_rules": [
       {
         "places_block": "hiddenyears:ancient_war_debris",
-        "may_replace": ["minecraft:sand"]
+        "may_replace": ["minecraft:netherrack"]
       }
     ]
   }
