@@ -1,4 +1,4 @@
-export type JobSchema = {
+export type JobParams = {
   job_type: JobType;
   remove_old?: boolean;
 };
