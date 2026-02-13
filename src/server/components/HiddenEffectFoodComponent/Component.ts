@@ -1,5 +1,4 @@
-import { Player, system } from "@minecraft/server";
-import { HiddenEffectFoodParams } from "./Params";
+import { system } from "@minecraft/server";
 import { HiddenEffectFoodEvent } from "../../events/HiddenEffectFoodEvent";
 
 /**

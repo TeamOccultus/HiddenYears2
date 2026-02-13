@@ -13,14 +13,14 @@ import {
   toVec3,
   Color
 } from "@occultus/api";
-import { ReturnGemParam } from "../components/ReturnGemComponent/Params";
+import { ReturnGemParams } from "../components/ReturnGemComponent/Params";
 import { MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import { WayStoneForm } from "../../ui/WayStoneForm";
 import { WayStone } from "../block/WayStone";
 
 export class ReturnGemEvents {
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
-    const p = arg1.params as ReturnGemParam;
+    const p = arg1.params as ReturnGemParams;
     if (p.bind_to === "data_driven") {
       this.onBindtoDataDriven(arg0, arg1);
     }
@@ -43,7 +43,7 @@ export class ReturnGemEvents {
       usedOnBlockPermutation: block,
       block: newBlock
     } = arg0;
-    const p = arg1.params as ReturnGemParam;
+    const p = arg1.params as ReturnGemParams;
     console.log("event triggered");
     if (!(player instanceof Player)) return;
     console.log("player is player");
@@ -99,7 +99,7 @@ export class ReturnGemEvents {
     arg1: CustomComponentParameters
   ) {
     const { source: player, itemStack } = arg0;
-    const p = arg1.params as ReturnGemParam;
+    const p = arg1.params as ReturnGemParams;
     consumeEquipmentAmount(player, 1);
     player.teleport(toVec3(p.location[0], p.location[1], p.location[2]), {
       dimension: world.getDimension(p.dimension ?? "minecraft:overworld")
@@ -112,7 +112,7 @@ export class ReturnGemEvents {
     arg1: CustomComponentParameters
   ) {
     const { source: player, itemStack } = arg0;
-    const p = arg1.params as ReturnGemParam;
+    const p = arg1.params as ReturnGemParams;
     const home = player.getSpawnPoint();
     if (!home?.x) {
       player.sendMessage({
@@ -135,7 +135,7 @@ export class ReturnGemEvents {
     arg1: CustomComponentParameters
   ) {
     const { source: player, itemStack } = arg0;
-    const p = arg1.params as ReturnGemParam;
+    const p = arg1.params as ReturnGemParams;
     if (itemStack.getDynamicProperty("hiddenyears:location")) {
       const dim = itemStack.getDynamicProperty(
         "hiddenyears:dimension"

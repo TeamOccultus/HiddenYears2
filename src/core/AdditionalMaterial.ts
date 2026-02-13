@@ -1,5 +1,5 @@
 import { ItemStack, world } from "@minecraft/server";
-import { AdditionalMaterialEvents } from "../events/AdditionalMaterialEvents";
+import { AdditionalMaterialEvents } from "../server/events/AdditionalMaterialEvents";
 import { getEquipmentItem } from "@occultus/api";
 
 export class AdditionalMaterialSystem {

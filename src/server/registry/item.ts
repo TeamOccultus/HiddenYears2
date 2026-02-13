@@ -2,8 +2,8 @@
  * @module server/registry/item
  * @category Registry Bus
  */
-import { AdditionalMaterialSystem } from "../item/AdditionalMaterial";
-import { AdventurerNote } from "../item/AdventurerNote";
+import { AdditionalMaterialSystem } from "../../core/AdditionalMaterial";
+import { AdventurerNote } from "../../core/AdventurerNote";
 
 /**
  * 注册物品系统

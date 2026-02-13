@@ -2,11 +2,10 @@ import {
   Entity,
   EntityDamageCause,
   ItemStack,
-  Player,
   system,
   world
 } from "@minecraft/server";
-import { ArrowPresentParams, ArrowPresents } from "./ArrowPresentParams";
+import { ArrowPresentParams, ArrowPresents } from "./Params";
 import { Random } from "@occultus/api";
 
 export class ArrowPresentComponent {

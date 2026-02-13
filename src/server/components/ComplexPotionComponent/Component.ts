@@ -1,5 +1,5 @@
 import { Player, system } from "@minecraft/server";
-import { ComplexPotion } from "../../item/ComplexPotion";
+import { ComplexPotion } from "../../../core/ComplexPotion";
 
 export class ComplexPotionComponent {
   constructor(readonly componentName: string) {

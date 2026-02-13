@@ -1,6 +1,6 @@
 import { ItemStack, Player } from "@minecraft/server";
 import { ModalFormData, ModalFormResponse } from "@minecraft/server-ui";
-import { CoinOrder, UnifiedCurrencyValue } from "../server/item/UCV";
+import { CoinOrder, UnifiedCurrencyValue } from "../core/UnifiedCurrencyValue";
 import { ProfileForm } from "./ProfileForm";
 import { default as coins } from "../../config/store/coin.json";
 

@@ -1,4 +1,4 @@
-export type ReturnGemParam = {
+export type ReturnGemParams = {
   /**
    * 将返回晶石绑定在某一位置来源
    */

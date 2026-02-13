@@ -3,13 +3,13 @@ import {
   ItemComponentMineBlockEvent,
   system
 } from "@minecraft/server";
-import { ToolTypeSchema } from "./ToolTypeSchema";
-import { SawRecipeManager } from "../recipe/saw/SawRecipeManager";
-import { SawEvents } from "../events/SawEvents";
-import { CrowbarRecipeManager } from "../recipe/crowbar/CrowbarRecipeManager";
-import { CrowbarEvents } from "../events/CrowbarEvents";
-import { HammerRecipeManager } from "../recipe/hammer/HammerRecipeManager";
-import { HammerEvents } from "../events/HammerEvents";
+import { ToolTypeParams } from "./Params";
+import { SawRecipeManager } from "../../recipe/saw/SawRecipeManager";
+import { SawEvents } from "../../events/SawEvents";
+import { CrowbarRecipeManager } from "../../recipe/crowbar/CrowbarRecipeManager";
+import { CrowbarEvents } from "../../events/CrowbarEvents";
+import { HammerRecipeManager } from "../../recipe/hammer/HammerRecipeManager";
+import { HammerEvents } from "../../events/HammerEvents";
 
 export class ToolTypeComponent {
   constructor(readonly componentName: string) {
@@ -28,7 +28,7 @@ function onMineBlockCallback(
   arg0: ItemComponentMineBlockEvent,
   arg1: CustomComponentParameters
 ) {
-  const params = arg1.params as ToolTypeSchema;
+  const params = arg1.params as ToolTypeParams;
   const [id, block] = [arg0.minedBlockPermutation.type.id, arg0.block];
   if (params.tool_type === "normal") return;
   if (params.tool_type === "saw") {

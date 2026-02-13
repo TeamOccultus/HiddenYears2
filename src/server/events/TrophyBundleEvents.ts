@@ -5,7 +5,7 @@ import {
   world,
   system
 } from "@minecraft/server";
-import { TrophyBundleParam } from "../components/TrophyBundleComponent/Params";
+import { TrophyBundleParams } from "../components/TrophyBundleComponent/Params";
 import { setEquipmentItem, loot, RandomEvent } from "@occultus/api";
 
 /**
@@ -19,7 +19,7 @@ export class TrophyBundleEvents {
     if (!itemStack) return;
     setEquipmentItem(source);
 
-    const p = arg1.params as TrophyBundleParam;
+    const p = arg1.params as TrophyBundleParams;
     system.runTimeout(() => {
       source.playSound("bundle.drop_contents");
       loot(
@@ -29,7 +29,7 @@ export class TrophyBundleEvents {
       );
     }, 10);
   }
-  static getLootTable(itemStack: ItemStack, params: TrophyBundleParam) {
+  static getLootTable(itemStack: ItemStack, params: TrophyBundleParams) {
     if (params.table_source === "hardcode") {
       return params.loot_table;
     }

@@ -5,7 +5,7 @@ import {
   EntityDamageCause,
   Player
 } from "@minecraft/server";
-import { WeaponTypeSchema } from "../components/WeaponTypeComponent/Params";
+import { WeaponTypeParams } from "../components/WeaponTypeComponent/Params";
 import { LegendWeaponEvent } from "./LegendWeaponEvent";
 import { hasFamily, Random } from "@occultus/api";
 import { SpecificDamageParams } from "../components/SpecificDamageComponent/Params";
@@ -15,7 +15,7 @@ export class WeaponEvent {
     arg0: ItemComponentHitEntityEvent,
     arg1: CustomComponentParameters
   ) {
-    const params = arg1.params as WeaponTypeSchema;
+    const params = arg1.params as WeaponTypeParams;
     if (params?.legend_weapon === "suffering") {
       LegendWeaponEvent.onSufferingSwordAttack(arg0);
     }

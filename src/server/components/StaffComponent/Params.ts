@@ -1,4 +1,4 @@
-export type StaffSchema = {
+export type StaffParams = {
   damage: number;
   radius: number;
   particle?: string;

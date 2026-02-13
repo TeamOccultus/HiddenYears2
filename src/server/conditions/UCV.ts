@@ -1,6 +1,6 @@
 import { Player } from "@minecraft/server";
 import { Conditions, TextProvider } from "@occultus/api";
-import { UnifiedCurrencyValue as UCV } from "../item/UCV";
+import { UnifiedCurrencyValue as UCV } from "../../core/UnifiedCurrencyValue";
 
 export class UnifiedCurrencyValueConditions extends Conditions {
   constructor(

@@ -1,1 +1,1 @@
-export type ComplexPotionParam = {};
+export type ComplexPotionParams = {};

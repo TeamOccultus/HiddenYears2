@@ -10,7 +10,7 @@ import { getEquipmentItem, Random, RandomEvent } from "@occultus/api";
 import {
   ArmorPresent,
   ArmorTypeParams
-} from "../components/ArmorTypeComponent/Params";
+} from "../server/components/ArmorTypeComponent/Params";
 
 export class ArmorEffect {
   /**

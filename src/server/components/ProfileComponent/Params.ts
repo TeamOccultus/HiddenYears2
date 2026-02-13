@@ -1,1 +1,1 @@
-export type ProfileParam = {};
+export type ProfileParams = {};

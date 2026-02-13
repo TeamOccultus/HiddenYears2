@@ -1,4 +1,4 @@
-export type WeaponTypeSchema = {
+export type WeaponTypeParams = {
   weapon_type: "sword" | "sledgehammer" | "dagger";
   legend_weapon?:
     | "suffering"

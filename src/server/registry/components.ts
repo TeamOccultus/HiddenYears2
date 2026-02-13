@@ -13,11 +13,11 @@ import {
   ToolMaterial,
   WeaponMaterial
 } from "@occultus/api";
-import { OreTypeComponent } from "../components/OreTypeComponent";
-import { ToolTypeComponent } from "../components/ToolTypeComponent";
+import { OreTypeComponent } from "../components/OreTypeComponent/Component";
+import { ToolTypeComponent } from "../components/ToolTypeComponent/Component";
 import { WeaponTypeComponent } from "../components/WeaponTypeComponent/Component";
 import { CrossbowComponent } from "../components/CrossbowComponent";
-import { ArrowPresentComponent } from "../components/ArrowPresentComponent";
+import { ArrowPresentComponent } from "../components/ArrowPresentComponent/Component";
 import { TrophyBundleComponent } from "../components/TrophyBundleComponent/Component";
 import { CoinComponent } from "../components/CoinComponent/Component";
 import { ExpFoodComponent } from "../components/ExpFoodComponent/Component";

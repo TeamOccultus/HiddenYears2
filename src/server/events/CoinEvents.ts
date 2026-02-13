@@ -4,7 +4,7 @@ import {
   world
 } from "@minecraft/server";
 import { CoinComponentParams } from "../components/CoinComponent/Params";
-import { UnifiedCurrencyValue } from "../item/UCV";
+import { UnifiedCurrencyValue } from "../../core/UnifiedCurrencyValue";
 import { setEquipmentItem, consumeAmount } from "@occultus/api";
 
 export class CoinEvents {

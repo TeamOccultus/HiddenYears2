@@ -1,4 +1,4 @@
-export type TrophyBundleParam = {
+export type TrophyBundleParams = {
   loot_table?: string;
   table_source: TrophyBundleSourceType;
 };

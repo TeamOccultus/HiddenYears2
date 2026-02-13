@@ -1,7 +1,7 @@
 import { ItemStack, system } from "@minecraft/server";
 import { ComplexPotionRecipeType } from "./ComplexPotionRecipeType";
 import { default as builtinData } from "../../../../config/recipes/complex_potion.json";
-import { ComplexPotion, ComplexPotionType } from "../../item/ComplexPotion";
+import { ComplexPotion, ComplexPotionType } from "../../../core/ComplexPotion";
 
 export class ComplexPotionRecipeManager {
   static recipes: ComplexPotionRecipeType[] = builtinData;

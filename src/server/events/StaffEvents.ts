@@ -8,14 +8,14 @@ import {
   EntitiesUtils,
   setEquipmentItem
 } from "@occultus/api";
-import { StaffSchema } from "../components/StaffComponent/Params";
+import { StaffParams } from "../components/StaffComponent/Params";
 
 export class StaffEvents {
   static matchPresent(
     arg0: ItemComponentUseEvent,
     arg1: CustomComponentParameters
   ) {
-    const params = arg1.params as StaffSchema;
+    const params = arg1.params as StaffParams;
     if (params.staff_preset === "mutas_staff") {
       StaffEvents.onMutasStaffRelease(arg0, arg1);
     }
@@ -25,7 +25,7 @@ export class StaffEvents {
     arg1: CustomComponentParameters
   ) {
     const { itemStack, source } = arg0;
-    const params = arg1.params as StaffSchema;
+    const params = arg1.params as StaffParams;
 
     const cooldown = itemStack.getComponent("cooldown");
     if (cooldown.getCooldownTicksRemaining(source) !== 0) {
@@ -61,7 +61,7 @@ export class StaffEvents {
     arg1: CustomComponentParameters
   ) {
     const { source } = arg0;
-    const params = arg1.params as StaffSchema;
+    const params = arg1.params as StaffParams;
 
     const utils = new EntitiesUtils(source.dimension, {
       location: source.location,

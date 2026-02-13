@@ -11,7 +11,7 @@ import {
   ArmorPresent,
   ArmorTypeParams
 } from "../components/ArmorTypeComponent/Params";
-import { ArmorEffect, ArmorEffectDetector } from "../item/ArmorEffect";
+import { ArmorEffect, ArmorEffectDetector } from "../../core/ArmorEffect";
 
 export class ArmorEvents {
   /**
