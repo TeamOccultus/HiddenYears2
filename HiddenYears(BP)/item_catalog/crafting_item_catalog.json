@@ -7,6 +7,20 @@
         "groups": [
           {
             "group_identifier": {
+              "icon": "hiddenyears:legacy_staff",
+              "name": "itemGroup.name.hiddenyears:legend_weapons"
+            },
+            "items": [
+              "hiddenyears:legacy_staff",
+              "hiddenyears:mutas_staff",
+              "hiddenyears:sacred_sword",
+              "hiddenyears:shattered_sand_cudgel",
+              "hiddenyears:shattered_sand_staff",
+              "hiddenyears:suffering_sword"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:wooden_saw",
               "name": "hiddenyears:itemGroup.name.saws"
             },
@@ -388,6 +402,38 @@
               "hiddenyears:article_11",
               "hiddenyears:article_12"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:amnesty_pastor_skill_1",
+              "name": "hiddenyears:itemGroup.name.skills"
+            },
+            "items": [
+              "hiddenyears:amnesty_pastor_skill_1",
+              "hiddenyears:amnesty_pastor_skill_2",
+              "hiddenyears:arcane_wizard_skill_1",
+              "hiddenyears:arcane_wizard_skill_2",
+              "hiddenyears:archer_skill_1",
+              "hiddenyears:archer_skill_2",
+              "hiddenyears:assassin_skill_1",
+              "hiddenyears:assassin_skill_2",
+              "hiddenyears:berserker_skill_1",
+              "hiddenyears:berserker_skill_2",
+              "hiddenyears:conjure_wizard_skill_1",
+              "hiddenyears:conjure_wizard_skill_2",
+              "hiddenyears:magic_archer_skill_1",
+              "hiddenyears:magic_archer_skill_2",
+              "hiddenyears:orison_pastor_skill_1",
+              "hiddenyears:orison_pastor_skill_2",
+              "hiddenyears:pastor_skill_1",
+              "hiddenyears:pastor_skill_2",
+              "hiddenyears:swordman_skill_1",
+              "hiddenyears:swordman_skill_2",
+              "hiddenyears:warrior_skill_1",
+              "hiddenyears:warrior_skill_2",
+              "hiddenyears:wizard_skill_1",
+              "hiddenyears:wizard_skill_2"
+            ]
           }
         ]
       },
@@ -435,6 +481,39 @@
               "hiddenyears:sandstone_coal_ore",
               "hiddenyears:sandstone_iron_ore",
               "hiddenyears:sandstone_copper_ore"
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "construction",
+        "groups": [
+          {
+            "group_identifier": {
+              "name": "itemGroup.name.hiddenyears:metal_blocks",
+              "icon": "hiddenyears:crystal_block"
+            },
+            "items": [
+              "hiddenyears:crystal_block",
+              "hiddenyears:frigid_steel_block",
+              "hiddenyears:originite_block",
+              "hiddenyears:refined_rock_block",
+              "hiddenyears:ruby_block",
+              "hiddenyears:silver_block",
+              "hiddenyears:sparkling_copper_block",
+              "hiddenyears:sparkling_gold_block"
+            ]
+          },
+          {
+            "group_identifier": {
+              "name": "itemGroup.name.hiddenyears:frames",
+              "icon": "hiddenyears:lightning_grave"
+            },
+            "items": [
+              "hiddenyears:lightning_grave",
+              "hiddenyears:rebirth_frame",
+              "hiddenyears:ruby_altar",
+              "hiddenyears:sand_grave"
             ]
           }
         ]
