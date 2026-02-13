@@ -508,7 +508,7 @@
   "hiddenyears:itemGroup.name.bows": "隐藏之年·弓与箭",
   "hiddenyears:itemGroup.name.crossbows": "隐藏之年·弩与箭",
   "hiddenyears:itemGroup.name.coins": "隐藏之年·货币",
-  "hiddenyears:itemGroup.name.jobs": "隐藏之年·职业（测试）",
+  "hiddenyears:itemGroup.name.jobs": "隐藏之年·职业",
   "hiddenyears:itemGroup.name.saws": "隐藏之年·锯",
   "hiddenyears:itemGroup.name.sledgehammers": "隐藏之年·战锤",
   "hiddenyears:itemGroup.name.hammers": "隐藏之年·重锤",
@@ -1459,5 +1459,12 @@
   "item.spawn_egg.entity.hiddenyears:ferocious_sprite.name": "囚灵刷怪蛋",
   "entity.hiddenyears:magic_sprite.name": "魔法精灵",
   "item.spawn_egg.entity.hiddenyears:magic_sprite.name": "魔法精灵刷怪蛋",
-  "tile.hiddenyears:sand_grave.name": "层沙的末冢"
+  "tile.hiddenyears:sand_grave.name": "层沙的末冢",
+  "item.hiddenyears:archer_gem": "抉择晶石·弓箭手",
+  "item.hiddenyears:decision_gem": "抉择晶石",
+  "item.hiddenyears:oblivion_gem": "回溯晶石",
+  "item.hiddenyears:pastor_gem": "抉择晶石·牧师",
+  "item.hiddenyears:travel_gem": "行旅晶石",
+  "item.hiddenyears:warrior_gem": "抉择晶石·战士",
+  "item.hiddenyears:wizard_gem": "抉择晶石·法师"
 }

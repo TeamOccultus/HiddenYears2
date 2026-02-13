@@ -12,9 +12,6 @@
         "job_type": "none",
         "remove_old": true
       },
-      "minecraft:display_name": {
-        "value": "回溯宝石（职业测试）"
-      },
       "minecraft:icon": "hiddenyears:oblivion_gem",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 1

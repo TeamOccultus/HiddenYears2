@@ -8,9 +8,6 @@
       }
     },
     "components": {
-      "minecraft:display_name": {
-        "value": "抉择符石·弓箭手（职业测试）"
-      },
       "minecraft:icon": "hiddenyears:archer_gem",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 1
