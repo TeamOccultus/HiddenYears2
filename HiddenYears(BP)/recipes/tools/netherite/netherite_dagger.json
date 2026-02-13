@@ -1,29 +1,19 @@
 {
   "format_version": "1.21.100",
-  "minecraft:recipe_shaped": {
+  "minecraft:recipe_smithing_transform": {
     "description": {
       "identifier": "hiddenyears:netherite_dagger"
     },
-    "tags": ["crafting_table"],
-    "pattern": ["X", "#"],
-    "key": {
-      "#": {
-        "item": "stick"
-      },
-      "X": {
-        "item": "minecraft:netherite_ingot"
-      }
-    },
+    "tags": ["smithing_table"],
     "unlock": [
-      {
-        "item": "stick"
-      },
       {
         "item": "minecraft:netherite_ingot"
       }
     ],
-    "result": {
-      "item": "hiddenyears:netherite_dagger"
-    }
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "hiddenyears:diamond_dagger",
+    "addition": "minecraft:netherite_ingot",
+    "result": "hiddenyears:netherite_dagger"
   }
 }
+

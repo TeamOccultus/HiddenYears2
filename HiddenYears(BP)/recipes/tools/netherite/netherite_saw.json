@@ -1,32 +1,18 @@
 {
   "format_version": "1.21.100",
-  "minecraft:recipe_shaped": {
+  "minecraft:recipe_smithing_transform": {
     "description": {
       "identifier": "hiddenyears:netherite_saw"
     },
-    "tags": ["crafting_table"],
-    "pattern": ["S#", "XX"],
-    "key": {
-      "S": {
-        "item": "stick"
-      },
-      "#": {
-        "item": "minecraft:string"
-      },
-      "X": {
-        "item": "minecraft:netherite_ingot"
-      }
-    },
+    "tags": ["smithing_table"],
     "unlock": [
-      {
-        "item": "stick"
-      },
       {
         "item": "minecraft:netherite_ingot"
       }
     ],
-    "result": {
-      "item": "hiddenyears:netherite_saw"
-    }
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "hiddenyears:diamond_saw",
+    "addition": "minecraft:netherite_ingot",
+    "result": "hiddenyears:netherite_saw"
   }
 }

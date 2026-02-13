@@ -40,7 +40,8 @@
         "tags": [
           "minecraft:is_tool",
           "hiddenyears:is_hammer",
-          "minecraft:diamond_tier"
+          "minecraft:diamond_tier",
+          "minecraft:transformable_items"
         ]
       }
     }

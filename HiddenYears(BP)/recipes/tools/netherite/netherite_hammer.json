@@ -1,35 +1,18 @@
 {
   "format_version": "1.21.100",
-  "minecraft:recipe_shaped": {
+  "minecraft:recipe_smithing_transform": {
     "description": {
       "identifier": "hiddenyears:netherite_hammer"
     },
-    "tags": ["crafting_table"],
-    "pattern": ["SXS", "#", "#"],
-    "key": {
-      "#": {
-        "item": "stick"
-      },
-      "X": {
-        "item": "minecraft:netherite_ingot"
-      },
-      "S": {
-        "item": "minecraft:netherite_block"
-      }
-    },
+    "tags": ["smithing_table"],
     "unlock": [
       {
-        "item": "stick"
-      },
-      {
         "item": "minecraft:netherite_ingot"
-      },
-      {
-        "item": "minecraft:netherite_block"
       }
     ],
-    "result": {
-      "item": "hiddenyears:netherite_hammer"
-    }
+    "template": "minecraft:netherite_upgrade_smithing_template",
+    "base": "hiddenyears:diamond_hammer",
+    "addition": "minecraft:netherite_ingot",
+    "result": "hiddenyears:netherite_hammer"
   }
 }
