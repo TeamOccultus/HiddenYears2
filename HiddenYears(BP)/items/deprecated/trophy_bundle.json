@@ -4,10 +4,13 @@
     "description": {
       "identifier": "hiddenyears:trophy_bundle",
       "menu_category": {
-        "category": "items"
+        "category": "none"
       }
     },
     "components": {
+      "minecraft:display_name": {
+        "value": "Deprecated"
+      },
       "hiddenyears:trophy_bundle": {
         "table_source": "script"
       },

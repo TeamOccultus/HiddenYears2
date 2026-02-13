@@ -2,16 +2,18 @@
   "format_version": "1.21.100",
   "minecraft:item": {
     "description": {
-      "identifier": "hiddenyears:adventurer_note",
+      "identifier": "hiddenyears:encyclopedia",
       "menu_category": {
-        "category": "equipment"
+        "category": "none"
       }
     },
     "components": {
-      "hiddenyears:adventurer_note": {},
+      "hiddenyears:tutorial_center": {},
+      "minecraft:display_name": {
+        "value": "Deprecated"
+      },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:encyclopedia",
-      "minecraft:glint": true,
       "minecraft:rarity": "epic",
       "minecraft:tags": {
         "tags": ["minecraft:bookshelf_books"]
