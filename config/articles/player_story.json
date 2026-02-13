@@ -1,0 +1,49 @@
+{
+  "title": { "translate": "article.adventurer_note.title" },
+  "description": {
+    "rawtext": [
+      { "translate": "article.adventurer_note.content1" },
+      { "text": "\n" },
+      { "translate": "article.adventurer_note.content2" }
+    ]
+  },
+  "chapters": [
+    {
+      "title": {
+        "translate": "article.adventurer_note.chapter1.title"
+      },
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter1.body1" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body2" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body3" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body4" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter1.body5" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body6" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body7" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body8" },
+          { "text": "\n" },
+          { "translate": "article.adventurer_note.chapter1.body9" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter1.body10" }
+        ]
+      },
+      "icon_path": "textures/items/feather"
+    },
+    {
+      "title": { "text": "染上鲜血的宝石" },
+      "body": {
+        "text": "这里就是一段话"
+      },
+      "icon_path": "textures/items/ruby",
+      "required_task": "hiddenyears:bloody_gem"
+    }
+  ]
+}

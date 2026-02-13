@@ -1470,5 +1470,8 @@
   "itemGroup.name.hiddenyears:metal_blocks": "隐藏之年·金属方块",
   "itemGroup.name.hiddenyears:frames": "隐藏之年·坟墓与框架",
   "itemGroup.name.hiddenyears:skills": "隐藏之年·职业技能",
-  "itemGroup.name.hiddenyears:legend_weapons": "隐藏之年·传奇武器"
+  "itemGroup.name.hiddenyears:legend_weapons": "隐藏之年·传奇武器",
+  "ui.player_story.lock": "此章节已锁定",
+  "ui.player_story.unlock": "需要完成的任务：",
+  "ui.player_story": "背景故事"
 }
