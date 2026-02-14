@@ -21,7 +21,6 @@
         "hud_range": 125,
         "name": "entity.hiddenyears:king_of_ruby.name"
       },
-      "minecraft:equip_item": {},
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:experience_reward": {
         "on_death": "500"
@@ -131,15 +130,6 @@
       },
       "minecraft:behavior.hurt_by_target": {
         "priority": 1
-      },
-      "minecraft:behavior.equip_item": {
-        "priority": 3
-      },
-      "minecraft:behavior.pickup_items": {
-        "priority": 7,
-        "max_dist": 3,
-        "goal_radius": 2,
-        "speed_multiplier": 1.0
       },
       "minecraft:persistent": {},
       "minecraft:physics": {},
