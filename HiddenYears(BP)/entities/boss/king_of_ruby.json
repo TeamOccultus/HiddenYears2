@@ -75,7 +75,7 @@
         ]
       },
       "minecraft:collision_box": {
-        "width": 0.6,
+        "width": 1.5,
         "height": 1.9
       },
       "minecraft:movement": {
