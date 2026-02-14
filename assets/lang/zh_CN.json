@@ -1473,5 +1473,6 @@
   "itemGroup.name.hiddenyears:legend_weapons": "隐藏之年·传奇武器",
   "ui.player_story.lock": "此章节已锁定",
   "ui.player_story.unlock": "需要完成的任务：",
-  "ui.player_story": "背景故事"
+  "ui.player_story": "背景故事",
+  "tutorial.title": "游戏百科"
 }

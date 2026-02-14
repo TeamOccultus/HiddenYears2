@@ -8,6 +8,7 @@ import { UCVForm } from "./UCVForm";
 import { jobCenter, jobServer } from "../server/registry/job";
 import { articleCenter } from "../server/registry/article";
 import { PlayerStory } from "../core/PlayerStory";
+import { tutorialCenter } from "../server/registry/tutorial";
 
 export class ProfileForm {
   static display(player: Player): void {
@@ -41,6 +42,9 @@ export class ProfileForm {
       .button(
         { translate: "ui.player_story" },
         "textures/items/book_portfolio"
+      ).button(
+        { translate: "tutorial.title" },
+        "textures/items/encyclopedia"
       );
     form
       .divider()
@@ -77,10 +81,14 @@ export class ProfileForm {
         return;
       }
       if (result.selection === 6) {
-        CopyrightForm.display(player, true);
+        tutorialCenter.display(player);
         return;
       }
       if (result.selection === 7) {
+        CopyrightForm.display(player, true);
+        return;
+      }
+      if (result.selection === 8) {
         CreditsScreen.display(
           player,
           "CREDITS of Hidden Years²: Governor at the Skyline",

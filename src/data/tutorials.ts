@@ -1,53 +1,6 @@
 import { Tutorial, TutorialGroup } from "@occultus/api";
 
-const tutorialStick = new Tutorial(
-  "minecraft:stick",
-  "木棍",
-  "木棍是一种合成中的常见物品",
-  {
-    type: "item",
-    iconPath: "textures/items/stick"
-  }
-);
-
-const tutorialFood = new Tutorial(
-  "<tag>minecraft:is_food",
-  "食物",
-  "食物是使用后可以给玩家补充饥饿值和饱和度、有时还会产生额外效果的物品",
-  {
-    type: "item",
-    iconPath: "textures/items/apple"
-  }
-);
-
-const tutorialStone = new Tutorial(
-  "minecraft:stone",
-  "石头",
-  "石头是一种常见的建筑材料，可以用来制作各种工具和家具",
-  {
-    type: "block"
-  }
-);
-
-const tutorialEntity = new Tutorial(
-  "minecraft:cow",
-  "牛",
-  "牛是一种常见的动物，可以用来制作食物和皮革",
-  {
-    type: "entity"
-  }
-);
-
-const tutorialNether = new Tutorial(
-  "minecraft:nether",
-  "下界",
-  "下界是一个特殊维度，有着独特的生物和地形",
-  {
-    type: "dimension"
-  }
-);
-
-const tutorialAlways = new Tutorial(
+const materials = new Tutorial(
   "example:always",
   "教程",
   "这是一个总是显示的教程",
@@ -56,15 +9,22 @@ const tutorialAlways = new Tutorial(
   }
 );
 
-export const group = new TutorialGroup("group", "教程组", "这是一个教程组", {
-  tutorials: [tutorialStick, tutorialFood, tutorialStone]
-});
+const brewing = new Tutorial(
+  "hiddenyears:brewing",
+  "酿造",
+  [
+    {
+      title: "复合酿造",
+      body: "复合酿造是一种酿造方式"
+    },
+    {
+      title: "尼罗特酿造",
+      body: "尼罗特酿造是一种酿造方式，阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴，我也不知道写什么好了反正你要是看到了这段话就说明隐年的教程框架已经可以投入使用了"
+    }
+  ],
+  {
+    type: "alwaysAvailable"
+  }
+);
 
-export const tutorials = [
-  tutorialStick,
-  tutorialFood,
-  tutorialStone,
-  tutorialEntity,
-  tutorialNether,
-  tutorialAlways
-];
+export const tutorials = [materials, brewing];
