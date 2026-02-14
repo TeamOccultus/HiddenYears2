@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:magic_smithing_table"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XX", "##", "##"],
+    "key": {
+      "#": {
+        "item": "minecraft:planks"
+      },
+      "X": {
+        "item": "hiddenyears:magic_origin"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:planks"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:magic_smithing_table"
+    }
+  }
+}
