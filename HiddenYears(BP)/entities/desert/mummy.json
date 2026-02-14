@@ -49,7 +49,6 @@
       },
       "minecraft:equip_item": {},
       "minecraft:collision_box": { "width": 0.6, "height": 1.9 },
-      "minecraft:burns_in_daylight": {},
       "minecraft:movement.basic": {},
       "minecraft:navigation.walk": {
         "is_amphibious": true,
