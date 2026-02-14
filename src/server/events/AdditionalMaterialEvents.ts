@@ -4,7 +4,7 @@ import {
   PlayerBreakBlockAfterEvent,
   system
 } from "@minecraft/server";
-import { AdditionalMaterialType } from "../item/AdditionalMaterial";
+import { AdditionalMaterialType } from "../../core/AdditionalMaterial";
 
 export class AdditionalMaterialEvents {
   private constructor() {}
