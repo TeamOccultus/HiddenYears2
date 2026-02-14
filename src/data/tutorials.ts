@@ -1,9 +1,48 @@
-import { Tutorial, TutorialGroup } from "@occultus/api";
+import { Tutorial } from "@occultus/api";
 
 const materials = new Tutorial(
-  "example:always",
-  "教程",
-  "这是一个总是显示的教程",
+  "hiddenyears:materials",
+  { translate: "howtoplay.hiddenyears:material.title" },
+  [
+    {
+      title: { translate: "howtoplay.hiddenyears:material.title1" },
+      body: {
+        rawtext: [
+          { translate: "howtoplay.hiddenyears:material.wooden" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.bone" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.stone" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.refined_rock" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.copper" }
+        ]
+      }
+    },
+    {
+      title: { translate: "howtoplay.hiddenyears:material.title2" },
+      body: {
+        rawtext: [
+          {translate: "howtoplay.hiddenyears:material.silver"},
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.diamond" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.crystal" },
+        ]
+      }
+    },
+    {
+      title: { translate: "howtoplay.hiddenyears:material.title3" },
+      body: {
+        rawtext: [
+          { translate: "howtoplay.hiddenyears:material.netherite" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material.originite" },
+        ]
+      }
+    }
+  ],
   {
     type: "alwaysAvailable"
   }

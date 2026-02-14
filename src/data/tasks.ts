@@ -457,10 +457,48 @@ const prolugueActIII = new TaskGroup(
 );
 
 // 第二章·第一幕任务
+const eraOfNoGod = new Task(
+  "hiddenyears:era_of_no_god",
+  { translate: "task.era_of_no_god" },
+  {
+    rawtext: [
+      { translate: "task.era_of_no_god.desc_1" },
+      { text: "\n" },
+      { translate: "task.era_of_no_god.desc_2" },
+      { text: "\n" },
+      { translate: "task.era_of_no_god.desc_3" },
+      { text: "\n\n" },
+      { translate: "task.era_of_no_god.desc_4" }
+    ]
+  },
+  {
+    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    conditions: [
+      new KillEntityFamilyConditions(
+        "basic_lunamutatio_monster",
+        "ui.family.basic_lunamutatio_monster"
+      )
+    ],
+    previousTask: "none",
+    iconPath: "textures/items/lunamutatio_zombie_spawn_egg",
+    tips: { translate: "task.era_of_no_god.tips" }
+  }
+);
+eraOfNoGod.pushToServer(server);
+tasks.set(eraOfNoGod.id, eraOfNoGod);
+
 const infestedBeast = new Task(
   "hiddenyears:infested_beast",
   { translate: "task.infested_beast" },
-  { translate: "task.infested_beast.desc" },
+  {
+    rawtext: [
+      { translate: "task.infested_beast.desc_1" },
+      { text: "\n\n" },
+      { translate: "task.infested_beast.desc_2" },
+      { text: "\n" },
+      { translate: "task.infested_beast.desc_3" }
+    ]
+  },
   {
     awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
     conditions: [
@@ -477,7 +515,15 @@ tasks.set(infestedBeast.id, infestedBeast);
 const contractStone = new Task(
   "hiddenyears:contract_stone",
   { translate: "task.contract_stone" },
-  { translate: "task.contract_stone.desc" },
+  {
+    rawtext: [
+      { translate: "task.contract_stone.desc_1" },
+      { text: "\n" },
+      { translate: "task.contract_stone.desc_2" },
+      { text: "\n" },
+      { translate: "task.contract_stone.desc_3" }
+    ]
+  },
   {
     awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
     conditions: [new ItemConditions("hiddenyears:contract_gem")],
@@ -493,9 +539,17 @@ const memoryCondensation = new Task(
   { translate: "task.memory_condensation" },
   {
     rawtext: [
-      { translate: "task.memory_condensation.desc" },
+      { translate: "task.memory_condensation.desc_1" },
       { text: Format.newLine },
-      { translate: "task.memory_condensation.desc_2" }
+      { translate: "task.memory_condensation.desc_2" },
+      { text: "\n\n" },
+      { translate: "task.memory_condensation.desc_3" },
+      { text: Format.newLine },
+      { translate: "task.memory_condensation.desc_4" },
+      { text: Format.newLine },
+      { translate: "task.memory_condensation.desc_5" },
+      { text: Format.newLine },
+      { translate: "task.memory_condensation.desc_6" }
     ]
   },
   {
@@ -509,12 +563,49 @@ const memoryCondensation = new Task(
 );
 tasks.set(memoryCondensation.id, memoryCondensation);
 
+const endlessReincarnation = new Task(
+  "hiddenyears:endless_reincarnation",
+  { translate: "task.endless_reincarnation" },
+  {
+    rawtext: [
+      { translate: "task.endless_reincarnation.desc_1" },
+      { text: "\n" },
+      { translate: "task.endless_reincarnation.desc_2" },
+      { text: "\n" },
+      { translate: "task.endless_reincarnation.desc_3" },
+      { text: "\n" },
+      { translate: "task.endless_reincarnation.desc_4" },
+      { text: "\n\n" },
+      { translate: "task.endless_reincarnation.desc_5" }
+    ]
+  },
+  {
+    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    conditions: [
+      new KillEntityFamilyConditions(
+        "lunamutatio_traveler",
+        "ui.family.lunamutatio_traveler"
+      )
+    ],
+    previousTask: "none",
+    iconPath: "textures/items/egg_lunamutatio_traveler"
+  }
+);
+endlessReincarnation.pushToServer(server);
+tasks.set(endlessReincarnation.id, endlessReincarnation);
+
 const chapterIIActI = new TaskGroup(
   "hiddenyears:chapter2_act1",
   { translate: "task.chapter_2.act_1" },
   { translate: "task.chapter_2.act_1.desc" },
   {
-    tasks: [infestedBeast, contractStone, memoryCondensation],
+    tasks: [
+      eraOfNoGod,
+      infestedBeast,
+      contractStone,
+      memoryCondensation,
+      endlessReincarnation
+    ],
     awards: [new ItemAwards("hiddenyears:gold_coin", 20)],
     previousTask: "none",
     iconPath: "textures/items/crucifix_runes"
@@ -972,6 +1063,48 @@ const magicDust = new Task(
 );
 tasks.set(magicDust.id, magicDust);
 
+const homecoming = new Task(
+  "hiddenyears:homecoming",
+  { translate: "task.homecoming" },
+  { translate: "task.homecoming.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    conditions: [new ItemConditions("hiddenyears:home_gem")],
+    previousTask: "none",
+    iconPath: "textures/items/home_gem",
+    tips: { translate: "task.homecoming.tips" }
+  }
+);
+tasks.set(homecoming.id, homecoming);
+
+const wanderingBetweenStars = new Task(
+  "hiddenyears:wandering_between_stars",
+  { translate: "task.wandering_between_stars" },
+  { translate: "task.wandering_between_stars.desc" },
+  {
+    awards: [new ItemAwards("minecraft:diamond", 1)],
+    conditions: [new ItemConditions("hiddenyears:waystone_clock")],
+    previousTask: "none",
+    iconPath: "textures/items/waystone_clock", // 传送石碑纹理路径（需按实际资源路径调整）
+    tips: { translate: "task.wandering_between_stars.tips" }
+  }
+);
+tasks.set(wanderingBetweenStars.id, wanderingBetweenStars);
+
+const compoundBrewing = new Task(
+  "hiddenyears:compound_brewing",
+  { translate: "task.compound_brewing" },
+  { translate: "task.compound_brewing.desc" },
+  {
+    awards: [new ItemAwards("minecraft:diamond", 1)], // 奖励：钻石×1
+    conditions: [new ItemConditions("hiddenyears:complex_potion")], 
+    previousTask: "none",
+    iconPath: "textures/items/complex_potion",
+    tips: { translate: "task.compound_brewing.tips" }
+  }
+);
+tasks.set(compoundBrewing.id, compoundBrewing);
+
 const verdantStone = new Task(
   "hiddenyears:verdant_stone",
   { translate: "task.verdant_stone" },
@@ -1054,6 +1187,9 @@ const chapterIIActIV = new TaskGroup(
     tasks: [
       alchemist,
       magicDust,
+      homecoming,
+      wanderingBetweenStars,
+      compoundBrewing,
       verdantStone,
       infernalRemains,
       ancientWarRemains,
@@ -1577,12 +1713,11 @@ const epilogueActI = new TaskGroup(
   }
 );
 
-
-export function hasTask(id: string): boolean{
+export function hasTask(id: string): boolean {
   return tasks.has(id);
 }
 
-export function getTask(id: string):Task | undefined {
+export function getTask(id: string): Task | undefined {
   return tasks.get(id);
 }
 
