@@ -4,7 +4,7 @@
   "metadata": {
     "description": "",
     "author": "Team Occultus",
-    "version": "3.0.0-alpha.11"
+    "version": "3.0.0-beta.1"
   },
   "build": {
     "behavior": "HiddenYears(BP)",
