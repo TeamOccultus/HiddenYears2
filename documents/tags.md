@@ -27,6 +27,10 @@ category: Documents
 
 文章具有的标签。
 
+### hiddenyears:rock_embryos
+
+石胚具有的标签。
+
 ## 实体标签
 ### hiddenyears:immune_desert_debuff
 

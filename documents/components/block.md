@@ -31,18 +31,7 @@ category: Documents
 
 这些类型将会影响矿石被挖掘时的行为。
 
-## hiddenyears:ore_type
-
-将方块设置为宝库：
-
-| 参数         | 类型               | 可选？ | 描述                     |
-| ------------ | ------------------ | ------ | ------------------------ |
-| table        | `string`           | 必填   | 宝库的战利品表路径       |
-| transform_to | `string`           | 必填   | 宝库被使用后转换成的方块 |
-| key          | `"none" \| string` | 必填   | 宝库的钥匙               |
-| sound_event  | `string`           | 可选   | 宝库使用时播放的音效     |
-
-## hiddenyears:ore_type
+## hiddenyears:vault
 
 将方块设置为宝库：
 
