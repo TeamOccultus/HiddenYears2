@@ -38,12 +38,113 @@
       "icon_path": "textures/items/feather"
     },
     {
-      "title": { "text": "染上鲜血的宝石" },
-      "body": {
-        "text": "这里就是一段话"
+      "title": {
+        "translate": "article.adventurer_note.chapter_2.title"
       },
-      "icon_path": "textures/items/ruby",
-      "required_task": "hiddenyears:bloody_gem"
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter_2.body1" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_2.body2" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_2.body3" }
+        ]
+      },
+      "icon_path": "textures/items/iron_sword",
+      "required_task": "hiddenyears:monster_hunter"
+    },
+    {
+      "title": {
+        "translate": "article.adventurer_note.chapter_3.title"
+      },
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter_3.body1" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_3.body2" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_3.body3" }
+        ]
+      },
+      "icon_path": "textures/items/bleak_totem",
+      "required_task": "totem"
+    },
+    {
+      "title": {
+        "translate": "article.adventurer_note.chapter_4.title"
+      },
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter_4.body1" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_4.body2" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_4.body3" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_4.body4" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_4.body5" }
+        ]
+      },
+      "icon_path": "textures/items/ruby_crown",
+      "required_task": "hiddenyears:song_of_power_and_blood"
+    },
+    {
+      "title": {
+        "translate": "article.adventurer_note.chapter_5.title"
+      },
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter_5.body1" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_5.body2" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_5.body3" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_5.body4" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_5.body5" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_5.body6" }
+        ]
+      },
+      "icon_path": "textures/items/waystone_clock",
+      "required_task": "hiddenyears:endless_reincarnation"
+    },
+    {
+      "title": {
+        "translate": "article.adventurer_note.chapter_6.title"
+      },
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter_6.body1" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_6.body2" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_6.body3" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_6.body4" }
+        ]
+      },
+      "icon_path": "textures/ui/task/dragon_head",
+      "required_task": "hiddenyears:ender_dragon"
+    },{
+      "title": {
+        "translate": "article.adventurer_note.chapter_7.title"
+      },
+      "body": {
+        "rawtext": [
+          { "translate": "article.adventurer_note.chapter_7.body1" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_7.body2" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_7.body3" },
+          { "text": "\n\n" },
+          { "translate": "article.adventurer_note.chapter_7.body4" }
+        ]
+      },
+      "icon_path": "textures/items/isis_crown",
+      "required_task": "hiddenyears:palace_of_gods"
     }
   ]
 }
