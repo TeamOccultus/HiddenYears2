@@ -492,7 +492,7 @@
         "groups": [
           {
             "group_identifier": {
-              "name": "itemGroup.name.hiddenyears:metal_blocks",
+              "name": "hiddenyears:itemGroup.name.metal_blocks",
               "icon": "hiddenyears:crystal_block"
             },
             "items": [
@@ -508,7 +508,7 @@
           },
           {
             "group_identifier": {
-              "name": "itemGroup.name.hiddenyears:frames",
+              "name": "hiddenyears:itemGroup.name.frames",
               "icon": "hiddenyears:lightning_grave"
             },
             "items": [

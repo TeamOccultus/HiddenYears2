@@ -1,3 +1,4 @@
+// mc-disable molang.function.arguments
 {
   "format_version": "1.10.0",
   "animation_controllers": {
