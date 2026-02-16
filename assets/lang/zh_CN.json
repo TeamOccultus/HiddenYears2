@@ -1666,5 +1666,8 @@
   "article.hiddenyears:14.body_4": "「将文明带给了旧日的孽余",
   "article.hiddenyears:14.body_5": "「伊西斯，你有罪」",
   "article.hiddenyears:14.body_6": "我的身躯于神罚之下崩裂，阴雨连绵数十载未曾停歇 ——于是故国再度倾覆，往日的乐土成了白骨累累的乱葬岗，蹉跎于沙海的子民渐受沙蚀，帝国的军队沦为了没有意识的骨骸，茫茫沙海披上死神的面纱……",
-  "article.hiddenyears:14.body_7": "尼罗特帝国，就此覆灭。"
+  "article.hiddenyears:14.body_7": "尼罗特帝国，就此覆灭。",
+  "message.hiddenyears:need_boss_key": "这个祭坛需要特殊的物品才能打开……",
+  "message.hiddenyears:trial_stone_need_key": "试炼之石需要特殊的物品才能激活……",
+  "message.hiddenyears:trial_stone_need_key.active": "试炼之石需要特殊的物品才能领取奖励……"
 }

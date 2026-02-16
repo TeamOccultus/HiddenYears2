@@ -7,11 +7,9 @@ import {
 } from "@minecraft/server";
 import { TrialStoneParams } from "../components/TrialStoneComponent/Params";
 import {
-  consumeAmount,
   consumeEquipmentAmount,
   getEquipmentItem,
   loot,
-  setEquipmentItem,
   toVec3,
   Vector3Utils
 } from "@occultus/api";
@@ -51,7 +49,7 @@ export class TrialStoneEvents {
     const { player, block } = arg0;
     if (!canBeUsed(player, params)) {
       player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:need_key"
+        translate: "message.hiddenyears:trial_stone_need_key"
       });
       return;
     }
@@ -67,7 +65,7 @@ export class TrialStoneEvents {
     const { player, block } = arg0;
     if (!canBeUsed(player, params)) {
       player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:need_key"
+        translate: "message.hiddenyears:trial_stone_need_key.active"
       });
       return;
     }
@@ -87,7 +85,7 @@ export class TrialStoneEvents {
     const { player, block } = arg0;
     if (!canBeUsed(player, params)) {
       player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:need_key"
+        translate: "message.hiddenyears:trial_stone_need_key"
       });
     }
     if (params.key) consumeEquipmentAmount(player, 1);

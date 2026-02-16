@@ -61,7 +61,7 @@ export class BossSpwanerEvents {
       return;
     }
     player.onScreenDisplay.setActionBar({
-      translate: "message.hiddenyears:need_key"
+      translate: "message.hiddenyears:need_boss_key"
     });
   }
 }
