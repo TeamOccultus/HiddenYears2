@@ -35,15 +35,15 @@
     ]
   },
   "ruby@progress_bar_for_collections": {
-    "size": [268, 15],
+    "size": [268, 19],
     "$empty_texture": "textures/ui/ruby_bar_empty",
     "$filled_texture": "textures/ui/ruby_bar_filled",
     "controls": [
-      { "empty@empty_progress_bar": { "layer": 1, "size": [268, 15] } },
+      { "empty@empty_progress_bar": { "layer": 1, "size": [268, 19] } },
       {
         "filled@filled_progress_bar_for_collections": {
           "layer": 2,
-          "size": [268, 15]
+          "size": [268, 19]
         }
       }
     ],
