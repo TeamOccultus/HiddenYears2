@@ -128,6 +128,21 @@
           "name": "hiddenyears:cursed_ring"
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "conditions": [
+        {
+          "condition": "random_chance",
+          "chance": 0.02
+        }
+      ],
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:article_14"
+        }
+      ]
     }
   ]
 }

@@ -1,8 +1,5 @@
-import {
-  Player,
-  system
-} from "@minecraft/server";
-import {  Monologue } from "@occultus/api";
+import { ItemStack, Player, system } from "@minecraft/server";
+import { giveItem, Monologue } from "@occultus/api";
 
 export function listenIsisMonologue(player: Player) {
   player.onScreenDisplay.hideAllExcept([]);
@@ -44,6 +41,7 @@ export function listenIsisMonologue(player: Player) {
     .reduce((sum, item) => sum + item.delay, 0);
   system.runTimeout(() => {
     player.playSound("random.levelup");
+    giveItem(player, new ItemStack("hiddenyears:article_14"));
     player.onScreenDisplay.setTitle({
       translate: "title.hiddenyears:desert_book"
     });
