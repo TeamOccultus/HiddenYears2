@@ -1,6 +1,7 @@
 import { ItemStack, system } from "@minecraft/server";
 import { HammerRecipe } from "./HammerRecipeType";
 import { hammerIngredientData, hammerRecipesData } from "./HammerRecipeData";
+import { Random } from "@occultus/api";
 
 export class HammerRecipeManager {
   static ingredients: string[] = hammerIngredientData;
@@ -8,7 +9,12 @@ export class HammerRecipeManager {
   static getResult(ingredient: string): ItemStack | null {
     for (const recipe of this.recipes) {
       if (recipe.ingredient === ingredient) {
-        return new ItemStack(recipe.output, recipe.amount);
+        if (typeof recipe.amount === "number")
+          return new ItemStack(recipe.output, recipe.amount);
+        return new ItemStack(
+          recipe.output,
+          Random.integer(recipe.amount.max, recipe.amount.min)
+        );
       }
     }
     return null;

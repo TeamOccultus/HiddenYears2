@@ -1,5 +1,8 @@
 export type CrowbarRecipe = {
   ingredient: string;
   output: string;
-  amount: number;
+  amount: number | {
+    min: number;
+    max: number;
+  };
 };

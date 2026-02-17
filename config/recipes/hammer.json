@@ -1,0 +1,90 @@
+[
+  {
+    "ingredient": "minecraft:stone",
+    "output": "hiddenyears:cobblestone",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:diamond_ore",
+    "output": "minecraft:diamond",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:deepslate_diamond_ore",
+    "output": "minecraft:diamond",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:coal_ore",
+    "output": "minecraft:coal",
+    "amount": {
+      "min": 6,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:deepslate_coal_ore",
+    "output": "minecraft:coal",
+    "amount": {
+      "min": 6,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:copper_ore",
+    "output": "minecraft:raw_copper",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:deepslate_copper_ore",
+    "output": "minecraft:raw_copper",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:emerald_ore",
+    "output": "minecraft:emerald",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:deepslate_emerald_ore",
+    "output": "minecraft:emerald",
+    "amount": {
+      "min": 4,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:lapis_ore",
+    "output": "minecraft:lapis_lazuli",
+    "amount": {
+      "min": 6,
+      "max": 2
+    }
+  },
+  {
+    "ingredient": "minecraft:deepslate_lapis_ore",
+    "output": "minecraft:lapis_lazuli",
+    "amount": {
+      "min": 6,
+      "max": 2
+    }
+  }
+]

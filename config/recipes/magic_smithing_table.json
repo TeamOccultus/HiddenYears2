@@ -1,0 +1,371 @@
+[
+  {
+    "type": "transform",
+    "base": "minecraft:copper_ingot",
+    "addition": "hiddenyears:sparkling_stone",
+    "output": "hiddenyears:sparkling_copper_ingot"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_axe",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_axe"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_dagger",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_dagger"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_hammer",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_hammer"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_hoe",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_hoe"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_pickaxe",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_pickaxe"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_saw",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_saw"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_shovel",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_shovel"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_sledgehammer",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_sledgehammer"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_sword",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_sword"
+  },
+  //
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_axe",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_axe"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_dagger",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_dagger"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_hammer",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_hammer"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_hoe",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_hoe"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_pickaxe",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_pickaxe"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_saw",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_saw"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_shovel",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_shovel"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_sledgehammer",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_sledgehammer"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_sword",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_sword"
+  },
+  //
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_sword",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_sword",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_axe",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_axe",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_dagger",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_dagger",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_hammer",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_hammer",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_hoe",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_axe",
+    "addition": "hiddenyears:erosion_hoe",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_pickaxe",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_pickaxe",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_saw",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_saw",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_shovel",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_shovel",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_sledgehammer",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:netherite_sledgehammer",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  // sd
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_sword",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_sword",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_axe",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_axe",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_dagger",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_dagger",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_hammer",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_hammer",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_hoe",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_axe",
+    "addition": "hiddenyears:erosion_hoe",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_pickaxe",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_pickaxe",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_saw",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_saw",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_shovel",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_shovel",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_sledgehammer",
+    "addition": "hiddenyears:sparkling_copper_ingot",
+    "output": "sparkling_copper",
+    "lore": "§fSPARKLING COPPER§r"
+  },
+  {
+    "type": "addtional",
+    "base": "minecraft:originite_sledgehammer",
+    "addition": "hiddenyears:erosion_totem",
+    "output": "erosion",
+    "lore": "§fTOTEM§r"
+  }
+]

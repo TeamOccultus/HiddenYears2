@@ -1,0 +1,58 @@
+[
+  {
+    "ingredient": "minecraft:diamond_block",
+    "output": "hiddenyears:diamond_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  },
+  {
+    "ingredient": "minecraft:copper_block",
+    "output": "hiddenyears:copper_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  },
+  {
+    "ingredient": "minecraft:emerald_block",
+    "output": "hiddenyears:emerald_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  },
+  {
+    "ingredient": "minecraft:lapis_block",
+    "output": "hiddenyears:lapis_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  },
+  {
+    "ingredient": "minecraft:netherite_block",
+    "output": "hiddenyears:netherite_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  },
+  {
+    "ingredient": "minecraft:gold_block",
+    "output": "minecraft:gold_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  },
+  {
+    "ingredient": "minecraft:iron_block",
+    "output": "minecraft:iron_nugget",
+    "amount": {
+      "min": 5,
+      "max": 3
+    }
+  }
+]

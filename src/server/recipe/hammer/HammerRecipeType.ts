@@ -1,5 +1,8 @@
 export type HammerRecipe = {
   ingredient: string;
   output: string;
-  amount: number;
+  amount: number | {
+    min: number;
+    max: number;
+  };
 };
