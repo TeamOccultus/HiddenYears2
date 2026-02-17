@@ -21,6 +21,31 @@
 </p>
 
 ---
+欢迎使用隐藏之年²——一款仍在不断完善中的 Minecraft 冒险模组！
+
+本项目将从内至外地改变世界，初入你可能并未发现与原版游戏的不同，但随着探索的深入，潜藏在世界深处的秘密将逐渐被揭开……
+
+## 内容介绍
+
+[![pZONV9U.png](https://s41.ax1x.com/2026/02/17/pZONV9U.png)](https://imgchr.com/i/pZONV9U)
+
+⚔️多样职业路线：支持从初始旅者逐步进阶，进而解锁强力技能与进阶职业
+
+[![pZONZ3F.png](https://s41.ax1x.com/2026/02/17/pZONZ3F.png)](https://imgchr.com/i/pZONZ3F)
+
+🛠丰富的材料与装备：从初期木、石、骨到后期秘银、钻石、魔晶乃至最强大的原初合金，应有尽有
+
+[![pZWOfi9.png](https://s41.ax1x.com/2026/01/29/pZWOfi9.png)](https://imgchr.com/i/pZWOfi9)
+
+🔮魔法与奇幻体系：魔法深植于世界本源，以红宝石为关键节点，解锁不同玩法
+
+[![pEnhlcV.png](https://s21.ax1x.com/2025/02/11/pEnhlcV.png)](https://imgchr.com/i/pEnhlcV)
+
+🧩任务与探索链：层层递进的章节任务、玩法教程，引导玩家从新手走向传奇
+
+[![pZONec4.png](https://s41.ax1x.com/2026/02/17/pZONec4.png)](https://imgchr.com/i/pZONec4)
+
+🪙全新货币：它们与原版的绿宝石等效，但获取更为方便，用它们和村民进行交易吧！
 
 
 ## 下载
@@ -71,6 +96,39 @@
 [![翻译状态](https://translate.codeberg.org/widget/hidden-years/multi-auto.svg)](https://translate.codeberg.org/engage/hidden-years/)
 
 我们的翻译向社区开放，任何人均可以通过 [Codeberg Translate](https://translate.codeberg.org/projects/hidden-years/) 向我们贡献译文。
+
+## 幕后工作者
+### Team Occultus(隐年组)
+- 方漓猫：项目负责人、基岩版程序开发、主策划
+- 星零大队长：主美术
+- RawDiamondMC：程序开发
+- Luning_39：基岩版程序开发
+- 哈基尽：策划、模型、动画
+- 夙风：建筑
+- Xiris：模型、美术
+- KuLou_D：美术
+- Jess：美术
+- 是亚克力：美术
+- Gstbnnnnnn：美术
+- 小史龙吖Slime_Dragon：美术
+- FREirc：音乐和英文本地化
+- LnW：音乐
+- 筱风鸢：策划
+- CrystalLine：英文本地化
+- StoneNugget：本地化工作
+- NewBee_Bar：团队吉祥物
+- Призмарин：俄文本地化
+
+### OTeam（合作团队）
+- 铭杉：建筑师
+
+### 特别鸣谢
+- JD：提供技术支持
+- 沉寂的杀手：制作宣传片
+- portedboar44215：贡献PBR纹理
+- 多位玩家（痴人心心念念、毅轩氵帖、苏晴晴在此、合理的Fish、绝对零度·沉寂、柘玄等）：提供功能建议
+- Kastname：协助在MC百科投稿
+
 
 ## 相关链接
 
