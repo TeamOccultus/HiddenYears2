@@ -59,7 +59,6 @@
     "addition": "hiddenyears:frigid_steel_ingot",
     "output": "hiddenyears:frigid_steel_sword"
   },
-  //
   {
     "type": "transform",
     "base": "hiddenyears:originite_axe",
@@ -114,7 +113,6 @@
     "addition": "hiddenyears:sparkling_gold_ingot",
     "output": "hiddenyears:sparkling_gold_sword"
   },
-  //
   {
     "type": "addtional",
     "base": "minecraft:netherite_sword",
@@ -241,7 +239,6 @@
     "output": "erosion",
     "lore": "§fTOTEM§r"
   },
-  // sd
   {
     "type": "addtional",
     "base": "minecraft:originite_sword",
