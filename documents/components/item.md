@@ -244,6 +244,51 @@ category: Documents
 | `home`        | 读取玩家出生点作为目的地 |
 | `waystone`    | 与传送石碑绑定           |
 
+## hiddenyears:specific_damage
+
+允许该物品对特定类型的生物造成额外伤害：
+
+| 参数       | 类型      | 可选？ | 描述                       |
+| ---------- | --------- | ------ | -------------------------- |
+| N/A | `SpecificDamageType[]` | 必填 | 配置额外伤害相关选项 |
+
+在`SpecificDamageType`类型中：
+
+| 参数       | 类型      | 可选？ | 描述                       |
+| ---------- | --------- | ------ | -------------------------- |
+| family   | `string` | 必填   | 适用于该类型额外伤害的实体族 |
+| damage | `number | [max: number, min: number]` | 必填 | 对该类型实体造成的额外伤害 |
+
+
+## hiddenyears:structure_placer
+
+允许该物品放置结构：
+
+| 参数          | 类型                     | 可选？ | 描述                       |
+| ------------- | ------------------------ | ------ | -------------------------- |
+| max_height    | `number`                 | 必填   | 结构放置的最大高度         |
+| min_height    | `number`                 | 必填   | 结构放置的最小高度         |
+| id            | `string`                 | 必填   | 要放置的结构ID             |
+| place_offset  | `[number, number, number]` | 可选   | 结构放置的偏移量           |
+| show_warning  | `boolean`                | 可选   | 是否显示放置警告           |
+| animation     | `AnimationConfig`        | 可选   | 结构放置时的动画配置       |
+| present       | `StructurePresent`       | 可选   | 结构的预设类型             |
+
+在`AnimationConfig`类型中：
+
+| 参数    | 类型                  | 可选？ | 描述                       |
+| ------- | --------------------- | ------ | -------------------------- |
+| type    | `"blocks" | "layers" | "none"` | 必填   | 动画类型                   |
+| seconds | `number`              | 必填   | 动画持续时间（秒）         |
+
+在`StructurePresent`类型中：
+
+| 可用值      | 描述     |
+| ----------- | -------- |
+| `aaru_dream` |  |
+
+
+
 ## hiddenyears:blessing_of_isis
 
 > [!IMPORTANT]
@@ -271,3 +316,10 @@ category: Documents
 > 这是一个内部组件，在未来我们会开放更多自定义选项
 
 使物品获得「时匿怀表」的功能。
+
+## hiddenyears:job_skill
+
+> [!IMPORTANT]
+> 这是一个内部组件，在未来我们会开放更多自定义选项
+
+标记物品为职业技能。
