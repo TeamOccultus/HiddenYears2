@@ -16,7 +16,7 @@
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
-        "max_durability": 124
+        "max_durability": 937
       },
       "minecraft:damage": 10,
       "minecraft:digger": {
