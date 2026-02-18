@@ -389,19 +389,6 @@ const crystal = new Task(
 tasks.set(crystal.id, crystal);
 
 // 世界探索任务
-const god = new Task(
-  "hiddenyears:god",
-  { translate: "task.god" },
-  { translate: "task.god.desc" },
-  {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
-    conditions: [new ItemConditions("hiddenyears:hidden_story")],
-    previousTask: "none",
-    iconPath: "textures/items/lost_letter"
-  }
-);
-tasks.set(god.id, god);
-
 const bleakTotem = new Task(
   "hiddenyears:bleak_totem",
   { translate: "task.bleak_totem" },
@@ -430,7 +417,7 @@ const totem = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+    awards: [new ItemAwards("hiddenyears:hidden_story")],
     conditions: [new ItemConditions("minecraft:totem_of_undying")],
     previousTask: "none",
     iconPath: "textures/items/totem"
@@ -449,7 +436,7 @@ const prolugueActIII = new TaskGroup(
     ]
   },
   {
-    tasks: [silver, diamond, crystal, bleakTotem, god, totem],
+    tasks: [silver, diamond, crystal, bleakTotem, totem],
     awards: [new ItemAwards("hiddenyears:stack_of_gold_coin")],
     previousTask: "none",
     iconPath: "textures/items/diamond"
