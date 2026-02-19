@@ -4,14 +4,11 @@
   "out": "docs",
   "plugin": ["typedoc-rhineai-theme"],
   "projectDocuments": [
+    "documents/README.md",
     "documents/standard/README.md",
-    "documents/components/README.md",
-    "documents/recipe/README.md",
     "documents/agreement/README.md",
-    "documents/tags.md",
-    "documents/family.md",
     "documents/v2.md",
-    "documents/v3.md"
+    "documents/v3.md",
   ],
   "includeVersion": true
 }
