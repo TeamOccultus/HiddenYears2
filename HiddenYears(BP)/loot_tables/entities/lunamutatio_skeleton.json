@@ -98,6 +98,9 @@
         {
           "condition": "random_chance",
           "chance": 0.03
+        },
+        {
+          "condition": "killed_by_player_or_pets"
         }
       ],
       "entries": [

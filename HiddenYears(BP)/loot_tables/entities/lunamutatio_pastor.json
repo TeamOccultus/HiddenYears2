@@ -135,6 +135,9 @@
         {
           "condition": "random_chance",
           "chance": 0.02
+        },
+        {
+          "condition": "killed_by_player_or_pets"
         }
       ],
       "entries": [
