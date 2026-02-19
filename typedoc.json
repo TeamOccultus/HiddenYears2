@@ -2,7 +2,7 @@
   // "entryPoints": ["src/index.ts", "src/types/data.ts"],
   "entryPoints": ["./src/main.ts"],
   "out": "docs",
-  "plugin": ["typedoc-material-theme"],
+  "plugin": ["typedoc-rhineai-theme"],
   "projectDocuments": [
     "documents/standard/README.md",
     "documents/components/README.md",

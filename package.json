@@ -22,6 +22,6 @@
   },
   "devDependencies": {
     "typedoc": "^0.28.16",
-    "typedoc-material-theme": "^1.4.1"
+    "typedoc-rhineai-theme": "^1.2.0"
   }
 }

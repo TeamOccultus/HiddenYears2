@@ -33,6 +33,9 @@ importers:
       typedoc-material-theme:
         specifier: ^1.4.1
         version: 1.4.1(typedoc@0.28.16(typescript@5.9.3))
+      typedoc-rhineai-theme:
+        specifier: ^1.2.0
+        version: 1.2.0(typedoc@0.28.16(typescript@5.9.3))
 
 packages:
 
@@ -793,6 +796,12 @@ packages:
     peerDependencies:
       typedoc: ^0.25.13 || ^0.26.x || ^0.27.x || ^0.28.x
 
+  typedoc-rhineai-theme@1.2.0:
+    resolution: {integrity: sha512-TotPqT+DP1vGTFsaOL38WN8LECdxOYEGvG352X+ePmQCbzaiD3PfG6SaPgvUUcrEB1p7bUAB3/5IR5lpdKKprQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      typedoc: ~0.28.15
+
   typedoc@0.28.16:
     resolution: {integrity: sha512-x4xW77QC3i5DUFMBp0qjukOTnr/sSg+oEs86nB3LjDslvAmwe/PUGDWbe3GrIqt59oTqoXK5GRK9tAa0sYMiog==}
     engines: {node: '>= 18', pnpm: '>= 10'}
@@ -1552,6 +1561,10 @@ snapshots:
   typedoc-material-theme@1.4.1(typedoc@0.28.16(typescript@5.9.3)):
     dependencies:
       '@material/material-color-utilities': 0.3.0
+      typedoc: 0.28.16(typescript@5.9.3)
+
+  typedoc-rhineai-theme@1.2.0(typedoc@0.28.16(typescript@5.9.3)):
+    dependencies:
       typedoc: 0.28.16(typescript@5.9.3)
 
   typedoc@0.28.16(typescript@5.9.3):
