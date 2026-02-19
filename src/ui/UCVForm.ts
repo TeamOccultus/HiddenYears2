@@ -1,11 +1,11 @@
 import { ItemStack, Player } from "@minecraft/server";
 import { ModalFormData, ModalFormResponse } from "@minecraft/server-ui";
 import { CoinOrder, UnifiedCurrencyValue } from "../core/UnifiedCurrencyValue";
-import { ProfileForm } from "./ProfileForm";
 import { default as coins } from "../../config/store/coin.json";
+import { FormLike } from "@occultus/core";
 
-export class UCVForm {
-  static display(player: Player, backTo = false) {
+export class UCVForm extends FormLike {
+  display(player: Player, backTo: FormLike[]) {
     const form = new ModalFormData().title({ translate: "ui.ucv" }).label({
       translate: "ui.ucv.own",
       with: [UnifiedCurrencyValue.get(player).toString()]
@@ -23,7 +23,7 @@ export class UCVForm {
       const rawOrder = response.formValues;
       console.log(rawOrder);
       const orders: CoinOrder[] = [];
-      if (!rawOrder) return;
+      if (!rawOrder) return this.quit(player, backTo);
       rawOrder.forEach((value, index) => {
         if (index === 0) return;
         if (value === 0) return;
@@ -34,9 +34,8 @@ export class UCVForm {
           itemCount: value
         });
       });
-      console.log(orders.toString());
       UnifiedCurrencyValue.processCoinOrder(player, orders);
-      if (backTo) ProfileForm.display(player);
+      return this.quit(player, backTo);
     });
   }
 }

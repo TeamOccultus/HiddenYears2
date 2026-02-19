@@ -1,17 +1,17 @@
 import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArtifactForm, CreditsScreen } from "@occultus/api";
-import { book } from "../server/registry/task";
+import { ArtifactForm, CreditsScreen, FormLike } from "@occultus/api";
+import { taskCenter } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
 import { UCVForm } from "./UCVForm";
-import { jobCenter, jobServer } from "../server/registry/job";
+import { jobCenter } from "../server/registry/job";
 import { articleCenter } from "../server/registry/article";
 import { PlayerStory } from "../core/PlayerStory";
 import { tutorialCenter } from "../server/registry/tutorial";
 
-export class ProfileForm {
-  static display(player: Player): void {
+export class ProfileForm extends FormLike {
+  display(player: Player, backTo: FormLike[]): void {
     const form = new ActionFormData()
       .title({ translate: "ui.profile.title" })
       .body({
@@ -39,13 +39,8 @@ export class ProfileForm {
       .divider()
       .label({ translate: "ui.guide" })
       .button({ translate: "ui.article_center" }, "textures/items/lost_letter")
-      .button(
-        { translate: "ui.player_story" },
-        "textures/items/book_portfolio"
-      ).button(
-        { translate: "tutorial.title" },
-        "textures/items/encyclopedia"
-      );
+      .button({ translate: "ui.player_story" }, "textures/items/book_portfolio")
+      .button({ translate: "tutorial.title" }, "textures/items/encyclopedia");
     form
       .divider()
       .label({ translate: "ui.profile.about" })
@@ -55,37 +50,37 @@ export class ProfileForm {
       )
       .button({ translate: "ui.profile.credits" }, "textures/ui/credits_hat");
     form.show(player).then((result) => {
-      if (result.canceled) return;
-      if (result.selection === undefined) return;
+      if (result.canceled) return this.quit(player, backTo);
+      if (result.selection === undefined) return this.quit(player, backTo);
       if (result.selection === 0) {
-        book.display(player);
+        this.jumpTo(player, taskCenter, backTo);
       }
       if (result.selection === 1) {
-        ArtifactForm.display(player);
+        this.jumpTo(player, new ArtifactForm(), backTo);
         return;
       }
       if (result.selection === 2) {
-        UCVForm.display(player, true);
+        this.jumpTo(player, new UCVForm(), backTo)
         return;
       }
       if (result.selection === 3) {
-        jobCenter.display(player, jobServer);
+        this.jumpTo(player, jobCenter, backTo);
         return;
       }
       if (result.selection === 4) {
-        articleCenter.display(player);
+        this.jumpTo(player, articleCenter, backTo);
         return;
       }
       if (result.selection === 5) {
-        new PlayerStory("temp_story").display(player);
+        this.jumpTo(player, new PlayerStory("temp"), backTo);
         return;
       }
       if (result.selection === 6) {
-        tutorialCenter.display(player);
+        this.jumpTo(player, tutorialCenter, backTo);
         return;
       }
       if (result.selection === 7) {
-        CopyrightForm.display(player, true);
+        this.jumpTo(player, new CopyrightForm(), backTo);
         return;
       }
       if (result.selection === 8) {

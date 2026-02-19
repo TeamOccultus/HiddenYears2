@@ -32,7 +32,7 @@ export class ProfileCommand {
             return {
               status: CustomCommandStatus.Failure
             };
-          ProfileForm.display(sourceEntity);
+          new ProfileForm().display(sourceEntity, []);
           return {
             status: CustomCommandStatus.Success
           };

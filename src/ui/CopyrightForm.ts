@@ -1,10 +1,10 @@
 import { Player } from "@minecraft/server";
 import { MessageFormData } from "@minecraft/server-ui";
 import { ProfileForm } from "./ProfileForm";
-import { StarTenon } from "@occultus/api";
+import { FormLike, OccultusCore, StarTenon } from "@occultus/api";
 
-export class CopyrightForm {
-  static display(player: Player, backTo = false) {
+export class CopyrightForm extends FormLike {
+  display(player: Player, backTo: FormLike[]) {
     const form = new MessageFormData()
       .title({ translate: "ui.profile.copyright" })
       .body({
@@ -23,6 +23,10 @@ export class CopyrightForm {
           },
           { text: "\n" },
           {
+            text: `Occultus Core v${OccultusCore.version}`
+          },
+          { text: "\n" },
+          {
             text: `Occultus SDK v${StarTenon.version}`
           },
           { text: "\n" },
@@ -33,8 +37,8 @@ export class CopyrightForm {
       })
       .button1({ translate: "gui.back" })
       .button2({ translate: "gui.ok" });
-    form.show(player).then((response) => {
-      if (backTo) ProfileForm.display(player);
+    form.show(player).then((_response) => {
+      this.quit(player, backTo);
     });
   }
 }

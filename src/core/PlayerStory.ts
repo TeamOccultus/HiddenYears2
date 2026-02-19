@@ -2,7 +2,7 @@ import { Player, RawMessage, system } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { default as builtinData } from "../../config/articles/player_story.json";
 import { getTask, hasTask } from "../data/tasks";
-import { parseToRaw, TaskStatus } from "@occultus/api";
+import { FormLike, parseToRaw, TaskStatus } from "@occultus/api";
 
 /**
  * 玩家故事配置文件的 JSON Schema
@@ -44,7 +44,7 @@ export type PlayerStoryChapter = {
 /**
  * 用于实现玩家故事的类
  */
-export class PlayerStory {
+export class PlayerStory  extends FormLike{
   static generateChapterBody(
     chapter: PlayerStoryChapter,
     player: Player
@@ -87,7 +87,9 @@ export class PlayerStory {
     if (task.getStatus(player) === TaskStatus.Done) return true;
     return false;
   }
-  constructor(readonly id: string) {}
+  constructor(readonly id: string) {
+    super();
+  }
   /**
    * 显示玩家故事
    * @param player
@@ -105,7 +107,7 @@ export class PlayerStory {
     contentForm.show(player).then((response) => {
       console.log(response.selection);
       if (response.canceled || response.selection === undefined) {
-        return;
+        return this.quit(player, backTo);
       }
       const chapterForm = new ActionFormData()
         .title(builtinData.chapters[response.selection].title)
@@ -115,9 +117,7 @@ export class PlayerStory {
         });
       // @ts-ignore
       chapterForm.show(player).then((response) => {
-        if (response.selection === 0) {
-          this.display(player, backTo);
-        }
+        contentForm.show(player);
       });
     });
   }
