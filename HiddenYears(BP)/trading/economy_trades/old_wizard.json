@@ -51,6 +51,166 @@
               ]
             }
           ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:thorns_cape",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:invisible_cape",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:mask_of_the_sea",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:crucifix_runes",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:gluttonous_runes",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 12,
+              "wants": [
+                {
+                  "item": "hiddenyears:magic_origin",
+                  "quantity": 7
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:sparkling_mask",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "max_uses": 1,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 6
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:waystone_clock",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:waystone",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 5
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:home_gem",
+                  "quantity": 1
+                }
+              ]
+            },
+            {
+              "max_uses": 8,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 9
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:return_gem",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     }
