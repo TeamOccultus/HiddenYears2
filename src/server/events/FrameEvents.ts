@@ -26,8 +26,8 @@ export class FrameEvents {
   }
   static rubyFrameEvent(arg0: ItemComponentUseOnEvent) {
     const { block, source } = arg0;
-    if (block.typeId !== "hiddenyears:ruby_frame") return;
-    block.setType("hiddenyears:actived_ruby_frame");
+    if (block.typeId !== "hiddenyears:ruby_altar") return;
+    block.setType("hiddenyears:actived_ruby_altar");
     setEquipmentItem(source, consumeAmount(getEquipmentItem(source), 1));
     block.dimension.spawnEntity(
       "hiddenyears:ferocious_ruby_guardian",
