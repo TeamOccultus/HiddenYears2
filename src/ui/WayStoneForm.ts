@@ -15,9 +15,12 @@ export class WayStoneForm extends FormLike {
     const form = new ActionFormData()
       .title({ translate: "ui.waystone.title" })
       .body({ translate: "ui.waystone.body" })
-      .button({ translate: "gui.delete" }, "textures/ui/cancel");
+      .button({ translate: "gui.delete" }, "textures/ui/icon_trash");
     list.forEach((wayStone) => {
-      form.button(wayStone.name, wayStone.icp);
+      console.log(typeof wayStone.icp);
+      if(!wayStone.icp) wayStone.icp = "textures/ui/icon_random"
+      if(WayStone.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp ?? "textures/ui/icon_random");
+      return form.button(wayStone.name, "textures/ui/cancel");
     });
     form.show(player).then((result) => {
       if (result.canceled) return this.quit(player, backTo);
@@ -26,6 +29,23 @@ export class WayStoneForm extends FormLike {
         return this.jumpTo(player, new WayStoneDeleteForm(), backTo);
       }
       const selection = list[result.selection - 1];
+      if (!WayStone.isWayStoneAvailable(selection)) {
+        this.quit(player, backTo);
+        player.sendMessage({
+          rawtext: [
+            { text: Color.gray },
+            {
+              translate: "ui.waystone.unavailable",
+              with: [
+                selection.loc[0].toString(),
+                selection.loc[1].toString(),
+                selection.loc[2].toString()
+              ]
+            }
+          ]
+        });
+        return;
+      }
       player.teleport(
         toVec3(selection.loc[0], selection.loc[1] + 1, selection.loc[2]),
         { dimension: world.getDimension(selection.dim) }

@@ -1,8 +1,15 @@
-import { Player, Vector3 } from "@minecraft/server";
+import { Player, Vector3, world } from "@minecraft/server";
 import { toVec3, Vector3Utils } from "@occultus/api";
 
 export class WayStone {
   static DYNAMIC_PROPERTY = "hiddenyears:waystone";
+  static WAYSTONE_IDENTIFIER = "hiddenyears:waystone";
+  static isWayStoneAvailable(config: WayPointData): boolean {
+    const block  = world.getDimension(config.dim).getBlock(toVec3(...config.loc));
+    if(!block) return false;
+    if (block.typeId === WayStone.WAYSTONE_IDENTIFIER) return true;
+    return false;
+  }
   static getWayStoneList(player: Player): WayPointData[] {
     const data = player.getDynamicProperty(WayStone.DYNAMIC_PROPERTY);
     if (!data) return [];
