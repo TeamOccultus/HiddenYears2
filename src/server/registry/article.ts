@@ -1,41 +1,26 @@
-import { default as articles } from "../../../config/articles/single_article.json";
 import { default as chapteredArticles } from "../../../config/articles/chaptered_article.json";
-import { Article, ArticleCenter, ArticleRegistries } from "@occultus/api";
-
-export const articleRegistry = new ArticleRegistries();
-export const articleCenter = new ArticleCenter(
-  "hidden_years:article_center",
-  { translate: "ui.article_center" },
-  { translate: "ui.article_center.description" },
-  true,
-  articleRegistry
-);
+import {
+  ArticleServerBindings
+} from "@occultus/api";
 
 /**
  * 注册所有的文章
  */
 export function registryArticles() {
-  articles.forEach((article) => {
-    articleRegistry.add(
-      new Article(
-        article.id,
-        article.title,
-        article.content,
-        null,
-        "textures/items/paper"
-      )
-    );
+  ArticleServerBindings.create({
+    componentName: "hiddenyears:article",
+    contentComponentName: "hiddenyears:article_content",
+    centerComponentName: "hiddenyears:article_center",
+    centerConfig: {
+      title: { translate: "ui.article_center" },
+      description: { translate: "ui.article_center.description" },
+      icon_path: "textures/items/lost_letter"
+    }
   });
-  chapteredArticles.forEach((article) => {
-    articleRegistry.add(
-      new Article(
-        article.id,
-        article.title,
-        article.content,
-        article.chapters,
-        "textures/items/task_book"
-      )
-    );
+  chapteredArticles.forEach((chapteredArticle) => {
+    ArticleServerBindings.getInstance().preloadContent(chapteredArticle.id, {
+      chapter: chapteredArticle.chapters,
+      description: chapteredArticle.content
+    });
   });
-  articleRegistry.register();
 }

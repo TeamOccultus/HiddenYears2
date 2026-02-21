@@ -1,12 +1,11 @@
 import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArtifactForm, CreditsScreen, FormLike } from "@occultus/api";
+import { ArticleServerBindings, ArtifactForm, CreditsScreen, FormLike } from "@occultus/api";
 import { taskCenter } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
 import { UCVForm } from "./UCVForm";
 import { jobCenter } from "../server/registry/job";
-import { articleCenter } from "../server/registry/article";
 import { PlayerStory } from "../core/PlayerStory";
 import { tutorialCenter } from "../server/registry/tutorial";
 
@@ -68,7 +67,8 @@ export class ProfileForm extends FormLike {
         return;
       }
       if (result.selection === 4) {
-        this.jumpTo(player, articleCenter, backTo);
+        const center = ArticleServerBindings.getCenter();
+        this.jumpTo(player, center, backTo);
         return;
       }
       if (result.selection === 5) {

@@ -8,7 +8,125 @@
       }
     },
     "components": {
-      "hiddenyears:article_5": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:5.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        {
+          "translate": "article.hiddenyears:5.body_1"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_2"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_3"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_4"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_5"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_6"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_7"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_8"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_9"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_10"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_11"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_12"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_13"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_14"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_15"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_16"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_17"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_18"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:5.body_19"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:5.title"
       },

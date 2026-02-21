@@ -8,7 +8,113 @@
       }
     },
     "components": {
-      "hiddenyears:article_11": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:11.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        {
+          "translate": "article.hiddenyears:11.body_1"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_2"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_3"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_4"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_5"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_6"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_7"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_8"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_9"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_10"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_11"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_12"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_13"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_14"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_15"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_16"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:11.body_17"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:11.title"
       },

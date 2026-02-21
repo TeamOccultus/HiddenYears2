@@ -8,7 +8,53 @@
       }
     },
     "components": {
-      "hiddenyears:article_14": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:14.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        {
+          "translate": "article.hiddenyears:14.body_1"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:14.body_2"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:14.body_3"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:14.body_4"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:14.body_5"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:14.body_6"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:14.body_7"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:14.title"
       },

@@ -8,7 +8,13 @@
       }
     },
     "components": {
-      "hiddenyears:hidden_story": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:2.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": "hiddenyears:hidden_story",
       "minecraft:display_name": {
         "value": "article.hiddenyears:2.title"
       },

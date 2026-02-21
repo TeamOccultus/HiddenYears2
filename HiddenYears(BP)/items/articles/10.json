@@ -8,7 +8,167 @@
       }
     },
     "components": {
-      "hiddenyears:article_10": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:10.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        {
+          "translate": "article.hiddenyears:10.body_1"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_2"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_3"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_4"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_5"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_6"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_7"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_8"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_9"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_10"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_11"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_12"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_13"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_14"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_15"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_16"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_17"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_18"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_19"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_20"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_21"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_22"
+        },
+        {
+          "text": "\n\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_23"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_24"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_25"
+        },
+        {
+          "text": "\n"
+        },
+        {
+          "translate": "article.hiddenyears:10.body_26"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:10.title"
       },

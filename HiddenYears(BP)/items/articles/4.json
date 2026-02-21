@@ -8,7 +8,133 @@
       }
     },
     "components": {
-      "hiddenyears:article_4": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:4.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+         {
+          "translate": "article.hiddenyears:4.body_1"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_2"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_3"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_4"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_5"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_6"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_7"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_8"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_9"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_10"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_11"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_12"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_13"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_14"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_15"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_16"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_17"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_18"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_19"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_20"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_21"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_22"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_23"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_24"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_25"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_26"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_27"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:4.body_28"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_29"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:4.body_30"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:4.title"
       },

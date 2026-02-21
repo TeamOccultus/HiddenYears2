@@ -8,7 +8,29 @@
       }
     },
     "components": {
-      "hiddenyears:article_1": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:1.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        {
+          "translate": "article.hiddenyears:1.body_1"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:1.body_2"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:1.body_3"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:1.body_4"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:1.title"
       },

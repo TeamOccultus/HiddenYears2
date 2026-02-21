@@ -8,7 +8,81 @@
       }
     },
     "components": {
-      "hiddenyears:article_3": {},
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:3.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        {
+          "translate": "article.hiddenyears:3.body_1"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_2"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_3"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_4"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:3.body_5"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_6"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_7"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:3.body_8"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_9"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_10"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:3.body_11"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_12"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_13"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:3.body_14"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_15"
+        },
+        { "text": "\n" },
+        {
+          "translate": "article.hiddenyears:3.body_16"
+        },
+        { "text": "\n\n" },
+        {
+          "translate": "article.hiddenyears:3.body_17"
+        }
+      ],
       "minecraft:display_name": {
         "value": "article.hiddenyears:3.title"
       },
