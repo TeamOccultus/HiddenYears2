@@ -11,6 +11,7 @@
           ],
           "minecraft:match_tool_filter_any": [
             "minecraft:stone_tier",
+            "minecraft:copper_tier",
             "minecraft:iron_tier",
             "minecraft:diamond_tier",
             "minecraft:netherite_tier"
@@ -45,6 +46,7 @@
           ],
           "minecraft:match_tool_filter_any": [
             "minecraft:stone_tier",
+            "minecraft:copper_tier",
             "minecraft:iron_tier",
             "minecraft:diamond_tier",
             "minecraft:netherite_tier"
