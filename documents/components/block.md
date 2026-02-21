@@ -6,6 +6,14 @@ category: Documents
 
 # 方块组件
 
+| 组件名称                 | 描述                   |
+| ------------------------ | ---------------------- |
+| hiddenyears:interactable | 指定方块为可交互方块   |
+| hiddenyears:ore_type     | 指定矿石的类型         |
+| hiddenyears:vault        | 将方块设置为宝库       |
+| hiddenyears:boss_spawner | 将方块设置为 BOSS 祭坛 |
+| hiddenyears:trial_stone  | 将方块设置为试炼之石   |
+
 ## hiddenyears:interactable
 
 指定方块为可交互方块：

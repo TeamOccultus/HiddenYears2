@@ -6,9 +6,110 @@ category: Documents
 
 # 物品组件
 
+| 组件名称 | 描述 |
+| --- | --- |
+| hiddenyears:article | 将物品设置为文章 |
+| hiddenyears:article_content | 设置文章的内容 |
+| hiddenyears:article_center | 将物品设置为文章中心 |
+| hiddenyears:hidden_effect_food | 为食物添加食用后的自定义模拟效果 |
+| hiddenyears:effective_food | 为食物添加食用后的自定义状态效果 |
+| hiddenyears:custom_tool | 将物品设置为自定义工具 |
+| hiddenyears:custom_weapon | 将物品设置为自定义武器 |
+| hiddenyears:tool_type | 指定工具的类型 |
+| hiddenyears:weapon_type | 指定武器的类型 |
+| hiddenyears:custom_crossbow | 将物品设置为自定义弩 |
+| hiddenyears:arrow_present | 指定箭矢对应的箭矢预设 |
+| hiddenyears:trophy_bundle | 指定物品为历战宝袋 |
+| hiddenyears:exp_food | 指定食物给予的经验值 |
+| hiddenyears:coin | 将物品设置为货币 |
+| hiddenyears:staff | 为物品添加范围法杖的功能 |
+| hiddenyears:job | 允许使用该物品后对玩家的职业进行操作 |
+| hiddenyears:return_gem | 配置传送道具的相关参数 |
+| hiddenyears:specific_damage | 允许该物品对特定类型的生物造成额外伤害 |
+| hiddenyears:structure_placer | 允许该物品放置结构 |
+| hiddenyears:blessing_of_isis | 为物品添加「雨之神的祝福」的功能 |
+| hiddenyears:complex_potion | 为物品添加「复合药水」的功能 |
+| hiddenyears:adventurer_note | 使物品获得书籍「故地异国行纪」的功能 |
+| hiddenyears:profile | 使物品获得「时匿怀表」的功能 |
+| hiddenyears:job_skill | 标记物品为职业技能 |
+
+## hiddenyears:article
+
+> [!IMPORTANT]
+> 该组件必须要依赖于`hiddenyears:article_content`组件才能生效。
+
+> [!TIP]
+> 可用版本：3.0.1+
+
+将物品设置为文章。
+
+| 参数      | 类型                   | 可选？ | 描述         |
+| --------- | ---------------------- | ------ | ------------ |
+| title     | `RawMessage \| string` | 必填   | 文章标题     |
+| icon_path | `string`               | 可选   | 文章图标路径 |
+
+## hiddenyears:article_content
+
+> [!TIP]
+> 可用版本：3.0.1+
+
+设置文章的内容。
+
+| 参数 | 类型                     | 可选？ | 描述     |
+| ---- | ------------------------ | ------ | -------- |
+| N/A  | `RawMessage[] \| string` | 必填   | 文章内容 |
+
+注意：这里的`string`是指预加载的复杂文章内容的 ID，而不是直接输入文章内容。
+
+### 范例
+
+```json
+{
+  "components": {
+    "hiddenyears:article": {
+      "title": {
+        "translate": "article.hiddenyears:3.title"
+      },
+      "icon_path": "textures/items/paper"
+    },
+    "hiddenyears:article_content": [
+      {
+        "translate": "article.hiddenyears:3.body_1"
+      },
+      { "text": "\n" },
+      {
+        "translate": "article.hiddenyears:3.body_2"
+      },
+      { "text": "\n" },
+      {
+        "translate": "article.hiddenyears:3.body_3"
+      },
+      { "text": "\n" },
+      {
+        "translate": "article.hiddenyears:3.body_4"
+      }
+    ]
+  }
+}
+```
+
+## hiddenyears:article_center
+
+> [!TIP]
+> 可用版本：3.0.1+
+
+将物品设置为文章中心。
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| N/A  | N/A  | N/A    | N/A  |
+
 ## hiddenyears:hidden_effect_food
 
-为食物添加食用后的自定义模拟效果：
+> [!TIP]
+> 可用版本：3.0.0+
+
+为食物添加食用后的自定义模拟效果。
 
 | 参数      | 类型                 | 可选？ | 描述                                                        |
 | --------- | -------------------- | ------ | ----------------------------------------------------------- |
@@ -27,6 +128,9 @@ category: Documents
 | `drought`     | 干旱   |
 
 ## hiddenyears:effective_food
+
+> [!TIP]
+> 可用版本：3.0.0+
 
 为食物添加食用后的自定义状态效果：
 
@@ -47,6 +151,9 @@ category: Documents
 | `BAD`  | 负面状态效果 |
 
 ## hiddenyears:custom_tool
+
+> [!TIP]
+> 可用版本：3.0.0+
 
 将物品设置为自定义工具：
 
@@ -248,46 +355,43 @@ category: Documents
 
 允许该物品对特定类型的生物造成额外伤害：
 
-| 参数       | 类型      | 可选？ | 描述                       |
-| ---------- | --------- | ------ | -------------------------- |
-| N/A | `SpecificDamageType[]` | 必填 | 配置额外伤害相关选项 |
+| 参数 | 类型                   | 可选？ | 描述                 |
+| ---- | ---------------------- | ------ | -------------------- |
+| N/A  | `SpecificDamageType[]` | 必填   | 配置额外伤害相关选项 |
 
 在`SpecificDamageType`类型中：
 
-| 参数       | 类型      | 可选？ | 描述                       |
-| ---------- | --------- | ------ | -------------------------- |
-| family   | `string` | 必填   | 适用于该类型额外伤害的实体族 |
-| damage | `number | [max: number, min: number]` | 必填 | 对该类型实体造成的额外伤害 |
-
+| 参数   | 类型     | 可选？                      | 描述                         |
+| ------ | -------- | ------- | ---------- | 
+| family | `string` | 必填                        | 适用于该类型额外伤害的实体族 |
+| damage | `number  \| [max: number, min: number]` | 必填                         | 对该类型实体造成的额外伤害 |
 
 ## hiddenyears:structure_placer
 
 允许该物品放置结构：
 
-| 参数          | 类型                     | 可选？ | 描述                       |
-| ------------- | ------------------------ | ------ | -------------------------- |
-| max_height    | `number`                 | 必填   | 结构放置的最大高度         |
-| min_height    | `number`                 | 必填   | 结构放置的最小高度         |
-| id            | `string`                 | 必填   | 要放置的结构ID             |
-| place_offset  | `[number, number, number]` | 可选   | 结构放置的偏移量           |
-| show_warning  | `boolean`                | 可选   | 是否显示放置警告           |
-| animation     | `AnimationConfig`        | 可选   | 结构放置时的动画配置       |
-| present       | `StructurePresent`       | 可选   | 结构的预设类型             |
+| 参数         | 类型                       | 可选？ | 描述                 |
+| ------------ | -------------------------- | ------ | -------------------- |
+| max_height   | `number`                   | 必填   | 结构放置的最大高度   |
+| min_height   | `number`                   | 必填   | 结构放置的最小高度   |
+| id           | `string`                   | 必填   | 要放置的结构ID       |
+| place_offset | `[number, number, number]` | 可选   | 结构放置的偏移量     |
+| show_warning | `boolean`                  | 可选   | 是否显示放置警告     |
+| animation    | `AnimationConfig`          | 可选   | 结构放置时的动画配置 |
+| present      | `StructurePresent`         | 可选   | 结构的预设类型       |
 
 在`AnimationConfig`类型中：
 
-| 参数    | 类型                  | 可选？ | 描述                       |
-| ------- | --------------------- | ------ | -------------------------- |
-| type    | `"blocks" | "layers" | "none"` | 必填   | 动画类型                   |
-| seconds | `number`              | 必填   | 动画持续时间（秒）         |
+| 参数    | 类型      | 可选？   | 描述               |
+| ------- | --------- | -------- | ------------------ | 
+| type    | `"blocks" \| "layers" \| "none"`            | 必填 | 动画类型 |
+| seconds | `number`  | 必填     | 动画持续时间（秒） |
 
 在`StructurePresent`类型中：
 
-| 可用值      | 描述     |
-| ----------- | -------- |
-| `aaru_dream` |  |
-
-
+| 可用值       | 描述 |
+| ------------ | ---- |
+| `aaru_dream` |      |
 
 ## hiddenyears:blessing_of_isis
 
@@ -301,7 +405,11 @@ category: Documents
 > [!IMPORTANT]
 > 这是一个内部组件，在未来我们会开放更多自定义选项
 
-为物品添加「复合药水」的功能
+为物品添加「复合药水」的功能。
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| N/A  | N/A  | N/A    | N/A  |
 
 ## hiddenyears:adventurer_note
 
@@ -310,6 +418,10 @@ category: Documents
 
 使物品获得书籍「故地异国行纪」的功能。
 
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| N/A  | N/A  | N/A    | N/A  |
+
 ## hiddenyears:profile
 
 > [!IMPORTANT]
@@ -317,9 +429,17 @@ category: Documents
 
 使物品获得「时匿怀表」的功能。
 
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| N/A  | N/A  | N/A    | N/A  |
+
 ## hiddenyears:job_skill
 
 > [!IMPORTANT]
 > 这是一个内部组件，在未来我们会开放更多自定义选项
 
 标记物品为职业技能。
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| N/A  | N/A  | N/A    | N/A  |
