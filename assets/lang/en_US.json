@@ -667,8 +667,8 @@
   "task.copper.desc": "A common metal found across the world, craft it into tools and armor – yet it rusts with time",
   "task.copper.tips": "Copper tools and weapons won't be rusted because of Mojang",
   "task.refined_rock": "§d[Basic Materials]§r Ancient Refined Rock",
-  "task.refined_rock.desc": "Smelt stone, netherrack or end stone to get this refined material—though no one really knows the science behind it",
-  "task.refined_rock.tips": "Smelt cobblestone, netherrack or end stone in a blast furnace to get a refined rock ingot",
+  "task.refined_rock.desc": "Smelt the stone embryos of stone, netherrack or end stone to obtain this refined material—though no one really knows the science behind it",
+  "task.refined_rock.tips": "Craft stone embryos by arranging rocks in an X shape, then smelt the corresponding embryos to obtain Refined Rock Ingots.",
   "task.iron": "§d[Basic Materials]§r Meteorite Crystal",
   "task.iron.desc": "Forged in the starry depths, this substance is now the most common material across the continent",
   "task.saw": "§d[Tools and Weapons]§r Saw Man",
@@ -1340,7 +1340,6 @@
   "skill.arcane_wizard.2": "Divine Eruption",
   "skill.magic_archer.1": "Enchanted Arrow",
   "skill.magic_archer.2": "Resonance Domain",
-
   "skill.cooldown": "Skill is on cooldown!",
   "item.hiddenyears:stone_embryo": "Stone Embryo",
   "item.hiddenyears:netherrack_embryo": "Netherrack Embryo",
