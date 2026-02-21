@@ -21,7 +21,7 @@ export class LunamutatioEntityEvent {
     world.afterEvents.projectileHitEntity.subscribe((event) => {
       const { source } = event;
       const hitEntity = event.getEntityHit().entity;
-      if (!source.matches({ families: ["basic_lunamutatio_monster"] })) return;
+      if (!source || !source.matches({ families: ["basic_lunamutatio_monster"] })) return;
       if (!hitEntity) return;
       if (!hitEntity.isValid) return;
       const brightness = Time.getMoonBrightness();
@@ -52,7 +52,7 @@ export class LunamutatioEntityEvent {
     world.afterEvents.projectileHitEntity.subscribe((event) => {
       const { source } = event;
       const hitEntity = event.getEntityHit().entity;
-      if (!source.matches({ families: ["lunamutatio_traveler"] })) return;
+      if (!source || !source.matches({ families: ["lunamutatio_traveler"] })) return;
       if (!hitEntity) return;
       if (!hitEntity.isValid) return;
       const brightness = Time.getMoonBrightness();
