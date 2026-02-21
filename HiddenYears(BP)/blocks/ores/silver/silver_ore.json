@@ -38,6 +38,12 @@
           },
           {
             "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:copper_tier')"
+            },
+            "destroy_speed": 0.9
+          },
+          {
+            "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
             },
             "destroy_speed": 0.75
