@@ -1,10 +1,11 @@
-import { giveItem, ItemConditions, Job, JobSkill } from "@occultus/api";
+import { giveItem, ItemConditions, Job, JobSkill, Vector3Utils } from "@occultus/api";
 import { magicArcher } from "../advanced/magicArcher";
 import {
   EntityComponentTypes,
   EntityDamageCause,
   ItemStack,
   Player,
+  system,
   TicksPerSecond,
   world
 } from "@minecraft/server";
@@ -64,16 +65,22 @@ const skill2 = new JobSkill(
 
 skill1.onRelease((arg) => {
   const player = arg.source;
-  const arrow = player.dimension.spawnEntity(
-    "minecraft:arrow",
-    player.getHeadLocation()
-  );
-  // TODO: 伤害，还要射出三支，还有速度
-  // 太高级了，也许可以抄TouHouLittleMaidBE
-  // https://github.com/ENIACJushi/TouHouLittleMaidBE/blob/main/TouHouLittleMaid_BP/typescripts/src/danmaku/shoots/LineShoot.ts
-  arrow
-    .getComponent(EntityComponentTypes.Projectile)
-    .shoot(player.getViewDirection(), { uncertainty: 0 });
+  let times = 0;
+  // TODO 目前做不到等级越高伤害越高，等MS开放新的接口实现
+  const shoot = () => {
+    const arrow = player.dimension.spawnEntity(
+      "minecraft:arrow",
+      Vector3Utils.add(player.getHeadLocation(), Vector3Utils.scale(Vector3Utils.normalize(player.getViewDirection()), 0.75))
+    );
+    const projectileComponent = arrow.getComponent(EntityComponentTypes.Projectile);
+    projectileComponent.owner = player;
+    projectileComponent.shoot(Vector3Utils.scale(Vector3Utils.normalize(player.getViewDirection()), 60), { uncertainty: 0 });
+    times +=1 ;
+    if (times < 3) {
+      system.runTimeout(shoot, 5);
+    }
+  };
+  shoot();
 });
 
 skill2.onRelease((arg) => {
