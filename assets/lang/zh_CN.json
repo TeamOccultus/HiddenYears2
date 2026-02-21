@@ -1669,5 +1669,6 @@
   "article.hiddenyears:14.body_7": "尼罗特帝国，就此覆灭。",
   "message.hiddenyears:need_boss_key": "这个祭坛需要特殊的物品才能打开……",
   "message.hiddenyears:trial_stone_need_key": "试炼之石需要特殊的物品才能激活……",
-  "message.hiddenyears:trial_stone_need_key.active": "试炼之石需要特殊的物品才能领取奖励……"
+  "message.hiddenyears:trial_stone_need_key.active": "试炼之石需要特殊的物品才能领取奖励……",
+  "ui.waystone.delete.body": "选择一个想删除的传送点"
 }

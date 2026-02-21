@@ -44,13 +44,9 @@ export class ReturnGemEvents {
       block: newBlock
     } = arg0;
     const p = arg1.params as ReturnGemParams;
-    console.log("event triggered");
     if (!(player instanceof Player)) return;
-    console.log("player is player");
     if (p.bind_to !== "waystone") return;
-    console.log("bind_to is waystone");
     if (!block.hasTag("hiddenyears:waystone")) return;
-    console.log("block has tag");
     if (WayStone.hasWayPoint(player, newBlock.location)) {
       player.sendMessage({
         rawtext: [
@@ -180,6 +176,6 @@ export class ReturnGemEvents {
     arg1: CustomComponentParameters
   ) {
     const { source: player } = arg0;
-    WayStoneForm.display(player);
+    new WayStoneForm().display(player, []);
   }
 }

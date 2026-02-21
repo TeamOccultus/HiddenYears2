@@ -1,32 +1,41 @@
 import { Player, Vector3 } from "@minecraft/server";
+import { toVec3, Vector3Utils } from "@occultus/api";
 
 export class WayStone {
+  static DYNAMIC_PROPERTY = "hiddenyears:waystone";
   static getWayStoneList(player: Player): WayPointData[] {
-    const data = player.getDynamicProperty("hiddenyears:waystone");
+    const data = player.getDynamicProperty(WayStone.DYNAMIC_PROPERTY);
     if (!data) return [];
     if (typeof data !== "string") {
-      player.setDynamicProperty("hiddenyears:waystone", JSON.stringify([]));
+      player.setDynamicProperty(WayStone.DYNAMIC_PROPERTY, JSON.stringify([]));
       return [];
     }
     return JSON.parse(data);
   }
+  static removeWayStone(player: Player, location: Vector3) {
+    const list = this.getWayStoneList(player);
+    const newList = list.filter((waypoint) => {
+      return !Vector3Utils.equals(toVec3(...waypoint.loc), location);
+    });
+    player.setDynamicProperty(WayStone.DYNAMIC_PROPERTY, JSON.stringify(newList));
+  }
   static addWayStone(player: Player, data: WayPointData) {
-    const list = player.getDynamicProperty("hiddenyears:waystone");
+    const list = player.getDynamicProperty(WayStone.DYNAMIC_PROPERTY);
     if (!list) {
-      player.setDynamicProperty("hiddenyears:waystone", JSON.stringify([data]));
+      player.setDynamicProperty(WayStone.DYNAMIC_PROPERTY, JSON.stringify([data]));
       return;
     }
     if (typeof list !== "string") {
-      player.setDynamicProperty("hiddenyears:waystone", JSON.stringify([]));
+      player.setDynamicProperty(WayStone.DYNAMIC_PROPERTY, JSON.stringify([]));
       return;
     }
     const jsonData = JSON.parse(list);
     if (!Array.isArray(jsonData)) {
-      player.setDynamicProperty("hiddenyears:waystone", JSON.stringify([]));
+      player.setDynamicProperty(WayStone.DYNAMIC_PROPERTY, JSON.stringify([]));
       return;
     }
     jsonData.push(data);
-    player.setDynamicProperty("hiddenyears:waystone", JSON.stringify(jsonData));
+    player.setDynamicProperty(WayStone.DYNAMIC_PROPERTY, JSON.stringify(jsonData));
     console.log(
       `Add ${data.name}(${data.loc}) to ${player.name}'s waystone list`
     );
