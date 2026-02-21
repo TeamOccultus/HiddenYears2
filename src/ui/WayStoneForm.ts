@@ -15,12 +15,12 @@ export class WayStoneForm extends FormLike {
     const form = new ActionFormData()
       .title({ translate: "ui.waystone.title" })
       .body({ translate: "ui.waystone.body" })
-      .button({ translate: "gui.delete" }, "textures/ui/icon_trash");
+      .button({ translate: "gui.delete" }, "textures/ui/waystone_delete");
     list.forEach((wayStone) => {
       console.log(typeof wayStone.icp);
-      if(!wayStone.icp) wayStone.icp = "textures/ui/icon_random"
-      if(WayStone.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp ?? "textures/ui/icon_random");
-      return form.button(wayStone.name, "textures/ui/cancel");
+      if(!wayStone.icp) wayStone.icp = "textures/ui/waystone"
+      if(WayStone.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp);
+      return form.button(wayStone.name, "textures/ui/waystone_undefined");
     });
     form.show(player).then((result) => {
       if (result.canceled) return this.quit(player, backTo);
