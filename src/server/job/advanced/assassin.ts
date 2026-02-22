@@ -89,6 +89,7 @@ assassin.onCauseDamage((arg) => {
       hurtEntity.applyDamage(arg.damage * assassin.getLevel(player) * 1.8);
     if (hurtEntity.isValid)
       hurtEntity.addEffect("minecraft:poison", 5 * TicksPerSecond);
+    player.removeTag("hiddenyears:critical_next_attack");
   }
   if (mainHandItem?.hasTag("hiddenyears:is_dagger")) {
     if (!hurtEntity.isValid) return;
