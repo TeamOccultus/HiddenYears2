@@ -1676,5 +1676,6 @@
   "ui.waystone.icon_home": "房屋",
   "ui.waystone.icon_chest": "箱子",
   "ui.waystone.icon_tower": "魔法塔",
-  "ui.waystone.select_icon": "选择图标"
+  "ui.waystone.select_icon": "选择图标",
+  "ui.task.complete.world": "%1 完成了任务：§a"
 }

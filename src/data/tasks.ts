@@ -88,7 +88,6 @@ const monsterHunter = new Task(
     iconPath: "textures/items/iron_sword"
   }
 );
-monsterHunter.pushToServer(server);
 tasks.set(monsterHunter.id, monsterHunter);
 
 const prolugueActI = new TaskGroup(
@@ -470,7 +469,6 @@ const eraOfNoGod = new Task(
     tips: { translate: "task.era_of_no_god.tips" }
   }
 );
-eraOfNoGod.pushToServer(server);
 tasks.set(eraOfNoGod.id, eraOfNoGod);
 
 const infestedBeast = new Task(
@@ -495,7 +493,6 @@ const infestedBeast = new Task(
     tips: { translate: "task.infested_beast.tips" }
   }
 );
-infestedBeast.pushToServer(server);
 tasks.set(infestedBeast.id, infestedBeast);
 
 const contractStone = new Task(
@@ -577,7 +574,6 @@ const endlessReincarnation = new Task(
     iconPath: "textures/items/egg_lunamutatio_traveler"
   }
 );
-endlessReincarnation.pushToServer(server);
 tasks.set(endlessReincarnation.id, endlessReincarnation);
 
 const chapterIIActI = new TaskGroup(
@@ -696,7 +692,6 @@ const wither = new Task(
     iconPath: "textures/items/spawn_eggs/spawn_egg_wither"
   }
 );
-wither.pushToServer(server);
 tasks.set(wither.id, wither);
 
 const chapterIIActII = new TaskGroup(
@@ -775,7 +770,6 @@ const enderDragon = new Task(
     iconPath: "textures/ui/task/dragon_head"
   }
 );
-enderDragon.pushToServer(server);
 tasks.set(enderDragon.id, enderDragon);
 
 const chapterIIActIII = new TaskGroup(
@@ -885,7 +879,6 @@ const decayedServant = new Task(
     tips: { translate: "task.decayed_servant.tips" }
   }
 );
-decayedServant.pushToServer(server);
 tasks.set(decayedServant.id, decayedServant);
 
 const trueAndFalse = new Task(
@@ -908,7 +901,6 @@ const trueAndFalse = new Task(
     tips: { translate: "task.true_and_false.tips" }
   }
 );
-trueAndFalse.pushToServer(server);
 tasks.set(trueAndFalse.id, trueAndFalse);
 
 const thunderKey = new Task(
@@ -996,7 +988,6 @@ const songOfPowerAndBlood = new Task(
     tips: { translate: "task.song_of_power_and_blood.tips" }
   }
 );
-songOfPowerAndBlood.pushToServer(server);
 tasks.set(songOfPowerAndBlood.id, songOfPowerAndBlood);
 
 const chapterIActI = new TaskGroup(
@@ -1085,7 +1076,7 @@ const compoundBrewing = new Task(
   { translate: "task.compound_brewing.desc" },
   {
     awards: [new ItemAwards("minecraft:diamond", 1)], // 奖励：钻石×1
-    conditions: [new ItemConditions("hiddenyears:complex_potion")], 
+    conditions: [new ItemConditions("hiddenyears:complex_potion")],
     previousTask: "none",
     iconPath: "textures/items/complex_potion",
     tips: { translate: "task.compound_brewing.tips" }
@@ -1505,7 +1496,6 @@ const curseOfSand = new Task(
     iconPath: "textures/items/egg_sand_silverfish"
   }
 );
-curseOfSand.pushToServer(server);
 tasks.set(curseOfSand.id, curseOfSand);
 
 const storyOfGold = new Task(
@@ -1573,7 +1563,6 @@ const signOfMutation = new Task(
     tips: { translate: "task.sign_of_mutation.tips" }
   }
 );
-signOfMutation.pushToServer(server);
 tasks.set(signOfMutation.id, signOfMutation);
 
 const palaceOfGods = new Task(
@@ -1702,6 +1691,8 @@ const epilogueActI = new TaskGroup(
     iconPath: "textures/items/babel_tower_wreckage_sand"
   }
 );
+
+server.addTask(...Array.from(tasks.values()));
 
 export function hasTask(id: string): boolean {
   return tasks.has(id);
