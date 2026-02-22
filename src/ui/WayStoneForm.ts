@@ -1,11 +1,11 @@
 import { Player, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
-import { WayStone } from "../server/block/WayStone";
+import { WayPoint } from "../core/WayPoint";
 import { Color, FormLike, toVec3 } from "@occultus/api";
 
 export class WayStoneForm extends FormLike {
   display(player: Player, backTo: FormLike[]): void {
-    const list = WayStone.getWayStoneList(player);
+    const list = WayPoint.getWayStoneList(player);
     if (list.length === 0) {
       player.sendMessage({
         rawtext: [{ text: Color.gray }, { translate: "ui.waystone.empty" }]
@@ -18,8 +18,8 @@ export class WayStoneForm extends FormLike {
       .button({ translate: "gui.delete" }, "textures/ui/waystone_delete");
     list.forEach((wayStone) => {
       console.log(typeof wayStone.icp);
-      if(!wayStone.icp) wayStone.icp = "textures/ui/waystone"
-      if(WayStone.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp);
+      if(!wayStone.icp) wayStone.icp = "textures/items/waystone"
+      if(WayPoint.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp);
       return form.button(wayStone.name, "textures/ui/waystone_undefined");
     });
     form.show(player).then((result) => {
@@ -29,7 +29,7 @@ export class WayStoneForm extends FormLike {
         return this.jumpTo(player, new WayStoneDeleteForm(), backTo);
       }
       const selection = list[result.selection - 1];
-      if (!WayStone.isWayStoneAvailable(selection)) {
+      if (!WayPoint.isWayStoneAvailable(selection)) {
         this.quit(player, backTo);
         player.sendMessage({
           rawtext: [
@@ -57,7 +57,7 @@ export class WayStoneForm extends FormLike {
 
 export class WayStoneDeleteForm extends FormLike {
   display(player: Player, backTo: FormLike[]): void {
-    const list = WayStone.getWayStoneList(player);
+    const list = WayPoint.getWayStoneList(player);
     const form = new ActionFormData()
       .title({ translate: "gui.delete" })
       .body({ translate: "ui.waystone.delete.body" });
@@ -67,7 +67,7 @@ export class WayStoneDeleteForm extends FormLike {
     form.show(player).then((result) => {
       if (result.canceled) return this.quit(player, backTo);
       if (result.selection === undefined) return this.quit(player, backTo);
-      WayStone.removeWayStone(player, toVec3(...list[result.selection].loc));
+      WayPoint.removeWayStone(player, toVec3(...list[result.selection].loc));
       return this.quit(player, backTo);
     });
   }

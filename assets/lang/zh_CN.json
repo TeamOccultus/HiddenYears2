@@ -1063,8 +1063,8 @@
   "ui.waystone.empty": "你还没有绑定传送石碑！",
   "ui.waystone.set_name": "命名传送点",
   "ui.waystone.set_name.desc": "为这个传送点起一个很棒的名字",
-  "ui.waystone.set_icon": "[高级选项] 设置传送点图标",
-  "ui.waystone.set_icon.desc": "除非你知道自己在干什么，否则请不要修改此项！",
+  "ui.waystone.set_icon": "[高级选项] 手动设置传送点图标",
+  "ui.waystone.set_icon.desc": "这会覆盖上面你选择的图标，除非你知道自己在干什么，否则请不要修改！",
   "ui.artifact_cooldown": "饰品冷却中！",
   "ui.profile.player_name": "旅者名称： %s",
   "ui.profile.player_level": "玩家等级：Lv. §6%1§r（下一级需要：经验× §6%2§r）",
@@ -1671,5 +1671,10 @@
   "message.hiddenyears:trial_stone_need_key": "试炼之石需要特殊的物品才能激活……",
   "message.hiddenyears:trial_stone_need_key.active": "试炼之石需要特殊的物品才能领取奖励……",
   "ui.waystone.delete.body": "选择一个想删除的传送点",
-  "ui.waystone.unavailable": "位于 [%1, %2, %3] 的传送点不可用，其是否已被破坏？"
+  "ui.waystone.unavailable": "位于 [%1, %2, %3] 的传送点不可用，其是否已被破坏？",
+  "ui.waystone.icon_default": "默认",
+  "ui.waystone.icon_home": "房屋",
+  "ui.waystone.icon_chest": "箱子",
+  "ui.waystone.icon_tower": "魔法塔",
+  "ui.waystone.select_icon": "选择图标"
 }

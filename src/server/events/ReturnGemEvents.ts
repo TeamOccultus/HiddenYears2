@@ -16,7 +16,14 @@ import {
 import { ReturnGemParams } from "../components/ReturnGemComponent/Params";
 import { MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import { WayStoneForm } from "../../ui/WayStoneForm";
-import { WayStone } from "../block/WayStone";
+import { WayPoint } from "../../core/WayPoint";
+
+const waystoneIcons = [
+  "textures/items/waystone",
+  "textures/ui/waystone_chest",
+  "textures/ui/waystone_home",
+  "textures/ui/waystone_tower"
+];
 
 export class ReturnGemEvents {
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
@@ -47,7 +54,7 @@ export class ReturnGemEvents {
     if (!(player instanceof Player)) return;
     if (p.bind_to !== "waystone") return;
     if (!block.hasTag("hiddenyears:waystone")) return;
-    if (WayStone.hasWayPoint(player, newBlock.location)) {
+    if (WayPoint.hasWayPoint(player, newBlock.location)) {
       player.sendMessage({
         rawtext: [
           { text: Color.gray },
@@ -64,6 +71,18 @@ export class ReturnGemEvents {
         { translate: "ui.waystone.set_name.desc" },
         { defaultValue: "My WayPoint!" }
       )
+      .dropdown(
+        { translate: "ui.waystone.select_icon" },
+        [
+          { translate: "ui.waystone.icon_default" },
+          { translate: "ui.waystone.icon_chest" },
+          { translate: "ui.waystone.icon_home" },
+          { translate: "ui.waystone.icon_tower" }
+        ],
+        {
+          defaultValueIndex: 0
+        }
+      )
       .textField(
         { translate: "ui.waystone.set_icon" },
         { translate: "ui.waystone.set_icon.desc" }
@@ -71,16 +90,18 @@ export class ReturnGemEvents {
       .submitButton({ translate: "gui.ok" })
       .show(player)
       .then((response) => {
-        let [name, iconPath] = response.formValues;
+        let [name, selected, iconPath] = response.formValues;
+        if (typeof selected !== "number") selected = 0;
+        let icon: string = waystoneIcons[selected];
         if (typeof name !== "string") {
-          console.warn("[隐藏之年] WTF? Your way point name isn't a string!");
           name = "My WayPoint!";
         }
-        WayStone.addWayStone(player, {
+        if (iconPath && typeof iconPath === "string") icon = iconPath;
+        WayPoint.addWayStone(player, {
           name: name,
           loc: [newBlock.location.x, newBlock.location.y, newBlock.location.z],
           dim: newBlock.dimension.id,
-          icp: iconPath as string
+          icp: icon
         });
         player.sendMessage({
           rawtext: [
