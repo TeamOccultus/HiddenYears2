@@ -5,7 +5,7 @@
 import { ModInitializer } from "@occultus/core";
 import { registryItemSystems } from "./registry/item";
 import { registryComponents } from "./registry/components";
-import { registryMusicDisc } from "./registry/record";
+import { registryMusicDisc } from "./registry/musicDisc";
 import { registryCustomRecipe } from "./registry/recipe";
 import { registryCommands } from "./registry/commands";
 import { registryCustomLoot } from "./registry/loot";

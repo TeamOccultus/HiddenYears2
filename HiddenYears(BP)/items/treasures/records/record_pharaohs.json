@@ -13,6 +13,11 @@
       },
       "minecraft:icon": "hiddenyears:record_pharaohs",
       "minecraft:rarity": "uncommon",
+      "hiddenyears:music_disc": {
+        "track_name": "music.boss.pharaohs_ghost",
+        "name": "Song of Ancient Desert",
+        "artist": "3xLnw"
+      },
       "minecraft:record": {
         "duration": 94,
         "comparator_signal": 13

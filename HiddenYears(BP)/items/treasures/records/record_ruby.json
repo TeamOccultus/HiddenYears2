@@ -13,6 +13,11 @@
       },
       "minecraft:icon": "hiddenyears:record_ruby",
       "minecraft:rarity": "uncommon",
+      "hiddenyears:music_disc": {
+        "track_name": "music.boss.ruby",
+        "name": "The Hidden Finale",
+        "artist": "FREirc"
+      },
       "minecraft:record": {
         "duration": 68,
         "comparator_signal": 13

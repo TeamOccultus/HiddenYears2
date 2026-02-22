@@ -13,6 +13,11 @@
       },
       "minecraft:icon": "hiddenyears:record_plains",
       "minecraft:rarity": "uncommon",
+      "hiddenyears:music_disc": {
+        "track_name": "music.biome.cherry_plains",
+        "name": "Plain Thoughts",
+        "artist": "FREirc"
+      },
       "minecraft:record": {
         "duration": 95,
         "comparator_signal": 13
