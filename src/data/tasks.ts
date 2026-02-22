@@ -1,4 +1,3 @@
-// TODO: 添加任务提示
 import {
   Format,
   ItemAwards,
@@ -886,6 +885,7 @@ const decayedServant = new Task(
     tips: { translate: "task.decayed_servant.tips" }
   }
 );
+decayedServant.pushToServer(server);
 tasks.set(decayedServant.id, decayedServant);
 
 const trueAndFalse = new Task(
@@ -908,6 +908,7 @@ const trueAndFalse = new Task(
     tips: { translate: "task.true_and_false.tips" }
   }
 );
+trueAndFalse.pushToServer(server);
 tasks.set(trueAndFalse.id, trueAndFalse);
 
 const thunderKey = new Task(
@@ -1504,6 +1505,7 @@ const curseOfSand = new Task(
     iconPath: "textures/items/egg_sand_silverfish"
   }
 );
+curseOfSand.pushToServer(server);
 tasks.set(curseOfSand.id, curseOfSand);
 
 const storyOfGold = new Task(
@@ -1571,6 +1573,7 @@ const signOfMutation = new Task(
     tips: { translate: "task.sign_of_mutation.tips" }
   }
 );
+signOfMutation.pushToServer(server);
 tasks.set(signOfMutation.id, signOfMutation);
 
 const palaceOfGods = new Task(
