@@ -51,7 +51,7 @@
   {
     "ingredient": "minecraft:ghast_tear",
     "effect": "minecraft:regeneration",
-    "duration": 5,
+    "duration": 600,
     "amplifier": 2
   },
   {
