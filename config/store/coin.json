@@ -13,5 +13,10 @@
     "item": "hiddenyears:diamond_coin",
     "ucv": 500,
     "count": 1
+  },
+  {
+    "item": "hiddenyears:echo_coin",
+    "ucv": 1000,
+    "count": 1
   }
 ]
