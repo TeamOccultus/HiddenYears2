@@ -26,6 +26,7 @@ children:
 
 | 组件名称 | 描述 |
 | --- | --- |
+| hiddenyears:music_disc | 将物品设置为音乐唱片 |
 | hiddenyears:article | 将物品设置为文章 |
 | hiddenyears:article_content | 设置文章的内容 |
 | hiddenyears:article_center | 将物品设置为文章中心 |
