@@ -211,6 +211,26 @@
               ]
             }
           ]
+        },
+        {
+          "num_to_select": 1,
+          "trades": [
+            {
+              "max_uses": 5,
+              "wants": [
+                {
+                  "item": "hiddenyears:diamond_coin",
+                  "quantity": 12
+                }
+              ],
+              "gives": [
+                {
+                  "item": "hiddenyears:oblivion_gem",
+                  "quantity": 1
+                }
+              ]
+            }
+          ]
         }
       ]
     }
