@@ -66,7 +66,7 @@ skill1.onRelease((arg) => {
     location: player.location,
     maxDistance: 3,
     families: ["monster"]
-  }).applyDamage(5, { cause: EntityDamageCause.none });
+  }).applyDamage(swordman.getLevel(player) * 1.2, { cause: EntityDamageCause.none });
 });
 
 skill2.onRelease((arg) => {

@@ -1455,7 +1455,7 @@
   "job.hiddenyears:archer.skill.1": "【主动技能】 §e连珠箭§r：快速射出 3 支箭，每支造成 §o等级×0.8§r 的伤害",
   "job.hiddenyears:archer.skill.2": "【主动技能】 §e破甲利箭§r：下次远程攻击命中时，对敌人造成 §o等级×1.8§r 的附加伤害，同时为目标添加虚弱 II 8 秒",
   "job.hiddenyears:swordman.skill.0": "【固有天赋】 §e精准剑势§r：每次使用剑进行攻击有 25% 概率触发「会心」，伤害额外提升 §o等级×50%§r",
-  "job.hiddenyears:swordman.skill.1": "【主动技能】 §e剑刃御反§r：对半径 3 格内敌对生物造成 5 点真实伤害",
+  "job.hiddenyears:swordman.skill.1": "【主动技能】 §e剑刃御反§r：对半径 3 格内敌对生物造成 §o等级×1.2§r 点真实伤害",
   "job.hiddenyears:swordman.skill.2": "【主动技能】 §e裂地横斩§r：向前挥出大范围横斩，对自身前方 6 格内所有敌人造成 §o3+等级×1.2§r 的近战伤害，同时给予其缓慢 II 15 秒",
   "job.hiddenyears:assassin.skill.0": "【固有天赋】 §e暗影潜伏§r：手持匕首攻击时，伤害提升 §o等级×0.8§r",
   "job.hiddenyears:assassin.skill.1": "【主动技能】 §e隐匿突袭§r：进入隐身状态 10 秒",
