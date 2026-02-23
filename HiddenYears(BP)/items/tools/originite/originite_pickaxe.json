@@ -9,6 +9,9 @@
       "identifier": "hiddenyears:originite_pickaxe"
     },
     "components": {
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },

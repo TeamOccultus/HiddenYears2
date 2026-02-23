@@ -9,6 +9,9 @@
       }
     },
     "components": {
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "hiddenyears:custom_weapon": {
         "type": "sword"
       },

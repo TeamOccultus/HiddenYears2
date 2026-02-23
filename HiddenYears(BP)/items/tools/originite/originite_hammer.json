@@ -8,6 +8,9 @@
       "identifier": "hiddenyears:originite_hammer"
     },
     "components": {
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },

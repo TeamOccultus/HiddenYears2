@@ -9,6 +9,9 @@
     },
     "components": {
       "minecraft:icon": "hiddenyears:originite_nugget",
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:tags": {
         "tags": [
           "hiddenyears:originite_material",
