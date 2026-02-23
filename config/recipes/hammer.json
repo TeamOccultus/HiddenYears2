@@ -27,16 +27,16 @@
     "ingredient": "minecraft:coal_ore",
     "output": "minecraft:coal",
     "amount": {
-      "min": 6,
-      "max": 2
+      "min": 2,
+      "max": 6
     }
   },
   {
     "ingredient": "minecraft:deepslate_coal_ore",
     "output": "minecraft:coal",
     "amount": {
-      "min": 6,
-      "max": 2
+      "min": 2,
+      "max": 6
     }
   },
   {
@@ -75,16 +75,16 @@
     "ingredient": "minecraft:lapis_ore",
     "output": "minecraft:lapis_lazuli",
     "amount": {
-      "min": 6,
-      "max": 2
+      "min": 2,
+      "max": 6
     }
   },
   {
     "ingredient": "minecraft:deepslate_lapis_ore",
     "output": "minecraft:lapis_lazuli",
     "amount": {
-      "min": 6,
-      "max": 2
+      "min": 2,
+      "max": 6
     }
   }
 ]
