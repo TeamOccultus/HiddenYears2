@@ -381,7 +381,8 @@ const crystal = new Task(
     awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
     conditions: [new ItemConditions("hiddenyears:crystal_ingot")],
     previousTask: "none",
-    iconPath: "textures/items/crystal_ingot"
+    iconPath: "textures/items/crystal_ingot",
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(crystal.id, crystal);
@@ -418,7 +419,8 @@ const totem = new Task(
     awards: [new ItemAwards("hiddenyears:hidden_story")],
     conditions: [new ItemConditions("minecraft:totem_of_undying")],
     previousTask: "none",
-    iconPath: "textures/items/totem"
+    iconPath: "textures/items/totem",
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(totem.id, totem);
@@ -571,7 +573,8 @@ const endlessReincarnation = new Task(
       )
     ],
     previousTask: "none",
-    iconPath: "textures/items/egg_lunamutatio_traveler"
+    iconPath: "textures/items/egg_lunamutatio_traveler",
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(endlessReincarnation.id, endlessReincarnation);
@@ -689,7 +692,8 @@ const wither = new Task(
     awards: [new ItemAwards("minecraft:diamond", 12)],
     conditions: [new KillEntityConditions("wither")],
     previousTask: "none",
-    iconPath: "textures/items/spawn_eggs/spawn_egg_wither"
+    iconPath: "textures/items/spawn_eggs/spawn_egg_wither",
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(wither.id, wither);
@@ -767,7 +771,8 @@ const enderDragon = new Task(
     awards: [new ItemAwards("minecraft:diamond", 15)],
     conditions: [new KillEntityConditions("ender_dragon")],
     previousTask: "none",
-    iconPath: "textures/ui/task/dragon_head"
+    iconPath: "textures/ui/task/dragon_head",
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(enderDragon.id, enderDragon);
@@ -985,7 +990,8 @@ const songOfPowerAndBlood = new Task(
     conditions: [new KillEntityConditions("hiddenyears:king_of_ruby")],
     previousTask: "none",
     iconPath: "textures/items/ruby_crown",
-    tips: { translate: "task.song_of_power_and_blood.tips" }
+    tips: { translate: "task.song_of_power_and_blood.tips" },
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(songOfPowerAndBlood.id, songOfPowerAndBlood);
@@ -1153,7 +1159,8 @@ const primalYearning = new Task(
     conditions: [new ItemConditions("hiddenyears:originite_ingot")],
     previousTask: "none",
     iconPath: "textures/items/originite_ingot",
-    tips: { translate: "task.primal_yearning.tips" }
+    tips: { translate: "task.primal_yearning.tips" },
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(primalYearning.id, primalYearning);
@@ -1424,7 +1431,8 @@ const rainInSand = new Task(
     conditions: [new ItemConditions("hiddenyears:shattered_sand_staff")],
     previousTask: "none",
     iconPath: "textures/items/shattered_sand_staff",
-    tips: { translate: "task.rain_in_sand.tips" }
+    tips: { translate: "task.rain_in_sand.tips" },
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(rainInSand.id, rainInSand);
@@ -1604,7 +1612,8 @@ const eyeOfSandErosion = new Task(
     conditions: [new ItemConditions("hiddenyears:sandcaust_spider_eye")],
     previousTask: "none",
     iconPath: "textures/items/sand_spider_eye",
-    tips: { translate: "task.eye_of_sand_erosion.tips" }
+    tips: { translate: "task.eye_of_sand_erosion.tips" },
+    completeSound: "ui.challenge_complete"
   }
 );
 tasks.set(eyeOfSandErosion.id, eyeOfSandErosion);

@@ -279,6 +279,14 @@
       "min_distance": null,
       "sounds": ["sounds/mob/mutas_wrath_say"]
     },
+    "ui.challenge_complete": {
+      "category": "ui",
+      "sounds": [
+        {
+          "name": "sounds/ui/challenge_complete"
+        }
+      ]
+    },
     "music.biome.desert_song": {
       "category": "music",
       "sounds": [
