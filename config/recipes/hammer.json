@@ -3,24 +3,24 @@
     "ingredient": "minecraft:stone",
     "output": "hiddenyears:cobblestone",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
     "ingredient": "minecraft:diamond_ore",
     "output": "minecraft:diamond",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
     "ingredient": "minecraft:deepslate_diamond_ore",
     "output": "minecraft:diamond",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
@@ -43,32 +43,32 @@
     "ingredient": "minecraft:copper_ore",
     "output": "minecraft:raw_copper",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
     "ingredient": "minecraft:deepslate_copper_ore",
     "output": "minecraft:raw_copper",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
     "ingredient": "minecraft:emerald_ore",
     "output": "minecraft:emerald",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
     "ingredient": "minecraft:deepslate_emerald_ore",
     "output": "minecraft:emerald",
     "amount": {
-      "min": 4,
-      "max": 2
+      "min": 2,
+      "max": 4
     }
   },
   {
