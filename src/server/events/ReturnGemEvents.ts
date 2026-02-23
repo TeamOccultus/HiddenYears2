@@ -63,7 +63,6 @@ export class ReturnGemEvents {
       });
       return;
     }
-    console.log("has no way point");
     new ModalFormData()
       .title({ translate: "ui.waystone.title" })
       .textField(

@@ -105,7 +105,6 @@ export class PlayerStory  extends FormLike{
 
     // @ts-ignore
     contentForm.show(player).then((response) => {
-      console.log(response.selection);
       if (response.canceled || response.selection === undefined) {
         return this.quit(player, backTo);
       }

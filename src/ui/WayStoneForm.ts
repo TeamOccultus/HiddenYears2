@@ -17,7 +17,6 @@ export class WayStoneForm extends FormLike {
       .body({ translate: "ui.waystone.body" })
       .button({ translate: "gui.delete" }, "textures/ui/waystone_delete");
     list.forEach((wayStone) => {
-      console.log(typeof wayStone.icp);
       if(!wayStone.icp) wayStone.icp = "textures/items/waystone"
       if(WayPoint.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp);
       return form.button(wayStone.name, "textures/ui/waystone_undefined");

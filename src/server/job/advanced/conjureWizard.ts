@@ -75,7 +75,6 @@ skill1.onRelease((arg) => {
     );
     entity.getComponent("minecraft:tameable").tame(player);
     spritesId.push(entity.id);
-    console.log(entity.id);
     return entity;
   }
   summonSprite([1, 0, 0]);
@@ -86,7 +85,6 @@ skill1.onRelease((arg) => {
     "hiddenyears:conjure_wizard_sprites",
     JSON.stringify(spritesId)
   );
-  console.log(spritesId);
   system.runTimeout(() => {
     spritesId.forEach((id) => {
       const entity = world.getEntity(id);
@@ -111,12 +109,10 @@ skill2.onRelease((arg) => {
   const rawData = player.getDynamicProperty(
     "hiddenyears:conjure_wizard_sprites"
   );
-  console.log(rawData);
   if (!rawData) return;
   if (typeof rawData !== "string")
     return player.setDynamicProperty("hiddenyears:conjure_wizard_sprites");
   JSON.parse(rawData).forEach((id: string) => {
-    console.log(id);
     if (typeof id !== "string") return;
     const entity = world.getEntity(id);
     if (!entity || !entity.isValid) return;

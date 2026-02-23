@@ -9,7 +9,6 @@ export class LunamutatioEntityEvent {
         return;
       if (!hitEntity.isValid) return;
       const brightness = Time.getMoonBrightness();
-      console.log("Brightness:" + brightness);
       hitEntity.applyDamage(10 * brightness, {
         cause: EntityDamageCause.wither,
         damagingEntity: null
@@ -25,7 +24,6 @@ export class LunamutatioEntityEvent {
       if (!hitEntity) return;
       if (!hitEntity.isValid) return;
       const brightness = Time.getMoonBrightness();
-      console.log("Brightness:" + brightness);
       hitEntity.applyDamage(2 * brightness, {
         cause: EntityDamageCause.wither,
         damagingEntity: null
@@ -40,7 +38,6 @@ export class LunamutatioEntityEvent {
         return;
       if (!hitEntity.isValid) return;
       const brightness = Time.getMoonBrightness();
-      console.log("Brightness:" + brightness);
       hitEntity.applyDamage(12 * brightness, {
         cause: EntityDamageCause.wither,
         damagingEntity: null
@@ -56,7 +53,6 @@ export class LunamutatioEntityEvent {
       if (!hitEntity) return;
       if (!hitEntity.isValid) return;
       const brightness = Time.getMoonBrightness();
-      console.log("Brightness:" + brightness);
       hitEntity.applyDamage(4 * brightness, {
         cause: EntityDamageCause.wither,
         damagingEntity: null

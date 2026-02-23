@@ -136,7 +136,6 @@ function onComplete(
 ) {
   const [player, item] = [arg0.source, arg0.itemStack];
   const pullingLevel = that.getPullingLevels(item);
-  console.warn(pullingLevel);
   if (pullingLevel === "standby") {
     if (!that.hasAmmunition(item, player)) return;
     that.consumeAmmunition(item, player);
@@ -151,7 +150,6 @@ function onReleaseUse(arg0: ItemComponentUseEvent, that: CrossbowComponent) {
   const [player, item] = [arg0.source, arg0.itemStack];
   if (!item) return;
   const pullingLevel = that.getPullingLevels(item);
-  console.warn(pullingLevel);
   if (pullingLevel === "loaded") {
     setEquipmentItem(player, that.getNextLevelItem(item, player));
     return;

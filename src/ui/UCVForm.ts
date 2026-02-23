@@ -21,7 +21,6 @@ export class UCVForm extends FormLike {
     });
     form.show(player).then((response: ModalFormResponse) => {
       const rawOrder = response.formValues;
-      console.log(rawOrder);
       const orders: CoinOrder[] = [];
       if (!rawOrder) return this.quit(player, backTo);
       rawOrder.forEach((value, index) => {

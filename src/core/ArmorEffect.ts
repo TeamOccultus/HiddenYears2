@@ -113,9 +113,6 @@ export class ArmorEffectDetector {
     const result: ArmorEffectResult[] = [];
     if (!player.isValid) return [];
     if (this.hasValidCache(player)) {
-      console.log(
-        `Valid cache detected from player(${player.id}), read data from script environment...`
-      );
       return ArmorEffect.effectCache.get(player.id);
     }
     for (const slot of ArmorEffect.searchSlots) {
@@ -141,11 +138,10 @@ export class ArmorEffectDetector {
       }
     }
     if (!this.hasValidCache(player)) {
-      console.log(`Add player(${player.id}) cache...`);
       player.addTag(this.cacheTag);
       ArmorEffect.effectCache.set(player.id, result);
       system.runTimeout(() => {
-        console.log(`Remove player(${player.id}) cache...`);
+
         if (player.isValid) {
           player.removeTag(this.cacheTag);
           ArmorEffect.effectCache.delete(player.id);

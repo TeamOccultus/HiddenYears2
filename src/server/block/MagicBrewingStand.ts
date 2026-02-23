@@ -109,7 +109,6 @@ export class MagicBrewingStand extends BlockWithEntity {
       const recipe = ComplexPotionRecipeManager.getRecipe(filledItem.typeId);
       if (!recipe) return;
       if (!ComplexPotionRecipeManager.canBeAdded(recipe, item)) return;
-      console.log("canBeAdded");
       const result = ComplexPotionRecipeManager.getResultItem(item, recipe);
       setLore(result, recipe);
       consumeEquipmentAmount(player, 1);

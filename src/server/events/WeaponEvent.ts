@@ -35,7 +35,6 @@ export class WeaponEvent {
       arg0.hitEntity,
       params
     );
-    console.log("specific damage"+specificDamage)
     if (specificDamage > 0) {
       arg0.hitEntity.applyDamage(specificDamage, {
         cause: EntityDamageCause.none,
