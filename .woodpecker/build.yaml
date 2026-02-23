@@ -19,7 +19,7 @@ steps:
       token:
         from_secret: artifact
       file:
-        - ./dist/HiddenYears2-3.0.0.mcaddon
+        - ./dist/HiddenYears2-3.0.1.mcaddon
       package: true
   - name: deploy
     image: codeberg.org/xfix/plugin-codeberg-pages-deploy:1
