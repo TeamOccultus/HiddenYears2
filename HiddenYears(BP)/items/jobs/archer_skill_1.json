@@ -16,7 +16,7 @@
       "minecraft:cooldown": {
         "category": "hiddenyears:archer_skill_1",
         "type": "use",
-        "duration": 9
+        "duration": 6
       },
       "minecraft:icon": "hiddenyears:archer_skill_1",
       "minecraft:rarity": "rare",

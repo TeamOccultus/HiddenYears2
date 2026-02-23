@@ -96,14 +96,14 @@ archer.onProjectileHitEntity((arg, player) => {
   const entity = arg.getEntityHit().entity;
   if (!entity) return;
   if (!entity.isValid) return;
-  entity.applyDamage(archer.getLevel(player) * 0.4, {
+  entity.applyDamage(archer.getLevel(player) * 0.6, {
     cause: EntityDamageCause.none
   });
   if (skill2.isReleasing(player)) {
-    entity.applyDamage(archer.getLevel(player) * 1.5, {
+    entity.applyDamage(archer.getLevel(player) * 1.8, {
       cause: EntityDamageCause.none
     });
-    entity.addEffect("weakness", 5 * TicksPerSecond, { amplifier: 1 });
+    entity.addEffect("weakness", 8 * TicksPerSecond, { amplifier: 1 });
   }
 });
 
