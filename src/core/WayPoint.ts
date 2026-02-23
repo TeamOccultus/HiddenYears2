@@ -10,10 +10,11 @@ export class WayPoint {
    * @returns 
    */
   static isWayStoneAvailable(config: WayPointData): boolean {
-    const block  = world.getDimension(config.dim).getBlock(toVec3(...config.loc));
+    /*const block  = world.getDimension(config.dim).getBlock(toVec3(...config.loc));
     if(!block) return false;
     if (block.typeId === WayPoint.WAYSTONE_IDENTIFIER) return true;
-    return false;
+    return false;*/
+    return true;
   }
   /**
    * 获取玩家已激活的的传送点列表
