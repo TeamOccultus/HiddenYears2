@@ -95,8 +95,8 @@ amnestyPastor.config.skills = [skill1, skill2];
 
 amnestyPastor.onHitEntity((arg) => {
   const player = arg.damagingEntity as Player;
-  new RandomEvent(0.45, () => {
-    heal(player, amnestyPastor.getLevel(player) * 0.8);
+  new RandomEvent(0.12, () => {
+    heal(player, amnestyPastor.getLevel(player) * 0.4);
   }).call();
   const hurtEntity = arg.hitEntity;
   if (!hurtEntity.isValid) return;
