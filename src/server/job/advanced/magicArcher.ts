@@ -6,7 +6,8 @@ import {
   ItemConditions,
   Job,
   JobSkill,
-  RandomEvent
+  RandomEvent,
+  tryOperateEntity
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
 import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
@@ -101,6 +102,12 @@ magicArcher.onProjectileHitEntity((arg) => {
   const hurtEntity = arg.getEntityHit().entity;
   const player = arg.source as Player;
   if (!hurtEntity.isValid) return;
+  tryOperateEntity(hurtEntity, (entity) => {
+    entity.applyDamage(magicArcher.getLevel(player) * 0.7, {
+      cause: EntityDamageCause.magic,
+      damagingEntity: null
+    });
+  });
   if (hurtEntity.hasTag("hiddenyears:element_mark")) {
     new RandomEvent(0.85, () => {
       hurtEntity.dimension.createExplosion(hurtEntity.location, 1.5, {
@@ -125,7 +132,7 @@ magicArcher.onProjectileHitEntity((arg) => {
   ];
   new EventList(eventData).call();
   if (tryConsumeEnhance(player)) {
-    hurtEntity.applyDamage(0.8 * magicArcher.getLevel(player), {
+    hurtEntity.applyDamage(1.2 * magicArcher.getLevel(player), {
       cause: EntityDamageCause.magic,
       damagingEntity: null
     });
