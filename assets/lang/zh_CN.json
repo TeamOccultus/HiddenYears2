@@ -1444,7 +1444,7 @@
   "tile.hiddenyears:deepslate_steel_ore.name": "深层寒钢矿石",
   "job.hiddenyears:warrior.skill.0": "【固有天赋】 §e铁血冲锋§r：近战攻击命中时，有 §o职业等级×10%§r 概率获得「激怒」效果（获得力量III 3秒）",
   "job.hiddenyears:warrior.skill.1": "【主动技能】 §e战士之力§r：接下来 8 秒内每次近战攻击都会对敌人造成 §o等级×0.6§r 的额外真实伤害",
-  "job.hiddenyears:warrior.skill.2": "【主动技能】 §e战士之怒§r：对半径 3 格内敌对生物造成 6 点真实伤害，接下来 10 秒内每次近战攻击都会对半径 8 格内敌人造成 §o等级×0.8§r 的额外真实伤害",
+  "job.hiddenyears:warrior.skill.2": "【主动技能】 §e战士之怒§r：对半径 5 格内敌对生物造成 6 点真实伤害，接下来 10 秒内每次近战攻击都会对半径 8 格内敌人造成 §o等级×0.8§r 的额外真实伤害",
   "job.hiddenyears:wizard.skill.0": "【固有天赋】 §e法师的直觉§r：每次造成法术伤害时对目标造成一次 §o等级×0.6§r 的额外真实伤害",
   "job.hiddenyears:wizard.skill.1": "【主动技能】 §e法术共鸣§r：接下来 8 秒内每次法术攻击都会对半径 5 格内敌人造成 §o等级×1.2§r 的额外真实伤害",
   "job.hiddenyears:wizard.skill.2": "【主动技能】 §e魔能冲击§r：对半径 8 格内生物造成 §o等级×1.25§r 的魔法伤害",

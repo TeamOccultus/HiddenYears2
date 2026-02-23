@@ -14,8 +14,6 @@ import { swordman } from "../advanced/swordman";
 import {
   EntityDamageCause,
   ItemStack,
-  Player,
-  system,
   TicksPerSecond
 } from "@minecraft/server";
 import { getJobDescription } from "../toolkit";
@@ -84,7 +82,7 @@ skill2.onRelease((arg) => {
   const { source } = arg;
   const entities = new EntitiesUtils(source.dimension, {
     location: source.location,
-    maxDistance: 3,
+    maxDistance: 5,
     families: ["monster"]
   });
   entities.applyDamage(6, {
