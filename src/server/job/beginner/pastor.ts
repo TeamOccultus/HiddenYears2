@@ -72,7 +72,7 @@ const skill2 = new JobSkill(
 
 skill1.onRelease((arg) => {
   const player = arg.source;
-  heal(player, pastor.getLevel(player) * 0.4);
+  heal(player, pastor.getLevel(player) * 1.2);
 });
 
 skill2.onRelease((arg) => {
@@ -83,7 +83,7 @@ skill2.onRelease((arg) => {
     type: "player"
   });
   entities.tryOperateEntity((entity) => {
-    heal(entity, pastor.getLevel(player) * 1.25);
+    heal(entity, pastor.getLevel(player) * 2.5);
   });
 });
 
