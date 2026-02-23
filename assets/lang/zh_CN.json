@@ -1463,7 +1463,7 @@
   "job.hiddenyears:berserker.skill.0": "【固有天赋】 §e殷红之力§r：每次近战攻击时造成已损失生命值×0.8的额外伤害",
   "job.hiddenyears:berserker.skill.1": "【主动技能】 §e狂暴挥砍§r：消耗自身 20% 生命值，对半径 5 格内目标造成与自身生命值成反相关的额外伤害",
   "job.hiddenyears:berserker.skill.2": "【主动技能】 §e嗜血狂战§r：消耗自身 30% 生命值，在接下来的 10 秒内，每次攻击都会对目标造成与自身生命值成反相关的额外伤害",
-  "job.hiddenyears:orison_pastor.skill.0": "【固有天赋】 §e祝福祷言§r：在技能生效时，每次受到击打有 30% 概率恢复 §o等级×0.7§r 的生命值",
+  "job.hiddenyears:orison_pastor.skill.0": "【固有天赋】 §e祝福祷言§r：在技能生效时，每次受到击打有 50% 概率恢复 §o等级×0.7§r 的生命值",
   "job.hiddenyears:orison_pastor.skill.1": "【主动技能】 §e生命链接§r：瞬间回复自己和半径 3 格内所有玩家 §o等级×2.5§r 的生命值",
   "job.hiddenyears:orison_pastor.skill.2": "【主动技能】 §e神圣祷言§r：对自己和半径 5 格内所有玩家回复 §o等级×3§r 的生命值，并为其添加伤害吸收 II 15秒",
   "job.hiddenyears:amnesty_pastor.skill.0": "【固有天赋】 §e赦罪之舞§r：对敌人进行近战攻击时，有 45% 的概率回复 §o等级×0.8§r 的血量，50% 的概率让敌人获得 15 秒虚弱",

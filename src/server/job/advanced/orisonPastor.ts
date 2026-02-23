@@ -93,7 +93,7 @@ orisonPastor.onHurt((arg) => {
   const player = arg.hurtEntity as Player;
   // 被动技能
   if (orisonPastor.isReleasingSkills(player)) {
-    new RandomEvent(0.3, () => {
+    new RandomEvent(0.5, () => {
       heal(
         arg.hurtEntity,
         orisonPastor.getLevel(arg.hurtEntity as Player) * 0.7
