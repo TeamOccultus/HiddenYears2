@@ -65,15 +65,15 @@ const skill2 = new JobSkill(
   15 * TicksPerSecond
 );
 
-// 对半径 3 格内敌人造成 等级*1.5 的神圣伤害，同时回复自身等级*0.8 的生命值。
+// 对半径 5 格内敌人造成 等级*2.0 的神圣伤害，同时回复自身等级*0.8 的生命值。
 skill1.onRelease((arg) => {
   const player = arg.source;
   heal(player, arcaneWizard.getLevel(player) * 0.8);
   new EntitiesUtils(player.dimension, {
     location: player.location,
-    maxDistance: 3,
+    maxDistance: 5,
     families: ["monster"]
-  }).applyDamage(arcaneWizard.getLevel(player) * 1.5, {
+  }).applyDamage(arcaneWizard.getLevel(player) * 2.0, {
     cause: EntityDamageCause.none
   });
 });
