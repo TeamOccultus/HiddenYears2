@@ -16,7 +16,7 @@
       "minecraft:cooldown": {
         "category": "hiddenyears:pastor_skill_2",
         "type": "use",
-        "duration": 45
+        "duration": 30
       },
       "minecraft:icon": "hiddenyears:pastor_skill_2",
       "minecraft:rarity": "rare",
