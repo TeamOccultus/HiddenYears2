@@ -79,7 +79,7 @@ skill2.onRelease((arg) => {
     maxDistance: 8,
     families: ["monster"]
   });
-  entities.applyDamage(wizard.getLevel(player) * 1.25, {
+  entities.applyDamage(wizard.getLevel(player) * 1.8, {
     cause: EntityDamageCause.magic
   });
   const molang = new MolangVariableMap();
