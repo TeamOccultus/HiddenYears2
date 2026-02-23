@@ -9,6 +9,9 @@
     },
     "components": {
       "hiddenyears:profile": {},
+      "minecraft:fire_resistant": {
+        "value": true
+      },
       "minecraft:icon": "hiddenyears:occultus_watch",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 1
