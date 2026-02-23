@@ -35,7 +35,7 @@ export function initialize() {
   new ModInitializer(
     "hiddenyears",
     "Hidden Years²: Governor at the Skyline",
-    "3.0.2"
+    "3.0.3"
   );
   registryCommands();
   registryCustomRecipe();
