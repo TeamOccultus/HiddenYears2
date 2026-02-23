@@ -91,8 +91,8 @@ pastor.config.skills = [skill1, skill2];
 
 pastor.onHurt((_arg, player) => {
   if (pastor.isReleasingSkills(player)) {
-    new RandomEvent(0.25, () => {
-      heal(player, pastor.getLevel(player) * 0.5);
+    new RandomEvent(0.5, () => {
+      heal(player, pastor.getLevel(player) * 0.8);
     }).call();
   }
 });
