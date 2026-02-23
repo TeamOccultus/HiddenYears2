@@ -30,7 +30,7 @@
         "destroy_speeds": [
           {
             "block": {
-              "tags": "query.any_tag('minecraft:is_pickaxe_item_destructible') && !query.any_tag('minecraft:netherite_tier_destructible', 'minecraft:netherite_tier_destructible')"
+              "tags": "query.any_tag('minecraft:is_pickaxe_item_destructible')"
             },
             "speed": 12
           }
