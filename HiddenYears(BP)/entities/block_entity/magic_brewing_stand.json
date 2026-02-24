@@ -45,7 +45,7 @@
       "minecraft:collision_box": {
         "width": 0.0,
         "height": 0.0
-      },
+      }/*,
       "minecraft:timer": {
         "looping": true,
         "randomInterval": true,
@@ -53,15 +53,15 @@
         "time_down_event": {
           "event": "hiddenyears:magic_brewing_stand_tick"
         }
-      }
+      }*/
     },
     "events": {
       "hiddenyears:despawn": {
         "add": {
           "component_groups": ["hiddenyears:magic_brewing_stand_despawn"]
         }
-      },
-      "hiddenyears:magic_brewing_stand_tick": {}
+      }/*,
+      "hiddenyears:magic_brewing_stand_tick": {}*/
     }
   }
 }
