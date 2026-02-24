@@ -7,6 +7,12 @@
   },
   {
     "type": "transform",
+    "base": "minecraft:gold_ingot",
+    "addition": "hiddenyears:sparkling_stone",
+    "output": "hiddenyears:sparkling_gold_ingot"
+  },
+  {
+    "type": "transform",
     "base": "hiddenyears:originite_axe",
     "addition": "hiddenyears:frigid_steel_ingot",
     "output": "hiddenyears:frigid_steel_axe"
