@@ -668,7 +668,7 @@
   "task.copper.tips": "",
   "task.refined_rock": "",
   "task.refined_rock.desc": "石、ネザーラック、エンドストーンの石胚を溶錬すれば、この精錬された素材が手に入る。原理については誰も知らない。",
-  "task.refined_rock.tips": "錬金台にて任意の岩石を「X」型に配置して石胚をクラフトし、その石胚を製錬することで精錬岩インゴットを入手できる。",
+  "task.refined_rock.tips": "作業台にて任意の岩石を「X」型に配置して石胚をクラフトし、その石胚を製錬することで精錬岩インゴットを入手できる。",
   "task.iron": "",
   "task.iron.desc": "",
   "task.saw": "",
