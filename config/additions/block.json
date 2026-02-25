@@ -2,5 +2,13 @@
   {
     "loot_table": "gameplay/sparkling_stone",
     "blocks": ["minecraft:glowstone"]
+  },
+  {
+    "loot_table": "gameplay/amethyst",
+    "blocks": ["minecraft:amethyst_cluster", "minecraft:amethyst_block"]
+  },
+  {
+    "loot_table": "gameplay/budding_amethyst",
+    "blocks": ["minecraft:budding_amethyst"]
   }
 ]
