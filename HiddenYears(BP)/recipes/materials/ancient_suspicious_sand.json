@@ -7,13 +7,13 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:ancient_suspicious_sand",
+        "item": "hiddenyears:gold_sand",
         "count": 9
       }
     ],
     "unlock": [
       {
-        "item": "hiddenyears:ancient_suspicious_sand"
+        "item": "hiddenyears:gold_sand"
       }
     ],
     "result": {
