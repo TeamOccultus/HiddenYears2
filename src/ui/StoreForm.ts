@@ -3,6 +3,7 @@ import { ModalFormData, ModalFormResponse } from "@minecraft/server-ui";
 import { CoinOrder, UnifiedCurrencyValue } from "../core/UnifiedCurrencyValue";
 import { default as builtinData } from "../../config/store/coin.json";
 import { FormLike } from "@occultus/core";
+import { Color, Format } from "@occultus/api";
 
 export class StoreForm extends FormLike {
   static items: StoreItemData[] = builtinData;
@@ -21,8 +22,22 @@ export class StoreForm extends FormLike {
   }
   display(player: Player, backTo: FormLike[]) {
     const form = new ModalFormData().title({ translate: "ui.ucv" }).label({
-      translate: "ui.ucv.own",
-      with: [UnifiedCurrencyValue.get(player).toString()]
+      rawtext: [
+        {
+          translate: "ui.ucv.own",
+          with: [UnifiedCurrencyValue.get(player).toString()]
+        },
+        { text: "\n\n" },
+        {
+          text: Color.gray
+        },
+        {
+          text: Format.italics
+        },
+        {
+          translate: "ui.ucv.tips"
+        }
+      ]
     });
     StoreForm.items.forEach((coin) => {
       const item = new ItemStack(coin.item);
