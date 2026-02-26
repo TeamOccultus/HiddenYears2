@@ -4,7 +4,7 @@ import { CopyrightForm } from "./CopyrightForm";
 import { ArticleServerBindings, ArtifactForm, CreditsScreen, FormLike } from "@occultus/api";
 import { taskCenter } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
-import { UCVForm } from "./UCVForm";
+import { StoreForm } from "./StoreForm";
 import { jobCenter } from "../server/registry/job";
 import { PlayerStory } from "../core/PlayerStory";
 import { tutorialCenter } from "../server/registry/tutorial";
@@ -59,7 +59,7 @@ export class ProfileForm extends FormLike {
         return;
       }
       if (result.selection === 2) {
-        this.jumpTo(player, new UCVForm(), backTo)
+        this.jumpTo(player, new StoreForm(), backTo)
         return;
       }
       if (result.selection === 3) {

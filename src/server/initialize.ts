@@ -27,6 +27,7 @@ import { DesertEntityEvent } from "./events/DesertEntityEvent";
 import { registryArticles } from "./registry/article";
 import { LunamutatioEntityEvent } from "./events/LunamutatioEntityEvent";
 import { SpriteEvents } from "./events/SpriteEvents";
+import { StoreForm } from "../ui/StoreForm";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -53,6 +54,7 @@ export function initialize() {
   registryMessage();
   registryBoss();
   registryJob();
+  StoreForm.openToPlugin();
   RubyEvents.subscribe();
   MigrationEvents.subscribe();
   InitalSpawnEvents.subscribe();

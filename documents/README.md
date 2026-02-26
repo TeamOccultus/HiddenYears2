@@ -7,6 +7,7 @@ children:
   - ./recipe/README.md
   - ./family.md
   - ./tags.md
+  - ./store.md
 ---
 # 隐藏之年²：天边的开发文档
 欢迎来到《隐藏之年：天边的迦万涅尔》开发文档！
