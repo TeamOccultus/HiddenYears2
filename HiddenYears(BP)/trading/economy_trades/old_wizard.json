@@ -56,11 +56,11 @@
           "num_to_select": 2,
           "trades": [
             {
-              "max_uses": 12,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "hiddenyears:magic_origin",
-                  "quantity": 7
+                  "quantity": 13
                 }
               ],
               "gives": [
@@ -71,11 +71,11 @@
               ]
             },
             {
-              "max_uses": 12,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "hiddenyears:magic_origin",
-                  "quantity": 7
+                  "quantity": 15
                 }
               ],
               "gives": [
@@ -86,11 +86,11 @@
               ]
             },
             {
-              "max_uses": 12,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "hiddenyears:magic_origin",
-                  "quantity": 7
+                  "quantity": 12
                 }
               ],
               "gives": [
@@ -101,11 +101,11 @@
               ]
             },
             {
-              "max_uses": 12,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "hiddenyears:magic_origin",
-                  "quantity": 7
+                  "quantity": 15
                 }
               ],
               "gives": [
@@ -116,11 +116,11 @@
               ]
             },
             {
-              "max_uses": 12,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "hiddenyears:magic_origin",
-                  "quantity": 7
+                  "quantity": 13
                 }
               ],
               "gives": [
@@ -131,11 +131,11 @@
               ]
             },
             {
-              "max_uses": 12,
+              "max_uses": 2,
               "wants": [
                 {
                   "item": "hiddenyears:magic_origin",
-                  "quantity": 7
+                  "quantity": 15
                 }
               ],
               "gives": [
