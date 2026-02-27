@@ -44,7 +44,8 @@ export class StaffEvents {
       location: source.location,
       maxDistance: params.radius,
       excludeTags: ["hiddenyears:immune_magic_attack"],
-      excludeFamilies: ["noaoe"]
+      excludeFamilies: ["noaoe", "inanimate"],
+      excludeTypes: ["minecraft:item"]
     });
     utils.applyDamage(params.damage);
     utils.tryOperateEntity((entity) => {
