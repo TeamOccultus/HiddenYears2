@@ -6,7 +6,7 @@
     },
     "input": "hiddenyears:netherrack_embryo",
     "output": "hiddenyears:refined_rock_ingot",
-    "tags": ["blast_furnace"],
+    "tags": ["furnace", "blast_furnace"],
     "unlock": [
       {
         "item": "hiddenyears:refined_rock_ingot"
