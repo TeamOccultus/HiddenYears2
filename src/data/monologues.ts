@@ -17,12 +17,30 @@ export function listenIsisMonologue(player: Player) {
 
   // 批量添加所有独白（包括最后一段的自定义逻辑）
   mutasMonologue.setMonologues([
-    { text: "monologue.hiddenyears:mutas_wrath_dead.1", delay: 0 },
-    { text: "monologue.hiddenyears:mutas_wrath_dead.2", delay: 40 },
-    { text: "monologue.hiddenyears:mutas_wrath_dead.3", delay: 40 },
-    { text: "monologue.hiddenyears:mutas_wrath_dead.4", delay: 40 },
-    { text: "monologue.hiddenyears:mutas_wrath_dead.5", delay: 40 },
-    { text: "monologue.hiddenyears:mutas_wrath_dead.6", delay: 40 },
+    {
+      text: { translate: "monologue.hiddenyears:mutas_wrath_dead.1" },
+      delay: 0
+    },
+    {
+      text: { translate: "monologue.hiddenyears:mutas_wrath_dead.2" },
+      delay: 40
+    },
+    {
+      text: { translate: "monologue.hiddenyears:mutas_wrath_dead.3" },
+      delay: 40
+    },
+    {
+      text: { translate: "monologue.hiddenyears:mutas_wrath_dead.4" },
+      delay: 40
+    },
+    {
+      text: { translate: "monologue.hiddenyears:mutas_wrath_dead.5" },
+      delay: 40
+    },
+    {
+      text: { translate: "monologue.hiddenyears:mutas_wrath_dead.6" },
+      delay: 40
+    },
     // 最后一段：文本为自定义对象，包含with参数
     {
       text: {
