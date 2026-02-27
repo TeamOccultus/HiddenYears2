@@ -248,6 +248,15 @@
         }
       ]
     },
+     "music.boss.isis": {
+      "category": "music",
+      "sounds": [
+        {
+          "name": "sounds/music/boss/hymn_of_the_exiled",
+          "stream": true
+        }
+      ]
+    },
     "music.biome.cherry_plains": {
       "category": "music",
       "sounds": [

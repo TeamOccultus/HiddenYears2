@@ -137,7 +137,7 @@ const muatsWarth = new Boss(
   "hiddenyears:mutas_wrath",
   [kahe, osiris, isis, muta],
   {
-    trackId: "music.boss.common",
+    trackId: "music.boss.isis",
     radius: 15
   }
 );
