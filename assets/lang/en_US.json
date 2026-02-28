@@ -921,7 +921,7 @@
   "title.hiddenyears:king_of_ruby.subtitle": "§dThe blood-colored gaze embedded in the altar gathers a mighty force…§r",
   "title.hiddenyears:pharaohs_ghost": "§4 The Promised Land Regrets Becoming Dust§r",
   "title.hiddenyears:pharaohs_ghost.subtitle": "§dThe empire above the dust and sand shall return to dust and sand at last…§r",
-  "title.hiddenyears:mutas_wrath": "",
+  "title.hiddenyears:mutas_wrath": "§gMuta's Wrath§r",
   "title.hiddenyears:mutas_wrath.subtitle": "",
   "title.hiddenyears:desert_book": "",
   "title.hiddenyears:desert_book.subtitle": "",
@@ -930,7 +930,7 @@
   "tooltip.suffering_sword": "§7§o\"I will draw my sword and pursue you; your land will become a desolation, and your cities a wasteland.\"§r",
   "tooltip.babel_tower_wreckage_sand": "",
   "pack.name": "Hidden Years²: Governor at the Skyline",
-  "pack.description": "Exploring the Unknown World  | Alpha test version, please back up your world before loading",
+  "pack.description": "Exploring the Unknown World",
   "gui.unequip": "Unequip",
   "ui.artifact": "Artifact",
   "ui.artifact_equipped": "Equipped Artifact:",
@@ -1036,7 +1036,6 @@
   "article.hiddenyears:1.body_2": "In this lonely world, you are perhaps the only intelligent being left. Sadly, I cannot explain to you in full what has happened — you only need to know for now that you are a survivor of the 'Anomaly', sent here to build a new world.",
   "article.hiddenyears:1.body_3": "Our old homeland has fallen. Countless storms have turned solid stone into sand. You were meant to grow in safety, yet you must now walk through the storm. Here and now, a vast world awaits your exploration. Of the past and future, history shall be written by you.",
   "article.hiddenyears:1.body_4": "Hello, world.",
-
   "article.hiddenyears:2.title": "Song of the Hidden Ones",
   "article.hiddenyears:2.body": "The Undying wrote prayers to their deity beneath the first eclipse of the moon.",
   "article.hiddenyears:2.chapter_1.title": "The Re-Creation",
@@ -1058,7 +1057,6 @@
   "article.hiddenyears:2.chapter_1.body_16": "Sun, moon, cold and heat cycle endlessly.",
   "article.hiddenyears:2.chapter_1.body_17": "At last, 'Man' is born anew.",
   "article.hiddenyears:2.chapter_1.body_18": "The Undying Man — so they call Him.",
-
   "article.hiddenyears:2.chapter_2.title": "The Book of Destruction",
   "article.hiddenyears:2.chapter_2.body_1": "The King of Men",
   "article.hiddenyears:2.chapter_2.body_2": "fell in a pool of blood beneath the moonlit night.",
@@ -1075,7 +1073,6 @@
   "article.hiddenyears:2.chapter_2.body_13": "The last surviving Undying Man stepped into the cycle of reincarnation.",
   "article.hiddenyears:2.chapter_2.body_14": "From then on, no one remembered",
   "article.hiddenyears:2.chapter_2.body_15": "those fifty years of destruction.",
-
   "article.hiddenyears:2.chapter_3.title": "The Book of Rebirth",
   "article.hiddenyears:2.chapter_3.body_1": "Morning dew",
   "article.hiddenyears:2.chapter_3.body_2": "soaks flowers born unclean.",
@@ -1096,7 +1093,6 @@
   "article.hiddenyears:2.chapter_3.body_17": "that the Undying would live forever in the Netherworld,",
   "article.hiddenyears:2.chapter_3.body_18": "that the boundless universe would reveal all its secrets openly.",
   "article.hiddenyears:2.chapter_3.body_19": "But this was nothing more than a fantasy...",
-
   "article.hiddenyears:3.title": "Abstract of Elven History",
   "article.hiddenyears:3.body_1": "The Coming of Freedom",
   "article.hiddenyears:3.body_2": "A thousand years ago, a star in the sky suddenly flickered for no reason...",
@@ -1115,7 +1111,6 @@
   "article.hiddenyears:3.body_15": "We were all conquered by the Undying, by the Calamity, becoming part of their grand plan — a dishonorable part. The age of the Elves has ended.",
   "article.hiddenyears:3.body_16": "But even in chains, there still survive those who remain.",
   "article.hiddenyears:3.body_17": "The sound of a crossbow being drawn comes from nearby. I must stop writing here.",
-
   "article.hiddenyears:4.title": "The Blood-Stained Corundum",
   "article.hiddenyears:4.body_1": "Inside the cave,",
   "article.hiddenyears:4.body_2": "a pure white gem sealed the power of the desert.",
@@ -1147,7 +1142,6 @@
   "article.hiddenyears:4.body_28": "Beside the fallen blood-red cathedral stood Claudius, the Godslayer.",
   "article.hiddenyears:4.body_29": "He buried his companion, Korn, who had fallen into madness.",
   "article.hiddenyears:4.body_30": "It was he who had freed his friend.",
-
   "article.hiddenyears:5.title": "Exploring the Sacrificial City I",
   "article.hiddenyears:5.body_1": "This is a page torn from the journal of an adventurer during the Calamity Age.",
   "article.hiddenyears:5.body_2": "Following the mine tunnel, I reached this dead city. The way in was clear, but seawater had flooded the path back. Torches and rails were destroyed.",
@@ -1168,7 +1162,6 @@
   "article.hiddenyears:5.body_17": "Cherry trees? I’ve never seen one. They went extinct a thousand years ago... How do you know about them?",
   "article.hiddenyears:5.body_18": "Before I could finish, my head grew heavy, and I blacked out.",
   "article.hiddenyears:5.body_19": "Because I ferry the souls of all who perish in war, she said with a faint smile.",
-
   "article.hiddenyears:6.title": "Brief History of Eras — Part One",
   "article.hiddenyears:6.body_1": "Windless Era — Before 2050 B.C.",
   "article.hiddenyears:6.body_2": "On the first day, the God from among the stars descended upon the primordial land. And so the Windless Age ended.",
@@ -1188,7 +1181,6 @@
   "article.hiddenyears:6.body_16": "I will reveal the truth to you and build a godless nation.",
   "article.hiddenyears:6.body_17": "Then I shall wipe the false gods from the sky and the undying Judas",
   "article.hiddenyears:6.body_18": "from this world.",
-
   "article.hiddenyears:7.title": "Brief History of Eras — Part Two",
   "article.hiddenyears:7.body_1": "Calamity Era — 3100–3184 B.C.",
   "article.hiddenyears:7.body_2": "Warriors forgot why they fought. Those who should not perish fell from the stars.",
@@ -1199,7 +1191,6 @@
   "article.hiddenyears:7.body_7": "██████████████████████████████████",
   "article.hiddenyears:7.body_8": "(Much of the text is damaged beyond recognition)",
   "article.hiddenyears:7.body_9": "The Wind Rises...",
-
   "article.hiddenyears:8.title": "Priest’s Record I",
   "article.hiddenyears:8.body_1": "Recorded at the beginning of the Eclipse Era",
   "article.hiddenyears:8.body_2": "Voice 1: Shall we begin?",
@@ -1223,7 +1214,6 @@
   "article.hiddenyears:8.body_20": "Voice 1 (after Closier leaves): From what we’ve heard, perhaps dark power possesses the Undying and turns them into zombies. But why do they revert during the day...",
   "article.hiddenyears:8.body_21": "Voice 2: Could it be because of the Blessing of Immortality?",
   "article.hiddenyears:8.body_22": "Voice 1: Then the fact that zombies can no longer revert... could it be...",
-
   "article.hiddenyears:9.title": "The Tale of Gold in the Sand",
   "article.hiddenyears:9.body_1": "10th July, 2253",
   "article.hiddenyears:9.body_2": "Shocking news came from the vast desert: the vanguard of the Holy Veil Kingdom had found countless treasures in the Sacramento Ruins of ancient Nilot! They say adventurers who went there returned rich. Tomorrow I shall join them to seek fortune!",
@@ -1240,7 +1230,6 @@
   "article.hiddenyears:9.body_13": "The foreman called priests from the Sacrificial City. They said the accident happened because the dead worker had offended the gods, angering heaven. But at midnight, I heard the foreman and priests talking about the Curse of ███, the Fall of I██s.",
   "article.hiddenyears:9.body_14": "Their voices were low, but I heard the last sentence clearly: We can use this blazing power from the desert to ███████████████████████.",
   "article.hiddenyears:9.body_15": "The journal ends here. A death certificate is tucked inside: John Sutter, aged 27, died after falling into a river valley while drunk on the night of 29th January, 2254.",
-
   "article.hiddenyears:10.title": "Nilotic Myths",
   "article.hiddenyears:10.body_1": "Part One",
   "article.hiddenyears:10.body_2": "The incarnation of the sun awoke from chaos. A voice echoed in his mind:",
