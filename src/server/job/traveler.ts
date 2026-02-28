@@ -16,12 +16,12 @@ export const traveler = new Job(
       {
         min: 0,
         max: 5,
-        condition: [new UnifiedCurrencyValueConditions(25, true)]
+        condition: [new UnifiedCurrencyValueConditions(100, true)]
       },
       {
         min: 6,
         max: 10,
-        condition: [new UnifiedCurrencyValueConditions(50, true)]
+        condition: [new UnifiedCurrencyValueConditions(250, true)]
       }
     ],
     transform: [

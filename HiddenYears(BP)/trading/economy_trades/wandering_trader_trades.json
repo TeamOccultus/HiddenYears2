@@ -168,7 +168,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 4,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],
@@ -186,7 +186,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 4,
+                  "quantity": 13,
                   "price_multiplier": 0.05
                 }
               ],
@@ -204,7 +204,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 4,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],
@@ -222,7 +222,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 4,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],
@@ -240,7 +240,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 5,
+                  "quantity": 12,
                   "price_multiplier": 0.05
                 }
               ],
@@ -258,7 +258,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 4,
+                  "quantity": 13,
                   "price_multiplier": 0.05
                 }
               ],
@@ -276,7 +276,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 5,
+                  "quantity": 14,
                   "price_multiplier": 0.05
                 }
               ],
@@ -294,7 +294,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 5,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],
@@ -312,7 +312,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:magic_dust",
-                  "quantity": 5,
+                  "quantity": 15,
                   "price_multiplier": 0.05
                 }
               ],

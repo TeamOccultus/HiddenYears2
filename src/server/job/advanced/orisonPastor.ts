@@ -20,17 +20,17 @@ export const orisonPastor = new Job(
       {
         min: 0,
         max: 5,
-        condition: [new UnifiedCurrencyValueConditions(500, true)]
+        condition: [new UnifiedCurrencyValueConditions(3000, true)]
       },
       {
         min: 6,
         max: 10,
-        condition: [new UnifiedCurrencyValueConditions(800, true)]
+        condition: [new UnifiedCurrencyValueConditions(4500, true)]
       },
       {
         min: 11,
         max: 15,
-        condition: [new UnifiedCurrencyValueConditions(1500, true)]
+        condition: [new UnifiedCurrencyValueConditions(6000, true)]
       }
     ],
   }

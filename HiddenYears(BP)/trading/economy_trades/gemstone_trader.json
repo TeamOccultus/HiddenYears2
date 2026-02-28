@@ -10,7 +10,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:copper_coin",
-                  "quantity": 3
+                  "quantity": 8
                 }
               ],
               "gives": [
@@ -25,7 +25,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:copper_coin",
-                  "quantity": 15
+                  "quantity": 20
                 }
               ],
               "gives": [
@@ -39,8 +39,8 @@
               "max_uses": 8,
               "wants": [
                 {
-                  "item": "hiddenyears:copper_coin",
-                  "quantity": 10
+                  "item": "hiddenyears:stack_of_copper_coin",
+                  "quantity": 25
                 }
               ],
               "gives": [
@@ -55,7 +55,7 @@
               "wants": [
                 {
                   "item": "hiddenyears:gold_coin",
-                  "quantity": 8
+                  "quantity": 25
                 }
               ],
               "gives": [
@@ -69,14 +69,14 @@
               "max_uses": 16,
               "wants": [
                 {
-                  "item": "hiddenyears:gold_coin",
-                  "quantity": 12
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 13
                 }
               ],
               "gives": [
                 {
                   "item": "hiddenyears:crystal_ingot",
-                  "quantity": 4
+                  "quantity": 2
                 }
               ]
             },
@@ -84,14 +84,14 @@
               "max_uses": 16,
               "wants": [
                 {
-                  "item": "hiddenyears:gold_coin",
-                  "quantity": 10
+                  "item": "hiddenyears:stack_of_gold_coin",
+                  "quantity": 18
                 }
               ],
               "gives": [
                 {
                   "item": "diamond",
-                  "quantity": 4
+                  "quantity": 5
                 }
               ]
             }
