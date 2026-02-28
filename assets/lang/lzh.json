@@ -1623,5 +1623,14 @@
   "article.hiddenyears:14.body_7": "尼羅特帝國，至此覆亡。",
   "message.hiddenyears:need_boss_key": "",
   "message.hiddenyears:trial_stone_need_key": "",
-  "message.hiddenyears:trial_stone_need_key.active": ""
+  "message.hiddenyears:trial_stone_need_key.active": "",
+  "ui.waystone.delete.body": "",
+  "ui.waystone.unavailable": "",
+  "ui.waystone.icon.default": "",
+  "ui.waystone.icon.home": "",
+  "ui.waystone.icon.chest": "",
+  "ui.waystone.icon.tower": "",
+  "ui.waystone.select.icon": "",
+  "ui.task.complete.world": "",
+  "ui.ui.tips": ""
 }

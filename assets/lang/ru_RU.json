@@ -1622,5 +1622,14 @@
   "article.hiddenyears:14.body_7": "Империя Нилета палла, никогда не поднявшись снова.",
   "message.hiddenyears:need_boss_key": "Для открытия этого алтаря требуется специальный предмет...",
   "message.hiddenyears:trial_stone_need_key": "Для активации Камня испытаний требуется специальный предмет...",
-  "message.hiddenyears:trial_stone_need_key.active": "Для получения наград Камня испытаний требуется специальный предмет..."
+  "message.hiddenyears:trial_stone_need_key.active": "Для получения наград Камня испытаний требуется специальный предмет...",
+  "ui.waystone.delete.body": "Выберите точку отправления, чтобы удалить её.",
+  "ui.waystone.unavailable": "Точка отправления недоступна.",
+  "ui.waystone.icon.default": "По умолчанию",
+  "ui.waystone.icon.home": "Дом",
+  "ui.waystone.icon.chest": "Сундук",
+  "ui.waystone.icon.tower": "Башня",
+  "ui.waystone.select.icon": "Выбрать иконку",
+  "ui.task.complete.world": "Задача выполнена!",
+  "ui.ucv.tips": "Совет"
 }

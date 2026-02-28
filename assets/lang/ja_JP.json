@@ -935,7 +935,7 @@
   "tooltip.suffering_sword": "",
   "tooltip.babel_tower_wreckage_sand": "",
   "pack.name": "隠れた年²：天辺のガバナー",
-  "pack.description": "",
+  "pack.description": "「未知なる世を探る」",
   "gui.unequip": "",
   "ui.artifact": "",
   "ui.artifact_equipped": "",
@@ -1623,5 +1623,14 @@
   "article.hiddenyears:14.body_7": "",
   "message.hiddenyears:need_boss_key": "",
   "message.hiddenyears:trial_stone_need_key": "",
-  "message.hiddenyears:trial_stone_need_key.active": ""
+  "message.hiddenyears:trial_stone_need_key.active": "",
+  "ui.waystone.delete.body": "削除したいワーポイントを選択してください",
+  "ui.waystone.unavailable": "[%1, %2, %3] にあるワーストーンは使用できません。破壊されていませんか？",
+  "ui.waystone.icon_default": "デフォルト",
+  "ui.waystone.icon_home": "家",
+  "ui.waystone.icon_chest": "チェスト",
+  "ui.waystone.icon_tower": "魔法塔",
+  "ui.waystone.select_icon": "アイコンを選択",
+  "ui.task.complete.world": "%1 がクエストを完了しました：§a",
+  "ui.ucv.tips": "通貨を使用して統一通貨値に変換します；スニークしながら通貨を使用すると、スタック全体を統一通貨値に変換します"
 }

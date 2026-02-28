@@ -1623,5 +1623,14 @@
   "article.hiddenyears:14.body_7": "尼羅特帝國，就此覆滅。",
   "message.hiddenyears:need_boss_key": "這個祭壇需要特殊的物品才能打開……",
   "message.hiddenyears:trial_stone_need_key": "試煉之石需要特殊的物品才能激活……",
-  "message.hiddenyears:trial_stone_need_key.active": "試煉之石需要特殊的物品才能領取獎勵……"
+  "message.hiddenyears:trial_stone_need_key.active": "試煉之石需要特殊的物品才能領取獎勵……",
+  "ui.waystone.delete.body": "選擇一個想刪除的傳送點",
+  "ui.waystone.unavailable": "位於 [%1, %2, %3] 的傳送點不可用，其是否已被破壞？",
+  "ui.waystone.icon_default": "預設",
+  "ui.waystone.icon_home": "房屋",
+  "ui.waystone.icon_chest": "箱子",
+  "ui.waystone.icon_tower": "魔法塔",
+  "ui.waystone.select_icon": "選擇圖標",
+  "ui.task.complete.world": "%1 完成了任務：§a",
+  "ui.ucv.tips": "使用貨幣以將其轉換為統一貨幣值；潛行使用貨幣以將其整組全部轉換為統一貨幣值"  
 }

@@ -1618,5 +1618,14 @@
   "article.hiddenyears:14.body_7": "The Nilot Empire fell, never to rise again.",
   "message.hiddenyears:need_boss_key": "This altar requires a special item to open...",
   "message.hiddenyears:trial_stone_need_key": "The Trial Stone requires a special item to activate...",
-  "message.hiddenyears:trial_stone_need_key.active": "The Trial Stone requires a special item to claim rewards..."
+  "message.hiddenyears:trial_stone_need_key.active": "The Trial Stone requires a special item to claim rewards...",
+  "ui.waystone.delete.body": "Select a waypoint you want to delete",
+  "ui.waystone.unavailable": "The waystone at [%1, %2, %3] is unavailable. Has it been destroyed?",
+  "ui.waystone.icon_default": "Default",
+  "ui.waystone.icon_home": "Home",
+  "ui.waystone.icon_chest": "Chest",
+  "ui.waystone.icon_tower": "Magic Tower",
+  "ui.waystone.select_icon": "Select Icon",
+  "ui.task.complete.world": "%1 has completed the task: §a",
+  "ui.ucv.tips": "Use currency to convert it to unified currency value; sneak while using currency to convert the entire stack to unified currency value"
 }
