@@ -1,0 +1,19 @@
+{
+  "format_version": "1.20.30",
+  "minecraft:ore_feature": {
+    "description": {
+      "identifier": "hiddenyears:ores/steel"
+    },
+    "count": 6,
+    "replace_rules": [
+      {
+        "places_block": "hiddenyears:deepslate_steel_ore",
+        "may_replace": ["minecraft:deepslate"]
+      },
+      {
+        "places_block": "hiddenyears:steel_ore",
+        "may_replace": ["minecraft:stone"]
+      }
+    ]
+  }
+}
