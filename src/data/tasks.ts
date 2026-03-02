@@ -690,7 +690,7 @@ const wither = new Task(
   },
   {
     awards: [new ItemAwards("minecraft:diamond", 12)],
-    conditions: [new KillEntityConditions("wither")],
+    conditions: [new KillEntityConditions("minecraft:wither")],
     previousTask: "none",
     iconPath: "textures/items/spawn_eggs/spawn_egg_wither",
     completeSound: "ui.challenge_complete"
@@ -769,7 +769,7 @@ const enderDragon = new Task(
   },
   {
     awards: [new ItemAwards("minecraft:diamond", 15)],
-    conditions: [new KillEntityConditions("ender_dragon")],
+    conditions: [new KillEntityConditions("minecraft:ender_dragon")],
     previousTask: "none",
     iconPath: "textures/ui/task/dragon_head",
     completeSound: "ui.challenge_complete"
