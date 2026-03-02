@@ -86,7 +86,7 @@ assassin.onCauseDamage((arg) => {
   const mainHandItem = getEquipmentItem(player);
   if (player.hasTag("hiddenyears:critical_next_attack")) {
     if (hurtEntity.isValid)
-      hurtEntity.applyDamage(arg.damage * assassin.getLevel(player) * 1.8);
+      hurtEntity.applyDamage(assassin.getLevel(player) * 1.8);
     if (hurtEntity.isValid)
       hurtEntity.addEffect("minecraft:poison", 5 * TicksPerSecond);
     player.removeTag("hiddenyears:critical_next_attack");
@@ -94,6 +94,7 @@ assassin.onCauseDamage((arg) => {
   if (mainHandItem?.hasTag("hiddenyears:is_dagger")) {
     if (!hurtEntity.isValid) return;
     // 额外提升50%等级的伤害
-    hurtEntity.applyDamage(arg.damage * assassin.getLevel(player) * 0.8);
+    // 去掉了arg.damage的倍率 这玩意配上匕首会非常吓人 ——方漓猫
+    hurtEntity.applyDamage(assassin.getLevel(player) * 0.8);
   }
 });
