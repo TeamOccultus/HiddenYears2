@@ -83,6 +83,7 @@ assassin.config.skills = [skill1, skill2];
 assassin.onCauseDamage((arg) => {
   const player = arg.damageSource.damagingEntity as Player;
   const hurtEntity = arg.hurtEntity;
+  if (arg.damageSource.cause !== EntityDamageCause.entityAttack) return;
   const mainHandItem = getEquipmentItem(player);
   if (player.hasTag("hiddenyears:critical_next_attack")) {
     if (hurtEntity.isValid)
