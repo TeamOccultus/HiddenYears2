@@ -598,5 +598,6 @@ export const artifacts = [
   crucifixRunes,
   imprisonedWing,
   rubyRunes,
-  sandRunes
+  sandRunes,
+  gluttonousRunes
 ];
