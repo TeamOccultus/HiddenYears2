@@ -59,6 +59,7 @@ category: Documents
 | boss          | `string`                                                       | 必填   | BOSS ID                             |
 | transform_to  | `string`                                                       | 必填   | BOSS 祭坛被使用后转换成的方块       |
 | key           | `"none" \| string`                                             | 必填   | BOSS 祭坛的钥匙                     |
+| cutscene       | `"king_of_ruby" \| "mutas_wrath" \| "pharaohs_ghost"`         | 可选   | BOSS 祭坛被使用时触发的过场动画，这将会覆盖`clint_events`和`fade`属性的效果     |
 | client_events | `{ sound_event?: string; title?: string; subtitle?: string; }` | 可选   | BOSS 祭坛被使用时触发的客户端事件   |
 | fade          | `{ fade_in: number; fade_out: number; hold: number; }`         | 可选   | BOSS 祭坛被使用时触发的淡入淡出效果 |
 

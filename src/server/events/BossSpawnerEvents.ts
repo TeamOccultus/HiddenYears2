@@ -7,23 +7,39 @@ import { BossSpawnerParams } from "../components/BossSpawnerComponent/Params";
 import {
   consumeAmount,
   getEquipmentItem,
-  loot,
-  parseToRaw,
   setEquipmentItem,
   Vector3Utils
 } from "@occultus/api";
+import { kingOfRubyCutscene } from "../../cutscenes/kingOfRuby";
+import { mutasWrathCutscene } from "../../cutscenes/mutasWrath";
+import { pharaohsGhostCutscene } from "../../cutscenes/pharaohsGhost";
 
 /**
  * @category Events
  */
 export class BossSpwanerEvents {
+  static matchCutscene(name: "king_of_ruby" | "mutas_wrath" | "pharaohs_ghost", player: Player){
+    if(name==="king_of_ruby"){
+     return kingOfRubyCutscene(player);
+    }
+    if(name==="mutas_wrath"){
+      return mutasWrathCutscene(player);
+    }
+    if(name==="pharaohs_ghost"){
+      return pharaohsGhostCutscene(player);
+    }
+  }
   static onSpawn(block: Block, player: Player, params: BossSpawnerParams) {
     block.dimension.spawnEntity(
       params.boss,
-      Vector3Utils.add(block.location, { x: 0, y: 1, z: 0 })
+      Vector3Utils.add(block.location, { x: 2, y: 0, z: 0 })
     );
     player.playSound(params.client_events.sound_event ?? "empty");
     block.setType(params.transform_to);
+    if((params.cutscene)){
+      this.matchCutscene(params.cutscene, player);
+      return;
+    }
     if (params.client_events.title) {
       player.onScreenDisplay.setTitle({
         translate: params.client_events.title

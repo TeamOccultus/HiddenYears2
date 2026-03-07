@@ -64,7 +64,7 @@ export function initialize() {
   SpriteEvents.subscribe();
   world.afterEvents.entitySpawn.subscribe((event) => {
     if (event.entity.typeId === "hiddenyears:king_of_ruby") {
-      event.entity.playAnimation("animation.king_of_ruby.summon2")
+      event.entity.playAnimation("animation.king_of_ruby.summon")
     }
     if(event.entity.typeId === "hiddenyears:pharaohs_ghost"){
       event.entity.playAnimation("animation.pharaohs_ghost.summon")
