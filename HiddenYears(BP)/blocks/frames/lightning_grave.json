@@ -48,6 +48,7 @@
       "hiddenyears:boss_spawner": {
         "boss": "hiddenyears:king_of_ruby",
         "transform_to": "hiddenyears:actived_lightning_grave",
+        // "cutscene": "king_of_ruby",
         "key": "hiddenyears:crimson_eyes",
         "client_events": {
           "sound_event": "item.trident.thunder",
