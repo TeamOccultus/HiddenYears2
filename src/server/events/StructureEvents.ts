@@ -13,6 +13,7 @@ import {
   Monologue,
   setEquipmentItem
 } from "@occultus/api";
+import { arruDreamCutscene } from "../../cutscenes/arruDream";
 
 export class StructureEvents {
   static toAnimationMode(mode: string): StructureAnimationMode {
@@ -38,19 +39,7 @@ export class StructureEvents {
     return true;
   }
   static aaruDreamEvent(player: Player) {
-    const osirisMonologue = new Monologue(
-      "hiddenyears:osiris",
-      "music.biome.desert_song"
-    );
-
-    osirisMonologue
-      .addMonologue({ translate: "monologue.hiddenyears:osiris.1" }, 0) // 立即发送
-      .addMonologue({ translate: "monologue.hiddenyears:osiris.2" }, 60) // 间隔60tick
-      .addMonologue({ translate: "monologue.hiddenyears:osiris.3" }, 60) // 间隔60tick
-      .addMonologue({ translate: "monologue.hiddenyears:osiris.4" }, 60) // 间隔60tick
-      .addMonologue({ translate: "monologue.hiddenyears:osiris.5" }, 60); // 间隔60tick
-
-    osirisMonologue.play(player);
+    arruDreamCutscene(player)
   }
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const { source, itemStack } = arg0;
