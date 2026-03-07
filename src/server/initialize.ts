@@ -28,6 +28,7 @@ import { registryArticles } from "./registry/article";
 import { LunamutatioEntityEvent } from "./events/LunamutatioEntityEvent";
 import { SpriteEvents } from "./events/SpriteEvents";
 import { StoreForm } from "../ui/StoreForm";
+import { world } from "@minecraft/server";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -61,4 +62,12 @@ export function initialize() {
   DesertEntityEvent.subscribe();
   LunamutatioEntityEvent.subscribe();
   SpriteEvents.subscribe();
+  world.afterEvents.entitySpawn.subscribe((event) => {
+    if (event.entity.typeId === "hiddenyears:king_of_ruby") {
+      event.entity.playAnimation("animation.king_of_ruby.summon2")
+    }
+    if(event.entity.typeId === "hiddenyears:pharaohs_ghost"){
+      event.entity.playAnimation("animation.pharaohs_ghost.summon")
+    }
+  })
 }
