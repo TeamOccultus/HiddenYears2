@@ -519,7 +519,7 @@ imprisonedWing.onHitEntity((arg) => {
     .getEntities({
       location: arg.damagingEntity.location,
       maxDistance: 10,
-      excludeFamilies: ["boss"]
+      families: ["monster"]
     })
     .forEach((entity) => {
       if (entity.hasTag("hiddenyears:imprisoned_wing")) return;
