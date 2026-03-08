@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:rebirth_frame_recovery"
+    },
+    "tags": ["alchemy_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:actived_rebirth_frame",
+        "count": 1
+      },
+      {
+        "item": "hiddenyears:magic_origin",
+        "count": 8
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:actived_rebirth_frame"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:rebirth_frame"
+    }
+  }
+}

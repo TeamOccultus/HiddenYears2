@@ -1,0 +1,30 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:lightning_grave_recovery"
+    },
+    "tags": ["alchemy_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:actived_lightning_grave",
+        "count": 1
+      },
+      {
+        "item": "hiddenyears:magic_origin",
+        "count": 8
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:actived_lightning_grave"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:lightning_grave"
+    }
+  }
+}
