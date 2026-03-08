@@ -44,12 +44,24 @@
       }
     ],
     "components": {
-      "minecraft:loot": "loot_tables/empty.json",
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 12,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 5
+          },
+          {
+            "item": { "tags": "query.any_tag('hiddenyears:is_crowbar')" },
+            "destroy_speed": 2
+          }
+        ]
+      },
+      "minecraft:loot": "loot_tables/blocks/frames/actived_lightning_grave.json",
       "minecraft:geometry": {
         "identifier": "geometry.grave"
       },
       "minecraft:flammable": false,
-      "minecraft:destructible_by_mining": false,
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 10.0
       },

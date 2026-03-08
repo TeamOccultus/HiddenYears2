@@ -1,0 +1,24 @@
+{
+  "pools": [
+    {
+      "conditions": [
+        {
+          "condition": "match_tool",
+          "minecraft:match_tool_filter_any": [
+            "minecraft:is_pickaxe",
+            "minecraft:is_crowbar"
+          ],
+          "count": 1
+        }
+      ],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:actived_lightning_grave",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

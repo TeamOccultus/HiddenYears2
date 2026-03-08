@@ -48,7 +48,19 @@
         "identifier": "geometry.grave"
       },
       "minecraft:flammable": false,
-      "minecraft:destructible_by_mining": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 12,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 5
+          },
+          {
+            "item": { "tags": "query.any_tag('hiddenyears:is_crowbar')" },
+            "destroy_speed": 2
+          }
+        ]
+      },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 10.0
       },
@@ -59,7 +71,8 @@
           "render_method": "alpha_test"
         }
       },
-      "minecraft:light_dampening": 0
+      "minecraft:light_dampening": 0,
+      "minecraft:loot": "loot_tables/blocks/frames/actived_sand_grave.json"
     }
   }
 }
