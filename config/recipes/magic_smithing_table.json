@@ -13,6 +13,54 @@
   },
   {
     "type": "transform",
+    "base": "hiddenyears:originite_helmet",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_helmet"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_chestplate",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_chestplate"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_leggings",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_leggings"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_boots",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:frigid_steel_boots"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_helmet",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_helmet"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_chestplate",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_chestplate"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_leggings",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_leggings"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_boots",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_boots"
+  },
+  {
+    "type": "transform",
     "base": "hiddenyears:originite_axe",
     "addition": "hiddenyears:frigid_steel_ingot",
     "output": "hiddenyears:frigid_steel_axe"
