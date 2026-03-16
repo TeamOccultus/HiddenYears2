@@ -16,7 +16,8 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:originite_ingot"
+      "item": "hiddenyears:originite_ingot",
+      "count": 9
     }
   }
 }
