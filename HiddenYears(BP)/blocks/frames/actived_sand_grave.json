@@ -44,6 +44,7 @@
       }
     ],
     "components": {
+      "minecraft:display_name": "tile.hiddenyears:sand_grave.name",
       "minecraft:geometry": {
         "identifier": "geometry.grave"
       },

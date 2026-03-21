@@ -8,6 +8,7 @@
       }
     },
     "components": {
+      "minecraft:display_name": "tile.hiddenyears:ruby_altar.name",
       "minecraft:loot": "loot_tables/blocks/frames/actived_ruby_altar.json",
       "minecraft:material_instances": {
         "up": {

@@ -44,6 +44,7 @@
       }
     ],
     "components": {
+      "minecraft:display_name": "tile.hiddenyears:lightning_grave.name",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 12,
         "item_specific_speeds": [
