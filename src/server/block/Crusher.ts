@@ -30,7 +30,6 @@ export class Crusher extends BlockWithEntity {
     if (!item) return;
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
-    if (Array.isArray(filledItem)) return;
     if (!filledItem) {
       if (!CrusherRecipeManager.ingredients.includes(item?.typeId)) {
         player.sendMessage({
@@ -45,7 +44,7 @@ export class Crusher extends BlockWithEntity {
       return;
     }
     if (item?.hasTag("minecraft:is_pickaxe")) {
-      const output = CrusherRecipeManager.getResult(filledItem.typeId);
+      const output = CrusherRecipeManager.getResult(filledItem[0].typeId);
       if (!output) return;
       player.dimension.spawnItem(
         output,
@@ -60,9 +59,8 @@ export class Crusher extends BlockWithEntity {
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
     if (!filledItem) return;
-    if (Array.isArray(filledItem)) return;
     const { x, y, z } = entityData.block.location;
-    entityData.entity.dimension.spawnParticle(filledItem.typeId, {
+    entityData.entity.dimension.spawnParticle(filledItem[0].typeId, {
       x: x,
       y: y + 1,
       z: z

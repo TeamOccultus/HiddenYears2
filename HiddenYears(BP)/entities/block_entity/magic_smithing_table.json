@@ -37,6 +37,14 @@
       "minecraft:breathable": {
         "breathes_solids": true
       },
+      "minecraft:inventory": {
+        "additional_slots_per_strength": 0,
+        "can_be_siphoned_from": false,
+        "container_type": "container",
+        "inventory_size": 1,
+        "private": false,
+        "restrict_to_owner": true
+      },
       "minecraft:health": {
         "value": 1,
         "max": 1,

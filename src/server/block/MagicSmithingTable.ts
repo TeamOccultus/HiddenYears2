@@ -7,7 +7,9 @@ import {
   BlockWithEntity,
   consumeAmount,
   setEquipmentItem,
-  Vector3Utils
+  Vector3Utils,
+  migrateDamage,
+  migrateEnchantments
 } from "@occultus/api";
 import { MSTRecipeManager } from "../recipe/magicSmithingTable/MSTRecipeManager";
 
@@ -19,14 +21,8 @@ export class MagicSmithingTable extends BlockWithEntity {
     );
   }
   synchronizedStackData(from: ItemStack, to: ItemStack) {
-    if (
-      to.getComponent("minecraft:durability") &&
-      from.getComponent("minecraft:durability")
-    ) {
-      to.getComponent("minecraft:durability").damage = from.getComponent(
-        "minecraft:durability"
-      ).damage;
-    }
+    migrateDamage(from, to);
+    migrateEnchantments(from, to);
   }
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {
     const [item, entityData, player] = [
@@ -34,8 +30,7 @@ export class MagicSmithingTable extends BlockWithEntity {
       this.getBlockEntityData(event.block),
       event.player
     ];
-    const baseItem = BlockEntity.getStoredItem(entityData);
-    if (Array.isArray(baseItem)) return;
+    const baseItem = BlockEntity.getStoredItem(entityData)[0];
     if (!baseItem) {
       if (!MSTRecipeManager.base.includes(item.typeId)) {
         player.onScreenDisplay.setActionBar({
@@ -58,8 +53,10 @@ export class MagicSmithingTable extends BlockWithEntity {
       });
       return;
     }
+    const result = MSTRecipeManager.getResult(recipe, baseItem);
+    this.synchronizedStackData(baseItem, result);
     player.dimension.spawnItem(
-      MSTRecipeManager.getResult(recipe, baseItem),
+      result,
       Vector3Utils.add(event.block.location, { x: 0, y: 1, z: 0 })
     );
     player.playSound("smithing_table.use");

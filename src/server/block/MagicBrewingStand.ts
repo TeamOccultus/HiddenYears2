@@ -89,7 +89,6 @@ export class MagicBrewingStand extends BlockWithEntity {
     if (!item) return;
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
-    if (Array.isArray(filledItem)) return;
 
     // When empty: add ingredient
     if (!filledItem) {
@@ -106,7 +105,7 @@ export class MagicBrewingStand extends BlockWithEntity {
     }
 
     if (item?.hasTag("hiddenyears:complex_basic")) {
-      const recipe = ComplexPotionRecipeManager.getRecipe(filledItem.typeId);
+      const recipe = ComplexPotionRecipeManager.getRecipe(filledItem[0].typeId);
       if (!recipe) return;
       if (!ComplexPotionRecipeManager.canBeAdded(recipe, item)) return;
       const result = ComplexPotionRecipeManager.getResultItem(item, recipe);
@@ -127,9 +126,8 @@ export class MagicBrewingStand extends BlockWithEntity {
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
     if (!filledItem) return;
-    if (Array.isArray(filledItem)) return;
     const { x, y, z } = entityData.block.location;
-    entityData.entity.dimension.spawnParticle(filledItem.typeId, {
+    entityData.entity.dimension.spawnParticle(filledItem[0].typeId, {
       x: x,
       y: y + 1,
       z: z
