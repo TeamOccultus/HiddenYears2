@@ -11,7 +11,7 @@
         "default": "textures/entity/trial_skeleton"
       },
       "geometry": {
-        "default": "geometry.skeleton.v1.8"
+        "default": "geometry.trial_monsters"
       },
       "spawn_egg": {
         "texture": "hiddenyears:egg_ruby_skeleton"
