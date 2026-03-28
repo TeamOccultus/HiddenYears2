@@ -18,15 +18,6 @@
           "destroy_affected_by_griefing": true
         }
       },
-      "minecraft:charged_exploding": {
-        "minecraft:explode": {
-          "fuse_length": 1.5,
-          "fuse_lit": true,
-          "power": 8,
-          "causes_fire": false,
-          "destroy_affected_by_griefing": true
-        }
-      },
       "minecraft:forced_exploding": {
         "minecraft:target_nearby_sensor": {},
         "minecraft:explode": {
@@ -106,7 +97,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 3
+        "damage": 0
       },
       "minecraft:damage_sensor": {
         "triggers": {
@@ -183,7 +174,11 @@
               "any_of": [
                 { "test": "is_family", "subject": "other", "value": "ocelot" },
                 { "test": "is_family", "subject": "other", "value": "cat" },
-                { "test": "is_family", "subject": "other", "value": "fanglimao" }
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "fanglimao"
+                }
               ]
             },
             "max_dist": 6,
@@ -257,27 +252,9 @@
         ]
       },
       "minecraft:start_exploding": {
-        "sequence": [
-          {
-            "filters": {
-              "test": "has_component",
-              "operator": "!=",
-              "value": "minecraft:is_charged"
-            },
-            "add": {
-              "component_groups": ["minecraft:exploding"]
-            }
-          },
-          {
-            "filters": {
-              "test": "has_component",
-              "value": "minecraft:is_charged"
-            },
-            "add": {
-              "component_groups": ["minecraft:charged_exploding"]
-            }
-          }
-        ]
+        "add": {
+          "component_groups": ["minecraft:exploding"]
+        }
       },
       "minecraft:stop_exploding": {
         "remove": {
