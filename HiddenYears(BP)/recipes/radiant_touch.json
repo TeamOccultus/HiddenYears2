@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:radiant_touch"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["X  ", " # ", "  #"],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:prismarine_crystals"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "minecraft:prismarine_crystals"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:radiant_touch"
+    }
+  }
+}

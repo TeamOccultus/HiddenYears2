@@ -811,6 +811,9 @@
     "hiddenyears:rabbit_paw": {
       "textures": "textures/items/rabbit_paw"
     },
+    "hiddenyears:radiant_touch": {
+      "textures": "textures/items/radiant_touch"
+    },
     "hiddenyears:raw_silver": {
       "textures": "textures/items/raw_silver"
     },

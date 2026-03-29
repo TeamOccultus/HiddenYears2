@@ -1,0 +1,55 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:radiant_touch",
+      "menu_category": {
+        "category": "equipment"
+      }
+    },
+    "components": {
+      "hiddenyears:custom_weapon": {
+        "type": "sword"
+      },
+      "hiddenyears:staff": {
+        "damage": 5,
+        "radius": 5,
+        "particle": "minecraft:critical_hit_emitter",
+        "staff_preset": "radiant_touch",
+        "sound_event": "wind_charge.burst"
+      },
+      "minecraft:rarity": "rare",
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:durability": {
+        "max_durability": 512
+      },
+      "minecraft:damage": 3,
+      "minecraft:enchantable": {
+        "value": 8,
+        "slot": "sword"
+      },
+      "minecraft:cooldown": {
+        "category": "hiddenyears:radiant_touch",
+        "duration": 10
+      },
+      "minecraft:hand_equipped": true,
+      "minecraft:icon": "hiddenyears:radiant_touch",
+      "minecraft:max_stack_size": 1,
+      "minecraft:repairable": {
+        "repair_items": [
+          {
+            "items": ["hiddenyears:radiant_touch"],
+            "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          },
+          {
+            "items": ["minecraft:prismarine_crystals"],
+            "repair_amount": 120
+          }
+        ]
+      },
+      "minecraft:tags": {
+        "tags": ["minecraft:is_sword", "minecraft:is_tool"]
+      }
+    }
+  }
+}
