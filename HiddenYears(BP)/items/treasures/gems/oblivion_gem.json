@@ -8,10 +8,7 @@
       }
     },
     "components": {
-      "hiddenyears:job": {
-        "job_type": "none",
-        "remove_old": true
-      },
+      "hiddenyears:job_recovery": {},
       "minecraft:icon": "hiddenyears:oblivion_gem",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 1

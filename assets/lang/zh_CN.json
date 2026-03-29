@@ -1681,5 +1681,7 @@
   "ui.waystone.icon_tower": "魔法塔",
   "ui.waystone.select_icon": "选择图标",
   "ui.task.complete.world": "%1 完成了任务：§a",
-  "ui.ucv.tips": "使用货币以将其转换为统一货币值；潜行使用货币以将其整组全部转换为统一货币值"
+  "ui.ucv.tips": "使用货币以将其转换为统一货币值；潜行使用货币以将其整组全部转换为统一货币值",
+  "message:hiddenyears:job_invalid": "你还没有获得职业！",
+  "message:hiddenyears:job_reset": "你的职业已重置"
 }
