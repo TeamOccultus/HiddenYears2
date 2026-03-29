@@ -11,9 +11,6 @@ import {
   setEquipmentItem
 } from "@occultus/api";
 import { StaffParams } from "../components/StaffComponent/Params";
-import { pastor } from "../job/beginner/pastor";
-import { amnestyPastor } from "../job/advanced/amnestyPastor";
-import { orisonPastor } from "../job/advanced/orisonPastor";
 import { getPastorLevel } from "../job/toolkit";
 
 export class StaffEvents {
@@ -107,8 +104,8 @@ export class StaffEvents {
       excludeFamilies: ["noaoe", "inanimate"],
       excludeTypes: ["minecraft:item"]
     }).tryOperateEntity((entity) => {
-      entity.addEffect("minecraft:mining_fatigue", 10 * TicksPerSecond);
-      entity.addEffect("minecraft:weakness", 10 * TicksPerSecond);
+      entity.addEffect("minecraft:mining_fatigue", 5 * TicksPerSecond);
+      entity.addEffect("minecraft:weakness", 5 * TicksPerSecond);
       entity.applyDamage(getPastorLevel(source) * 0.5);
     });
   }

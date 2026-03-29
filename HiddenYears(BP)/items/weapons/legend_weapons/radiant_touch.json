@@ -30,7 +30,7 @@
       },
       "minecraft:cooldown": {
         "category": "hiddenyears:radiant_touch",
-        "duration": 10
+        "duration": 8
       },
       "minecraft:hand_equipped": true,
       "minecraft:icon": "hiddenyears:radiant_touch",
