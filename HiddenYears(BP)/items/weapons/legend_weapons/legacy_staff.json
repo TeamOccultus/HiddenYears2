@@ -42,8 +42,8 @@
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
           },
           {
-            "items": ["minecraft:sandstone"],
-            "repair_amount": 120
+            "items": ["hiddenyears:magic_origin"],
+            "repair_amount": 200
           }
         ]
       },
