@@ -33,6 +33,7 @@ category: Documents
 | hiddenyears:adventurer_note | 使物品获得书籍「故地异国行纪」的功能 |
 | hiddenyears:profile | 使物品获得「时匿怀表」的功能 |
 | hiddenyears:job_skill | 标记物品为职业技能 |
+| hiddenyears:job_recovery | 使物品可以重置玩家职业 |
 
 ## hiddenyears:music_disc
 
@@ -373,8 +374,8 @@ category: Documents
 
 | 参数       | 类型      | 可选？ | 描述                       |
 | ---------- | --------- | ------ | -------------------------- |
-| job_type   | `JobType` | 必填   | 要向玩家添加的职业类型     |
-| remove_old | `boolean` | 可选   | 是否移除玩家当前的职业数据 |
+| job_type   | `JobType` | 必填   | 要向玩家添加的职业类型  |
+| remove_old | `boolean` | 可选   | **3.0.7 后被弃用** 是否移除玩家当前的职业数据 |
 
 在`JobType`类型中：
 
@@ -491,6 +492,17 @@ category: Documents
 > 这是一个内部组件，在未来我们会开放更多自定义选项
 
 标记物品为职业技能。
+
+| 参数 | 类型 | 可选？ | 描述 |
+| ---- | ---- | ------ | ---- |
+| N/A  | N/A  | N/A    | N/A  |
+
+## hiddenyears:job_recovery
+
+> [!TIP]
+> 可用版本：3.0.7+
+
+使物品可以重置玩家职业。
 
 | 参数 | 类型 | 可选？ | 描述 |
 | ---- | ---- | ------ | ---- |
