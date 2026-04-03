@@ -1,16 +1,9 @@
 import {
-  Entity,
-  EntityHealthChangedAfterEvent,
-  EntityHealthComponent,
   EntityHurtAfterEvent,
   EquipmentSlot,
   Player
 } from "@minecraft/server";
-import { getEquipmentItem, Random, RandomEvent } from "@occultus/api";
-import {
-  ArmorPresent,
-  ArmorTypeParams
-} from "../components/ArmorTypeComponent/Params";
+import { Random } from "@occultus/api";
 import { ArmorEffect, ArmorEffectDetector } from "../../core/ArmorEffect";
 
 export class ArmorEvents {

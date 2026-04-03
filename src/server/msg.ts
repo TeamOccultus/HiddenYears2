@@ -1,5 +1,5 @@
-import { EntityDamageCause, Player, world } from "@minecraft/server";
-import { Color, Format, hasFamily, WelcomeNotification } from "@occultus/api";
+import { Player } from "@minecraft/server";
+import { WelcomeNotification } from "@occultus/api";
 
 export function registryMessage() {
   new WelcomeNotification((player: Player) => {
@@ -13,15 +13,3 @@ export function registryMessage() {
     };
   });
 }
-
-world.afterEvents.entityHurt.subscribe((event) => {
-  const { hurtEntity, damageSource } = event;
-  if (!hasFamily(hurtEntity, "boss")) return;
-  if (damageSource.cause === EntityDamageCause.stalagmite) {
-    hurtEntity.addEffect("minecraft:regeneration", 20);
-  }
-  if (damageSource.cause !== EntityDamageCause.projectile) return;
-  if (damageSource.damagingProjectile.typeId === "minecraft:thrown_trident") {
-    hurtEntity.addEffect("minecraft:regeneration", 20);
-  }
-});

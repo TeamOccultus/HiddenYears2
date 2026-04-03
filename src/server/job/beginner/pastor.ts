@@ -23,12 +23,12 @@ export const pastor = new Job(
       {
         min: 0,
         max: 5,
-        condition: [new UnifiedCurrencyValueConditions(1200, true)]
+        condition: [new UnifiedCurrencyValueConditions(2000, true)]
       },
       {
         min: 6,
         max: 10,
-        condition: [new UnifiedCurrencyValueConditions(2000, true)]
+        condition: [new UnifiedCurrencyValueConditions(2500, true)]
       }
     ],
     transform: [
