@@ -45,8 +45,4 @@ export const traveler = new Job(
   }
 );
 
-traveler.onUpgrade((arg) => {
-  if (arg.recentLevel === 10) {
-    giveItem(arg.player, new ItemStack("hiddenyears:decision_gem"));
-  }
-});
+traveler.onUpgrade((arg) => {});
