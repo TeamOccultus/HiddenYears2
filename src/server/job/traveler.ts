@@ -1,4 +1,4 @@
-import { giveItem, ItemConditions, Job } from "@occultus/api";
+import { Format, giveItem, ItemConditions, Job } from "@occultus/api";
 import { ItemStack } from "@minecraft/server";
 import { wizard } from "./beginner/wizard";
 import { pastor } from "./beginner/pastor";
@@ -9,7 +9,16 @@ import { UnifiedCurrencyValueConditions } from "../conditions/UCV";
 export const traveler = new Job(
   "hiddenyears:traveler",
   { translate: "job.hiddenyears:traveler" },
-  { translate: "job.hiddenyears:traveler.desc" },
+  {
+    rawtext: [
+      { translate: "job.hiddenyears:traveler.desc" },
+      { text: Format.newLine },
+      { text: Format.newLine },
+      { text: Format.italics },
+      { translate: "job.hiddenyears:traveler.desc1" },
+      { text: Format.reset }
+    ]
+  },
   {
     maxLevel: 10,
     upgradeCondition: [
