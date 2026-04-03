@@ -25,17 +25,17 @@ export const arcaneWizard = new Job(
       {
         min: 0,
         max: 5,
-        condition: [new UnifiedCurrencyValueConditions(4000, true)]
+        condition: [new ItemConditions("hiddenyears:magic_dust", 12, true)]
       },
       {
         min: 6,
         max: 10,
-        condition: [new UnifiedCurrencyValueConditions(6000, true)]
+        condition: [new ItemConditions("hiddenyears:magic_origin", 15, true)]
       },
       {
         min: 11,
         max: 15,
-        condition: [new UnifiedCurrencyValueConditions(8000, true)]
+        condition: [new ItemConditions("hiddenyears:magic_origin", 25, true)]
       }
     ],
   }
