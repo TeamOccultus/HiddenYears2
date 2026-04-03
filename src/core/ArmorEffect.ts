@@ -32,21 +32,23 @@ export class ArmorEffect {
    * @param level
    */
   static unyieldingArmor(player: Player, level: number = 1) {
-    player.addEffect("minecraft:resistance", 300 * level, {
-      amplifier: level - 1,
-      showParticles: false
-    });
-    player.addEffect("minecraft:strength", 300 * level, {
-      amplifier: level - 1,
-      showParticles: false
-    });
-    player.addEffect("minecraft:speed", 300 * level, {
-      amplifier: level - 1,
-      showParticles: false
-    });
-    player.onScreenDisplay.setActionBar({
-      translate: "message.hiddenyears:unyielding"
-    });
+    new RandomEvent(0.65, () => {
+      player.addEffect("minecraft:resistance", 300 * level, {
+        amplifier: level - 1,
+        showParticles: false
+      });
+      player.addEffect("minecraft:strength", 300 * level, {
+        amplifier: level - 1,
+        showParticles: false
+      });
+      player.addEffect("minecraft:speed", 300 * level, {
+        amplifier: level - 1,
+        showParticles: false
+      });
+      player.onScreenDisplay.setActionBar({
+        translate: "message.hiddenyears:unyielding"
+      });
+    }).call();
   }
   /**
    * 盔甲效果-复生
@@ -141,7 +143,6 @@ export class ArmorEffectDetector {
       player.addTag(this.cacheTag);
       ArmorEffect.effectCache.set(player.id, result);
       system.runTimeout(() => {
-
         if (player.isValid) {
           player.removeTag(this.cacheTag);
           ArmorEffect.effectCache.delete(player.id);
