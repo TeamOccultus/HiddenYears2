@@ -1685,5 +1685,12 @@
   "message:hiddenyears:job_invalid": "你还没有获得职业！",
   "message:hiddenyears:job_reset": "你的职业已重置",
   "item.hiddenyears:radiant_touch": "圣辉之触",
-  "job.hiddenyears:traveler.desc1": "提示：击败红宝石之王以获得转职所需道具"
+  "job.hiddenyears:traveler.desc1": "提示：击败红宝石之王以获得转职所需道具",
+  "howtoplay.hiddenyears:armor_effect.title": "盔甲效果",
+  "howtoplay.hiddenyears:armor_effect.unyielding.title": "不屈",
+  "howtoplay.hiddenyears:armor_effect.unyielding.para1": "§e不屈§r是冒险者在绝境中迸发的强悍之力 —— 当你身披带有该效果的盔甲受到攻击时，会有概率获得抗性提升、力量、速度三重增益，还会随机回复一定生命值，让你在战斗中愈战愈勇。",
+  "howtoplay.hiddenyears:armor_effect.rebirth.title": "复生",
+  "howtoplay.hiddenyears:armor_effect.rebirth.para1": "§e复生§r是盔甲赋予的保命神迹，专为濒死的冒险者而生。当你受到攻击生命值极低时，会必然恢复 5 点生命，帮你脱离即刻倒下的危机；除此之外，还有概率直接将血量回满，让你瞬间重回巅峰状态。",
+  "howtoplay.hiddenyears:armor_effect.isis.title": "雨之神的赐福",
+  "howtoplay.hiddenyears:armor_effect.isis.para1": "这是来自§e雨之神的赐福§r，只要身披带有该效果的盔甲，每当你的生命值减少时，都会获得 25% 的减伤，让你在持续消耗的战斗中始终保有底气。"
 }

@@ -261,13 +261,51 @@ const jobs = new Tutorial(
   }
 );
 
+const armorEffects = new Tutorial(
+  "hiddenyears:armor_effects",
+  { translate: "howtoplay.hiddenyears:armor_effect.title" },
+  [
+    {
+      title: {
+        translate: "howtoplay.hiddenyears:armor_effect.unyielding.title"
+      },
+      body: {
+        rawtext: [
+          { translate: "howtoplay.hiddenyears:armor_effect.unyielding.para1" }
+        ]
+      }
+    },
+    {
+      title: { translate: "howtoplay.hiddenyears:armor_effect.rebirth.title" },
+      body: {
+        rawtext: [
+          { translate: "howtoplay.hiddenyears:armor_effect.rebirth.para1" }
+        ]
+      }
+    },
+    {
+      title: { translate: "howtoplay.hiddenyears:armor_effect.isis.title" },
+      body: {
+        rawtext: [
+          { translate: "howtoplay.hiddenyears:armor_effect.isis.para1" }
+        ]
+      }
+    }
+  ],
+  {
+    type: "alwaysAvailable",
+    iconPath: "textures/items/isis_crown"
+  }
+);
+
 const tutorials = [
   materials,
   toolsWeapons,
   brewing,
   magic,
   artifacts,
-  jobs
+  jobs,
+  armorEffects
 ];
 
 export function getAllTutorials() {
