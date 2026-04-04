@@ -46,6 +46,10 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 16.0
       },
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:drift_sand_downside",
+        "particle_count": 30
+      },
       "minecraft:geometry": {
         "identifier": "geometry.simple_cabinet",
         "bone_visibility": {

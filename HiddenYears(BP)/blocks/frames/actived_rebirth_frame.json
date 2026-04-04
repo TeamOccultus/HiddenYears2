@@ -40,6 +40,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "stone_bricks",
+        "particle_count": 30
+      },
       "minecraft:display_name": "tile.hiddenyears:rebirth_grave.name",
       "minecraft:loot": "loot_tables/blocks/frames/actived_rebirth_frame.json",
       "minecraft:flammable": false,

@@ -48,6 +48,10 @@
           "render_method": "alpha_test"
         }
       },
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:magic_downside",
+        "particle_count": 30
+      },
       "minecraft:geometry": {
         "identifier": "geometry.magic_smithing_table"
       },

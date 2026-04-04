@@ -8,6 +8,10 @@
       }
     },
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "stone_bricks",
+        "particle_count": 30
+      },
       "minecraft:loot": "loot_tables/blocks/frames/ruby_altar.json",
       "minecraft:material_instances": {
         "up": {

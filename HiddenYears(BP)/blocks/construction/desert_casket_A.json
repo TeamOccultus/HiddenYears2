@@ -40,6 +40,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:drift_sand_downside",
+        "particle_count": 30
+      },
       "minecraft:display_name": "沙漠棺材(完整)",
       "minecraft:loot": "loot_tables/blocks/desert_casket.json",
       "minecraft:material_instances": {

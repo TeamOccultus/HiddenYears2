@@ -60,6 +60,10 @@
           "cabinet": true
         }
       },
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:drift_sand_downside",
+        "particle_count": 30
+      },
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:drift_sand_cabinet",

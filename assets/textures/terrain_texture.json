@@ -49,6 +49,9 @@
     "hiddenyears:bowyers_bench": {
       "textures": "textures/blocks/bowyers_bench"
     },
+    "hiddenyears:bowyers_bench_downside": {
+      "textures": "textures/blocks/bowyers_bench_downside"
+    },
     "hiddenyears:compact_copper_ore": {
       "textures": "textures/blocks/compact_copper_ore"
     },
@@ -106,6 +109,9 @@
     "hiddenyears:drift_sand_cabinet": {
       "textures": "textures/blocks/drift_sand_cabinet"
     },
+    "hiddenyears:drift_sand_downside": {
+      "textures": "textures/blocks/drift_sand_downside"
+    },
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
     },
@@ -138,6 +144,9 @@
     },
     "hiddenyears:magic_brewing_stand_top": {
       "textures": "textures/blocks/magic_brewing_stand_top"
+    },
+    "hiddenyears:magic_downside": {
+      "textures": "textures/blocks/magic_downside"
     },
     "hiddenyears:magic_smithing_table": {
       "textures": "textures/blocks/magic_smithing_table"

@@ -47,6 +47,10 @@
           "render_method": "blend"
         }
       },
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:magic_downside",
+        "particle_count": 30
+      },
       "minecraft:geometry": {
         "identifier": "geometry.waystone"
       },

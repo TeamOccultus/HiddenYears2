@@ -44,6 +44,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:drift_sand_downside",
+        "particle_count": 30
+      },
       "minecraft:loot": "loot_tables/blocks/frames/sand_grave.json",
       "hiddenyears:boss_spawner": {
         "boss": "hiddenyears:mutas_wrath",

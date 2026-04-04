@@ -44,6 +44,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "stone_bricks",
+        "particle_count": 30
+      },
       "minecraft:loot": "loot_tables/blocks/frames/lightning_grave.json",
       "hiddenyears:boss_spawner": {
         "boss": "hiddenyears:king_of_ruby",

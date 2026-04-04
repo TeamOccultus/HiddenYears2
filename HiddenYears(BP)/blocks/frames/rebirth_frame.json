@@ -40,6 +40,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "stone_bricks",
+        "particle_count": 30
+      },
       "hiddenyears:boss_spawner": {
         "boss": "hiddenyears:pharaohs_ghost",
         "transform_to": "hiddenyears:actived_rebirth_frame",

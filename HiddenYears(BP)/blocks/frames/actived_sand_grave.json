@@ -44,6 +44,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:drift_sand_downside",
+        "particle_count": 30
+      },
       "minecraft:display_name": "tile.hiddenyears:sand_grave.name",
       "minecraft:geometry": {
         "identifier": "geometry.grave"

@@ -41,6 +41,10 @@
     ],
     "components": {
       "hiddenyears:interactable": {},
+      "minecraft:destruction_particles": {
+        "texture": "hiddenyears:bowyers_bench_downside",
+        "particle_count": 30
+      },
       "minecraft:loot": "loot_tables/blocks/bowyers_bench.json",
       "minecraft:material_instances": {
         "*": {

@@ -44,6 +44,10 @@
       }
     ],
     "components": {
+      "minecraft:destruction_particles": {
+        "texture": "stone_bricks",
+        "particle_count": 30
+      },
       "minecraft:display_name": "tile.hiddenyears:lightning_grave.name",
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 12,
