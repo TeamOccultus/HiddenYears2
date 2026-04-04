@@ -40,6 +40,15 @@
       }
     ],
     "components": {
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
       "minecraft:loot": "loot_tables/blocks/waystone.json",
       "minecraft:material_instances": {
         "*": {

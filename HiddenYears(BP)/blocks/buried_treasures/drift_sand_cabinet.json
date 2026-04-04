@@ -40,6 +40,15 @@
       }
     ],
     "components": {
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
       "hiddenyears:vault": {
         "table": "gameplay/drift_sand_cabinet",
         "transform_to": "hiddenyears:empty_drift_sand_cabinet",

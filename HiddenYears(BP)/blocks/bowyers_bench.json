@@ -40,6 +40,15 @@
       }
     ],
     "components": {
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "can_contain_liquid": true,
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
       "hiddenyears:interactable": {},
       "minecraft:destruction_particles": {
         "texture": "hiddenyears:bowyers_bench_downside",
