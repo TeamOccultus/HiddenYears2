@@ -1692,5 +1692,61 @@
   "howtoplay.hiddenyears:armor_effect.rebirth.title": "复生",
   "howtoplay.hiddenyears:armor_effect.rebirth.para1": "§e复生§r是盔甲赋予的保命神迹，专为濒死的冒险者而生。当你受到攻击生命值极低时，会必然恢复 5 点生命，帮你脱离即刻倒下的危机；除此之外，还有概率直接将血量回满，让你瞬间重回巅峰状态。",
   "howtoplay.hiddenyears:armor_effect.isis.title": "雨之神的赐福",
-  "howtoplay.hiddenyears:armor_effect.isis.para1": "这是来自§e雨之神的赐福§r，只要身披带有该效果的盔甲，每当你的生命值减少时，都会获得 25% 的减伤，让你在持续消耗的战斗中始终保有底气。"
+  "howtoplay.hiddenyears:armor_effect.isis.para1": "这是来自§e雨之神的赐福§r，只要身披带有该效果的盔甲，每当你的生命值减少时，都会获得 25% 的减伤，让你在持续消耗的战斗中始终保有底气。",
+  "task.article_collection": "文海探源录",
+  "task.article_collection.desc_1": "旅者在破碎的世界中行走，散落的书卷藏着被遗忘的真相。",
+  "task.article_collection.desc_2": "唯有集齐残篇，方能窥见世界全貌。",
+  "task.article_1": "千里之行与脚下之路",
+  "task.article_1.desc": "你来到这个世界的第一份指引。",
+  "task.article_1.tips": "开局即可自动获得",
+  "task.hidden_story": "诸隐之歌",
+  "task.hidden_story.desc": "不死之族的古老祷文，记载着创世与毁灭的秘闻。",
+  "task.hidden_story.tips": "完成序章后自动赠送",
+  "task.article_3": "精灵史摘要",
+  "task.article_3.desc": "精灵一族的兴衰过往，藏于监牢的战利品之中。",
+  "task.article_3.tips": "在精灵监牢战利品箱中获取",
+
+  "task.article_4": "漼血的刚玉",
+  "task.article_4.desc": "在力量面前，亲情、理性又算得上什么？",
+  "task.article_4.tips": "完成第一章任务后获得",
+
+  "task.article_5": "祀城探秘录・一",
+  "task.article_5.desc": "远古城市中的冒险者日志，藏在地下遗迹的宝箱里。",
+  "task.article_5.tips": "在远古城市战利品箱中获取",
+
+  "task.article_6": "纪元简史・上",
+  "task.article_6.desc": "完整的上古纪年，可与图书管理员村民交易获得。",
+  "task.article_6.tips": "与图书管理员村民交易获取",
+
+  "task.article_7": "纪元简史・下（残缺）",
+  "task.article_7.desc": "残缺的灾厄与月蚀纪年，由牧师村民交易可得。",
+  "task.article_7.tips": "与牧师村民交易获取",
+
+  "task.article_8": "祭司的记录・一",
+  "task.article_8.desc": "月蚀纪的研究记录，藏于地牢战利品箱。",
+  "task.article_8.tips": "在地牢战利品箱中获取",
+
+  "task.article_9": "沙中淘金的故事",
+  "task.article_9.desc": "淘金者的悲惨日记，挖掘碎金细沙小概率掉落。",
+  "task.article_9.tips": "挖掘碎金细沙有概率掉落",
+
+  "task.article_10": "尼罗特神话集",
+  "task.article_10.desc": "沙漠诸神的传说，可与尼罗特游商交易获得。",
+  "task.article_10.tips": "与尼罗特游商交易获取",
+
+  "task.article_11": "沙加缅度发掘记",
+  "task.article_11.desc": "沙海旧文明的发掘记录，藏于沙漠遗迹。",
+  "task.article_11.tips": "在沙漠遗迹中获取",
+
+  "task.article_12": "奇怪的一沓证件",
+  "task.article_12.desc": "伪造的护照与死亡证明，散落于沙漠遗迹。",
+  "task.article_12.tips": "在沙漠遗迹中获取",
+
+  "task.article_13": "千■■■与■■■路",
+  "task.article_13.desc": "残缺的孤灯信笺，由月蚀怪物掉落。",
+  "task.article_13.tips": "击败月蚀怪物概率获得",
+
+  "task.article_14": "层沙的真相",
+  "task.article_14.desc": "尼罗特帝国覆灭的终极秘闻，需战胜强大 BOSS。",
+  "task.article_14.tips": "击败「创世者的愤怒」后获得"
 }

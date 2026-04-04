@@ -1701,6 +1701,194 @@ const epilogueActI = new TaskGroup(
   }
 );
 
+// 文海探源录 任务集
+const article1 = new Task(
+  "hiddenyears:article_1",
+  { translate: "task.article_1" },
+  { translate: "task.article_1.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 15)],
+    conditions: [new ItemConditions("hiddenyears:article_1")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_1.tips" }
+  }
+);
+tasks.set(article1.id, article1);
+
+const hiddenStory = new Task(
+  "hiddenyears:hidden_story",
+  { translate: "task.hidden_story" },
+  { translate: "task.hidden_story.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 15)],
+    conditions: [new ItemConditions("hiddenyears:hidden_story")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.hidden_story.tips" }
+  }
+);
+tasks.set(hiddenStory.id, hiddenStory);
+
+const article4 = new Task(
+  "hiddenyears:article_4",
+  { translate: "task.article_4" },
+  { translate: "task.article_4.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 25)],
+    conditions: [new ItemConditions("hiddenyears:article_4")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_4.tips" }
+  }
+);
+tasks.set(article4.id, article4);
+
+const article5 = new Task(
+  "hiddenyears:article_5",
+  { translate: "task.article_5" },
+  { translate: "task.article_5.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 28)],
+    conditions: [new ItemConditions("hiddenyears:article_5")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_5.tips" }
+  }
+);
+tasks.set(article5.id, article5);
+
+const article6 = new Task(
+  "hiddenyears:article_6",
+  { translate: "task.article_6" },
+  { translate: "task.article_6.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 30)],
+    conditions: [new ItemConditions("hiddenyears:article_6")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_6.tips" }
+  }
+);
+tasks.set(article6.id, article6);
+
+const article7 = new Task(
+  "hiddenyears:article_7",
+  { translate: "task.article_7" },
+  { translate: "task.article_7.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 26)],
+    conditions: [new ItemConditions("hiddenyears:article_7")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_7.tips" }
+  }
+);
+tasks.set(article7.id, article7);
+
+const article8 = new Task(
+  "hiddenyears:article_8",
+  { translate: "task.article_8" },
+  { translate: "task.article_8.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 32)],
+    conditions: [new ItemConditions("hiddenyears:article_8")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_8.tips" }
+  }
+);
+tasks.set(article8.id, article8);
+
+const article9 = new Task(
+  "hiddenyears:article_9",
+  { translate: "task.article_9" },
+  { translate: "task.article_9.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 35)],
+    conditions: [new ItemConditions("hiddenyears:article_9")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_9.tips" }
+  }
+);
+tasks.set(article9.id, article9);
+
+const article12 = new Task(
+  "hiddenyears:article_12",
+  { translate: "task.article_12" },
+  { translate: "task.article_12.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 36)],
+    conditions: [new ItemConditions("hiddenyears:article_12")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_12.tips" }
+  }
+);
+tasks.set(article12.id, article12);
+
+const article13 = new Task(
+  "hiddenyears:article_13",
+  { translate: "task.article_13" },
+  { translate: "task.article_13.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 40)],
+    conditions: [new ItemConditions("hiddenyears:article_13")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_13.tips" }
+  }
+);
+tasks.set(article13.id, article13);
+
+const article14 = new Task(
+  "hiddenyears:article_14",
+  { translate: "task.article_14" },
+  { translate: "task.article_14.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:copper_coin", 50)],
+    conditions: [new ItemConditions("hiddenyears:article_14")],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter",
+    tips: { translate: "task.article_14.tips" }
+  }
+);
+tasks.set(article14.id, article14);
+
+const articleCollection = new TaskGroup(
+  "hiddenyears:article_collection",
+  { translate: "task.article_collection" },
+  {
+    rawtext: [
+      { translate: "task.article_collection.desc_1" },
+      { text: "\n" },
+      { translate: "task.article_collection.desc_2" }
+    ]
+  },
+  {
+    tasks: [
+      article1,
+      hiddenStory,
+      summaryOfElvenHistory,
+      article4,
+      article5,
+      article6,
+      article7,
+      article8,
+      article9,
+      ancientMyth,
+      storyOfGold,
+      article12,
+      article13,
+      article14
+    ],
+    awards: [],
+    previousTask: "none",
+    iconPath: "textures/items/lost_letter"
+  }
+);
+
 server.addTask(...Array.from(tasks.values()));
 
 export function hasTask(id: string): boolean {
@@ -1728,6 +1916,7 @@ export function getAllChapters() {
     chapterIIIActI,
     chapterIIIActII,
     chapterIVactI,
+    articleCollection,
     epilogueActI
   ];
 }
