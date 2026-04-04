@@ -115,6 +115,9 @@
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
     },
+    "hiddenyears:king_of_ruby_doll": {
+      "textures": "textures/blocks/king_of_ruby_doll"
+    },
     "hiddenyears:lightning_grave": {
       "textures": "textures/blocks/lightning_grave"
     },
@@ -151,8 +154,14 @@
     "hiddenyears:magic_smithing_table": {
       "textures": "textures/blocks/magic_smithing_table"
     },
+    "hiddenyears:mutas_wrath_doll": {
+      "textures": "textures/blocks/mutas_wrath_doll"
+    },
     "hiddenyears:originite_block": {
       "textures": "textures/blocks/originite_block"
+    },
+    "hiddenyears:pharaohs_ghost_doll": {
+      "textures": "textures/blocks/pharaohs_ghost_doll"
     },
     "hiddenyears:rebirth_frame_bottom": {
       "textures": "textures/blocks/rebirth_frame_bottom"

@@ -518,6 +518,17 @@
               "hiddenyears:ruby_altar",
               "hiddenyears:sand_grave"
             ]
+          },
+          {
+            "group_identifier": {
+              "name": "hiddenyears:itemGroup.name.dolls",
+              "icon": "hiddenyears:king_of_ruby_doll"
+            },
+            "items": [
+              "hiddenyears:king_of_ruby_doll",
+              "hiddenyears:pharaohs_ghost_doll",
+              "hiddenyears:mutas_wrath_doll"
+            ]
           }
         ]
       }

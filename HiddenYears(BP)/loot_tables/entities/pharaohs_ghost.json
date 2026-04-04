@@ -15,35 +15,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "minecraft:gold_ingot",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 8,
-                "max": 10
-              }
-            }
-          ],
-          "weight": 1
-        }
-      ]
-    },
-    {
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "item",
-          "name": "minecraft:experience_bottle",
-          "functions": [
-            {
-              "function": "set_count",
-              "count": {
-                "min": 2,
-                "max": 3
-              }
-            }
-          ],
+          "name": "hiddenyears:pharaohs_ghost_doll",
           "weight": 1
         }
       ]

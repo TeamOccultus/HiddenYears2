@@ -1750,5 +1750,9 @@
   "task.article_14.desc": "尼罗特帝国覆灭的终极秘闻，需战胜强大 BOSS。",
   "task.article_14.tips": "击败「创世者的愤怒」后获得",
   "article.nothing.title": "无可用文章",
-  "article.nothing.body": "你还没有阅读任何文章，请前往「文海探源录」章节查看更多内容！"
+  "article.nothing.body": "你还没有阅读任何文章，请前往「文海探源录」章节查看更多内容！",
+  "tile.hiddenyears:king_of_ruby_doll.name": "人偶·红宝石之王",
+  "tile.hiddenyears:pharaohs_ghost_doll.name": "人偶·法老残魂",
+  "tile.hiddenyears:mutas_wrath_doll.name": "人偶·「创世者」的愤怒",
+  "hiddenyears:itemGroup.name.dolls": "隐藏之年·人偶"
 }
