@@ -1,3 +1,15 @@
 {
-  "ui_defs": ["ui/boss.json"]
+  "ui_defs": [
+    "ui/boss.json",
+    "ui/how_to_play_screen.json",
+    "ui/common.json",
+    "ui/encyclopedia_pages/contact.json",
+    "ui/encyclopedia_pages/credit.json",
+    "ui/encyclopedia_pages/material.json",
+    "ui/encyclopedia_pages/story.json",
+    "ui/encyclopedia_pages/material_basic.json",
+    "ui/encyclopedia_pages/material_advanced.json",
+    "ui/encyclopedia_pages/material_ultimate.json",
+    "ui/encyclopedia_pages/nugget_dust.json"
+  ]
 }

@@ -1,0 +1,90 @@
+{
+    "namespace": "hiddenyears:player_story",
+    "story_button@how_to_play_common.section_toggle_button": {
+        "$section_topic": "story"
+    },
+    "story_section@how_to_play_common.main_sections": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "story_button_toggle",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "paragraph_0@how_to_play_common.paragraph": {
+                    "$text": "story.intro.1"
+                }
+            },
+             {
+                "paragraph_1@how_to_play_common.paragraph": {
+                    "$text": "story.intro.2"
+                }
+            },
+            {
+                "header_0@how_to_play_common.header": {
+                    "$text": "story.chapter1.title"
+                }
+            },
+            {
+                "paragraph_2@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.1"
+                }
+            },
+            {
+                "paragraph_3@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.2"
+                }
+            },
+            {
+                "paragraph_4@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.3"
+                }
+            },{
+                "paragraph_5@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.4"
+                }
+            },{
+                "paragraph_6@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.5"
+                }
+            },{
+                "paragraph_7@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.6"
+                }
+            },{
+                "paragraph_8@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.7"
+                }
+            },{
+                "paragraph_9@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.8"
+                }
+            },{
+                "paragraph_10@how_to_play_common.paragraph": {
+                    "$text": "story.chapter1.9"
+                }
+            },{
+                "header_1@how_to_play_common.header": {
+                    "$text": "story.chapter2.title"
+                }
+            },
+            {
+                "paragraph_11@how_to_play_common.paragraph": {
+                    "$text": "story.chapter2.1"
+                }
+            },
+            {
+                "paragraph_12@how_to_play_common.paragraph": {
+                    "$text": "story.chapter2.2"
+                }
+            },{
+                "paragraph_13@how_to_play_common.paragraph": {
+                    "$text": "story.chapter2.3"
+                }
+            }
+        ]
+    }
+}

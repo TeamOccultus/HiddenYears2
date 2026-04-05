@@ -1,0 +1,43 @@
+{
+    "namespace": "hiddenyears:page_contact",
+    "contact_button@how_to_play_common.section_toggle_button": {
+        "$section_topic": "contact"
+    },
+    "contact_section@how_to_play_common.main_sections": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "contact_button_toggle",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "header_0@how_to_play_common.header": {
+                    "$text": "contact.hiddenyears:bugs.title"
+                }
+            },
+            {
+                "paragraph_0@how_to_play_common.paragraph": {
+                    "$text": "contact.hiddenyears:bugs.body1"
+                }
+            },
+            {
+                "header_1@how_to_play_common.header": {
+                    "$text": "contact.hiddenyears:report.title"
+                }
+            },
+            {
+                "paragraph_2@how_to_play_common.paragraph": {
+                    "$text": "contact.hiddenyears:report.body1"
+                }
+            },
+            {
+                "paragraph_3@how_to_play_common.paragraph": {
+                    "$text": "contact.hiddenyears:report.body2"
+                }
+            }
+        ]
+    }
+}

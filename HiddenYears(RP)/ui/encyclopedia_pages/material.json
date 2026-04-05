@@ -1,0 +1,97 @@
+{
+    "namespace": "hiddenyears:page_material",
+    "material_button@how_to_play_common.section_toggle_button": {
+        "$section_topic": "material"
+    },
+    "material_section@how_to_play_common.main_sections": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "material_button_toggle",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "header_0@how_to_play_common.header": {
+                    "$text": "howtoplay.hiddenyears:material.title"
+                }
+            },
+            {
+                "paragraph_0@how_to_play_common.paragraph": {
+                    "$text": "howtoplay.hiddenyears:material.body1"
+                }
+            },
+            {
+                "header_1@how_to_play_common.header": {
+                    "$text": "howtoplay.hiddenyears:material.title1"
+                }
+            },
+            {
+                "text_pair_1@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/wood_pickaxe",
+                    "$text": "howtoplay.hiddenyears:material.wooden"
+                }
+            },
+            {
+                "text_pair_2@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/bone",
+                    "$text": "howtoplay.hiddenyears:material.bone"
+                }
+            },
+            {
+                "text_pair_3@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/stone_axe",
+                    "$text": "howtoplay.hiddenyears:material.stone"
+                }
+            },
+            {
+                "text_pair_5@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/copper_ingot",
+                    "$text": "howtoplay.hiddenyears:material.copper"
+                }
+            },
+            {
+                "text_pair_4@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/refined_rock_ingot",
+                    "$text": "howtoplay.hiddenyears:material.refined_rock"
+                }
+            },
+            {
+                "header_2@how_to_play_common.header": {
+                    "$text": "howtoplay.hiddenyears:material.title2"
+                }
+            },
+            {
+                "text_pair_6@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/silver_ingot",
+                    "$text": "howtoplay.hiddenyears:material.silver"
+                }
+            },
+            {
+                "text_pair_7@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/diamond",
+                    "$text": "howtoplay.hiddenyears:material.diamond"
+                }
+            },
+            {
+                "text_pair_8@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/crystal_ingot",
+                    "$text": "howtoplay.hiddenyears:material.crystal"
+                }
+            },
+            {
+                "header_3@how_to_play_common.header": {
+                    "$text": "howtoplay.hiddenyears:material.title3"
+                }
+            },
+            {
+                "text_pair_9@hiddenyears:common.encyclopedia_image_text": {
+                    "$image": "textures/items/originite_ingot",
+                    "$text": "howtoplay.hiddenyears:material.originite"
+                }
+            }
+        ]
+    }
+}

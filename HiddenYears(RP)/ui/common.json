@@ -1,0 +1,24 @@
+{
+  "namespace": "hiddenyears:common",
+  "encyclopedia_image_text": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": ["100%", "100%cm"],
+    "controls": [
+      {
+        "paragraph@how_to_play_common.paragraph": {
+          "$text": "$text",
+          "size": ["60%", "100%c"]
+        }
+      },
+      {
+        "image@how_to_play_common.image": {
+          "texture": "$image",
+          "size": ["40%", "32px"],
+          "anchor_to": "center",
+          "anchor_from": "center"
+        }
+      }
+    ]
+  }
+}

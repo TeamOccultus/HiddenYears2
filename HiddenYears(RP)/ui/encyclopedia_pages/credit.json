@@ -1,0 +1,68 @@
+{
+    "namespace": "hiddenyears:page_credit",
+    "credit_button@how_to_play_common.section_toggle_button": {
+        "$section_topic": "credit"
+    },
+    "credit_section@how_to_play_common.main_sections": {
+        "bindings": [
+            {
+                "binding_type": "view",
+                "source_control_name": "credit_button_toggle",
+                "source_property_name": "#toggle_state",
+                "target_property_name": "#visible"
+            }
+        ],
+        "controls": [
+            {
+                "header_0@how_to_play_common.header": {
+                    "$text": "credits.hiddenyears:title.tocc"
+                }
+            },
+            {
+                "paragraph_0@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.head"
+                }
+            },
+            {
+                "paragraph_1@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.coder"
+                }
+            },
+            {
+                "paragraph_2@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.resource"
+                }
+            },
+            {
+                "paragraph_3@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.design"
+                }
+            },
+            {
+                "paragraph_4@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.structure"
+                }
+            },
+            {
+                "paragraph_5@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.music"
+                }
+            },
+            {
+                "paragraph_6@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:tocc.translate"
+                }
+            },
+            {
+                "header_1@how_to_play_common.header": {
+                    "$text": "credits.hiddenyears:title.oteam"
+                }
+            },
+            {
+                "paragraph_7@how_to_play_common.paragraph": {
+                    "$text": "credits.hiddenyears:oteam.structure"
+                }
+            }
+        ]
+    }
+}

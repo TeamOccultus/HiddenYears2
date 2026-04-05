@@ -1,0 +1,78 @@
+{
+  "namespace": "hiddenyears:page_material_ultimate",
+  "material_ultimate_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "material_ultimate"
+  },
+  "material_ultimate_section@how_to_play_common.main_sections": {
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "material_ultimate_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "paragraph_0@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_ultimate.body1"
+        }
+      },
+      {
+        "header_1@how_to_play_common.header": {
+          "$text": "howtoplay.hiddenyears:material_ultimate.title0"
+        }
+      },
+      {
+        "paragraph_1@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_ultimate.body2"
+        }
+      },
+      {
+        "text_pair_1@hiddenyears:common.encyclopedia_image_text": {
+          "$image": "textures/items/gold_ingot",
+          "$text": "howtoplay.hiddenyears:material_ultimate.body3"
+        }
+      },
+      {
+        "text_pair_2@hiddenyears:common.encyclopedia_image_text": {
+          "$image": "textures/items/magic_dust",
+          "$text": "howtoplay.hiddenyears:material_ultimate.body4"
+        }
+      },
+      {
+        "text_pair_3@hiddenyears:common.encyclopedia_image_text": {
+          "$image": "textures/items/ancient_extracts",
+          "$text": "howtoplay.hiddenyears:material_ultimate.body5"
+        }
+      },
+      {
+        "text_pair_5@hiddenyears:common.encyclopedia_image_text": {
+          "$image": "textures/items/netherite_scrap",
+          "$text": "howtoplay.hiddenyears:material_ultimate.body6"
+        }
+      },
+      {
+        "text_pair_4@hiddenyears:common.encyclopedia_image_text": {
+          "$image": "textures/items/soul_of_fear",
+          "$text": "howtoplay.hiddenyears:material_ultimate.body7"
+        }
+      },
+      {
+        "header_2@how_to_play_common.header": {
+          "$text": "howtoplay.hiddenyears:material_ultimate.title1"
+        }
+      },
+      {
+        "paragraph_1@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_ultimate.body8"
+        }
+      },
+      {
+        "paragraph_1@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_ultimate.body9"
+        }
+      }
+    ]
+  }
+}

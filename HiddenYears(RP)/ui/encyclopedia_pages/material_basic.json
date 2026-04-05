@@ -1,0 +1,72 @@
+{
+  "namespace": "hiddenyears:page_material_basic",
+  "material_basic_button@how_to_play_common.section_toggle_button": {
+    "$section_topic": "material_basic"
+  },
+  "material_basic_section@how_to_play_common.main_sections": {
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "material_basic_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "header_0@how_to_play_common.header": {
+          "$text": "howtoplay.hiddenyears:material_basic.title0"
+        }
+      },
+      {
+        "paragraph_0@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_basic.body1"
+        }
+      },
+      {
+        "padding_0@how_to_play_common.padding": {}
+      },
+      {
+        "paragraph_1@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_basic.body2"
+        }
+      },
+      {
+        "header_1@how_to_play_common.header": {
+          "$text": "howtoplay.hiddenyears:material_basic.title1"
+        }
+      },
+      {
+        "paragraph_2@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_basic.body3"
+        }
+      },
+      {
+        "padding_1@how_to_play_common.padding": {}
+      },
+      {
+        "paragraph_3@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_basic.body4"
+        }
+      },
+      {
+        "header_2@how_to_play_common.header": {
+          "$text": "howtoplay.hiddenyears:material_basic.title2"
+        }
+      },
+      {
+        "paragraph_4@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_basic.body5"
+        }
+      },
+      {
+        "padding_2@how_to_play_common.padding": {}
+      },
+      {
+        "paragraph_5@how_to_play_common.paragraph": {
+          "$text": "howtoplay.hiddenyears:material_basic.body6"
+        }
+      }
+    ]
+  }
+}
