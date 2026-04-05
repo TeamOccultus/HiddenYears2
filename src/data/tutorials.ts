@@ -8,15 +8,17 @@ const materials = new Tutorial(
       title: { translate: "howtoplay.hiddenyears:material.title1" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:material.wooden" },
+          { translate: "howtoplay.hiddenyears:material_basic.body1" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_basic.body2" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.bone" },
+          { translate: "howtoplay.hiddenyears:material_basic.body3" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_basic.body4" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.stone" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.refined_rock" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.copper" }
+          { translate: "howtoplay.hiddenyears:material_basic.body5" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_basic.body6" }
         ]
       }
     },
@@ -24,11 +26,17 @@ const materials = new Tutorial(
       title: { translate: "howtoplay.hiddenyears:material.title2" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:material.silver" },
+          { translate: "howtoplay.hiddenyears:material_advanced.body1" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_advanced.body2" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.diamond" },
+          { translate: "howtoplay.hiddenyears:material_advanced.body3" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_advanced.body4" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.crystal" }
+          { translate: "howtoplay.hiddenyears:material_advanced.body5" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_advanced.body6" }
         ]
       }
     },
@@ -38,7 +46,43 @@ const materials = new Tutorial(
         rawtext: [
           { translate: "howtoplay.hiddenyears:material.netherite" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material.originite" }
+          { translate: "howtoplay.hiddenyears:material_ultimate.body1" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body2" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body3" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body4" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body5" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body6" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body7" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body8" }
+        ]
+      }
+    },
+    {
+      title: { translate: "howtoplay.hiddenyears:material_ultimate.title1" },
+      body: {
+        rawtext: [
+          { translate: "howtoplay.hiddenyears:material_ultimate.body9" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body10" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body11" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body12" },
+          { text: "\n\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body13" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body14" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body15" },
+          { text: "\n" },
+          { translate: "howtoplay.hiddenyears:material_ultimate.body16" }
         ]
       }
     }
