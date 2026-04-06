@@ -64,7 +64,7 @@
       "minecraft:geometry": {
         "identifier": "geometry.pharaohs_ghost_doll"
       },
-      "minecraft:loot": "loot_tables/dolls/king_of_ruby.json",
+      "minecraft:loot": "loot_tables/dolls/pharaohs_ghost.json",
       "minecraft:destruction_particles": {
         "texture": "hiddenyears:drift_sand_downside",
         "particle_count": 30
