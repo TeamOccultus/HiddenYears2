@@ -1,0 +1,169 @@
+{
+  "namespace": "article",
+  "transparent_button_template": {
+    "type": "stack_panel",
+    "size": ["100%", 32],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "text_button": {
+          "type": "button",
+          "size": ["100%", 32],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "button_mappings": [
+            {
+              "from_button_id": "button.menu_select",
+              "to_button_id": "button.form_button_click",
+              "mapping_type": "pressed"
+            }
+          ],
+          "controls": [
+            {
+              "button_text": {
+                "type": "label",
+                "text": "#form_button_text",
+                "color": [0.639, 0.49, 0.373], // 你的主题色
+                "font_size": "normal",
+                "shadow": false,
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "bindings": [
+                  {
+                    "binding_type": "collection",
+                    "binding_collection_name": "form_buttons",
+                    "binding_name": "#form_button_text"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "custom_buttons_panel": {
+    "type": "stack_panel",
+    "size": ["100%", "100%c"],
+    "offset": [2, 0],
+    "orientation": "vertical",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "factory": {
+      "name": "buttons",
+      "control_ids": {
+        "button": "article.transparent_button_template" // 关键：使用你的透明按钮模板
+      }
+    },
+    "collection_name": "form_buttons",
+    "bindings": [
+      {
+        "binding_name": "#form_button_contents",
+        "binding_name_override": "#collection_length"
+      }
+    ]
+  },
+  "article_panel": {
+    "type": "panel",
+    "size": [172, 210],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "article_panel",
+        "source_property_name": "(not ((#title_text - '') = #title_text))",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "back_button@common.back_button": {
+          "size": [20, 10],
+          "offset": [5, 5],
+          "$back_button_text": "X",
+          "color": [0.639, 0.49, 0.373],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "background_panel": {
+          "type": "image",
+          "texture": "textures/ui/article_background",
+          "size": [172, 210],
+          "layer": 1
+        }
+      },
+      {
+        "title_label": {
+          "type": "label",
+          "text": "#title_text",
+          "anchor_from": "top_left",
+          "shadow": true,
+          "size": [160, 10],
+          "color": [0.639, 0.49, 0.373],
+          "anchor_to": "top_left",
+          "layer": 2,
+          "offset": [30, 5]
+        }
+      },
+      {
+        "article_scroll_view@common.scrolling_panel": {
+          "$scrolling_content": "article.article_content",
+          "$scrolling_content_anchor_from": "top_left",
+          "$scrolling_content_anchor_to": "top_left",
+          "$scrolling_pane_size": [150, 180],
+          "$scrolling_pane_offset": [15, 20],
+          "$background_size": [160, 150],
+          "$scroll_box_visible": true,
+          "layer": 2,
+          "$scroll_box_visible_touch": true,
+          "$show_background": false
+        }
+      },
+      {
+        "buttons_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "size": [172, 32],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [0, 0],
+          "layer": 2,
+          "controls": [
+            {
+              "custom_buttons_panel@article.custom_buttons_panel": {}
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "article_content": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "$scrolling_content_anchor_from": "top_left",
+    "$scrolling_content_anchor_to": "top_left",
+    "size": [140, 512],
+    "controls": [
+      {
+        "article_text": {
+          "type": "label",
+          "text": "#form_text",
+          "font_type": "default",
+          "font_size": "normal",
+          "hide_hyphen": true,
+          "color": [0.639, 0.49, 0.373],
+          "max_size": [140, 0]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "article_panel",
+        "source_property_name": "(not ((#title_text - '') = #title_text))",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}

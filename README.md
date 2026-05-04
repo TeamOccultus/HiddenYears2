@@ -19,7 +19,6 @@
 <img src="https://translate.codeberg.org/widget/hidden-years/generation-3/svg-badge.svg" alt="翻译状态" />
 </a>
 </p>
-
 ---
 欢迎使用隐藏之年²——一款仍在不断完善中的 Minecraft 冒险模组！
 

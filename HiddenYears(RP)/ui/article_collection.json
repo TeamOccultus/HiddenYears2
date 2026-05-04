@@ -1,0 +1,105 @@
+{
+  "namespace": "article_collection",
+  "article_collection_panel": {
+    "type": "panel",
+    "size": [172, 210],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "article_panel",
+        "source_property_name": "(not ((#title_text - '') = #title_text))",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "back_button@common.back_button": {
+          "size": [20, 10],
+          "offset": [5, 5],
+          "$back_button_text": "X",
+          "color": [0.639, 0.49, 0.373],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      },
+      {
+        "background_panel": {
+          "type": "image",
+          "texture": "textures/ui/article_background",
+          "size": [172, 210],
+          "layer": 1
+        }
+      },
+      {
+        "title_label": {
+          "type": "label",
+          "text": "#title_text",
+          "anchor_from": "top_left",
+          "shadow": true,
+          "size": [160, 10],
+          "color": [0.639, 0.49, 0.373],
+          "anchor_to": "top_left",
+          "layer": 2,
+          "offset": [30, 5]
+        }
+      },
+      {
+        "article_scroll_view@common.scrolling_panel": {
+          "$scrolling_content": "article.article_content",
+          "$scrolling_content_anchor_from": "top_left",
+          "$scrolling_content_anchor_to": "top_left",
+          "$scrolling_pane_size": [150, 180],
+          "$scrolling_pane_offset": [15, 20],
+          "$background_size": [160, 150],
+          "$scroll_box_visible": true,
+          "layer": 2,
+          "$scroll_box_visible_touch": true,
+          "$show_background": false
+        }
+      },
+      {
+      "buttons_panel": {
+        "type": "stack_panel",
+        "orientation": "vertical",
+        "size": ["100%", "100%"],
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
+        "offset": [10, -5],
+        "controls": [
+          {
+            "long_form_dynamic_buttons_panel@server_form.long_form_dynamic_buttons_panel": {}
+          }
+        ]
+      }
+    }
+    ]
+  },
+  "article_content": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "$scrolling_content_anchor_from": "top_left",
+    "$scrolling_content_anchor_to": "top_left",
+    "size": [140, 64],
+    "controls": [
+      {
+        "article_text": {
+          "type": "label",
+          "text": "#form_text",
+          "font_type": "default",
+          "font_size": "normal",
+          "hide_hyphen": true,
+          "color": [0.639, 0.49, 0.373],
+          "max_size": [140, 0]
+        }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "article_panel",
+        "source_property_name": "(not ((#title_text - '') = #title_text))",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}

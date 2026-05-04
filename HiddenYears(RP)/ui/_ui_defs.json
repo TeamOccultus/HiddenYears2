@@ -10,6 +10,9 @@
     "ui/encyclopedia_pages/material_basic.json",
     "ui/encyclopedia_pages/material_advanced.json",
     "ui/encyclopedia_pages/material_ultimate.json",
-    "ui/encyclopedia_pages/nugget_dust.json"
+    "ui/encyclopedia_pages/nugget_dust.json",
+    "ui/article.json",
+    "ui/server_form.json",
+    "ui/article_collection.json"
   ]
 }
