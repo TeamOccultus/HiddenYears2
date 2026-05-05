@@ -13,6 +13,7 @@
     "ui/encyclopedia_pages/nugget_dust.json",
     "ui/article.json",
     "ui/server_form.json",
-    "ui/article_collection.json"
+    "ui/article_collection.json",
+    "ui/toast.json"
   ]
 }

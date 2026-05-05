@@ -9,6 +9,7 @@ import {
   TaskGroup,
   TaskServer
 } from "@occultus/api";
+import { TaskToast } from "../core/Toast";
 
 const server = new TaskServer();
 const tasks = new Map<string, Task>();
@@ -25,6 +26,7 @@ const stick = new Task(
   }
 );
 tasks.set(stick.id, stick);
+
 const craftingTable = new Task(
   "hiddenyears:crafting_table",
   { translate: "task.crafting_table" },
@@ -1889,6 +1891,11 @@ const articleCollection = new TaskGroup(
   }
 );
 
+tasks.forEach((task) => {
+  task.onComplete((player, task) => {
+    new TaskToast(task, player).send();
+  });
+});
 server.addTask(...Array.from(tasks.values()));
 
 export function hasTask(id: string): boolean {

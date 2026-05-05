@@ -36,6 +36,26 @@
  * @module HiddenYears2
  * @category Main
  */
+import { world } from "@minecraft/server";
 import { initialize } from "./server/initialize";
+import { Color, Format, parseToRaw } from "@occultus/api";
 
 initialize();
+
+world.afterEvents.playerBreakBlock.subscribe(({ player, block }) => {
+  player.onScreenDisplay.setTitle(
+    {
+      rawtext: [
+        { text: "toast:" },
+        
+        { translate: "打碎方块" }
+      ]
+    },
+    {
+      subtitle: `toast:textures/items/apple`,
+      fadeInDuration: 0,
+      fadeOutDuration: 0,
+      stayDuration: 1
+    }
+  );
+});

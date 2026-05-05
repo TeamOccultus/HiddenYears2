@@ -1,0 +1,122 @@
+{
+  "namespace": "toast",
+  "toast_panel": {
+    "type": "image",
+    "anchor_to": "top_right",
+    "anchor_from": "top_right",
+    "texture": "textures/ui/toast_notification",
+    "size": ["100%c + 120px", "32px"],
+    "offset": "@toast.offset1",
+    "layer": 114514,
+    "bindings": [
+      {
+        "binding_name": "#hud_title_text_string",
+        "binding_condition": "once"
+      },
+      {
+        "binding_type": "view",
+        "binding_condition": "once",
+        "source_property_name": "(('%.6s' * #hud_title_text_string) = 'toast:')",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {
+        "text": {
+          "type": "label",
+          "layer": 114515,
+          "text": "#toast_text",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": ["32px", "-1%"],
+          "localize": false,
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string",
+              "binding_condition": "once"
+            },
+            {
+              "binding_type": "view",
+              "binding_condition": "once",
+              "source_property_name": "(('%.6s' * #hud_title_text_string) = 'toast:')",
+              "target_property_name": "#visible"
+            },
+            {
+              "binding_type": "view",
+              "binding_condition": "once",
+              "source_property_name": "(#hud_title_text_string - ('%.6s' * #hud_title_text_string))",
+              "target_property_name": "#toast_text"
+            }
+          ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": ["0%", "0%"],
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "offset": ["16px", "0px"],
+          "controls": [
+            {
+              "icon": {
+                "type": "image",
+                "layer": 114516,
+                "size": ["20px", "20px"],
+                "offset": ["-40%", "0%"],
+                "keep_ratio": true,
+                "bindings": [
+                  {
+                    "binding_name": "#hud_subtitle_text_string",
+                    "binding_condition": "once"
+                  },
+                  {
+                    "binding_type": "view",
+                    "binding_condition": "once",
+                    "source_property_name": "(('%.6s' * #hud_subtitle_text_string) = 'toast:')",
+                    "target_property_name": "#visible"
+                  },
+                  {
+                    "binding_type": "view",
+                    "binding_condition": "once",
+                    "source_property_name": "(#hud_subtitle_text_string - ('%.6s' * #hud_subtitle_text_string))",
+                    "target_property_name": "#texture"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "offset1": {
+    "anim_type": "offset",
+    "easing": "out_sine",
+    "next": "@toast.offset2",
+    "from": ["100%c + 40px", "0%"],
+    "to": ["0%", "0%"],
+    "duration": 1
+  },
+  "offset2": {
+    "anim_type": "wait",
+    "next": "@toast.offset3",
+    "duration": 4
+  },
+  "offset3": {
+    "anim_type": "offset",
+    "easing": "in_sine",
+    "from": ["0%", "0%"],
+    "to": ["100%c + 128px", "0%"],
+    "duration": 1
+  },
+  "toast_factory": {
+    "type": "panel",
+    "factory": {
+      "name": "hud_title_text_factory",
+      "control_ids": {
+        "hud_title_text": "toast_panel@toast.toast_panel"
+      }
+    }
+  }
+}
