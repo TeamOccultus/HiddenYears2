@@ -8,7 +8,7 @@ steps:
     commands:
       - npm install -g pnpm
       - pnpm approve-builds esbuild rolldown
-      - pnpm install
+      - pnpm install --ignore-scripts
       - pnpm run build
       - pnpm run doc
   - name: upload
