@@ -18,6 +18,11 @@
         "name": "The Hidden Finale",
         "artist": "FREirc"
       },
+      "hiddenyears:now_playing": {
+        "name": "music.ruby",
+        "author": "FREirc",
+        "icon_path": "textures/items/record_ruby"
+      },
       "minecraft:record": {
         "duration": 68,
         "comparator_signal": 13

@@ -18,6 +18,11 @@
         "name": "Song of Ancient Desert",
         "artist": "3xLnw"
       },
+      "hiddenyears:now_playing": {
+        "name": "music.pharaohs_ghost",
+        "author": "3xLnw",
+        "icon_path": "textures/items/record_pharaohs"
+      },
       "minecraft:record": {
         "duration": 94,
         "comparator_signal": 13

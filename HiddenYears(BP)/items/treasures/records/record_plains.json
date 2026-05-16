@@ -18,6 +18,11 @@
         "name": "Plain Thoughts",
         "artist": "FREirc"
       },
+      "hiddenyears:now_playing": {
+        "name": "music.plains",
+        "author": "FREirc",
+        "icon_path": "textures/items/record_plains"
+      },
       "minecraft:record": {
         "duration": 95,
         "comparator_signal": 13

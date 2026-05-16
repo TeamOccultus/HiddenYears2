@@ -18,6 +18,11 @@
         "name": "Hymn of the Exiled",
         "artist": "3xLnw"
       },
+      "hiddenyears:now_playing": {
+        "name": "music.isis",
+        "author": "3xLnw",
+        "icon_path": "textures/items/record_mutas"
+      },
       "minecraft:record": {
         "duration": 104,
         "comparator_signal": 13
