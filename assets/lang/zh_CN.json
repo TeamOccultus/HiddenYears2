@@ -1833,5 +1833,10 @@
   "tag.hiddenyears:is_hammer": "重锤",
   "tag.hiddenyears:is_saw": "锯",
   "tag.hiddenyears:is_sledgehammer": "战锤",
-  "item.record_mutas.desc": "被放逐者的颂歌 - 3xLnw"
+  "item.record_mutas.desc": "被放逐者的颂歌 - 3xLnw",
+  "music.isis": "被放逐者的颂歌",
+  "music.plains": "平原遐想",
+  "music.ruby": "雷光战曲",
+  "music.pharaohs": "沙海古音",
+  "ui.now_playing": "正在播放"
 }

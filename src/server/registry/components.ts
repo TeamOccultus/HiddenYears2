@@ -36,6 +36,7 @@ import { ProfileComponent } from "../components/ProfileComponent/Component";
 import { SpecificDamageComponent } from "../components/SpecificDamageComponent/Component";
 import { StructurePlacerComponent } from "../components/StructurePlacerComponent/Component";
 import { JobRecoveryComponent } from "../components/JobRecoveryComponent/Component";
+import { NowPlayingComponent } from "../components/NowPlayingComponent/Component";
 
 /**
  * 注册自定义组件
@@ -64,8 +65,9 @@ export function registryComponents() {
   new ReturnGemComponent("hiddenyears:return_gem");
   new JobSkillComponent("hiddenyears:job_skill");
   new SpecificDamageComponent("hiddenyears:specific_damage");
-  new StructurePlacerComponent("hiddenyears:structure_placer")
+  new StructurePlacerComponent("hiddenyears:structure_placer");
   new JobRecoveryComponent("hiddenyears:job_recovery");
+  new NowPlayingComponent("hiddenyears:now_playing");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

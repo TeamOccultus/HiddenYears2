@@ -1,5 +1,13 @@
 import { Player, RawMessage } from "@minecraft/server";
-import { Color, Format, parseToRaw, Task, Toast } from "@occultus/api";
+import {
+  Color,
+  Format,
+  MusicDiscBindingConfig,
+  MusicDiscComponentParams,
+  parseToRaw,
+  Task,
+  Toast
+} from "@occultus/api";
 
 export class TaskToast extends Toast {
   constructor(
@@ -29,5 +37,26 @@ export class TaskToast extends Toast {
         stayDuration: 1
       }
     );
+  }
+}
+
+export class NowPlayingToast extends Toast {
+  constructor(
+    readonly name: string,
+    readonly author: string,
+    public iconPath: string
+  ) {
+    const content: RawMessage = {
+      rawtext: [
+        { text: Color.lightPurple },
+        { translate: "ui.now_playing" },
+        { text: Format.reset },
+        { text: "\n" },
+        { translate: name },
+        { text: " - " },
+        { translate: author }
+      ]
+    };
+    super(content, iconPath);
   }
 }

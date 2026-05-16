@@ -9,6 +9,7 @@ category: Documents
 | 组件名称 | 描述 |
 | --- | --- |
 | hiddenyears:music_disc | 将物品设置为音乐唱片 |
+| hiddenyears:now_playing | 使物品被放入唱片机后显示弹窗提示 |
 | hiddenyears:article | 将物品设置为文章 |
 | hiddenyears:article_content | 设置文章的内容 |
 | hiddenyears:article_center | 将物品设置为文章中心 |
@@ -50,6 +51,56 @@ category: Documents
 | track_name  | `string` | 必填   | 音轨名称，可以填非原版的音轨   |
 | name        | `string` | 必填   | 音乐唱片名称     |
 | artist      | `string` | 必填   | 创作唱片的艺术家 |
+
+### 范例
+```json
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:record_pharaohs",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%item.record.name\n§7%item.record_pharaohs.desc"
+      },
+      "minecraft:icon": "hiddenyears:record_pharaohs",
+      "minecraft:rarity": "uncommon",
+      "hiddenyears:music_disc": {
+        "track_name": "music.boss.pharaohs_ghost",
+        "name": "Song of Ancient Desert",
+        "artist": "3xLnw"
+      },
+      "minecraft:record": {
+        "duration": 94,
+        "comparator_signal": 13
+      },
+      "minecraft:tags": {
+        "tags": ["minecraft:music_disc"]
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}
+```
+## hiddenyears:now_playing
+
+> [!IMPORTANT]
+> 该组件必须要依赖于`minecraft:record`组件和`minecraft:music_disc`标签才能生效。
+
+> [!TIP]
+> 可用版本：3.0.9-beta.2 以及更高
+
+使物品被放入唱片机后显示弹窗提示
+
+| 参数        | 类型     | 可选？ | 描述             |
+| ----------- | -------- | ------ | ---------------- |
+| icon_path   | `string` | 可选   | 图标路径  |
+| name        | `string` | 必填   | 音乐唱片名称     |
+| author      | `string` | 必填   | 创作唱片的艺术家 |
 
 ### 范例
 ```json
