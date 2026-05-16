@@ -186,7 +186,9 @@ const saw = new Task(
   { translate: "task.saw.desc" },
   {
     awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
-    conditions: [new ItemConditions("hiddenyears:iron_saw")],
+    conditions: [
+      new ItemTagConditions("hiddenyears:is_saw", 1, "tag.hiddenyears:is_saw")
+    ],
     previousTask: "none",
     iconPath: "textures/items/iron_saw",
     tips: { translate: "task.saw.tips" }
@@ -200,7 +202,13 @@ const crowbar = new Task(
   { translate: "task.crowbar.desc" },
   {
     awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
-    conditions: [new ItemConditions("hiddenyears:iron_crowbar")],
+    conditions: [
+      new ItemTagConditions(
+        "hiddenyears:is_crowbar",
+        1,
+        "tag.hiddenyears:is_crowbar"
+      )
+    ],
     previousTask: "none",
     iconPath: "textures/items/iron_crowbar",
     tips: { translate: "task.crowbar.tips" }
@@ -214,7 +222,13 @@ const hammer = new Task(
   { translate: "task.hammer.desc" },
   {
     awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
-    conditions: [new ItemConditions("hiddenyears:iron_hammer")],
+    conditions: [
+      new ItemTagConditions(
+        "hiddenyears:is_hammer",
+        1,
+        "tag.hiddenyears:is_hammer"
+      )
+    ],
     previousTask: "none",
     iconPath: "textures/items/iron_hammer",
     tips: { translate: "task.hammer.tips" }
@@ -228,7 +242,13 @@ const dagger = new Task(
   { translate: "task.dagger.desc" },
   {
     awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
-    conditions: [new ItemConditions("hiddenyears:iron_dagger")],
+    conditions: [
+      new ItemTagConditions(
+        "hiddenyears:is_dagger",
+        1,
+        "tag.hiddenyears:is_dagger"
+      )
+    ],
     previousTask: "none",
     iconPath: "textures/items/iron_dagger",
     tips: { translate: "task.dagger.tips" }
@@ -242,7 +262,13 @@ const sledgehammer = new Task(
   { translate: "task.sledgehammer.desc" },
   {
     awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
-    conditions: [new ItemConditions("hiddenyears:iron_sledgehammer")],
+    conditions: [
+      new ItemTagConditions(
+        "hiddenyears:is_sledgehammer",
+        1,
+        "tag.hiddenyears:is_sledgehammer"
+      )
+    ],
     previousTask: "none",
     iconPath: "textures/items/iron_sledgehammer"
   }

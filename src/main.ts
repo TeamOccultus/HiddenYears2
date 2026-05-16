@@ -38,7 +38,6 @@
  */
 import { world } from "@minecraft/server";
 import { initialize } from "./server/initialize";
-import { Color, Format, parseToRaw } from "@occultus/api";
 
 initialize();
 

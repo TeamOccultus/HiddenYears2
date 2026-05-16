@@ -1,4 +1,4 @@
-import { Player, Vector3, world } from "@minecraft/server";
+import { Player, Vector3 } from "@minecraft/server";
 import { toVec3, Vector3Utils } from "@occultus/api";
 
 export class WayPoint {

@@ -8,7 +8,6 @@ import {
   JobSkill
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
-import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
 
 export const berserker = new Job(
   "hiddenyears:berserker",
