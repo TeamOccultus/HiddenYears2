@@ -25,7 +25,7 @@
         "using_converts_to": "glass_bottle"
       },
       "minecraft:tags": {
-        "tags": ["potion"]
+        "tags": ["potion", "oreville:is_drink"]
       }
     }
   }

@@ -29,7 +29,7 @@
       },
       "minecraft:rarity": "rare",
       "minecraft:tags": {
-        "tags": ["hiddenyears:magic_potion"]
+        "tags": ["hiddenyears:magic_potion", "oreville:is_drink"]
       }
     }
   }

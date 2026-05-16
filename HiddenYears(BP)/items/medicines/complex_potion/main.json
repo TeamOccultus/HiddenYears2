@@ -30,6 +30,7 @@
         "tags": [
           "potion",
           "hiddenyears:complex_potion",
+          "oreville:is_drink",
           "hiddenyears:complex_basic"
         ]
       }
