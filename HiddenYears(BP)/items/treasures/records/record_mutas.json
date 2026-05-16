@@ -1,0 +1,31 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:record_mutas",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%item.record.name\n§7%item.record_mutas.desc" //注意这里只是给唱片加一个本地化介绍键名
+      },
+      "minecraft:icon": "hiddenyears:record_mutas",
+      "minecraft:rarity": "uncommon",
+      "hiddenyears:music_disc": {
+        "track_name": "music.boss.isis",
+        "name": "Hymn of the Exiled",
+        "artist": "3xLnw"
+      },
+      "minecraft:record": {
+        "duration": 104,
+        "comparator_signal": 13
+      },
+      "minecraft:tags": {
+        "tags": ["minecraft:music_disc"] //这里标签必须是音乐唱片的
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

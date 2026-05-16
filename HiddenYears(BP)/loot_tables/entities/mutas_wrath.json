@@ -58,6 +58,16 @@
           "weight": 1
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:record_mutas",
+          "weight": 1
+        }
+      ]
     }
   ]
 }

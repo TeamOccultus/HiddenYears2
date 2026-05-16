@@ -41,20 +41,3 @@ import { initialize } from "./server/initialize";
 
 initialize();
 
-world.afterEvents.playerBreakBlock.subscribe(({ player, block }) => {
-  player.onScreenDisplay.setTitle(
-    {
-      rawtext: [
-        { text: "toast:" },
-        
-        { translate: "打碎方块" }
-      ]
-    },
-    {
-      subtitle: `toast:textures/items/apple`,
-      fadeInDuration: 0,
-      fadeOutDuration: 0,
-      stayDuration: 1
-    }
-  );
-});
