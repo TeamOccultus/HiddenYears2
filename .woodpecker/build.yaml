@@ -7,6 +7,7 @@ steps:
     image: node
     commands:
       - npm install -g pnpm
+      - pnpm approve-builds esbuild rolldown
       - pnpm install
       - pnpm run build
       - pnpm run doc
