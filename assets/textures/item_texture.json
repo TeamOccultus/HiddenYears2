@@ -823,6 +823,9 @@
     "hiddenyears:rebirth_statue": {
       "textures": "textures/items/rebirth_statue"
     },
+    "hiddenyears:record_mutas": {
+      "textures": "textures/items/record_mutas"
+    },
     "hiddenyears:record_pharaohs": {
       "textures": "textures/items/record_pharaohs"
     },
