@@ -7,7 +7,7 @@ steps:
     image: node
     commands:
       - npm install -g pnpm
-      - pnpm install
+      - pnpm install --allow-build=esbuild
       - pnpm run build
       - pnpm run doc
   - name: upload
