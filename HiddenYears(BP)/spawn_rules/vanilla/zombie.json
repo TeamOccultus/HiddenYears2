@@ -19,15 +19,19 @@
           "max": "hard"
         },
         "minecraft:weight": {
-          "default": 85
+          "default": 90
         },
         "minecraft:herd": {
           "min_size": 2,
-          "max_size": 4
+          "max_size": 5
         },
         "minecraft:permute_type": [
           {
-            "weight": 95
+            "weight": 80
+          },
+          {
+            "weight": 15,
+            "entity_type": "hiddenyears:lunamutatio_zombie"
           },
           {
             "weight": 5,

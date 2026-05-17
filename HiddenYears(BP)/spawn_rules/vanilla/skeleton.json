@@ -24,12 +24,21 @@
           "max": "hard"
         },
         "minecraft:weight": {
-          "default": 60
+          "default": 80
         },
         "minecraft:herd": {
           "min_size": 1,
           "max_size": 2
         },
+        "minecraft:permute_type": [
+          {
+            "weight": 90
+          },
+          {
+            "weight": 10,
+            "entity_type": "hiddenyears:lunamutatio_skeleton"
+          }
+        ],
         "minecraft:biome_filter": {
           "any_of": [
             {
