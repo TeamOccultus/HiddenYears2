@@ -6,5 +6,12 @@
       "minecraft:pillager",
       "minecraft:vindicator"
     ]
+  },
+  {
+    "loot_table": "gameplay/addition/sand_meat",
+    "entities": [
+      "minecraft:husk",
+      "minecraft:camel"
+    ]
   }
 ]
