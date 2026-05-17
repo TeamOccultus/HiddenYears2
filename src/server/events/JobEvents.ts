@@ -5,10 +5,13 @@ import {
   ItemStack
 } from "@minecraft/server";
 import {
+  Color,
   consumeEquipmentAmount,
+  Format,
   getContainer,
   Job,
-  setEquipmentItem
+  setEquipmentItem,
+  Toast
 } from "@occultus/api";
 import { JobParams } from "../components/JobOfferComponent/Params";
 import { traveler } from "../job/traveler";
@@ -16,33 +19,47 @@ import { traveler } from "../job/traveler";
 export class JobEvents {
   static onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
     const params = arg1.params as JobParams;
+    const player = arg0.source;
     if (params.remove_old) {
-      arg0.source.setDynamicProperty("hiddenyears:job");
+      player.setDynamicProperty("hiddenyears:job");
     }
     if (params.job_type === "traveler") {
       system.runTimeout(() => {
-        arg0.source.playSound("random.levelup");
-        traveler.add(arg0.source);
-      }, 20);
+        player.playSound("ui.challenge_complete");
+        new Toast(
+          {
+            rawtext: [
+              { text: Color.darkPurple },
+              { translate: "ui.get_job" },
+              { text: "\n" },
+              {text: Format.reset},
+              { translate: "job.hiddenyears:traveler" },
+            ]
+          },
+          "textures/items/lost_letter"
+        ).send(player);
+        traveler.add(player);
+      }, 10);
     }
-    system.waitTicks(10).then(() => {
-      consumeEquipmentAmount(arg0.source, 1);
+    system.waitTicks(5).then(() => {
+      consumeEquipmentAmount(player, 1);
     });
   }
   static onRecovery(
     arg0: ItemComponentUseEvent,
     arg1: CustomComponentParameters
   ) {
-    const job = arg0.source.getDynamicProperty("hiddenyears:job");
+    const player = arg0.source;
+    const job = player.getDynamicProperty("hiddenyears:job");
     if (!job) {
-      arg0.source.sendMessage({ translate: "message:hiddenyears:job_invalid" });
+      player.sendMessage({ translate: "message:hiddenyears:job_invalid" });
       return;
     }
-    arg0.source.setDynamicProperty("hiddenyears:job");
-    arg0.source.setDynamicProperty("hiddenyears:traveler:level", 0);
-    arg0.source.setDynamicProperty(job + ":level", 0);
+    player.setDynamicProperty("hiddenyears:job");
+    player.setDynamicProperty("hiddenyears:traveler:level", 0);
+    player.setDynamicProperty(job + ":level", 0);
     system.runTimeout(() => {
-      const contianer = getContainer(arg0.source);
+      const contianer = getContainer(player);
       if (!contianer)
         throw new Error("Why the player doesn't have a container?");
       for (let i = 0; i < contianer.size; i++) {
@@ -52,9 +69,9 @@ export class JobEvents {
       }
     }, 3);
     system.runTimeout(() => {
-      setEquipmentItem(arg0.source, new ItemStack("hiddenyears:travel_gem"));
-      arg0.source.playSound("block.enchanting_table.use");
-      arg0.source.sendMessage({ translate: "message:hiddenyears:job_reset" });
+      setEquipmentItem(player, new ItemStack("hiddenyears:travel_gem"));
+      player.playSound("block.enchanting_table.use");
+      player.sendMessage({ translate: "message:hiddenyears:job_reset" });
     }, 5);
   }
 }
