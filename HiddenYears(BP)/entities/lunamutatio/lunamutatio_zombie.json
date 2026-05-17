@@ -8,6 +8,9 @@
       "is_experimental": false
     },
     "component_groups": {
+      "hiddenyears:burns_in_daylight": {
+        "minecraft:burns_in_daylight": {}
+      },
       "hiddenyears:lunamutatio_zombie_baby": {
         "minecraft:experience_reward": {
           "on_death": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0"
@@ -215,7 +218,7 @@
       "minecraft:entity_spawned": {
         "randomize": [
           {
-            "weight": 380,
+            "weight": 120,
             "remove": {},
             "add": {
               "component_groups": [
@@ -225,7 +228,18 @@
             }
           },
           {
-            "weight": 17,
+            "weight": 120,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "hiddenyears:lunamutatio_zombie_adult",
+                "minecraft:can_have_equipment",
+                "hiddenyears:burns_in_daylight"
+              ]
+            }
+          },
+          {
+            "weight": 20,
             "remove": {},
             "add": {
               "component_groups": [
@@ -235,7 +249,30 @@
             }
           },
           {
-            "weight": 3,
+            "weight": 40,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "hiddenyears:lunamutatio_zombie_baby",
+                "minecraft:can_have_equipment",
+                "hiddenyears:burns_in_daylight"
+              ]
+            }
+          },
+          {
+            "weight": 10,
+            "remove": {},
+            "add": {
+              "component_groups": [
+                "hiddenyears:lunamutatio_zombie_baby",
+                "minecraft:lunamutatio_zombie_jockey",
+                "minecraft:can_have_equipment",
+                "hiddenyears:burns_in_daylight"
+              ]
+            }
+          },
+          {
+            "weight": 5,
             "remove": {},
             "add": {
               "component_groups": [

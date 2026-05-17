@@ -8,6 +8,9 @@
       "is_experimental": false
     },
     "component_groups": {
+      "hiddenyears:burns_in_daylight": {
+        "minecraft:burns_in_daylight": {}
+      },
       "minecraft:ranged_attack": {
         "minecraft:behavior.ranged_attack": {
           "attack_interval_min": 1,
@@ -207,9 +210,25 @@
     },
     "events": {
       "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": ["minecraft:ranged_attack"]
-        }
+        "randomize": [
+          {
+            "weight": 60,
+            "add": {
+              "component_groups": [
+                "minecraft:ranged_attack",
+                "hiddenyears:burns_in_daylight"
+              ]
+            }
+          },
+          {
+            "weight": 40,
+            "add": {
+              "component_groups": [
+                "minecraft:ranged_attack"
+              ]
+            }
+          }
+        ]
       },
       "minecraft:melee_mode": {
         "remove": { "component_groups": ["minecraft:ranged_attack"] },
