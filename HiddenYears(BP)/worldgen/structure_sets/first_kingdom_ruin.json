@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:first_kingdom_ruin"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 52374045,
+      "separation": 1,
+      "spacing": 8,
+      "spread_type": "linear"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:first_kingdom_ruin",
+        "weight": 1
+      },
+      {
+        "structure": "hiddenyears:first_kingdom_ruin_savanna",
+        "weight": 1
+      },
+      {
+        "structure": "hiddenyears:first_kingdom_ruin_forest",
+        "weight": 1
+      }
+    ]
+  }
+}
