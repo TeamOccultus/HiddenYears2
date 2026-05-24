@@ -37,6 +37,7 @@ import { SpecificDamageComponent } from "../components/SpecificDamageComponent/C
 import { StructurePlacerComponent } from "../components/StructurePlacerComponent/Component";
 import { JobRecoveryComponent } from "../components/JobRecoveryComponent/Component";
 import { NowPlayingComponent } from "../components/NowPlayingComponent/Component";
+import { StructureLocaterComponent } from "../components/StructureLocaterComponent/Component";
 
 /**
  * 注册自定义组件
@@ -68,6 +69,7 @@ export function registryComponents() {
   new StructurePlacerComponent("hiddenyears:structure_placer");
   new JobRecoveryComponent("hiddenyears:job_recovery");
   new NowPlayingComponent("hiddenyears:now_playing");
+  new StructureLocaterComponent("hiddenyears:structure_locater")
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
