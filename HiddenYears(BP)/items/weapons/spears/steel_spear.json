@@ -9,9 +9,9 @@
     },
     "components": {
       "minecraft:durability": {
-        "max_durability": 250
+        "max_durability": 4500
       },
-      "minecraft:damage": 6,
+      "minecraft:damage": 13,
       "minecraft:swing_duration": {
         "value": 1.15
       },
@@ -61,7 +61,7 @@
           "max": 7.5
         },
         "hitbox_margin": 0.25,
-        "damage_multiplier": 0.64,
+        "damage_multiplier": 1.8,
         "damage_conditions": {
           "max_duration": 150,
           "min_relative_speed": 2.0
