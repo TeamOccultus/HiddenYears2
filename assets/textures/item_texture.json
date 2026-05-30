@@ -86,6 +86,12 @@
     "hiddenyears:bone_sledgehammer": {
       "textures": "textures/items/bone_sledgehammer"
     },
+    "hiddenyears:bone_spear": {
+      "textures": "textures/items/bone_spear"
+    },
+    "hiddenyears:bone_spear_32x": {
+      "textures": "textures/items/bone_spear_32x"
+    },
     "hiddenyears:bone_sword": {
       "textures": "textures/items/bone_sword"
     },
@@ -775,6 +781,12 @@
     "hiddenyears:originite_sledgehammer": {
       "textures": "textures/items/originite_sledgehammer"
     },
+    "hiddenyears:originite_spear": {
+      "textures": "textures/items/originite_spear"
+    },
+    "hiddenyears:originite_spear_32x": {
+      "textures": "textures/items/originite_spear_32x"
+    },
     "hiddenyears:originite_sword": {
       "textures": "textures/items/originite_sword"
     },
@@ -994,6 +1006,12 @@
     "hiddenyears:silver_sledgehammer": {
       "textures": "textures/items/silver_sledgehammer"
     },
+    "hiddenyears:silver_spear": {
+      "textures": "textures/items/silver_spear"
+    },
+    "hiddenyears:silver_spear_32x": {
+      "textures": "textures/items/silver_spear_32x"
+    },
     "hiddenyears:silver_sword": {
       "textures": "textures/items/silver_sword"
     },
@@ -1056,6 +1074,12 @@
     },
     "hiddenyears:sparkling_gold_sledgehammer": {
       "textures": "textures/items/sparkling_gold_sledgehammer"
+    },
+    "hiddenyears:sparkling_gold_spear": {
+      "textures": "textures/items/sparkling_gold_spear"
+    },
+    "hiddenyears:sparkling_gold_spear_32x": {
+      "textures": "textures/items/sparkling_gold_spear_32x"
     },
     "hiddenyears:sparkling_gold_sword": {
       "textures": "textures/items/sparkling_gold_sword"
@@ -1134,6 +1158,12 @@
     },
     "hiddenyears:steel_sparkling_sledgehammer": {
       "textures": "textures/items/steel_sparkling_sledgehammer"
+    },
+    "hiddenyears:steel_spear": {
+      "textures": "textures/items/steel_spear"
+    },
+    "hiddenyears:steel_spear_32x": {
+      "textures": "textures/items/steel_spear_32x"
     },
     "hiddenyears:steel_sword": {
       "textures": "textures/items/steel_sword"
