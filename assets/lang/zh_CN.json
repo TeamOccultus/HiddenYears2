@@ -1844,5 +1844,7 @@
   "item.hiddenyears:bone_spear": "骨矛",
   "item.hiddenyears:silver_spear": "秘银矛",
   "item.hiddenyears:sparkling_gold_spear": "闪金矛",
-  "item.hiddenyears:steel_spear": "寒钢矛"
+  "item.hiddenyears:steel_spear": "寒钢矛",
+  "hiddenyears:itemGroup.name.spears": "隐藏之年·矛",
+  "hiddenyears:itemGroup.name.embryos": "隐藏之年·岩胚"
 }

@@ -110,6 +110,21 @@
           },
           {
             "group_identifier": {
+              "icon": "hiddenyears:bone_spear",
+              "name": "hiddenyears:itemGroup.name.spears"
+            },
+            "items": [
+              "hiddenyears:bone_spear",
+              // "hiddenyears:refined_rock_spear",
+              "hiddenyears:silver_spear",
+              // "hiddenyears:crystal_spear",
+              "hiddenyears:originite_spear",
+              "hiddenyears:sparkling_gold_spear",
+              "hiddenyears:steel_spear"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:iron_enhanced_bow",
               "name": "hiddenyears:itemGroup.name.bows"
             },
@@ -330,6 +345,17 @@
               "hiddenyears:sparkling_copper_dust",
               "hiddenyears:sparkling_gold_dust",
               "hiddenyears:originite_dust"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:stone_embryo",
+              "name": "hiddenyears:itemGroup.name.embryos"
+            },
+            "items": [
+              "hiddenyears:stone_embryo",
+              "hiddenyears:netherrack_embryo",
+              "hiddenyears:end_stone_embryo"
             ]
           },
           {
