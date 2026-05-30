@@ -1839,5 +1839,10 @@
   "music.ruby": "雷光战曲",
   "music.pharaohs": "沙海古音",
   "ui.now_playing": "正在播放",
-  "ui.get_job": "获得职业！"
+  "ui.get_job": "获得职业！",
+  "item.hiddenyears:originite_spear": "原初合金矛",
+  "item.hiddenyears:bone_spear": "骨矛",
+  "item.hiddenyears:silver_spear": "秘银矛",
+  "item.hiddenyears:sparkling_gold_spear": "闪金矛",
+  "item.hiddenyears:steel_spear": "寒钢矛"
 }
