@@ -109,6 +109,12 @@
   },
   {
     "type": "transform",
+    "base": "hiddenyears:originite_spear",
+    "addition": "hiddenyears:frigid_steel_ingot",
+    "output": "hiddenyears:steel_spear"
+  },
+  {
+    "type": "transform",
     "base": "hiddenyears:originite_sword",
     "addition": "hiddenyears:frigid_steel_ingot",
     "output": "hiddenyears:frigid_steel_sword"
@@ -160,6 +166,12 @@
     "base": "hiddenyears:originite_sledgehammer",
     "addition": "hiddenyears:sparkling_gold_ingot",
     "output": "hiddenyears:sparkling_gold_sledgehammer"
+  },
+  {
+    "type": "transform",
+    "base": "hiddenyears:originite_spear",
+    "addition": "hiddenyears:sparkling_gold_ingot",
+    "output": "hiddenyears:sparkling_gold_spear"
   },
   {
     "type": "transform",

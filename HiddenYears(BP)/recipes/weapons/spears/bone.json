@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:bone_spear"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["  X", " # ", "#  "],
+    "key": {
+      "#": {
+        "item": "minecraft:stick"
+      },
+      "X": {
+        "item": "minecraft:bone"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stick"
+      },
+      {
+        "item": "minecraft:bone"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:bone_spear"
+    }
+  }
+}
