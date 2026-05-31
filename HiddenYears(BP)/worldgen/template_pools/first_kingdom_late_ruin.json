@@ -1,0 +1,58 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:first_kingdom_late_ruin"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/first_kingdom_late_ruin_1",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/first_kingdom_late_ruin_2",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/first_kingdom_late_ruin_3",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/first_kingdom_late_ruin_4",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/first_kingdom_late_ruin_5",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/first_kingdom_late_ruin_6",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

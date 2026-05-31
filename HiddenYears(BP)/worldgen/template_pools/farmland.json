@@ -1,0 +1,58 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:farmland"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/farmland_1",
+          "processors": "hiddenyears:farmland"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/farmland_2",
+          "processors": "hiddenyears:farmland"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/farmland_3",
+          "processors": "hiddenyears:farmland"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/farmland_4",
+          "processors": "hiddenyears:farmland"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/farmland_5",
+          "processors": "hiddenyears:farmland"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/farmland_6",
+          "processors": "hiddenyears:farmland"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}
