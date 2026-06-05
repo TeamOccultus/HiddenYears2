@@ -1846,5 +1846,8 @@
   "item.hiddenyears:sparkling_gold_spear": "闪金矛",
   "item.hiddenyears:steel_spear": "寒钢矛",
   "hiddenyears:itemGroup.name.spears": "隐藏之年·矛",
-  "hiddenyears:itemGroup.name.embryos": "隐藏之年·岩胚"
+  "hiddenyears:itemGroup.name.embryos": "隐藏之年·岩胚",
+  "hiddenyears:subtitle.use.coin": "硬币：转换为统一货币值",
+  "hiddenyears:subtitle.challenge_complete": "挑战完成",
+  "hiddenyears:subtitle.boss.ruby": "雷光征兆：显现"
 }

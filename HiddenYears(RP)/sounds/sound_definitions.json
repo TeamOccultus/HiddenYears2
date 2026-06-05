@@ -228,7 +228,8 @@
           "name": "sounds/music/boss/ruby",
           "stream": true
         }
-      ]
+      ],
+      "subtitle": "hiddenyears:subtitle.boss.ruby"
     },
     "music.boss.pharaohs_ghost": {
       "category": "music",
@@ -268,7 +269,8 @@
     },
     "use.coin": {
       "category": "player",
-      "sounds": [{ "name": "sounds/item/coin" }]
+      "sounds": [{ "name": "sounds/item/coin" }],
+      "subtitle": "hiddenyears:subtitle.use.coin"
     },
     "mob.mutas_wrath.death": {
       "category": "hostile",
@@ -294,7 +296,8 @@
         {
           "name": "sounds/ui/challenge_complete"
         }
-      ]
+      ],
+      "subtitle": "hiddenyears:subtitle.challenge_complete"
     },
     "music.biome.desert_song": {
       "category": "music",
