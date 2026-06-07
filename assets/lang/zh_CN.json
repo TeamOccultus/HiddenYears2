@@ -1873,5 +1873,7 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.death": "法老残影：死亡",
   "hiddenyears:subtitle.mob.pharaohs_ghost.hurt": "法老残影：受伤",
   "hiddenyears:subtitle.mob.pharaohs_ghost.ambient": "法老残影：咕哝",
-  "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "法老残影：庆祝"
+  "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "法老残影：庆祝",
+  "item.hiddenyears:crystal_spear": "魔晶矛",
+  "item.hiddenyears:refined_rock_spear": "精炼岩矛"
 }

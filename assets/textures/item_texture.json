@@ -227,6 +227,12 @@
     "hiddenyears:crystal_sledgehammer": {
       "textures": "textures/items/crystal_sledgehammer"
     },
+    "hiddenyears:crystal_spear": {
+      "textures": "textures/items/crystal_spear"
+    },
+    "hiddenyears:crystal_spear_32x": {
+      "textures": "textures/items/crystal_spear_32x"
+    },
     "hiddenyears:crystal_sword": {
       "textures": "textures/items/crystal_sword"
     },
@@ -894,6 +900,12 @@
     },
     "hiddenyears:refined_rock_sledgehammer": {
       "textures": "textures/items/refined_rock_sledgehammer"
+    },
+    "hiddenyears:refined_rock_spear": {
+      "textures": "textures/items/refined_rock_spear"
+    },
+    "hiddenyears:refined_rock_spear_32x": {
+      "textures": "textures/items/refined_rock_spear_32x"
     },
     "hiddenyears:refined_rock_sword": {
       "textures": "textures/items/refined_rock_sword"
