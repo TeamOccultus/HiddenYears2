@@ -73,51 +73,29 @@
       },
       "hiddenyears:ferocious_ruby_guardian": {
         "volume": 1.0,
-        "pitch": [0.8, 1.2],
+        "pitch": [0.55, 0.8],
         "events": {
-          "ambient": "mob.pillager.idle",
-          "hurt": "mob.pillager.hurt",
-          "death": "mob.pillager.death",
-          "ambient.in.raid": {
-            "sound": "mob.pillager.idle",
-            "volume": 3.0,
-            "pitch": [0.8, 1.2]
-          },
-          "celebrate": "mob.pillager.celebrate"
+          "ambient": "mob.ruby_guardian.idle",
+          "hurt": "mob.ruby_guardian.hurt",
+          "death": "mob.ruby_guardian.death"
         }
       },
       "hiddenyears:ruby_guardian": {
         "volume": 1.0,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.pillager.idle",
-          "hurt": "mob.pillager.hurt",
-          "death": "mob.pillager.death",
-          "ambient.in.raid": {
-            "sound": "mob.pillager.idle",
-            "volume": 3.0,
-            "pitch": [0.8, 1.2]
-          },
-          "celebrate": "mob.pillager.celebrate"
+          "ambient": "mob.ruby_guardian.idle",
+          "hurt": "mob.ruby_guardian.hurt",
+          "death": "mob.ruby_guardian.death"
         }
       },
       "hiddenyears:king_of_ruby": {
         "volume": 1.0,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.evocation_illager.ambient",
-          "death": "mob.evocation_illager.death",
-          "hurt": "mob.evocation_illager.hurt",
-          "cast.spell": "mob.evocation_illager.cast_spell",
-          "prepare.attack": "mob.evocation_illager.prepare_attack",
-          "prepare.summon": "mob.evocation_illager.prepare_summon",
-          "prepare.wololo": "mob.evocation_illager.prepare_wololo",
-          "ambient.in.raid": {
-            "sound": "mob.evocation_illager.ambient",
-            "volume": 3.0,
-            "pitch": [0.8, 1.2]
-          },
-          "celebrate": "mob.evocation_illager.celebrate"
+          "ambient": "mob.king_of_ruby.ambient",
+          "death": "mob.king_of_ruby.death",
+          "hurt": "mob.king_of_ruby.hurt"
         }
       },
       "hiddenyears:sprite": {
@@ -144,7 +122,6 @@
         "events": {
           "ambient": "mob.rabbit.idle",
           "death": "mob.rabbit.death",
-          "eat": "",
           "hurt": "mob.rabbit.hurt"
         },
         "pitch": [0.8, 1.2],
@@ -241,19 +218,15 @@
         "volume": 1.0,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.evocation_illager.ambient",
-          "death": "mob.evocation_illager.death",
-          "hurt": "mob.evocation_illager.hurt",
-          "cast.spell": "mob.evocation_illager.cast_spell",
-          "prepare.attack": "mob.evocation_illager.prepare_attack",
-          "prepare.summon": "mob.evocation_illager.prepare_summon",
-          "prepare.wololo": "mob.evocation_illager.prepare_wololo",
+          "ambient": "mob.pharaohs_ghost.ambient",
+          "death": "mob.pharaohs_ghost.death",
+          "hurt": "mob.pharaohs_ghost.hurt",
           "ambient.in.raid": {
-            "sound": "mob.evocation_illager.ambient",
+            "sound": "mob.pharaohs_ghost.ambient",
             "volume": 3.0,
             "pitch": [0.8, 1.2]
           },
-          "celebrate": "mob.evocation_illager.celebrate"
+          "celebrate": "mob.pharaohs_ghost.celebrate"
         }
       },
       "hiddenyears:sandcaust_silverfish": {
@@ -355,11 +328,11 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.zombie.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 0.45,
             "pitch": 1.0
           }
@@ -369,14 +342,14 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.skeleton.say",
+          "ambient": "mob.lunamutatio.say",
           "hurt": {
-            "sound": "mob.skeleton.hurt",
+            "sound": "mob.lunamutatio.hurt",
             "volume": 0.7
           },
-          "death": "mob.skeleton.death",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.skeleton.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 1.0,
             "pitch": 1.0
           }
@@ -386,11 +359,11 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.zombie.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 0.45,
             "pitch": 1.0
           }
@@ -400,11 +373,11 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.zombie.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 0.45,
             "pitch": 1.0
           }
@@ -414,11 +387,11 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.zombie.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 0.45,
             "pitch": 1.0
           }
@@ -428,11 +401,11 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.zombie.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 0.45,
             "pitch": 1.0
           }
@@ -442,11 +415,11 @@
         "volume": 1.0,
         "pitch": [1.5, 2.0],
         "events": {
-          "ambient": "mob.zombie.say",
-          "hurt": "mob.zombie.hurt",
-          "death": "mob.zombie.death",
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
           "step": {
-            "sound": "mob.zombie.step",
+            "sound": "mob.lunamutatio.step",
             "volume": 0.45,
             "pitch": 1.0
           }

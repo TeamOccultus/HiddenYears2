@@ -249,7 +249,7 @@
         }
       ]
     },
-     "music.boss.isis": {
+    "music.boss.isis": {
       "category": "music",
       "sounds": [
         {
@@ -276,19 +276,22 @@
       "category": "hostile",
       "max_distance": null,
       "min_distance": null,
-      "sounds": ["sounds/mob/mutas_wrath_death"]
+      "sounds": ["sounds/mob/mutas_wrath_death"],
+      "subtitle": "hiddenyears:subtitle.mob.mutas_wrath.death"
     },
     "mob.mutas_wrath.hurt": {
       "category": "hostile",
       "max_distance": null,
       "min_distance": null,
-      "sounds": ["sounds/mob/mutas_wrath_hit"]
+      "sounds": ["sounds/mob/mutas_wrath_hit"],
+      "subtitle": "hiddenyears:subtitle.mob.mutas_wrath.hurt"
     },
     "mob.mutas_wrath.say": {
       "category": "hostile",
       "max_distance": null,
       "min_distance": null,
-      "sounds": ["sounds/mob/mutas_wrath_say"]
+      "sounds": ["sounds/mob/mutas_wrath_say"],
+      "subtitle": "hiddenyears:subtitle.mob.mutas_wrath.say"
     },
     "ui.challenge_complete": {
       "category": "ui",
@@ -308,7 +311,258 @@
           "volume": 1.2
         }
       ]
-    } /*,
+    },
+    "mob.trader.death": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": ["sounds/mob/villager/death"],
+      "subtitle": "hiddenyears:subtitle.mob.trader.death"
+    },
+    "mob.trader.haggle": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/villager/haggle1",
+        "sounds/mob/villager/haggle2",
+        "sounds/mob/villager/haggle3"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.trader.haggle"
+    },
+    "mob.trader.hit": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/villager/hit1",
+        "sounds/mob/villager/hit2",
+        "sounds/mob/villager/hit3",
+        "sounds/mob/villager/hit4"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.trader.hit"
+    },
+    "mob.trader.idle": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/villager/idle1",
+        "sounds/mob/villager/idle2",
+        "sounds/mob/villager/idle3"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.trader.idle"
+    },
+    "mob.trader.no": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/villager/no1",
+        "sounds/mob/villager/no2",
+        "sounds/mob/villager/no3"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.trader.no"
+    },
+    "mob.trader.yes": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/villager/yes1",
+        "sounds/mob/villager/yes2",
+        "sounds/mob/villager/yes3"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.trader.yes"
+    },
+    "mob.ruby_guardian.death": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/pillager/death1"
+        },
+        "sounds/mob/pillager/death2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.ruby_guardian.death"
+    },
+    "mob.ruby_guardian.hurt": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/pillager/hurt1"
+        },
+        "sounds/mob/pillager/hurt2",
+        "sounds/mob/pillager/hurt3"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.ruby_guardian.hurt"
+    },
+    "mob.ruby_guardian.idle": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/pillager/idle1",
+        "sounds/mob/pillager/idle2",
+        "sounds/mob/pillager/idle3",
+        "sounds/mob/pillager/idle4"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.ruby_guardian.idle"
+    },
+    "mob.king_of_ruby.ambient": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/idle1",
+        "sounds/mob/evocation_illager/idle2",
+        "sounds/mob/evocation_illager/idle3",
+        "sounds/mob/evocation_illager/idle4"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.king_of_ruby.ambient"
+    },
+    "mob.king_of_ruby.celebrate": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/celebrate",
+        "sounds/mob/evocation_illager/idle1",
+        "sounds/mob/evocation_illager/idle2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.king_of_ruby.celebrate"
+    },
+    "mob.king_of_ruby.death": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/death1",
+        "sounds/mob/evocation_illager/death2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.king_of_ruby.death"
+    },
+    "mob.king_of_ruby.hurt": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/hurt1",
+        "sounds/mob/evocation_illager/hurt2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.king_of_ruby.hurt"
+    },
+    "mob.lunamutatio.death": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": ["sounds/mob/zombie/death"],
+      "subtitle": "hiddenyears:subtitle.mob.lunamutatio.death"
+    },
+    "mob.lunamutatio.hurt": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": ["sounds/mob/zombie/hurt1", "sounds/mob/zombie/hurt2"],
+      "subtitle": "hiddenyears:subtitle.mob.lunamutatio.hurt"
+    },
+    "mob.lunamutatio.say": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/zombie/say1",
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/zombie/say2"
+        },
+        "sounds/mob/zombie/say3"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.lunamutatio.say"
+    },
+    "mob.lunamutatio.step": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/zombie/step1",
+        "sounds/mob/zombie/step2",
+        "sounds/mob/zombie/step3",
+        "sounds/mob/zombie/step4",
+        "sounds/mob/zombie/step5"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.lunamutatio.step"
+    },
+    "mob.pharaohs_ghost.ambient": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/idle1",
+        "sounds/mob/evocation_illager/idle2",
+        "sounds/mob/evocation_illager/idle3",
+        "sounds/mob/evocation_illager/idle4"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.pharaohs_ghost.ambient"
+    },
+    "mob.pharaohs_ghost.celebrate": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/celebrate",
+        "sounds/mob/evocation_illager/idle1",
+        "sounds/mob/evocation_illager/idle2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate"
+    },
+    "mob.pharaohs_ghost.death": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/death1",
+        "sounds/mob/evocation_illager/death2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.pharaohs_ghost.death"
+    },
+    "mob.pharaohs_ghost.hurt": {
+      "__use_legacy_max_distance": "true",
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/mob/evocation_illager/hurt1",
+        "sounds/mob/evocation_illager/hurt2"
+      ],
+      "subtitle": "hiddenyears:subtitle.mob.pharaohs_ghost.hurt"
+    }
+     /*,
     "mob.lunamutatio.death": {
       "category": "hostile",
       "max_distance": null,
