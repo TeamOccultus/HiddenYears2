@@ -5,39 +5,39 @@
         "volume": 1,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.villager.idle",
-          "hurt": "mob.villager.hit",
-          "death": "mob.villager.death",
-          "death.to.zombie": "mob.villager.death",
-          "haggle": "mob.villager.haggle",
-          "haggle.yes": "mob.villager.yes",
-          "haggle.no": "mob.villager.no"
+          "ambient": "mob.trader.idle",
+          "hurt": "mob.trader.hit",
+          "death": "mob.trader.death",
+          "death.to.zombie": "mob.trader.death",
+          "haggle": "mob.trader.haggle",
+          "haggle.yes": "mob.trader.yes",
+          "haggle.no": "mob.trader.no"
         }
       },
       "hiddenyears:old_wizard": {
         "volume": 1,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.villager.idle",
-          "hurt": "mob.villager.hit",
-          "death": "mob.villager.death",
-          "death.to.zombie": "mob.villager.death",
-          "haggle": "mob.villager.haggle",
-          "haggle.yes": "mob.villager.yes",
-          "haggle.no": "mob.villager.no"
+          "ambient": "mob.trader.idle",
+          "hurt": "mob.trader.hit",
+          "death": "mob.trader.death",
+          "death.to.zombie": "mob.trader.death",
+          "haggle": "mob.trader.haggle",
+          "haggle.yes": "mob.trader.yes",
+          "haggle.no": "mob.trader.no"
         }
       },
       "hiddenyears:hidden_trader": {
         "volume": 1,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.villager.idle",
-          "hurt": "mob.villager.hit",
-          "death": "mob.villager.death",
-          "death.to.zombie": "mob.villager.death",
-          "haggle": "mob.villager.haggle",
-          "haggle.yes": "mob.villager.yes",
-          "haggle.no": "mob.villager.no"
+          "ambient": "mob.trader.idle",
+          "hurt": "mob.trader.hit",
+          "death": "mob.trader.death",
+          "death.to.zombie": "mob.trader.death",
+          "haggle": "mob.trader.haggle",
+          "haggle.yes": "mob.trader.yes",
+          "haggle.no": "mob.trader.no"
         }
       },
       "hiddenyears:ruby_zombie": {
@@ -69,6 +69,21 @@
             "volume": 1.0,
             "pitch": 1.0
           }
+        }
+      },
+      "hiddenyears:ferocious_ruby_guardian": {
+        "volume": 1.0,
+        "pitch": [0.8, 1.2],
+        "events": {
+          "ambient": "mob.pillager.idle",
+          "hurt": "mob.pillager.hurt",
+          "death": "mob.pillager.death",
+          "ambient.in.raid": {
+            "sound": "mob.pillager.idle",
+            "volume": 3.0,
+            "pitch": [0.8, 1.2]
+          },
+          "celebrate": "mob.pillager.celebrate"
         }
       },
       "hiddenyears:ruby_guardian": {
@@ -287,13 +302,13 @@
         "volume": 1,
         "pitch": [0.8, 1.2],
         "events": {
-          "ambient": "mob.villager.idle",
-          "hurt": "mob.villager.hit",
-          "death": "mob.villager.death",
-          "death.to.zombie": "mob.villager.death",
-          "haggle": "mob.villager.haggle",
-          "haggle.yes": "mob.villager.yes",
-          "haggle.no": "mob.villager.no"
+          "ambient": "mob.trader.idle",
+          "hurt": "mob.trader.hit",
+          "death": "mob.trader.death",
+          "death.to.zombie": "mob.trader.death",
+          "haggle": "mob.trader.haggle",
+          "haggle.yes": "mob.trader.yes",
+          "haggle.no": "mob.trader.no"
         }
       },
       "hiddenyears:mutas_wrath": {
