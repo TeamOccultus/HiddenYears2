@@ -58,7 +58,7 @@
       "minecraft:material_instances": {
         "*": {
           "texture": "hiddenyears:mutas_wrath_doll",
-          "render_method": "blend"
+          "render_method": "alpha_test"
         }
       },
       "minecraft:geometry": {
