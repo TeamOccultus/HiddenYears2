@@ -95,6 +95,7 @@
       }
     },
     "components": {
+      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "filters": { "test": "is_difficulty", "value": "peaceful" }
       },

@@ -19,6 +19,7 @@
         "priority": 2
       },
       "minecraft:shooter": { "def": "minecraft:arrow" },
+      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "filters": { "test": "is_difficulty", "value": "peaceful" }
       },

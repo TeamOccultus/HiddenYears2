@@ -56,9 +56,9 @@
       }
     },
     "components": {
+      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
-        "filters": { "test": "is_difficulty", "value": "peaceful" },
-        "despawn_from_distance": {}
+        "filters": { "test": "is_difficulty", "value": "peaceful" }
       },
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 5 + (query.equipment_count * Math.Random(1,3)) : 0"

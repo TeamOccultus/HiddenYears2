@@ -36,6 +36,7 @@
         "track_target": true
       },
       "minecraft:annotation.break_door": {},
+      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "filters": { "test": "is_difficulty", "value": "peaceful" }
       },

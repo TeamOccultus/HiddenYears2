@@ -57,9 +57,9 @@
       }
     },
     "components": {
+      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
-        "filters": { "test": "is_difficulty", "value": "peaceful" },
-        "despawn_from_distance": {}
+        "filters": { "test": "is_difficulty", "value": "peaceful" }
       },
       "minecraft:nameable": {},
       "minecraft:type_family": {

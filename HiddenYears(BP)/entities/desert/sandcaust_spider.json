@@ -187,6 +187,7 @@
       "minecraft:attack": {
         "damage": 2
       },
+      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "filters": { "test": "is_difficulty", "value": "peaceful" }
       },
