@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.sandcaust_silverfish.attack": {
+      "initial_state": "default",
+      "states": {
+        "attacking": {
+          "animations": ["attack"],
+          "transitions": [
+            {
+              "default": "variable.attack_time < 0.0"
+            }
+          ]
+        },
+        "default": {
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "attacking": "variable.attack_time >= 0.0"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.sandcaust_silverfish.move": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": ["idle"],
+          "transitions": [
+            {
+              "move": "query.modified_move_speed > 0"
+            }
+          ]
+        },
+        "move": {
+          "animations": ["move"],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

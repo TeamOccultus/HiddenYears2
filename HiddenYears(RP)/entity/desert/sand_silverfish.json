@@ -4,24 +4,28 @@
     "description": {
       "identifier": "hiddenyears:sandcaust_silverfish",
       "materials": {
-        "default": "silverfish",
-        "body_layer": "silverfish_layers"
+        "default": "entity_alphatest"
       },
       "textures": {
         "default": "textures/entity/sandcaust_silverfish"
       },
       "geometry": {
-        "default": "geometry.silverfish"
+        "default": "geometry.sandcaust_silverfish"
       },
       "animations": {
-        "move": "animation.silverfish.move"
+        "move": "animation.sandcaust_silverfish.walk",
+        "idle": "animation.sandcaust_silverfish.idle",
+        "attack": "animation.sandcaust_silverfish.attack"
       },
       "animation_controllers": [
         {
-          "move": "controller.animation.silverfish.move"
+          "move": "controller.animation.sandcaust_silverfish.move"
+        },
+        {
+          "attack": "controller.animation.sandcaust_silverfish.attack"
         }
       ],
-      "render_controllers": ["controller.render.silverfish"],
+      "render_controllers": ["controller.render.normal"],
       "spawn_egg": {
         "texture": "hiddenyears:egg_sand_silverfish"
       }
