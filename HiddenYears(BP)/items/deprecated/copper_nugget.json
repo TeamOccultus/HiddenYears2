@@ -4,14 +4,16 @@
     "description": {
       "identifier": "hiddenyears:copper_nugget",
       "menu_category": {
-        "category": "items"
+        "category": "none"
       }
     },
     "components": {
       "minecraft:icon": "hiddenyears:copper_nugget",
-
       "minecraft:tags": {
         "tags": ["hiddenyears:nugget", "minecraft:metal_nuggets"]
+      },
+      "hiddenyears:deprecated": {
+        "replace_to": "minecraft:copper_nugget"
       }
     }
   }

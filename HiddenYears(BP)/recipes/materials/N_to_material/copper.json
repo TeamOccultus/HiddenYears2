@@ -8,13 +8,13 @@
     "priority": 0,
     "ingredients": [
       {
-        "item": "hiddenyears:copper_nugget",
+        "item": "minecraft:copper_nugget",
         "count": 9
       }
     ],
     "unlock": [
       {
-        "item": "hiddenyears:copper_nugget"
+        "item": "minecraft:copper_nugget"
       }
     ],
     "result": {

@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:recipe_shapeless": {
     "description": {
-      "identifier": "hiddenyears:copper_nugget_from_dust"
+      "identifier": "minecraft:copper_nugget_from_dust"
     },
     "tags": ["crafting_table"],
     "priority": 0,
@@ -18,7 +18,7 @@
       }
     ],
     "result": {
-      "item": "hiddenyears:copper_nugget"
+      "item": "minecraft:copper_nugget"
     }
   }
 }

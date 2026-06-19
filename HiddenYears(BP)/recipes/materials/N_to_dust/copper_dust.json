@@ -7,12 +7,12 @@
     "tags": ["crafting_table"],
     "ingredients": [
       {
-        "item": "hiddenyears:copper_nugget"
+        "item": "minecraft:copper_nugget"
       }
     ],
     "unlock": [
       {
-        "item": "hiddenyears:copper_nugget"
+        "item": "minecraft:copper_nugget"
       }
     ],
     "result": {
