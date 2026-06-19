@@ -8,6 +8,26 @@
       "is_summonable": true,
       "is_experimental": false
     },
+    "component_groups": {
+      "hiddenyears:classic": {
+        "minecraft:variant": {
+          "value": 0
+        },
+        "minecraft:attack": { "damage": 2 },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/sandcaust_silverfish.json"
+        }
+      },
+      "hiddenyears:fancy": {
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:attack": { "damage": 4 },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/fancy_sandcaust_silverfish.json"
+        }
+      }
+    },
     "components": {
       "minecraft:angry": {
         "duration": -1,
@@ -36,7 +56,6 @@
       },
       "minecraft:breathable": { "total_supply": 15, "suffocate_time": 0 },
       "minecraft:nameable": {},
-      "minecraft:loot": { "table": "loot_tables/entities/silverfish.json" },
       "minecraft:health": { "value": { "range_min": 2, "range_max": 5 } },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -57,7 +76,6 @@
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
-      "minecraft:attack": { "damage": 1 },
       "minecraft:collision_box": { "width": 0.4, "height": 0.3 },
       "minecraft:despawn": { "despawn_from_distance": {} },
       "minecraft:behavior.float": { "priority": 1 },
@@ -86,8 +104,7 @@
         ]
       },
       "minecraft:behavior.hurt_by_target": {
-        "priority": 1,
-        "alert_same_type": true
+        "priority": 1
       },
       "minecraft:physics": {},
       "minecraft:pushable": {
@@ -96,6 +113,24 @@
       },
       "minecraft:conditional_bandwidth_optimization": {},
       "minecraft:block_climber": {}
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "add": {
+              "component_groups": ["hiddenyears:classic"]
+            },
+            "weight": 55
+          },
+          {
+            "add": {
+              "component_groups": ["hiddenyears:fancy"]
+            },
+            "weight": 45
+          }
+        ]
+      }
     }
   }
 }

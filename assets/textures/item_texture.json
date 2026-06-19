@@ -152,9 +152,6 @@
     "hiddenyears:copper_hammer": {
       "textures": "textures/items/copper_hammer"
     },
-    "hiddenyears:copper_nugget": {
-      "textures": "textures/items/copper_nugget"
-    },
     "hiddenyears:copper_saw": {
       "textures": "textures/items/copper_saw"
     },

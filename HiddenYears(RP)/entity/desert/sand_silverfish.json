@@ -7,7 +7,8 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/sandcaust_silverfish"
+        "classic": "textures/entity/sandcaust_silverfish",
+        "fancy": "textures/entity/fancy_sandcaust_silverfish"
       },
       "geometry": {
         "default": "geometry.sandcaust_silverfish"
@@ -25,7 +26,7 @@
           "attack": "controller.animation.sandcaust_silverfish.attack"
         }
       ],
-      "render_controllers": ["controller.render.normal"],
+      "render_controllers": ["controller.render.sandcaust_silverfish"],
       "spawn_egg": {
         "texture": "hiddenyears:egg_sand_silverfish"
       }
