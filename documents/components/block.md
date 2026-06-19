@@ -8,11 +8,25 @@ category: Documents
 
 | 组件名称                 | 描述                   |
 | ------------------------ | ---------------------- |
+| hiddenyears:deprecated | 将方块标记为已弃用 |
 | hiddenyears:interactable | 指定方块为可交互方块   |
 | hiddenyears:ore_type     | 指定矿石的类型         |
 | hiddenyears:vault        | 将方块设置为宝库       |
 | hiddenyears:boss_spawner | 将方块设置为 BOSS 祭坛 |
 | hiddenyears:trial_stone  | 将方块设置为试炼之石   |
+
+## hiddenyears:deprecated
+
+> [!TIP]
+> 可用版本：3.0.10+
+
+将方块标记为已弃用
+
+| 参数        | 类型     | 可选？ | 描述             |
+| ----------- | -------- | ------ | ---------------- |
+| replace_to  | `string` | 可选   | 将会替代弃用方块的新物品   |
+| replace_amount       | `number` | 可选   | 新物品的数目，如果不填则与原来方块数目一致  |
+
 
 ## hiddenyears:interactable
 

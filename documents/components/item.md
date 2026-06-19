@@ -8,6 +8,7 @@ category: Documents
 
 | 组件名称 | 描述 |
 | --- | --- |
+| hiddenyears:deprecated | 将物品标记为已弃用 |
 | hiddenyears:music_disc | 将物品设置为音乐唱片 |
 | hiddenyears:now_playing | 使物品被放入唱片机后显示弹窗提示 |
 | hiddenyears:article | 将物品设置为文章 |
@@ -35,6 +36,18 @@ category: Documents
 | hiddenyears:profile | 使物品获得「时匿怀表」的功能 |
 | hiddenyears:job_skill | 标记物品为职业技能 |
 | hiddenyears:job_recovery | 使物品可以重置玩家职业 |
+
+## hiddenyears:deprecated
+
+> [!TIP]
+> 可用版本：3.0.10+
+
+将物品标记为已弃用
+
+| 参数        | 类型     | 可选？ | 描述             |
+| ----------- | -------- | ------ | ---------------- |
+| replace_to  | `string` | 可选   | 将会替代弃用物品的新物品   |
+| replace_amount       | `number` | 可选   | 新物品的数目，如果不填则与原来物品数目一致  |
 
 ## hiddenyears:music_disc
 

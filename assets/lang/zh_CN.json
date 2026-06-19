@@ -1875,5 +1875,6 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.ambient": "法老残影：咕哝",
   "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "法老残影：庆祝",
   "item.hiddenyears:crystal_spear": "魔晶矛",
-  "item.hiddenyears:refined_rock_spear": "精炼岩矛"
+  "item.hiddenyears:refined_rock_spear": "精炼岩矛",
+  "hiddenyears:message.deprecated_gameplay": "隐藏之年²发现了 %s 个弃用的游戏元素，已将其转换为最新的游戏元素"
 }
