@@ -7,11 +7,13 @@
     "tags": ["alchemy_table"],
     "ingredients": [
       { "item": "minecraft:ender_pearl", "count": 1 },
-      { "item": "hiddenyears:magic_dust", "count": 1 }
+      { "item": "hiddenyears:magic_dust", "count": 7 },
+      { "item": "minecraft:diamond", "count": 1 }
     ],
     "unlock": [
       { "item": "minecraft:ender_pearl" },
-      { "item": "hiddenyears:magic_dust" }
+      { "item": "hiddenyears:magic_dust" },
+      { "item": "minecraft:diamond" }
     ],
     "result": {
       "item": "hiddenyears:return_gem"
