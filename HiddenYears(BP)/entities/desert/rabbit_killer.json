@@ -1,9 +1,10 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.90",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:rabbit_killer",
       "spawn_category": "creature",
+      "runtime_identifier": "minecraft:zombie",
       "is_spawnable": true,
       "is_summonable": true
     },
@@ -46,7 +47,6 @@
       }
     },
     "components": {
-      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },
@@ -95,9 +95,13 @@
       "minecraft:jump.dynamic": {},
       "minecraft:can_climb": {},
       "minecraft:leashable": {
-        "soft_distance": 4.0,
-        "hard_distance": 6.0,
-        "max_distance": 10.0
+        "presets": [
+          {
+            "soft_distance": 4.0,
+            "hard_distance": 6.0,
+            "max_distance": 10.0
+          }
+        ]
       },
       "minecraft:balloonable": {
         "mass": 0.4

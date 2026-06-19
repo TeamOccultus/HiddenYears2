@@ -1,8 +1,9 @@
 {
-  "format_version": "1.17.20",
+  "format_version": "1.21.90",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:mummy",
+      "runtime_identifier": "minecraft:zombie",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -36,7 +37,6 @@
         "track_target": true
       },
       "minecraft:annotation.break_door": {},
-      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },

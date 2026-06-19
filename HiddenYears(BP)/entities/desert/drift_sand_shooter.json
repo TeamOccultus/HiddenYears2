@@ -1,8 +1,9 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.21.90",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:drift_sand_shooter",
+      "runtime_identifier": "minecraft:zombie",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -19,7 +20,6 @@
         "priority": 2
       },
       "minecraft:shooter": { "def": "minecraft:arrow" },
-      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },

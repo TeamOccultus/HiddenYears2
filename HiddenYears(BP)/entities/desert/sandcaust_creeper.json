@@ -1,9 +1,10 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.21.90",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:sandcaust_creeper",
       "spawn_category": "monster",
+      "runtime_identifier": "minecraft:zombie",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -42,7 +43,6 @@
       }
     },
     "components": {
-      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },

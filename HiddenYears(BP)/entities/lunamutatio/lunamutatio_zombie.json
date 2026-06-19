@@ -3,6 +3,7 @@
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:lunamutatio_zombie",
+      "runtime_identifier": "minecraft:zombie",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -89,7 +90,6 @@
       }
     },
     "components": {
-      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },

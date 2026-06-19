@@ -1,9 +1,10 @@
 {
-  "format_version": "1.21.0",
+  "format_version": "1.21.90",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:sandcaust_spider",
       "spawn_category": "monster",
+      "runtime_identifier": "minecraft:zombie",
       "is_spawnable": true,
       "is_summonable": true
     },
@@ -187,7 +188,6 @@
       "minecraft:attack": {
         "damage": 2
       },
-      "minecraft:remove_in_peaceful": {},
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },
