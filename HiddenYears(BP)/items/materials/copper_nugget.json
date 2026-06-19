@@ -9,9 +9,7 @@
     },
     "components": {
       "minecraft:icon": "hiddenyears:copper_nugget",
-      "minecraft:fuel": {
-        "duration": 15
-      },
+
       "minecraft:tags": {
         "tags": ["hiddenyears:nugget", "minecraft:metal_nuggets"]
       }
