@@ -1,7 +1,6 @@
-import { StructurePlaceOptions, system, world } from "@minecraft/server";
+import { system } from "@minecraft/server";
 import { StructureEvents } from "../../events/StructureEvents";
 import { StructurePlacerComponentParams } from "./Params";
-import { consumeEquipmentAmount } from "@occultus/api";
 import { WarningForm } from "../../../ui/WarningForm";
 
 export class StructurePlacerComponent {
@@ -12,9 +11,8 @@ export class StructurePlacerComponent {
           const p = arg1.params as StructurePlacerComponentParams;
           if (p.show_warning) {
             WarningForm.display(arg0.source).then((response) => {
-              if (response.selection === undefined || response.selection === 1)
-                return;
-              if (response.selection === 0) StructureEvents.onUse(arg0, arg1);
+              if (response.selection === undefined || response.selection === 2) return console.log("Cancelled");
+              if (response.selection === 1) StructureEvents.onUse(arg0, arg1);
             });
             return;
           }

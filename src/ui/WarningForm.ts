@@ -1,17 +1,16 @@
 import { Player } from "@minecraft/server";
-import { MessageFormData } from "@minecraft/server-ui";
+import { MessageBox, MessageFormData } from "@minecraft/server-ui";
 import { Format } from "@occultus/api";
 
 export class WarningForm {
   static display(player: Player) {
-    const form = new MessageFormData()
-      .title({
-        translate: "ui.warn"
-      })
+    const form = new MessageBox(player, {
+      translate: "ui.warn"
+    })
       .body({
         rawtext: [
           { translate: "ui.warn.desc_1" },
-          { text: Format.newLine },
+          { text: "\n\n" },
           { translate: "ui.warn.desc_2" }
         ]
       })
@@ -21,7 +20,6 @@ export class WarningForm {
       .button2({
         translate: "gui.cancel"
       });
-
-    return form.show(player)
+    return form.show();
   }
 }
