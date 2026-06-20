@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:copper_nugget",
+      "minecraft:icon": "copper_nugget",
       "minecraft:tags": {
         "tags": ["hiddenyears:nugget", "minecraft:metal_nuggets"]
       },

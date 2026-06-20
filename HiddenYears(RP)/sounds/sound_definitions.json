@@ -240,7 +240,7 @@
         }
       ]
     },
-    "music.boss.common": {
+    /*"music.boss.common": {
       "category": "music",
       "sounds": [
         {
@@ -248,7 +248,7 @@
           "stream": true
         }
       ]
-    },
+    },*/
     "music.boss.isis": {
       "category": "music",
       "sounds": [
@@ -302,7 +302,7 @@
       ],
       "subtitle": "hiddenyears:subtitle.challenge_complete"
     },
-    "music.biome.desert_song": {
+    /*"music.biome.desert_song": {
       "category": "music",
       "sounds": [
         {
@@ -311,7 +311,7 @@
           "volume": 1.2
         }
       ]
-    },
+    },*/
     "mob.trader.death": {
       "__use_legacy_max_distance": "true",
       "category": "neutral",
