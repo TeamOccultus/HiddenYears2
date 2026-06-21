@@ -39,6 +39,7 @@ import { JobRecoveryComponent } from "../components/JobRecoveryComponent/Compone
 import { NowPlayingComponent } from "../components/NowPlayingComponent/Component";
 import { StructureLocaterComponent } from "../components/StructureLocaterComponent/Component";
 import { DeprecatedGameplayComponent } from "../components/DeprecatedGameplayComponent/Component";
+import { LocatorBarComponent } from "../components/LocatorBarComponent/Component";
 
 /**
  * 注册自定义组件
@@ -72,6 +73,7 @@ export function registryComponents() {
   new NowPlayingComponent("hiddenyears:now_playing");
   new StructureLocaterComponent("hiddenyears:structure_locater");
   new DeprecatedGameplayComponent("hiddenyears:deprecated");
+  new LocatorBarComponent("hiddenyears:locator_bar")
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
