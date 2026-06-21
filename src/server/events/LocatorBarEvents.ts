@@ -5,15 +5,13 @@ import {
   WaypointTexture,
   Player,
   DimensionLocation,
-  world
+  world,
+  EntityWaypoint
 } from "@minecraft/server";
 import { LocatorBarParams } from "../components/LocatorBarComponent/Params";
-import {
-  getEquipmentItem,
-  hexToRgb,
-  setEquipmentItem,
-  Vector3Utils
-} from "@occultus/api";
+import { getEquipmentItem, hexToRgb, setEquipmentItem } from "@occultus/api";
+import { default as bossData } from "../../../config/boss_locator_bar.json";
+const bosses: string[] = [...bossData.map((boss) => boss.identifier)];
 
 export class LocatorBarEvents {
   /**
@@ -108,5 +106,41 @@ export class LocatorBarEvents {
     item.setDynamicProperty("hiddenyears:locator_bar", true);
     setEquipmentItem(player, item);
     return;
+  }
+  static subscribeBoss() {
+    world.afterEvents.entitySpawn.subscribe((event) => {
+      if (!bosses.includes(event.entity.typeId)) return;
+      const data = bossData.find(
+        (boss) => boss.identifier === event.entity.typeId
+      );
+      event.entity.dimension
+        .getPlayers({
+          location: event.entity.location,
+          maxDistance: data.max_distance ?? 10,
+          minDistance: 0
+        })
+        .forEach((player) => {
+          player.locatorBar.addWaypoint(
+            new EntityWaypoint(
+              event.entity,
+              {
+                textureBoundsList: [
+                  {
+                    texture: {
+                      iconHeight: 1,
+                      iconWidth: 1,
+                      path: data.path
+                    },
+                    lowerBound: 0
+                  }
+                ]
+              },
+              {
+                showDead: false
+              }
+            )
+          );
+        });
+    });
   }
 }

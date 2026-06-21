@@ -29,6 +29,7 @@ import { LunamutatioEntityEvent } from "./events/LunamutatioEntityEvent";
 import { SpriteEvents } from "./events/SpriteEvents";
 import { StoreForm } from "../ui/StoreForm";
 import { world } from "@minecraft/server";
+import { LocatorBarEvents } from "./events/LocatorBarEvents";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -62,6 +63,7 @@ export function initialize() {
   DesertEntityEvent.subscribe();
   LunamutatioEntityEvent.subscribe();
   SpriteEvents.subscribe();
+  LocatorBarEvents.subscribeBoss();
   world.afterEvents.entitySpawn.subscribe((event) => {
     if (event.entity.typeId === "hiddenyears:king_of_ruby") {
       event.entity.playAnimation("animation.king_of_ruby.summon")

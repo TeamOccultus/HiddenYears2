@@ -1,0 +1,17 @@
+[
+  {
+    "identifier": "hiddenyears:king_of_ruby",
+    "path": "textures/ui/waypoint/king_of_ruby_waypoint",
+    "max_distance": 64
+  },
+  {
+    "identifier": "hiddenyears:mutas_wrath",
+    "path": "textures/ui/waypoint/mutas_wrath_waypoint",
+    "max_distance": 64
+  },
+  {
+    "identifier": "hiddenyears:pharaohs_ghost",
+    "path": "textures/ui/waypoint/pharaohs_ghost_waypoint",
+    "max_distance": 64
+  }
+]
