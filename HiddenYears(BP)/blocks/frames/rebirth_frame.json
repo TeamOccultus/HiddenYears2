@@ -74,6 +74,14 @@
           }
         ]
       },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 10.0
       },

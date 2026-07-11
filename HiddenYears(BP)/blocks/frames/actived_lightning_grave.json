@@ -62,6 +62,14 @@
           }
         ]
       },
+      "minecraft:liquid_detection": {
+        "detection_rules": [
+          {
+            "liquid_type": "water",
+            "on_liquid_touches": "no_reaction"
+          }
+        ]
+      },
       "minecraft:loot": "loot_tables/blocks/frames/actived_lightning_grave.json",
       "minecraft:geometry": {
         "identifier": "geometry.grave"
