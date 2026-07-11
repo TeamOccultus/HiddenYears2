@@ -1819,5 +1819,19 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.ambient": "",
   "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "",
   "item.hiddenyears:crystal_spear": "",
-  "item.hiddenyears:refined_rock_spear": ""
+  "item.hiddenyears:refined_rock_spear": "",
+  "hiddenyears:message.deprecated_gameplay": "",
+  "item.hiddenyears:blue_hyacinth": "",
+  "item.hiddenyears:purple_hyacinth": "",
+  "item.hiddenyears:white_hyacinth": "",
+  "item.hiddenyears:blue_hydrangea": "",
+  "item.hiddenyears:pink_hydrangea": "",
+  "item.hiddenyears:white_hydrangea": "",
+  "item.hiddenyears:endless_summer": "",
+  "item.hiddenyears:camellia": "",
+  "item.hiddenyears:daylight_rose": "",
+  "item.hiddenyears:flower_of_lunamutatio": "",
+  "item.hiddenyears:iris": "",
+  "item.hiddenyears:snow_lily_of_the_valley": "",
+  "item.hiddenyears:thistle": ""
 }

@@ -1818,5 +1818,19 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.ambient": "法老殘魂：咕噥",
   "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "法老殘魂：歡慶",
   "item.hiddenyears:crystal_spear": "魔晶矛",
-  "item.hiddenyears:refined_rock_spear": "精煉岩矛"
+  "item.hiddenyears:refined_rock_spear": "精煉岩矛",
+  "hiddenyears:message.deprecated_gameplay": "隱藏之年²發現了 %s 個已棄用的遊戲元素，已將其轉換為最新的遊戲元素",
+  "item.hiddenyears:blue_hyacinth": "藍色風信子",
+  "item.hiddenyears:purple_hyacinth": "紫色風信子",
+  "item.hiddenyears:white_hyacinth": "白色風信子",
+  "item.hiddenyears:blue_hydrangea": "藍色紫陽花",
+  "item.hiddenyears:pink_hydrangea": "粉色紫陽花",
+  "item.hiddenyears:white_hydrangea": "白色紫陽花",
+  "item.hiddenyears:endless_summer": "無盡夏",
+  "item.hiddenyears:camellia": "山茶花",
+  "item.hiddenyears:daylight_rose": "日光玫瑰",
+  "item.hiddenyears:flower_of_lunamutatio": "月蝕晶花",
+  "item.hiddenyears:iris": "鳶尾花",
+  "item.hiddenyears:snow_lily_of_the_valley": "雪地鈴蘭",
+  "item.hiddenyears:thistle": "野薊草"
 }

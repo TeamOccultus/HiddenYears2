@@ -1,0 +1,40 @@
+// 无尽夏
+{
+  "format_version": "1.21.130",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:endless_summer",
+      "menu_category": {
+        "category": "none"
+      }
+    },
+    "components": {
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.1
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 0.0
+      },
+      "minecraft:placement_filter": {
+        "conditions": [
+          {
+            "allowed_faces": ["up"],
+            "block_filter": ["grass_block", "dirt"]
+          }
+        ]
+      },
+      "minecraft:collision_box": false,
+      "minecraft:geometry": "minecraft:geometry.cross",
+      "minecraft:material_instances": {
+        "*": {
+          "texture": "hiddenyears:darkish_red_flower",
+          "render_method": "blend",
+          "ambient_occlusion": false,
+          "face_dimming": false
+        }
+      },
+      "minecraft:map_color": "#82111f",
+      "tag:flower": {}
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:blue_hyacinth",
+      "menu_category": {
+        "category": "nature",
+        "group": "minecraft:itemGroup.name.flower"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:darkish_red_flower",
+      "minecraft:block_placer": {
+        "block": "hiddenyears:blue_hyacinth",
+        "use_on": [
+          {
+            "name": "minecraft:dirt"
+          },
+          {
+            "name": "minecraft:grass_block"
+          }
+        ],
+        "replace_block_item": true
+      }
+    }
+  }
+}

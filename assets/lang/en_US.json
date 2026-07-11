@@ -1815,5 +1815,19 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.ambient": "Pharaoh's Wraith: Muttering",
   "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "Pharaoh's Wraith: Celebrating",
   "item.hiddenyears:crystal_spear": "Crystal Spear",
-  "item.hiddenyears:refined_rock_spear": "Refined Rock Spear"
+  "item.hiddenyears:refined_rock_spear": "Refined Rock Spear",
+  "hiddenyears:message.deprecated_gameplay": "Hidden Years² has found %s deprecated game elements and has converted them to the latest game elements",
+  "item.hiddenyears:blue_hyacinth": "Blue Hyacinth",
+  "item.hiddenyears:purple_hyacinth": "Purple Hyacinth",
+  "item.hiddenyears:white_hyacinth": "White Hyacinth",
+  "item.hiddenyears:blue_hydrangea": "Blue Hydrangea",
+  "item.hiddenyears:pink_hydrangea": "Pink Hydrangea",
+  "item.hiddenyears:white_hydrangea": "White Hydrangea",
+  "item.hiddenyears:endless_summer": "Endless Summer",
+  "item.hiddenyears:camellia": "Camellia",
+  "item.hiddenyears:daylight_rose": "Daylight Rose",
+  "item.hiddenyears:flower_of_lunamutatio": "Flower of Lunamutatio",
+  "item.hiddenyears:iris": "Iris",
+  "item.hiddenyears:snow_lily_of_the_valley": "Snow Lily of the Valley",
+  "item.hiddenyears:thistle": "Thistle"
 }

@@ -1819,5 +1819,19 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.ambient": "",
   "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "",
   "item.hiddenyears:crystal_spear": "",
-  "item.hiddenyears:refined_rock_spear": ""
+  "item.hiddenyears:refined_rock_spear": "",
+  "hiddenyears:message.deprecated_gameplay": "隠し年²は %s 個の非推奨のゲーム要素を発見し、最新のゲーム要素に変換しました",
+  "item.hiddenyears:blue_hyacinth": "青風信子",
+  "item.hiddenyears:purple_hyacinth": "紫風信子",
+  "item.hiddenyears:white_hyacinth": "白風信子",
+  "item.hiddenyears:blue_hydrangea": "青紫陽花",
+  "item.hiddenyears:pink_hydrangea": "桃紫陽花",
+  "item.hiddenyears:white_hydrangea": "白紫陽花",
+  "item.hiddenyears:endless_summer": "常夏",
+  "item.hiddenyears:camellia": "山茶花",
+  "item.hiddenyears:daylight_rose": "日光薔薇",
+  "item.hiddenyears:flower_of_lunamutatio": "月蝕晶花",
+  "item.hiddenyears:iris": "菖蒲",
+  "item.hiddenyears:snow_lily_of_the_valley": "雪鈴蘭",
+  "item.hiddenyears:thistle": "薊"
 }
