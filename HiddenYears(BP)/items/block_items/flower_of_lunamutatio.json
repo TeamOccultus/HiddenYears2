@@ -21,6 +21,9 @@
           }
         ],
         "replace_block_item": true
+      },
+      "minecraft:compostable": {
+        "composting_chance": 85
       }
     }
   }
