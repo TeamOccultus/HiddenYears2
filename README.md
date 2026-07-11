@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://codeberg.org/TeamOccultus/HiddenYears2/releases">
-	<img src="https://img.shields.io/badge/Available_for-1.21.130+-blue" alt="Supported Versions">
+	<img src="https://img.shields.io/badge/Available_for-26.30+-blue" alt="Supported Versions">
 </a>
 <a href="https://codeberg.org/TeamOccultus/HiddenYears2/src/branch/bedrock-neo/LICENSE">
 	<img src="https://img.shields.io/badge/License-HY--OSS-orange" alt="License">
@@ -19,12 +19,20 @@
 <img src="https://translate.codeberg.org/widget/hidden-years/generation-3/svg-badge.svg" alt="翻译状态" />
 </a>
 </p>
+
 ---
+
 欢迎使用隐藏之年²——一款仍在不断完善中的 Minecraft 冒险模组！
 
 本项目将从内至外地改变世界，初入你可能并未发现与原版游戏的不同，但随着探索的深入，潜藏在世界深处的秘密将逐渐被揭开……
 
 ## 内容介绍
+
+> 你自孤单的长眠中醒来，无数风雨使坚石也作尘沙。
+>
+> 穿越旖旎的风景，探索未知的世间。
+> 
+> 此时此刻，广阔的天地任你探索；过去未来，历史将由你书写。 ​
 
 [![pZONV9U.png](https://s41.ax1x.com/2026/02/17/pZONV9U.png)](https://imgchr.com/i/pZONV9U)
 
@@ -48,9 +56,9 @@
 
 
 ## 下载
-> 使用、修改或分发本项目，即视为已阅读并同意遵守 HY-OSS 许可证全部条款。
+> ⚠️使用、修改或分发本项目，即视为已阅读并同意遵守 HY-OSS 许可证全部条款。
 
-*本项目文本量较大，我们推荐使用[基岩版翻译修正](https://github.com/ff98sha/mclangcn)和[原版中文字符全角修复](https://mcpedl.com/vanilla-chinese-characters-and-full-width-punctuation-characters-fix/)附加包来提升游戏体验*
+*💡本项目文本量较大，我们推荐使用[基岩版翻译修正](https://github.com/ff98sha/mclangcn)和[原版中文字符全角修复](https://mcpedl.com/vanilla-chinese-characters-and-full-width-punctuation-characters-fix/)附加包来提升游戏体验*
 
 ### 正式版
 
@@ -133,6 +141,8 @@
 
 - 苦力怕论坛：https://klpbbs.com/thread-85797-1-1.html
 - Minebbs：https://www.minebbs.com/resources/6182/
+- CurseForge：https://www.curseforge.com/minecraft-bedrock/addons/hidden-years2
+- MCPEDLhttps://mcpedl.com/hidden-years2/
 - 苦力怕论坛反馈：https://klpbbs.com/thread-109005-1-1.html
 - Minefourm：https://www.mineforum.cn/resources/10/
 - MC百科：https://www.mcmod.cn/class/12453.html
