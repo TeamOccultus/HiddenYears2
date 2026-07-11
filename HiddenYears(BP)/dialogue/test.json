@@ -1,0 +1,25 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "hiddenyears:example",
+        "npc_name": "Steve",
+        "text": "Hello",
+        "buttons": [
+          {
+            "name": "Button One",
+            "commands": ["/say Button One Pressed!"]
+          },
+          {
+            "name": "Button Two",
+            "commands": [
+              "/say Button Two Pressed!",
+              "/say Secondary Command for Button Two"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
