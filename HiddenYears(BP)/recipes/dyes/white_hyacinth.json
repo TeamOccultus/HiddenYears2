@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:white_hyacinth_to_dye"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:white_hyacinth"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:white_hyacinth"
+      }
+    ],
+    "result": {
+      "item": "minecraft:white_dye"
+    }
+  }
+}

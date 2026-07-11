@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:pink_hydrangea_to_dye"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:pink_hydrangea"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:pink_hydrangea"
+      }
+    ],
+    "result": {
+      "item": "minecraft:pink_dye"
+    }
+  }
+}

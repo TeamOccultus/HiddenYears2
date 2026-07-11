@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:camellia_to_dye"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:camellia"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:camellia"
+      }
+    ],
+    "result": {
+      "item": "minecraft:white_dye"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:daylight_rose_to_dye"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:daylight_rose"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:daylight_rose"
+      }
+    ],
+    "result": {
+      "item": "minecraft:orange_dye"
+    }
+  }
+}

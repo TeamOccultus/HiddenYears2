@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:iris_to_dye"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:iris"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:iris"
+      }
+    ],
+    "result": {
+      "item": "minecraft:purple_dye"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shapeless": {
+    "description": {
+      "identifier": "hiddenyears:white_hydrangea_to_dye"
+    },
+    "tags": ["crafting_table"],
+    "ingredients": [
+      {
+        "item": "hiddenyears:white_hydrangea"
+      }
+    ],
+    "unlock": [
+      {
+        "item": "hiddenyears:white_hydrangea"
+      }
+    ],
+    "result": {
+      "item": "minecraft:white_dye"
+    }
+  }
+}
