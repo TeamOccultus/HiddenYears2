@@ -38,5 +38,44 @@
   },
   "hiddenyears:ancient_war_debris": {
     "sound": "ancient_debris"
+  },
+   "hiddenyears:blue_hyacinth": {
+    "sound": "grass"
+  },
+  "hiddenyears:purple_hyacinth": {
+    "sound": "grass"
+  },
+  "hiddenyears:white_hyacinth": {
+    "sound": "grass"
+  },
+  "hiddenyears:blue_hydrangea": {
+    "sound": "grass"
+  },
+  "hiddenyears:pink_hydrangea": {
+    "sound": "grass"
+  },
+  "hiddenyears:white_hydrangea": {
+    "sound": "grass"
+  },
+  "hiddenyears:endless_summer": {
+    "sound": "grass"
+  },
+  "hiddenyears:camellia": {
+    "sound": "grass"
+  },
+  "hiddenyears:daylight_rose": {
+    "sound": "grass"
+  },
+  "hiddenyears:flower_of_lunamutatio": {
+    "sound": "grass"
+  },
+  "hiddenyears:iris": {
+    "sound": "grass"
+  },
+  "hiddenyears:snow_lily_of_the_valley": {
+    "sound": "grass"
+  },
+  "hiddenyears:thistle": {
+    "sound": "grass"
   }
 }
