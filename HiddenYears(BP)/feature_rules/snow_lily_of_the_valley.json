@@ -1,0 +1,44 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "hiddenyears:snow_lily_of_the_valley",
+      "places_feature": "hiddenyears:plants/snow_lily_of_the_valley_scatter"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "meadow"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "forest"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 8,
+      "scatter_chance": "variable.is_legacy ? 0.0 : 100.0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [0, 128]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      }
+    }
+  }
+}

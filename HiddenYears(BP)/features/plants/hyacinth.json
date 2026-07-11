@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "hiddenyears:plants/hyacinth"
+    },
+    "features": [
+      ["hiddenyears:hyacinth/blue", 1],
+      ["hiddenyears:hyacinth/purple", 1],
+      ["hiddenyears:hyacinth/white", 1]
+    ]
+  }
+}

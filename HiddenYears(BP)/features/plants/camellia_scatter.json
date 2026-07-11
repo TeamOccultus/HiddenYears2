@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "hiddenyears:plants/camellia_scatter"
+    },
+    "places_feature": "hiddenyears:plants/camellia",
+    "project_input_to_floor": true,
+    "distribution": {
+      "iterations": 10, 
+      "scatter_chance": 100.0, 
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 15] 
+      },
+      "y": 0, 
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 15] 
+      }
+    }
+  }
+}

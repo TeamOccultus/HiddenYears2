@@ -1,0 +1,13 @@
+{
+  "format_version": "1.21.50",
+  "minecraft:weighted_random_feature": {
+    "description": {
+      "identifier": "hiddenyears:plants/hydrangea"
+    },
+    "features": [
+      ["hiddenyears:hydrangea/blue", 1],
+      ["hiddenyears:hydrangea/pink", 1],
+      ["hiddenyears:hydrangea/white", 1]
+    ]
+  }
+}
