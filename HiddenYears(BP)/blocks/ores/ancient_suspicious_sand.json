@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:ancient_suspicious_sand",
@@ -34,7 +34,8 @@
         "explosion_resistance": 0.5
       },
       "minecraft:map_color": "#F7E9A3",
-      "minecraft:loot": "loot_tables/blocks/ancient_suspicious_sand.json"
+      "minecraft:loot": "loot_tables/blocks/ancient_suspicious_sand.json",
+      "minecraft:tags": ["minecraft:is_shovel_item_destructible"]
     }
   }
 }

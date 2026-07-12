@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:actived_rebirth_frame",
@@ -85,8 +85,7 @@
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
-      "minecraft:map_color": "#999999",
-      "tag:metal": {}
+      "minecraft:map_color": "#999999"
     }
   }
 }

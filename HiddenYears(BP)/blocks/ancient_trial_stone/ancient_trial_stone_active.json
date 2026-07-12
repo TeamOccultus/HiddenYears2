@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:ancient_trial_stone_active",
@@ -66,7 +66,11 @@
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"
       },
-      "minecraft:map_color": "#999999"
+      "minecraft:map_color": "#999999",
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "hiddenyearsancient_trial_stone:"
+      ]
     }
   }
 }

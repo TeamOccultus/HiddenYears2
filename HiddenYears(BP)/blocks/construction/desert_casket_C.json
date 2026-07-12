@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:desert_casket_c",
@@ -82,8 +82,11 @@
         "explosion_resistance": 2.5
       },
       "minecraft:map_color": "#999999",
-      "tag:metal": {},
-      "tag:minecraft:is_pickaxe_item_destructible": {}
+      
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "minecraft:stone_tier_destructible"
+      ]
     }
   }
 }

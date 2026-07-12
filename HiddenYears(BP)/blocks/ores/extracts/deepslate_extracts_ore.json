@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:deepslate_extracts_ore",
@@ -72,7 +72,10 @@
         "explosion_resistance": 1200.0
       },
       "minecraft:map_color": "#191919",
-      "tag:minecraft:stone_pick_diggable": {}
+      "minecraft:tags": [
+       "minecraft:diamond_pick_diggable",
+       "minecraft:is_pickaxe_item_destructible"
+      ]
     }
   }
 }

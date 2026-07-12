@@ -1,5 +1,5 @@
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:drift_sand_cabinet",
@@ -64,9 +64,9 @@
       "minecraft:geometry": {
         "identifier": "geometry.simple_cabinet",
         "bone_visibility": {
-          "door_open": false,
-          "door_close": true,
-          "cabinet": true
+          "door_open": "false",
+          "door_close": "true",
+          "cabinet": "true"
         }
       },
       "minecraft:destruction_particles": {
@@ -81,7 +81,10 @@
       },
       "minecraft:light_dampening": 0,
       "minecraft:map_color": "#A7A7A7",
-      "tag:metal": {}
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "hiddenyears:buried_treasures"
+      ]
     }
   }
 }

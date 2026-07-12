@@ -1,6 +1,6 @@
 // 雪地铃兰
 {
-  "format_version": "1.21.130",
+  "format_version": "1.26.30",
   "minecraft:block": {
     "description": {
       "identifier": "hiddenyears:snow_lily_of_the_valley",
@@ -37,12 +37,15 @@
         "*": {
           "texture": "hiddenyears:darkish_red_flower",
           "render_method": "blend",
-          "ambient_occlusion": false,
+          "ambient_occlusion": 0,
           "face_dimming": false
         }
       },
       "minecraft:map_color": "#82111f",
-      "tag:flower": {}
+      "minecraft:tags": [
+        "flower",
+        "hiddenyears:flowers"
+      ]
     }
   }
 }
