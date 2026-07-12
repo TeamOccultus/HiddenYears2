@@ -145,9 +145,7 @@
         ]
       },
       "minecraft:attack": {
-        "damage": 4,
-        "effect_duration": 15,
-        "effect_name": "poison"
+        "damage": 5
       },
       "minecraft:movement": { "value": 0.35 },
       "minecraft:navigation.walk": { "can_path_over_water": true },
