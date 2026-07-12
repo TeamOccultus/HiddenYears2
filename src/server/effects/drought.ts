@@ -8,13 +8,17 @@ import { VirtualEffect, getEquipmentItem } from "@occultus/api";
  * @returns
  */
 export function isAffectByDroughtEffect(entity: Entity): boolean {
+  console.log("event catch")
   if (entity.matches({ families: ["immune_desert_debuff"] })) return false;
+  console.log("event catch")
   if (entity.hasTag("hiddenyears:immune_desert_debuff")) return false;
+  console.log("event catch")
   if (
     getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
     "hiddenyears:drift_sand_coronet"
   )
     return false;
+  console.log("event catch")  
   return true;
 }
 
