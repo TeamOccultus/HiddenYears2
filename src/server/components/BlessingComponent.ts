@@ -26,7 +26,8 @@ function onUseCallback(arg0: ItemComponentUseEvent) {
   droughtEffect.remove(player);
   dehydrationEffect.remove(player);
   setEquipmentItem(player);
-  player.addTag("hy:immune_desert_debuff");
+  player.playSound("ambient.weather.rain");
+  player.addTag("hiddenyears:immune_desert_debuff");
   player.onScreenDisplay.setActionBar({
     translate: "message.hiddenyears:immune_desert_debuff.get"
   });

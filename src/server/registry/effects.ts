@@ -47,6 +47,7 @@ export function registryEffects() {
   dehydrationEffect.onAddToEntity((entity) => {
     if (entity instanceof Player) {
       entity.sendMessage({ translate: "message.hiddenyears:dehydration" });
+      entity.runCommand("camerashake add @s 0.25 5 positional");
     }
   });
 
@@ -64,6 +65,7 @@ export function registryEffects() {
   droughtEffect.onAddToEntity((entity) => {
     if (entity instanceof Player) {
       entity.sendMessage({ translate: "message.hiddenyears:drought" });
+      entity.runCommand("camerashake add @s 0.25 5 positional");
     }
   });
 
