@@ -18,7 +18,7 @@ category: Documents
 ## hiddenyears:deprecated
 
 > [!TIP]
-> 可用版本：3.0.10+
+> 可用版本：3.0.11+3.0.10-patch.1+
 
 将方块标记为已弃用
 
