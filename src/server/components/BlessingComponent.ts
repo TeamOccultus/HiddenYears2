@@ -1,6 +1,7 @@
 import { ItemComponentUseEvent, system } from "@minecraft/server";
 import { dehydrationEffect } from "../effects/dehydration";
 import { droughtEffect } from "../effects/drought";
+import { setEquipmentItem } from "@occultus/api";
 
 /**
  * **内部组件**
@@ -24,6 +25,7 @@ function onUseCallback(arg0: ItemComponentUseEvent) {
   const player = arg0.source;
   droughtEffect.remove(player);
   dehydrationEffect.remove(player);
+  setEquipmentItem(player);
   player.addTag("hy:immune_desert_debuff");
   player.onScreenDisplay.setActionBar({
     translate: "message.hiddenyears:immune_desert_debuff.get"
