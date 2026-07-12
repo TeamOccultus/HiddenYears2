@@ -9,5 +9,11 @@ export class DesertEntityEvent {
       if (!hitEntity.isValid) return;
       droughtEffect.add(hitEntity, 200, 1);
     });
+    world.afterEvents.entityHitEntity.subscribe((event) => {
+      const { hitEntity, damagingEntity } = event;
+      if (!(damagingEntity.typeId === "minecraft:husk")) return;
+      if (!hitEntity.isValid) return;
+      droughtEffect.add(hitEntity, 100, 1);
+    });
   }
 }
