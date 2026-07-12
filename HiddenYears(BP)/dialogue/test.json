@@ -9,6 +9,24 @@
         "buttons": [
           {
             "name": "Button One",
+            "commands": ["/dialogue open @s @initiator hiddenyears:example1"]
+          },
+          {
+            "name": "Button Two",
+            "commands": [
+              "/say Button Two Pressed!",
+              "/say Secondary Command for Button Two"
+            ]
+          }
+        ]
+      },
+      {
+        "scene_tag": "hiddenyears:example1",
+        "npc_name": "方漓猫",
+        "text": "你好啊",
+        "buttons": [
+          {
+            "name": "Button One",
             "commands": ["/say Button One Pressed!"]
           },
           {

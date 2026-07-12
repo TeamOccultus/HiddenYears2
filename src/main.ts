@@ -38,17 +38,8 @@
  */
 import { GameMode, system, world } from "@minecraft/server";
 import { initialize } from "./server/initialize";
+import { Dialogue } from "./core/Dialogue";
 
 initialize();
 
-world.beforeEvents.playerInteractWithEntity.subscribe((event) => {
-  if (event.target.typeId === "hiddenyears:trial_zombie_1") {
-    if (event.player.getGameMode() === GameMode.Creative) {
-      event.cancel = true;
-      system.run(() => {
-        event.player.setGameMode(GameMode.Survival);
-        event.target.runCommand(`dialogue open @s ${event.player.name} hiddenyears:example`);
-      });
-    }
-  }
-});
+new Dialogue("hiddenyears:trial_zombie_1", "hiddenyears:example").registry();
