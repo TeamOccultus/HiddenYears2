@@ -13,14 +13,14 @@ export class BlessingComponent {
       const item = init.itemComponentRegistry;
       item.registerCustomComponent(componentName, {
         onUse(arg0, arg1) {
-          onMineBlockCallback(arg0);
+          onUseCallback(arg0);
         }
       });
     });
   }
 }
 
-function onMineBlockCallback(arg0: ItemComponentUseEvent) {
+function onUseCallback(arg0: ItemComponentUseEvent) {
   const player = arg0.source;
   droughtEffect.remove(player);
   dehydrationEffect.remove(player);
