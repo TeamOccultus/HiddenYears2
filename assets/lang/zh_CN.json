@@ -1876,5 +1876,7 @@
   "hiddenyears:subtitle.mob.pharaohs_ghost.celebrate": "法老残影：庆祝",
   "item.hiddenyears:crystal_spear": "魔晶矛",
   "item.hiddenyears:refined_rock_spear": "精炼岩矛",
-  "hiddenyears:message.deprecated_gameplay": "隐藏之年²发现了 %s 个弃用的游戏元素，已将其转换为最新的游戏元素"
+  "hiddenyears:message.deprecated_gameplay": "隐藏之年²发现了 %s 个弃用的游戏元素，已将其转换为最新的游戏元素",
+  "message.hiddenyears:immune_desert_debuff.get": "你获得了雨之神的祝福，将暂时免疫干旱和脱水！",
+  "message.hiddenyears:immune_desert_debuff.remove": "你对干旱和脱水的免疫已经失效！"
 }
