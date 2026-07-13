@@ -13,12 +13,7 @@
             {
               "test": "has_biome_tag",
               "operator": "==",
-              "value": "meadow"
-            },
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "forest"
+              "value": "ice_plains"
             }
           ]
         }
