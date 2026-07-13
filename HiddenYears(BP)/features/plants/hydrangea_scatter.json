@@ -7,7 +7,7 @@
     "places_feature": "hiddenyears:plants/hydrangea",
     "project_input_to_floor": true,
     "distribution": {
-      "iterations": 10, 
+      "iterations": 7, 
       "scatter_chance": 100.0, 
       "x": {
         "distribution": "uniform",
