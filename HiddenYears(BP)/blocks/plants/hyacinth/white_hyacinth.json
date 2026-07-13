@@ -32,6 +32,9 @@
       },
       "minecraft:collision_box": false,
       "minecraft:replaceable": {},
+      "minecraft:precipitation_interactions": {
+        "precipitation_behavior": "snowlogging"
+      },
       "minecraft:geometry": "minecraft:geometry.cross",
       "minecraft:material_instances": {
         "*": {
