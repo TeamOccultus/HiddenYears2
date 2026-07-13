@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:darkish_red_flower",
+      "minecraft:icon": "hiddenyears:thistle",
       "minecraft:block_placer": {
         "block": "hiddenyears:thistle",
         "use_on": [

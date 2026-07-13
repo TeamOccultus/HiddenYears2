@@ -34,7 +34,7 @@
       "minecraft:geometry": "minecraft:geometry.cross",
       "minecraft:material_instances": {
         "*": {
-          "texture": "hiddenyears:darkish_red_flower",
+          "texture": "hiddenyears:white_hyacinth",
           "render_method": "blend",
           "ambient_occlusion": 0,
           "face_dimming": false

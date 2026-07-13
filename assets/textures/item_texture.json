@@ -1251,6 +1251,33 @@
     },
     "hiddenyears:wooden_sledgehammer": {
       "textures": "textures/items/wooden_sledgehammer"
+    },
+    "hiddenyears:blue_hyacinth": {
+      "textures": "textures/blocks/blue_hyacinth"
+    },
+    "hiddenyears:white_hyacinth": {
+      "textures": "textures/blocks/white_hyacinth"
+    },
+    "hiddenyears:purple_hyacinth": {
+      "textures": "textures/blocks/purple_hyacinth"
+    },
+    "hiddenyears:camellia": {
+      "textures": "textures/blocks/camellia"
+    },
+    "hiddenyears:daylight_rose": {
+      "textures": "textures/blocks/daylight_rose"
+    },
+    "hiddenyears:flower_of_lunamutatio": {
+      "textures": "textures/blocks/flower_of_lunamutatio"
+    },
+    "hiddenyears:iris": {
+      "textures": "textures/blocks/iris"
+    },
+    "hiddenyears:snow_lily_of_the_valley": {
+      "textures": "textures/blocks/snow_lily_of_the_valley"
+    },
+    "hiddenyears:thistle": {
+      "textures": "textures/blocks/thistle"
     }
   }
 }

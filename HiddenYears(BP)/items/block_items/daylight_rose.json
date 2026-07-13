@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:darkish_red_flower",
+      "minecraft:icon": "hiddenyears:daylight_rose",
       "minecraft:block_placer": {
         "block": "hiddenyears:daylight_rose",
         "use_on": [

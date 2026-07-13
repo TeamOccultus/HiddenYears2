@@ -1,0 +1,38 @@
+[
+    {
+        "name": "blue_hyacinth",
+        "path": "textures/blocks/blue_hyacinth"
+    },
+    {
+        "name": "white_hyacinth",
+        "path": "textures/blocks/white_hyacinth"
+    },
+    {
+        "name": "purple_hyacinth",
+        "path": "textures/blocks/purple_hyacinth"
+    },
+    {
+        "name": "camellia",
+        "path": "textures/blocks/camellia"
+    },
+    {
+        "name": "daylight_rose",
+        "path": "textures/blocks/daylight_rose"
+    },
+    {
+        "name": "flower_of_lunamutatio",
+        "path": "textures/blocks/flower_of_lunamutatio"
+    },
+    {
+        "name": "iris",
+        "path": "textures/blocks/iris"
+    },
+    {
+        "name": "snow_lily_of_the_valley",
+        "path": "textures/blocks/snow_lily_of_the_valley"
+    },
+    {
+        "name": "thistle",
+        "path": "textures/blocks/thistle"
+    }
+]

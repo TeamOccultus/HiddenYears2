@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:darkish_red_flower",
+      "minecraft:icon": "hiddenyears:purple_hyacinth",
       "minecraft:block_placer": {
         "block": "hiddenyears:purple_hyacinth",
         "use_on": [
