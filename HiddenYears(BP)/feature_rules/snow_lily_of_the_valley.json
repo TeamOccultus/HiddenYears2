@@ -6,7 +6,7 @@
       "places_feature": "hiddenyears:plants/snow_lily_of_the_valley_scatter"
     },
     "conditions": {
-      "placement_pass": "surface_pass",
+      "placement_pass": "final_pass",
       "minecraft:biome_filter": [
         {
           "any_of": [
