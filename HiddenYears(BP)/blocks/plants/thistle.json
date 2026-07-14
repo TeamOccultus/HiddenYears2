@@ -46,7 +46,12 @@
         }
       },
       "minecraft:map_color": "#82111f",
-      "minecraft:tags": ["flower", "hiddenyears:flowers"]
+      "minecraft:tags": ["flower", "hiddenyears:flowers"],
+      "minecraft:tick":{
+        "interval_range": [10,10],
+        "looping": true
+      },
+      "hiddenyears:bush": {}
     }
   }
 }
