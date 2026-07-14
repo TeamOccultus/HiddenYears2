@@ -47,6 +47,18 @@
       },
       "minecraft:map_color": "#82111f",
       "minecraft:tags": ["flower", "hiddenyears:flowers"],
+      "minecraft:flower_pottable": {},
+      "minecraft:embedded_visual": {
+        "geometry": "minecraft:geometry.cross",
+        "material_instances": {
+          "*": {
+            "texture": "hiddenyears:iris",
+            "render_method": "blend",
+            "ambient_occlusion": 0,
+            "face_dimming": false
+          }
+        }
+      },
       "minecraft:random_offset": {
         "x": {
           "range": {
