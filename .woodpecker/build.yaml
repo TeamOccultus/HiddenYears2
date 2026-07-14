@@ -1,6 +1,6 @@
 when:
   - event: push
-    branch: 1.21.130+
+    branch: 26.30+
 
 steps:
   - name: build
