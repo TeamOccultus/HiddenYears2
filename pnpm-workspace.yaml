@@ -1,3 +1,5 @@
+minimumReleaseAge: 60
+
 onlyBuiltDependencies:
   - esbuild
   - rolldown
