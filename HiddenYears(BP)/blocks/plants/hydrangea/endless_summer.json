@@ -36,10 +36,10 @@
       "minecraft:precipitation_interactions": {
         "precipitation_behavior": "snowlogging"
       },
-      "minecraft:geometry": "minecraft:geometry.cross",
+      "minecraft:geometry": "geometry.hydrangea",
       "minecraft:material_instances": {
         "*": {
-          "texture": "hiddenyears:darkish_red_flower",
+          "texture": "hiddenyears:endless_summer",
           "render_method": "blend",
           "ambient_occlusion": 0,
           "face_dimming": false
@@ -47,6 +47,7 @@
       },
       "minecraft:map_color": "#82111f",
       "minecraft:tags": ["flower", "hiddenyears:flowers"],
+      "minecraft:light_emission": 5,
       "minecraft:random_offset": {
         "x": {
           "range": {

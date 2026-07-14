@@ -121,6 +121,9 @@
     "hiddenyears:drift_sand_downside": {
       "textures": "textures/blocks/drift_sand_downside"
     },
+    "hiddenyears:endless_summer": {
+      "textures": "textures/blocks/endless_summer"
+    },
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
     },
@@ -135,6 +138,9 @@
     },
     "hiddenyears:lightning_grave": {
       "textures": "textures/blocks/lightning_grave"
+    },
+    "hiddenyears:light_blue_hydrangea": {
+      "textures": "textures/blocks/light_blue_hydrangea"
     },
     "hiddenyears:loose_copper_ore": {
       "textures": "textures/blocks/loose_copper_ore"
@@ -177,6 +183,9 @@
     },
     "hiddenyears:pharaohs_ghost_doll": {
       "textures": "textures/blocks/pharaohs_ghost_doll"
+    },
+    "hiddenyears:pink_hydrangea": {
+      "textures": "textures/blocks/pink_hydrangea"
     },
     "hiddenyears:purple_hyacinth": {
       "textures": "textures/blocks/purple_hyacinth"
@@ -255,6 +264,9 @@
     },
     "hiddenyears:waystone": {
       "textures": "textures/blocks/waystone"
+    },
+    "hiddenyears:white_blue_hydrangea": {
+      "textures": "textures/blocks/white_blue_hydrangea"
     },
     "hiddenyears:white_hyacinth": {
       "textures": "textures/blocks/white_hyacinth"

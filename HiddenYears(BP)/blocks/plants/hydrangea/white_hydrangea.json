@@ -35,10 +35,11 @@
       "minecraft:precipitation_interactions": {
         "precipitation_behavior": "snowlogging"
       },
-      "minecraft:geometry": "minecraft:geometry.cross",
+      "minecraft:light_emission": 3,
+      "minecraft:geometry": "geometry.hydrangea",
       "minecraft:material_instances": {
         "*": {
-          "texture": "hiddenyears:darkish_red_flower",
+          "texture": "hiddenyears:white_blue_hydrangea",
           "render_method": "blend",
           "ambient_occlusion": 0,
           "face_dimming": false
