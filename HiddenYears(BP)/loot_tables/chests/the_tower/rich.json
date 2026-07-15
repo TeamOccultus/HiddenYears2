@@ -1,0 +1,240 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "minecraft:music_disc_13", "weight": 15 },
+        { "type": "item", "name": "minecraft:music_disc_cat", "weight": 15 },
+        { "type": "item", "name": "minecraft:name_tag", "weight": 20 },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 10,
+          "functions": [{ "function": "enchant_randomly" }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:diamond",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 3 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 2,
+          "functions": [
+            { "function": "set_count", "count": { "min": 4, "max": 6 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 5,
+          "functions": [
+            { "function": "set_count", "count": { "min": 5, "max": 8 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_apple",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 4 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:enchanted_golden_apple",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 1, "max": 3 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:iron_sword",
+          "weight": 1,
+          "functions": [
+           { "function": "enchant_randomly" }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:refined_rock_sword",
+          "weight": 1,
+          "functions": [
+           { "function": "enchant_randomly" }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 8, "max": 16 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:copper_badge",
+          "weight": 10
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:golden_badge",
+          "weight": 6
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:diamond_badge",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "min": 1,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:mask_of_the_sea",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:farmers_hat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:herders_hat",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:soldiers_helmet",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:sparkling_mask",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:sparkling_mask",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:crucifix_runes",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:invisible_cape",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:thorns_cape",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:fire_cape",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:magic_feather_cape",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:fire_cape",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:miners_glove",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:fighters_glove",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_ring",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:speed_boots",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:hare_boots",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:gluttonous_runes",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:engulf_glove",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_horse_armor",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_horse_armor",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}

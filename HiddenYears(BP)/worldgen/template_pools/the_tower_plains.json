@@ -1,0 +1,18 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:the_tower_plains"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/the_tower",
+          "processors": "hiddenyears:the_tower"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}
