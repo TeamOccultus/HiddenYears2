@@ -7,7 +7,7 @@
     "places_feature": "hiddenyears:plants/daylight_rose",
     "project_input_to_floor": true,
     "distribution": {
-      "iterations": 4, 
+      "iterations": 10, 
       "scatter_chance": 100.0, 
       "x": {
         "distribution": "uniform",
