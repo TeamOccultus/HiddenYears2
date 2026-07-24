@@ -9,7 +9,7 @@
       }
     },
     "components": {
-      "minecraft:icon": "hiddenyears:darkish_red_flower",
+      "minecraft:icon": "hiddenyears:endless_summer",
       "minecraft:block_placer": {
         "block": "hiddenyears:endless_summer",
         "use_on": [

@@ -401,6 +401,9 @@
     "hiddenyears:encyclopedia": {
       "textures": "textures/items/encyclopedia"
     },
+    "hiddenyears:endless_summer": {
+      "textures": "textures/items/endless_summer"
+    },
     "hiddenyears:end_arrow": {
       "textures": "textures/items/end_arrow"
     },
@@ -598,6 +601,9 @@
     },
     "hiddenyears:lightning_key": {
       "textures": "textures/items/lightning_key"
+    },
+    "hiddenyears:light_blue_hydrangea": {
+      "textures": "textures/items/light_blue_hydrangea"
     },
     "hiddenyears:lost_letter": {
       "textures": "textures/items/lost_letter"
@@ -816,6 +822,9 @@
     },
     "hiddenyears:past_statue": {
       "textures": "textures/items/past_statue"
+    },
+    "hiddenyears:pink_hydrangea": {
+      "textures": "textures/items/pink_hydrangea"
     },
     "hiddenyears:quartz_dust": {
       "textures": "textures/items/quartz_dust"
@@ -1230,6 +1239,9 @@
     },
     "hiddenyears:waystone_clock": {
       "textures": "textures/items/waystone_clock"
+    },
+    "hiddenyears:white_blue_hydrangea": {
+      "textures": "textures/items/white_blue_hydrangea"
     },
     "hiddenyears:wizard_gem": {
       "textures": "textures/items/wizard_gem"
