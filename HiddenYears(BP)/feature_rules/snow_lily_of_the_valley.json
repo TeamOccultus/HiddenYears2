@@ -14,6 +14,11 @@
               "test": "has_biome_tag",
               "operator": "==",
               "value": "ice_plains"
+            },
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "divine_garden"
             }
           ]
         }

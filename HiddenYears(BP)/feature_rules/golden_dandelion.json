@@ -2,24 +2,14 @@
   "format_version": "1.21.100",
   "minecraft:feature_rules": {
     "description": {
-      "identifier": "hiddenyears:iris",
-      "places_feature": "hiddenyears:plants/iris_scatter"
+      "identifier": "hiddenyears:golden_dandelion",
+      "places_feature": "hiddenyears:plants/golden_dandelion"
     },
     "conditions": {
       "placement_pass": "final_pass",
       "minecraft:biome_filter": [
         {
           "any_of": [
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "plains"
-            },
-            {
-              "test": "has_biome_tag",
-              "operator": "==",
-              "value": "flower_forest"
-            },
             {
               "test": "has_biome_tag",
               "operator": "==",
@@ -30,7 +20,7 @@
       ]
     },
     "distribution": {
-      "iterations": 4,
+      "iterations": 8,
       "scatter_chance": "variable.is_legacy ? 0.0 : 100.0",
       "x": {
         "distribution": "uniform",

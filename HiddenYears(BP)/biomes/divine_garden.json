@@ -40,7 +40,6 @@
           "animal", //这个群系能生成动物
           "overworld", //这个群系是主世界的生物群系，请不要删掉它
           "divine_garden", //你的自定义生物群系标签，你可以利用它来做这个群系专属的地物和生成规则
-          "flower_forest",
           "bee_habitat" //蜜蜂的最爱
         ]
       }
