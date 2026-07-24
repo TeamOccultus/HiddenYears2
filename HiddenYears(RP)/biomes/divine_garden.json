@@ -1,0 +1,19 @@
+{
+  "format_version": "1.21.130", //最低适配版本
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "hiddenyears:divine_garden" //你的自定义生物群系的ID，不用填命名空间前缀
+    },
+    "components": {
+      "minecraft:sky_color": {
+        "sky_color": "#7BA4FF" //天空颜色，改改改
+      }, //你不加这玩意那就是默认群系的天空
+      "minecraft:grass_appearance": {
+        "color": "#B6DB61"
+      },
+      "minecraft:biome_music": {
+        "music_definition": "game"
+      } //这个生物群系播不播放音乐由你说了算，填0就是不播放，把这组件删了就默认播放
+    }
+  }
+} 
