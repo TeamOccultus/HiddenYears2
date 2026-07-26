@@ -1891,5 +1891,9 @@
   "item.hiddenyears:snow_lily_of_the_valley": "雪地铃兰",
   "item.hiddenyears:thistle": "野蓟草",
   "message.hiddenyears:immune_desert_debuff.get": "你获得了雨之神的祝福，将暂时免疫干旱和脱水！",
-  "message.hiddenyears:immune_desert_debuff.remove": "你对干旱和脱水的免疫已经失效！"
+  "message.hiddenyears:immune_desert_debuff.remove": "你对干旱和脱水的免疫已经失效！",
+  "effect.hiddenyears:bleed.name": "失血",
+  "effect.hiddenyears:dehydration.name": "脱水",
+  "effect.hiddenyears:drought.name": "干旱",
+  "effect.hiddenyears:tetanus.name": "破伤风"
 }

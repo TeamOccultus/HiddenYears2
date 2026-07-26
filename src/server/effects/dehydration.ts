@@ -20,5 +20,6 @@ export function isAffectByDehydrationEffect(entity: Entity): boolean {
 
 export const dehydrationEffect = new VirtualEffect(
   "hiddenyears:dehydration",
-  20
+  20,
+  { translate: "effect.hiddenyears:dehydration.name" }
 );

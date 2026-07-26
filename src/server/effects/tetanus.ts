@@ -12,4 +12,6 @@ export function isAffectByTetanusEffect(entity: Entity): boolean {
   return true;
 }
 
-export const tetanusEffect = new VirtualEffect("hiddenyears:tetanus", 20);
+export const tetanusEffect = new VirtualEffect("hiddenyears:tetanus", 20, {
+  translate: "effect.hiddenyears:tetanus.name"
+});

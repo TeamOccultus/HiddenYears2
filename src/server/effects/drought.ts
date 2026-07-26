@@ -22,4 +22,6 @@ export function isAffectByDroughtEffect(entity: Entity): boolean {
   return true;
 }
 
-export const droughtEffect = new VirtualEffect("hiddenyears:drought", 20);
+export const droughtEffect = new VirtualEffect("hiddenyears:drought", 20,{
+  translate: "effect.hiddenyears:drought.name"
+});
