@@ -178,9 +178,11 @@ const herdersHat = new Artifact(
 );
 herdersHat.onHitEntity((arg) => {
   if (!arg.hitEntity.isValid) return;
+  // @ts-ignore
   if (!herd[arg.hitEntity.typeId]) return;
   new RandomEvent(0.8, () => {
     arg.hitEntity.dimension.spawnItem(
+      // @ts-ignore
       new ItemStack(herd[arg.hitEntity.typeId]!, Random.integer(4, 2)),
       arg.hitEntity.location
     );
@@ -202,9 +204,11 @@ const farmersHat = new Artifact(
 );
 farmersHat.onMineBlock((arg) => {
   const currectId = arg.brokenBlockPermutation.type.id;
+  // @ts-ignore
   if (!crop[currectId]) return;
   new RandomEvent(0.8, () => {
     arg.block.dimension.spawnItem(
+      // @ts-ignore
       new ItemStack(crop[currectId]!, Random.integer(4, 2)),
       arg.block.location
     );
@@ -518,13 +522,13 @@ imprisonedWing.onHitEntity((arg) => {
   arg.damagingEntity.dimension
     .getEntities({
       location: arg.damagingEntity.location,
-      maxDistance: 10,
+      maxDistance: 5,
       families: ["monster"]
     })
     .forEach((entity) => {
       if (entity.hasTag("hiddenyears:imprisoned_wing")) return;
       if (!entity.isValid) return;
-      entity.applyDamage(Random.integer(12, 8), {
+      entity.applyDamage(Random.integer(6, 2), {
         cause: EntityDamageCause.void
       });
       entity.dimension.spawnParticle(
