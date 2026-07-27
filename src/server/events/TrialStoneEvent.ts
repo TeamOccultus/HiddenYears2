@@ -47,13 +47,6 @@ export class TrialStoneEvents {
     params: TrialStoneParams
   ) {
     const { player, block } = arg0;
-    if (!canBeUsed(player, params)) {
-      player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:trial_stone_need_key"
-      });
-      return;
-    }
-    if (params.key) consumeEquipmentAmount(player, 1);
     if (params.sound_event) player.playSound(params.sound_event);
     spawnEntities(block.dimension, block.location);
     if (params.next_state) block.setType(params.next_state);
