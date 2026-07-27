@@ -493,8 +493,8 @@ const gluttonousRunes = new Artifact(
   "textures/items/gluttonous_runes"
 );
 gluttonousRunes.onEquip((arg) => {
-  addEffect(arg.source, "minecraft:strength", "infinite", { amplifier: 4 });
-  arg.source.addEffect("minecraft:hunger", 24000, { amplifier: 2 });
+  addEffect(arg.source, "minecraft:strength", 20000, { amplifier: 0 });
+  arg.source.addEffect("minecraft:hunger", 24000, { amplifier: 1 });
 });
 gluttonousRunes.onUnequip((player) => {
   player.removeEffect("minecraft:strength");
