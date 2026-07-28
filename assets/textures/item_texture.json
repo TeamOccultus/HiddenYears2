@@ -311,6 +311,9 @@
     "hiddenyears:echo_coin": {
       "textures": "textures/items/echo_coin"
     },
+    "hiddenyears:echo_dust": {
+      "textures": "textures/items/echo_dust"
+    },
     "hiddenyears:egg_drift_sand_bodyguard": {
       "textures": "textures/items/egg_drift_sand_bodyguard"
     },
@@ -571,6 +574,9 @@
     },
     "hiddenyears:isis_crown": {
       "textures": "textures/items/isis_crown"
+    },
+    "hiddenyears:key_to_luminous_land": {
+      "textures": "textures/items/key_to_luminous_land"
     },
     "hiddenyears:lapis_dust": {
       "textures": "textures/items/lapis_dust"

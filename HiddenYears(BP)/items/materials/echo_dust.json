@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:echo_dust",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:echo_dust",
+      "minecraft:display_name": {
+        "value": "[Internal] Echo Dust"
+      },
+      "minecraft:tags": {
+        "tags": ["hiddenyears:dust"]
+      }
+    }
+  }
+}
