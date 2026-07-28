@@ -16,14 +16,8 @@ import { tetanusEffect, isAffectByTetanusEffect } from "../effects/tetanus";
  */
 export function registryEffects() {
   bleedEffect.onUpdate((entity, level) => {
-    if (level === 1) {
-      entity.applyDamage(1);
-      entity.addEffect("slowness", 40, { amplifier: 1 });
-    }
-    if (level === 2) {
-      entity.applyDamage(2);
-      entity.addEffect("slowness", 40, { amplifier: 2 });
-    }
+    entity.applyDamage(1 + level);
+    entity.addEffect("minecraft:slowness", 40, { amplifier: level });
   });
 
   bleedEffect.onAddToEntity((entity) => {
