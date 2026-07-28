@@ -18,7 +18,6 @@ export function isAffectByDroughtEffect(entity: Entity): boolean {
     "hiddenyears:drift_sand_coronet"
   )
     return false;
-  console.log("event catch")  
   return true;
 }
 

@@ -2,7 +2,7 @@
  * @module server/registry/effect
  * @category Registry Bus
  */
-import { Player } from "@minecraft/server";
+import { EntityDamageCause, Player } from "@minecraft/server";
 import { bleedEffect } from "../effects/bleed";
 import {
   dehydrationEffect,
@@ -10,6 +10,8 @@ import {
 } from "../effects/dehydration";
 import { droughtEffect, isAffectByDroughtEffect } from "../effects/drought";
 import { tetanusEffect, isAffectByTetanusEffect } from "../effects/tetanus";
+import { disorientedEffect } from "../effects/disoriented";
+import { erosionEffect } from "../effects/erosion";
 
 /**
  * 注册所有模拟效果
@@ -76,6 +78,28 @@ export function registryEffects() {
   tetanusEffect.onAddToEntity((entity) => {
     if (entity instanceof Player) {
       entity.sendMessage({ translate: "message.hiddenyears:tetanus" });
+    }
+  });
+
+  disorientedEffect.onUpdate((entity, amplifier) => {
+    entity.addEffect("minecraft:weakness", 40, { amplifier: amplifier + 2 });
+    entity.addEffect("minecraft:slowness", 40, { amplifier: amplifier + 1 });
+    if (entity instanceof Player) {
+      entity.runCommand(
+        `camerashake add @s ${0.1 + 0.1 * amplifier} 2 positional`
+      );
+    }
+  });
+
+  erosionEffect.onUpdate((entity, amplifier) => {
+    entity.applyDamage(2 + amplifier * 2, { cause: EntityDamageCause.magic });
+    entity.addEffect("minecraft:weakness", 40, { amplifier: amplifier + 3 });
+    entity.addEffect("minecraft:slowness", 40, { amplifier: amplifier + 2 });
+    if (entity instanceof Player) {
+      entity.runCommand(
+        `camerashake add @s ${0.2 + 0.2 * amplifier} 2 positional`
+      );
+      // entity.runCommand(`fog @s push hiddenyears:fog_echo_effect hiddenyears:fog_echo_effect`)
     }
   });
 }

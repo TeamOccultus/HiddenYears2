@@ -1895,5 +1895,7 @@
   "effect.hiddenyears:bleed.name": "失血",
   "effect.hiddenyears:dehydration.name": "脱水",
   "effect.hiddenyears:drought.name": "干旱",
-  "effect.hiddenyears:tetanus.name": "破伤风"
+  "effect.hiddenyears:tetanus.name": "破伤风",
+  "effect.hiddenyears:disoriented.name": "失魂",
+  "effect.hiddenyears:erosion.name": "侵蚀"
 }

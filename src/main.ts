@@ -36,12 +36,19 @@
  * @module HiddenYears2
  * @category Main
  */
-import { system } from "@minecraft/server";
+import { system, TicksPerSecond, world } from "@minecraft/server";
 import { initialize } from "./server/initialize";
 import { Dialogue } from "./core/Dialogue";
 import { Random } from "@occultus/api";
+import { erosionEffect } from "./server/effects/erosion";
 
 initialize();
+
+/*
+world.afterEvents.entityHitEntity.subscribe((event) => {
+  if (event.damagingEntity.typeId !== "minecraft:zombie") return;
+  erosionEffect.add(event.hitEntity, 15 * TicksPerSecond);
+});*/
 
 new Dialogue("hiddenyears:trial_zombie_1", "hiddenyears:example").registry();
 system.beforeEvents.startup.subscribe((event) => {
