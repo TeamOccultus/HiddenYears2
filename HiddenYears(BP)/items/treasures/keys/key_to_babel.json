@@ -1,0 +1,23 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:key_to_babel",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "[Internal] Key to BABEL"
+      },
+      "minecraft:icon": "hiddenyears:bleak_totem",
+      "minecraft:rarity": "uncommon",
+      "minecraft:max_stack_size": 1,
+      "hiddenyears:teleporter": {
+        "dimension_id": "hiddenyears:star_of_horizon",
+        "location_provider": "origin"
+      }
+    }
+  }
+}

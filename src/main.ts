@@ -36,20 +36,14 @@
  * @module HiddenYears2
  * @category Main
  */
-import { system, world } from "@minecraft/server";
+import { system } from "@minecraft/server";
 import { initialize } from "./server/initialize";
 import { Dialogue } from "./core/Dialogue";
-import { Random, RandomEvent, Vector3Utils } from "@occultus/api";
-import { bleedEffect } from "./server/effects/bleed";
+import { Random } from "@occultus/api";
 
 initialize();
 
 new Dialogue("hiddenyears:trial_zombie_1", "hiddenyears:example").registry();
-world.afterEvents.entityHitEntity.subscribe((event) => {
-  if (event.damagingEntity.typeId === "minecraft:zombie") {
-    bleedEffect.add(event.hitEntity, 20 * 20, 0);
-  }
-});
 system.beforeEvents.startup.subscribe((event) => {
   event.blockComponentRegistry.registerCustomComponent("hiddenyears:bush", {
     onBreak(arg0, arg1) {

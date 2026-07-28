@@ -28,8 +28,8 @@ import { registryArticles } from "./registry/article";
 import { LunamutatioEntityEvent } from "./events/LunamutatioEntityEvent";
 import { SpriteEvents } from "./events/SpriteEvents";
 import { StoreForm } from "../ui/StoreForm";
-import { world } from "@minecraft/server";
 import { LocatorBarEvents } from "./events/LocatorBarEvents";
+import { registryDimensions } from "./registry/dimension";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -41,6 +41,7 @@ export function initialize() {
     "3.0.11"
   );
   registryCommands();
+  registryDimensions();
   registryCustomRecipe();
   registryArticles();
   registryItemSystems();
@@ -64,12 +65,4 @@ export function initialize() {
   LunamutatioEntityEvent.subscribe();
   SpriteEvents.subscribe();
   LocatorBarEvents.subscribeBoss();
-  world.afterEvents.entitySpawn.subscribe((event) => {
-    if (event.entity.typeId === "hiddenyears:king_of_ruby") {
-      event.entity.playAnimation("animation.king_of_ruby.summon")
-    }
-    if(event.entity.typeId === "hiddenyears:pharaohs_ghost"){
-      event.entity.playAnimation("animation.pharaohs_ghost.summon")
-    }
-  })
 }
