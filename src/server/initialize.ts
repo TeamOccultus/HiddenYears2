@@ -30,6 +30,7 @@ import { SpriteEvents } from "./events/SpriteEvents";
 import { StoreForm } from "../ui/StoreForm";
 import { LocatorBarEvents } from "./events/LocatorBarEvents";
 import { registryDimensions } from "./registry/dimension";
+import { registryDialogues } from "./registry/dialogues";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -57,6 +58,7 @@ export function initialize() {
   registryMessage();
   registryBoss();
   registryJob();
+  registryDialogues();
   StoreForm.openToPlugin();
   RubyEvents.subscribe();
   MigrationEvents.subscribe();

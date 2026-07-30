@@ -451,6 +451,20 @@
           "ambient": "mob.allay.idle",
           "ambient.tame": "mob.allay.idle_holding"
         }
+      },
+      "hiddenyears:lunamutatio_suffering": {
+        "volume": 1.0,
+        "pitch": [1.5, 2.0],
+        "events": {
+          "ambient": "mob.lunamutatio.say",
+          "hurt": "mob.lunamutatio.hurt",
+          "death": "mob.lunamutatio.death",
+          "step": {
+            "sound": "mob.lunamutatio.step",
+            "volume": 0.45,
+            "pitch": 1.0
+          }
+        }
       }
     }
   }

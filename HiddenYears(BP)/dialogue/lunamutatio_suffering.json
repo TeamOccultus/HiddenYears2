@@ -1,0 +1,24 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:npc_dialogue": {
+    "scenes": [
+      {
+        "scene_tag": "hiddenyears:lunamutatio_suffering_welcome",
+        "npc_name": "月蚀遭难者",
+        "text": "你好……有什么事吗？我的头现在还晕晕的",
+        "buttons": [
+          {
+            "name": "你是谁？",
+            "commands": ["/say 暂时无可奉告"]
+          },
+          {
+            "name": "再见！",
+            "commands": [
+              "/say 再见，行旅者！"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
