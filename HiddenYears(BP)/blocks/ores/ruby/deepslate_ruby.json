@@ -26,37 +26,49 @@
       },
       "minecraft:flammable": false,
       "minecraft:destructible_by_mining": {
-        "seconds_to_destroy": 15,
+        "seconds_to_destroy": 22.5,
         "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+            },
+            "destroy_speed": 11.25
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+            },
+            "destroy_speed": 5.65
+          },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:copper_tier')"
             },
-            "destroy_speed": 0.8
+            "destroy_speed": 1.35
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
             },
-            "destroy_speed": 0.75
+            "destroy_speed": 1.15
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
             },
-            "destroy_speed": 0.6
+            "destroy_speed": 0.85
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
             },
-            "destroy_speed": 0.5
+            "destroy_speed": 0.75
           },
           {
             "item": {
               "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
             },
-            "destroy_speed": 0.4
+            "destroy_speed": 1.9
           }
         ]
       },
