@@ -14,6 +14,8 @@
     "ui/article.json",
     "ui/server_form.json",
     "ui/article_collection.json",
-    "ui/toast.json"
+    "ui/toast.json",
+    "ui/custom_chest_ui.json",
+    "ui/chest_screen.json"
   ]
 }

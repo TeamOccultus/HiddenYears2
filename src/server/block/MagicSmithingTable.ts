@@ -1,4 +1,5 @@
 import {
+  DataDrivenEntityTriggerAfterEvent,
   ItemStack,
   PlayerInteractWithBlockAfterEvent
 } from "@minecraft/server";
@@ -17,13 +18,21 @@ export class MagicSmithingTable extends BlockWithEntity {
   constructor() {
     super(
       "hiddenyears:magic_smithing_table",
-      "hiddenyears:magic_smithing_table"
+      "hiddenyears:magic_smithing_table",
+      "hiddenyears:magic_smithing_table_tick"
     );
   }
   synchronizedStackData(from: ItemStack, to: ItemStack) {
     migrateDamage(from, to);
     migrateEnchantments(from, to);
   }
+  onTick(event: DataDrivenEntityTriggerAfterEvent): void {
+    if (event.entity.nameTag !== "αλχημεία") {
+
+      event.entity.nameTag = "αλχημεία";
+    }
+  }
+  /*
   onInteract(event: PlayerInteractWithBlockAfterEvent): void {
     const [item, entityData, player] = [
       event.beforeItemStack,
@@ -63,5 +72,5 @@ export class MagicSmithingTable extends BlockWithEntity {
     BlockEntity.clearStoredItem(entityData);
     const eqItem = consumeAmount(item, 1);
     setEquipmentItem(player, eqItem);
-  }
+  }*/
 }

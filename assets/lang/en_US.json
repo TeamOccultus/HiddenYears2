@@ -1829,5 +1829,6 @@
   "item.hiddenyears:flower_of_lunamutatio": "Flower of Lunamutatio",
   "item.hiddenyears:iris": "Iris",
   "item.hiddenyears:snow_lily_of_the_valley": "Snow Lily of the Valley",
-  "item.hiddenyears:thistle": "Thistle"
+  "item.hiddenyears:thistle": "Thistle",
+  "entity.hiddenyears:magic_smithing_table.name": "αλχημεία"
 }

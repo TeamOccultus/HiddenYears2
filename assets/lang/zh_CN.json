@@ -1899,5 +1899,6 @@
   "effect.hiddenyears:disoriented.name": "失魂",
   "effect.hiddenyears:erosion.name": "侵蚀",
   "entity.hiddenyears:lunamutatio_suffering.name": "月蚀遭难者",
-  "item.spawn_egg.entity.hiddenyears:lunamutatio_suffering.name": "月蚀遭难者刷怪蛋"
+  "item.spawn_egg.entity.hiddenyears:lunamutatio_suffering.name": "月蚀遭难者刷怪蛋",
+  "entity.hiddenyears:magic_smithing_table.name": "αλχημεία"
 }
