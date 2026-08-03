@@ -42,6 +42,7 @@ import { DeprecatedGameplayComponent } from "../components/DeprecatedGameplayCom
 import { LocatorBarComponent } from "../components/LocatorBarComponent/Component";
 import { DimensionTeleporterComponent } from "../components/DimensionTeleporterComponent/Component";
 import { IphonComponent } from "../components/IphonComponent/Component";
+import { LoreComponent } from "../components/LoreComponent/Component";
 
 /**
  * 注册自定义组件
@@ -77,7 +78,8 @@ export function registerCustomComponents() {
   new DeprecatedGameplayComponent("hiddenyears:deprecated");
   new LocatorBarComponent("hiddenyears:locator_bar");
   new DimensionTeleporterComponent("hiddenyears:teleporter");
-  new IphonComponent("hiddenyears:iphon")
+  new IphonComponent("hiddenyears:iphon");
+  new LoreComponent("hiddenyears:tooltip");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

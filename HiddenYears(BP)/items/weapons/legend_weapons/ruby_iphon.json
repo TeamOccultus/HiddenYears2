@@ -19,15 +19,23 @@
         "runtime_identifier": "hiddenyears:ruby_iphon",
         "sound_event": "item.ruby_iphon.use"
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:ruby_iphon.1",
+          "tooltip.hiddenyears:ruby_iphon.2",
+          "tooltip.hiddenyears:ruby_iphon.3",
+          "tooltip.hiddenyears:ruby_iphon.4"
+        ]
+      },
       "minecraft:rarity": "rare",
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
-        "max_durability": 600
+        "max_durability": 300
       },
       "minecraft:damage": 5,
       "minecraft:cooldown": {
         "category": "hiddenyears:ruby_iphon",
-        "duration": 0.8
+        "duration": 15.0
       },
       "minecraft:hand_equipped": true,
       "minecraft:icon": "hiddenyears:ruby_iphon",
@@ -37,11 +45,19 @@
           {
             "items": ["hiddenyears:ruby_iphon"],
             "repair_amount": "context.other->query.remaining_durability+0.04*context.other->query.max_durability"
+          },
+          {
+            "items": ["hiddenyears:ruby_heart"],
+            "repair_amount": 100
+          },
+          {
+            "items": ["hiddenyears:ruby_skull"],
+            "repair_amount": 100
           }
         ]
       },
       "minecraft:tags": {
-        "tags": ["hiddenyears:ruby_iphon"]
+        "tags": ["hiddenyears:ruby_iphon","starock:lore"]
       }
     }
   }

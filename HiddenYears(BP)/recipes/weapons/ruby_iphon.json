@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:ruby_iphon"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [" X", "#", "Y"],
+    "key": {
+      "#": {
+        "item": "hiddenyears:magic_origin"
+      },
+      "X": {
+        "item": "hiddenyears:ruby_skull"
+      },
+      "Y": {
+        "item": "hiddenyears:ruby_heart"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:magic_origin"
+      },
+      {
+        "item": "hiddenyears:ruby_skull"
+      },
+      {
+        "item": "hiddenyears:ruby_heart"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:ruby_iphon"
+    }
+  }
+}

@@ -1903,5 +1903,9 @@
   "item.hiddenyears:ruby_heart": "红宝石心脏",
   "item.hiddenyears:ruby_skull": "红宝石颅骨",
   "subtitles.item.ruby_iphon.use": "红宝石喷管：喷出",
-  "item.hiddenyears:ruby_iphon": "红宝石喷管"
+  "item.hiddenyears:ruby_iphon": "红宝石喷管",
+  "tooltip.hiddenyears:ruby_iphon.1": "§r§7使用时：§r",
+  "tooltip.hiddenyears:ruby_iphon.2": "§r§2+25% 迷惑红宝石魔物§r",
+  "tooltip.hiddenyears:ruby_iphon.3": "§r§2+50% 迷惑红宝石魔物（法师）§r",
+  "tooltip.hiddenyears:ruby_iphon.4": "§r§2+100% 迷惑红宝石魔物（唤灵法师）§r"
 }
