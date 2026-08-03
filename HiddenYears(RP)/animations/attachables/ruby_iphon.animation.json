@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.ruby_iphon.first_person_hold": {
+      "loop": true,
+      "bones": {
+        "root_item": {
+          "rotation": [86.3054, 47.8514, -36.6667],
+          "position": [0, -16, 9]
+        }
+      }
+    },
+    "animation.ruby_iphon.third_person_hold": {
+      "loop": true,
+      "bones": {
+        "root_item": {
+          "position": [0, -8, -10]
+        }
+      }
+    }
+  }
+}

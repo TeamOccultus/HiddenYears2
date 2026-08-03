@@ -561,8 +561,28 @@
         "sounds/mob/evocation_illager/hurt2"
       ],
       "subtitle": "hiddenyears:subtitle.mob.pharaohs_ghost.hurt"
+    },
+    "item.ruby_iphon.use": {
+      "category": "player",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "name": "sounds/block/enchanting_table/enchant1",
+          "volume": 1
+        },
+        {
+          "name": "sounds/block/enchanting_table/enchant2",
+          "volume": 1
+        },
+        {
+          "name": "sounds/block/enchanting_table/enchant3",
+          "volume": 1
+        }
+      ],
+      "subtitle": "subtitles.item.ruby_iphon.use"
     }
-     /*,
+    /*,
     "mob.lunamutatio.death": {
       "category": "hostile",
       "max_distance": null,

@@ -1901,5 +1901,7 @@
   "entity.hiddenyears:lunamutatio_suffering.name": "月蚀遭难者",
   "item.spawn_egg.entity.hiddenyears:lunamutatio_suffering.name": "月蚀遭难者刷怪蛋",
   "item.hiddenyears:ruby_heart": "红宝石心脏",
-  "item.hiddenyears:ruby_skull": "红宝石颅骨"
+  "item.hiddenyears:ruby_skull": "红宝石颅骨",
+  "subtitles.item.ruby_iphon.use": "红宝石喷管：喷出",
+  "item.hiddenyears:ruby_iphon": "红宝石喷管"
 }
