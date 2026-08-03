@@ -17,7 +17,7 @@ import { swordman } from "../job/advanced/swordman";
 export const jobServer = new JobServer();
 export const jobCenter = new JobCenter("hiddenyears:job_center", jobServer);
 
-export function registryJob() {
+export function registerJob() {
   jobServer.addJob(traveler);
   jobServer.addJob(warrior);
   jobServer.addJob(archer);

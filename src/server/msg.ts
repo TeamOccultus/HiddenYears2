@@ -1,7 +1,7 @@
 import { Player } from "@minecraft/server";
 import { WelcomeNotification } from "@occultus/api";
 
-export function registryMessage() {
+export function registerMessage() {
   new WelcomeNotification((player: Player) => {
     return {
       rawtext: [

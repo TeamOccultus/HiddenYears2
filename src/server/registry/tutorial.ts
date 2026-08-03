@@ -14,7 +14,7 @@ export const tutorialCenter = new TutorialCenter(
 );
 export const tutorialServer = new TutorialServer();
 
-export function registryTutorial() {
+export function registerTutorial() {
   tutorialCenter.addTrigger("hiddenyears:tutorial_center", {
     name: "hiddenyears:tutorial",
     description: "教程中心",

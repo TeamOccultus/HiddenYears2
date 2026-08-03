@@ -8,15 +8,142 @@
       "is_summonable": true,
       "is_experimental": false
     },
+    "component_groups": {
+      "hiddenyears:wild": {
+        "minecraft:attack": {
+          "damage": 5
+        },
+        "minecraft:health": {
+          "value": 20,
+          "max": 20
+        },
+        "minecraft:type_family": {
+          "family": ["ruby_guardian", "monster", "ruby", "mob"]
+        },
+        "minecraft:nameable": {},
+        "minecraft:tameable": {
+          "probability": 0.01,
+          "tame_items": "minecraft:bedrock",
+          "tame_event": {
+            "event": "hiddenyears:transform",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 1,
+          "entity_types": {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "player" },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "irongolem"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wandering_trader"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "villager"
+                }
+              ]
+            },
+            "max_dist": 16
+          }
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 8,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wandering_trader"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "villager"
+                  }
+                ]
+              },
+              "max_dist": 16
+            }
+          ],
+          "must_see": true
+        }
+      },
+      "hiddenyears:tamed": {
+        "minecraft:attack": {
+          "damage": 4
+        },
+        "minecraft:health": {
+          "value": 12,
+          "max": 12
+        },
+        "minecraft:type_family": {
+          "family": [
+            "ruby_guardian",
+            "tamed_ruby_guardian",
+            "mob",
+            "tamed_ruby"
+          ]
+        },
+        "minecraft:nameable": {
+          "always_show": true
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:behavior.follow_owner": {
+          "priority": 1,
+          "speed_multiplier": 1.0,
+          "start_distance": 24,
+          "stop_distance": 2
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 0
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            }
+          ]
+        }
+      }
+    },
     "components": {
       "minecraft:behavior.melee_attack": {
         "priority": 4,
         "speed_multiplier": 1,
         "track_target": true
       },
-      "minecraft:attack": {
-        "damage": 5
-      },
+
       "minecraft:behavior.move_to_random_block": {
         "priority": 6,
         "speed_multiplier": 0.55,
@@ -30,16 +157,10 @@
         "width": 0.6,
         "height": 1.9
       },
-      "minecraft:type_family": {
-        "family": ["ruby_guardian", "monster", "ruby", "mob"]
-      },
+
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0
-      },
-      "minecraft:health": {
-        "value": 20,
-        "max": 20
       },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
@@ -70,63 +191,9 @@
       "minecraft:behavior.float": {
         "priority": 0
       },
-      "minecraft:behavior.hurt_by_target": {
-        "priority": 1,
-        "entity_types": {
-          "filters": {
-            "any_of": [
-              { "test": "is_family", "subject": "other", "value": "player" },
-              {
-                "test": "is_family",
-                "subject": "other",
-                "value": "irongolem"
-              },
-              {
-                "test": "is_family",
-                "subject": "other",
-                "value": "wandering_trader"
-              },
-              {
-                "test": "is_family",
-                "subject": "other",
-                "value": "villager"
-              }
-            ]
-          },
-          "max_dist": 16
-        }
-      },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 8,
-        "entity_types": [
-          {
-            "filters": {
-              "any_of": [
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "irongolem"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "wandering_trader"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "villager"
-                }
-              ]
-            },
-            "max_dist": 16
-          }
-        ],
-        "must_see": true
-      },
+
       "minecraft:behavior.random_stroll": {
-        "priority": 2,
+        "priority": 5,
         "speed_multiplier": 1
       },
       "minecraft:behavior.look_at_player": {
@@ -143,6 +210,24 @@
       },
       "minecraft:follow_range": {
         "value": 64
+      }
+    },
+    "events": {
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": ["hiddenyears:wild"]
+        }
+      },
+      "hiddenyears:transform": {
+        "remove": {
+          "component_groups": ["hiddenyears:wild"]
+        },
+        "add": {
+          "component_groups": ["hiddenyears:tamed"]
+        },
+        "queue_command": {
+          "command": "scriptevent hiddenyears:ruby_monster_transform"
+        }
       }
     }
   }

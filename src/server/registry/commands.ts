@@ -11,7 +11,7 @@ import { CommandPermissionLevel } from "@minecraft/server";
 /**
  * 注册自定义命令
  */
-export function registryCommands() {
+export function registerCommands() {
   new CreditsManager(
     "CREDITS of Hidden Years²: Governor at the Skyline",
     credits

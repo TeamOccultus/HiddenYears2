@@ -14,6 +14,7 @@
       "hiddenyears:iphon": {
         "damage": 2,
         "radius": 6,
+        "exclude_families": ["ruby", "tamed_ruby"],
         "particle": "minecraft:critical_hit_emitter",
         "runtime_identifier": "hiddenyears:ruby_iphon",
         "sound_event": "item.ruby_iphon.use"

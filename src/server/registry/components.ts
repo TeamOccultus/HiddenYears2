@@ -46,7 +46,7 @@ import { IphonComponent } from "../components/IphonComponent/Component";
 /**
  * 注册自定义组件
  */
-export function registryComponents() {
+export function registerCustomComponents() {
   const [item, block] = [new ItemRegistries(), new BlockRegistries()];
   new OreTypeComponent("hiddenyears:ore_type");
   new ToolTypeComponent("hiddenyears:tool_type");

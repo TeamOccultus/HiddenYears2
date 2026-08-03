@@ -11,7 +11,7 @@ import {
 import * as slots from "../../data/artifactSlots";
 import { artifacts } from "../../data/artifacts";
 
-export function registryArtifacts() {
+export function registerArtifacts() {
   const registry = new ArtifactRegistries("hiddenyears:artifacts");
   artifacts.forEach((artifact) => {
     registry.add(artifact);
@@ -19,7 +19,7 @@ export function registryArtifacts() {
   registry.register();
 }
 
-export function registryArtifactSlots() {
+export function registerArtifactSlots() {
   const registry = new ArtifactSlotRegistries();
   registry.add(slots.head);
   registry.add(slots.body);
@@ -29,7 +29,7 @@ export function registryArtifactSlots() {
   registry.register();
 }
 
-export function registryForm() {
+export function registerArtifactForm() {
   ArtifactForm.addTrigger(undefined, {
     name: "hiddenyears:artifact",
     description: " %command.artifact.description",

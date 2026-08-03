@@ -13,7 +13,7 @@ import { MagicBrewingStand } from "../block/MagicBrewingStand";
 /**
  * 注册配方
  */
-export function registryCustomRecipe() {
+export function registerCustomRecipe() {
   new Crusher();
   new MagicSmithingTable();
   new MagicBrewingStand();

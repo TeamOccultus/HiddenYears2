@@ -1,6 +1,7 @@
 export type StaffParams = {
   damage: number;
   families?: string[];
+  exclude_families?: string[];
   radius: number;
   particle?: string;
   sound_event?: string;

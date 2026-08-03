@@ -8,7 +8,7 @@ import { PlayerStory } from "../../core/PlayerStory";
 /**
  * 注册物品系统
  */
-export function registryItemSystems() {
+export function registerItemSystems() {
   new PlayerStory("hiddenyears:adventurer_note").registry();
   new AdditionalMaterialSystem();
 }

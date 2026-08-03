@@ -6,6 +6,6 @@ import {
   MusicDiscServerBindings
 } from "@occultus/api";
 
-export function registryMusicDisc() {
+export function registerMusicDisc() {
   MusicDiscServerBindings.create({ componentName: "hiddenyears:music_disc" });
 }

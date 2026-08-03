@@ -5,7 +5,7 @@ import {
   ItemComponentUseEvent,
   Player,
   system,
-  TicksPerSecond,
+  TicksPerSecond
 } from "@minecraft/server";
 import {
   consumeDurability,
@@ -67,7 +67,7 @@ export class IphonEvents {
       maxDistance: params.radius,
       families: params.families,
       excludeTags: ["hiddenyears:immune_magic_attack"],
-      excludeFamilies: ["noaoe", "inanimate"],
+      excludeFamilies: ["noaoe", "inanimate", ...params.exclude_families],
       excludeTypes: ["minecraft:item"]
     });
     utils.tryOperateEntity((entity) => {

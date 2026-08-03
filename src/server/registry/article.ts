@@ -6,7 +6,7 @@ import {
 /**
  * 注册所有的文章
  */
-export function registryArticles() {
+export function registerArticles() {
   ArticleServerBindings.create({
     componentName: "hiddenyears:article",
     contentComponentName: "hiddenyears:article_content",

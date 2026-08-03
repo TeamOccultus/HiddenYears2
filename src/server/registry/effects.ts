@@ -16,7 +16,7 @@ import { erosionEffect } from "../effects/erosion";
 /**
  * 注册所有模拟效果
  */
-export function registryEffects() {
+export function registerEffects() {
   bleedEffect.onUpdate((entity, level) => {
     entity.applyDamage(1 + level);
     entity.addEffect("minecraft:slowness", 40, { amplifier: level });

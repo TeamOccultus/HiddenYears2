@@ -55,16 +55,122 @@
         "minecraft:equipment": {
           "table": "loot_tables/entities/zombie_equipment.json"
         }
+      },
+      "hiddenyears:wild": {
+        "minecraft:attack": {
+          "damage": 4
+        },
+        "minecraft:health": {
+          "value": 45,
+          "max": 45
+        },
+        "minecraft:nameable": {},
+        "minecraft:tameable": {
+          "probability": 0.01,
+          "tame_items": "minecraft:bedrock",
+          "tame_event": {
+            "event": "hiddenyears:transform",
+            "target": "self"
+          }
+        },
+        "minecraft:type_family": {
+          "family": [
+            "ruby_zombie",
+            "zombie",
+            "ruby",
+            "undead",
+            "monster",
+            "mob"
+          ]
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "irongolem"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "wandering_trader"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "villager"
+                  }
+                ]
+              },
+              "max_dist": 16
+            }
+          ],
+          "must_see": true
+        }
+      },
+      "hiddenyears:tamed": {
+        "minecraft:attack": {
+          "damage": 3
+        },
+        "minecraft:health": {
+          "value": 15,
+          "max": 15
+        },
+        "minecraft:type_family": {
+          "family": [
+            "tamed_ruby_zombie",
+            "ruby_zombie",
+            "undead",
+            "mob",
+            "tamed_ruby"
+          ]
+        },
+        "minecraft:nameable": {
+          "always_show": true
+        },
+        "minecraft:is_tamed": {},
+        "minecraft:behavior.follow_owner": {
+          "priority": 3,
+          "speed_multiplier": 1.0,
+          "start_distance": 24,
+          "stop_distance": 2
+        },
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 0
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 3,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "monster"
+              },
+              "max_dist": 16
+            }
+          ]
+        }
       }
     },
     "components": {
       "minecraft:despawn": {
         "despawn_from_distance": {}
       },
-      "minecraft:nameable": {},
-      "minecraft:type_family": {
-        "family": ["ruby_zombie", "zombie", "ruby", "undead", "monster", "mob"]
-      },
+
       "minecraft:collision_box": {
         "width": 0.6,
         "height": 1.9
@@ -80,10 +186,7 @@
       "minecraft:annotation.break_door": {},
       "minecraft:jump.static": {},
       "minecraft:can_climb": {},
-      "minecraft:health": {
-        "value": 45,
-        "max": 45
-      },
+
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
@@ -103,9 +206,6 @@
         "suffocate_time": 0,
         "breathes_air": true,
         "breathes_water": true
-      },
-      "minecraft:attack": {
-        "damage": 4
       },
       "minecraft:loot": {
         "table": "loot_tables/entities/ruby_zombie.json"
@@ -139,35 +239,7 @@
       "minecraft:behavior.hurt_by_target": {
         "priority": 1
       },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 1,
-        "entity_types": [
-          {
-            "filters": {
-              "any_of": [
-                { "test": "is_family", "subject": "other", "value": "player" },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "irongolem"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "wandering_trader"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "villager"
-                }
-              ]
-            },
-            "max_dist": 16
-          }
-        ],
-        "must_see": true
-      },
+
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
@@ -183,7 +255,8 @@
             "add": {
               "component_groups": [
                 "hiddenyears:ruby_zombie_adult",
-                "minecraft:can_have_equipment"
+                "minecraft:can_have_equipment",
+                "hiddenyears:wild"
               ]
             }
           },
@@ -193,7 +266,8 @@
             "add": {
               "component_groups": [
                 "hiddenyears:ruby_zombie_baby",
-                "minecraft:can_have_equipment"
+                "minecraft:can_have_equipment",
+                "hiddenyears:wild"
               ]
             }
           },
@@ -204,7 +278,8 @@
               "component_groups": [
                 "hiddenyears:ruby_zombie_baby",
                 "minecraft:ruby_zombie_jockey",
-                "minecraft:can_have_equipment"
+                "minecraft:can_have_equipment",
+                "hiddenyears:wild"
               ]
             }
           }
@@ -218,6 +293,17 @@
       "minecraft:as_baby": {
         "add": {
           "component_groups": ["hiddenyears:ruby_zombie_baby"]
+        }
+      },
+      "hiddenyears:transform": {
+        "remove": {
+          "component_groups": ["hiddenyears:wild"]
+        },
+        "add": {
+          "component_groups": ["hiddenyears:tamed"]
+        },
+        "queue_command": {
+          "command": "scriptevent hiddenyears:ruby_monster_transform"
         }
       }
     }

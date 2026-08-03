@@ -1,7 +1,7 @@
 import { system } from "@minecraft/server";
 import { ensureLuminousPalaceReady } from "../dimension/luminousLand";
 
-export function registryDimensions() {
+export function registerCustomDimensions() {
   system.beforeEvents.startup.subscribe((arg) => {
     const registry = arg.dimensionRegistry;
     registry.registerCustomDimension("hiddenyears:star_of_horizon");

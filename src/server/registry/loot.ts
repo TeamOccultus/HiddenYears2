@@ -14,7 +14,7 @@ import { default as block } from "../../../config/additions/block.json";
 /**
  * 注册自定义掉落物
  */
-export function registryCustomLoot() {
+export function registerCustomLoot() {
   const server = new CustomLootServer();
   entity.forEach((element) => {
     element.entities.forEach((entity) => {

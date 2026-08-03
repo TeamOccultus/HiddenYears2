@@ -15,7 +15,7 @@ export const taskCenter = new TaskCenter(
   }
 );
 
-export function registryTask() {
+export function registerTask() {
   taskCenter.addTrigger("hiddenyears:task_book", {
     name: "hiddenyears:task",
     description: " %command.task.description",
