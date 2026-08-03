@@ -1,0 +1,18 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:ruby_heart",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "hiddenyears:ruby_heart",
+      "minecraft:fire_resistant": {
+        "value": true
+      },
+      "minecraft:rarity": "uncommon"
+    }
+  }
+}

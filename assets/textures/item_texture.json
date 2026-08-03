@@ -940,8 +940,14 @@
     "hiddenyears:ruby_crown": {
       "textures": "textures/items/ruby_crown"
     },
+    "hiddenyears:ruby_heart": {
+      "textures": "textures/items/ruby_heart"
+    },
     "hiddenyears:ruby_helmet": {
       "textures": "textures/items/ruby_helmet"
+    },
+    "hiddenyears:ruby_iphon": {
+      "textures": "textures/items/ruby_iphon"
     },
     "hiddenyears:ruby_leggings": {
       "textures": "textures/items/ruby_leggings"
@@ -951,6 +957,9 @@
     },
     "hiddenyears:ruby_runes": {
       "textures": "textures/items/ruby_runes"
+    },
+    "hiddenyears:ruby_skull": {
+      "textures": "textures/items/ruby_skull"
     },
     "hiddenyears:sacred_sword": {
       "textures": "textures/items/sacred_sword"
