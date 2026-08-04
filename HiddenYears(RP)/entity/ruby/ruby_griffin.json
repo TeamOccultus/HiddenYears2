@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "hiddenyears:ruby_griffin",
+      "min_engine_version": "1.8.0",
+      "materials": { "default": "vex" },
+      "textures": {
+        "default": "textures/entity/ruby_griffin"
+      },
+      "geometry": {
+        "default": "geometry.ruby_griffin"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+          "variable.empty_handed  = !query.is_item_equipped(0) && !query.is_item_equipped(1);"
+        ],
+        "scale": "1.0"
+      },
+      "animations": {
+        "walk": "animation.ruby_griffin.walk",
+        "fly": "animation.ruby_griffin.fly",
+        "attack": "animation.ruby_griffin.attack"
+      },
+      "animation_controllers": [
+        { "fly": "controller.animation.ruby_griffin.fly" },
+        { "attack": "controller.animation.ruby_griffin.attack" }
+      ],
+      "render_controllers": ["controller.render.default"],
+      "held_item_ignores_lighting": true,
+      "spawn_egg": {
+        "texture": "hiddenyears:egg_ruby_zombie"
+      }
+    }
+  }
+}

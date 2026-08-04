@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ruby_griffin.fly": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": [],
+          "transitions": [{ "fly": "query.modified_move_speed > 0.2" }],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true
+        },
+        "fly": {
+          "animations": ["fly"],
+          "transitions": [{ "idle": "query.modified_move_speed < 0.2" }],
+          "blend_transition": 0.4
+        }
+      }
+    },
+    "controller.animation.ruby_griffin.attack": {
+      "initial_state": "default",
+      "states": {
+        "attacking": {
+          "animations": ["attack"],
+          "transitions": [
+            {
+              "default": "variable.attack_time < 0.0"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "attacking": "variable.attack_time >= 0.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
