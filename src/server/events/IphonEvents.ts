@@ -4,7 +4,6 @@ import {
   EntityDamageCause,
   ItemComponentUseEvent,
   Player,
-  system,
   TicksPerSecond
 } from "@minecraft/server";
 import {
@@ -16,6 +15,8 @@ import {
 import { StaffParams } from "../components/StaffComponent/Params";
 import { getPastorLevel } from "../job/toolkit";
 import { IphonParams } from "../components/IphonComponent/Params";
+import { conjureWizard } from "../job/advanced/conjureWizard";
+import { wizard } from "../job/beginner/wizard";
 
 function isEntityInFront(player: Player, entity: Entity): boolean {
   const viewDirection = player.getViewDirection();
@@ -30,6 +31,16 @@ function isEntityInFront(player: Player, entity: Entity): boolean {
   };
   const dotProduct = toEntityXZ.x * viewDirXZ.x + toEntityXZ.z * viewDirXZ.z;
   return dotProduct > 0;
+}
+
+/**
+ * 获取玩家使用红宝石喷管使红宝石怪物臣服的概率
+ * @param player
+ */
+function getTransformChance(player: Player) {
+  if (conjureWizard.isOwned(player)) return 1;
+  if (wizard.isOwned(player)) return 0.5;
+  return 0.25;
 }
 
 export class IphonEvents {

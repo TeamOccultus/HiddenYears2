@@ -8,7 +8,8 @@ import {
   RandomEvent,
   Random,
   heal,
-  addEffect
+  addEffect,
+  EntityHealthUtils
 } from "@occultus/api";
 
 /**
@@ -474,13 +475,18 @@ const crucifixRunes = new Artifact(
 crucifixRunes.onHurt((arg) => {
   if (!arg.hurtEntity.isValid) return;
   const health = arg.hurtEntity.getComponent("health");
+  new RandomEvent(0.85, () => {
+    new EntityHealthUtils(arg.hurtEntity).heal(4);
+  }).call();
   if (health.currentValue <= 5) {
-    health.setCurrentValue(health.effectiveMax);
+    new RandomEvent(0.25, () => {
+      health.setCurrentValue(health.effectiveMax);
+    }).call();
     return;
   }
-  new RandomEvent(0.15, () => {
+  new RandomEvent(0.075, () => {
     health.setCurrentValue(health.effectiveMax);
-  });
+  }).call();
 });
 
 const gluttonousRunes = new Artifact(
