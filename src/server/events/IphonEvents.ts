@@ -10,6 +10,7 @@ import {
   consumeDurability,
   EntitiesUtils,
   hasFamily,
+  RandomEvent,
   setEquipmentItem
 } from "@occultus/api";
 import { StaffParams } from "../components/StaffComponent/Params";
@@ -106,10 +107,12 @@ export class IphonEvents {
     });
     utils.tryOperateEntity((entity) => {
       if (!isEntityInFront(source, entity)) return;
-      if (hasFamily(entity, "ruby") && !hasFamily(entity, "boss")) {
-        entity.triggerEvent("hiddenyears:transform");
-      }
       entity.addEffect("minecraft:slowness", 5 * TicksPerSecond);
+      if (hasFamily(entity, "ruby") && !hasFamily(entity, "boss")) {
+        new RandomEvent(getTransformChance(source), () => {
+          entity.triggerEvent("hiddenyears:transform");
+        }).call();
+      }
     });
   }
 }
