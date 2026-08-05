@@ -21,6 +21,7 @@
       "animations": {
         "walk": "animation.ruby_griffin.walk",
         "fly": "animation.ruby_griffin.fly",
+        "idle": "animation.ruby_griffin.idle",
         "attack": "animation.ruby_griffin.attack"
       },
       "animation_controllers": [

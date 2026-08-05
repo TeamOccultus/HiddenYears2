@@ -5,7 +5,7 @@
       "initial_state": "idle",
       "states": {
         "idle": {
-          "animations": [],
+          "animations": ["idle"],
           "transitions": [{ "fly": "query.modified_move_speed > 0.2" }],
           "blend_transition": 0.4,
           "blend_via_shortest_path": true
