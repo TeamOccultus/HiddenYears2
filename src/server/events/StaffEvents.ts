@@ -87,7 +87,6 @@ export class StaffEvents {
   ) {
     const { source } = arg0;
     const params = arg1.params as StaffParams;
-    console.log(getPastorLevel(source));
     new EntitiesUtils(source.dimension, {
       location: source.location,
       maxDistance: params.radius,

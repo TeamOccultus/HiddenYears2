@@ -11,7 +11,7 @@ export class StructurePlacerComponent {
           const p = arg1.params as StructurePlacerComponentParams;
           if (p.show_warning) {
             WarningForm.display(arg0.source).then((response) => {
-              if (response.selection === undefined || response.selection === 2) return console.log("Cancelled");
+              if (response.selection === undefined || response.selection === 2) return;
               if (response.selection === 1) StructureEvents.onUse(arg0, arg1);
             });
             return;
