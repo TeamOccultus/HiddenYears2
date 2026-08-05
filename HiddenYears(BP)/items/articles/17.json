@@ -1,0 +1,33 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:article_17",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:article": {
+        "title": {
+          "translate": "article.hiddenyears:17.title"
+        },
+        "icon_path": "textures/items/paper"
+      },
+      "hiddenyears:article_content": [
+        { "translate": "article.hiddenyears:17.body_1" },
+        { "text": "\n\n" },
+        { "translate": "article.hiddenyears:17.body_2" }
+      ],
+      "minecraft:display_name": {
+        "value": "article.hiddenyears:17.title"
+      },
+      "minecraft:icon": "hiddenyears:lost_letter",
+      "minecraft:max_stack_size": 1,
+      "minecraft:hover_text_color": "yellow",
+      "minecraft:tags": {
+        "tags": ["minecraft:bookshelf_books", "hiddenyears:is_article"]
+      }
+    }
+  }
+}
