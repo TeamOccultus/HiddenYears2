@@ -6,12 +6,15 @@
       "states": {
         "idle": {
           "animations": ["idle"],
-          "transitions": [{ "fly": "query.modified_move_speed > 0.2" }],
+          "transitions": [{ "moving": "query.modified_move_speed > 0.2" }],
           "blend_transition": 0.4,
           "blend_via_shortest_path": true
         },
-        "fly": {
-          "animations": ["fly"],
+        "moving": {
+          "animations": [
+            { "fly": "!query.is_on_ground" },
+            { "walk": "query.is_on_ground" }
+          ],
           "transitions": [{ "idle": "query.modified_move_speed < 0.2" }],
           "blend_transition": 0.4
         }
