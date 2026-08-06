@@ -13,7 +13,7 @@
         "minecraft:physics": {},
         "minecraft:can_fly": {},
         "minecraft:flying_speed": {
-          "value": 1.2
+          "value": 1.0
         },
         "minecraft:free_camera_controlled": {
           "strafe_speed_modifier": 0.6,
@@ -31,7 +31,7 @@
           "avoid_water": true
         },
         "minecraft:movement": {
-          "value": 1.5
+          "value": 1.2
         }
       },
       "hiddenyears:ground": {
@@ -48,7 +48,7 @@
           "max_turn": 45.0
         },
         "minecraft:movement": {
-          "value": 0.8
+          "value": 0.75
         },
         "minecraft:variable_max_auto_step": {
           "base_value": 1.5625,
@@ -91,7 +91,7 @@
           "speed_multiplier": 1.5
         },
         "minecraft:scale_by_age": {
-          "start_scale": 0.07,
+          "start_scale": 0.25,
           "end_scale": 1.0
         },
         "minecraft:ageable": {
@@ -140,7 +140,7 @@
       },
       "hiddenyears:griffin_wild": {
         "minecraft:tameable": {
-          "probability": 0.1,
+          "probability": 0.25,
           "tame_items": [
             "hiddenyears:ruby_skull",
             "hiddenyears:ruby_heart",
@@ -153,11 +153,21 @@
         }
       },
       "hiddenyears:tame": {
+        "minecraft:sittable": {
+          "sit_event": {
+            "event": "stop",
+            "target": "self"
+          }
+        },
+        "minecraft:inventory": {
+          "inventory_size": 10,
+          "container_type": "horse"
+        },
         "minecraft:behavior.follow_owner": {
-          "priority": 0,
-          "speed_multiplier": 1.2,
-          "start_distance": 5,
-          "stop_distance": 5
+          "priority": 2,
+          "speed_multiplier": 1,
+          "start_distance": 16,
+          "stop_distance": 8
         },
         "minecraft:tameable": {},
         "minecraft:leashable": {},
@@ -197,8 +207,8 @@
         "minecraft:behavior.player_ride_tamed": {},
         "minecraft:horse.jump_strength": {
           "value": {
-            "range_min": 2,
-            "range_max": 4.5
+            "range_min": 4,
+            "range_max": 7.5
           }
         }
       },
@@ -207,9 +217,8 @@
       }
     },
     "components": {
-      "minecraft:inventory": {
-        "inventory_size": 10,
-        "container_type": "horse"
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 0
       },
       "minecraft:environment_sensor": {
         "triggers": [
@@ -241,9 +250,7 @@
       },
       "minecraft:fire_immune": {},
       "minecraft:nameable": {},
-      "minecraft:jump.static": {
-        "jump_power": 1.8
-      },
+      "minecraft:jump.static": {},
       "minecraft:can_climb": {},
       "minecraft:persistent": {},
       "minecraft:physics": {},
@@ -253,9 +260,6 @@
       "minecraft:attack": {
         "damage": 24
       },
-      /* "minecraft:loot": {
-        "table": "loot_tables/loot/dark.json"
-      },*/
       "minecraft:behavior.delayed_attack": {
         "priority": 1,
         "speed_multiplier": 1.8,
@@ -363,24 +367,16 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "chicken",
-            "heal_amount": 4
+            "item": "hiddenyears:ruby_heart",
+            "heal_amount": 8
           },
           {
-            "item": "beef",
-            "heal_amount": 4
+            "item": "hiddenyears:ruby_skull",
+            "heal_amount": 8
           },
           {
-            "item": "porkchop",
+            "item": "hiddenyears:ruby",
             "heal_amount": 4
-          },
-          {
-            "item": "rabbit",
-            "heal_amount": 4
-          },
-          {
-            "item": "rotten_flesh",
-            "heal_amount": 2
           }
         ]
       },
@@ -388,7 +384,11 @@
         "priority": 4,
         "speed_multiplier": 1.6,
         "within_radius": 16,
-        "items": ["fish", "salmon", "clownfish", "porkchop"]
+        "items": [
+          "hiddenyears:ruby_heart",
+          "hiddenyears:ruby_skull",
+          "hiddenyears:ruby"
+        ]
       },
       "minecraft:behavior.random_stroll": {
         "priority": 4,
@@ -417,9 +417,7 @@
           ]
         },
         "remove": {
-          "component_groups": [
-            "hiddenyears:adult"
-          ]
+          "component_groups": ["hiddenyears:adult"]
         }
       },
       "hiddenyears:grow_up": {
