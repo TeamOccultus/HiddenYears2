@@ -155,13 +155,13 @@
       "hiddenyears:tame": {
         "minecraft:sittable": {
           "sit_event": {
-            "event": "stop",
+            "event": "sit",
+            "target": "self"
+          },
+          "stand_event": {
+            "event": "stand",
             "target": "self"
           }
-        },
-        "minecraft:inventory": {
-          "inventory_size": 10,
-          "container_type": "horse"
         },
         "minecraft:behavior.follow_owner": {
           "priority": 2,
@@ -182,6 +182,10 @@
         }
       },
       "hiddenyears:griffin_rideable": {
+        "minecraft:inventory": {
+          "inventory_size": 10,
+          "container_type": "horse"
+        },
         "minecraft:rideable": {
           "seat_count": 2,
           "crouching_skip_interact": true,
@@ -383,7 +387,7 @@
         ]
       },
       "minecraft:behavior.tempt": {
-        "priority": 4,
+        "priority": 1,
         "speed_multiplier": 1.6,
         "within_radius": 16,
         "items": [
@@ -506,8 +510,26 @@
           }
         ]
       },
+      "sit": {
+        "remove": {
+          "component_groups": [
+            "hiddenyears:flying",
+            "hiddenyears:griffin_rideable"
+          ]
+        },
+        "add": { "component_groups": ["hiddenyears:ground"] },
+        "queue_command": { "command": ["effect @s clear slow_falling"] }
+      },
+      "stand": {
+        "add": {
+          "component_groups": [
+            "hiddenyears:griffin_rideable",
+            "hiddenyears:ground"
+          ]
+        }
+      },
       "stop": {
-        "remove": { "component_groups": ["flying"] },
+        "remove": { "component_groups": ["hiddenyears:flying"] },
         "add": { "component_groups": ["hiddenyears:ground"] },
         "queue_command": { "command": ["effect @s clear slow_falling"] }
       },

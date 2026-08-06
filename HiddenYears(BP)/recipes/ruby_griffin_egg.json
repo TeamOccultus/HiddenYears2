@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:ruby_griffin_egg"
+    },
+    "tags": ["crafting_table"],
+    "pattern": ["XSX", "X#X", "XSX"],
+    "key": {
+      "#": {
+        "item": "hiddenyears:ruby_heart"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      },
+      "S": {
+        "item": "hiddenyears:ruby_skull"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:ruby_heart"
+      },
+      {
+        "item": "minecraft:diamond"
+      },
+      {
+        "item": "hiddenyears:ruby_skull"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:ruby_griffin_egg"
+    }
+  }
+}
