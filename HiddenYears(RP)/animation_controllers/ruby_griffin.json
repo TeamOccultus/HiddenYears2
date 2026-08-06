@@ -39,6 +39,26 @@
           ]
         }
       }
+    },
+    "controller.animation.ruby_griffin.sit": {
+      "initial_state": "default",
+      "states": {
+        "sitting": {
+          "animations": ["sit"],
+          "transitions": [
+            {
+              "default": "!query.is_sitting"
+            }
+          ]
+        },
+        "default": {
+          "transitions": [
+            {
+              "sitting": "query.is_sitting"
+            }
+          ]
+        }
+      }
     }
   }
 }

@@ -22,11 +22,13 @@
         "walk": "animation.ruby_griffin.walk",
         "fly": "animation.ruby_griffin.fly",
         "idle": "animation.ruby_griffin.idle",
-        "attack": "animation.ruby_griffin.attack"
+        "attack": "animation.ruby_griffin.attack",
+        "sit": "animation.ruby_griffin.sit"
       },
       "animation_controllers": [
         { "fly": "controller.animation.ruby_griffin.fly" },
-        { "attack": "controller.animation.ruby_griffin.attack" }
+        { "attack": "controller.animation.ruby_griffin.attack" },
+        { "sit": "controller.animation.ruby_griffin.sit" }
       ],
       "render_controllers": ["controller.render.ruby_griffin"],
       "held_item_ignores_lighting": true,
