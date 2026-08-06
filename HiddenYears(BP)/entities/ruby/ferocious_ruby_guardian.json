@@ -145,7 +145,7 @@
         "table": "loot_tables/entities/ferocious_ruby_guardian.json"
       },
       "minecraft:follow_range": {
-        "value": 64
+        "value": 32
       }
     }
   }

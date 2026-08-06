@@ -131,7 +131,7 @@
         "is_pushable_by_piston": true
       },
       "minecraft:follow_range": {
-        "value": 64
+        "value": 32
       },
       "minecraft:conditional_bandwidth_optimization": {}
     }

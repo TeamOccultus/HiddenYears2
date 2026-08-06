@@ -159,7 +159,7 @@
       },
       "minecraft:movement.hover": {},
       "minecraft:follow_range": {
-        "value": 1024
+        "value": 32
       },
       "minecraft:ambient_sound_interval": {
         "value": 5.0,

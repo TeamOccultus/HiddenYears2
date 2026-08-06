@@ -153,7 +153,7 @@
       "minecraft:navigation.walk": { "can_path_over_water": true },
       "minecraft:movement.basic": {},
       "minecraft:jump.static": {},
-      "minecraft:follow_range": { "value": 64 },
+      "minecraft:follow_range": { "value": 32 },
       "minecraft:loot": {
         "table": "loot_tables/entities/drift_sand_sergeant.json"
       },
