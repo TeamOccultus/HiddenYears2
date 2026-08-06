@@ -8,6 +8,13 @@ import { kingOfRuby } from "../boss/kingOfRuby";
 import { pharaohsGhost } from "../boss/pharaohsGhost";
 import { muatsWarth } from "../boss/mutasWarth";
 
+kingOfRuby.onDie((arg) => {
+  arg.deadEntity.dimension.setBlockType(
+    arg.deadEntity.location,
+    "hiddenyears:ruby_griffin_egg"
+  );
+});
+
 export function registerBoss() {
   const server = new BossServer();
   server.addBoss(kingOfRuby);

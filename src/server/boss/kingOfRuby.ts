@@ -87,9 +87,4 @@ export const kingOfRuby = new Boss(
   "hiddenyears:king_of_ruby",
   [stealExperience, spawnGuardian, lightningFromPast],
   { trackId: "music.boss.ruby", radius: 20 }
-).onDie((arg) => {
-  arg.deadEntity.dimension.setBlockType(
-    arg.deadEntity.location,
-    "hiddenyears:ruby_griffin_egg"
-  );
-});
+)
