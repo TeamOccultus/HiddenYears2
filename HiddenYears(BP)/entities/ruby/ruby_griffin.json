@@ -408,6 +408,20 @@
           ]
         }
       },
+      "hiddenyears:as_child": {
+        "add": {
+          "component_groups": [
+            "hiddenyears:baby",
+            "hiddenyears:griffin_wild",
+            "hiddenyears:ground"
+          ]
+        },
+        "remove": {
+          "component_groups": [
+            "hiddenyears:adult"
+          ]
+        }
+      },
       "hiddenyears:grow_up": {
         "sequence": [
           {

@@ -1995,5 +1995,11 @@
   "article.hiddenyears:24.body_14": "「我相信，我们终会在大地之上重逢」她最后一次阖上眼睛，缓缓说到。",
   "article.hiddenyears:24.body_15": "言毕，她就来到了一个澄澈空阔的世界。",
   "article.hiddenyears:24.body_16": "「这就是你最后的惩罚吗，克洛尼斯·庞提乌斯·彼拉多？」",
-  "action.interact.ride.griffin": "爬上狮鹫的背"
+  "action.interact.ride.griffin": "爬上狮鹫的背",
+  "entity.hiddenyears:ruby_griffin.name": "红宝石狮鹫",
+  "item.spawn_egg.entity.hiddenyears:ruby_griffin.name": "红宝石狮鹫刷怪蛋",
+  "action.hint.exit.console.hiddenyears:ruby_griffin": "按 :_input_key.sneak: 跃下狮鹫",
+  "action.hint.exit.scheme.hiddenyears:ruby_griffin": "点击跳跃以跃下狮鹫",
+  "action.hint.exit.hiddenyears:ruby_griffin": "点击潜行以跃下狮鹫",
+  "container:hiddenyears:ruby_griffin": "红宝石狮鹫"
 }

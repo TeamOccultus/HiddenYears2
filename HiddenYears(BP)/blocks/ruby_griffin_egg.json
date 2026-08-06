@@ -1,0 +1,145 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:ruby_griffin_egg",
+      "menu_category": {
+        "category": "nature"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"],
+          "y_rotation_offset": 180
+        }
+      },
+      "states": {
+        "starock:growth": [0, 1, 2]
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('starock:growth') == 0",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.ruby_griffin_egg"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "hiddenyears:ruby_griffin_egg_stage_0"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('starock:growth') == 1",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.ruby_griffin_egg"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "hiddenyears:ruby_griffin_egg_stage_1"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('starock:growth') == 2",
+        "components": {
+          "minecraft:geometry": {
+            "identifier": "geometry.ruby_griffin_egg"
+          },
+          "minecraft:material_instances": {
+            "*": {
+              "texture": "hiddenyears:ruby_griffin_egg_stage_2"
+            }
+          }
+        }
+      }
+    ],
+    "components": {
+      "hiddenyears:egg_block": {
+        "spawn_entity": "hiddenyears:ruby_griffin",
+        "spawn_event": "hiddenyears:as_child",
+        "max_growth": 2
+      },
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 15.0,
+        "item_specific_speeds": [
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:wooden_tier')"
+            },
+            "destroy_speed": 7.5
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:stone_tier')"
+            },
+            "destroy_speed": 3.75
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:iron_tier')"
+            },
+            "destroy_speed": 0.75
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:diamond_tier')"
+            },
+            "destroy_speed": 0.6
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:netherite_tier')"
+            },
+            "destroy_speed": 0.5
+          },
+          {
+            "item": {
+              "tags": "q.all_tags('minecraft:is_pickaxe', 'minecraft:golden_tier')"
+            },
+            "destroy_speed": 1.25
+          }
+        ]
+      },
+      "minecraft:tags": [
+        "minecraft:is_pickaxe_item_destructible",
+        "minecraft:iron_tier_destructible"
+      ],
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 6.0
+      },
+      "minecraft:tick": {
+        "interval_range": [200, 400],
+        "looping": true
+      },
+      "minecraft:map_color": "#460095"
+    }
+  }
+}

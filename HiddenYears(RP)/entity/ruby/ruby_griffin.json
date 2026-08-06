@@ -31,7 +31,7 @@
       "render_controllers": ["controller.render.ruby_griffin"],
       "held_item_ignores_lighting": true,
       "spawn_egg": {
-        "texture": "hiddenyears:egg_ruby_zombie"
+        "texture": "hiddenyears:egg_ruby_griffin"
       }
     }
   }

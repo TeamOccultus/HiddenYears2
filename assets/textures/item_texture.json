@@ -368,6 +368,9 @@
     "hiddenyears:egg_rabbit_killer": {
       "textures": "textures/items/egg_rabbit_killer"
     },
+    "hiddenyears:egg_ruby_griffin": {
+      "textures": "textures/items/egg_ruby_griffin"
+    },
     "hiddenyears:egg_ruby_guardian": {
       "textures": "textures/items/egg_ruby_guardian"
     },
