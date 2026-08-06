@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.26.30",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:ruby_griffin",
@@ -8,81 +8,178 @@
       "is_experimental": false
     },
     "component_groups": {
-      "hiddenyears:start_flying": {
-        "minecraft:spell_effects": {
-          "add_effects": [
+      "hiddenyears:flying": {
+        "minecraft:is_stunned": {},
+        "minecraft:physics": {},
+        "minecraft:can_fly": {},
+        "minecraft:flying_speed": {
+          "value": 1.2
+        },
+        "minecraft:free_camera_controlled": {
+          "strafe_speed_modifier": 0.6,
+          "backwards_movement_modifier": 0.35
+        },
+        "minecraft:vertical_movement_action": {
+          "vertical_velocity": 0.5
+        },
+        "minecraft:movement.fly": {},
+        "minecraft:navigation.fly": {
+          "can_path_over_water": false,
+          "can_path_from_air": true,
+          "can_jump": true,
+          "can_breach": true,
+          "avoid_water": true
+        },
+        "minecraft:movement": {
+          "value": 1.5
+        }
+      },
+      "hiddenyears:ground": {
+        "minecraft:physics": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:navigation.walk": {
+          "can_jump": true,
+          "can_path_over_water": false,
+          "can_path_from_air": true,
+          "avoid_water": true,
+          "avoid_damage_blocks": true
+        },
+        "minecraft:movement.basic": {
+          "max_turn": 45.0
+        },
+        "minecraft:movement": {
+          "value": 0.8
+        },
+        "minecraft:variable_max_auto_step": {
+          "base_value": 1.5625,
+          "controlled_value": 1.5625,
+          "jump_prevented_value": 0.5625
+        }
+      },
+      "hiddenyears:swimming": {
+        "minecraft:movement": {
+          "value": 0.12
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.11
+        },
+        "minecraft:physics": { "has_gravity": false },
+        "minecraft:can_fly": {},
+        "minecraft:flying_speed": {
+          "value": 1.0
+        },
+        "minecraft:navigation.generic": {
+          "is_amphibious": true,
+          "can_path_over_water": true,
+          "can_swim": true,
+          "can_walk": true,
+          "can_breach": true,
+          "can_sink": false
+        },
+        "minecraft:movement.fly": {},
+        "minecraft:free_camera_controlled": {
+          "strafe_speed_modifier": 0.6,
+          "backwards_movement_modifier": 0.35
+        },
+        "minecraft:vertical_movement_action": {
+          "vertical_velocity": 0.5
+        }
+      },
+      "hiddenyears:baby": {
+        "minecraft:is_baby": {},
+        "minecraft:behavior.follow_parent": {
+          "speed_multiplier": 1.5
+        },
+        "minecraft:scale_by_age": {
+          "start_scale": 0.07,
+          "end_scale": 1.0
+        },
+        "minecraft:ageable": {
+          "duration": 14400,
+          "feed_items": [
             {
-              "effect": "levitation",
-              "amplifier": 80,
-              "visible": false,
-              "ambient": false,
-              "duration": 3
+              "item": "hiddenyears:ruby_heat",
+              "growth": 0.0078125
+            },
+            {
+              "item": "hiddenyears:ruby_skull",
+              "growth": 0.0104166
+            }
+          ],
+          "grow_up": {
+            "event": "hiddenyears:grow_up",
+            "target": "self"
+          }
+        }
+      },
+      "hiddenyears:adult": {
+        "minecraft:scale": {
+          "value": 1.0
+        },
+        "minecraft:behavior.hurt_by_target": {
+          "priority": 2,
+          "hurt_owner": false,
+          "entity_types": {
+            "max_dist": 64,
+            "walk_speed_multiplier": 2.4,
+            "sprint_speed_multiplier": 2.4
+          }
+        },
+        "minecraft:custom_hit_test": {
+          "hitboxes": [
+            {
+              "width": 2.0,
+              "height": 2.0,
+              "pivot": [0.0, 2.0, 0.0]
             }
           ]
         },
-        "minecraft:timer": {
-          "looping": false,
-          "randomInterval": false,
-          "time": 4,
-          "time_down_event": {
-            "event": "hiddenyears:launch_end",
-            "target": "self"
-          }
+        "minecraft:break_blocks": {
+          "breakable_blocks": []
         }
       },
-      "hiddenyears:stop_flying": {
-        "minecraft:spell_effects": {
-          "remove_effects": ["levitation"]
-        }
-      },
-      "hiddenyears:flying": {
-        "minecraft:physics": {
-          "has_gravity": false
-        },
-        "minecraft:can_fly": {},
-        "minecraft:movement.hover": {}
-      },
-      "hiddenyears:ground": {
-        "minecraft:physics": {
-          "has_gravity": true
-        }
-      },
-      "hiddenyears:ruby_griffin_wild": {
+      "hiddenyears:griffin_wild": {
         "minecraft:tameable": {
-          "probability": 0.45,
-          "tame_items": "hiddenyears:ruby_heart",
+          "probability": 0.1,
+          "tame_items": [
+            "hiddenyears:ruby_skull",
+            "hiddenyears:ruby_heart",
+            "hiddenyears:ruby"
+          ],
           "tame_event": {
-            "event": "minecraft:on_tame",
+            "event": "hiddenyears:tame",
             "target": "self"
-          }
-        },
-        "minecraft:behavior.random_hover": {
-          "priority": 4,
-          "xz_dist": 8,
-          "y_dist": 8,
-          "y_offset": -1,
-          "interval": 1,
-          "hover_height": {
-            "max": 8,
-            "min": 2
           }
         }
       },
-      "hiddenyears:ruby_griffin_tame": {
-        "minecraft:is_saddled": {},
-        "minecraft:input_ground_controlled": {},
-        "minecraft:can_power_jump": {},
-        "minecraft:behavior.player_ride_tamed": {},
-        "minecraft:horse.jump_strength": {
-          "value": {
-            "range_min": 4,
-            "range_max": 8
-          }
+      "hiddenyears:tame": {
+        "minecraft:behavior.follow_owner": {
+          "priority": 0,
+          "speed_multiplier": 1.2,
+          "start_distance": 5,
+          "stop_distance": 5
         },
+        "minecraft:tameable": {},
+        "minecraft:leashable": {},
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+        "minecraft:behavior.breed": {
+          "priority": 0
+        }
+      },
+      "hiddenyears:griffin_rideable": {
         "minecraft:rideable": {
           "seat_count": 2,
+          "crouching_skip_interact": true,
+          "rider_can_interact": false,
+          "dismount_mode": "default",
+          "on_rider_exit_event": "stop",
           "family_types": ["player"],
-          "interact_text": "action.interact.ride",
+          "interact_text": "action.interact.ride.griffin",
           "seats": [
             {
               "position": [-0.5, 2.75, -0.25]
@@ -91,303 +188,321 @@
               "position": [-0.5, 2.75, 0.75]
             }
           ]
-        },
-        "minecraft:inventory": {
-          "inventory_size": 15,
-          "container_type": "horse"
-        },
-        "minecraft:behavior.random_hover": {
-          "priority": 2,
-          "xz_dist": 4,
-          "y_dist": 4,
-          "y_offset": -1,
-          "interval": 1,
-          "hover_height": {
-            "max": 4,
-            "min": 1
-          }
-        },
-        "minecraft:is_tamed": {},
-        "minecraft:health": {
-          "value": 35,
-          "max": 35
-        },
-        "minecraft:behavior.follow_owner": {
-          "priority": 10,
-          "speed_multiplier": 1.0,
-          "start_distance": 24,
-          "stop_distance": 2
-        },
-        "minecraft:attack": {
-          "damage": 5
-        },
-        "minecraft:behavior.owner_hurt_by_target": {
-          "priority": 1
-        },
-        "minecraft:behavior.owner_hurt_target": {
-          "priority": 2
-        },
-        "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-          "must_see": true,
-          "entity_types": [
-            {
-              "filters": {
-                "test": "is_family",
-                "subject": "other",
-                "value": "illager"
-              },
-              "max_dist": 16
-            }
-          ]
         }
+      },
+      "hiddenyears:saddled": {
+        "minecraft:is_saddled": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:behavior.player_ride_tamed": {},
+        "minecraft:horse.jump_strength": {
+          "value": {
+            "range_min": 2,
+            "range_max": 4.5
+          }
+        }
+      },
+      "hiddenyears:chested": {
+        "minecraft:is_chested": {}
       }
     },
     "components": {
+      "minecraft:inventory": {
+        "inventory_size": 10,
+        "container_type": "horse"
+      },
       "minecraft:environment_sensor": {
         "triggers": [
           {
             "filters": {
-              "all_of": [
-                {
-                  "test": "is_riding",
-                  "subject": "other"
-                },
-                {
-                  "test": "on_ground"
-                },
-                {
-                  "test": "is_saddled"
-                }
-              ]
+              "all_of": [{ "test": "in_water" }]
             },
-            "event": "hiddenyears:launch"
+            "event": "swim"
           },
           {
             "filters": {
               "all_of": [
-                {
-                  "test": "on_ground"
-                }
+                { "test": "on_ground" },
+                { "test": "in_water", "operator": "!=" }
               ]
             },
-            "event": "hiddenyears:switch_to_ground"
+            "event": "ground"
           },
           {
             "filters": {
               "all_of": [
-                {
-                  "test": "on_ground",
-                  "operator": "!="
-                }
+                { "test": "on_ground", "operator": "!=" },
+                { "test": "in_water", "operator": "!=" }
               ]
             },
-            "event": "hiddenyears:switch_to_flying"
+            "event": "fly"
           }
         ]
       },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 1,
-        "entity_types": [
-          {
-            "filters": {
-              "any_of": [
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "monster"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "irongolem"
-                }
-              ]
-            },
-            "max_dist": 16
-          }
-        ],
-        "must_see": true
+      "minecraft:fire_immune": {},
+      "minecraft:nameable": {},
+      "minecraft:jump.static": {
+        "jump_power": 1.8
+      },
+      "minecraft:can_climb": {},
+      "minecraft:persistent": {},
+      "minecraft:physics": {},
+      "minecraft:behavior.random_look_around": {
+        "priority": 5
       },
       "minecraft:attack": {
-        "damage": 5
+        "damage": 24
       },
-      "minecraft:is_hidden_when_invisible": {},
+      /* "minecraft:loot": {
+        "table": "loot_tables/loot/dark.json"
+      },*/
+      "minecraft:behavior.delayed_attack": {
+        "priority": 1,
+        "speed_multiplier": 1.8,
+        "attack_duration": 0.36,
+        "hit_delay_pct": 0.24,
+        "track_target": true,
+        "reach_multiplier": 4.0,
+        "sound_event": "attack"
+      },
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
       "minecraft:type_family": {
-        "family": ["ruby_griffin", "mob"]
+        "family": ["mob", "animal", "ruby", "ruby_griffin"]
       },
-      "minecraft:collision_box": {
-        "width": 1.2,
-        "height": 1.8
+      "minecraft:behavior.mount_pathing": {
+        "priority": 3,
+        "speed_multiplier": 1.6
       },
-      "minecraft:balloonable": {
-        "mass": 0.5
-      },
-      "minecraft:breathable": {
-        "total_supply": 15,
-        "suffocate_time": 0
-      },
-      "minecraft:nameable": {},
-      "minecraft:leashable": {},
       "minecraft:health": {
         "value": 100,
         "max": 100
       },
-      "minecraft:hurt_on_condition": {
-        "damage_conditions": [
-          {
-            "filters": {
-              "test": "in_lava",
-              "subject": "self",
-              "operator": "==",
-              "value": true
-            },
-            "cause": "lava",
-            "damage_per_tick": 4
-          }
-        ]
+      "minecraft:behavior.move_towards_target": {
+        "priority": 3,
+        "speed_multiplier": 1.8,
+        "within_radius": 64
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 3.0
+      },
+      "minecraft:behavior.move_to_random_block": {
+        "priority": 6,
+        "speed_multiplier": 0.55,
+        "within_radius": 8,
+        "block_distance": 64
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "breathes_water": true,
+        "suffocate_time": 0
       },
       "minecraft:damage_sensor": {
         "triggers": [
           {
-            "on_damage": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "is_family",
-                    "subject": "other",
-                    "value": "player"
-                  },
-                  {
-                    "test": "is_owner",
-                    "subject": "other",
-                    "value": true
-                  }
-                ]
-              }
-            },
+            "cause": "anvil",
+            "deals_damage": "no"
+          },
+          {
+            "cause": "block_explosion",
+            "deals_damage": "no"
+          },
+          {
+            "cause": "fall",
+            "deals_damage": "no"
+          },
+          {
+            "cause": "fly_into_wall",
             "deals_damage": "no"
           }
         ]
       },
-      "minecraft:movement": {
-        "value": 1.0
-      },
-      "minecraft:navigation.walk": {
-        "can_path_over_water": true,
-        "can_path_from_air": true,
-        "avoid_water": true,
-        "avoid_damage_blocks": true
-      },
-      "minecraft:movement.hover": {},
-      "minecraft:follow_range": {
-        "value": 64
-      },
-      "minecraft:ambient_sound_interval": {
-        "value": 5.0,
-        "range": 5.0,
-        "event_name": "ambient",
-        "event_names": [
+      "minecraft:equippable": {
+        "slots": [
           {
-            "event_name": "ambient.tame",
-            "condition": "query.is_using_item"
+            "slot": 0,
+            "item": "saddle",
+            "accepted_items": ["saddle"],
+            "on_equip": {
+              "event": "hiddenyears:saddled"
+            },
+            "on_unequip": {
+              "event": "hiddenyears:unsaddled"
+            }
           },
           {
-            "event_name": "ambient",
-            "condition": "!query.is_using_item"
+            "slot": 1,
+            "item": "chest",
+            "accepted_items": ["chest"],
+            "on_equip": {
+              "event": "hiddenyears:add_chest"
+            },
+            "on_unequip": {
+              "event": "hiddenyears:remove_chest"
+            }
           }
         ]
       },
-      "minecraft:jump.static": {},
-      "minecraft:can_fly": {},
-      "minecraft:physics": {
-        "has_gravity": true
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 3,
+        "must_see": true,
+        "entity_types": [
+          {
+            "filters": {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            },
+            "max_dist": 16
+          }
+        ]
       },
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
-      "minecraft:conditional_bandwidth_optimization": {},
-      "minecraft:game_event_movement_tracking": {
-        "emit_flap": true
-      },
-      "minecraft:behavior.panic": {
-        "priority": 1,
-        "speed_multiplier": 2.0
-      },
-      "minecraft:behavior.float": {
-        "priority": 0
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "chicken",
+            "heal_amount": 4
+          },
+          {
+            "item": "beef",
+            "heal_amount": 4
+          },
+          {
+            "item": "porkchop",
+            "heal_amount": 4
+          },
+          {
+            "item": "rabbit",
+            "heal_amount": 4
+          },
+          {
+            "item": "rotten_flesh",
+            "heal_amount": 2
+          }
+        ]
       },
       "minecraft:behavior.tempt": {
-        "priority": 3,
+        "priority": 4,
         "speed_multiplier": 1.6,
         "within_radius": 16,
-        "items": ["fish", "salmon", "clownfish"]
+        "items": ["fish", "salmon", "clownfish", "porkchop"]
       },
       "minecraft:behavior.random_stroll": {
         "priority": 4,
-        "speed_multiplier": 1.8,
-        "xz_dist": 96,
-        "y_dist": 128,
-        "interval": 4
+        "speed_multiplier": 1
       },
       "minecraft:behavior.look_at_player": {
-        "priority": 8,
-        "target_distance": 6.0,
-        "probability": 0.02
-      },
-      "minecraft:behavior.random_look_around": {
-        "priority": 8
+        "priority": 5
       }
     },
     "events": {
-      "minecraft:on_tame": {
-        "remove": {
-          "component_groups": ["hiddenyears:ruby_griffin_wild"]
-        },
-        "add": {
-          "component_groups": ["hiddenyears:ruby_griffin_tame"]
-        }
-      },
       "minecraft:entity_spawned": {
         "add": {
           "component_groups": [
-            "hiddenyears:ruby_griffin_wild",
+            "hiddenyears:adult",
+            "hiddenyears:griffin_wild",
             "hiddenyears:ground"
           ]
         }
       },
-      "hiddenyears:launch": {
+      "hiddenyears:grow_up": {
+        "sequence": [
+          {
+            "filters": {
+              "test": "has_component",
+              "value": "minecraft:tameable"
+            },
+            "add": {
+              "component_groups": ["hiddenyears:griffin_rideable"]
+            }
+          },
+          {
+            "remove": {
+              "component_groups": ["hiddenyears:baby"]
+            },
+            "add": {
+              "component_groups": ["hiddenyears:adult"]
+            }
+          }
+        ]
+      },
+      "hiddenyears:tame": {
+        "sequence": [
+          {
+            "remove": {
+              "component_groups": ["hiddenyears:griffin_wild"]
+            },
+            "add": {
+              "component_groups": ["hiddenyears:tame"]
+            }
+          },
+          {
+            "filters": {
+              "test": "has_component",
+              "operator": "!=",
+              "value": "minecraft:is_baby"
+            },
+            "add": {
+              "component_groups": ["hiddenyears:griffin_rideable"]
+            }
+          }
+        ]
+      },
+      "hiddenyears:saddled": {
         "add": {
-          "component_groups": ["hiddenyears:start_flying"]
-        },
-        "remove": {
-          "component_groups": ["hiddenyears:stop_flying"]
+          "component_groups": ["hiddenyears:saddled"]
         }
       },
-      "hiddenyears:launch_end": {
+      "hiddenyears:unsaddled": {
         "remove": {
-          "component_groups": ["hiddenyears:start_flying"]
+          "component_groups": ["hiddenyears:saddled", "hiddenyears:flying"]
         },
+        "queue_command": { "command": ["ride @p stop_riding"] }
+      },
+      "hiddenyears:add_chest": {
         "add": {
-          "component_groups": ["hiddenyears:stop_flying"]
+          "component_groups": ["hiddenyears:chested"]
         }
       },
-      "hiddenyears:switch_to_flying": {
+      "hiddenyears:remove_chest": {
         "remove": {
-          "component_groups": ["hiddenyears:ground"]
-        },
-        "add": {
-          "component_groups": ["hiddenyears:flying"]
+          "component_groups": ["hiddenyears:chested"]
         }
       },
-      "hiddenyears:switch_to_ground": {
+      "fly": {
+        "add": { "component_groups": ["hiddenyears:flying"] },
         "remove": {
-          "component_groups": ["hiddenyears:flying"]
+          "component_groups": ["hiddenyears:ground", "hiddenyears:swimming"]
         },
-        "add": {
-          "component_groups": ["hiddenyears:ground"]
+        "queue_command": {
+          "command": ["effect @s slow_falling infinite 0 true"]
         }
+      },
+      "ground": {
+        "sequence": [
+          {
+            "add": { "component_groups": ["hiddenyears:ground"] },
+            "remove": {
+              "component_groups": ["hiddenyears:flying", "hiddenyears:swimming"]
+            },
+            "queue_command": { "command": ["effect @s clear slow_falling "] }
+          }
+        ]
+      },
+      "stop": {
+        "remove": { "component_groups": ["flying"] },
+        "add": { "component_groups": ["hiddenyears:ground"] },
+        "queue_command": { "command": ["effect @s clear slow_falling"] }
+      },
+      "swim": {
+        "remove": {
+          "component_groups": ["hiddenyears:ground", "hiddenyears:flying"]
+        },
+        "add": { "component_groups": ["hiddenyears:swimming"] },
+        "queue_command": { "command": ["effect @s clear slow_falling "] }
       }
     }
   }

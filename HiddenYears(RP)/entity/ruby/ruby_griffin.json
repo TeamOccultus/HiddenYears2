@@ -28,7 +28,7 @@
         { "fly": "controller.animation.ruby_griffin.fly" },
         { "attack": "controller.animation.ruby_griffin.attack" }
       ],
-      "render_controllers": ["controller.render.default"],
+      "render_controllers": ["controller.render.ruby_griffin"],
       "held_item_ignores_lighting": true,
       "spawn_egg": {
         "texture": "hiddenyears:egg_ruby_zombie"
