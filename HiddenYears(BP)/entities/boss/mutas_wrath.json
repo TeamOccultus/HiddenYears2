@@ -19,7 +19,7 @@
       "minecraft:boss": {
         "should_darken_sky": false,
         "hud_range": 125,
-        "name": "entity.hiddenyears:mutas_wrath.name"
+        "name": "Ira Conditoris"
       },
       "minecraft:equip_item": {},
       "minecraft:equipment": {

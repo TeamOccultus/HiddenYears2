@@ -19,7 +19,7 @@
       "minecraft:boss": {
         "should_darken_sky": false,
         "hud_range": 125,
-        "name": "entity.hiddenyears:pharaohs_ghost.name"
+        "name": "Umbra Pharaonis"
       },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:experience_reward": {
