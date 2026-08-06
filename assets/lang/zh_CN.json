@@ -2001,5 +2001,9 @@
   "action.hint.exit.console.hiddenyears:ruby_griffin": "按 :_input_key.sneak: 跃下狮鹫",
   "action.hint.exit.scheme.hiddenyears:ruby_griffin": "点击跳跃以跃下狮鹫",
   "action.hint.exit.hiddenyears:ruby_griffin": "点击潜行以跃下狮鹫",
-  "container:hiddenyears:ruby_griffin": "红宝石狮鹫"
+  "container:hiddenyears:ruby_griffin": "红宝石狮鹫",
+  "task.ruby_iphon": "「臣服于█」",
+  "task.ruby_iphon.desc_1": "手中攥着一截断骨，他只是轻轻一吹，自地下苏醒的魔物便臣服于自己的主人。",
+  "task.ruby_iphon.desc_2": "他不曾听见胞弟的哀嚎，因为他的耳中只有「神明」的低语。",
+  "task.ruby_iphon.tips": "使用红宝石怪物掉落的心脏和颅骨，以及魔法源质合成「红宝石喷管」，以驯服红宝石怪物"
 }

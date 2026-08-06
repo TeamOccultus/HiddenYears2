@@ -294,14 +294,14 @@
         "within_radius": 64
       },
       "minecraft:collision_box": {
-        "width": 1.0,
-        "height": 3.0
+        "width": 3.0,
+        "height": 3.6
       },
       "minecraft:behavior.move_to_random_block": {
         "priority": 6,
         "speed_multiplier": 0.55,
         "within_radius": 8,
-        "block_distance": 64
+        "block_distance": 16
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -358,7 +358,7 @@
         "priority": 3,
         "must_see": true,
         "must_reach": true,
-        "within_radius": 0,
+        "within_radius": 5,
         "entity_types": [
           {
             "filters": {
@@ -366,7 +366,8 @@
               "subject": "other",
               "value": "monster"
             },
-            "max_dist": 16
+            "max_dist": 10,
+            "cooldown": 2
           }
         ]
       },

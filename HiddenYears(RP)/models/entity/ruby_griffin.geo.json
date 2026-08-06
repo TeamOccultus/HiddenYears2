@@ -32,7 +32,7 @@
         {
           "name": "feet0",
           "parent": "leg0",
-          "pivot": [3, 31, 13],
+          "pivot": [10, 21.09416, 10.08722],
           "cubes": [
             {
               "origin": [6, 26, 8],
@@ -41,14 +41,28 @@
               "pivot": [7, 24, 30],
               "rotation": [45, 0, 0],
               "uv": [0, 192]
-            },
+            }
+          ]
+        },
+        {
+          "name": "bone3",
+          "parent": "feet0",
+          "pivot": [10, 13, 15],
+          "cubes": [
+            { "origin": [6.5, 0, 12], "size": [7, 15, 6], "uv": [198, 15] }
+          ]
+        },
+        {
+          "name": "bone2",
+          "parent": "bone3",
+          "pivot": [10, 2.5, 15],
+          "cubes": [
             {
               "origin": [6.5, 0, 4.5],
               "size": [7, 5, 11],
               "inflate": 0.05,
               "uv": [32, 195]
-            },
-            { "origin": [6.5, 0, 12], "size": [7, 15, 6], "uv": [198, 15] }
+            }
           ]
         },
         {
@@ -492,7 +506,7 @@
         {
           "name": "feet3",
           "parent": "leg3",
-          "pivot": [-3, 31, 13],
+          "pivot": [-10, 21.09416, 10.08722],
           "cubes": [
             {
               "origin": [-14, 26, 8],
@@ -502,14 +516,28 @@
               "rotation": [45, 0, 0],
               "uv": [0, 192],
               "mirror": true
-            },
+            }
+          ]
+        },
+        {
+          "name": "bone4",
+          "parent": "feet3",
+          "pivot": [-10, 13, 15],
+          "cubes": [
             {
               "origin": [-13.5, 0, 12],
               "size": [7, 15, 6],
               "inflate": 0.004,
               "uv": [198, 15],
               "mirror": true
-            },
+            }
+          ]
+        },
+        {
+          "name": "bone",
+          "parent": "bone4",
+          "pivot": [-10, 2.5, 15],
+          "cubes": [
             {
               "origin": [-13.5, 0, 4.5],
               "size": [7, 5, 11],

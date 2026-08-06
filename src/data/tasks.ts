@@ -1000,6 +1000,27 @@ const worldEndFruit = new Task(
 );
 tasks.set(worldEndFruit.id, worldEndFruit);
 
+const rubyIphon = new Task(
+  "hiddenyears:ruby_iphon",
+  { translate: "task.ruby_iphon" },
+  {
+    rawtext: [
+      { translate: "task.ruby_iphon.desc_1" },
+      { text: Format.newLine },
+      { text: Format.newLine },
+      { translate: "task.ruby_iphon.desc_2" },
+    ]
+  },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    conditions: [new ItemConditions("hiddenyears:ruby_iphon")],
+    previousTask: "none",
+    tips: "task.ruby_iphon.tips",
+    iconPath: "textures/items/ruby_iphon"
+  }
+);
+tasks.set(rubyIphon.id, rubyIphon);
+
 const songOfPowerAndBlood = new Task(
   "hiddenyears:song_of_power_and_blood",
   { translate: "task.song_of_power_and_blood" },
@@ -1035,6 +1056,7 @@ const chapterIActI = new TaskGroup(
       bloodyGem,
       bloodyArmor,
       decayedServant,
+      rubyIphon,
       trueAndFalse,
       thunderKey,
       bloodGaze,
