@@ -262,7 +262,7 @@
         "priority": 5
       },
       "minecraft:attack": {
-        "damage": 24
+        "damage": 6
       },
       "minecraft:behavior.delayed_attack": {
         "priority": 1,
@@ -357,7 +357,6 @@
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 3,
         "must_see": true,
-        "must_reach": true,
         "within_radius": 5,
         "entity_types": [
           {
@@ -366,8 +365,7 @@
               "subject": "other",
               "value": "monster"
             },
-            "max_dist": 10,
-            "cooldown": 2
+            "max_dist": 16
           }
         ]
       },
