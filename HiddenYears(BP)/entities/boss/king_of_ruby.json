@@ -14,7 +14,7 @@
         "track_target": true
       },
       "minecraft:attack": {
-        "damage": 5
+        "damage": 8
       },
       "minecraft:boss": {
         "should_darken_sky": true,
