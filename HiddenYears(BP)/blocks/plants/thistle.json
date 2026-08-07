@@ -83,7 +83,10 @@
         "interval_range": [10, 10],
         "looping": true
       },
-      "hiddenyears:bush": {}
+      "hiddenyears:flower": {
+        "damage": 2,
+        "chance": 0.85
+      }
     }
   }
 }

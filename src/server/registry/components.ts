@@ -44,6 +44,7 @@ import { DimensionTeleporterComponent } from "../components/DimensionTeleporterC
 import { IphonComponent } from "../components/IphonComponent/Component";
 import { LoreComponent } from "../components/LoreComponent/Component";
 import { EggBlockComponent } from "../components/EggBlockComponent/Component";
+import { FlowerComponent } from "../components/FlowerComponent/Component";
 
 /**
  * 注册自定义组件
@@ -81,7 +82,8 @@ export function registerCustomComponents() {
   new DimensionTeleporterComponent("hiddenyears:teleporter");
   new IphonComponent("hiddenyears:iphon");
   new LoreComponent("hiddenyears:tooltip");
-  new EggBlockComponent("hiddenyears:egg_block")
+  new EggBlockComponent("hiddenyears:egg_block");
+  new FlowerComponent("hiddenyears:flower");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

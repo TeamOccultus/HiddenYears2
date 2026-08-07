@@ -36,24 +36,6 @@
  * @module HiddenYears2
  * @category Main
  */
-import { system } from "@minecraft/server";
 import { initialize } from "./server/initialize";
-import { Random } from "@occultus/api";
 
 initialize();
-
-system.beforeEvents.startup.subscribe((event) => {
-  event.blockComponentRegistry.registerCustomComponent("hiddenyears:bush", {
-    onBreak(arg0, arg1) {
-      arg0.entitySource?.applyDamage(3);
-    },
-    onTick(arg0, arg1) {
-      if (Random.integer(100, 0) > 75) return;
-      arg0.dimension
-        .getEntitiesAtBlockLocation(arg0.block.location)
-        .forEach((entity) => {
-          entity.applyDamage(2);
-        });
-    }
-  });
-});
