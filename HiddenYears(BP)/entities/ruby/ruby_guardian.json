@@ -18,7 +18,7 @@
           "max": 20
         },
         "minecraft:type_family": {
-          "family": ["ruby_guardian", "monster", "ruby", "mob"]
+          "family": ["ruby_guardian", "monster", "ruby", "mob", "ruby_monster"]
         },
         "minecraft:nameable": {},
         "minecraft:tameable": {

@@ -30,7 +30,8 @@
             "ruby",
             "undead",
             "monster",
-            "mob"
+            "mob",
+            "ruby_monster"
           ]
         },
         "minecraft:behavior.nearest_attackable_target": {
