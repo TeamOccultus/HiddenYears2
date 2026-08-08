@@ -196,10 +196,10 @@
           "interact_text": "action.interact.ride.griffin",
           "seats": [
             {
-              "position": [-0.5, 2.75, -0.25]
+              "position": [0, 2.5, -0.25]
             },
             {
-              "position": [-0.5, 2.75, 0.75]
+              "position": [0, 2.5, 0.75]
             }
           ]
         }
