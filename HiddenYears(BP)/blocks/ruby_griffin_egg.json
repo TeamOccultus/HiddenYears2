@@ -136,7 +136,7 @@
         "explosion_resistance": 6.0
       },
       "minecraft:tick": {
-        "interval_range": [200, 400],
+        "interval_range": [1200, 1800],
         "looping": true
       },
       "minecraft:map_color": "#460095"
