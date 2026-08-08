@@ -25,3 +25,5 @@ category: Documents
 - [Alien bird chirping sound effect](https://freesound.org/s/770877/) by Mastersoundboy2005, license under Creative Commons 0
 - [Boss Battle Loop 1 (155 BPM)](https://freesound.org/s/739177/) by kanaizo, license under Creative Commons 0
 - [JRPG Guitar Desert loop](https://freesound.org/s/659223/), license under Creative Commons 0
+- [Dragon quick roar mammel.wav](https://freesound.org/s/563688/) by J.R.Mythical , license under Creative Commons 0
+- [Dragon Roar](https://freesound.org/s/221500/) by qubodup, license under Attribution 4.0

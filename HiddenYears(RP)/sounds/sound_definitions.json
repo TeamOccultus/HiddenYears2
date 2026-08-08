@@ -581,6 +581,46 @@
         }
       ],
       "subtitle": "subtitles.item.ruby_iphon.use"
+    },
+    "mob.ruby_griffin.say": {
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "name": "sounds/mob/ruby_griffin_say_1",
+          "volume": 1
+        },
+        {
+          "name": "sounds/mob/ruby_griffin_say_2",
+          "volume": 1
+        }
+      ],
+      "subtitle": "subtitles.mob.ruby_griffin.say"
+    },
+    "mob.ruby_griffin.hit": {
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "name": "sounds/mob/ruby_griffin_hit_1",
+          "volume": 1
+        }
+      ],
+      "subtitle": "subtitles.mob.ruby_griffin.hit"
+    },
+    "mob.ruby_griffin.death": {
+      "category": "hostile",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        {
+          "name": "sounds/mob/ruby_griffin_death",
+          "volume": 1
+        }
+      ],
+      "subtitle": "subtitles.mob.ruby_griffin.death"
     }
     /*,
     "mob.lunamutatio.death": {

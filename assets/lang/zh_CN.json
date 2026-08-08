@@ -2008,5 +2008,8 @@
   "task.ruby_iphon.tips": "使用红宝石怪物掉落的心脏和颅骨，以及魔法源质合成「红宝石喷管」，以驯服红宝石怪物",
   "tooltip.hiddenyears:camellia.1": "§r「永眠吧，渺小的梦想",
   "tooltip.hiddenyears:camellia.2": "§r「来杀尽我心中那朵朵山茶花呀」",
-  "tile.hiddenyears:ruby_griffin_egg.name": "红宝石狮鹫蛋"
+  "tile.hiddenyears:ruby_griffin_egg.name": "红宝石狮鹫蛋",
+  "subtitles.mob.ruby_griffin.say": "红宝石狮鹫：嘶吼",
+  "subtitles.mob.ruby_griffin.hit": "红宝石狮鹫：求饶",
+  "subtitles.mob.ruby_griffin.death": "红宝石狮鹫：死亡"
 }

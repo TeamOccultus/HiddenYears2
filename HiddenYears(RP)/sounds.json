@@ -465,6 +465,15 @@
             "pitch": 1.0
           }
         }
+      },
+      "hiddenyears:ruby_griffin": {
+        "volume": 1.0,
+        "pitch": [1.5, 2.0],
+        "events": {
+          "ambient": "mob.ruby_griffin.say",
+          "hurt": "mob.ruby_griffin.hit",
+          "death": "mob.ruby_griffin.death"
+        }
       }
     }
   }
