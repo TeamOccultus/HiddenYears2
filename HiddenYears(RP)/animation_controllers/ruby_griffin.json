@@ -1,63 +1,53 @@
 {
-	"format_version": "1.10.0",
-	"animation_controllers": {
-		"controller.animation.ruby_griffin.fly": {
-			"initial_state": "idle",
-			"states": {
-				"idle": {
-					"animations": ["idle"],
-					"transitions": [
-						{"moving": "query.modified_move_speed > 0.1"}
-					],
-					"blend_transition": 0.4,
-					"blend_via_shortest_path": true
-				},
-				"moving": {
-					"animations": [
-						{"fly": "!query.is_on_ground"},
-						{"walk": "query.is_on_ground"}
-					],
-					"transitions": [
-						{"idle": "query.modified_move_speed < 0.05"}
-					],
-					"blend_transition": 0.4
-				}
-			}
-		},
-		"controller.animation.ruby_griffin.attack": {
-			"initial_state": "default",
-			"states": {
-				"attacking": {
-					"animations": ["attack"],
-					"transitions": [
-						{"default": "variable.attack_time < 0.0"}
-					]
-				},
-				"default": {
-					"transitions": [
-						{"attacking": "variable.attack_time >= 0.0"}
-					]
-				}
-			}
-		},
-		"controller.animation.ruby_griffin.sit": {
-			"states": {
-				"sitting": {
-					"animations": ["sit"],
-					"transitions": [
-						{"default": "!query.is_sitting"}
-					],
-					"blend_transition": 0.5,
-					"blend_via_shortest_path": true
-				},
-				"default": {
-					"transitions": [
-						{"sitting": "query.is_sitting"}
-					],
-					"blend_transition": 0.5,
-					"blend_via_shortest_path": true
-				}
-			}
-		}
-	}
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.ruby_griffin.fly": {
+      "initial_state": "idle",
+      "states": {
+        "idle": {
+          "animations": ["idle"],
+          "transitions": [{ "moving": "query.modified_move_speed > 0.1" }],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true
+        },
+        "moving": {
+          "animations": [
+            { "fly": "!query.is_on_ground" },
+            { "walk": "query.is_on_ground" }
+          ],
+          "transitions": [{ "idle": "query.modified_move_speed < 0.1" }],
+          "blend_transition": 0.4,
+          "blend_via_shortest_path": true
+        }
+      }
+    },
+    "controller.animation.ruby_griffin.attack": {
+      "initial_state": "default",
+      "states": {
+        "attacking": {
+          "animations": ["attack"],
+          "transitions": [{ "default": "variable.attack_time == 0.0" }]
+        },
+        "default": {
+          "transitions": [{ "attacking": "variable.attack_time > 0.0" }]
+        }
+      }
+    },
+    "controller.animation.ruby_griffin.sit": {
+      "initial_state": "default",
+      "states": {
+        "sitting": {
+          "animations": ["sit"],
+          "transitions": [{ "default": "!query.is_sitting" }],
+          "blend_transition": 0.5,
+          "blend_via_shortest_path": true
+        },
+        "default": {
+          "transitions": [{ "sitting": "query.is_sitting" }],
+          "blend_transition": 0.5,
+          "blend_via_shortest_path": true
+        }
+      }
+    }
+  }
 }
