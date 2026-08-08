@@ -120,9 +120,9 @@
           "priority": 2,
           "hurt_owner": false,
           "entity_types": {
-            "max_dist": 64,
-            "walk_speed_multiplier": 2.4,
-            "sprint_speed_multiplier": 2.4
+            "max_dist": 24,
+            "walk_speed_multiplier": 1.2,
+            "sprint_speed_multiplier": 1.5
           }
         },
         "minecraft:custom_hit_test": {
@@ -290,8 +290,8 @@
       },
       "minecraft:behavior.move_towards_target": {
         "priority": 3,
-        "speed_multiplier": 1.8,
-        "within_radius": 64
+        "speed_multiplier": 1,
+        "within_radius": 16
       },
       "minecraft:collision_box": {
         "width": 3.0,
