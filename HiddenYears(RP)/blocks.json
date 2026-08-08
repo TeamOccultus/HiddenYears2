@@ -39,7 +39,7 @@
   "hiddenyears:ancient_war_debris": {
     "sound": "ancient_debris"
   },
-   "hiddenyears:blue_hyacinth": {
+  "hiddenyears:blue_hyacinth": {
     "sound": "grass"
   },
   "hiddenyears:purple_hyacinth": {
@@ -77,5 +77,8 @@
   },
   "hiddenyears:thistle": {
     "sound": "grass"
+  },
+  "hiddenyears:ruby_griffin_egg": {
+    "sound": "turtle_egg"
   }
 }
