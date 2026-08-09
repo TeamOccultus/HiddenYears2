@@ -152,7 +152,6 @@ function onComplete(
 ) {
   const [player, item] = [arg0.source, arg0.itemStack];
   const pullingLevel = that.getPullingLevels(item);
-  console.log(that.hasAmmunition(item, player));
   if (pullingLevel === "standby") {
     if (!that.hasAmmunition(item, player)) return;
     that.consumeAmmunition(item, player);

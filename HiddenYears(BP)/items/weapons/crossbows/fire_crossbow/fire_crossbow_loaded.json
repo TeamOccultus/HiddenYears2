@@ -40,6 +40,10 @@
       },
       "minecraft:use_animation": "crossbow",
       "minecraft:max_stack_size": 1,
+      "minecraft:enchantable": {
+        "slot": "crossbow",
+        "value": 10
+      },
       "minecraft:tags":{
         "tags": ["oreville:is_crossbow"]
       },
