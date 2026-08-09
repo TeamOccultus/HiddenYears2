@@ -784,6 +784,7 @@ const elytra = new Task(
     iconPath: "textures/items/elytra"
   }
 );
+tasks.set(elytra.id, elytra);
 
 const enderDragon = new Task(
   "hiddenyears:ender_dragon",
@@ -1008,7 +1009,7 @@ const rubyIphon = new Task(
       { translate: "task.ruby_iphon.desc_1" },
       { text: Format.newLine },
       { text: Format.newLine },
-      { translate: "task.ruby_iphon.desc_2" },
+      { translate: "task.ruby_iphon.desc_2" }
     ]
   },
   {
