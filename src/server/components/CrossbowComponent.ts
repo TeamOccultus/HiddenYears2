@@ -7,9 +7,35 @@ import {
   system,
   world
 } from "@minecraft/server";
-import { getEquipmentItem, setEquipmentItem } from "@occultus/api";
+import {
+  consumeDurability,
+  getEquipmentItem,
+  migrateDamage,
+  migrateEnchantments,
+  setEquipmentItem
+} from "@occultus/api";
 
-// @todo: 添加耐久消耗机制
+function copyItem(oldItem: ItemStack, to?: string, amount?: number) {
+  if (!to) to = oldItem.typeId;
+  if (!amount) amount = oldItem.amount;
+  const newItem = new ItemStack(to, amount);
+  migrateDamage(oldItem, newItem);
+  migrateEnchantments(oldItem, newItem);
+  newItem.lockMode = oldItem.lockMode;
+  if (oldItem.nameTag) {
+    newItem.nameTag = oldItem.nameTag;
+  }
+  if (oldItem.getLore().length > 0) {
+    newItem.setLore(oldItem.getLore());
+  }
+  if (oldItem.getDynamicPropertyIds().length > 0) {
+    oldItem.getDynamicPropertyIds().forEach((id) => {
+      newItem.setDynamicProperty(id, oldItem.getDynamicProperty(id));
+    });
+  }
+  return newItem;
+}
+
 export class CrossbowComponent {
   constructor(readonly componentName: string) {
     world.afterEvents.itemReleaseUse.subscribe((arg) => {
@@ -53,20 +79,9 @@ export class CrossbowComponent {
     const params = component.customComponentParameters
       .params as CrossbowComponentParams;
     if (!params) throw new Error();
-    const newItem = new ItemStack(params.next_level_item);
-    if (
-      item.getComponent("durability")!.damage ===
-      item.getComponent("durability")!.maxDurability
-    ) {
-      player.playSound("random.break");
-      return;
-    }
+    const newItem = copyItem(item, params.next_level_item);
     if (params.pulling_level === "loaded") {
-      newItem.getComponent("durability")!.damage =
-        item.getComponent("durability")!.damage + 1;
-    } else {
-      newItem.getComponent("durability")!.damage =
-        item.getComponent("durability")!.damage;
+      return consumeDurability(newItem, 1, player);
     }
     return newItem;
   }
@@ -85,10 +100,11 @@ export class CrossbowComponent {
       if (this.getAmmunitions(item).includes(offhandItem.typeId)) return true;
     }
     const container = player.getComponent("inventory")!.container;
+    let result: boolean = false;
     this.getAmmunitions(item).forEach((ammunition) => {
-      if (container.find(new ItemStack(ammunition))) return true;
+      if (container.contains(new ItemStack(ammunition))) result = true;
     });
-    return false;
+    return result;
   }
   consumeAmmunition(item: ItemStack, player: Player) {
     if (player.getGameMode() === "Creative") return;
@@ -136,6 +152,7 @@ function onComplete(
 ) {
   const [player, item] = [arg0.source, arg0.itemStack];
   const pullingLevel = that.getPullingLevels(item);
+  console.log(that.hasAmmunition(item, player));
   if (pullingLevel === "standby") {
     if (!that.hasAmmunition(item, player)) return;
     that.consumeAmmunition(item, player);
