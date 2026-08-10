@@ -12,6 +12,7 @@
     "uuid": "b16bb643-fe64-43a2-8423-820a57145c4d",
     "version": "3.0.13"
   },
+  "capabilities": ["pbr"],
   "modules": [
     {
       "type": "resources",
