@@ -2,13 +2,13 @@
   "format_version": "1.21.40",
   "minecraft:template_pool": {
     "description": {
-      "identifier": "hiddenyears:cch_basement"
+      "identifier": "hiddenyears:cch_basement_0"
     },
     "elements": [
       {
         "element": {
           "element_type": "minecraft:single_pool_element",
-          "location": "hiddenyears/cch_basement",
+          "location": "hiddenyears/cch_basement_0",
           "processors": "hiddenyears:to_ruby"
         },
         "weight": 1

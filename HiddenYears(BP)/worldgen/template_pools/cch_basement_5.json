@@ -1,0 +1,42 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:cch_basement_5"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/cch_basement_5_1",
+          "processors": "hiddenyears:to_ruby"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/cch_basement_5_2",
+          "processors": "hiddenyears:to_ruby"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/cch_basement_5_3",
+          "processors": "hiddenyears:to_ruby"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/cch_basement_5_4",
+          "processors": "hiddenyears:to_ruby"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

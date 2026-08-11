@@ -45,6 +45,7 @@ import { IphonComponent } from "../components/IphonComponent/Component";
 import { LoreComponent } from "../components/LoreComponent/Component";
 import { EggBlockComponent } from "../components/EggBlockComponent/Component";
 import { FlowerComponent } from "../components/FlowerComponent/Component";
+import { EggEmbryoBlockComponent } from "../components/EggEmbryoBlock";
 
 /**
  * 注册自定义组件
@@ -84,6 +85,7 @@ export function registerCustomComponents() {
   new LoreComponent("hiddenyears:tooltip");
   new EggBlockComponent("hiddenyears:egg_block");
   new FlowerComponent("hiddenyears:flower");
+  new EggEmbryoBlockComponent("hiddenyears:egg_embryo_block");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));

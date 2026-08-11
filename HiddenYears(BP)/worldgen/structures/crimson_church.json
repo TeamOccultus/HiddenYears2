@@ -5,7 +5,7 @@
       "identifier": "hiddenyears:crimson_church"
     },
     "heightmap_projection": "ocean_floor",
-    "max_depth": 10,
+    "max_depth": 15,
     "start_height": {
       "max": {
         "absolute": 0
