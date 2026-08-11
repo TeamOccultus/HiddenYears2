@@ -9,7 +9,7 @@
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hiddenyears/cch_basement_2",
-          "processors": "hiddenyears:to_ruby"
+          "processors": "hiddenyears:crimson_church"
         },
         "weight": 1
       }

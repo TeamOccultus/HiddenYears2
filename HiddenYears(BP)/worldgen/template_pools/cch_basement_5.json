@@ -9,7 +9,7 @@
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hiddenyears/cch_basement_5_1",
-          "processors": "hiddenyears:to_ruby"
+          "processors": "hiddenyears:crimson_church"
         },
         "weight": 1
       },
@@ -17,7 +17,7 @@
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hiddenyears/cch_basement_5_2",
-          "processors": "hiddenyears:to_ruby"
+          "processors": "hiddenyears:crimson_church"
         },
         "weight": 1
       },
@@ -25,7 +25,7 @@
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hiddenyears/cch_basement_5_3",
-          "processors": "hiddenyears:to_ruby"
+          "processors": "hiddenyears:crimson_church"
         },
         "weight": 1
       },
@@ -33,7 +33,7 @@
         "element": {
           "element_type": "minecraft:single_pool_element",
           "location": "hiddenyears/cch_basement_5_4",
-          "processors": "hiddenyears:to_ruby"
+          "processors": "hiddenyears:crimson_church"
         },
         "weight": 1
       }

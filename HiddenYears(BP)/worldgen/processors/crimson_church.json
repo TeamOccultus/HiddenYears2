@@ -2,7 +2,7 @@
   "format_version": "1.21.20",
   "minecraft:processor_list": {
     "description": {
-      "identifier": "hiddenyears:to_ruby"
+      "identifier": "hiddenyears:crimson_church"
     },
     "processors": [
       {
@@ -12,10 +12,20 @@
             "input_predicate": {
               "predicate_type": "minecraft:random_block_match",
               "block": "minecraft:stone_bricks",
-              "probability": 0.2
+              "probability": 0.1
             },
             "output_state": {
               "name": "hiddenyears:ruby_stone_bricks"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:stone_bricks",
+              "probability": 0.15
+            },
+            "output_state": {
+              "name": "minecraft:cracked_stone_bricks"
             }
           }
         ]
