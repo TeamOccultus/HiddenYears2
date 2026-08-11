@@ -2011,5 +2011,10 @@
   "tile.hiddenyears:ruby_griffin_egg.name": "红宝石狮鹫蛋",
   "subtitles.mob.ruby_griffin.say": "红宝石狮鹫：嘶吼",
   "subtitles.mob.ruby_griffin.hit": "红宝石狮鹫：求饶",
-  "subtitles.mob.ruby_griffin.death": "红宝石狮鹫：死亡"
+  "subtitles.mob.ruby_griffin.death": "红宝石狮鹫：死亡",
+  "monologue.hiddenyears:abel.1": "【？？？】哥哥，是你吗？快用§4魔法源质§r救我出去……",
+  "monologue.hiddenyears:abel.2": "【？？？】这里面好冷……",
+  "monologue.hiddenyears:abel.3": "【？？？】哥哥，「神」为我的献祭感到欣喜了吗？",
+  "monologue.hiddenyears:abel.4": "【？？？】究竟什么时候才能出去……",
+  "tile.hiddenyears:crying_ruby_griffin_egg.name": "哭泣的红宝石狮鹫蛋"
 }

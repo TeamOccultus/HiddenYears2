@@ -1830,7 +1830,7 @@
   "item.hiddenyears:iris": "Iris",
   "item.hiddenyears:snow_lily_of_the_valley": "Snow Lily of the Valley",
   "item.hiddenyears:thistle": "Thistle",
-    "message.hiddenyears:immune_desert_debuff.get": "You have received the blessing of the Rain God, granting temporary immunity to drought and dehydration!",
+  "message.hiddenyears:immune_desert_debuff.get": "You have received the blessing of the Rain God, granting temporary immunity to drought and dehydration!",
   "message.hiddenyears:immune_desert_debuff.remove": "Your immunity to drought and dehydration has expired!",
   "effect.hiddenyears:bleed.name": "Bleed",
   "effect.hiddenyears:dehydration.name": "Dehydration",
@@ -1949,5 +1949,10 @@
   "task.ruby_iphon.tips": "Use hearts and skulls dropped by Ruby Monsters, along with Magic Essence, to craft the \"Ruby Iphon\" and tame Ruby Monsters.",
   "tooltip.hiddenyears:camellia.1": "§r\"Please die, little dreams",
   "tooltip.hiddenyears:camellia.2": "§r\"Kill the camellias in me\"",
-  "tile.hiddenyears:ruby_griffin_egg.name": "Ruby Griffin Egg"
+  "tile.hiddenyears:ruby_griffin_egg.name": "Ruby Griffin Egg",
+  "monologue.hiddenyears:abel.1": "[???] Brother, is that you? Quickly use §4Magic Source§r to save me...",
+  "monologue.hiddenyears:abel.2": "[???] It's so cold in here...",
+  "monologue.hiddenyears:abel.3": "[???] Brother, has the \"God\" been pleased with my sacrifice?",
+  "monologue.hiddenyears:abel.4": "[???] When will I ever get out...",
+  "tile.hiddenyears:crying_ruby_griffin_egg.name": "Crying Ruby Griffin Egg"
 }

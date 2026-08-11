@@ -1958,5 +1958,10 @@
   "task.ruby_iphon.tips": "使用紅寶石怪物掉落的心臟和顱骨，以及魔法源質合成「紅寶石噴管」，以馴服紅寶石怪物",
   "tooltip.hiddenyears:camellia.1": "§r「永眠吧，渺小的夢想",
   "tooltip.hiddenyears:camellia.2": "§r「來殺盡我心中那朵朵山茶花呀」",
-  "tile.hiddenyears:ruby_griffin_egg.name": "紅寶石獅鷲蛋"
+  "tile.hiddenyears:ruby_griffin_egg.name": "紅寶石獅鷲蛋",
+  "monologue.hiddenyears:abel.1": "【？？？】哥哥，是你嗎？快用§4魔法源質§r救我出去……",
+  "monologue.hiddenyears:abel.2": "【？？？】這裏面好冷……",
+  "monologue.hiddenyears:abel.3": "【？？？】哥哥，「神」為我的獻祭感到欣喜了嗎？",
+  "monologue.hiddenyears:abel.4": "【？？？】究竟什麼時候才能出去……",
+  "tile.hiddenyears:crying_ruby_griffin_egg.name": "哭泣的紅寶石獅鷲蛋"
 }
