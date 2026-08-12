@@ -30,7 +30,7 @@
       ]
     },
     "distribution": {
-      "iterations": 8,
+      "iterations": 5,
       "scatter_chance": "variable.is_legacy ? 0.0 : 100.0",
       "x": {
         "distribution": "uniform",
