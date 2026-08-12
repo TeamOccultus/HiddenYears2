@@ -1,0 +1,139 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        { "type": "item", "name": "minecraft:name_tag", "weight": 20 },
+        {
+          "type": "item",
+          "name": "minecraft:book",
+          "weight": 10,
+          "functions": [{ "function": "enchant_randomly" }]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 3 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:article_25",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:gold_ingot",
+          "weight": 2,
+          "functions": [
+            { "function": "set_count", "count": { "min": 2, "max": 7 } }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:iron_ingot",
+          "weight": 5,
+          "functions": [
+            { "function": "set_count", "count": { "min": 3, "max": 8 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:darkish_red_flower",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 5, "max": 11 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_apple",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 0, "max": 3 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:bread",
+          "weight": 1,
+          "functions": [
+            { "function": "set_count", "count": { "min": 8, "max": 16 } }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:golden_horse_armor",
+          "weight": 2
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_horse_armor",
+          "weight": 1
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_helmet",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_chestplate",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_leggings",
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "hiddenyears:ruby_boots",
+          "weight": 1
+        }
+      ]
+    }
+  ]
+}
