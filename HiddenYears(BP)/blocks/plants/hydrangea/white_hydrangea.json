@@ -45,7 +45,7 @@
           "face_dimming": false
         }
       },
-      "minecraft:map_color": "#82111f",
+      "minecraft:map_color": "#fffffd",
       "minecraft:tags": ["flower", "hiddenyears:flowers"],
       "minecraft:random_offset": {
         "x": {
