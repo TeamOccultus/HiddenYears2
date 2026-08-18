@@ -1,15 +1,159 @@
-import { system } from "@minecraft/server";
-import { JobEvents } from "../../events/JobEvents";
+import {
+  CustomComponentParameters,
+  ItemComponentUseEvent,
+  Player,
+  RawMessage,
+  system,
+  world
+} from "@minecraft/server";
+import { StructureLocaterListParams, StructureLocaterParams } from "./Params";
+import { consumeEquipmentAmount, setEquipmentItem } from "@occultus/api";
+import {
+  ModalFormData
+} from "@minecraft/server-ui";
+import { copyItem } from "../CrossbowComponent";
+
+function getHelperLocation(player: Player) {
+  return {
+    x: player.location.x,
+    y: -64,
+    z: player.location.z
+  };
+}
+
+function getRedstoneBlockLocation(player: Player) {
+  return {
+    x: player.location.x,
+    y: -63,
+    z: player.location.z
+  };
+}
 
 export class StructureLocaterComponent {
-  constructor(readonly componentName: string) {
+  static readonly ID = "starock:structure_source";
+  constructor(
+    readonly componentName: string,
+    readonly listComponentName: string
+  ) {
     system.beforeEvents.startup.subscribe((init) => {
       const item = init.itemComponentRegistry;
       item.registerCustomComponent(componentName, {
         onUse(arg0, arg1) {
-          JobEvents.onUse(arg0, arg1);
+          const params = arg1.params as StructureLocaterParams;
+          const { source } = arg0;
+          if (source.isSneaking && params.structure_source === "auto") {
+            modifySource(arg0, arg1, listComponentName);
+            return;
+          }
+          locateStucture(arg0, arg1, listComponentName);
         }
       });
+      item.registerCustomComponent(listComponentName, {});
     });
   }
+}
+
+function getHelper(
+  arg0: ItemComponentUseEvent,
+  arg1: CustomComponentParameters,
+): string | undefined {
+  const params = arg1.params as StructureLocaterParams;
+  const { source, itemStack } = arg0;
+  if (params.structure_source === "single") {
+    if (!params.locate_helper) return;
+    return params.locate_helper;
+  }
+  if (params.structure_source === "auto") {
+    const helper = itemStack.getDynamicProperty(StructureLocaterComponent.ID);
+    console.log(helper)
+    if (!helper) {
+      source.sendMessage({ translate: "message.hiddenyears:target_not_set" });
+      return;
+    }
+    if (typeof helper !== "string") {
+      source.sendMessage({ translate: "message.hiddenyears:invaild_target" });
+      return;
+    }
+    return helper;
+  }
+}
+
+function modifySource(
+  arg0: ItemComponentUseEvent,
+  arg1: CustomComponentParameters,
+  listComponentName: string
+) {
+  const { source, itemStack } = arg0;
+  const params = itemStack.getComponent(listComponentName)
+    .customComponentParameters.params as StructureLocaterListParams;
+  if (!params || !Array.isArray(params)) return;
+  const items: RawMessage[] = [];
+  params.forEach((item, index) => {
+    items.push({ translate: item.name });
+  });
+  const form = new ModalFormData()
+    .title({
+      translate: "ui.hiddenyears:structure_compass.modify"
+    })
+    .dropdown(
+      {
+        translate: "ui.hiddenyears:structure_compass.select"
+      },
+      items
+    )
+    .submitButton({ translate: "ui.submit" });
+  form.show(source).then((res) => {
+    if(res.canceled) return;
+    const index = res.formValues[0] ?? 0;
+    if (typeof index === "undefined") return;
+    if (typeof index !== "number") return;
+    const newItem = copyItem(itemStack, itemStack.typeId)
+    newItem.setDynamicProperty(
+      StructureLocaterComponent.ID,
+      params[index].helper
+    );
+    system.runTimeout(() => {
+      setEquipmentItem(source, newItem);
+      source.sendMessage({
+        rawtext: [
+          { translate: "ui.hiddenyears:structure_compass.done" },
+          { translate: params[index].name }
+        ]
+      });
+    }, 5);
+  });
+}
+
+function locateStucture(
+  arg0: ItemComponentUseEvent,
+  arg1: CustomComponentParameters,
+  listComponentName: string
+) {
+  const params = arg1.params as StructureLocaterParams;
+  const { source } = arg0;
+  const helper = getHelper(arg0, arg1);
+  if (!helper) return;
+  world.structureManager.place(
+    helper,
+    source.dimension,
+    getHelperLocation(source)
+  );
+  source.dimension.setBlockType(
+    getRedstoneBlockLocation(source),
+    "minecraft:redstone_block"
+  );
+  if (params.consume) {
+    consumeEquipmentAmount(source);
+  }
+  // 用基岩替代命令方块
+  system.runTimeout(() => {
+    source.dimension.setBlockType(
+      getHelperLocation(source),
+      "minecraft:bedrock"
+    );
+    source.dimension.setBlockType(
+      getRedstoneBlockLocation(source),
+      "minecraft:bedrock"
+    );
+  }, 10);
 }

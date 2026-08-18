@@ -2,7 +2,7 @@
   "format_version": "1.21.40",
   "minecraft:jigsaw": {
     "description": {
-      "identifier": "hiddenyears:the_tower_plains"
+      "identifier": "hiddenyears:the_tower"
     },
     "heightmap_projection": "ocean_floor",
     "max_depth": 10,

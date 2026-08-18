@@ -2039,5 +2039,10 @@
   "article.hiddenyears:26.body_6": "我梦到神将拖着旧躯，被旧世界的主人杀死，",
   "article.hiddenyears:26.body_7": "我梦到太阳、月亮与星星将向我下拜。",
   "article.hiddenyears:26.body_8": "不，我什么都没有梦到，我已是死去之人。",
-  "article.hiddenyears:26.body_9": "——直到新的生命诞生，直到虚无生出得到，得到生出虚无。"
+  "article.hiddenyears:26.body_9": "——直到新的生命诞生，直到虚无生出得到，得到生出虚无。",
+  "message.hiddenyears:target_not_set": "你尚未选定目的地，请潜行使用该物品以配置罗盘目的地",
+  "message.hiddenyears:invaild_target": "罗盘目的地内部格式错误",
+  "ui.hiddenyears:structure_compass.modify": "设置罗盘目的地",
+  "ui.hiddenyears:structure_compass.select": "选择目的地",
+  "ui.hiddenyears:structure_compass.done": "罗盘目的地已被设置为："
 }

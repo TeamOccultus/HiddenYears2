@@ -1,0 +1,23 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:crimson_church_compass",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:structure_locater": {
+        "structure_source": "auto"
+      },
+      "hiddenyears:target_list": [
+        { "name": "殷红教堂", "helper": "locate_helper:crimson_church" },
+        { "name": "战斗高塔", "helper": "locate_helper:the_tower" }
+      ],
+      "minecraft:icon": "hiddenyears:blessing_of_isis",
+      "minecraft:rarity": "epic",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

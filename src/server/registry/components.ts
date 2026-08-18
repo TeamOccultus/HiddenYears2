@@ -77,7 +77,10 @@ export function registerCustomComponents() {
   new StructurePlacerComponent("hiddenyears:structure_placer");
   new JobRecoveryComponent("hiddenyears:job_recovery");
   new NowPlayingComponent("hiddenyears:now_playing");
-  new StructureLocaterComponent("hiddenyears:structure_locater");
+  new StructureLocaterComponent(
+    "hiddenyears:structure_locater",
+    "hiddenyears:target_list"
+  );
   new DeprecatedGameplayComponent("hiddenyears:deprecated");
   new LocatorBarComponent("hiddenyears:locator_bar");
   new DimensionTeleporterComponent("hiddenyears:teleporter");

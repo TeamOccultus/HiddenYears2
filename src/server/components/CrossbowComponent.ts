@@ -15,7 +15,7 @@ import {
   setEquipmentItem
 } from "@occultus/api";
 
-function copyItem(oldItem: ItemStack, to?: string, amount?: number) {
+export function copyItem(oldItem: ItemStack, to?: string, amount?: number) {
   if (!to) to = oldItem.typeId;
   if (!amount) amount = oldItem.amount;
   const newItem = new ItemStack(to, amount);
