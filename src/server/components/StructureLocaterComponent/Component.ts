@@ -45,40 +45,54 @@ export class StructureLocaterComponent {
       const item = init.itemComponentRegistry;
       item.registerCustomComponent(componentName, {});
       item.registerCustomComponent(listComponentName, {});
+      world.beforeEvents.itemUse.subscribe((arg) => {
+        const { source, itemStack } = arg;
+        const component = itemStack.getComponent(this.componentName);
+        if (!component) return;
+        const params = component.customComponentParameters
+          .params as StructureLocaterParams;
+        if (source.isSneaking && params.structure_source === "auto") {
+          arg.cancel = true;
+          system.run(() => {
+            modifySource(
+              arg,
+              component.customComponentParameters,
+              listComponentName
+            );
+          });
+          return;
+        }
+        if (params.ucv && UnifiedCurrencyValue.get(source) < params.ucv) {
+          arg.cancel = true;
+          system.run(() => {
+            source.sendMessage({
+              translate: "message:hiddenyears:need_ucv",
+              with: [params.ucv.toString()]
+            });
+          });
+        }
+      });
       world.afterEvents.itemUse.subscribe((arg) => {
         const { source, itemStack } = arg;
         const component = itemStack.getComponent(this.componentName);
         if (!component) return;
         const params = component.customComponentParameters
           .params as StructureLocaterParams;
-        if (params.ucv && UnifiedCurrencyValue.get(source) < params.ucv) {
-          source.sendMessage({
-            translate: "message:hiddenyears:need_ucv",
-            with: [params.ucv.toString()]
-          });
-          return;
-        }
         if (isInCooldown(itemStack, source)) {
           source.onScreenDisplay.setActionBar({
             translate: "message.hiddenyears:wait_cooldown"
           });
           return;
         }
-        if (source.isSneaking && params.structure_source === "auto") {
-          modifySource(
-            arg,
-            component.customComponentParameters,
-            listComponentName
-          );
-          return;
-        }
-        locateStucture(
+        const result = locateStucture(
           arg,
           component.customComponentParameters,
           listComponentName
         );
-        UnifiedCurrencyValue.add(source, -params.ucv, false);
-        startCooldown(itemStack, source);
+        if (result) {
+          UnifiedCurrencyValue.add(source, -params.ucv, false);
+          startCooldown(itemStack, source);
+        }
       });
     });
   }
@@ -176,11 +190,11 @@ function locateStucture(
   arg0: ItemComponentUseEvent,
   arg1: CustomComponentParameters,
   listComponentName: string
-) {
+): boolean {
   const params = arg1.params as StructureLocaterParams;
   const { source } = arg0;
   const helper = getHelper(arg0, arg1);
-  if (!helper) return;
+  if (!helper) return false;
   world.structureManager.place(
     helper,
     source.dimension,
@@ -212,4 +226,5 @@ function locateStucture(
     });
     if (params.sound_event) source.playSound(params.sound_event);
   }, 10);
+  return true;
 }

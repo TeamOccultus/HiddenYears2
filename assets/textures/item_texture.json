@@ -629,6 +629,9 @@
     "hiddenyears:magic_archer_skill_2": {
       "textures": "textures/items/magic_archer_skill_2"
     },
+    "hiddenyears:magic_compass": {
+      "textures": "textures/items/magic_compass"
+    },
     "hiddenyears:magic_dust": {
       "textures": "textures/items/magic_dust"
     },

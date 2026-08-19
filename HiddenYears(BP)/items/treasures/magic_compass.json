@@ -21,7 +21,7 @@
         "category": "magic_compass",
         "duration": 20
       },
-      "minecraft:icon": "hiddenyears:blessing_of_isis",
+      "minecraft:icon": "hiddenyears:magic_compass",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 1
     }
