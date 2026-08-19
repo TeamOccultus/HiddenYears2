@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:magic_compass"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": [" X ", "XAX", " X "],
+    "key": {
+      "A": {
+        "item": "hiddenyears:magic_origin"
+      },
+      "X": {
+        "item": "minecraft:diamond"
+      }
+    },
+    "unlock": [
+      {
+        "item": "hiddenyears:magic_origin"
+      },
+      {
+        "item": "minecraft:diamond"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:magic_compass"
+    }
+  }
+}
