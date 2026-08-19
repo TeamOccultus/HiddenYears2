@@ -29,7 +29,7 @@
         ]
       },
       "minecraft:enchantable": {
-        "value": 8,
+        "value": 50,
         "slot": "sword"
       },
       "minecraft:hand_equipped": true,

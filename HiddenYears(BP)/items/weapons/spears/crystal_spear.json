@@ -20,7 +20,7 @@
         "attack_hit": "item.spear.attack_hit"
       },
       "minecraft:enchantable": {
-        "value": 15,
+        "value": 50,
         "slot": "melee_spear"
       },
       "minecraft:repairable": {

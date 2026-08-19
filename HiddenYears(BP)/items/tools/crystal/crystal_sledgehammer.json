@@ -22,7 +22,7 @@
       "minecraft:icon": "hiddenyears:crystal_sledgehammer",
       "minecraft:damage": 11,
       "minecraft:enchantable": {
-        "value": 1,
+        "value": 10,
         "slot": "sword"
       },
       "minecraft:tags": {

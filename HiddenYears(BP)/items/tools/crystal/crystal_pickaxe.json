@@ -32,7 +32,7 @@
       },
       "minecraft:damage": 6,
       "minecraft:enchantable": {
-        "value": 10,
+        "value": 50,
         "slot": "pickaxe"
       },
       "minecraft:digger": {
