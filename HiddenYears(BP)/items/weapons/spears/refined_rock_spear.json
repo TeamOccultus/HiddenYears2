@@ -51,7 +51,7 @@
         "hitbox_margin": 0.25
       },
       "minecraft:kinetic_weapon": {
-        "delay": 9,
+        "delay": 13,
         "reach": {
           "min": 2.0,
           "max": 4.5
@@ -63,15 +63,15 @@
         "hitbox_margin": 0.25,
         "damage_multiplier": 0.82,
         "damage_conditions": {
-          "max_duration": 150,
+          "max_duration": 250,
           "min_relative_speed": 2.0
         },
         "knockback_conditions": {
-          "max_duration": 70,
+          "max_duration": 165,
           "min_speed": 5.1
         },
         "dismount_conditions": {
-          "max_duration": 50,
+          "max_duration": 80,
           "min_speed": 6.0
         }
       },
