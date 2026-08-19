@@ -29,9 +29,9 @@ export class UnifiedCurrencyValue {
    * @param player 要增加货币值的玩家
    * @param value 要增加的货币值
    */
-  static add(player: Player, value: number): number {
+  static add(player: Player, value: number, sound = true): number {
     const ucv = player.getDynamicProperty("hiddenyears:ucv");
-    player.playSound("use.coin");
+    if (sound) player.playSound("use.coin");
     if (typeof ucv !== "number") {
       player.setDynamicProperty("hiddenyears:ucv", Math.round(value));
       return value;

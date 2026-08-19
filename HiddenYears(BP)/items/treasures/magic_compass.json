@@ -1,0 +1,29 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:magic_compass",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "hiddenyears:structure_locater": {
+        "structure_source": "auto",
+        "ucv": 500,
+        "sound_event": "conduit.deactivate"
+      },
+      "hiddenyears:target_list": [
+        { "name": "§r§i殷红教堂", "helper": "locate_helper:crimson_church" },
+        { "name": "§r§i战斗高塔", "helper": "locate_helper:the_tower" }
+      ],
+      "minecraft:cooldown": {
+        "category": "magic_compass",
+        "duration": 20
+      },
+      "minecraft:icon": "hiddenyears:blessing_of_isis",
+      "minecraft:rarity": "epic",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

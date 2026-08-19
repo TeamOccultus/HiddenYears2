@@ -7,11 +7,17 @@ import {
   world
 } from "@minecraft/server";
 import { StructureLocaterListParams, StructureLocaterParams } from "./Params";
-import { consumeEquipmentAmount, setEquipmentItem } from "@occultus/api";
 import {
-  ModalFormData
-} from "@minecraft/server-ui";
+  Color,
+  consumeEquipmentAmount,
+  Format,
+  isInCooldown,
+  setEquipmentItem,
+  startCooldown
+} from "@occultus/api";
+import { ModalFormData } from "@minecraft/server-ui";
 import { copyItem } from "../CrossbowComponent";
+import { UnifiedCurrencyValue } from "../../../core/UnifiedCurrencyValue";
 
 function getHelperLocation(player: Player) {
   return {
@@ -37,25 +43,50 @@ export class StructureLocaterComponent {
   ) {
     system.beforeEvents.startup.subscribe((init) => {
       const item = init.itemComponentRegistry;
-      item.registerCustomComponent(componentName, {
-        onUse(arg0, arg1) {
-          const params = arg1.params as StructureLocaterParams;
-          const { source } = arg0;
-          if (source.isSneaking && params.structure_source === "auto") {
-            modifySource(arg0, arg1, listComponentName);
-            return;
-          }
-          locateStucture(arg0, arg1, listComponentName);
-        }
-      });
+      item.registerCustomComponent(componentName, {});
       item.registerCustomComponent(listComponentName, {});
+      world.afterEvents.itemUse.subscribe((arg) => {
+        const { source, itemStack } = arg;
+        const component = itemStack.getComponent(this.componentName);
+        if (!component) return;
+        const params = component.customComponentParameters
+          .params as StructureLocaterParams;
+        if (params.ucv && UnifiedCurrencyValue.get(source) < params.ucv) {
+          source.sendMessage({
+            translate: "message:hiddenyears:need_ucv",
+            with: [params.ucv.toString()]
+          });
+          return;
+        }
+        if (isInCooldown(itemStack, source)) {
+          source.onScreenDisplay.setActionBar({
+            translate: "message.hiddenyears:wait_cooldown"
+          });
+          return;
+        }
+        if (source.isSneaking && params.structure_source === "auto") {
+          modifySource(
+            arg,
+            component.customComponentParameters,
+            listComponentName
+          );
+          return;
+        }
+        locateStucture(
+          arg,
+          component.customComponentParameters,
+          listComponentName
+        );
+        UnifiedCurrencyValue.add(source, -params.ucv, false);
+        startCooldown(itemStack, source);
+      });
     });
   }
 }
 
 function getHelper(
   arg0: ItemComponentUseEvent,
-  arg1: CustomComponentParameters,
+  arg1: CustomComponentParameters
 ): string | undefined {
   const params = arg1.params as StructureLocaterParams;
   const { source, itemStack } = arg0;
@@ -65,7 +96,7 @@ function getHelper(
   }
   if (params.structure_source === "auto") {
     const helper = itemStack.getDynamicProperty(StructureLocaterComponent.ID);
-    console.log(helper)
+    console.log(helper);
     if (!helper) {
       source.sendMessage({ translate: "message.hiddenyears:target_not_set" });
       return;
@@ -84,6 +115,7 @@ function modifySource(
   listComponentName: string
 ) {
   const { source, itemStack } = arg0;
+  const paramsMain = arg1.params as StructureLocaterParams;
   const params = itemStack.getComponent(listComponentName)
     .customComponentParameters.params as StructureLocaterListParams;
   if (!params || !Array.isArray(params)) return;
@@ -101,17 +133,33 @@ function modifySource(
       },
       items
     )
+    .divider()
+    .label({
+      rawtext: [
+        { translate: "ui.hiddenyears:structure_compass.desc_1" },
+        { text: "\n" },
+        {
+          translate: "ui.hiddenyears:structure_compass.desc_2",
+          with: [paramsMain.ucv.toString()]
+        }
+      ]
+    })
     .submitButton({ translate: "ui.submit" });
   form.show(source).then((res) => {
-    if(res.canceled) return;
+    if (res.canceled) return;
     const index = res.formValues[0] ?? 0;
     if (typeof index === "undefined") return;
     if (typeof index !== "number") return;
-    const newItem = copyItem(itemStack, itemStack.typeId)
+    const newItem = copyItem(itemStack, itemStack.typeId);
     newItem.setDynamicProperty(
       StructureLocaterComponent.ID,
       params[index].helper
     );
+    newItem.setLore([
+      { text: Format.reset },
+      { translate: "ui.hiddenyears:structure_compass.to" },
+      { translate: params[index].name }
+    ]);
     system.runTimeout(() => {
       setEquipmentItem(source, newItem);
       source.sendMessage({
@@ -155,5 +203,13 @@ function locateStucture(
       getRedstoneBlockLocation(source),
       "minecraft:bedrock"
     );
+    source.onScreenDisplay.setActionBar({
+      rawtext: [
+        { text: Color.green },
+        { text: Format.bold },
+        { translate: "message.hiddenyears:located" }
+      ]
+    });
+    if (params.sound_event) source.playSound(params.sound_event);
   }, 10);
 }

@@ -572,7 +572,7 @@
   "message.hiddenyears:bleed": "你的伤口开始不停地§d「流血」§d！",
   "message.hiddenyears:dehydration": "你感到身体在§d「脱水」§d，快喝清凉药茶来缓解症状！",
   "message.hiddenyears:drought": "你感到十分§d「干旱」§d，快喝水来缓解症状！",
-  "message.hiddenyears:wait_cooldown": "法杖滋滋作响，恐怕是没能量了……",
+  "message.hiddenyears:wait_cooldown": "这件器具滋滋作响，恐怕是没能量了……",
   "message.hiddenyears:boss.ghost.guardian": "法老残影即将发动战技§d「尘沙的号令」§r！",
   "message.hiddenyears:boss.ghost.mummy": "法老残影即将发动战技§d「尘沙的魔法」§r！",
   "message.hiddenyears:boss.ghost.drought": "法老残影即将发动战技§d「尘沙的诅咒」§r！",
@@ -2044,5 +2044,12 @@
   "message.hiddenyears:invaild_target": "罗盘目的地内部格式错误",
   "ui.hiddenyears:structure_compass.modify": "设置罗盘目的地",
   "ui.hiddenyears:structure_compass.select": "选择目的地",
-  "ui.hiddenyears:structure_compass.done": "罗盘目的地已被设置为："
+  "ui.hiddenyears:structure_compass.done": "罗盘目的地已被设置为：",
+  "ui.hiddenyears:structure_compass.to": "§r§i将会指向：",
+  "ui.hiddenyears:structure_compass.desc_1": "魔法罗盘可以定位某一特定结构所在位置，但有 30 秒的冷却",
+  "ui.hiddenyears:structure_compass.desc_2": "每次定位将会消耗 %s 点统一货币值",
+  "item.hiddenyears:magic_compass": "魔法罗盘",
+  "ui.submit": "提交",
+  "message:hiddenyears:need_ucv": "至少需要 %s 点统一货币值才能执行定位！",
+  "message.hiddenyears:located": "定位成功！"
 }
