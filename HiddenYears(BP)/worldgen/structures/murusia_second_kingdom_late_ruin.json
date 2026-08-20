@@ -2,7 +2,7 @@
   "format_version": "1.21.40",
   "minecraft:jigsaw": {
     "description": {
-      "identifier": "hiddenyears:first_kingdom_ruin_forest"
+      "identifier": "hiddenyears:murusia_second_kingdom_late_ruin"
     },
     "heightmap_projection": "ocean_floor",
     "max_depth": 10,
@@ -15,7 +15,7 @@
       },
       "type": "uniform"
     },
-    "start_pool": "hiddenyears:first_kingdom_ruin",
+    "start_pool": "hiddenyears:murusia_second_kingdom_late_ruin",
     "liquid_settings": "apply_waterlogging",
     "step": "surface_structures",
     "terrain_adaptation": "beard_thin",
@@ -23,7 +23,7 @@
       {
         "test": "has_biome_tag",
         "operator": "==",
-        "value": "forest"
+        "value": "plains"
       }
     ]
   }

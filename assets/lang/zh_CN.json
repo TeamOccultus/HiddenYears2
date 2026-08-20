@@ -2051,5 +2051,9 @@
   "item.hiddenyears:magic_compass": "魔法罗盘",
   "ui.submit": "提交",
   "message:hiddenyears:need_ucv": "至少需要 %s 点统一货币值才能执行定位！",
-  "message.hiddenyears:located": "定位成功！"
+  "message.hiddenyears:located": "定位成功！",
+  "structure.hiddenyears:the_tower": "战斗高塔",
+  "structure.hiddenyears:crimson_church": "殷红教堂",
+  "structure.hiddenyears:murusia_second_kingdom_ruin": "穆鲁斯亚第二王国遗址",
+  "structure.hiddenyears:murusia_second_kingdom_late_ruin": "穆鲁斯亚第二王国晚期遗址"
 }
