@@ -13,7 +13,15 @@
     },
     "structures": [
       {
-        "structure": "hiddenyears:the_tower",
+        "structure": "hiddenyears:the_tower_plains",
+        "weight": 1
+      },
+      {
+        "structure": "hiddenyears:the_tower_icy",
+        "weight": 1
+      },
+      {
+        "structure": "hiddenyears:the_tower_forest",
         "weight": 1
       }
     ]

@@ -2,14 +2,15 @@
   "format_version": "1.21.40",
   "minecraft:template_pool": {
     "description": {
-      "identifier": "hiddenyears:the_tower_plains"
+      "identifier": "hiddenyears:the_tower_forest"
     },
     "elements": [
       {
         "element": {
           "element_type": "minecraft:single_pool_element",
-          "location": "hiddenyears/the_tower",
-          "processors": "hiddenyears:the_tower_plains"
+          "location": "hiddenyears/the_tower_forest",
+          "processors": "hiddenyears:the_tower_forest",
+          "projection": "rigid"
         },
         "weight": 1
       }

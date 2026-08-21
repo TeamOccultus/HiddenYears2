@@ -1,0 +1,45 @@
+{
+  "format_version": "1.21.20",
+  "minecraft:processor_list": {
+    "description": {
+      "identifier": "hiddenyears:the_tower_icy"
+    },
+    "processors": [
+      {
+        "processor_type": "minecraft:rule",
+        "rules": [
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:stone_bricks",
+              "probability": 0.4
+            },
+            "output_state": {
+              "name": "minecraft:snow"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:cobblestone",
+              "probability": 0.4
+            },
+            "output_state": {
+              "name": "minecraft:blue_ice"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:moss_block",
+              "probability": 0.85
+            },
+            "output_state": {
+              "name": "minecraft:blue_ice"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

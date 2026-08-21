@@ -2,7 +2,7 @@
   "format_version": "1.21.20",
   "minecraft:processor_list": {
     "description": {
-      "identifier": "hiddenyears:the_tower"
+      "identifier": "hiddenyears:the_tower_plains"
     },
     "processors": [
       {
@@ -12,7 +12,7 @@
             "input_predicate": {
               "predicate_type": "minecraft:random_block_match",
               "block": "minecraft:stone_bricks",
-              "probability": 0.2
+              "probability": 0.05
             },
             "output_state": {
               "name": "minecraft:web"
@@ -26,6 +26,16 @@
             },
             "output_state": {
               "name": "minecraft:mossy_cobblestone"
+            }
+          },
+          {
+            "input_predicate": {
+              "predicate_type": "minecraft:random_block_match",
+              "block": "minecraft:stone_bricks",
+              "probability": 0.2
+            },
+            "output_state": {
+              "name": "minecraft:mossy_stone_bricks"
             }
           }
         ]
