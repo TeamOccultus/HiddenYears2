@@ -14,8 +14,38 @@
         "sound_event": "conduit.deactivate"
       },
       "hiddenyears:target_list": [
-        { "name": "§r§i殷红教堂", "helper": "locate_helper:crimson_church" },
-        { "name": "§r§i战斗高塔", "helper": "locate_helper:the_tower" }
+        {
+          "name": "structure.hiddenyears:crimson_church",
+          "helper": "locate_helper:crimson_church"
+        },
+        {
+          "name": "structure.hiddenyears:the_tower",
+          "helper": "locate_helper:the_tower"
+        },
+        {
+          "name": "structure.hiddenyears:murusia_second_kingdom_ruin",
+          "helper": "locate_helper:murusia_second_kingdom_ruin"
+        },
+        {
+          "name": "structure.hiddenyears:murusia_second_kingdom_late_ruin",
+          "helper": "locate_helper:murusia_second_kingdom_late_ruin"
+        },
+        {
+          "name": "structure.hiddenyears:ancient_trial_room",
+          "helper": "locate_helper:ancient_trial_room"
+        },
+        {
+          "name": "structure.hiddenyears:divine_palace",
+          "helper": "locate_helper:divine_palace"
+        },
+        {
+          "name": "structure.hiddenyears:rebirth_altar",
+          "helper": "locate_helper:rebirth_altar"
+        },
+        {
+          "name": "structure.hiddenyears:desert_underground_palace",
+          "helper": "locate_helper:desert_underground_palace"
+        }
       ],
       "minecraft:cooldown": {
         "category": "magic_compass",
