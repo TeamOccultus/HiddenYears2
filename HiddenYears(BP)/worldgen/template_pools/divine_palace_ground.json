@@ -1,0 +1,82 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:template_pool": {
+    "description": {
+      "identifier": "hiddenyears:divine_palace_ground"
+    },
+    "elements": [
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_1",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_2",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_3",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_4",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_5",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_6",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_7",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_8",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      },
+      {
+        "element": {
+          "element_type": "minecraft:single_pool_element",
+          "location": "hiddenyears/divine_palace_9",
+          "processors": "hiddenyears:none"
+        },
+        "weight": 1
+      }
+    ]
+  }
+}

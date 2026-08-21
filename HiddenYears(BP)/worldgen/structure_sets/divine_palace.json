@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.40",
+  "minecraft:structure_set": {
+    "description": {
+      "identifier": "hiddenyears:divine_palace"
+    },
+    "placement": {
+      "type": "minecraft:random_spread",
+      "salt": 100401,
+      "separation": 1,
+      "spacing": 5,
+      "spread_type": "triangular"
+    },
+    "structures": [
+      {
+        "structure": "hiddenyears:divine_palace",
+        "weight": 1
+      }
+    ]
+  }
+}
