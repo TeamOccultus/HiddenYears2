@@ -1,6 +1,6 @@
 {
   "name": "@occultus/hidden-years",
-  "version": "3.0.14",
+  "version": "3.0.15",
   "description": "A Minecraft adventure mod",
   "scripts": {
     "build": "moonlike build",

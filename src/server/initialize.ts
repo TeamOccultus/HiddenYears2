@@ -40,7 +40,7 @@ export function initialize() {
   new ModInitializer(
     "hiddenyears",
     "Hidden Years²: Governor at the Skyline",
-    "3.0.14"
+    "3.0.15"
   );
   registerCommands();
   registerCustomDimensions();
