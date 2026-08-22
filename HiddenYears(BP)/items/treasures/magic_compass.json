@@ -45,6 +45,30 @@
         {
           "name": "structure.hiddenyears:desert_underground_palace",
           "helper": "locate_helper:desert_underground_palace"
+        },
+        {
+          "name": "structure.hiddenyears:desert_adventurer_camp",
+          "helper": "locate_helper:desert_adventurer_camp"
+        },
+        {
+          "name": "structure.hiddenyears:desert_store",
+          "helper": "locate_helper:desert_store"
+        },
+        {
+          "name": "structure.hiddenyears:echo_lab",
+          "helper": "locate_helper:echo_lab"
+        },
+        {
+          "name": "structure.hiddenyears:kingdom_camp",
+          "helper": "locate_helper:kingdom_camp"
+        },
+        {
+          "name": "structure.hiddenyears:ruby_trial_chambers",
+          "helper": "locate_helper:ruby_trial_chambers"
+        },
+        {
+          "name": "structure.hiddenyears:sprites_jail",
+          "helper": "locate_helper:sprites_jail"
         }
       ],
       "minecraft:cooldown": {

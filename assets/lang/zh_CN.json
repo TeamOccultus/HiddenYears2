@@ -2059,5 +2059,10 @@
   "structure.hiddenyears:ancient_trial_room": "§r古遗的试炼所",
   "structure.hiddenyears:divine_palace": "§r地上神宫的废墟",
   "structure.hiddenyears:rebirth_altar": "§r「无名坟墓」/复生祭坛",
-  "structure.hiddenyears:desert_underground_palace": "§r地下行宫的一角"
+  "structure.hiddenyears:desert_adventurer_camp": "§r沙漠探索营地",
+  "structure.hiddenyears:desert_store": "§r尼罗特游商小屋",
+  "structure.hiddenyears:echo_lab": "§r回响实验室",
+  "structure.hiddenyears:kingdom_camp": "§r穆鲁斯亚沙漠兵营",
+  "structure.hiddenyears:ruby_trial_chambers": "§r红宝石试炼密室",
+  "structure.hiddenyears:sprites_jail": "§r精灵监牢"
 }
