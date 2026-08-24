@@ -8,7 +8,9 @@ import {
   consumeDurability,
   EntitiesUtils,
   EntityHealthUtils,
-  setEquipmentItem
+  setEquipmentItem,
+  toVec3,
+  Vector3Utils
 } from "@occultus/api";
 import { StaffParams } from "../components/StaffComponent/Params";
 import { getPastorLevel } from "../job/toolkit";
@@ -57,7 +59,10 @@ export class StaffEvents {
     utils.applyDamage(params.damage);
     utils.tryOperateEntity((entity) => {
       if (params.particle) {
-        entity.dimension.spawnParticle(params.particle, entity.location);
+        entity.dimension.spawnParticle(
+          params.particle,
+          Vector3Utils.add(entity.location, toVec3(0, 1, 0))
+        );
       }
     });
     StaffEvents.matchPresent(arg0, arg1);
@@ -93,7 +98,10 @@ export class StaffEvents {
       type: "minecraft:player"
     }).tryOperateEntity((entity) => {
       new EntityHealthUtils(entity).heal(10 + getPastorLevel(source) * 0.8);
-      entity.dimension.spawnParticle("minecraft:crop_growth_emitter", entity.location);
+      entity.dimension.spawnParticle(
+        "minecraft:crop_growth_emitter",
+        entity.location
+      );
     });
     new EntitiesUtils(source.dimension, {
       location: source.location,
