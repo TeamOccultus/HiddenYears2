@@ -14,7 +14,7 @@
       "hiddenyears:staff": {
         "damage": 5,
         "radius": 5,
-        "particle": "minecraft:critical_hit_emitter",
+        "particle": "hiddenyears:magic_attack_emitter",
         "staff_preset": "radiant_touch",
         "sound_event": "wind_charge.burst"
       },
