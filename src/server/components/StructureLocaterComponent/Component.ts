@@ -17,7 +17,7 @@ import {
 } from "@occultus/api";
 import { ModalFormData } from "@minecraft/server-ui";
 import { copyItem } from "../CrossbowComponent";
-import { UnifiedCurrencyValue } from "../../../core/UnifiedCurrencyValue";
+import { MagicEnergy } from "../../../core/MagicEnergy";
 
 function getHelperLocation(player: Player) {
   return {
@@ -62,7 +62,7 @@ export class StructureLocaterComponent {
           });
           return;
         }
-        if (params.ucv && UnifiedCurrencyValue.get(source) < params.ucv) {
+        if (params.ucv && MagicEnergy.get(source) < params.ucv) {
           arg.cancel = true;
           system.run(() => {
             source.sendMessage({
@@ -90,7 +90,7 @@ export class StructureLocaterComponent {
           listComponentName
         );
         if (result) {
-          UnifiedCurrencyValue.add(source, -params.ucv, false);
+          MagicEnergy.add(source, -params.ucv, false);
           startCooldown(itemStack, source);
         }
       });

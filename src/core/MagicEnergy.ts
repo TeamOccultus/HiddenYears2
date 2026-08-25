@@ -1,31 +1,42 @@
 import { ItemStack, Player } from "@minecraft/server";
 import { giveItem } from "@occultus/api";
 
-export class UnifiedCurrencyValue {
+/**
+ * 管理魔法能源的类
+ */
+export class MagicEnergy {
   private constructor() {}
+  static display(player: Player) {
+    player.onScreenDisplay.setActionBar({
+      translate: "message.hiddenyears:me_remain",
+      with: [this.get(player).toString()]
+    });
+  }
   /**
-   * 获取玩家的统一货币值
+   * 获取玩家的魔法能源
    * @param player 要获取货币值的玩家
-   * @return 玩家的统一货币值
+   * @return 玩家的魔法能源
    */
   static get(player: Player): number {
-    const ucv = player.getDynamicProperty("hiddenyears:ucv");
-    if (typeof ucv !== "number") {
+    const me = player.getDynamicProperty("hiddenyears:ucv");
+    if (typeof me !== "number") {
       player.setDynamicProperty("hiddenyears:ucv", 0);
       return 0;
     }
-    return Math.round(ucv);
+    return Math.round(me);
   }
   /**
-   * 设置玩家的统一货币值
+   * 设置玩家的魔法能源
    * @param player 要设置货币值的玩家
    * @param value 要设置的货币值
    */
   static set(player: Player, value: number): void {
-    return player.setDynamicProperty("hiddenyears:ucv", Math.round(value));
+    player.setDynamicProperty("hiddenyears:ucv", Math.round(value));
+    this.display(player);
+    return;
   }
   /**
-   * 增加玩家的统一货币值
+   * 增加玩家的魔法能源
    * @param player 要增加货币值的玩家
    * @param value 要增加的货币值
    */
@@ -37,6 +48,7 @@ export class UnifiedCurrencyValue {
       return value;
     }
     player.setDynamicProperty("hiddenyears:ucv", ucv + Math.round(value));
+    this.display(player);
     return ucv + Math.round(value);
   }
   static processCoinOrder(player: Player, orders: CoinOrder[]): boolean {

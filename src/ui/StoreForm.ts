@@ -1,6 +1,6 @@
 import { ItemStack, Player, system } from "@minecraft/server";
 import { ModalFormData, ModalFormResponse } from "@minecraft/server-ui";
-import { CoinOrder, UnifiedCurrencyValue } from "../core/UnifiedCurrencyValue";
+import { CoinOrder, MagicEnergy } from "../core/MagicEnergy";
 import { default as builtinData } from "../../config/store/coin.json";
 import { FormLike } from "@occultus/core";
 import { Color, Format } from "@occultus/api";
@@ -25,7 +25,7 @@ export class StoreForm extends FormLike {
       rawtext: [
         {
           translate: "ui.ucv.own",
-          with: [UnifiedCurrencyValue.get(player).toString()]
+          with: [MagicEnergy.get(player).toString()]
         },
         { text: "\n\n" },
         {
@@ -41,7 +41,7 @@ export class StoreForm extends FormLike {
     });
     StoreForm.items.forEach((coin) => {
       const item = new ItemStack(coin.item);
-      const amount = UnifiedCurrencyValue.get(player) / coin.ucv;
+      const amount = MagicEnergy.get(player) / coin.ucv;
       form.slider(
         { translate: item.localizationKey },
         0,
@@ -62,7 +62,7 @@ export class StoreForm extends FormLike {
           itemCount: value
         });
       });
-      UnifiedCurrencyValue.processCoinOrder(player, orders);
+      MagicEnergy.processCoinOrder(player, orders);
       return this.quit(player, backTo);
     });
   }

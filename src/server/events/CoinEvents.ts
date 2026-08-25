@@ -3,7 +3,7 @@ import {
   ItemComponentUseEvent,
 } from "@minecraft/server";
 import { CoinComponentParams } from "../components/CoinComponent/Params";
-import { UnifiedCurrencyValue } from "../../core/UnifiedCurrencyValue";
+import { MagicEnergy } from "../../core/MagicEnergy";
 import {
   consumeEquipmentAmount
 } from "@occultus/api";
@@ -19,6 +19,6 @@ export class CoinEvents {
       translate: "message.hiddenyears:ucv_add",
       with: [(p.ucv_value * num).toString()]
     });
-    UnifiedCurrencyValue.add(source, p.ucv_value * num);
+    MagicEnergy.add(source, p.ucv_value * num);
   }
 }
