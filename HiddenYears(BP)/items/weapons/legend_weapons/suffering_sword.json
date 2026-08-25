@@ -22,9 +22,6 @@
         }
       ],
       "minecraft:rarity": "rare",
-      "minecraft:display_name": {
-        "value": "%ui.suffering_sword\n%tooltip.suffering_sword"
-      },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
         "max_durability": 450
@@ -56,11 +53,22 @@
           }
         ]
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:suffering_sword.usage",
+          " ",
+          "tooltip.suffering_sword.1",
+          "tooltip.suffering_sword.2",
+          "tooltip.suffering_sword.3"
+        ],
+        "remove_first_blank_line": true
+      },
       "minecraft:tags": {
         "tags": [
           "minecraft:is_sword",
           "minecraft:is_tool",
-          "hiddenyears:legend_weapons"
+          "hiddenyears:legend_weapons",
+          "starock:lore"
         ]
       }
     }

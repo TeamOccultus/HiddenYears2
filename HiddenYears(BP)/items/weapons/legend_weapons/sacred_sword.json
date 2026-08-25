@@ -52,6 +52,12 @@
           }
         ]
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:sacred_sword.usage"
+        ],
+        "remove_first_blank_line": true
+      },
       "minecraft:tags": {
         "tags": [
           "minecraft:is_sword",

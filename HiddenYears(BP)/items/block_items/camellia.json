@@ -22,6 +22,12 @@
         ],
         "replace_block_item": true
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:camellia.1",
+          "tooltip.hiddenyears:camellia.2"
+        ]
+      },
       "minecraft:compostable": {
         "composting_chance": 85
       }

@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:artifacts": {},
-      "minecraft:display_name": {
-        "value": "%ui.artifact.farmers_hat\n%ui.artifact.body.itemDesc"
+      "hiddenyears:tooltip": {
+        "tooltips": ["ui.artifact.head.tooltip"]
       },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:farmers_hat",

@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:artifacts": {},
-      "minecraft:display_name": {
-        "value": "%ui.artifact.thorns_cape\n%ui.artifact.body.itemDesc"
+      "hiddenyears:tooltip": {
+        "tooltips": ["ui.artifact.body.tooltip"]
       },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:thorns_cape",

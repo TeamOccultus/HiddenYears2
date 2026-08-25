@@ -9,8 +9,8 @@
     },
     "components": {
       "hiddenyears:artifacts": {},
-      "minecraft:display_name": {
-        "value": "%ui.artifact.speed_boots\n%ui.artifact.feet.itemDesc"
+      "hiddenyears:tooltip": {
+        "tooltips": ["ui.artifact.feet.tooltip"]
       },
       "minecraft:max_stack_size": 1,
       "minecraft:icon": "hiddenyears:speed_boots",
