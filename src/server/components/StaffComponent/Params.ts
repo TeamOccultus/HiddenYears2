@@ -1,5 +1,6 @@
 export type StaffParams = {
   damage: number;
+  magic_energy: number;
   families?: string[];
   exclude_families?: string[];
   radius: number;

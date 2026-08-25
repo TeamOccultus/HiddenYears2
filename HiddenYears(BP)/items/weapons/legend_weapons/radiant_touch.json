@@ -16,6 +16,7 @@
         "radius": 5,
         "particle": "hiddenyears:magic_attack_emitter",
         "staff_preset": "radiant_touch",
+        "magic_energy": 50,
         "sound_event": "wind_charge.burst"
       },
       "minecraft:rarity": "rare",

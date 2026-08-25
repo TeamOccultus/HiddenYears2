@@ -16,6 +16,7 @@
         "radius": 15,
         "particle": "minecraft:critical_hit_emitter",
         "staff_preset": "mutas_staff",
+        "magic_energy": 50,
         "sound_event": "wind_charge.burst"
       },
       "minecraft:rarity": "epic",

@@ -1998,7 +1998,7 @@
   "ui.hiddenyears:structure_compass.desc_2": "每次定位将会消耗 %s 点魔法能源",
   "item.hiddenyears:magic_compass": "魔法罗盘",
   "ui.submit": "提交",
-  "message:hiddenyears:need_ucv": "至少需要 %s 点魔法能源才能执行定位！",
+  "message:hiddenyears:need_ucv": "至少需要 %s 点魔法能源才能执行操作！",
   "message.hiddenyears:located": "定位成功！",
   "structure.hiddenyears:the_tower": "§r战斗高塔",
   "structure.hiddenyears:crimson_church": "§r殷红教堂",
