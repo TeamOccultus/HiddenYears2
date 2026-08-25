@@ -6,36 +6,36 @@ category: Documents
 
 # 物品组件
 
-| 组件名称 | 描述 |
-| --- | --- |
-| hiddenyears:deprecated | 将物品标记为已弃用 |
-| hiddenyears:music_disc | 将物品设置为音乐唱片 |
-| hiddenyears:now_playing | 使物品被放入唱片机后显示弹窗提示 |
-| hiddenyears:article | 将物品设置为文章 |
-| hiddenyears:article_content | 设置文章的内容 |
-| hiddenyears:article_center | 将物品设置为文章中心 |
-| hiddenyears:hidden_effect_food | 为食物添加食用后的自定义模拟效果 |
-| hiddenyears:effective_food | 为食物添加食用后的自定义状态效果 |
-| hiddenyears:custom_tool | 将物品设置为自定义工具 |
-| hiddenyears:custom_weapon | 将物品设置为自定义武器 |
-| hiddenyears:tool_type | 指定工具的类型 |
-| hiddenyears:weapon_type | 指定武器的类型 |
-| hiddenyears:custom_crossbow | 将物品设置为自定义弩 |
-| hiddenyears:arrow_present | 指定箭矢对应的箭矢预设 |
-| hiddenyears:trophy_bundle | 指定物品为历战宝袋 |
-| hiddenyears:exp_food | 指定食物给予的经验值 |
-| hiddenyears:coin | 将物品设置为货币 |
-| hiddenyears:staff | 为物品添加范围法杖的功能 |
-| hiddenyears:job | 允许使用该物品后对玩家的职业进行操作 |
-| hiddenyears:return_gem | 配置传送道具的相关参数 |
-| hiddenyears:specific_damage | 允许该物品对特定类型的生物造成额外伤害 |
-| hiddenyears:structure_placer | 允许该物品放置结构 |
-| hiddenyears:blessing_of_isis | 为物品添加「雨之神的祝福」的功能 |
-| hiddenyears:complex_potion | 为物品添加「复合药水」的功能 |
-| hiddenyears:adventurer_note | 使物品获得书籍「故地异国行纪」的功能 |
-| hiddenyears:profile | 使物品获得「时匿怀表」的功能 |
-| hiddenyears:job_skill | 标记物品为职业技能 |
-| hiddenyears:job_recovery | 使物品可以重置玩家职业 |
+| 组件名称                       | 描述                                   |
+| ------------------------------ | -------------------------------------- |
+| hiddenyears:deprecated         | 将物品标记为已弃用                     |
+| hiddenyears:music_disc         | 将物品设置为音乐唱片                   |
+| hiddenyears:now_playing        | 使物品被放入唱片机后显示弹窗提示       |
+| hiddenyears:article            | 将物品设置为文章                       |
+| hiddenyears:article_content    | 设置文章的内容                         |
+| hiddenyears:article_center     | 将物品设置为文章中心                   |
+| hiddenyears:hidden_effect_food | 为食物添加食用后的自定义模拟效果       |
+| hiddenyears:effective_food     | 为食物添加食用后的自定义状态效果       |
+| hiddenyears:custom_tool        | 将物品设置为自定义工具                 |
+| hiddenyears:custom_weapon      | 将物品设置为自定义武器                 |
+| hiddenyears:tool_type          | 指定工具的类型                         |
+| hiddenyears:weapon_type        | 指定武器的类型                         |
+| hiddenyears:custom_crossbow    | 将物品设置为自定义弩                   |
+| hiddenyears:arrow_present      | 指定箭矢对应的箭矢预设                 |
+| hiddenyears:trophy_bundle      | 指定物品为历战宝袋                     |
+| hiddenyears:exp_food           | 指定食物给予的经验值                   |
+| hiddenyears:coin               | 将物品设置为货币                       |
+| hiddenyears:staff              | 为物品添加范围法杖的功能               |
+| hiddenyears:job                | 允许使用该物品后对玩家的职业进行操作   |
+| hiddenyears:return_gem         | 配置传送道具的相关参数                 |
+| hiddenyears:specific_damage    | 允许该物品对特定类型的生物造成额外伤害 |
+| hiddenyears:structure_placer   | 允许该物品放置结构                     |
+| hiddenyears:blessing_of_isis   | 为物品添加「雨之神的祝福」的功能       |
+| hiddenyears:complex_potion     | 为物品添加「复合药水」的功能           |
+| hiddenyears:adventurer_note    | 使物品获得书籍「故地异国行纪」的功能   |
+| hiddenyears:profile            | 使物品获得「时匿怀表」的功能           |
+| hiddenyears:job_skill          | 标记物品为职业技能                     |
+| hiddenyears:job_recovery       | 使物品可以重置玩家职业                 |
 
 ## hiddenyears:deprecated
 
@@ -44,10 +44,10 @@ category: Documents
 
 将物品标记为已弃用
 
-| 参数        | 类型     | 可选？ | 描述             |
-| ----------- | -------- | ------ | ---------------- |
-| replace_to  | `string` | 可选   | 将会替代弃用物品的新物品   |
-| replace_amount       | `number` | 可选   | 新物品的数目，如果不填则与原来物品数目一致  |
+| 参数           | 类型     | 可选？ | 描述                                       |
+| -------------- | -------- | ------ | ------------------------------------------ |
+| replace_to     | `string` | 可选   | 将会替代弃用物品的新物品                   |
+| replace_amount | `number` | 可选   | 新物品的数目，如果不填则与原来物品数目一致 |
 
 ## hiddenyears:music_disc
 
@@ -59,13 +59,14 @@ category: Documents
 
 将物品设置为音乐唱片
 
-| 参数        | 类型     | 可选？ | 描述             |
-| ----------- | -------- | ------ | ---------------- |
-| track_name  | `string` | 必填   | 音轨名称，可以填非原版的音轨   |
-| name        | `string` | 必填   | 音乐唱片名称     |
-| artist      | `string` | 必填   | 创作唱片的艺术家 |
+| 参数       | 类型     | 可选？ | 描述                         |
+| ---------- | -------- | ------ | ---------------------------- |
+| track_name | `string` | 必填   | 音轨名称，可以填非原版的音轨 |
+| name       | `string` | 必填   | 音乐唱片名称                 |
+| artist     | `string` | 必填   | 创作唱片的艺术家             |
 
 ### 范例
+
 ```json
 {
   "format_version": "1.21.100",
@@ -99,6 +100,7 @@ category: Documents
   }
 }
 ```
+
 ## hiddenyears:now_playing
 
 > [!IMPORTANT]
@@ -109,13 +111,14 @@ category: Documents
 
 使物品被放入唱片机后显示弹窗提示
 
-| 参数        | 类型     | 可选？ | 描述             |
-| ----------- | -------- | ------ | ---------------- |
-| icon_path   | `string` | 可选   | 图标路径  |
-| name        | `string` | 必填   | 音乐唱片名称     |
-| author      | `string` | 必填   | 创作唱片的艺术家 |
+| 参数      | 类型     | 可选？ | 描述             |
+| --------- | -------- | ------ | ---------------- |
+| icon_path | `string` | 可选   | 图标路径         |
+| name      | `string` | 必填   | 音乐唱片名称     |
+| author    | `string` | 必填   | 创作唱片的艺术家 |
 
 ### 范例
+
 ```json
 {
   "format_version": "1.21.100",
@@ -406,7 +409,21 @@ category: Documents
 | ---- | -------- | ------ | -------------------- |
 | exp  | `number` | 必填   | 食物给予玩家的经验值 |
 
+## hiddenyears:magic_source
+
+> [!TIP]
+> 可用版本：3.0.16+
+
+将物品设置为魔力物品，使用该物品时将会增加玩家的魔法能源：
+
+| 参数         | 类型     | 可选？ | 描述                       |
+| ------------ | -------- | ------ | -------------------------- |
+| magic_energy | `number` | 必填   | 单个物品对应的「魔法能源」 |
+
 ## hiddenyears:coin
+
+> [!IMPORTANT]
+> 此组件已于 3.0.16 弃用，请使用`hiddenyears:magic_source`实现对应功能
 
 将物品设置为货币，使用该物品时将会增加玩家的统一货币值：
 
@@ -418,29 +435,29 @@ category: Documents
 
 为物品添加范围法杖的功能：
 
-| 参数         | 类型          | 可选？ | 描述                           |
-| ------------ | ------------- | ------ | ------------------------------ |
-| damage       | `number`      | 必填   | 法杖可造成的伤害               |
-| families     | `string[]` |  可选 | ***3.0.7+ 版本可用*** 法杖可作用的生物类型  |
-| radius       | `number`      | 必填   | 法杖生效的范围                 |
-| particle     | `string`      | 可选   | 法杖对敌人造成伤害时生成的粒子 |
-| sound_event  | `string`      | 可选   | 使用法杖时的音效               |
-| staff_preset | `StaffPreset` | 可选   | 法杖的预设                     |
+| 参数         | 类型          | 可选？ | 描述                                       |
+| ------------ | ------------- | ------ | ------------------------------------------ |
+| damage       | `number`      | 必填   | 法杖可造成的伤害                           |
+| families     | `string[]`    | 可选   | **_3.0.7+ 版本可用_** 法杖可作用的生物类型 |
+| radius       | `number`      | 必填   | 法杖生效的范围                             |
+| particle     | `string`      | 可选   | 法杖对敌人造成伤害时生成的粒子             |
+| sound_event  | `string`      | 可选   | 使用法杖时的音效                           |
+| staff_preset | `StaffPreset` | 可选   | 法杖的预设                                 |
 
 在`StaffPreset`类型中：
 
-| 可用值        | 描述                                 |
-| ------------- | ------------------------------------ |
-| `mutas_staff` | 创世之杖的预设，会在敌人头顶生成闪电 |
-| `radiant_touch` | 圣辉之触的预设 |
+| 可用值          | 描述                                 |
+| --------------- | ------------------------------------ |
+| `mutas_staff`   | 创世之杖的预设，会在敌人头顶生成闪电 |
+| `radiant_touch` | 圣辉之触的预设                       |
 
 ## hiddenyears:job
 
 允许使用该物品后对玩家的职业进行操作：
 
-| 参数       | 类型      | 可选？ | 描述                       |
-| ---------- | --------- | ------ | -------------------------- |
-| job_type   | `JobType` | 必填   | 要向玩家添加的职业类型  |
+| 参数       | 类型      | 可选？ | 描述                                          |
+| ---------- | --------- | ------ | --------------------------------------------- |
+| job_type   | `JobType` | 必填   | 要向玩家添加的职业类型                        |
 | remove_old | `boolean` | 可选   | **3.0.7 后被弃用** 是否移除玩家当前的职业数据 |
 
 在`JobType`类型中：
@@ -480,10 +497,10 @@ category: Documents
 
 在`SpecificDamageType`类型中：
 
-| 参数   | 类型     | 可选？                      | 描述                         |
-| ------ | -------- | ------- | ---------- | 
-| family | `string` | 必填                        | 适用于该类型额外伤害的实体族 |
-| damage | `number  \| [max: number, min: number]` | 必填                         | 对该类型实体造成的额外伤害 |
+| 参数   | 类型                                    | 可选？ | 描述                         |
+| ------ | --------------------------------------- | ------ | ---------------------------- |
+| family | `string`                                | 必填   | 适用于该类型额外伤害的实体族 |
+| damage | `number  \| [max: number, min: number]` | 必填   | 对该类型实体造成的额外伤害   |
 
 ## hiddenyears:structure_placer
 
@@ -501,10 +518,10 @@ category: Documents
 
 在`AnimationConfig`类型中：
 
-| 参数    | 类型      | 可选？   | 描述               |
-| ------- | --------- | -------- | ------------------ | 
-| type    | `"blocks" \| "layers" \| "none"`            | 必填 | 动画类型 |
-| seconds | `number`  | 必填     | 动画持续时间（秒） |
+| 参数    | 类型                             | 可选？ | 描述               |
+| ------- | -------------------------------- | ------ | ------------------ |
+| type    | `"blocks" \| "layers" \| "none"` | 必填   | 动画类型           |
+| seconds | `number`                         | 必填   | 动画持续时间（秒） |
 
 在`StructurePresent`类型中：
 

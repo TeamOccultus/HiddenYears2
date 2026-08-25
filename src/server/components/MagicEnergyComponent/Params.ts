@@ -1,6 +1,6 @@
 export type MagicEnergyParams = {
   /**
-   * 单个货币对应的「统一货币值」
+   * 单个物品对应的魔法能源
    */
-  magic_energy_value: number;
+  magic_energy: number;
 };

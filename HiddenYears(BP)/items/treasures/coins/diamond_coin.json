@@ -8,8 +8,8 @@
       }
     },
     "components": {
-      "hiddenyears:coin": {
-        "ucv_value": 500
+      "hiddenyears:magic_source": {
+        "magic_energy": 120
       },
       "minecraft:icon": "hiddenyears:diamond_coin"
     }

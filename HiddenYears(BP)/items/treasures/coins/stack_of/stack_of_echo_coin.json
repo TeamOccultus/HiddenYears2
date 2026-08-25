@@ -8,8 +8,8 @@
       }
     },
     "components": {
-      "hiddenyears:coin": {
-        "ucv_value": 9000
+      "hiddenyears:magic_source": {
+        "magic_energy": 4500
       },
       "minecraft:icon": "hiddenyears:stack_of_echo_coin",
       "minecraft:rarity": "rare"

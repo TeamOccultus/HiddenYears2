@@ -30,7 +30,7 @@ function itemOnUse(
   consumeEquipmentAmount(source, num);
   source.onScreenDisplay.setActionBar({
     translate: "message.hiddenyears:ucv_add",
-    with: [(p.magic_energy_value * num).toString()]
+    with: [(p.magic_energy * num).toString()]
   });
-  MagicEnergy.add(source, p.magic_energy_value * num);
+  MagicEnergy.add(source, p.magic_energy * num);
 }
