@@ -10,7 +10,7 @@ export class LoreComponent {
     world.afterEvents.playerInventoryItemChange.subscribe((arg) => {
       if (!arg.itemStack) return;
       if (!arg.itemStack.hasTag("starock:lore")) return;
-      if (arg.itemStack.getDynamicProperty("starock:has_lore")) return;
+      if (arg.itemStack.getLore().length > 0) return;
       const { itemStack, slot, player } = arg;
       const params = arg.itemStack.getComponent(this.componentName)
         .customComponentParameters.params as LoreComponentParams;
@@ -22,12 +22,11 @@ export class LoreComponent {
       }
       const [newItem, lore] = [itemStack, itemStack.getRawLore()];
       params.tooltips.forEach((str, index) => {
-        if (index === 0) {
+        if (index === 0 && !params.remove_first_blank_line) {
           lore.push({ text: "§r" });
         }
         lore.push({ translate: str });
       });
-      newItem.setDynamicProperty("starock:has_lore", true);
       newItem.setLore(lore);
       getContainer(player).setItem(slot, newItem);
     });
