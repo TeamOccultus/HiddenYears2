@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "hiddenyears:magic_source": {
+        "magic_energy": 100
+      },
       "minecraft:icon": "hiddenyears:magic_dust",
       "minecraft:rarity": "uncommon",
       "minecraft:tags": {
