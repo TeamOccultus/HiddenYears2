@@ -3,12 +3,16 @@ import {
   CustomComponentParameters,
   Entity,
   EntityDamageCause,
-  Player
+  Player,
+  TicksPerSecond,
+  ItemComponentMineBlockEvent
 } from "@minecraft/server";
 import { WeaponTypeParams } from "../components/WeaponTypeComponent/Params";
 import { LegendWeaponEvent } from "./LegendWeaponEvent";
-import { hasFamily, Random } from "@occultus/api";
+import { hasFamily, Random, RandomEvent, Tick } from "@occultus/api";
 import { SpecificDamageParams } from "../components/SpecificDamageComponent/Params";
+import { getSledgehammerSkillChance } from "../../core/WeaponToolUtils";
+import { bleedEffect } from "../effects/bleed";
 
 export class WeaponEvent {
   static onHitEntity(
@@ -16,6 +20,9 @@ export class WeaponEvent {
     arg1: CustomComponentParameters
   ) {
     const params = arg1.params as WeaponTypeParams;
+    if (params.weapon_type === "sledgehammer") {
+      WeaponEvent.onSledgehammerAttack(arg0);
+    }
     if (params?.legend_weapon === "suffering") {
       LegendWeaponEvent.onSufferingSwordAttack(arg0);
     }
@@ -25,6 +32,21 @@ export class WeaponEvent {
     if (params?.legend_weapon === "shattered_sand_staff") {
       LegendWeaponEvent.onShatteredSandStaffAttack(arg0);
     }
+  }
+  static onSledgehammerAttack(arg0: ItemComponentHitEntityEvent) {
+    const { attackingEntity, hitEntity } = arg0;
+    attackingEntity.addEffect("minecraft:slowness", 3 * TicksPerSecond, {
+      showParticles: false
+    });
+    attackingEntity.addEffect("minecraft:mining_fatigue", 3 * TicksPerSecond, {
+      showParticles: false
+    });
+    if (!(attackingEntity instanceof Player)) return;
+    new RandomEvent(getSledgehammerSkillChance(attackingEntity), () => {
+      // @todo 找个有打击感的音效
+      attackingEntity.playSound("game.player.attack.strong");
+      bleedEffect.add(hitEntity, 10 * TicksPerSecond);
+    }).call();
   }
   static onSpecificDamageHitEntity(
     arg0: ItemComponentHitEntityEvent,
