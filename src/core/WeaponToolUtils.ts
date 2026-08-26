@@ -70,7 +70,7 @@ export function getDaggerAttack(params: WeaponTypeParams) {
  * 获取法杖的伤害
  * @param player 使用法杖的玩家
  * @param params 法杖的物品组件参数
- * @return 
+ * @return
  */
 export function getStaffAttack(player: Player, params: StaffParams) {
   if (params.staff_preset !== "legacy_staff") return params.damage;
@@ -80,5 +80,34 @@ export function getStaffAttack(player: Player, params: StaffParams) {
     return params.damage + conjureWizard.getLevel(player) * 0.5;
   if (arcaneWizard.isOwned(player))
     return params.damage + arcaneWizard.getLevel(player) * 0.5;
-  return params.damage
+  return params.damage;
+}
+
+/**
+ * 获取撬棍触发致命一击的概率
+ * @param player 玩家对象
+ * @returns 致命一击概率
+ */
+export function getCrowbarCritChance(player: Player): number {
+  let baseChance = 0.35;
+  if (berserker.isOwned(player)) {
+    baseChance = 0.6;
+    baseChance += berserker.getLevel(player) * 0.025;
+  }
+  return baseChance;
+}
+
+/**
+ * 获取撬棍触发脱手伤害的概率
+ * @param player 玩家对象
+ * @returns 脱手伤害概率
+ */
+export function getCrowbarThornChance(player: Player): number {
+  let baseChance = 0.85;
+  if (berserker.isOwned(player)) {
+    baseChance = 0.6;
+    baseChance -= berserker.getLevel(player) * 0.035;
+    baseChance = Math.max(0, baseChance);
+  }
+  return baseChance;
 }

@@ -13,8 +13,18 @@ import { CrowbarRecipeManager } from "../../recipe/crowbar/CrowbarRecipeManager"
 import { CrowbarEvents } from "../../events/CrowbarEvents";
 import { HammerRecipeManager } from "../../recipe/hammer/HammerRecipeManager";
 import { HammerEvents } from "../../events/HammerEvents";
-import { RandomEvent } from "@occultus/api";
-import { getHammerSkillChance } from "../../../core/WeaponToolUtils";
+import {
+  consumeDurability,
+  getEquipmentItem,
+  Random,
+  RandomEvent,
+  setEquipmentItem
+} from "@occultus/api";
+import {
+  getCrowbarCritChance,
+  getCrowbarThornChance,
+  getHammerSkillChance
+} from "../../../core/WeaponToolUtils";
 import { bleedEffect } from "../../effects/bleed";
 
 /**
@@ -79,11 +89,33 @@ function onHitEntityCallback(
   const params = arg1.params as ToolTypeParams;
   const { attackingEntity, hitEntity } = arg0;
   if (!(attackingEntity instanceof Player)) return;
+  if (params.tool_type === "crowbar") {
+    const chance = getCrowbarCritChance(attackingEntity)
+    console.log(chance)
+    new RandomEvent(chance, () => {
+      hitEntity.applyDamage(Random.integer(10, 3));
+      setEquipmentItem(
+        attackingEntity,
+        consumeDurability(getEquipmentItem(attackingEntity), 5, attackingEntity)
+      );
+      new RandomEvent(getCrowbarThornChance(attackingEntity), () => {
+        attackingEntity.applyDamage(Random.integer(2, 5));
+        setEquipmentItem(
+          attackingEntity,
+          consumeDurability(
+            getEquipmentItem(attackingEntity),
+            5,
+            attackingEntity
+          )
+        );
+      }).call();
+    }).call();
+  }
   if (params.tool_type === "hammer") {
     new RandomEvent(getHammerSkillChance(attackingEntity), () => {
       // @todo 找个有打击感的音效
       attackingEntity.playSound("game.player.attack.strong");
       bleedEffect.add(hitEntity, 10 * TicksPerSecond);
-    });
+    }).call();
   }
 }
