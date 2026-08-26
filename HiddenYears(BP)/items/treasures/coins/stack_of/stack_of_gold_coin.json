@@ -11,6 +11,12 @@
       "hiddenyears:magic_source": {
         "magic_energy": 450
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.on_use",
+          "tooltip.hiddenyears:stack_of_gold_coin"
+        ]
+      },
       "minecraft:icon": "hiddenyears:stack_of_gold_coin"
     }
   }

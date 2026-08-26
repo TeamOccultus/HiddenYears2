@@ -11,6 +11,12 @@
       "hiddenyears:magic_source": {
         "magic_energy": 100
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.on_use",
+          "tooltip.hiddenyears:magic_dust"
+        ]
+      },
       "minecraft:icon": "hiddenyears:magic_dust",
       "minecraft:rarity": "uncommon",
       "minecraft:tags": {

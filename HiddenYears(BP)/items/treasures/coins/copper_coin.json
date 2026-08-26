@@ -11,6 +11,9 @@
       "hiddenyears:magic_source": {
         "magic_energy": 20
       },
+      "hiddenyears:tooltip": {
+        "tooltips": ["tooltip.on_use", "tooltip.hiddenyears:copper_coin"]
+      },
       "minecraft:icon": "hiddenyears:copper_coin"
     }
   }

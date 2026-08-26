@@ -21,10 +21,10 @@
       },
       "hiddenyears:tooltip": {
         "tooltips": [
+          "tooltip.on_use",
           "tooltip.hiddenyears:ruby_iphon.1",
           "tooltip.hiddenyears:ruby_iphon.2",
-          "tooltip.hiddenyears:ruby_iphon.3",
-          "tooltip.hiddenyears:ruby_iphon.4"
+          "tooltip.hiddenyears:ruby_iphon.3"
         ]
       },
       "minecraft:rarity": "rare",

@@ -11,6 +11,9 @@
       "hiddenyears:magic_source": {
         "magic_energy": 200
       },
+      "hiddenyears:tooltip": {
+        "tooltips": ["tooltip.on_use", "tooltip.hiddenyears:echo_coin"]
+      },
       "minecraft:icon": "hiddenyears:echo_coin",
       "minecraft:rarity": "rare"
     }
