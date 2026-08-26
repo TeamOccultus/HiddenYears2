@@ -9,6 +9,7 @@
     },
     "components": {
       "hiddenyears:return_gem": {
+        "magic_energy": 200,
         "bind_to": "script"
       },
       "minecraft:icon": "hiddenyears:return_gem",

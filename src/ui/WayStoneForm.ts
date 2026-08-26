@@ -1,9 +1,18 @@
-import { Player, world } from "@minecraft/server";
+import { CustomComponentParameters, Player, world } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { WayPoint } from "../core/WayPoint";
-import { Color, FormLike, toVec3 } from "@occultus/api";
+import { Color, FormLike, getEquipmentItem, toVec3 } from "@occultus/api";
+import { MagicEnergy } from "../core/MagicEnergy";
+import { ReturnGemParams } from "../server/components/ReturnGemComponent/Params";
 
 export class WayStoneForm extends FormLike {
+  private getMagicEnergy() {
+    const p = this.params.params as ReturnGemParams;
+    return p?.magic_energy ?? 0;
+  }
+  constructor(readonly params: CustomComponentParameters) {
+    super();
+  }
   display(player: Player, backTo: FormLike[]): void {
     const list = WayPoint.getWayStoneList(player);
     if (list.length === 0) {
@@ -17,8 +26,9 @@ export class WayStoneForm extends FormLike {
       .body({ translate: "ui.waystone.body" })
       .button({ translate: "gui.delete" }, "textures/ui/waystone_delete");
     list.forEach((wayStone) => {
-      if(!wayStone.icp) wayStone.icp = "textures/items/waystone"
-      if(WayPoint.isWayStoneAvailable(wayStone)) return form.button(wayStone.name, wayStone.icp);
+      if (!wayStone.icp) wayStone.icp = "textures/items/waystone";
+      if (WayPoint.isWayStoneAvailable(wayStone))
+        return form.button(wayStone.name, wayStone.icp);
       return form.button(wayStone.name, "textures/ui/waystone_undefined");
     });
     form.show(player).then((result) => {
@@ -43,6 +53,9 @@ export class WayStoneForm extends FormLike {
             }
           ]
         });
+        return;
+      }
+      if (!MagicEnergy.tryConsume(player, this.getMagicEnergy())) {
         return;
       }
       player.teleport(

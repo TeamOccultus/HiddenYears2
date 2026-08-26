@@ -1,5 +1,9 @@
 export type ReturnGemParams = {
   /**
+   * 返回晶石的消耗的魔法能源
+   */
+  magic_energy: number;
+  /**
    * 将返回晶石绑定在某一位置来源
    */
   bind_to: LocationProvider;

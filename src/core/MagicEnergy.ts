@@ -13,6 +13,23 @@ export class MagicEnergy {
     });
   }
   /**
+   * 尝试消耗玩家的魔法能源
+   * @param player 
+   * @param value 
+   * @return `true`代表玩家魔法能源足够消耗并且游戏已经执行了消耗操作，`false`代表玩家魔法能源不足
+   */
+  static tryConsume(player: Player, value: number): boolean {
+    if (this.get(player) >= value) {
+      this.set(player, this.get(player) - value);
+      return true;
+    }
+    player.onScreenDisplay.setActionBar({
+      translate: "message.hiddenyears:need_ucv",
+      with: [String(value)]
+    });
+    return false;
+  }
+  /**
    * 获取玩家的魔法能源
    * @param player 要获取货币值的玩家
    * @return 玩家的魔法能源

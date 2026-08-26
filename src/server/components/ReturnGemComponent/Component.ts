@@ -1,5 +1,4 @@
 import { Player, system } from "@minecraft/server";
-import { ComplexPotion } from "../../../core/ComplexPotion";
 import { ReturnGemEvents } from "../../events/ReturnGemEvents";
 
 export class ReturnGemComponent {

@@ -17,6 +17,7 @@ import { ReturnGemParams } from "../components/ReturnGemComponent/Params";
 import { MessageFormData, ModalFormData } from "@minecraft/server-ui";
 import { WayStoneForm } from "../../ui/WayStoneForm";
 import { WayPoint } from "../../core/WayPoint";
+import { MagicEnergy } from "../../core/MagicEnergy";
 
 const waystoneIcons = [
   "textures/items/waystone",
@@ -116,6 +117,9 @@ export class ReturnGemEvents {
   ) {
     const { source: player, itemStack } = arg0;
     const p = arg1.params as ReturnGemParams;
+    if (!MagicEnergy.tryConsume(player, p?.magic_energy ?? 0)) {
+      return;
+    }
     consumeEquipmentAmount(player, 1);
     player.teleport(toVec3(p.location[0], p.location[1], p.location[2]), {
       dimension: world.getDimension(p.dimension ?? "minecraft:overworld")
@@ -139,6 +143,9 @@ export class ReturnGemEvents {
       });
       return;
     }
+    if (!MagicEnergy.tryConsume(player, p?.magic_energy ?? 0)) {
+      return;
+    }
     consumeEquipmentAmount(player, 1);
     player.teleport(toVec3(home.x, home.y, home.z), {
       dimension: home.dimension
@@ -159,6 +166,9 @@ export class ReturnGemEvents {
       const location = itemStack.getDynamicProperty(
         "hiddenyears:location"
       ) as Vector3;
+      if (!MagicEnergy.tryConsume(player, p?.magic_energy ?? 0)) {
+        return;
+      }
       consumeEquipmentAmount(player, 1);
       player.teleport(location, { dimension: world.getDimension(dim) });
       player.playSound(p.sound_event ?? "mob.endermen.portal");
@@ -196,6 +206,6 @@ export class ReturnGemEvents {
     arg1: CustomComponentParameters
   ) {
     const { source: player } = arg0;
-    new WayStoneForm().display(player, []);
+    new WayStoneForm(arg1).display(player, []);
   }
 }
