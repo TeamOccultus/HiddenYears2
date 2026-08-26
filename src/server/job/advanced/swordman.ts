@@ -8,7 +8,7 @@ import {
   RandomEvent
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
-import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
+import { MaigcEnergyConditions } from "../../conditions/ME";
 
 export const swordman = new Job(
   "hiddenyears:swordman",

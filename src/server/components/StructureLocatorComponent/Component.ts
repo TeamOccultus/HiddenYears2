@@ -6,7 +6,7 @@ import {
   system,
   world
 } from "@minecraft/server";
-import { StructureLocaterListParams, StructureLocaterParams } from "./Params";
+import { StructureLocatorListParams, StructureLocatorParams } from "./Params";
 import {
   Color,
   consumeEquipmentAmount,
@@ -35,7 +35,7 @@ function getRedstoneBlockLocation(player: Player) {
   };
 }
 
-export class StructureLocaterComponent {
+export class StructureLocatorComponent {
   static readonly ID = "starock:structure_source";
   constructor(
     readonly componentName: string,
@@ -50,7 +50,7 @@ export class StructureLocaterComponent {
         const component = itemStack.getComponent(this.componentName);
         if (!component) return;
         const params = component.customComponentParameters
-          .params as StructureLocaterParams;
+          .params as StructureLocatorParams;
         if (source.isSneaking && params.structure_source === "auto") {
           arg.cancel = true;
           system.run(() => {
@@ -77,7 +77,7 @@ export class StructureLocaterComponent {
         const component = itemStack.getComponent(this.componentName);
         if (!component) return;
         const params = component.customComponentParameters
-          .params as StructureLocaterParams;
+          .params as StructureLocatorParams;
         if (isInCooldown(itemStack, source)) {
           source.onScreenDisplay.setActionBar({
             translate: "message.hiddenyears:wait_cooldown"
@@ -102,14 +102,14 @@ function getHelper(
   arg0: ItemComponentUseEvent,
   arg1: CustomComponentParameters
 ): string | undefined {
-  const params = arg1.params as StructureLocaterParams;
+  const params = arg1.params as StructureLocatorParams;
   const { source, itemStack } = arg0;
   if (params.structure_source === "single") {
     if (!params.locate_helper) return;
     return params.locate_helper;
   }
   if (params.structure_source === "auto") {
-    const helper = itemStack.getDynamicProperty(StructureLocaterComponent.ID);
+    const helper = itemStack.getDynamicProperty(StructureLocatorComponent.ID);
     console.log(helper);
     if (!helper) {
       source.sendMessage({ translate: "message.hiddenyears:target_not_set" });
@@ -129,9 +129,9 @@ function modifySource(
   listComponentName: string
 ) {
   const { source, itemStack } = arg0;
-  const paramsMain = arg1.params as StructureLocaterParams;
+  const paramsMain = arg1.params as StructureLocatorParams;
   const params = itemStack.getComponent(listComponentName)
-    .customComponentParameters.params as StructureLocaterListParams;
+    .customComponentParameters.params as StructureLocatorListParams;
   if (!params || !Array.isArray(params)) return;
   const items: RawMessage[] = [];
   params.forEach((item, index) => {
@@ -166,7 +166,7 @@ function modifySource(
     if (typeof index !== "number") return;
     const newItem = copyItem(itemStack, itemStack.typeId);
     newItem.setDynamicProperty(
-      StructureLocaterComponent.ID,
+      StructureLocatorComponent.ID,
       params[index].helper
     );
     newItem.setLore([
@@ -191,7 +191,7 @@ function locateStucture(
   arg1: CustomComponentParameters,
   listComponentName: string
 ): boolean {
-  const params = arg1.params as StructureLocaterParams;
+  const params = arg1.params as StructureLocatorParams;
   const { source } = arg0;
   const helper = getHelper(arg0, arg1);
   if (!helper) return false;

@@ -4,7 +4,7 @@ import { wizard } from "./beginner/wizard";
 import { pastor } from "./beginner/pastor";
 import { warrior } from "./beginner/warrior";
 import { archer } from "./beginner/archer";
-import { UnifiedCurrencyValueConditions } from "../conditions/UCV";
+import { MaigcEnergyConditions } from "../conditions/ME";
 
 export const traveler = new Job(
   "hiddenyears:traveler",
@@ -25,12 +25,12 @@ export const traveler = new Job(
       {
         min: 0,
         max: 5,
-        condition: [new UnifiedCurrencyValueConditions(800, true)]
+        condition: [new MaigcEnergyConditions(800, true)]
       },
       {
         min: 6,
         max: 10,
-        condition: [new UnifiedCurrencyValueConditions(1200, true)]
+        condition: [new MaigcEnergyConditions(1200, true)]
       }
     ],
     transform: [

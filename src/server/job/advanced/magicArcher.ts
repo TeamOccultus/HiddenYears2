@@ -10,7 +10,7 @@ import {
   tryOperateEntity
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
-import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
+import { MaigcEnergyConditions } from "../../conditions/ME";
 
 const ENHANCE_COUNT_PROPERTY = "hiddenyears:magic_archer_enhance_count";
 

@@ -8,7 +8,7 @@ import {
   RandomEvent
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
-import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
+import { MaigcEnergyConditions } from "../../conditions/ME";
 
 export const orisonPastor = new Job(
   "hiddenyears:orison_pastor",

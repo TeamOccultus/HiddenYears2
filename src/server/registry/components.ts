@@ -37,7 +37,7 @@ import { SpecificDamageComponent } from "../components/SpecificDamageComponent/C
 import { StructurePlacerComponent } from "../components/StructurePlacerComponent/Component";
 import { JobRecoveryComponent } from "../components/JobRecoveryComponent/Component";
 import { NowPlayingComponent } from "../components/NowPlayingComponent/Component";
-import { StructureLocaterComponent } from "../components/StructureLocaterComponent/Component";
+import { StructureLocatorComponent } from "../components/StructureLocatorComponent/Component";
 import { DeprecatedGameplayComponent } from "../components/DeprecatedGameplayComponent/Component";
 import { LocatorBarComponent } from "../components/LocatorBarComponent/Component";
 import { DimensionTeleporterComponent } from "../components/DimensionTeleporterComponent/Component";
@@ -78,8 +78,8 @@ export function registerCustomComponents() {
   new StructurePlacerComponent("hiddenyears:structure_placer");
   new JobRecoveryComponent("hiddenyears:job_recovery");
   new NowPlayingComponent("hiddenyears:now_playing");
-  new StructureLocaterComponent(
-    "hiddenyears:structure_locater",
+  new StructureLocatorComponent(
+    "hiddenyears:structure_locator",
     "hiddenyears:target_list"
   );
   new DeprecatedGameplayComponent("hiddenyears:deprecated");

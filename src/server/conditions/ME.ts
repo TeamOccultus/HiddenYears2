@@ -2,7 +2,7 @@ import { Player } from "@minecraft/server";
 import { Conditions, TextProvider } from "@occultus/api";
 import { MagicEnergy as UCV } from "../../core/MagicEnergy";
 
-export class UnifiedCurrencyValueConditions extends Conditions {
+export class MaigcEnergyConditions extends Conditions {
   constructor(
     protected readonly value: number,
     protected readonly consumeAmount = false

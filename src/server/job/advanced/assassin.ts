@@ -7,7 +7,7 @@ import {
   JobSkill
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
-import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
+import { MaigcEnergyConditions } from "../../conditions/ME";
 
 export const assassin = new Job(
   "hiddenyears:assassin",

@@ -1,4 +1,4 @@
-export type StructureLocaterParams = {
+export type StructureLocatorParams = {
   structure_source: "auto" | "single";
   ucv: number;
   locate_helper?: string;
@@ -6,7 +6,7 @@ export type StructureLocaterParams = {
   sound_event?: string
 };
 
-export type StructureLocaterListParams = {
+export type StructureLocatorListParams = {
   name: string;
   helper: string;
   description?: string;

@@ -15,7 +15,7 @@ import {
   TicksPerSecond
 } from "@minecraft/server";
 import { getJobDescription } from "../toolkit";
-import { UnifiedCurrencyValueConditions } from "../../conditions/UCV";
+import { MaigcEnergyConditions } from "../../conditions/ME";
 
 export const wizard = new Job(
   "hiddenyears:wizard",
@@ -27,12 +27,12 @@ export const wizard = new Job(
       {
         min: 0,
         max: 5,
-        condition: [new UnifiedCurrencyValueConditions(2000, true)]
+        condition: [new MaigcEnergyConditions(2000, true)]
       },
       {
         min: 6,
         max: 10,
-        condition: [new UnifiedCurrencyValueConditions(2500, true)]
+        condition: [new MaigcEnergyConditions(2500, true)]
       }
     ],
     transform: [

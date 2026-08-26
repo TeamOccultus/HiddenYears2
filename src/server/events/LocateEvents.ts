@@ -4,11 +4,11 @@ import {
   world,
   system
 } from "@minecraft/server";
-import { StructureLocaterParams } from "../components/StructureLocaterComponent/Params";
+import { StructureLocatorParams } from "../components/StructureLocatorComponent/Params";
 
 export class LocateEvents {
   onUse(arg0: ItemComponentUseEvent, arg1: CustomComponentParameters) {
-    const params = arg1.params as StructureLocaterParams;
+    const params = arg1.params as StructureLocatorParams;
     const player = arg0.source;
     world.gameRules.commandBlockOutput = true;
     world.structureManager.place(params.locate_helper, player.dimension, {

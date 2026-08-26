@@ -8,7 +8,7 @@
       }
     },
     "components": {
-      "hiddenyears:structure_locater": {
+      "hiddenyears:structure_locator": {
         "structure_source": "auto",
         "ucv": 500,
         "sound_event": "conduit.deactivate"
