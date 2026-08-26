@@ -1,22 +1,22 @@
 [
   {
     "item": "hiddenyears:copper_coin",
-    "ucv": 15,
+    "ucv": 25,
     "count": 1
   },
   {
     "item": "hiddenyears:gold_coin",
-    "ucv": 150,
+    "ucv": 55,
     "count": 1
   },
   {
     "item": "hiddenyears:diamond_coin",
-    "ucv": 650,
+    "ucv": 130,
     "count": 1
   },
   {
     "item": "hiddenyears:echo_coin",
-    "ucv": 1250,
+    "ucv": 220,
     "count": 1
   }
 ]
