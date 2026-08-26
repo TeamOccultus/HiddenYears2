@@ -9,6 +9,9 @@ import {
 import { getJobDescription } from "../toolkit";
 import { MaigcEnergyConditions } from "../../conditions/ME";
 
+/**
+ * 刺客职业
+ */
 export const assassin = new Job(
   "hiddenyears:assassin",
   { translate: "job.hiddenyears:assassin" },

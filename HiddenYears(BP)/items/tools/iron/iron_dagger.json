@@ -12,13 +12,14 @@
         "type": "sword"
       },
       "hiddenyears:weapon_type": {
-        "weapon_type": "dagger"
+        "weapon_type": "dagger",
+        "basic_damage": 7
       },
       "minecraft:can_destroy_in_creative": false,
       "minecraft:durability": {
         "max_durability": 150
       },
-      "minecraft:damage": 9,
+      "minecraft:damage": 2,
       "minecraft:digger": {
         "use_efficiency": true,
         "destroy_speeds": [
