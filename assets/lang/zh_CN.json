@@ -2026,5 +2026,6 @@
   "tooltip.hiddenyears:stack_of_gold_coin": "§r§7+450 魔法能源",
   "tooltip.hiddenyears:stack_of_diamond_coin": "§r§7+1080 魔法能源",
   "tooltip.hiddenyears:stack_of_echo_coin": "§r§7+1800 魔法能源",
-  "structure.hiddenyears:desert_underground_palace": "法老地下行宫的一角"
+  "structure.hiddenyears:desert_underground_palace": "法老地下行宫的一角",
+  "tooltip.hiddenyears:teleport_magic": "§r§7-200 魔法能源"
 }

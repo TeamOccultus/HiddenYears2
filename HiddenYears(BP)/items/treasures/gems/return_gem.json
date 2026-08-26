@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "hiddenyears:tooltip": {
+        "tooltips": ["tooltip.on_use", "tooltip.hiddenyears:teleport_magic"]
+      },
       "hiddenyears:return_gem": {
         "magic_energy": 200,
         "bind_to": "script"

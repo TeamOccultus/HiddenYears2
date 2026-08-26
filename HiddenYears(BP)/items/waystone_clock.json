@@ -12,6 +12,9 @@
         "magic_energy": 200,
         "bind_to": "waystone"
       },
+      "hiddenyears:tooltip": {
+        "tooltips": ["tooltip.on_use", "tooltip.hiddenyears:teleport_magic"]
+      },
       "minecraft:icon": "hiddenyears:waystone_clock",
       "minecraft:rarity": "rare",
       "minecraft:max_stack_size": 1
