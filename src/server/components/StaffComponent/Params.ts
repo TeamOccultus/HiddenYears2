@@ -6,5 +6,5 @@ export type StaffParams = {
   radius: number;
   particle?: string;
   sound_event?: string;
-  staff_preset?: "mutas_staff" | "radiant_touch";
+  staff_preset?: "mutas_staff" | "radiant_touch" | "legacy_staff";
 };

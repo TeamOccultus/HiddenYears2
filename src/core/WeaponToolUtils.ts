@@ -4,6 +4,10 @@ import { berserker } from "../server/job/advanced/berserker";
 import { assassin } from "../server/job/advanced/assassin";
 import { WeaponTypeParams } from "../server/components/WeaponTypeComponent/Params";
 import { Random } from "@occultus/api";
+import { StaffParams } from "../server/components/StaffComponent/Params";
+import { wizard } from "../server/job/beginner/wizard";
+import { conjureWizard } from "../server/job/advanced/conjureWizard";
+import { arcaneWizard } from "../server/job/advanced/arcaneWizard";
 
 /**
  * 获取玩家攻击敌人时触发战锤技能的概率
@@ -54,10 +58,27 @@ export function getDaggerSkillChance(player: Player) {
 
 /**
  * 获取匕首额外伤害值
- * @param params 
- * @return 
+ * @param params
+ * @return
  */
 export function getDaggerAttack(params: WeaponTypeParams) {
   const basic = params.basic_damage ?? 0;
   return Random.integer(basic + 6, basic + 2);
+}
+
+/**
+ * 获取法杖的伤害
+ * @param player 使用法杖的玩家
+ * @param params 法杖的物品组件参数
+ * @return 
+ */
+export function getStaffAttack(player: Player, params: StaffParams) {
+  if (params.staff_preset !== "legacy_staff") return params.damage;
+  if (wizard.isOwned(player))
+    return params.damage + wizard.getLevel(player) * 0.3;
+  if (conjureWizard.isOwned(player))
+    return params.damage + conjureWizard.getLevel(player) * 0.5;
+  if (arcaneWizard.isOwned(player))
+    return params.damage + arcaneWizard.getLevel(player) * 0.5;
+  return params.damage
 }

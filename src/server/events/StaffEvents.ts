@@ -1,5 +1,6 @@
 import {
   CustomComponentParameters,
+  EntityDamageCause,
   ItemComponentUseEvent,
   system,
   TicksPerSecond
@@ -14,6 +15,7 @@ import {
 } from "@occultus/api";
 import { StaffParams } from "../components/StaffComponent/Params";
 import { getPastorLevel } from "../job/toolkit";
+import { getStaffAttack } from "../../core/WeaponToolUtils";
 
 export class StaffEvents {
   static matchPresent(
@@ -56,7 +58,11 @@ export class StaffEvents {
       excludeFamilies: ["noaoe", "inanimate"],
       excludeTypes: ["minecraft:item"]
     });
-    utils.applyDamage(params.damage);
+    const damage = getStaffAttack(source, params);
+    utils.applyDamage(damage, {
+      cause: EntityDamageCause.magic,
+      damagingEntity: source
+    });
     utils.tryOperateEntity((entity) => {
       if (params.particle) {
         entity.dimension.spawnParticle(
