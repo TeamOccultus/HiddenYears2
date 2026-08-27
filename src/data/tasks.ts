@@ -1099,6 +1099,32 @@ const magicDust = new Task(
 );
 tasks.set(magicDust.id, magicDust);
 
+const magicOrigin = new Task(
+  "hiddenyears:magic_origin",
+  { translate: "task.magic_origin" },
+  { translate: "task.magic_origin.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    conditions: [new ItemConditions("hiddenyears:magic_origin")],
+    previousTask: "none",
+    iconPath: "textures/items/magic_origin",
+  }
+);
+tasks.set(magicOrigin.id, magicOrigin);
+
+const magicCompass = new Task(
+  "hiddenyears:magic_compass",
+  { translate: "task.magic_compass" },
+  { translate: "task.magic_compass.desc" },
+  {
+    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    conditions: [new ItemConditions("hiddenyears:magic_compass")],
+    previousTask: "none",
+    iconPath: "textures/items/magic_compass",
+  }
+);
+tasks.set(magicCompass.id, magicCompass);
+
 const homecoming = new Task(
   "hiddenyears:homecoming",
   { translate: "task.homecoming" },
@@ -1224,6 +1250,8 @@ const chapterIIActIV = new TaskGroup(
     tasks: [
       alchemist,
       magicDust,
+      magicOrigin,
+      magicCompass,
       homecoming,
       wanderingBetweenStars,
       compoundBrewing,

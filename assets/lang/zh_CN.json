@@ -2055,5 +2055,9 @@
   "tooltip.hiddenyears:crowbar.2": "§r§7+85% 撬棍脱手§r",
   "tooltip.hiddenyears:crowbar.3": "§r§7牧师§r",
   "tooltip.hiddenyears:legacy_staff.1": "§r§9+5 法术伤害§r",
-  "tooltip.hiddenyears:legacy_staff.2": "§r§7法师§r"
+  "tooltip.hiddenyears:legacy_staff.2": "§r§7法师§r",
+  "task.magic_compass": "魔法罗盘",
+  "task.magic_compass.desc": "用四颗钻石和魔法源质在炼金台上合成魔法罗盘，以帮助定位结构",
+  "task.magic_origin": "起源",
+  "task.magic_origin.desc": "用魔法尘埃和金锭在炼金台上炼制魔法源质"
 }
