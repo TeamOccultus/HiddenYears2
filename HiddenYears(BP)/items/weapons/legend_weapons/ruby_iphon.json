@@ -15,7 +15,7 @@
         "damage": 2,
         "radius": 6,
         "exclude_families": ["ruby_monster", "tamed_ruby"],
-        "particle": "minecraft:critical_hit_emitter",
+        "particle": "hiddenyears:magic_attack_emitter",
         "runtime_identifier": "hiddenyears:ruby_iphon",
         "sound_event": "item.ruby_iphon.use"
       },

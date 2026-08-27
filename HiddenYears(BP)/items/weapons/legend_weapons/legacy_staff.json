@@ -8,6 +8,15 @@
       }
     },
     "components": {
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:legacy_staff.1",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:legacy_staff.2"
+        ],
+        "remove_first_blank_line": true
+      },
       "hiddenyears:custom_weapon": {
         "type": "sword"
       },
