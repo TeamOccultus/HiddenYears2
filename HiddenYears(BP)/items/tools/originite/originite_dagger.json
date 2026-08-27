@@ -8,6 +8,15 @@
       }
     },
     "components": {
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:originite_dagger",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:dagger.common"
+        ],
+        "remove_first_blank_line": true
+      },
       "minecraft:fire_resistant": {
         "value": true
       },

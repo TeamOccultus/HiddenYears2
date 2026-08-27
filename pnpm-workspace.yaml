@@ -1,5 +1,4 @@
-minimumReleaseAge: 60
+allowBuilds:
+  esbuild: true
 
-onlyBuiltDependencies:
-  - esbuild
-  - rolldown
+minimumReleaseAge: 60

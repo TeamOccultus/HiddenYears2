@@ -11,6 +11,15 @@
       "hiddenyears:custom_weapon": {
         "type": "sword"
       },
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:diamond_dagger",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:dagger.common"
+        ],
+        "remove_first_blank_line": true
+      },
      "hiddenyears:weapon_type": {
         "weapon_type": "dagger",
         "basic_damage": 8

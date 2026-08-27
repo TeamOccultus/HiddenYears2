@@ -8,6 +8,15 @@
       }
     },
     "components": {
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.hiddenyears:crystal_dagger",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:dagger.common"
+        ],
+        "remove_first_blank_line": true
+      },
       "hiddenyears:custom_weapon": {
         "type": "sword"
       },
