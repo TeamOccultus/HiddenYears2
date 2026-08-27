@@ -8,6 +8,14 @@
       "identifier": "hiddenyears:copper_sledgehammer"
     },
     "components": {
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.on_attack",
+          "tooltip.hiddenyears:sledgehammer.1",
+          "tooltip.hiddenyears:sledgehammer.2",
+          "tooltip.hiddenyears:sledgehammer.3"
+        ]
+      },
       "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },

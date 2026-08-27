@@ -8,6 +8,17 @@
       "identifier": "hiddenyears:crystal_sledgehammer"
     },
     "components": {
+      "hiddenyears:tooltip":{
+        "tooltips": [
+          "tooltip.on_attack",
+          "tooltip.hiddenyears:sledgehammer.1",
+          "tooltip.hiddenyears:sledgehammer.2",
+          "tooltip.hiddenyears:sledgehammer.3",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:sledgehammer.4"
+        ]
+      },
       "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },
