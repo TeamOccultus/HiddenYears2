@@ -12,6 +12,9 @@
         "job_type": "traveler",
         "remove_old": true
       },
+      "hiddenyears:tooltip": {
+        "tooltips": ["tooltip.on_use", "tooltip.hiddenyears:travel_gem"]
+      },
       "minecraft:icon": "hiddenyears:travel_gem",
       "minecraft:rarity": "epic",
       "minecraft:max_stack_size": 1
