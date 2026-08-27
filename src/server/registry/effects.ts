@@ -12,14 +12,22 @@ import { droughtEffect, isAffectByDroughtEffect } from "../effects/drought";
 import { tetanusEffect, isAffectByTetanusEffect } from "../effects/tetanus";
 import { disorientedEffect } from "../effects/disoriented";
 import { erosionEffect } from "../effects/erosion";
+import { toVec3, Vector3Utils } from "@occultus/api";
 
 /**
  * 注册所有模拟效果
  */
 export function registerEffects() {
   bleedEffect.onUpdate((entity, level) => {
+    entity.dimension.spawnParticle(
+      "hiddenyears:blood_emitter",
+      Vector3Utils.add(entity.location, toVec3(0, 1, 0))
+    );
     entity.applyDamage(1 + level);
-    entity.addEffect("minecraft:slowness", 40, { amplifier: level });
+    entity.addEffect("minecraft:slowness", 40, {
+      amplifier: level,
+      showParticles: false
+    });
   });
 
   bleedEffect.onAddToEntity((entity) => {
