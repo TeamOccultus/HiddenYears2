@@ -2035,7 +2035,12 @@
   "tooltip.hiddenyears:sledgehammer.2": "§r§7缓慢(0:03)",
   "tooltip.hiddenyears:sledgehammer.3": "§r§7+12.5% 使敌流血",
   "tooltip.hiddenyears:sledgehammer.4": "§r§7战士、狂战士",
+
   "tooltip.hiddenyears:travel_gem": "§r§7获得行旅者职业",
   "tooltip.hiddenyears:oblivion_gem": "§r§7重置玩家职业",
-  "tooltip.hiddenyears:job_gem": "§r§7在时匿怀表中启用转职选项"
+  "tooltip.hiddenyears:job_gem": "§r§7在时匿怀表中启用转职选项",
+
+  "tooltip.hiddenyears:hammer.1": "§r§7虚弱(0:03)",
+  "tooltip.hiddenyears:hammer.2": "§r§7缓慢(0:03)",
+  "tooltip.hiddenyears:hammer.3": "§r§7+22.5% 使敌流血"
 }

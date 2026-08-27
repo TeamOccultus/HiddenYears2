@@ -8,6 +8,19 @@
       "identifier": "hiddenyears:bone_hammer"
     },
     "components": {
+      "hiddenyears:tooltip":{
+        "tooltips": [
+          "tooltip.on_mine",
+          "tooltip.hiddenyears:hammer.1",
+          "tooltip.hiddenyears:hammer.2",
+          "",
+          "tooltip.on_attack",
+          "tooltip.hiddenyears:hammer.3",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:sledgehammer.4"
+        ]
+      },
       "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },
