@@ -8,6 +8,16 @@
       }
     },
     "components": {
+      "hiddenyears:tooltip": {
+        "tooltips": [
+          "tooltip.on_attack",
+          "tooltip.hiddenyears:crowbar.1",
+          "tooltip.hiddenyears:crowbar.2",
+          "",
+          "tooltip.job",
+          "tooltip.hiddenyears:crowbar.3"
+        ]
+      },
       "hiddenyears:custom_tool": {
         "type": "pickaxe"
       },

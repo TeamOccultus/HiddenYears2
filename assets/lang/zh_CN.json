@@ -2050,5 +2050,8 @@
   "tooltip.hiddenyears:diamond_dagger": "§r§9+10~14 概率伤害§r",
   "tooltip.hiddenyears:netherite_dagger": "§r§9+11~15 概率伤害§r",
   "tooltip.hiddenyears:originite_dagger": "§r§9+11~15 概率伤害§r",
-  "tooltip.hiddenyears:steel_dagger": "§r§9+17~21 概率伤害§r"
+  "tooltip.hiddenyears:steel_dagger": "§r§9+17~21 概率伤害§r",
+  "tooltip.hiddenyears:crowbar.1": "§r§7+35% 致命一击§r",
+  "tooltip.hiddenyears:crowbar.2": "§r§7+85% 撬棍脱手§r",
+  "tooltip.hiddenyears:crowbar.3": "§r§7牧师§r"
 }
