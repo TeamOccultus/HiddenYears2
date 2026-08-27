@@ -66,7 +66,7 @@ export class StructureLocatorComponent {
           arg.cancel = true;
           system.run(() => {
             source.sendMessage({
-              translate: "message:hiddenyears:need_ucv",
+              translate: "message.hiddenyears:need_ucv",
               with: [params.ucv.toString()]
             });
           });

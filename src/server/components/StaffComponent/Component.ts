@@ -17,7 +17,7 @@ export class StaffComponent {
       if (MagicEnergy.get(source) < p.magic_energy) {
         system.run(() => {
           source.onScreenDisplay.setActionBar({
-            translate: "message:hiddenyears:need_ucv",
+            translate: "message.hiddenyears:need_ucv",
             with: [p.magic_energy.toString()]
           });
         });
