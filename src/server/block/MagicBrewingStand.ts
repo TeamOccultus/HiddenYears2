@@ -31,6 +31,7 @@ function setLore(item: ItemStack, recipe: ComplexPotionRecipeType) {
             text: "§r§f"
           },
           {
+            // @ts-ignore
             translate: translationMap[recipe.effect]!
           },
           {
@@ -54,6 +55,7 @@ function setLore(item: ItemStack, recipe: ComplexPotionRecipeType) {
         text: "§r§f"
       },
       {
+        // @ts-ignore
         translate: translationMap[recipe.effect]!
       },
       {
