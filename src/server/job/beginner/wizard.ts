@@ -80,7 +80,8 @@ skill2.onRelease((arg) => {
     families: ["monster"]
   });
   entities.applyDamage(wizard.getLevel(player) * 1.8, {
-    cause: EntityDamageCause.magic
+    cause: EntityDamageCause.magic,
+    damagingEntity: player
   });
   const molang = new MolangVariableMap();
   const rand = Math.random;
@@ -108,6 +109,7 @@ wizard.onUpgrade((arg) => {
 });
 
 // TODO!!! TODO!!! TODO!!! 26.10会增加EntityHurtBeforeEvent！完全的上位替代！但是现在根本没有哈哈。草泥马MS
+// 已经迁移到了 26.30+，但是要开学了我没时间做，哦不不不我无疑是愤怒的 ——方琉璃
 wizard.onCauseDamage((arg) => {
   if (arg.damageSource.cause != EntityDamageCause.magic) return;
   const hurtEntity = arg.hurtEntity;
@@ -115,7 +117,8 @@ wizard.onCauseDamage((arg) => {
   // 已经被移除
   if (!hurtEntity.isValid) return;
   hurtEntity.applyDamage(wizard.getLevel(player) * 0.6, {
-    cause: EntityDamageCause.none
+    cause: EntityDamageCause.magic,
+    damagingEntity: player
   });
   if (skill1.isReleasing(player)) {
     const entities = new EntitiesUtils(player.dimension, {
@@ -124,7 +127,8 @@ wizard.onCauseDamage((arg) => {
       families: ["monster"]
     });
     entities.applyDamage(wizard.getLevel(player) * 1.2, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.none,
+      damagingEntity: player
     });
   }
 });

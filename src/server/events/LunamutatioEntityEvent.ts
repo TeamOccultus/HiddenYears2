@@ -11,7 +11,7 @@ export class LunamutatioEntityEvent {
       const brightness = Time.getMoonBrightness();
       hitEntity.applyDamage(10 * brightness, {
         cause: EntityDamageCause.wither,
-        damagingEntity: null
+        damagingEntity: damagingEntity
       });
       new RandomEvent(brightness, () => {
         hitEntity.addEffect("wither", 5 * 20);
@@ -26,7 +26,7 @@ export class LunamutatioEntityEvent {
       const brightness = Time.getMoonBrightness();
       hitEntity.applyDamage(2 * brightness, {
         cause: EntityDamageCause.wither,
-        damagingEntity: null
+        damagingProjectile: event.projectile
       });
       new RandomEvent(brightness, () => {
         hitEntity.addEffect("wither", 5 * 20);
@@ -40,7 +40,7 @@ export class LunamutatioEntityEvent {
       const brightness = Time.getMoonBrightness();
       hitEntity.applyDamage(12 * brightness, {
         cause: EntityDamageCause.wither,
-        damagingEntity: null
+        damagingEntity: damagingEntity
       });
       new RandomEvent(brightness, () => {
         hitEntity.addEffect("wither", 10 * 20, { amplifier: 1 });
@@ -55,7 +55,7 @@ export class LunamutatioEntityEvent {
       const brightness = Time.getMoonBrightness();
       hitEntity.applyDamage(4 * brightness, {
         cause: EntityDamageCause.wither,
-        damagingEntity: null
+        damagingProjectile: event.projectile
       });
       new RandomEvent(0.9, () => {
         hitEntity.addEffect("wither", 10 * 20, { amplifier: 1 });

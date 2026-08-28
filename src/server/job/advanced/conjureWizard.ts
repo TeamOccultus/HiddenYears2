@@ -102,7 +102,8 @@ skill2.onRelease((arg) => {
     maxDistance: 10,
     families: ["monster"]
   }).applyDamage(conjureWizard.getLevel(player) * 5 + 1, {
-    cause: EntityDamageCause.entityExplosion
+    cause: EntityDamageCause.entityExplosion,
+    damagingEntity: player
   });
 
   const rawData = player.getDynamicProperty(

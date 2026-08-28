@@ -1,5 +1,6 @@
 import {
   CustomComponentParameters,
+  EntityDamageCause,
   ItemComponentHitEntityEvent,
   ItemComponentMineBlockEvent,
   Player,
@@ -90,8 +91,8 @@ function onHitEntityCallback(
   const { attackingEntity, hitEntity } = arg0;
   if (!(attackingEntity instanceof Player)) return;
   if (params.tool_type === "crowbar") {
-    const chance = getCrowbarCritChance(attackingEntity)
-    console.log(chance)
+    const chance = getCrowbarCritChance(attackingEntity);
+    console.log(chance);
     new RandomEvent(chance, () => {
       hitEntity.applyDamage(Random.integer(10, 3));
       setEquipmentItem(
@@ -99,7 +100,9 @@ function onHitEntityCallback(
         consumeDurability(getEquipmentItem(attackingEntity), 5, attackingEntity)
       );
       new RandomEvent(getCrowbarThornChance(attackingEntity), () => {
-        attackingEntity.applyDamage(Random.integer(2, 5));
+        attackingEntity.applyDamage(Random.integer(2, 5), {
+          cause: EntityDamageCause.thorns
+        });
         setEquipmentItem(
           attackingEntity,
           consumeDurability(

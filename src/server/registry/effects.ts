@@ -23,7 +23,7 @@ export function registerEffects() {
       "hiddenyears:blood_emitter",
       Vector3Utils.add(entity.location, toVec3(0, 1, 0))
     );
-    entity.applyDamage(1 + level);
+    entity.applyDamage(1 + level, { cause: EntityDamageCause.magic });
     entity.addEffect("minecraft:slowness", 40, {
       amplifier: level,
       showParticles: false
@@ -38,7 +38,7 @@ export function registerEffects() {
 
   dehydrationEffect.onUpdate((entity) => {
     if (isAffectByDehydrationEffect(entity)) {
-      entity.applyDamage(1);
+      entity.applyDamage(1, { cause: EntityDamageCause.temperature });
       entity.addEffect("weakness", 40, {
         amplifier: 2
       });

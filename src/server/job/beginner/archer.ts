@@ -1,4 +1,10 @@
-import { giveItem, ItemConditions, Job, JobSkill, Vector3Utils } from "@occultus/api";
+import {
+  giveItem,
+  ItemConditions,
+  Job,
+  JobSkill,
+  Vector3Utils
+} from "@occultus/api";
 import { magicArcher } from "../advanced/magicArcher";
 import {
   EntityComponentTypes,
@@ -70,12 +76,23 @@ skill1.onRelease((arg) => {
   const shoot = () => {
     const arrow = player.dimension.spawnEntity(
       "minecraft:arrow",
-      Vector3Utils.add(player.getHeadLocation(), Vector3Utils.scale(Vector3Utils.normalize(player.getViewDirection()), 0.75))
+      Vector3Utils.add(
+        player.getHeadLocation(),
+        Vector3Utils.scale(
+          Vector3Utils.normalize(player.getViewDirection()),
+          0.75
+        )
+      )
     );
-    const projectileComponent = arrow.getComponent(EntityComponentTypes.Projectile);
+    const projectileComponent = arrow.getComponent(
+      EntityComponentTypes.Projectile
+    );
     projectileComponent.owner = player;
-    projectileComponent.shoot(Vector3Utils.scale(Vector3Utils.normalize(player.getViewDirection()), 60), { uncertainty: 0 });
-    times +=1 ;
+    projectileComponent.shoot(
+      Vector3Utils.scale(Vector3Utils.normalize(player.getViewDirection()), 60),
+      { uncertainty: 0 }
+    );
+    times += 1;
     if (times < 3) {
       system.runTimeout(shoot, 5);
     }
@@ -97,11 +114,13 @@ archer.onProjectileHitEntity((arg, player) => {
   if (!entity) return;
   if (!entity.isValid) return;
   entity.applyDamage(archer.getLevel(player) * 0.6, {
-    cause: EntityDamageCause.none
+    cause: EntityDamageCause.projectile,
+    damagingProjectile: arg.projectile
   });
   if (skill2.isReleasing(player)) {
     entity.applyDamage(archer.getLevel(player) * 1.8, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.projectile,
+      damagingProjectile: arg.projectile
     });
     entity.addEffect("weakness", 8 * TicksPerSecond, { amplifier: 1 });
   }

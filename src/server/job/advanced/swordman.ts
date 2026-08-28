@@ -66,7 +66,10 @@ skill1.onRelease((arg) => {
     location: player.location,
     maxDistance: 3,
     families: ["monster"]
-  }).applyDamage(swordman.getLevel(player) * 1.2, { cause: EntityDamageCause.none });
+  }).applyDamage(swordman.getLevel(player) * 1.2, {
+    cause: EntityDamageCause.entityAttack,
+    damagingEntity: player
+  });
 });
 
 skill2.onRelease((arg) => {
@@ -77,7 +80,8 @@ skill2.onRelease((arg) => {
     families: ["monster"]
   });
   utils.applyDamage(3 + swordman.getLevel(player) * 1.2, {
-    cause: EntityDamageCause.none
+    cause: EntityDamageCause.entityAttack,
+    damagingEntity: player
   });
   utils.applyEffectData({
     effectType: "minecraft:slowness",
@@ -102,6 +106,9 @@ swordman.onCauseDamage((arg) => {
     const hurtEntity = arg.hurtEntity;
     if (!hurtEntity.isValid) return;
     // 额外提升50%等级的伤害
-    hurtEntity.applyDamage(arg.damage * swordman.getLevel(player) * 0.5);
+    hurtEntity.applyDamage(arg.damage * swordman.getLevel(player) * 0.5, {
+      cause: EntityDamageCause.entityAttack,
+      damagingEntity: player
+    });
   }
 });

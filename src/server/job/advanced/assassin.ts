@@ -7,7 +7,6 @@ import {
   JobSkill
 } from "@occultus/api";
 import { getJobDescription } from "../toolkit";
-import { MaigcEnergyConditions } from "../../conditions/ME";
 
 /**
  * 刺客职业
@@ -89,8 +88,12 @@ assassin.onCauseDamage((arg) => {
   if (arg.damageSource.cause !== EntityDamageCause.entityAttack) return;
   const mainHandItem = getEquipmentItem(player);
   if (player.hasTag("hiddenyears:critical_next_attack")) {
-    if (hurtEntity.isValid)
-      hurtEntity.applyDamage(assassin.getLevel(player) * 1.8);
+    if (hurtEntity.isValid) {
+      hurtEntity.applyDamage(assassin.getLevel(player) * 1.8, {
+        cause: EntityDamageCause.entityAttack,
+        damagingEntity: player
+      });
+    }
     if (hurtEntity.isValid)
       hurtEntity.addEffect("minecraft:poison", 5 * TicksPerSecond);
     player.removeTag("hiddenyears:critical_next_attack");
@@ -99,6 +102,9 @@ assassin.onCauseDamage((arg) => {
     if (!hurtEntity.isValid) return;
     // 额外提升50%等级的伤害
     // 去掉了arg.damage的倍率 这玩意配上匕首会非常吓人 ——方漓猫
-    hurtEntity.applyDamage(assassin.getLevel(player) * 0.8);
+    hurtEntity.applyDamage(assassin.getLevel(player) * 0.8, {
+      damagingEntity: player,
+      cause: EntityDamageCause.entityAttack
+    });
   }
 });

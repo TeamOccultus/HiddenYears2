@@ -37,7 +37,7 @@ export const arcaneWizard = new Job(
         max: 15,
         condition: [new ItemConditions("hiddenyears:magic_origin", 25, true)]
       }
-    ],
+    ]
   }
 );
 
@@ -92,7 +92,8 @@ skill2.onRelease((arg) => {
       maxDistance: 10,
       families: ["monster"]
     }).applyDamage(arcaneWizard.getLevel(player) * 0.5, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.magic,
+      damagingEntity: player
     });
   }, 1 * TicksPerSecond);
 });
@@ -108,7 +109,7 @@ arcaneWizard.onCauseDamage((arg) => {
   if (skill2.isReleasing(player)) {
     arg.hurtEntity.applyDamage(arcaneWizard.getLevel(player) * 0.6, {
       cause: EntityDamageCause.magic,
-      damagingEntity: null
+      damagingEntity: player
     });
   }
 });

@@ -85,7 +85,8 @@ skill2.onRelease((arg) => {
       maxDistance: 8,
       families: ["monster"]
     }).applyDamage(amnestyPastor.getLevel(player) * 0.2, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.magic,
+      damagingEntity: player
     });
   }, 1 * TicksPerSecond);
 });
@@ -107,7 +108,8 @@ amnestyPastor.onHitEntity((arg) => {
   if (skill1.isReleasing(player)) {
     const damage = 5 + amnestyPastor.getLevel(player) * 1.2;
     hurtEntity.applyDamage(damage, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.magic,
+      damagingEntity: player
     });
     heal(player, damage * 0.5);
   }

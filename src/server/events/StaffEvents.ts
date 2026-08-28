@@ -119,7 +119,10 @@ export class StaffEvents {
     }).tryOperateEntity((entity) => {
       entity.addEffect("minecraft:mining_fatigue", 5 * TicksPerSecond);
       entity.addEffect("minecraft:weakness", 5 * TicksPerSecond);
-      entity.applyDamage(getPastorLevel(source) * 0.5);
+      entity.applyDamage(getPastorLevel(source) * 0.5, {
+        cause: EntityDamageCause.magic,
+        damagingEntity: source
+      });
     });
   }
 }

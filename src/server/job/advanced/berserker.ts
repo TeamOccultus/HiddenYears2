@@ -31,7 +31,7 @@ export const berserker = new Job(
         max: 15,
         condition: [new ItemConditions("hiddenyears:magic_origin", 25, true)]
       }
-    ],
+    ]
   }
 );
 
@@ -68,7 +68,10 @@ skill1.onRelease((arg) => {
     location: player.location,
     maxDistance: 6,
     families: ["monster"]
-  }).applyDamage(damage);
+  }).applyDamage(damage, {
+    damagingEntity: player,
+    cause: EntityDamageCause.entityAttack
+  });
 });
 
 skill2.onRelease((arg) => {
@@ -92,10 +95,16 @@ berserker.onHitEntity((arg) => {
     const currentHealth = getCurrentHealth(player);
     if (currentHealth > 5) {
       const damage = (berserker.getLevel(player) * 30) / (currentHealth - 5);
-      hurtEntity.applyDamage(damage, { cause: EntityDamageCause.none });
+      hurtEntity.applyDamage(damage, {
+        cause: EntityDamageCause.entityAttack,
+        damagingEntity: player
+      });
       return;
     }
     const damage = berserker.getLevel(player) * 4.5;
-    hurtEntity.applyDamage(damage, { cause: EntityDamageCause.none });
+    hurtEntity.applyDamage(damage, {
+      cause: EntityDamageCause.entityAttack,
+      damagingEntity: player
+    });
   }
 });

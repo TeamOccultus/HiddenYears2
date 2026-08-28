@@ -83,7 +83,7 @@ export class WeaponEvent {
     if (specificDamage > 0) {
       arg0.hitEntity.applyDamage(specificDamage, {
         cause: EntityDamageCause.none,
-        damagingEntity: null
+        damagingEntity: arg0.attackingEntity
       });
       if (arg0.attackingEntity instanceof Player) {
         arg0.attackingEntity.onScreenDisplay.setActionBar({

@@ -42,7 +42,7 @@ function stringifyPresent(
       .forEach((entity) => {
         if (!entity.isValid) return;
         entity.setOnFire(10);
-        entity.applyDamage(5);
+        entity.applyDamage(5, { cause: EntityDamageCause.projectile });
       });
     return;
   }
@@ -59,7 +59,7 @@ function stringifyPresent(
           "minecraft:lightning_bolt",
           entity.location
         );
-        entity.applyDamage(10);
+        entity.applyDamage(10, { cause: EntityDamageCause.projectile });
       });
     return;
   }

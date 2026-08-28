@@ -167,8 +167,8 @@ const soldiersHelmet = new Artifact(
 soldiersHelmet.onHitEntity((arg) => {
   new RandomEvent(0.6, () => {
     arg.hitEntity.applyDamage(Random.integer(8, 2), {
-      cause: EntityDamageCause.none,
-      damagingEntity: undefined
+      cause: EntityDamageCause.entityAttack,
+      damagingEntity: arg.damagingEntity
     });
     arg.hitEntity.dimension.spawnParticle(
       "minecraft:critical_hit_emitter",
@@ -271,7 +271,8 @@ thornsCape.onHurt((arg) => {
   if (cause === EntityDamageCause.entityAttack) return;
   if (!damagingEntity) return;
   damagingEntity.applyDamage(arg.damage * 1.2, {
-    cause: EntityDamageCause.thorns
+    cause: EntityDamageCause.thorns,
+    damagingEntity: arg.hurtEntity
   });
   damagingEntity.dimension.spawnParticle(
     "minecraft:critical_hit_emitter",
@@ -364,11 +365,13 @@ fightersGlove.onHitEntity((arg) => {
   const { hitEntity, damagingEntity } = arg;
   if (!hitEntity.isValid) return;
   hitEntity.applyDamage(Random.integer(12, 10), {
-    cause: EntityDamageCause.none
+    cause: EntityDamageCause.entityAttack,
+    damagingEntity: arg.damagingEntity
   });
   new RandomEvent(0.8, () => {
     damagingEntity.applyDamage(Random.integer(4, 2), {
-      cause: EntityDamageCause.magic
+      cause: EntityDamageCause.magic,
+      damagingEntity: arg.damagingEntity
     });
   }).call();
 });
@@ -571,7 +574,8 @@ imprisonedWing.onHitEntity((arg) => {
       if (entity.hasTag("hiddenyears:imprisoned_wing")) return;
       if (!entity.isValid) return;
       entity.applyDamage(Random.integer(6, 2), {
-        cause: EntityDamageCause.void
+        cause: EntityDamageCause.magic,
+        damagingEntity: arg.damagingEntity
       });
       entity.dimension.spawnParticle(
         "dragon_breath_lingering",

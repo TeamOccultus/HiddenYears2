@@ -84,7 +84,10 @@ export class IphonEvents {
     });
     utils.tryOperateEntity((entity) => {
       if (!isEntityInFront(source, entity)) return;
-      entity.applyDamage(params.damage, { cause: EntityDamageCause.magic });
+      entity.applyDamage(params.damage, {
+        cause: EntityDamageCause.magic,
+        damagingEntity: source
+      });
       if (params.particle) {
         entity.dimension.spawnParticle(params.particle, entity.location);
       }

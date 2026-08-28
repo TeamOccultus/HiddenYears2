@@ -1,4 +1,10 @@
-import { Player, WeatherType, EquipmentSlot, system } from "@minecraft/server";
+import {
+  Player,
+  WeatherType,
+  EquipmentSlot,
+  system,
+  EntityDamageCause
+} from "@minecraft/server";
 import {
   BossSkill,
   RandomEvent,
@@ -121,10 +127,16 @@ const muta = new BossSkill(
         getEquipmentItem(entity, EquipmentSlot.Head)?.typeId ===
         "hiddenyears:drift_sand_coronet"
       ) {
-        entity.applyDamage(10);
+        entity.applyDamage(10, {
+          cause: EntityDamageCause.magic,
+          damagingEntity: boss
+        });
         return;
       }
-      entity.applyDamage(20);
+      entity.applyDamage(20, {
+        cause: EntityDamageCause.magic,
+        damagingEntity: boss
+      });
     });
     system.runTimeout(() => {
       if (boss.isValid) boss.isSneaking = false;

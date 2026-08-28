@@ -1,4 +1,4 @@
-import { system } from "@minecraft/server";
+import { EntityDamageCause, system } from "@minecraft/server";
 import { RandomEvent } from "@occultus/api";
 import { FlowerComponentParams } from "./Params";
 
@@ -12,7 +12,9 @@ export class FlowerComponent {
             arg0.dimension
               .getEntitiesAtBlockLocation(arg0.block.location)
               .forEach((entity) => {
-                entity.applyDamage(p.damage);
+                entity.applyDamage(p.damage, {
+                  cause: EntityDamageCause.contact
+                });
               });
           });
         }

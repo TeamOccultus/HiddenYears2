@@ -105,7 +105,7 @@ magicArcher.onProjectileHitEntity((arg) => {
   tryOperateEntity(hurtEntity, (entity) => {
     entity.applyDamage(magicArcher.getLevel(player) * 0.7, {
       cause: EntityDamageCause.magic,
-      damagingEntity: null
+      damagingProjectile: arg.projectile
     });
   });
   if (hurtEntity.hasTag("hiddenyears:element_mark")) {
@@ -134,13 +134,13 @@ magicArcher.onProjectileHitEntity((arg) => {
   if (tryConsumeEnhance(player)) {
     hurtEntity.applyDamage(1.2 * magicArcher.getLevel(player), {
       cause: EntityDamageCause.magic,
-      damagingEntity: null
+      damagingProjectile: arg.projectile
     });
   }
   if (skill2.isReleasing(player)) {
     hurtEntity.applyDamage(0.6 * magicArcher.getLevel(player), {
       cause: EntityDamageCause.magic,
-      damagingEntity: null
+      damagingProjectile: arg.projectile
     });
   }
 });

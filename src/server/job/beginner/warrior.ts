@@ -86,7 +86,8 @@ skill2.onRelease((arg) => {
     families: ["monster"]
   });
   entities.applyDamage(6, {
-    cause: EntityDamageCause.none
+    cause: EntityDamageCause.entityAttack,
+    damagingEntity: source
   });
   entities.tryOperateEntity((entity) => {
     entity.dimension.spawnParticle(
@@ -115,7 +116,8 @@ warrior.onCauseDamage((arg, player) => {
   if (damageSource.cause !== EntityDamageCause.entityAttack) return;
   if (skill1.isReleasing(player)) {
     hurtEntity.applyDamage(warrior.getLevel(player) * 0.6, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.entityAttack,
+      damagingEntity: player
     });
     hurtEntity.dimension.spawnParticle(
       "minecraft:critical_hit_emitter",
@@ -129,7 +131,8 @@ warrior.onCauseDamage((arg, player) => {
       families: ["monster"]
     });
     entities.applyDamage(warrior.getLevel(player) * 0.8, {
-      cause: EntityDamageCause.none
+      cause: EntityDamageCause.entityAttack,
+      damagingEntity: player
     });
     entities.tryOperateEntity((entity) => {
       entity.dimension.spawnParticle(
