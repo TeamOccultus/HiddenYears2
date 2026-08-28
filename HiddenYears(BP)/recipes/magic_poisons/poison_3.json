@@ -1,25 +1,31 @@
 {
   "format_version": "1.21.100",
-  "minecraft:recipe_shaped": {
+  "minecraft:recipe_shapeless": {
     "description": {
       "identifier": "hiddenyears:magic_poison_3"
     },
     "tags": ["alchemy_table"],
-    "pattern": ["XXX", "XAX", "XXX"],
-    "key": {
-      "A": {
-        "item": "minecraft:experience_bottle"
+    "ingredients": [
+      {
+        "item": "minecraft:potion",
+        "data": 0
       },
-      "X": {
+      {
         "item": "minecraft:blue_orchid"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
       }
-    },
+    ],
     "unlock": [
       {
-        "item": "minecraft:experience_bottle"
+        "item": "minecraft:potion"
       },
       {
         "item": "minecraft:blue_orchid"
+      },
+      {
+        "item": "hiddenyears:magic_origin"
       }
     ],
     "result": {
