@@ -26,7 +26,7 @@ export class AdditionalMaterialEvents {
       damagingEntity.addTag("hiddenyears:sparkling_copper_attaker");
       const entities = hitEntity.dimension.getEntities({
         location: damagingEntity.location,
-        maxDistance: 8,
+        maxDistance: 5,
         excludeTags: ["hiddenyears:sparkling_copper_attaker"]
       });
       entities.forEach((entity) => {
