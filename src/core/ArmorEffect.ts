@@ -33,15 +33,15 @@ export class ArmorEffect {
    */
   static unyieldingArmor(player: Player, level: number = 1) {
     new RandomEvent(0.65, () => {
-      player.addEffect("minecraft:resistance", 300 * level, {
+      player.addEffect("minecraft:resistance", 100 * level, {
         amplifier: level - 1,
         showParticles: false
       });
-      player.addEffect("minecraft:strength", 300 * level, {
+      player.addEffect("minecraft:strength", 100 * level, {
         amplifier: level - 1,
         showParticles: false
       });
-      player.addEffect("minecraft:speed", 300 * level, {
+      player.addEffect("minecraft:speed", 100 * level, {
         amplifier: level - 1,
         showParticles: false
       });
