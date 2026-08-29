@@ -59,7 +59,7 @@ export class ArmorEffect {
     const health = player.getComponent("health");
     if (health.currentValue > 5) return;
     health.setCurrentValue(health.currentValue + 5);
-    new RandomEvent(0.7, () => {
+    new RandomEvent(0.45, () => {
       health.resetToMaxValue();
     });
     player.onScreenDisplay.setActionBar({
