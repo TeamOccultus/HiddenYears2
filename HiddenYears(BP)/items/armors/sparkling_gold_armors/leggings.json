@@ -10,12 +10,12 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%ui.armor.sparkling_gold_leggings\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv3\n%ui.armor_effects.rebirth"
+        "value": "%ui.armor.sparkling_gold_leggings\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv1\n%ui.armor_effects.rebirth"
       },
       "hiddenyears:armor_type": [
         {
           "present": "unyielding",
-          "level": 3
+          "level": 1
         },
         {
           "present": "rebirth",

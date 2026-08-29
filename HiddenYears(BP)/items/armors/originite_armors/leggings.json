@@ -10,13 +10,13 @@
     },
     "components": {
       "minecraft:display_name": {
-        "value": "%ui.armor.originite_leggings\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv2\n%ui.armor_effects.rebirth"
+        "value": "%ui.armor.originite_leggings\n\n%ui.armor_effects\n%ui.armor_effects.unyielding.lv1\n%ui.armor_effects.rebirth"
       },
       "minecraft:icon": "hiddenyears:originite_leggings",
       "hiddenyears:armor_type": [
         {
           "present": "unyielding",
-          "level": 2
+          "level": 1
         },
         {
           "present": "rebirth",
