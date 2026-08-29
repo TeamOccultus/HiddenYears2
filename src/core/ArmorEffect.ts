@@ -32,7 +32,7 @@ export class ArmorEffect {
    * @param level
    */
   static unyieldingArmor(player: Player, level: number = 1) {
-    new RandomEvent(0.45, () => {
+    new RandomEvent(0.35, () => {
       player.addEffect("minecraft:resistance", 100 * level, {
         amplifier: level - 1,
         showParticles: false
@@ -58,14 +58,16 @@ export class ArmorEffect {
   static rebirthArmor(player: Player) {
     const health = player.getComponent("health");
     if (health.currentValue > 5) return;
-    health.setCurrentValue(health.currentValue + 5);
-    new RandomEvent(0.225, () => {
-      health.resetToMaxValue();
-    });
-    player.onScreenDisplay.setActionBar({
-      translate: "message.hiddenyears:rebirth"
-    });
-    player.playSound("random.totem");
+    new RandomEvent(0.3, () => {
+      health.setCurrentValue(health.currentValue + 4);
+      new RandomEvent(0.225, () => {
+        health.resetToMaxValue();
+      }).call();
+      player.onScreenDisplay.setActionBar({
+        translate: "message.hiddenyears:rebirth"
+      });
+      player.playSound("random.totem");
+    }).call();
   }
   /**
    * 盔甲效果-雨神之冠
@@ -74,20 +76,23 @@ export class ArmorEffect {
    */
   static isisArmor(changedValue: number, player: Player) {
     const health = player.getComponent("minecraft:health");
-    const newHealth = health.currentValue + changedValue * 0.25;
-    if (newHealth > health.defaultValue) {
-      health.resetToDefaultValue();
-      player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:isis",
-        with: [health.effectiveMax.toString()]
-      });
-    } else {
-      health.setCurrentValue(newHealth);
-      player.onScreenDisplay.setActionBar({
-        translate: "message.hiddenyears:isis",
-        with: [newHealth.toString()]
-      });
-    }
+    const event = new RandomEvent(0.75, () => {
+      const newHealth = health.currentValue + changedValue * 0.35;
+      if (newHealth > health.defaultValue) {
+        health.resetToDefaultValue();
+        player.onScreenDisplay.setActionBar({
+          translate: "message.hiddenyears:isis",
+          with: [health.effectiveMax.toString()]
+        });
+      } else {
+        health.setCurrentValue(newHealth);
+        player.onScreenDisplay.setActionBar({
+          translate: "message.hiddenyears:isis",
+          with: [newHealth.toString()]
+        });
+      }
+    });
+    event.call()
   }
 }
 
