@@ -5,7 +5,7 @@
       "identifier": "hiddenyears:refined_rock_hammer"
     },
     "tags": ["crafting_table"],
-    "pattern": ["SXS", "#", "#"],
+    "pattern": ["SXS", " # ", " # "],
     "key": {
       "#": {
         "item": "stick"

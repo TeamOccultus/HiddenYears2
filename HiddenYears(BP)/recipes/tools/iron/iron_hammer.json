@@ -5,7 +5,7 @@
       "identifier": "hiddenyears:iron_hammer"
     },
     "tags": ["crafting_table"],
-    "pattern": ["SXS", "#", "#"],
+    "pattern": ["SXS", " # ", " # "],
     "key": {
       "#": {
         "item": "stick"
