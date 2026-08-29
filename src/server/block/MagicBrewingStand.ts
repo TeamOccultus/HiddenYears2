@@ -76,7 +76,7 @@ export class MagicBrewingStand extends BlockWithEntity {
   constructor() {
     super(
       "hiddenyears:magic_brewing_stand",
-      "hiddenyears:magic_brewing_stand",
+      "hiddenyears:magic_brewing_stand"
       // "hiddenyears:magic_brewing_stand_tick"
     );
   }
@@ -92,10 +92,17 @@ export class MagicBrewingStand extends BlockWithEntity {
     if (!entityData) return;
     const filledItem = BlockEntity.getStoredItem(entityData);
 
+    if (filledItem.length === 0 && item?.hasTag("hiddenyears:complex_basic")) {
+      player.onScreenDisplay.setActionBar({
+        translate: "message.hiddenyears:ingredient_first"
+      });
+      return;
+    }
+
     // When empty: add ingredient
-    if (!filledItem) {
+    if (filledItem.length === 0) {
       if (!ComplexPotionRecipeManager.ingredients.includes(item?.typeId)) {
-        player.sendMessage({
+        player.onScreenDisplay.setActionBar({
           translate: "message.hiddenyears:not_a_ingredient"
         });
         return;
@@ -105,7 +112,12 @@ export class MagicBrewingStand extends BlockWithEntity {
       player.playSound("fall.stone");
       return;
     }
-
+    if (filledItem.length !== 0 && !item?.hasTag("hiddenyears:complex_basic")) {
+      player.onScreenDisplay.setActionBar({
+        translate: "message.hiddenyears:has_ingredient"
+      });
+      return;
+    }
     if (item?.hasTag("hiddenyears:complex_basic")) {
       const recipe = ComplexPotionRecipeManager.getRecipe(filledItem[0].typeId);
       if (!recipe) return;
