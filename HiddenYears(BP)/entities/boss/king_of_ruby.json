@@ -14,7 +14,10 @@
         "track_target": true
       },
       "minecraft:attack": {
-        "damage": 8
+        "damage": {
+          "max": 12,
+          "min": 8
+        }
       },
       "minecraft:boss": {
         "should_darken_sky": true,
@@ -78,7 +81,7 @@
         "height": 1.9
       },
       "minecraft:movement": {
-        "value": 0.5
+        "value": 0.32
       },
       "minecraft:navigation.walk": {
         "can_path_over_water": true,
