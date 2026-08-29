@@ -7,15 +7,13 @@
     "tags": ["alchemy_table"],
     "ingredients": [
       { "item": "minecraft:ender_pearl", "count": 1 },
-      { "item": "minecraft:wool", "count": 1 },
-      { "item": "hiddenyears:magic_dust", "count": 6 },
-      { "item": "minecraft:diamond", "count": 1 }
+      { "item": "minecraft:bed", "count": 1 },
+      { "item": "hiddenyears:magic_dust", "count": 7 }
     ],
     "unlock": [
       { "item": "minecraft:ender_pearl" },
-      { "item": "minecraft:wool" },
-      { "item": "hiddenyears:magic_dust" },
-      { "item": "minecraft:diamond" }
+      { "item": "minecraft:bed" },
+      { "item": "hiddenyears:magic_dust" }
     ],
     "result": {
       "item": "hiddenyears:home_gem"
