@@ -17,7 +17,11 @@ export class AdditionalMaterialEvents {
     if (type === "erosion") {
       hitEntity.addEffect("minecraft:slowness", 200);
       const handle = system.runInterval(() => {
-        hitEntity.applyDamage(5, { cause: EntityDamageCause.magic });
+        if (!hitEntity.isValid) return;
+        hitEntity.applyDamage(5, {
+          cause: EntityDamageCause.magic,
+          damagingEntity: damagingEntity
+        });
       }, 40);
       system.runTimeout(() => system.clearRun(handle), 120);
       return;
