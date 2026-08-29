@@ -524,6 +524,18 @@
               "hiddenyears:sandstone_iron_ore",
               "hiddenyears:sandstone_copper_ore"
             ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:rabbit_paw",
+              "name": "hiddenyears:itemGroup.name.desertItems"
+            },
+            "items": [
+              "hiddenyears:rabbit_paw",
+              "hiddenyears:sand_bone",
+              "hiddenyears:sandcaust_spider_eye",
+              "hiddenyears:scorpion_pincers"
+            ]
           }
         ]
       },

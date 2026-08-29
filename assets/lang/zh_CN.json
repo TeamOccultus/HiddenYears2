@@ -2059,5 +2059,8 @@
   "task.magic_compass": "魔法罗盘",
   "task.magic_compass.desc": "用四颗钻石和魔法源质在炼金台上合成魔法罗盘，以帮助定位结构",
   "task.magic_origin": "起源",
-  "task.magic_origin.desc": "用魔法尘埃和金锭在炼金台上炼制魔法源质"
+  "task.magic_origin.desc": "用魔法尘埃和金锭在炼金台上炼制魔法源质",
+  "message.hiddenyears:ingredient_first": "请先放入可用于酿造的原料！",
+  "message.hiddenyears:has_ingredient": "酿造台中已含有原料，请放入复合药水进行酿造操作！",
+  "hiddenyears:itemGroup.name.desertItems": "隐藏之年·沙漠材料"
 }
