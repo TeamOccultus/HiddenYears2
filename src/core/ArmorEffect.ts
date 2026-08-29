@@ -32,7 +32,7 @@ export class ArmorEffect {
    * @param level
    */
   static unyieldingArmor(player: Player, level: number = 1) {
-    new RandomEvent(0.65, () => {
+    new RandomEvent(0.45, () => {
       player.addEffect("minecraft:resistance", 100 * level, {
         amplifier: level - 1,
         showParticles: false
@@ -59,7 +59,7 @@ export class ArmorEffect {
     const health = player.getComponent("health");
     if (health.currentValue > 5) return;
     health.setCurrentValue(health.currentValue + 5);
-    new RandomEvent(0.45, () => {
+    new RandomEvent(0.225, () => {
       health.resetToMaxValue();
     });
     player.onScreenDisplay.setActionBar({
