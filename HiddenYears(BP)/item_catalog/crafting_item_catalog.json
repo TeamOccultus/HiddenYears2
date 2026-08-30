@@ -390,6 +390,18 @@
           },
           {
             "group_identifier": {
+              "icon": "hiddenyears:lightning_key",
+              "name": "hiddenyears:itemGroup.name.keys"
+            },
+            "items": [
+              "hiddenyears:lightning_key",
+              "hiddenyears:drift_sand_key",
+              "hiddenyears:key_to_luminous_land",
+              "hiddenyears:key_to_babel"
+            ]
+          },
+          {
+            "group_identifier": {
               "icon": "hiddenyears:ancient_extracts",
               "name": "hiddenyears:itemGroup.name.gems"
             },
