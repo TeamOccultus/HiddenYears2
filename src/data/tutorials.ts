@@ -1,88 +1,139 @@
 import { Tutorial } from "@occultus/api";
 
-const materials = new Tutorial(
-  "hiddenyears:materials",
-  { translate: "howtoplay.hiddenyears:material.title" },
+const startTutorial = new Tutorial(
+  "hiddenyears:start",
+  { translate: "tutorial.hiddenyears:start" },
   [
     {
-      title: { translate: "howtoplay.hiddenyears:material.title1" },
+      title: { translate: "tutorial.hiddenyears:start.chapter1" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:material_basic.body1" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_basic.body2" },
+          { translate: "tutorial.hiddenyears:start.1" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_basic.body3" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_basic.body4" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_basic.body5" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_basic.body6" }
+          { translate: "tutorial.hiddenyears:start.2" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:material.title2" },
+      title: { translate: "tutorial.hiddenyears:start.chapter2" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:material_advanced.body1" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_advanced.body2" },
+          { translate: "tutorial.hiddenyears:start.4" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_advanced.body3" },
+          { translate: "tutorial.hiddenyears:start.5" },
           { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_advanced.body4" },
+          { translate: "tutorial.hiddenyears:start.6" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_advanced.body5" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_advanced.body6" }
+          { translate: "tutorial.hiddenyears:start.7" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:material.title3" },
+      title: { translate: "tutorial.hiddenyears:start.chapter3" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:material.netherite" },
+          { translate: "tutorial.hiddenyears:start.9" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body1" },
+          { translate: "tutorial.hiddenyears:start.10" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body2" },
+          { translate: "tutorial.hiddenyears:start.11" },
           { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body3" },
+          { translate: "tutorial.hiddenyears:start.12" },
           { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body4" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body5" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body6" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body7" },
+          { translate: "tutorial.hiddenyears:start.13" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body8" }
+          { translate: "tutorial.hiddenyears:start.14" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:start.15" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:start.16" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:start.17" }
+        ]
+      }
+    }
+  ],
+  {
+    type: "alwaysAvailable",
+    iconPath: "textures/items/occultus_watch"
+  }
+);
+
+const materialTutorial = new Tutorial(
+  "hiddenyears:materials",
+  { translate: "tutorial.hiddenyears:material" },
+  [
+    {
+      title: { translate: "tutorial.hiddenyears:material.chapter1" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:material.1" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.2" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.3" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.4" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.5" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.6" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:material_ultimate.title1" },
+      title: { translate: "tutorial.hiddenyears:material.chapter2" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:material_ultimate.body9" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body10" },
-          { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body11" },
+          { translate: "tutorial.hiddenyears:material.7" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body12" },
+          { translate: "tutorial.hiddenyears:material.8" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body13" },
+          { translate: "tutorial.hiddenyears:material.9" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.10" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.11" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.12" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:material.chapter3" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:material.13" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.14" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.15" },
           { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body14" },
+          { translate: "tutorial.hiddenyears:material.16" },
           { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body15" },
+          { translate: "tutorial.hiddenyears:material.17" },
           { text: "\n" },
-          { translate: "howtoplay.hiddenyears:material_ultimate.body16" }
+          { translate: "tutorial.hiddenyears:material.18" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.19" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.20" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.21" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.22" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.23" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.24" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:material.25" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.26" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.27" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:material.28" }
         ]
       }
     }
@@ -94,23 +145,115 @@ const materials = new Tutorial(
 );
 
 // 工具与武器教程
-const toolsWeapons = new Tutorial(
+const toolsAndWeaponsTutorial = new Tutorial(
   "hiddenyears:tools_weapons",
-  { translate: "howtoplay.hiddenyears:tools_weapons.title" },
+  { translate: "tutorial.hiddenyears:taweapon" },
   [
     {
-      title: { translate: "howtoplay.hiddenyears:tools_weapons.title" },
+      title: { translate: "tutorial.hiddenyears:taweapon.chapter1" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:tools_weapons.saw" },
+          { translate: "tutorial.hiddenyears:taweapon.1" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:tools_weapons.crowbar" },
+          { translate: "tutorial.hiddenyears:taweapon.2" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:tools_weapons.heavy_hammer" },
+          { translate: "tutorial.hiddenyears:taweapon.3" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:tools_weapons.dagger" },
+          { translate: "tutorial.hiddenyears:taweapon.4" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:taweapon.chapter2" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:taweapon.5" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:tools_weapons.war_hammer" }
+          { translate: "tutorial.hiddenyears:taweapon.6" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.7" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.8" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.9" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.10" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:taweapon.chapter3" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:taweapon.11" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.12" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.13" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.14" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.15" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:taweapon.chapter4" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:taweapon.16" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.17" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.18" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.19" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:taweapon.chapter5" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:taweapon.20" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.21" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.22" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.23" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:taweapon.chapter6" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:taweapon.24" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.25" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.26" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.27" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.28" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.29" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.30" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:taweapon.31" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:taweapon.32" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:taweapon.33" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:taweapon.34" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:taweapon.35" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:taweapon.36" }
         ]
       }
     }
@@ -122,75 +265,137 @@ const toolsWeapons = new Tutorial(
 );
 
 // 魔法教程
-const magic = new Tutorial(
+const magicTutorial = new Tutorial(
   "hiddenyears:magic",
-  { translate: "howtoplay.hiddenyears:magic.title" },
+  { translate: "tutorial.hiddenyears:magic" },
   [
     {
-      title: { translate: "howtoplay.hiddenyears:magic.basic.title" },
+      title: { translate: "tutorial.hiddenyears:magic.chapter1" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:magic.basic.para1" },
+          { translate: "tutorial.hiddenyears:magic.1" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.basic.para2" },
+          { translate: "tutorial.hiddenyears:magic.2" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.basic.para3" }
+          { translate: "tutorial.hiddenyears:magic.3" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.4" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.5" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.6" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.7" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:magic.teleport.title" },
+      title: { translate: "tutorial.hiddenyears:magic.chapter2" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:magic.teleport.para1" },
+          { translate: "tutorial.hiddenyears:magic.8" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.teleport.para2" }
+          { translate: "tutorial.hiddenyears:magic.9" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.10" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.11" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.12" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.13" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.14" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.15" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.16" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.17" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.18" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.19" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.20" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.21" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:magic.22" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:magic.potion.title" },
+      title: { translate: "tutorial.hiddenyears:magic.chapter3" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:magic.potion.para1" },
+          { translate: "tutorial.hiddenyears:magic.23" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.potion.para2" }
+          { translate: "tutorial.hiddenyears:magic.24" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.25" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.26" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:magic.alchemy.title" },
+      title: { translate: "tutorial.hiddenyears:magic.chapter4" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:magic.alchemy.para1" },
+          { translate: "tutorial.hiddenyears:magic.27" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.alchemy.para2" }
+          { translate: "tutorial.hiddenyears:magic.28" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.29" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.30" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:magic.armor.title" },
+      title: { translate: "tutorial.hiddenyears:magic.chapter5" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:magic.armor.para1" },
+          { translate: "tutorial.hiddenyears:magic.31" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.armor.para2" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.armor.para3" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.armor.para4" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.armor.para5" }
+          { translate: "tutorial.hiddenyears:magic.32" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:magic.tips.title" },
+      title: { translate: "tutorial.hiddenyears:magic.chapter6" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:magic.tips.para1" },
+          { translate: "tutorial.hiddenyears:magic.33" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:magic.tips.para2" }
+          { translate: "tutorial.hiddenyears:magic.34" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.35" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.36" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:magic.chapter7" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:magic.37" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.38" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.39" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:magic.chapter8" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:magic.40" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:magic.41" }
         ]
       }
     }
@@ -201,70 +406,58 @@ const magic = new Tutorial(
   }
 );
 
-// 酿造教程
-const brewing = new Tutorial(
-  "hiddenyears:brewing",
-  { translate: "howtoplay.hiddenyears:brewing.title" },
+// 饰品（Artifacts）教程
+const artifactTutorial = new Tutorial(
+  "hiddenyears:artifacts",
+  { translate: "tutorial.hiddenyears:artifact" },
   [
     {
-      title: { translate: "howtoplay.hiddenyears:brewing.complex.title" },
+      title: { translate: "tutorial.hiddenyears:artifact.chapter1" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:brewing.complex.para1" },
+          { translate: "tutorial.hiddenyears:artifact.1" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.complex.para2" },
+          { translate: "tutorial.hiddenyears:artifact.2" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.complex.para3" },
+          { translate: "tutorial.hiddenyears:artifact.3" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.complex.para4" },
+          { translate: "tutorial.hiddenyears:artifact.4" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.complex.para5" },
+          { translate: "tutorial.hiddenyears:artifact.5" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:artifact.6" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:artifact.7" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.complex.para6" }
+          { translate: "tutorial.hiddenyears:artifact.8" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:brewing.desert.title" },
+      title: { translate: "tutorial.hiddenyears:artifact.chapter2" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:brewing.desert.para1" },
+          { translate: "tutorial.hiddenyears:artifact.9" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.desert.para2" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.desert.para3" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.desert.para4" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:brewing.desert.para5" }
+          { translate: "tutorial.hiddenyears:artifact.10" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:artifact.11" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:artifact.12" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:artifact.13" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:artifact.14" }
         ]
       }
-    }
-  ],
-  {
-    type: "alwaysAvailable",
-    iconPath: "textures/items/complex_potion"
-  }
-);
-
-// 饰品（Artifacts）教程
-const artifacts = new Tutorial(
-  "hiddenyears:artifacts",
-  { translate: "howtoplay.hiddenyears:artifacts.title" },
-  [
+    },
     {
-      title: { translate: "howtoplay.hiddenyears:artifacts.title" },
+      title: { translate: "tutorial.hiddenyears:artifact.chapter3" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:artifacts.para1" },
+          { translate: "tutorial.hiddenyears:artifact.15" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:artifacts.para2" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:artifacts.para3" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:artifacts.para4" },
-          { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:artifacts.para5" }
+          { translate: "tutorial.hiddenyears:artifact.16" }
         ]
       }
     }
@@ -275,26 +468,83 @@ const artifacts = new Tutorial(
   }
 );
 
-// 职业（Jobs）教程
-const jobs = new Tutorial(
+const jobTutorial = new Tutorial(
   "hiddenyears:jobs",
-  { translate: "howtoplay.hiddenyears:jobs.title" },
+  { translate: "tutorial.hiddenyears:job" },
   [
     {
-      title: { translate: "howtoplay.hiddenyears:jobs.title" },
+      title: { translate: "tutorial.hiddenyears:job" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:jobs.para1" },
+          { translate: "tutorial.hiddenyears:job.1" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:jobs.para2" },
+          { translate: "tutorial.hiddenyears:job.2" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:jobs.para3" },
+          { translate: "tutorial.hiddenyears:job.3" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:jobs.para4" },
+          { translate: "tutorial.hiddenyears:job.4" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.5" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:job.chapter1" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:job.6" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:jobs.para5" },
+          { translate: "tutorial.hiddenyears:job.7" },
           { text: "\n\n" },
-          { translate: "howtoplay.hiddenyears:jobs.para6" }
+          { translate: "tutorial.hiddenyears:job.8" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:job.9.1" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.9.2" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.9.3" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.9.4" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:job.10" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:job.11" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:job.12.1" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.2" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.3" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.4" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.5" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.6" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.7" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.8" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.9" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.10" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.11" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:job.12.12" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:job.13" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:job.chapter2" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:job.14" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:job.15" }
         ]
       }
     }
@@ -307,31 +557,41 @@ const jobs = new Tutorial(
 
 const armorEffects = new Tutorial(
   "hiddenyears:armor_effects",
-  { translate: "howtoplay.hiddenyears:armor_effect.title" },
+  { translate: "tutorial.hiddenyears:armor_effects" },
   [
     {
-      title: {
-        translate: "howtoplay.hiddenyears:armor_effect.unyielding.title"
-      },
+      title: { translate: "tutorial.hiddenyears:armor_effects.chapter1" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:armor_effect.unyielding.para1" }
+          { translate: "tutorial.hiddenyears:armor_effects.1" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:armor_effects.2" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:armor_effects.3" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:armor_effect.rebirth.title" },
+      title: { translate: "tutorial.hiddenyears:armor_effects.chapter2" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:armor_effect.rebirth.para1" }
+          { translate: "tutorial.hiddenyears:armor_effects.4" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:armor_effects.5" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:armor_effects.6" }
         ]
       }
     },
     {
-      title: { translate: "howtoplay.hiddenyears:armor_effect.isis.title" },
+      title: { translate: "tutorial.hiddenyears:armor_effects.chapter3" },
       body: {
         rawtext: [
-          { translate: "howtoplay.hiddenyears:armor_effect.isis.para1" }
+          { translate: "tutorial.hiddenyears:armor_effects.7" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:armor_effects.8" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:armor_effects.9" }
         ]
       }
     }
@@ -342,14 +602,80 @@ const armorEffects = new Tutorial(
   }
 );
 
+const bossTutorial = new Tutorial(
+  "hiddenyears:boss",
+  { translate: "tutorial.hiddenyears:boss" },
+  [
+    {
+      title: { translate: "tutorial.hiddenyears:boss.chapter1" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:boss.1" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.2" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.3" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.4" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.5" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.6" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:boss.chapter2" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:boss.7" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.8" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.9" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.10" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.11" }
+        ]
+      }
+    },
+    {
+      title: { translate: "tutorial.hiddenyears:boss.chapter3" },
+      body: {
+        rawtext: [
+          { translate: "tutorial.hiddenyears:boss.12" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.13" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.14" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:boss.15" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:boss.16" },
+          { text: "\n" },
+          { translate: "tutorial.hiddenyears:boss.17" },
+          { text: "\n\n" },
+          { translate: "tutorial.hiddenyears:boss.18" }
+        ]
+      }
+    }
+  ],
+  {
+    type: "alwaysAvailable",
+    iconPath: "textures/items/ruby_crown"
+  }
+);
+
 const tutorials = [
-  materials,
-  toolsWeapons,
-  brewing,
-  magic,
-  artifacts,
-  jobs,
-  armorEffects
+  startTutorial,
+  jobTutorial,
+  artifactTutorial,
+  materialTutorial,
+  armorEffects,
+  toolsAndWeaponsTutorial,
+  magicTutorial,
+  bossTutorial
 ];
 
 export function getAllTutorials() {
