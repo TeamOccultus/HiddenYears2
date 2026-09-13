@@ -2116,7 +2116,7 @@
   "tutorial.hiddenyears:armor_effects.7": "这是来自§e雨之神的赐福§r，每当你的生命值减少时，都有概率会获得部分减伤，让你在持续消耗的战斗中始终保有底气。",
   "tutorial.hiddenyears:armor_effects.8": "§e雨神之冠§r带有雨之神的祝福。",
   "tutorial.hiddenyears:armor_effects.9": "它的效果是：玩家每次受到攻击时，有 75% 概率减免 35% 的伤害，如果转化后的生命值超过默认最大值，生命值会自动回满。",
-   "tutorial.hiddenyears:boss": "征讨四方",
+  "tutorial.hiddenyears:boss": "征讨四方",
   "tutorial.hiddenyears:boss.1": "冒险途中，你将遇见一些强大的敌人，它们各自盘踞在不同的区域，需要你一步步探索、准备，才能挑战成功。",
   "tutorial.hiddenyears:boss.chapter1": "红宝石之王",
   "tutorial.hiddenyears:boss.2": "红宝石之王是许多冒险者遇到的第一个真正的强敌。",
@@ -2138,5 +2138,11 @@
   "tutorial.hiddenyears:boss.16": "● §e「伊西斯」之雨§r：召唤雷雨风暴，在战场上空降下致命的雷暴",
   "tutorial.hiddenyears:boss.17": "● §e「穆图安」之剑§r：化作巨剑横扫战场",
   "tutorial.hiddenyears:boss.18": "如果你能佩戴流沙之冠，可以抵挡部分伤害，这是面对「创世者」的愤怒时的关键装备。",
-  "hiddenyears:itemGroup.name.keys": "隐藏之年·钥匙"
+  "hiddenyears:itemGroup.name.keys": "隐藏之年·钥匙",
+  "setting.hiddenyears:difficulty": "月蚀烈度",
+  "ui.settings": "设置",
+  "ui.no_editable_setting.title": "无可编辑设置",
+  "ui.no_editable_setting.body": "你没有权限编辑任何设置。",
+  "message.starock:setting_saved": "§a设置已保存！",
+  "setting.default_tooltip": "这是一个设置项提示"
 }

@@ -2,3 +2,8 @@ allowBuilds:
   esbuild: true
 
 minimumReleaseAge: 60
+
+minimumReleaseAgeExclude:
+  - '@occultus/math-api@1.0.0-beta'
+  - '@occultus/setting-api@1.0.0-beta.1'
+  - '@occultus/text-api@1.0.0-rc.1'

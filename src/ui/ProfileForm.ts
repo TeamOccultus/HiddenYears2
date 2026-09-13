@@ -1,13 +1,20 @@
 import { Player } from "@minecraft/server";
 import { ActionFormData } from "@minecraft/server-ui";
 import { CopyrightForm } from "./CopyrightForm";
-import { ArticleServerBindings, ArtifactForm, CreditsScreen, FormLike } from "@occultus/api";
+import {
+  ArticleServerBindings,
+  ArtifactForm,
+  CreditsScreen,
+  FormLike
+} from "@occultus/api";
 import { taskCenter } from "../server/registry/task";
 import { default as credits } from "../../config/credits.json";
 import { StoreForm } from "./StoreForm";
 import { jobCenter } from "../server/registry/job";
 import { PlayerStory } from "../core/PlayerStory";
 import { tutorialCenter } from "../server/registry/tutorial";
+import "../data/settings";
+import { SettingScreen } from "@occultus/setting-api";
 
 export class ProfileForm extends FormLike {
   display(player: Player, backTo: FormLike[]): void {
@@ -44,6 +51,10 @@ export class ProfileForm extends FormLike {
       .divider()
       .label({ translate: "ui.profile.about" })
       .button(
+        { translate: "ui.settings" },
+        "textures/items/iron_pickaxe"
+      )
+      .button(
         { translate: "ui.profile.copyright" },
         "textures/items/book_written"
       )
@@ -59,7 +70,7 @@ export class ProfileForm extends FormLike {
         return;
       }
       if (result.selection === 2) {
-        this.jumpTo(player, new StoreForm(), backTo)
+        this.jumpTo(player, new StoreForm(), backTo);
         return;
       }
       if (result.selection === 3) {
@@ -80,10 +91,14 @@ export class ProfileForm extends FormLike {
         return;
       }
       if (result.selection === 7) {
-        this.jumpTo(player, new CopyrightForm(), backTo);
+        this.jumpTo(player, new SettingScreen(), backTo);
         return;
       }
       if (result.selection === 8) {
+        this.jumpTo(player, new CopyrightForm(), backTo);
+        return;
+      }
+      if (result.selection === 9) {
         CreditsScreen.display(
           player,
           "CREDITS of Hidden Years²: Governor at the Skyline",

@@ -1,5 +1,5 @@
 {
-  "format_version": 2,
+  "format_version": 3,
   "metadata": {
     "authors": ["Team Occultus"],
     "license": "HY-OSS",
@@ -9,7 +9,7 @@
   "header": {
     "name": "pack.name",
     "description": "pack.description",
-    "min_engine_version": [1, 26, 30],
+    "min_engine_version": "1.26.30",
     "uuid": "cb1b4568-9021-4793-afd2-aeac2bdb18f8",
     "version": "3.0.17",
     "pack_scope": "world"
