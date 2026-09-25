@@ -10,6 +10,7 @@ import {
   TaskServer
 } from "@occultus/api";
 import { TaskToast } from "../core/Toast";
+import { MagicEnergyAwards } from "../core/MagicEnergy";
 
 const server = new TaskServer();
 const tasks = new Map<string, Task>();
@@ -19,7 +20,7 @@ const stick = new Task(
   { translate: "task.stick" },
   { translate: "task.stick.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 3)],
+    awards: [new MagicEnergyAwards(20)],
     conditions: [new ItemConditions("minecraft:stick")],
     previousTask: "none",
     iconPath: "textures/items/stick"
@@ -32,7 +33,7 @@ const craftingTable = new Task(
   { translate: "task.crafting_table" },
   { translate: "task.crafting_table.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 4)],
+    awards: [new MagicEnergyAwards(20)],
     conditions: [new ItemConditions("minecraft:crafting_table")],
     previousTask: "none",
     iconPath: "textures/ui/task/crafting_table"
@@ -45,7 +46,7 @@ const furnace = new Task(
   { translate: "task.furnace" },
   { translate: "task.furnace.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 5)],
+    awards: [new MagicEnergyAwards(20)],
     conditions: [new ItemConditions("minecraft:furnace")],
     previousTask: "none",
     iconPath: "textures/ui/task/furnace"
@@ -58,7 +59,7 @@ const bed = new Task(
   { translate: "task.bed" },
   { translate: "task.bed.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
+    awards: [new MagicEnergyAwards(20)],
     conditions: [new ItemConditions("minecraft:bed")],
     previousTask: "none",
     iconPath: "textures/items/bed_red"
@@ -71,7 +72,7 @@ const bread = new Task(
   { translate: "task.bread" },
   { translate: "task.bread.desc" },
   {
-    awards: [new ItemAwards("minecraft:coal", 5)],
+    awards: [new MagicEnergyAwards(25)],
     conditions: [new ItemConditions("minecraft:bread")],
     previousTask: "none",
     iconPath: "textures/items/bread"
@@ -84,7 +85,7 @@ const monsterHunter = new Task(
   { translate: "task.monster_hunter" },
   { translate: "task.monster_hunter.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
+    awards: [new MagicEnergyAwards(45)],
     conditions: [new KillEntityFamilyConditions("monster", "family.monster")],
     previousTask: "none",
     iconPath: "textures/items/iron_sword"
@@ -104,7 +105,7 @@ const prolugueActI = new TaskGroup(
   },
   {
     tasks: [stick, craftingTable, furnace, bed, bread, monsterHunter],
-    awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
+    awards: [new MagicEnergyAwards(100)],
     previousTask: "none",
     iconPath: "textures/items/stick"
   }
@@ -116,7 +117,7 @@ const boneTools = new Task(
   { translate: "task.bone_tools" },
   { translate: "task.bone_tools.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 10)],
+    awards: [new MagicEnergyAwards(150)],
     conditions: [new ItemConditions("minecraft:bone")],
     previousTask: "none",
     iconPath: "textures/items/bone",
@@ -130,7 +131,7 @@ const stoneCraft = new Task(
   { translate: "task.stone_craft" },
   { translate: "task.stone_craft.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 12)],
+    awards: [new MagicEnergyAwards(150)],
     conditions: [new ItemConditions("minecraft:cobblestone")],
     previousTask: "none",
     iconPath: "textures/items/stone_nugget"
@@ -143,7 +144,7 @@ const copper = new Task(
   { translate: "task.copper" },
   { translate: "task.copper.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 2)],
+    awards: [new MagicEnergyAwards(150)],
     conditions: [new ItemConditions("minecraft:copper_ingot")],
     previousTask: "none",
     iconPath: "textures/items/copper_ingot",
@@ -157,7 +158,7 @@ const refinedRock = new Task(
   { translate: "task.refined_rock" },
   { translate: "task.refined_rock.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
+    awards: [new MagicEnergyAwards(150)],
     conditions: [new ItemConditions("hiddenyears:refined_rock_ingot")],
     previousTask: "none",
     iconPath: "textures/items/refined_rock_ingot",
@@ -171,7 +172,7 @@ const iron = new Task(
   { translate: "task.iron" },
   { translate: "task.iron.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+    awards: [new MagicEnergyAwards(200)],
     conditions: [new ItemConditions("minecraft:iron_ingot")],
     previousTask: "none",
     iconPath: "textures/items/iron_ingot"
@@ -185,7 +186,7 @@ const saw = new Task(
   { translate: "task.saw" },
   { translate: "task.saw.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(250)],
     conditions: [
       new ItemTagConditions("hiddenyears:is_saw", 1, "tag.hiddenyears:is_saw")
     ],
@@ -201,7 +202,7 @@ const crowbar = new Task(
   { translate: "task.crowbar" },
   { translate: "task.crowbar.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(250)],
     conditions: [
       new ItemTagConditions(
         "hiddenyears:is_crowbar",
@@ -221,7 +222,7 @@ const hammer = new Task(
   { translate: "task.hammer" },
   { translate: "task.hammer.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
+    awards: [new MagicEnergyAwards(250)],
     conditions: [
       new ItemTagConditions(
         "hiddenyears:is_hammer",
@@ -241,7 +242,7 @@ const dagger = new Task(
   { translate: "task.dagger" },
   { translate: "task.dagger.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
+    awards: [new MagicEnergyAwards(250)],
     conditions: [
       new ItemTagConditions(
         "hiddenyears:is_dagger",
@@ -261,7 +262,7 @@ const sledgehammer = new Task(
   { translate: "task.sledgehammer" },
   { translate: "task.sledgehammer.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(250)],
     conditions: [
       new ItemTagConditions(
         "hiddenyears:is_sledgehammer",
@@ -280,7 +281,7 @@ const sniperDuel = new Task(
   { translate: "task.sniper_duel" },
   { translate: "task.sniper_duel.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+    awards: [new MagicEnergyAwards(250)],
     conditions: [new ItemConditions("minecraft:bow")],
     previousTask: "none",
     iconPath: "textures/items/bow_pulling_0"
@@ -293,7 +294,7 @@ const triggerBlade = new Task(
   { translate: "task.trigger_blade" },
   { translate: "task.trigger_blade.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+    awards: [new MagicEnergyAwards(300)],
     conditions: [new ItemConditions("minecraft:crossbow")],
     previousTask: "none",
     iconPath: "textures/items/crossbow_pulling_0"
@@ -306,7 +307,7 @@ const sharpening = new Task(
   { translate: "task.sharpening" },
   { translate: "task.sharpening.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(300)],
     conditions: [new ItemConditions("hiddenyears:iron_enhanced_bow")],
     previousTask: "none",
     iconPath: "textures/items/iron_enhanced_bow_pulling_0"
@@ -319,7 +320,7 @@ const shield = new Task(
   { translate: "task.shield" },
   { translate: "task.shield.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 8)],
+    awards: [new MagicEnergyAwards(300)],
     conditions: [new ItemConditions("minecraft:shield")],
     previousTask: "none",
     iconPath: "textures/ui/task/shield"
@@ -332,7 +333,7 @@ const skewer = new Task(
   { translate: "task.skewer" },
   { translate: "task.skewer.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(300)],
     conditions: [new ItemConditions("minecraft:iron_spear")],
     previousTask: "none",
     iconPath: "textures/items/spear/iron_spear"
@@ -380,7 +381,7 @@ const silver = new Task(
   { translate: "task.silver" },
   { translate: "task.silver.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 3)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:silver_ingot")],
     previousTask: "none",
     iconPath: "textures/items/silver_ingot"
@@ -393,7 +394,7 @@ const diamond = new Task(
   { translate: "task.diamond" },
   { translate: "task.diamond.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("minecraft:diamond")],
     previousTask: "none",
     iconPath: "textures/items/diamond"
@@ -406,7 +407,7 @@ const crystal = new Task(
   { translate: "task.crystal" },
   { translate: "task.crystal.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 8)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:crystal_ingot")],
     previousTask: "none",
     iconPath: "textures/items/crystal_ingot",
@@ -423,7 +424,7 @@ const bleakTotem = new Task(
     rawtext: [{ translate: "task.bleak_totem.desc" }]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:bleak_totem")],
     previousTask: "none",
     iconPath: "textures/items/bleak_totem"
@@ -487,7 +488,7 @@ const eraOfNoGod = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [
       new KillEntityFamilyConditions(
         "basic_lunamutatio_monster",
@@ -514,7 +515,7 @@ const infestedBeast = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [
       new KillEntityFamilyConditions("trial_monster", "ui.family.trial_monster")
     ],
@@ -538,7 +539,7 @@ const contractStone = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:contract_gem")],
     previousTask: "none",
     iconPath: "textures/items/contract_gem",
@@ -566,7 +567,7 @@ const memoryCondensation = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [
       new ItemTagConditions("hiddenyears:is_artifact", 1, "ui.tag.is_artifact")
     ],
@@ -593,7 +594,7 @@ const endlessReincarnation = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [
       new KillEntityFamilyConditions(
         "lunamutatio_traveler",
@@ -631,7 +632,7 @@ const gold = new Task(
   { translate: "task.gold" },
   { translate: "task.gold.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
+    awards: [new MagicEnergyAwards(200)],
     conditions: [new ItemConditions("minecraft:gold_ingot")],
     previousTask: "none",
     iconPath: "textures/items/gold_ingot"
@@ -644,7 +645,7 @@ const obsidian = new Task(
   { translate: "task.obsidian" },
   { translate: "task.obsidian.desc" },
   {
-    awards: [new ItemAwards("minecraft:flint_and_steel", 1)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [new ItemConditions("minecraft:obsidian")],
     previousTask: "none",
     iconPath: "textures/ui/task/obsidian"
@@ -657,7 +658,7 @@ const ghastTear = new Task(
   { translate: "task.ghast_tear" },
   { translate: "task.ghast_tear.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [new ItemConditions("minecraft:ghast_tear")],
     previousTask: "none",
     iconPath: "textures/items/ghast_tear"
@@ -670,7 +671,7 @@ const compass = new Task(
   { translate: "task.compass" },
   { translate: "task.compass.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [new ItemConditions("minecraft:lodestone")],
     previousTask: "none",
     iconPath: "textures/ui/task/lodestone"
@@ -683,7 +684,7 @@ const respawnAnchor = new Task(
   { translate: "task.respawn_anchor" },
   { translate: "task.respawn_anchor.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [new ItemConditions("minecraft:respawn_anchor")],
     previousTask: "none",
     iconPath: "textures/ui/task/respawn_anchor"
@@ -696,7 +697,7 @@ const blazeRod = new Task(
   { translate: "task.blaze_rod" },
   { translate: "task.blaze_rod.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 1)],
+    awards: [new MagicEnergyAwards(850)],
     conditions: [new ItemConditions("minecraft:blaze_rod")],
     previousTask: "none",
     iconPath: "textures/items/blaze_rod"
@@ -752,7 +753,7 @@ const enderEye = new Task(
   { translate: "task.ender_eye" },
   { translate: "task.ender_eye.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:diamond_coin", 1)],
+    awards: [new MagicEnergyAwards(900)],
     conditions: [new ItemConditions("minecraft:ender_eye")],
     previousTask: "none",
     iconPath: "textures/items/ender_eye"
@@ -765,7 +766,7 @@ const dragonBreath = new Task(
   { translate: "task.dragon_breath" },
   { translate: "task.dragon_breath.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:diamond_coin", 5)],
+    awards: [new MagicEnergyAwards(900)],
     conditions: [new ItemConditions("minecraft:dragon_breath")],
     previousTask: "none",
     iconPath: "textures/items/dragons_breath"
@@ -778,7 +779,7 @@ const elytra = new Task(
   { translate: "task.elytra" },
   { translate: "task.elytra.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 5)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("minecraft:elytra")],
     previousTask: "none",
     iconPath: "textures/items/elytra"
@@ -823,7 +824,7 @@ const summaryOfElvenHistory = new Task(
   { translate: "task.summary_of_elven_history" },
   { translate: "task.summary_of_elven_history.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 1)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:article_3")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter"
@@ -842,7 +843,7 @@ const imprisonedWing = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 2)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:imprisoned_wing")],
     previousTask: "none",
     iconPath: "textures/items/imprisoned_wing"
@@ -861,7 +862,7 @@ const bloodyGem = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 2)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:ruby")],
     previousTask: "none",
     iconPath: "textures/items/ruby",
@@ -883,7 +884,7 @@ const bloodyArmor = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:ruby_chestplate")],
     previousTask: "none",
     iconPath: "textures/items/ruby_chestplate"
@@ -906,7 +907,7 @@ const decayedServant = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new KillEntityConditions("hiddenyears:ruby_zombie")],
     previousTask: "none",
     iconPath: "textures/items/egg_ruby_zombie",
@@ -926,7 +927,7 @@ const trueAndFalse = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [
       new KillEntityConditions("hiddenyears:ferocious_ruby_guardian")
     ],
@@ -948,7 +949,7 @@ const thunderKey = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("minecraft:potion", 4)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:lightning_key")],
     previousTask: "none",
     iconPath: "textures/items/lightning_key",
@@ -970,7 +971,7 @@ const bloodGaze = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:diamond_badge", 1)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:crimson_eyes")],
     previousTask: "none",
     iconPath: "textures/items/crimson_eyes",
@@ -992,7 +993,7 @@ const worldEndFruit = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 12)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:ruby_apple")],
     previousTask: "none",
     iconPath: "textures/items/ruby_apple",
@@ -1013,7 +1014,7 @@ const rubyIphon = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:ruby_iphon")],
     previousTask: "none",
     tips: "task.ruby_iphon.tips",
@@ -1090,7 +1091,7 @@ const magicDust = new Task(
   { translate: "task.magic_dust" },
   { translate: "task.magic_dust.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:magic_dust")],
     previousTask: "none",
     iconPath: "textures/items/magic_dust",
@@ -1104,10 +1105,10 @@ const magicOrigin = new Task(
   { translate: "task.magic_origin" },
   { translate: "task.magic_origin.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(1200)],
     conditions: [new ItemConditions("hiddenyears:magic_origin")],
     previousTask: "none",
-    iconPath: "textures/items/magic_origin",
+    iconPath: "textures/items/magic_origin"
   }
 );
 tasks.set(magicOrigin.id, magicOrigin);
@@ -1117,10 +1118,10 @@ const magicCompass = new Task(
   { translate: "task.magic_compass" },
   { translate: "task.magic_compass.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:magic_compass")],
     previousTask: "none",
-    iconPath: "textures/items/magic_compass",
+    iconPath: "textures/items/magic_compass"
   }
 );
 tasks.set(magicCompass.id, magicCompass);
@@ -1130,7 +1131,7 @@ const homecoming = new Task(
   { translate: "task.homecoming" },
   { translate: "task.homecoming.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:home_gem")],
     previousTask: "none",
     iconPath: "textures/items/home_gem",
@@ -1144,10 +1145,10 @@ const wanderingBetweenStars = new Task(
   { translate: "task.wandering_between_stars" },
   { translate: "task.wandering_between_stars.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 1)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:waystone_clock")],
     previousTask: "none",
-    iconPath: "textures/items/waystone_clock", // 传送石碑纹理路径（需按实际资源路径调整）
+    iconPath: "textures/items/waystone_clock", 
     tips: { translate: "task.wandering_between_stars.tips" }
   }
 );
@@ -1158,7 +1159,7 @@ const compoundBrewing = new Task(
   { translate: "task.compound_brewing" },
   { translate: "task.compound_brewing.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 1)], // 奖励：钻石×1
+    awards: [new MagicEnergyAwards(800)], // 奖励：钻石×1
     conditions: [new ItemConditions("hiddenyears:complex_potion")],
     previousTask: "none",
     iconPath: "textures/items/complex_potion",
@@ -1172,7 +1173,7 @@ const verdantStone = new Task(
   { translate: "task.verdant_stone" },
   { translate: "task.verdant_stone.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 5)],
+    awards: [new ItemAwards("minecraft:diamond", 3)],
     conditions: [new ItemConditions("hiddenyears:ancient_extracts")],
     previousTask: "none",
     iconPath: "textures/items/ancient_extracts"
@@ -1185,7 +1186,7 @@ const infernalRemains = new Task(
   { translate: "task.infernal_remains" },
   { translate: "task.infernal_remains.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 5)],
+    awards: [new ItemAwards("minecraft:diamond", 3)],
     conditions: [new ItemConditions("minecraft:netherite_scrap")],
     previousTask: "none",
     iconPath: "textures/items/netherite_scrap"
@@ -1198,7 +1199,7 @@ const ancientWarRemains = new Task(
   { translate: "task.ancient_war_remains" },
   { translate: "task.ancient_war_remains.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 5)],
+    awards: [new MagicEnergyAwards(1500)],
     conditions: [new ItemConditions("hiddenyears:ancient_scrap")],
     previousTask: "none",
     iconPath: "textures/items/ancient_scrap",
@@ -1212,7 +1213,7 @@ const fearSoul = new Task(
   { translate: "task.fear_soul" },
   { translate: "task.fear_soul.desc" },
   {
-    awards: [new ItemAwards("minecraft:diamond", 5)],
+    awards: [new MagicEnergyAwards(1500)],
     conditions: [new ItemConditions("hiddenyears:soul_of_fear")],
     previousTask: "none",
     iconPath: "textures/items/soul_of_fear",
@@ -1279,7 +1280,7 @@ const greenInSand = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 5)],
+    awards: [new MagicEnergyAwards(100)],
     conditions: [new ItemConditions("minecraft:cactus")],
     previousTask: "none",
     iconPath: "textures/items/dye_powder_green"
@@ -1298,7 +1299,7 @@ const hardToSwallowFood = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 5)],
+    awards: [new MagicEnergyAwards(150)],
     conditions: [new ItemConditions("hiddenyears:sand_meat")],
     previousTask: "none",
     iconPath: "textures/items/sand_meat",
@@ -1318,7 +1319,7 @@ const dryPot = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(200)],
     conditions: [new ItemConditions("hiddenyears:desert_herbpot")],
     previousTask: "none",
     iconPath: "textures/items/herb_bottle",
@@ -1338,7 +1339,7 @@ const godArrival = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 10)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:cooling_herbtea")],
     previousTask: "none",
     iconPath: "textures/items/cooling_herbtea",
@@ -1360,7 +1361,7 @@ const sacrifice = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:sandcaust_apple", 2)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:rabbit_paw")],
     previousTask: "none",
     iconPath: "textures/items/rabbit_paw",
@@ -1382,7 +1383,7 @@ const shatteredSand = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:shattered_sand_cudgel")],
     previousTask: "none",
     iconPath: "textures/items/shattered_sand_cudgel",
@@ -1402,7 +1403,7 @@ const keyOfContract = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:drift_sand_key")],
     previousTask: "none",
     iconPath: "textures/items/drift_sand_key",
@@ -1422,7 +1423,7 @@ const blessingOfRain = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(1200)],
     conditions: [new ItemConditions("hiddenyears:blessing_of_isis")],
     previousTask: "none",
     iconPath: "textures/items/blessing_of_isis",
@@ -1444,7 +1445,7 @@ const kingdomFall = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 15)],
+    awards: [new MagicEnergyAwards(1200)],
     conditions: [new ItemConditions("hiddenyears:desert_heart")],
     previousTask: "none",
     iconPath: "textures/items/desert_heart",
@@ -1460,7 +1461,7 @@ const statueOfPast = new Task(
     rawtext: [{ translate: "task.statue_of_past.desc" }]
   },
   {
-    awards: [new ItemAwards("minecraft:diamond", 5)],
+    awards: [new MagicEnergyAwards(2500)],
     conditions: [new ItemConditions("hiddenyears:past_statue")],
     previousTask: "none",
     iconPath: "textures/items/past_statue",
@@ -1506,7 +1507,7 @@ const rainInSand = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:gold_coin", 1)],
+    awards: [new ItemAwards("minecraft:diamond", 12)],
     conditions: [new ItemConditions("hiddenyears:shattered_sand_staff")],
     previousTask: "none",
     iconPath: "textures/items/shattered_sand_staff",
@@ -1553,7 +1554,7 @@ const goldInSand = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+    awards: [new MagicEnergyAwards(200)],
     conditions: [new ItemConditions("hiddenyears:gold_sand")],
     previousTask: "none",
     iconPath: "textures/items/gold_sand",
@@ -1577,7 +1578,7 @@ const curseOfSand = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 5)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new KillEntityConditions("hiddenyears:sandcaust_silverfish")],
     previousTask: "none",
     iconPath: "textures/items/egg_sand_silverfish"
@@ -1596,7 +1597,7 @@ const storyOfGold = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 10)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:article_11")],
     previousTask: "none",
     iconPath: "textures/items/paper"
@@ -1623,7 +1624,7 @@ const ancientMyth = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(900)],
     conditions: [new ItemConditions("hiddenyears:article_10")],
     previousTask: "none",
     iconPath: "textures/items/paper",
@@ -1643,7 +1644,7 @@ const signOfMutation = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:stack_of_gold_coin", 15)],
+    awards: [new MagicEnergyAwards(1200)],
     conditions: [new KillEntityConditions("hiddenyears:scorpion")],
     previousTask: "none",
     iconPath: "textures/items/egg_scorpion",
@@ -1687,7 +1688,7 @@ const eyeOfSandErosion = new Task(
     ]
   },
   {
-    awards: [new ItemAwards("hiddenyears:sandcaust_apple", 5)],
+    awards: [new MagicEnergyAwards(1200)],
     conditions: [new ItemConditions("hiddenyears:sandcaust_spider_eye")],
     previousTask: "none",
     iconPath: "textures/items/sand_spider_eye",
@@ -1732,7 +1733,7 @@ const echoShard = new Task(
     conditions: [new ItemConditions("minecraft:echo_shard")],
     previousTask: "none",
     iconPath: "textures/items/echo_shard",
-    awards: [new ItemAwards("hiddenyears:echo_coin", 5)]
+    awards: [new MagicEnergyAwards(1200)]
   }
 );
 tasks.set(echoShard.id, echoShard);
@@ -1781,26 +1782,13 @@ const epilogueActI = new TaskGroup(
 );
 
 // 文海探源录 任务集
-const article1 = new Task(
-  "hiddenyears:article_1",
-  { translate: "task.article_1" },
-  { translate: "task.article_1.desc" },
-  {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 15)],
-    conditions: [new ItemConditions("hiddenyears:article_1")],
-    previousTask: "none",
-    iconPath: "textures/items/lost_letter",
-    tips: { translate: "task.article_1.tips" }
-  }
-);
-tasks.set(article1.id, article1);
 
 const hiddenStory = new Task(
   "hiddenyears:hidden_story",
   { translate: "task.hidden_story" },
   { translate: "task.hidden_story.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 15)],
+    awards: [new MagicEnergyAwards(300)],
     conditions: [new ItemConditions("hiddenyears:hidden_story")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1814,7 +1802,7 @@ const article4 = new Task(
   { translate: "task.article_4" },
   { translate: "task.article_4.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 25)],
+    awards: [new MagicEnergyAwards(500)],
     conditions: [new ItemConditions("hiddenyears:article_4")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1828,7 +1816,7 @@ const article5 = new Task(
   { translate: "task.article_5" },
   { translate: "task.article_5.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 28)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:article_5")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1842,7 +1830,7 @@ const article6 = new Task(
   { translate: "task.article_6" },
   { translate: "task.article_6.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 30)],
+    awards: [new MagicEnergyAwards(900)],
     conditions: [new ItemConditions("hiddenyears:article_6")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1856,7 +1844,7 @@ const article7 = new Task(
   { translate: "task.article_7" },
   { translate: "task.article_7.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 26)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:article_7")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1870,7 +1858,7 @@ const article8 = new Task(
   { translate: "task.article_8" },
   { translate: "task.article_8.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 32)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:article_8")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1884,7 +1872,7 @@ const article9 = new Task(
   { translate: "task.article_9" },
   { translate: "task.article_9.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 35)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:article_9")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1898,7 +1886,7 @@ const article12 = new Task(
   { translate: "task.article_12" },
   { translate: "task.article_12.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 36)],
+    awards: [new MagicEnergyAwards(1000)],
     conditions: [new ItemConditions("hiddenyears:article_12")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1912,7 +1900,7 @@ const article13 = new Task(
   { translate: "task.article_13" },
   { translate: "task.article_13.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 40)],
+    awards: [new MagicEnergyAwards(1200)],
     conditions: [new ItemConditions("hiddenyears:article_13")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1926,7 +1914,7 @@ const article14 = new Task(
   { translate: "task.article_14" },
   { translate: "task.article_14.desc" },
   {
-    awards: [new ItemAwards("hiddenyears:copper_coin", 50)],
+    awards: [new MagicEnergyAwards(800)],
     conditions: [new ItemConditions("hiddenyears:article_14")],
     previousTask: "none",
     iconPath: "textures/items/lost_letter",
@@ -1947,7 +1935,6 @@ const articleCollection = new TaskGroup(
   },
   {
     tasks: [
-      article1,
       hiddenStory,
       summaryOfElvenHistory,
       article4,

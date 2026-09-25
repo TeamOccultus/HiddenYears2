@@ -2144,5 +2144,6 @@
   "ui.no_editable_setting.title": "无可编辑设置",
   "ui.no_editable_setting.body": "你没有权限编辑任何设置。",
   "message.starock:setting_saved": "§a设置已保存！",
-  "setting.default_tooltip": "这是一个设置项提示"
+  "setting.default_tooltip": "这是一个设置项提示",
+  "task.awards.me": "魔法能源 × %s"
 }

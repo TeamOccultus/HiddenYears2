@@ -1,5 +1,5 @@
 import { ItemStack, Player } from "@minecraft/server";
-import { giveItem } from "@occultus/api";
+import { giveItem, TaskAwards, TextProvider } from "@occultus/api";
 
 /**
  * 管理魔法能源的类
@@ -14,8 +14,8 @@ export class MagicEnergy {
   }
   /**
    * 尝试消耗玩家的魔法能源
-   * @param player 
-   * @param value 
+   * @param player
+   * @param value
    * @return `true`代表玩家魔法能源足够消耗并且游戏已经执行了消耗操作，`false`代表玩家魔法能源不足
    */
   static tryConsume(player: Player, value: number): boolean {
@@ -102,3 +102,15 @@ export type CoinOrder = {
   ucv: number;
   itemCount: number;
 };
+
+export class MagicEnergyAwards extends TaskAwards {
+  constructor(readonly magicEnergy: number) {
+    super(magicEnergy);
+  }
+  give(player: Player): void {
+    MagicEnergy.add(player, this.magicEnergy);
+  }
+  getTextProvider(): TextProvider {
+    return { translate: "task.awards.me", with: [this.magicEnergy.toString()] };
+  }
+}
