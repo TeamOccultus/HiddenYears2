@@ -95,7 +95,7 @@ export class ProfileForm extends FormLike {
         return;
       }
       if (result.selection === 8) {
-        this.jumpTo(player, new CopyrightForm(), backTo);
+        // this.jumpTo(player, new CopyrightForm(), backTo);
         return;
       }
       if (result.selection === 9) {
