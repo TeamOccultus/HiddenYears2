@@ -14,7 +14,7 @@ import { jobCenter } from "../server/registry/job";
 import { PlayerStory } from "../core/PlayerStory";
 import { tutorialCenter } from "../server/registry/tutorial";
 import "../data/settings";
-import { SettingScreen } from "@occultus/setting-api";
+// import { SettingScreen } from "@occultus/setting-api";
 
 export class ProfileForm extends FormLike {
   display(player: Player, backTo: FormLike[]): void {
@@ -91,11 +91,11 @@ export class ProfileForm extends FormLike {
         return;
       }
       if (result.selection === 7) {
-        this.jumpTo(player, new SettingScreen(), backTo);
+        // this.jumpTo(player, new SettingScreen(), backTo);
         return;
       }
       if (result.selection === 8) {
-        // this.jumpTo(player, new CopyrightForm(), backTo);
+        this.jumpTo(player, new CopyrightForm(), backTo);
         return;
       }
       if (result.selection === 9) {

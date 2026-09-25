@@ -1,4 +1,4 @@
-import { SettingManager } from "@occultus/setting-api";
+/*import { SettingManager } from "@occultus/setting-api";
 
 export const manager = SettingManager.create([
   {
@@ -14,3 +14,4 @@ export const manager = SettingManager.create([
     tooltip: "决定游戏的难度"
   }
 ]);
+*/

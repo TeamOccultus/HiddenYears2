@@ -26,9 +26,6 @@ importers:
       '@occultus/loom':
         specifier: ^1.2.0
         version: 1.2.0(@types/node@24.2.1)
-      '@occultus/setting-api':
-        specifier: 1.0.0-beta.1
-        version: 1.0.0-beta.1(@minecraft/server-ui@2.1.0(@minecraft/common@1.2.0)(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))
       typescript:
         specifier: ^5.9.3
         version: 5.9.3
@@ -476,12 +473,6 @@ packages:
       '@minecraft/server': ^2.4.0
       '@occultus/core': ^1.1.0
 
-  '@occultus/math-api@1.0.0-beta':
-    resolution: {integrity: sha512-RrtTySd5yk5I24Tfcyniy6U5MixXOujh3zB54NW5h3Ugm4u0clBkwsjLA8IEUzolhZznS8B0QZ/tB++Aa69gRQ==}
-    peerDependencies:
-      '@minecraft/server': ^2.8.0
-      '@occultus/core': ^2.0.0-beta.6
-
   '@occultus/music-api@0.22.0':
     resolution: {integrity: sha512-DKEBBYMxykaGZRpnOgcaAT69Hgb8x5+FRPcgv7+mdxvBaiWSzCCY6J/wNRnY5LPdrQlD9GEuF8T82C39UBAeVQ==}
     peerDependencies:
@@ -506,13 +497,6 @@ packages:
       '@minecraft/server': ^2.4.0
       '@occultus/core': ^1.1.0
 
-  '@occultus/setting-api@1.0.0-beta.1':
-    resolution: {integrity: sha512-W9MTV95VlzOoS+nwOC90tpSof70WJqTAk1++6PAPiHYa/sWpXUgtov5VNWFEs1YPOYGCf6ij2GrQmGx7nyfk+g==}
-    peerDependencies:
-      '@minecraft/server': ^2.8.0
-      '@minecraft/server-ui': ^2.1.0
-      '@occultus/core': ^2.0.0-beta.6
-
   '@occultus/skill-api@0.21.0':
     resolution: {integrity: sha512-ofGn7zfyVDRKpF9OXX8l8eZW6ck2zYR2nKcGaVxfV0fueAIsADjL/JClkbA7vNdlJf2Ed7NqCB9d7SQmZlk5lw==}
     peerDependencies:
@@ -531,12 +515,6 @@ packages:
     peerDependencies:
       '@minecraft/server': ^2.4.0
       '@occultus/core': ^1.1.0
-
-  '@occultus/text-api@1.0.0-rc.1':
-    resolution: {integrity: sha512-ggKHS14RDaDRsG1FBu2P1oBw6L9j32VoQ6M0aknXrBU3lxS0uBee2OFCcjauzFRysRy+SMVGgv0XNj5PBldMsw==}
-    peerDependencies:
-      '@minecraft/server': ^2.8.0
-      '@occultus/core': ^2.0.0-beta.6
 
   '@occultus/time-api@0.22.0':
     resolution: {integrity: sha512-rbi6Xfzk9eglSDBntgiiow8PBZDrEp/sWXSsIexw4PIrfHuDE2FOwo99IFa7uAjK3GpxfSXf3ZnH8+YEkMczlA==}
@@ -1267,11 +1245,6 @@ snapshots:
       '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
       '@occultus/core': 1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
 
-  '@occultus/math-api@1.0.0-beta(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))':
-    dependencies:
-      '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
-      '@occultus/core': 1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
-
   '@occultus/music-api@0.22.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))':
     dependencies:
       '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
@@ -1296,14 +1269,6 @@ snapshots:
       '@occultus/core': 1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
       '@occultus/math-api': 0.23.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))
 
-  '@occultus/setting-api@1.0.0-beta.1(@minecraft/server-ui@2.1.0(@minecraft/common@1.2.0)(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))':
-    dependencies:
-      '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
-      '@minecraft/server-ui': 2.1.0(@minecraft/common@1.2.0)(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
-      '@occultus/core': 1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
-      '@occultus/math-api': 1.0.0-beta(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))
-      '@occultus/text-api': 1.0.0-rc.1(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))
-
   '@occultus/skill-api@0.21.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))':
     dependencies:
       '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
@@ -1322,11 +1287,6 @@ snapshots:
       - '@occultus/common'
 
   '@occultus/text-api@0.24.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))':
-    dependencies:
-      '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
-      '@occultus/core': 1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
-
-  '@occultus/text-api@1.0.0-rc.1(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))(@occultus/core@1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)))':
     dependencies:
       '@minecraft/server': 2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30)
       '@occultus/core': 1.1.0(@minecraft/server@2.8.0(@minecraft/common@1.2.0)(@minecraft/vanilla-data@1.26.30))
