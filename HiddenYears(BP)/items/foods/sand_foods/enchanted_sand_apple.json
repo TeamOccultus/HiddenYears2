@@ -17,6 +17,9 @@
         ],
         "duration": 600
       },
+      "minecraft:compostable": {
+        "composting_chance": 100
+      },
       "minecraft:icon": "hiddenyears:sand_apple",
       "minecraft:use_animation": "eat",
       "minecraft:use_modifiers": {

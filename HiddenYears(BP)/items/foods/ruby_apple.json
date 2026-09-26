@@ -12,6 +12,9 @@
       "hiddenyears:exp_food": {
         "exp": 8
       },
+      "minecraft:compostable": {
+        "composting_chance": 90
+      },
       "minecraft:icon": "hiddenyears:ruby_apple",
       "minecraft:use_animation": "eat",
       "minecraft:use_modifiers": {

@@ -13,6 +13,9 @@
         "effect": ["minecraft:absorption", "minecraft:fire_resistance"],
         "duration": 550
       },
+      "minecraft:compostable": {
+        "composting_chance": 90
+      },
       "minecraft:icon": "hiddenyears:sand_apple",
       "minecraft:use_animation": "eat",
       "minecraft:use_modifiers": {
