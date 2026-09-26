@@ -113,6 +113,9 @@
     "hiddenyears:breeze_crossbow_standby": {
       "textures": "textures/items/breeze_crossbow_standby"
     },
+    "hiddenyears:cherry": {
+      "textures": "textures/items/cherry"
+    },
     "hiddenyears:coal_dust": {
       "textures": "textures/items/coal_dust"
     },

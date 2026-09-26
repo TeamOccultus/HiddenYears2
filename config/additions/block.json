@@ -10,5 +10,9 @@
   {
     "loot_table": "gameplay/budding_amethyst",
     "blocks": ["minecraft:budding_amethyst"]
+  },
+  {
+    "loot_table": "gameplay/cherry",
+    "blocks": ["minecraft:cherry_leaves"]
   }
 ]
