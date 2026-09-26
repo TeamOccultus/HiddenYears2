@@ -14,7 +14,7 @@ steps:
   - name: upload
     image: codeberg.org/s1m/woodpecker-upload:latest
     when:
-      branch: bedrock-neo
+      branch: 26.30+
       event: [push, pull_request, manual]
     settings:
       token:
