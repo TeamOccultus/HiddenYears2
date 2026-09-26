@@ -2145,5 +2145,7 @@
   "ui.no_editable_setting.body": "你没有权限编辑任何设置。",
   "message.starock:setting_saved": "§a设置已保存！",
   "setting.default_tooltip": "这是一个设置项提示",
-  "task.awards.me": "魔法能源 × %s"
+  "task.awards.me": "魔法能源 × %s",
+  "item.hiddenyears:cherry": "樱桃",
+  "item.hiddenyears:magic_cherry": "魔法樱桃"
 }

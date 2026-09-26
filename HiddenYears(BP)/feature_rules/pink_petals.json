@@ -1,0 +1,40 @@
+// mc-disable behaviorpack.features.missing
+{
+  "format_version": "1.21.100",
+  "minecraft:feature_rules": {
+    "description": {
+      "identifier": "hiddenyears:pink_petals",
+      "places_feature": "minecraft:pink_petals_scatter_feature"
+    },
+    "conditions": {
+      "placement_pass": "surface_pass",
+      "minecraft:biome_filter": [
+        {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "cherry_plains"
+            }
+          ]
+        }
+      ]
+    },
+    "distribution": {
+      "iterations": 16,
+      "scatter_chance": "variable.is_legacy ? 0.0 : 100.0",
+      "x": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      },
+      "y": {
+        "distribution": "uniform",
+        "extent": [0, 128]
+      },
+      "z": {
+        "distribution": "uniform",
+        "extent": [0, 16]
+      }
+    }
+  }
+}

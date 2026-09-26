@@ -1,0 +1,19 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:scatter_feature": {
+    "description": {
+      "identifier": "hiddenyears:optional_log_pink_pedals"
+    },
+    "iterations": 1,
+    "scatter_chance": {
+      "numerator": 1,
+      "denominator": 10
+    },
+    "x": 0,
+    "z": 0,
+    "y": 1,
+    "project_input_to_floor": false,
+    // mc-disable-next-line behaviorpack.features.missing
+    "places_feature": "minecraft:pink_petals_feature"
+  }
+}

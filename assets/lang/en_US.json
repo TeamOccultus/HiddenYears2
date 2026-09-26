@@ -2287,5 +2287,7 @@
   "tutorial.hiddenyears:boss.17": "● §eMut's Blade§r: transforms into a greatsword to sweep across the battlefield",
   "tutorial.hiddenyears:boss.18": "If you wear the Crown of Shifting Sands, you can resist some of the damage—a crucial advantage against the Wrath of the Creator.",
   "hiddenyears:itemGroup.name.keys": "Hidden Years: Keys",
-  "task.awards.me": "Magic Energy × %s"
+  "task.awards.me": "Magic Energy × %s",
+  "item.hiddenyears:cherry": "Cherry",
+  "item.hiddenyears:magic_cherry": "Magic Cherry"
 }
