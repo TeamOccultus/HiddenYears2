@@ -2,13 +2,11 @@
   "format_version": "1.21.100",
   "sound_definitions": {
     "music.game.creative": {
-      "__use_legacy_max_distance": true,
       "category": "music",
       "max_distance": null,
       "min_distance": null,
       "sounds": [
         {
-          "load_on_low_memory": true,
           "name": "sounds/music/biome/plain_thoughts",
           "stream": true,
           "volume": 0.1
@@ -388,7 +386,6 @@
       "min_distance": null,
       "sounds": [
         {
-          "load_on_low_memory": true,
           "name": "sounds/mob/pillager/death1"
         },
         "sounds/mob/pillager/death2"
@@ -402,7 +399,6 @@
       "min_distance": null,
       "sounds": [
         {
-          "load_on_low_memory": true,
           "name": "sounds/mob/pillager/hurt1"
         },
         "sounds/mob/pillager/hurt2",
@@ -494,7 +490,6 @@
       "sounds": [
         "sounds/mob/zombie/say1",
         {
-          "load_on_low_memory": true,
           "name": "sounds/mob/zombie/say2"
         },
         "sounds/mob/zombie/say3"
@@ -621,6 +616,16 @@
         }
       ],
       "subtitle": "subtitles.mob.ruby_griffin.death"
+    },
+    "ambient.birds": {
+      "category": "ambient",
+      "max_distance": null,
+      "min_distance": null,
+      "sounds": [
+        "sounds/nature/bird_1",
+        "sounds/nature/bird_2",
+        "sounds/nature/bird_3"
+      ]
     }
     /*,
     "mob.lunamutatio.death": {

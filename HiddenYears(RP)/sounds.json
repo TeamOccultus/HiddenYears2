@@ -1,4 +1,13 @@
 {
+  "individual_named_sounds": {
+    "sounds": {
+      "ambient.cherry_plains.additions": {
+        "sound": "ambient.birds",
+        "volume": 1,
+        "pitch": 1
+      }
+    }
+  },
   "entity_sounds": {
     "entities": {
       "hiddenyears:gemstone_trader": {
