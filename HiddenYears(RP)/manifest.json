@@ -20,6 +20,18 @@
       "version": "3.1.0-alpha.1"
     }
   ],
+  /*"subpacks": [
+    {
+      "folder_name": "ambient",
+      "name": "[Beta] 环境音效",
+      "memory_tier": 1
+    },
+    {
+      "folder_name": "normal",
+      "name": "禁用环境音效",
+      "memory_tier": 0
+    }
+  ],*/
   "dependencies": [
     {
       "uuid": "cb1b4568-9021-4793-afd2-aeac2bdb18f8",

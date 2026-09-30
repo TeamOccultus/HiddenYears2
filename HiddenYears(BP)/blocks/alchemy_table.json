@@ -40,10 +40,7 @@
         "explosion_resistance": 2.5
       },
       "minecraft:map_color": "#999999",
-      "minecraft:tags": [
-        "metal",
-        "minecraft:is_pickaxe_item_destructible"
-      ]
+      "minecraft:tags": ["metal", "minecraft:is_pickaxe_item_destructible"]
     }
   }
 }

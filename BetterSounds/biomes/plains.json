@@ -1,0 +1,16 @@
+{
+  "format_version": "1.21.130", //最低适配版本
+  "minecraft:client_biome": {
+    "description": {
+      "identifier": "minecraft:plains" //你的自定义生物群系的ID，不用填命名空间前缀
+    },
+    "components": {
+      "minecraft:ambient_sounds": {
+        "addition": {
+          "asset": "ambient.cherry_plains.additions",
+          "chance": 0.6
+        }
+      }
+    }
+  }
+} //枯叶堆的着色在哪呢？问Mojang去吧

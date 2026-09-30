@@ -1,0 +1,11 @@
+{
+  "individual_named_sounds": {
+    "sounds": {
+      "ambient.cherry_plains.additions": {
+        "sound": "ambient.birds",
+        "volume": 0.8,
+        "pitch": 1
+      }
+    }
+  }
+}
