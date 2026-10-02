@@ -616,16 +616,6 @@
         }
       ],
       "subtitle": "subtitles.mob.ruby_griffin.death"
-    },
-    "ambient.birds": {
-      "category": "ambient",
-      "max_distance": null,
-      "min_distance": null,
-      "sounds": [
-        "sounds/nature/bird_1",
-        "sounds/nature/bird_2",
-        "sounds/nature/bird_3"
-      ]
     }
     /*,
     "mob.lunamutatio.death": {
