@@ -31,7 +31,7 @@
       },
       "minecraft:cooldown": {
         "category": "hiddenyears:mutas_staff",
-        "duration": 0.8
+        "duration": 6.5
       },
       "minecraft:hand_equipped": true,
       "minecraft:icon": "hiddenyears:mutas_staff",
