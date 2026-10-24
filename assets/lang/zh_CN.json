@@ -2155,5 +2155,14 @@
   "tips.hiddenyears:occultus_watch.luna": "【时匿怀表】%s，月亮越园，这些「月蚀」怪物造成的伤害就越高，你或许要躲避一下它……",
   "item.hiddenyears:magic_fuel": "燃金",
   "tile.hiddenyears:magic_fuel_ore.name": "燃金矿石",
-  "tile.hiddenyears:deepslate_magic_fuel_ore.name": "深层燃金矿石"
+  "tile.hiddenyears:deepslate_magic_fuel_ore.name": "深层燃金矿石",
+  "tile.hiddenyears:caltrop_trap.name": "地刺陷阱",
+  "tile.hiddenyears:catch_trap.name": "捕杀陷阱",
+  "tile.hiddenyears:explode_trap.name": "爆炸陷阱",
+  "tile.hiddenyears:fire_trap.name": "火焰陷阱",
+  "tile.hiddenyears:hunter_trap.name": "猎手陷阱",
+  "tile.hiddenyears:lightning_trap.name": "闪电陷阱",
+  "tile.hiddenyears:monster_trap.name": "怪物陷阱",
+  "tile.hiddenyears:sheep_trap.name": "绵羊陷阱",
+  "tile.hiddenyears:summon_trap.name": "召唤陷阱"
 }

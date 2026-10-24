@@ -55,8 +55,14 @@
     "hiddenyears:bowyers_bench_downside": {
       "textures": "textures/blocks/bowyers_bench_downside"
     },
+    "hiddenyears:caltrop_trap": {
+      "textures": "textures/blocks/caltrop_trap"
+    },
     "hiddenyears:camellia": {
       "textures": "textures/blocks/camellia"
+    },
+    "hiddenyears:catch_trap": {
+      "textures": "textures/blocks/catch_trap"
     },
     "hiddenyears:compact_copper_ore": {
       "textures": "textures/blocks/compact_copper_ore"
@@ -127,11 +133,20 @@
     "hiddenyears:endless_summer": {
       "textures": "textures/blocks/endless_summer"
     },
+    "hiddenyears:explode_trap": {
+      "textures": "textures/blocks/explode_trap"
+    },
     "hiddenyears:extracts_ore": {
       "textures": "textures/blocks/extracts_ore"
     },
+    "hiddenyears:fire_trap": {
+      "textures": "textures/blocks/fire_trap"
+    },
     "hiddenyears:flower_of_lunamutatio": {
       "textures": "textures/blocks/flower_of_lunamutatio"
+    },
+    "hiddenyears:hunter_trap": {
+      "textures": "textures/blocks/hunter_trap"
     },
     "hiddenyears:iris": {
       "textures": "textures/blocks/iris"
@@ -141,6 +156,9 @@
     },
     "hiddenyears:lightning_grave": {
       "textures": "textures/blocks/lightning_grave"
+    },
+    "hiddenyears:lightning_trap": {
+      "textures": "textures/blocks/lightning_trap"
     },
     "hiddenyears:light_blue_hydrangea": {
       "textures": "textures/blocks/light_blue_hydrangea"
@@ -180,6 +198,9 @@
     },
     "hiddenyears:magic_smithing_table": {
       "textures": "textures/blocks/magic_smithing_table"
+    },
+    "hiddenyears:monster_trap": {
+      "textures": "textures/blocks/monster_trap"
     },
     "hiddenyears:mutas_wrath_doll": {
       "textures": "textures/blocks/mutas_wrath_doll"
@@ -250,6 +271,9 @@
     "hiddenyears:sand_grave": {
       "textures": "textures/blocks/sand_grave"
     },
+    "hiddenyears:sheep_trap": {
+      "textures": "textures/blocks/sheep_trap"
+    },
     "hiddenyears:silver_block": {
       "textures": "textures/blocks/silver_block"
     },
@@ -274,8 +298,35 @@
     "hiddenyears:stone_of_fear": {
       "textures": "textures/blocks/stone_of_fear"
     },
+    "hiddenyears:summon_trap": {
+      "textures": "textures/blocks/summon_trap"
+    },
     "hiddenyears:thistle": {
       "textures": "textures/blocks/thistle"
+    },
+    "hiddenyears:trap_empty": {
+      "textures": "textures/blocks/trap_empty"
+    },
+    "hiddenyears:trap_top_0": {
+      "textures": "textures/blocks/trap_top_0"
+    },
+    "hiddenyears:trap_top_1": {
+      "textures": "textures/blocks/trap_top_1"
+    },
+    "hiddenyears:trap_top_2": {
+      "textures": "textures/blocks/trap_top_2"
+    },
+    "hiddenyears:trap_top_3": {
+      "textures": "textures/blocks/trap_top_3"
+    },
+    "hiddenyears:trap_top_4": {
+      "textures": "textures/blocks/trap_top_4"
+    },
+    "hiddenyears:trap_top_5": {
+      "textures": "textures/blocks/trap_top_5"
+    },
+    "hiddenyears:trap_top_6": {
+      "textures": "textures/blocks/trap_top_6"
     },
     "hiddenyears:waystone": {
       "textures": "textures/blocks/waystone"

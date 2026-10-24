@@ -1,0 +1,146 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:block": {
+    "description": {
+      "identifier": "hiddenyears:lightning_trap",
+      "menu_category": {
+        "category": "items"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"],
+          "y_rotation_offset": 180
+        }
+      },
+      "states": {
+        "starock:magic_energy": {
+          "values": {
+            "min": 0,
+            "max": 3
+          }
+        }
+      }
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 0, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, 180, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": { "rotation": [0, -90, 0] }
+        }
+      },
+      {
+        "condition": "q.block_state('starock:magic_energy') == 0",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "hiddenyears:trap_top_0"
+            },
+            "down": { "texture": "hiddenyears:trap_empty" },
+            "*": {
+              "texture": "hiddenyears:lightning_trap"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "minecraft:geometry.full_block"
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('starock:magic_energy') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "hiddenyears:trap_top_1"
+            },
+            "down": { "texture": "hiddenyears:trap_empty" },
+            "*": {
+              "texture": "hiddenyears:lightning_trap"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "minecraft:geometry.full_block"
+          },
+          "minecraft:light_emission": 1
+        }
+      },
+      {
+        "condition": "q.block_state('starock:magic_energy') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "hiddenyears:trap_top_3"
+            },
+            "down": { "texture": "hiddenyears:trap_empty" },
+            "*": {
+              "texture": "hiddenyears:lightning_trap"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "minecraft:geometry.full_block"
+          },
+          "minecraft:light_emission": 3
+        }
+      },
+      {
+        "condition": "q.block_state('starock:magic_energy') == 3",
+        "components": {
+          "minecraft:material_instances": {
+            "up": {
+              "texture": "hiddenyears:trap_top_6"
+            },
+            "down": { "texture": "hiddenyears:trap_empty" },
+            "*": {
+              "texture": "hiddenyears:lightning_trap"
+            }
+          },
+          "minecraft:geometry": {
+            "identifier": "minecraft:geometry.full_block"
+          },
+          "minecraft:light_emission": 5
+        }
+      }
+    ],
+    "components": {
+      "hiddenyears:trap": {
+        "damage": [3, 1],
+        "max_energy": 3,
+        "charge_step": 1,
+        "charge_item": "hiddenyears:magic_fuel",
+        "runtime_identifier": "hiddenyears:lightning_trap"
+      },
+      "minecraft:flammable": false,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 12,
+        "item_specific_speeds": [
+          {
+            "item": { "tags": "query.any_tag('minecraft:is_pickaxe')" },
+            "destroy_speed": 2
+          }
+        ]
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 2.5
+      },
+      "minecraft:map_color": "#999999",
+      "minecraft:tags": ["minecraft:is_pickaxe_item_destructible"]
+    }
+  }
+}
