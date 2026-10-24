@@ -641,6 +641,9 @@
     "hiddenyears:magic_feather_cape": {
       "textures": "textures/items/magic_feather_cape"
     },
+    "hiddenyears:magic_fuel": {
+      "textures": "textures/items/magic_fuel"
+    },
     "hiddenyears:magic_origin": {
       "textures": "textures/items/magic_origin"
     },

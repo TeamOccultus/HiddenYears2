@@ -103,6 +103,9 @@
     "hiddenyears:deepslate_extracts_ore": {
       "textures": "textures/blocks/deepslate_extracts_ore"
     },
+    "hiddenyears:deepslate_magic_fuel_ore": {
+      "textures": "textures/blocks/deepslate_magic_fuel_ore"
+    },
     "hiddenyears:deepslate_ruby_ore": {
       "textures": "textures/blocks/deepslate_ruby_ore"
     },
@@ -171,6 +174,9 @@
     },
     "hiddenyears:magic_downside": {
       "textures": "textures/blocks/magic_downside"
+    },
+    "hiddenyears:magic_fuel_ore": {
+      "textures": "textures/blocks/magic_fuel_ore"
     },
     "hiddenyears:magic_smithing_table": {
       "textures": "textures/blocks/magic_smithing_table"

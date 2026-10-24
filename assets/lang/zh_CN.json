@@ -2152,5 +2152,8 @@
   "monologue.hiddenyears:occultus_watch.welcome.2": "【时匿怀表】关于这个陌生的世界，有什么疑惑的地方都可以问我！",
   "monologue.hiddenyears:occultus_watch.welcome.3": "【时匿怀表】你的包里有一块蓝色的晶石，使用它好像能获得额外的力量……",
   "monologue.hiddenyears:occultus_watch.welcome.4": "【时匿怀表】差点忘了，还有这个！这卷羊皮纸上的信息对主人你应该有用",
-  "tips.hiddenyears:occultus_watch.luna": "【时匿怀表】%s，月亮越园，这些「月蚀」怪物造成的伤害就越高，你或许要躲避一下它……"
+  "tips.hiddenyears:occultus_watch.luna": "【时匿怀表】%s，月亮越园，这些「月蚀」怪物造成的伤害就越高，你或许要躲避一下它……",
+  "item.hiddenyears:magic_fuel": "燃金",
+  "tile.hiddenyears:magic_fuel_ore.name": "燃金矿石",
+  "tile.hiddenyears:deepslate_magic_fuel_ore.name": "深层燃金矿石"
 }
