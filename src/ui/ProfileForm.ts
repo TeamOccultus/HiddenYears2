@@ -14,6 +14,7 @@ import { jobCenter } from "../server/registry/job";
 import { PlayerStory } from "../core/PlayerStory";
 import { tutorialCenter } from "../server/registry/tutorial";
 import "../data/settings";
+import { MagicEnergy } from "../core/MagicEnergy";
 // import { SettingScreen } from "@occultus/setting-api";
 
 export class ProfileForm extends FormLike {
@@ -30,6 +31,11 @@ export class ProfileForm extends FormLike {
               player.level.toString(),
               player.totalXpNeededForNextLevel.toString()
             ]
+          },
+          { text: "\n" },
+          {
+            translate: "ui.ucv.own",
+            with: [MagicEnergy.get(player).toString()]
           }
         ]
       });
@@ -50,10 +56,7 @@ export class ProfileForm extends FormLike {
     form
       .divider()
       .label({ translate: "ui.profile.about" })
-      .button(
-        { translate: "ui.settings" },
-        "textures/items/iron_pickaxe"
-      )
+      .button({ translate: "ui.settings" }, "textures/items/iron_pickaxe")
       .button(
         { translate: "ui.profile.copyright" },
         "textures/items/book_written"

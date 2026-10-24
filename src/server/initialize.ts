@@ -32,6 +32,7 @@ import { LocatorBarEvents } from "./events/LocatorBarEvents";
 import { registerCustomDimensions } from "./registry/dimension";
 import { registerDialogues } from "./registry/dialogues";
 import { registerScriptEvents } from "./registry/scriptEvents";
+import { IngameHelper } from "../core/IngameHelper";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -69,4 +70,5 @@ export function initialize() {
   LunamutatioEntityEvent.subscribe();
   SpriteEvents.subscribe();
   LocatorBarEvents.subscribeBoss();
+  new IngameHelper();
 }

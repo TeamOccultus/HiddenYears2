@@ -523,7 +523,7 @@
   "job.hiddenyears:arcane_wizard.desc": "圣法师是魔法的研究者和使用者，他们用魔法来创造奇迹和改变世界。",
   "job.hiddenyears:magic_archer": "魔法弓箭手",
   "job.hiddenyears:magic_archer.desc": "魔法弓箭手是远距离战斗的专家，他们用箭矢和魔法击败敌人。",
-  "message.hiddenyears:welcome": "欢迎来到《隐藏之年²：天边的迦万涅尔》的世界！",
+  "message.hiddenyears:welcome": "【时匿怀表】%s，欢迎回来！准备好冒险了吗？",
   "message.hiddenyears:is_beta": "警告：这是不稳定的测试评估副本，请务必备份存档！",
   "message.hiddenyears:is_debug": "注意：这是不稳定的测试评估副本，且调试模式已经启用",
   "message.hiddenyears:first_destroy_ruby": "挖掘之后，你感到一阵眩晕……",
@@ -1046,8 +1046,8 @@
   "ui.waystone.set_icon": "[高级选项] 手动设置传送点图标",
   "ui.waystone.set_icon.desc": "这会覆盖上面你选择的图标，除非你知道自己在干什么，否则请不要修改！",
   "ui.artifact_cooldown": "饰品冷却中！",
-  "ui.profile.player_name": "旅者名称： %s",
-  "ui.profile.player_level": "玩家等级：Lv. §6%1§r（下一级需要：经验× §6%2§r）",
+  "ui.profile.player_name": "%s，准备好今天的冒险了吗？",
+  "ui.profile.player_level": "当前等级：Lv. §6%1§r（下一级需要：经验× §6%2§r）",
   "ui.profile.player_job": "职业： %s",
   "item.hiddenyears:waystone": "传送石碑",
   "article.hiddenyears:1.title": "千里之行与脚下之路",
@@ -2147,5 +2147,10 @@
   "setting.default_tooltip": "这是一个设置项提示",
   "task.awards.me": "魔法能源 × %s",
   "item.hiddenyears:cherry": "樱桃",
-  "item.hiddenyears:magic_cherry": "魔法樱桃"
+  "item.hiddenyears:magic_cherry": "魔法樱桃",
+  "monologue.hiddenyears:occultus_watch.welcome.1": "【时匿怀表】行旅者，欢迎来到这个世界，我是你手里的这块怀表！",
+  "monologue.hiddenyears:occultus_watch.welcome.2": "【时匿怀表】关于这个陌生的世界，有什么疑惑的地方都可以问我！",
+  "monologue.hiddenyears:occultus_watch.welcome.3": "【时匿怀表】你的包里有一块蓝色的晶石，使用它好像能获得额外的力量……",
+  "monologue.hiddenyears:occultus_watch.welcome.4": "【时匿怀表】差点忘了，还有这个！这卷羊皮纸上的信息对主人你应该有用",
+  "tips.hiddenyears:occultus_watch.luna": "【时匿怀表】%s，月亮越园，这些「月蚀」怪物造成的伤害就越高，你或许要躲避一下它……"
 }
