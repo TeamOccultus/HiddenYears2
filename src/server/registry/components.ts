@@ -47,6 +47,7 @@ import { EggBlockComponent } from "../components/EggBlockComponent/Component";
 import { FlowerComponent } from "../components/FlowerComponent/Component";
 import { EggEmbryoBlockComponent } from "../components/EggEmbryoBlock";
 import { MagicEnergyComponent } from "../components/MagicEnergyComponent/Component";
+import { TrapComponent } from "../components/TrapComponent/Component";
 
 /**
  * 注册自定义组件
@@ -91,6 +92,7 @@ export function registerCustomComponents() {
   new FlowerComponent("hiddenyears:flower");
   new EggEmbryoBlockComponent("hiddenyears:egg_embryo_block");
   new MagicEnergyComponent("hiddenyears:magic_source");
+  new TrapComponent("hiddenyears:trap");
   item.add(new FoodMaterial("hiddenyears:effective_food"));
   item.add(new ToolMaterial("hiddenyears:custom_tool"));
   item.add(new WeaponMaterial("hiddenyears:custom_weapon"));
