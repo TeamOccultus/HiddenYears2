@@ -1,6 +1,6 @@
 export type TrapComponentParams = {
   damage: [number, number] | number;
-  famlies?: string[];
+  families?: string[];
   max_energy: number;
   charge_step: number;
   charge_item: string;

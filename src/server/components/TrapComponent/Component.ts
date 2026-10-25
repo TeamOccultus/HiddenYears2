@@ -5,6 +5,8 @@ import {
   CustomComponentParameters,
   Entity,
   EntityDamageCause,
+  GameMode,
+  Player,
   system,
   TicksPerSecond
 } from "@minecraft/server";
@@ -43,8 +45,9 @@ function getDamage(entity: Entity, params: TrapComponentParams): number {
   } else {
     damage = params.damage;
   }
-  if (params.famlies) {
-    for (let f in params.famlies) {
+  if (params.families) {
+    for (const f of params.families) {
+      console.log(f);
       if (hasFamily(entity, f)) return damage;
     }
     return 0;
@@ -87,6 +90,8 @@ function runtimeModify(
   const { runtime_identifier } = params;
   if (!runtime_identifier) return;
   const { entity, dimension } = arg0;
+  if (!entity.isValid) return;
+  if (getDamage(entity, params) === 0) return;
   if (
     runtime_identifier === "hiddenyears:hunter_trap" ||
     runtime_identifier === "hiddenyears:monster_trap" ||
@@ -147,7 +152,12 @@ function onStepOn(
   const { entity, dimension, block } = arg0;
   if (!entity.isValid) return;
   if (!canBeTriggered(block)) return;
-  entity.applyDamage(getDamage(entity, params), {
+  if (entity instanceof Player) {
+    if (entity.getGameMode() === GameMode.Creative) return;
+  }
+  const damage = getDamage(entity, params);
+  if (damage === 0) return;
+  entity.applyDamage(damage, {
     cause: EntityDamageCause.magic
   });
   runtimeModify(arg0, params);
