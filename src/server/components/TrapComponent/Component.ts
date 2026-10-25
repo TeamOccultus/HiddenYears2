@@ -157,6 +157,9 @@ function onStepOn(
   }
   const damage = getDamage(entity, params);
   if (damage === 0) return;
+  if (entity instanceof Player) {
+    dimension.playSound(params.step_sound ?? "trap.step", block.location);
+  }
   entity.applyDamage(damage, {
     cause: EntityDamageCause.magic
   });
@@ -173,10 +176,11 @@ function onPlayerInteract(
   arg0: BlockComponentPlayerInteractEvent,
   params: TrapComponentParams
 ) {
-  const { player, block } = arg0;
+  const { player, block, dimension } = arg0;
   if (getEquipmentItem(player)?.typeId !== params.charge_item) return;
   if (!canBeCharged(block, params)) return;
   consumeEquipmentAmount(player, 1);
+  dimension.playSound(params.charge_sound ?? "trap.charge", block.location);
   // @ts-ignore
   const energy = block.permutation.getState("starock:magic_energy");
   if (typeof energy !== "number") {

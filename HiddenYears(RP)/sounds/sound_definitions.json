@@ -616,7 +616,43 @@
         }
       ],
       "subtitle": "subtitles.mob.ruby_griffin.death"
-    }
+    },
+    "trap.step" : {
+         "category" : "block",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : [
+            {
+               "name" : "sounds/block/trial_spawner/close_shutter",
+               "pitch" : 1.0,
+               "volume" : 1.0
+            }
+         ],
+         "subtitle" : "subtitles.block.trap.step"
+      },
+    "trap.charge" : {
+         "category" : "block",
+         "max_distance" : null,
+         "min_distance" : null,
+         "sounds" : [
+            {
+               "name" : "sounds/block/trial_spawner/detect_player1",
+               "pitch" : 0.950,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/trial_spawner/detect_player2",
+               "pitch" : 0.950,
+               "volume" : 1.0
+            },
+            {
+               "name" : "sounds/block/trial_spawner/detect_player3",
+               "pitch" : 0.950,
+               "volume" : 1.0
+            }
+         ],
+         "subtitle" : "subtitles.block.trap.charge"
+      }
     /*,
     "mob.lunamutatio.death": {
       "category": "hostile",

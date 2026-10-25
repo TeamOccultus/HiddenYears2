@@ -2164,5 +2164,7 @@
   "tile.hiddenyears:lightning_trap.name": "闪电陷阱",
   "tile.hiddenyears:monster_trap.name": "怪物陷阱",
   "tile.hiddenyears:sheep_trap.name": "绵羊陷阱",
-  "tile.hiddenyears:summon_trap.name": "召唤陷阱"
+  "tile.hiddenyears:summon_trap.name": "召唤陷阱",
+  "subtitles.block.trap.step": "陷阱：触发",
+  "subtitles.block.trap.charge": "陷阱：充能"
 }

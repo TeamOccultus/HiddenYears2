@@ -5,4 +5,6 @@ export type TrapComponentParams = {
   charge_step: number;
   charge_item: string;
   runtime_identifier?: string;
+  step_sound?: string;
+  charge_sound?: string;
 };
