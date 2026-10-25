@@ -5,14 +5,17 @@ import {
   CustomComponentParameters,
   Entity,
   EntityDamageCause,
-  system
+  system,
+  TicksPerSecond
 } from "@minecraft/server";
 import { TrapComponentParams } from "./Params";
 import {
   consumeEquipmentAmount,
   getEquipmentItem,
   hasFamily,
-  Random
+  Random,
+  toVec3,
+  Vector3Utils
 } from "@occultus/api";
 
 export class TrapComponent {
@@ -80,7 +83,62 @@ function canBeCharged(block: Block, params: TrapComponentParams): boolean {
 function runtimeModify(
   arg0: BlockComponentStepOnEvent,
   params: TrapComponentParams
-) {}
+) {
+  const { runtime_identifier } = params;
+  if (!runtime_identifier) return;
+  const { entity, dimension } = arg0;
+  if (
+    runtime_identifier === "hiddenyears:hunter_trap" ||
+    runtime_identifier === "hiddenyears:monster_trap" ||
+    runtime_identifier === "hiddenyears:catch_trap"
+  ) {
+    entity.addEffect("minecraft:slowness", 15 * TicksPerSecond);
+    return;
+  }
+  if (runtime_identifier === "hiddenyears:fire_trap") {
+    entity.setOnFire(5);
+    return;
+  }
+  if (runtime_identifier === "hiddenyears:explode_trap") {
+    dimension.createExplosion(entity.location, 5, { breaksBlocks: false });
+  }
+  if (runtime_identifier === "hiddenyears:summon_trap") {
+    dimension.spawnEntity(
+      "minecraft:zombie",
+      Vector3Utils.add(entity.location, toVec3(2, 0, 0))
+    );
+    dimension.spawnEntity(
+      "minecraft:zombie",
+      Vector3Utils.add(entity.location, toVec3(-2, 0, 0))
+    );
+    dimension.spawnEntity(
+      "minecraft:skeleton",
+      Vector3Utils.add(entity.location, toVec3(0, 0, 2))
+    );
+    dimension.spawnEntity(
+      "minecraft:skeleton",
+      Vector3Utils.add(entity.location, toVec3(0, 0, -2))
+    );
+  }
+  if (runtime_identifier === "hiddenyears:sheep_trap") {
+    dimension.spawnEntity(
+      "minecraft:sheep",
+      Vector3Utils.add(entity.location, toVec3(2, 0, 0))
+    );
+    dimension.spawnEntity(
+      "minecraft:sheep",
+      Vector3Utils.add(entity.location, toVec3(-2, 0, 0))
+    );
+    dimension.spawnEntity(
+      "minecraft:sheep",
+      Vector3Utils.add(entity.location, toVec3(0, 0, 2))
+    );
+    dimension.spawnEntity(
+      "minecraft:sheep",
+      Vector3Utils.add(entity.location, toVec3(0, 0, 2))
+    );
+  }
+}
 
 function onStepOn(
   arg0: BlockComponentStepOnEvent,
