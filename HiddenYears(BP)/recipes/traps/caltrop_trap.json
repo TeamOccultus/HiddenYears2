@@ -1,0 +1,35 @@
+{
+  "format_version": "1.21.100",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "hiddenyears:caltrop_trap"
+    },
+    "tags": ["alchemy_table"],
+    "pattern": ["X#X", "XAX", "X#X"],
+    "key": {
+      "X": {
+        "item": "minecraft:stone_bricks"
+      },
+      "A": {
+        "item": "hiddenyears:wooden_dagger"
+      },
+      "#": {
+        "item": "hiddenyears:magic_fuel"
+      }
+    },
+    "unlock": [
+      {
+        "item": "minecraft:stone_bricks"
+      },
+     {
+        "item": "hiddenyears:wooden_dagger"
+      },
+      {
+        "item": "hiddenyears:magic_fuel"
+      }
+    ],
+    "result": {
+      "item": "hiddenyears:caltrop_trap"
+    }
+  }
+}
