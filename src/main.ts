@@ -37,5 +37,6 @@
  * @category Main
  */
 import { initialize } from "./server/initialize";
+// import "./test";
 
 initialize();
