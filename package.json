@@ -13,8 +13,8 @@
   "author": "CTN Studios",
   "license": "HY-OSS",
   "dependencies": {
-    "@minecraft/server": "2.8.0",
-    "@minecraft/server-ui": "2.1.0",
+    "@minecraft/server": "2.11.0",
+    "@minecraft/server-ui": "2.3.0",
     "@minecraft/vanilla-data": "1.26.30",
     "@occultus/api": "^0.31.0-beta",
     "@occultus/core": "^1.1.0",

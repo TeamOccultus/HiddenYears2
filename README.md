@@ -7,7 +7,7 @@
 
 <p align="center">
 <a href="https://codeberg.org/TeamOccultus/HiddenYears2/releases">
-	<img src="https://img.shields.io/badge/Available_for-26.30+-blue" alt="Supported Versions">
+	<img src="https://img.shields.io/badge/Available_for-26.60+-blue" alt="Supported Versions">
 </a>
 <a href="https://codeberg.org/TeamOccultus/HiddenYears2/src/branch/bedrock-neo/LICENSE">
 	<img src="https://img.shields.io/badge/License-HY--OSS-orange" alt="License">
