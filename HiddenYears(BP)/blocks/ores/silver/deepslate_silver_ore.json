@@ -12,8 +12,8 @@
       "minecraft:sound": {
         "sound": "deepslate"
       },
-      "hiddenyears:custom_ore": {
-        "exp": 2
+      "hiddenyears:experienced_block":{
+        "on_break": 2
       },
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"

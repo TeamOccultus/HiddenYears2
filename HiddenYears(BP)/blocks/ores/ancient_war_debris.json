@@ -11,8 +11,8 @@
       "minecraft:sound": {
         "sound": "ancient_debris"
       },
-      "hiddenyears:custom_ore": {
-        "exp": 10
+      "hiddenyears:experienced_block":{
+        "on_break": 10
       },
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"

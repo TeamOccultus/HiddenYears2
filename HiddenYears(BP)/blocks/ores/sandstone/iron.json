@@ -14,8 +14,8 @@
       "hiddenyears:ore_type": {
         "ore_type": "sandcaust"
       },
-      "hiddenyears:custom_ore": {
-        "exp": 1
+      "hiddenyears:experienced_block":{
+        "on_break": 1
       },
       "minecraft:material_instances": {
         "down": { "texture": "sandstone_bottom" },

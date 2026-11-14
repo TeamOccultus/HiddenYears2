@@ -12,8 +12,8 @@
       "minecraft:sound": {
         "sound": "stone"
       },
-      "hiddenyears:custom_ore": {
-        "exp": 10
+      "hiddenyears:experienced_block":{
+        "on_break": 10
       },
       "hiddenyears:ore_type": {
         "ore_type": "ruby"
