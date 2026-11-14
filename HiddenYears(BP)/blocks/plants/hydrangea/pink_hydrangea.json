@@ -25,6 +25,18 @@
           }
         ]
       },
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          14,
+          8,
+          14
+        ]
+      },
       "minecraft:liquid_detection": {
         "detection_rules": [
           {

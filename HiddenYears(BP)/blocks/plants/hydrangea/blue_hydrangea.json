@@ -35,6 +35,18 @@
         ]
       },
       "minecraft:collision_box": false,
+      "minecraft:selection_box": {
+        "origin": [
+          -8,
+          0,
+          -8
+        ],
+        "size": [
+          14,
+          8,
+          14
+        ]
+      },
       "minecraft:replaceable": {},
       "minecraft:precipitation_interactions": {
         "precipitation_behavior": "snowlogging"
