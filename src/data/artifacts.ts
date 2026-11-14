@@ -1,5 +1,12 @@
 import { body, feet, hand, head, runes } from "./artifactSlots";
-import { EntityDamageCause, ItemStack, Player } from "@minecraft/server";
+import {
+  Entity,
+  EntityDamageCause,
+  ItemStack,
+  Player,
+  system,
+  TicksPerSecond
+} from "@minecraft/server";
 import { default as crop } from "../../config/crop.json";
 import { default as herd } from "../../config/herd.json";
 import {
@@ -507,19 +514,26 @@ const crucifixRunes = new Artifact(
 );
 crucifixRunes.onHurt((arg) => {
   if (!arg.hurtEntity.isValid) return;
+  if (arg.hurtEntity.hasTag("hiddenyears:crucifix_runes_cooldown")) return;
   const health = arg.hurtEntity.getComponent("health");
-  new RandomEvent(0.85, () => {
-    new EntityHealthUtils(arg.hurtEntity).heal(4);
-  }).call();
-  if (health.currentValue <= 5) {
-    new RandomEvent(0.25, () => {
+  function healEntity() {
+    new RandomEvent(0.85, () => {
+      new EntityHealthUtils(arg.hurtEntity).heal(4);
+    }).call();
+    if (health.currentValue <= 5) {
+      new RandomEvent(0.25, () => {
+        health.setCurrentValue(health.effectiveMax);
+      }).call();
+    }
+    new RandomEvent(0.075, () => {
       health.setCurrentValue(health.effectiveMax);
     }).call();
-    return;
   }
-  new RandomEvent(0.075, () => {
-    health.setCurrentValue(health.effectiveMax);
-  }).call();
+  healEntity();
+  arg.hurtEntity.addTag("hiddenyears:crucifix_runes_cooldown");
+  system.runTimeout(() => {
+    arg.hurtEntity.removeTag("hiddenyears:crucifix_runes_cooldown");
+  }, 3 * TicksPerSecond);
 });
 
 const gluttonousRunes = new Artifact(

@@ -33,6 +33,7 @@ import { registerCustomDimensions } from "./registry/dimension";
 import { registerDialogues } from "./registry/dialogues";
 import { registerScriptEvents } from "./registry/scriptEvents";
 import { IngameHelper } from "../core/IngameHelper";
+import { removeTempTag } from "./tagRemover";
 
 /**
  * 初始化模组脚本环境以及其他实例
@@ -62,6 +63,7 @@ export function initialize() {
   registerJob();
   registerDialogues();
   registerScriptEvents();
+  removeTempTag();
   StoreForm.openToPlugin();
   RubyEvents.subscribe();
   MigrationEvents.subscribe();

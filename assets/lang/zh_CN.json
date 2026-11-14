@@ -53,7 +53,7 @@
   "item.hiddenyears:hare_boots": "狡兔之靴",
   "item.hiddenyears:hare_boots.usage": "§7佩戴后获得10分钟跳跃提升效果§r",
   "item.hiddenyears:crucifix_runes": "十字符文",
-  "item.hiddenyears:crucifix_runes.usage": "§7每次受到攻击后 0.85 概率回复 4 点生命值，0.075 概率回满生命值，若生命值过低 则 25% 概率回满§r",
+  "item.hiddenyears:crucifix_runes.usage": "§7每次受到攻击后 0.85 概率回复 4 点生命值，0.075 概率回满生命值，若生命值过低 则 25% 概率回满（该效果每 3 秒内仅可触发一次）§r",
   "item.hiddenyears:gluttonous_runes": "饕餮符文",
   "item.hiddenyears:gluttonous_runes.usage": "§7以获得20分钟饥饿Ⅲ为代价，持续获得15分钟力量Ⅴ§r",
   "item.hiddenyears:imprisoned_wing": "受囚之翼",
