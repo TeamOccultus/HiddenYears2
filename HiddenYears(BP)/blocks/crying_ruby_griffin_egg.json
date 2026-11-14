@@ -40,6 +40,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "turtle_egg"
+      },
       "minecraft:geometry": {
         "identifier": "geometry.ruby_griffin_egg"
       },

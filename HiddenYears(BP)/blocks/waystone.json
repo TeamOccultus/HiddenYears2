@@ -40,6 +40,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "metal"
+      },
       "minecraft:liquid_detection": {
         "detection_rules": [
           {

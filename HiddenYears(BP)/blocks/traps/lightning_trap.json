@@ -136,6 +136,9 @@
           }
         ]
       },
+      "minecraft:sound": {
+        "sound": "stone"
+      },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 2.5
       },

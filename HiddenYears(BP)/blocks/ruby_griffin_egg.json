@@ -82,6 +82,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "turtle_egg"
+      },
       "hiddenyears:egg_block": {
         "spawn_entity": "hiddenyears:ruby_griffin",
         "spawn_event": "hiddenyears:as_child",

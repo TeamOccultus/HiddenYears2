@@ -62,6 +62,9 @@
         "minecraft:is_pickaxe_item_destructible",
         "minecraft:iron_tier_destructible"
       ],
+      "minecraft:sound": {
+        "sound": "amethyst_block"
+      },
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 6.0
       },

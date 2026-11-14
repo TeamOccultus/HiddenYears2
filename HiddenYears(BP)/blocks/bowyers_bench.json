@@ -40,6 +40,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "bamboo_wood"
+      },
       "minecraft:liquid_detection": {
         "detection_rules": [
           {

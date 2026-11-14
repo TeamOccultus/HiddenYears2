@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "ancient_debris"
+      },
       "hiddenyears:custom_ore": {
         "exp": 10
       },

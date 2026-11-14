@@ -40,6 +40,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "metal"
+      },
       "hiddenyears:trial_stone": {
         "table": "gameplay/ancient_trial_stone",
         "state": "active",

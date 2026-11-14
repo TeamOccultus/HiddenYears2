@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "stone"
+      },
       "hiddenyears:vault": {
         "table": "gameplay/lightning_treasure",
         "transform_to": "hiddenyears:empty_lightning_treasure",

@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "metal"
+      },
       "minecraft:loot": "loot_tables/blocks/alchemy_table.json",
       "minecraft:light_emission": 8,
       "minecraft:material_instances": {

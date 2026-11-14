@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "stone"
+      },
       "minecraft:liquid_detection": {
         "detection_rules": [
           {

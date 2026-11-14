@@ -47,6 +47,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "cloth"
+      },
       "minecraft:destructible_by_mining": {
         "seconds_to_destroy": 1
       },

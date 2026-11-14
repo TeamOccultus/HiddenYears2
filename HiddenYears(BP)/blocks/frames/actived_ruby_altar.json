@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "metal"
+      },
       "minecraft:destruction_particles": {
         "texture": "stone_bricks",
         "particle_count": 30

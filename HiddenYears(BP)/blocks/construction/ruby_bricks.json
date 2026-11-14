@@ -9,6 +9,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "stone"
+      },
       "minecraft:loot": "loot_tables/blocks/ruby_stone_bricks.json",
       "minecraft:geometry": {
         "identifier": "minecraft:geometry.full_block"

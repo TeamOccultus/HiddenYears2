@@ -40,6 +40,9 @@
       }
     ],
     "components": {
+      "minecraft:sound": {
+        "sound": "metal"
+      },
       "hiddenyears:interactable": {},
       "minecraft:loot": "loot_tables/blocks/crusher.json",
       "minecraft:material_instances": {

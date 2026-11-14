@@ -9,6 +9,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "stone"
+      },
       "hiddenyears:custom_ore": {
         "exp": 2
       },

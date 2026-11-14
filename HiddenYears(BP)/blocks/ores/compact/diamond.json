@@ -8,6 +8,9 @@
       }
     },
     "components": {
+      "minecraft:sound": {
+        "sound": "deepslate"
+      },
       "hiddenyears:custom_ore": {
         "exp": 4
       },
