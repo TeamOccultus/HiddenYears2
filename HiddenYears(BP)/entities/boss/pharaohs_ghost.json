@@ -8,6 +8,7 @@
       "is_experimental": false
     },
     "components": {
+      "minecraft:freezing_immune": {},
       "minecraft:behavior.melee_attack": {
         "priority": 2,
         "speed_multiplier": 1,
