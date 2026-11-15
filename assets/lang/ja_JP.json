@@ -2285,5 +2285,12 @@
   "tutorial.hiddenyears:boss.16": "",
   "tutorial.hiddenyears:boss.17": "",
   "tutorial.hiddenyears:boss.18": "",
-  "hiddenyears:itemGroup.name.keys": ""
+  "hiddenyears:itemGroup.name.keys": "",
+  "item.record_gloom_of_the_woods.desc": "",
+  "item.record_sand_breath.desc": "",
+  "item.record_silent_snow.desc": "",
+  "music.gloom_of_the_woods": "",
+  "music.sand_breath": "",
+  "music.silent_snow": "",
+  "hiddenyears:itemGroup.name.traps": ""
 }

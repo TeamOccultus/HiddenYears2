@@ -420,7 +420,10 @@
               "hiddenyears:record_ruby",
               "hiddenyears:record_plains",
               "hiddenyears:record_pharaohs",
-              "hiddenyears:record_mutas"
+              "hiddenyears:record_mutas",
+              "hiddenyears:record_gloom_of_the_woods",
+              "hiddenyears:record_silent_snow",
+              "hiddenyears:record_sand_breath"
             ]
           },
           {
@@ -487,6 +490,23 @@
               "hiddenyears:warrior_skill_2",
               "hiddenyears:wizard_skill_1",
               "hiddenyears:wizard_skill_2"
+            ]
+          },
+          {
+            "group_identifier": {
+              "icon": "hiddenyears:caltrop_trap",
+              "name": "hiddenyears:itemGroup.name.traps"
+            },
+            "items": [
+              "hiddenyears:caltrop_trap",
+              "hiddenyears:catch_trap",
+              "hiddenyears:explode_trap",
+              "hiddenyears:fire_trap",
+              "hiddenyears:hunter_trap",
+              "hiddenyears:lightning_trap",
+              "hiddenyears:monster_trap",
+              "hiddenyears:sheep_trap",
+              "hiddenyears:summon_trap"
             ]
           }
         ]

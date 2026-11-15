@@ -2038,7 +2038,7 @@
   "task.magic_compass.desc": "",
   "task.magic_origin": "",
   "task.magic_origin.desc": "",
-    "message.hiddenyears:ingredient_first": "",
+  "message.hiddenyears:ingredient_first": "",
   "message.hiddenyears:has_ingredient": "",
   "hiddenyears:itemGroup.name.desertItems": "",
   "tutorial.hiddenyears:start": "",
@@ -2272,5 +2272,12 @@
   "tutorial.hiddenyears:boss.16": "",
   "tutorial.hiddenyears:boss.17": "",
   "tutorial.hiddenyears:boss.18": "",
-  "hiddenyears:itemGroup.name.keys": ""
+  "hiddenyears:itemGroup.name.keys": "",
+  "item.record_gloom_of_the_woods.desc": "",
+  "item.record_sand_breath.desc": "",
+  "item.record_silent_snow.desc": "",
+  "music.gloom_of_the_woods": "",
+  "music.sand_breath": "",
+  "music.silent_snow": "",
+  "hiddenyears:itemGroup.name.traps": ""
 }

@@ -2289,7 +2289,7 @@
   "task.awards.me": "Magic Energy × %s",
   "item.hiddenyears:cherry": "Cherry",
   "item.hiddenyears:magic_cherry": "Magic Cherry",
-    "monologue.hiddenyears:occultus_watch.welcome.1": "【Occultus Watch】Voyager, welcome to this world. I am the pocket watch in your hand!",
+  "monologue.hiddenyears:occultus_watch.welcome.1": "【Occultus Watch】Voyager, welcome to this world. I am the pocket watch in your hand!",
   "monologue.hiddenyears:occultus_watch.welcome.2": "【Occultus Watch】If you have any questions about this unfamiliar world, feel free to ask me!",
   "monologue.hiddenyears:occultus_watch.welcome.3": "【Occultus Watch】There is a blue crystal in your bag. Using it seems to grant you extra power...",
   "monologue.hiddenyears:occultus_watch.welcome.4": "【Occultus Watch】Almost forgot—there's also this! The information on this scroll of parchment should be useful to you, master.",
@@ -2307,5 +2307,12 @@
   "tile.hiddenyears:sheep_trap.name": "Sheep Trap",
   "tile.hiddenyears:summon_trap.name": "Summoning Trap",
   "subtitles.block.trap.step": "Trap: Triggered",
-  "subtitles.block.trap.charge": "Trap: Charging"
+  "subtitles.block.trap.charge": "Trap: Charging",
+  "item.record_gloom_of_the_woods.desc": "Gloom of the Woods - 3xLnw",
+  "item.record_sand_breath.desc": "Sand Breath - 3xLnw",
+  "item.record_silent_snow.desc": "Silent Snow - 3xLnw",
+  "music.gloom_of_the_woods": "Gloom of the Woods",
+  "music.sand_breath": "Sand Breath",
+  "music.silent_snow": "Silent Snow",
+  "hiddenyears:itemGroup.name.traps": "Hidden Years²: Traps"
 }
