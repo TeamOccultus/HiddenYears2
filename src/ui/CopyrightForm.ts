@@ -31,7 +31,7 @@ export class CopyrightForm extends FormLike {
           },
           { text: "\n" },
           {
-            text: `Occultus Emoji v1.2.0`
+            text: `CTN Emoji v1.6.0`
           }
         ]
       })
