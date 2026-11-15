@@ -1,5 +1,5 @@
 {
-  "format_version": "1.20.60",
+  "format_version": "1.26.60",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:king_of_ruby",
@@ -137,10 +137,6 @@
       },
       "minecraft:persistent": {},
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
       "minecraft:follow_range": {
         "value": 32
       },

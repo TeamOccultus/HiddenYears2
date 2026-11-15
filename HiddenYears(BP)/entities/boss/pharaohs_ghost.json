@@ -1,5 +1,5 @@
 {
-  "format_version": "1.10.0",
+  "format_version": "1.26.60",
   "minecraft:entity": {
     "description": {
       "identifier": "hiddenyears:pharaohs_ghost",
@@ -127,10 +127,6 @@
       },
       "minecraft:persistent": {},
       "minecraft:physics": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
       "minecraft:follow_range": {
         "value": 32
       },
