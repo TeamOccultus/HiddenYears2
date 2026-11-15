@@ -1,5 +1,266 @@
 {
   "namespace": "hud",
+
+  "difficulty_indicator": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": ["100%", 16],
+    "offset": [0, 4],
+    "$min": 1.0,
+    "controls": [
+      {
+        "data_control": {
+          "type": "panel",
+          "size": [0, 0],
+          "property_bag": {
+            "#preserved_text": "",
+            "#text1": "",
+            "#text2": "",
+            "#text3": "",
+            "#text4": "",
+            "#text5": "",
+            "#text6": "",
+            "#text7": "",
+            "#text8": "",
+            "#text9": "",
+            "#text10": "",
+            "#text11": "",
+            "#text12": "",
+            "#text13": "",
+            "#text14": "",
+            "#text15": "",
+            "#text16": "",
+            "#text17": "",
+            "#text18": "",
+            "#text19": "",
+            "#text20": "",
+            "#split_seperator": ",",
+            "#value_life": 0.0
+          },
+          "$min": 1.0,
+          "$update_string": "data",
+          "bindings": [
+            {
+              "binding_name": "#hud_title_text_string"
+            },
+            {
+              "binding_name": "#hud_title_text_string",
+              "binding_name_override": "#preserved_text",
+              "binding_condition": "visibility_changed"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(not (#hud_title_text_string = #preserved_text) and not ((#hud_title_text_string - $update_string) = #hud_title_text_string))",
+              "target_property_name": "#visible"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #preserved_text )",
+              "target_property_name": "#text_0"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - $update_string)",
+              "target_property_name": "#text1"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator))",
+              "target_property_name": "#text2"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator))",
+              "target_property_name": "#text3"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator))",
+              "target_property_name": "#text4"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator))",
+              "target_property_name": "#text5"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator))",
+              "target_property_name": "#text6"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator))",
+              "target_property_name": "#text7"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator))",
+              "target_property_name": "#text8"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator))",
+              "target_property_name": "#text9"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator))",
+              "target_property_name": "#text10"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator))",
+              "target_property_name": "#text11"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator))",
+              "target_property_name": "#text12"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator))",
+              "target_property_name": "#text13"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator))",
+              "target_property_name": "#text14"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator + #text14 + #split_seperator))",
+              "target_property_name": "#text15"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator + #text14 + #split_seperator + #text15 + #split_seperator))",
+              "target_property_name": "#text16"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator + #text14 + #split_seperator + #text15 + #split_seperator + #text16 + #split_seperator))",
+              "target_property_name": "#text17"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator + #text14 + #split_seperator + #text15 + #split_seperator + #text16 + #split_seperator + #text17 + #split_seperator))",
+              "target_property_name": "#text18"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator + #text14 + #split_seperator + #text15 + #split_seperator + #text16 + #split_seperator + #text17 + #split_seperator + #text18 + #split_seperator))",
+              "target_property_name": "#text19"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "( #text_0 - ($update_string + #text1 + #split_seperator + #text2 + #split_seperator + #text3 + #split_seperator + #text4 + #split_seperator + #text5 + #split_seperator + #text6 + #split_seperator + #text7 + #split_seperator + #text8 + #split_seperator + #text9 + #split_seperator + #text10 + #split_seperator + #text11 + #split_seperator + #text12 + #split_seperator + #text13 + #split_seperator + #text14 + #split_seperator + #text15 + #split_seperator + #text16 + #split_seperator + #text17 + #split_seperator + #text18 + #split_seperator + #text19 + #split_seperator))",
+              "target_property_name": "#text20"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "($min * (#text3 - ','))",
+              "target_property_name": "#value_life"
+            }
+          ]
+        }
+      },
+      {
+        "easy_sm": {
+          "type": "image",
+          "texture": "textures/ui/UI- (1)",
+          "size": [16, 16],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "property_bag": { "#diff_value": 0.0, "#expected": 1.0 },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "data_control",
+              "source_property_name": "($min * (#text3 - ':'))",
+              "target_property_name": "#diff_value"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#diff_value = #expected)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "medium_sm": {
+          "type": "image",
+          "texture": "textures/ui/UI- (2)",
+          "size": [16, 16],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "property_bag": { "#diff_value": 0.0, "#expected": 2.0 },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "data_control",
+              "source_property_name": "($min * (#text3 - ':'))",
+              "target_property_name": "#diff_value"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#diff_value = #expected)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "hard_sm": {
+          "type": "image",
+          "texture": "textures/ui/UI- (3)",
+          "size": [16, 16],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "property_bag": { "#diff_value": 0.0, "#expected": 3.0 },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "data_control",
+              "source_property_name": "($min * (#text3 - ':'))",
+              "target_property_name": "#diff_value"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#diff_value = #expected)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "brutal_sm": {
+          "type": "image",
+          "texture": "textures/ui/UI- (4)",
+          "size": [16, 16],
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "property_bag": { "#diff_value": 0.0, "#expected": 4.0 },
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "data_control",
+              "source_property_name": "($min * (#text3 - ':'))",
+              "target_property_name": "#diff_value"
+            },
+            {
+              "binding_type": "view",
+              "source_property_name": "(#diff_value = #expected)",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
   "hud_title_text/title_frame/title": {
     "modifications": [
       {
@@ -38,6 +299,9 @@
         "value": [
           {
             "toast_factory@toast.toast_factory": {}
+          },
+          {
+            "difficulty_indicator@hud.difficulty_indicator": {}
           }
         ]
       }
