@@ -2166,5 +2166,13 @@
   "tile.hiddenyears:sheep_trap.name": "绵羊陷阱",
   "tile.hiddenyears:summon_trap.name": "召唤陷阱",
   "subtitles.block.trap.step": "陷阱：触发",
-  "subtitles.block.trap.charge": "陷阱：充能"
+  "subtitles.block.trap.charge": "陷阱：充能",
+  "item.record_gloom_of_the_woods.desc": "林郁 - 3xLnw",
+  
+  "item.record_sand_breath.desc": "沙息 - 3xLnw",
+  "item.record_silent_snow.desc": "雪寂 - 3xLnw",
+  "music.gloom_of_the_woods": "林郁",
+  
+  "music.sand_breath": "沙息",
+  "music.silent_snow": "雪寂"
 }

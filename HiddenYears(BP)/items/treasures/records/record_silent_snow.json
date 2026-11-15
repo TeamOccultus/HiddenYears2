@@ -1,0 +1,36 @@
+{
+  "format_version": "1.26.30",
+  "minecraft:item": {
+    "description": {
+      "identifier": "hiddenyears:record_silent_snow",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:display_name": {
+        "value": "%item.record.name\n§7%item.record_silent_snow.desc" //注意这里只是给唱片加一个本地化介绍键名
+      },
+      "minecraft:icon": "hiddenyears:record_silent_snow",
+      "minecraft:rarity": "uncommon",
+      "hiddenyears:music_disc": {
+        "track_name": "music.silent_snow",
+        "name": "Silent Snow | 雪寂",
+        "artist": "3xLnw"
+      },
+      "hiddenyears:now_playing": {
+        "name": "music.silent_snow",
+        "author": "3xLnw",
+        "icon_path": "textures/items/record_silent_snow"
+      },
+      "minecraft:record": {
+        "duration": 131,
+        "comparator_signal": 13
+      },
+      "minecraft:tags": {
+        "tags": ["minecraft:music_disc"] //这里标签必须是音乐唱片的
+      },
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

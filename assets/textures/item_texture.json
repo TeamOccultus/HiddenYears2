@@ -865,6 +865,9 @@
     "hiddenyears:rebirth_statue": {
       "textures": "textures/items/rebirth_statue"
     },
+    "hiddenyears:record_gloom_of_the_woods": {
+      "textures": "textures/items/record_gloom_of_the_woods"
+    },
     "hiddenyears:record_mutas": {
       "textures": "textures/items/record_mutas"
     },
@@ -876,6 +879,12 @@
     },
     "hiddenyears:record_ruby": {
       "textures": "textures/items/record_ruby"
+    },
+    "hiddenyears:record_sand_breath": {
+      "textures": "textures/items/record_sand_breath"
+    },
+    "hiddenyears:record_silent_snow": {
+      "textures": "textures/items/record_silent_snow"
     },
     "hiddenyears:redstone_nugget": {
       "textures": "textures/items/redstone_nugget"
