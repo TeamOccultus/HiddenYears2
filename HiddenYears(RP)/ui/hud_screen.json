@@ -1,6 +1,6 @@
 {
   "namespace": "hud",
-
+/*
   "difficulty_indicator": {
     "type": "panel",
     "anchor_from": "top_right",
@@ -260,7 +260,7 @@
         }
       }
     ]
-  },
+  },*/
   "hud_title_text/title_frame/title": {
     "modifications": [
       {
@@ -299,10 +299,10 @@
         "value": [
           {
             "toast_factory@toast.toast_factory": {}
-          },
+          }/*,
           {
             "difficulty_indicator@hud.difficulty_indicator": {}
-          }
+          }*/
         ]
       }
     ]
