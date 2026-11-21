@@ -24,6 +24,8 @@ Hidden Years²: Governor at the Skyline
 </p>
 
 
+[简体中文](./README.md) | English
+
 Welcome to the land beneath the Scorchwall, Voyager!
 
 A unified nation once stood here, but time and the gods have turned it all to dust and sand.
